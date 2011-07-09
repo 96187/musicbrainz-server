@@ -218,7 +218,7 @@ MB.Control.URLCleanup = function (sourceType, typeControl, urlControl) {
             match: new RegExp("^(https?://)?(www\\.)?twitter\\.com/", "i"),
             type: MB.constants.LINK_TYPES.microblog,
             clean: function(url) {
-                return url.replace(/^(https?:\/\/)?(www\\.)?twitter\\.com/, "http://twitter.com");
+                return url.replace(/^(https?:\/\/)?(www\.)?twitter\.com(\/#!)?/, "http://twitter.com");
             }
         },
         ozonru: {
@@ -237,7 +237,7 @@ MB.Control.URLCleanup = function (sourceType, typeControl, urlControl) {
             match: new RegExp("^(https?://)?([^/]+\.)?facebook\\.com/", "i"),
             type: MB.constants.LINK_TYPES.socialnetwork,
             clean: function(url) {
-                return url.replace(/^(https?:\/\/)?([^\/]+\.)?facebook\\.com/, "http://www.facebook.com");
+                return url.replace(/^(https?:\/\/)?([^\/]+\.)?facebook\.com(\/#!)?/, "http://www.facebook.com");
             }
         },
         vgmdb: {
@@ -248,7 +248,7 @@ MB.Control.URLCleanup = function (sourceType, typeControl, urlControl) {
             match: new RegExp("^(https?://)?([^/]+\.)?youtube\\.com/", "i"),
             type: MB.constants.LINK_TYPES.youtube,
             clean: function(url) {
-                return url.replace(/^(https?:\/\/)?([^\/]+\.)?youtube\\.com/, "http://www.youtube.com");
+                return url.replace(/^(https?:\/\/)?([^\/]+\.)?youtube\.com/, "http://www.youtube.com");
             }
         }
     };
