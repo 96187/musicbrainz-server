@@ -157,7 +157,6 @@ MB.constants.CLEANUPS = {
         match: new RegExp("^(https?://)?([^/]+\.)?archive\.org/.*\.(jpg|jpeg|png|gif)$","i"),
         type: MB.constants.LINK_TYPES.coverart,
         clean: function(url) { 
-            url = url.replace(/\/http:\/\//, "/");
             return url.replace(/http:\/\/(.*)\.archive.org\/\d\/items\/(.*)\/(.*)/, "http://www.archive.org/download/$2/$3");
         }
     },
