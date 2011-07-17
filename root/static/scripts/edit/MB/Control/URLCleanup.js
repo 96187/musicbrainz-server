@@ -265,7 +265,11 @@ MB.Control.URLCleanup = function (sourceType, typeControl, urlControl) {
     validationRules[ MB.constants.LINK_TYPES.lyrics.work ] = function() {
         return MB.constants.CLEANUPS.lyrics.match.test($('#id-ar\\.url').val())
     };
-
+    // only allow domains on the cover art whitelist
+    validationRules[ MB.constants.LINK_TYPES.coverart.release ] = function() {
+        var sites = new RegExp("^(https?://)?([^/]+\.)?(archive\.org|magnatune\.com|jamendo\.com|cdbaby.(com|name)|ozon\.ru|mange-disque\.tv|encyclopedisque\.fr|thastrom\.se|universalpoplab\.com|alpinechic\.net|angelika-express\.de|fixtstore\.com|phantasma13\.com|primordialmusic\.com|transistorsounds\.com|alter-x\.net|zorchfactoryrecords\.com)/");
+        return sites.test($('#id-ar\\.url').val())
+    };
 
     self.guessType = function (sourceType, currentURL) {
         for (var group in MB.constants.CLEANUPS) {
