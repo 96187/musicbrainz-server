@@ -199,7 +199,7 @@ MB.constants.CLEANUPS = {
         type: MB.constants.LINK_TYPES.lyrics
     },
     bbcmusic: {
-        match: new RegExp("^(https?://)?(www\\.)?bbc\.co\\.uk/music/artists/", "i"),
+        match: new RegExp("^(https?://)?(www\\.)?bbc\\.co\\.uk/music/artists/", "i"),
         type: MB.constants.LINK_TYPES.bbcmusic
     },
     discography: {
