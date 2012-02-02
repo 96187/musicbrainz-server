@@ -3,7 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# Nikolai Prokoschenko <nikolai@prokoschenko.de>, 2011.
+# Ian McEwen <ianmcorvidae@ianmcorvidae.net>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
@@ -11,12 +11,12 @@ msgstr ""
 "POT-Creation-Date: 2012-01-31 17:16-0500\n"
 "PO-Revision-Date: 2012-02-01 08:15+0000\n"
 "Last-Translator: Ian McEwen <ianmcorvidae@ianmcorvidae.net>\n"
-"Language-Team: Russian (http://www.transifex.net/projects/p/musicbrainz/team/ru/)\n"
+"Language-Team: Esperanto (http://www.transifex.net/projects/p/musicbrainz/team/eo/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ru\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"Language: eo\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../root/account/lost_password.tt:7
 #, perl-format
@@ -25,9 +25,6 @@ msgid ""
 "to reset your password. If you have forgotten your username, {link|retrieve "
 "it} first and then reset your password. "
 msgstr ""
-" Введите имя пользователя и адрес электронной почты. Мы вышлем письмо со "
-"ссылкой для сброса вашего пароля. Если вы забыли имя пользователя, "
-"{link|восстановите его}, а затем сбросьте пароль. "
 
 #: ../root/recording/add_isrc.tt:8
 #, perl-format
@@ -63,7 +60,7 @@ msgstr ""
 #: ../root/release/edit/tracklist.tt:264 ../root/release/edit/tracklist.tt:417
 #, perl-format
 msgid "#"
-msgstr ""
+msgstr "#"
 
 #: ../root/statistics/formats.tt:31
 #, perl-format
@@ -109,7 +106,7 @@ msgstr ""
 #: ../root/release/edit/recordings.tt:319
 #, perl-format
 msgid "(add a new recording)"
-msgstr "(добавить новую запись)"
+msgstr ""
 
 #: DB:link_attribute_type/description:528
 #, perl-format
@@ -124,7 +121,7 @@ msgstr ""
 #: ../root/user/profile.tt:20
 #, perl-format
 msgid "(hidden)"
-msgstr ""
+msgstr "(kaŝita)"
 
 #: ../root/edit/details/reorder_mediums.tt:26
 #, perl-format
@@ -134,7 +131,7 @@ msgstr ""
 #: ../root/edit/details/reorder_mediums.tt:24
 #, perl-format
 msgid "(new disc)"
-msgstr ""
+msgstr "(novan diskon)"
 
 #: ../root/edit/details/add_release.tt:22
 #, perl-format
@@ -167,7 +164,7 @@ msgstr ""
 #: ../root/elections/show.tt:121
 #, perl-format
 msgid "(private)"
-msgstr ""
+msgstr "(nepublika)"
 
 #: ../root/search/lib/inline-results-recording.tt:49
 #, perl-format
@@ -181,7 +178,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Entity/Release.pm:179
 #, perl-format
 msgid "(unknown)"
-msgstr ""
+msgstr "(nekonata)"
 
 #: ../root/user/profile.tt:24
 #, perl-format
@@ -201,7 +198,7 @@ msgstr ""
 #: ../root/recording/layout.tt:19
 #, perl-format
 msgid "({delete_uri|remove})"
-msgstr ""
+msgstr "({delete_uri|forigi})"
 
 #: ../root/release/lookup.tt:31
 #, perl-format
@@ -224,9 +221,8 @@ msgstr ""
 #, perl-format
 msgid "1 vote"
 msgid_plural "{n} unanimous votes"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "1 voĉon"
+msgstr[1] "{n} unuvoĉan voĉon"
 
 #: DB:medium_format/name:30
 msgid "10\" Vinyl"
@@ -235,7 +231,7 @@ msgstr ""
 #: ../root/user/profile.tt:179 ../root/user/profile.tt:183
 #, perl-format
 msgid "100%"
-msgstr ""
+msgstr "100%"
 
 #: DB:link_attribute_type/description:529 DB:link_attribute_type/name:529
 #, perl-format
@@ -330,7 +326,7 @@ msgstr ""
 #: ../root/components/common-macros.tt:593
 #, perl-format
 msgid "<strong>Note</strong>:"
-msgstr ""
+msgstr "<strong>Noto</strong>:"
 
 #: ../root/main/index.tt:38
 #, perl-format
@@ -459,7 +455,6 @@ msgid "A private collection"
 msgid_plural "{n} private collections"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/edit/relationship/create_batch.tt:23
 #: ../root/edit/relationship/create.tt:26
@@ -516,7 +511,7 @@ msgstr ""
 
 #: DB:language/name:2
 msgid "Abkhazian"
-msgstr ""
+msgstr "Abĥaza"
 
 #: ../root/layout/menu.tt:77
 #, perl-format
@@ -527,7 +522,7 @@ msgstr ""
 #: ../root/elections/show.tt:73
 #, perl-format
 msgid "Abstain"
-msgstr ""
+msgstr "Deteni"
 
 #: ../root/statistics/index.tt:537
 #, perl-format
@@ -575,7 +570,7 @@ msgstr ""
 
 #: DB:language/name:4
 msgid "Acoli"
-msgstr ""
+msgstr "Aĉola"
 
 #: ../root/search/results-freedb.tt:15
 #, perl-format
@@ -606,7 +601,7 @@ msgstr ""
 
 #: DB:language/name:5
 msgid "Adangme"
-msgstr ""
+msgstr "Adanma"
 
 #: ../root/release/edit-links.tt:3
 #, perl-format
@@ -621,7 +616,7 @@ msgstr ""
 #: ../root/artist/add_alias.tt:1
 #, perl-format
 msgid "Add Artist Alias"
-msgstr ""
+msgstr "Aldoni alinomon de artisto"
 
 #: ../root/components/forms.tt:243 ../root/components/forms.tt:247
 #: ../root/release/edit/tracklist.tt:84 ../root/release/edit/tracklist.tt:89
@@ -632,29 +627,29 @@ msgstr ""
 #: ../root/cdstub/logged_in.tt:1 ../root/cdstub/logged_in.tt:2
 #, perl-format
 msgid "Add CD Stub"
-msgstr ""
+msgstr "Aldoni CD Stub"
 
 #: ../root/release/edit/tracklist.tt:292 ../root/release/edit/tracklist.tt:476
 #, perl-format
 msgid "Add Disc"
-msgstr ""
+msgstr "Aldoni diskon"
 
 #: ../root/recording/add_isrc.tt:1 ../root/recording/add_isrc.tt:2
 #: ../root/recording/layout.tt:34
 #, perl-format
 msgid "Add ISRC"
-msgstr ""
+msgstr "Aldoni ISRC"
 
 #: ../root/layout/menu.tt:179 ../root/release/edit/information.tt:90
 #: ../root/release/edit/information.tt:92
 #, perl-format
 msgid "Add Label"
-msgstr ""
+msgstr "Aldoni etikedon"
 
 #: ../root/label/add_alias.tt:1
 #, perl-format
 msgid "Add Label Alias"
-msgstr ""
+msgstr "Aldoni alinomon de etikedo"
 
 #: ../root/release_group/create.tt:16
 #, perl-format
@@ -664,12 +659,12 @@ msgstr ""
 #: ../root/edit/info.tt:13
 #, perl-format
 msgid "Add Note"
-msgstr ""
+msgstr "Aldoni komenton"
 
 #: ../root/admin/wikidoc/create.tt:1 ../root/admin/wikidoc/create.tt:3
 #, perl-format
 msgid "Add Page"
-msgstr ""
+msgstr "Aldoni paĝon"
 
 #: ../root/release/edit-links.tt:3
 #, perl-format
@@ -707,27 +702,27 @@ msgstr ""
 #: ../root/work/create.tt:16
 #, perl-format
 msgid "Add Work"
-msgstr ""
+msgstr "Aldoni novan pecon"
 
 #: ../root/work/add_alias.tt:1
 #, perl-format
 msgid "Add Work Alias"
-msgstr ""
+msgstr "Aldoni alinomon de peco"
 
 #: ../root/artist/create.tt:16 ../root/artist/create.tt:18
 #, perl-format
 msgid "Add a New Artist"
-msgstr "Добавить исполнителя"
+msgstr "Aldoni novan artiston"
 
 #: ../root/collection/create.tt:1 ../root/collection/create.tt:3
 #, perl-format
 msgid "Add a New Collection"
-msgstr ""
+msgstr "Aldoni novan aron"
 
 #: ../root/label/create.tt:15 ../root/label/create.tt:17
 #, perl-format
 msgid "Add a New Label"
-msgstr ""
+msgstr "Aldoni novan ediketon"
 
 #: ../root/release_group/create.tt:23
 #, perl-format
@@ -737,7 +732,7 @@ msgstr ""
 #: ../root/components/aliases.tt:48
 #, perl-format
 msgid "Add a new alias"
-msgstr ""
+msgstr "Aldoni novan alinomon"
 
 #: ../root/admin/wikidoc/index.tt:62
 #, perl-format
@@ -790,7 +785,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Edit/Historic/AddArtistAlias.pm:7
 #, perl-format
 msgid "Add artist alias"
-msgstr ""
+msgstr "Aldoni alinomon de artisto"
 
 #: ../root/cdstub/layout.tt:23
 #, perl-format
@@ -807,7 +802,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Edit/Label/AddAlias.pm:14
 #, perl-format
 msgid "Add label alias"
-msgstr ""
+msgstr "Aldoni alinomon de etikedo"
 
 #: ../root/release/edit/missing_entities.tt:62
 #, perl-format
@@ -889,13 +884,13 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Edit/Work/Create.pm:16
 #, perl-format
 msgid "Add work"
-msgstr ""
+msgstr "Aldoni pecon"
 
 #: ../root/work/add_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Work/AddAlias.pm:15
 #, perl-format
 msgid "Add work alias"
-msgstr ""
+msgstr "Aldoni alinomon de peco"
 
 #: ../root/release/edit/tracklist.tt:434
 #, perl-format
@@ -972,7 +967,7 @@ msgstr ""
 
 #: DB:language/name:1
 msgid "Afar"
-msgstr ""
+msgstr "Afara"
 
 #: ../root/layout/sidebar/sidebar-affiliates.tt:7
 #, perl-format
@@ -981,15 +976,15 @@ msgstr ""
 
 #: DB:country/name:1
 msgid "Afghanistan"
-msgstr ""
+msgstr "Afganio"
 
 #: DB:language/name:8
 msgid "Afrihili"
-msgstr ""
+msgstr "Afrihila"
 
 #: DB:language/name:9
 msgid "Afrikaans"
-msgstr ""
+msgstr "Afrikansa"
 
 #: DB:language/name:7
 msgid "Afro-Asiatic languages"
@@ -997,15 +992,15 @@ msgstr ""
 
 #: DB:language/name:473
 msgid "Ainu"
-msgstr ""
+msgstr "Aina"
 
 #: DB:language/name:10
 msgid "Akan"
-msgstr ""
+msgstr "Akana"
 
 #: DB:language/name:11
 msgid "Akkadian"
-msgstr ""
+msgstr "Akada"
 
 #: DB:country/name:2
 msgid "Albania"
@@ -1021,25 +1016,25 @@ msgstr ""
 
 #: DB:language/name:13
 msgid "Aleut"
-msgstr ""
+msgstr "Aleuta"
 
 #: DB:country/name:3
 msgid "Algeria"
-msgstr ""
+msgstr "Alĝerio"
 
 #: DB:language/name:14
 msgid "Algonquian languages"
-msgstr ""
+msgstr "Algonkinaj lingvoj"
 
 #: ../root/components/aliases.tt:7
 #, perl-format
 msgid "Alias"
-msgstr "Альтернативное имя"
+msgstr "Alinomo"
 
 #: ../root/alias/edit_form.tt:3
 #, perl-format
 msgid "Alias name:"
-msgstr ""
+msgstr "Alinoma nomo:"
 
 #: ../root/edit/details/add_artist_alias.tt:7
 #: ../root/edit/details/add_label_alias.tt:7
@@ -1056,7 +1051,7 @@ msgstr ""
 #: ../root/edit/details/remove_work_alias.tt:7
 #, perl-format
 msgid "Alias:"
-msgstr ""
+msgstr "Alinomo:"
 
 #: ../root/artist/aliases.tt:1 ../root/artist/header.tt:1
 #: ../root/components/aliases.tt:1 ../root/label/aliases.tt:1
@@ -1064,7 +1059,7 @@ msgstr ""
 #: ../root/work/header.tt:1
 #, perl-format
 msgid "Aliases"
-msgstr "Альтернативные имена"
+msgstr "Alinomoj"
 
 #: ../root/user/profile/layout.tt:19
 #, perl-format
@@ -1235,11 +1230,11 @@ msgstr ""
 
 #: DB:country/name:4
 msgid "American Samoa"
-msgstr ""
+msgstr "Usona Samoo"
 
 #: DB:language/name:15
 msgid "Amharic"
-msgstr ""
+msgstr "Amhara"
 
 #: DB:link_attribute_type/description:435
 #, perl-format
@@ -1255,7 +1250,6 @@ msgid "An anonymous user"
 msgid_plural "{n} anonymous users"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/account/register.tt:9
 #, perl-format
@@ -1284,11 +1278,11 @@ msgstr ""
 
 #: DB:country/name:5
 msgid "Andorra"
-msgstr ""
+msgstr "Andoro"
 
 #: DB:language/name:475
 msgid "Angika"
-msgstr ""
+msgstr "Angika"
 
 #: DB:country/name:6
 msgid "Angola"
@@ -1296,7 +1290,7 @@ msgstr ""
 
 #: DB:country/name:7
 msgid "Anguilla"
-msgstr ""
+msgstr "Angvilo"
 
 #: ../root/annotation/common.tt:2 ../root/artist/annotation_revision.tt:1
 #: ../root/edit/details/historic/add_release_annotation.tt:13
@@ -1351,15 +1345,15 @@ msgstr ""
 
 #: DB:country/name:8
 msgid "Antarctica"
-msgstr ""
+msgstr "Antarkto"
 
 #: DB:country/name:9
 msgid "Antigua and Barbuda"
-msgstr ""
+msgstr "Antigvo-Barbudo"
 
 #: DB:language/name:17
 msgid "Apache languages"
-msgstr ""
+msgstr "Apaĉa"
 
 #: DB:link_attribute_type/description:90 DB:link_attribute_type/name:90
 #, perl-format
@@ -1380,7 +1374,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Form/Merge/Release.pm:50
 #, perl-format
 msgid "Append mediums to target release"
-msgstr ""
+msgstr "CD Stub"
 
 #: ../root/statistics/view_js.tt:55
 #, perl-format
@@ -1399,19 +1393,19 @@ msgstr ""
 
 #: DB:language/name:18 DB:script/name:18
 msgid "Arabic"
-msgstr ""
+msgstr "Araba"
 
 #: DB:language/name:20
 msgid "Aragonese"
-msgstr ""
+msgstr "Aragona"
 
 #: DB:language/name:23
 msgid "Arapaho"
-msgstr ""
+msgstr "Arapaha"
 
 #: DB:language/name:25
 msgid "Arawak"
-msgstr ""
+msgstr "Aravaka"
 
 #: ../root/release/merge_confirm.tt:4
 #, perl-format
@@ -1466,6 +1460,7 @@ msgid ""
 "Are you sure you want to remove the alias {alias}, which points to the "
 "artist {artist}?"
 msgstr ""
+"Ĉu vi certas, ke vi volas forigi alinomon {alias}, por artisto {artist}?"
 
 #: ../root/label/delete_alias.tt:7
 #, perl-format
@@ -1473,13 +1468,14 @@ msgid ""
 "Are you sure you want to remove the alias {alias}, which points to the label"
 " {label}?"
 msgstr ""
+"Ĉu vi certas, ke vi volas forigi alinomon {alias}, por etikedo {label}?"
 
 #: ../root/work/delete_alias.tt:7
 #, perl-format
 msgid ""
 "Are you sure you want to remove the alias {alias}, which points to the work "
 "{work}?"
-msgstr ""
+msgstr "Ĉu vi certas, ke vi volas forigi alinomon {alias}, por peco {work}?"
 
 #: ../root/collection/delete.tt:4
 #, perl-format
@@ -1558,7 +1554,7 @@ msgstr ""
 
 #: DB:country/name:10
 msgid "Argentina"
-msgstr ""
+msgstr "Argentino"
 
 #: DB:work_type/name:1
 msgid "Aria"
@@ -1570,7 +1566,7 @@ msgstr ""
 
 #: DB:language/name:21 DB:script/name:35
 msgid "Armenian"
-msgstr ""
+msgstr "Armena"
 
 #: DB:link_attribute_type/description:480
 #, perl-format
@@ -1621,7 +1617,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:35
 #, perl-format
 msgid "Artist"
-msgstr "Исполнитель"
+msgstr "Artisto"
 
 #: ../root/statistics/view_js.tt:27
 #, perl-format
@@ -1918,7 +1914,7 @@ msgstr ""
 
 #: DB:language/name:26
 msgid "Assamese"
-msgstr ""
+msgstr "Asama"
 
 #: ../root/recording/fingerprints.tt:3
 #, perl-format
@@ -1941,7 +1937,6 @@ msgid "Associated with {num} recording"
 msgid_plural "Associated with {num} recordings"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: DB:language/name:27
 msgid "Asturian"
@@ -1949,7 +1944,7 @@ msgstr ""
 
 #: DB:language/name:28
 msgid "Athapascan languages"
-msgstr ""
+msgstr "Atapaskaj lingvoj"
 
 #: ../root/cdtoc/attach_artist_releases.tt:1
 #: ../root/cdtoc/attach_artist_releases.tt:35
@@ -2002,11 +1997,11 @@ msgstr ""
 
 #: DB:language/name:29
 msgid "Australian languages"
-msgstr ""
+msgstr "Aŭstraliaj lingvoj"
 
 #: DB:country/name:14
 msgid "Austria"
-msgstr ""
+msgstr "Aŭstrio"
 
 #: DB:language/name:263
 msgid "Austronesian languages"
@@ -2063,19 +2058,19 @@ msgstr ""
 
 #: DB:language/name:30
 msgid "Avaric"
-msgstr ""
+msgstr "Avara"
 
 #: DB:language/name:31 DB:script/name:114
 msgid "Avestan"
-msgstr ""
+msgstr "Avesta"
 
 #: DB:language/name:32
 msgid "Awadhi"
-msgstr ""
+msgstr "Avada"
 
 #: DB:language/name:33
 msgid "Aymara"
-msgstr ""
+msgstr "Ajmara"
 
 #: DB:country/name:15
 msgid "Azerbaijan"
@@ -2083,7 +2078,7 @@ msgstr ""
 
 #: DB:language/name:34
 msgid "Azerbaijani"
-msgstr ""
+msgstr "Azerbajĝana"
 
 #: DB:link_type/link_phrase:190
 #, perl-format
@@ -2129,11 +2124,11 @@ msgstr ""
 
 #: DB:country/name:16
 msgid "Bahamas"
-msgstr ""
+msgstr "Bahamoj"
 
 #: DB:country/name:17
 msgid "Bahrain"
-msgstr ""
+msgstr "Barejno"
 
 #: DB:link_attribute_type/description:444
 #, perl-format
@@ -2142,7 +2137,7 @@ msgstr ""
 
 #: DB:language/name:40 DB:script/name:72
 msgid "Balinese"
-msgstr ""
+msgstr "Balia"
 
 #: DB:work_type/name:2
 msgid "Ballet"
@@ -2159,15 +2154,15 @@ msgstr ""
 
 #: DB:language/name:38
 msgid "Baluchi"
-msgstr ""
+msgstr "Beluĉa"
 
 #: DB:language/name:39
 msgid "Bambara"
-msgstr ""
+msgstr "Bambara"
 
 #: DB:language/name:36
 msgid "Bamileke languages"
-msgstr ""
+msgstr "Bamilekaj lingvoj"
 
 #: DB:script/name:155
 msgid "Bamum"
@@ -2175,7 +2170,7 @@ msgstr ""
 
 #: DB:language/name:35
 msgid "Banda languages"
-msgstr ""
+msgstr "Bandaj lingvoj"
 
 #: DB:link_attribute_type/description:476
 #, perl-format
@@ -2189,7 +2184,7 @@ msgstr ""
 
 #: DB:country/name:18
 msgid "Bangladesh"
-msgstr ""
+msgstr "Bangladeŝo"
 
 #: DB:link_attribute_type/description:479
 #, perl-format
@@ -2209,7 +2204,7 @@ msgstr ""
 
 #: DB:country/name:19
 msgid "Barbados"
-msgstr ""
+msgstr "Barbado"
 
 #: ../root/cdtoc/list.tt:12 ../root/edit/details/edit_release_events.tt:9
 #: ../root/edit/details/historic/add_release.tt:79
@@ -2239,7 +2234,7 @@ msgstr ""
 
 #: DB:language/name:42
 msgid "Basa"
-msgstr ""
+msgstr "Basa"
 
 #: ../root/cdtoc/lookup.tt:29
 #, perl-format
@@ -2258,7 +2253,7 @@ msgstr ""
 
 #: DB:language/name:37
 msgid "Bashkir"
-msgstr ""
+msgstr "Baŝkira"
 
 #: ../root/statistics/index.tt:8
 #, perl-format
@@ -2267,7 +2262,7 @@ msgstr ""
 
 #: DB:language/name:41
 msgid "Basque"
-msgstr ""
+msgstr "Eŭska"
 
 #: DB:link_attribute_type/description:277
 #, perl-format
@@ -2294,7 +2289,7 @@ msgstr ""
 
 #: DB:script/name:74
 msgid "Batak"
-msgstr ""
+msgstr "Bataka"
 
 #: DB:language/name:59
 msgid "Batak languages"
@@ -2378,15 +2373,15 @@ msgstr ""
 
 #: DB:language/name:45
 msgid "Belarusian"
-msgstr ""
+msgstr "Belorusa"
 
 #: DB:country/name:21
 msgid "Belgium"
-msgstr ""
+msgstr "Belgio"
 
 #: DB:country/name:22
 msgid "Belize"
-msgstr ""
+msgstr "Belizo"
 
 #: ../root/search/error/internal-error.tt:6
 #, perl-format
@@ -2398,7 +2393,7 @@ msgstr ""
 
 #: DB:language/name:46
 msgid "Bemba"
-msgstr ""
+msgstr "Bemba"
 
 #: DB:link_attribute_type/description:420
 #, perl-format
@@ -2407,11 +2402,11 @@ msgstr ""
 
 #: DB:language/name:47 DB:script/name:53
 msgid "Bengali"
-msgstr ""
+msgstr "Bengala"
 
 #: DB:country/name:23
 msgid "Benin"
-msgstr ""
+msgstr "Benino"
 
 #: DB:language/name:48
 msgid "Berber languages"
@@ -2419,7 +2414,7 @@ msgstr ""
 
 #: DB:country/name:24
 msgid "Bermuda"
-msgstr ""
+msgstr "Bermudoj"
 
 #: DB:medium_format/name:24
 msgid "Betamax"
@@ -2427,11 +2422,11 @@ msgstr ""
 
 #: DB:language/name:49
 msgid "Bhojpuri"
-msgstr ""
+msgstr "Boĝpura"
 
 #: DB:country/name:25
 msgid "Bhutan"
-msgstr ""
+msgstr "Butano"
 
 #: DB:language/name:50
 msgid "Bihari languages"
@@ -2439,7 +2434,7 @@ msgstr ""
 
 #: DB:language/name:51
 msgid "Bikol"
-msgstr ""
+msgstr "Bikola"
 
 #: DB:link_attribute_type/description:460
 #, perl-format
@@ -2460,7 +2455,7 @@ msgstr ""
 
 #: DB:language/name:53
 msgid "Bislama"
-msgstr ""
+msgstr "Bislamo"
 
 #: DB:link_attribute_type/description:94
 #, perl-format
@@ -2473,7 +2468,7 @@ msgstr ""
 
 #: DB:language/name:482 DB:script/name:95
 msgid "Blissymbols"
-msgstr ""
+msgstr "Blisa skribo"
 
 #: ../root/layout/menu.tt:113
 #, perl-format
@@ -2499,7 +2494,7 @@ msgstr ""
 
 #: DB:script/name:123
 msgid "Book Pahlavi"
-msgstr ""
+msgstr "Libra palava"
 
 #: DB:release_status/name:3
 msgid "Bootleg"
@@ -2511,7 +2506,7 @@ msgstr ""
 
 #: DB:script/name:42
 msgid "Bopomofo"
-msgstr ""
+msgstr "Bopomofo"
 
 #: ../root/artist/index.tt:7 ../root/artist/layout.tt:19
 #: ../root/scripts/text_strings.tt:71
@@ -2521,11 +2516,11 @@ msgstr ""
 
 #: DB:country/name:27
 msgid "Bosnia and Herzegovina"
-msgstr ""
+msgstr "Bosnio kaj Hercegovino"
 
 #: DB:language/name:56
 msgid "Bosnian"
-msgstr ""
+msgstr "Bosna"
 
 #: ../root/admin/edit_user.tt:11
 #, perl-format
@@ -2543,31 +2538,31 @@ msgstr ""
 
 #: DB:country/name:29
 msgid "Bouvet Island"
-msgstr ""
+msgstr "Buvetinsulo"
 
 #: DB:script/name:47
 msgid "Brahmi"
-msgstr ""
+msgstr "Bramia"
 
 #: DB:script/name:96
 msgid "Braille"
-msgstr ""
+msgstr "Brajla"
 
 #: DB:language/name:57
 msgid "Braj"
-msgstr ""
+msgstr "Braĝa"
 
 #: DB:country/name:30
 msgid "Brazil"
-msgstr ""
+msgstr "Brazilo"
 
 #: DB:language/name:58
 msgid "Breton"
-msgstr ""
+msgstr "Bretona"
 
 #: DB:country/name:31
 msgid "British Indian Ocean Territory"
-msgstr ""
+msgstr "Brita Hindoceana Teritorio"
 
 #: ../root/browse/index.tt:1 ../root/browse/index.tt:3
 #: ../root/layout/menu.tt:161
@@ -2639,7 +2634,7 @@ msgstr ""
 
 #: DB:country/name:32
 msgid "Brunei Darussalam"
-msgstr ""
+msgstr "Brunejo"
 
 #: ../root/layout.tt:144
 #, perl-format
@@ -2648,11 +2643,11 @@ msgstr ""
 
 #: DB:language/name:61 DB:script/name:75
 msgid "Buginese"
-msgstr ""
+msgstr "Bugia"
 
 #: DB:script/name:78
 msgid "Buhid"
-msgstr ""
+msgstr "Buhida"
 
 #: DB:country/name:33
 msgid "Bulgaria"
@@ -2664,15 +2659,15 @@ msgstr ""
 
 #: DB:language/name:60
 msgid "Buriat"
-msgstr ""
+msgstr "Burjata"
 
 #: DB:country/name:34
 msgid "Burkina Faso"
-msgstr ""
+msgstr "Burkino"
 
 #: DB:language/name:63
 msgid "Burmese"
-msgstr ""
+msgstr "Birma"
 
 #: DB:country/name:35
 msgid "Burundi"
@@ -2701,7 +2696,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:42
 #, perl-format
 msgid "CD Stub"
-msgstr ""
+msgstr "CD Stub"
 
 #: ../root/cdstub/error.tt:2
 #, perl-format
@@ -2782,7 +2777,7 @@ msgstr ""
 
 #: DB:language/name:65
 msgid "Caddo"
-msgstr ""
+msgstr "Kada"
 
 #: DB:link_attribute_type/description:413
 #, perl-format
@@ -2791,11 +2786,11 @@ msgstr ""
 
 #: DB:country/name:36
 msgid "Cambodia"
-msgstr ""
+msgstr "Kamboĝo"
 
 #: DB:country/name:37
 msgid "Cameroon"
-msgstr ""
+msgstr "Kameruno"
 
 #: ../root/doc/edit_type.tt:65
 #, perl-format
@@ -2823,7 +2818,7 @@ msgstr ""
 #: ../root/work/merge.tt:19
 #, perl-format
 msgid "Cancel"
-msgstr "Отменить"
+msgstr ""
 
 #: ../root/edit/cancel.tt:1 ../root/edit/cancel.tt:2
 #, perl-format
@@ -2902,7 +2897,7 @@ msgstr ""
 
 #: DB:country/name:39
 msgid "Cape Verde"
-msgstr ""
+msgstr "Kabo-Verdo"
 
 #: DB:release_packaging/name:4
 msgid "Cardboard/Paper Sleeve"
@@ -2910,7 +2905,7 @@ msgstr ""
 
 #: DB:script/name:108
 msgid "Carian"
-msgstr ""
+msgstr "Karia"
 
 #: DB:medium_format/name:9
 msgid "Cartridge"
@@ -2961,11 +2956,11 @@ msgstr ""
 
 #: DB:country/name:40
 msgid "Cayman Islands"
-msgstr ""
+msgstr "Kejmanoj"
 
 #: DB:language/name:70
 msgid "Cebuano"
-msgstr ""
+msgstr "Cebuana"
 
 #: DB:language/name:71
 msgid "Celtic languages"
@@ -2973,7 +2968,7 @@ msgstr ""
 
 #: DB:country/name:41
 msgid "Central African Republic"
-msgstr ""
+msgstr "Centr-Afrika Respubliko"
 
 #: DB:language/name:66
 msgid "Central American Indian languages"
@@ -2986,19 +2981,19 @@ msgstr ""
 
 #: DB:country/name:42
 msgid "Chad"
-msgstr ""
+msgstr "Ĉado"
 
 #: DB:language/name:75
 msgid "Chagatai"
-msgstr ""
+msgstr "Ĉagataja"
 
 #: DB:script/name:115
 msgid "Chakma"
-msgstr ""
+msgstr "Ĉakma"
 
 #: DB:script/name:71
 msgid "Cham"
-msgstr ""
+msgstr "Ĉama"
 
 #: DB:link_attribute_type/description:245
 #, perl-format
@@ -3012,7 +3007,7 @@ msgstr ""
 
 #: DB:language/name:86
 msgid "Chamic languages"
-msgstr ""
+msgstr "Ĉamaj lingvoj"
 
 #: DB:language/name:72
 msgid "Chamorro"
@@ -3091,7 +3086,7 @@ msgstr ""
 
 #: DB:language/name:74
 msgid "Chechen"
-msgstr ""
+msgstr "Ĉeĉena"
 
 #: ../root/statistics/timeline.tt:75
 #, perl-format
@@ -3100,15 +3095,15 @@ msgstr ""
 
 #: DB:language/name:82 DB:script/name:88
 msgid "Cherokee"
-msgstr ""
+msgstr "Ĉeroka"
 
 #: DB:language/name:85
 msgid "Cheyenne"
-msgstr ""
+msgstr "Ĉejena"
 
 #: DB:language/name:73
 msgid "Chibcha"
-msgstr ""
+msgstr "Ĉibĉa"
 
 #: DB:language/name:313
 msgid "Chichewa"
@@ -3124,7 +3119,7 @@ msgstr ""
 
 #: DB:country/name:43
 msgid "Chile"
-msgstr ""
+msgstr "Ĉilio"
 
 #: DB:country/name:44
 msgid "China"
@@ -3151,7 +3146,7 @@ msgstr ""
 
 #: DB:language/name:79
 msgid "Chinook jargon"
-msgstr ""
+msgstr "Ĉinuka ĵargono"
 
 #: DB:language/name:81
 msgid "Chipewyan"
@@ -3159,11 +3154,11 @@ msgstr ""
 
 #: DB:language/name:80
 msgid "Choctaw"
-msgstr ""
+msgstr "Ĉoktaŭa"
 
 #: DB:country/name:45
 msgid "Christmas Island"
-msgstr ""
+msgstr "Kristnaskinsulo"
 
 #: DB:language/name:83
 msgid "Church Slavic"
@@ -3171,15 +3166,15 @@ msgstr ""
 
 #: DB:language/name:77
 msgid "Chuukese"
-msgstr ""
+msgstr "Ĉuka"
 
 #: DB:language/name:84
 msgid "Chuvash"
-msgstr ""
+msgstr "Ĉuvaŝa"
 
 #: DB:script/name:45
 msgid "Cirth"
-msgstr ""
+msgstr "Kirta (Tolkien)"
 
 #: DB:language/name:312
 msgid "Classical Newari"
@@ -3187,7 +3182,7 @@ msgstr ""
 
 #: DB:language/name:481
 msgid "Classical Syriac"
-msgstr ""
+msgstr "Klasika siria"
 
 #: ../root/scripts/text_strings.tt:78
 #, perl-format
@@ -3251,7 +3246,7 @@ msgstr ""
 
 #: DB:country/name:46
 msgid "Cocos (Keeling) Islands"
-msgstr ""
+msgstr "Kokosinsuloj"
 
 #: ../root/search/results-label.tt:13
 #, perl-format
@@ -3264,15 +3259,15 @@ msgstr ""
 
 #: DB:script/name:130
 msgid "Code for uncoded script"
-msgstr ""
+msgstr "Kodo por nekodita skribo"
 
 #: DB:script/name:129
 msgid "Code for undetermined script"
-msgstr ""
+msgstr "Kodo por nedeterminita skribo"
 
 #: DB:script/name:128
 msgid "Code for unwritten documents"
-msgstr ""
+msgstr "Kodo por neskribitaj dokumentoj"
 
 #: ../root/layout/menu.tt:92
 #, perl-format
@@ -3328,7 +3323,7 @@ msgstr ""
 
 #: DB:country/name:47
 msgid "Colombia"
-msgstr ""
+msgstr "Kolombio"
 
 #: ../root/main/index.tt:70
 #, perl-format
@@ -3337,7 +3332,7 @@ msgstr ""
 
 #: DB:country/name:48
 msgid "Comoros"
-msgstr ""
+msgstr "Komoroj"
 
 #: ../root/annotation/history.tt:38
 #, perl-format
@@ -3404,7 +3399,7 @@ msgstr ""
 
 #: DB:country/name:236
 msgid "Congo, The Democratic Republic of the"
-msgstr ""
+msgstr "Demokratia Respubliko Kongo"
 
 #: ../root/account/registered.tt:4
 #, perl-format
@@ -3431,7 +3426,7 @@ msgstr ""
 
 #: DB:language/name:87 DB:script/name:23
 msgid "Coptic"
-msgstr ""
+msgstr "Kopta"
 
 #: ../root/components/forms.tt:181
 #, perl-format
@@ -3460,15 +3455,15 @@ msgstr ""
 
 #: DB:language/name:88
 msgid "Cornish"
-msgstr ""
+msgstr "Kornvala"
 
 #: DB:language/name:89
 msgid "Corsican"
-msgstr ""
+msgstr "Korsika"
 
 #: DB:country/name:51
 msgid "Costa Rica"
-msgstr ""
+msgstr "Kostariko"
 
 #: ../root/statistics/view_js.tt:73
 #, perl-format
@@ -3992,7 +3987,7 @@ msgstr ""
 
 #: DB:language/name:93
 msgid "Cree"
-msgstr ""
+msgstr "Kria"
 
 #: DB:language/name:286
 msgid "Creek"
@@ -4029,7 +4024,7 @@ msgstr ""
 
 #: DB:language/name:366
 msgid "Croatian"
-msgstr ""
+msgstr "Kroata"
 
 #: DB:link_attribute_type/description:427
 #, perl-format
@@ -4038,11 +4033,11 @@ msgstr ""
 
 #: DB:country/name:54
 msgid "Cuba"
-msgstr ""
+msgstr "Kubo"
 
 #: DB:script/name:1
 msgid "Cuneiform, Sumero-Akkadian"
-msgstr ""
+msgstr "Kojnoskribo, sumera-akada"
 
 #: DB:country/name:259
 msgid "Curaçao"
@@ -4066,7 +4061,7 @@ msgstr ""
 
 #: DB:script/name:82
 msgid "Cypriot"
-msgstr ""
+msgstr "Kipra"
 
 #: DB:country/name:55
 msgid "Cyprus"
@@ -4074,19 +4069,19 @@ msgstr ""
 
 #: DB:script/name:31
 msgid "Cyrillic"
-msgstr ""
+msgstr "Cirila"
 
 #: DB:script/name:32
 msgid "Cyrillic (Old Church Slavonic variant)"
-msgstr ""
+msgstr "Cirila (slavona vario)"
 
 #: DB:language/name:98
 msgid "Czech"
-msgstr ""
+msgstr "Ĉeĥa"
 
 #: DB:country/name:56
 msgid "Czech Republic"
-msgstr ""
+msgstr "Ĉeĥio"
 
 #: DB:country/name:245
 msgid "Czechoslovakia (historical, 1918-1992)"
@@ -4094,7 +4089,7 @@ msgstr ""
 
 #: DB:country/name:52
 msgid "Côte d'Ivoire"
-msgstr ""
+msgstr "Ebur-Bordo"
 
 #: DB:medium_format/name:11
 msgid "DAT"
@@ -4158,11 +4153,11 @@ msgstr ""
 
 #: DB:language/name:99
 msgid "Dakota"
-msgstr ""
+msgstr "Dakotaa"
 
 #: DB:language/name:100
 msgid "Danish"
-msgstr ""
+msgstr "Dana"
 
 #: DB:link_attribute_type/description:419
 #, perl-format
@@ -4174,7 +4169,7 @@ msgstr ""
 
 #: DB:language/name:101
 msgid "Dargwa"
-msgstr ""
+msgstr "Darga"
 
 #: ../root/layout/menu.tt:86
 #, perl-format
@@ -4209,12 +4204,12 @@ msgstr ""
 #: ../root/tracklist/index.tt:31
 #, perl-format
 msgid "Date"
-msgstr "Дата"
+msgstr ""
 
 #: ../root/artist/edit_form.tt:48 ../root/label/edit_form.tt:49
 #, perl-format
 msgid "Date Period"
-msgstr "Период времени"
+msgstr ""
 
 #: ../root/account/preferences.tt:14
 #, perl-format
@@ -4234,8 +4229,6 @@ msgid ""
 "Dates are in the format YYYY-MM-DD. Partial dates such as YYYY-MM or just "
 "YYYY are OK, or you can omit the date entirely."
 msgstr ""
-"Даты записываются в формате ГГГГ-ММ-ДД. Можно вводить даты частично, "
-"например ГГГГ-ММ или ГГГГ, или не вписывать дату вообще."
 
 #: DB:link_attribute_type/description:496
 #, perl-format
@@ -4264,7 +4257,7 @@ msgstr ""
 
 #: DB:language/name:103
 msgid "Delaware"
-msgstr ""
+msgstr "Delavara"
 
 #: ../root/edit/search_macros.tt:104
 #, perl-format
@@ -4299,7 +4292,7 @@ msgstr ""
 
 #: DB:country/name:57
 msgid "Denmark"
-msgstr ""
+msgstr "Danio"
 
 #: DB:link_type/description:117
 #, perl-format
@@ -4358,7 +4351,7 @@ msgstr ""
 #: ../root/work/header.tt:1
 #, perl-format
 msgid "Details"
-msgstr "Подробнее"
+msgstr ""
 
 #: ../root/release/edit/tracklist.tt:197
 #, perl-format
@@ -4399,7 +4392,7 @@ msgstr ""
 
 #: DB:language/name:106
 msgid "Dinka"
-msgstr ""
+msgstr "Dinka"
 
 #: ../root/search/form.tt:45
 #, perl-format
@@ -4557,7 +4550,7 @@ msgstr ""
 
 #: DB:country/name:58
 msgid "Djibouti"
-msgstr ""
+msgstr "Ĝibutio"
 
 #: ../root/release/edit/duplicates.tt:29
 #, perl-format
@@ -4576,11 +4569,11 @@ msgstr ""
 
 #: DB:language/name:108
 msgid "Dogri"
-msgstr ""
+msgstr "Dogra"
 
 #: DB:language/name:105
 msgid "Dogrib"
-msgstr ""
+msgstr "Dogriba"
 
 #: DB:link_attribute_type/description:483
 #, perl-format
@@ -4589,11 +4582,11 @@ msgstr ""
 
 #: DB:country/name:59
 msgid "Dominica"
-msgstr ""
+msgstr "Dominiko"
 
 #: DB:country/name:60
 msgid "Dominican Republic"
-msgstr ""
+msgstr "Domingo"
 
 #: ../root/user/login.tt:12
 #, perl-format
@@ -4636,7 +4629,7 @@ msgstr ""
 
 #: DB:language/name:111
 msgid "Duala"
-msgstr ""
+msgstr "Duala"
 
 #: DB:link_attribute_type/description:161 DB:link_attribute_type/name:161
 #, perl-format
@@ -4672,11 +4665,11 @@ msgstr ""
 
 #: DB:language/name:114
 msgid "Dyula"
-msgstr ""
+msgstr "Djula"
 
 #: DB:language/name:115
 msgid "Dzongkha"
-msgstr ""
+msgstr "Dzonka"
 
 #: DB:release_group_type/name:3 DB:link_attribute_type/name:545
 #, perl-format
@@ -4701,7 +4694,7 @@ msgstr ""
 
 #: DB:country/name:62
 msgid "Ecuador"
-msgstr ""
+msgstr "Ekvadoro"
 
 #: ../root/admin/linkattributetype/common.tt:24
 #: ../root/admin/linktype/tree.tt:18 ../root/artist/aliases.tt:31
@@ -4716,12 +4709,12 @@ msgstr ""
 #: ../root/user/collections.tt:23 ../root/work/header.tt:1
 #, perl-format
 msgid "Edit"
-msgstr "Править"
+msgstr "Redakti"
 
 #: ../root/edit/index.tt:9
 #, perl-format
 msgid "Edit #{id}"
-msgstr ""
+msgstr "Redakto #{id}"
 
 #: ../root/release/edit-links.tt:3
 #, perl-format
@@ -4736,12 +4729,12 @@ msgstr ""
 #: ../root/artist/edit.tt:17
 #, perl-format
 msgid "Edit Artist"
-msgstr "Править исполнителя"
+msgstr "Redakti artiston"
 
 #: ../root/artist/edit_alias.tt:1
 #, perl-format
 msgid "Edit Artist Alias"
-msgstr ""
+msgstr "Redakti alinomon de artisto"
 
 #: ../root/artist/edit_annotation.tt:1
 #, perl-format
@@ -4756,7 +4749,7 @@ msgstr ""
 #: ../root/collection/edit.tt:1
 #, perl-format
 msgid "Edit Collection"
-msgstr ""
+msgstr "Redakti aron"
 
 #: ../root/statistics/view_js.tt:26
 #, perl-format
@@ -4766,12 +4759,12 @@ msgstr ""
 #: ../root/label/edit.tt:15
 #, perl-format
 msgid "Edit Label"
-msgstr ""
+msgstr "Redakti etikedon"
 
 #: ../root/label/edit_alias.tt:1
 #, perl-format
 msgid "Edit Label Alias"
-msgstr ""
+msgstr "Redakti alinomon de etikedo"
 
 #: ../root/edit/not_found.tt:1 ../root/edit/not_found.tt:2
 #, perl-format
@@ -4854,7 +4847,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Edit/URL/Edit.pm:22
 #, perl-format
 msgid "Edit URL"
-msgstr ""
+msgstr "Redakti URL"
 
 #: ../root/user/profile/layout.tt:27
 #, perl-format
@@ -4864,12 +4857,12 @@ msgstr ""
 #: ../root/work/edit.tt:15
 #, perl-format
 msgid "Edit Work"
-msgstr ""
+msgstr "Redakti pecon"
 
 #: ../root/work/edit_alias.tt:1
 #, perl-format
 msgid "Edit Work Alias"
-msgstr ""
+msgstr "Redakti alinomon de peco"
 
 #: ../root/work/edit_annotation.tt:1
 #, perl-format
@@ -4888,7 +4881,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditArtistAlias.pm:7
 #, perl-format
 msgid "Edit artist alias"
-msgstr ""
+msgstr "Redakti alinomon de artisto"
 
 #: ../root/artist/edit_annotation.tt:2
 #, perl-format
@@ -4898,14 +4891,14 @@ msgstr ""
 #: ../root/edit/edit_header.tt:92
 #, perl-format
 msgid "Edit by {editor}"
-msgstr ""
+msgstr "Redakton je {editor}"
 
 #: ../root/label/edit_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditLabelAlias.pm:7
 #: ../lib/MusicBrainz/Server/Edit/Label/EditAlias.pm:12
 #, perl-format
 msgid "Edit label alias"
-msgstr ""
+msgstr "Redakti alinomon de etikedo"
 
 #: ../root/label/edit_annotation.tt:2
 #, perl-format
@@ -4957,7 +4950,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Edit/Work/EditAlias.pm:13
 #, perl-format
 msgid "Edit work alias"
-msgstr ""
+msgstr "Redakti alinomon de peco"
 
 #: ../root/work/edit_annotation.tt:2
 #, perl-format
@@ -4967,7 +4960,7 @@ msgstr ""
 #: ../root/release/edit-links.tt:13
 #, perl-format
 msgid "Edit:"
-msgstr "Править:"
+msgstr ""
 
 #: ../root/edit/details/edit_release_events.tt:58
 #, perl-format
@@ -5134,11 +5127,11 @@ msgstr ""
 
 #: DB:language/name:116
 msgid "Efik"
-msgstr ""
+msgstr "Efika"
 
 #: DB:country/name:63
 msgid "Egypt"
-msgstr ""
+msgstr "Egiptio"
 
 #: DB:language/name:117
 msgid "Egyptian (Ancient)"
@@ -5146,27 +5139,27 @@ msgstr ""
 
 #: DB:script/name:6
 msgid "Egyptian demotic"
-msgstr ""
+msgstr "Egipta demotika"
 
 #: DB:script/name:5
 msgid "Egyptian hieratic"
-msgstr ""
+msgstr "Egipta hieratika"
 
 #: DB:script/name:4
 msgid "Egyptian hieroglyphs"
-msgstr ""
+msgstr "Egipta hieroglifa"
 
 #: DB:language/name:118
 msgid "Ekajuk"
-msgstr ""
+msgstr "Ekaĝuka"
 
 #: DB:country/name:64
 msgid "El Salvador"
-msgstr ""
+msgstr "Salvadoro"
 
 #: DB:language/name:119
 msgid "Elamite"
-msgstr ""
+msgstr "Elama"
 
 #: DB:script/name:143
 msgid "Elbasan"
@@ -5251,11 +5244,11 @@ msgstr ""
 
 #: DB:language/name:120
 msgid "English"
-msgstr ""
+msgstr "Angla"
 
 #: DB:language/name:121
 msgid "English, Middle (1100-1500)"
-msgstr ""
+msgstr "Angla, meza (1100-1500)"
 
 #: DB:language/name:16
 msgid "English, Old (ca.450-1100)"
@@ -5264,7 +5257,7 @@ msgstr ""
 #: ../root/components/forms.tt:24 ../root/release/edit/editnote.tt:42
 #, perl-format
 msgid "Enter edit"
-msgstr "Отредактировать"
+msgstr ""
 
 #: ../root/edit/vote.tt:29
 #, perl-format
@@ -5294,11 +5287,11 @@ msgstr ""
 
 #: DB:country/name:65
 msgid "Equatorial Guinea"
-msgstr ""
+msgstr "Ekvatora Gvineo"
 
 #: DB:country/name:66
 msgid "Eritrea"
-msgstr ""
+msgstr "Eritreo"
 
 #: ../root/report/not_available.tt:1 ../root/report/not_available.tt:3
 #, perl-format
@@ -5333,11 +5326,11 @@ msgstr ""
 
 #: DB:language/name:290
 msgid "Erzya"
-msgstr ""
+msgstr "Erzja"
 
 #: DB:language/name:122
 msgid "Esperanto"
-msgstr ""
+msgstr "Esperanto"
 
 #: DB:country/name:67
 msgid "Estonia"
@@ -5345,11 +5338,11 @@ msgstr ""
 
 #: DB:language/name:123
 msgid "Estonian"
-msgstr ""
+msgstr "Estona"
 
 #: DB:country/name:68
 msgid "Ethiopia"
-msgstr ""
+msgstr "Etiopio"
 
 #: DB:script/name:86
 msgid "Ethiopic"
@@ -5376,11 +5369,11 @@ msgstr ""
 
 #: DB:language/name:124
 msgid "Ewe"
-msgstr ""
+msgstr "Evea"
 
 #: DB:language/name:125
 msgid "Ewondo"
-msgstr ""
+msgstr "Eunda"
 
 #: ../root/statistics/timeline.tt:83
 #, perl-format
@@ -5481,15 +5474,15 @@ msgstr ""
 
 #: DB:country/name:69
 msgid "Falkland Islands (Malvinas)"
-msgstr ""
+msgstr "Falklandoj (Malvinoj)"
 
 #: DB:language/name:126
 msgid "Fang"
-msgstr ""
+msgstr "Fanga"
 
 #: DB:language/name:128
 msgid "Fanti"
-msgstr ""
+msgstr "Fanta"
 
 #: DB:country/name:70
 msgid "Faroe Islands"
@@ -5497,7 +5490,7 @@ msgstr ""
 
 #: DB:language/name:127
 msgid "Faroese"
-msgstr ""
+msgstr "Feroa"
 
 #: DB:gender/name:2
 msgid "Female"
@@ -5519,7 +5512,7 @@ msgstr ""
 
 #: DB:language/name:129
 msgid "Fijian"
-msgstr ""
+msgstr "Fiĝia"
 
 #: ../root/taglookup/form.tt:9
 #, perl-format
@@ -5537,11 +5530,11 @@ msgstr ""
 
 #: DB:country/name:72
 msgid "Finland"
-msgstr ""
+msgstr "Finnlando"
 
 #: DB:language/name:131
 msgid "Finnish"
-msgstr ""
+msgstr "Finna"
 
 #: DB:language/name:132
 msgid "Finno-Ugrian languages"
@@ -5556,7 +5549,7 @@ msgstr ""
 
 #: DB:language/name:133
 msgid "Fon"
-msgstr ""
+msgstr "Fona"
 
 #: ../root/search/error/wrapper.tt:5
 #, perl-format
@@ -5654,7 +5647,6 @@ msgid "Found in {num} user collection"
 msgid_plural "Found in {num} user collections"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/release/lookup.tt:4
 #, perl-format
@@ -5667,7 +5659,6 @@ msgid "Found {n} edit"
 msgid_plural "Found at least {n} edits"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/components/with-pager.tt:5
 #, perl-format
@@ -5675,7 +5666,6 @@ msgid "Found {n} result"
 msgid_plural "Found {n} results"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/components/with-pager.tt:7
 #, perl-format
@@ -5683,7 +5673,6 @@ msgid "Found {n} result for \"{q}\""
 msgid_plural "Found {n} results for \"{q}\""
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/artist/index.tt:7 ../root/artist/layout.tt:19
 #: ../root/label/layout.tt:14 ../root/scripts/text_strings.tt:72
@@ -5700,7 +5689,7 @@ msgstr ""
 
 #: DB:country/name:73
 msgid "France"
-msgstr ""
+msgstr "Francio"
 
 #: ../root/layout/menu.tt:148
 #, perl-format
@@ -5729,7 +5718,7 @@ msgstr ""
 
 #: DB:language/name:134
 msgid "French"
-msgstr ""
+msgstr "Franca"
 
 #: DB:country/name:75
 msgid "French Guiana"
@@ -5737,11 +5726,11 @@ msgstr ""
 
 #: DB:country/name:76
 msgid "French Polynesia"
-msgstr ""
+msgstr "Franca Polinezio"
 
 #: DB:country/name:77
 msgid "French Southern Territories"
-msgstr ""
+msgstr "Francaj Sudaj Teritorioj"
 
 #: DB:language/name:135
 msgid "French, Middle (ca.1400-1600)"
@@ -5765,7 +5754,7 @@ msgstr ""
 
 #: DB:language/name:139
 msgid "Friulian"
-msgstr ""
+msgstr "Friula"
 
 #: ../root/edit/details/historic/move_disc_id.tt:8
 #: ../root/edit/details/move_disc_id.tt:8
@@ -5775,7 +5764,7 @@ msgstr ""
 
 #: DB:language/name:138
 msgid "Fulah"
-msgstr ""
+msgstr "Fula"
 
 #: ../root/cdstub/index.tt:30 ../root/cdtoc/info.tt:5
 #, perl-format
@@ -5784,27 +5773,27 @@ msgstr ""
 
 #: DB:language/name:140
 msgid "Ga"
-msgstr ""
+msgstr "Gaa"
 
 #: DB:country/name:78
 msgid "Gabon"
-msgstr ""
+msgstr "Gabono"
 
 #: DB:language/name:67
 msgid "Galibi Carib"
-msgstr ""
+msgstr "Kariba"
 
 #: DB:language/name:150
 msgid "Galician"
-msgstr ""
+msgstr "Galega"
 
 #: DB:country/name:79
 msgid "Gambia"
-msgstr ""
+msgstr "Gambio"
 
 #: DB:language/name:249
 msgid "Ganda"
-msgstr ""
+msgstr "Ganda"
 
 #: DB:link_attribute_type/description:464
 #, perl-format
@@ -5818,15 +5807,15 @@ msgstr ""
 
 #: DB:language/name:141
 msgid "Gayo"
-msgstr ""
+msgstr "Gaja"
 
 #: DB:language/name:142
 msgid "Gbaya"
-msgstr ""
+msgstr "Gbaja"
 
 #: DB:language/name:146
 msgid "Geez"
-msgstr ""
+msgstr "Pra-etiopa (Gezo)"
 
 #: ../root/artist/edit_form.tt:42 ../root/artist/index.tt:5
 #: ../root/artist/layout.tt:12 ../root/edit/details/add_artist.tt:31
@@ -5880,11 +5869,11 @@ msgstr ""
 
 #: DB:language/name:144 DB:script/name:36
 msgid "Georgian"
-msgstr ""
+msgstr "Kartvela"
 
 #: DB:language/name:145
 msgid "German"
-msgstr ""
+msgstr "Germana"
 
 #: DB:language/name:299
 msgid "German, Low"
@@ -5922,7 +5911,7 @@ msgstr ""
 
 #: DB:country/name:82
 msgid "Ghana"
-msgstr ""
+msgstr "Ganao"
 
 #: DB:link_attribute_type/description:408
 #, perl-format
@@ -5931,19 +5920,19 @@ msgstr ""
 
 #: DB:country/name:83
 msgid "Gibraltar"
-msgstr ""
+msgstr "Ĝibraltaro"
 
 #: DB:language/name:147
 msgid "Gilbertese"
-msgstr ""
+msgstr "Kiribata"
 
 #: DB:script/name:33
 msgid "Glagolitic"
-msgstr ""
+msgstr "Glagolica"
 
 #: DB:language/name:154
 msgid "Gondi"
-msgstr ""
+msgstr "Gonda"
 
 #: ../root/main/frame.tt:3
 #, perl-format
@@ -5962,11 +5951,11 @@ msgstr ""
 
 #: DB:language/name:155
 msgid "Gorontalo"
-msgstr ""
+msgstr "Gorontala"
 
 #: DB:language/name:156 DB:script/name:24
 msgid "Gothic"
-msgstr ""
+msgstr "Gota"
 
 #: DB:script/name:152
 msgid "Grantha"
@@ -5979,7 +5968,7 @@ msgstr ""
 
 #: DB:language/name:157
 msgid "Grebo"
-msgstr ""
+msgstr "Greba"
 
 #: DB:country/name:84
 msgid "Greece"
@@ -5987,7 +5976,7 @@ msgstr ""
 
 #: DB:language/name:159 DB:script/name:22
 msgid "Greek"
-msgstr ""
+msgstr "Greka"
 
 #: DB:link_attribute_type/description:370
 #, perl-format
@@ -6005,7 +5994,7 @@ msgstr ""
 
 #: DB:country/name:85
 msgid "Greenland"
-msgstr ""
+msgstr "Gronlando"
 
 #: DB:language/name:204
 msgid "Greenlandic"
@@ -6013,7 +6002,7 @@ msgstr ""
 
 #: DB:country/name:86
 msgid "Grenada"
-msgstr ""
+msgstr "Grenado"
 
 #: DB:artist_type/name:2
 msgid "Group"
@@ -6026,23 +6015,23 @@ msgstr ""
 
 #: DB:country/name:87
 msgid "Guadeloupe"
-msgstr ""
+msgstr "Gvadelupo"
 
 #: DB:country/name:88
 msgid "Guam"
-msgstr ""
+msgstr "Gvamo"
 
 #: DB:language/name:160
 msgid "Guarani"
-msgstr ""
+msgstr "Gvarania"
 
 #: DB:country/name:89
 msgid "Guatemala"
-msgstr ""
+msgstr "Gvatemalo"
 
 #: DB:country/name:251
 msgid "Guernsey"
-msgstr ""
+msgstr "Gernezejo"
 
 #: ../root/release/edit/missing_entities.tt:20
 #, perl-format
@@ -6068,19 +6057,19 @@ msgstr ""
 
 #: DB:country/name:90
 msgid "Guinea"
-msgstr ""
+msgstr "Gvineo"
 
 #: DB:country/name:91
 msgid "Guinea-Bissau"
-msgstr ""
+msgstr "Gvineo Bisaŭa"
 
 #: DB:language/name:161 DB:script/name:52
 msgid "Gujarati"
-msgstr ""
+msgstr "Guĝarata"
 
 #: DB:script/name:49
 msgid "Gurmukhi"
-msgstr ""
+msgstr "Gurmuka"
 
 #: DB:link_attribute_type/description:508
 #, perl-format
@@ -6089,11 +6078,11 @@ msgstr ""
 
 #: DB:country/name:92
 msgid "Guyana"
-msgstr ""
+msgstr "Gujano"
 
 #: DB:language/name:162
 msgid "Gwich'in"
-msgstr ""
+msgstr "Guiĉina"
 
 #: DB:medium_format/name:17
 msgid "HD-DVD"
@@ -6105,11 +6094,11 @@ msgstr ""
 
 #: DB:language/name:163
 msgid "Haida"
-msgstr ""
+msgstr "Haida"
 
 #: DB:country/name:93
 msgid "Haiti"
-msgstr ""
+msgstr "Haitio"
 
 #: DB:language/name:164
 msgid "Haitian Creole"
@@ -6122,15 +6111,15 @@ msgstr ""
 
 #: DB:script/name:92
 msgid "Han (Hanzi, Kanji, Hanja)"
-msgstr ""
+msgstr "Hana"
 
 #: DB:script/name:93
 msgid "Han (Simplified variant)"
-msgstr ""
+msgstr "Hana (simpligita vario)"
 
 #: DB:script/name:94
 msgid "Han (Traditional variant)"
-msgstr ""
+msgstr "Hana (tradicia vario)"
 
 #: DB:link_attribute_type/description:398
 #, perl-format
@@ -6152,11 +6141,11 @@ msgstr ""
 
 #: DB:language/name:165
 msgid "Hausa"
-msgstr ""
+msgstr "Haŭsa"
 
 #: DB:language/name:166
 msgid "Hawaiian"
-msgstr ""
+msgstr "Havaja"
 
 #: DB:link_attribute_type/name:400
 #, perl-format
@@ -6170,11 +6159,11 @@ msgstr ""
 
 #: DB:country/name:94
 msgid "Heard Island and McDonald Islands"
-msgstr ""
+msgstr "Herda kaj Makdonaldaj Insuloj"
 
 #: DB:language/name:167 DB:script/name:11
 msgid "Hebrew"
-msgstr ""
+msgstr "Hebrea"
 
 #: ../root/edit/list_header.tt:18
 #, perl-format
@@ -6183,7 +6172,7 @@ msgstr ""
 
 #: DB:language/name:168
 msgid "Herero"
-msgstr ""
+msgstr "Herera"
 
 #: ../root/release/index.tt:12
 #, perl-format
@@ -6207,7 +6196,7 @@ msgstr ""
 
 #: DB:language/name:169
 msgid "Hiligaynon"
-msgstr ""
+msgstr "Hiligajnona"
 
 #: DB:language/name:170
 msgid "Himachali languages"
@@ -6215,19 +6204,19 @@ msgstr ""
 
 #: DB:language/name:171
 msgid "Hindi"
-msgstr ""
+msgstr "Hindia"
 
 #: DB:script/name:83
 msgid "Hiragana"
-msgstr ""
+msgstr "Rondaj kanaoj"
 
 #: DB:language/name:174
 msgid "Hiri Motu"
-msgstr ""
+msgstr "Hirimotua"
 
 #: DB:language/name:172
 msgid "Hittite"
-msgstr ""
+msgstr "Hitita"
 
 #: DB:language/name:173
 msgid "Hmong"
@@ -6249,11 +6238,11 @@ msgstr ""
 
 #: DB:country/name:95
 msgid "Honduras"
-msgstr ""
+msgstr "Honduro"
 
 #: DB:country/name:96
 msgid "Hong Kong"
-msgstr ""
+msgstr "Honkongo"
 
 #: ../root/layout.tt:150
 #, perl-format
@@ -6293,7 +6282,7 @@ msgstr ""
 
 #: DB:language/name:177
 msgid "Hupa"
-msgstr ""
+msgstr "Hupa"
 
 #: DB:link_attribute_type/description:283
 #, perl-format
@@ -6455,7 +6444,7 @@ msgstr ""
 
 #: DB:language/name:178
 msgid "Iban"
-msgstr ""
+msgstr "Ibana"
 
 #: DB:country/name:98
 msgid "Iceland"
@@ -6463,7 +6452,7 @@ msgstr ""
 
 #: DB:language/name:180
 msgid "Icelandic"
-msgstr ""
+msgstr "Islanda"
 
 #: ../root/statistics/index.tt:82
 #, perl-format
@@ -6472,7 +6461,7 @@ msgstr ""
 
 #: DB:language/name:181
 msgid "Ido"
-msgstr ""
+msgstr "Ido"
 
 #: ../root/release/edit/missing_entities.tt:65
 #, perl-format
@@ -6663,19 +6652,19 @@ msgstr ""
 
 #: DB:language/name:179
 msgid "Igbo"
-msgstr ""
+msgstr "Igba"
 
 #: DB:language/name:183
 msgid "Ijo languages"
-msgstr ""
+msgstr "Iĝoaj lingvoj"
 
 #: DB:language/name:186
 msgid "Iloko"
-msgstr ""
+msgstr "Iloka"
 
 #: DB:script/name:113
 msgid "Imperial Aramaic"
-msgstr ""
+msgstr "Imperia aramea"
 
 #: ../root/freedb/show.tt:45 ../root/freedb/show.tt:103
 #, perl-format
@@ -6727,7 +6716,7 @@ msgstr ""
 
 #: DB:country/name:99
 msgid "India"
-msgstr ""
+msgstr "Barato"
 
 #: DB:link_attribute_type/description:502 DB:link_attribute_type/name:502
 #, perl-format
@@ -7646,7 +7635,7 @@ msgstr ""
 
 #: DB:language/name:189
 msgid "Indonesian"
-msgstr ""
+msgstr "Indonezia"
 
 #: DB:script/name:97
 msgid "Indus"
@@ -7659,15 +7648,15 @@ msgstr ""
 
 #: DB:language/name:191
 msgid "Ingush"
-msgstr ""
+msgstr "Inguŝa"
 
 #: DB:script/name:121
 msgid "Inscriptional Pahlavi"
-msgstr ""
+msgstr "Gravura palava"
 
 #: DB:script/name:124
 msgid "Inscriptional Parthian"
-msgstr ""
+msgstr "Gravura parta"
 
 #: ../root/admin/index.tt:8 ../root/admin/linkattributetype/instruments.tt:3
 #: ../root/admin/linkattributetype/instruments.tt:5 ../root/layout/menu.tt:227
@@ -7706,11 +7695,11 @@ msgstr ""
 
 #: DB:language/name:184
 msgid "Inuktitut"
-msgstr ""
+msgstr "Inuktituta"
 
 #: DB:language/name:192
 msgid "Inupiaq"
-msgstr ""
+msgstr "Inupiaka"
 
 #: ../root/cdstub/error.tt:5
 #, perl-format
@@ -7719,7 +7708,7 @@ msgstr ""
 
 #: DB:country/name:101
 msgid "Iran, Islamic Republic of"
-msgstr ""
+msgstr "Irano, Islama Respubliko"
 
 #: DB:language/name:193
 msgid "Iranian languages"
@@ -7727,7 +7716,7 @@ msgstr ""
 
 #: DB:country/name:102
 msgid "Iraq"
-msgstr ""
+msgstr "Irako"
 
 #: DB:country/name:103
 msgid "Ireland"
@@ -7735,7 +7724,7 @@ msgstr ""
 
 #: DB:language/name:149
 msgid "Irish"
-msgstr ""
+msgstr "Irlanda"
 
 #: DB:link_attribute_type/description:491 DB:link_attribute_type/name:491
 #, perl-format
@@ -7749,23 +7738,23 @@ msgstr ""
 
 #: DB:language/name:270
 msgid "Irish, Middle (900-1200)"
-msgstr ""
+msgstr "Irlanda, meza (900-1200)"
 
 #: DB:language/name:369
 msgid "Irish, Old (to 900)"
-msgstr ""
+msgstr "Irlanda, malnova (ĝis 900)"
 
 #: DB:language/name:194
 msgid "Iroquoian languages"
-msgstr ""
+msgstr "Irokezaj lingvoj"
 
 #: DB:country/name:252
 msgid "Isle of Man"
-msgstr ""
+msgstr "Manksinsulo"
 
 #: DB:country/name:104
 msgid "Israel"
-msgstr ""
+msgstr "Israelo"
 
 #: ../root/layout.tt:96
 #, perl-format
@@ -7776,7 +7765,7 @@ msgstr ""
 
 #: DB:language/name:195
 msgid "Italian"
-msgstr ""
+msgstr "Itala"
 
 #: DB:country/name:105
 msgid "Italy"
@@ -7789,7 +7778,7 @@ msgstr ""
 
 #: DB:country/name:106
 msgid "Jamaica"
-msgstr ""
+msgstr "Jamajko"
 
 #: DB:country/name:107
 msgid "Japan"
@@ -7820,7 +7809,7 @@ msgstr ""
 
 #: DB:language/name:196 DB:script/name:73
 msgid "Javanese"
-msgstr ""
+msgstr "Java"
 
 #: ../root/release/edit/layout.tt:22
 #, perl-format
@@ -7840,7 +7829,7 @@ msgstr ""
 
 #: DB:country/name:253
 msgid "Jersey"
-msgstr ""
+msgstr "Ĵerzejo"
 
 #: DB:release_packaging/name:1
 msgid "Jewel Case"
@@ -7859,7 +7848,7 @@ msgstr ""
 
 #: DB:country/name:108
 msgid "Jordan"
-msgstr ""
+msgstr "Jordanio"
 
 #: DB:language/name:200
 msgid "Judeo-Arabic"
@@ -7880,11 +7869,11 @@ msgstr ""
 
 #: DB:language/name:212
 msgid "Kabardian"
-msgstr ""
+msgstr "Kabarda"
 
 #: DB:language/name:202
 msgid "Kabyle"
-msgstr ""
+msgstr "Kabila"
 
 #: DB:language/name:203
 msgid "Kachin"
@@ -7892,7 +7881,7 @@ msgstr ""
 
 #: DB:script/name:116
 msgid "Kaithi"
-msgstr ""
+msgstr "Kajasta"
 
 #: DB:language/name:459
 msgid "Kalmyk"
@@ -7900,7 +7889,7 @@ msgstr ""
 
 #: DB:language/name:205
 msgid "Kamba"
-msgstr ""
+msgstr "Kamba"
 
 #: DB:link_attribute_type/description:507
 #, perl-format
@@ -7909,7 +7898,7 @@ msgstr ""
 
 #: DB:language/name:206 DB:script/name:60
 msgid "Kannada"
-msgstr ""
+msgstr "Kanara"
 
 #: DB:link_attribute_type/description:509
 #, perl-format
@@ -7923,47 +7912,47 @@ msgstr ""
 
 #: DB:language/name:209
 msgid "Kanuri"
-msgstr ""
+msgstr "Kanura"
 
 #: DB:language/name:201
 msgid "Kara-Kalpak"
-msgstr ""
+msgstr "Karakalpaka"
 
 #: DB:language/name:227
 msgid "Karachay-Balkar"
-msgstr ""
+msgstr "Karaĉaja-balkara"
 
 #: DB:language/name:477
 msgid "Karelian"
-msgstr ""
+msgstr "Karela"
 
 #: DB:language/name:207
 msgid "Karen languages"
-msgstr ""
+msgstr "Karenaj lingvoj"
 
 #: DB:language/name:208
 msgid "Kashmiri"
-msgstr ""
+msgstr "Kaŝmira"
 
 #: DB:language/name:96
 msgid "Kashubian"
-msgstr ""
+msgstr "Kaŝuba"
 
 #: DB:script/name:84
 msgid "Katakana"
-msgstr ""
+msgstr "Strekaj kanaoj"
 
 #: DB:language/name:210
 msgid "Kawi"
-msgstr ""
+msgstr "Kavia"
 
 #: DB:script/name:70
 msgid "Kayah Li"
-msgstr ""
+msgstr "Kayah Li"
 
 #: DB:language/name:211
 msgid "Kazakh"
-msgstr ""
+msgstr "Kazaĥa"
 
 #: DB:country/name:109
 msgid "Kazakhstan"
@@ -7998,15 +7987,15 @@ msgstr ""
 
 #: DB:country/name:110
 msgid "Kenya"
-msgstr ""
+msgstr "Kenjo"
 
 #: DB:script/name:48
 msgid "Kharoshthi"
-msgstr ""
+msgstr "Karoŝta"
 
 #: DB:language/name:213
 msgid "Khasi"
-msgstr ""
+msgstr "Kasia"
 
 #: DB:link_attribute_type/description:388
 #, perl-format
@@ -8015,7 +8004,7 @@ msgstr ""
 
 #: DB:script/name:68
 msgid "Khmer"
-msgstr ""
+msgstr "Kmera"
 
 #: DB:language/name:215
 msgid "Khmer, Central"
@@ -8051,7 +8040,7 @@ msgstr ""
 
 #: DB:language/name:218
 msgid "Kinyarwanda"
-msgstr ""
+msgstr "Ruanda"
 
 #: DB:language/name:219
 msgid "Kirghiz"
@@ -8059,7 +8048,7 @@ msgstr ""
 
 #: DB:country/name:111
 msgid "Kiribati"
-msgstr ""
+msgstr "Kiribato"
 
 #: DB:language/name:421
 msgid "Klingon"
@@ -8067,15 +8056,15 @@ msgstr ""
 
 #: DB:language/name:222
 msgid "Komi"
-msgstr ""
+msgstr "Komia"
 
 #: DB:language/name:223
 msgid "Kongo"
-msgstr ""
+msgstr "Konga"
 
 #: DB:language/name:221
 msgid "Konkani"
-msgstr ""
+msgstr "Konkana"
 
 #: DB:country/name:112
 msgid "Korea (North), Democratic People's Republic of"
@@ -8087,7 +8076,7 @@ msgstr ""
 
 #: DB:language/name:224 DB:script/name:43
 msgid "Korean"
-msgstr ""
+msgstr "Korea"
 
 #: DB:link_attribute_type/description:334
 #, perl-format
@@ -8097,15 +8086,15 @@ msgstr ""
 
 #: DB:language/name:225
 msgid "Kosraean"
-msgstr ""
+msgstr "Kosraja"
 
 #: DB:language/name:226 DB:script/name:146
 msgid "Kpelle"
-msgstr ""
+msgstr "Kpela"
 
 #: DB:language/name:228
 msgid "Kru languages"
-msgstr ""
+msgstr "Kruaj lingvoj"
 
 #: DB:language/name:230
 msgid "Kuanyama"
@@ -8113,27 +8102,27 @@ msgstr ""
 
 #: DB:language/name:231
 msgid "Kumyk"
-msgstr ""
+msgstr "Kumika"
 
 #: DB:language/name:232
 msgid "Kurdish"
-msgstr ""
+msgstr "Kurda"
 
 #: DB:language/name:229
 msgid "Kurukh"
-msgstr ""
+msgstr "Kuruka"
 
 #: DB:language/name:233
 msgid "Kutenai"
-msgstr ""
+msgstr "Kutenaja"
 
 #: DB:country/name:114
 msgid "Kuwait"
-msgstr ""
+msgstr "Kuvajto"
 
 #: DB:country/name:115
 msgid "Kyrgyzstan"
-msgstr ""
+msgstr "Kirgizio"
 
 #: ../root/cdtoc/list.tt:10 ../root/collection/index.tt:16
 #: ../root/components/common-macros.tt:424
@@ -8146,7 +8135,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:40
 #, perl-format
 msgid "Label"
-msgstr "Ярлык"
+msgstr "Etikedo"
 
 #: ../root/statistics/view_js.tt:28
 #, perl-format
@@ -8284,19 +8273,19 @@ msgstr ""
 
 #: DB:language/name:234
 msgid "Ladino"
-msgstr ""
+msgstr "Judhispana"
 
 #: DB:language/name:235
 msgid "Lahnda"
-msgstr ""
+msgstr "Lahanda"
 
 #: DB:language/name:236
 msgid "Lamba"
-msgstr ""
+msgstr "Lamba"
 
 #: DB:language/name:102
 msgid "Land Dayak languages"
-msgstr ""
+msgstr "Dajakaj lingvoj"
 
 #: ../root/otherlookup/results-release.tt:11
 #: ../root/search/lib/inline-results-release.tt:13
@@ -8330,11 +8319,11 @@ msgstr ""
 
 #: DB:language/name:237 DB:script/name:69
 msgid "Lao"
-msgstr ""
+msgstr "Laosa"
 
 #: DB:country/name:116
 msgid "Lao People's Democratic Republic"
-msgstr ""
+msgstr "Laosa Popola Demokratia Respubliko"
 
 #: DB:medium_format/name:5
 msgid "LaserDisc"
@@ -8375,15 +8364,15 @@ msgstr ""
 
 #: DB:language/name:238 DB:script/name:28
 msgid "Latin"
-msgstr ""
+msgstr "Latina"
 
 #: DB:script/name:30
 msgid "Latin (Fraktur variant)"
-msgstr ""
+msgstr "Latina (fraktura vario)"
 
 #: DB:script/name:29
 msgid "Latin (Gaelic variant)"
-msgstr ""
+msgstr "Latina (irlanda vario)"
 
 #: DB:country/name:117
 msgid "Latvia"
@@ -8391,7 +8380,7 @@ msgstr ""
 
 #: DB:language/name:239
 msgid "Latvian"
-msgstr ""
+msgstr "Latva"
 
 #: DB:link_attribute_type/description:4
 #, perl-format
@@ -8400,7 +8389,7 @@ msgstr ""
 
 #: DB:country/name:118
 msgid "Lebanon"
-msgstr ""
+msgstr "Libano"
 
 #: ../root/statistics/timeline.tt:60
 #, perl-format
@@ -8436,15 +8425,15 @@ msgstr ""
 
 #: DB:country/name:119
 msgid "Lesotho"
-msgstr ""
+msgstr "Lesoto"
 
 #: DB:language/name:240
 msgid "Lezghian"
-msgstr ""
+msgstr "Lezga"
 
 #: DB:country/name:120
 msgid "Liberia"
-msgstr ""
+msgstr "Liberio"
 
 #: DB:country/name:121
 msgid "Libya"
@@ -8457,7 +8446,7 @@ msgstr ""
 
 #: DB:country/name:122
 msgid "Liechtenstein"
-msgstr ""
+msgstr "Liĥtenŝtejno"
 
 #: DB:link_attribute_type/description:513
 #, perl-format
@@ -8475,7 +8464,7 @@ msgstr ""
 
 #: DB:script/name:58
 msgid "Limbu"
-msgstr ""
+msgstr "Limbua"
 
 #: DB:language/name:241
 msgid "Limburgish"
@@ -8488,15 +8477,15 @@ msgstr ""
 
 #: DB:script/name:80
 msgid "Linear A"
-msgstr ""
+msgstr "Skribo linia A"
 
 #: DB:script/name:81
 msgid "Linear B"
-msgstr ""
+msgstr "Skribo linia B"
 
 #: DB:language/name:242
 msgid "Lingala"
-msgstr ""
+msgstr "Lingala"
 
 #: ../root/recording/fingerprints.tt:73
 #, perl-format
@@ -8519,7 +8508,7 @@ msgstr ""
 
 #: DB:language/name:243
 msgid "Lithuanian"
-msgstr ""
+msgstr "Litova"
 
 #: DB:release_group_type/name:9
 msgid "Live"
@@ -8571,7 +8560,7 @@ msgstr ""
 
 #: DB:language/name:197
 msgid "Lojban"
-msgstr ""
+msgstr "Loĵbano"
 
 #: DB:script/name:147
 msgid "Loma"
@@ -8647,7 +8636,7 @@ msgstr ""
 
 #: DB:language/name:245
 msgid "Lozi"
-msgstr ""
+msgstr "Loza"
 
 #: DB:language/name:248
 msgid "Luba-Katanga"
@@ -8655,15 +8644,15 @@ msgstr ""
 
 #: DB:language/name:247
 msgid "Luba-Lulua"
-msgstr ""
+msgstr "Luba-lulua"
 
 #: DB:language/name:250
 msgid "Luiseno"
-msgstr ""
+msgstr "Luisena"
 
 #: DB:language/name:251
 msgid "Lunda"
-msgstr ""
+msgstr "Lunda"
 
 #: DB:language/name:252
 msgid "Luo"
@@ -8671,11 +8660,11 @@ msgstr ""
 
 #: DB:language/name:253
 msgid "Lushai"
-msgstr ""
+msgstr "Luŝaja"
 
 #: DB:country/name:124
 msgid "Luxembourg"
-msgstr ""
+msgstr "Luksemburgio"
 
 #: DB:language/name:246
 msgid "Luxembourgish"
@@ -8683,11 +8672,11 @@ msgstr ""
 
 #: DB:script/name:109
 msgid "Lycian"
-msgstr ""
+msgstr "Likia"
 
 #: DB:script/name:110
 msgid "Lydian"
-msgstr ""
+msgstr "Lidia"
 
 #: ../root/otherlookup/form.tt:3
 #, perl-format
@@ -8696,7 +8685,7 @@ msgstr ""
 
 #: DB:country/name:125
 msgid "Macao"
-msgstr ""
+msgstr "Makao"
 
 #: DB:country/name:126
 msgid "Macedonia, The Former Yugoslav Republic of"
@@ -8704,7 +8693,7 @@ msgstr ""
 
 #: DB:language/name:254
 msgid "Macedonian"
-msgstr ""
+msgstr "Makedona"
 
 #: DB:country/name:127
 msgid "Madagascar"
@@ -8721,11 +8710,11 @@ msgstr ""
 
 #: DB:language/name:255
 msgid "Madurese"
-msgstr ""
+msgstr "Madura"
 
 #: DB:language/name:256
 msgid "Magahi"
-msgstr ""
+msgstr "Magaha"
 
 #: ../root/layout/menu.tt:127 ../root/main/index.tt:10
 #, perl-format
@@ -8750,7 +8739,7 @@ msgstr ""
 
 #: DB:language/name:259
 msgid "Makasar"
-msgstr ""
+msgstr "Makasara"
 
 #: ../root/taglookup/nag.tt:22
 #, perl-format
@@ -8759,7 +8748,7 @@ msgstr ""
 
 #: DB:language/name:275
 msgid "Malagasy"
-msgstr ""
+msgstr "Malagasa"
 
 #: DB:country/name:128
 msgid "Malawi"
@@ -8771,7 +8760,7 @@ msgstr ""
 
 #: DB:language/name:260 DB:script/name:62
 msgid "Malayalam"
-msgstr ""
+msgstr "Malajala"
 
 #: DB:country/name:129
 msgid "Malaysia"
@@ -8779,7 +8768,7 @@ msgstr ""
 
 #: DB:country/name:130
 msgid "Maldives"
-msgstr ""
+msgstr "Maldivoj"
 
 #: DB:gender/name:1
 msgid "Male"
@@ -8797,7 +8786,7 @@ msgstr ""
 
 #: DB:country/name:131
 msgid "Mali"
-msgstr ""
+msgstr "Malio"
 
 #: DB:country/name:132
 msgid "Malta"
@@ -8805,11 +8794,11 @@ msgstr ""
 
 #: DB:language/name:276
 msgid "Maltese"
-msgstr ""
+msgstr "Malta"
 
 #: DB:language/name:277
 msgid "Manchu"
-msgstr ""
+msgstr "Manĉua"
 
 #: DB:script/name:16
 msgid "Mandaic"
@@ -8817,23 +8806,23 @@ msgstr ""
 
 #: DB:language/name:268
 msgid "Mandar"
-msgstr ""
+msgstr "Mandara"
 
 #: DB:language/name:261
 msgid "Mandingo"
-msgstr ""
+msgstr "Mandinga"
 
 #: DB:script/name:118
 msgid "Manichaean"
-msgstr ""
+msgstr "Maniĥea"
 
 #: DB:language/name:278
 msgid "Manipuri"
-msgstr ""
+msgstr "Manipura"
 
 #: DB:language/name:279
 msgid "Manobo languages"
-msgstr ""
+msgstr "Manobaj lingvoj"
 
 #: ../root/release/edit/tracklist.tt:170
 #, perl-format
@@ -8842,11 +8831,11 @@ msgstr ""
 
 #: DB:language/name:151
 msgid "Manx"
-msgstr ""
+msgstr "Manksa"
 
 #: DB:language/name:262
 msgid "Maori"
-msgstr ""
+msgstr "Maoria"
 
 #: DB:language/name:22
 msgid "Mapudungun"
@@ -8858,7 +8847,7 @@ msgstr ""
 
 #: DB:language/name:78
 msgid "Mari"
-msgstr ""
+msgstr "Maria"
 
 #: DB:country/name:133
 msgid "Marshall Islands"
@@ -8866,19 +8855,19 @@ msgstr ""
 
 #: DB:language/name:257
 msgid "Marshallese"
-msgstr ""
+msgstr "Marŝala"
 
 #: DB:country/name:134
 msgid "Martinique"
-msgstr ""
+msgstr "Martiniko"
 
 #: DB:language/name:288
 msgid "Marwari"
-msgstr ""
+msgstr "Marvara"
 
 #: DB:language/name:265
 msgid "Masai"
-msgstr ""
+msgstr "Masaja"
 
 #: DB:work_type/name:8
 msgid "Mass"
@@ -8896,7 +8885,7 @@ msgstr ""
 
 #: DB:script/name:111
 msgid "Mathematical notation"
-msgstr ""
+msgstr "Matematika notacio"
 
 #: DB:country/name:135
 msgid "Mauritania"
@@ -8904,19 +8893,19 @@ msgstr ""
 
 #: DB:country/name:136
 msgid "Mauritius"
-msgstr ""
+msgstr "Maŭricio"
 
 #: DB:script/name:7
 msgid "Mayan hieroglyphs"
-msgstr ""
+msgstr "Majaaj hieroglifoj"
 
 #: DB:language/name:289
 msgid "Mayan languages"
-msgstr ""
+msgstr "Majaaj lingvoj"
 
 #: DB:country/name:137
 msgid "Mayotte"
-msgstr ""
+msgstr "Majoto"
 
 #: DB:link_attribute_type/description:110
 #, perl-format
@@ -8978,7 +8967,6 @@ msgid "Mediums with 1 Disc ID"
 msgid_plural "Mediums with {n} Disc IDs"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/statistics/view_js.tt:134
 #, perl-format
@@ -9027,7 +9015,7 @@ msgstr ""
 
 #: DB:language/name:269 DB:script/name:148
 msgid "Mende"
-msgstr ""
+msgstr "Mendea"
 
 #: DB:link_attribute_type/description:143
 #, perl-format
@@ -9037,17 +9025,17 @@ msgstr ""
 #: ../root/layout/merge-helper.tt:30 ../root/release/merge_search.tt:14
 #, perl-format
 msgid "Merge"
-msgstr ""
+msgstr "Kombini"
 
 #: ../root/artist/merge.tt:1 ../root/artist/merge.tt:3
 #, perl-format
 msgid "Merge Artists"
-msgstr "Свести исполнителей"
+msgstr "Kombini artistojn"
 
 #: ../root/label/merge.tt:1 ../root/label/merge.tt:3
 #, perl-format
 msgid "Merge Labels"
-msgstr ""
+msgstr "Kombini etikedojn"
 
 #: ../root/layout/merge-helper.tt:3
 #, perl-format
@@ -9074,12 +9062,12 @@ msgstr ""
 #: ../root/work/merge.tt:1 ../root/work/merge.tt:3
 #, perl-format
 msgid "Merge Works"
-msgstr ""
+msgstr "Kombini pecojn"
 
 #: ../root/artist/layout.tt:90
 #, perl-format
 msgid "Merge artist"
-msgstr ""
+msgstr "Kombini artiston"
 
 #: ../root/edit/details/historic/merge_releases.tt:25
 #, perl-format
@@ -9089,7 +9077,7 @@ msgstr ""
 #: ../root/label/layout.tt:64
 #, perl-format
 msgid "Merge label"
-msgstr ""
+msgstr "Kombini etikedon"
 
 #: ../root/edit/details/historic/merge_releases.tt:30
 #, perl-format
@@ -9136,13 +9124,13 @@ msgstr ""
 #: ../root/work/layout.tt:35
 #, perl-format
 msgid "Merge work"
-msgstr ""
+msgstr "Kombini pecon"
 
 #: ../root/edit/details/merge_common.tt:2
 #: ../root/edit/details/merge_recordings.tt:3
 #, perl-format
 msgid "Merge:"
-msgstr ""
+msgstr "Kombini:"
 
 #: DB:script/name:153
 msgid "Meroitic Cursive"
@@ -9174,7 +9162,7 @@ msgstr ""
 
 #: DB:country/name:138
 msgid "Mexico"
-msgstr ""
+msgstr "Meksiko"
 
 #: DB:language/name:271
 msgid "Mi'kmaq"
@@ -9186,11 +9174,11 @@ msgstr ""
 
 #: DB:country/name:139
 msgid "Micronesia, Federated States of"
-msgstr ""
+msgstr "Mikronezio, Federaciaj Ŝtatoj de"
 
 #: DB:language/name:272
 msgid "Minangkabau"
-msgstr ""
+msgstr "Minanga"
 
 #: DB:medium_format/name:6
 msgid "MiniDisc"
@@ -9203,7 +9191,7 @@ msgstr ""
 
 #: DB:language/name:287
 msgid "Mirandese"
-msgstr ""
+msgstr "Miranda"
 
 #: ../root/report/set_in_different_rg.tt:1
 #: ../root/report/set_in_different_rg.tt:3
@@ -9223,11 +9211,11 @@ msgstr ""
 
 #: DB:language/name:280
 msgid "Mohawk"
-msgstr ""
+msgstr "Mohaka"
 
 #: DB:language/name:267
 msgid "Moksha"
-msgstr ""
+msgstr "Mokŝa"
 
 #: DB:language/name:281
 msgid "Moldavian"
@@ -9243,7 +9231,7 @@ msgstr ""
 
 #: DB:country/name:141
 msgid "Monaco"
-msgstr ""
+msgstr "Monako"
 
 #: DB:language/name:244
 msgid "Mongo"
@@ -9255,15 +9243,15 @@ msgstr ""
 
 #: DB:language/name:282 DB:script/name:17
 msgid "Mongolian"
-msgstr ""
+msgstr "Mongola"
 
 #: DB:country/name:247
 msgid "Montenegro"
-msgstr ""
+msgstr "Montenegro"
 
 #: DB:country/name:143
 msgid "Montserrat"
-msgstr ""
+msgstr "Moncerato"
 
 #: DB:link_attribute_type/description:348 DB:link_attribute_type/name:348
 #, perl-format
@@ -9283,11 +9271,11 @@ msgstr ""
 
 #: DB:country/name:144
 msgid "Morocco"
-msgstr ""
+msgstr "Maroko"
 
 #: DB:language/name:283
 msgid "Mossi"
-msgstr ""
+msgstr "Mosa"
 
 #: DB:work_type/name:9
 msgid "Motet"
@@ -9327,7 +9315,7 @@ msgstr ""
 
 #: DB:country/name:145
 msgid "Mozambique"
-msgstr ""
+msgstr "Mozambiko"
 
 #: DB:script/name:135
 msgid "Mro, Mru"
@@ -9335,12 +9323,12 @@ msgstr ""
 
 #: DB:language/name:285
 msgid "Munda languages"
-msgstr ""
+msgstr "Mundaj lingvoj"
 
 #: ../root/main/index.tt:2
 #, perl-format
 msgid "MusicBrainz - The Open Music Encyclopedia"
-msgstr ""
+msgstr "MusicBrainz - La nefermita musika enciklopedio"
 
 #: ../root/layout/menu.tt:136
 #, perl-format
@@ -9408,6 +9396,8 @@ msgid ""
 "MusicBrainz is an open music encyclopedia that collects music metadata and "
 "makes it available to the public."
 msgstr ""
+"MusicBrainz estas nefermita musika enciklopedio, kiu kolektas muzikajn "
+"metadatojn kaj havigas ilin al publiko."
 
 #: ../root/main/index.tt:61
 #, perl-format
@@ -9422,8 +9412,6 @@ msgstr ""
 msgid ""
 "MusicBrainz uses artist aliases mainly as variant names or search hints."
 msgstr ""
-"Альтернативные имена исполнителей в MusicBrainz используются для записи "
-"вариаций имён и для уточнения поиска."
 
 #: ../root/label/add_alias.tt:4 ../root/label/edit_alias.tt:4
 #, perl-format
@@ -9519,11 +9507,11 @@ msgstr ""
 
 #: DB:country/name:146 DB:script/name:64
 msgid "Myanmar"
-msgstr ""
+msgstr "Mjanmao"
 
 #: DB:language/name:478
 msgid "N'Ko"
-msgstr ""
+msgstr "Nokoa"
 
 #: DB:script/name:103
 msgid "N'ko"
@@ -9540,7 +9528,7 @@ msgstr ""
 
 #: DB:language/name:291
 msgid "Nahuatl languages"
-msgstr ""
+msgstr "Nahuatlaj lingvoj"
 
 #: DB:link_attribute_type/description:369
 #, perl-format
@@ -9565,7 +9553,7 @@ msgstr ""
 #: ../root/user/subscriptions/subscriptions.tt:16
 #, perl-format
 msgid "Name"
-msgstr "Имя"
+msgstr ""
 
 #: ../root/admin/linkattributetype/form.tt:12
 #: ../root/admin/linktype/form.tt:12 ../root/artist/details.tt:5
@@ -9603,11 +9591,11 @@ msgstr ""
 
 #: DB:country/name:147
 msgid "Namibia"
-msgstr ""
+msgstr "Namibio"
 
 #: DB:country/name:148 DB:language/name:294
 msgid "Nauru"
-msgstr ""
+msgstr "Naura"
 
 #: DB:language/name:295
 msgid "Navajo"
@@ -9623,11 +9611,11 @@ msgstr ""
 
 #: DB:language/name:298
 msgid "Ndonga"
-msgstr ""
+msgstr "Ndonga"
 
 #: DB:language/name:293
 msgid "Neapolitan"
-msgstr ""
+msgstr "Napola"
 
 #: DB:country/name:149
 msgid "Nepal"
@@ -9639,11 +9627,11 @@ msgstr ""
 
 #: DB:language/name:300
 msgid "Nepali"
-msgstr ""
+msgstr "Nepala"
 
 #: DB:country/name:150
 msgid "Netherlands"
-msgstr ""
+msgstr "Nederlando"
 
 #: DB:country/name:151
 msgid "Netherlands Antilles (historical, 1954-2010)"
@@ -9708,7 +9696,7 @@ msgstr ""
 
 #: DB:country/name:153
 msgid "New Zealand"
-msgstr ""
+msgstr "Nov-Zelando"
 
 #: ../root/release/merge.tt:53
 #, perl-format
@@ -9759,7 +9747,7 @@ msgstr ""
 #: ../root/scripts/text_strings.tt:35
 #, perl-format
 msgid "Next"
-msgstr "Дальше"
+msgstr ""
 
 #: ../root/release/edit/duplicates.tt:36
 #: ../root/release/edit/information.tt:110
@@ -9772,15 +9760,15 @@ msgstr ""
 
 #: DB:language/name:302
 msgid "Nias"
-msgstr ""
+msgstr "Niasa"
 
 #: DB:country/name:154
 msgid "Nicaragua"
-msgstr ""
+msgstr "Nikaragvo"
 
 #: DB:country/name:155
 msgid "Niger"
-msgstr ""
+msgstr "Niĝero"
 
 #: DB:language/name:303
 msgid "Niger-Kordofanian languages"
@@ -9788,7 +9776,7 @@ msgstr ""
 
 #: DB:country/name:156
 msgid "Nigeria"
-msgstr ""
+msgstr "Niĝerio"
 
 #: DB:language/name:396
 msgid "Nilo-Saharan languages"
@@ -9800,7 +9788,7 @@ msgstr ""
 
 #: DB:language/name:304
 msgid "Niuean"
-msgstr ""
+msgstr "Niua"
 
 #: ../root/edit/details/historic/merge_releases.tt:26
 #: ../root/edit/details/historic/merge_releases.tt:31
@@ -9809,7 +9797,7 @@ msgstr ""
 #: ../root/edit/vote.tt:16
 #, perl-format
 msgid "No"
-msgstr ""
+msgstr "Ne"
 
 #: ../root/tag/not_found.tt:4
 #, perl-format
@@ -9971,11 +9959,11 @@ msgstr ""
 #: ../root/statistics/index.tt:531
 #, perl-format
 msgid "No:"
-msgstr ""
+msgstr "Ne:"
 
 #: DB:language/name:307
 msgid "Nogai"
-msgstr ""
+msgstr "Nogaja"
 
 #: ../root/elections/nominate.tt:1 ../root/elections/nominate.tt:3
 #, perl-format
@@ -9995,7 +9983,7 @@ msgstr ""
 
 #: DB:country/name:158
 msgid "Norfolk Island"
-msgstr ""
+msgstr "Norfolkinsulo"
 
 #: ../root/components/common-macros.tt:457
 #, perl-format
@@ -10019,7 +10007,7 @@ msgstr ""
 
 #: DB:language/name:308
 msgid "Norse, Old"
-msgstr ""
+msgstr "Norena"
 
 #: DB:language/name:292
 msgid "North American Indian languages"
@@ -10046,11 +10034,11 @@ msgstr ""
 
 #: DB:country/name:160
 msgid "Norway"
-msgstr ""
+msgstr "Norvego"
 
 #: DB:language/name:309
 msgid "Norwegian"
-msgstr ""
+msgstr "Norvega"
 
 #: DB:language/name:306
 msgid "Norwegian Bokmål"
@@ -10102,23 +10090,23 @@ msgstr ""
 
 #: DB:language/name:311
 msgid "Nubian languages"
-msgstr ""
+msgstr "Nubiaj lingvoj"
 
 #: DB:language/name:314
 msgid "Nyamwezi"
-msgstr ""
+msgstr "Njamveza"
 
 #: DB:language/name:315
 msgid "Nyankole"
-msgstr ""
+msgstr "Njankora"
 
 #: DB:language/name:316
 msgid "Nyoro"
-msgstr ""
+msgstr "Njora"
 
 #: DB:language/name:317
 msgid "Nzima"
-msgstr ""
+msgstr "Nzima"
 
 #: DB:script/name:136
 msgid "Nüshu"
@@ -10153,11 +10141,11 @@ msgstr ""
 
 #: DB:script/name:27
 msgid "Ogham"
-msgstr ""
+msgstr "Ogama"
 
 #: DB:language/name:319
 msgid "Ojibwa"
-msgstr ""
+msgstr "Oĝibva"
 
 #: DB:script/name:104
 msgid "Ol Chiki"
@@ -10175,7 +10163,7 @@ msgstr ""
 
 #: DB:script/name:21
 msgid "Old Hungarian"
-msgstr ""
+msgstr "Malnova hungara"
 
 #: DB:script/name:25
 msgid "Old Italic"
@@ -10187,11 +10175,11 @@ msgstr ""
 
 #: DB:script/name:34
 msgid "Old Permic"
-msgstr ""
+msgstr "Malnova perma"
 
 #: DB:script/name:2
 msgid "Old Persian"
-msgstr ""
+msgstr "Malnova persa"
 
 #: DB:script/name:156
 msgid "Old South Arabian"
@@ -10209,7 +10197,7 @@ msgstr ""
 #: ../root/account/change_password.tt:10
 #, perl-format
 msgid "Old password:"
-msgstr "Старый пароль:"
+msgstr ""
 
 #: ../root/edit/details/edit_medium.tt:190
 #, perl-format
@@ -10239,7 +10227,7 @@ msgstr ""
 
 #: DB:country/name:161
 msgid "Oman"
-msgstr ""
+msgstr "Omano"
 
 #: ../root/cdtoc/move_search.tt:5
 #, perl-format
@@ -10276,7 +10264,7 @@ msgstr ""
 #: ../root/statistics/view_js.tt:49 ../root/user/profile/layout.tt:19
 #, perl-format
 msgid "Open Edits"
-msgstr "Открытые правки"
+msgstr ""
 
 #: ../root/artist/layout.tt:105 ../root/edit/list_header.tt:11
 #: ../root/label/layout.tt:79 ../root/recording/layout.tt:57
@@ -10290,7 +10278,7 @@ msgstr ""
 #: ../root/components/common-macros.tt:350
 #, perl-format
 msgid "Open in tagger"
-msgstr "Открыть в программе"
+msgstr ""
 
 #: ../root/statistics/index.tt:453
 #, perl-format
@@ -10322,11 +10310,11 @@ msgstr ""
 
 #: DB:language/name:320 DB:script/name:54
 msgid "Oriya"
-msgstr ""
+msgstr "Orisa"
 
 #: DB:language/name:321
 msgid "Oromo"
-msgstr ""
+msgstr "Oroma"
 
 #: ../root/cdtoc/lookup.tt:96
 #, perl-format
@@ -10335,11 +10323,11 @@ msgstr ""
 
 #: DB:language/name:322
 msgid "Osage"
-msgstr ""
+msgstr "Osaĝa"
 
 #: DB:script/name:38
 msgid "Osmanya"
-msgstr ""
+msgstr "Somalia skribo"
 
 #: DB:language/name:323
 msgid "Ossetian"
@@ -10432,7 +10420,7 @@ msgstr ""
 
 #: DB:language/name:325
 msgid "Otomian languages"
-msgstr ""
+msgstr "Otomiaj lingvoj"
 
 #: ../root/user/profile.tt:149
 #, perl-format
@@ -10503,7 +10491,6 @@ msgid "PUIDs with 1 Recording"
 msgid_plural "PUIDs with {n} Recordings"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/edit/details/add_puids.tt:8
 #, perl-format
@@ -10542,7 +10529,7 @@ msgstr ""
 #: ../root/components/paginator.tt:32
 #, perl-format
 msgid "Page {cur} of {total}"
-msgstr "Страница {cur} из {total}"
+msgstr ""
 
 #: ../root/admin/wikidoc/create.tt:8 ../root/admin/wikidoc/edit.tt:9
 #, perl-format
@@ -10551,7 +10538,7 @@ msgstr ""
 
 #: DB:script/name:89
 msgid "Pahawh Hmong"
-msgstr ""
+msgstr "Skribo de Pahawh"
 
 #: DB:language/name:328
 msgid "Pahlavi"
@@ -10559,7 +10546,7 @@ msgstr ""
 
 #: DB:country/name:162
 msgid "Pakistan"
-msgstr ""
+msgstr "Pakistano"
 
 #: DB:country/name:163
 msgid "Palau"
@@ -10567,7 +10554,7 @@ msgstr ""
 
 #: DB:language/name:332
 msgid "Palauan"
-msgstr ""
+msgstr "Palaŭa"
 
 #: DB:country/name:249
 msgid "Palestinian Territory"
@@ -10575,7 +10562,7 @@ msgstr ""
 
 #: DB:language/name:337
 msgid "Pali"
-msgstr ""
+msgstr "Palia"
 
 #: DB:script/name:151
 msgid "Palmyrene"
@@ -10592,11 +10579,11 @@ msgstr ""
 
 #: DB:country/name:164
 msgid "Panama"
-msgstr ""
+msgstr "Panamo"
 
 #: DB:language/name:327
 msgid "Pangasinan"
-msgstr ""
+msgstr "Pangasina"
 
 #: DB:language/name:330
 msgid "Panjabi"
@@ -10604,11 +10591,11 @@ msgstr ""
 
 #: DB:language/name:331
 msgid "Papiamento"
-msgstr ""
+msgstr "Papiamento"
 
 #: DB:country/name:165
 msgid "Papua New Guinea"
-msgstr ""
+msgstr "Papuo-Nov-Gvineo"
 
 #: DB:language/name:326
 msgid "Papuan languages"
@@ -10616,7 +10603,7 @@ msgstr ""
 
 #: DB:country/name:166
 msgid "Paraguay"
-msgstr ""
+msgstr "Paragvajo"
 
 #: ../root/edit/details/edit_relationship_type.tt:50
 #, perl-format
@@ -10679,7 +10666,7 @@ msgstr ""
 #: ../root/release_group/details.tt:20 ../root/work/details.tt:20
 #, perl-format
 msgid "Permanent link:"
-msgstr "Постоянная ссылка:"
+msgstr ""
 
 #: DB:language/name:334
 msgid "Persian"
@@ -10700,11 +10687,11 @@ msgstr ""
 
 #: DB:country/name:167
 msgid "Peru"
-msgstr ""
+msgstr "Peruo"
 
 #: DB:script/name:56
 msgid "Phags-pa"
-msgstr ""
+msgstr "Skribo de Phagspa"
 
 #: DB:language/name:335
 msgid "Philippine languages"
@@ -10716,7 +10703,7 @@ msgstr ""
 
 #: DB:language/name:336 DB:script/name:9
 msgid "Phoenician"
-msgstr ""
+msgstr "Fenica"
 
 #: ../root/edit/details/remove_relationship_type.tt:11
 #, perl-format
@@ -10739,7 +10726,7 @@ msgstr ""
 
 #: DB:country/name:169
 msgid "Pitcairn"
-msgstr ""
+msgstr "Pitkarna Insulo"
 
 #: ../root/account/registered.tt:7
 #, perl-format
@@ -10851,8 +10838,6 @@ msgid ""
 "Please read the {doc_styleguide|Style Guidelines}, then provide the "
 "necessary information about the new artist below."
 msgstr ""
-"Прочтите {doc_styleguide|указания по стилю} и затем укажите ниже нужную "
-"информация о новом исполнителе."
 
 #: ../root/release_group/delete.tt:8
 #, perl-format
@@ -10867,8 +10852,6 @@ msgid ""
 "Please review the documentation about {aliases|artist aliases}, before "
 "entering this edit."
 msgstr ""
-"До правки, взгляните на информацию об {aliases|альтернативных именах "
-"исполнителей}."
 
 #: ../root/label/delete_alias.tt:4
 #, perl-format
@@ -10976,7 +10959,7 @@ msgstr ""
 #: ../root/components/aliases.tt:52
 #, perl-format
 msgid "Please {log_in|log in} to add or edit aliases"
-msgstr ""
+msgstr "Bonvolu {log_in|ensalutas} por aldoni aŭ redakti alinomojn"
 
 #: ../root/recording/fingerprints.tt:39
 #, perl-format
@@ -10995,7 +10978,7 @@ msgstr ""
 
 #: DB:language/name:339
 msgid "Pohnpeian"
-msgstr ""
+msgstr "Ponapea"
 
 #: DB:link_type/description:76 DB:link_type/description:90
 #, perl-format
@@ -11073,11 +11056,11 @@ msgstr ""
 
 #: DB:country/name:170
 msgid "Poland"
-msgstr ""
+msgstr "Pollando"
 
 #: DB:language/name:338
 msgid "Polish"
-msgstr ""
+msgstr "Pola"
 
 #: DB:country/name:171
 msgid "Portugal"
@@ -11085,7 +11068,7 @@ msgstr ""
 
 #: DB:language/name:340
 msgid "Portuguese"
-msgstr ""
+msgstr "Portugala"
 
 #: ../root/cdtoc/list.tt:4
 #, perl-format
@@ -11126,7 +11109,7 @@ msgstr ""
 
 #: DB:language/name:341
 msgid "Prakrit languages"
-msgstr ""
+msgstr "Prakritaj lingvoj"
 
 #: ../root/account/preferences_ok.tt:1 ../root/account/preferences_ok.tt:3
 #: ../root/account/preferences.tt:2 ../root/account/preferences.tt:4
@@ -11216,7 +11199,7 @@ msgstr ""
 
 #: DB:script/name:122
 msgid "Psalter Pahlavi"
-msgstr ""
+msgstr "Psalma palava"
 
 #: DB:release_status/name:4
 msgid "Pseudo-Release"
@@ -11238,7 +11221,7 @@ msgstr ""
 
 #: DB:country/name:172
 msgid "Puerto Rico"
-msgstr ""
+msgstr "Puerto-Riko"
 
 #: DB:link_type/link_phrase:174
 #, perl-format
@@ -11269,7 +11252,7 @@ msgstr ""
 
 #: DB:language/name:344
 msgid "Quechua"
-msgstr ""
+msgstr "Keĉua"
 
 #: ../root/components/search.tt:9 ../root/search/form.tt:29
 #, perl-format
@@ -11288,7 +11271,7 @@ msgstr ""
 
 #: DB:language/name:345
 msgid "Rajasthani"
-msgstr ""
+msgstr "Raĝastana"
 
 #: ../root/statistics/countries.tt:32 ../root/statistics/formats.tt:26
 #: ../root/statistics/languages_scripts.tt:29
@@ -11299,7 +11282,7 @@ msgstr ""
 
 #: DB:language/name:346
 msgid "Rapanui"
-msgstr ""
+msgstr "Paskinsula"
 
 #: DB:language/name:347
 msgid "Rarotongan"
@@ -11321,7 +11304,6 @@ msgid "Rate: {rating} star"
 msgid_plural "Rate: {rating} stars"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/artist/browse_various.tt:16 ../root/artist/index.tt:66
 #: ../root/artist/recordings-list.tt:27 ../root/artist/works.tt:21
@@ -11490,7 +11472,6 @@ msgid "Recordings with 1 PUID"
 msgid_plural "Recordings with {n} PUIDs"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/statistics/view_js.tt:143
 #, perl-format
@@ -11498,7 +11479,6 @@ msgid "Recordings with 1 Release"
 msgid_plural "Recordings with {n} Releases"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/report/recordings_with_earliest_release_relationships.tt:1
 #: ../root/report/recordings_with_earliest_release_relationships.tt:3
@@ -11762,7 +11742,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:37
 #, perl-format
 msgid "Release"
-msgstr "Запись"
+msgstr ""
 
 #: ../root/recording/index.tt:13
 #, perl-format
@@ -11782,7 +11762,7 @@ msgstr ""
 #: ../root/recording/index.tt:14
 #, perl-format
 msgid "Release Date"
-msgstr "Дата выпуска"
+msgstr ""
 
 #: ../root/edit/details/historic/add_release.tt:70
 #, perl-format
@@ -11859,7 +11839,6 @@ msgid "Release Groups with 1 Release"
 msgid_plural "Release Groups with {n} Releases"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/edit/search_macros.tt:278
 #, perl-format
@@ -11889,7 +11868,7 @@ msgstr ""
 #: ../root/recording/index.tt:12
 #, perl-format
 msgid "Release Title"
-msgstr "Название записи"
+msgstr ""
 
 #: ../root/release/edits.tt:20 ../root/release/header.tt:8
 #, perl-format
@@ -12048,7 +12027,7 @@ msgstr ""
 #: ../root/tag/header.tt:1 ../root/tag/index.tt:3 ../root/user/tag.tt:4
 #, perl-format
 msgid "Releases"
-msgstr "Записи"
+msgstr ""
 
 #: ../root/statistics/view_js.tt:122
 #, perl-format
@@ -12142,7 +12121,6 @@ msgid "Releases with 1 Disc ID"
 msgid_plural "Releases with {n} Disc IDs"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/report/index.tt:36 ../root/report/releases_with_cc_links.tt:1
 #: ../root/report/releases_with_cc_links.tt:3
@@ -12271,18 +12249,18 @@ msgstr ""
 #: ../root/user/collections.tt:24
 #, perl-format
 msgid "Remove"
-msgstr "Удалить"
+msgstr ""
 
 #: ../root/artist/delete_alias.tt:2 ../root/label/delete_alias.tt:2
 #: ../root/work/delete_alias.tt:2
 #, perl-format
 msgid "Remove Alias"
-msgstr ""
+msgstr "Forigi alinomon"
 
 #: ../root/artist/delete_alias.tt:1
 #, perl-format
 msgid "Remove Artist Alias"
-msgstr ""
+msgstr "Forigi alinomon de artisto"
 
 #: ../root/components/forms.tt:217 ../root/release/edit/tracklist.tt:73
 #, perl-format
@@ -12307,7 +12285,7 @@ msgstr ""
 #: ../root/label/delete_alias.tt:1
 #, perl-format
 msgid "Remove Label Alias"
-msgstr ""
+msgstr "Forigi alinomon de etikedo"
 
 #: ../root/recording/delete_puid.tt:1
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemovePUID.pm:10
@@ -12360,7 +12338,7 @@ msgstr ""
 #: ../root/work/delete_alias.tt:1
 #, perl-format
 msgid "Remove Work Alias"
-msgstr ""
+msgstr "Forigi alinomon de peco"
 
 #: ../root/collection/delete.tt:2 ../root/collection/delete.tt:7
 #, perl-format
@@ -12522,7 +12500,7 @@ msgstr ""
 
 #: DB:language/name:349
 msgid "Romansh"
-msgstr ""
+msgstr "Romanĉa"
 
 #: DB:language/name:350
 msgid "Romany"
@@ -12530,23 +12508,23 @@ msgstr ""
 
 #: DB:script/name:98
 msgid "Rongorongo"
-msgstr ""
+msgstr "Rongorongo"
 
 #: DB:language/name:352
 msgid "Rundi"
-msgstr ""
+msgstr "Burunda"
 
 #: DB:script/name:26
 msgid "Runic"
-msgstr ""
+msgstr "Runa"
 
 #: DB:language/name:353
 msgid "Russian"
-msgstr ""
+msgstr "Rusa"
 
 #: DB:country/name:176
 msgid "Russian Federation"
-msgstr ""
+msgstr "Rusa Federacio"
 
 #: DB:country/name:177
 msgid "Rwanda"
@@ -12566,7 +12544,7 @@ msgstr ""
 
 #: DB:country/name:255
 msgid "Saint Barthélemy"
-msgstr ""
+msgstr "Sankta-Bartolomeo"
 
 #: DB:country/name:196
 msgid "Saint Helena, Ascension and Tristan da Cunha"
@@ -12574,11 +12552,11 @@ msgstr ""
 
 #: DB:country/name:178
 msgid "Saint Kitts and Nevis"
-msgstr ""
+msgstr "Sankta-Kito kaj Neviso"
 
 #: DB:country/name:179
 msgid "Saint Lucia"
-msgstr ""
+msgstr "Sankta-Lucio"
 
 #: DB:country/name:256
 msgid "Saint Martin (French part)"
@@ -12586,7 +12564,7 @@ msgstr ""
 
 #: DB:country/name:197
 msgid "Saint Pierre and Miquelon"
-msgstr ""
+msgstr "Sankta-Piero kaj Mikelono"
 
 #: DB:country/name:180
 msgid "Saint Vincent and The Grenadines"
@@ -12594,11 +12572,11 @@ msgstr ""
 
 #: DB:language/name:358
 msgid "Salishan languages"
-msgstr ""
+msgstr "Saliŝaj lingvoj"
 
 #: DB:script/name:125
 msgid "Samaritan"
-msgstr ""
+msgstr "Samaria"
 
 #: DB:language/name:359
 msgid "Samaritan Aramaic"
@@ -12634,27 +12612,27 @@ msgstr ""
 
 #: DB:language/name:384
 msgid "Samoan"
-msgstr ""
+msgstr "Samoa"
 
 #: DB:country/name:182
 msgid "San Marino"
-msgstr ""
+msgstr "San-Marino"
 
 #: DB:language/name:354
 msgid "Sandawe"
-msgstr ""
+msgstr "Sandaŭa"
 
 #: DB:language/name:355
 msgid "Sango"
-msgstr ""
+msgstr "Sangoa"
 
 #: DB:language/name:360
 msgid "Sanskrit"
-msgstr ""
+msgstr "Sanskrito"
 
 #: DB:language/name:362
 msgid "Santali"
-msgstr ""
+msgstr "Santala"
 
 #: DB:link_attribute_type/description:358
 #, perl-format
@@ -12668,7 +12646,7 @@ msgstr ""
 
 #: DB:country/name:183
 msgid "Sao Tome and Principe"
-msgstr ""
+msgstr "Sao-Tomeo kaj Principeo"
 
 #: DB:link_attribute_type/name:585
 #, perl-format
@@ -12677,15 +12655,15 @@ msgstr ""
 
 #: DB:script/name:46
 msgid "Sarati"
-msgstr ""
+msgstr "Sarata (Tolkien)"
 
 #: DB:language/name:394
 msgid "Sardinian"
-msgstr ""
+msgstr "Sarda"
 
 #: DB:language/name:361
 msgid "Sasak"
-msgstr ""
+msgstr "Sasaka"
 
 #: DB:country/name:184
 msgid "Saudi Arabia"
@@ -12693,7 +12671,7 @@ msgstr ""
 
 #: DB:script/name:106
 msgid "Saurashtra"
-msgstr ""
+msgstr "Saŭraŝtra"
 
 #: ../root/account/edit.tt:21 ../root/account/preferences.tt:56
 #: ../root/admin/linkattributetype/form.tt:21
@@ -12721,7 +12699,7 @@ msgstr ""
 
 #: DB:language/name:365
 msgid "Scots"
-msgstr ""
+msgstr "Skota"
 
 #: DB:language/name:148
 msgid "Scottish Gaelic"
@@ -12760,7 +12738,7 @@ msgstr ""
 #: ../root/search/index.tt:3 ../root/taglookup/form.tt:13
 #, perl-format
 msgid "Search"
-msgstr "Найти"
+msgstr ""
 
 #: ../root/layout/menu.tt:157
 #, perl-format
@@ -12793,7 +12771,7 @@ msgstr ""
 #: ../root/search/results-work.tt:1 ../root/search/results-work.tt:3
 #, perl-format
 msgid "Search Results"
-msgstr "Результаты поиска"
+msgstr ""
 
 #: ../root/cdtoc/lookup.tt:56
 #, perl-format
@@ -12915,7 +12893,7 @@ msgstr ""
 
 #: DB:language/name:367
 msgid "Selkup"
-msgstr ""
+msgstr "Selkupa"
 
 #: DB:language/name:368
 msgid "Semitic languages"
@@ -12944,7 +12922,7 @@ msgstr ""
 
 #: DB:country/name:185
 msgid "Senegal"
-msgstr ""
+msgstr "Senegalo"
 
 #: DB:country/name:254
 msgid "Serbia"
@@ -12956,11 +12934,11 @@ msgstr ""
 
 #: DB:language/name:363
 msgid "Serbian"
-msgstr ""
+msgstr "Serba"
 
 #: DB:language/name:395
 msgid "Serer"
-msgstr ""
+msgstr "Serera"
 
 #: ../root/account/reset_password.tt:5
 #, perl-format
@@ -12979,11 +12957,11 @@ msgstr ""
 
 #: DB:country/name:186
 msgid "Seychelles"
-msgstr ""
+msgstr "Sejŝeloj"
 
 #: DB:language/name:371
 msgid "Shan"
-msgstr ""
+msgstr "Ŝana"
 
 #: DB:script/name:138
 msgid "Sharada"
@@ -13005,7 +12983,7 @@ msgstr ""
 
 #: DB:language/name:386
 msgid "Shona"
-msgstr ""
+msgstr "Ŝona"
 
 #: ../root/admin/linktype/form.tt:15
 #: ../root/edit/details/edit_relationship_type.tt:20
@@ -13079,27 +13057,27 @@ msgstr ""
 
 #: DB:language/name:364
 msgid "Sicilian"
-msgstr ""
+msgstr "Sicilia"
 
 #: DB:language/name:372
 msgid "Sidamo"
-msgstr ""
+msgstr "Sidama"
 
 #: DB:country/name:187
 msgid "Sierra Leone"
-msgstr ""
+msgstr "Siera-Leono"
 
 #: DB:language/name:370
 msgid "Sign Languages"
-msgstr ""
+msgstr "Gestolingvoj"
 
 #: DB:script/name:126
 msgid "SignWriting"
-msgstr ""
+msgstr "Gestoskribo"
 
 #: DB:language/name:54
 msgid "Siksika"
-msgstr ""
+msgstr "Siksika"
 
 #: ../root/release/edit/duplicates.tt:12
 #, perl-format
@@ -13108,11 +13086,11 @@ msgstr ""
 
 #: DB:language/name:387
 msgid "Sindhi"
-msgstr ""
+msgstr "Sinda"
 
 #: DB:country/name:188
 msgid "Singapore"
-msgstr ""
+msgstr "Singapuro"
 
 #: DB:release_group_type/name:2
 msgid "Single"
@@ -13120,7 +13098,7 @@ msgstr ""
 
 #: DB:language/name:373 DB:script/name:63
 msgid "Sinhala"
-msgstr ""
+msgstr "Sinhala"
 
 #: DB:language/name:375
 msgid "Sino-Tibetan languages"
@@ -13132,7 +13110,7 @@ msgstr ""
 
 #: DB:language/name:374
 msgid "Siouan languages"
-msgstr ""
+msgstr "Siuaj lingvoj"
 
 #: DB:link_attribute_type/description:450
 #, perl-format
@@ -13141,7 +13119,7 @@ msgstr ""
 
 #: DB:language/name:104
 msgid "Slave (Athapascan)"
-msgstr ""
+msgstr "Slavia (atapaska)"
 
 #: DB:language/name:376
 msgid "Slavic languages"
@@ -13170,7 +13148,7 @@ msgstr ""
 
 #: DB:language/name:377
 msgid "Slovak"
-msgstr ""
+msgstr "Slovaka"
 
 #: DB:country/name:189
 msgid "Slovakia"
@@ -13182,7 +13160,7 @@ msgstr ""
 
 #: DB:language/name:378
 msgid "Slovenian"
-msgstr ""
+msgstr "Slovena"
 
 #: ../root/main/rate_limited.tt:1 ../root/main/rate_limited.tt:3
 #, perl-format
@@ -13209,7 +13187,7 @@ msgstr ""
 
 #: DB:language/name:390
 msgid "Somali"
-msgstr ""
+msgstr "Somalia"
 
 #: DB:country/name:192
 msgid "Somalia"
@@ -13258,11 +13236,11 @@ msgstr ""
 
 #: DB:language/name:391
 msgid "Songhai languages"
-msgstr ""
+msgstr "Songajaj lingvoj"
 
 #: DB:language/name:388
 msgid "Soninke"
-msgstr ""
+msgstr "Soninka"
 
 #: DB:link_attribute_type/description:362
 #, perl-format
@@ -13275,7 +13253,7 @@ msgstr ""
 
 #: DB:language/name:456
 msgid "Sorbian languages"
-msgstr ""
+msgstr "Sorabaj lingvoj"
 
 #: DB:language/name:110
 msgid "Sorbian, Lower"
@@ -13507,7 +13485,7 @@ msgstr ""
 #: ../root/search/results-label.tt:11
 #, perl-format
 msgid "Sort Name"
-msgstr "Имя для сортировки"
+msgstr ""
 
 #: ../root/release/edit/missing_entities.tt:17
 #, perl-format
@@ -13526,7 +13504,7 @@ msgstr ""
 #: ../root/label/layout.tt:6
 #, perl-format
 msgid "Sort name:"
-msgstr "Сортировать по имени:"
+msgstr ""
 
 #: DB:language/name:310
 msgid "Sotho, Northern"
@@ -13534,7 +13512,7 @@ msgstr ""
 
 #: DB:language/name:392
 msgid "Sotho, Southern"
-msgstr ""
+msgstr "Sota, suda"
 
 #: DB:link_type/link_phrase:290 DB:link_type/link_phrase:291
 #, perl-format
@@ -13560,7 +13538,7 @@ msgstr ""
 
 #: DB:country/name:248
 msgid "South Georgia and the South Sandwich Islands"
-msgstr ""
+msgstr "Sud-Georgio kaj Sud-Sandviĉinsuloj"
 
 #: DB:country/name:257
 msgid "South Sudan"
@@ -13568,7 +13546,7 @@ msgstr ""
 
 #: DB:language/name:474
 msgid "Southern Altai"
-msgstr ""
+msgstr "Suda altaja"
 
 #: DB:country/name:243
 msgid "Soviet Union (historical, 1922-1991)"
@@ -13576,7 +13554,7 @@ msgstr ""
 
 #: DB:country/name:194
 msgid "Spain"
-msgstr ""
+msgstr "Hispanio"
 
 #: DB:language/name:393
 msgid "Spanish"
@@ -13623,7 +13601,7 @@ msgstr ""
 
 #: DB:language/name:480
 msgid "Sranan Tongo"
-msgstr ""
+msgstr "Surinama"
 
 #: DB:country/name:195
 msgid "Sri Lanka"
@@ -13653,7 +13631,7 @@ msgstr ""
 #: ../root/release/lookup.tt:14
 #, perl-format
 msgid "Status"
-msgstr "Состояние"
+msgstr ""
 
 #: ../root/edit/details/add_release.tt:39
 #: ../root/edit/details/edit_release.tt:46
@@ -13707,7 +13685,7 @@ msgstr ""
 #: ../root/artist/layout.tt:121 ../root/label/layout.tt:93
 #, perl-format
 msgid "Subscribe"
-msgstr "Подписаться"
+msgstr ""
 
 #: ../root/label/subscriptions.tt:25
 #, perl-format
@@ -13717,7 +13695,7 @@ msgstr ""
 #: ../root/artist/subscribe.tt:20
 #, perl-format
 msgid "Subscribe to this artist."
-msgstr "Подписаться на исполнителя"
+msgstr ""
 
 #: ../root/artist/subscribe.tt:1 ../root/label/subscriptions.tt:1
 #, perl-format
@@ -13751,7 +13729,7 @@ msgstr ""
 
 #: DB:country/name:198
 msgid "Sudan"
-msgstr ""
+msgstr "Sudano"
 
 #: DB:work_type/name:6
 msgid "Suite"
@@ -13759,20 +13737,20 @@ msgstr ""
 
 #: DB:language/name:398
 msgid "Sukuma"
-msgstr ""
+msgstr "Sukuma"
 
 #: DB:language/name:401
 msgid "Sumerian"
-msgstr ""
+msgstr "Sumera"
 
 #: ../root/edit/details/add_release_annotation.tt:30
 #, perl-format
 msgid "Summary:"
-msgstr "Краткое описание"
+msgstr ""
 
 #: DB:language/name:399 DB:script/name:107
 msgid "Sundanese"
-msgstr ""
+msgstr "Sunda"
 
 #: DB:link_attribute_type/description:459
 #, perl-format
@@ -13782,27 +13760,27 @@ msgstr ""
 
 #: DB:country/name:199
 msgid "Suriname"
-msgstr ""
+msgstr "Surinamo"
 
 #: DB:language/name:400
 msgid "Susu"
-msgstr ""
+msgstr "Susa"
 
 #: DB:country/name:200
 msgid "Svalbard and Jan Mayen"
-msgstr ""
+msgstr "Svalbardo kaj Jan-Majen-insulo"
 
 #: DB:language/name:402
 msgid "Swahili"
-msgstr ""
+msgstr "Svahila"
 
 #: DB:language/name:397
 msgid "Swati"
-msgstr ""
+msgstr "Svazia"
 
 #: DB:country/name:201
 msgid "Swaziland"
-msgstr ""
+msgstr "Svazilando"
 
 #: DB:country/name:202
 msgid "Sweden"
@@ -13810,19 +13788,19 @@ msgstr ""
 
 #: DB:language/name:403
 msgid "Swedish"
-msgstr ""
+msgstr "Sveda"
 
 #: DB:country/name:203
 msgid "Switzerland"
-msgstr ""
+msgstr "Svislando"
 
 #: DB:script/name:51
 msgid "Syloti Nagri"
-msgstr ""
+msgstr "Sileta"
 
 #: DB:script/name:112
 msgid "Symbols"
-msgstr ""
+msgstr "Simboloj"
 
 #: DB:work_type/name:18
 msgid "Symphonic poem"
@@ -13839,23 +13817,23 @@ msgstr ""
 
 #: DB:language/name:404 DB:script/name:12
 msgid "Syriac"
-msgstr ""
+msgstr "Siria"
 
 #: DB:script/name:13
 msgid "Syriac (Eastern variant)"
-msgstr ""
+msgstr "Siria (orienta vario)"
 
 #: DB:script/name:15
 msgid "Syriac (Estrangelo variant)"
-msgstr ""
+msgstr "Siria (estrangela vario)"
 
 #: DB:script/name:14
 msgid "Syriac (Western variant)"
-msgstr ""
+msgstr "Siria (okcidenta vario)"
 
 #: DB:country/name:204
 msgid "Syrian Arab Republic"
-msgstr ""
+msgstr "Siria Araba Respubliko"
 
 #: ../root/main/503.tt:1 ../root/main/503.tt:3
 #, perl-format
@@ -13951,11 +13929,11 @@ msgstr ""
 
 #: DB:language/name:414 DB:script/name:76
 msgid "Tagalog"
-msgstr ""
+msgstr "Tagaloga"
 
 #: DB:script/name:79
 msgid "Tagbanwa"
-msgstr ""
+msgstr "Tagbanva"
 
 #: ../root/cdtoc/list.tt:14 ../root/components/common-macros.tt:346
 #: ../root/components/common-macros.tt:351
@@ -13979,7 +13957,7 @@ msgstr ""
 #: ../root/user/tags.tt:1 ../root/work/header.tt:1 ../root/work/tags.tt:1
 #, perl-format
 msgid "Tags"
-msgstr "Ярлыки"
+msgstr ""
 
 #: ../root/statistics/index.tt:64
 #, perl-format
@@ -13993,11 +13971,11 @@ msgstr ""
 
 #: DB:language/name:405
 msgid "Tahitian"
-msgstr ""
+msgstr "Tahitia"
 
 #: DB:script/name:66
 msgid "Tai Le"
-msgstr ""
+msgstr "Tai Le"
 
 #: DB:script/name:117
 msgid "Tai Tham"
@@ -14005,7 +13983,7 @@ msgstr ""
 
 #: DB:script/name:127
 msgid "Tai Viet"
-msgstr ""
+msgstr "Tai Viet"
 
 #: DB:language/name:406
 msgid "Tai languages"
@@ -14013,11 +13991,11 @@ msgstr ""
 
 #: DB:country/name:205
 msgid "Taiwan"
-msgstr ""
+msgstr "Tajvano"
 
 #: DB:language/name:413
 msgid "Tajik"
-msgstr ""
+msgstr "Taĝika"
 
 #: DB:country/name:206
 msgid "Tajikistan"
@@ -14029,7 +14007,7 @@ msgstr ""
 
 #: DB:language/name:423
 msgid "Tamashek"
-msgstr ""
+msgstr "Tamaŝeka"
 
 #: DB:link_attribute_type/description:473
 #, perl-format
@@ -14038,7 +14016,7 @@ msgstr ""
 
 #: DB:language/name:407 DB:script/name:61
 msgid "Tamil"
-msgstr ""
+msgstr "Tamila"
 
 #: DB:link_attribute_type/description:410
 #, perl-format
@@ -14051,11 +14029,11 @@ msgstr ""
 
 #: DB:country/name:207
 msgid "Tanzania, United Republic of"
-msgstr ""
+msgstr "Tanzanio, Unuiĝinta Respubliko"
 
 #: DB:language/name:408
 msgid "Tatar"
-msgstr ""
+msgstr "Tatara"
 
 #: ../root/admin/edit_user.tt:10
 #, perl-format
@@ -14064,11 +14042,11 @@ msgstr ""
 
 #: DB:language/name:409 DB:script/name:59
 msgid "Telugu"
-msgstr ""
+msgstr "Telugua"
 
 #: DB:script/name:44
 msgid "Tengwar"
-msgstr ""
+msgstr "Tengvara (Tolkien)"
 
 #: DB:link_attribute_type/description:288
 #, perl-format
@@ -14082,7 +14060,7 @@ msgstr ""
 
 #: DB:language/name:411
 msgid "Tereno"
-msgstr ""
+msgstr "Terena"
 
 #: ../root/edit/index.tt:70
 #, perl-format
@@ -14091,7 +14069,7 @@ msgstr ""
 
 #: DB:language/name:412
 msgid "Tetum"
-msgstr ""
+msgstr "Tetuma"
 
 #: ../root/edit/details/add_release_annotation.tt:13
 #, perl-format
@@ -14100,11 +14078,11 @@ msgstr ""
 
 #: DB:script/name:19
 msgid "Thaana"
-msgstr ""
+msgstr "Tana"
 
 #: DB:language/name:415 DB:script/name:65
 msgid "Thai"
-msgstr ""
+msgstr "Taja"
 
 #: DB:country/name:208
 msgid "Thailand"
@@ -14686,7 +14664,7 @@ msgstr ""
 #: ../root/artist/subscribe.tt:11
 #, perl-format
 msgid "There are no editors currently subscribed to this artist."
-msgstr "На данный момент нет редакторов, подписанных на этого исполнителя."
+msgstr ""
 
 #: ../root/artist/split.tt:24
 #, perl-format
@@ -14715,7 +14693,6 @@ msgid "There is also one anonymous subscriber."
 msgid_plural "There are also {num} anonymous subscribers."
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/artist/subscribe.tt:15
 #, perl-format
@@ -14723,7 +14700,6 @@ msgid "There is also {num} anonymous subscriber"
 msgid_plural "There are also {num} anonymous subscribers"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/user/subscribers.tt:4
 #, perl-format
@@ -14732,7 +14708,6 @@ msgid_plural ""
 "There are currently {num} users subscribed to edits that {user} makes:"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/artist/subscribers.tt:4
 #, perl-format
@@ -14740,7 +14715,6 @@ msgid "There is currently {num} user subscribed to {artist}:"
 msgid_plural "There are currently {num} users subscribed to {artist}:"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/label/subscribers.tt:4
 #, perl-format
@@ -14748,7 +14722,6 @@ msgid "There is currently {num} user subscribed to {label}:"
 msgid_plural "There are currently {num} users subscribed to {label}:"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/search/editor-not-found.tt:4
 #, perl-format
@@ -15835,7 +15808,7 @@ msgstr ""
 
 #: DB:language/name:416 DB:script/name:55
 msgid "Tibetan"
-msgstr ""
+msgstr "Tibeta"
 
 #: DB:link_attribute_type/description:350 DB:link_attribute_type/name:350
 #, perl-format
@@ -15848,11 +15821,11 @@ msgstr ""
 
 #: DB:language/name:417
 msgid "Tigre"
-msgstr ""
+msgstr "Tigrea"
 
 #: DB:language/name:418
 msgid "Tigrinya"
-msgstr ""
+msgstr "Tigraja"
 
 #: ../root/cdtoc/info.tt:37 ../root/cdtoc/info.tt:39 ../root/cdtoc/info.tt:41
 #, perl-format
@@ -15871,11 +15844,11 @@ msgstr ""
 
 #: DB:language/name:410
 msgid "Timne"
-msgstr ""
+msgstr "Temna"
 
 #: DB:country/name:61
 msgid "Timor-Leste"
-msgstr ""
+msgstr "Orienta Timoro"
 
 #: DB:link_attribute_type/description:217
 #, perl-format
@@ -15898,7 +15871,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Information.pm:11
 #, perl-format
 msgid "Title"
-msgstr "Название"
+msgstr ""
 
 #: ../root/cdstub/edit.tt:54 ../root/edit/details/add_track_kv.tt:3
 #: ../root/release/edit/information.tt:24
@@ -15908,11 +15881,11 @@ msgstr ""
 
 #: DB:language/name:419
 msgid "Tiv"
-msgstr ""
+msgstr "Tiva"
 
 #: DB:language/name:422
 msgid "Tlingit"
-msgstr ""
+msgstr "Tlingita"
 
 #: ../root/edit/index.tt:71
 #, perl-format
@@ -15928,7 +15901,7 @@ msgstr ""
 #: ../root/browse/release.tt:39 ../root/browse/work.tt:39
 #, perl-format
 msgid "To begin browsing, please select a letter above."
-msgstr "Начните просмотр с выбора начальной буква сверху"
+msgstr ""
 
 #: ../root/elections/show.tt:88
 #, perl-format
@@ -15962,15 +15935,15 @@ msgstr ""
 
 #: DB:country/name:209
 msgid "Togo"
-msgstr ""
+msgstr "Togo"
 
 #: DB:language/name:426
 msgid "Tok Pisin"
-msgstr ""
+msgstr "Tokpisino"
 
 #: DB:country/name:210 DB:language/name:420
 msgid "Tokelau"
-msgstr ""
+msgstr "Tokelaŭa"
 
 #: DB:country/name:211
 msgid "Tonga"
@@ -15978,11 +15951,11 @@ msgstr ""
 
 #: DB:language/name:424
 msgid "Tonga (Nyasa)"
-msgstr ""
+msgstr "Tonga"
 
 #: DB:language/name:425
 msgid "Tonga (Tonga Islands)"
-msgstr ""
+msgstr "Tongana"
 
 #: ../root/cdstub/browse.tt:1 ../root/cdstub/browse.tt:4
 #: ../root/layout/menu.tt:167
@@ -16069,7 +16042,7 @@ msgstr ""
 #: ../root/freedb/show.tt:63 ../root/search/lib/inline-results-recording.tt:14
 #, perl-format
 msgid "Track"
-msgstr "Дорожка"
+msgstr ""
 
 #: ../root/release/edit/tracklist.tt:385 ../root/release/edit/tracklist.tt:386
 #, perl-format
@@ -16143,7 +16116,7 @@ msgstr ""
 #: ../root/statistics/view_js.tt:116 ../root/tracklist/index.tt:5
 #, perl-format
 msgid "Tracks"
-msgstr "Дорожки"
+msgstr ""
 
 #: ../root/report/index.tt:59
 #, perl-format
@@ -16196,7 +16169,7 @@ msgstr ""
 
 #: DB:country/name:212
 msgid "Trinidad and Tobago"
-msgstr ""
+msgstr "Trinidado kaj Tobago"
 
 #: DB:link_attribute_type/description:382
 #, perl-format
@@ -16205,27 +16178,27 @@ msgstr ""
 
 #: DB:language/name:427
 msgid "Tsimshian"
-msgstr ""
+msgstr "Cimŝia"
 
 #: DB:language/name:429
 msgid "Tsonga"
-msgstr ""
+msgstr "Conga"
 
 #: DB:language/name:428
 msgid "Tswana"
-msgstr ""
+msgstr "Cvana"
 
 #: DB:language/name:431
 msgid "Tumbuka"
-msgstr ""
+msgstr "Tumbuka"
 
 #: DB:country/name:213
 msgid "Tunisia"
-msgstr ""
+msgstr "Tunizio"
 
 #: DB:language/name:432
 msgid "Tupi languages"
-msgstr ""
+msgstr "Tupiaj lingvoj"
 
 #: DB:country/name:214
 msgid "Turkey"
@@ -16233,7 +16206,7 @@ msgstr ""
 
 #: DB:language/name:433
 msgid "Turkish"
-msgstr ""
+msgstr "Turka"
 
 #: DB:link_attribute_type/description:305 DB:link_attribute_type/name:305
 #, perl-format
@@ -16246,7 +16219,7 @@ msgstr ""
 
 #: DB:language/name:430
 msgid "Turkmen"
-msgstr ""
+msgstr "Turkmena"
 
 #: DB:country/name:215
 msgid "Turkmenistan"
@@ -16254,19 +16227,19 @@ msgstr ""
 
 #: DB:country/name:216
 msgid "Turks and Caicos Islands"
-msgstr ""
+msgstr "Turkoj kaj Kajkoj"
 
 #: DB:country/name:217 DB:language/name:435
 msgid "Tuvalu"
-msgstr ""
+msgstr "Tuvalua"
 
 #: DB:language/name:437
 msgid "Tuvinian"
-msgstr ""
+msgstr "Tuva"
 
 #: DB:language/name:436
 msgid "Twi"
-msgstr ""
+msgstr "Tvia"
 
 #: ../root/layout.tt:145
 #, perl-format
@@ -16283,7 +16256,7 @@ msgstr ""
 #: ../root/search/results-release-group.tt:12
 #, perl-format
 msgid "Type"
-msgstr "Тип"
+msgstr ""
 
 #: ../root/artist/edit_form.tt:41 ../root/artist/index.tt:4
 #: ../root/artist/layout.tt:9 ../root/edit/details/add_artist.tt:25
@@ -16303,7 +16276,7 @@ msgstr "Тип"
 #: ../root/work/edit_form.tt:10 ../root/work/layout.tt:11
 #, perl-format
 msgid "Type:"
-msgstr "Тип:"
+msgstr ""
 
 #: ../root/edit/details/edit_release_attributes.tt:13
 #, perl-format
@@ -16376,7 +16349,7 @@ msgstr ""
 
 #: DB:language/name:438
 msgid "Udmurt"
-msgstr ""
+msgstr "Udmurta"
 
 #: DB:link_attribute_type/description:407
 #, perl-format
@@ -16389,7 +16362,7 @@ msgstr ""
 
 #: DB:language/name:439 DB:script/name:3
 msgid "Ugaritic"
-msgstr ""
+msgstr "Ugarita"
 
 #: DB:language/name:440
 msgid "Uighur"
@@ -16406,11 +16379,11 @@ msgstr ""
 
 #: DB:language/name:441
 msgid "Ukrainian"
-msgstr ""
+msgstr "Ukraina"
 
 #: DB:language/name:442
 msgid "Umbundu"
-msgstr ""
+msgstr "Umbunda"
 
 #: ../root/main/401.tt:1 ../root/main/401.tt:3
 #, perl-format
@@ -16419,27 +16392,27 @@ msgstr ""
 
 #: DB:language/name:273
 msgid "Uncoded languages"
-msgstr ""
+msgstr "Nekoditaj lingvoj"
 
 #: DB:language/name:443
 msgid "Undetermined"
-msgstr ""
+msgstr "Nedeterminita"
 
 #: DB:country/name:220
 msgid "United Arab Emirates"
-msgstr ""
+msgstr "Unuiĝintaj Arabaj Emirlandoj"
 
 #: DB:country/name:221
 msgid "United Kingdom"
-msgstr ""
+msgstr "Britio"
 
 #: DB:country/name:222
 msgid "United States"
-msgstr ""
+msgstr "Usono"
 
 #: DB:country/name:223
 msgid "United States Minor Outlying Islands"
-msgstr ""
+msgstr "Usonaj Malgrandaj Insuloj"
 
 #: ../root/report/artist_list.tt:13
 #, perl-format
@@ -16516,7 +16489,7 @@ msgstr ""
 #: ../root/user/subscriptions/subscriptions.tt:32
 #, perl-format
 msgid "Unsubscribe"
-msgstr "Отписаться"
+msgstr ""
 
 #: ../root/label/subscriptions.tt:21
 #, perl-format
@@ -16526,7 +16499,7 @@ msgstr ""
 #: ../root/artist/subscribe.tt:18
 #, perl-format
 msgid "Unsubscribe from this artist."
-msgstr "Отписаться от исполнителя"
+msgstr ""
 
 #: ../root/admin/edit_user.tt:12
 #, perl-format
@@ -16541,7 +16514,7 @@ msgstr ""
 #: ../root/admin/wikidoc/edit.tt:16 ../root/admin/wikidoc/index.tt:108
 #, perl-format
 msgid "Update"
-msgstr "Изменить"
+msgstr ""
 
 #: ../root/admin/wikidoc/edit.tt:1 ../root/admin/wikidoc/edit.tt:3
 #, perl-format
@@ -16571,7 +16544,7 @@ msgstr ""
 
 #: DB:language/name:444
 msgid "Urdu"
-msgstr ""
+msgstr "Urdua"
 
 #: ../root/url/edits.tt:19
 #, perl-format
@@ -16580,7 +16553,7 @@ msgstr ""
 
 #: DB:country/name:224
 msgid "Uruguay"
-msgstr ""
+msgstr "Urugvajo"
 
 #: ../root/components/tags.tt:12
 #, perl-format
@@ -16700,7 +16673,7 @@ msgstr ""
 
 #: DB:language/name:445
 msgid "Uzbek"
-msgstr ""
+msgstr "Uzbeka"
 
 #: DB:country/name:225
 msgid "Uzbekistan"
@@ -16728,11 +16701,11 @@ msgstr ""
 
 #: DB:language/name:446 DB:script/name:91
 msgid "Vai"
-msgstr ""
+msgstr "Vaja"
 
 #: DB:country/name:226
 msgid "Vanuatu"
-msgstr ""
+msgstr "Vanuatuo"
 
 #: ../root/cdstub/browse.tt:19 ../root/cdstub/layout.tt:25
 #, perl-format
@@ -16746,11 +16719,11 @@ msgstr ""
 
 #: DB:country/name:227
 msgid "Vatican City State (Holy See)"
-msgstr ""
+msgstr "Vatikano (Sankta Seĝo)"
 
 #: DB:language/name:447
 msgid "Venda"
-msgstr ""
+msgstr "Vendaa"
 
 #: DB:country/name:228
 msgid "Venezuela, Bolivarian Republic of"
@@ -16787,7 +16760,7 @@ msgstr ""
 
 #: DB:language/name:448
 msgid "Vietnamese"
-msgstr ""
+msgstr "Vjetnama"
 
 #: DB:link_attribute_type/description:399 DB:link_attribute_type/name:399
 #, perl-format
@@ -16840,15 +16813,15 @@ msgstr ""
 
 #: DB:country/name:230
 msgid "Virgin Islands, British"
-msgstr ""
+msgstr "Virgulininsuloj, Britaj"
 
 #: DB:country/name:231
 msgid "Virgin Islands, U.S."
-msgstr ""
+msgstr "Virgulininsuloj, Usonaj"
 
 #: DB:script/name:39
 msgid "Visible Speech"
-msgstr ""
+msgstr "Videbla parolo"
 
 #: DB:link_attribute_type/description:354
 #, perl-format
@@ -16857,7 +16830,7 @@ msgstr ""
 
 #: DB:language/name:449
 msgid "Volapük"
-msgstr ""
+msgstr "Volapuko"
 
 #: ../root/elections/show.tt:109
 #, perl-format
@@ -16947,7 +16920,7 @@ msgstr ""
 
 #: DB:language/name:450
 msgid "Votic"
-msgstr ""
+msgstr "Vota"
 
 #: ../root/elections/show.tt:55
 #, perl-format
@@ -16985,15 +16958,15 @@ msgstr ""
 
 #: DB:language/name:451
 msgid "Wakashan languages"
-msgstr ""
+msgstr "Vakaŝaj lingvoj"
 
 #: DB:country/name:232
 msgid "Wallis and Futuna"
-msgstr ""
+msgstr "Valiso kaj Futuno"
 
 #: DB:language/name:457
 msgid "Walloon"
-msgstr ""
+msgstr "Valona"
 
 #: DB:script/name:154
 msgid "Warang Citi"
@@ -17001,7 +16974,7 @@ msgstr ""
 
 #: DB:language/name:453
 msgid "Waray"
-msgstr ""
+msgstr "Varaja"
 
 #: ../root/release/edit/information.tt:130
 #, perl-format
@@ -17014,7 +16987,7 @@ msgstr ""
 #: ../root/artist/edit_form.tt:18 ../root/label/edit_form.tt:15
 #, perl-format
 msgid "Warning:"
-msgstr "Внимание:"
+msgstr ""
 
 #: DB:link_attribute_type/description:323 DB:link_attribute_type/name:323
 #, perl-format
@@ -17023,7 +16996,7 @@ msgstr ""
 
 #: DB:language/name:454
 msgid "Washo"
-msgstr ""
+msgstr "Vaŝoa"
 
 #: ../root/watch/list.tt:1 ../root/watch/list.tt:2
 #, perl-format
@@ -17143,7 +17116,7 @@ msgstr ""
 
 #: DB:language/name:455
 msgid "Welsh"
-msgstr ""
+msgstr "Kimra"
 
 #: DB:country/name:233
 msgid "Western Sahara"
@@ -17231,7 +17204,7 @@ msgstr ""
 
 #: DB:language/name:458
 msgid "Wolof"
-msgstr ""
+msgstr "Volofa"
 
 #: DB:link_attribute_type/description:524
 #, perl-format
@@ -17243,12 +17216,12 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:39
 #, perl-format
 msgid "Work"
-msgstr ""
+msgstr "Peco"
 
 #: ../root/work/edit_form.tt:6
 #, perl-format
 msgid "Work Details"
-msgstr ""
+msgstr "Detaloj de Peco"
 
 #: ../root/work/not_found.tt:1 ../root/work/not_found.tt:2
 #, perl-format
@@ -17300,14 +17273,14 @@ msgstr ""
 #: ../root/edit/details/remove_work.tt:3
 #, perl-format
 msgid "Work:"
-msgstr ""
+msgstr "Peco:"
 
 #: ../root/artist/header.tt:1 ../root/artist/works.tt:2
 #: ../root/statistics/view_js.tt:42 ../root/tag/header.tt:1
 #: ../root/tag/index.tt:3 ../root/user/tag.tt:4
 #, perl-format
 msgid "Works"
-msgstr ""
+msgstr "Pecoj"
 
 #: ../root/browse/work.tt:8
 #, perl-format
@@ -17317,7 +17290,7 @@ msgstr ""
 #: ../root/statistics/index.tt:41
 #, perl-format
 msgid "Works:"
-msgstr ""
+msgstr "Pecoj:"
 
 #: ../root/artist/works.tt:17 ../root/otherlookup/results-work.tt:8
 #: ../root/search/results-work.tt:11
@@ -17344,11 +17317,11 @@ msgstr ""
 
 #: DB:language/name:460
 msgid "Xhosa"
-msgstr ""
+msgstr "Kosa"
 
 #: DB:language/name:356
 msgid "Yakut"
-msgstr ""
+msgstr "Jakuta"
 
 #: DB:language/name:461
 msgid "Yao"
@@ -17356,17 +17329,17 @@ msgstr ""
 
 #: DB:language/name:462
 msgid "Yapese"
-msgstr ""
+msgstr "Japa"
 
 #: ../root/artist/browse_various.tt:13 ../root/artist/index.tt:61
 #: ../root/search/results-freedb.tt:14
 #, perl-format
 msgid "Year"
-msgstr "Год"
+msgstr ""
 
 #: DB:country/name:234
 msgid "Yemen"
-msgstr ""
+msgstr "Jemeno"
 
 #: ../root/edit/details/historic/merge_releases.tt:26
 #: ../root/edit/details/historic/merge_releases.tt:31
@@ -17375,7 +17348,7 @@ msgstr ""
 #: ../root/edit/vote.tt:13
 #, perl-format
 msgid "Yes"
-msgstr ""
+msgstr "Jes"
 
 #: ../root/statistics/view_js.tt:66
 #, perl-format
@@ -17396,7 +17369,7 @@ msgstr ""
 #, perl-format
 msgid ""
 "Yes, I am sure this artist is not duplicate, and I know what I am doing."
-msgstr "Да, я уверен что исполнитель не дублируется, и я знаю что делаю."
+msgstr ""
 
 #: ../root/label/edit_form.tt:29
 #, perl-format
@@ -17407,12 +17380,12 @@ msgstr ""
 #: ../root/admin/wikidoc/delete.tt:9
 #, perl-format
 msgid "Yes, I'm sure"
-msgstr ""
+msgstr "Jes, mi certas"
 
 #: ../root/statistics/index.tt:525
 #, perl-format
 msgid "Yes:"
-msgstr ""
+msgstr "Jes:"
 
 #: ../root/statistics/index.tt:507 ../root/statistics/index.tt:555
 #, perl-format
@@ -17421,15 +17394,15 @@ msgstr ""
 
 #: DB:script/name:90
 msgid "Yi"
-msgstr ""
+msgstr "Jia"
 
 #: DB:language/name:463
 msgid "Yiddish"
-msgstr ""
+msgstr "Jida"
 
 #: DB:language/name:464
 msgid "Yoruba"
-msgstr ""
+msgstr "Joruba"
 
 #: ../root/recording/add_isrc.tt:3
 #, perl-format
@@ -17441,7 +17414,7 @@ msgstr ""
 #: ../root/artist/edit_form.tt:3
 #, perl-format
 msgid "You are about to add an artist to MusicBrainz."
-msgstr "Вы собираетесь добавить исполнителя в MusicBrainz."
+msgstr ""
 
 #: ../root/cdtoc/set_durations.tt:4
 #, perl-format
@@ -17508,8 +17481,6 @@ msgid ""
 "You are attempting to add an artist which appears to be very similar, if not"
 " exactly the same, as these existing artists:"
 msgstr ""
-"Вы пытаетесь добавить исполнителя, чьё имя похоже либо совпадает с именами "
-"следующих исполнителей:"
 
 #: ../root/browse/page_selector.tt:30
 #, perl-format
@@ -17755,19 +17726,19 @@ msgstr ""
 
 #: DB:language/name:465
 msgid "Yupik languages"
-msgstr ""
+msgstr "Jupikaj lingvoj"
 
 #: DB:country/name:237
 msgid "Zambia"
-msgstr ""
+msgstr "Zambio"
 
 #: DB:language/name:469
 msgid "Zande languages"
-msgstr ""
+msgstr "Zandaj lingvoj"
 
 #: DB:language/name:466
 msgid "Zapotec"
-msgstr ""
+msgstr "Zapoteka"
 
 #: DB:link_attribute_type/description:405
 #, perl-format
@@ -17786,7 +17757,7 @@ msgstr ""
 
 #: DB:language/name:467
 msgid "Zenaga"
-msgstr ""
+msgstr "Zenaga"
 
 #: DB:language/name:468
 msgid "Zhuang"
@@ -17801,7 +17772,7 @@ msgstr ""
 
 #: DB:country/name:238
 msgid "Zimbabwe"
-msgstr ""
+msgstr "Zimbabvo"
 
 #: ../root/statistics/timeline.tt:73
 #, perl-format
@@ -17810,11 +17781,11 @@ msgstr ""
 
 #: DB:language/name:470
 msgid "Zulu"
-msgstr ""
+msgstr "Zulua"
 
 #: DB:language/name:471
 msgid "Zuni"
-msgstr ""
+msgstr "Zuna"
 
 #: DB:link_attribute_type/description:492
 #, perl-format
@@ -20365,7 +20336,7 @@ msgstr ""
 #: DB:link_attribute_type/name:110
 #, perl-format
 msgid "mbira"
-msgstr ""
+msgstr "mbiro"
 
 #: DB:link_attribute_type/name:568
 #, perl-format
@@ -20909,7 +20880,6 @@ msgid "plus {n} other anonymous user"
 msgid_plural "Plus {n} other anonymous users"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/release/collections.tt:14
 #, perl-format
@@ -20917,7 +20887,6 @@ msgid "plus {n} other private collection"
 msgid_plural "plus {n} other private collections"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: DB:link_attribute_type/name:515
 #, perl-format
@@ -21157,7 +21126,7 @@ msgstr ""
 #: ../root/components/common-macros.tt:82
 #, perl-format
 msgid "releases"
-msgstr "записи"
+msgstr ""
 
 #: DB:link_type/link_phrase:6 DB:link_type/link_phrase:236
 #, perl-format
@@ -22153,7 +22122,6 @@ msgid "which identify 1 recording:"
 msgid_plural "which identify {num} recordings:"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/statistics/index.tt:401
 #, perl-format
@@ -22236,7 +22204,6 @@ msgid "with {num} PUID:"
 msgid_plural "with {num} PUIDs:"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/statistics/index.tt:289 ../root/statistics/index.tt:322
 #, perl-format
@@ -22244,7 +22211,6 @@ msgid "with {num} disc ID:"
 msgid_plural "with {num} disc IDs:"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: DB:link_attribute_type/description:213 DB:link_attribute_type/name:213
 #, perl-format
@@ -22733,7 +22699,6 @@ msgid "{artist} has no releases which have only {n} track."
 msgid_plural "{artist} has no releases which have {n} tracks."
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/artist/relationships.tt:36 ../root/components/relationships.tt:26
 #, perl-format
@@ -22787,7 +22752,6 @@ msgid "{count} private rating not listed."
 msgid_plural "{count} private ratings not listed."
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/user/profile.tt:41
 #, perl-format
@@ -22830,7 +22794,7 @@ msgstr ""
 #: ../root/components/aliases.tt:42
 #, perl-format
 msgid "{entity} has no aliases."
-msgstr "У {entity} нет альтернативных имён"
+msgstr "{entity} ne havas alinomojn."
 
 #: ../root/edit/details/remove_medium.tt:6
 #, perl-format
@@ -22885,7 +22849,6 @@ msgid "{num} artist found"
 msgid_plural "{num} artists found"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/tag/collection.tt:1
 #, perl-format
@@ -22893,7 +22856,6 @@ msgid "{num} collection found"
 msgid_plural "{num} collections found"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/components/common-macros.tt:45
 #, perl-format
@@ -22901,7 +22863,6 @@ msgid "{num} day"
 msgid_plural "{num}&nbsp;days"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/tag/label.tt:1
 #, perl-format
@@ -22909,7 +22870,6 @@ msgid "{num} label found"
 msgid_plural "{num} labels found"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/components/common-macros.tt:45
 #, perl-format
@@ -22917,7 +22877,6 @@ msgid "{num} month"
 msgid_plural "{num}&nbsp;months"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/tag/recording.tt:1
 #, perl-format
@@ -22925,7 +22884,6 @@ msgid "{num} recording found"
 msgid_plural "{num} recordings found"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/tag/release.tt:1
 #, perl-format
@@ -22933,7 +22891,6 @@ msgid "{num} release found"
 msgid_plural "{num} releases found"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/tag/release_group.tt:1
 #, perl-format
@@ -22941,15 +22898,13 @@ msgid "{num} release group found"
 msgid_plural "{num} release groups found"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/tag/work.tt:1
 #, perl-format
 msgid "{num} work found"
 msgid_plural "{num} works found"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "{num} peco trovita"
+msgstr[1] "{num} pecoj trovita"
 
 #: ../root/components/common-macros.tt:45
 #, perl-format
@@ -22957,7 +22912,6 @@ msgid "{num} year"
 msgid_plural "{num}&nbsp;years"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/statistics/formats.tt:9 ../root/statistics/formats.tt:11
 #: ../root/statistics/index.tt:124 ../root/statistics/index.tt:130
@@ -23034,7 +22988,6 @@ msgid "{release} has been added to {num} collection:"
 msgid_plural "{release} has been added to {num} collections:"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../root/release/collections.tt:22
 #, perl-format
@@ -23138,7 +23091,7 @@ msgstr ""
 #: ../root/edit/edit_header.tt:50 ../root/edit/index.tt:29
 #, perl-format
 msgid "{yes} yes : {no} no"
-msgstr "{yes} за : {no} против"
+msgstr ""
 
 #: ../root/release/edit/duplicates.tt:35 ../root/release/edit/editnote.tt:41
 #: ../root/release/edit/missing_entities.tt:119
@@ -23150,7 +23103,7 @@ msgstr ""
 
 #: DB:country/name:250
 msgid "Åland Islands"
-msgstr ""
+msgstr "Alando"
 
 #: DB:work_type/name:20
 msgid "Étude"
@@ -23490,22 +23443,22 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Edit/Artist/Create.pm:18
 #: ../lib/MusicBrainz/Server/Edit/Historic/AddArtist.pm:7
 msgid "Add artist"
-msgstr ""
+msgstr "Aldoni artiston"
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/Delete.pm:11
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveArtist.pm:9
 msgid "Remove artist"
-msgstr ""
+msgstr "Forigi artiston"
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/DeleteAlias.pm:14
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveArtistAlias.pm:9
 msgid "Remove artist alias"
-msgstr ""
+msgstr "Forigi alinomon de artisto"
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/Edit.pm:28
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditArtist.pm:9
 msgid "Edit artist"
-msgstr ""
+msgstr "Redakti artiston"
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/EditArtistCredit.pm:27
 msgid "Edit artist credit"
@@ -23515,7 +23468,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Edit/Historic/MergeArtist.pm:8
 #: ../lib/MusicBrainz/Server/Edit/Historic/MergeReleaseGroups.pm:7
 msgid "Merge artists"
-msgstr ""
+msgstr "Kombini artistojn"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic.pm:12
 msgid "Historic"
@@ -23663,7 +23616,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Edit/Historic/MergeLabel.pm:8
 #: ../lib/MusicBrainz/Server/Edit/Label/Merge.pm:12
 msgid "Merge labels"
-msgstr ""
+msgstr "Kombini etikedojn"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/MergeRelease.pm:13
 #: ../lib/MusicBrainz/Server/Edit/Historic/MergeReleaseMAC.pm:9
@@ -23693,7 +23646,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveLabelAlias.pm:11
 #: ../lib/MusicBrainz/Server/Edit/Label/DeleteAlias.pm:14
 msgid "Remove label alias"
-msgstr ""
+msgstr "Forigi alinomon de etikedo"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveLink.pm:10
 msgid "Remove relationship (historic)"
@@ -23819,19 +23772,19 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Edit/Work/Delete.pm:11
 msgid "Remove work"
-msgstr ""
+msgstr "Forigi pecon"
 
 #: ../lib/MusicBrainz/Server/Edit/Work/DeleteAlias.pm:15
 msgid "Remove work alias"
-msgstr ""
+msgstr "Forigi alinomon de peco"
 
 #: ../lib/MusicBrainz/Server/Edit/Work/Edit.pm:23
 msgid "Edit work"
-msgstr ""
+msgstr "Redakti pecon"
 
 #: ../lib/MusicBrainz/Server/Edit/Work/Merge.pm:12
 msgid "Merge works"
-msgstr ""
+msgstr "Kombini pecojn"
 
 #: ../lib/MusicBrainz/Server/EditSearch/Predicate.pm:66
 msgid "This operator is not supported"
@@ -23993,7 +23946,6 @@ msgid "This medium has a Disc ID, it should have exactly {n} track."
 msgid_plural "This medium has a Disc ID, it should have exactly {n} tracks."
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:173
 #, perl-brace-format
@@ -24161,7 +24113,6 @@ msgid_plural ""
 "{trackcount} tracks"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../lib/MusicBrainz/Server/Release.pm:1377
 msgid "This release already has all of its tracks"
@@ -24182,7 +24133,6 @@ msgid_plural ""
 "{trackcount} tracks"
 msgstr[0] ""
 msgstr[1] ""
-msgstr[2] ""
 
 #: ../lib/MusicBrainz/Server/Release.pm:1427
 msgid "None of the tracks on this album are eligible for removal"
