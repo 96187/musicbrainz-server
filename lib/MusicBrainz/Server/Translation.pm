@@ -7,6 +7,8 @@ use I18N::LangTags::Detect;
 use Locale::TextDomain q/mb_server/;
 use DBDefs;
 
+Locale::Messages->select_package ('gettext_pp');
+
 use Sub::Exporter -setup => {
     exports => [qw( l ln )],
     groups => {
@@ -40,13 +42,15 @@ sub build_languages_from_header
 sub _set_language
 {
     my $self = shift;
-    return if $ENV{LANGUAGE};
+#    return if $ENV{LANGUAGE};
 
     my @avail_lang = grep {
         my $l = $_;
         grep { $l eq $_ } DBDefs::MB_LANGUAGES
     } $self->all_system_languages;
 
+    @avail_lang = map { s/-([a-z]{2})/_\U$1/; $_; } @avail_lang;
+    $ENV{OUTPUT_CHARSET} = "UTF-8";
     $ENV{LANGUAGE} = $avail_lang[0] if @avail_lang;
 }
 
