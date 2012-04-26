@@ -25,6 +25,11 @@
 
     <div id="content">
         <h1>[% l('Welcome to MusicBrainz!') %]</h1>
+        <p><a target="_blank" style="text-decoration:none; color:black; font-size:66%" href="https://www.transifex.net/projects/p/musicbrainz/resource/server/" 
+title="See more information on Transifex.net">Top translations: musicbrainz » server</a><br/>
+<img border="0" src="https://www.transifex.net/projects/p/musicbrainz/resource/server/chart/image_png"/><br/>
+<a target="_blank" href="https://www.transifex.net/"><img border="0" src="https://sw.transifex.net/14/static/charts/images/tx-logo-micro.png"/></a></p>
+
         <p>
             [% l('MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public.') %]
         </p>
