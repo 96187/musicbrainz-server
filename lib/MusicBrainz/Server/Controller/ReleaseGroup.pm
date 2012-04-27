@@ -68,6 +68,7 @@ sub show : Chained('load') PathPart('')
         push @{ $grouped{$group} }, $release;
     }
 
+    $self->relationships($c);
     $c->stash(
         template => 'release_group/index.tt',
         releases => [
