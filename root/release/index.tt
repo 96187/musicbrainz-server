@@ -67,4 +67,9 @@
         <h2>[% l("Relationships") %]</h2>
         [%- INCLUDE "components/relationships.tt" source=release -%]
     [% END %]
+
+    [% IF release.release_group.relationships.size %]
+        <h2>[% l("Release group relationships") %]</h2>
+        [%- INCLUDE "components/relationships.tt" source=release.release_group -%]
+    [%- END -%]
 [%- END -%]
