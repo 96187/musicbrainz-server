@@ -63,6 +63,8 @@
 
     </script>
 
-    <h2>[% l("Relationships") %]</h2>
-    [%- INCLUDE "components/relationships.tt" source=release -%]
+    [% IF release.relationships.size %]
+        <h2>[% l("Relationships") %]</h2>
+        [%- INCLUDE "components/relationships.tt" source=release -%]
+    [% END %]
 [%- END -%]

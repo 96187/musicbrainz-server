@@ -44,8 +44,10 @@
         [%- END -%]
     [%- END -%]
 
-    <h2>[% l("Relationships") %]</h2>
-    [%- INCLUDE "components/relationships.tt" source=recording -%]
+    [%- IF recording.relationships.size -%]
+        <h2>[% l("Relationships") %]</h2>
+        [%- INCLUDE "components/relationships.tt" source=recording -%]
+    [%- END -%]
 
     [% IF recording.related_works.size %]
     <h2>[% l('Related works') %]</h2>
