@@ -20,7 +20,7 @@
         [%- END -%]
     [%- END -%]
 
-    [%- IF empty && !entity.isa('MusicBrainz::Server::Entity::Recording') && !entity.isa('MusicBrainz::Server::Entity::Work') -%]
+    [%- IF empty && !entity.isa('MusicBrainz::Server::Entity::ReleaseGroup') && !entity.isa('MusicBrainz::Server::Entity::Release') && !entity.isa('MusicBrainz::Server::Entity::Recording') && !entity.isa('MusicBrainz::Server::Entity::Work') -%]
         <li class="all-relationships">[% link_entity(source, 'relationships', l('View all relationships')) %]</li>
     [%- END -%]
 [%- END -%]
