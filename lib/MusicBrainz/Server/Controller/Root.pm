@@ -40,8 +40,11 @@ other than the blog feed.
 sub index : Path Args(0)
 {
     my ($self, $c) = @_;
-
-    $c->stash->{template} = 'main/index.tt';
+    my @lang = DBDefs::MB_LANGUAGES();
+    $c->stash(
+        lang => \@lang,
+        template = 'main/index.tt'
+    );
 }
 
 =head2 default
