@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-# for i in server relationships attributes statistics instruments instrument_descriptions countries scripts languages; do cat $i.pseudo.po | perl -C pseudo-po.pl > $i.en-aq.po; done
+# for i in server relationships attributes statistics instruments instrument_descriptions countries scripts languages; do cat $i.pseudo.po | perl -C pseudo-po.pl > $i.en_AQ.po; done
 
 use strict;
 use utf8;
