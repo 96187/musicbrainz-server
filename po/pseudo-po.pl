@@ -1,18 +1,20 @@
 #!/usr/bin/perl
-# cat pseudo.po | perl -C pseudo-po.pl > en-aq.po
+# for i in server relationships attributes statistics instruments instrument_descriptions countries scripts languages; do cat $i.pseudo.po | perl -C pseudo-po.pl > $i.en-aq.po; done
 
 use strict;
 use utf8;
 use warnings;
 
 while (<>) {
-    s/(?=\{)(.*?)(?=[:|}])/unac($1)/ge;
-    print;
+	s/\\ƞ/\\n/g;
+	s/\\ŧ/\\t/g;
+	s/(?=\{)(.*?)(?=[:|}])/unac($1)/ge;
+	print;
 }
 
 sub unac {
-    $_ = shift;
-    tr/ȧƀƈḓḗƒɠħīĵķŀḿƞǿƥɋřşŧŭṽẇẋẏḖƤ/a-yEP/;
-    return $_;
+	$_ = shift;
+	tr/ȧƀƈḓḗƒɠħīĵķŀḿƞǿƥɋřşŧŭṽẇẋẏḖƤ/a-yEP/;
+	return $_;
 }
 
