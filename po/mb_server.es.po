@@ -20,8 +20,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
-"POT-Creation-Date: 2013-01-03 10:40-0700\n"
-"PO-Revision-Date: 2013-01-03 17:46+0000\n"
+"POT-Creation-Date: 2013-01-05 19:49-0700\n"
+"PO-Revision-Date: 2013-01-06 02:51+0000\n"
 "Last-Translator: Ian McEwen <email address hidden>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/musicbrainz/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -132,14 +132,6 @@ msgstr "(terminado)"
 #: ../root/user/profile.tt:20
 msgid "(hidden)"
 msgstr "(oculto)"
-
-#: ../root/edit/details/reorder_mediums.tt:26
-msgid "(moved from position <span class=\"old\">{old}</span>)"
-msgstr "(movido desde la posición <span class=\"old\">{old}</span>)"
-
-#: ../root/edit/details/reorder_mediums.tt:24
-msgid "(new disc)"
-msgstr "(nuevo disco)"
 
 #: ../root/edit/details/add_release.tt:22
 msgid "(new release group)"
@@ -2239,6 +2231,26 @@ msgstr "Disambiguación"
 #: ../root/release_group/edit_form.tt:9 ../root/work/edit_form.tt:8
 msgid "Disambiguation:"
 msgstr "Disambiguación:"
+
+#: ../root/edit/details/reorder_mediums.tt:32
+msgid ""
+"Disc <span class=\"new\">{new}</span> (moved from position <span "
+"class=\"old\">{old}</span>)"
+msgstr ""
+
+#: ../root/edit/details/reorder_mediums.tt:29
+msgid "Disc <span class=\"new\">{new}</span> (new disc)"
+msgstr ""
+
+#: ../root/edit/details/reorder_mediums.tt:26
+msgid ""
+"Disc <span class=\"new\">{new}</span>: {title} (moved from position <span "
+"class=\"old\">{old}</span>)"
+msgstr ""
+
+#: ../root/edit/details/reorder_mediums.tt:23
+msgid "Disc <span class=\"new\">{new}</span>: {title} (new disc)"
+msgstr ""
 
 #: ../root/release/discids.tt:8
 msgid "Disc ID"
