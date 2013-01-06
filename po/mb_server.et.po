@@ -4,15 +4,15 @@
 # 
 # Translators:
 #   <email address hidden>, 2012.
-# Mihkel Tõnnov <email address hidden>, 2008-2009,2011-2012.
+# Mihkel Tõnnov <email address hidden>, 2008-2009,2011-2013.
 #   <email address hidden>, 2012.
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-01-05 19:49-0700\n"
-"PO-Revision-Date: 2013-01-06 02:51+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2013-01-06 22:47+0000\n"
+"Last-Translator: Mihkel Tõnnov <email address hidden>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/musicbrainz/language/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -834,7 +834,7 @@ msgid ""
 "An alias is an alternate name for an entity. They typically contain contain "
 "common mispellings or variations of the name and are also used to improve "
 "search results. View the {doc|alias documentation} for more details."
-msgstr ""
+msgstr "Alias on kellegi või millegi alternatiivne nimi või pealkiri. Tüüpiliselt on aliasteks teistes keeltes kasutatavad nimevariandid, samuti sagedased vead. Lisateabe saamiseks vaata {doc|aliaste dokumentatsiooni}."
 
 #: ../root/artist/subscribers.tt:17 ../root/label/subscribers.tt:17
 #: ../root/user/subscribers.tt:17
@@ -974,7 +974,7 @@ msgstr ""
 
 #: ../root/alias/delete.tt:1
 msgid "Are you sure you want to remove the alias <em>{alias}</em>?"
-msgstr ""
+msgstr "Kas oled kindel, et soovid eemaldada aliase „{alias}”?"
 
 #: ../root/collection/delete.tt:4
 msgid "Are you sure you want to remove the collection {collection}?"
@@ -2226,21 +2226,21 @@ msgstr "Täpsustus:"
 msgid ""
 "Disc <span class=\"new\">{new}</span> (moved from position <span "
 "class=\"old\">{old}</span>)"
-msgstr ""
+msgstr "Plaat <span class=\"new\">{new}</span> (teisaldati asukohalt <span class=\"old\">{old}</span>)"
 
 #: ../root/edit/details/reorder_mediums.tt:29
 msgid "Disc <span class=\"new\">{new}</span> (new disc)"
-msgstr ""
+msgstr "Plaat <span class=\"new\">{new}</span> (uus plaat)"
 
 #: ../root/edit/details/reorder_mediums.tt:26
 msgid ""
 "Disc <span class=\"new\">{new}</span>: {title} (moved from position <span "
 "class=\"old\">{old}</span>)"
-msgstr ""
+msgstr "Plaat <span class=\"new\">{new}</span>: „{title}” (teisaldati asukohalt <span class=\"old\">{old}</span>)"
 
 #: ../root/edit/details/reorder_mediums.tt:23
 msgid "Disc <span class=\"new\">{new}</span>: {title} (new disc)"
-msgstr ""
+msgstr "Plaat <span class=\"new\">{new}</span>: „{title}” (uus plaat)"
 
 #: ../root/release/discids.tt:8
 msgid "Disc ID"
@@ -2862,7 +2862,7 @@ msgstr "Veateade: "
 
 #: ../root/admin/wikidoc/index.tt:50
 msgid "Error!"
-msgstr ""
+msgstr "Viga!"
 
 #: ../root/main/500.tt:9
 msgid "Error:"
@@ -2946,7 +2946,7 @@ msgstr "Failinimi:"
 
 #: ../root/components/common-macros.tt:790
 msgid "Filter"
-msgstr ""
+msgstr "Filter"
 
 #: ../root/recording/header.tt:1
 msgid "Fingerprints"
@@ -3330,7 +3330,7 @@ msgstr "Kui aga probleem püsib, siis palun {report|teata veast} ja kui ülalpoo
 msgid ""
 "If this is an Amazon ASIN, please do not enter it in the catalog number "
 "field, but add it as a URL relationship later."
-msgstr ""
+msgstr "Kui see on Amazoni ASIN, siis palun ära sisesta seda katalooginumbri väljale, vaid seosta väljalase pärast URL-iga."
 
 #: ../root/release/edit/recordings.tt:107
 msgid ""
@@ -3342,7 +3342,7 @@ msgstr "Kui sellele loole vastavat salvestist pole veel andmebaasis, siis vali p
 msgid ""
 "If you added this alias by mistake, please follow the instructions on "
 "{cancel|how to cancel pending edits} instead of removing this alias."
-msgstr ""
+msgstr "Kui lisasid selle aliase kogemata, siis eemaldamise asemel järgi juhiseid, {cancel|kuidas tühistada ootel olevat toimetust}."
 
 #: ../root/cdtoc/attach_artist_releases.tt:68
 msgid "If you can't find what you're looking for, you can add a new release:"
@@ -4732,7 +4732,7 @@ msgstr "Tuvasta lood"
 
 #: ../root/release/edit/tracklist.tt:189
 msgid "Parse track artists"
-msgstr "Lugude artistide tuvastamine"
+msgstr "Lugude artistide tuvastamine (pealkirjade tagant)"
 
 #: ../root/report/part_of_set_relationships.tt:1
 #: ../root/report/part_of_set_relationships.tt:3
@@ -4900,7 +4900,7 @@ msgstr "Palun loe enne selle toimetuse sisestamist läbi {doc_remove|väljalaske
 
 #: ../root/alias/delete.tt:4
 msgid "Please review the {doc|alias documentation} before entering this edit."
-msgstr ""
+msgstr "Palun loe enne selle toimetuse sisestamist läbi {doc|aliaste dokumentatsioon}."
 
 #: ../root/cdstub/import.tt:3
 msgid "Please search for the artist you wish to create a new release for:"
@@ -5079,7 +5079,7 @@ msgstr "Avalik"
 
 #: ../root/collection/header.tt:14
 msgid "Public collection by {owner}"
-msgstr ""
+msgstr "Avalik kogu ~ {owner}"
 
 #: ../root/components/search.tt:9 ../root/search/form.tt:4
 msgid "Query:"
@@ -5354,7 +5354,7 @@ msgstr "Väljalaskeartist"
 
 #: ../root/edit/search_macros.tt:284
 msgid "Release Country"
-msgstr ""
+msgstr "Väljalaskemaa"
 
 #: ../root/recording/index.tt:14
 msgid "Release Date"
@@ -6050,11 +6050,11 @@ msgstr "Sekt."
 
 #: ../root/collection/header.tt:17
 msgid "See all of your collections"
-msgstr "Vaata kõiki oma kogusid"
+msgstr "vaata kõiki oma kogusid"
 
 #: ../root/collection/header.tt:17
 msgid "See all of {editor}'s public collections"
-msgstr "Vaata kõiki toimetaja {editor} avalikke kogusid"
+msgstr "vaata kõiki tema avalikke kogusid"
 
 #: ../root/tag/index.tt:20
 msgid "See all {num} {entity}"
@@ -6232,7 +6232,7 @@ msgstr "mõnda lugu muudeti, palun vali neile lugudele salvestis."
 
 #: ../root/layout/menu.tt:160 ../root/main/index.tt:12
 msgid "SongKong Tagger"
-msgstr ""
+msgstr "SongKong Tagger"
 
 #: ../root/cdstub/error.tt:11
 msgid ""
@@ -7052,7 +7052,7 @@ msgstr "Selle nimega toimetajat pole."
 
 #: ../root/admin/wikidoc/index.tt:25
 msgid "There was a problem accessing the wiki API."
-msgstr ""
+msgstr "Ilmnes viga wiki API-le juurdepääsemisel."
 
 #: ../root/edit/cannot_approve.tt:3
 msgid "There was a problem approving {edit}."
@@ -7771,7 +7771,7 @@ msgstr "Uue lugude nimekirja loomiseks olemasolevast lugude nimekirjast või pla
 
 #: ../root/release/edit/information.tt:50
 msgid "To edit types, please edit the release group."
-msgstr "Tüüpide muutmiseks toimeta väljalaskerühma."
+msgstr "tüüpide muutmiseks toimeta väljalaskerühma"
 
 #: ../root/elections/show.tt:91
 msgid "To find out if you can vote for this candidate, please {url|log in}."
@@ -8602,7 +8602,7 @@ msgstr "AAAA"
 
 #: ../root/layout/menu.tt:157 ../root/main/index.tt:11
 msgid "Yate Music Tagger"
-msgstr ""
+msgstr "Yate Music Tagger"
 
 #: ../root/artist/browse_various.tt:13 ../root/artist/index.tt:62
 #: ../root/release_group/merge.tt:15 ../root/search/results-freedb.tt:18
@@ -9012,7 +9012,7 @@ msgstr "nimekujud"
 
 #: ../root/admin/wikidoc/index.tt:53
 msgid "diff"
-msgstr ""
+msgstr "erinevus"
 
 #: ../root/release/edit/recordings.tt:64
 #: ../root/release/edit/recordings.tt:140
@@ -10122,7 +10122,7 @@ msgstr "Väljalaskerühma annotatsiooni lisamine"
 
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/Delete.pm:12
 msgid "Remove release group"
-msgstr "Eemalda väljalaskerühm"
+msgstr "Väljalaskerühma eemaldamine"
 
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/Edit.pm:35
 msgid "Edit release group"
