@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-01-15 15:16-0700\n"
-"PO-Revision-Date: 2013-01-26 19:54+0000\n"
+"PO-Revision-Date: 2013-01-26 20:28+0000\n"
 "Last-Translator: Nicolás Tamargo <email address hidden>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/musicbrainz/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -646,7 +646,7 @@ msgstr "Añadir grabación"
 
 #: ../root/edit/index.tt:84
 msgid "Add note"
-msgstr ""
+msgstr "Añadir nota"
 
 #: ../root/edit/index.tt:82
 msgid "Add note and vote"
@@ -3158,7 +3158,7 @@ msgstr "TOC completo:"
 
 #: ../root/search/lib/inline-results-artist.tt:10
 msgid "Gender"
-msgstr ""
+msgstr "Género"
 
 #: ../root/account/edit.tt:19 ../root/artist/edit_form.tt:42
 #: ../root/artist/index.tt:5 ../root/artist/layout.tt:12
@@ -3360,7 +3360,7 @@ msgstr "ISWC:"
 
 #: ../root/work/edit_form.tt:11
 msgid "ISWCs:"
-msgstr ""
+msgstr "ISWCs:"
 
 #: ../root/release/edit/missing_entities.tt:83
 msgid ""
@@ -3565,7 +3565,7 @@ msgstr "Instrumentos"
 
 #: ../root/main/500.tt:47
 msgid "Interface language:"
-msgstr ""
+msgstr "Idioma de la interfaz."
 
 #: ../root/main/500.tt:1 ../root/main/500.tt:3
 msgid "Internal Server Error"
@@ -4484,7 +4484,7 @@ msgstr "No se encontraron publicaciones."
 
 #: ../root/release_group/set_cover_art.tt:54
 msgid "No releases have cover art, cannot set cover art."
-msgstr ""
+msgstr "No se puede escoger una imagen porque ninguna publicación tiene imágenes."
 
 #: ../root/tag/release.tt:1
 msgid "No releases with this tag were found."
@@ -8604,7 +8604,7 @@ msgstr "WikiDoc:"
 
 #: ../root/components/wikipedia_extract.tt:2
 msgid "Wikipedia"
-msgstr ""
+msgstr "Wikipedia"
 
 #: ../root/artist/works-list.tt:9 ../root/components/common-macros.tt:518
 #: ../root/components/common-macros.tt:575 ../root/edit/search_macros.tt:284
@@ -9510,7 +9510,7 @@ msgstr[1] "Encontradas {num} colecciones"
 msgid "{num} day"
 msgid_plural "{num}&#xa0;days"
 msgstr[0] "{num} día"
-msgstr[1] "{num}&#xa0;días"
+msgstr[1] "{num} días"
 
 #: ../root/components/common-macros.tt:67
 msgid "{num} day ago"
@@ -9540,7 +9540,7 @@ msgstr[1] "Encontradas {num} discográficas"
 msgid "{num} month"
 msgid_plural "{num}&#xa0;months"
 msgstr[0] "{num} mes"
-msgstr[1] "{num}&#xa0;meses"
+msgstr[1] "{num} meses"
 
 #: ../root/components/common-macros.tt:67
 msgid "{num} month ago"
@@ -9587,8 +9587,8 @@ msgstr[1] "{num}&#xa0;años"
 #: ../root/components/common-macros.tt:67
 msgid "{num} year ago"
 msgid_plural "{num}&#xa0;years ago"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "hace {num} año"
+msgstr[1] "hace {num} años"
 
 #: ../root/release/edit_relationships.tt:334
 msgid "{n} recording selected"
@@ -10280,66 +10280,66 @@ msgstr "El operador no está soportado"
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:89
 msgctxt "autoeditor election status"
 msgid "Awaiting 1st seconder"
-msgstr ""
+msgstr "Esperando el primer aval"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:90
 msgctxt "autoeditor election status"
 msgid "Awaiting 2nd seconder"
-msgstr ""
+msgstr "Esperando el segundo aval"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:91
 #, perl-brace-format
 msgctxt "autoeditor election status"
 msgid "Voting open since {date}"
-msgstr ""
+msgstr "Votación en proceso desde {date}"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:92
 #, perl-brace-format
 msgctxt "autoeditor election status"
 msgid "Accepted at {date}"
-msgstr ""
+msgstr "Aceptada: {date}"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:93
 #, perl-brace-format
 msgctxt "autoeditor election status"
 msgid "Declined at {date}"
-msgstr ""
+msgstr "Rechazada: {date}"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:94
 #, perl-brace-format
 msgctxt "autoeditor election status"
 msgid "Cancelled at {date}"
-msgstr ""
+msgstr "Cancelada: {date}"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:98
 msgctxt "autoeditor election status (short)"
 msgid "Awaiting 1st seconder"
-msgstr ""
+msgstr "Esperando el primer aval"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:99
 msgctxt "autoeditor election status (short)"
 msgid "Awaiting 2nd seconder"
-msgstr ""
+msgstr "Esperando el segundo aval"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:100
 msgctxt "autoeditor election status (short)"
 msgid "Voting open"
-msgstr ""
+msgstr "Votación en proceso"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:101
 msgctxt "autoeditor election status (short)"
 msgid "Accepted"
-msgstr ""
+msgstr "Aceptada"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:102
 msgctxt "autoeditor election status (short)"
 msgid "Declined"
-msgstr ""
+msgstr "Rechazada"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:103
 msgctxt "autoeditor election status (short)"
 msgid "Cancelled"
-msgstr ""
+msgstr "Cancelada"
 
 #: ../lib/MusicBrainz/Server/Entity/Barcode.pm:25
 msgid "[none]"
@@ -10589,11 +10589,11 @@ msgstr "Debes proporcionar una fecha de nacimiento completa si quieres que podam
 
 #: ../lib/MusicBrainz/Server/Form/User/Login.pm:9
 msgid "Username field is required"
-msgstr ""
+msgstr "Se necesita un nombre de usuario"
 
 #: ../lib/MusicBrainz/Server/Form/User/Login.pm:16
 msgid "Password field is required"
-msgstr ""
+msgstr "Se necesita una contraseña"
 
 #: ../lib/MusicBrainz/Server/Form/User/Preferences.pm:81
 msgid "Daily"
@@ -10609,11 +10609,11 @@ msgstr "Nunca"
 
 #: ../lib/MusicBrainz/Server/Form/User/Register.pm:21
 msgid "Please enter a password in this field"
-msgstr ""
+msgstr "Introduce una contraseña en este campo"
 
 #: ../lib/MusicBrainz/Server/Form/User/Register.pm:29
 msgid "The password confirmation does not match the password"
-msgstr ""
+msgstr "La contraseña de confirmación no coincide con la contraseña"
 
 #: ../lib/MusicBrainz/Server/Form/User/Register.pm:45
 msgid "Please choose another username, this one is already taken"
