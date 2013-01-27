@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-01-15 15:16-0700\n"
-"PO-Revision-Date: 2013-01-26 20:28+0000\n"
+"PO-Revision-Date: 2013-01-26 23:11+0000\n"
 "Last-Translator: Nicolás Tamargo <email address hidden>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/musicbrainz/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -100,7 +100,7 @@ msgstr "&lt; Volver a los tipos de relación"
 
 #: ../root/annotation/edit.tt:40
 msgid "''italics''; '''bold'''; '''''bold italics'''''; ---- horizontal rule"
-msgstr ""
+msgstr "''cursiva''; '''negrita'''; '''''cursiva y negrita'''''; ---- separador horizontal"
 
 #: ../root/components/tag-cloud.tt:26
 msgid "'{tag}' has been used {num} times"
@@ -5273,7 +5273,7 @@ msgstr "Grabaciones:"
 
 #: ../root/edit/list_header.tt:12
 msgid "Refine this search"
-msgstr ""
+msgstr "Perfeccionar esta búsqueda"
 
 #: ../root/account/preferences.tt:12
 msgid "Regional settings"
@@ -6584,27 +6584,27 @@ msgstr "Estadísticas"
 #: ../root/edit/search_macros.tt:284
 msgctxt "edit status"
 msgid "Status"
-msgstr ""
+msgstr "Estatus"
 
 #: ../root/elections/index.tt:10
 msgctxt "election status"
 msgid "Status"
-msgstr ""
+msgstr "Estatus"
 
 #: ../root/release/lookup.tt:14
 msgctxt "release status"
 msgid "Status"
-msgstr ""
+msgstr "Estatus"
 
 #: ../root/edit/info.tt:27
 msgctxt "edit status"
 msgid "Status:"
-msgstr ""
+msgstr "Estatus:"
 
 #: ../root/elections/show.tt:38
 msgctxt "election status"
 msgid "Status:"
-msgstr ""
+msgstr "Estatus:"
 
 #: ../root/edit/details/add_release.tt:39
 #: ../root/edit/details/edit_release.tt:46
@@ -6612,7 +6612,7 @@ msgstr ""
 #: ../root/release/edit/information.tt:55 ../root/release/sidebar.tt:38
 msgctxt "release status"
 msgid "Status:"
-msgstr ""
+msgstr "Estatus:"
 
 #: ../root/watch/list.tt:28
 msgid "Stop watching selected artists"
@@ -8147,7 +8147,7 @@ msgstr "URL:"
 
 #: ../root/annotation/edit.tt:55
 msgid "URL; [URL]; [URL|label]"
-msgstr ""
+msgstr "URL; [URL]; [URL|label]"
 
 #: ../root/relationship/linktype/tree.tt:15
 msgid "UUID:"
@@ -8441,13 +8441,13 @@ msgstr "Lo sentimos, pero los datos de este informe no están disponibles en est
 
 #: ../root/edit/details/macros.tt:88
 msgid "We are unable to display history for this cover art."
-msgstr ""
+msgstr "No podemos mostrar la historia de esta imagen."
 
 #: ../root/edit/details/macros.tt:88
 msgid ""
 "We are unable to display history for this cover art. For a current listing "
 "of cover art, please see the {coverart|release's cover art page}."
-msgstr ""
+msgstr "No podemos mostrar la historia de esta imagen. Para ver las imágenes que tenemos actualmente, ve a la {coverart|página de imágenes de esta publicación}."
 
 #: ../root/release/edit/missing_entities.tt:149
 msgid ""
@@ -8521,7 +8521,7 @@ msgstr "Hemos enviado un correo de verificación a <code>{email}</code>. Comprue
 
 #: ../root/cdtoc/lookup.tt:10
 msgid "We used DiscID <code>{discid}</code> to look up this information."
-msgstr ""
+msgstr "Usamos la ID de disco <code>{discid}</code> para buscar esta información."
 
 #: ../root/account/edit.tt:24
 msgid ""
@@ -9245,7 +9245,7 @@ msgstr "el {date}"
 
 #: ../root/components/common-macros.tt:115
 msgid "original"
-msgstr ""
+msgstr "original"
 
 #: ../root/scripts/text_strings.tt:76
 msgid "page #{page} of #{total}"
@@ -9665,7 +9665,7 @@ msgstr "{user} aún no ha etiquetado nada."
 msgid ""
 "{valink|Various Artists} should very rarely be used on recordings, make sure"
 " that the artist has been entered correctly."
-msgstr ""
+msgstr "{valink|Various Artists} no suele ser el artista adecuado para una grabación. Asegúrate de que has introducido el artista correctamente."
 
 #: ../root/release/edit/tracklist.tt:136
 msgid ""
@@ -10638,12 +10638,12 @@ msgstr "Un mes"
 #: ../lib/MusicBrainz/Server/Form/Utils.pm:132
 msgctxt "language optgroup"
 msgid "Frequently used"
-msgstr ""
+msgstr "Usados frecuentemente"
 
 #: ../lib/MusicBrainz/Server/Form/Utils.pm:132
 msgctxt "language optgroup"
 msgid "Other"
-msgstr ""
+msgstr "Otros"
 
 #: ../lib/MusicBrainz/Server/Form/Utils.pm:155
 msgctxt "script optgroup"
