@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
-"PO-Revision-Date: 2013-01-27 14:50+0000\n"
+"PO-Revision-Date: 2013-01-27 15:15+0000\n"
 "Last-Translator: Shepard <email address hidden>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -1013,7 +1013,7 @@ msgstr ""
 
 #: DB:link_attribute_type/description:4
 msgid "Lead or solo vocal"
-msgstr ""
+msgstr "Lead- oder Sologesang"
 
 #: DB:link_type/link_phrase:91 DB:link_type/link_phrase:181
 msgid "MusicMoz"
@@ -1875,11 +1875,11 @@ msgstr "Chor"
 
 #: DB:link_attribute_type/name:424
 msgid "co"
-msgstr ""
+msgstr "ko"
 
 #: DB:link_attribute_type/description:424
 msgid "co-[role]"
-msgstr ""
+msgstr "ko-[Rolle}"
 
 #: DB:link_type/short_link_phrase:102
 msgid "collaborated {minor:minorly} {additional:additionally} on"
@@ -2031,7 +2031,7 @@ msgstr "Vertreiber"
 
 #: DB:link_type/short_link_phrase:105
 msgid "does/did {instrument} support for"
-msgstr ""
+msgstr "spielte {instrument} in Unterstützung für"
 
 #: DB:link_type/short_link_phrase:107
 msgid "does/did {vocal} vocal support for"
@@ -2068,7 +2068,7 @@ msgstr ""
 
 #: DB:link_attribute_type/name:425
 msgid "executive"
-msgstr ""
+msgstr "leitend"
 
 #: DB:link_type/reverse_link_phrase:172 DB:link_type/reverse_link_phrase:214
 msgid "fan page for"
@@ -2093,12 +2093,12 @@ msgstr "Gründer"
 #: DB:link_type/reverse_link_phrase:75 DB:link_type/reverse_link_phrase:177
 #: DB:link_type/reverse_link_phrase:255
 msgid "free download page for"
-msgstr ""
+msgstr "Seite zum kostenlosen Herunterladen für"
 
 #: DB:link_type/reverse_link_phrase:85 DB:link_type/reverse_link_phrase:268
 #: DB:link_type/reverse_link_phrase:194
 msgid "free music {video} streaming page for"
-msgstr ""
+msgstr "Seite zum kostenlosen Musik-{video:Video-}Streamen für"
 
 #: DB:link_type/link_phrase:73 DB:link_type/link_phrase:187
 #: DB:link_type/link_phrase:257 DB:link_type/reverse_link_phrase:73
@@ -2322,7 +2322,7 @@ msgstr "{additional:zusätzliche} Fotografie von"
 
 #: DB:link_type/short_link_phrase:69
 msgid "has/had {additional} {instrument} samples taken from"
-msgstr ""
+msgstr "beinhaltet {additional:zusätzliche} {instrument}{instrument:-}Samples von"
 
 #: DB:link_type/link_phrase:211
 msgid "history page"
@@ -2403,7 +2403,7 @@ msgstr "ist eine Allmusic-Seite für"
 #: DB:link_type/short_link_phrase:84
 msgid ""
 "is available for download under the Creative Commons {license} license at"
-msgstr ""
+msgstr "steht unter der Creative Commons {license}-Lizenz zum Download bereit unter"
 
 #: DB:link_type/short_link_phrase:302 DB:link_type/short_link_phrase:301
 msgid "is licensed under"
@@ -2431,7 +2431,7 @@ msgstr "ist eine {EP:EP|Single}-Auskopplung von"
 
 #: DB:link_type/short_link_phrase:104
 msgid "is/was a supporting artist for"
-msgstr ""
+msgstr "ist/war ein(e) unterstützende(r) Künstler(in) für"
 
 #: DB:link_type/short_link_phrase:203
 msgid "is/was distributing the catalog of"
@@ -2735,7 +2735,7 @@ msgstr "sprach die Stimme von"
 
 #: DB:link_type/short_link_phrase:53 DB:link_type/short_link_phrase:152
 msgid "performed {additional} chorus master on"
-msgstr ""
+msgstr "leitete {additional:zusätzlich} den Chor auf"
 
 #: DB:link_type/short_link_phrase:44 DB:link_type/short_link_phrase:148
 msgid "performed {additional} {guest} {solo} {instrument} on"
@@ -3216,7 +3216,7 @@ msgstr ""
 msgid ""
 "{additional:additionally} {assistant} {associate} "
 "{co:co-}{executive:executive }produced"
-msgstr ""
+msgstr "{co:ko}produzierte {additional:zusätzlich} {assistant:assistierend} {associate:als Partner} {executive:leitend}"
 
 #: DB:link_type/link_phrase:51 DB:link_type/link_phrase:156
 #: DB:link_type/short_link_phrase:51 DB:link_type/short_link_phrase:156
@@ -3259,7 +3259,7 @@ msgstr "{additional:zusätzliche} Artdirection"
 #: DB:link_type/link_phrase:53 DB:link_type/link_phrase:152
 #: DB:link_type/reverse_link_phrase:53 DB:link_type/reverse_link_phrase:152
 msgid "{additional} chorus master"
-msgstr ""
+msgstr "{additional:zusätzliche(r)} Chorleiter(in)"
 
 #: DB:link_type/reverse_link_phrase:55 DB:link_type/reverse_link_phrase:168
 msgid "{additional} composer"
@@ -3340,7 +3340,7 @@ msgstr ""
 #: DB:link_type/reverse_link_phrase:30 DB:link_type/reverse_link_phrase:141
 msgid ""
 "{additional} {assistant} {associate} {co:co-}{executive:executive }producer"
-msgstr ""
+msgstr "{additional:zusätzliche(r)} {assistant:assistierende(r)} {executive:leitende(r)} {associate:Partner-}{co:Koproduzent(in)|Produzent(in)}"
 
 #: DB:link_type/link_phrase:37 DB:link_type/link_phrase:132
 #: DB:link_type/reverse_link_phrase:37 DB:link_type/reverse_link_phrase:132
@@ -3395,7 +3395,7 @@ msgstr ""
 #: DB:link_type/link_phrase:45 DB:link_type/link_phrase:150
 #: DB:link_type/reverse_link_phrase:45 DB:link_type/reverse_link_phrase:150
 msgid "{additional} {orchestra} orchestra"
-msgstr ""
+msgstr "{additional:zusätzliches} {orchestra}{orchestra:-}Orchester"
 
 #: DB:link_type/link_phrase:57 DB:link_type/reverse_link_phrase:57
 #: DB:link_type/reverse_link_phrase:169
@@ -3433,7 +3433,7 @@ msgstr "{bonus:Bonus-|nächstes }Medium"
 
 #: DB:link_type/short_link_phrase:1
 msgid "{bonus:may be|is} part of a set, the next disc in the set is"
-msgstr ""
+msgstr "{bonus:kann|ist} Teil eines Sets {bonus:sein}, das nächste Medium im Set ist"
 
 #: DB:link_type/short_link_phrase:45 DB:link_type/short_link_phrase:150
 msgid "{orchestra} orchestra {additional:additionally} performed"
