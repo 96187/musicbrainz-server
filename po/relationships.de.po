@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
-"PO-Revision-Date: 2013-01-27 15:15+0000\n"
+"PO-Revision-Date: 2013-01-27 16:57+0000\n"
 "Last-Translator: Shepard <email address hidden>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +39,7 @@ msgstr "BBC-Music-Seite für"
 
 #: DB:link_attribute_type/description:12
 msgid "Background vocal"
-msgstr "Begleitgesang"
+msgstr "Begleitgesang, Hintergrundgesang, Begleitstimme"
 
 #: DB:link_attribute_type/description:245
 msgid "Chamber orchestra"
@@ -1013,7 +1013,7 @@ msgstr ""
 
 #: DB:link_attribute_type/description:4
 msgid "Lead or solo vocal"
-msgstr "Lead- oder Sologesang"
+msgstr "Lead- oder Sologesang, Hauptstimme"
 
 #: DB:link_type/link_phrase:91 DB:link_type/link_phrase:181
 msgid "MusicMoz"
@@ -1033,11 +1033,11 @@ msgstr "Myspace-Seite für"
 
 #: DB:link_attribute_type/description:246
 msgid "Other orchestra"
-msgstr ""
+msgstr "Anderes Orchester"
 
 #: DB:link_attribute_type/description:461
 msgid "Other vocalizations"
-msgstr ""
+msgstr "Andere Stimmformen"
 
 #: DB:link_type/description:76 DB:link_type/description:90
 msgid ""
@@ -1129,7 +1129,7 @@ msgstr "SoundCloud-Seite für"
 
 #: DB:link_attribute_type/description:561
 msgid "Spoken vocals (speech)"
-msgstr ""
+msgstr "Gesprochenes"
 
 #: DB:link_attribute_type/description:244
 msgid "Symphony orchestra"
@@ -1750,7 +1750,7 @@ msgstr "zusätzlich"
 
 #: DB:link_attribute_type/description:5 DB:link_attribute_type/name:5
 msgid "alto"
-msgstr "Alt"
+msgstr "Altstimme"
 
 #: DB:link_type/link_phrase:265 DB:link_type/reverse_link_phrase:265
 msgid "art direction"
@@ -1796,19 +1796,19 @@ msgstr ""
 
 #: DB:link_attribute_type/name:12
 msgid "background"
-msgstr "Begleit"
+msgstr "Begleitgesang"
 
 #: DB:link_attribute_type/description:6 DB:link_attribute_type/name:6
 msgid "baritone"
-msgstr "Bariton"
+msgstr "Baritonstimme"
 
 #: DB:link_attribute_type/description:7 DB:link_attribute_type/name:7
 msgid "bass"
-msgstr "Bass"
+msgstr "Bassstimme"
 
 #: DB:link_attribute_type/description:231 DB:link_attribute_type/name:231
 msgid "bass-baritone"
-msgstr "Bassbariton"
+msgstr "Bassbaritonstimme"
 
 #: DB:link_type/link_phrase:182
 msgid "biographies"
@@ -1871,7 +1871,7 @@ msgstr "Kinder"
 
 #: DB:link_attribute_type/description:13 DB:link_attribute_type/name:13
 msgid "choir"
-msgstr "Chor"
+msgstr "Chorgesang"
 
 #: DB:link_attribute_type/name:424
 msgid "co"
@@ -1879,7 +1879,7 @@ msgstr "ko"
 
 #: DB:link_attribute_type/description:424
 msgid "co-[role]"
-msgstr "ko-[Rolle}"
+msgstr "ko-[Rolle]"
 
 #: DB:link_type/short_link_phrase:102
 msgid "collaborated {minor:minorly} {additional:additionally} on"
@@ -1950,15 +1950,15 @@ msgstr "enthält {additional:zusätzliche} {instrument}{instrument:-}Samples von
 #: DB:link_type/link_phrase:119 DB:link_type/reverse_link_phrase:119
 #: DB:link_type/short_link_phrase:119
 msgid "contract"
-msgstr ""
+msgstr "Vertrag"
 
 #: DB:link_attribute_type/description:230 DB:link_attribute_type/name:230
 msgid "contralto"
-msgstr ""
+msgstr "Kontraltostimme"
 
 #: DB:link_attribute_type/description:8 DB:link_attribute_type/name:8
 msgid "countertenor"
-msgstr ""
+msgstr "Kontratenorstimme"
 
 #: DB:link_attribute_type/name:567
 msgid "cover"
@@ -2481,7 +2481,7 @@ msgstr "spätere {translated:übersetzte} {parody:Parodieversion|Version}"
 
 #: DB:link_attribute_type/name:4
 msgid "lead"
-msgstr "Lead"
+msgstr "Leadgesang"
 
 #: DB:link_type/reverse_link_phrase:108
 msgid "legal name"
@@ -2603,7 +2603,7 @@ msgstr "Medley von"
 
 #: DB:link_attribute_type/description:9 DB:link_attribute_type/name:9
 msgid "mezzo-soprano"
-msgstr "Mezzosopran"
+msgstr "Mezzosopranstimme"
 
 #: DB:link_type/reverse_link_phrase:198 DB:link_type/reverse_link_phrase:223
 msgid "microblog for"
@@ -2982,11 +2982,11 @@ msgstr "Solo"
 
 #: DB:link_attribute_type/description:10 DB:link_attribute_type/name:10
 msgid "soprano"
-msgstr "Sopran"
+msgstr "Sopranstimme"
 
 #: DB:link_attribute_type/name:561
 msgid "spoken"
-msgstr "gesprochen"
+msgstr "Sprecher(in)"
 
 #: DB:link_type/link_phrase:85 DB:link_type/link_phrase:268
 #: DB:link_type/link_phrase:194
@@ -3019,7 +3019,7 @@ msgstr "Sinfonie"
 
 #: DB:link_attribute_type/description:11 DB:link_attribute_type/name:11
 msgid "tenor"
-msgstr "Tenor"
+msgstr "Tenorstimme"
 
 #: DB:link_attribute_type/name:517
 msgid "translated"
@@ -3244,7 +3244,7 @@ msgstr "{translated:übersetzte|schrieb} {additional:zusätzlich} die Liedtexte 
 #: DB:link_type/link_phrase:294 DB:link_type/link_phrase:296
 #: DB:link_type/link_phrase:298
 msgid "{additional:additionally} {vocal} vocal arranged"
-msgstr "arrangierte {additional:zusätzlich} {vocal}{vocal:-}Stimme/Gesang"
+msgstr "arrangierte {additional:zusätzlich} {vocal|Stimme/Gesang}"
 
 #: DB:link_type/reverse_link_phrase:293 DB:link_type/reverse_link_phrase:295
 #: DB:link_type/reverse_link_phrase:297
@@ -3367,7 +3367,7 @@ msgstr "{additional:zusätzlich} {guest:Gast-}{solo:Solo-}{instrument}"
 #: DB:link_type/link_phrase:60 DB:link_type/link_phrase:149
 #: DB:link_type/reverse_link_phrase:60 DB:link_type/reverse_link_phrase:149
 msgid "{additional} {guest} {solo} {vocal} vocals"
-msgstr "{additional:zusätzlicher} {guest:Gast-}{solo:Solo-}{vocal}{vocal:-}Stimme/Gesang"
+msgstr "{additional:zusätzlich} {guest:Gast-}{solo:Solo-}{vocal|Stimme/Gesang}"
 
 #: DB:link_type/reverse_link_phrase:282 DB:link_type/reverse_link_phrase:158
 #: DB:link_type/reverse_link_phrase:41
@@ -3417,7 +3417,7 @@ msgstr "{additional:zusätzliche} {translated:übersetzte} Liedtexte"
 #: DB:link_type/reverse_link_phrase:294 DB:link_type/reverse_link_phrase:296
 #: DB:link_type/reverse_link_phrase:298
 msgid "{additional} {vocal} vocal arranger"
-msgstr "{additional:zusätzliche(r)} {vocal}{vocal:-}Gesangsarrangeur(in)"
+msgstr "{additional:zusätzliche(r)} {vocal|Gesangs}{vocal:-Arrangeur(in)|arrangeur(in)}"
 
 #: DB:link_type/reverse_link_phrase:305
 msgid "{assistant} {principal} {guest} conductor {emeritus}"
@@ -3465,8 +3465,8 @@ msgstr "{video:Video} kann kostenlos gestreamt werden unter"
 
 #: DB:link_type/reverse_link_phrase:107
 msgid "{vocal} vocal support by"
-msgstr "{vocal}{vocal:-}Gesangsunterstützung von"
+msgstr "{vocal|Gesangs}{vocal:-Unterstützung|unterstützung} von"
 
 #: DB:link_type/link_phrase:107
 msgid "{vocal} vocal support for"
-msgstr "{vocal}{vocal:-}Gesangsunterstützung für"
+msgstr "{vocal|Gesangs}{vocal:-Unterstützung|unterstützung} für"
