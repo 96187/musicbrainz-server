@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
-"PO-Revision-Date: 2013-01-27 16:57+0000\n"
+"PO-Revision-Date: 2013-01-27 19:18+0000\n"
 "Last-Translator: Shepard <email address hidden>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -3244,7 +3244,7 @@ msgstr "{translated:übersetzte|schrieb} {additional:zusätzlich} die Liedtexte 
 #: DB:link_type/link_phrase:294 DB:link_type/link_phrase:296
 #: DB:link_type/link_phrase:298
 msgid "{additional:additionally} {vocal} vocal arranged"
-msgstr "arrangierte {additional:zusätzlich} {vocal|Stimme/Gesang}"
+msgstr "arrangierte {additional:zusätzlich} {vocal}{vocal:|Stimme/Gesang}"
 
 #: DB:link_type/reverse_link_phrase:293 DB:link_type/reverse_link_phrase:295
 #: DB:link_type/reverse_link_phrase:297
@@ -3367,7 +3367,7 @@ msgstr "{additional:zusätzlich} {guest:Gast-}{solo:Solo-}{instrument}"
 #: DB:link_type/link_phrase:60 DB:link_type/link_phrase:149
 #: DB:link_type/reverse_link_phrase:60 DB:link_type/reverse_link_phrase:149
 msgid "{additional} {guest} {solo} {vocal} vocals"
-msgstr "{additional:zusätzlich} {guest:Gast-}{solo:Solo-}{vocal|Stimme/Gesang}"
+msgstr "{additional:zusätzlich} {guest:Gast-}{solo:Solo-}{vocal}{vocal:|Stimme/Gesang}"
 
 #: DB:link_type/reverse_link_phrase:282 DB:link_type/reverse_link_phrase:158
 #: DB:link_type/reverse_link_phrase:41
@@ -3417,7 +3417,7 @@ msgstr "{additional:zusätzliche} {translated:übersetzte} Liedtexte"
 #: DB:link_type/reverse_link_phrase:294 DB:link_type/reverse_link_phrase:296
 #: DB:link_type/reverse_link_phrase:298
 msgid "{additional} {vocal} vocal arranger"
-msgstr "{additional:zusätzliche(r)} {vocal|Gesangs}{vocal:-Arrangeur(in)|arrangeur(in)}"
+msgstr "{additional:zusätzliche(r)} {vocal}{vocal:-Arrangeur(in)|Gesangsarrangeur(in)}"
 
 #: DB:link_type/reverse_link_phrase:305
 msgid "{assistant} {principal} {guest} conductor {emeritus}"
@@ -3465,8 +3465,8 @@ msgstr "{video:Video} kann kostenlos gestreamt werden unter"
 
 #: DB:link_type/reverse_link_phrase:107
 msgid "{vocal} vocal support by"
-msgstr "{vocal|Gesangs}{vocal:-Unterstützung|unterstützung} von"
+msgstr "{vocal}{vocal:-Unterstützung|Gesangsunterstützung} von"
 
 #: DB:link_type/link_phrase:107
 msgid "{vocal} vocal support for"
-msgstr "{vocal|Gesangs}{vocal:-Unterstützung|unterstützung} für"
+msgstr "{vocal}{vocal:-Unterstützung|Gesangsunterstützung} für"
