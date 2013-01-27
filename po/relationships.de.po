@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
-"PO-Revision-Date: 2013-01-27 01:04+0000\n"
+"PO-Revision-Date: 2013-01-27 14:50+0000\n"
 "Last-Translator: Shepard <email address hidden>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -2415,7 +2415,7 @@ msgstr "ist die früheste Veröffentlichung von"
 
 #: DB:link_type/short_link_phrase:241
 msgid "is the earliest version of {translated} {parody}"
-msgstr ""
+msgstr "ist die früheste Version von {translated:übersetzter} {parody:Parodie}"
 
 #: DB:link_type/short_link_phrase:2
 msgid "is the original for the transl{transliterated:iter}ated track listing"
@@ -3453,7 +3453,7 @@ msgstr "{translated:übersetzte} {parody:Parodien|Covers}"
 
 #: DB:link_type/link_phrase:15
 msgid "{translated} {parody:parody|cover} of"
-msgstr ""
+msgstr "{translated:übersetzte} {parody:Parodie|Coverversion} von"
 
 #: DB:link_type/reverse_link_phrase:241
 msgid "{translated} {parody} version of"
