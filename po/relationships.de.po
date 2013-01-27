@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
-"PO-Revision-Date: 2013-01-26 23:53+0000\n"
+"PO-Revision-Date: 2013-01-27 00:37+0000\n"
 "Last-Translator: Shepard <email address hidden>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -1768,7 +1768,7 @@ msgstr "Assistent"
 
 #: DB:link_attribute_type/name:527
 msgid "associate"
-msgstr ""
+msgstr "Partner"
 
 #: DB:link_attribute_type/name:255
 msgid "attribution (by)"
@@ -1796,7 +1796,7 @@ msgstr ""
 
 #: DB:link_attribute_type/name:12
 msgid "background"
-msgstr ""
+msgstr "Hintergrund"
 
 #: DB:link_attribute_type/description:6 DB:link_attribute_type/name:6
 msgid "baritone"
@@ -1937,15 +1937,15 @@ msgstr ""
 
 #: DB:link_type/reverse_link_phrase:49
 msgid "contains {additional} samples by"
-msgstr ""
+msgstr "enthält {additional:zusätzliche} Samples von"
 
 #: DB:link_type/short_link_phrase:231
 msgid "contains {additional} samples from"
-msgstr ""
+msgstr "enthält {additional:zusätzliche} Samples von"
 
 #: DB:link_type/reverse_link_phrase:154
 msgid "contains {additional} {instrument} samples by"
-msgstr ""
+msgstr "enthält {additional:zusätzliche} {instrument}{instrument:-}Samples von"
 
 #: DB:link_type/link_phrase:119 DB:link_type/reverse_link_phrase:119
 #: DB:link_type/short_link_phrase:119
@@ -2056,7 +2056,7 @@ msgstr "früheste Veröffentlichung"
 
 #: DB:link_attribute_type/name:617
 msgid "emeritus"
-msgstr ""
+msgstr "Emeritus"
 
 #: DB:link_type/link_phrase:120
 msgid "engineer position"
@@ -2163,7 +2163,7 @@ msgstr "hat eine PureVolume-Seite unter"
 
 #: DB:link_type/short_link_phrase:307 DB:link_type/short_link_phrase:308
 msgid "has a SecondHandSongs page at"
-msgstr ""
+msgstr "hat eine SecondHandSongs-Seite unter"
 
 #: DB:link_type/short_link_phrase:290 DB:link_type/short_link_phrase:291
 msgid "has a SoundCloud page at"
@@ -2461,7 +2461,7 @@ msgstr "ist/war ein {additional:zusätzliches} {founder:Gründungsmitglied|Mitgl
 msgid ""
 "is/was {assistant:an|a} {assistant} {principal} {guest} conductor {emeritus}"
 " for"
-msgstr ""
+msgstr "ist/war ein {assistant:assistierender} {emeritus:emeritierter} {guest:Gast-}{principal:Chef-}Dirigent für"
 
 #: DB:link_type/reverse_link_phrase:226
 msgid "karaoke version of"
@@ -2481,7 +2481,7 @@ msgstr "spätere {translated:übersetzte} {parody:Parodieversion|Version}"
 
 #: DB:link_attribute_type/name:4
 msgid "lead"
-msgstr ""
+msgstr "Lead"
 
 #: DB:link_type/reverse_link_phrase:108
 msgid "legal name"
@@ -2772,7 +2772,7 @@ msgstr "vorheriges Medium"
 
 #: DB:link_attribute_type/name:618
 msgid "principal"
-msgstr ""
+msgstr "Chef"
 
 #: DB:link_type/link_phrase:49 DB:link_type/short_link_phrase:49
 msgid "produced material that was {additional:additionally} sampled in"
@@ -3156,7 +3156,7 @@ msgstr "remixte {additional:zusätzliche}"
 
 #: DB:link_type/reverse_link_phrase:231
 msgid "{additional:additionally} sampled by"
-msgstr ""
+msgstr "{additional:zusätzlich} gesampelt von"
 
 #: DB:link_type/link_phrase:54 DB:link_type/link_phrase:167
 #: DB:link_type/short_link_phrase:54 DB:link_type/short_link_phrase:167
@@ -3167,7 +3167,7 @@ msgstr "schrieb {additional:zusätzlich}"
 msgid ""
 "{additional:additionally} {assistant} {associate} programmed {instrument:% "
 "on}"
-msgstr ""
+msgstr "programmierte {additional:zusätzlich} {assistant:assistierend} {associate:als Partner} {instrument} {instrument:auf}"
 
 #: DB:link_type/link_phrase:140 DB:link_type/link_phrase:31
 #: DB:link_type/short_link_phrase:140 DB:link_type/short_link_phrase:31
@@ -3230,7 +3230,7 @@ msgstr "arrangierte {additional:zusätzlich} {instrument} auf"
 
 #: DB:link_type/reverse_link_phrase:69
 msgid "{additional:additionally} {instrument} sampled by"
-msgstr ""
+msgstr "{additional:zusätzlich} {instrument} gesampelt von"
 
 #: DB:link_type/short_link_phrase:57 DB:link_type/short_link_phrase:169
 msgid ""
@@ -3244,7 +3244,7 @@ msgstr "{translated:übersetzte|schrieb} {additional:zusätzlich} die Liedtexte 
 #: DB:link_type/link_phrase:294 DB:link_type/link_phrase:296
 #: DB:link_type/link_phrase:298
 msgid "{additional:additionally} {vocal} vocal arranged"
-msgstr ""
+msgstr "arrangierte {additional:zusätzlich} {vocal}{vocal:-}Gesang"
 
 #: DB:link_type/reverse_link_phrase:293 DB:link_type/reverse_link_phrase:295
 #: DB:link_type/reverse_link_phrase:297
@@ -3305,7 +3305,7 @@ msgstr "{additional:zusätzliche(r)} Remixer(in)"
 
 #: DB:link_type/link_phrase:231
 msgid "{additional} samples"
-msgstr ""
+msgstr "{additional:zusätzliche} Samples"
 
 #: DB:link_type/reverse_link_phrase:54 DB:link_type/reverse_link_phrase:167
 msgid "{additional} writer"
@@ -3345,7 +3345,7 @@ msgstr ""
 #: DB:link_type/link_phrase:37 DB:link_type/link_phrase:132
 #: DB:link_type/reverse_link_phrase:37 DB:link_type/reverse_link_phrase:132
 msgid "{additional} {assistant} {associate} {instrument} programming"
-msgstr ""
+msgstr "{additional:zusätzliche} {assistant:assistierende} {associate:Partner-}{instrument}{instrument:-}Programmierung"
 
 #: DB:link_type/link_phrase:103
 msgid "{additional} {founder:founding} member of"
@@ -3367,7 +3367,7 @@ msgstr "{additional:zusätzlich} {guest:Gast-}{solo:Solo-}{instrument}"
 #: DB:link_type/link_phrase:60 DB:link_type/link_phrase:149
 #: DB:link_type/reverse_link_phrase:60 DB:link_type/reverse_link_phrase:149
 msgid "{additional} {guest} {solo} {vocal} vocals"
-msgstr ""
+msgstr "{additional:zusätzlicher} {guest:Gast-}{solo:Solo-}{vocal}{vocal:-}Gesang"
 
 #: DB:link_type/reverse_link_phrase:282 DB:link_type/reverse_link_phrase:158
 #: DB:link_type/reverse_link_phrase:41
@@ -3404,7 +3404,7 @@ msgstr "{additional:zusätzliche(r)} {translated:Librettoübersetzer(in)|Librett
 
 #: DB:link_type/reverse_link_phrase:56 DB:link_type/reverse_link_phrase:165
 msgid "{additional} {translated:translator|lyricist}"
-msgstr "{additional:zusätzlicher} {translated:Übersetzer|Texter}"
+msgstr "{additional:zusätzliche(r)} {translated:Übersetzer|Texter(in)}"
 
 #: DB:link_type/link_phrase:169
 msgid "{additional} {translated} libretto"
@@ -3417,15 +3417,15 @@ msgstr "{additional:zusätzliche} {translated:übersetzte} Liedtexte"
 #: DB:link_type/reverse_link_phrase:294 DB:link_type/reverse_link_phrase:296
 #: DB:link_type/reverse_link_phrase:298
 msgid "{additional} {vocal} vocal arranger"
-msgstr ""
+msgstr "{additional:zusätzliche(r)} {vocal}{vocal:-}Gesangsarrangeur(in)"
 
 #: DB:link_type/reverse_link_phrase:305
 msgid "{assistant} {principal} {guest} conductor {emeritus}"
-msgstr ""
+msgstr "{assistant:assistierender} {emeritus:emeritierter} {guest:Gast-}{principal:Chef-}Dirigent"
 
 #: DB:link_type/link_phrase:305
 msgid "{assistant} {principal} {guest} conductor {emeritus} for"
-msgstr ""
+msgstr "{assistant:assistierender} {emeritus:emeritierter} {guest:Gast-}{principal:Chef-}Dirigent für"
 
 #: DB:link_type/link_phrase:1
 msgid "{bonus:bonus|next} disc"
