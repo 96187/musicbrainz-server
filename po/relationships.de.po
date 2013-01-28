@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
-"PO-Revision-Date: 2013-01-28 21:34+0000\n"
+"PO-Revision-Date: 2013-01-28 22:03+0000\n"
 "Last-Translator: Shepard <email address hidden>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -117,31 +117,31 @@ msgstr "DJ-Mix von"
 
 #: DB:link_type/link_phrase:155 DB:link_type/short_link_phrase:155
 msgid "DJ-mixed"
-msgstr ""
+msgstr "DJ-mixte"
 
 #: DB:link_type/reverse_link_phrase:8
 msgid "DJ-mixed versions"
-msgstr ""
+msgstr "DJ-gemixte Versionen"
 
 #: DB:link_type/short_link_phrase:43
 msgid "DJ-mixed {medium:% of}"
-msgstr ""
+msgstr "DJ-mixte {medium:% von}"
 
 #: DB:link_type/link_phrase:43
 msgid "DJ-mixed {medium}"
-msgstr ""
+msgstr "DJ-mixte {medium}"
 
 #: DB:link_type/reverse_link_phrase:155
 msgid "DJ-mixer"
-msgstr ""
+msgstr "DJ-Mixer"
 
 #: DB:link_type/reverse_link_phrase:43
 msgid "DJ-mixer {medium}"
-msgstr ""
+msgstr "DJ-Mixer {medium}"
 
 #: DB:link_type/reverse_link_phrase:227
 msgid "DJ-mixes"
-msgstr ""
+msgstr "DJ-Mixe"
 
 #: DB:link_type/description:117
 msgid ""
@@ -181,7 +181,7 @@ msgid ""
 "For works that have lyrics, this indicates that those lyrics are not "
 "relevant to this recording. Examples include instrumental arrangements, or "
 "\"beats\" from hip-hop songs which may be reused with different lyrics."
-msgstr ""
+msgstr "Bei Werken mit Liedtexten gibt dies an, dass diese Texte nicht für diese Aufnahme relevant sind. Dies können zum Beispiel instrumentale Arrangements sein oder „Beats“ von Hip-Hop-Liedern, die mit anderen Texten wiederverwendet werden können."
 
 #: DB:link_type/link_phrase:97 DB:link_type/link_phrase:178
 msgid "IMDb"
@@ -1152,11 +1152,11 @@ msgstr "Die verlinkte Musik wurde in die Public Domain übergeben."
 
 #: DB:link_attribute_type/description:243
 msgid "This attribute describes a type of orchestra."
-msgstr ""
+msgstr "Dieses Attribut beschreibt die Art von Orchester."
 
 #: DB:link_attribute_type/description:3
 msgid "This attribute describes a type of vocal performance."
-msgstr ""
+msgstr "Dieses Attribut beschreibt die Art von Stimme oder Gesang."
 
 #: DB:link_attribute_type/description:2
 msgid ""
@@ -1168,42 +1168,42 @@ msgstr ""
 msgid ""
 "This attribute describes if a particular performance role was considered "
 "normal or additional."
-msgstr ""
+msgstr "Dieses Attribut beschreibt, ob ein Interpret als regulär oder zusätzlich angesehen wurde."
 
 #: DB:link_attribute_type/description:194
 msgid ""
 "This attribute indicates a 'guest' performance where the performer is not "
 "usually part of the band."
-msgstr ""
+msgstr "Dieses Attribut beschreibt einen Gastauftritt, d. h. der Interpret ist nicht üblicherweise Teil der Band."
 
 #: DB:link_attribute_type/description:511
 msgid ""
 "This attribute indicates a version with satirical, ironic, or otherwise "
 "humorous intent. Parodies in most cases have altered lyrics."
-msgstr ""
+msgstr "Dieses Attribut beschreibt eine Version mit satirischer, ironischer oder sonstwie nicht ernst gemeinter Aussage. Parodien haben in den meisten Fällen andere oder angepasste Liedtexte."
 
 #: DB:link_attribute_type/description:517
 msgid ""
 "This attribute indicates a version with the lyrics in a different language "
 "than the original."
-msgstr ""
+msgstr "Dieses Attribut beschreibt eine Version, bei der der Liedtext in einer anderen Sprache verfasst ist, als in der Ursprungsversion."
 
 #: DB:link_attribute_type/description:525
 msgid ""
 "This attribute indicates that an artist was a founding member of a group "
 "artist."
-msgstr ""
+msgstr "Dieses Attribut gibt an, dass ein Künstler ein Gründungsmitglied einer Künstlergruppe war."
 
 #: DB:link_attribute_type/description:582
 msgid ""
 "This attribute indicates that the streamable content is not audio but video."
-msgstr ""
+msgstr "Dieses Attribut gibt an, dass der streambare Inhalt Video statt nur Audio ist."
 
 #: DB:link_attribute_type/description:425
 msgid ""
 "This attribute is to be used if the role was fulfilled in an executive "
 "capacity."
-msgstr ""
+msgstr "Dieses Attribut sollte verwendet werden, wenn es sich um eine leitende Rolle handelte."
 
 #: DB:link_type/description:274
 msgid ""
@@ -1285,17 +1285,17 @@ msgid ""
 "This indicates that the group had multiple conductors who were led by this "
 "conductor. This may be indicated by either the title of \"principal "
 "conductor\" or \"first conductor\"."
-msgstr ""
+msgstr "Dies gibt an, dass die Gruppe mehrere Dirigenten hatte, die von diesem Dirigenten, dem Chefdirigenten, geleitet wurden."
 
 #: DB:link_attribute_type/description:579
 msgid ""
 "This indicates that the recording is not of the entire work, e.g. excerpts "
 "from, conclusion of, etc."
-msgstr ""
+msgstr "Dies gibt an, dass die Aufnahme nicht das ganze Werk umfasst, z. B. Auszüge des Werks, die Coda etc."
 
 #: DB:link_attribute_type/description:578
 msgid "This indicates that the recording is of a live performance."
-msgstr ""
+msgstr "Dies gibt an, dass die Aufnahme von einer Live-Aufführung stammt."
 
 #: DB:link_attribute_type/description:545
 msgid ""
@@ -1662,13 +1662,13 @@ msgstr ""
 msgid ""
 "This should be used when an artist is credited in liner notes or a similar "
 "source as performing a solo part."
-msgstr ""
+msgstr "Dies sollte verwendet werden, wenn im Booklet oder ähnlichen Quellen steht, dass der Künstler einen Solo-Part übernommen hat."
 
 #: DB:link_attribute_type/description:617
 msgid ""
 "This title indicates that a conductor has at least partially retired, and no"
 " longer plays an active role with the group."
-msgstr ""
+msgstr "Dieser Titel gibt an, dass der Dirigent sich zumindest teilweise in den Ruhestand zurückgezogen hat und keine aktive Rolle mehr in der Gruppe übernimmt."
 
 #: DB:link_attribute_type/description:526
 msgid ""
@@ -1687,7 +1687,7 @@ msgstr ""
 msgid ""
 "Transliterated track listings don't change the language, just the script or "
 "spelling."
-msgstr ""
+msgstr "Umgeschriebene Titellisten ändern nicht die Sprache, sondern nur das Schriftsystem oder die Schreibweise."
 
 #: DB:link_type/description:93 DB:link_type/description:197
 #: DB:link_type/description:271
@@ -1742,7 +1742,7 @@ msgstr "YouTube-Kanäle"
 
 #: DB:link_attribute_type/description:253
 msgid "a license used to release music under"
-msgstr ""
+msgstr "eine Lizenz, die zur Veröffentlichung von Musik verwendet wurde"
 
 #: DB:link_attribute_type/name:1
 msgid "additional"
@@ -2122,7 +2122,7 @@ msgstr ""
 
 #: DB:link_type/short_link_phrase:117
 msgid "had a producer position at"
-msgstr ""
+msgstr "war Produzent bei"
 
 #: DB:link_type/short_link_phrase:121
 msgid "had a recording contract with"
@@ -2130,7 +2130,7 @@ msgstr "hatte einen Plattenvertrag mit"
 
 #: DB:link_type/short_link_phrase:120
 msgid "had an engineer position at"
-msgstr ""
+msgstr "war Techniker/Toningenieur bei"
 
 #: DB:link_type/reverse_link_phrase:11
 msgid "had associated {EP:EP|single}(s)"
