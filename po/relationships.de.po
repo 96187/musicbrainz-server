@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
-"PO-Revision-Date: 2013-01-27 19:18+0000\n"
+"PO-Revision-Date: 2013-01-28 21:34+0000\n"
 "Last-Translator: Shepard <email address hidden>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -761,7 +761,7 @@ msgstr ""
 msgid ""
 "Indicates the audio engineer for this work. (<a "
 "href=\"http://musicbrainz.org/doc/Engineer_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Gibt den Audio-Engineer (Toningenieur, Tontechniker) an. (<a href=\"http://musicbrainz.org/doc/Engineer_Relationship_Type\">Details</a>)"
 
 #: DB:link_type/description:168
 msgid ""
@@ -786,7 +786,7 @@ msgstr ""
 msgid ""
 "Indicates the engineer for this work. (<a "
 "href=\"http://musicbrainz.org/doc/Engineer_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Gibt einen Techniker (Engineer) an. (<a href=\"http://musicbrainz.org/doc/Engineer_Relationship_Type\">Details</a>)"
 
 #: DB:link_type/description:57 DB:link_type/description:169
 msgid ""
@@ -804,20 +804,20 @@ msgstr ""
 msgid ""
 "Indicates the mastering engineer for this work. (<a "
 "href=\"http://musicbrainz.org/doc/Engineer_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Gibt den Techniker an, der das Audio Mastering durchgeführt hat. (<a href=\"http://musicbrainz.org/doc/Engineer_Relationship_Type\">Details</a>)"
 
 #: DB:link_type/description:143
 msgid ""
 "Indicates the mix engineer for this work, i.e. the person who did the final "
 "audio mixing. This is not a remixer! (<a "
 "href=\"http://musicbrainz.org/doc/Engineer_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Gibt den Techniker an, der den Mix / die Abmischung durchgeführt hat. (<a href=\"http://musicbrainz.org/doc/Engineer_Relationship_Type\">Details</a>)"
 
 #: DB:link_type/description:26
 msgid ""
 "Indicates the mix engineer for this work. (<a "
 "href=\"http://musicbrainz.org/doc/Engineer_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Gibt den Techniker an, der den Mix / die Abmischung durchgeführt hat. (<a href=\"http://musicbrainz.org/doc/Engineer_Relationship_Type\">Details</a>)"
 
 #: DB:link_type/description:183
 msgid ""
@@ -991,7 +991,7 @@ msgid ""
 "responsible for committing music to tape, for ensuring that the sounds the "
 "musicians make are recorded in an aesthetically pleasing manner. (<a "
 "href=\"http://musicbrainz.org/doc/Engineer_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Gibt den Aufnahmetechniker an, der die Aufnahme durchgeführt hat. (<a href=\"http://musicbrainz.org/doc/Engineer_Relationship_Type\">Details</a>)"
 
 #: DB:link_type/description:98
 msgid ""
@@ -1009,7 +1009,7 @@ msgstr ""
 msgid ""
 "Indicates the sound engineer for this work. (<a "
 "href=\"http://musicbrainz.org/doc/Engineer_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Gibt den Sound Engineer (Tontechniker) an. (<a href=\"http://musicbrainz.org/doc/Engineer_Relationship_Type\">Details</a>)"
 
 #: DB:link_attribute_type/description:4
 msgid "Lead or solo vocal"
@@ -2382,7 +2382,7 @@ msgstr "ist eine Seite in einer Datenbank für"
 
 #: DB:link_type/short_link_phrase:6 DB:link_type/short_link_phrase:236
 msgid "is a remaster of"
-msgstr "ist eine Überarbeitung von"
+msgstr "ist ein Remaster von"
 
 #: DB:link_type/short_link_phrase:9 DB:link_type/short_link_phrase:230
 msgid "is a remix of"
@@ -2896,15 +2896,15 @@ msgstr ""
 
 #: DB:link_type/link_phrase:6 DB:link_type/link_phrase:236
 msgid "remaster of"
-msgstr "Überarbeitung von"
+msgstr "Remaster von"
 
 #: DB:link_type/reverse_link_phrase:6
 msgid "remastered versions"
-msgstr "überarbeitete Versionen"
+msgstr "remasterte Versionen"
 
 #: DB:link_type/reverse_link_phrase:236
 msgid "remasters"
-msgstr "Überarbeitungen"
+msgstr "Remaster"
 
 #: DB:link_type/link_phrase:9 DB:link_type/link_phrase:230
 msgid "remix of"
@@ -3173,43 +3173,43 @@ msgstr "programmierte {additional:zusätzlich} {assistant:assistierend} {associa
 #: DB:link_type/short_link_phrase:140 DB:link_type/short_link_phrase:31
 msgid ""
 "{additional:additionally} {assistant} {associate} {co:co-}audio engineered"
-msgstr ""
+msgstr "{co:ko-}audio-engineerte {additional:zusätzlich} {assistant:assistierend} {associate:als Partner}"
 
 #: DB:link_type/link_phrase:38 DB:link_type/link_phrase:144
 #: DB:link_type/short_link_phrase:38 DB:link_type/short_link_phrase:144
 msgid "{additional:additionally} {assistant} {associate} {co:co-}edited"
-msgstr ""
+msgstr "{co:ko-}editierte {additional:zusätzlich} {assistant:assistierend} {associate:als Partner}"
 
 #: DB:link_type/short_link_phrase:42 DB:link_type/short_link_phrase:136
 msgid "{additional:additionally} {assistant} {associate} {co:co-}mastered"
-msgstr ""
+msgstr "{co:ko-}masterte {additional:zusätzlich} {assistant:assistierend} {associate:als Partner}"
 
 #: DB:link_type/link_phrase:143 DB:link_type/link_phrase:26
 #: DB:link_type/short_link_phrase:143 DB:link_type/short_link_phrase:26
 msgid "{additional:additionally} {assistant} {associate} {co:co-}mixed"
-msgstr ""
+msgstr "{co:ko-}mixte {additional:zusätzlich} {assistant:assistierend} {associate:als Partner}"
 
 #: DB:link_type/link_phrase:36 DB:link_type/link_phrase:128
 #: DB:link_type/short_link_phrase:36 DB:link_type/short_link_phrase:128
 msgid "{additional:additionally} {assistant} {associate} {co:co-}recorded"
-msgstr ""
+msgstr "nahm {additional:zusätzlich} {assistant:assistierend} {associate:als Partner} {co:ko-}auf"
 
 #: DB:link_type/reverse_link_phrase:36 DB:link_type/reverse_link_phrase:128
 msgid "{additional:additionally} {assistant} {associate} {co:co-}recorded by"
-msgstr ""
+msgstr "{additional:zusätzlich} {assistant:assistierend} {associate:Partner-}{co:Ko-}Aufnahme"
 
 #: DB:link_type/link_phrase:29 DB:link_type/link_phrase:133
 #: DB:link_type/short_link_phrase:29 DB:link_type/short_link_phrase:133
 msgid ""
 "{additional:additionally} {assistant} {associate} {co:co-}sound engineered"
-msgstr ""
+msgstr "{co:ko-}sound-engineerte {additional:zusätzlich} {assistant:assistierend} {associate:als Partner}"
 
 #: DB:link_type/link_phrase:28 DB:link_type/link_phrase:138
 #: DB:link_type/short_link_phrase:28 DB:link_type/short_link_phrase:138
 msgid ""
 "{additional:additionally} {assistant} {associate} "
 "{co:co-}{executive:executive }engineered"
-msgstr ""
+msgstr "{co:ko-}engineerte {additional:zusätzlich} {assistant:assistierend} {associate:als Partner}"
 
 #: DB:link_type/link_phrase:30 DB:link_type/link_phrase:141
 #: DB:link_type/short_link_phrase:30 DB:link_type/short_link_phrase:141
@@ -3301,7 +3301,7 @@ msgstr "{additional:zusätzliche} Fotografie"
 
 #: DB:link_type/reverse_link_phrase:47 DB:link_type/reverse_link_phrase:153
 msgid "{additional} remixer"
-msgstr "{additional:zusätzliche(r)} Remixer(in)"
+msgstr "{additional:zusätzlicher} Remix"
 
 #: DB:link_type/link_phrase:231
 msgid "{additional} samples"
@@ -3313,29 +3313,29 @@ msgstr "{additional:zusätzliche(r)} Verfasser(in)"
 
 #: DB:link_type/reverse_link_phrase:140 DB:link_type/reverse_link_phrase:31
 msgid "{additional} {assistant} {associate} {co:co-}audio engineer"
-msgstr ""
+msgstr "{additional:zusätzliches} {assistant:assistierendes} {associate:Partner-}{co:Ko-}Audio-Engineering"
 
 #: DB:link_type/reverse_link_phrase:38 DB:link_type/reverse_link_phrase:144
 msgid "{additional} {assistant} {associate} {co:co-}editor"
-msgstr ""
+msgstr "{additional:zusätzliches} {assistant:assistierendes} {associate:Partner-}{co:Ko-}Editing"
 
 #: DB:link_type/link_phrase:42 DB:link_type/link_phrase:136
 #: DB:link_type/reverse_link_phrase:42 DB:link_type/reverse_link_phrase:136
 msgid "{additional} {assistant} {associate} {co:co-}mastering"
-msgstr ""
+msgstr "{additional:zusätzliches} {assistant:assistierendes} {associate:Partner-}{co:Ko-}Mastering"
 
 #: DB:link_type/reverse_link_phrase:143 DB:link_type/reverse_link_phrase:26
 msgid "{additional} {assistant} {associate} {co:co-}mixer"
-msgstr ""
+msgstr "{additional:zusätzliche(r)} {assistant:assistierende(r)} {associate:Partner-}{co:Ko-}Mix"
 
 #: DB:link_type/reverse_link_phrase:29 DB:link_type/reverse_link_phrase:133
 msgid "{additional} {assistant} {associate} {co:co-}sound engineer"
-msgstr ""
+msgstr "{additional:zusätzliches} {assistant:assistierendes} {associate:Partner-}{co:Ko-}Sound-Engineering"
 
 #: DB:link_type/reverse_link_phrase:28 DB:link_type/reverse_link_phrase:138
 msgid ""
 "{additional} {assistant} {associate} {co:co-}{executive:executive }engineer"
-msgstr ""
+msgstr "{additional:zusätzliche(r)} {assistant:assistierende(r)} {associate:Partner-}{co:Ko-}Techniker(in)"
 
 #: DB:link_type/reverse_link_phrase:30 DB:link_type/reverse_link_phrase:141
 msgid ""
