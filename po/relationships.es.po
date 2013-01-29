@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
-"PO-Revision-Date: 2013-01-27 21:53+0000\n"
+"PO-Revision-Date: 2013-01-29 12:20+0000\n"
 "Last-Translator: Nicolás Tamargo <email address hidden>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/musicbrainz/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -804,7 +804,7 @@ msgstr ""
 msgid ""
 "Indicates the lyricist for this work. (<a "
 "href=\"http://musicbrainz.org/doc/Lyricist_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indica el letrista de esta obra. (<a href=\"http://musicbrainz.org/doc/Lyricist_Relationship_Type\">Detalles</a>)"
 
 #: DB:link_type/description:42 DB:link_type/description:136
 msgid ""
@@ -3410,7 +3410,7 @@ msgstr "{translated:traductor del libreto|libretista} {additional:adicional}"
 
 #: DB:link_type/reverse_link_phrase:56 DB:link_type/reverse_link_phrase:165
 msgid "{additional} {translated:translator|lyricist}"
-msgstr "{translated:traductor|lyricist:letrista} {additional:adicional}"
+msgstr "{translated:traductor|letrista} {additional:adicional}"
 
 #: DB:link_type/link_phrase:169
 msgid "{additional} {translated} libretto"
