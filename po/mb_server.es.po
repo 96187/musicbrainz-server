@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-01-15 15:16-0700\n"
-"PO-Revision-Date: 2013-01-27 22:20+0000\n"
+"PO-Revision-Date: 2013-02-01 02:42+0000\n"
 "Last-Translator: Nicolás Tamargo <email address hidden>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/musicbrainz/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -340,7 +340,7 @@ msgstr "<strong>Aviso</strong>: #{disc} tiene una ID de disco, no es posible eli
 msgid ""
 "=&#xa0;Title&#xa0;1&#xa0;=; ==&#xa0;Title&#xa0;2&#xa0;==; "
 "===&#xa0;Title&#xa0;3&#xa0;==="
-msgstr ""
+msgstr "=&#xa0;Título&#xa0;1&#xa0;=; ==&#xa0;Título&#xa0;2&#xa0;==; ===&#xa0;Título&#xa0;3&#xa0;==="
 
 #: ../root/cdtoc/lookup.tt:19
 msgid ""
@@ -6218,7 +6218,7 @@ msgstr "Mostrar menos..."
 msgid ""
 "Show me {autoedit_select_block} sorted {sort_select_block} that "
 "{match_or_negation_block} {and_vs_or_block} of the following conditions:"
-msgstr ""
+msgstr "Mostrar {autoedit_select_block} que {match_or_negation_block} {and_vs_or_block} las siguientes condiciones (orden: {sort_select_block} ):"
 
 #: ../root/scripts/text_strings.tt:88
 msgid "Show more..."
@@ -7855,7 +7855,7 @@ msgstr "Para comprobar si puedes votar por este candidato, {url|inicia sesión}.
 msgid ""
 "To use the batch tools, select some recordings or works using the "
 "checkboxes."
-msgstr ""
+msgstr "Para utilizar las herramientas de edición múltiple, haz clic en las casillas para seleccionar grabaciones u obras."
 
 #: ../root/watch/list.tt:36
 msgid ""
@@ -8486,8 +8486,8 @@ msgid ""
 msgid_plural ""
 "We found the following artists named \"{artist}\" in MusicBrainz. If one of "
 "them was the artist you intended to use, please select them:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Hemos encontrado el siguiente artista llamado \"{artist}\" en MusicBrainz. Si este es el artista que quieres usar, selecciónalo:"
+msgstr[1] "Hemos encontrado los siguiente artistas llamados \"{artist}\" en MusicBrainz. Si uno de ellos es el artista que quieres usar, selecciónalo:"
 
 #: ../root/release/edit/missing_entities.tt:107
 msgid ""
@@ -8496,8 +8496,8 @@ msgid ""
 msgid_plural ""
 "We found the following labels named \"{label}\" in MusicBrainz. If one of "
 "them was the label you intended to use, please select them:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Hemos encontrado la siguiente discográfica llamada \"{label}\" en MusicBrainz. Si esta es la discográfica que quieres usar, selecciónala:"
+msgstr[1] "Hemos encontrado las siguientes discográficas llamadas \"{label}\" en MusicBrainz. Si una de ellas es la discográfica que quieres usar, selecciónala:"
 
 #: ../root/search/editor.tt:5
 msgid ""
@@ -8539,7 +8539,7 @@ msgstr "Sentimos mucho este problema. Espera unos minutos y vuelve a intentarlo;
 msgid ""
 "We're very sorry, an error occurred during submission. The server may be "
 "under heavy load; please wait a moment and try again."
-msgstr ""
+msgstr "Lo sentimos, hubo un error al enviar los datos. Es posible que el servidor esté sobrecargado, espera un momento y vuelve a intentarlo."
 
 #: ../root/account/lost_username_sent.tt:5
 msgid ""
@@ -9042,7 +9042,7 @@ msgstr "con {num} años"
 
 #: ../root/edit/search_macros.tt:28
 msgid "all"
-msgstr "todos"
+msgstr "todas"
 
 #: ../root/edit/search_macros.tt:28
 msgid "any"
@@ -9266,7 +9266,7 @@ msgstr[1] "y {n} colecciones privadas más"
 
 #: ../root/artist/edit_form.tt:66
 msgid "preview:"
-msgstr ""
+msgstr "previsualización: "
 
 #: ../root/edit/search_macros.tt:19
 msgid "randomly"
@@ -9460,7 +9460,7 @@ msgstr "{format} {position} {name} de {release} de {artist}"
 
 #: ../root/components/common-macros.tt:139
 msgid "{last_list_item}"
-msgstr ""
+msgstr "{last_list_item}"
 
 #: ../root/components/ratings.tt:20
 msgid "{link} has no ratings."
@@ -9515,8 +9515,8 @@ msgstr[1] "{num} días"
 #: ../root/components/common-macros.tt:67
 msgid "{num} day ago"
 msgid_plural "{num}&#xa0;days ago"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "hace {num} día"
+msgstr[1] "hace {num} días"
 
 #: ../root/user/subscriptions/subscriptions.tt:22
 msgid "{num} editor"
@@ -9545,8 +9545,8 @@ msgstr[1] "{num} meses"
 #: ../root/components/common-macros.tt:67
 msgid "{num} month ago"
 msgid_plural "{num}&#xa0;months ago"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "hace {num} mes"
+msgstr[1] "hace {num} meses"
 
 #: ../root/tag/recording.tt:1
 msgid "{num} recording found"
@@ -10638,7 +10638,7 @@ msgstr "Un mes"
 #: ../lib/MusicBrainz/Server/Form/Utils.pm:132
 msgctxt "language optgroup"
 msgid "Frequently used"
-msgstr "Usados frecuentemente"
+msgstr "Más habituales"
 
 #: ../lib/MusicBrainz/Server/Form/Utils.pm:132
 msgctxt "language optgroup"
@@ -10648,12 +10648,12 @@ msgstr "Otros"
 #: ../lib/MusicBrainz/Server/Form/Utils.pm:155
 msgctxt "script optgroup"
 msgid "Frequently used"
-msgstr ""
+msgstr "Más habituales"
 
 #: ../lib/MusicBrainz/Server/Form/Utils.pm:155
 msgctxt "script optgroup"
 msgid "Other"
-msgstr ""
+msgstr "Otros"
 
 #: ../lib/MusicBrainz/Server/Release.pm:57
 msgid "(Special case)"
