@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-02-03 21:20-0700\n"
-"PO-Revision-Date: 2013-02-04 13:53+0000\n"
+"PO-Revision-Date: 2013-02-04 14:50+0000\n"
 "Last-Translator: Nicolás Tamargo <email address hidden>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/musicbrainz/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -2177,7 +2177,7 @@ msgstr "El formato de fecha es AAAA-MM-DD. Puedes usar fechas parciales, como AA
 
 #: ../root/scripts/text_strings.tt:73
 msgid "Deceased:"
-msgstr "Muerte:"
+msgstr "Fallecido:"
 
 #: ../root/label/layout.tt:22 ../root/label/layout.tt:29
 msgid "Defunct:"
@@ -2256,7 +2256,7 @@ msgstr "Desarrollo"
 
 #: ../root/components/common-macros.tt:832
 msgid "Died:"
-msgstr "Muerte:"
+msgstr "Muerto:"
 
 #: ../root/search/form.tt:35 ../root/search/form.tt:40
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:56
@@ -2737,7 +2737,7 @@ msgstr "Ediciones"
 
 #: ../root/user/profile.tt:141
 msgid "Edits ({view_url|view})"
-msgstr "Ediciones ({view_url|view})"
+msgstr "Ediciones ({view_url|ver})"
 
 #: ../root/edit/subscribed-editors.tt:15 ../root/edit/subscribed-editors.tt:17
 msgid "Edits By Your Subscribed Editors"
@@ -2891,7 +2891,7 @@ msgid ""
 "is highly recommended. Not only does it make it clear where you got your "
 "information, but it can also encourage other users to vote on your edit "
 "&#x2014; thus making your edit get applied faster."
-msgstr "Es altamente aconsejable introducir un {note|comentario para la edición} que explique de dónde has obtenido la información. No solo deja claro el origen de los datos, sino que además anima a otros usuarios a votar, consiguiendo que tus cambios sean aplicados más rápidamente."
+msgstr "Es muy aconsejable introducir una {note|nota} que explique dónde has obtenido la información. No solo deja claro el origen de los datos, sino que además anima a otros usuarios a votar, consiguiendo que tus cambios sean aplicados más rápidamente."
 
 #: ../root/otherlookup/not_found.tt:1 ../root/otherlookup/not_found.tt:2
 msgid "Entity Not Found"
@@ -3890,7 +3890,7 @@ msgstr "Baja"
 #: ../root/release/edit_relationships.tt:216 ../root/work/edit_form.tt:10
 #: ../root/work/layout.tt:11
 msgid "Lyrics Language:"
-msgstr "Idioma de las letras"
+msgstr "Idioma de la letra:"
 
 #: ../root/otherlookup/form.tt:3
 msgid "MBID:"
