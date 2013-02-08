@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-02-03 21:20-0700\n"
-"PO-Revision-Date: 2013-02-04 16:06+0000\n"
+"PO-Revision-Date: 2013-02-08 19:44+0000\n"
 "Last-Translator: Nicolás Tamargo <email address hidden>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/musicbrainz/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -1180,7 +1180,7 @@ msgstr "Crédito de artista:"
 
 #: ../root/artist/aliases.tt:8
 msgid "Artist credits"
-msgstr ""
+msgstr "Créditos de artista"
 
 #: ../root/edit/details/edit_medium.tt:223
 msgid "Artist credits:"
@@ -1492,7 +1492,7 @@ msgstr "Inicio:"
 #: ../root/search/lib/inline-results-artist.tt:12
 #: ../root/search/results-label.tt:12
 msgid "Begin"
-msgstr "Comienza"
+msgstr "Inicio"
 
 #: ../root/components/aliases.tt:13
 msgid "Begin Date"
@@ -1515,7 +1515,7 @@ msgstr "Fecha de inicio"
 #: ../root/edit/relationship/edit.tt:125 ../root/label/edit_form.tt:52
 #: ../root/release/edit_relationships.tt:135
 msgid "Begin date:"
-msgstr "Fecha de comienzo:"
+msgstr "Fecha de inicio:"
 
 #: ../root/layout/menu.tt:242
 msgid "Beginners Guide"
@@ -1945,7 +1945,7 @@ msgstr "Colecciones"
 
 #: ../root/cdstub/index.tt:3
 msgid "Comment"
-msgstr ""
+msgstr "Comentario"
 
 #: ../root/cdstub/edit_form.tt:8 ../root/edit/details/add_cover_art.tt:11
 #: ../root/edit/details/edit_cover_art.tt:17
@@ -5432,7 +5432,7 @@ msgstr "Artista de la publicación"
 
 #: ../root/edit/search_macros.tt:284
 msgid "Release Country"
-msgstr ""
+msgstr "País de publicación"
 
 #: ../root/recording/index.tt:14
 msgid "Release Date"
@@ -6932,7 +6932,7 @@ msgstr "La edición ha sido cancelada."
 
 #: ../root/scripts/text_strings.tt:95
 msgid "The end date cannot preceed the begin date."
-msgstr "La fecha final no puede ser anterior a la inicial."
+msgstr "La fecha de fin no puede ser anterior a la de inicio."
 
 #: ../root/user/privileged.tt:41
 msgid "The following {count} user accounts are bots:"
@@ -7130,7 +7130,7 @@ msgstr "No hay ningún usuario con este nombre."
 
 #: ../root/admin/wikidoc/index.tt:25
 msgid "There was a problem accessing the wiki API."
-msgstr ""
+msgstr "Hubo un problema al acceder a la API de la wiki."
 
 #: ../root/edit/cannot_approve.tt:3
 msgid "There was a problem approving {edit}."
@@ -7157,7 +7157,7 @@ msgstr "Este CD tiene pistas de más de un artista (p. ej., un recopilatorio)"
 msgid ""
 "This ISRC is not associated with any recordings. If you wish to associate it"
 " with a recording, please {search_url|search for the recording} and add it."
-msgstr "Este ISRC no está asociado a ninguna grabación. Si deseas asociarlo a una, {search_url|busca la grabación} y hazlo."
+msgstr "Este ISRC no está asociado a ninguna grabación. Si quieres asociarlo a una, {search_url|busca la grabación} y hazlo."
 
 #: ../root/iswc/not_found.tt:4
 msgid ""
@@ -7182,7 +7182,7 @@ msgid ""
 "This artist has no relationships, recordings, releases or release groups, "
 "and will be removed automatically in the next few days. If this is not "
 "intended, please add more data to this artist."
-msgstr "Este artista no tiene relaciones, grabaciones, publicaciones ni grupos de publicación y será eliminado automáticamente en unos días. Si deaseas evitarlo, añade más información."
+msgstr "Este artista no tiene relaciones, grabaciones, publicaciones ni grupos de publicación y será eliminado automáticamente en unos días. Si deseas evitarlo, añade más información."
 
 #: ../root/artist/tags.tt:2
 msgid "This artist has no tags."
@@ -7369,7 +7369,7 @@ msgid ""
 "This label has no relationships or releases and will be removed "
 "automatically in the next few days. If this is not intended, please add more"
 " data to this label."
-msgstr ""
+msgstr "Esta discográfica no tiene relaciones ni publicaciones y será eliminada automáticamente en unos días. Si deseas evitarlo, añade más información."
 
 #: ../root/label/tags.tt:2
 msgid "This label has no tags."
@@ -7742,7 +7742,7 @@ msgstr "Este informe muestra lanzamientos con el estado pseudo-lanzamiento que n
 #: ../root/release/merge.tt:137
 msgid ""
 "This requires that corresponding mediums have the same number of tracks."
-msgstr ""
+msgstr "Esto requiere que los medios correspondientes tengan el mismo número de pistas."
 
 #: ../root/user/profile.tt:184
 msgid "This table shows a summary of votes cast by this editor."
@@ -7791,7 +7791,7 @@ msgstr "Este asistente te permite fusionar {release} con otro lanzamiento."
 msgid ""
 "This work has no relationships and will be removed automatically in the next"
 " few days. If this is not intended, please add relationships to this work."
-msgstr "Esta obra no tiene relaciones, y será eliminada automáticamente en los próximos días. Si no quieres que sea eliminada, añade algunas relaciones."
+msgstr "Esta obra no tiene relaciones, y será eliminada automáticamente en unos días. Si deseas evitarlo, añade algunas relaciones."
 
 #: ../root/work/tags.tt:2
 msgid "This work has no tags."
@@ -8317,7 +8317,7 @@ msgstr "Versión:"
 
 #: ../root/user/ratings_summary.tt:25
 msgid "View all ratings"
-msgstr ""
+msgstr "Ver todas las valoraciones"
 
 #: ../root/layout/sidebar/sidebar-favicons.tt:32
 msgid "View all relationships"
@@ -8365,7 +8365,7 @@ msgstr "Votar ediciones"
 
 #: ../root/scripts/text_strings.tt:121
 msgid "Vote on all edits:"
-msgstr ""
+msgstr "Votar en todas las ediciones."
 
 #: ../root/edit/index.tt:26
 msgid "Vote tally:"
@@ -8756,7 +8756,7 @@ msgstr "Sí, seguro"
 msgid ""
 "You are about to add an ISRC to {recording} by {ac}. The ISRC must be "
 "entered in standard <code>CCXXXYYNNNNNN</code> format:"
-msgstr "Vas a asociar un ISRC a {recording} de {ac}. El ISRC debe introducirse con el formato estándar <code>CCXXXYYNNNNNN</code>: "
+msgstr "Vas a asociar un ISRC a {recording} de {ac}. Debes introducirlo con el formato estándar <code>CCXXXYYNNNNNN</code>: "
 
 #: ../root/components/forms.tt:233
 msgid ""
@@ -9111,7 +9111,7 @@ msgstr "créditos"
 
 #: ../root/admin/wikidoc/index.tt:53
 msgid "diff"
-msgstr ""
+msgstr "diff"
 
 #: ../root/release/edit/recordings.tt:64
 #: ../root/release/edit/recordings.tt:140
@@ -9345,7 +9345,7 @@ msgstr "símbolo"
 msgid ""
 "tab or 4 spaces and: * bullets; 1., a., A., i., I. numbered items; spaces "
 "alone indent"
-msgstr ""
+msgstr "tabulación o 4 espacios y: * (lista de puntos); 1., a., A., i., I. (lista numerada); solo espacios (sangría)"
 
 #: ../root/release/edit/recordings.tt:195
 #: ../root/release/edit/recordings.tt:266
@@ -9782,7 +9782,7 @@ msgstr "No puedes fusionar un artista de propósito especial con otro artista"
 
 #: ../lib/MusicBrainz/Server/Controller/Artist.pm:526
 msgid "You cannot merge into Deleted Artist"
-msgstr ""
+msgstr "No puedes fusionar otro artista con la entidad para artistas eliminados (Deleted Artist)."
 
 #: ../lib/MusicBrainz/Server/Controller/AutoEditorElections.pm:70
 #, perl-brace-format
@@ -10398,7 +10398,7 @@ msgstr "\"{artist}\" no ha sido seleccionado, debes escoger un artista.\n       
 
 #: ../lib/MusicBrainz/Server/Form/Field/ArtistCredit.pm:68
 msgid "Artist credit field is required"
-msgstr ""
+msgstr "Es necesario rellenar el campo \"créditos de artista\""
 
 #: ../lib/MusicBrainz/Server/Form/Field/DatePeriod.pm:46
 msgid "The end date must occur on or after the begin date"
@@ -10420,7 +10420,7 @@ msgstr "Esta MBID no es válida"
 msgid ""
 "This is not a valid ISRC. If this code starts with \"TC\", it is a TuneCore "
 "ID, which should be put into the annotation instead."
-msgstr "Éste no es un ISRC válido. Si el código comienza con \"TC\", se trata de un ID de TuneCore ID que debe añadirse a la anotación."
+msgstr "Éste no es un ISRC válido. Si el código comienza con \"TC\", se trata de un ID de TuneCore, y deberías añadirlo a la anotación."
 
 #: ../lib/MusicBrainz/Server/Form/Field/ISWC.pm:12
 #: ../lib/MusicBrainz/Server/Form/Field/ISWC.pm:16
