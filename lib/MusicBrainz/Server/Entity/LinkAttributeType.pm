@@ -40,6 +40,11 @@ has 'name' => (
     isa => 'Str',
 );
 
+has 'credit' => (
+    is => 'rw',
+    isa => 'Maybe[Str]',
+);
+
 sub l_name {
     my $self = shift;
     my $rootid = defined $self->root ? $self->root->id : $self->root_id;

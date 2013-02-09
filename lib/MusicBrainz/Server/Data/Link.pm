@@ -53,7 +53,8 @@ sub _load_attributes
                 attr.id,
                 attr.name AS name,
                 root_attr.id AS root_id,
-                root_attr.name AS root_name
+                root_attr.name AS root_name,
+                link_attribute.credit AS credit
             FROM link_attribute
                 JOIN link_attribute_type AS attr ON attr.id = link_attribute.attribute_type
                 JOIN link_attribute_type AS root_attr ON root_attr.id = attr.root
@@ -71,6 +72,7 @@ sub _load_attributes
                         id => $row->{root_id},
                         name => $row->{root_name},
                     ),
+                    credit => $row->{credit},
                 );
                 $data->{$id}->add_attribute($attr);
             }

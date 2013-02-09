@@ -55,6 +55,7 @@
                     <td>
                       [%- FOR attr=rel.link.attributes;
                             attr.l_name | html;
+							' ['_ attr.credit _']' IF attr.credit;
                             l(', ') UNLESS loop.last;
                          END %]
                     </td>

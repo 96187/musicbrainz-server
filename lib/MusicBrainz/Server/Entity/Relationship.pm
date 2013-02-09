@@ -144,6 +144,7 @@ sub _interpolate
     foreach my $attr (@attrs) {
         my $name = lc $attr->root->name;
         my $value = $attr->l_name();
+		if ($attr->credit){ $value .= " [". $attr->credit ."]"; }
         if (exists $attrs{$name}) {
             push @{$attrs{$name}}, $value;
         }
