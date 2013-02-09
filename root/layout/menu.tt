@@ -247,6 +247,9 @@
             <li>
                 <a href="[% doc_link('Frequently_Asked_Questions') %]">[% l('FAQs') %]</a>
             </li>
+            <li>
+                <a href="http://wiki.musicbrainz.org/" class="internal">[% l('Wiki') %]</a>
+            </li>
             <li class="separator">
                 <a href="[% c.uri_for_action('/edit/edit_types') %]">[% l('Edit Types') %]</a>
             </li>
@@ -272,6 +275,9 @@
                     [% l('Forums') %]
                 </a>
             </li>
+			<li>
+				<a href="http://twitter.com/MusicBrainz" class="internal">[% l('Twitter') %]</a>
+			</li>
             <li class="separator">
                 <a href="http://tickets.musicbrainz.org" class="internal">
                     [% l('Report a Bug') %]
