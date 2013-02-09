@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-02-03 21:20-0700\n"
-"PO-Revision-Date: 2013-02-08 19:44+0000\n"
+"PO-Revision-Date: 2013-02-09 17:59+0000\n"
 "Last-Translator: Nicolás Tamargo <email address hidden>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/musicbrainz/language/es/)\n"
 "MIME-Version: 1.0\n"
@@ -5057,7 +5057,7 @@ msgstr "Posición:"
 
 #: ../root/artist/edit_form.tt:16
 msgid "Possible Duplicate Artists"
-msgstr "Artistas que quizá estén duplicados"
+msgstr "Artistas que quizá sean el mismo"
 
 #: ../root/label/edit_form.tt:12
 msgid "Possible Duplicate Labels"
@@ -5965,7 +5965,7 @@ msgstr "Restablecer contraseña"
 
 #: ../root/release/edit/tracklist.tt:433 ../root/release/edit/tracklist.tt:434
 msgid "Reset track numbers"
-msgstr ""
+msgstr "Restablecer núm. de pista"
 
 #: ../root/search/form.tt:7
 msgid "Results per page:"
@@ -7527,7 +7527,7 @@ msgid ""
 "collaboration, it should be split if possible (see {how_to_split_artists|How"
 " to Split Artists}). If it is a collaboration with its own name and can't be"
 " split, collaboration relationships should be added to it."
-msgstr ""
+msgstr "Este informe muestra artistas que tienen \"&\" en su nombre, pero no están asociados a miembros ni colaboradores. Si el artista suele considerarse un grupo propiamente dicho, añade relaciones con sus miembros. Si es una colaboración breve, sepárala si es posible: consulta {how_to_split_artists|cómo separar artistas (en inglés)}. Si es una colaboración que tiene un nombre específico y no es posible separarla, añade relaciones con sus colaboradores."
 
 #: ../root/report/collaboration_relationships.tt:4
 msgid ""
@@ -7535,7 +7535,7 @@ msgid ""
 "relationships. If the collaboration has its own independent name, do "
 "nothing. If it is in a format like \"X with Y\" or \"X & Y\", you should "
 "probably split it. See {how_to_split_artists|How to Split Artists}."
-msgstr ""
+msgstr "Este informe muestra artistas que tienen relaciones de colaboración, pero ninguna URL. Si una colaboración tiene un nombre específico, no hagas nada, pero si su nombre es del estilo \"X con Y\" o \"X & Y\", es probable que necesite ser separado en varios artistas. Consulta {how_to_split_artists|cómo separar artistas (en inglés)}."
 
 #: ../root/report/superfluous_data_tracks.tt:6
 msgid ""
@@ -7564,7 +7564,7 @@ msgid ""
 " barcode, you can also search Amazon for it and see which ASIN matches. You "
 "might also find some ASINs linked to several discs of a multi-disc release: "
 "just merge those (see {how_to_merge_releases|How to Merge Releases})."
-msgstr ""
+msgstr "Este informe muestra URLs de Amazon asociadas a más de una publicación. En la mayoría de los casos una ASIN de Amazon equivale a una y solo una publicación de MusicBrainz, así que solo uno de los enlaces será correcto. Comprueba cuál de las publicaciones en MusicBrainz coincide con la de Amazon (en formato, pistas, país, etc.).  Si la publicación tiene un código de barras, puedes buscarlo en Amazon y ver cuál de las ASINs corresponde a dicho código. Es posible que encuentres algunas ASINs asociada a varios discos de una publicación con múltiples discos; en ese caso, fusiónalos. Consulta {how_to_merge_releases|cómo fusionar publicaciones (en inglés)}."
 
 #: ../root/report/discogs_links_with_multiple_artists.tt:6
 msgid "This report shows Discogs URLs which are linked to multiple artists."
@@ -7588,7 +7588,7 @@ msgid ""
 "etc.). You might also find some Discogs URLs linked to several discs of a "
 "multi-disc release: just merge those (see {how_to_merge_releases|How to "
 "Merge Releases})."
-msgstr "Este informe muestra URLs de Discogs asociadas a más de una publicación. En la mayoría de los casos una publicación de Discogs equivale a una y solo una publicación de MusicBrainz, así que solo uno de los enlaces será correcto. Comprueba cuál de las publicaciones en MusicBrainz coincide con la de Discogs (en formato, pistas, país, etc.) y elimina la relación con las demás. Es posible que encuentres una URL de Discogs asociada a varios discos de una publicación con múltiples discos; en ese caso, fusiónalos (comprueba {how_to_merge_releases|Cómo fusionar publicaciones})"
+msgstr "Este informe muestra URLs de Discogs asociadas a más de una publicación. En la mayoría de los casos una publicación de Discogs equivale a una y solo una publicación de MusicBrainz, así que solo uno de los enlaces será correcto. Comprueba cuál de las publicaciones en MusicBrainz coincide con la de Discogs (en formato, pistas, país, etc.) y elimina la relación con las demás. Es posible que encuentres una URL de Discogs asociada a varios discos de una publicación con múltiples discos; en ese caso, fusiónalos. Consulta {how_to_merge_releases|cómo fusionar publicaciones (en inglés)}."
 
 #: ../root/report/recordings_with_earliest_release_relationships.tt:6
 msgid ""
@@ -7698,7 +7698,7 @@ msgstr "Este informe muestra publicaciones cuyo título contiene \"(disc n)\" o 
 msgid ""
 "This report shows releases which have artwork in the Cover Art Archive, but "
 "still have a cover art relationship (pointing to a URL)."
-msgstr ""
+msgstr "Este informe muestra publicaciones que tienen imágenes en el archivo de imágenes, pero aún tienen una o más relaciones con una URL del tipo \"tiene una imagen en\"."
 
 #: ../root/report/cat_no_looks_like_asin.tt:6
 msgid ""
