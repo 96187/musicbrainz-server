@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-02-15 09:33-0700\n"
-"PO-Revision-Date: 2013-02-15 19:35+0000\n"
+"PO-Revision-Date: 2013-02-15 21:09+0000\n"
 "Last-Translator: Mihkel Tõnnov <email address hidden>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/musicbrainz/language/et/)\n"
 "MIME-Version: 1.0\n"
@@ -3132,7 +3132,7 @@ msgstr "Loodud:"
 
 #: ../root/freedb/not_found.tt:1 ../root/freedb/not_found.tt:2
 msgid "FreeDB Entry Not Found"
-msgstr ""
+msgstr "FreeDB kirjet ei leitud"
 
 #: ../root/layout/menu.tt:181
 msgid "FreeDB Gateway"
@@ -4424,7 +4424,7 @@ msgstr "Toimetusmärkeid pole lisatud."
 
 #: ../root/edit/list.tt:103
 msgid "No edits were found matching your query. Please {search|try again}."
-msgstr ""
+msgstr "Päringule vastavaid toimetusi ei leitud. {search|Proovi uuesti}."
 
 #: ../root/elections/index.tt:29
 msgid "No elections found."
@@ -4432,11 +4432,11 @@ msgstr "Valimisi ei leitud."
 
 #: ../root/release/sidebar.tt:11
 msgid "No front cover image available.<br/>{all|View all artwork}."
-msgstr ""
+msgstr "Esikaanepilti pole saadaval.<br/>{all|Näita kõiki kaanepilte}"
 
 #: ../root/relationship/linkattributetype/instruments.tt:31
 msgid "No instruments found."
-msgstr ""
+msgstr "Ühtki instrumenti ei leitud."
 
 #: ../root/tag/label.tt:1
 msgid "No labels with this tag were found."
@@ -4444,7 +4444,7 @@ msgstr "Selle sildiga plaadifirmasid ei leitud."
 
 #: ../root/release/lookup.tt:33
 msgid "No matching CDs were found for TOC {toc}."
-msgstr ""
+msgstr "Sisukorrale „{toc}” vastavaid CD-sid ei leitud."
 
 #: ../root/admin/edit_user.tt:14
 msgid "No nag"
@@ -4456,7 +4456,7 @@ msgstr "Hindeid pole."
 
 #: ../root/artist/recordings.tt:16
 msgid "No recordings found."
-msgstr ""
+msgstr "Salvestisi ei leitud."
 
 #: ../root/tag/recording.tt:1
 msgid "No recordings with this tag were found."
@@ -4464,7 +4464,7 @@ msgstr "Selle sildiga salvestisi ei leitud."
 
 #: ../root/relationship/linkattributetype/index.tt:32
 msgid "No relationship attributes found."
-msgstr ""
+msgstr "Ühtki seoseatribuuti ei leitud."
 
 #: ../root/artist/index.tt:110
 msgid "No release groups found"
@@ -4488,7 +4488,7 @@ msgstr "Ei leitud ühtki väljalaset, kus see salvestis peal oleks."
 
 #: ../root/release_group/index.tt:81
 msgid "No releases found."
-msgstr ""
+msgstr "Väljalaskeid ei leitud."
 
 #: ../root/release_group/set_cover_art.tt:54
 msgid "No releases have cover art, cannot set cover art."
@@ -6390,80 +6390,80 @@ msgstr "Vabandust, ei leitud ühtegi teost, mille pealkirja alguses oleks „{in
 
 #: ../root/main/400.tt:5
 msgid "Sorry, there was a problem with your request."
-msgstr "Kahju küll, aga su päringuga oli midagi valesti."
+msgstr "Vabandust, aga su päringuga oli midagi valesti."
 
 #: ../root/freedb/not_found.tt:4
 msgid ""
 "Sorry, we could not find a FreeDB entry with that ID. You may wish to try "
 "and {search_url|search for it} instead."
-msgstr "Vabandust, selle ID-ga FreeDB kirjet ei leitud. Võid proovida {search_url|seda otsida}."
+msgstr "Vabandust, aga selle ID-ga FreeDB kirjet ei leitud. Võid proovida {search_url|seda otsida}."
 
 #: ../root/otherlookup/not_found.tt:4
 msgid ""
 "Sorry, we could not find a MusicBrainz entity with that MusicBrainz ID. You "
 "may wish to try and {search_url|search for it} instead."
-msgstr "Vabandust, selle MusicBrainzi ID-ga MusicBrainzi olemit ei leitud. Võid proovida {search_url|seda otsida}."
+msgstr "Vabandust, aga selle MusicBrainzi ID-ga MusicBrainzi olemit ei leitud. Võid proovida {search_url|seda otsida}."
 
 #: ../root/url/not_found.tt:4
 msgid "Sorry, we could not find a URL with that MusicBrainz ID."
-msgstr "Vabandust, selle MusicBrainzi ID-ga URL-i ei leitud."
+msgstr "Vabandust, aga selle MusicBrainzi ID-ga URL-i ei leitud."
 
 #: ../root/label/not_found.tt:4
 msgid ""
 "Sorry, we could not find a label with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr "Vabandust, selle MusicBrainzi ID-ga plaadifirmat ei leitud. Võid proovida {search_url|seda otsida}."
+msgstr "Vabandust, aga selle MusicBrainzi ID-ga plaadifirmat ei leitud. Võid proovida {search_url|seda otsida}."
 
 #: ../root/recording/not_found.tt:4
 msgid ""
 "Sorry, we could not find a recording with that MusicBrainz ID. You may wish "
 "to try and {search_url|search for it} instead."
-msgstr "Vabandust, selle MusicBrainzi ID-ga salvestist ei leitud. Võid proovida {search_url|seda otsida}."
+msgstr "Vabandust, aga selle MusicBrainzi ID-ga salvestist ei leitud. Võid proovida {search_url|seda otsida}."
 
 #: ../root/relationship/linkattributetype/not_found.tt:3
 msgid ""
 "Sorry, we could not find a relationship attribute with that MusicBrainz ID."
-msgstr "Vabandust, selle MusicBrainzi ID-ga seoseatribuuti ei leitud."
+msgstr "Vabandust, aga selle MusicBrainzi ID-ga seoseatribuuti ei leitud."
 
 #: ../root/release_group/not_found.tt:4
 msgid ""
 "Sorry, we could not find a release group with that MusicBrainz ID. You may "
 "wish to try and {search_url|search for it} instead."
-msgstr "Vabandust, selle MusicBrainzi ID-ga väljalaskerühma ei leitud. Võid proovida {search_url|seda otsida}."
+msgstr "Vabandust, aga selle MusicBrainzi ID-ga väljalaskerühma ei leitud. Võid proovida {search_url|seda otsida}."
 
 #: ../root/release/not_found.tt:4
 msgid ""
 "Sorry, we could not find a release with that MusicBrainz ID. You may wish to"
 " try and {search_url|search for it} instead."
-msgstr "Vabandust, selle MusicBrainzi ID-ga väljalaset ei leitud. Võid proovida {search_url|seda otsida}."
+msgstr "Vabandust, aga selle MusicBrainzi ID-ga väljalaset ei leitud. Võid proovida {search_url|seda otsida}."
 
 #: ../root/work/not_found.tt:4
 msgid ""
 "Sorry, we could not find a work with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr "Vabandust, selle MusicBrainzi ID-ga teost ei leitud. Võid proovida {search_url|seda otsida}."
+msgstr "Vabandust, aga selle MusicBrainzi ID-ga teost ei leitud. Võid proovida {search_url|seda otsida}."
 
 #: ../root/artist/not_found.tt:4
 msgid ""
 "Sorry, we could not find an artist with that MusicBrainz ID. You may wish to"
 " try and {search_url|search for it} instead."
-msgstr "Vabandust, selle MusicBrainzi ID-ga artisti ei leitud. Võid proovida {search_url|seda otsida}."
+msgstr "Vabandust, aga selle MusicBrainzi ID-ga artisti ei leitud. Võid proovida {search_url|seda otsida}."
 
 #: ../root/collection/not_found.tt:4
 msgid "Sorry, we could not find an collection with that MusicBrainz ID."
-msgstr "Vabandust, selle MusicBrainzi ID-ga kogu ei leitud."
+msgstr "Vabandust, aga selle MusicBrainzi ID-ga kogu ei leitud."
 
 #: ../root/edit/not_found.tt:4
 msgid ""
 "Sorry, we could not find an edit with that edit ID. You may wish to try and "
 "perform an {search_url|edit search} instead."
-msgstr "Vabandust, selle ID-ga toimetust ei leitud. Võibolla tahad proovida {search_url|toimetusi otsida}?"
+msgstr "Vabandust, aga selle ID-ga toimetust ei leitud. Võibolla tahad proovida {search_url|toimetusi otsida}?"
 
 #: ../root/user/not_found.tt:4
 msgid ""
 "Sorry, we could not find an editor with that name. You may wish to try and "
 "{search_url|search for them} instead."
-msgstr "Vabandust, selle nimega toimetajat ei leitud. Võid proovida {search_url|teda otsida}."
+msgstr "Vabandust, aga selle nimega toimetajat ei leitud. Võid proovida {search_url|teda otsida}."
 
 #: ../root/search/editor.tt:18
 msgid ""
@@ -6473,15 +6473,15 @@ msgstr ""
 
 #: ../root/cdtoc/not_found.tt:4
 msgid "Sorry, we could not find the CD TOC you specified."
-msgstr ""
+msgstr "Vabandust, aga määratud CD-sisukorda ei leitud."
 
 #: ../root/elections/not_found.tt:4
 msgid "Sorry, we could not find this election."
-msgstr ""
+msgstr "Vabandust, aga määratud valimisi ei leitud."
 
 #: ../root/main/401.tt:5
 msgid "Sorry, you are not authorized to view this page."
-msgstr ""
+msgstr "Vabandust, aga sul pole lubatud sellele lehele pääseda."
 
 #: ../root/main/mirror.tt:5
 msgid "Sorry, you are unable to perform that action on a mirror server."
@@ -6491,7 +6491,7 @@ msgstr ""
 msgid ""
 "Sorry, you must have been a member for at least 2 weeks and have 10 accepted"
 " non-auto-edits before you may add standalone recordings"
-msgstr ""
+msgstr "Vabandust, aga enne kui tohid lisada eraldiseisvaid salvestisi, peab su liitumisest olema möödas vähemalt kaks nädalat ja sul peab olema vähemalt 10 hääletuse edukalt läbinud toimetust."
 
 #: ../root/search/error/no-info.tt:3
 msgid ""
@@ -6503,11 +6503,11 @@ msgstr ""
 
 #: ../root/search/error/uri-too-large.tt:3
 msgid "Sorry, your query was too large."
-msgstr ""
+msgstr "Vabandust, aga sinu päring oli liiga pikk."
 
 #: ../root/doc/bare_error.tt:5 ../root/doc/error.tt:11
 msgid "Sorry, “{id}” is not a valid documentation page."
-msgstr ""
+msgstr "Vabandust, aga „{id}” pole kehtiv dokumentatsioonileht."
 
 #: ../root/components/forms.tt:227
 #: ../root/search/lib/inline-results-artist.tt:8
@@ -6974,19 +6974,19 @@ msgstr "Selle põhjus pole teada."
 msgid ""
 "The recording artists do not match! Perhaps you meant to use the \"append "
 "mediums\" merge strategy?"
-msgstr ""
+msgstr "Salvestiste artistid ei klapi! Vahest mõtlesid kasutada hoopis sihtväljalaskele helikandja(te) lisamise mestimisstrateegiat?"
 
 #: ../root/release/merge.tt:143
 msgid ""
 "The recordings that will be merged if you continue with the current merge "
 "strategy include the following, whose artists differ:"
-msgstr ""
+msgstr "Kui jätkad praeguse mestimisstrateegiaga, siis mestitakse järgmised eri artistidele omistatud salvestised:"
 
 #: ../root/relationship/linktype/in_use.tt:4
 msgid ""
 "The relationship type \"{type}\" can not be deleted because it is is still "
 "in use."
-msgstr ""
+msgstr "Seosetüüpi „{type}” ei saa kustutada, kuna see on veel kasutuses."
 
 #: ../root/search/error/internal-error.tt:3
 msgid ""
@@ -8453,13 +8453,13 @@ msgstr "Vabandust, kuid selle aruande andmed pole hetkel saadaval."
 
 #: ../root/edit/details/macros.tt:88
 msgid "We are unable to display history for this cover art."
-msgstr ""
+msgstr "Selle kaanepildi ajalugu pole võimalik näidata."
 
 #: ../root/edit/details/macros.tt:88
 msgid ""
 "We are unable to display history for this cover art. For a current listing "
 "of cover art, please see the {coverart|release's cover art page}."
-msgstr ""
+msgstr "Selle kaanepildi ajalugu pole võimalik näidata. Hetkeseisu nägemiseks vaata {coverart|väljalaske kaanepildilehekülge}."
 
 #: ../root/release/edit/missing_entities.tt:149
 msgid ""
@@ -9740,22 +9740,22 @@ msgstr "Aeg on kas puudu või sobimatul kujul."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:67
 msgid "The verification key is missing."
-msgstr "Verifitseerimisvõti on puudu."
+msgstr "Kinnitusvõti on puudu."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:75
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:207
 msgid "The checksum is invalid, please double check your email."
-msgstr "Kontrollsumma on kehtetu. Palun vaata e-kiri uuesti üle."
+msgstr "Kontrollsumma on vale. Palun vaata e-kiri uuesti üle."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:83
 msgid "Sorry, this email verification link has expired."
-msgstr "Kahju küll, aga see e-posti kinnituslink on aegunud."
+msgstr "Vabandust, aga see e-posti kinnitamise link on aegunud."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:92
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:216
 #, perl-brace-format
 msgid "The user with ID '{user_id}' could not be found."
-msgstr ""
+msgstr "Kasutajat ID-ga „{user_id}” ei leitud."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:135
 msgid ""
@@ -9773,11 +9773,11 @@ msgstr "Selle nime ja e-postiga kasutajat pole."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:191
 msgid "Missing one or more required parameters."
-msgstr ""
+msgstr "Mõni kohustuslik parameeter on puudu."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:199
 msgid "Sorry, this password reset link has expired."
-msgstr ""
+msgstr "Vabandust, aga see parooli lähtestamise link on aegunud."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:257
 msgid "There is no user with this email"
@@ -9792,16 +9792,16 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Controller/Artist.pm:521
 msgid "You cannot merge a special purpose artist into another artist"
-msgstr ""
+msgstr "Eriotstarbelist artisti ei saa teise artistiga mestida"
 
 #: ../lib/MusicBrainz/Server/Controller/Artist.pm:526
 msgid "You cannot merge into Deleted Artist"
-msgstr ""
+msgstr "Kustutatud artistiga ei saa mestida"
 
 #: ../lib/MusicBrainz/Server/Controller/AutoEditorElections.pm:70
 #, perl-brace-format
 msgid "'{id}' is not a valid election ID"
-msgstr ""
+msgstr "„{id}” ei ole kehtiv valimiste ID"
 
 #: ../lib/MusicBrainz/Server/Controller/CDStub.pm:62
 msgid "The required TOC parameter was invalid or not present"
@@ -9844,7 +9844,7 @@ msgstr "Kehtetud olemid"
 
 #: ../lib/MusicBrainz/Server/Controller/Edit/Relationship.pm:207
 msgid "A relationship requires 2 different entities"
-msgstr ""
+msgstr "Seos eeldab kahte erinevat olemit"
 
 #: ../lib/MusicBrainz/Server/Controller/Edit/Relationship.pm:289
 #: ../lib/MusicBrainz/Server/Controller/Edit/Relationship.pm:297
@@ -9858,7 +9858,7 @@ msgstr "Olemit ei leitud"
 #: ../lib/MusicBrainz/Server/Controller/FreeDB.pm:37
 #, perl-brace-format
 msgid "'{id}' is not a valid FreeDB ID"
-msgstr ""
+msgstr "„{id}” pole kehtiv FreeDB ID"
 
 #: ../lib/MusicBrainz/Server/Controller/ISRC.pm:58
 msgid "This ISRC does not exist"
@@ -9883,7 +9883,7 @@ msgstr "Sobimatu sisestus."
 
 #: ../lib/MusicBrainz/Server/Controller/Release.pm:312
 msgid "This release is already in the selected release group"
-msgstr ""
+msgstr "See väljalase on juba valitud väljalaskerühmas"
 
 #: ../lib/MusicBrainz/Server/Controller/Release.pm:629
 msgid ""
@@ -9901,7 +9901,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Controller/User.pm:272
 msgid "Your message could not be sent"
-msgstr ""
+msgstr "Sõnumit polnud võimalik saata"
 
 #: ../lib/MusicBrainz/Server/Controller/User.pm:354
 #, perl-brace-format
@@ -9914,19 +9914,19 @@ msgstr "Sobimatu sisukord"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:104
 msgid "No title provided"
-msgstr ""
+msgstr "Pealkiri on puudu"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:108
 msgid "No artist names provided"
-msgstr ""
+msgstr "Artistinimed on piidi"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:112
 msgid "Not all tracks specify an artist"
-msgstr ""
+msgstr "Mõnel lool on artist puudu"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:116
 msgid "Not all tracks have a title"
-msgstr ""
+msgstr "Mõnel lool on pealkiri puudu"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:120
 msgid "Cannot add a CD stub with no tracks"
@@ -9934,19 +9934,19 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:124
 msgid "Incomplete TOC data"
-msgstr ""
+msgstr "Poolikud sisukorraandmed"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:128
 msgid "Missing disc ID"
-msgstr ""
+msgstr "Puuduv plaadi-ID"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:132
 msgid "Disc ID does match parsed TOC"
-msgstr ""
+msgstr "Plaadi-ID ei vasta parsitud sisukorrale"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:136
 msgid "Number of submitted tracks does not match track count in TOC"
-msgstr ""
+msgstr "Sisestatud lugude arv ei vasta radade arvule sisukorras"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:140
 msgid "Invalid barcode"
@@ -9954,11 +9954,11 @@ msgstr "Ebakorrektne vöötkood"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:150
 msgid "There are already MusicBrainz releases with this disc ID"
-msgstr ""
+msgstr "MusicBrainzis on juba selle plaadi-ID-ga väljalaskeid"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:157
 msgid "There is already a CD stub with this disc ID"
-msgstr ""
+msgstr "MusicBrainzis on juba selle plaadi-ID-ga pooleldi sisestatud CD"
 
 #: ../lib/MusicBrainz/Server/Data/LinkType.pm:149
 #, perl-brace-format
@@ -10451,7 +10451,7 @@ msgstr "See pole korrektne pikkus. Õige vorming on „min:sek”."
 
 #: ../lib/MusicBrainz/Server/Form/Field/URL.pm:21
 msgid "Enter a valid url e.g. \"http://google.com/\""
-msgstr ""
+msgstr "Sisesta korrektne URL, nagu nt „http://google.com/”"
 
 #: ../lib/MusicBrainz/Server/Form/Field/URL.pm:24
 msgid "URL protocol must be HTTP, HTTPS or FTP"
@@ -10459,11 +10459,11 @@ msgstr "URL-i protokoll peab olema HTTP, HTTPS või FTP"
 
 #: ../lib/MusicBrainz/Server/Form/Merge.pm:16
 msgid "Please pick the entity you want the others merged into."
-msgstr ""
+msgstr "Palun vali olem, millesse ülejäänud mestida."
 
 #: ../lib/MusicBrainz/Server/Form/Merge/Release.pm:61
 msgid "Another medium is already in this position"
-msgstr ""
+msgstr "Sellel kohal on juba helikandja"
 
 #: ../lib/MusicBrainz/Server/Form/Merge/Release.pm:64
 msgid "Positions must be greater than 0"
@@ -10518,17 +10518,17 @@ msgstr "Pead valima olemasoleva väljalaskerühma. Kui soovid selle väljalaske 
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:60
 msgid "New tracklisting contains an empty track"
-msgstr ""
+msgstr "Uus lugude nimekiri sisaldab tühja lugu"
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:65
 #, perl-brace-format
 msgid "A track name is required on track {pos}"
-msgstr "{pos}. loole on vaja pealkirja."
+msgstr "{pos}. loole on vaja pealkirja"
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:70
 #, perl-brace-format
 msgid "A position is required for \"{name}\""
-msgstr ""
+msgstr "„{name}” peab saama järjekorranumbri"
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:75
 #, perl-brace-format
@@ -10538,14 +10538,14 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:88
 #, perl-brace-format
 msgid "An artist is required on track {pos}"
-msgstr "{pos}. loole on vaja artisti."
+msgstr "{pos}. loole on vaja artisti"
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:115
 #, perl-brace-format
 msgid ""
 "The length of track {pos} cannot be changed since this release has a Disc ID"
 " attached to it."
-msgstr ""
+msgstr "{pos}. loo pikkust ei saa muuta, kuna väljalaskele on omistatud plaadi-ID."
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:156
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:198
@@ -10562,7 +10562,7 @@ msgstr[1] "Sel andmekandjal on plaadi-ID, mille järgi sel peab olema {n} lugu."
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:173
 #, perl-brace-format
 msgid "Track {pos} is missing."
-msgstr "{pos}. lugu on puudu."
+msgstr "{pos}. lugu on puudu"
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:213
 msgid ""
