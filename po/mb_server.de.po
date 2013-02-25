@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-02-17 15:36-0700\n"
-"PO-Revision-Date: 2013-02-25 13:03+0000\n"
+"PO-Revision-Date: 2013-02-25 18:56+0000\n"
 "Last-Translator: nikki <email address hidden>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -1945,7 +1945,7 @@ msgstr "Sammlung nicht gefunden"
 #: ../root/user/subscriptions/collection.tt:1
 #: ../root/user/subscriptions/menu.tt:4
 msgid "Collection Subscriptions"
-msgstr "Sammlungabonnements"
+msgstr "Sammlungsabonnements"
 
 #: ../root/collection/edit_form.tt:4
 msgid "Collection details"
@@ -1953,7 +1953,7 @@ msgstr "Sammlungsdetails"
 
 #: ../root/collection/layout.tt:5
 msgid "Collection information"
-msgstr "Sammlunginformationen"
+msgstr "Sammlungsinformationen"
 
 #: ../root/collection/layout.tt:1
 msgid "Collection “{collection}”"
@@ -2417,11 +2417,11 @@ msgstr "Medien, die als getrennte Veröffentlichungen eingegeben wurden"
 
 #: ../root/release/index.tt:12
 msgid "Display Credits Inline"
-msgstr ""
+msgstr "Beziehungen inline anzeigen"
 
 #: ../root/release/index.tt:11
 msgid "Display Credits at Bottom"
-msgstr ""
+msgstr "Beziehungen unten anzeigen"
 
 #: ../root/components/common-macros.tt:838 ../root/scripts/text_strings.tt:74
 msgid "Dissolved:"
@@ -5223,7 +5223,7 @@ msgstr "Lies die {doc|WikiDocs}-Dokumentation um einen Überblick zu bekommen, w
 
 #: ../root/main/index.tt:118
 msgid "Recent Additions"
-msgstr ""
+msgstr "Kürzlich hinzugefügt"
 
 #: ../root/components/common-macros.tt:521
 #: ../root/components/common-macros.tt:575 ../root/edit/search_macros.tt:284
@@ -7792,11 +7792,11 @@ msgstr "Dieser Benutzer ist neu in MusicBrainz."
 
 #: ../root/release/edit_relationships.tt:25
 msgid "This will add a relationship to all checked recordings."
-msgstr ""
+msgstr "Dies fügt eine Beziehung zu allen ausgewählten Aufnahmen hinzu."
 
 #: ../root/release/edit_relationships.tt:30
 msgid "This will add a relationship to all checked works."
-msgstr ""
+msgstr "Dies fügt eine Beziehung zu allen ausgewählten Werken hinzu."
 
 #: ../root/release/edit_relationships.tt:35
 msgid ""
@@ -9743,7 +9743,7 @@ msgstr "« Vorheriges"
 #: ../lib/DBDefs/Default.pm:110
 msgid ""
 "This beta test server allows testing of new features with the live database."
-msgstr ""
+msgstr "Dieser Beta-Testserver ermöglicht das Testen von neuen Features mit der Live-Datenbank."
 
 #: ../lib/MusicBrainz/Server/Controller.pm:29
 #, perl-brace-format
@@ -10517,7 +10517,7 @@ msgstr "Der Beziehung fehlen eine oder beide Objekte."
 #: ../lib/MusicBrainz/Server/Form/RelationshipEditor.pm:142
 msgid ""
 "This relationship type is not valid between the given types of entities."
-msgstr ""
+msgstr "Dieser Beziehungstyp ist zwischen diesen Objekttypen nicht gültig."
 
 #: ../lib/MusicBrainz/Server/Form/RelationshipEditor.pm:154
 msgid "This entity has an invalid ID or MBID."
