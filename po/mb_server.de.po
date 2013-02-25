@@ -28,8 +28,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-02-17 15:36-0700\n"
-"PO-Revision-Date: 2013-02-17 22:38+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2013-02-25 12:59+0000\n"
+"Last-Translator: nikki <email address hidden>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -876,7 +876,7 @@ msgstr "Du kannst auch {uri|eine neue Veröffentlichungsgruppe hinzufügen}."
 
 #: ../root/search/results-release.tt:4
 msgid "Alternatively, you may {uri|add a new release}."
-msgstr ""
+msgstr "Du kannst auch {uri|eine neue Veröffentlichung hinzufügen}."
 
 #: ../root/search/results-work.tt:57
 msgid "Alternatively, you may {uri|add a new work}."
@@ -1945,15 +1945,15 @@ msgstr "Sammlung nicht gefunden"
 #: ../root/user/subscriptions/collection.tt:1
 #: ../root/user/subscriptions/menu.tt:4
 msgid "Collection Subscriptions"
-msgstr ""
+msgstr "Sammlungabonnements"
 
 #: ../root/collection/edit_form.tt:4
 msgid "Collection details"
-msgstr "Sammmlungsdetails"
+msgstr "Sammlungsdetails"
 
 #: ../root/collection/layout.tt:5
 msgid "Collection information"
-msgstr ""
+msgstr "Sammlunginformationen"
 
 #: ../root/collection/layout.tt:1
 msgid "Collection “{collection}”"
@@ -4333,7 +4333,7 @@ msgstr "Neuer Status:"
 
 #: ../root/edit/details/edit_medium.tt:49
 msgid "New Tracklist"
-msgstr ""
+msgstr "Neue Titelliste"
 
 #: ../root/edit/details/historic/edit_release_attributes.tt:22
 msgid "New Type:"
@@ -5053,7 +5053,7 @@ msgstr "Bitte {login_url|einloggen}, um diese PUIDs zu bearbeiten."
 
 #: ../root/release/discids.tt:57
 msgid "Please {login|log in} to edit the disc IDs for this release."
-msgstr ""
+msgstr "Bitte {login|einloggen}, um die Disc-IDs von dieser Veröffentlichung zu bearbeiten."
 
 #: ../root/release/edit-links.tt:15
 msgid "Please {uri|log in} to edit this release"
@@ -7081,7 +7081,7 @@ msgstr "Derzeit abonnieren keine Benutzer den Künstler {artist}."
 
 #: ../root/collection/subscribers.tt:22
 msgid "There are currently no users subscribed to {collection}."
-msgstr ""
+msgstr "Derzeit abonnieren keine Benutzer die Sammung {collection}."
 
 #: ../root/label/subscribers.tt:22
 msgid "There are currently no users subscribed to {label}."
@@ -7142,8 +7142,8 @@ msgstr[1] "Derzeit gibt es {num} Benutzer, die {artist} abonnieren."
 #: ../root/collection/subscribers.tt:4
 msgid "There is currently {num} user subscribed to {collection}:"
 msgid_plural "There are currently {num} users subscribed to {collection}:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Derzeit gibt es einen Benutzer, der {collection} abonniert:"
+msgstr[1] "Derzeit gibt es {num} Benutzer, der {collection} abonniert:"
 
 #: ../root/label/subscribers.tt:4
 msgid "There is currently {num} user subscribed to {label}:"
@@ -9553,8 +9553,8 @@ msgstr[1] "{num} Künstler gefunden"
 #: ../root/user/subscriptions/subscriptions.tt:22
 msgid "{num} collection"
 msgid_plural "{num} collections"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Eine Sammlung"
+msgstr[1] "{num} Sammlungen"
 
 #: ../root/tag/collection.tt:1
 msgid "{num} collection found"
