@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-02-26 18:43-0700\n"
-"PO-Revision-Date: 2013-02-27 01:46+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2013-02-27 05:27+0000\n"
+"Last-Translator: Mihkel Tõnnov <email address hidden>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/musicbrainz/language/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -398,7 +398,7 @@ msgstr "Rakendatud"
 
 #: ../root/account/applications.tt:23
 msgid "Access"
-msgstr ""
+msgstr "Juurdepääs"
 
 #: ../root/account/registered.tt:1 ../root/account/registered.tt:2
 msgid "Account Created"
@@ -825,7 +825,7 @@ msgstr "Kõik suurused:"
 
 #: ../root/oauth2/authorize.tt:19
 msgid "Allow access"
-msgstr ""
+msgstr "Luba juurdepääs"
 
 #: ../root/account/preferences.tt:32
 msgid "Allow other users to see my ratings"
@@ -981,12 +981,12 @@ msgstr "Helikandjad lisatakse sihtväljalaskele"
 
 #: ../root/account/applications.tt:22 ../root/account/applications.tt:47
 msgid "Application"
-msgstr ""
+msgstr "Rakendus"
 
 #: ../root/account/applications.tt:1 ../root/account/applications.tt:3
 #: ../root/layout/menu.tt:43
 msgid "Applications"
-msgstr ""
+msgstr "Rakendused"
 
 #: ../root/edit/search_macros.tt:239
 #: ../lib/MusicBrainz/Server/Data/Vote.pm:189
@@ -1053,7 +1053,7 @@ msgstr "Kas oled kindel, et soovid eemaldada plaadi-ID „<code>{discid}</code>�
 
 #: ../root/account/remove_application.tt:5
 msgid "Are you sure you want to remove this application?"
-msgstr ""
+msgstr "Kas oled kindel, et soovid selle rakenduse eemaldada?"
 
 #: ../root/edit/cancel.tt:3
 msgid "Are you sure you wish to cancel edit #{n}? This cannot be undone!"
@@ -1365,11 +1365,11 @@ msgstr "Atribuudid:"
 
 #: ../root/oauth2/authorize.tt:3
 msgid "Authorization"
-msgstr ""
+msgstr "Volitus"
 
 #: ../root/account/applications.tt:16
 msgid "Authorized Applications"
-msgstr ""
+msgstr "Volitatud rakendused"
 
 #: ../root/admin/edit_user.tt:7
 msgid "Auto-editor"
@@ -2283,7 +2283,7 @@ msgstr "Lugude kestuse tuvastamine"
 
 #: ../root/account/applications.tt:39
 msgid "Developer Applications"
-msgstr ""
+msgstr "Rakendused arendajatele"
 
 #: ../root/layout/menu.tt:175
 msgid "Developer Resources"
@@ -2537,7 +2537,7 @@ msgstr "Muuda annotatsiooni"
 
 #: ../root/account/edit_application.tt:1 ../root/account/edit_application.tt:3
 msgid "Edit Application"
-msgstr ""
+msgstr "Rakenduse muutmine"
 
 #: ../root/artist/edit.tt:17
 msgid "Edit Artist"
@@ -2958,7 +2958,7 @@ msgstr "Äärmiselt soovitatav on lisada {note|toimetusmärge} ja kirjutada, kus
 
 #: ../root/scripts/text_strings.tt:92
 msgid "Entities in a relationship cannot be the same."
-msgstr ""
+msgstr "Iseendaga ei saa midagi seostada."
 
 #: ../root/otherlookup/not_found.tt:1 ../root/otherlookup/not_found.tt:2
 msgid "Entity Not Found"
@@ -3002,7 +3002,7 @@ msgstr "Viga: tundmatu tüüp"
 
 #: ../root/oauth2/error.tt:3
 msgid "Error: {error}"
-msgstr ""
+msgstr "Viga: {error}"
 
 #: ../root/forms/edit-note.tt:9
 msgid "Even just providing a URL or two is helpful!"
@@ -3785,11 +3785,11 @@ msgstr "Keeled:"
 
 #: ../root/user/profile.tt:166
 msgid "Last 24 hours"
-msgstr "Viimased 24 tundi"
+msgstr "Viimase 24 tunni jooksul"
 
 #: ../root/user/profile.tt:196
 msgid "Last 28 days"
-msgstr "Viimased 28 päeva"
+msgstr "Viimase 28 päeva jooksul"
 
 #: ../root/cdstub/layout.tt:10
 msgid "Last modified:"
@@ -3913,7 +3913,7 @@ msgstr "Kaanepildi üleslaadimiseks logi sisse"
 
 #: ../root/relationship/linktype/tree.tt:14
 msgid "Long link phrase:"
-msgstr ""
+msgstr "Pikk liitefraas:"
 
 #: ../root/doc/bare_error.tt:11 ../root/doc/error.tt:17 ../root/main/400.tt:18
 #: ../root/main/404.tt:18
@@ -4599,7 +4599,7 @@ msgstr "Kedagi ega midagi ei jälgita."
 
 #: ../root/oauth2/authorize.tt:18
 msgid "No thanks"
-msgstr ""
+msgstr "Ei, aitäh"
 
 #: ../root/user/privileged.tt:9
 msgid "No users found"
@@ -5392,12 +5392,12 @@ msgstr "Piirkondlikud seaded"
 
 #: ../root/account/register_application.tt:36
 msgid "Register"
-msgstr ""
+msgstr "Registreeri"
 
 #: ../root/account/register_application.tt:24
 #: ../root/account/register_application.tt:26
 msgid "Register Application"
-msgstr ""
+msgstr "Rakenduse registreerimine"
 
 #: ../root/doc/edit_type.tt:15
 msgid "Reject"
@@ -5875,7 +5875,7 @@ msgstr "Eemalda"
 #: ../root/account/remove_application.tt:1
 #: ../root/account/remove_application.tt:3
 msgid "Remove Application"
-msgstr ""
+msgstr "Rakenduse eemaldamine"
 
 #: ../root/artist/delete_alias.tt:1
 msgid "Remove Artist Alias"
@@ -8330,7 +8330,7 @@ msgstr "Kuni {n}"
 #: ../root/account/edit_application.tt:15 ../root/admin/wikidoc/edit.tt:16
 #: ../root/admin/wikidoc/index.tt:61
 msgid "Update"
-msgstr ""
+msgstr "Uuenda"
 
 #: ../root/admin/wikidoc/edit.tt:1 ../root/admin/wikidoc/edit.tt:3
 msgid "Update Page"
@@ -9496,8 +9496,8 @@ msgstr "lugu"
 #: ../root/release/index.tt:101
 msgid "track {tracks}"
 msgid_plural "tracks {tracks}"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "lugu {tracks}"
+msgstr[1] "lood {tracks}"
 
 #: ../root/components/common-macros.tt:161
 msgid "tracks"
@@ -10531,35 +10531,35 @@ msgstr "[puudub]"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:76
 msgid "View your public account information"
-msgstr ""
+msgstr "Näha sinu avalikku teavet"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:77
 msgid "View your email address"
-msgstr ""
+msgstr "Näha sinu meiliaadressi"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:78
 msgid "View and modify your private tags"
-msgstr ""
+msgstr "Näha ja muuta sinu privaatseid silte"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:79
 msgid "View and modify your private ratings"
-msgstr ""
+msgstr "Näha ja muuta sinu privaatseid hinnanguid"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:80
 msgid "View and modify your private collections"
-msgstr ""
+msgstr "Näha ja muuta sinu privaatseid kogusid"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:81
 msgid "Submit new PUIDs to the database"
-msgstr ""
+msgstr "Edastada andmebaasi uusi PUID-sid"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:82
 msgid "Submit new ISRCs to the database"
-msgstr ""
+msgstr "Edastada andmebaasi uusi ISRC-sid"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:83
 msgid "Submit new barcodes to the database"
-msgstr ""
+msgstr "Edastada andmebaasi uusi vöötkoode"
 
 #: ../lib/MusicBrainz/Server/Entity/Relationship.pm:118
 #, perl-brace-format
