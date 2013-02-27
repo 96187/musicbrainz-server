@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-02-26 18:43-0700\n"
-"PO-Revision-Date: 2013-02-27 01:52+0000\n"
+"PO-Revision-Date: 2013-02-27 21:00+0000\n"
 "Last-Translator: nikki <email address hidden>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -414,7 +414,7 @@ msgstr "Angenommen"
 
 #: ../root/account/applications.tt:23
 msgid "Access"
-msgstr ""
+msgstr "Zugriff"
 
 #: ../root/account/registered.tt:1 ../root/account/registered.tt:2
 msgid "Account Created"
@@ -841,7 +841,7 @@ msgstr "Alle Größen:"
 
 #: ../root/oauth2/authorize.tt:19
 msgid "Allow access"
-msgstr ""
+msgstr "Zugriff erlauben"
 
 #: ../root/account/preferences.tt:32
 msgid "Allow other users to see my ratings"
@@ -997,12 +997,12 @@ msgstr "Medien an Zielveröffentlichung anhängen"
 
 #: ../root/account/applications.tt:22 ../root/account/applications.tt:47
 msgid "Application"
-msgstr ""
+msgstr "Anwendung"
 
 #: ../root/account/applications.tt:1 ../root/account/applications.tt:3
 #: ../root/layout/menu.tt:43
 msgid "Applications"
-msgstr ""
+msgstr "Anwendungen"
 
 #: ../root/edit/search_macros.tt:239
 #: ../lib/MusicBrainz/Server/Data/Vote.pm:189
@@ -1069,7 +1069,7 @@ msgstr "Bist Du sicher, dass Du die Disc-ID <code>{discid}</code> von der Veröf
 
 #: ../root/account/remove_application.tt:5
 msgid "Are you sure you want to remove this application?"
-msgstr ""
+msgstr "Bist du sicher, dass du diese Anwendung entfernen möchtest?"
 
 #: ../root/edit/cancel.tt:3
 msgid "Are you sure you wish to cancel edit #{n}? This cannot be undone!"
@@ -1381,11 +1381,11 @@ msgstr "Eigenschaften:"
 
 #: ../root/oauth2/authorize.tt:3
 msgid "Authorization"
-msgstr ""
+msgstr "Berechtigung"
 
 #: ../root/account/applications.tt:16
 msgid "Authorized Applications"
-msgstr ""
+msgstr "Berechtigte Anwendungen"
 
 #: ../root/admin/edit_user.tt:7
 msgid "Auto-editor"
@@ -1722,7 +1722,7 @@ msgstr "CD-Stubs sind ein Feature, dass es anonymen Benutzern erlaubt, Daten in 
 #: ../root/account/edit_application.tt:10
 #: ../root/account/register_application.tt:33
 msgid "Callback URL:"
-msgstr ""
+msgstr "Callback-URL:"
 
 #: ../root/doc/edit_type.tt:75
 msgid "Can be approved"
@@ -2299,7 +2299,7 @@ msgstr "Titellängen erkennen"
 
 #: ../root/account/applications.tt:39
 msgid "Developer Applications"
-msgstr ""
+msgstr "Entwickler-Anwendungen"
 
 #: ../root/layout/menu.tt:175
 msgid "Developer Resources"
@@ -2476,7 +2476,7 @@ msgstr "Benutze keine der obigen Veröffentlichungen als Ausgangsbasis."
 msgid ""
 "Do you want to develop an application that uses the {ws|MusicBrainz web "
 "service}? {register|Register an application} to generate OAuth tokens."
-msgstr ""
+msgstr "Möchtest du eine Anwendung entwickeln, die den {ws|MusicBrainz-Webservice} benutzt? {register|Registriere eine Anwendung}, um OAuth-Tokens zu erzeugen."
 
 #: ../root/layout/menu.tt:242
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:46
@@ -2553,7 +2553,7 @@ msgstr "Anmerkungen bearbeiten"
 
 #: ../root/account/edit_application.tt:1 ../root/account/edit_application.tt:3
 msgid "Edit Application"
-msgstr ""
+msgstr "Anwendung bearbeiten"
 
 #: ../root/artist/edit.tt:17
 msgid "Edit Artist"
@@ -2974,7 +2974,7 @@ msgstr "Das Eingeben eines {note|Bearbeitungsvermerks}, der beschreibt, wo Du De
 
 #: ../root/scripts/text_strings.tt:92
 msgid "Entities in a relationship cannot be the same."
-msgstr ""
+msgstr "Objekte in einer Beziehung dürfen nicht übereinstimmen."
 
 #: ../root/otherlookup/not_found.tt:1 ../root/otherlookup/not_found.tt:2
 msgid "Entity Not Found"
@@ -3632,7 +3632,7 @@ msgstr "Titellängen von verbundenen Aufnahmen ableiten"
 
 #: ../root/account/applications.tt:62
 msgid "Installed Application"
-msgstr ""
+msgstr "Installierte Anwendung"
 
 #: ../root/admin/index.tt:8 ../root/layout/menu.tt:260
 #: ../root/relationship/header.tt:2
@@ -4615,7 +4615,7 @@ msgstr "Keine Abonnements."
 
 #: ../root/oauth2/authorize.tt:18
 msgid "No thanks"
-msgstr ""
+msgstr "Nein danke"
 
 #: ../root/user/privileged.tt:9
 msgid "No users found"
@@ -4689,15 +4689,15 @@ msgstr "Lade Titelliste …"
 
 #: ../root/oauth2/authorize.tt:1 ../root/oauth2/oob.tt:1
 msgid "OAuth Authorization"
-msgstr ""
+msgstr "OAuth-Berechtigung"
 
 #: ../root/oauth2/error.tt:1
 msgid "OAuth Authorization Error"
-msgstr ""
+msgstr "OAuth-Berechtigungsfehler"
 
 #: ../root/account/applications.tt:49
 msgid "OAuth Client ID"
-msgstr ""
+msgstr "OAuth-Client-ID"
 
 #: ../root/account/applications.tt:50
 msgid "OAuth Client Secret "
@@ -4709,7 +4709,7 @@ msgstr "Offizielle Webseite"
 
 #: ../root/account/applications.tt:5
 msgid "Offline Access"
-msgstr ""
+msgstr "Offline-Zugriff"
 
 #: ../root/annotation/history.tt:6
 msgid "Old"
@@ -5408,12 +5408,12 @@ msgstr "Regionale Einstellungen"
 
 #: ../root/account/register_application.tt:36
 msgid "Register"
-msgstr ""
+msgstr "Registieren"
 
 #: ../root/account/register_application.tt:24
 #: ../root/account/register_application.tt:26
 msgid "Register Application"
-msgstr ""
+msgstr "Anwendung registieren"
 
 #: ../root/doc/edit_type.tt:15
 msgid "Reject"
@@ -5891,7 +5891,7 @@ msgstr "Entfernen"
 #: ../root/account/remove_application.tt:1
 #: ../root/account/remove_application.tt:3
 msgid "Remove Application"
-msgstr ""
+msgstr "Anwendung entfernen"
 
 #: ../root/artist/delete_alias.tt:1
 msgid "Remove Artist Alias"
@@ -6121,7 +6121,7 @@ msgstr "Konsultiere die <a href=\"{url}\" target=\"_blank\">Liste der Verpackung
 
 #: ../root/account/applications.tt:32
 msgid "Revoke Access"
-msgstr ""
+msgstr "Zugriff widerrufen"
 
 #: ../root/layout.tt:79
 msgid "Running: <span class=\"tooltip\" title=\"{msg}\">{branch} ({sha})</span>"
@@ -6823,7 +6823,7 @@ msgstr "Abonnements"
 
 #: ../root/oauth2/oob.tt:3
 msgid "Success!"
-msgstr ""
+msgstr "Erfolg!"
 
 #: ../root/release/edit/recordings.tt:77
 msgid "Suggested recording:"
@@ -8718,7 +8718,7 @@ msgstr "Wir haben Dir Anweisungen geschickt, wie Du Dein Passwort zurücksetzen 
 
 #: ../root/account/applications.tt:60
 msgid "Web Application"
-msgstr ""
+msgstr "Web-Anwendung"
 
 #: ../root/account/edit.tt:18 ../root/admin/edit_user.tt:33
 msgid "Website:"
@@ -9542,7 +9542,7 @@ msgstr "{almost_last_list_item} und {last_list_item}"
 
 #: ../root/oauth2/authorize.tt:5
 msgid "{app} is requesting permission to:"
-msgstr ""
+msgstr "{app} erbittet Erlaubnis für"
 
 #: ../root/artist/works-list.tt:36 ../root/iswc/index.tt:36
 #: ../root/otherlookup/results-work.tt:20 ../root/search/results-work.tt:24
@@ -9614,7 +9614,7 @@ msgstr "{doc|Disc-ID}:"
 
 #: ../root/oauth2/error.tt:7
 msgid "{doc|Learn more}"
-msgstr ""
+msgstr "{doc|Mehr erfahren}"
 
 #: ../root/user/profile.tt:46
 msgid "{doc|Relationship Editor}"
@@ -10547,35 +10547,35 @@ msgstr "[keiner]"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:76
 msgid "View your public account information"
-msgstr ""
+msgstr "Deine öffentlichen Kontoinformationen einsehen"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:77
 msgid "View your email address"
-msgstr ""
+msgstr "Deine E-Mail-Adresse auslesen"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:78
 msgid "View and modify your private tags"
-msgstr ""
+msgstr "Deine privaten Tags einsehen und ändern"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:79
 msgid "View and modify your private ratings"
-msgstr ""
+msgstr "Deine privaten Bewertungen einsehen und ändern"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:80
 msgid "View and modify your private collections"
-msgstr ""
+msgstr "Deine privaten Sammlungen einsehen und ändern"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:81
 msgid "Submit new PUIDs to the database"
-msgstr ""
+msgstr "Neue PUIDs an die Datenbank schicken"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:82
 msgid "Submit new ISRCs to the database"
-msgstr ""
+msgstr "Neue ISRCs an die Datenbank schicken"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:83
 msgid "Submit new barcodes to the database"
-msgstr ""
+msgstr "Neue Strichcodes an die Datenbank schicken"
 
 #: ../lib/MusicBrainz/Server/Entity/Relationship.pm:118
 #, perl-brace-format
