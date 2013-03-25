@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-03-15 16:32-0700\n"
-"PO-Revision-Date: 2013-03-17 14:36+0000\n"
+"PO-Revision-Date: 2013-03-25 20:40+0000\n"
 "Last-Translator: Mihkel Tõnnov <email address hidden>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/musicbrainz/language/et/)\n"
 "MIME-Version: 1.0\n"
@@ -617,7 +617,7 @@ msgstr "Lisa uus väljalase"
 
 #: ../root/edit/notes.tt:46
 msgid "Add an edit note"
-msgstr "Lisa toimetsmärge"
+msgstr "Lisa toimetusmärge"
 
 #: ../root/components/common-macros.tt:823
 msgid "Add annotation"
@@ -6309,7 +6309,7 @@ msgstr "Otsi seda CD-d andmebaasist"
 
 #: ../root/components/common-macros.tt:814
 msgid "Search the documentation..."
-msgstr ""
+msgstr "Otsitav dokumentatsioon..."
 
 #: ../root/release/edit/recordings.tt:110
 msgid "Search:"
@@ -6344,7 +6344,7 @@ msgstr "vaata kõiki tema avalikke kogusid"
 
 #: ../root/tag/index.tt:20
 msgid "See all {num} {entity}"
-msgstr ""
+msgstr "Kuva kõik {entity} (kokku {num})"
 
 #: ../root/account/edit.tt:6
 msgid ""
@@ -8412,7 +8412,7 @@ msgstr "Tüüp:"
 
 #: ../root/edit/details/historic/edit_release_attributes.tt:13
 msgid "Type: {type}, status: {status}"
-msgstr "Tüüp: {type}, seisund: {status}"
+msgstr "Tüüp: {type}, staatus: {status}"
 
 #: ../root/edit/details/add_cover_art.tt:18
 #: ../root/edit/details/edit_cover_art.tt:9
@@ -8420,7 +8420,7 @@ msgstr "Tüüp: {type}, seisund: {status}"
 #: ../root/edit/details/remove_relationship_type.tt:3
 #: ../root/release/cover_art.tt:13
 msgid "Types:"
-msgstr "Tüübid:"
+msgstr "Tüüp:"
 
 #: ../root/components/common-macros.tt:523 ../root/report/artist_url_list.tt:5
 #: ../root/report/bad_amazon_urls.tt:21 ../root/report/label_url_list.tt:5
