@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-03-26 15:10-0700\n"
-"PO-Revision-Date: 2013-03-26 22:12+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2013-03-27 08:40+0000\n"
+"Last-Translator: Mihkel Tõnnov <email address hidden>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/musicbrainz/language/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2843,28 +2843,28 @@ msgstr "Toimetused jälgitaval sisul"
 
 #: ../root/label/edits.tt:17
 msgid "Edits for {label}"
-msgstr ""
+msgstr "Toimetused: {label}"
 
 #: ../root/artist/edits.tt:16 ../root/collection/edits.tt:16
 #: ../root/url/edits.tt:17
 msgid "Edits for {link}"
-msgstr ""
+msgstr "Toimetused: {link}"
 
 #: ../root/artist/edits.tt:14 ../root/collection/edits.tt:14
 #: ../root/label/edits.tt:15 ../root/url/edits.tt:15
 msgid "Edits for {name}"
-msgstr ""
+msgstr "Toimetused: {name}"
 
 #: ../root/release/edits.tt:17 ../root/release_group/edits.tt:17
 #: ../root/work/edits.tt:16
 msgid "Edits for “{link}”"
-msgstr ""
+msgstr "Toimetused: „{link}”"
 
 #: ../root/recording/edits.tt:15 ../root/recording/edits.tt:17
 #: ../root/release/edits.tt:15 ../root/release_group/edits.tt:15
 #: ../root/work/edits.tt:14
 msgid "Edits for “{name}”"
-msgstr ""
+msgstr "Toimetused: „{name}”"
 
 #: ../root/elections/not_found.tt:1 ../root/elections/not_found.tt:2
 msgid "Election Not Found"
@@ -2986,7 +2986,7 @@ msgstr "Olemit ei leitud"
 
 #: ../root/edit/details/edit_relationship_type.tt:6
 msgid "Entity types:"
-msgstr ""
+msgstr "Olemitüübid:"
 
 #: ../root/report/not_available.tt:1 ../root/report/not_available.tt:3
 #: ../lib/MusicBrainz/Server/Edit/Utils.pm:254
@@ -6349,43 +6349,43 @@ msgstr "vaata kõiki tema avalikke kogusid"
 
 #: ../root/tag/index.tt:25
 msgid "See all {num} "
-msgstr ""
+msgstr "Kuva kõik {num}"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} artists"
 msgid_plural "See all {num} artists"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Kuva kõik {num} artisti"
+msgstr[1] "Kuva kõik {num} artisti"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} labels"
 msgid_plural "See all {num} labels"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Kuva kõik {num} plaadifirmat"
+msgstr[1] "Kuva kõik {num} plaadifirmat"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} recordings"
 msgid_plural "See all {num} recordings"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Kuva kõik {num} salvestist"
+msgstr[1] "Kuva kõik {num} salvestist"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} release groups"
 msgid_plural "See all {num} release groups"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Kuva kõik {num} väljalaskerühma"
+msgstr[1] "Kuva kõik {num} väljalaskerühma"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} releases"
 msgid_plural "See all {num} releases"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Kuva kõik {num} väljalaset"
+msgstr[1] "Kuva kõik {num} väljalaset"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} works"
 msgid_plural "See all {num} works"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Kuva kõik {num} teost"
+msgstr[1] "Kuva kõik {num} teost"
 
 #: ../root/account/edit.tt:6
 msgid ""
@@ -9753,7 +9753,7 @@ msgstr "kuni {date}"
 #: ../root/edit/details/remove_label_alias.tt:10
 #: ../root/edit/details/remove_work_alias.tt:10
 msgid "view all aliases"
-msgstr ""
+msgstr "vaata kõiki aliaseid"
 
 #: ../root/components/common-macros.tt:161
 msgid "works"
