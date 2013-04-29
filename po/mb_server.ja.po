@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-03-26 15:10-0700\n"
-"PO-Revision-Date: 2013-04-28 16:37+0000\n"
+"PO-Revision-Date: 2013-04-29 04:58+0000\n"
 "Last-Translator: Nozomu KURASAWA <email address hidden>\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/musicbrainz/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -452,7 +452,7 @@ msgstr ""
 
 #: ../root/artist/add_alias.tt:12
 msgid "Add Artist Alias"
-msgstr ""
+msgstr "アーティストの別名を追加"
 
 #: ../root/components/forms.tt:303 ../root/components/forms.tt:307
 #: ../root/release/edit/tracklist.tt:83 ../root/release/edit/tracklist.tt:88
@@ -554,7 +554,7 @@ msgstr "URLの関連を追加"
 
 #: ../root/layout/menu.tt:224
 msgid "Add Various Artists Release"
-msgstr ""
+msgstr "複数アーティストのリリースを追加"
 
 #: ../root/layout/menu.tt:230
 msgctxt "button/menu"
@@ -722,7 +722,7 @@ msgstr ""
 
 #: ../root/release/sidebar.tt:124
 msgid "Add to my collection"
-msgstr ""
+msgstr "自分のコレクションに追加"
 
 #: ../root/release/sidebar.tt:126
 msgid "Add to {collection}"
@@ -981,7 +981,7 @@ msgstr ""
 
 #: ../root/annotation/edit.tt:15 ../root/release/edit/information.tt:116
 msgid "Annotation:"
-msgstr ""
+msgstr "注釈:"
 
 #: ../root/annotation/edit.tt:35
 msgid "Annotations support a limited set of wiki formatting options:"
@@ -1180,15 +1180,15 @@ msgstr "アーティスト"
 
 #: ../root/edit/search_macros.tt:286
 msgid "Artist Country"
-msgstr ""
+msgstr "アーティストの国"
 
 #: ../root/edit/details/edit_artist_credit.tt:5
 msgid "Artist Credit:"
-msgstr ""
+msgstr "アーティストクレジット:"
 
 #: ../root/artist/edit_form.tt:59
 msgid "Artist Credits"
-msgstr ""
+msgstr "アーティストクレジット"
 
 #: ../root/edit/details/add_medium.tt:44
 msgid "Artist Credits:"
@@ -1196,7 +1196,7 @@ msgstr ""
 
 #: ../root/artist/edit_form.tt:37
 msgid "Artist Details"
-msgstr ""
+msgstr "アーティストの詳細"
 
 #: ../root/otherlookup/form.tt:3
 msgid "Artist IPI:"
@@ -1204,7 +1204,7 @@ msgstr ""
 
 #: ../root/artist/not_found.tt:1 ../root/artist/not_found.tt:2
 msgid "Artist Not Found"
-msgstr ""
+msgstr "アーティストが見つかりません"
 
 #: ../root/user/subscriptions/artist.tt:1 ../root/user/subscriptions/menu.tt:3
 msgid "Artist Subscriptions"
@@ -1212,11 +1212,11 @@ msgstr ""
 
 #: ../root/components/forms.tt:283
 msgid "Artist as credited"
-msgstr ""
+msgstr "クレジットされたアーティスト"
 
 #: ../root/release/edit/tracklist.tt:45
 msgid "Artist as credited on this track"
-msgstr ""
+msgstr "このトラックにクレジットされたアーティスト"
 
 #: ../root/components/filter-form.tt:11
 msgid "Artist credit:"
@@ -1228,27 +1228,27 @@ msgstr ""
 
 #: ../root/edit/details/edit_medium.tt:204
 msgid "Artist credits:"
-msgstr ""
+msgstr "アーティストクレジット:"
 
 #: ../root/components/forms.tt:268 ../root/release/edit/tracklist.tt:44
 msgid "Artist in MusicBrainz"
-msgstr ""
+msgstr "MusicBrainz内のアーティスト"
 
 #: ../root/artist/layout.tt:4
 msgid "Artist information"
-msgstr ""
+msgstr "アーティスト情報"
 
 #: ../root/edit/details/historic/add_track_old.tt:20
 msgid "Artist name:"
-msgstr ""
+msgstr "アーティスト名:"
 
 #: ../root/user/ratings_summary.tt:3 ../root/user/ratings.tt:1
 msgid "Artist ratings"
-msgstr ""
+msgstr "アーティストの評価"
 
 #: ../root/cdstub/edit_form.tt:18
 msgid "Artist {n}:"
-msgstr ""
+msgstr "アーティスト {n}:"
 
 #: ../root/cdstub/edit_form.tt:6 ../root/cdstub/import.tt:7
 #: ../root/cdtoc/attach_filter_artist.tt:8 ../root/cdtoc/lookup.tt:61
@@ -1278,7 +1278,7 @@ msgstr ""
 #: ../root/release/edit/tracklist.tt:213 ../root/release_group/layout.tt:18
 #: ../root/taglookup/form.tt:4
 msgid "Artist:"
-msgstr ""
+msgstr "アーティスト:"
 
 #: ../root/artist/works-list.tt:11 ../root/iswc/index.tt:18
 #: ../root/otherlookup/results-work.tt:9
@@ -1286,7 +1286,7 @@ msgstr ""
 #: ../root/search/results-work.tt:10 ../root/tag/header.tt:1
 #: ../root/tag/index.tt:8 ../root/user/tag.tt:4 ../root/work/merge.tt:13
 msgid "Artists"
-msgstr ""
+msgstr "アーティスト"
 
 #: ../root/report/artists_containing_disambiguation_comments.tt:1
 #: ../root/report/artists_containing_disambiguation_comments.tt:3
@@ -1544,12 +1544,12 @@ msgstr ""
 
 #: ../root/scripts/text_strings.tt:72
 msgid "Began:"
-msgstr ""
+msgstr "開始:"
 
 #: ../root/search/lib/inline-results-artist.tt:12
 #: ../root/search/results-label.tt:12
 msgid "Begin"
-msgstr ""
+msgstr "開始"
 
 #: ../root/components/aliases.tt:13
 msgid "Begin Date"
@@ -1572,15 +1572,15 @@ msgstr ""
 #: ../root/edit/relationship/edit.tt:125 ../root/label/edit_form.tt:52
 #: ../root/release/edit_relationships.tt:131
 msgid "Begin date:"
-msgstr ""
+msgstr "開始日:"
 
 #: ../root/layout/menu.tt:245
 msgid "Beginners Guide"
-msgstr ""
+msgstr "初心者ガイド"
 
 #: ../root/main/index.tt:20
 msgid "Beginners guide"
-msgstr ""
+msgstr "初心者ガイド"
 
 #: ../root/search/error/internal-error.tt:6
 msgid ""
