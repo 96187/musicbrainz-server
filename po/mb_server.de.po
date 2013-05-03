@@ -3,37 +3,38 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-# <email address hidden>, 2012.
-#   <email address hidden>, 2012.
-# Daniel Schury <email address hidden>, 2011.
-# Daniel Schury <email address hidden>, 2011.
-# <email address hidden>, 2012.
-#   <email address hidden>, 2012.
-# Ian McEwen <email address hidden>, 2012.
-# Ian McEwen <email address hidden>, 2012.
-# Mineo <email address hidden>, 2011.
-# Mineo <email address hidden>, 2011.
-# Nikolai Prokoschenko <email address hidden>, 2011.
-# Nikolai Prokoschenko <email address hidden>, 2011.
-# <email address hidden>, 2013.
-#  <email address hidden>, 2013.
-#   <email address hidden>, 2012-2013.
-# <email address hidden>, 2012.
-#   <email address hidden>, 2012.
-# Shepard <email address hidden>, 2011.
-# Shepard <email address hidden>, 2011.
-#   <email address hidden>, 2012-2013.
-# Tobias Quathamer <email address hidden>, 2007.
-# Tobias Quathamer <email address hidden>, 2007.
-# <email address hidden>, 2012.
-#   <email address hidden>, 2012.
+# nikki2 <email address hidden>, 2012
+# nikki2 <email address hidden>, 2012
+# Daniel Schury <email address hidden>, 2011
+# Daniel Schury <email address hidden>, 2011
+# <email address hidden>, 2012
+#   <email address hidden>, 2012
+# Ian McEwen <email address hidden>, 2012
+# Ian McEwen <email address hidden>, 2012
+# Mineo <email address hidden>, 2011
+# Mineo <email address hidden>, 2011
+# Nikolai Prokoschenko <email address hidden>, 2011
+# Nikolai Prokoschenko <email address hidden>, 2011
+# nikki <email address hidden>, 2013
+# nikki <email address hidden>, 2013
+# nikki <email address hidden>, 2012-2013
+# phwolfer <email address hidden>, 2012
+# phwolfer <email address hidden>, 2012
+# Shepard <email address hidden>, 2011
+# Shepard <email address hidden>, 2011
+# Shepard <email address hidden>, 2012-2013
+# Mineo <email address hidden>, 2013
+# Tobias Quathamer <email address hidden>, 2007
+# Tobias Quathamer <email address hidden>, 2007
+# HumHumXX <email address hidden>, 2012
+# HumHumXX <email address hidden>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-03-26 15:10-0700\n"
-"PO-Revision-Date: 2013-03-26 22:12+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2013-05-03 21:25+0000\n"
+"Last-Translator: Mineo <email address hidden>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1355,7 +1356,7 @@ msgstr "Künstler mit Zusammenarbeitsbeziehungen"
 #: ../root/report/duplicate_relationships_artists.tt:3
 #: ../root/report/index.tt:24
 msgid "Artists with possible duplicate relationships"
-msgstr ""
+msgstr "Künstler mit möglicherweise duplizierten Beziehungen"
 
 #: ../root/recording/fingerprints.tt:3
 msgid "Associated AcoustIDs"
@@ -3811,7 +3812,7 @@ msgstr "Mit „{index}“ beginnende Labels"
 #: ../root/report/duplicate_relationships_labels.tt:3
 #: ../root/report/index.tt:31
 msgid "Labels with possible duplicate relationships"
-msgstr ""
+msgstr "Label mit möglicherweise duplizierten Beziehungen"
 
 #: ../root/artist/works-list.tt:14 ../root/otherlookup/results-release.tt:11
 #: ../root/search/lib/inline-results-release.tt:13
@@ -10902,11 +10903,11 @@ msgstr "Keine gültige Zeit. Muss im Format MM:SS sein."
 
 #: ../lib/MusicBrainz/Server/Form/Field/OAuthRedirectURI.pm:20
 msgid "URL protocol must be HTTP or HTTPS"
-msgstr ""
+msgstr "URL-Protokoll muss HTTP oder HTTPS sein"
 
 #: ../lib/MusicBrainz/Server/Form/Field/PartialDate.pm:66
 msgid "invalid date"
-msgstr ""
+msgstr "ungültiges Datum"
 
 #: ../lib/MusicBrainz/Server/Form/Field/URL.pm:21
 msgid "Enter a valid url e.g. \"http://google.com/\""
