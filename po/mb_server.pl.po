@@ -3,24 +3,25 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
-#   <email address hidden>, 2012.
-# czaja <email address hidden>, 2011.
-# czaja <email address hidden>, 2011.
-#   <email address hidden>, 2012.
-# Marcin Rataj <email address hidden>, 2011-2012.
-# Nikolai Prokoschenko <email address hidden>, 2011.
-# Nikolai Prokoschenko <email address hidden>, 2011.
-#   <email address hidden>, 2012.
-#   <email address hidden>, 2012.
-#   Tobias Toedter <email address hidden>, 2007.
-#   Tobias Toedter <email address hidden>, 2007.
+# nikki <email address hidden>, 2012
+# czaja <email address hidden>, 2011
+# czaja <email address hidden>, 2011
+#   <email address hidden>, 2012
+# Sch1ussarz <email address hidden>, 2013
+# Marcin Rataj <email address hidden>, 2011-2012
+# Nikolai Prokoschenko <email address hidden>, 2011
+# Nikolai Prokoschenko <email address hidden>, 2011
+# Marecki <email address hidden>, 2012
+# nikki <email address hidden>, 2012
+#   Tobias Toedter <email address hidden>, 2007
+#   Tobias Toedter <email address hidden>, 2007
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-03-26 15:10-0700\n"
-"PO-Revision-Date: 2013-03-26 22:12+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2013-05-10 11:59+0000\n"
+"Last-Translator: Sch1ussarz <email address hidden>\n"
 "Language-Team: Polish (http://www.transifex.com/projects/p/musicbrainz/language/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -212,7 +213,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Edit/Release/EditReleaseLabel.pm:79
 #: ../lib/MusicBrainz/Server/Entity/Release.pm:193
 msgid "(unknown)"
-msgstr "(brak danych)"
+msgstr "(nieznane)"
 
 #: ../root/user/profile.tt:23
 msgid "(verified at {date})"
@@ -2613,7 +2614,7 @@ msgstr "Nie znaleziono Edycji"
 #: ../root/forms/edit-note.tt:2
 #: ../lib/MusicBrainz/Server/Wizard/ReleaseEditor.pm:81
 msgid "Edit Note"
-msgstr "Notatka"
+msgstr "Edytuj notatkę"
 
 #: ../root/account/edit_ok.tt:1 ../root/account/edit_ok.tt:3
 #: ../root/account/edit.tt:1 ../root/account/edit.tt:3
@@ -2672,7 +2673,7 @@ msgstr "Typy Edycji"
 #: ../root/url/edit.tt:14 ../root/url/edit.tt:15
 #: ../lib/MusicBrainz/Server/Edit/URL/Edit.pm:22
 msgid "Edit URL"
-msgstr "Edytuj URL"
+msgstr "Edytuj adres URL"
 
 #: ../root/user/profile/layout.tt:27
 msgid "Edit User"
@@ -4844,7 +4845,7 @@ msgstr "Tylko {doc|auto-edytor} może zatwierdzać edycje."
 msgid ""
 "Oops! It seems your search parameters are not correct, please double check "
 "your input!"
-msgstr ""
+msgstr "Ups! Zdaje się, że wyszukiwana fraza jest niewłaściwa."
 
 #: ../root/main/500.tt:5
 msgid "Oops, something went wrong!"
@@ -5645,7 +5646,7 @@ msgstr "Zdarzenia Wydania: "
 #: ../root/search/results-release-group.tt:8
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:34
 msgid "Release Group"
-msgstr "Grupa Wydań"
+msgstr "Grupa wydań"
 
 #: ../root/release_group/edit_form.tt:6
 msgid "Release Group Details"
@@ -8791,7 +8792,7 @@ msgstr "FAQ głosowana"
 
 #: ../root/elections/show.tt:88
 msgid "Voting is closed."
-msgstr ""
+msgstr "Głosowanie zostało zakończone."
 
 #: ../root/elections/show.tt:86
 msgid ""
@@ -10177,16 +10178,16 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Controller.pm:29
 #, perl-brace-format
 msgid "'{id}' is not a valid MusicBrainz ID"
-msgstr "'{id}' nie jest poprawnym  MusicBrainz ID"
+msgstr "'{id}' nie jest poprawnym ID serwisu MusicBrainz"
 
 #: ../lib/MusicBrainz/Server/Controller.pm:115
 msgid ""
 "Thank you, your edit has been entered into the edit queue for peer review."
-msgstr "Dziękujemy! Twoja edycja została dodana do kolejki edycji oczekujących na głosowanie."
+msgstr "Dziękujemy! Twoja edycja została dodana do kolejki oczekujących na przejrzenie."
 
 #: ../lib/MusicBrainz/Server/Controller.pm:116
 msgid "Thank you, your edit has been accepted and applied"
-msgstr "Dziękujemy! Twoja edycja została zaakceptowana i zatwierdzona. "
+msgstr "Dziękujemy! Twoja edycja została zaakceptowana i zatwierdzona."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:45
 msgid "The user ID is missing or is in an invalid format."
@@ -10217,7 +10218,7 @@ msgstr "Niestety, ten link weryfikacyjny już wygasł."
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:216
 #, perl-brace-format
 msgid "The user with ID '{user_id}' could not be found."
-msgstr ""
+msgstr "Użytkownik o ID '{user_id}' nie został znaleziony."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:135
 msgid ""
@@ -10272,7 +10273,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:144
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:309
 msgid "The provided CD TOC is not valid"
-msgstr "Podany CD TOC nie jest poprawny"
+msgstr "Podany CD TOC jest nieprawidłowy"
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:157
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:323
@@ -10345,7 +10346,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Controller/Release.pm:312
 msgid "This release is already in the selected release group"
-msgstr "To wydanie już znajduje się we wskazanej grupie wydań"
+msgstr "Wydanie już znajduje się we wskazanej grupie wydań"
 
 #: ../lib/MusicBrainz/Server/Controller/Release.pm:629
 msgid ""
@@ -10392,7 +10393,7 @@ msgstr "Nie wszystkie utwory posiadają tytuł"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:120
 msgid "Cannot add a CD stub with no tracks"
-msgstr "Nie można dodać szkicu CD bez przypisanych utworów"
+msgstr "Nie można dodać szkicu CD bez przypisania utworów"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:124
 msgid "Incomplete TOC data"
@@ -10416,11 +10417,11 @@ msgstr "Nieprawidłowy kod kreskowy"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:150
 msgid "There are already MusicBrainz releases with this disc ID"
-msgstr "MusicBrainz już zawiera wydania z tym Disc ID."
+msgstr "MusicBrainz już zawiera wydania z tym Disc ID"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:157
 msgid "There is already a CD stub with this disc ID"
-msgstr "Istnieje już szkic CD z tym Disc ID."
+msgstr "Istnieje już szkic CD z tym Disc ID"
 
 #: ../lib/MusicBrainz/Server/Data/LinkType.pm:149
 #, perl-brace-format
@@ -10458,7 +10459,7 @@ msgstr "Scal artystów"
 #: ../lib/MusicBrainz/Server/Edit/Historic/AddDiscID.pm:11
 #: ../lib/MusicBrainz/Server/Edit/Medium/AddDiscID.pm:10
 msgid "Add disc ID"
-msgstr "Dodaj Disc ID"
+msgstr "Dodaj ID dysku"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/AddReleaseAnnotation.pm:13
 #: ../lib/MusicBrainz/Server/Edit/Release/AddAnnotation.pm:13
@@ -10531,7 +10532,7 @@ msgstr "Scal wydania"
 #: ../lib/MusicBrainz/Server/Edit/Historic/MoveDiscID.pm:11
 #: ../lib/MusicBrainz/Server/Edit/Medium/MoveDiscID.pm:19
 msgid "Move disc ID"
-msgstr "Przenieś Disc ID"
+msgstr "Przenieś ID dysku"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/MoveRelease.pm:12
 msgid "Move release (historic)"
@@ -10540,7 +10541,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveDiscID.pm:11
 #: ../lib/MusicBrainz/Server/Edit/Medium/RemoveDiscID.pm:11
 msgid "Remove disc ID"
-msgstr "Usuń Disc ID"
+msgstr "Usuń ID dysku"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveLink.pm:10
 msgid "Remove relationship (historic)"
@@ -10665,7 +10666,7 @@ msgstr "Edytuj wydanie"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/EditArtist.pm:28
 msgid "Edit release artist"
-msgstr "Edycja autorstwa tego wydania"
+msgstr "Edytuj artystę tego wydania"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/EditBarcodes.pm:19
 msgid "Edit barcodes"
@@ -10895,7 +10896,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Form/Field/ArtistCredit.pm:48
 #, perl-brace-format
 msgid "Please add an artist name for {credit}"
-msgstr ""
+msgstr "Wprowadź nazwę artysty dla {credit}"
 
 #: ../lib/MusicBrainz/Server/Form/Field/ArtistCredit.pm:61
 #, perl-brace-format
@@ -10953,7 +10954,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Form/Field/URL.pm:21
 msgid "Enter a valid url e.g. \"http://google.com/\""
-msgstr "Podaj poprawny URL np. „http://google.com/”"
+msgstr "Podaj poprawny URL, np. „http://www.google.com/”"
 
 #: ../lib/MusicBrainz/Server/Form/Field/URL.pm:24
 msgid "URL protocol must be HTTP, HTTPS or FTP"
@@ -11047,7 +11048,7 @@ msgstr ""
 msgid ""
 "The length of track {pos} cannot be changed since this release has a Disc ID"
 " attached to it."
-msgstr "Nie można zmienić długości utworu {pos} ponieważ wydanie posiada przypisany Disc ID."
+msgstr "Nie można zmienić długości utworu {pos} póki wydanie posiada przypisane ID dysku."
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:156
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:198
@@ -11060,7 +11061,7 @@ msgid "This medium has a Disc ID, it should have exactly {n} track."
 msgid_plural "This medium has a Disc ID, it should have exactly {n} tracks."
 msgstr[0] "Ten nośnik posiada Disc ID: powinien mieć dokładnie {n} utwór."
 msgstr[1] "Ten nośnik posiada Disc ID: powinien mieć dokładnie {n} utwory."
-msgstr[2] "Ten nośnik posiada Disc ID: powinien mieć dokładnie 1 {n} utworów."
+msgstr[2] "Ten nośnik posiada ID dysku. Powinien mieć dokładnie {n} utworów."
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:173
 #, perl-brace-format
@@ -11199,7 +11200,7 @@ msgstr "(Specjalny przypadek)"
 msgid ""
 "An album release primarily consists of previously unreleased material. This "
 "includes album re-issues, with or without bonus tracks."
-msgstr "Album to wydanie, które zawiera głównie nowy materiał, oraz jego re-edycje z/bez dodatkowych ścieżek."
+msgstr "Album to wydanie, które zawiera głównie nowy materiał, oraz jego reedycje z lub bez dodatkowych ścieżek."
 
 #: ../lib/MusicBrainz/Server/Release.pm:59
 msgid ""
@@ -11212,7 +11213,7 @@ msgstr "Singiel posiada zazwyczaj jedną piosenkę i/lub kilka jej dodatkowych w
 msgid ""
 "An EP is an Extended Play release and often contains the letters EP in the "
 "title."
-msgstr "EP (ang. Extended Play) to wydanie będące minialbumem. Często zawiera oznaczenie „EP” w tytule."
+msgstr "EP (z ang. Extended Play) to wydanie będące minialbumem. Często zawiera oznaczenie „EP” w tytule."
 
 #: ../lib/MusicBrainz/Server/Release.pm:61
 msgid ""
