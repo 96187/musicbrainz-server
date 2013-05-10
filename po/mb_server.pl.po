@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-03-26 15:10-0700\n"
-"PO-Revision-Date: 2013-05-10 11:59+0000\n"
+"PO-Revision-Date: 2013-05-10 12:25+0000\n"
 "Last-Translator: Sch1ussarz <email address hidden>\n"
 "Language-Team: Polish (http://www.transifex.com/projects/p/musicbrainz/language/pl/)\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +39,7 @@ msgid ""
 " Enter your username and email below. We will send you an email with a link "
 "to reset your password. If you have forgotten your username, {link|retrieve "
 "it} first and then reset your password. "
-msgstr "Podaj swój login i adres e-mail. Wyślemy Ci e-mail z linkiem resetującym hasło. Jeśli zapomniałeś login, {link|odzyskaj go} najpierw a potem zresetuj hasło."
+msgstr "Wprowadź swoją nazwę użytkownika oraz adres e-mail. Wyślemy Ci wiadomość z linkiem resetującym hasło. Jeśli zapomniałeś swojej nazwy użytkownika, {link|przypomnij ją sobie}, a potem zresetuj hasło."
 
 #: ../root/components/forms.tt:242
 msgid "\"C\" is a single check digit."
@@ -63,7 +63,7 @@ msgstr "\"NNNNN\" to unikalny 5-cyfrowy numer identyfikujący wybrane nagranie."
 msgid ""
 "\"XXX\" is a three character alphanumeric registrant code, uniquely "
 "identifying the organisation which registered the code."
-msgstr "\"XXX\" to trzy znakowy, alfanumeryczny kod rejestracji, będący unikalnym identyfikatorem organizacji."
+msgstr "\"XXX\" to trzyznakowy, alfanumeryczny kod rejestracji, będący unikalnym identyfikatorem organizacji."
 
 #: ../root/recording/add_isrc.tt:11
 msgid "\"YY\" is the last two digits of the year of registration."
@@ -104,7 +104,7 @@ msgstr ""
 
 #: ../root/components/tag-cloud.tt:26
 msgid "'{tag}' has been used {num} times"
-msgstr "„{tag}” użyto {num} razy"
+msgstr "\"{tag}\" użyto {num} razy"
 
 #: ../root/components/aliases.tt:43
 msgid "(<span class=\"comment\">primary</span>)"
@@ -125,7 +125,7 @@ msgstr "(dodanie nowego nagrania)"
 
 #: ../root/edit/details/add_release_annotation.tt:17
 msgid "(click here to display annotation)"
-msgstr "(kliknij tutaj, aby zobaczyć adnotację)"
+msgstr "(kliknij tutaj, by zobaczyć adnotację)"
 
 #: ../root/edit/details/macros.tt:28
 msgid "(ended)"
@@ -195,7 +195,7 @@ msgstr ""
 
 #: ../root/elections/show.tt:124
 msgid "(private)"
-msgstr ""
+msgstr "(prywatne)"
 
 #: ../root/layout/menu.tt:24
 msgid "(reset language)"
@@ -217,7 +217,7 @@ msgstr "(nieznane)"
 
 #: ../root/user/profile.tt:23
 msgid "(verified at {date})"
-msgstr "(zweryfikowany o {date})"
+msgstr "(zweryfikowano {date})"
 
 #: ../root/release/merge.tt:112
 msgid "(was medium {position} on release {release})"
@@ -235,7 +235,7 @@ msgstr "({delete_uri|usuń})"
 msgid ""
 "* Match indicates the total difference in seconds between the CD you "
 "requested and the matches we found."
-msgstr "* Trafienie wskazuje całkowitą różnicę w sekundach pomiędzy żądanym CD a znalezionymi w bazie. "
+msgstr "* Trafienie wskazuje całkowitą różnicę w sekundach pomiędzy żądanym CD a znalezionymi w bazie."
 
 #: ../root/artist/relationships.tt:56
 #: ../lib/MusicBrainz/Server/Entity/Relationship.pm:141
@@ -302,7 +302,7 @@ msgid ""
 "<strong>Error:</strong> You are trying to browse the database using a query "
 "that is longer than 6 characters. We do not index data at this level of "
 "granularity, you may want to {uri|search the database} instead."
-msgstr "<strong>Błąd:</strong> próbujesz wykonać zapytanie, które jest dłuższe niż 6 znaków. Dane nie są indeksowane tak szczegółowo, być może wolisz użyć  {uri|standardowej wyszukiwarki}."
+msgstr "<strong>Błąd:</strong> próbujesz wykonać zapytanie, które jest dłuższe niż 6 znaków. Dane nie są indeksowane tak szczegółowo, być może wolisz użyć {uri|standardowej wyszukiwarki}."
 
 #: ../root/components/common-macros.tt:760
 #: ../root/release/edit/tracklist.tt:142
@@ -316,7 +316,7 @@ msgid ""
 "license. Furthermore, you give the MetaBrainz Foundation the right to "
 "license this data for commercial use. Please read our {doc|license page} for"
 " more details.</strong>"
-msgstr "<strong>Należy pamiętać, że każdy twój wkład w MusicBrainz ukaże się w ramach domeny publicznej  i/lub na licencji Creative Commons by-nc-sa. Ponadto udzielasz zgody Fundacji MetaBrainz na użycie tych danych do celów komercyjnych. Aby poznać szczegóły, zapoznaj się ze {doc|stroną licencji}.</strong>"
+msgstr "<strong>Należy pamiętać, że każdy Twój wkład w MusicBrainz ukaże się w ramach tzw. domeny publicznej i/lub na licencji Creative Commons by-nc-sa. Ponadto udzielasz zgody Fundacji MetaBrainz na użycie tych danych do celów komercyjnych. Aby poznać szczegóły, zapoznaj się ze {doc|stroną licencji}.</strong>"
 
 #: ../root/admin/wikidoc/index.tt:16
 msgid ""
@@ -328,13 +328,13 @@ msgstr "<strong>Uwaga:</strong> MediaWiki nie sprawdza, czy numer wersji pokrywa
 
 #: ../root/components/common-macros.tt:773
 msgid "<strong>Note</strong>:"
-msgstr "<strong>Uwaga:</strong>"
+msgstr "<strong>Uwaga</strong>:"
 
 #: ../root/main/index.tt:61
 msgid ""
 "<strong>The ultimate source of music information</strong> by allowing anyone"
 " to contribute and releasing the {doc|data} under {doc2|open licenses}."
-msgstr "<strong>Podstawowe źródło informacji dotyczących muzyki</strong>: każdy może wnieść swój wkład, a {doc|dane} dostępne  są  w ramach {doc2|otwartych licencji}."
+msgstr "<strong>Podstawowe źródło informacji dotyczących muzyki</strong>: każdy może wnieść swój wkład, a {doc|dane} dostępne są w ramach {doc2|otwartych licencji}."
 
 #: ../root/main/index.tt:66
 msgid ""
@@ -353,16 +353,16 @@ msgstr ""
 #: ../root/components/common-macros.tt:767 ../root/recording/edit.tt:41
 #: ../root/release/edit/tracklist.tt:129
 msgid "<strong>Warning</strong>:"
-msgstr "<strong>Uwaga:</strong>"
+msgstr "<strong>Ostrzeżenie</strong>:"
 
 #: ../root/scripts/text_strings.tt:50
 msgid "<strong>Warning</strong>: #{disc} has a discid, you cannot add tracks"
-msgstr "<strong>Uwaga:</strong> #{disc} posiada przypisany Disc ID, nie możesz dodawać utworów"
+msgstr "<strong>Ostrzeżenie</strong>: #{disc} posiada przypisany numer ID dysku, nie możesz dodawać utworów"
 
 #: ../root/scripts/text_strings.tt:51
 msgid ""
 "<strong>Warning</strong>: #{disc} has a discid, you cannot remove tracks"
-msgstr "<strong>Uwaga:</strong> #{disc} posiada przypisany Disc ID, nie możesz usuwać utworów"
+msgstr "<strong>Ostrzeżenie</strong>: #{disc} posiada przypisany numer ID dysku, nie możesz usuwać utworów"
 
 #: ../root/annotation/edit.tt:45
 msgid ""
@@ -466,7 +466,7 @@ msgstr ""
 
 #: ../root/artist/add_alias.tt:12
 msgid "Add Artist Alias"
-msgstr "Dodaj Alias ​​Artysty"
+msgstr "Dodaj alias artysty"
 
 #: ../root/components/forms.tt:303 ../root/components/forms.tt:307
 #: ../root/release/edit/tracklist.tt:83 ../root/release/edit/tracklist.tt:88
@@ -490,7 +490,7 @@ msgstr ""
 #: ../root/release/edit/tracklist.tt:165 ../root/release/edit/tracklist.tt:291
 #: ../root/release/edit/tracklist.tt:483
 msgid "Add Disc"
-msgstr "Dodaj Dysk"
+msgstr "Dodaj dysk"
 
 #: ../root/recording/layout.tt:34
 msgctxt "button/menu"
@@ -514,11 +514,11 @@ msgstr ""
 
 #: ../root/label/add_alias.tt:12
 msgid "Add Label Alias"
-msgstr "Dodaj Alias Wytwórni"
+msgstr "Dodaj alias wytwórni"
 
 #: ../root/release_group/create.tt:16
 msgid "Add New Release Group"
-msgstr "Dodaj nową Grupę Wydań"
+msgstr "Dodaj nową grupę wydań"
 
 #: ../root/edit/info.tt:13 ../root/scripts/text_strings.tt:117
 msgid "Add Note"
@@ -526,11 +526,11 @@ msgstr "Dodaj notatkę"
 
 #: ../root/admin/wikidoc/create.tt:1 ../root/admin/wikidoc/create.tt:3
 msgid "Add Page"
-msgstr "Dodaj Stronę"
+msgstr "Dodaj stronę"
 
 #: ../root/release/edit-links.tt:3
 msgid "Add Relationship"
-msgstr "Dodaj Relację"
+msgstr "Dodaj relację"
 
 #: ../root/layout/menu.tt:221
 msgctxt "button/menu"
@@ -564,7 +564,7 @@ msgstr ""
 #: ../root/edit/relationship/create_url.tt:15
 #: ../root/edit/relationship/create_url.tt:17
 msgid "Add URL Relationship"
-msgstr ""
+msgstr "Dodaj URL relacji"
 
 #: ../root/layout/menu.tt:224
 msgid "Add Various Artists Release"
@@ -582,7 +582,7 @@ msgstr ""
 
 #: ../root/work/add_alias.tt:12
 msgid "Add Work Alias"
-msgstr "Dodaj Alias ​​Pracy"
+msgstr "Dodaj alias ​​pracy"
 
 #: ../root/artist/create.tt:16 ../root/artist/create.tt:18
 msgid "Add a New Artist"
@@ -590,15 +590,15 @@ msgstr "Dodaj artystę"
 
 #: ../root/collection/create.tt:1 ../root/collection/create.tt:3
 msgid "Add a New Collection"
-msgstr "Dodaj nową Kolekcję"
+msgstr "Dodaj nową kolekcję"
 
 #: ../root/label/create.tt:15 ../root/label/create.tt:17
 msgid "Add a New Label"
-msgstr "Dodaj nową Wytwórnię"
+msgstr "Dodaj nową wytwórnię"
 
 #: ../root/release_group/create.tt:23
 msgid "Add a New Release Group"
-msgstr "Dodaj nową Grupę Wydań"
+msgstr "Dodaj nową grupę wydań"
 
 #: ../root/account/edit.tt:44
 msgid "Add a language"
@@ -630,7 +630,7 @@ msgstr "Dodaj opis edycji"
 
 #: ../root/components/common-macros.tt:831
 msgid "Add annotation"
-msgstr ""
+msgstr "Dodaj notatkę"
 
 #: ../root/scripts/text_strings.tt:43
 msgid "Add another"
@@ -655,7 +655,7 @@ msgstr ""
 
 #: ../root/cdstub/layout.tt:24
 msgid "Add disc ID to an existing release"
-msgstr "Dodaj Disc ID do istniejącego wydania"
+msgstr "Dodaj ID dysku do istniejącego wydania"
 
 #: ../root/edit/add_note.tt:4
 msgid "Add edit note"
@@ -668,11 +668,11 @@ msgstr "Dodaj alias wytwórni"
 
 #: ../root/release/edit/missing_entities.tt:72
 msgid "Add new artist"
-msgstr ""
+msgstr "Dodaj nowego artystę"
 
 #: ../root/release/edit/missing_entities.tt:135
 msgid "Add new label"
-msgstr ""
+msgstr "Dodaj nową wytwórnię"
 
 #: ../root/release/edit/recordings.tt:96
 msgid "Add new recording"
@@ -688,7 +688,7 @@ msgstr ""
 
 #: ../root/artist/layout.tt:73
 msgid "Add recording"
-msgstr ""
+msgstr "Dodaj utwór"
 
 #: ../root/release/edit_relationships.tt:268
 msgid "Add related work"
@@ -736,15 +736,15 @@ msgstr ""
 
 #: ../root/release/sidebar.tt:124
 msgid "Add to my collection"
-msgstr ""
+msgstr "Dodaj do mojej kolekcji"
 
 #: ../root/release/sidebar.tt:126
 msgid "Add to {collection}"
-msgstr ""
+msgstr "Dodaj do {collection}"
 
 #: ../root/release/edit/tracklist.tt:446
 msgid "Add track(s)"
-msgstr "Dodaj utwór"
+msgstr "Dodaj utwór/utwory"
 
 #: ../root/artist/layout.tt:78
 #: ../lib/MusicBrainz/Server/Edit/Work/Create.pm:16
@@ -770,7 +770,7 @@ msgstr "Dodano"
 
 #: ../root/cdstub/browse.tt:23
 msgid "Added {add}, last modified {lastmod}"
-msgstr "Dodano: {add}, ostatnia modyfikacja: {lastmod}"
+msgstr "Dodano {add}, ostatnia modyfikacja: {lastmod}"
 
 #: ../root/cdstub/layout.tt:8
 msgid "Added:"
@@ -778,7 +778,7 @@ msgstr "Dodano:"
 
 #: ../root/release/sidebar.tt:37
 msgid "Additional details"
-msgstr "Więcej szczegółów "
+msgstr "Więcej szczegółów"
 
 #: ../root/release/edit/information.tt:115
 msgid "Additional information"
@@ -790,7 +790,7 @@ msgstr "Dodatki:"
 
 #: ../root/admin/edit_user.tt:1
 msgid "Adjust User Account Flags"
-msgstr "Ustaw Flagi konta użytkownika"
+msgstr "Ustaw flagi konta użytkownika"
 
 #: ../root/layout/menu.tt:81
 msgid "Admin"
@@ -802,7 +802,7 @@ msgstr "Administracja"
 
 #: ../root/admin/edit_user.tt:16
 msgid "Administration flags"
-msgstr ""
+msgstr "Flagi administracyjne"
 
 #: ../root/user/profile.tt:60
 msgid "Age:"
@@ -893,7 +893,7 @@ msgstr "Możesz również {uri|dodać nowego artystę}."
 
 #: ../root/search/results-label.tt:43
 msgid "Alternatively, you may {uri|add a new label}."
-msgstr ""
+msgstr "Możesz również {uri|dodać nową wytwórnię}."
 
 #: ../root/search/results-recording.tt:5
 msgid "Alternatively, you may {uri|add a new recording}."
@@ -7528,7 +7528,7 @@ msgstr "Ten artysta ma tylko wydania zawierające utwory różnych artystów."
 #: ../lib/MusicBrainz/Server/Form/Role/LinkType.pm:111
 #, perl-brace-format
 msgid "This attribute can only be specified {max} times. You specified {n}."
-msgstr ""
+msgstr "Ten atrybut został określony {n} z {max} razy."
 
 #: ../root/scripts/text_strings.tt:111
 #: ../lib/MusicBrainz/Server/Form/Role/LinkType.pm:95
@@ -7538,7 +7538,7 @@ msgstr ""
 #: ../root/scripts/text_strings.tt:113
 #: ../lib/MusicBrainz/Server/Form/Role/LinkType.pm:106
 msgid "This attribute is required."
-msgstr ""
+msgstr "Ten atrybut jest wymagany."
 
 #: ../root/collection/tags.tt:2
 msgid "This collection has no tags."
@@ -10268,7 +10268,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Controller/CDStub.pm:62
 msgid "The required TOC parameter was invalid or not present"
-msgstr ""
+msgstr "Wymagany parametr TOC jest nieprawidłowy lub nie istnieje"
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:144
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:309
@@ -10291,7 +10291,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:199
 msgid "The provided artist id is not valid"
-msgstr ""
+msgstr "Wprowadzone ID artysty jest nieprawidłowe"
 
 #: ../lib/MusicBrainz/Server/Controller/Edit.pm:188
 msgid "Default"
@@ -10321,7 +10321,7 @@ msgstr "Nie znaleziono obiektu"
 #: ../lib/MusicBrainz/Server/Controller/FreeDB.pm:37
 #, perl-brace-format
 msgid "'{id}' is not a valid FreeDB ID"
-msgstr ""
+msgstr "'{id}' nie jest prawidłowym FreeDB ID"
 
 #: ../lib/MusicBrainz/Server/Controller/ISRC.pm:58
 msgid "This ISRC does not exist"
@@ -10562,7 +10562,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Edit/Historic/SetTrackLengthsFromCDTOC.pm:10
 #: ../lib/MusicBrainz/Server/Edit/Medium/SetTrackLengths.pm:18
 msgid "Set track lengths"
-msgstr ""
+msgstr "Wprowadź czasy utworów"
 
 #: ../lib/MusicBrainz/Server/Edit/Label/AddAnnotation.pm:12
 msgid "Add label annotation"
@@ -10766,7 +10766,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/EditSearch/Predicate.pm:66
 msgid "This operator is not supported"
-msgstr ""
+msgstr "Ten operator nie jest wspierany"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:89
 msgctxt "autoeditor election status"
@@ -10834,7 +10834,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Entity/Barcode.pm:25
 msgid "[none]"
-msgstr ""
+msgstr "[brak]"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:76
 msgid "View your public account information"
@@ -10891,7 +10891,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Form/CDStub.pm:59
 msgid "Must be a valid barcode"
-msgstr ""
+msgstr "Kod kreskoway musi być prawidłowy"
 
 #: ../lib/MusicBrainz/Server/Form/Field/ArtistCredit.pm:48
 #, perl-brace-format
@@ -11011,7 +11011,7 @@ msgstr ""
 msgid ""
 "This barcode is invalid, please check that you've correctly entered the "
 "barcode."
-msgstr ""
+msgstr "Ten kod kreskowy jest nieprawidłowy. Proszę się upewnić czy został wprowadzony właściwie."
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Information.pm:73
 msgid ""
@@ -11036,7 +11036,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:75
 #, perl-brace-format
 msgid "\"{name1}\" and \"{name2}\" have the same position"
-msgstr ""
+msgstr "\"{name1}\" i \"{name2}\" posiadają tę samą pozycję"
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:88
 #, perl-brace-format
@@ -11219,13 +11219,13 @@ msgstr "EP (z ang. Extended Play) to wydanie będące minialbumem. Często zawie
 msgid ""
 "A compilation is a collection of previously released tracks by one or more "
 "artists."
-msgstr "Kompilacja jest kolekcją już wydanych utworów autorstwa jednego lub więcej wykonawców. "
+msgstr "Kompilacja jest kolekcją już wydanych utworów autorstwa jednego lub więcej wykonawców."
 
 #: ../lib/MusicBrainz/Server/Release.pm:62
 msgid ""
 "A soundtrack is the musical score to a movie, TV series, stage show, "
 "computer game etc."
-msgstr "Ścieżka dźwiękowa zawiera muzykę do filmu, serialu, przedstawienia, gier komputerowych itp."
+msgstr "Ścieżka dźwiękowa zawiera muzykę z filmu, gry komputerowej, serialu, itp."
 
 #: ../lib/MusicBrainz/Server/Release.pm:63
 msgid "Non-music spoken word releases."
@@ -11233,7 +11233,7 @@ msgstr "Wydania zawierające słowo mówione, monologi, dyskusje. Nie jest to wy
 
 #: ../lib/MusicBrainz/Server/Release.pm:64
 msgid "An interview release contains an interview with the Artist."
-msgstr "Wywiad to wydanie zawierające wywiad z artystą. "
+msgstr "Wywiad to wydanie zawierające wywiad z artystą."
 
 #: ../lib/MusicBrainz/Server/Release.pm:65
 msgid "An audiobook is a book read by a narrator without music."
@@ -11241,7 +11241,7 @@ msgstr "Audiobook to książka czytana przez lektora."
 
 #: ../lib/MusicBrainz/Server/Release.pm:66
 msgid "A release that was recorded live."
-msgstr "Wydanie nagrane „na żywo”. "
+msgstr "Wydanie nagrane „na żywo”."
 
 #: ../lib/MusicBrainz/Server/Release.pm:67
 msgid "A release that was (re)mixed from previously released material."
@@ -11255,25 +11255,25 @@ msgstr "Wydanie nie pasujące do żadnych innych kategorii."
 msgid ""
 "Any release officially sanctioned by the artist and/or their record company."
 " (Most releases will fit into this category.)"
-msgstr "Dowolne wydania zatwierdzone przez wykonawcę lub jego/jej wytwórnię muzyczną. (Większość wydań należy do tej kategorii)"
+msgstr "Dowolne wydania zatwierdzone przez wykonawcę lub jego/jej wytwórnię muzyczną. (Większość wydań należy do tej kategorii.)"
 
 #: ../lib/MusicBrainz/Server/Release.pm:71
 msgid ""
 "A giveaway release or a release intended to promote an upcoming official "
 "release. (e.g. prerelease albums or releases included with a magazine)"
-msgstr "Darmowe lub promocyjne wydania, poprzedzające ukazanie się oficjalnej wersji. (np. przedpremierowe albumy lub dodatki do czasopism)"
+msgstr "Darmowe lub promocyjne wydania, poprzedzające ukazanie się oficjalnej wersji, np.: przedpremierowe albumy lub dodatki do czasopism."
 
 #: ../lib/MusicBrainz/Server/Release.pm:72
 msgid ""
 "An unofficial/underground release that was not sanctioned by the artist "
 "and/or the record company."
-msgstr "Nieoficjalne/podziemne wydania które nie zostały zatwierdzone przez artystę lub jego/jej wytwórnię muzyczną."
+msgstr "Nieoficjalne/podziemne wydania, które nie zostały zatwierdzone przez artystę lub jego/jej wytwórnię muzyczną."
 
 #: ../lib/MusicBrainz/Server/Release.pm:73
 msgid ""
 "A pseudo-release is a duplicate release for translation/transliteration "
 "purposes."
-msgstr "Pseudo-wydanie jest duplikatem wydania przeznaczonym do tłumaczeń lub transliteracji."
+msgstr "Pseudowydanie jest duplikatem wydania przeznaczonym do tłumaczeń lub transliteracji."
 
 #: ../lib/MusicBrainz/Server/Wizard/ReleaseEditor.pm:52
 msgid "Release Information"
