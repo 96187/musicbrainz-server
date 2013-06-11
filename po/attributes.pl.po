@@ -1,14 +1,14 @@
 # 
 # Translators:
-# czaja <email address hidden>, 2011.
-# Marcin Rataj <email address hidden>, 2011, 2012.
-# Nikolai Prokoschenko <email address hidden>, 2011.
-#   Tobias Toedter <email address hidden>, 2007.
+# czaja <email address hidden>, 2011
+# Marcin Rataj <email address hidden>, 2011, 2012
+# Nikolai Prokoschenko <email address hidden>, 2011
+#   Tobias Toedter <email address hidden>, 2007
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
-"PO-Revision-Date: 2012-10-05 10:58+0000\n"
+"PO-Revision-Date: 2013-06-11 17:12+0000\n"
 "Last-Translator: Ian McEwen <email address hidden>\n"
 "Language-Team: Polish (http://www.transifex.com/projects/p/musicbrainz/language/pl/)\n"
 "MIME-Version: 1.0\n"
@@ -40,6 +40,11 @@ msgstr "8cm CD"
 #: DB:release_group_primary_type/name:1
 msgctxt "release_group_primary_type"
 msgid "Album"
+msgstr ""
+
+#: DB:area_alias_type/name:1
+msgctxt "alias_type"
+msgid "Area name"
 msgstr ""
 
 #: DB:work_type/name:1
@@ -127,6 +132,11 @@ msgctxt "medium_format"
 msgid "Cassette"
 msgstr ""
 
+#: DB:area_type/name:3
+msgctxt "area_type"
+msgid "City"
+msgstr ""
+
 #: DB:release_group_secondary_type/name:1
 msgctxt "release_group_secondary_type"
 msgid "Compilation"
@@ -135,6 +145,11 @@ msgstr "Kompilacja"
 #: DB:work_type/name:4
 msgctxt "work_type"
 msgid "Concerto"
+msgstr ""
+
+#: DB:area_type/name:1
+msgctxt "area_type"
+msgid "Country"
 msgstr ""
 
 #: DB:medium_format/name:11
@@ -195,6 +210,11 @@ msgstr "EP"
 #: DB:gender/name:2
 msgctxt "gender"
 msgid "Female"
+msgstr ""
+
+#: DB:area_alias_type/name:2
+msgctxt "alias_type"
+msgid "Formal name"
 msgstr ""
 
 #: DB:cover_art_archive.art_type/name:1
@@ -312,6 +332,11 @@ msgctxt "work_type"
 msgid "Opera"
 msgstr ""
 
+#: DB:work_type/name:24
+msgctxt "work_type"
+msgid "Operetta"
+msgstr ""
+
 #: DB:work_type/name:11
 msgctxt "work_type"
 msgid "Oratorio"
@@ -387,6 +412,11 @@ msgctxt "release_status"
 msgid "Promotion"
 msgstr ""
 
+#: DB:work_type/name:23
+msgctxt "work_type"
+msgid "Prose"
+msgstr ""
+
 #: DB:release_status/name:4
 msgctxt "release_status"
 msgid "Pseudo-Release"
@@ -417,6 +447,11 @@ msgctxt "release_group_secondary_type"
 msgid "Remix"
 msgstr ""
 
+#: DB:label_type/name:8
+msgctxt "label_type"
+msgid "Rights Society"
+msgstr ""
+
 #: DB:medium_format/name:3
 msgctxt "medium_format"
 msgid "SACD"
@@ -428,7 +463,7 @@ msgid "SVCD"
 msgstr ""
 
 #: DB:artist_alias_type/name:3 DB:label_alias_type/name:2
-#: DB:work_alias_type/name:2
+#: DB:work_alias_type/name:2 DB:area_alias_type/name:3
 msgctxt "alias_type"
 msgid "Search hint"
 msgstr ""
@@ -463,6 +498,11 @@ msgctxt "release_group_secondary_type"
 msgid "Soundtrack"
 msgstr ""
 
+#: DB:work_type/name:22
+msgctxt "work_type"
+msgid "Soundtrack"
+msgstr ""
+
 #: DB:cover_art_archive.art_type/name:6
 msgctxt "cover_art_type"
 msgid "Spine"
@@ -476,6 +516,11 @@ msgstr ""
 #: DB:cover_art_archive.art_type/name:10
 msgctxt "cover_art_type"
 msgid "Sticker"
+msgstr ""
+
+#: DB:area_type/name:2
+msgctxt "area_type"
+msgid "Subdivision"
 msgstr ""
 
 #: DB:work_type/name:6

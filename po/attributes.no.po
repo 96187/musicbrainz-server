@@ -4,14 +4,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
-"PO-Revision-Date: 2012-05-29 16:41+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
-"Language-Team: Norwegian (http://www.transifex.net/projects/p/musicbrainz/language/no/)\n"
+"PO-Revision-Date: 2012-05-24 18:52+0000\n"
+"Last-Translator: FULL NAME <email address hidden>\n"
+"Language-Team: Norwegian (http://www.transifex.com/projects/p/musicbrainz/language/no/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: no\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: DB:medium_format/name:30
 msgctxt "medium_format"
@@ -38,14 +38,29 @@ msgctxt "release_group_primary_type"
 msgid "Album"
 msgstr ""
 
+#: DB:area_alias_type/name:1
+msgctxt "alias_type"
+msgid "Area name"
+msgstr ""
+
 #: DB:work_type/name:1
 msgctxt "work_type"
 msgid "Aria"
 msgstr ""
 
+#: DB:artist_alias_type/name:1
+msgctxt "alias_type"
+msgid "Artist name"
+msgstr ""
+
 #: DB:release_group_secondary_type/name:5
 msgctxt "release_group_secondary_type"
 msgid "Audiobook"
+msgstr ""
+
+#: DB:cover_art_archive.art_type/name:2
+msgctxt "cover_art_type"
+msgid "Back"
 msgstr ""
 
 #: DB:work_type/name:2
@@ -63,6 +78,11 @@ msgctxt "medium_format"
 msgid "Blu-ray"
 msgstr ""
 
+#: DB:cover_art_archive.art_type/name:3
+msgctxt "cover_art_type"
+msgid "Booklet"
+msgstr ""
+
 #: DB:release_status/name:3
 msgctxt "release_status"
 msgid "Bootleg"
@@ -71,6 +91,11 @@ msgstr ""
 #: DB:label_type/name:5
 msgctxt "label_type"
 msgid "Bootleg Production"
+msgstr ""
+
+#: DB:release_group_primary_type/name:12
+msgctxt "release_group_primary_type"
+msgid "Broadcast"
 msgstr ""
 
 #: DB:medium_format/name:1
@@ -103,6 +128,11 @@ msgctxt "medium_format"
 msgid "Cassette"
 msgstr ""
 
+#: DB:area_type/name:3
+msgctxt "area_type"
+msgid "City"
+msgstr ""
+
 #: DB:release_group_secondary_type/name:1
 msgctxt "release_group_secondary_type"
 msgid "Compilation"
@@ -111,6 +141,11 @@ msgstr ""
 #: DB:work_type/name:4
 msgctxt "work_type"
 msgid "Concerto"
+msgstr ""
+
+#: DB:area_type/name:1
+msgctxt "area_type"
+msgid "Country"
 msgstr ""
 
 #: DB:medium_format/name:11
@@ -173,6 +208,16 @@ msgctxt "gender"
 msgid "Female"
 msgstr ""
 
+#: DB:area_alias_type/name:2
+msgctxt "alias_type"
+msgid "Formal name"
+msgstr ""
+
+#: DB:cover_art_archive.art_type/name:1
+msgctxt "cover_art_type"
+msgid "Front"
+msgstr ""
+
 #: DB:artist_type/name:2
 msgctxt "artist_type"
 msgid "Group"
@@ -208,9 +253,19 @@ msgctxt "release_packaging"
 msgid "Keep Case"
 msgstr ""
 
+#: DB:label_alias_type/name:1
+msgctxt "alias_type"
+msgid "Label name"
+msgstr ""
+
 #: DB:medium_format/name:5
 msgctxt "medium_format"
 msgid "LaserDisc"
+msgstr ""
+
+#: DB:artist_alias_type/name:2
+msgctxt "alias_type"
+msgid "Legal name"
 msgstr ""
 
 #: DB:release_group_secondary_type/name:6
@@ -233,6 +288,11 @@ msgctxt "work_type"
 msgid "Mass"
 msgstr ""
 
+#: DB:cover_art_archive.art_type/name:4
+msgctxt "cover_art_type"
+msgid "Medium"
+msgstr ""
+
 #: DB:medium_format/name:6
 msgctxt "medium_format"
 msgid "MiniDisc"
@@ -253,6 +313,11 @@ msgctxt "release_packaging"
 msgid "None"
 msgstr ""
 
+#: DB:cover_art_archive.art_type/name:5
+msgctxt "cover_art_type"
+msgid "Obi"
+msgstr ""
+
 #: DB:release_status/name:1
 msgctxt "release_status"
 msgid "Official"
@@ -261,6 +326,11 @@ msgstr ""
 #: DB:work_type/name:10
 msgctxt "work_type"
 msgid "Opera"
+msgstr ""
+
+#: DB:work_type/name:24
+msgctxt "work_type"
+msgid "Operetta"
 msgstr ""
 
 #: DB:work_type/name:11
@@ -278,8 +348,13 @@ msgctxt "artist_type"
 msgid "Other"
 msgstr ""
 
-#: DB:release_group_primary_type/name:11
-msgctxt "release_group_primary_type"
+#: DB:cover_art_archive.art_type/name:8
+msgctxt "cover_art_type"
+msgid "Other"
+msgstr ""
+
+#: DB:gender/name:3
+msgctxt "gender"
 msgid "Other"
 msgstr ""
 
@@ -288,13 +363,13 @@ msgctxt "medium_format"
 msgid "Other"
 msgstr ""
 
-#: DB:release_packaging/name:5
-msgctxt "release_packaging"
+#: DB:release_group_primary_type/name:11
+msgctxt "release_group_primary_type"
 msgid "Other"
 msgstr ""
 
-#: DB:gender/name:3
-msgctxt "gender"
+#: DB:release_packaging/name:5
+msgctxt "release_packaging"
 msgid "Other"
 msgstr ""
 
@@ -333,6 +408,11 @@ msgctxt "release_status"
 msgid "Promotion"
 msgstr ""
 
+#: DB:work_type/name:23
+msgctxt "work_type"
+msgid "Prose"
+msgstr ""
+
 #: DB:release_status/name:4
 msgctxt "release_status"
 msgid "Pseudo-Release"
@@ -363,6 +443,11 @@ msgctxt "release_group_secondary_type"
 msgid "Remix"
 msgstr ""
 
+#: DB:label_type/name:8
+msgctxt "label_type"
+msgid "Rights Society"
+msgstr ""
+
 #: DB:medium_format/name:3
 msgctxt "medium_format"
 msgid "SACD"
@@ -371,6 +456,12 @@ msgstr ""
 #: DB:medium_format/name:23
 msgctxt "medium_format"
 msgid "SVCD"
+msgstr ""
+
+#: DB:artist_alias_type/name:3 DB:label_alias_type/name:2
+#: DB:work_alias_type/name:2 DB:area_alias_type/name:3
+msgctxt "alias_type"
+msgid "Search hint"
 msgstr ""
 
 #: DB:release_group_primary_type/name:2
@@ -403,9 +494,29 @@ msgctxt "release_group_secondary_type"
 msgid "Soundtrack"
 msgstr ""
 
+#: DB:work_type/name:22
+msgctxt "work_type"
+msgid "Soundtrack"
+msgstr ""
+
+#: DB:cover_art_archive.art_type/name:6
+msgctxt "cover_art_type"
+msgid "Spine"
+msgstr ""
+
 #: DB:release_group_secondary_type/name:3
 msgctxt "release_group_secondary_type"
 msgid "Spokenword"
+msgstr ""
+
+#: DB:cover_art_archive.art_type/name:10
+msgctxt "cover_art_type"
+msgid "Sticker"
+msgstr ""
+
+#: DB:area_type/name:2
+msgctxt "area_type"
+msgid "Subdivision"
 msgstr ""
 
 #: DB:work_type/name:6
@@ -421,6 +532,16 @@ msgstr ""
 #: DB:work_type/name:16
 msgctxt "work_type"
 msgid "Symphony"
+msgstr ""
+
+#: DB:cover_art_archive.art_type/name:7
+msgctxt "cover_art_type"
+msgid "Track"
+msgstr ""
+
+#: DB:cover_art_archive.art_type/name:9
+msgctxt "cover_art_type"
+msgid "Tray"
 msgstr ""
 
 #: DB:medium_format/name:28
@@ -456,6 +577,11 @@ msgstr ""
 #: DB:medium_format/name:14
 msgctxt "medium_format"
 msgid "Wax Cylinder"
+msgstr ""
+
+#: DB:work_alias_type/name:1
+msgctxt "alias_type"
+msgid "Work name"
 msgstr ""
 
 #: DB:work_type/name:19
