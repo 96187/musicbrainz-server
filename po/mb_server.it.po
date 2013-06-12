@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-06-11 23:59+0000\n"
+"PO-Revision-Date: 2013-06-12 00:32+0000\n"
 "Last-Translator: Luca Salini <email address hidden>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/musicbrainz/language/it/)\n"
 "MIME-Version: 1.0\n"
@@ -5307,7 +5307,7 @@ msgid ""
 "original passwords from this mishap, we are requiring all of our users to "
 "change their passwords. Sorry for the inconvenience. For more information "
 "see {blog|the recent blog post}."
-msgstr ""
+msgstr "Cambia la tua password, per favore. Sfortunatamente abbiamo scoperto che gli hash sicuri delle password utente sono stati temporaneamente disponibili per il download sul nostro sito FTP. Anche se è estremamente improbabile che qualcuno riesca a ricavare le password originali da questo incidente, chiediamo a tutti i nostri utenti di cambiare le loro password. Ci scusiamo per il disagio. Per maggiori informazioni, leggi {blog|il recente post sul blog}."
 
 #: ../root/edit/search_macros.tt:285
 msgid "Please choose a condition"
@@ -7710,7 +7710,7 @@ msgstr "Al momento non ci sono utenti sottoscritti a {label}."
 msgid ""
 "There are no disc IDs attached to this release; to find out more about how "
 "to add one, see {doc|How to Add Disc IDs}."
-msgstr ""
+msgstr "Non ci sono ID disco associati a questa pubblicazione; per maggiori informazioni su come aggiungerne uno, consulta {doc|Come aggiungere ID disco}."
 
 #: ../root/artist/subscribe.tt:11
 msgid "There are no editors currently subscribed to this artist."
@@ -8178,7 +8178,7 @@ msgid ""
 "This report lists artists that have no editors subscribed to them, and whose"
 " changes may therefore be under-reviewed. Artists with more release groups "
 "and more open edits are listed first."
-msgstr ""
+msgstr "Questo report elenca gli artisti a cui nessun editor è sottoscritto e le cui modifiche potrebbero quindi essere poco controllate. Gli artisti con più gruppi di pubblicazioni e più modifiche aperte sono elencati per primi."
 
 #: ../root/report/artists_that_may_be_groups.tt:6
 msgid ""
@@ -8283,7 +8283,7 @@ msgstr "Questo report elenca gli {isrc|ISRC} che sono associati a più di una re
 msgid ""
 "This report lists {iswc|ISWCs} that are attached to more than one work. If "
 "the works are the same, this usually means they should be merged."
-msgstr ""
+msgstr "Questo report elenca gli {iswc|ISWC} che sono associati a più di un'opera. Se le opere sono uguali, ciò vuole solitamente dire che dovrebbero essere unite."
 
 #: ../root/report/asins_with_multiple_releases.tt:6
 msgid ""
@@ -8336,7 +8336,7 @@ msgid ""
 "  recordings, this is inherited from an older version of MusicBrainz and "
 "should  be fixed (both on the recordings and on the tracks!). Consult the  "
 "{featured_artists|page about featured artists} to know more."
-msgstr ""
+msgstr "Questo report mostra le registrazioni con (feat. Artista) nel titolo. Per le registrazioni di musica classica, consulta le {CSG|linee guida di stile sulla musica classica}. Per le altre registrazioni, ciò deriva da una versione precedente di MusicBrainz e deve essere sistemato (sia nelle registrazioni che nelle tracce!). Consulta la {featured_artists|pagina sugli artisti con \"feat.\"} per saperne di più."
 
 #: ../root/report/featuring_release_groups.tt:6
 msgid ""
@@ -8345,7 +8345,7 @@ msgid ""
 "non-classical release groups, this is inherited from an older version of "
 "MusicBrainz and should be fixed. Consult the {featured_artists|page about "
 "featured artists} to know more."
-msgstr ""
+msgstr "Questo report mostra i gruppi di pubblicazioni con (feat. Artista) nel titolo. Per i gruppi di pubblicazioni di musica classica, consulta le {CSG|linee guida di stile sulla musica classica}. Per gli altri gruppi di pubblicazioni, ciò deriva da una versione precedente di MusicBrainz e deve essere sistemato. Consulta la {featured_artists|pagina sugli artisti con \"feat.\"} per saperne di più."
 
 #: ../root/report/set_in_different_rg.tt:6
 msgid ""
@@ -8458,7 +8458,7 @@ msgid ""
 "releases, this is inherited from an older version of MusicBrainz and should "
 "be fixed. Consult the {featured_artists|page about featured artists} to know"
 " more."
-msgstr ""
+msgstr "Questo report mostra le pubblicazioni con (feat. Artista) nel titolo. Per le pubblicazioni di musica classica, consulta le {CSG|linee guida di stile sulla musica classica}. Per le altre pubblicazioni, ciò deriva da una versione precedente di MusicBrainz e deve essere sistemato. Consulta la {featured_artists|pagina sugli artisti con \"feat.\"} per saperne di più."
 
 #: ../root/report/bad_amazon_urls.tt:6
 msgid ""
@@ -9582,7 +9582,7 @@ msgstr "Stai per inserire una modifica che cambierà la durata delle tracce per 
 msgid ""
 "You are about to merge the following areas into a single area. Please select"
 " the area which you would like other areas to be merged into:"
-msgstr ""
+msgstr "Stai per unire le seguenti aree in un'area unica. Seleziona l'area in cui vuoi che vengano unite le altre:"
 
 #: ../root/artist/merge.tt:4
 msgid ""
