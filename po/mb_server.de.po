@@ -34,7 +34,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-06-23 14:59+0000\n"
+"PO-Revision-Date: 2013-06-23 15:26+0000\n"
 "Last-Translator: Shepard\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -404,7 +404,7 @@ msgstr "Es wurde ein CD-Stub gefunden, der auf die von Dir angegebene Disc-ID pa
 msgid ""
 "A medium on this release has been recently changed by someone else, cannot "
 "load recordings."
-msgstr ""
+msgstr "Ein Medium auf dieser Veröffentlichung wurde kürzlich von jemand anders verändert, kann Aufnahmen nicht laden."
 
 #: ../root/release/collections.tt:18
 msgid "A private collection"
@@ -1180,7 +1180,7 @@ msgstr "Bist Du sicher, dass Du den ISRC <code>{isrc}</code> von {recording} von
 
 #: ../root/area/delete.tt:5
 msgid "Are you sure you wish to remove the area {area} from MusicBrainz?"
-msgstr ""
+msgstr "Bist du sicher, dass du das Gebiet {area} aus MusicBrainz entfernen willst?"
 
 #: ../root/release/remove_cover_art.tt:4
 msgid ""
@@ -3142,7 +3142,7 @@ msgstr "Endete:"
 
 #: ../root/relationship/linktype/form.tt:91
 msgid "Endpoint MBID:"
-msgstr ""
+msgstr "Endpoint-MBID:"
 
 #: ../root/release/edit/tracklist.tt:179
 msgid "Enter a tracklist below:"
@@ -3573,7 +3573,7 @@ msgstr "Host:"
 
 #: ../root/layout/menu.tt:256
 msgid "How Tos"
-msgstr ""
+msgstr "Kurzanleitungen"
 
 #: ../root/edit/list_header.tt:31
 msgid "How editing works"
@@ -5319,7 +5319,7 @@ msgid ""
 "original passwords from this mishap, we are requiring all of our users to "
 "change their passwords. Sorry for the inconvenience. For more information "
 "see {blog|the recent blog post}."
-msgstr ""
+msgstr "Bitte ändere dein Passwort. Leider haben wir bemerken müssen, dass sichere Hash-Codes der Passwörter von Benutzern temporär über unsere FTP-Site herunterladbar waren. Obwohl es äußerst unwahrscheinlich ist, dass es irgendjemandem durch dieses Missgeschick möglich sein wird, die ursprünglichen Passwörter herauszufinden, veranlassen wir alle Benutzer, ihr Passwort zu ändern. Wir bitten um Entschuldigung für die Unannehmlichkeiten. Zu weiteren Informationen, siehe {blog|den entsprechenden Blogpost}."
 
 #: ../root/edit/search_macros.tt:285
 msgid "Please choose a condition"
@@ -6693,11 +6693,11 @@ msgstr "Sekundärtypen:"
 
 #: ../root/elections/index.tt:14
 msgid "Seconder 1"
-msgstr ""
+msgstr "Befürworter 1"
 
 #: ../root/elections/index.tt:15
 msgid "Seconder 2"
-msgstr ""
+msgstr "Befürworter 2"
 
 #: ../root/cdtoc/info.tt:38 ../root/cdtoc/info.tt:40 ../root/cdtoc/info.tt:42
 msgid "Sectors"
@@ -6977,7 +6977,7 @@ msgstr "Tut uns Leid, die Seite, die Du sehen möchtest, ist auf einem Spiegelse
 msgid ""
 "Sorry, there are no areas starting with “{index}”. Please {pre|go back} and "
 "try again."
-msgstr ""
+msgstr "Entschuldigung, es gibt keine Gebiete, die mit „{index}“ anfangen. Gehe bitte {pre|zurück} und versuche es noch einmal."
 
 #: ../root/browse/artist.tt:33
 msgid ""
@@ -7263,7 +7263,7 @@ msgstr "Abschicken"
 
 #: ../root/edit/index.tt:80
 msgid "Submit note"
-msgstr ""
+msgstr "Bemerkung abschicken"
 
 #: ../root/cdtoc/lookup.tt:105
 msgid "Submit this CD using the simple method."
@@ -7271,7 +7271,7 @@ msgstr "Diese CD mit der einfachen Methode einreichen"
 
 #: ../root/edit/index.tt:78 ../root/edit/vote.tt:26
 msgid "Submit vote and note"
-msgstr ""
+msgstr "Stimme und Bemerkung abschicken"
 
 #: ../root/edit/list.tt:96
 msgid "Submit votes &amp; edit notes"
@@ -7613,7 +7613,7 @@ msgstr "Der Großteil der Daten in der <strong>MusicBrainz-Datenbank</strong> wi
 
 #: ../root/cdtoc/set_durations.tt:19
 msgid "The medium you are altering is part of the following release:"
-msgstr ""
+msgstr "Das Medium, das du veränderst, ist Teil der folgenden Veröffentlichung:"
 
 #: ../root/main/403.tt:5
 msgid "The page you requested is private."
@@ -7722,7 +7722,7 @@ msgstr "Derzeit gibt es keine Benutzer, die {label} abonnieren."
 msgid ""
 "There are no disc IDs attached to this release; to find out more about how "
 "to add one, see {doc|How to Add Disc IDs}."
-msgstr ""
+msgstr "An dieser Veröffentlichung hängen keine Disc-IDs. Um mehr darüber zu erfahren, wie man eine hinzufügt, siehe {doc|Wie man Disc-IDs hinzufügt}."
 
 #: ../root/artist/subscribe.tt:11
 msgid "There are no editors currently subscribed to this artist."
@@ -7809,7 +7809,7 @@ msgstr "Es gab einen oder mehrere Fehler, bitte überprüfe die folgenden Felder
 msgid ""
 "These images provided by the {caa|Cover Art Archive}. You can also see them "
 "at the {ia|Internet Archive}."
-msgstr ""
+msgstr "Diese Bilder wurden vom {caa|Cover-Art-Archiv} zur Verfügung gestellt. Du kannst sie auch beim {ia|Internet Archive} sehen."
 
 #: ../root/cdstub/edit_form.tt:9
 msgid "This CD has tracks from more than one artist (e.g. a compilation CD)"
@@ -7831,7 +7831,7 @@ msgstr "Dieser ISWC ist mit keinen Werken verbunden. Wenn Du ihn mit einem Werk 
 msgid ""
 "This area cannot be removed because there are still artists, labels, and/or "
 "releases using it."
-msgstr ""
+msgstr "Dieses Gebiet kann nicht entfernt werden, weil es noch Künstler, Labels und/oder Veröffentlchungen gibt, die es verwenden."
 
 #: ../root/area/edit_form.tt:22
 msgid "This area has ended."
@@ -8190,7 +8190,7 @@ msgid ""
 "This report lists artists that have no editors subscribed to them, and whose"
 " changes may therefore be under-reviewed. Artists with more release groups "
 "and more open edits are listed first."
-msgstr ""
+msgstr "Dieser Report listet Künster auf, die kein Bearbeiter abonniert hat und deren Änderungen daher nicht zur Genüge überprüft werden. Künstler mit mehr Veröffentlichungsgruppen und mehr offenen Bearbeitungen werden zuerst aufgelistet."
 
 #: ../root/report/artists_that_may_be_groups.tt:6
 msgid ""
@@ -8295,7 +8295,7 @@ msgstr "Dieser Report listet {isrc|ISRCs} auf, die mit mehr als einer Aufnahme v
 msgid ""
 "This report lists {iswc|ISWCs} that are attached to more than one work. If "
 "the works are the same, this usually means they should be merged."
-msgstr ""
+msgstr "Dieser Report listet {iswc|ISWCs} auf, die mit mehr als einem Werk verbunden sind. Wenn die Werke die gleichen sind, bedeutet das in der Regel, dass sie vereint werden sollten."
 
 #: ../root/report/asins_with_multiple_releases.tt:6
 msgid ""
@@ -8348,7 +8348,7 @@ msgid ""
 "  recordings, this is inherited from an older version of MusicBrainz and "
 "should  be fixed (both on the recordings and on the tracks!). Consult the  "
 "{featured_artists|page about featured artists} to know more."
-msgstr ""
+msgstr "Dieser Report zeigt Aufnahmen, die „(feat. Künstler)“ im Titel enthalten. Bei klassischer Musik, siehe in den {CSG|klassischen Stilrichtlinien} nach. Bei nicht-klassischer Musik ist dies ein Überbleibsel einer älteren Version von MusicBrainz und sollte korrigiert werden (sowohl in den Aufnahmen als auch in den Titeln in der Veröffentlichung). Auf der {featured_artists|Seite über „featured“ Künstler} erfährst Du mehr."
 
 #: ../root/report/featuring_release_groups.tt:6
 msgid ""
@@ -8357,7 +8357,7 @@ msgid ""
 "non-classical release groups, this is inherited from an older version of "
 "MusicBrainz and should be fixed. Consult the {featured_artists|page about "
 "featured artists} to know more."
-msgstr ""
+msgstr "Dieser Report zeigt Veröffentlichungsgruppen, die „(feat. Künstler)“ im Titel enthalten. Bei klassischer Musik, siehe in den {CSG|klassischen Stilrichtlinien} nach. Bei nicht-klassischer Musik ist dies ein Überbleibsel einer älteren Version von MusicBrainz und sollte korrigiert werden. Auf der {featured_artists|Seite über „featured“ Künstler} erfährst Du mehr."
 
 #: ../root/report/set_in_different_rg.tt:6
 msgid ""
@@ -8470,7 +8470,7 @@ msgid ""
 "releases, this is inherited from an older version of MusicBrainz and should "
 "be fixed. Consult the {featured_artists|page about featured artists} to know"
 " more."
-msgstr ""
+msgstr "Dieser Report zeigt Veröffentlichungen, die „(feat. Künstler)“ im Titel enthalten. Bei klassischer Musik, siehe in den {CSG|klassischen Stilrichtlinien} nach. Bei nicht-klassischer Musik ist dies ein Überbleibsel einer älteren Version von MusicBrainz und sollte korrigiert werden. Auf der {featured_artists|Seite über „featured“ Künstler} erfährst Du mehr."
 
 #: ../root/report/bad_amazon_urls.tt:6
 msgid ""
@@ -9594,7 +9594,7 @@ msgstr "Du bist im Begriff eine Bearbeitung einzugeben, die die Längen von Tite
 msgid ""
 "You are about to merge the following areas into a single area. Please select"
 " the area which you would like other areas to be merged into:"
-msgstr ""
+msgstr "Du bist im Begriff, die folgenden Gebiete zu einem einzigen Gebiet zu vereinigen. Bitte wähle das Gebiet, in das du die andere Gebiete aufgehen lassen willst:"
 
 #: ../root/artist/merge.tt:4
 msgid ""
@@ -10669,7 +10669,7 @@ msgstr "Es gibt keinen Benutzer mit diesem Namen und dieser E-Mail"
 msgid ""
 "We can't send a password reset email, because we have no email on record for"
 " this user."
-msgstr ""
+msgstr "Wir können keine Passwort-Zurücksetzen-E-Mail schicken, weil wir keine E-Mail-Adresse für diesen Benutzer haben."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:196
 msgid "Missing one or more required parameters."
