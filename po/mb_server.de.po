@@ -21,9 +21,9 @@
 # phwolfer <email address hidden>, 2012
 # phwolfer <email address hidden>, 2012
 # Shepard <email address hidden>, 2011
-# Shepard <email address hidden>, 2011
-# Shepard <email address hidden>, 2013
-# Shepard <email address hidden>, 2012-2013
+# Shepard, 2011
+# Shepard, 2013
+# Shepard, 2012-2013
 # Mineo <email address hidden>, 2013
 # Tobias Quathamer <email address hidden>, 2007
 # Tobias Quathamer <email address hidden>, 2007
@@ -34,8 +34,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-06-13 05:46+0000\n"
-"Last-Translator: nikki <email address hidden>\n"
+"PO-Revision-Date: 2013-06-23 14:59+0000\n"
+"Last-Translator: Shepard\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -526,12 +526,12 @@ msgstr "Medium hinzufügen"
 #: ../root/release/edit/information.tt:92
 msgctxt "button/menu"
 msgid "Add Event"
-msgstr ""
+msgstr "Ereignis hinzufügen"
 
 #: ../root/release/edit/information.tt:90
 msgctxt "header"
 msgid "Add Event"
-msgstr ""
+msgstr "Ereignis hinzufügen"
 
 #: ../root/relationship/linktype/form.tt:117
 msgid "Add Example"
@@ -944,7 +944,7 @@ msgstr "Titeländerungen auf auf Aufnahmen übertragen"
 
 #: ../root/search/results-area.tt:44
 msgid "Alternatively, you may {uri|add a new area}."
-msgstr ""
+msgstr "Stattdessen kannst du auch {uri|ein Gebiet hinzufügen}."
 
 #: ../root/search/results-artist.tt:5
 msgid "Alternatively, you may {uri|add a new artist}."
@@ -1148,7 +1148,7 @@ msgstr "Bist du sicher, dass du diese Anwendung entfernen möchtest?"
 
 #: ../root/account/revoke_application_access.tt:5
 msgid "Are you sure you want to revoke this application's access?"
-msgstr ""
+msgstr "Bist du sicher, dass du die Erlaubnis für diese Anwendung zurückziehen willst?"
 
 #: ../root/edit/cancel.tt:3
 msgid "Are you sure you wish to cancel edit #{n}? This cannot be undone!"
@@ -2622,7 +2622,7 @@ msgid ""
 "Do you want to develop an application that uses the {ws|MusicBrainz web "
 "service}? {register|Register an application} to generate OAuth tokens. See "
 "our {oauth2|OAuth documentation} for more details."
-msgstr ""
+msgstr "Willst du eine Anwendung entwickeln, die den {ws|MusicBrainz-Webservice} verwendet? {register|Registriere eine Anwendung}, um OAuth-Tokens zu generieren. Siehe auch unsere {oauth2|OAuth-Dokumentation} für weitere Informationen."
 
 #: ../root/layout/menu.tt:247
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:47
@@ -3178,7 +3178,7 @@ msgstr "Objekt nicht gefunden"
 
 #: ../root/edit/details/edit_relationship_type.tt:6
 msgid "Entity types:"
-msgstr ""
+msgstr "Objekttypen:"
 
 #: ../root/report/not_available.tt:1 ../root/report/not_available.tt:3
 #: ../lib/MusicBrainz/Server/Edit/Utils.pm:255
@@ -3834,7 +3834,7 @@ msgstr "Wenn Du dieses Tag verwenden willst, {url|suche} bitte erst nach dem Obj
 msgid ""
 "If you would like to delete your account, go to {uri|the \"Delete Account\" "
 "tab in your profile}."
-msgstr ""
+msgstr "Wenn du dein Konto löschen möchtest, gehe zum {uri|„Konto löschen“-Reiter in deinem Profil}."
 
 #: ../root/account/donation.tt:10
 msgid ""
@@ -5287,7 +5287,7 @@ msgstr "Passwort:"
 
 #: ../root/oauth2/authorize.tt:12
 msgid "Perform the above operations when I'm not using the application"
-msgstr ""
+msgstr "Führe die obigen Schritte durch, wenn ich die Anwendung nicht benutze"
 
 #: ../root/area/details.tt:22 ../root/artist/details.tt:22
 #: ../root/label/details.tt:22 ../root/recording/details.tt:22
@@ -5506,7 +5506,7 @@ msgstr "Bitte {login|einloggen}, um die Disc-IDs von dieser Veröffentlichung zu
 
 #: ../root/taglookup/not_found.tt:6
 msgid "Please {search|try again}, providing at least one of these parameters"
-msgstr ""
+msgstr "Versuche es bitte {search|noch einmal}, indem du mindestens einen dieser Parameter verwendest"
 
 #: ../root/release/edit-links.tt:15
 msgid "Please {uri|log in} to edit this release"
@@ -5756,7 +5756,7 @@ msgstr "Aufnahmen mit „früheste Veröffentlichung“-Beziehungen"
 #: ../root/report/duplicate_relationships_recordings.tt:3
 #: ../root/report/index.tt:81
 msgid "Recordings with possible duplicate relationships"
-msgstr ""
+msgstr "Aufnahmen mit möglicherweise doppelten Beziehungen"
 
 #: ../root/report/featuring_recordings.tt:1
 #: ../root/report/featuring_recordings.tt:3 ../root/report/index.tt:80
@@ -6066,7 +6066,7 @@ msgstr "Veröffentlichungsgruppen, die eventuell vereint werden müssen"
 #: ../root/report/duplicate_relationships_release_groups.tt:3
 #: ../root/report/index.tt:41
 msgid "Release groups with possible duplicate relationships"
-msgstr ""
+msgstr "Veröffentlichungsgruppen mit möglicherweise doppelten Beziehungen"
 
 #: ../root/report/featuring_release_groups.tt:1
 #: ../root/report/featuring_release_groups.tt:3 ../root/report/index.tt:39
@@ -6151,7 +6151,7 @@ msgstr "Veröffentlichungen im Cover-Art-Archiv, die noch Cover-Art-Beziehungen 
 
 #: ../root/report/index.tt:68
 msgid "Releases of any sort that still have cover art relationships"
-msgstr ""
+msgstr "Veröffentlichungen jeglicher Art, die noch Cover-Art-Beziehungen haben"
 
 #: ../root/report/index.tt:61 ../root/report/released_too_early.tt:1
 #: ../root/report/released_too_early.tt:3
@@ -6218,7 +6218,7 @@ msgstr "Veröffentlichungen mit nicht-sequentiellen Titelnummern"
 #: ../root/report/duplicate_relationships_releases.tt:3
 #: ../root/report/index.tt:72
 msgid "Releases with possible duplicate relationships"
-msgstr ""
+msgstr "Veröffentlichungen mit möglicherweise doppelten Beziehungen"
 
 #: ../root/report/index.tt:59 ../root/report/superfluous_data_tracks.tt:3
 msgid "Releases with superfluous data tracks"
@@ -6237,7 +6237,7 @@ msgstr "Veröffentlichungen mit Titelnummer-Problemen"
 #: ../root/report/index.tt:71 ../root/report/tracks_without_times.tt:1
 #: ../root/report/tracks_without_times.tt:3
 msgid "Releases with unknown track times"
-msgstr ""
+msgstr "Veröffentlichungen mit unbekannten Titellängen"
 
 #: ../root/report/index.tt:70
 #: ../root/report/releases_with_unlikely_language_script.tt:1
@@ -6558,7 +6558,7 @@ msgstr "Zugriff widerrufen"
 #: ../root/account/revoke_application_access.tt:1
 #: ../root/account/revoke_application_access.tt:3
 msgid "Revoke Application Access"
-msgstr ""
+msgstr "Erlaubnis für Anwendung zurückziehen"
 
 #: ../root/layout.tt:78
 msgid "Running: <span class=\"tooltip\" title=\"{msg}\">{branch} ({sha})</span>"
@@ -6713,7 +6713,7 @@ msgstr "Alle öffentlichen Sammlungen von {editor} ansehen"
 
 #: ../root/tag/index.tt:25
 msgid "See all {num} "
-msgstr ""
+msgstr "Siehe alle {num}"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} artists"
@@ -6909,7 +6909,7 @@ msgid ""
 "account. These are the applications that you have authorized to access your "
 "MusicBrainz account. If you no longer use some of the applications, you can "
 "revoke their access."
-msgstr ""
+msgstr "Einige Anwendungen und Webseiten unterstützen den Zugriff auf private Daten von MusicBrainz oder können Daten an MusicBrainz senden, benötigen dafür aber die Erlaubnis zum Zugriff auf dein Konto. Dies sind die Anwendungen, denen du Zugriff auf dein MusicBrainz-Konto gewährt hast. Wenn du welche davon nicht mehr verwendest, kannst du die Erlaubnis dafür zurückziehen."
 
 #: ../root/scripts/text_strings.tt:32
 msgid "Some artists credited with alternative names"
@@ -7362,7 +7362,7 @@ msgstr "Tag-Nachschlagen"
 
 #: ../root/taglookup/not_found.tt:1 ../root/taglookup/not_found.tt:2
 msgid "Tag Lookup Error"
-msgstr ""
+msgstr "Tag-Nachschlagefehler"
 
 #: ../root/taglookup/results.tt:1 ../root/taglookup/results.tt:3
 msgid "Tag Lookup Results"
@@ -7471,7 +7471,7 @@ msgstr "Danke, Deine E-Mail-Adresse ist jetzt bestätigt! Wenn Du immer noch nic
 msgid ""
 "That search can't be performed, because you must provide at least one of "
 "'recording', 'track number', 'duration', 'release', or 'artist'."
-msgstr ""
+msgstr "Diese Suche kann nicht ausgeführt werden, da du mindestens eins der folgenden angeben musst: Aufnahme, Titelnummer, Länge, Veröffentlichung oder Künstler."
 
 #: ../root/release/caa_darkened.tt:3 ../root/release/cover_art.tt:60
 msgid ""
@@ -7673,7 +7673,7 @@ msgid ""
 "The tracklist found looks like it may have different artists on some tracks."
 " If the below display looks correct, you should import this release as a "
 "release with multiple artists."
-msgstr ""
+msgstr "Die gefundene Titelliste scheint andere Künstler für einige Titel zu haben. Wenn das unten Aufgelistete richtig aussieht, solltest du diese Veröffentlichung als eine Veröffentlichung mit mehreren Künstlern importieren."
 
 #: ../root/taglookup/nag.tt:4
 msgid "The users make MusicBrainz happen and we appreciate your help!"
@@ -8169,7 +8169,7 @@ msgstr "Dieser Report hat das Ziel, Veröffentlichungen zu identifizieren, die z
 msgid ""
 "This report lists all releases where some or all tracks have unknown track "
 "lengths."
-msgstr ""
+msgstr "Dieser Report listet alle Veröffentlichungen auf, bei denen einige oder alle Titel unbekannte Titellängen haben."
 
 #: ../root/report/mediums_with_sequence_issues.tt:6
 msgid ""
@@ -8240,31 +8240,31 @@ msgid ""
 "artist, label or URL using the same relationship type. For multiple "
 "relationships to release groups, recordings or works, see the reports for "
 "those entities."
-msgstr ""
+msgstr "Dieser Report listet Künstler auf, die mehrere Beziehungen zum gleichen Künstler, Label oder einer URL haben und dabei den gleichen Beziehungstyp verwenden. Zu mehreren Beziehungen zu Veröffentlichungsgruppen, Aufnahmen oder Werken, siehe die Reporte für diese Objekte."
 
 #: ../root/report/duplicate_relationships_labels.tt:6
 msgid ""
 "This report lists labels which have multiple relationships to the same "
 "entity using the same relationship type."
-msgstr ""
+msgstr "Dieser Report listet Labels auf, die mehrere Beziehungen zum gleichen Objekt haben und dabei den gleichen Beziehungstyp verwenden."
 
 #: ../root/report/duplicate_relationships_recordings.tt:6
 msgid ""
 "This report lists recordings which have multiple relationships to the same "
 "entity using the same relationship type."
-msgstr ""
+msgstr "Dieser Report listet Aufnahmen auf, die mehrere Beziehungen zum gleichen Objekt haben und dabei den gleichen Beziehungstyp verwenden."
 
 #: ../root/report/duplicate_relationships_release_groups.tt:6
 msgid ""
 "This report lists release groups which have multiple relationships to the "
 "same entity using the same relationship type."
-msgstr ""
+msgstr "Dieser Report listet Veröffentlichungsgruppen auf, die mehrere Beziehungen zum gleichen Objekt haben und dabei den gleichen Beziehungstyp verwenden."
 
 #: ../root/report/duplicate_relationships_releases.tt:6
 msgid ""
 "This report lists releases which have multiple relationships to the same "
 "entity using the same relationship type."
-msgstr ""
+msgstr "Dieser Report listet Veröffentlichungen auf, die mehrere Beziehungen zum gleichen Objekt haben und dabei den gleichen Beziehungstyp verwenden."
 
 #: ../root/report/superfluous_data_tracks.tt:6
 msgid ""
@@ -8278,7 +8278,7 @@ msgid ""
 "This report lists works which have multiple relationships to the same entity"
 " using the same relationship type. This excludes recording-work "
 "relationships. See the recording version of this report for those."
-msgstr ""
+msgstr "Dieser Report listet Werke auf, die mehrere Beziehungen zum gleichen Objekt haben und dabei den gleichen Beziehungstyp verwenden. Dies schließt Aufnahme-Werk-Beziehungen aus. Siehe dafür die Version dieses Reports für Aufnahmen."
 
 #: ../root/report/isrc_with_many_recordings.tt:6
 msgid ""
@@ -8410,7 +8410,7 @@ msgstr "Dieser Report zeigt Veröffentlichungen, bei denen keine Schrift gesetzt
 
 #: ../root/report/releases_with_coverart_links.tt:6
 msgid "This report shows releases that still have Cover Art relationships."
-msgstr ""
+msgstr "Dieser Report zeigt Veröffentlichungen, die noch Cover-Art-Beziehungen haben."
 
 #: ../root/report/releases_with_cc_links.tt:6
 msgid ""
@@ -9474,7 +9474,7 @@ msgstr "Mit „{index}“ beginnende Werke"
 #: ../root/report/duplicate_relationships_works.tt:3
 #: ../root/report/index.tt:87
 msgid "Works with possible duplicate relationships"
-msgstr ""
+msgstr "Werke mit möglicherweise doppelten Beziehungen"
 
 #: ../root/artist/works-list.tt:10 ../root/iswc/index.tt:17
 #: ../root/otherlookup/results-work.tt:8
@@ -9742,7 +9742,7 @@ msgstr "Du hast derzeit die folgenden Entitäten zum Vereinen ausgewählt:"
 
 #: ../root/account/applications.tt:84
 msgid "You do not have any registered applications."
-msgstr ""
+msgstr "Du hast keine registrierten Anwendungen."
 
 #: ../root/oauth2/oob.tt:5
 msgid ""
@@ -9760,7 +9760,7 @@ msgstr "Du hast keine Sammlungen."
 
 #: ../root/account/applications.tt:42
 msgid "You have not authorized any applications."
-msgstr ""
+msgstr "Du hast keinen Anwendungen Zugriff gewährt."
 
 #: ../root/recording/edit.tt:44
 msgid ""
