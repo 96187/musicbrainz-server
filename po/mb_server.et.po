@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-06-13 12:24+0000\n"
+"PO-Revision-Date: 2013-06-26 00:29+0000\n"
 "Last-Translator: Mihkel Tõnnov <email address hidden>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/musicbrainz/language/et/)\n"
 "MIME-Version: 1.0\n"
@@ -895,7 +895,7 @@ msgstr "Suurused:"
 
 #: ../root/oauth2/authorize.tt:19
 msgid "Allow access"
-msgstr "Luba juurdepääs"
+msgstr "Anna luba"
 
 #: ../root/account/preferences.tt:25
 msgid "Allow other users to see my ratings"
@@ -1127,7 +1127,7 @@ msgstr "Kas oled kindel, et soovid selle rakenduse eemaldada?"
 
 #: ../root/account/revoke_application_access.tt:5
 msgid "Are you sure you want to revoke this application's access?"
-msgstr "Kas oled kindel, et soovid selle rakenduse juurdepääsuõiguse tühistada?"
+msgstr "Kas oled kindel, et soovid selle rakenduse juurdepääsuloa tühistada?"
 
 #: ../root/edit/cancel.tt:3
 msgid "Are you sure you wish to cancel edit #{n}? This cannot be undone!"
@@ -1628,7 +1628,7 @@ msgid ""
 "Because you provided an email address, an verification email has been sent "
 "to <code>{addr}</code>. Please check your mailbox and click on the link in "
 "the email to verify the new email address."
-msgstr ""
+msgstr "Kuna sisestasid e-postiaadressi, saatsime sulle kinnituskirja aadressil <code>{addr}</code> Palun vaata oma postkasti ning klõpsa uue e-postiaadressi kinnitamiseks kirjas olevat linki."
 
 #: ../root/main/index.tt:96
 msgid ""
@@ -1870,7 +1870,7 @@ msgstr "„Pooleldi sisestatud CD-d” on funktsioon, mis lubab registreerumata 
 #: ../root/account/edit_application.tt:10
 #: ../root/account/register_application.tt:35
 msgid "Callback URL:"
-msgstr ""
+msgstr "Suhtlus-URL:"
 
 #: ../root/doc/edit_type.tt:75
 msgid "Can be approved"
@@ -2601,7 +2601,7 @@ msgid ""
 "Do you want to develop an application that uses the {ws|MusicBrainz web "
 "service}? {register|Register an application} to generate OAuth tokens. See "
 "our {oauth2|OAuth documentation} for more details."
-msgstr ""
+msgstr "Soovid luua {ws|MusicBrainzi veebiteenust} kasutava rakenduse? {register|Registreeri rakendus} OAuth-võtmete genereerimiseks. Lisainfot saad {oauth2|OAuthi dokumentatsioonist}."
 
 #: ../root/layout/menu.tt:247
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:47
@@ -3374,7 +3374,7 @@ msgstr[1] "Leidub {num} kasutaja kogus"
 
 #: ../root/release/lookup.tt:4
 msgid "Found more than one match for the CD with TOC {toc}: "
-msgstr ""
+msgstr "Leiti mitu sisukorrale „{toc}” vastavat CD-d: "
 
 #: ../root/edit/list.tt:56
 msgid "Found {n} edit"
@@ -3783,7 +3783,7 @@ msgid ""
 "We encourage people to donate $12 to make the nag screen disappear for 3 "
 "months. Or even better, sign up for a recurring donation every three months "
 "to not have to think about or see this nag again."
-msgstr ""
+msgstr "Kui annetad <b>4 $</b>, ei tüüdata sind selle tekstiga <b>kuu aega</b>. Julgustame aga annetama 12 $,  et tüütamiskuva ei näidataks kolm kuud. Või veelgi parem, sea sisse iga kolme kuu tagant korduv annetus ja sa ei pea enam tüütamisele mõtlema ega seda nägema."
 
 #: ../root/main/403.tt:8
 msgid ""
@@ -3842,7 +3842,7 @@ msgstr "Pilt pole veel saadaval, palun proovi mõne minuti pärast uuesti."
 
 #: ../root/freedb/show.tt:45 ../root/freedb/show.tt:103
 msgid "Import"
-msgstr ""
+msgstr "Impordi"
 
 #: ../root/cdstub/import.tt:1 ../root/cdstub/import.tt:2
 #: ../root/cdtoc/lookup.tt:25
@@ -3855,7 +3855,7 @@ msgstr "Impordi"
 
 #: ../root/freedb/show.tt:54
 msgid "Import as Multiple Artist Release"
-msgstr ""
+msgstr "Importimine mitme esitajaga väljalaskena"
 
 #: ../root/cdstub/layout.tt:22
 msgid "Import as MusicBrainz release"
@@ -3863,7 +3863,7 @@ msgstr "Impordi MusicBrainzi väljalaskena"
 
 #: ../root/freedb/show.tt:5
 msgid "Import as a Single Artist Release"
-msgstr ""
+msgstr "Importimine ühe esitajaga väljalaskena"
 
 #: ../root/main/mirror.tt:9
 msgid ""
@@ -4156,7 +4156,7 @@ msgstr "Seosta"
 #: ../root/edit/details/add_relationship_type.tt:13
 #: ../root/edit/details/edit_relationship_type.tt:21
 msgid "Link phrase:"
-msgstr ""
+msgstr "Liitefraas:"
 
 #: ../root/annotation/edit.tt:53
 msgid "Links:"
@@ -4308,7 +4308,7 @@ msgstr "Postiloendid"
 
 #: ../root/taglookup/nag.tt:24
 msgid "Make a donation now!"
-msgstr ""
+msgstr "Anneta kohe!"
 
 #: ../root/release/merge.tt:134
 msgid ""
@@ -4434,7 +4434,7 @@ msgstr "Mesti artist"
 
 #: ../root/edit/details/historic/merge_releases.tt:25
 msgid "Merge attributes:"
-msgstr ""
+msgstr "Atribuudid mestitakse:"
 
 #: ../root/label/layout.tt:70
 msgid "Merge label"
@@ -4491,7 +4491,7 @@ msgstr "Sõnum:"
 #: ../root/report/set_in_different_rg.tt:1
 #: ../root/report/set_in_different_rg.tt:3
 msgid "Mismatched release groups"
-msgstr ""
+msgstr "Mestimist vajada võivad väljalaskerühmad"
 
 #: ../root/cdstub/browse.tt:11
 msgid "Modify count"
@@ -4911,7 +4911,7 @@ msgstr "Väljalaskeid ei leitud."
 
 #: ../root/release_group/set_cover_art.tt:63
 msgid "No releases have cover art, cannot set cover art."
-msgstr ""
+msgstr "Ühelgi väljalaskel pole kaanepilti, seega ei saa seda ka siin määrata."
 
 #: ../root/tag/release.tt:1
 msgid "No releases with this tag were found."
@@ -4998,11 +4998,11 @@ msgid ""
 "Note! If you do not know the month or day of release, please leave them "
 "empty.  January 1st is not often the actual release date, please double "
 "check that you have entered the release date correctly."
-msgstr ""
+msgstr "NB! Kui sa ei tea väljalaskekuud või -päeva, siis palun jäta selle väli tühjaks. 1. jaanuar pole sageli tegelik väljalaskekuupäev — palun kontrolli üle, et sisestatud kuupäev tõesti paika peab."
 
 #: ../root/edit/details/set_track_lengths.tt:42
 msgid "Note:"
-msgstr ""
+msgstr "Pane tähele:"
 
 #: ../root/edit/search_macros.tt:221
 msgid ""
@@ -5024,19 +5024,19 @@ msgstr "Lugude nimekirja laadimine..."
 
 #: ../root/oauth2/authorize.tt:1 ../root/oauth2/oob.tt:1
 msgid "OAuth Authorization"
-msgstr ""
+msgstr "OAuthi autoriseerimine"
 
 #: ../root/oauth2/error.tt:1
 msgid "OAuth Authorization Error"
-msgstr ""
+msgstr "OAuthi autoriseerimisviga"
 
 #: ../root/account/applications.tt:56
 msgid "OAuth Client ID"
-msgstr ""
+msgstr "OAuthi kliendi ID"
 
 #: ../root/account/applications.tt:57
 msgid "OAuth Client Secret "
-msgstr ""
+msgstr "OAuthi kliendi saladus "
 
 #: ../root/layout/sidebar/sidebar-favicons.tt:14
 msgid "Official homepage"
@@ -5044,7 +5044,7 @@ msgstr "Ametlik koduleht"
 
 #: ../root/account/applications.tt:5
 msgid "Offline Access"
-msgstr ""
+msgstr "Ühenduseta juurdepääs"
 
 #: ../root/annotation/history.tt:6
 msgid "Old"
@@ -5161,11 +5161,11 @@ msgstr "Või..."
 
 #: ../root/otherlookup/results.tt:1 ../root/otherlookup/results.tt:3
 msgid "Other Lookup Results"
-msgstr ""
+msgstr "Muude päringute tulemused"
 
 #: ../root/otherlookup/index.tt:1 ../root/otherlookup/index.tt:3
 msgid "Other Lookups"
-msgstr ""
+msgstr "Muud päringud"
 
 #: ../root/search/index.tt:16
 msgid "Other lookups"
@@ -5298,7 +5298,7 @@ msgid ""
 "original passwords from this mishap, we are requiring all of our users to "
 "change their passwords. Sorry for the inconvenience. For more information "
 "see {blog|the recent blog post}."
-msgstr ""
+msgstr "Palun vaheta oma salasõna. Avastasime, et kasutajate paroolide turvaräsid olid meie FTP-saidil ajutiselt allalaaditavad. On küll äärmiselt ebatõenäoline, et keegi sealt algsed paroolid suudaks tuletada, aga igaks juhuks sunnime siiski kõik kasutajad parooli vahetama. Vabandust ebamugavuste pärast. Lisateavet saad vastavast {blog|blogisissekandest}."
 
 #: ../root/edit/search_macros.tt:285
 msgid "Please choose a condition"
@@ -5354,7 +5354,7 @@ msgstr "Palun mine esmalt selle artisti lehele, keda soovid selle väljalaske sa
 
 #: ../root/freedb/show.tt:48 ../root/freedb/show.tt:106
 msgid "Please login to import this FreeDB disc."
-msgstr ""
+msgstr "FreeDB-st plaadi importimiseks logi palun sisse."
 
 #: ../root/release/edit/missing_entities.tt:79
 #: ../root/release/edit/missing_entities.tt:142
@@ -5366,7 +5366,7 @@ msgid ""
 "Please make sure you're not removing a legitimate {doc_standalone|standalone"
 " recording}. If this recording duplicates another, please {doc_merge|merge "
 "rather than delete}."
-msgstr ""
+msgstr "Palun tee kindlaks, et sa ei eemalda legitiimset {doc_standalone|eraldiseisvat salvestist}. Kui see salvestis on mõne teise koopia, siis {doc_merge|pigem mesti need}."
 
 #: ../root/layout/merge-helper.tt:24
 msgid ""
@@ -5389,7 +5389,7 @@ msgstr "Märkus:"
 msgid ""
 "Please read the guideline on {doc_merging|how to merge releases} before "
 "entering this edit."
-msgstr ""
+msgstr "Palun loe enne selle toimetuse sisestamist läbi {doc_merging|väljalasete mestimise juhised}."
 
 #: ../root/label/edit_form.tt:2
 msgid ""
@@ -5427,7 +5427,7 @@ msgstr "Palun loe enne selle toimetuse sisestamist läbi {doc|aliaste dokumentat
 
 #: ../root/cdstub/import.tt:3
 msgid "Please search for the artist you wish to create a new release for:"
-msgstr ""
+msgstr "Otsi üles artist, kelle alla uus väljalase peaks minema."
 
 #: ../root/release/cover_art_fields.tt:8
 msgid ""
@@ -5443,7 +5443,7 @@ msgstr "Palun vali seosetüüp."
 msgid ""
 "Please select a subtype of the currently selected relationship type. The "
 "selected relationship type is only used for grouping subtypes."
-msgstr ""
+msgstr "Palun vali praeguse seosetüübi asemel sobiv alltüüp. Valitud seosetüüpi kasutatakse ainult teiste seoste rühmitamiseks."
 
 #: ../root/artist/edit_form.tt:94
 msgid ""
@@ -5485,7 +5485,7 @@ msgstr "Väljalaske plaadi-ID-de muutmiseks {login|logi palun sisse}."
 
 #: ../root/taglookup/not_found.tt:6
 msgid "Please {search|try again}, providing at least one of these parameters"
-msgstr ""
+msgstr "Palun {search|proovi uuesti}, andes vähemalt ühe neist parameetritest"
 
 #: ../root/release/edit-links.tt:15
 msgid "Please {uri|log in} to edit this release"
@@ -5658,7 +5658,7 @@ msgstr "Loe veel »"
 msgid ""
 "Read the {doc|WikiDocs} documentation for an overview of how transclusion "
 "works."
-msgstr ""
+msgstr "Transklusiooni tööpõhimõtte ülevaate leiad {doc|WikiDocsi} dokumentatsioonist."
 
 #: ../root/main/index.tt:118
 msgid "Recent Additions"
@@ -5823,11 +5823,11 @@ msgstr "Seosetüübid"
 
 #: ../root/relationship/linkattributetype/in_use.tt:1
 msgid "Relationship attribute in use"
-msgstr ""
+msgstr "Seoseatribuut on kasutuses"
 
 #: ../root/relationship/linkattributetype/in_use.tt:2
 msgid "Relationship attribute still in use"
-msgstr ""
+msgstr "Seoseatribuut on ikka veel kasutuses"
 
 #: ../root/admin/edit_user.tt:9
 msgid "Relationship editor"
@@ -6532,12 +6532,12 @@ msgstr "Abi saamiseks vaata <a href=\"{url}\" target=\"_blank\">ümbrisetüüpid
 
 #: ../root/account/applications.tt:35
 msgid "Revoke Access"
-msgstr ""
+msgstr "Tühista luba"
 
 #: ../root/account/revoke_application_access.tt:1
 #: ../root/account/revoke_application_access.tt:3
 msgid "Revoke Application Access"
-msgstr "Rakenduse juurdepääsuõiguse tühistamine"
+msgstr "Rakenduse juurdepääsuloa tühistamine"
 
 #: ../root/layout.tt:78
 msgid "Running: <span class=\"tooltip\" title=\"{msg}\">{branch} ({sha})</span>"
@@ -6624,7 +6624,7 @@ msgstr "Toimetuste otsing"
 
 #: ../root/release/edit/recordings.tt:95
 msgid "Search for recordings"
-msgstr "Salvestiste otsimine"
+msgstr "Otsi salvestist"
 
 #: ../root/search/form.tt:52
 msgid ""
@@ -6782,7 +6782,7 @@ msgstr "Loopikkuste määramine"
 
 #: ../root/account/reset_password.tt:5
 msgid "Set a new password for your MusicBrainz account."
-msgstr ""
+msgstr "Sisesta uus parool oma MusicBrainzi konto jaoks."
 
 #: ../root/release_group/layout.tt:49 ../root/release_group/set_cover_art.tt:7
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/SetCoverArt.pm:19
@@ -6888,7 +6888,7 @@ msgid ""
 "account. These are the applications that you have authorized to access your "
 "MusicBrainz account. If you no longer use some of the applications, you can "
 "revoke their access."
-msgstr ""
+msgstr "Mõned rakendused ja veebilehed võimaldavad juurdepääsu privaatsetele andmetele MusicBrainzis või andmete edastamist MusicBrainzi, kui annad neile loa oma konto juurde pääseda. Siin on rakendused, millele oled andnud juurdepääsuloa oma MusicBrainzi kontole. Kui sa mõnda rakendust enam ei kasuta, võid selle loa tühistada."
 
 #: ../root/scripts/text_strings.tt:32
 msgid "Some artists credited with alternative names"
@@ -6908,40 +6908,40 @@ msgstr "SongKong Tagger"
 msgid ""
 "Sorry, <code>{discid}</code> does not match a CD stub. You can try  "
 "{search_url|searching for it} instead."
-msgstr ""
+msgstr "Vabandust, <code>{discid}</code> ei vasta ühelegi pooleldi sisestatud CD-le. Võid proovida {search_url|seda otsida}."
 
 #: ../root/cdstub/error.tt:19
 msgid "Sorry, <code>{discid}</code> is not a valid disc ID."
-msgstr ""
+msgstr "Vabandust, <code>{discid}</code> pole kehtiv plaadi-ID."
 
 #: ../root/scripts/text_strings.tt:47
 msgid "Sorry, an error occurred during your search"
-msgstr ""
+msgstr "Vabandust, otsimisel ilmnes viga."
 
 #: ../root/search/error/no-results.tt:3
 msgid ""
 "Sorry, but your query \"(<code>query</code>)\" did not match any {type}. "
 "Please check you used the correct spelling.  Sometimes searching for fewer "
 "or different words may also help."
-msgstr "Vabandust, aga sinu päringule „(<code>query</code>)” ei leitud andmebaasis olevate {type} seast vasteid. Palun vaata üle õigekiri. Mõnikord võib olla abi ka vähemate või teistsuguste sõnade otsimisest."
+msgstr "Vabandust, sinu päringule „(<code>query</code>)” ei leitud andmebaasis olevate {type} seast vasteid. Palun vaata üle õigekiri. Mõnikord võib olla abi ka vähemate või teistsuguste sõnade otsimisest."
 
 #: ../root/search/error/rate-limit.tt:3
 msgid ""
 "Sorry, but your query (<code>{query}</code>) could not be performed, because"
 " it appears you've been rate-limited. Either the server is overloaded or "
 "you're making a lot of requests all at once!"
-msgstr ""
+msgstr "Vabandust, sinu päringut „(<code>{query}</code>)” polnud võimalik teha, kuna paistab, et teed liiga palju päringuid korraga. Võimalik ka, et server on ülekoormatud."
 
 #: ../root/search/error/general.tt:3
 msgid ""
 "Sorry, but your query (<code>{query}</code>) could not be performed, due to "
 "an error which we are not quite able to identify."
-msgstr "Vabandust, aga sinu päringut „(<code>{query}</code>)” polnud võimalik teha, kuna ilmnes mingi arusaamatu viga."
+msgstr "Vabandust, sinu päringut „(<code>{query}</code>)” polnud võimalik teha, kuna ilmnes mingi arusaamatu viga."
 
 #: ../root/main/rate_limited.tt:4
 msgid ""
 "Sorry, but your requests are exceeding the allowable rate limit ({rlinfo})."
-msgstr ""
+msgstr "Vabandust, su päringud ületavad lubatud kiirusepiirangut ({rlinfo})."
 
 #: ../root/main/404.tt:8
 msgid "Sorry, the page you're looking for does not exist."
@@ -6996,102 +6996,102 @@ msgstr "Vabandust, ei leitud ühtegi teost, mille pealkirja alguses oleks „{in
 
 #: ../root/main/400.tt:5
 msgid "Sorry, there was a problem with your request."
-msgstr "Vabandust, aga su päringuga oli midagi valesti."
+msgstr "Vabandust, su päringuga oli midagi valesti."
 
 #: ../root/freedb/not_found.tt:4
 msgid ""
 "Sorry, we could not find a FreeDB entry with that ID. You may wish to try "
 "and {search_url|search for it} instead."
-msgstr "Vabandust, aga selle ID-ga FreeDB kirjet ei leitud. Võid proovida {search_url|seda otsida}."
+msgstr "Vabandust, selle ID-ga FreeDB kirjet ei leitud. Võid proovida {search_url|seda otsida}."
 
 #: ../root/otherlookup/not_found.tt:4
 msgid ""
 "Sorry, we could not find a MusicBrainz entity with that MusicBrainz ID. You "
 "may wish to try and {search_url|search for it} instead."
-msgstr "Vabandust, aga selle MusicBrainzi ID-ga MusicBrainzi olemit ei leitud. Võid proovida {search_url|seda otsida}."
+msgstr "Vabandust, selle MusicBrainzi ID-ga MusicBrainzi olemit ei leitud. Võid proovida {search_url|seda otsida}."
 
 #: ../root/url/not_found.tt:4
 msgid "Sorry, we could not find a URL with that MusicBrainz ID."
-msgstr "Vabandust, aga selle MusicBrainzi ID-ga URL-i ei leitud."
+msgstr "Vabandust, selle MusicBrainzi ID-ga URL-i ei leitud."
 
 #: ../root/label/not_found.tt:4
 msgid ""
 "Sorry, we could not find a label with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr "Vabandust, aga selle MusicBrainzi ID-ga plaadifirmat ei leitud. Võid proovida {search_url|seda otsida}."
+msgstr "Vabandust, selle MusicBrainzi ID-ga plaadifirmat ei leitud. Võid proovida {search_url|seda otsida}."
 
 #: ../root/recording/not_found.tt:4
 msgid ""
 "Sorry, we could not find a recording with that MusicBrainz ID. You may wish "
 "to try and {search_url|search for it} instead."
-msgstr "Vabandust, aga selle MusicBrainzi ID-ga salvestist ei leitud. Võid proovida {search_url|seda otsida}."
+msgstr "Vabandust, selle MusicBrainzi ID-ga salvestist ei leitud. Võid proovida {search_url|seda otsida}."
 
 #: ../root/relationship/linkattributetype/not_found.tt:3
 msgid ""
 "Sorry, we could not find a relationship attribute with that MusicBrainz ID."
-msgstr "Vabandust, aga selle MusicBrainzi ID-ga seoseatribuuti ei leitud."
+msgstr "Vabandust, selle MusicBrainzi ID-ga seoseatribuuti ei leitud."
 
 #: ../root/release_group/not_found.tt:4
 msgid ""
 "Sorry, we could not find a release group with that MusicBrainz ID. You may "
 "wish to try and {search_url|search for it} instead."
-msgstr "Vabandust, aga selle MusicBrainzi ID-ga väljalaskerühma ei leitud. Võid proovida {search_url|seda otsida}."
+msgstr "Vabandust, selle MusicBrainzi ID-ga väljalaskerühma ei leitud. Võid proovida {search_url|seda otsida}."
 
 #: ../root/release/not_found.tt:4
 msgid ""
 "Sorry, we could not find a release with that MusicBrainz ID. You may wish to"
 " try and {search_url|search for it} instead."
-msgstr "Vabandust, aga selle MusicBrainzi ID-ga väljalaset ei leitud. Võid proovida {search_url|seda otsida}."
+msgstr "Vabandust, selle MusicBrainzi ID-ga väljalaset ei leitud. Võid proovida {search_url|seda otsida}."
 
 #: ../root/work/not_found.tt:4
 msgid ""
 "Sorry, we could not find a work with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr "Vabandust, aga selle MusicBrainzi ID-ga teost ei leitud. Võid proovida {search_url|seda otsida}."
+msgstr "Vabandust, selle MusicBrainzi ID-ga teost ei leitud. Võid proovida {search_url|seda otsida}."
 
 #: ../root/artist/not_found.tt:4
 msgid ""
 "Sorry, we could not find an artist with that MusicBrainz ID. You may wish to"
 " try and {search_url|search for it} instead."
-msgstr "Vabandust, aga selle MusicBrainzi ID-ga artisti ei leitud. Võid proovida {search_url|seda otsida}."
+msgstr "Vabandust, selle MusicBrainzi ID-ga artisti ei leitud. Võid proovida {search_url|seda otsida}."
 
 #: ../root/collection/not_found.tt:4
 msgid "Sorry, we could not find an collection with that MusicBrainz ID."
-msgstr "Vabandust, aga selle MusicBrainzi ID-ga kogu ei leitud."
+msgstr "Vabandust, selle MusicBrainzi ID-ga kogu ei leitud."
 
 #: ../root/edit/not_found.tt:4
 msgid ""
 "Sorry, we could not find an edit with that edit ID. You may wish to try and "
 "perform an {search_url|edit search} instead."
-msgstr "Vabandust, aga selle ID-ga toimetust ei leitud. Võibolla tahad proovida {search_url|toimetusi otsida}?"
+msgstr "Vabandust, selle ID-ga toimetust ei leitud. Võibolla tahad proovida {search_url|toimetusi otsida}?"
 
 #: ../root/user/not_found.tt:4
 msgid ""
 "Sorry, we could not find an editor with that name. You may wish to try and "
 "{search_url|search for them} instead."
-msgstr "Vabandust, aga selle nimega toimetajat ei leitud. Võid proovida {search_url|teda otsida}."
+msgstr "Vabandust, selle nimega toimetajat ei leitud. Võid proovida {search_url|teda otsida}."
 
 #: ../root/search/editor.tt:18
 msgid ""
 "Sorry, we could not find any users matching the query for "
 "<code>{query}</code>"
-msgstr ""
+msgstr "Vabandust, päringu <code>{query}</code> peale ei leitud ühtegi kasutajat."
 
 #: ../root/cdtoc/not_found.tt:4
 msgid "Sorry, we could not find the CD TOC you specified."
-msgstr "Vabandust, aga määratud CD-sisukorda ei leitud."
+msgstr "Vabandust, määratud CD-sisukorda ei leitud."
 
 #: ../root/elections/not_found.tt:4
 msgid "Sorry, we could not find this election."
-msgstr "Vabandust, aga määratud valimisi ei leitud."
+msgstr "Vabandust, määratud valimisi ei leitud."
 
 #: ../root/main/401.tt:5
 msgid "Sorry, you are not authorized to view this page."
-msgstr "Vabandust, aga sul pole lubatud sellele lehele pääseda."
+msgstr "Vabandust, sul pole lubatud sellele lehele pääseda."
 
 #: ../root/main/mirror.tt:5
 msgid "Sorry, you are unable to perform that action on a mirror server."
-msgstr ""
+msgstr "Vabandust, peegelserveris ei saa seda teha."
 
 #: ../root/search/error/no-info.tt:3
 msgid ""
@@ -7099,15 +7099,15 @@ msgid ""
 " to carry out a search. If you are attempting to find something that "
 "contains nothing but punctuation characters (e.g. !!!) then you need to use "
 "the {uri|browse page}, since this search ignores punctuation characters."
-msgstr ""
+msgstr "Vabandust, su päring (<code>{query}</code>) ei sisalda piisavalt teavet, mille järgi otsida. Kui püüad leida midagi, mis sisaldab ainult kirjavahemärke (nt !!!), siis tuleb kasutada {uri|sirvimislehte}, kuna otsing eirab igasuguseid kirjavahemärke."
 
 #: ../root/search/error/uri-too-large.tt:3
 msgid "Sorry, your query was too large."
-msgstr "Vabandust, aga sinu päring oli liiga pikk."
+msgstr "Vabandust, su päring oli liiga pikk."
 
 #: ../root/doc/bare_error.tt:5 ../root/doc/error.tt:11
 msgid "Sorry, “{id}” is not a valid documentation page."
-msgstr "Vabandust, aga „{id}” pole kehtiv dokumentatsioonileht."
+msgstr "Vabandust, „{id}” pole kehtiv dokumentatsioonileht."
 
 #: ../root/components/forms.tt:227
 #: ../root/search/lib/inline-results-artist.tt:8
@@ -7652,7 +7652,7 @@ msgid ""
 "The tracklist found looks like it may have different artists on some tracks."
 " If the below display looks correct, you should import this release as a "
 "release with multiple artists."
-msgstr ""
+msgstr "Leitud lugude nimekiri näeb välja, nagu erineks mõne loo artistid. Kui alltoodu paistab korrektne, impordi plaat mitme esitajaga väljalaskena."
 
 #: ../root/taglookup/nag.tt:4
 msgid "The users make MusicBrainz happen and we appreciate your help!"
@@ -9000,7 +9000,7 @@ msgstr "Kasuta meie <strong>XML-veebiteenust</strong> või <strong>arendusteeke<
 
 #: ../root/release/edit/recordings.tt:94
 msgid "Use suggested recording"
-msgstr ""
+msgstr "Kasuta soovitatud salvestist"
 
 #: ../root/components/forms.tt:254
 msgid ""
@@ -9289,7 +9289,7 @@ msgstr[1] "MusicBrainzist leiti mitu plaadifirmat, mille nimi on {artist}. Kui m
 msgid ""
 "We found the following users that matched your query for "
 "<code>{query}</code>."
-msgstr ""
+msgstr "Päringu <code>{query}</code> peale leiti järgmised kasutajad."
 
 #: ../root/account/donation.tt:7
 msgid ""
@@ -9307,7 +9307,7 @@ msgstr "Saatsime sulle kinnituskirja aadressil <code>{email}</code>. Palun vaata
 
 #: ../root/cdtoc/lookup.tt:10
 msgid "We used DiscID <code>{discid}</code> to look up this information."
-msgstr ""
+msgstr "Selle teabe otsimisel kasutasime plaadi-ID-d <code>{discid}</code>."
 
 #: ../root/account/edit.tt:47
 msgid ""
@@ -9384,7 +9384,7 @@ msgstr "Wiki versioon"
 
 #: ../root/edit/details/change_wikidoc.tt:4
 msgid "WikiDoc:"
-msgstr ""
+msgstr "WikiDoc:"
 
 #: ../root/components/wikipedia_extract.tt:2
 msgid "Wikipedia"
@@ -9727,7 +9727,7 @@ msgstr "Sul pole ühtki registreeritud rakendust."
 msgid ""
 "You have granted access to {app}. Next, return to {app} and copy this token "
 "to complete the authorization process:"
-msgstr ""
+msgstr "{app} sai juurdepääsuloa. Autoriseerimisprotsessi lõpetamiseks mine nüüd rakenduse juurde tagasi ja kopeeri sinna see võti:"
 
 #: ../root/release/sidebar.tt:136
 msgid "You have no collections!"
@@ -9972,7 +9972,7 @@ msgstr "abi"
 
 #: ../root/search/results-freedb.tt:31
 msgid "import"
-msgstr ""
+msgstr "impordi"
 
 #: ../root/area/header.tt:20
 msgid "in {country}"
@@ -10310,7 +10310,7 @@ msgstr "{doc|Plaadi-ID}:"
 
 #: ../root/oauth2/error.tt:7
 msgid "{doc|Learn more}"
-msgstr ""
+msgstr "{doc|Lisateave}"
 
 #: ../root/user/profile.tt:48
 msgid "{doc|Location Editor}"
