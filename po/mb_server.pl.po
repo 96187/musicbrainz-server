@@ -13,6 +13,7 @@
 # Nikolai Prokoschenko <email address hidden>, 2011
 # Marecki <email address hidden>, 2012
 # nikki <email address hidden>, 2012
+# PiotrMyslinski <email address hidden>, 2013
 #   Tobias Toedter <email address hidden>, 2007
 #   Tobias Toedter <email address hidden>, 2007
 msgid ""
@@ -20,8 +21,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-06-11 17:13+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2013-07-03 16:48+0000\n"
+"Last-Translator: PiotrMyslinski <email address hidden>\n"
 "Language-Team: Polish (http://www.transifex.com/projects/p/musicbrainz/language/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1908,11 +1909,11 @@ msgstr "Anuluj"
 
 #: ../root/edit/cancel.tt:1 ../root/edit/cancel.tt:2
 msgid "Cancel Edit"
-msgstr ""
+msgstr "Anuluj edycję"
 
 #: ../root/components/common-macros.tt:563
 msgid "Cancel creating relationship with {name}"
-msgstr ""
+msgstr "Anuluj tworzenie relacji z {name}"
 
 #: ../root/edit/cancel.tt:24 ../root/edit/edit_header.tt:79
 #: ../root/edit/info.tt:21
@@ -2385,12 +2386,12 @@ msgstr ""
 
 #: ../root/edit/search_macros.tt:110
 msgid "Delete"
-msgstr ""
+msgstr "Usuń"
 
 #: ../root/admin/delete_user.tt:3 ../root/admin/delete_user.tt:13
 #: ../root/admin/delete_user.tt:14 ../root/user/profile/layout.tt:39
 msgid "Delete Account"
-msgstr ""
+msgstr "Usuń konto"
 
 #: ../root/scripts/text_strings.tt:123
 msgid "Delete Note"
@@ -2402,7 +2403,7 @@ msgstr ""
 
 #: ../root/admin/delete_user.tt:23
 msgid "Delete my account"
-msgstr ""
+msgstr "Usuń moje konto"
 
 #: ../root/admin/delete_user.tt:8
 msgid "Delete {e}"
@@ -2876,7 +2877,7 @@ msgstr "Opisy edycji"
 
 #: ../root/admin/edit_user.tt:32
 msgid "Edit profile"
-msgstr ""
+msgstr "Edytuj profil"
 
 #: ../root/recording/edit.tt:34
 #: ../lib/MusicBrainz/Server/Edit/Recording/Edit.pm:32
@@ -3097,7 +3098,7 @@ msgstr ""
 
 #: ../root/elections/index.tt:12
 msgid "End date"
-msgstr ""
+msgstr "Data zakończenia"
 
 #: ../root/alias/edit_form.tt:32 ../root/area/edit_form.tt:21
 #: ../root/area/layout.tt:23 ../root/area/layout.tt:30
@@ -3200,9 +3201,9 @@ msgstr ""
 #: ../root/main/500.tt:9
 msgid "Error:"
 msgid_plural "Errors:"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Błąd"
+msgstr[1] "Błędy"
+msgstr[2] "Błędy:"
 
 #: ../root/components/common-macros.tt:161
 msgid "Error: Unknown Type"
@@ -3961,7 +3962,7 @@ msgstr "Edycja pola Artysta jest możliwa tylko przy włączonej obsłudze Javas
 
 #: ../root/artist/edit_credit.tt:17 ../root/artist/split.tt:17
 msgid "Javascript needs to be enabled."
-msgstr ""
+msgstr "Obsługa Javascript musi być włączona."
 
 #: ../root/components/forms.tt:290 ../root/release/edit/tracklist.tt:46
 #: ../root/scripts/text_strings.tt:26
@@ -4172,7 +4173,7 @@ msgstr ""
 
 #: ../root/recording/fingerprints.tt:73
 msgid "Link"
-msgstr ""
+msgstr "Link"
 
 #: ../root/edit/details/add_relationship_type.tt:13
 #: ../root/edit/details/edit_relationship_type.tt:21
@@ -4588,7 +4589,7 @@ msgstr ""
 
 #: ../root/layout/menu.tt:171
 msgid "MusicBrainz for Android"
-msgstr ""
+msgstr "MusicBrainz dla Androida"
 
 #: ../root/account/register.tt:57
 msgid ""
@@ -4647,11 +4648,11 @@ msgstr "Moje tagi"
 
 #: ../root/edit/search_macros.tt:287
 msgid "My Vote"
-msgstr ""
+msgstr "Mój głos"
 
 #: ../root/edit/index.tt:31
 msgid "My vote:"
-msgstr ""
+msgstr "Mój głos:"
 
 #: ../root/edit/edit_header.tt:31 ../root/edit/edit_header.tt:36
 #: ../root/edit/edit_header.tt:41
@@ -4722,7 +4723,7 @@ msgstr "Nowe"
 
 #: ../root/edit/details/edit_medium.tt:211
 msgid "New Artist"
-msgstr ""
+msgstr "Nowy artysta"
 
 #: ../root/artist/edit_credit.tt:32 ../root/artist/split.tt:49
 msgid "New Artist Credit"
@@ -5976,7 +5977,7 @@ msgstr "Grupy Wydań"
 
 #: ../root/edit/search_macros.tt:287
 msgid "Release Language"
-msgstr ""
+msgstr "Język wydania"
 
 #: ../root/release/not_found.tt:1 ../root/release/not_found.tt:2
 msgid "Release Not Found"
@@ -6412,11 +6413,11 @@ msgstr "Usuń dysk"
 
 #: ../root/release/sidebar.tt:119
 msgid "Remove from my collection"
-msgstr ""
+msgstr "Usuń z mojej kolekcji"
 
 #: ../root/release/sidebar.tt:121
 msgid "Remove from {collection}"
-msgstr ""
+msgstr "Usuń z {collection}"
 
 #: ../root/label/layout.tt:73
 #: ../lib/MusicBrainz/Server/Edit/Label/Delete.pm:12
@@ -8136,7 +8137,7 @@ msgstr ""
 
 #: ../root/release/edit/information.tt:140
 msgid "This release does not have a barcode"
-msgstr ""
+msgstr "To wydanie nie posiada kodu kreskowego"
 
 #: ../root/release_group/delete.tt:17
 msgid ""
@@ -8837,7 +8838,7 @@ msgstr ""
 
 #: ../root/layout.tt:153
 msgid "Twitter"
-msgstr ""
+msgstr "Twitter"
 
 #: ../root/account/applications.tt:55 ../root/area/artists-list.tt:5
 #: ../root/area/labels-list.tt:5 ../root/artist/browse_various.tt:15
@@ -9125,7 +9126,7 @@ msgstr "Zobacz historię adnotacji."
 
 #: ../root/elections/index.tt:33
 msgid "View details"
-msgstr ""
+msgstr "Pokaż szczegóły"
 
 #: ../root/admin/wikidoc/index.tt:63
 msgid "View on wiki"
@@ -9186,7 +9187,7 @@ msgstr ""
 
 #: ../root/elections/show.tt:33
 msgid "Votes against:"
-msgstr ""
+msgstr "Głosy przeciw:"
 
 #: ../root/user/edits.tt:15
 msgid "Votes by {name}"
@@ -9210,7 +9211,7 @@ msgstr ""
 
 #: ../root/elections/show.tt:58
 msgid "Voting"
-msgstr ""
+msgstr "Głosowanie"
 
 #: ../root/edit/info.tt:57 ../root/edit/list_header.tt:25
 msgid "Voting FAQ"
@@ -9567,7 +9568,7 @@ msgstr ""
 #: ../root/account/revoke_application_access.tt:10
 #: ../root/elections/nominate.tt:11
 msgid "Yes, I am sure"
-msgstr ""
+msgstr "Tak, jestem pewien"
 
 #: ../root/artist/edit_form.tt:32
 msgid ""
@@ -9837,7 +9838,7 @@ msgstr "Musisz się zalogować, aby zobaczyć tę stronę."
 
 #: ../root/release/edit/information.tt:192
 msgid "You selected {label}."
-msgstr ""
+msgstr "Wybrałeś {label}."
 
 #: ../root/release/edit/information.tt:163
 msgid "You selected {releasegroup}."
@@ -10212,7 +10213,7 @@ msgstr ""
 #: ../root/release/edit/recordings.tt:195
 #: ../root/release/edit/recordings.tt:266
 msgid "track"
-msgstr ""
+msgstr "utwór"
 
 #: ../root/release/index.tt:122
 msgid "track {tracks}"
@@ -11666,7 +11667,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Form/User/Preferences.pm:85
 msgid "Never"
-msgstr ""
+msgstr "Nigdy"
 
 #: ../lib/MusicBrainz/Server/Form/User/Register.pm:21
 msgid "Please enter a password in this field"
