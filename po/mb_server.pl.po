@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-07-03 18:33+0000\n"
+"PO-Revision-Date: 2013-07-08 13:59+0000\n"
 "Last-Translator: PiotrMyslinski <email address hidden>\n"
 "Language-Team: Polish (http://www.transifex.com/projects/p/musicbrainz/language/pl/)\n"
 "MIME-Version: 1.0\n"
@@ -2035,7 +2035,7 @@ msgstr "Kolejność potomków:"
 
 #: ../root/release/cover_art_uploader.tt:15
 msgid "Choose file:"
-msgstr ""
+msgstr "Wybierz plik:"
 
 #: ../root/release/cover_art_fields.tt:6
 msgid "Choose one or more cover art types for this image"
@@ -2159,7 +2159,7 @@ msgstr ""
 #: ../root/edit/details/remove_cover_art.tt:26
 #: ../root/release/cover_art_fields.tt:10
 msgid "Comment:"
-msgstr ""
+msgstr "Komentarz:"
 
 #: ../root/main/index.tt:93
 msgid "Community"
@@ -2218,7 +2218,7 @@ msgstr "Kopiuj"
 
 #: ../root/release/edit/missing_entities.tt:21
 msgid "Copy Name"
-msgstr ""
+msgstr "Kopiuj nazwę"
 
 #: ../root/release/edit/recordings.tt:402
 msgid "Copy all track changes to associated recordings."
@@ -2260,7 +2260,7 @@ msgstr ""
 
 #: ../root/edit/details/macros.tt:94
 msgid "Cover art:"
-msgstr ""
+msgstr "Okładka:"
 
 #: ../root/admin/wikidoc/create.tt:12
 msgid "Create"
@@ -2281,7 +2281,7 @@ msgstr "Utwórz nową kolekcję"
 
 #: ../root/relationship/linkattributetype/instruments.tt:8
 msgid "Create a new instrument"
-msgstr ""
+msgstr "Utwórz nowy instrument"
 
 #: ../root/relationship/linkattributetype/index.tt:8
 msgid "Create a new relationship attribute"
@@ -2317,7 +2317,7 @@ msgstr ""
 
 #: ../root/edit/search_macros.tt:287
 msgid "Created"
-msgstr ""
+msgstr "Utworzono"
 
 #: ../root/release/edit_relationships.tt:136
 #: ../root/release/edit_relationships.tt:145
@@ -2339,7 +2339,7 @@ msgstr "Jakość Danych"
 #: ../root/edit/info.tt:46 ../root/release/change_quality.tt:5
 #: ../root/release/sidebar.tt:37
 msgid "Data Quality:"
-msgstr ""
+msgstr "Jakość danych:"
 
 #: ../root/layout/menu.tt:295
 msgid "Data Removal Policy"
@@ -2399,7 +2399,7 @@ msgstr ""
 
 #: ../root/admin/delete_user.tt:2
 msgid "Delete User"
-msgstr ""
+msgstr "Usuń użytkownika"
 
 #: ../root/admin/delete_user.tt:23
 msgid "Delete my account"
@@ -2468,7 +2468,7 @@ msgstr ""
 
 #: ../root/components/common-macros.tt:915 ../root/scripts/text_strings.tt:73
 msgid "Died:"
-msgstr ""
+msgstr "Zmarł(a):"
 
 #: ../root/search/form.tt:35 ../root/search/form.tt:40
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:57
@@ -2543,7 +2543,7 @@ msgstr "Dysk {num}: {title}"
 
 #: ../root/artist/index.tt:33
 msgid "Discography"
-msgstr ""
+msgstr "Dyskografia"
 
 #: ../root/report/discogs_links_with_multiple_artists.tt:1
 #: ../root/report/discogs_links_with_multiple_artists.tt:3
@@ -2733,7 +2733,7 @@ msgstr "Edytuj Kolekcję"
 
 #: ../root/release/edit_cover_art.tt:5 ../root/release/edit_cover_art.tt:6
 msgid "Edit Cover Art"
-msgstr ""
+msgstr "Edytuj okładkę"
 
 #: ../root/layout/menu.tt:93
 msgid "Edit Instrument Tree"
@@ -3138,7 +3138,7 @@ msgstr ""
 
 #: ../root/release/edit/tracklist.tt:179
 msgid "Enter a tracklist below:"
-msgstr ""
+msgstr "Uzupełnij listę utworów poniżej:"
 
 #: ../root/components/forms.tt:24 ../root/release/add_cover_art.tt:61
 #: ../root/release/edit/editnote.tt:42
@@ -3557,7 +3557,7 @@ msgstr "Pomoc:"
 #: ../root/components/common-macros.tt:633
 #: ../lib/MusicBrainz/Server/Controller/Edit.pm:188
 msgid "High"
-msgstr ""
+msgstr "Wysoki"
 
 #: ../root/doc/edit_types.tt:5 ../root/doc/edit_types.tt:19
 #: ../root/doc/edit_types.tt:21 ../lib/MusicBrainz/Server/Edit/Historic.pm:12
@@ -3904,7 +3904,7 @@ msgstr "Nieprawidłowy login lub hasło"
 #: ../root/search/form.tt:24
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:55
 msgid "Indexed search"
-msgstr ""
+msgstr "Szukanie indeksowane"
 
 #: ../root/search/form.tt:29
 msgid "Indexed search with {doc|advanced query syntax}"
@@ -4074,7 +4074,7 @@ msgstr ""
 
 #: ../root/release/index.tt:15
 msgid "Labels:"
-msgstr ""
+msgstr "Wytwórnie:"
 
 #: ../root/artist/works-list.tt:14 ../root/iswc/index.tt:20
 #: ../root/otherlookup/results-release.tt:11
@@ -4158,7 +4158,7 @@ msgstr "Długość:"
 
 #: ../root/layout/sidebar/sidebar-licenses.tt:19
 msgid "License"
-msgstr ""
+msgstr "Licencja"
 
 #: ../root/main/index.tt:72
 msgid ""
@@ -4542,11 +4542,11 @@ msgstr "Przesuń dysk w górę"
 
 #: ../root/release/edit/tracklist.tt:308
 msgid "Move track down"
-msgstr ""
+msgstr "Przesuń utwór w dół"
 
 #: ../root/release/edit/tracklist.tt:310
 msgid "Move track up"
-msgstr ""
+msgstr "Przesuń utwór w górę"
 
 #: ../root/edit/details/historic/move_release.tt:14
 msgid "Move tracks:"
@@ -4789,7 +4789,7 @@ msgstr ""
 
 #: ../root/edit/details/edit_medium.tt:180
 msgid "New recording"
-msgstr ""
+msgstr "Nowe nagranie"
 
 #: ../root/edit/details/historic/edit_relationship.tt:29
 msgid "New relationships:"
@@ -4877,7 +4877,7 @@ msgstr ""
 
 #: ../root/relationship/linkattributetype/instruments.tt:31
 msgid "No instruments found."
-msgstr ""
+msgstr "Nie znaleziono żadnych instrumentów"
 
 #: ../root/tag/label.tt:1
 msgid "No labels with this tag were found."
@@ -4951,7 +4951,7 @@ msgstr "Brak wyników."
 
 #: ../root/components/search.tt:43
 msgid "No results found."
-msgstr ""
+msgstr "Brak wyników."
 
 #: ../root/cdtoc/attach_filter_artist.tt:41
 #: ../root/cdtoc/attach_filter_release.tt:79
@@ -5090,7 +5090,7 @@ msgstr "Stare hasło:"
 
 #: ../root/edit/details/reorder_cover_art.tt:14
 msgid "Old positions:"
-msgstr ""
+msgstr "Stare pozycje:"
 
 #: ../root/edit/details/edit_medium.tt:179
 msgid "Old recording"
@@ -5381,7 +5381,7 @@ msgstr "Zaloguj się, aby importować ten dysk FreeDB."
 #: ../root/release/edit/missing_entities.tt:79
 #: ../root/release/edit/missing_entities.tt:142
 msgid "Please make a selection"
-msgstr ""
+msgstr "Dokonaj wyboru"
 
 #: ../root/recording/delete.tt:5
 msgid ""
@@ -5644,7 +5644,7 @@ msgstr "Zapytanie:"
 
 #: ../root/main/index.tt:17
 msgid "Quick Start"
-msgstr ""
+msgstr "Szybki start"
 
 #: ../root/edit/list_header.tt:4
 msgid "Quick links:"
@@ -5932,7 +5932,7 @@ msgstr ""
 
 #: ../root/cdtoc/list.tt:8
 msgid "Release Events"
-msgstr ""
+msgstr "Zdarzenia Wydania"
 
 #: ../root/edit/details/historic/add_release.tt:70
 msgid "Release Events:"
@@ -6320,7 +6320,7 @@ msgstr "Usuń Wykonawcę"
 
 #: ../root/release/remove_cover_art.tt:1 ../root/release/remove_cover_art.tt:2
 msgid "Remove Cover Art"
-msgstr ""
+msgstr "Usuń okładkę"
 
 #: ../root/cdtoc/remove.tt:1 ../root/cdtoc/remove.tt:2
 msgid "Remove Disc ID"
@@ -6328,7 +6328,7 @@ msgstr "Usuń Disc ID"
 
 #: ../root/release/edit/information.tt:79
 msgid "Remove Event"
-msgstr ""
+msgstr "Usuń wydarzenie"
 
 #: ../root/relationship/linktype/form.tt:59
 msgid "Remove Example"
@@ -8945,7 +8945,7 @@ msgstr ""
 
 #: ../root/relationship/linktype/tree.tt:16
 msgid "UUID:"
-msgstr ""
+msgstr "UUID:"
 
 #: ../root/main/401.tt:1 ../root/main/401.tt:3
 msgid "Unauthorized Request"
@@ -9562,7 +9562,7 @@ msgstr "Tak"
 
 #: ../root/edit/search_macros.tt:287
 msgid "Yes vote count"
-msgstr ""
+msgstr "Liczba głosów na tak"
 
 #: ../root/account/remove_application.tt:10
 #: ../root/account/revoke_application_access.tt:10
@@ -9768,7 +9768,7 @@ msgstr ""
 
 #: ../root/release/sidebar.tt:136
 msgid "You have no collections!"
-msgstr ""
+msgstr "Nie masz żadnych kolekcji!"
 
 #: ../root/user/collections.tt:35
 msgid "You have no collections."
@@ -9900,7 +9900,7 @@ msgstr "dodaj ujednoznaczniający komentarz  "
 
 #: ../root/edit/search_macros.tt:159
 msgid "after"
-msgstr ""
+msgstr "później"
 
 #: ../root/components/common-macros.tt:53
 msgid "aged {num}"
@@ -9938,11 +9938,11 @@ msgstr ""
 
 #: ../root/edit/search_macros.tt:159
 msgid "before"
-msgstr ""
+msgstr "przed"
 
 #: ../root/edit/search_macros.tt:159
 msgid "between"
-msgstr ""
+msgstr "pomiędzy"
 
 #: ../root/components/common-macros.tt:457
 msgid "bot"
@@ -9972,7 +9972,7 @@ msgstr ""
 #: ../root/release/edit/recordings.tt:64
 #: ../root/release/edit/recordings.tt:140
 msgid "disambiguation:"
-msgstr ""
+msgstr "ujednoznacznienie:"
 
 #: ../root/edit/search_macros.tt:24
 msgid "do not match"
@@ -10082,12 +10082,12 @@ msgstr ""
 
 #: ../root/relationship/linktype/tree.tt:7
 msgid "more"
-msgstr ""
+msgstr "więcej"
 
 #: ../root/layout/sidebar/sidebar-tags.tt:1
 #: ../root/layout/sidebar/sidebar-tags.tt:16
 msgid "more..."
-msgstr ""
+msgstr "więcej..."
 
 #: ../root/edit/search_macros.tt:19
 msgid "newest first"
@@ -10151,15 +10151,15 @@ msgstr ""
 #: ../root/release/edit/recordings.tt:195
 #: ../root/release/edit/recordings.tt:266
 msgid "recording"
-msgstr ""
+msgstr "nagranie"
 
 #: ../root/components/common-macros.tt:161
 msgid "recordings"
-msgstr ""
+msgstr "nagrania"
 
 #: ../root/components/common-macros.tt:161
 msgid "release groups"
-msgstr ""
+msgstr "grupy wydań"
 
 #: ../root/components/common-macros.tt:161
 msgid "releases"
@@ -10251,7 +10251,7 @@ msgstr ""
 
 #: ../root/components/common-macros.tt:161
 msgid "works"
-msgstr ""
+msgstr "prace"
 
 #: ../root/main/index.tt:77
 msgid ""
@@ -10271,7 +10271,7 @@ msgstr ""
 #: ../root/report/iswc_with_many_works.tt:52 ../root/search/results-work.tt:25
 #: ../root/work/merge.tt:33
 msgid "{artist} ({roles})"
-msgstr ""
+msgstr "{artist} ({roles})"
 
 #: ../root/cdtoc/lookup.tt:21
 msgid "{artist} - {name}"
@@ -10431,9 +10431,9 @@ msgstr[2] ""
 #: ../root/tag/artist.tt:1
 msgid "{num} artist found"
 msgid_plural "{num} artists found"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Znaleziono {num} artystę"
+msgstr[1] "Znaleziono {num} wykonawców"
+msgstr[2] "Znaleziono {num} wykonawców"
 
 #: ../root/user/subscriptions/subscriptions.tt:22
 msgid "{num} collection"
@@ -11659,11 +11659,11 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Form/User/Preferences.pm:83
 msgid "Daily"
-msgstr ""
+msgstr "Dziennie"
 
 #: ../lib/MusicBrainz/Server/Form/User/Preferences.pm:84
 msgid "Weekly"
-msgstr ""
+msgstr "Tygodniowo"
 
 #: ../lib/MusicBrainz/Server/Form/User/Preferences.pm:85
 msgid "Never"
