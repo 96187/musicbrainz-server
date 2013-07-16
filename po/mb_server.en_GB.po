@@ -5,13 +5,14 @@
 # Translators:
 # Oliver Lineham <email address hidden>, 2012
 # Oliver Lineham, 2012
+# Sophist_UK <email address hidden>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-06-11 17:13+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2013-07-16 11:26+0000\n"
+"Last-Translator: Sophist_UK <email address hidden>\n"
 "Language-Team: English (United Kingdom) (http://www.transifex.com/projects/p/musicbrainz/language/en_GB/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -6431,7 +6432,7 @@ msgstr "Remove track"
 #: ../root/work/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Work/DeleteAlias.pm:15
 msgid "Remove work alias"
-msgstr ""
+msgstr "Remove work alias"
 
 #: ../root/components/rating-macros.tt:1
 msgid "Remove your rating"
@@ -10631,7 +10632,7 @@ msgstr "The user with ID '{user_id}' could not be found."
 msgid ""
 "We were unable to send login information to your email address.  Please try again,\n"
 "             however if you continue to experience difficulty contact us at support@musicbrainz.org."
-msgstr "We were unable to send login information to your email address.  Please try again,\n             however if you continue to experience difficulty contact us at support@musicbrainz.org."
+msgstr "We were unable to send login information to your email address.  Please try again,\nhowever if you continue to experience difficulty contact us at support@musicbrainz.org."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:159
 msgid "There is no user with this username"
@@ -11187,7 +11188,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Edit/Work/Delete.pm:11
 msgid "Remove work"
-msgstr ""
+msgstr "Remove work"
 
 #: ../lib/MusicBrainz/Server/Edit/Work/Edit.pm:25
 msgid "Edit work"
@@ -11343,7 +11344,7 @@ msgstr "Please add an artist name for {credit}"
 msgid ""
 "Artist \"{artist}\" is unlinked, please select an existing artist.\n"
 "                       You may need to add a new artist to MusicBrainz first."
-msgstr "Artist \"{artist}\" is unlinked, please select an existing artist.\n                       You may need to add a new artist to MusicBrainz first."
+msgstr "Artist \"{artist}\" is unlinked, please select an existing artist.\n You may need to add a new artist to MusicBrainz first."
 
 #: ../lib/MusicBrainz/Server/Form/Field/ArtistCredit.pm:74
 msgid "Artist credit field is required"
