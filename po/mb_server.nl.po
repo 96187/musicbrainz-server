@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-07-22 06:51+0000\n"
+"PO-Revision-Date: 2013-07-22 09:54+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -952,7 +952,7 @@ msgstr "U kunt ook {uri|een nieuwe uitgave toevoegen}."
 
 #: ../root/search/results-release.tt:4
 msgid "Alternatively, you may {uri|add a new release}."
-msgstr ""
+msgstr "U kunt ook {uri|een nieuwe uitgave toevoegen}."
 
 #: ../root/search/results-work.tt:61
 msgid "Alternatively, you may {uri|add a new work}."
@@ -3371,8 +3371,8 @@ msgstr "Heeft u een probleem gevonden op onze site? {report|Rapporteer alstublie
 #: ../root/edit/list.tt:52
 msgid "Found at least {n} edit"
 msgid_plural "Found at least {n} edits"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Ten minste {n} bewerking gevonden"
+msgstr[1] "Ten minste {n} bewerkingen gevonden"
 
 #: ../root/release/sidebar.tt:139
 msgid "Found in {num} user collection"
@@ -3710,13 +3710,13 @@ msgstr "ISWC's:"
 msgid ""
 "If none of these artists match the artist you intended, you can still create"
 " a new artist:"
-msgstr ""
+msgstr "Als geen van deze artiesten overeenkomt met de artiest die u bedoelt, kunt u nog steeds een nieuwe artiest toevoegen."
 
 #: ../root/release/edit/missing_entities.tt:146
 msgid ""
 "If none of these labels match the label you intended, you can still create a"
 " new label:"
-msgstr ""
+msgstr "Als geen van deze platenmaatschappijen overeenkomen met degene die u bedoelde, kunt u een nieuwe platenmaatschappij toevoegen."
 
 #: ../root/artist/edit_form.tt:5
 msgid ""
@@ -4717,7 +4717,7 @@ msgstr "Nieuwe vermelding van een artiest"
 
 #: ../root/release/add_cover_art.tt:39
 msgid "New Image Goes Here"
-msgstr ""
+msgstr "Nieuwe afbeelding komt hier"
 
 #: ../root/relationship/linkattributetype/create.tt:1
 #: ../root/relationship/linkattributetype/create.tt:3
@@ -4747,7 +4747,7 @@ msgstr "Nieuw type:"
 
 #: ../root/edit/details/set_cover_art.tt:32
 msgid "New cover art:"
-msgstr ""
+msgstr "Nieuwe hoesafbeeldingen:"
 
 #: ../root/release/merge.tt:98
 msgid "New disc title:"
@@ -5068,7 +5068,7 @@ msgstr "Oude nummerlijst"
 
 #: ../root/edit/details/set_cover_art.tt:13
 msgid "Old cover art:"
-msgstr ""
+msgstr "Oude hoesafbeeldingen:"
 
 #: ../root/account/change_password.tt:22
 msgid "Old password:"
@@ -5342,7 +5342,7 @@ msgstr "Voer etiketten alstublieft in het veld hieronder in. Etiketten worden ge
 msgid ""
 "Please enter the barcode of the release you are entering, see <a "
 "href=\"{url}\" target=\"_blank\">Barcode</a> for more information."
-msgstr ""
+msgstr "Voert u alstublieft de streepjescode van de uitgave die u aan het toevoegen bent in. Zie <a href=\"{url}\">Streepjescode</a> voor meer informatie."
 
 #: ../root/release/merge_search.tt:6
 msgid ""
@@ -7699,7 +7699,7 @@ msgstr "Er zijn momenteel geen gebruikers geabonneerd op {artist}."
 
 #: ../root/collection/subscribers.tt:22
 msgid "There are currently no users subscribed to {collection}."
-msgstr ""
+msgstr "Er zijn momenteel geen gebruikers geabonneerd op {collection}."
 
 #: ../root/label/subscribers.tt:22
 msgid "There are currently no users subscribed to {label}."
@@ -8036,7 +8036,7 @@ msgid ""
 "This label has no relationships or releases and will be removed "
 "automatically in the next few days. If this is not intended, please add more"
 " data to this label."
-msgstr ""
+msgstr "Deze platenmaatschappij heeft geen relaties of uitgaves en zal in de komende paar dagen worden verwijderd. Voeg meer gegevens toe aan deze platenmaatschappij als dit niet de bedoeling is."
 
 #: ../root/label/tags.tt:2
 msgid "This label has no tags."
@@ -8500,11 +8500,11 @@ msgstr "Deze gebruiker is nieuw op MusicBrainz."
 
 #: ../root/release/edit_relationships.tt:26
 msgid "This will add a relationship to all checked recordings."
-msgstr ""
+msgstr "Dit voegt een relatie toe aan alle aangevinkte opnames."
 
 #: ../root/release/edit_relationships.tt:31
 msgid "This will add a relationship to all checked works."
-msgstr ""
+msgstr "Dit voegt een relatie toe aan alle aangevinkte composities."
 
 #: ../root/release/edit_relationships.tt:36
 msgid ""
@@ -9083,7 +9083,7 @@ msgstr "Versie:"
 
 #: ../root/user/ratings_summary.tt:25
 msgid "View all ratings"
-msgstr ""
+msgstr "Alle waarderingen bekijken"
 
 #: ../root/layout/sidebar/sidebar-favicons.tt:32
 msgid "View all relationships"
@@ -9247,13 +9247,13 @@ msgstr "We kunnen de geschiedenis van deze hoesafbeelding niet laten zien. Zie v
 msgid ""
 "We couldn't find a label with the name you entered. Please fill in the "
 "fields below to create a new label:"
-msgstr ""
+msgstr "We konden geen platenmaatschappij  vinden met de naam die u heeft ingevoerd. Vul als u een nieuwe platenmaatschappij wilt toevoegen de onderstaande velden in:"
 
 #: ../root/release/edit/missing_entities.tt:86
 msgid ""
 "We couldn't find an artist with the name you entered. Please fill in the "
 "fields below to create a new artist:"
-msgstr ""
+msgstr "We konden geen artiest vinden met de naam die u invoerde. Vul als u een nieuwe artiest wilt toevoegen de onderstaande velden in:"
 
 #: ../root/release/cover_art.tt:42
 msgid "We do not currently have any cover art for {release}."
