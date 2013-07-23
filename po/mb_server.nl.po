@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-07-23 17:00+0000\n"
+"PO-Revision-Date: 2013-07-23 17:32+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -2704,7 +2704,7 @@ msgstr "Alias van gebied bewerken"
 
 #: ../root/area/edit_annotation.tt:1
 msgid "Edit Area Annotation"
-msgstr ""
+msgstr "Aantekening van gebied bewerken"
 
 #: ../root/artist/edit.tt:17
 msgid "Edit Artist"
@@ -2833,11 +2833,11 @@ msgstr "Aantekening bewerken"
 #: ../root/area/edit_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Area/EditAlias.pm:12
 msgid "Edit area alias"
-msgstr ""
+msgstr "Alias van gebied bewerken"
 
 #: ../root/area/edit_annotation.tt:2
 msgid "Edit area annotation"
-msgstr ""
+msgstr "Aantekening van gebied bewerken"
 
 #: ../root/artist/edit_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Artist/EditAlias.pm:12
@@ -2985,7 +2985,7 @@ msgstr "Bewerkingen door redacteurs waar u op bent geabonneerd"
 
 #: ../root/edit/subscribed-editors.tt:15 ../root/edit/subscribed-editors.tt:17
 msgid "Edits by Your Subscribed Editors"
-msgstr ""
+msgstr "Bewerkingen door redacteurs waarop u bent geabonneerd"
 
 #: ../root/user/edits.tt:15
 msgid "Edits by {name}"
@@ -2997,7 +2997,7 @@ msgstr "Bewerkingen van geabonneerde objecten"
 
 #: ../root/edit/subscribed.tt:15 ../root/edit/subscribed.tt:17
 msgid "Edits for Your Subscribed Entities"
-msgstr ""
+msgstr "Bewerkingen van objecten waarop u bent geabonneerd"
 
 #: ../root/label/edits.tt:17
 msgid "Edits for {label}"
@@ -3076,12 +3076,12 @@ msgstr "Einde"
 
 #: ../root/search/lib/inline-results-artist.tt:15
 msgid "End Area"
-msgstr ""
+msgstr "Eindgebied"
 
 #: ../root/artist/edit_form.tt:79 ../root/edit/details/add_artist.tt:61
 #: ../root/edit/details/edit_artist.tt:54
 msgid "End Area:"
-msgstr ""
+msgstr "Eindgebied:"
 
 #: ../root/components/aliases.tt:14
 msgid "End Date"
@@ -3089,7 +3089,7 @@ msgstr "Einddatum"
 
 #: ../root/components/common-macros.tt:919 ../root/scripts/text_strings.tt:77
 msgid "End area:"
-msgstr ""
+msgstr "Eindgebied:"
 
 #: ../root/elections/index.tt:12
 msgid "End date"
@@ -3129,7 +3129,7 @@ msgstr "Beëindigd:"
 
 #: ../root/relationship/linktype/form.tt:91
 msgid "Endpoint MBID:"
-msgstr ""
+msgstr "MBID van eindpunt:"
 
 #: ../root/release/edit/tracklist.tt:179
 msgid "Enter a tracklist below:"
@@ -3214,11 +3214,11 @@ msgstr "Alleen al één of twee URL's toevoegen helpt!"
 #: ../root/doc/relationship_type.tt:13
 #: ../root/relationship/linktype/form.tt:49
 msgid "Examples"
-msgstr ""
+msgstr "Voorbeelden"
 
 #: ../root/edit/details/edit_relationship_type.tt:76
 msgid "Examples:"
-msgstr ""
+msgstr "Voorbeelden:"
 
 #: ../root/release/edit/tracklist.tt:171
 msgid "Existing tracklist"
@@ -3288,7 +3288,7 @@ msgstr "Filter"
 
 #: ../root/relationship/linktype/form.tt:94
 msgid "Find Relationships"
-msgstr ""
+msgstr "Gevonden relaties"
 
 #: ../root/recording/header.tt:1
 msgid "Fingerprints"
@@ -3404,7 +3404,7 @@ msgstr[1] "{n} resultaten gevonden voor „{q}“"
 
 #: ../root/components/common-macros.tt:911 ../root/scripts/text_strings.tt:79
 msgid "Founded in:"
-msgstr ""
+msgstr "Opgericht in:"
 
 #: ../root/components/common-macros.tt:907 ../root/label/index.tt:7
 #: ../root/label/layout.tt:14 ../root/scripts/text_strings.tt:74
@@ -3560,7 +3560,7 @@ msgstr "Host:"
 
 #: ../root/layout/menu.tt:256
 msgid "How Tos"
-msgstr ""
+msgstr "Howto's"
 
 #: ../root/edit/list_header.tt:31
 msgid "How editing works"
@@ -3595,17 +3595,17 @@ msgstr "IPI-codes:"
 
 #: ../root/artist/edit_form.tt:55 ../root/label/edit_form.tt:55
 msgid "ISNI code"
-msgstr ""
+msgstr "ISNI-code"
 
 #: ../root/artist/layout.tt:61 ../root/edit/details/add_artist.tt:82
 #: ../root/edit/details/add_label.tt:77 ../root/label/layout.tt:39
 msgid "ISNI code:"
-msgstr ""
+msgstr "ISNI-code:"
 
 #: ../root/artist/edit_form.tt:55 ../root/edit/details/edit_artist.tt:72
 #: ../root/edit/details/edit_label.tt:61 ../root/label/edit_form.tt:55
 msgid "ISNI codes:"
-msgstr ""
+msgstr "ISNI-codes:"
 
 #: ../root/area/edit_form.tt:10
 msgid "ISO 3166-1"
@@ -3912,7 +3912,7 @@ msgstr "Instrumententabel"
 
 #: ../root/main/500.tt:52
 msgid "Interface language:"
-msgstr ""
+msgstr "Interfacetaal:"
 
 #: ../root/main/500.tt:1 ../root/main/500.tt:3
 msgid "Internal Server Error"
@@ -3962,7 +3962,7 @@ msgstr "Spring naar:"
 #: ../root/components/forms.tt:178 ../root/components/forms.tt:202
 #: ../root/release/edit/tracklist.tt:467
 msgid "Keep all-uppercase words uppercased"
-msgstr ""
+msgstr "Houd woorden die geheel in bovenkast zijn in bovenkast"
 
 #: ../root/user/login.tt:31
 msgid "Keep me logged in"
@@ -3986,11 +3986,11 @@ msgstr "Platenmaatschappij"
 
 #: ../root/edit/search_macros.tt:287
 msgid "Label Area"
-msgstr ""
+msgstr "Gebied van platenmaatschappij"
 
 #: ../root/label/index.tt:5
 msgid "Label Code:"
-msgstr ""
+msgstr "Platenmaatschappij-code:"
 
 #: ../root/label/edit_form.tt:33
 msgid "Label Details"
@@ -4002,7 +4002,7 @@ msgstr "IPI van de platenmaatschappij:"
 
 #: ../root/otherlookup/form.tt:3
 msgid "Label ISNI:"
-msgstr ""
+msgstr "ISNI van de platenmaatschappij:"
 
 #: ../root/label/not_found.tt:1 ../root/label/not_found.tt:2
 msgid "Label Not Found"
@@ -4060,7 +4060,7 @@ msgstr "Platenmaatschappijen met mogelijk dubbele relaties"
 
 #: ../root/release/index.tt:15
 msgid "Labels:"
-msgstr ""
+msgstr "Platenmaatschappijen:"
 
 #: ../root/artist/works-list.tt:14 ../root/iswc/index.tt:20
 #: ../root/otherlookup/results-release.tt:11
@@ -4144,7 +4144,7 @@ msgstr "Lengte:"
 
 #: ../root/layout/sidebar/sidebar-licenses.tt:19
 msgid "License"
-msgstr ""
+msgstr "Licentie"
 
 #: ../root/main/index.tt:72
 msgid ""
@@ -4211,7 +4211,7 @@ msgstr "Locatieredacteurs"
 
 #: ../root/user/privileged.tt:41
 msgid "Location editors are users who can add or modify {uri|areas}."
-msgstr ""
+msgstr "Locatieredacteurs zijn gebruikers die {uri|gebieden} kunnen toevoegen of bewerken."
 
 #: ../root/account/edit.tt:34 ../root/user/profile.tt:73
 msgid "Location:"
@@ -4400,7 +4400,7 @@ msgstr "Samenvoegen"
 
 #: ../root/area/merge.tt:1 ../root/area/merge.tt:3
 msgid "Merge Areas"
-msgstr ""
+msgstr "Gebieden samenvoegen"
 
 #: ../root/artist/merge.tt:1 ../root/artist/merge.tt:3
 msgid "Merge Artists"
@@ -4434,7 +4434,7 @@ msgstr "Composities samenvoegen"
 
 #: ../root/area/layout.tt:60
 msgid "Merge area"
-msgstr ""
+msgstr "Gebied samenvoegen"
 
 #: ../root/artist/layout.tt:107
 msgid "Merge artist"
@@ -5306,7 +5306,7 @@ msgid ""
 "original passwords from this mishap, we are requiring all of our users to "
 "change their passwords. Sorry for the inconvenience. For more information "
 "see {blog|the recent blog post}."
-msgstr ""
+msgstr "Verander a.u.b. uw wachtwoord. We hebben helaas ontdekt dat de gehashte gebruikerswachtwoorden tijdelijk te downloaden waren van onze FTP-site. Hoewel het zeer onwaarschijnlijk is dat iemand in staat zal zijn om hieruit de originele wachtwoorden kan achterhalen, moeten alle gebruikers hun wachtwoord veranderen. Onze excuses voor het ongemak. Zie {blog|ons weblog} voor meer informatie."
 
 #: ../root/edit/search_macros.tt:285
 msgid "Please choose a condition"
