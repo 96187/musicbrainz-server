@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-07-17 14:47+0000\n"
+"PO-Revision-Date: 2013-08-16 12:13+0000\n"
 "Last-Translator: kepstin <email address hidden>\n"
 "Language-Team: English (Canada) (http://www.transifex.com/projects/p/musicbrainz/language/en_CA/)\n"
 "MIME-Version: 1.0\n"
@@ -3339,25 +3339,25 @@ msgstr "Forums"
 #: ../root/relationship/linktype/form.tt:13
 #: ../root/relationship/linktype/tree.tt:12
 msgid "Forward link phrase:"
-msgstr ""
+msgstr "Forward link phrase:"
 
 #: ../root/doc/bare_error.tt:17 ../root/doc/error.tt:23
 msgid ""
 "Found a broken link on our site? Please let us know by {report|reporting a "
 "bug}."
-msgstr ""
+msgstr "Found a broken link on our site? Please let us know by {report|reporting a bug}."
 
 #: ../root/main/404.tt:24
 msgid ""
 "Found a broken link on our site? Please {report|report a bug} and include "
 "any error message that is shown above."
-msgstr ""
+msgstr "Found a broken link on our site? Please {report|report a bug} and include any error message that is shown above."
 
 #: ../root/main/400.tt:24
 msgid ""
 "Found a problem on our site? Please {report|report a bug} and include any "
 "error message that is shown above."
-msgstr ""
+msgstr "Found a problem on our site? Please {report|report a bug} and include any error message that is shown above."
 
 #: ../root/edit/list.tt:52
 msgid "Found at least {n} edit"
@@ -3368,12 +3368,12 @@ msgstr[1] ""
 #: ../root/release/sidebar.tt:139
 msgid "Found in {num} user collection"
 msgid_plural "Found in {num} user collections"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Found in {num} user collection"
+msgstr[1] "Found in {num} user collections"
 
 #: ../root/release/lookup.tt:4
 msgid "Found more than one match for the CD with TOC {toc}: "
-msgstr ""
+msgstr "Found more than one match for the CD with TOC {toc}: "
 
 #: ../root/edit/list.tt:56
 msgid "Found {n} edit"
@@ -3384,14 +3384,14 @@ msgstr[1] ""
 #: ../root/components/with-pager.tt:5
 msgid "Found {n} result"
 msgid_plural "Found {n} results"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Found {n} result"
+msgstr[1] "Found {n} results"
 
 #: ../root/components/with-pager.tt:7
 msgid "Found {n} result for \"{q}\""
 msgid_plural "Found {n} results for \"{q}\""
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Found {n} result for \"{q}\""
+msgstr[1] "Found {n} results for \"{q}\""
 
 #: ../root/components/common-macros.tt:911 ../root/scripts/text_strings.tt:79
 msgid "Founded in:"
@@ -3400,7 +3400,7 @@ msgstr ""
 #: ../root/components/common-macros.tt:907 ../root/label/index.tt:7
 #: ../root/label/layout.tt:14 ../root/scripts/text_strings.tt:74
 msgid "Founded:"
-msgstr ""
+msgstr "Founded:"
 
 #: ../root/freedb/not_found.tt:1 ../root/freedb/not_found.tt:2
 msgid "FreeDB Entry Not Found"
@@ -3408,32 +3408,32 @@ msgstr ""
 
 #: ../root/layout/menu.tt:189
 msgid "FreeDB Gateway"
-msgstr ""
+msgstr "FreeDB Gateway"
 
 #: ../root/search/results-freedb.tt:17
 msgid "FreeDB ID"
-msgstr ""
+msgstr "FreeDB ID"
 
 #: ../root/otherlookup/form.tt:3
 msgid "FreeDB ID:"
-msgstr ""
+msgstr "FreeDB ID:"
 
 #: ../root/release/edit/tracklist.tt:173
 msgid "FreeDB import"
-msgstr ""
+msgstr "FreeDB import"
 
 #: ../root/cdtoc/info.tt:15
 msgid "FreeDB:"
-msgstr ""
+msgstr "FreeDB:"
 
 #: ../root/edit/details/historic/move_disc_id.tt:8
 #: ../root/edit/details/move_disc_id.tt:8
 msgid "From:"
-msgstr ""
+msgstr "From:"
 
 #: ../root/cdstub/index.tt:30 ../root/cdtoc/info.tt:5
 msgid "Full TOC:"
-msgstr ""
+msgstr "Full TOC:"
 
 #: ../root/area/artists-list.tt:6
 #: ../root/search/lib/inline-results-artist.tt:10
@@ -3445,11 +3445,11 @@ msgstr ""
 #: ../root/edit/details/add_artist.tt:31
 #: ../root/edit/details/edit_artist.tt:30 ../root/user/profile.tt:67
 msgid "Gender:"
-msgstr ""
+msgstr "Gender:"
 
 #: ../root/user/profile.tt:11
 msgid "General Information"
-msgstr ""
+msgstr "General Information"
 
 #: ../root/report/artists_containing_disambiguation_comments.tt:9
 #: ../root/report/artists_that_may_be_groups.tt:12
@@ -3498,11 +3498,11 @@ msgstr ""
 #: ../root/report/tracks_with_sequence_issues.tt:10
 #: ../root/report/unlinked_pseudo_releases.tt:8
 msgid "Generated on {date}"
-msgstr ""
+msgstr "Generated on {date}"
 
 #: ../root/release/edit/missing_entities.tt:20
 msgid "Guess Sort Name"
-msgstr ""
+msgstr "Guess Sort Name"
 
 #: ../root/components/forms.tt:172 ../root/components/forms.tt:193
 #: ../root/release/edit/tracklist.tt:474
@@ -3517,11 +3517,11 @@ msgstr ""
 
 #: ../root/release/edit/tracklist.tt:378
 msgid "Guess case disc title"
-msgstr ""
+msgstr "Guess case disc title"
 
 #: ../root/release/edit/tracklist.tt:329
 msgid "Guess case track"
-msgstr ""
+msgstr "Guess case track"
 
 #: ../root/annotation/edit.tt:43
 msgid "Headings:"
@@ -3529,12 +3529,12 @@ msgstr ""
 
 #: ../root/edit/list_header.tt:22
 msgid "Help:"
-msgstr ""
+msgstr "Help:"
 
 #: ../root/components/common-macros.tt:633
 #: ../lib/MusicBrainz/Server/Controller/Edit.pm:188
 msgid "High"
-msgstr ""
+msgstr "High"
 
 #: ../root/doc/edit_types.tt:5 ../root/doc/edit_types.tt:19
 #: ../root/doc/edit_types.tt:21 ../lib/MusicBrainz/Server/Edit/Historic.pm:12
@@ -3543,7 +3543,7 @@ msgstr "Historic"
 
 #: ../root/user/profile.tt:90
 msgid "Homepage:"
-msgstr ""
+msgstr "Homepage:"
 
 #: ../root/main/500.tt:47
 msgid "Host:"
@@ -3555,19 +3555,19 @@ msgstr ""
 
 #: ../root/edit/list_header.tt:31
 msgid "How editing works"
-msgstr ""
+msgstr "How editing works"
 
 #: ../root/release/edit/information.tt:215
 msgid "I confirm that this is the barcode as it appears on the release."
-msgstr ""
+msgstr "I confirm that this is the barcode as it appears on the release."
 
 #: ../root/taglookup/nag.tt:25
 msgid "I just donated! Why am I seeing this?"
-msgstr ""
+msgstr "I just donated! Why am I seeing this?"
 
 #: ../root/edit/search_macros.tt:287
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: ../root/artist/edit_form.tt:54 ../root/label/edit_form.tt:54
 msgid "IPI code"
@@ -3577,7 +3577,7 @@ msgstr ""
 #: ../root/edit/details/add_label.tt:68 ../root/edit/details/edit_artist.tt:63
 #: ../root/edit/details/edit_label.tt:52 ../root/label/layout.tt:35
 msgid "IPI code:"
-msgstr ""
+msgstr "IPI code:"
 
 #: ../root/artist/edit_form.tt:54 ../root/edit/details/edit_artist.tt:67
 #: ../root/edit/details/edit_label.tt:56 ../root/label/edit_form.tt:54
@@ -3627,44 +3627,44 @@ msgstr ""
 
 #: ../root/report/isrc_with_many_recordings.tt:23
 msgid "ISRC"
-msgstr ""
+msgstr "ISRC"
 
 #: ../root/isrc/not_found.tt:1 ../root/isrc/not_found.tt:2
 msgid "ISRC Not Currently Used"
-msgstr ""
+msgstr "ISRC Not Currently Used"
 
 #: ../root/edit/details/add_isrcs.tt:15
 msgid "ISRC {isrc} to {recording}"
-msgstr ""
+msgstr "ISRC {isrc} to {recording}"
 
 #: ../root/edit/details/add_isrcs.tt:15
 msgid "ISRC {isrc} to {recording} by {artist}"
-msgstr ""
+msgstr "ISRC {isrc} to {recording} by {artist}"
 
 #: ../root/isrc/index.tt:1 ../root/isrc/index.tt:3
 msgid "ISRC “{isrc}”"
-msgstr ""
+msgstr "ISRC “{isrc}”"
 
 #: ../root/edit/details/remove_isrc.tt:3 ../root/otherlookup/form.tt:3
 #: ../root/recording/add_isrc.tt:16 ../root/recording/layout.tt:16
 msgid "ISRC:"
-msgstr ""
+msgstr "ISRC:"
 
 #: ../root/artist/recordings-list.tt:26 ../root/report/index.tt:90
 #: ../root/search/lib/inline-results-recording.tt:10
 msgid "ISRCs"
-msgstr ""
+msgstr "ISRCs"
 
 #: ../root/report/index.tt:93 ../root/report/isrc_with_many_recordings.tt:1
 #: ../root/report/isrc_with_many_recordings.tt:3
 msgid "ISRCs with multiple recordings"
-msgstr ""
+msgstr "ISRCs with multiple recordings"
 
 #: ../root/artist/works-list.tt:12 ../root/report/iswc_with_many_works.tt:24
 #: ../root/search/results-work.tt:11 ../root/work/edit_form.tt:11
 #: ../root/work/merge.tt:14
 msgid "ISWC"
-msgstr ""
+msgstr "ISWC"
 
 #: ../root/iswc/not_found.tt:1 ../root/iswc/not_found.tt:2
 msgid "ISWC Not Currently Used"
@@ -3682,7 +3682,7 @@ msgstr ""
 #: ../root/edit/details/remove_iswc.tt:3 ../root/otherlookup/form.tt:3
 #: ../root/work/layout.tt:19
 msgid "ISWC:"
-msgstr ""
+msgstr "ISWC:"
 
 #: ../root/report/index.tt:96
 msgid "ISWCs"
@@ -3715,7 +3715,7 @@ msgid ""
 " will be prompted to {doc_addcomment|add a disambiguation comment to this "
 "artist}, which will allow users to distinguish this entry from the other "
 "artist(s) with the same name."
-msgstr ""
+msgstr "If one or more artists with the same name already exist in the database, you will be prompted to {doc_addcomment|add a disambiguation comment to this artist}, which will allow users to distinguish this entry from the other artist(s) with the same name."
 
 #: ../root/label/edit_form.tt:3
 msgid ""
@@ -3723,13 +3723,13 @@ msgid ""
 "will be prompted to add a {doc_comment|disambiguation comment to this label}"
 " that will allow users to distinguish this entry from the other label(s) "
 "with the same name."
-msgstr ""
+msgstr "If one or more labels with the same name already exist in the database, you will be prompted to add a {doc_comment|disambiguation comment to this label} that will allow users to distinguish this entry from the other label(s) with the same name."
 
 #: ../root/main/500.tt:65
 msgid ""
 "If the problem persists, please {report|report a bug} and include any error "
 "message that is shown above."
-msgstr ""
+msgstr "If the problem persists, please {report|report a bug} and include any error message that is shown above."
 
 #: ../root/release/edit/information.tt:198
 msgid ""
