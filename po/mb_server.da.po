@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-08-16 17:59+0000\n"
+"PO-Revision-Date: 2013-08-16 18:03+0000\n"
 "Last-Translator: Frederik \"Freso\" S. Olesen <email address hidden>\n"
 "Language-Team: Danish (http://www.transifex.com/projects/p/musicbrainz/language/da/)\n"
 "MIME-Version: 1.0\n"
@@ -252,7 +252,7 @@ msgstr[1] ""
 
 #: ../root/user/profile.tt:230 ../root/user/profile.tt:234
 msgid "100%"
-msgstr ""
+msgstr "100%"
 
 #: ../root/elections/show.tt:17
 msgid "1st seconder:"
@@ -304,7 +304,7 @@ msgstr ""
 #: ../root/components/common-macros.tt:815
 #: ../root/release/edit/tracklist.tt:142
 msgid "<strong>Error</strong>:"
-msgstr ""
+msgstr "<strong>Fejl</strong>:"
 
 #: ../root/account/register.tt:10
 msgid ""
@@ -350,7 +350,7 @@ msgstr ""
 #: ../root/components/common-macros.tt:822 ../root/recording/edit.tt:43
 #: ../root/release/edit/tracklist.tt:129
 msgid "<strong>Warning</strong>:"
-msgstr ""
+msgstr "<strong>Advarsel</strong>:"
 
 #: ../root/scripts/text_strings.tt:50
 msgid "<strong>Warning</strong>: #{disc} has a discid, you cannot add tracks"
@@ -969,8 +969,8 @@ msgstr ""
 #: ../root/label/subscribers.tt:17 ../root/user/subscribers.tt:17
 msgid "An anonymous user"
 msgid_plural "{n} anonymous users"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Én anonym bruger"
+msgstr[1] "{n} anonyme brugere"
 
 #: ../root/edit/index.tt:16 ../root/edit/list.tt:83
 #: ../root/release/edit/editnote.tt:27
@@ -10792,7 +10792,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Controller/WS/2/DiscID.pm:88
 msgid "Invalid TOC"
-msgstr ""
+msgstr "Ugyldig TOC"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:104
 msgid "No title provided"
