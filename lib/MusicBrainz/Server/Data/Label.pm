@@ -2,9 +2,11 @@ package MusicBrainz::Server::Data::Label;
 
 use Moose;
 use namespace::autoclean;
+use MusicBrainz::Server::Constants qw( $STATUS_OPEN );
 use MusicBrainz::Server::Data::Edit;
 use MusicBrainz::Server::Data::ReleaseLabel;
 use MusicBrainz::Server::Entity::Label;
+use MusicBrainz::Server::Entity::PartialDate;
 use MusicBrainz::Server::Data::Utils qw(
     add_partial_date_to_row
     check_in_use
@@ -13,16 +15,20 @@ use MusicBrainz::Server::Data::Utils qw(
     load_subobjects
     merge_table_attributes
     merge_partial_date
-    partial_date_from_row
     placeholders
     query_to_list
     query_to_list_limited
 );
+use MusicBrainz::Server::Data::Utils::Cleanup qw( used_in_relationship );
+use MusicBrainz::Server::Data::Utils::Uniqueness qw( assert_uniqueness_conserved );
 
 extends 'MusicBrainz::Server::Data::CoreEntity';
 with 'MusicBrainz::Server::Data::Role::Annotation' => { type => 'label' };
 with 'MusicBrainz::Server::Data::Role::Name' => { name_table => 'label_name' };
 with 'MusicBrainz::Server::Data::Role::Alias' => { type => 'label' };
+with 'MusicBrainz::Server::Data::Role::DeleteAndLog';
+with 'MusicBrainz::Server::Data::Role::IPI' => { type => 'label' };
+with 'MusicBrainz::Server::Data::Role::ISNI' => { type => 'label' };
 with 'MusicBrainz::Server::Data::Role::CoreEntityCache' => { prefix => 'label' };
 with 'MusicBrainz::Server::Data::Role::Editable' => { table => 'label' };
 with 'MusicBrainz::Server::Data::Role::Rating' => { type => 'label' };
@@ -30,11 +36,13 @@ with 'MusicBrainz::Server::Data::Role::Tag' => { type => 'label' };
 with 'MusicBrainz::Server::Data::Role::Subscription' => {
     table => 'editor_subscribe_label',
     column => 'label',
-    class => 'MusicBrainz::Server::Entity::LabelSubscription'
+    active_class => 'MusicBrainz::Server::Entity::Subscription::Label',
+    deleted_class => 'MusicBrainz::Server::Entity::Subscription::DeletedLabel'
 };
 with 'MusicBrainz::Server::Data::Role::Browse';
 with 'MusicBrainz::Server::Data::Role::LinksToEdit' => { table => 'label' };
 with 'MusicBrainz::Server::Data::Role::Merge';
+with 'MusicBrainz::Server::Data::Role::Area';
 
 sub browse_column { 'sort_name.name' }
 
@@ -54,9 +62,9 @@ sub _table_join_name {
 sub _columns
 {
     return 'label.id, gid, name.name, sort_name.name AS sort_name, ' .
-           'label.type, label.country, label.edits_pending, label.label_code, label.ipi_code, ' .
+           'label.type, label.area, label.edits_pending, label.label_code, ' .
            'begin_date_year, begin_date_month, begin_date_day, ' .
-           'end_date_year, end_date_month, end_date_day, comment, label.last_updated';
+           'end_date_year, end_date_month, end_date_day, ended, comment, label.last_updated';
 }
 
 sub _id_column
@@ -77,14 +85,14 @@ sub _column_mapping
         name => 'name',
         sort_name => 'sort_name',
         type_id => 'type',
-        country_id => 'country',
+        area_id => 'area',
         label_code => 'label_code',
-        begin_date => sub { partial_date_from_row(shift, shift() . 'begin_date_') },
-        end_date => sub { partial_date_from_row(shift, shift() . 'end_date_') },
+        begin_date => sub { MusicBrainz::Server::Entity::PartialDate->new_from_row(shift, shift() . 'begin_date_') },
+        end_date => sub { MusicBrainz::Server::Entity::PartialDate->new_from_row(shift, shift() . 'end_date_') },
         edits_pending => 'edits_pending',
         comment => 'comment',
-        ipi_code => 'ipi_code',
         last_updated => 'last_updated',
+        ended => 'ended'
     };
 }
 
@@ -142,6 +150,11 @@ sub find_by_release
         $query, $release_id, $offset || 0);
 }
 
+sub _area_cols
+{
+    return ['area']
+}
+
 sub load
 {
     my ($self, @objs) = @_;
@@ -158,11 +171,17 @@ sub insert
     {
         my $row = $self->_hash_to_row($label, \%names);
         $row->{gid} = $label->{gid} || generate_gid();
-        push @created, $class->new(
+
+        my $created = $class->new(
             name => $label->{name},
             id => $self->sql->insert_row('label', $row, 'id'),
             gid => $row->{gid}
         );
+
+        $self->ipi->set_ipis($created->id, @{ $label->{ipi_codes} });
+        $self->isni->set_isnis($created->id, @{ $label->{isni_codes} });
+
+        push @created, $created;
     }
     return @labels > 1 ? @created : $created[0];
 }
@@ -170,9 +189,14 @@ sub insert
 sub update
 {
     my ($self, $label_id, $update) = @_;
+
     my %names = $self->find_or_insert_names($update->{name}, $update->{sort_name});
     my $row = $self->_hash_to_row($update, \%names);
-    $self->sql->update_row('label', $row, { id => $label_id });
+
+    assert_uniqueness_conserved($self, label => $label_id, $update);
+
+    $self->sql->update_row('label', $row, { id => $label_id }) if %$row;
+
     return 1;
 }
 
@@ -207,10 +231,12 @@ sub delete
     $self->c->model('Relationship')->delete_entities('label', @label_ids);
     $self->annotation->delete(@label_ids);
     $self->alias->delete_entities(@label_ids);
+    $self->ipi->delete_entities(@label_ids);
+    $self->isni->delete_entities(@label_ids);
     $self->tags->delete(@label_ids);
     $self->rating->delete(@label_ids);
     $self->remove_gid_redirects(@label_ids);
-    $self->sql->do('DELETE FROM label WHERE id IN (' . placeholders(@label_ids) . ')', @label_ids);
+    $self->delete_returning_gids('label', @label_ids);
     return 1;
 }
 
@@ -219,6 +245,8 @@ sub _merge_impl
     my ($self, $new_id, @old_ids) = @_;
 
     $self->alias->merge($new_id, @old_ids);
+    $self->ipi->merge($new_id, @old_ids);
+    $self->isni->merge($new_id, @old_ids);
     $self->tags->merge($new_id, @old_ids);
     $self->rating->merge($new_id, @old_ids);
     $self->subscription->merge_entities($new_id, @old_ids);
@@ -230,7 +258,7 @@ sub _merge_impl
     merge_table_attributes(
         $self->sql => (
             table => 'label',
-            columns => [ qw( type country label_code ipi_code ) ],
+            columns => [ qw( type area label_code ) ],
             old_ids => \@old_ids,
             new_id => $new_id
         )
@@ -246,6 +274,7 @@ sub _merge_impl
     ) for qw( begin_date end_date );
 
     $self->_delete_and_redirect_gids('label', $new_id, @old_ids);
+
     return 1;
 }
 
@@ -253,9 +282,10 @@ sub _hash_to_row
 {
     my ($self, $label, $names) = @_;
     my $row = hash_to_row($label, {
-        country => 'country_id',
+        area => 'area_id',
         type => 'type_id',
-        map { $_ => $_ } qw( ipi_code label_code comment )
+        ended => 'ended',
+        map { $_ => $_ } qw( label_code comment )
     });
 
     add_partial_date_to_row($row, $label->{begin_date}, 'begin_date');
@@ -278,6 +308,29 @@ sub load_meta
         $obj->rating($row->{rating}) if defined $row->{rating};
         $obj->rating_count($row->{rating_count}) if defined $row->{rating_count};
     }, @_);
+}
+
+sub is_empty {
+    my ($self, $label_id) = @_;
+
+    my $used_in_relationship = used_in_relationship($self->c, label => 'label_row.id');
+    return $self->sql->select_single_value(<<EOSQL, $label_id, $STATUS_OPEN);
+        SELECT TRUE
+        FROM label label_row
+        WHERE id = ?
+        AND edits_pending = 0
+        AND NOT (
+          EXISTS (
+            SELECT TRUE FROM edit_label
+            WHERE status = ? AND label = label_row.id
+          ) OR
+          EXISTS (
+            SELECT TRUE FROM release_label
+            WHERE label = label_row.id
+          ) OR
+          $used_in_relationship
+        )
+EOSQL
 }
 
 __PACKAGE__->meta->make_immutable;

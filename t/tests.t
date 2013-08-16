@@ -9,16 +9,18 @@ use Test::Routine::Util;
 use MusicBrainz::Server::Test qw( commandline_override );
 
 my @classes = (
-    't::MusicBrainz::Server::Filters',
+    't::TemplateMacros',
+    't::Sql',
+    't::MusicBrainz::DataStore::Redis',
+    't::MusicBrainz::Script::RebuildCoverArt',
     map {
         Module::Pluggable::Object->new( search_path => $_ )->plugins
     } (
-        't::MusicBrainz::Server::Data',
-        't::MusicBrainz::Server::EditSearch',
-        't::MusicBrainz::Server::Entity',
-        't::MusicBrainz::Server::Form',
+        't::MusicBrainz::Server'
     )
 );
+
+MusicBrainz::Server::Test->prepare_test_server;
 
 @classes = commandline_override ("t::MusicBrainz::Server::", @classes);
 

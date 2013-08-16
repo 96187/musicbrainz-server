@@ -56,32 +56,35 @@ MB.Control.ReleaseImportSearchResult = function (parent, $template) {
         self.$tracklist.addClass ('tracklist-padding');
         self.$loading.show ();
 
-        $.getJSON ('/ws/js/' + self.type + '/' + self.$id.val (), function (data) {
+        var url_type = (self.type === "tracklist") ? "medium" : self.type;
+
+        $.getJSON ('/ws/js/' + url_type + '/' + self.$id.val (), function (data) {
             self.$table.find ('tr.track').eq (0).nextAll ().remove ();
 
             self.selected_data = data;
 
+            var $row_holder = $('<tbody />');
+            var $to_clone = self.$table.find('tr.track:first');
             $.each (data.tracks, function (idx, item) {
-                var tr = self.$table.find ('tr.track').eq(0).clone ()
-                    .appendTo (self.$table.find ('tbody'));
-
+                var $tr = $to_clone.clone().appendTo($row_holder);
                 var artist = item.artist ? item.artist :
                     item.artist_credit ? MB.utility.renderArtistCredit(item.artist_credit) : "";
-
-                tr.find ('td.position').text (idx + 1);
-                tr.find ('td.title').text (item.name);
-                tr.find ('td.artist').text (artist);
-                tr.find ('td.length').text (MB.utility.formatTrackLength (item.length));
+                var $row_trs = $tr.find('td.position, td.title, td.artist, td.length');
+                $row_trs.eq(0).text(idx+1);
+                $row_trs.eq(1).text(item.name);
+                $row_trs.eq(2).text(artist);
+                $row_trs.eq(3).text(MB.utility.formatTrackLength(item.length));
 
                 if (idx % 2 == 0) {
-                    tr.addClass('ev');
-                }
-                else {
-                    tr.addClass('odd');
+                    $tr.addClass('ev');
+                } else {
+                    $tr.addClass('odd');
                 }
 
-                tr.show ();
+                $tr.show();
             });
+
+            self.$table.find('tbody').append($row_holder.contents());
 
             self.$toc.val (data.toc);
 
@@ -151,7 +154,7 @@ MB.Control.ReleaseImportSearchResult = function (parent, $template) {
             self.$tracklist.find ('span.medium').text (medium);
         };
 
-        var id = item.tracklist_id ? item.tracklist_id :
+        var id = item.medium_id ? item.medium_id :
             item.category ? item.category + '/' + item.discid :
             item.discid;
 
@@ -210,7 +213,7 @@ MB.Control.ReleaseImport = function (parent, type) {
         };
 
         $.ajax ({
-            url: '/ws/js/' + type,
+            url: '/ws/js/' + (type === "tracklist" ? "medium" : type),
             dataType: 'json',
             data: data,
             success: self.results,
@@ -348,7 +351,7 @@ MB.Control.ReleaseTrackParser = function (dialog) {
 
             if (MB.TrackParser.options.trackNumbers ())
             {
-                str += item.position () + ". ";
+                str += item.number () + ". ";
             }
 
             str += item.$title.val ();
@@ -384,10 +387,6 @@ MB.Control.ReleaseTrackParser = function (dialog) {
 
     self.$dialog.find ('input.parse-tracks').bind ('click.mb', function (event) {
         self.parseTracks (self.disc);
-    });
-    self.$dialog.find ('input.close').bind ('click.mb', function (event) {
-        self.parseTracks (self.disc);
-        self.close (event);
     });
 
     self.disc = null;
@@ -459,10 +458,11 @@ MB.Control.ReleaseAddDisc = function () {
             return;
 
         var disc = MB.Control.release_tracklist.emptyDisc ();
-        disc.$tracklist_id.val (self.use_tracklist.selected.$id.val ());
         disc.collapse ();
+        disc.edits.$edits.val (
+            JSON.stringify (self.use_tracklist.selected.selected_data.tracks));
+        disc.$medium_id_for_recordings.val (self.use_tracklist.selected.selected_data.medium_id);
         disc.expand ();
-
         self.close (event);
     };
 

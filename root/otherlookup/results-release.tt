@@ -9,7 +9,7 @@
               <th>[% l('Tracks') %]</th>
               <th>[% l('Country') %]</th>
               <th>[% l('Language') %]</th>
-              [%- IF c.session.tport -%]
+              [%- IF c.try_get_session('tport') -%]
                 <th>[% l('Tagger') %]</th>
               [%- END -%]
             </tr>
@@ -21,14 +21,14 @@
               <td>[% artist_credit(result.artist_credit) %]</td>
               <td>[% result.combined_track_count %]</td>
               <td>
-                <abbr title="[% result.country.name %]">[% result.country.iso_code_for_display %]</abbr>
+                <abbr title="[% result.country.name %]">[% result.country.iso_code %]</abbr>
               </td>
               <td>
-                <abbr title="[% result.language.name %]">[% result.language.iso_code_3t %]</abbr>
+                <abbr title="[% result.language.name %]">[% result.language.iso_code_3 %]</abbr>
                 [%= '/' IF result.language && result.script =%]
                 <abbr title="[% result.script.name %]">[% result.script.iso_code %]</abbr>
               </td>
-              [%- IF c.session.tport -%]
+              [%- IF c.try_get_session('tport') -%]
                 <td>[% tagger_icon(result) %]</td>
               [%- END -%]
             </tr>

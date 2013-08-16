@@ -23,7 +23,7 @@ $(function() {
 
     var conditionCounter = 0;
 
-    $('#extra-condition select').live('change', function() {
+    $(document).on("change", "#extra-condition select", function() {
         var newCondition = $(this).parent('li');
 
         var append = newCondition.clone();
@@ -39,13 +39,11 @@ $(function() {
             .find('option:first').remove();
 
         newCondition.find('button.remove').show();
-    })
 
-    $('ul.conditions li.condition button.remove').live('click', function() {
+    }).on("click", "ul.conditions li.condition button.remove", function() {
         $(this).parent('li').remove();
-    });
 
-    $('ul.conditions select.field').live('change', function() {
+    }).on("change", "ul.conditions select.field", function() {
         var val = $(this).val();
         var $replacement = $('#fields .field-' + val).clone();
         if($replacement.length) {
@@ -62,11 +60,7 @@ $(function() {
             });
 
             $li.find(':input').each(function() {
-                var $input = $(this);
-                if ($input.attr ('name'))
-                {
-                    $input.attr('name', prefixedInputName($input));
-                }
+                addInputNamePrefix($(this));
             });
 
             conditionCounter++;
@@ -74,13 +68,8 @@ $(function() {
         else {
             console.error('There is no field-' + val);
         }
-    });
 
-    function prefixedInputName($element) {
-        return 'conditions.' + conditionCounter + '.' + $element.attr('name').replace(/conditions\.\d+\./, '');
-    }
-
-    $('ul.conditions select.operator').live('change', function() {
+    }).on("change", "ul.conditions select.operator", function() {
         var $field = $(this).parent('span.field');
 
         var predicate = filteredClassName($field, 'predicate-');
@@ -90,6 +79,17 @@ $(function() {
         $field.find('.arg:lt(' + cardinality + ')').show();
         $field.find('.arg:first :input:first').focus();
     });
+
+    function prefixedInputName($element) {
+        return 'conditions.' + conditionCounter + '.' + $element.attr('name').replace(/conditions\.\d+\./, '');
+    }
+
+    function addInputNamePrefix($input) {
+        if ($input.attr ('name'))
+        {
+            $input.attr('name', prefixedInputName($input));
+        }
+    }
 
     function filteredClassName($element, prefix) {
         var classList = $element.attr('class').split(/\s+/);
@@ -110,7 +110,7 @@ $(function() {
 
     $('ul.conditions li.condition').each(function() {
         $(this).find(':input').each(function() {
-            $(this).attr('name', prefixedInputName($(this)));
+            addInputNamePrefix($(this));
         });
         conditionCounter++;
     });
@@ -119,5 +119,8 @@ $(function() {
         MB.Control.EntityAutocomplete({ 'inputs': $(this) });
     });
 
-    MB.utility.setDefaultAction('#edit-search', '#edit-search-submit button');
+    if ($('#edit-search').length)
+    {
+        MB.utility.setDefaultAction('#edit-search', '#edit-search-submit button');
+    }
 });

@@ -5,7 +5,7 @@ BEGIN { extends 'Catalyst::Controller'; }
 use Carp;
 use Data::Page;
 use MusicBrainz::Server::Edit::Exceptions;
-use MusicBrainz::Server::Types qw( $AUTO_EDITOR_FLAG );
+use MusicBrainz::Server::Constants qw( $AUTO_EDITOR_FLAG );
 use MusicBrainz::Server::Translation qw( l ln );
 use MusicBrainz::Server::Validation;
 use Try::Tiny;
@@ -73,8 +73,14 @@ sub submit_and_validate
 sub _insert_edit {
     my ($self, $c, $form, %opts) = @_;
 
+    if (!$c->user->has_confirmed_email_address) {
+        $c->detach('/error_401');
+    }
+
     my $privs   = $c->user->privileges;
-    if ($c->user->is_auto_editor && !$form->field('as_auto_editor')->value) {
+    if ($c->user->is_auto_editor &&
+        $form->field('as_auto_editor') &&
+        !$form->field('as_auto_editor')->value) {
         $privs &= ~$AUTO_EDITOR_FLAG;
     }
 
@@ -121,6 +127,10 @@ sub edit_action
 {
     my ($self, $c, %opts) = @_;
 
+    if (!$c->user->has_confirmed_email_address) {
+        $c->detach('/error_401');
+    }
+
     my %form_args = %{ $opts{form_args} || {}};
     $form_args{init_object} = $opts{item} if exists $opts{item};
     my $form = $c->form( form => $opts{form}, ctx => $c, %form_args );
@@ -129,13 +139,29 @@ sub edit_action
         my @options = (map { $_->name => $_->value } $form->edit_fields);
         my %extra   = %{ $opts{edit_args} || {} };
 
-        my $edit = $self->_insert_edit($c, $form,
-            edit_type => $opts{type},
-            @options,
-            %extra
-        );
+        my $edit;
+        $c->model('MB')->with_transaction(sub {
+            $edit = $self->_insert_edit(
+                $c, $form,
+                edit_type => $opts{type},
+                @options,
+                %extra
+            );
 
-        $opts{on_creation}->($edit, $form) if $edit && exists $opts{on_creation};
+            # the on_creation hook is only called when an edit was entered.
+            # the post_creation hook is always called.
+            $opts{post_creation}->($edit, $form) if exists $opts{post_creation};
+            $opts{on_creation}->($edit, $form) if $edit && exists $opts{on_creation};
+        });
+
+        # `post_creation` and `on_creation` often perform a redirection.
+        # If they have called $c->res->redirect, $c->res->location will be a
+        # true value, and we can detach early. `post_creation` and `on_creation`
+        # can't do this, as $c->detach is implemented by throwing an exception,
+        # which causes the above transaction to rollback.
+        if ($c->res->location) {
+            $c->detach;
+        }
 
         return $edit;
     }
@@ -173,12 +199,13 @@ sub _search_final_page
 
 sub _load_paged
 {
-    my ($self, $c, $loader, $limit) = @_;
+    my ($self, $c, $loader, %opts) = @_;
 
-    my $page = $c->request->query_params->{page} || 1;
+    my $prefix = $opts{prefix} || '';
+    my $page = $c->request->query_params->{$prefix . "page"} || 1;
     $page = 1 if $page < 1;
 
-    my $LIMIT = $limit || $self->{paging_limit};
+    my $LIMIT = $opts{limit} || $self->{paging_limit};
 
     my ($data, $total) = $loader->($LIMIT, ($page - 1) * $LIMIT);
     my $pager = Data::Page->new;
@@ -189,7 +216,7 @@ sub _load_paged
         my $uri = $c->request->uri;
         my %params = $uri->query_form;
 
-        $params{page} = $page;
+        $params{$prefix . "page"} = $page;
         $uri->query_form (\%params);
 
         $c->response->redirect ($uri);
@@ -197,10 +224,10 @@ sub _load_paged
     }
 
     $pager->entries_per_page($LIMIT);
-    $pager->total_entries($total);
+    $pager->total_entries($total || 0);
     $pager->current_page($page);
 
-    $c->stash( pager => $pager );
+    $c->stash( $prefix . "pager" => $pager );
     return $data;
 }
 

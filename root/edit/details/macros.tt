@@ -40,13 +40,23 @@
                   end_date => relationship.link.end_date.format
               });
          END;
+       ELSIF relationship.link.ended;
+         l('from {date} to ????', { date => relationship.link.begin_date.format });
        ELSE;
          l('from {date} to present', { date => relationship.link.begin_date.format });
        END;
      ELSIF !relationship.link.end_date.is_empty;
        l('until {date}', { date => relationship.link.end_date.format });
+     ELSIF relationship.link.ended;
+       l('(ended)');
      END;
    END; -%]
+
+[%- MACRO relationship_extra_attributes(relationship) BLOCK -%]
+[%- IF relationship.extra_verbose_phrase_attributes -%]
+([% relationship.extra_verbose_phrase_attributes %])
+[%- END -%]
+[%- END -%]
 
 [%- MACRO display_relationship_differences(label, old_rel, new_rel) BLOCK -%]
   <tr>
@@ -61,6 +71,7 @@
         [% descriptive_link(old_rel.target); %]
       </span>
       [% Diff.diff_side(relationship_date_text(old_rel), relationship_date_text(new_rel), '-') %]
+      [% Diff.diff_side(relationship_extra_attributes(old_rel), relationship_extra_attributes(new_rel), '-') %]
     </td>
   </tr>
   <tr>
@@ -73,6 +84,98 @@
         [% descriptive_link(new_rel.target); %]
       </span>
       [% Diff.diff_side(relationship_date_text(old_rel), relationship_date_text(new_rel), '+') %]
+      [% Diff.diff_side(relationship_extra_attributes(old_rel), relationship_extra_attributes(new_rel), '+') %]
     </td>
   </tr>
 [%- END -%]
+
+[%- MACRO display_edit_artwork(artwork, release) BLOCK -%]
+  <tr>
+    <th>[% l('Cover art:') %]</th>
+    <td class="edit-cover-art">
+      [%- history_message = '';
+          IF release.gid;
+            history_message = l('We are unable to display history for this cover
+              art. For a current listing of cover art, please see the
+              {coverart|release\'s cover art page}.',
+              { coverart => c.uri_for_action('/release/cover_art', [ release.gid ]) });
+          ELSE;
+            history_message = l('We are unable to display history for this cover art.');
+          END;
+      -%]
+
+      [% IF edit.is_open || !no_javascript %]
+        [%- display_artwork(edit.display_data.artwork, undef, history_message) -%]
+      [% ELSE %]
+        [%- history_message -%]
+      [% END %]
+    </td>
+  </tr>
+[%- END -%]
+
+[%- MACRO ac_row(row_counter, startnum, endnum, thisac) BLOCK -%]
+  <tr class="[% row_counter % 2 == 0 ? 'ev' : '' %]">
+    <td class="pos t">
+      [% startnum %][% IF endnum AND endnum != startnum %]-[% endnum %][% END %]
+    </td>
+    <td>[% thisac %]</td>
+  </tr>
+[%- END -%]
+
+[%- MACRO display_condensed_track_acs(tracks) BLOCK;
+    thisac = 0;
+    thispos = 0;
+    row_counter = 1;
+    startnum = tracks.0.number;
+    FOR track=tracks;
+        IF thisac AND (thisac != expanded_artist_credit(track.artist_credit) OR thispos + 1 != track.position);
+            ac_row(row_counter, startnum, endnum, thisac);
+            row_counter = row_counter + 1;
+            startnum = track.number;
+            endnum = startnum;
+        ELSE;
+            endnum = track.number;
+        END;
+        thisac = expanded_artist_credit(track.artist_credit);
+        thispos = track.position;
+        IF loop.last();
+            ac_row(row_counter, startnum, endnum, thisac);
+        END;
+    END;
+END -%]
+
+[%- MACRO ac_diff_row(row_counter, startnum, endnum, oldac, newac) BLOCK -%]
+  <tr class="[% row_counter % 2 == 0 ? 'ev' : '' %]">
+    <td class="pos t">
+      [% startnum %][% IF endnum AND endnum != startnum %]-[% endnum %][% END %]
+    </td>
+    <td>[% oldac %]</td>
+    <td>[% newac %]</td>
+  </tr>
+[%- END -%]
+
+[%- MACRO display_condensed_track_acs_diff(changes) BLOCK;
+    oldac = 0;
+    newac = 0;
+    thispos = 0;
+    row_counter = 1;
+    startnum = changes.0.2.number;
+    FOR change=changes;
+        old_track = change.1;
+        new_track = change.2;
+        IF (oldac AND oldac != expanded_artist_credit(old_track.artist_credit)) OR (newac AND newac != expanded_artist_credit(new_track.artist_credit)) OR ((newac OR oldac) AND thispos + 1 != new_track.position);
+            ac_diff_row(row_counter, startnum, endnum, oldac, newac);
+            row_counter = row_counter + 1;
+            startnum = new_track.number;
+            endnum = startnum;
+        ELSE;
+            endnum = new_track.number;
+        END;
+        oldac = expanded_artist_credit(old_track.artist_credit);
+        newac = expanded_artist_credit(new_track.artist_credit);
+        thispos = new_track.position;
+        IF loop.last();
+            ac_diff_row(row_counter, startnum, endnum, oldac, newac);
+        END;
+   END;
+END -%]

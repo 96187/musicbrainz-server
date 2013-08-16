@@ -2,6 +2,10 @@ package MusicBrainz::Server::WebService::Validator;
 use MooseX::Role::Parameterized;
 use aliased 'MusicBrainz::Server::WebService::WebServiceInc';
 use aliased 'MusicBrainz::Server::WebService::WebServiceIncV1';
+use MusicBrainz::Server::Constants qw(
+    $ACCESS_SCOPE_TAG
+    $ACCESS_SCOPE_RATING
+);
 use Class::MOP;
 use Readonly;
 
@@ -24,6 +28,7 @@ parameter defs => (
 our (%types, %statuses);
 our %relation_types = (
     1 => {
+        "area-rels" => 1,
         "artist-rels" => 1,
         "release-rels" => 1,
         "track-rels" => 1,
@@ -32,6 +37,7 @@ our %relation_types = (
         "url-rels" => 1,
     },
     2 => {
+        "area-rels" => 1,
         "artist-rels" => 1,
         "release-rels" => 1,
         "release-group-rels" => 1,
@@ -60,12 +66,18 @@ sub load_type_and_status
 {
     my ($c) = @_;
 
-    my @types = $c->model('ReleaseGroupType')->get_all();
-    %types = map { (
-        lc($_->name) => $_->id,
-        lc('sa-' . $_->name)=> $_->id,
-        lc('va-' . $_->name)=> $_->id,
-    ) } @types;
+    %types = map {
+        my ($name, $id) = @$_;
+        (
+            lc($name) => $id,
+            lc("sa-$name") => $id,
+            lc("va-$name") => $id
+        )
+    } (
+        (map +[ lc($_->name) => $_->id ], $c->model('ReleaseGroupType')->get_all()),
+        (map +[ lc($_->name) => 'st:' . $_->id ], $c->model('ReleaseGroupSecondaryType')->get_all())
+    );
+
     my @statuses = $c->model('ReleaseStatus')->get_all();
     %statuses = map {
         lc($_->name) => $_->id,
@@ -211,7 +223,7 @@ sub validate_inc
 
         $i =~ s/mediums/media/;
 
-        if ($version == 1)
+        if ($version eq '1')
         {
             $i = lc($i);
 
@@ -268,7 +280,7 @@ sub validate_inc
         push @filtered, $i;
     }
 
-    if ($version == 1)
+    if ($version eq '1')
     {
         return WebServiceIncV1->new(inc => \@filtered, rg_type => $type_used,
                                     rel_status => $status_used, relations => \@relations_used,
@@ -284,19 +296,11 @@ sub validate_inc
 role {
     my $r = shift;
 
-    method 'get_default_serialization_type' => sub
-    {
-        return $r->default_serialization_type;
-    };
-
     method 'validate' => sub
     {
-        my ($self, $c, $serializers) = @_;
+        my ($self, $c) = @_;
 
-        # Set up the serializers so we can report errors in the correct format
-        my $class = $serializers->{$r->default_serialization_type};
-        Class::MOP::load_class($class);
-        $c->stash->{serializer} = $class->new();
+        $c->stash->{serializer} = $self->get_serialization ($c);
 
         my $resource = $c->req->path;
         my $version = quotemeta ($r->version);
@@ -348,15 +352,11 @@ role {
                 ($resource eq 'release' && $c->req->method eq 'POST') ||
                 ($resource eq 'recording' && $c->req->method eq 'POST');
 
-            # Check the type and prepare a serializer. For now, since we only support XML
-            # we're going to default to XML. In the future if we want to add more serializations,
-            # we will add support for requesting the format via the Content-type headers.
-            my $type = $r->default_serialization_type;
-            unless (defined($type) && exists $serializers->{$type}) {
-                my @types = keys %{$serializers};
-                $c->stash->{error} = 'Invalid content type. Must be set to ' . join(' or ', @types) . '.';
-                $c->detach('bad_req');
-            }
+            # Check authorization scope.
+            my $scope = 0;
+            $scope |= $ACCESS_SCOPE_TAG if $inc->{user_tags} || $resource eq 'tag';
+            $scope |= $ACCESS_SCOPE_RATING if $inc->{user_ratings} || $resource eq 'rating';
+            $c->stash->{authorization_scope} = $scope;
 
             # All is well! Set up the stash!
             $c->stash->{inc} = $inc;

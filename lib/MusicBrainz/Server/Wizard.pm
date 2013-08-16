@@ -1,10 +1,14 @@
 package MusicBrainz::Server::Wizard;
 use Moose;
-use Cache::Memcached::Fast;
 use Carp qw( croak );
+use MusicBrainz::DataStore::Redis;
 use MusicBrainz::Server::Form::Utils qw( expand_param expand_all_params collapse_param );
 
-my $cache = new Cache::Memcached::Fast (&DBDefs::WIZARD_MEMCACHED);
+has '_datastore' => (
+    is => 'rw',
+    isa => 'MusicBrainz::DataStore',
+    default => sub { return MusicBrainz::DataStore::Redis->new; }
+);
 
 has '_current' => (
     is => 'rw',
@@ -102,9 +106,12 @@ sub valid {
 #  2. Save submitted data in session
 #  3. Route to the next page (process conditionals)
 #
-#     [ sub render ]
+#     [ sub navigate_to_page (also called from _route) ]
 #
 #  4. Load previously saved data for this page from session
+#
+#     [ sub render ]
+#
 #  5. Load form and associated template
 #  6. Add tab buttons for each step to the stash
 
@@ -271,7 +278,7 @@ sub value
         {
             $data{$key} = $value;
         }
-    } 
+    }
 
     return \%data;
 }
@@ -456,27 +463,20 @@ around '_current' => sub {
     return $self->$orig ($value);
 };
 
-sub _cache_key
-{
-    my ($self, $key) = @_;
-
-    my $catalyst_session_id = $self->c->sessionid;
-    my $sid = $self->_session_id;
-
-    return "wizard_session:$catalyst_session_id:$sid:$key";
-}
-
 sub _store
 {
     my ($self, $key, $value) = @_;
 
+    $key = "wizard:".$self->_session_id.":$key";
+
     if (defined $value)
     {
-        $cache->set ($self->_cache_key ($key), $value);
+        $self->_datastore->set ($key, $value);
+        $self->_datastore->expire ($key, DBDefs->SESSION_EXPIRE);
     }
     else
     {
-        $value = $cache->get ($self->_cache_key ($key));
+        $value = $self->_datastore->get ($key);
     }
 
     return $value;
@@ -501,11 +501,10 @@ sub _new_session
 {
     my ($self) = @_;
 
-    $self->_session_id(rand);
-    while (defined $self->_store ('wizard'))
-    {
-        $self->_session_id(rand);
-    }
+    # In the case that global_wizard_id is undef, set it to 0. ->incr
+    # requires an existing, integer valued key.
+    $self->_datastore->add('global_wizard_id', 0);
+    $self->_session_id($self->_datastore->incr('global_wizard_id'));
     $self->_store ('wizard', 1);
     $self->_current (0);
 }

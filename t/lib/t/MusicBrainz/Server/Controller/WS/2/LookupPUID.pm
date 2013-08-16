@@ -18,7 +18,6 @@ my $test = shift;
 my $c = $test->c;
 my $v2 = schema_validator;
 my $diff = XML::SemanticDiff->new;
-my $mech = $test->mech;
 
 MusicBrainz::Server::Test->prepare_test_database($c, '+webservice');
 
@@ -53,7 +52,21 @@ ws_test 'puid lookup with releases',
             <text-representation>
               <language>jpn</language><script>Jpan</script>
             </text-representation>
-            <date>2001-07-04</date><country>JP</country><barcode>4942463511227</barcode>
+            <date>2001-07-04</date>
+            <country>JP</country>
+            <release-event-list count="1">
+                <release-event>
+                    <date>2001-07-04</date>
+                    <area id="2db42837-c832-3c27-b4a3-08198f75693c">
+                        <name>Japan</name>
+                        <sort-name>Japan</sort-name>
+                        <iso-3166-1-code-list>
+                            <iso-3166-1-code>JP</iso-3166-1-code>
+                        </iso-3166-1-code-list>
+                    </area>
+                </release-event>
+            </release-event-list>
+            <barcode>4942463511227</barcode>
           </release>
           <release id="b3b7e934-445b-4c68-a097-730c6a6d47e6">
             <title>Summer Reggae! Rainbow</title>
@@ -62,7 +75,21 @@ ws_test 'puid lookup with releases',
             <text-representation>
               <language>jpn</language><script>Latn</script>
             </text-representation>
-            <date>2001-07-04</date><country>JP</country><barcode>4942463511227</barcode>
+            <date>2001-07-04</date>
+            <country>JP</country>
+            <release-event-list count="1">
+                <release-event>
+                    <date>2001-07-04</date>
+                    <area id="2db42837-c832-3c27-b4a3-08198f75693c">
+                        <name>Japan</name>
+                        <sort-name>Japan</sort-name>
+                        <iso-3166-1-code-list>
+                            <iso-3166-1-code>JP</iso-3166-1-code>
+                        </iso-3166-1-code-list>
+                    </area>
+                </release-event>
+            </release-event-list>
+            <barcode>4942463511227</barcode>
           </release>
         </release-list>
       </recording>
@@ -104,6 +131,7 @@ ws_test 'puid lookup with release groups',
             <release-group id="b84625af-6229-305f-9f1b-59c0185df016" type="Single">
               <title>サマーれげぇ!レインボー</title>
               <first-release-date>2001-07-04</first-release-date>
+              <primary-type>Single</primary-type>
               <artist-credit>
                 <name-credit>
                   <artist id="802673f0-9b88-4e8a-bb5c-dd01d68b086f">
@@ -112,7 +140,21 @@ ws_test 'puid lookup with release groups',
                 </name-credit>
               </artist-credit>
             </release-group>
-            <date>2001-07-04</date><country>JP</country><barcode>4942463511227</barcode>
+            <date>2001-07-04</date>
+            <country>JP</country>
+            <release-event-list count="1">
+                <release-event>
+                    <date>2001-07-04</date>
+                    <area id="2db42837-c832-3c27-b4a3-08198f75693c">
+                        <name>Japan</name>
+                        <sort-name>Japan</sort-name>
+                        <iso-3166-1-code-list>
+                            <iso-3166-1-code>JP</iso-3166-1-code>
+                        </iso-3166-1-code-list>
+                    </area>
+                </release-event>
+            </release-event-list>
+            <barcode>4942463511227</barcode>
           </release>
           <release id="b3b7e934-445b-4c68-a097-730c6a6d47e6">
             <title>Summer Reggae! Rainbow</title>
@@ -131,6 +173,7 @@ ws_test 'puid lookup with release groups',
             <release-group id="b84625af-6229-305f-9f1b-59c0185df016" type="Single">
               <title>サマーれげぇ!レインボー</title>
               <first-release-date>2001-07-04</first-release-date>
+              <primary-type>Single</primary-type>
               <artist-credit>
                 <name-credit>
                   <artist id="802673f0-9b88-4e8a-bb5c-dd01d68b086f">
@@ -139,7 +182,21 @@ ws_test 'puid lookup with release groups',
                 </name-credit>
               </artist-credit>
             </release-group>
-            <date>2001-07-04</date><country>JP</country><barcode>4942463511227</barcode>
+            <date>2001-07-04</date>
+            <country>JP</country>
+            <release-event-list count="1">
+                <release-event>
+                    <date>2001-07-04</date>
+                    <area id="2db42837-c832-3c27-b4a3-08198f75693c">
+                        <name>Japan</name>
+                        <sort-name>Japan</sort-name>
+                        <iso-3166-1-code-list>
+                            <iso-3166-1-code>JP</iso-3166-1-code>
+                        </iso-3166-1-code-list>
+                    </area>
+                </release-event>
+            </release-event-list>
+            <barcode>4942463511227</barcode>
           </release>
         </release-list>
       </recording>

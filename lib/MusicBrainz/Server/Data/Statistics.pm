@@ -3,20 +3,44 @@ use Moose;
 use namespace::autoclean;
 use namespace::autoclean;
 
-use MusicBrainz::Server::Data::Utils qw( placeholders );
-use MusicBrainz::Server::Types qw( :edit_status :vote );
+use MusicBrainz::Server::Data::Utils qw( placeholders query_to_list );
+use MusicBrainz::Server::Constants qw( :edit_status :vote );
 use MusicBrainz::Server::Constants qw( $VARTIST_ID $EDITOR_MODBOT $EDITOR_FREEDB :quality );
 use MusicBrainz::Server::Data::Relationship;
+use MusicBrainz::Server::Translation::Statistics qw( l );
+use MusicBrainz::Server::Replication ':replication_type';
+
+use DBDefs;
+
+use Fcntl qw(:flock SEEK_END);
 
 with 'MusicBrainz::Server::Data::Role::Sql';
 
-sub _table { 'statistic' }
+sub _id_cache_prefix { 'stats' }
+
+sub _table { 'statistics.statistic' }
+
+sub all_events {
+    my ($self) = @_;
+
+    return [
+        map { $_->{title} = l($_->{title}); $_->{description} = l($_->{description}); $_; }
+        query_to_list(
+            $self->sql,
+            sub { shift },
+            'SELECT * FROM statistics.statistic_event ORDER BY date ASC',
+        )
+    ];
+}
 
 sub fetch {
     my ($self, @names) = @_;
 
-    my $query = 'SELECT name, value FROM ' . $self->_table;
+    my $query = 'SELECT name, value, row_number() OVER (PARTITION BY name ORDER BY date_collected DESC)'.
+        ' FROM ' . $self->_table;
     $query .= ' WHERE name IN (' . placeholders(@names) . ')' if @names;
+
+    $query = "SELECT name, value FROM ($query) s WHERE s.row_number = 1";
 
     my %stats =
         map { $_->{name} => $_->{value} }
@@ -27,8 +51,7 @@ sub fetch {
             return @stats{@names};
         }
         else {
-            my $value = $stats{ $names[0] }
-                or warn "No statistics for '$names[0]'";
+            my $value = $stats{ $names[0] };
             return $value;
         }
     }
@@ -38,15 +61,23 @@ sub fetch {
 }
 
 sub insert {
-    my ($self, %updates) = @_;
-    $self->sql->do('LOCK TABLE ' . $self->_table . ' IN EXCLUSIVE MODE');
+    my ($self, $output_file, %updates) = @_;
+    $self->sql->do('LOCK TABLE ' . $self->_table . ' IN EXCLUSIVE MODE') unless $output_file;
     for my $key (keys %updates) {
         next unless defined $updates{$key};
 
-        $self->sql->insert_row(
-            $self->_table,
-            { name => $key, value => $updates{$key} }
-        );
+        if ($output_file) {
+                open(OUTPUTFILE, '>>'.$output_file);
+                flock(OUTPUTFILE, LOCK_EX);
+                seek(OUTPUTFILE, 0, SEEK_END);
+                print OUTPUTFILE "$key\t$updates{$key}\n";
+                close(OUTPUTFILE);
+        } else {
+            $self->sql->insert_row(
+                $self->_table,
+                { name => $key, value => $updates{$key} }
+            );
+        }
     }
 }
 
@@ -57,6 +88,107 @@ sub last_refreshed {
 }
 
 my %stats = (
+    "editor.top_recently_active" => {
+        DESC => "Top recently active editors",
+        CALC => sub {
+            my ($self, $sql) = @_;
+            my $id_edits = $sql->select_list_of_lists(
+                "SELECT editor, count(edit.id) FROM edit
+                 JOIN editor ON edit.editor = editor.id
+                 WHERE status IN (?, ?)
+                   AND open_time >= now() - '1 week'::INTERVAL
+                   AND cast(privs AS bit(2)) & B'10' = B'00'
+                 GROUP BY edit.editor, editor.name
+                 ORDER BY count(edit.id) DESC, musicbrainz_collate(editor.name)
+                 LIMIT 25",
+                $STATUS_OPEN, $STATUS_APPLIED
+            );
+
+            my %map;
+            my $count = 1;
+            foreach my $editor (@$id_edits) {
+                $map{"editor.top_recently_active.rank.$count"} = $editor->[0];
+                $map{"count.edit.top_recently_active.rank.$count"} = $editor->[1];
+                $count++;
+            }
+
+            return \%map;
+        }
+    },
+    "editor.top_active" => {
+        DESC => "Top active editors",
+        CALC => sub {
+            my ($self, $sql) = @_;
+            my $id_edits = $sql->select_list_of_lists(
+                "SELECT id, (edits_accepted + auto_edits_accepted) AS count FROM editor
+                 WHERE (edits_accepted + auto_edits_accepted) > 0
+                   AND cast(privs AS bit(2)) & B'10' = B'00'
+                 ORDER BY (edits_accepted + auto_edits_accepted) DESC, musicbrainz_collate(editor.name)
+                 LIMIT 25"
+            );
+
+            my %map;
+            my $count = 1;
+            foreach my $editor (@$id_edits) {
+                $map{"editor.top_active.rank.$count"} = $editor->[0];
+                $map{"count.edit.top_active.rank.$count"} = $editor->[1];
+                $count++;
+            }
+
+            return \%map;
+        }
+    },
+    "editor.top_recently_active_voters" => {
+        DESC => "Top recently active voters",
+        CALC => sub {
+            my ($self, $sql) = @_;
+            my $id_edits = $sql->select_list_of_lists(
+                "SELECT editor, count(vote.id) FROM vote
+                 JOIN editor ON vote.editor = editor.id
+                 WHERE NOT superseded AND vote != -1
+                   AND vote_time >= now() - '1 week'::INTERVAL
+                   AND cast(privs AS bit(10)) & 2::bit(10) = 0::bit(10)
+                 GROUP BY vote.editor, editor.name
+                 ORDER BY count(vote.id) DESC, musicbrainz_collate(editor.name)
+                 LIMIT 25"
+            );
+
+            my %map;
+            my $count = 1;
+            foreach my $editor (@$id_edits) {
+                $map{"editor.top_recently_active_voters.rank.$count"} = $editor->[0];
+                $map{"count.vote.top_recently_active_voters.rank.$count"} = $editor->[1];
+                $count++;
+            }
+
+            return \%map;
+        }
+    },
+    "editor.top_active_voters" => {
+        DESC => "Top active voters",
+        CALC => sub {
+            my ($self, $sql) = @_;
+            my $id_edits = $sql->select_list_of_lists(
+                "SELECT editor, count(vote.id) FROM vote
+                 JOIN editor ON vote.editor = editor.id
+                 WHERE NOT superseded AND vote != -1
+                   AND cast(privs AS bit(10)) & 2::bit(10) = 0::bit(10)
+                 GROUP BY editor, editor.name
+                 ORDER BY count(vote.id) DESC, musicbrainz_collate(editor.name)
+                 LIMIT 25"
+            );
+
+            my %map;
+            my $count = 1;
+            foreach my $editor (@$id_edits) {
+                $map{"editor.top_active_voters.rank.$count"} = $editor->[0];
+                $map{"count.vote.top_active_voters.rank.$count"} = $editor->[1];
+                $count++;
+            }
+
+            return \%map;
+        }
+    },
     "count.release" => {
         DESC => "Count of all releases",
         SQL => "SELECT COUNT(*) FROM release",
@@ -64,6 +196,36 @@ my %stats = (
     "count.releasegroup" => {
         DESC => "Count of all release groups",
         SQL => "SELECT COUNT(*) FROM release_group",
+    },
+    "count.area" => {
+        DESC => "Count of all areas",
+        SQL => "SELECT COUNT(*) FROM area",
+    },
+    "count.country_area" => {
+        DESC => "Count of all areas eligible for release country use",
+        SQL => "SELECT COUNT(*) FROM country_area",
+    },
+    "count.area.type" => {
+        DESC => "Distribution of areas by type",
+        CALC => sub {
+            my ($self, $sql) = @_;
+
+            my $data = $sql->select_list_of_lists(
+                "SELECT COALESCE(type.id::text, 'null'), COUNT(area.id) AS count
+                 FROM area_type type
+                 FULL OUTER JOIN area ON area.type = type.id
+                 GROUP BY type.id",
+            );
+
+            my %dist = map { @$_ } @$data;
+            $dist{null} ||= 0;
+
+            +{
+                map {
+                    "count.area.type.".$_ => $dist{$_}
+                } keys %dist
+            };
+        },
     },
     "count.artist" => {
         DESC => "Count of all artists",
@@ -86,7 +248,7 @@ my %stats = (
                 "count.artist.type.person" => $dist{1} || 0,
                 "count.artist.type.group"  => $dist{2} || 0,
                 "count.artist.type.other"  => $dist{3} || 0,
-		"count.artist.type.null" => $dist{null} || 0
+                "count.artist.type.null" => $dist{null} || 0
             };
         },
     },
@@ -115,12 +277,12 @@ my %stats = (
             );
 
             my %dist = map { @$_ } @$data;
-            
+
             +{
                 "count.artist.gender.male" => $dist{1} || 0,
                 "count.artist.gender.female"  => $dist{2} || 0,
-		"count.artist.gender.other" => $dist{3} || 0,
-		"count.artist.gender.null" => $dist{null} || 0
+                "count.artist.gender.other" => $dist{3} || 0,
+                "count.artist.gender.null" => $dist{null} || 0
             };
         },
     },
@@ -138,12 +300,203 @@ my %stats = (
     },
     "count.artist.has_credits" => {
         DESC => "Artists in at least one artist credit",
-	SQL => "SELECT COUNT(DISTINCT artist) FROM artist_credit_name",
+        SQL => "SELECT COUNT(DISTINCT artist) FROM artist_credit_name",
     },
     "count.artist.0credits" => {
         DESC => "Artists in no artist credits",
-	SQL => "SELECT COUNT(DISTINCT artist.id) FROM artist LEFT OUTER JOIN artist_credit_name ON artist.id = artist_credit_name.artist WHERE artist_credit_name.artist_credit IS NULL",
+        SQL => "SELECT COUNT(DISTINCT artist.id) FROM artist LEFT OUTER JOIN artist_credit_name ON artist.id = artist_credit_name.artist WHERE artist_credit_name.artist_credit IS NULL",
     },
+    "count.url" => {
+        DESC => 'Count of all URLs',
+        SQL => 'SELECT count(*) FROM url',
+    },
+    "count.coverart" => {
+        DESC => 'Count of all cover art images',
+        SQL => 'SELECT count(*) FROM cover_art_archive.cover_art',
+    },
+    "count.coverart.type" => {
+        DESC => "Distribution of cover art by type",
+        CALC => sub {
+            my ($self, $sql) = @_;
+
+            my $data = $sql->select_list_of_lists(
+                "SELECT art_type.name, COUNT(cover_art_type.id) AS count
+                 FROM cover_art_archive.cover_art_type
+                 JOIN cover_art_archive.art_type ON art_type.id = cover_art_type.type_id
+                 GROUP BY art_type.name",
+            );
+
+            my %dist = map { @$_ } @$data;
+
+            +{
+                map {
+                    "count.coverart.type.".$_ => $dist{$_}
+                } keys %dist
+            };
+        },
+    },
+    "count.release.coverart.amazon" => {
+        DESC => "Releases whose cover art comes from Amazon",
+        CALC => sub {
+            my ($self, $sql) = @_;
+
+            my $data = $sql->select_list_of_lists(
+               'SELECT (cover_art_url ~ \'^http://.*.images-amazon.com\')::int AS is_amazon, COUNT(*) FROM release_coverart
+                  WHERE cover_art_url IS NOT NULL
+                    AND NOT EXISTS (
+                      SELECT TRUE FROM cover_art_archive.cover_art ca
+                        JOIN cover_art_archive.cover_art_type cat ON ca.id = cat.id
+                      WHERE ca.release = release_coverart.id AND cat.type_id = 1)
+                GROUP BY is_amazon'
+            );
+
+            my %dist = map { @$_ } @$data;
+
+            +{
+                "count.release.coverart.amazon" => $dist{1},
+                "count.release.coverart.relationship" => $dist{0}
+            };
+        },
+        NONREPLICATED => 1,
+    },
+    "count.release.coverart.relationship" => {
+        DESC => "Releases whose cover art comes from relationships",
+        PREREQ => [qw[ count.release.coverart.amazon ]],
+        PREREQ_ONLY => 1,
+        NONREPLICATED => 1,
+    },
+    "count.release.coverart.caa" => {
+        DESC => "Releases whose cover art comes from the CAA",
+        SQL => 'SELECT COUNT(distinct release) FROM cover_art_archive.cover_art ca
+                  JOIN cover_art_archive.cover_art_type cat ON ca.id = cat.id
+                WHERE cat.type_id = 1',
+    },
+    "count.release.coverart.none" => {
+        PREREQ => [qw[ count.release count.release.coverart.amazon count.release.coverart.caa count.release.coverart.relationship ]],
+        DESC => "Releases with no cover art",
+        CALC => sub {
+            my ($self, $sql) = @_;
+            return $self->fetch('count.release') -
+                   ($self->fetch('count.release.coverart.amazon') +
+                    $self->fetch('count.release.coverart.caa') +
+                    $self->fetch('count.release.coverart.relationship'));
+        },
+        NONREPLICATED => 1,
+    },
+    "count.release.status.statname.has_coverart" => {
+        DESC => "Count of releases with cover art, by status",
+        CALC => sub {
+            my ($self, $sql) = @_;
+
+            my $data = $sql->select_list_of_lists(
+                "SELECT
+                   coalesce(release_status.name, 'null'),
+                   count(DISTINCT cover_art.release)
+                 FROM cover_art_archive.cover_art
+                 JOIN release ON release.id = cover_art.release
+                 FULL OUTER JOIN release_status
+                   ON release_status.id = release.status
+                 GROUP BY coalesce(release_status.name, 'null')",
+            );
+
+            my %dist = map { @$_ } @$data;
+
+            +{
+                map {
+                    "count.release.status.".$_.".has_coverart" => $dist{$_}
+                } keys %dist
+            };
+        },
+    },
+    "count.release.type.typename.has_coverart" => {
+        DESC => "Count of releases with cover art, by release group type",
+        CALC => sub {
+            my ($self, $sql) = @_;
+
+            my $data = $sql->select_list_of_lists(
+                "SELECT
+                   coalesce(release_group_primary_type.name, 'null'),
+                   count(DISTINCT cover_art.release)
+                 FROM cover_art_archive.cover_art
+                 JOIN release ON release.id = cover_art.release
+                 JOIN release_group
+                   ON release.release_group = release_group.id
+                 FULL OUTER JOIN release_group_primary_type
+                   ON release_group_primary_type.id = release_group.type
+                 GROUP BY coalesce(release_group_primary_type.name, 'null')"
+            );
+
+            my %dist = map { @$_ } @$data;
+
+            +{
+                map {
+                    "count.release.type.".$_.".has_coverart" => $dist{$_}
+                } keys %dist
+            };
+        },
+    },
+    "count.release.format.fname.has_coverart" => {
+        DESC => "Count of releases with cover art, by medium format",
+        CALC => sub {
+            my ($self, $sql) = @_;
+
+            my $data = $sql->select_list_of_lists(
+                "SELECT
+                   coalesce(medium_format.name, 'null'),
+                   count(DISTINCT cover_art.release)
+                 FROM cover_art_archive.cover_art
+                 JOIN release ON release.id = cover_art.release
+                 JOIN medium ON medium.release = release.id
+                 FULL OUTER JOIN medium_format
+                   ON medium_format.id = medium.format
+                 GROUP BY coalesce(medium_format.name, 'null')",
+            );
+
+            my %dist = map { @$_ } @$data;
+
+            +{
+                map {
+                    "count.release.format.".$_.".has_coverart" => $dist{$_}
+                } keys %dist
+            };
+        },
+    },
+    "count.coverart.per_release.Nimages" => {
+        DESC => "Distribution of cover art images per release",
+        CALC => sub {
+            my ($self, $sql) = @_;
+
+            my $max_dist_tail = 30;
+
+            my $data = $sql->select_list_of_lists(
+                "SELECT c, COUNT(*) AS freq
+                FROM (
+                    SELECT release, COUNT(*) AS c
+                    FROM cover_art_archive.cover_art
+                    GROUP BY release
+                ) AS t
+                GROUP BY c
+                ",
+            );
+
+            my %dist = map { $_ => 0 } 1 .. $max_dist_tail;
+
+            for (@$data)
+            {
+                $dist{ $_->[0] } = $_->[1], next
+                    if $_->[0] < $max_dist_tail;
+
+                $dist{$max_dist_tail} += $_->[1];
+            }
+
+            +{
+                map {
+                    "count.coverart.per_release.".$_."images" => $dist{$_}
+                } keys %dist
+            };
+        },
+    },
+
     "count.label" => {
         DESC => "Count of all labels",
         SQL => "SELECT COUNT(*) FROM label",
@@ -155,11 +508,22 @@ my %stats = (
     "count.edit" => {
         DESC => "Count of all edits",
         SQL => "SELECT COUNT(*) FROM edit",
-        DB => 'READWRITE'
+        NONREPLICATED => 1,
     },
     "count.editor" => {
         DESC => "Count of all editors",
         SQL => "SELECT COUNT(*) FROM editor",
+        NONREPLICATED => 1,
+    },
+    "count.editor.deleted" => {
+        DESC => "Count of all editors that have been deleted (defined as 'has name Deleted Editor #<id>' for convenience)",
+        SQL => "SELECT COUNT(*) FROM editor WHERE name = 'Deleted Editor #' || id",
+        NONREPLICATED => 1,
+    },
+    "count.editor.valid" => {
+        DESC => "Count of all editors that have not been deleted (defined as 'has name Deleted Editor #<id>' for convenience)",
+        SQL => "SELECT COUNT(*) FROM editor WHERE name <> ('Deleted Editor #' || id)",
+        NONREPLICATED => 1,
     },
     "count.barcode" => {
         DESC => "Count of all unique Barcodes",
@@ -189,6 +553,55 @@ my %stats = (
         DESC => "Count of all works",
         SQL => "SELECT COUNT(*) FROM work",
     },
+    "count.work.has_iswc" => {
+        DESC => "Count of all works with at least one ISWC",
+        SQL => "SELECT COUNT(DISTINCT work) FROM iswc",
+    },
+    "count.work.language" => {
+        DESC => "Distribution of works by lyrics language",
+        CALC => sub {
+            my ($self, $sql) = @_;
+
+            my $data = $sql->select_list_of_lists(
+                "SELECT COALESCE(l.iso_code_3::text, 'null'), COUNT(w.gid) AS count
+                FROM work w FULL OUTER JOIN language l
+                    ON w.language=l.id
+                WHERE l.iso_code_2t IS NOT NULL OR l.frequency > 0
+                GROUP BY l.iso_code_3
+                ",
+            );
+
+            my %dist = map { @$_ } @$data;
+
+            +{
+                map {
+                    "count.work.language.".$_ => $dist{$_}
+                } keys %dist
+            };
+        },
+    },
+    "count.work.type" => {
+        DESC => "Distribution of works by type",
+        CALC => sub {
+            my ($self, $sql) = @_;
+
+            my $data = $sql->select_list_of_lists(
+                "SELECT COALESCE(type.id::text, 'null'), COUNT(work.id) AS count
+                 FROM work_type type
+                 FULL OUTER JOIN work ON work.type = type.id
+                 GROUP BY type.id",
+            );
+
+            my %dist = map { @$_ } @$data;
+            $dist{null} ||= 0;
+
+            +{
+                map {
+                    "count.work.type.".$_ => $dist{$_}
+                } keys %dist
+            };
+        },
+    },
     "count.artistcredit" => {
         DESC => "Count of all artist credits",
         SQL => "SELECT COUNT(*) FROM artist_credit",
@@ -203,11 +616,27 @@ my %stats = (
     },
     "count.ipi.artist" => {
         DESC => "Count of artists with an IPI code",
-        SQL => "SELECT COUNT(*) FROM artist WHERE ipi_code IS NOT NULL",
+        SQL => "SELECT COUNT(DISTINCT artist) FROM artist_ipi",
     },
     "count.ipi.label" => {
         DESC => "Count of labels with an IPI code",
-        SQL => "SELECT COUNT(*) FROM label WHERE ipi_code IS NOT NULL",
+        SQL => "SELECT COUNT(DISTINCT label) FROM label_ipi",
+    },
+    "count.isni" => {
+        DESC => "Count of ISNI codes",
+        PREREQ => [qw[ count.isni.artist count.isni.label ]],
+        CALC => sub {
+            my ($self, $sql) = @_;
+            return $self->fetch("count.isni.artist") + $self->fetch("count.isni.label");
+        },
+    },
+    "count.isni.artist" => {
+        DESC => "Count of artists with an ISNI code",
+        SQL => "SELECT COUNT(DISTINCT artist) FROM artist_isni",
+    },
+    "count.isni.label" => {
+        DESC => "Count of labels with an ISNI code",
+        SQL => "SELECT COUNT(DISTINCT label) FROM label_isni",
     },
     "count.isrc.all" => {
         DESC => "Count of all ISRCs joined to recordings",
@@ -218,17 +647,17 @@ my %stats = (
         SQL => "SELECT COUNT(distinct isrc) FROM isrc",
     },
     "count.iswc.all" => {
-        DESC => "Count of all works with an ISWC",
-        SQL => "SELECT COUNT(*) FROM work WHERE iswc IS NOT NULL",
+        DESC => "Count of all ISWCs",
+        SQL => "SELECT COUNT(*) FROM iswc",
     },
     "count.iswc" => {
         DESC => "Count of unique ISWCs",
-        SQL => "SELECT COUNT(distinct iswc) FROM work WHERE iswc IS NOT NULL",
+        SQL => "SELECT COUNT(distinct iswc) FROM iswc",
     },
     "count.vote" => {
         DESC => "Count of all votes",
         SQL => "SELECT COUNT(*) FROM vote",
-        DB => 'READWRITE'
+        NONREPLICATED => 1,
     },
 
     "count.label.country" => {
@@ -237,10 +666,11 @@ my %stats = (
             my ($self, $sql) = @_;
 
             my $data = $sql->select_list_of_lists(
-                "SELECT COALESCE(c.iso_code::text, 'null'), COUNT(l.gid) AS count
-                FROM label l FULL OUTER JOIN country c
-                    ON l.country=c.id
-                GROUP BY c.iso_code
+                "SELECT COALESCE(iso.code::text, 'null'), COUNT(l.gid) AS count
+                FROM label l FULL OUTER JOIN country_area c
+                    ON l.area=c.area
+                JOIN iso_3166_1 iso ON c.area = iso.area
+                GROUP BY iso.code
                 ",
             );
 
@@ -260,10 +690,12 @@ my %stats = (
             my ($self, $sql) = @_;
 
             my $data = $sql->select_list_of_lists(
-                "SELECT COALESCE(c.iso_code::text, 'null'), COUNT(r.gid) AS count
-                FROM release r FULL OUTER JOIN country c
-                    ON r.country=c.id
-                GROUP BY c.iso_code
+                "SELECT COALESCE(iso.code::text, 'null'), COUNT(r.gid) AS count
+                FROM release r
+                LEFT JOIN release_country rc ON r.id = rc.release
+                FULL OUTER JOIN country_area c ON rc.country = c.area
+                JOIN iso_3166_1 iso ON c.area = iso.area
+                GROUP BY iso.code
                 ",
             );
 
@@ -324,10 +756,11 @@ my %stats = (
             my ($self, $sql) = @_;
 
             my $data = $sql->select_list_of_lists(
-                "SELECT COALESCE(l.iso_code_3t::text, 'null'), COUNT(r.gid) AS count
+                "SELECT COALESCE(l.iso_code_3::text, 'null'), COUNT(r.gid) AS count
                 FROM release r FULL OUTER JOIN language l
                     ON r.language=l.id
-                GROUP BY l.iso_code_3t
+                WHERE l.iso_code_2t IS NOT NULL OR l.frequency > 0
+                GROUP BY l.iso_code_3
                 ",
             );
 
@@ -358,6 +791,50 @@ my %stats = (
             +{
                 map {
                     "count.release.script.".$_ => $dist{$_}
+                } keys %dist
+            };
+        },
+    },
+    "count.release.status" => {
+        DESC => "Distribution of releases by status",
+        CALC => sub {
+            my ($self, $sql) = @_;
+
+            my $data = $sql->select_list_of_lists(
+                "SELECT COALESCE(s.id::text, 'null'), COUNT(r.gid) AS count
+                FROM release r FULL OUTER JOIN release_status s
+                    ON r.status=s.id
+                GROUP BY s.id
+                ",
+            );
+
+            my %dist = map { @$_ } @$data;
+
+            +{
+                map {
+                    "count.release.status.".$_ => $dist{$_}
+                } keys %dist
+            };
+        },
+    },
+    "count.release.packaging" => {
+        DESC => "Distribution of releases by packaging",
+        CALC => sub {
+            my ($self, $sql) = @_;
+
+            my $data = $sql->select_list_of_lists(
+                "SELECT COALESCE(p.id::text, 'null'), COUNT(r.gid) AS count
+                FROM release r FULL OUTER JOIN release_packaging p
+                    ON r.packaging=p.id
+                GROUP BY p.id
+                ",
+            );
+
+            my %dist = map { @$_ } @$data;
+
+            +{
+                map {
+                    "count.release.packaging.".$_ => $dist{$_}
                 } keys %dist
             };
         },
@@ -393,6 +870,50 @@ my %stats = (
             };
         },
     },
+    "count.releasegroup.primary_type" => {
+        DESC => "Distribution of release groups by primary type",
+        CALC => sub {
+            my ($self, $sql) = @_;
+
+            my $data = $sql->select_list_of_lists(
+                "SELECT type.id, COUNT(rg.id) AS count
+                 FROM release_group_primary_type type
+                 LEFT JOIN release_group rg on rg.type = type.id
+                 GROUP BY type.id",
+            );
+
+            my %dist = map { @$_ } @$data;
+
+            +{
+                map {
+                    "count.releasegroup.primary_type.".$_ => $dist{$_}
+                } keys %dist
+            };
+        },
+    },
+    "count.releasegroup.secondary_type" => {
+        DESC => "Distribution of release groups by secondary type",
+        CALC => sub {
+            my ($self, $sql) = @_;
+
+            my $data = $sql->select_list_of_lists(
+                "SELECT type.id, COUNT(rg.id) AS count
+                 FROM release_group_secondary_type type
+                 LEFT JOIN release_group_secondary_type_join type_join 
+                     ON type.id = type_join.secondary_type
+                 JOIN release_group rg on rg.id = type_join.release_group
+                 GROUP BY type.id",
+            );
+
+            my %dist = map { @$_ } @$data;
+
+            +{
+                map {
+                    "count.releasegroup.secondary_type.".$_ => $dist{$_}
+                } keys %dist
+            };
+        },
+    },
     "count.release.various" => {
         DESC => "Count of all 'Various Artists' releases",
         SQL => 'SELECT COUNT(*) FROM release
@@ -421,6 +942,11 @@ my %stats = (
                   FROM medium_cdtoc
                   JOIN medium ON medium_cdtoc.medium = medium.id",
     },
+    "count.release.has_caa" => {
+        DESC => 'Count of releases that have cover art at the Cover Art Archive',
+        SQL => 'SELECT count(DISTINCT release) FROM cover_art_archive.cover_art',
+        PRIVATE => 1,
+    },
 
     "count.recording.has_isrc" => {
         DESC => "Count of recordings with at least one ISRC",
@@ -433,7 +959,6 @@ my %stats = (
 
     "count.edit.open" => {
         DESC => "Count of open edits",
-        DB => 'READWRITE',
         CALC => sub {
             my ($self, $sql) = @_;
 
@@ -454,71 +979,98 @@ my %stats = (
                 "count.edit.deleted"        => $dist{$STATUS_DELETED}       || 0,
             };
         },
+        NONREPLICATED => 1,
     },
     "count.edit.applied" => {
         DESC => "Count of applied edits",
         PREREQ => [qw[ count.edit.open ]],
         PREREQ_ONLY => 1,
+        NONREPLICATED => 1,
     },
     "count.edit.failedvote" => {
         DESC => "Count of edits which were voted down",
         PREREQ => [qw[ count.edit.open ]],
         PREREQ_ONLY => 1,
+        NONREPLICATED => 1,
     },
     "count.edit.faileddep" => {
         DESC => "Count of edits which failed their dependency check",
         PREREQ => [qw[ count.edit.open ]],
         PREREQ_ONLY => 1,
+        NONREPLICATED => 1,
     },
     "count.edit.error" => {
         DESC => "Count of edits which failed because of an internal error",
         PREREQ => [qw[ count.edit.open ]],
         PREREQ_ONLY => 1,
+        NONREPLICATED => 1,
     },
     "count.edit.failedprereq" => {
         DESC => "Count of edits which failed because a prerequisitite moderation failed",
         PREREQ => [qw[ count.edit.open ]],
         PREREQ_ONLY => 1,
+        NONREPLICATED => 1,
     },
     "count.edit.evalnochange" => {
         DESC => "Count of evalnochange edits",
         PREREQ => [qw[ count.edit.open ]],
         PREREQ_ONLY => 1,
+        NONREPLICATED => 1,
     },
     "count.edit.deleted" => {
         DESC => "Count of deleted edits",
         PREREQ => [qw[ count.edit.open ]],
         PREREQ_ONLY => 1,
+        NONREPLICATED => 1,
     },
     "count.edit.perday" => {
         DESC => "Count of edits per day",
         SQL => "SELECT count(id) FROM edit
                 WHERE open_time >= (now() - interval '1 day')
                   AND editor NOT IN (". $EDITOR_FREEDB .", ". $EDITOR_MODBOT .")",
-        DB => 'READWRITE'
+        NONREPLICATED => 1,
     },
     "count.edit.perweek" => {
         DESC => "Count of edits per week",
         SQL => "SELECT count(id) FROM edit
                 WHERE open_time >= (now() - interval '7 days')
                   AND editor NOT IN (". $EDITOR_FREEDB .", ". $EDITOR_MODBOT .")",
-        DB => 'READWRITE'
+        NONREPLICATED => 1,
+    },
+    "count.edit.type" => {
+	DESC => "Count of edits by type",
+        CALC => sub {
+            my ($self, $sql) = @_;
+
+	    my $data = $sql->select_list_of_lists(
+                "SELECT type, count(id) AS count 
+		FROM edit GROUP BY type",
+	    );
+
+            my %dist = map { @$_ } @$data;
+
+            +{
+                map {
+                    "count.edit.type.".$_ => $dist{$_}
+                } keys %dist
+            };
+	}
     },
 
     "count.cdstub" => {
         DESC => "Count of all existing CD Stubs",
         SQL => "SELECT COUNT(*) FROM release_raw",
-        DB => 'READWRITE'
+        NONREPLICATED => 1,
     },
     "count.cdstub.submitted" => {
         DESC => "Count of all submitted CD Stubs",
         SQL => "SELECT MAX(id) FROM release_raw",
-        DB => 'READWRITE'
+        NONREPLICATED => 1,
     },
     "count.cdstub.track" => {
         DESC => "Count of all CD Stub tracks",
         SQL => "SELECT COUNT(*) FROM track_raw",
-        DB => 'READWRITE'
+        NONREPLICATED => 1,
     },
 
     "count.artist.country" => {
@@ -527,10 +1079,11 @@ my %stats = (
             my ($self, $sql) = @_;
 
             my $data = $sql->select_list_of_lists(
-                "SELECT COALESCE(c.iso_code::text, 'null'), COUNT(a.gid) AS count
-                FROM artist a FULL OUTER JOIN country c
-                    ON a.country=c.id
-                GROUP BY c.iso_code
+                "SELECT COALESCE(iso.code::text, 'null'), COUNT(a.gid) AS count
+                FROM artist a FULL OUTER JOIN country_area c
+                    ON a.area=c.area
+                JOIN iso_3166_1 iso ON c.area = iso.area
+                GROUP BY iso.code
                 ",
             );
 
@@ -546,7 +1099,6 @@ my %stats = (
 
     "count.vote.yes" => {
         DESC => "Count of 'yes' votes",
-        DB => 'READWRITE',
         CALC => sub {
             my ($self, $sql) = @_;
 
@@ -563,35 +1115,39 @@ my %stats = (
                 "count.vote.approve"    => $dist{$VOTE_APPROVE} || 0,
             };
         },
+        NONREPLICATED => 1,
     },
     "count.vote.no" => {
         DESC => "Count of 'no' votes",
         PREREQ => [qw[ count.vote.yes ]],
         PREREQ_ONLY => 1,
+        NONREPLICATED => 1,
     },
     "count.vote.abstain" => {
         DESC => "Count of 'abstain' votes",
         PREREQ => [qw[ count.vote.yes ]],
         PREREQ_ONLY => 1,
+        NONREPLICATED => 1,
     },
     "count.vote.approve" => {
         DESC => "Count of auto-editor approvals",
         PREREQ => [qw[ count.vote.yes ]],
         PREREQ_ONLY => 1,
+        NONREPLICATED => 1,
     },
     "count.vote.perday" => {
         DESC => "Count of votes per day",
-        DB => 'READWRITE',
         SQL => "SELECT count(id) FROM vote
                 WHERE vote_time >= (now() - interval '1 day')
                   AND vote <> ". $VOTE_ABSTAIN,
+        NONREPLICATED => 1,
     },
     "count.vote.perweek" => {
         DESC => "Count of votes per week",
-        DB => 'READWRITE',
         SQL => "SELECT count(id) FROM vote
                 WHERE vote_time >= (now() - interval '7 days')
                   AND vote <> ". $VOTE_ABSTAIN,
+        NONREPLICATED => 1,
     },
 
     # count active moderators in last week(?)
@@ -599,7 +1155,6 @@ my %stats = (
 
     "count.editor.editlastweek" => {
         DESC => "Count of editors who have submitted edits during the last week",
-        DB => 'READWRITE',
         CALC => sub {
             my ($self, $sql) = @_;
 
@@ -650,16 +1205,19 @@ my %stats = (
                 "count.editor.activelastweek"=> $both,
             };
         },
+        NONREPLICATED => 1,
     },
     "count.editor.votelastweek" => {
         DESC => "Count of editors who have voted on edits during the last week",
         PREREQ => [qw[ count.editor.editlastweek ]],
         PREREQ_ONLY => 1,
+        NONREPLICATED => 1,
     },
     "count.editor.activelastweek" => {
         DESC => "Count of active editors (editing or voting) during the last week",
         PREREQ => [qw[ count.editor.editlastweek ]],
         PREREQ_ONLY => 1,
+        NONREPLICATED => 1,
     },
 
     # To add?
@@ -676,32 +1234,38 @@ my %stats = (
     "count.tag.raw.artist" => {
         DESC => "Count of all artist raw tags",
         SQL => "SELECT COUNT(*) FROM artist_tag_raw",
-        DB => 'READWRITE'
+        NONREPLICATED => 1,
+        PRIVATE => 1,
     },
     "count.tag.raw.label" => {
         DESC => "Count of all label raw tags",
         SQL => "SELECT COUNT(*) FROM label_tag_raw",
-        DB => 'READWRITE'
+        NONREPLICATED => 1,
+        PRIVATE => 1,
     },
     "count.tag.raw.releasegroup" => {
         DESC => "Count of all release-group raw tags",
         SQL => "SELECT COUNT(*) FROM release_group_tag_raw",
-        DB => 'READWRITE'
+        NONREPLICATED => 1,
+        PRIVATE => 1,
     },
     "count.tag.raw.release" => {
         DESC => "Count of all release raw tags",
         SQL => "SELECT COUNT(*) FROM release_tag_raw",
-        DB => 'READWRITE'
+        NONREPLICATED => 1,
+        PRIVATE => 1,
     },
     "count.tag.raw.recording" => {
         DESC => "Count of all recording raw tags",
         SQL => "SELECT COUNT(*) FROM recording_tag_raw",
-        DB => 'READWRITE'
+        NONREPLICATED => 1,
+        PRIVATE => 1,
     },
     "count.tag.raw.work" => {
         DESC => "Count of all work raw tags",
         SQL => "SELECT COUNT(*) FROM work_tag_raw",
-        DB => 'READWRITE'
+        NONREPLICATED => 1,
+        PRIVATE => 1,
     },
     "count.tag.raw" => {
         DESC => "Count of all raw tags",
@@ -715,6 +1279,8 @@ my %stats = (
                    $self->fetch('count.tag.raw.work') +
                    $self->fetch('count.tag.raw.recording');
         },
+        NONREPLICATED => 1,
+        PRIVATE => 1,
     },
 
     # Ratings
@@ -1031,7 +1597,7 @@ my %stats = (
 
             $dist{0} = $self->fetch("count.recording")
                 - $self->fetch("count.recording.has_puid");
-            
+
             +{
                 map {
                     "count.recording.".$_."puids" => $dist{$_}
@@ -1050,17 +1616,12 @@ my %stats = (
             my $data = $sql->select_list_of_lists(
                 "SELECT c, COUNT(*) AS freq
                 FROM (
-                    SELECT r.id, count(*) AS c
-                    FROM recording r
-                        JOIN track t ON t.recording = r.id
-                        JOIN tracklist tl ON tl.id = t.tracklist
-                        JOIN medium m ON tl.id = m.tracklist
-                    GROUP BY r.id 
-                    UNION
-                    SELECT r.id, 0 AS c
-                    FROM recording r
+                    SELECT r.id, count(distinct release.id) as c
+                        FROM recording r
                         LEFT JOIN track t ON t.recording = r.id
-                    WHERE t.id IS NULL
+                        LEFT JOIN medium m ON t.medium = m.id
+                        LEFT JOIN release on m.release = release.id
+                    GROUP BY r.id
                 ) AS t
                 GROUP BY c
                 ",
@@ -1082,6 +1643,49 @@ my %stats = (
                 } keys %dist
             };
         },
+    },
+
+    "count.ar.links.table.type_name" => {
+        DESC => "Count of advanced relationship links by type, inclusive of child counts and exclusive",
+        CALC => sub {
+            my ($self, $sql) = @_;
+            my %dist;
+            for my $t ($self->c->model('Relationship')->all_pairs) {
+                my $table = join('_', 'l', @$t);
+                my $data = $sql->select_list_of_hashes(
+                    "SELECT lt.id, lt.name, lt.parent, count(l_table.id) 
+                     FROM $table l_table 
+                         RIGHT JOIN link ON l_table.link = link.id
+                         RIGHT JOIN 
+                             (SELECT * FROM link_type WHERE entity_type0 = ? AND entity_type1 = ?) 
+                         AS lt ON link.link_type = lt.id
+                     GROUP BY lt.name, lt.id, lt.parent", @$t
+                );
+                for (@$data) {
+                    $dist{ $table . '.' . $_->{name} } = $_->{count};
+                    $dist{ $table . '.' . $_->{name} . '.inclusive' } = $_->{count};
+                }
+                for (@$data) {
+                    my $parent = $_->{parent};
+                    my $count = $_->{count};
+                    while (defined $parent) {
+                        my @parent_obj = grep { $_->{id} == $parent } @$data;
+                        my $parent_obj = $parent_obj[0] if scalar(@parent_obj) == 1;
+                        die unless $parent_obj;
+
+                        $dist{ $table . '.' . $parent_obj->{name} . '.inclusive' } += $count;
+
+                        $parent = $parent_obj->{parent};
+                    }
+                }
+            }
+
+            +{
+                map {
+                    "count.ar.links.".$_ => $dist{$_}
+                } keys %dist
+            };
+        }
     },
 
     "count.ar.links" => {
@@ -1116,12 +1720,14 @@ my %stats = (
 );
 
 sub recalculate {
-    my ($self, $statistic) = @_;
+    my ($self, $statistic, $output_file) = @_;
 
     my $definition = $stats{$statistic}
         or warn("Unknown statistic '$statistic'"), return;
 
     return if $definition->{PREREQ_ONLY};
+    return if $definition->{NONREPLICATED} && DBDefs->REPLICATION_TYPE == RT_SLAVE;
+    return if $definition->{PRIVATE} && DBDefs->REPLICATION_TYPE != RT_MASTER;
 
     my $db = $definition->{DB} || 'READWRITE';
     my $sql = $db eq 'READWRITE' ? $self->sql
@@ -1129,7 +1735,7 @@ sub recalculate {
 
     if (my $query = $definition->{SQL}) {
         my $value = $sql->select_single_value($query);
-		$self->insert($statistic => $value);
+                $self->insert($output_file, $statistic => $value);
         return;
     }
 
@@ -1137,9 +1743,9 @@ sub recalculate {
         my $output = $calculate->($self, $sql);
         if (ref($output) eq "HASH")
         {
-            $self->insert(%$output);
+            $self->insert($output_file, %$output);
         } else {
-            $self->insert($statistic => $output);
+            $self->insert($output_file, $statistic => $output);
         }
     }
 }
@@ -1147,6 +1753,7 @@ sub recalculate {
 sub recalculate_all
 {
     my $self = shift;
+    my $output_file = shift;
 
     my %notdone = %stats;
     my %done;
@@ -1162,7 +1769,7 @@ sub recalculate_all
             next if grep { $notdone{$_} } @$d;
 
             # $name has no unsatisfied dependencies.  Let's do it!
-            $self->recalculate($name);
+            $self->recalculate($name, $output_file);
 
             $done{$name} = delete $notdone{$name};
             ++$count;

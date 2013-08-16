@@ -1,6 +1,4 @@
-[%- WRAPPER "layout.tt" title=l("Search Results") full_width=1 -%]
-    <div id="content">
-        <h1>[%- l("Search Results") -%]</h1>
+[% WRAPPER 'search/results-layout.tt' %]
         [%- IF results.size -%]
             [%- WRAPPER 'components/with-pager.tt' search=1 -%]
                 <table class="tbl">
@@ -11,13 +9,15 @@
                             <th>[%- l('Writers') -%]</th>
                             <th>[%- l('Artists') -%]</th>
                             <th>[%- l('ISWC') -%]</th>
+                            <th>[%- l('Type') -%]</th>
+                            <th>[%- l('Language') -%]</th>
                         </tr>
                     </thead>
                     <tbody>
                         [%- FOR result=results -%]
                         <tr[%- ' class="ev"' IF loop.count % 2 == 0 -%]>
                             <td>[%- result.score -%]</td>
-                            <td>[%- descriptive_link(result.entity) -%]</td>
+                            <td>[%- link_entity(result.entity) -%]</td>
                             <td>
                               <ul>
                                 [% FOR rel_artist=result.entity.writers %]
@@ -34,7 +34,21 @@
                               [%- END -%]
                               </ul>
                             </td>
-                            <td>[% result.entity.iswc %]</td>
+                            <td>
+                              <ul>
+                                [% FOR iswc=result.entity.iswcs %]
+                                  <li>[%- link_iswc(iswc.iswc) -%]</li>
+                                [% END %]
+                              </ul>
+                            </td>
+                            <td>
+                                [% result.entity.type.l_name %]
+                            </td>
+                            <td>
+                              <abbr title="[% result.entity.language.l_name %]">
+                                [% result.entity.language.iso_code_3 %]
+                              </abbr>
+                            </td>
                         </tr>
                         [%- END -%]
                     </tbody>
@@ -42,13 +56,11 @@
             [%- END -%]
         [%- ELSE -%]
             <p>[% l('No results found. Try refining your search query.') %]</p>
-            <p>
-              [% l('Alternatively, you may {uri|add a new work}.', {
-                    uri => c.uri_for_action('/work/create', {
-                             'edit-work.name' => query
-                           }) }) %]
-            </p>
         [%- END -%]
-        [%- INCLUDE "search/form.tt" -%]
-    </div>
+        <p>
+          [% l('Alternatively, you may {uri|add a new work}.', {
+                uri => c.uri_for_action('/work/create', {
+                         'edit-work.name' => query
+                       }) }) %]
+        </p>
 [%- END -%]

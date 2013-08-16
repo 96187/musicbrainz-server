@@ -11,14 +11,22 @@ has 'position' => (
     isa => 'Int'
 );
 
-has 'tracklist_id' => (
+has 'track_count' => (
     is => 'rw',
-    isa => 'Int'
+    isa => 'Int',
 );
 
-has 'tracklist' => (
+has 'tracks' => (
     is => 'rw',
-    isa => 'Tracklist'
+    isa => 'ArrayRef[Track]',
+    lazy => 1,
+    default => sub { [] },
+    traits => [ 'Array' ],
+    handles => {
+        all_tracks => 'elements',
+        add_track => 'push',
+        clear_tracks => 'clear',
+    }
 );
 
 has 'release_id' => (
@@ -43,13 +51,19 @@ has 'format_id' => (
 
 has 'format' => (
     is => 'rw',
-    isa => 'MediumFormat',
+    isa => 'Maybe[MediumFormat]',
 );
 
 sub format_name
 {
     my ($self) = @_;
     return $self->format ? $self->format->name : undef;
+}
+
+sub l_format_name
+{
+    my ($self) = @_;
+    return $self->format ? $self->format->l_name : undef;
 }
 
 has 'cdtocs' => (
@@ -67,6 +81,45 @@ has 'cdtocs' => (
 sub may_have_discids {
     my $self = shift;
     return !$self->format || $self->format->has_discids;
+}
+
+
+=head2 length
+
+Attempt to return the duration of the medium in microseconds.  This
+will return the length of the disc, by looking at the associated
+discids or tracklists.
+
+This will not load any data from the database, so make sure you load
+either the associated tracklists + tracks, the MediumCDTOC +
+CDTOC, or both.
+
+=cut
+
+sub length {
+    my $self = shift;
+
+    if (scalar $self->all_tracks > 0)
+    {
+        my $length = 0;
+
+        for my $trk ($self->all_tracks)
+        {
+            return undef unless defined $trk->length;
+
+            $length += $trk->length;
+        }
+
+        return $length;
+    }
+    elsif ($self->cdtocs->[0] && $self->cdtocs->[0]->cdtoc)
+    {
+        return $self->cdtocs->[0]->cdtoc->length;
+    }
+    else
+    {
+        return undef;
+    }
 }
 
 __PACKAGE__->meta->make_immutable;

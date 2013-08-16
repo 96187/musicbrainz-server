@@ -18,9 +18,9 @@ my $test = shift;
 my $c = $test->c;
 my $v2 = schema_validator;
 my $diff = XML::SemanticDiff->new;
-my $mech = $test->mech;
 
 MusicBrainz::Server::Test->prepare_test_database($c, '+webservice');
+MusicBrainz::Server::Test->prepare_test_database($c, '+webservice_annotation');
 
 ws_test 'basic recording lookup',
     '/recording/162630d9-36d2-4a8d-ade1-1c77440b34e7' =>
@@ -38,23 +38,64 @@ ws_test 'recording lookup with releases',
     <recording id="162630d9-36d2-4a8d-ade1-1c77440b34e7">
         <title>サマーれげぇ!レインボー</title><length>296026</length>
         <release-list count="2">
-            <release id="0385f276-5f4f-4c81-a7a4-6bd7b8d85a7e">
-                <title>サマーれげぇ!レインボー</title><status>Official</status>
-                <quality>normal</quality>
-                <text-representation>
-                    <language>jpn</language><script>Jpan</script>
-                </text-representation>
-                <date>2001-07-04</date><country>JP</country><barcode>4942463511227</barcode>
-            </release>
-            <release id="b3b7e934-445b-4c68-a097-730c6a6d47e6">
-                <title>Summer Reggae! Rainbow</title><status>Pseudo-Release</status>
-                <quality>normal</quality>
-                <text-representation>
-                    <language>jpn</language><script>Latn</script>
-                </text-representation>
-                <date>2001-07-04</date><country>JP</country><barcode>4942463511227</barcode>
-            </release>
+          <release id="0385f276-5f4f-4c81-a7a4-6bd7b8d85a7e">
+            <title>サマーれげぇ!レインボー</title>
+            <status>Official</status>
+            <quality>normal</quality>
+            <text-representation>
+              <language>jpn</language><script>Jpan</script>
+            </text-representation>
+            <date>2001-07-04</date>
+            <country>JP</country>
+            <release-event-list count="1">
+                <release-event>
+                    <date>2001-07-04</date>
+                    <area id="2db42837-c832-3c27-b4a3-08198f75693c">
+                        <name>Japan</name>
+                        <sort-name>Japan</sort-name>
+                        <iso-3166-1-code-list>
+                            <iso-3166-1-code>JP</iso-3166-1-code>
+                        </iso-3166-1-code-list>
+                    </area>
+                </release-event>
+            </release-event-list>
+            <barcode>4942463511227</barcode>
+          </release>
+          <release id="b3b7e934-445b-4c68-a097-730c6a6d47e6">
+            <title>Summer Reggae! Rainbow</title>
+            <status>Pseudo-Release</status>
+            <quality>normal</quality>
+            <text-representation>
+              <language>jpn</language><script>Latn</script>
+            </text-representation>
+            <date>2001-07-04</date>
+            <country>JP</country>
+            <release-event-list count="1">
+                <release-event>
+                    <date>2001-07-04</date>
+                    <area id="2db42837-c832-3c27-b4a3-08198f75693c">
+                        <name>Japan</name>
+                        <sort-name>Japan</sort-name>
+                        <iso-3166-1-code-list>
+                            <iso-3166-1-code>JP</iso-3166-1-code>
+                        </iso-3166-1-code-list>
+                    </area>
+                </release-event>
+            </release-event-list>
+            <barcode>4942463511227</barcode>
+          </release>
         </release-list>
+    </recording>
+</metadata>';
+
+ws_test 'recording lookup, inc=annotation',
+    '/recording/6e89c516-b0b6-4735-a758-38e31855dcb6?inc=annotation' =>
+    '<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="http://musicbrainz.org/ns/mmd-2.0#">
+    <recording id="6e89c516-b0b6-4735-a758-38e31855dcb6">
+        <title>Plock</title>
+        <length>237133</length>
+        <annotation><text>this is a recording annotation</text></annotation>
     </recording>
 </metadata>';
 
@@ -66,13 +107,28 @@ ws_test 'lookup recording with official singles',
         <title>サマーれげぇ!レインボー</title><length>296026</length>
         <release-list count="1">
             <release id="0385f276-5f4f-4c81-a7a4-6bd7b8d85a7e">
-                <title>サマーれげぇ!レインボー</title><status>Official</status>
-                <quality>normal</quality>
-                <text-representation>
-                    <language>jpn</language><script>Jpan</script>
-                </text-representation>
-                <date>2001-07-04</date><country>JP</country><barcode>4942463511227</barcode>
-            </release>
+            <title>サマーれげぇ!レインボー</title>
+            <status>Official</status>
+            <quality>normal</quality>
+            <text-representation>
+              <language>jpn</language><script>Jpan</script>
+            </text-representation>
+            <date>2001-07-04</date>
+            <country>JP</country>
+            <release-event-list count="1">
+                <release-event>
+                    <date>2001-07-04</date>
+                    <area id="2db42837-c832-3c27-b4a3-08198f75693c">
+                        <name>Japan</name>
+                        <sort-name>Japan</sort-name>
+                        <iso-3166-1-code-list>
+                            <iso-3166-1-code>JP</iso-3166-1-code>
+                        </iso-3166-1-code-list>
+                    </area>
+                </release-event>
+            </release-event-list>
+            <barcode>4942463511227</barcode>
+          </release>
         </release-list>
     </recording>
 </metadata>';
@@ -85,14 +141,34 @@ ws_test 'lookup recording with official singles (+media)',
         <title>サマーれげぇ!レインボー</title><length>296026</length>
         <release-list count="1">
             <release id="0385f276-5f4f-4c81-a7a4-6bd7b8d85a7e">
-                <title>サマーれげぇ!レインボー</title><status>Official</status><date>2001-07-04</date><country>JP</country>
+                <title>サマーれげぇ!レインボー</title>
+                <status>Official</status>
                 <quality>normal</quality>
+                <date>2001-07-04</date>
+                <text-representation>
+                  <language>jpn</language>
+                  <script>Jpan</script>
+                </text-representation>
+                <country>JP</country>
+                <release-event-list count="1">
+                    <release-event>
+                        <date>2001-07-04</date>
+                        <area id="2db42837-c832-3c27-b4a3-08198f75693c">
+                            <name>Japan</name>
+                            <sort-name>Japan</sort-name>
+                            <iso-3166-1-code-list>
+                                <iso-3166-1-code>JP</iso-3166-1-code>
+                            </iso-3166-1-code-list>
+                        </area>
+                    </release-event>
+                </release-event-list>
+                <barcode>4942463511227</barcode>
                 <medium-list count="1">
                     <medium>
                         <position>1</position><format>CD</format>
                         <track-list count="3" offset="0">
-                            <track>
-                                <position>1</position>
+                            <track id="4a7c2f1e-cf40-383c-a1c1-d1272d8234cd">
+                                <position>1</position><number>1</number>
                                 <title>サマーれげぇ!レインボー</title>
                                 <length>296026</length>
                             </track>
@@ -137,6 +213,33 @@ ws_test 'recording lookup with puids and isrcs',
         <isrc-list count="1">
             <isrc id="JPA600102450" />
         </isrc-list>
+    </recording>
+</metadata>';
+
+ws_test 'recording lookup with release relationships',
+    '/recording/37a8d72a-a9c9-4edc-9ecf-b5b58e6197a9?inc=release-rels' =>
+    '<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="http://musicbrainz.org/ns/mmd-2.0#">
+    <recording id="37a8d72a-a9c9-4edc-9ecf-b5b58e6197a9">
+        <title>Dear Diary</title>
+        <length>86666</length>
+        <relation-list target-type="release">
+            <relation type-id="967746f9-9d79-456c-9d1e-50116f0b27fc" type="samples material">
+                <target>4ccb3e54-caab-4ad4-94a6-a598e0e52eec</target>
+                <begin>2008</begin>
+                <release id="4ccb3e54-caab-4ad4-94a6-a598e0e52eec">
+                    <title>An Inextricable Tale Audiobook</title>
+                    <quality>normal</quality>
+                    <date>2007-11-08</date>
+                    <release-event-list count="1">
+                      <release-event>
+                        <date>2007-11-08</date>
+                      </release-event>
+                    </release-event-list>
+                    <barcode>634479663338</barcode>
+                </release>
+            </relation>
+        </relation-list>
     </recording>
 </metadata>';
 

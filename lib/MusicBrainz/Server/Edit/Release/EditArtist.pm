@@ -16,7 +16,7 @@ use MusicBrainz::Server::Edit::Utils qw(
     verify_artist_credits
 );
 use MusicBrainz::Server::Data::Utils qw( artist_credit_to_ref );
-use MusicBrainz::Server::Translation 'l';
+use MusicBrainz::Server::Translation qw( l N_l );
 
 extends 'MusicBrainz::Server::Edit';
 with 'MusicBrainz::Server::Edit::Role::Preview';
@@ -25,7 +25,7 @@ with 'MusicBrainz::Server::Edit::Release';
 
 use aliased 'MusicBrainz::Server::Entity::Release';
 
-sub edit_name { l('Edit release artist') }
+sub edit_name { N_l('Edit release artist') }
 sub edit_type { $EDIT_RELEASE_ARTIST }
 sub release_id { shift->data->{release}{id} }
 
@@ -137,7 +137,7 @@ sub accept {
 
     if (!$release) {
         MusicBrainz::Server::Edit::Exceptions::FailedDependency->throw(
-            l('This edit cannot be applied, as the release being edited no longer exists.')
+            'This edit cannot be applied, as the release being edited no longer exists.'
         );
     }
 
@@ -155,28 +155,17 @@ sub accept {
 
     if ($self->data->{update_tracklists}) {
         $self->c->model('Medium')->load_for_releases($release);
-        $self->c->model('Track')->load_for_tracklists(
-            map { $_->tracklist } $release->all_mediums);
+        $self->c->model('Track')->load_for_mediums($release->all_mediums);
         $self->c->model('ArtistCredit')->load(
-            map { $_->tracklist->all_tracks } $release->all_mediums);
+            map { $_->all_tracks } $release->all_mediums);
 
         for my $medium ($release->all_mediums) {
-            $self->c->model('Medium')->update(
-                $medium->id,
-                {
-                    tracklist_id => $self->c->model('Tracklist')->find_or_insert([
-                        map +{
-                            position => $_->position,
-                            name => $_->name,
-                            artist_credit => $_->artist_credit_id != $old_ac_id
-                                ? artist_credit_to_ref($_->artist_credit, [])
-                                : $self->data->{new_artist_credit},
-                            recording_id => $_->recording_id,
-                            length => $_->length
-                        }, $medium->tracklist->all_tracks
-                    ])->id
-                }
-            );
+            for my $track ($medium->all_tracks) {
+
+                $self->c->model('Track')->update(
+                    $track->id, { artist_credit => $new_ac_id })
+                    if ($track->artist_credit_id == $old_ac_id);
+            }
         }
     }
 }

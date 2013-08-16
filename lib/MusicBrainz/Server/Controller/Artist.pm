@@ -11,11 +11,14 @@ with 'MusicBrainz::Server::Controller::Role::Annotation';
 with 'MusicBrainz::Server::Controller::Role::Alias';
 with 'MusicBrainz::Server::Controller::Role::Details';
 with 'MusicBrainz::Server::Controller::Role::EditListing';
+with 'MusicBrainz::Server::Controller::Role::IPI';
+with 'MusicBrainz::Server::Controller::Role::ISNI';
 with 'MusicBrainz::Server::Controller::Role::Relationship';
 with 'MusicBrainz::Server::Controller::Role::Rating';
 with 'MusicBrainz::Server::Controller::Role::Tag';
 with 'MusicBrainz::Server::Controller::Role::Subscribe';
 with 'MusicBrainz::Server::Controller::Role::Cleanup';
+with 'MusicBrainz::Server::Controller::Role::WikipediaExtract';
 
 use Data::Page;
 use HTTP::Status qw( :constants );
@@ -30,7 +33,9 @@ use MusicBrainz::Server::Constants qw(
     $EDIT_ARTIST_DELETE
     $EDIT_ARTIST_EDITCREDIT
     $EDIT_RELATIONSHIP_DELETE
+    $ARTIST_ARTIST_COLLABORATION
 );
+use MusicBrainz::Server::ControllerUtils::Release qw( load_release_events );
 use MusicBrainz::Server::Form::Artist;
 use MusicBrainz::Server::Form::Confirm;
 use MusicBrainz::Server::Translation qw( l );
@@ -41,7 +46,7 @@ use MusicBrainz::Server::FilterUtils qw(
 );
 use Sql;
 
-my $COLLABORATION = '75c09861-6857-4ec0-9729-84eefde7fc86';
+use List::AllUtils qw( any );
 
 =head1 NAME
 
@@ -99,7 +104,8 @@ after 'load' => sub
 
     $c->model('ArtistType')->load($artist);
     $c->model('Gender')->load($artist);
-    $c->model('Country')->load($artist);
+    $c->model('Area')->load($artist);
+    $c->model('Area')->load_codes($artist->area);
 
     $c->stash(
         watching_artist =>
@@ -117,49 +123,6 @@ after 'aliases' => sub
     my $artist_credits = $c->model('ArtistCredit')->find_by_artist_id($artist->id);
     $c->stash( artist_credits => $artist_credits );
 };
-
-=head2 similar
-
-Display artists similar to this artist
-
-=cut
-
-sub similar : Chained('load')
-{
-    my ($self, $c) = @_;
-    my $artist = $self->entity;
-
-    $c->stash->{similar_artists} = $c->model('Artist')->find_similar_artists($artist);
-}
-
-=head2 relations
-
-Shows all the entities (except track) that this artist is related to.
-
-=cut
-
-sub relations : Chained('load')
-{
-    my ($self, $c) = @_;
-    my $artist = $self->entity;
-
-    $c->stash->{relations} = $c->model('Relation')->load_relations($artist, to_type => [ 'artist', 'url', 'label', 'album' ]);
-}
-
-=head2 appearances
-
-Display a list of releases that an artist appears on via advanced
-relations.
-
-=cut
-
-sub appearances : Chained('load')
-{
-    my ($self, $c) = @_;
-    my $artist = $self->entity;
-
-    $c->stash->{releases} = $c->model('Release')->find_linked_albums($artist);
-}
 
 =head2 show
 
@@ -253,7 +216,9 @@ sub works : Chained('load')
     });
     $c->model('Work')->load_writers(@$works);
     $c->model('Work')->load_recording_artists(@$works);
+    $c->model('ISWC')->load_for_works(@$works);
     $c->model('WorkType')->load(@$works);
+    $c->model('Language')->load(@$works);
     if ($c->user_exists) {
         $c->model('Work')->rating->load_user_ratings($c->user->id, @$works);
     }
@@ -386,7 +351,7 @@ sub releases : Chained('load')
     $c->model('ArtistCredit')->load(@$releases);
     $c->model('Medium')->load_for_releases(@$releases);
     $c->model('MediumFormat')->load(map { $_->all_mediums } @$releases);
-    $c->model('Country')->load(@$releases);
+    load_release_events($c, @$releases);
     $c->model('ReleaseLabel')->load(@$releases);
     $c->model('Label')->load(map { $_->all_labels } @$releases);
     $c->stash(
@@ -429,7 +394,7 @@ into the MusicBrainz database.
 
 =cut
 
-sub edit : Chained('load') RequireAuth Edit {
+sub edit : Chained('load') Edit {
     my ($self, $c) = @_;
     my $artist = $c->stash->{artist};
 
@@ -453,6 +418,7 @@ sub edit : Chained('load') RequireAuth Edit {
         on_creation => sub {
             my ($edit, $form) = @_;
 
+            my $editid = $edit->id;
             my $name = $form->field('name')->value;
             if ($name ne $artist->name) {
                 my %rename = %{ $form->rename_artist_credit_set };
@@ -469,8 +435,7 @@ sub edit : Chained('load') RequireAuth Edit {
                     $c->model('EditNote')->add_note(
                         $ac_edit->id,
                         {
-                            text => l('The artist name has been changed in edit #{id}.',
-                                      { id => $edit->id }),
+                            text => "The artist name has been changed in edit #$editid.",
                             editor_id => $EDITOR_MODBOT
                         }
                     );
@@ -513,6 +478,11 @@ around _validate_merge => sub {
     my $target = $form->field('target')->value;
     if (grep { is_special_artist($_) && $target != $_ } $merger->all_entities) {
         $form->field('target')->add_error(l('You cannot merge a special purpose artist into another artist'));
+        return 0;
+    }
+
+    if (any { $_ == $DARTIST_ID } $merger->all_entities) {
+        $form->field('target')->add_error(l('You cannot merge into Deleted Artist'));
         return 0;
     }
 
@@ -609,44 +579,49 @@ sub split : Chained('load') Edit {
         form        => 'EditArtistCredit',
         type        => $EDIT_ARTIST_EDITCREDIT,
         item        => { artist_credit => $ac },
-        edit_args   => { to_edit => $ac }
-    );
+        edit_args   => { to_edit => $ac },
+        on_creation => sub {
+            my ($edit) = @_;
 
-    if ($edit) {
-        my %artists = map { $_ => 1 } $edit->new_artist_ids;
+            my $editid = $edit->id;
+            my %artists = map { $_ => 1 } $edit->new_artist_ids;
 
-        for my $relationship (grep {
-            $_->link->type->gid == $COLLABORATION &&
-            exists $artists{$_->entity0_id} &&
-            $_->entity1_id == $artist->id
-        } $artist->all_relationships) {
-            my $rem = $c->model('Edit')->create(
-                edit_type    => $EDIT_RELATIONSHIP_DELETE,
-                editor_id    => $EDITOR_MODBOT,
-                type0        => 'artist',
-                type1        => 'artist',
-                relationship => $relationship
-            );
+            # Delete any collaboration relationships that the artist being split
+            # was involved in.
+            for my $relationship (
+                grep {
+                    $_->link->type->gid == $ARTIST_ARTIST_COLLABORATION &&
+                    exists $artists{$_->entity0_id} &&
+                    $_->entity1_id == $artist->id
+                } $artist->all_relationships
+            ) {
+                my $rem = $c->model('Edit')->create(
+                    edit_type    => $EDIT_RELATIONSHIP_DELETE,
+                    editor_id    => $c->user->id,
+                    type0        => 'artist',
+                    type1        => 'artist',
+                    relationship => $relationship
+                );
 
-            $c->model('EditNote')->add_note(
-                $rem->id,
-                {
-                    text => l('This collaboration has been split in edit #{id}.',
-                              { id => $edit->id }),
-                    editor_id => $EDITOR_MODBOT
-                }
-            );
+                $c->model('EditNote')->add_note(
+                    $rem->id,
+                    {
+                        text => "This collaboration has been split in edit #$editid.",
+                        editor_id => $c->user->id
+                    }
+                );
+            }
+
+            $c->res->redirect(
+                $c->uri_for_action('/artist/show', [ $artist->gid ]))
         }
-
-        $c->res->redirect(
-            $c->uri_for_action('/artist/show', [ $artist->gid ]))
-    }
+    );
 }
 
 sub can_split {
     my $artist = shift;
     return (grep {
-        $_->link->type->gid != $COLLABORATION
+        $_->link->type->gid != $ARTIST_ARTIST_COLLABORATION
     } $artist->all_relationships) == 0;
 }
 
@@ -657,7 +632,7 @@ sub credit : Chained('load') PathPart('credit') CaptureArgs(1) {
     $c->stash( ac => $ac );
 }
 
-sub edit_credit : Chained('credit') PathPart('edit') RequireAuth Edit {
+sub edit_credit : Chained('credit') PathPart('edit') Edit {
     my ($self, $c) = @_;
     my $artist = $c->stash->{artist};
     my $ac = $c->stash->{ac};
@@ -689,7 +664,7 @@ sub process_filter
     unless (exists $c->req->params->{'filter.cancel'}) {
         my $cookie = $c->req->cookies->{filter};
         my $has_filter_params = grep(/^filter\./, keys %{ $c->req->params });
-        if ($has_filter_params || (defined($cookie) && $cookie->value eq '1')) {
+        if ($has_filter_params || ($cookie && defined($cookie->value) && $cookie->value eq '1')) {
             my $filter_form = $create_form->();
             if ($filter_form->submitted_and_valid($c->req->params)) {
                 for my $name ($filter_form->filter_field_names) {

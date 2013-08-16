@@ -5,6 +5,7 @@ requires 'load';
 
 use MusicBrainz::Server::Constants qw(
     $EDIT_ARTIST_ADD_ALIAS $EDIT_ARTIST_DELETE_ALIAS $EDIT_ARTIST_EDIT_ALIAS
+    $EDIT_AREA_ADD_ALIAS $EDIT_AREA_DELETE_ALIAS $EDIT_AREA_EDIT_ALIAS
     $EDIT_LABEL_ADD_ALIAS $EDIT_LABEL_DELETE_ALIAS $EDIT_LABEL_EDIT_ALIAS
     $EDIT_WORK_ADD_ALIAS $EDIT_WORK_DELETE_ALIAS $EDIT_WORK_EDIT_ALIAS
 );
@@ -12,19 +13,29 @@ use MusicBrainz::Server::Constants qw(
 my %model_to_edit_type = (
     add => {
         Artist => $EDIT_ARTIST_ADD_ALIAS,
+        Area => $EDIT_AREA_ADD_ALIAS,
         Label  => $EDIT_LABEL_ADD_ALIAS,
         Work   => $EDIT_WORK_ADD_ALIAS,
     },
     delete => {
         Artist => $EDIT_ARTIST_DELETE_ALIAS,
+        Area => $EDIT_AREA_DELETE_ALIAS,
         Label  => $EDIT_LABEL_DELETE_ALIAS,
         Work   => $EDIT_WORK_DELETE_ALIAS,
     },
     edit => {
         Artist => $EDIT_ARTIST_EDIT_ALIAS,
+        Area => $EDIT_AREA_EDIT_ALIAS,
         Label  => $EDIT_LABEL_EDIT_ALIAS,
         Work   => $EDIT_WORK_EDIT_ALIAS,
     }
+);
+
+my %model_to_search_hint_type_id = (
+    Artist => 3,
+    Area => 3,
+    Label => 2,
+    Work => 2
 );
 
 sub aliases : Chained('load') PathPart('aliases')
@@ -32,7 +43,9 @@ sub aliases : Chained('load') PathPart('aliases')
     my ($self, $c) = @_;
 
     my $entity = $c->stash->{$self->{entity_name}};
-    my $aliases = $c->model($self->{model})->alias->find_by_entity_id($entity->id);
+    my $m = $c->model($self->{model});
+    my $aliases = $m->alias->find_by_entity_id($entity->id);
+    $m->alias_type->load(@$aliases);
     $c->stash(
         aliases => $aliases,
     );
@@ -46,7 +59,7 @@ sub alias : Chained('load') PathPart('alias') CaptureArgs(1)
     $c->stash( alias => $alias );
 }
 
-sub add_alias : Chained('load') PathPart('add-alias') RequireAuth Edit
+sub add_alias : Chained('load') PathPart('add-alias') Edit
 {
     my ($self, $c) = @_;
     my $type = $self->{entity_name};
@@ -54,17 +67,24 @@ sub add_alias : Chained('load') PathPart('add-alias') RequireAuth Edit
     my $alias_model = $c->model( $self->{model} )->alias;
     $self->edit_action($c,
         form => 'Alias',
-        form_args => { parent_id => $entity->id, alias_model => $alias_model },
+        form_args => {
+            parent_id => $entity->id,
+            alias_model => $alias_model,
+            search_hint_type_id => $model_to_search_hint_type_id{ $self->{model} }
+        },
         type => $model_to_edit_type{add}->{ $self->{model} },
         edit_args => {
             entity => $entity
         },
-        item => $entity,
+        item => {
+            name => $entity->name,
+            id => $entity->id
+        },
         on_creation => sub { $self->_redir_to_aliases($c) }
     );
 }
 
-sub delete_alias : Chained('alias') PathPart('delete') RequireAuth Edit
+sub delete_alias : Chained('alias') PathPart('delete') Edit
 {
     my ($self, $c) = @_;
     my $alias = $c->stash->{alias};
@@ -79,7 +99,7 @@ sub delete_alias : Chained('alias') PathPart('delete') RequireAuth Edit
     );
 }
 
-sub edit_alias : Chained('alias') PathPart('edit') RequireAuth Edit
+sub edit_alias : Chained('alias') PathPart('edit') Edit
 {
     my ($self, $c) = @_;
     my $alias = $c->stash->{alias};
@@ -88,7 +108,12 @@ sub edit_alias : Chained('alias') PathPart('edit') RequireAuth Edit
     my $alias_model = $c->model( $self->{model} )->alias;
     $self->edit_action($c,
         form => 'Alias',
-        form_args => { parent_id => $entity->id, alias_model => $alias_model, id => $alias->id },
+        form_args => {
+            parent_id => $entity->id,
+            alias_model => $alias_model,
+            id => $alias->id,
+            search_hint_type_id => $model_to_search_hint_type_id{ $self->{model} }
+        },
         item => $alias,
         type => $model_to_edit_type{edit}->{ $self->{model} },
         edit_args => {

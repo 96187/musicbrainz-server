@@ -21,12 +21,19 @@ use MusicBrainz::Server::Constants qw(
     $EDIT_RECORDING_EDIT
     $EDIT_RECORDING_MERGE
     $EDIT_RECORDING_ADD_ISRCS
+    $EDIT_RECORDING_REMOVE_ISRC
     $EDIT_PUID_DELETE
+);
+use MusicBrainz::Server::ControllerUtils::Release qw( load_release_events );
+use MusicBrainz::Server::Entity::Util::Release qw(
+    group_by_release_status_nested
 );
 
 use aliased 'MusicBrainz::Server::Entity::ArtistCredit';
+use List::AllUtils qw( any );
 use MusicBrainz::Server::Entity::Recording;
 use MusicBrainz::Server::Translation qw( l );
+use Set::Scalar;
 
 =head1 NAME
 
@@ -58,8 +65,7 @@ after 'load' => sub
     if ($c->user_exists) {
         $c->model('Recording')->rating->load_user_ratings($c->user->id, $recording);
     }
-    my @isrcs = $c->model('ISRC')->find_by_recording($recording->id);
-    $c->stash( isrcs => \@isrcs );
+    $c->model('ISRC')->load_for_recordings($recording);
     $c->model('ArtistCredit')->load($recording);
 };
 
@@ -104,14 +110,20 @@ sub show : Chained('load') PathPart('')
     my $tracks = $self->_load_paged($c, sub {
         $c->model('Track')->find_by_recording($recording->id, shift, shift);
     });
-    my @releases = map { $_->tracklist->medium->release } @$tracks;
+
+    my @releases = map { $_->medium->release } @$tracks;
     $c->model('ArtistCredit')->load($recording, @$tracks, @releases);
-    $c->model('Country')->load(@releases);
+    load_release_events($c, @releases);
     $c->model('ReleaseLabel')->load(@releases);
     $c->model('Label')->load(map { $_->all_labels } @releases);
+    $c->model('ReleaseStatus')->load(@releases);
+
     $self->relationships($c);
     $c->stash(
-        tracks   => $tracks,
+        tracks =>
+            group_by_release_status_nested(
+                sub { shift->medium->release },
+                @$tracks),
         template => 'recording/index.tt',
     );
 }
@@ -138,9 +150,24 @@ Edit recording details (sequence number, recording time and title)
 
 =cut
 
+with 'MusicBrainz::Server::Controller::Role::IdentifierSet' => {
+    entity_type => 'recording',
+    identifier_type => 'isrc',
+    add_edit => $EDIT_RECORDING_ADD_ISRCS,
+    remove_edit => $EDIT_RECORDING_REMOVE_ISRC,
+    include_source => 1
+};
+
 with 'MusicBrainz::Server::Controller::Role::Edit' => {
     form           => 'Recording',
     edit_type      => $EDIT_RECORDING_EDIT,
+    edit_arguments => sub {
+        my ($self, $c, $recording) = @_;
+
+        return (
+            post_creation => $self->edit_with_identifiers($c, $recording)
+        );
+    }
 };
 
 with 'MusicBrainz::Server::Controller::Role::Merge' => {
@@ -155,33 +182,35 @@ with 'MusicBrainz::Server::Controller::Role::Create' => {
     edit_arguments => sub {
         my ($self, $c) = @_;
         my $artist_gid = $c->req->query_params->{artist};
+        my %ret;
         if ( my $artist = $c->model('Artist')->get_by_gid($artist_gid) ) {
             my $rg = MusicBrainz::Server::Entity::Recording->new(
                 artist_credit => ArtistCredit->from_artist($artist)
             );
             $c->stash( initial_artist => $artist );
-            return ( item => $rg );
+            $ret{item} = $rg;
         }
-        else {
-            return ();
-        }
-    }
-};
-
-around create => sub {
-    my ($orig, $self, $c, @args) = @_;
-    if ($c->user_exists && $c->user->is_limited) {
-        $c->stash( template => 'recording/cannot_add.tt' );
-        $c->detach;
-    }
-    else {
-        $self->$orig($c, @args);
+        $ret{post_creation} = $self->create_with_identifiers($c);
+        return %ret;
     }
 };
 
 before '_merge_confirm' => sub {
     my ($self, $c) = @_;
-    $c->model('ISRC')->load_for_recordings(@{ $c->stash->{to_merge} });
+    if ($c->stash->{to_merge}) {
+        my @recordings = @{ $c->stash->{to_merge} };
+        $c->model('ISRC')->load_for_recordings(@recordings);
+
+        my @recordings_with_isrcs = grep { $_->all_isrcs > 0 } @recordings;
+        if (@recordings_with_isrcs > 1) {
+            my ($comparator, @tail) = @recordings_with_isrcs;
+            my $get_isrc_set = sub { Set::Scalar->new(map { $_->isrc } shift->all_isrcs) };
+            my $expect = $get_isrc_set->($comparator);
+            $c->stash(
+                isrcs_differ => any { $get_isrc_set->($_) != $expect } @tail
+            );
+        }
+    }
 };
 
 around '_merge_search' => sub {
@@ -193,37 +222,7 @@ around '_merge_search' => sub {
     return $results;
 };
 
-sub add_isrc : Chained('load') PathPart('add-isrc') RequireAuth
-{
-    my ($self, $c) = @_;
-
-    my $recording = $c->stash->{recording};
-    my $form = $c->form(form => 'AddISRC');
-    if ($c->form_posted && $form->submitted_and_valid($c->req->params)) {
-        $self->_insert_edit(
-            $c, $form,
-            edit_type => $EDIT_RECORDING_ADD_ISRCS,
-            isrcs => [ {
-                isrc      => $form->field('isrc')->value,
-                recording => {
-                    id => $recording->id,
-                    name => $recording->name
-                },
-                source    => 0
-            } ]
-        );
-
-        if ($c->stash->{makes_no_changes}) {
-            $form->field('isrc')->add_error(l('This ISRC already exists for this recording'));
-        }
-        else {
-            $c->response->redirect($c->uri_for_action('/recording/show', [ $recording->gid ]));
-            $c->detach;
-        }
-    }
-}
-
-sub delete_puid : Chained('load') PathPart('remove-puid') RequireAuth
+sub delete_puid : Chained('load') PathPart('remove-puid') Edit
 {
     my ($self, $c) = @_;
     my $puid_str = $c->req->query_params->{puid};

@@ -78,7 +78,7 @@ MB.Control.ReleaseEdits = function ($edits) {
             return true;
         }
 
-        $.each ([ 'position', 'name', 'length', 'deleted' ], function (idx, key) {
+        $.each ([ 'position', 'number', 'name', 'length', 'deleted' ], function (idx, key) {
 
             if (from[key] !== to[key])
             {
@@ -100,7 +100,7 @@ MB.Control.ReleaseEdits = function ($edits) {
             var from = tracklist ? tracklist[idx] : null;
 
             var to = {
-                'name': MB.utility.trim (trk.$title.val ()),
+                'name': _.clean (trk.$title.val ()),
                 'length': trk.getDuration (from ? from.length : null),
                 'artist_credit': trk.artist_credit.toData ()
             };
@@ -108,6 +108,8 @@ MB.Control.ReleaseEdits = function ($edits) {
             to['edit_sha1'] = b64_sha1 (MB.utility.structureToString (to));
             to['position'] = trk.position ();
             to['deleted'] = trk.$deleted.val ();
+            to['number'] = trk.$number.val ();
+            to['id'] = trk.$id.val ();
 
             edited_tracklist.push (to);
 
@@ -142,6 +144,10 @@ MB.Control.ReleaseEdits = function ($edits) {
 
     self.clearEdits = function () {
         self.$edits.val ('');
+    };
+
+    self.editsFromTracklist = function (data) {
+        self.$edits.val (JSON.stringify (data));
     };
 
     self.$edits = $edits;

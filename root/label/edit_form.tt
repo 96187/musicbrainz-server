@@ -1,9 +1,8 @@
 [%- WRAPPER 'layout/guidelines.tt' -%]
     [%- create_guideline(l('Please read the {doc_styleguide|Style Guidelines} then use the fields below to update the information of this label.', {doc_styleguide => doc_link('Style_Guideline')})) %]
     [%- create_guideline(l('If one or more labels with the same name already exist in the database, you will be prompted to add a {doc_comment|disambiguation comment to this label} that will allow users to distinguish this entry from the other label(s) with the same name.', {doc_comment => doc_link('Label_Comment')})) %]
-    [%- create_guideline(l('Please note that capitalization of the label name is taken into account when determining the need for a comment.  The two labels <em>some name</em> and <em>Some Name</em> are not the same.')) %]
 [% END %]
-<form action="[% c.req.uri %]" method="post">
+<form action="[% c.req.uri %]" method="post" class="edit-label">
     [%- USE r = FormRenderer(form) -%]
 
     <div class="half-width">
@@ -36,13 +35,24 @@
         [%- form_row_text_long(r, 'sort_name', l('Sort name:')) -%]
         [%- form_row_text_long(r, 'comment', l('Disambiguation:')) -%]
         [%- form_row_select(r, 'type_id', l('Type:')) -%]
-        [%- form_row_select(r, 'country_id', l('Country:')) -%]
+        [% WRAPPER form_row %]
+          [% area_field = form.field('area.name') %]
+          <label for="id-edit-label.area.name">[% l('Area:') %]</label>
+          <span class="area autocomplete">
+            <img class="search" src="[% c.uri_for("/static/images/icons/search.png") %]" />
+            [% r.hidden(form.field('area').field('gid'), { class => 'gid' }) %]
+            [% r.hidden ('area_id', class => 'id') %]
+            [% r.text(area_field, class => 'name') %]
+          </span>
+          [% field_errors(r.form, 'area.name') %]
+        [% END %]
         [% WRAPPER form_row %]
             [%- r.label('label_code', l('Label code:')) %]
             LC- [% r.text('label_code', size => 5, class => "label-code") -%]
             [%- field_errors(form, 'label_code') -%]
         [% END %]
-        [% form_row_text(r, 'ipi_code', l('IPI code:')) %]
+        [%- form_row_text_list(r, 'ipi_codes', l('IPI codes:'), l('IPI code')) -%]
+        [%- form_row_text_list(r, 'isni_codes', l('ISNI codes:'), l('ISNI code')) -%]
       </fieldset>
 
       <fieldset>
@@ -50,8 +60,9 @@
         <p>
             [%- l('Dates are in the format YYYY-MM-DD. Partial dates such as YYYY-MM or just YYYY are OK, or you can omit the date entirely.') -%]
         </p>
-        [% form_row_date(r, 'begin_date', l('Begin date:')) %]
-        [% form_row_date(r, 'end_date', l('End date:')) %]
+        [% form_row_date(r, 'period.begin_date', l('Begin date:')) %]
+        [% form_row_date(r, 'period.end_date', l('End date:')) %]
+        [% form_row_checkbox(r, 'period.ended', l('This label has ended.')) %]
       </fieldset>
       [% INCLUDE 'forms/edit-note.tt' %]
 
@@ -61,6 +72,17 @@
   <div class="documentation">
     [%- guesscase_bubble(1) -%]
     [%- sortname_bubble() -%]
+    <div class="area-container" style="display: none">
+      <div class="area bubble">
+        <p>
+          [% l('You selected {area}.', area => '<a class="area" href="" title=""></a><span class="area comment"></span>') %]
+        </p>
+      </div>
+    </div>
   </div>
 
 </form>
+
+<script type="text/javascript">
+    MB.utility.setDefaultAction ('form.edit-label', 'button.submit.positive');
+</script>

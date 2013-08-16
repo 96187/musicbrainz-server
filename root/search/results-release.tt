@@ -1,8 +1,7 @@
-[% WRAPPER "layout.tt" title=l("Search Results") full_width=1 %]
-    <div id="content">
-        <h1>[% l("Search Results") %]</h1>
+[% WRAPPER 'search/results-layout.tt' %]
         [% INCLUDE 'search/lib/inline-results-release.tt' %]
-
-        [%- INCLUDE "search/form.tt" -%]
-    </div>
+        <p>
+          [% l('Alternatively, you may {uri|add a new release}.', {
+                uri => '/release/add'}) %]
+        </p>
 [% END %]

@@ -1,8 +1,11 @@
 package MusicBrainz::Server::Entity::AutoEditorElection;
 use Moose;
+use namespace::autoclean;
 
 use MusicBrainz::Server::Entity::Types;
-use MusicBrainz::Server::Types qw( :election_status );
+use MusicBrainz::Server::Constants qw( :election_status );
+use MusicBrainz::Server::Types qw( DateTime AutoEditorElectionStatus );
+use MusicBrainz::Server::Translation qw( N_lp );
 
 extends 'MusicBrainz::Server::Entity';
 
@@ -17,7 +20,7 @@ has [qw( candidate_id proposer_id seconder_1_id seconder_2_id)] => (
 );
 
 has 'status' => (
-    isa => 'AutoEditorElectionStatus',
+    isa => AutoEditorElectionStatus,
     is  => 'rw'
 );
 
@@ -42,7 +45,7 @@ has 'no_votes' => (
 );
 
 has [qw( propose_time open_time close_time )] => (
-    isa => 'DateTime',
+    isa => DateTime,
     is  => 'rw',
     coerce => 1
 );
@@ -83,21 +86,21 @@ sub is_closed
 
 # XXX not translatable
 our %STATUS_NAMES = (
-    $ELECTION_SECONDER_1  => 'Awaiting 1st seconder',
-    $ELECTION_SECONDER_2  => 'Awaiting 2nd seconder',
-    $ELECTION_OPEN        => 'Voting open since {date}',
-    $ELECTION_ACCEPTED    => 'Accepted at {date}',
-    $ELECTION_REJECTED    => 'Declined at {date}',
-    $ELECTION_CANCELLED   => 'Cancelled at {date}',
+    $ELECTION_SECONDER_1  => N_lp('Awaiting 1st seconder', 'autoeditor election status'),
+    $ELECTION_SECONDER_2  => N_lp('Awaiting 2nd seconder', 'autoeditor election status'),
+    $ELECTION_OPEN        => N_lp('Voting open since {date}', 'autoeditor election status'),
+    $ELECTION_ACCEPTED    => N_lp('Accepted at {date}', 'autoeditor election status'),
+    $ELECTION_REJECTED    => N_lp('Declined at {date}', 'autoeditor election status'),
+    $ELECTION_CANCELLED   => N_lp('Cancelled at {date}', 'autoeditor election status'),
 );
 
 our %SHORT_STATUS_NAMES = (
-    $ELECTION_SECONDER_1  => 'Awaiting 1st seconder',
-    $ELECTION_SECONDER_2  => 'Awaiting 2nd seconder',
-    $ELECTION_OPEN        => 'Voting open',
-    $ELECTION_ACCEPTED    => 'Accepted',
-    $ELECTION_REJECTED    => 'Declined',
-    $ELECTION_CANCELLED   => 'Cancelled',
+    $ELECTION_SECONDER_1  => N_lp('Awaiting 1st seconder', 'autoeditor election status (short)'),
+    $ELECTION_SECONDER_2  => N_lp('Awaiting 2nd seconder', 'autoeditor election status (short)'),
+    $ELECTION_OPEN        => N_lp('Voting open', 'autoeditor election status (short)'),
+    $ELECTION_ACCEPTED    => N_lp('Accepted', 'autoeditor election status (short)'),
+    $ELECTION_REJECTED    => N_lp('Declined', 'autoeditor election status (short)'),
+    $ELECTION_CANCELLED   => N_lp('Cancelled', 'autoeditor election status (short)'),
 );
 
 sub status_name
@@ -121,6 +124,7 @@ sub can_vote
     return 0 unless $self->is_open;
 	return 0 unless $editor->is_auto_editor;
 
+	return 0 if $editor->is_bot;
 	return 0 if $self->candidate_id == $editor->id;
 	return 0 if $self->proposer_id == $editor->id;
 	return 0 if $self->seconder_1_id == $editor->id;
@@ -136,6 +140,7 @@ sub can_second
     return 0 unless $self->is_pending;
 	return 0 unless $editor->is_auto_editor;
 
+	return 0 if $editor->is_bot;
 	return 0 if $self->candidate_id == $editor->id;
 	return 0 if $self->proposer_id == $editor->id;
 	return 0 if defined $self->seconder_1_id &&
@@ -158,18 +163,26 @@ sub can_see_vote_count
     my ($self, $editor) = @_;
 
     my $editor_is_involved =
-        $self->proposer_id == $editor->id ||
-        $self->candidate_id == $editor->id ||
-        (defined $self->seconder_1_id && $self->seconder_1_id == $editor->id) ||
-        (defined $self->seconder_2_id && $self->seconder_2_id == $editor->id);
-
+        $editor && (
+            $self->proposer_id == $editor->id ||
+            $self->candidate_id == $editor->id ||
+            (defined $self->seconder_1_id && $self->seconder_1_id == $editor->id) ||
+            (defined $self->seconder_2_id && $self->seconder_2_id == $editor->id));
+ 
     if ($self->is_closed || ($self->is_open && $editor_is_involved)) {
         return "yes";
     }
-
+ 
     if ($self->is_open) {
         return "later";
     }
+}
+sub current_expiration_time
+{
+    my ($self) = @_;
+    return $self->open_time ?
+           $self->open_time->clone->add( weeks => 1 ) :
+           $self->propose_time->clone->add( weeks => 1 );
 }
 
 no Moose;
@@ -200,7 +213,7 @@ The latter 2 may be undef.
 
 =head2 status
 
-The current status of this election, see L<MusicBrainz::Server::Types>
+The current status of this election, see L<MusicBrainz::Server::Constants>
 for possible values.
 
 =head2 yes_votes, no_votes

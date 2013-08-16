@@ -3,6 +3,8 @@ use Test::Routine;
 use Test::Moose;
 use Test::More;
 use Test::Deep qw( cmp_bag );
+use Test::Memory::Cycle;
+use Test::Magpie qw( mock when inspect verify );
 
 use MusicBrainz::Server::Data::Release;
 
@@ -21,7 +23,7 @@ test 'filter_barcode_changes' => sub {
 INSERT INTO artist_name (id, name) VALUES (1, 'Name');
 INSERT INTO artist (id, gid, name, sort_name) VALUES (1, 'a9d99e40-72d7-11de-8a39-0800200c9a66', 1, 1);
 INSERT INTO artist_credit (id, name, artist_count) VALUES (1, 1, 1);
-INSERT INTO artist_credit_name (artist_credit, artist, name, position, join_phrase) VALUES (1, 1, 1, 0, NULL);
+INSERT INTO artist_credit_name (artist_credit, artist, name, position, join_phrase) VALUES (1, 1, 1, 0, '');
 
 INSERT INTO release_name (id, name) VALUES (1, 'R1');
 INSERT INTO release_group (id, gid, name, artist_credit) VALUES (1, '3b4faa80-72d9-11de-8a39-0800200c9a66', 1, 1);
@@ -198,7 +200,7 @@ INSERT INTO artist (id, gid, name, sort_name)
     VALUES (1, 'a9d99e40-72d7-11de-8a39-0800200c9a66', 1, 1);
 INSERT INTO artist_credit (id, name, artist_count) VALUES (1, 1, 1);
 INSERT INTO artist_credit_name (artist_credit, artist, name, position, join_phrase)
-    VALUES (1, 1, 1, 0, NULL);
+    VALUES (1, 1, 1, 0, '');
 
 INSERT INTO release_name (id, name) VALUES (1, 'Release');
  INSERT INTO release_group (id, gid, name, artist_credit)
@@ -207,8 +209,8 @@ INSERT INTO release (id, gid, name, artist_credit, release_group)
     VALUES (1, '1a906020-72db-11de-8a39-0800200c9a66', 1, 1, 1),
            (2, '2a906020-72db-11de-8a39-0800200c9a66', 1, 1, 1),
            (3, '3a906020-72db-11de-8a39-0800200c9a66', 1, 1, 1);
-INSERT INTO tracklist (id) VALUES (1);
-INSERT INTO medium (id, release, position, tracklist)
+
+INSERT INTO medium (id, release, position, track_count)
     VALUES (1, 1, 1, 1),
            (2, 2, 1, 1),
            (3, 3, 1, 1);
@@ -250,6 +252,36 @@ EOSQL
     );
 };
 
+test 'preserve cover_art_presence on merge' => sub {
+    my $test = shift;
+    my $c = $test->c;
+    MusicBrainz::Server::Test->prepare_test_database($test->c, '+release');
+
+    $c->model('Release')->merge(
+        merge_strategy => $MusicBrainz::Server::Data::Release::MERGE_APPEND,
+        new_id => 6,
+        old_ids => [ 7 ],
+        medium_positions => {
+            2 => 1,
+            3 => 2
+        }
+    );
+
+    my $present_result = $c->model('Release')->get_by_id(6);
+    $c->model('Release')->load_meta($present_result);
+    is($present_result->cover_art_presence, 'present');
+
+    $c->model('Release')->merge(
+        merge_strategy => $MusicBrainz::Server::Data::Release::MERGE_MERGE,
+        new_id => 8,
+        old_ids => [ 9 ]
+    );
+
+    my $darkened_result = $c->model('Release')->get_by_id(8);
+    $c->model('Release')->load_meta($darkened_result);
+    is($darkened_result->cover_art_presence, 'darkened');
+};
+
 test all => sub {
 
 my $test = shift;
@@ -265,16 +297,19 @@ is( $release->artist_credit_id, 1 );
 is( $release->release_group_id, 1 );
 is( $release->status_id, 1 );
 is( $release->packaging_id, 1 );
-is( $release->country_id, 1 );
 is( $release->script_id, 1 );
 is( $release->language_id, 1 );
-is( $release->date->year, 2009 );
-is( $release->date->month, 5 );
-is( $release->date->day, 8 );
 is( $release->barcode, "731453398122" );
 is( $release->comment, "Comment" );
 is( $release->edits_pending, 2 );
 is( $release->quality, $QUALITY_UNKNOWN_MAPPED );
+
+$release_data->load_release_events($release);
+is($release->all_events, 1, 'Has one release event');
+is($release->events->[0]->country_id, 221);
+is($release->events->[0]->date->year, 2009);
+is($release->events->[0]->date->month, 5);
+is($release->events->[0]->date->day, 8);
 
 my $release_label_data = MusicBrainz::Server::Data::ReleaseLabel->new(c => $test->c);
 $release_label_data->load($release);
@@ -287,24 +322,24 @@ is( $release->labels->[1]->catalog_number, "ABC-123-X", 'release also has catalo
 $release = $release_data->get_by_id(2);
 is( $release->quality, $QUALITY_UNKNOWN_MAPPED );
 
-my ($releases, $hits) = $release_data->find_by_artist(1, 100);
+my ($releases, $hits) = $release_data->find_by_artist(1, 100, 0);
 is( $hits, 6 );
 is( scalar(@$releases), 6 );
 ok( (grep { $_->id == 1 } @$releases), 'found release by artist');
 ok( (grep { $_->id == 2 } @$releases), 'found release by artist');
 
-($releases, $hits) = $release_data->find_by_track_artist(3, 100);
+($releases, $hits) = $release_data->find_by_track_artist(3, 100, 0);
 is( $hits, 1 );
 is( scalar(@$releases), 1 );
 ok( (grep { $_->id == 11 } @$releases), 'found release 11' );
 ok( (grep { $_->id == 10 } @$releases) == 0, 'did not find release 10' );
 
-($releases, $hits) = $release_data->find_by_recording(1, 100);
+($releases, $hits) = $release_data->find_by_recording(1, 100, 0);
 is( $hits, 1 );
 is( scalar(@$releases), 1 );
 is( $releases->[0]->id, 3, 'found release by recording' );
 
-($releases, $hits) = $release_data->find_by_release_group(1, 100);
+($releases, $hits) = $release_data->find_by_release_group(1, 100, 0);
 is( $hits, 6 );
 is( scalar(@$releases), 6 );
 ok( (grep { $_->id == 1 } @$releases), 'found release by release group' );
@@ -331,18 +366,22 @@ ok($names{'Protection'} > 2);
 my $sql = $test->c->sql;
 $sql->begin;
 $release = $release_data->insert({
-        name => 'Protection',
-        artist_credit => 1,
-        release_group_id => 1,
-        packaging_id => 1,
-        status_id => 1,
-        date => { year => 2001, month => 2, day => 15 },
-        barcode => '0123456789',
-        country_id => 1,
-        script_id => 1,
-        language_id => 1,
-        comment => 'A comment',
-    });
+    name => 'Protection',
+    artist_credit => 1,
+    release_group_id => 1,
+    packaging_id => 1,
+    status_id => 1,
+    barcode => '0123456789',
+    script_id => 1,
+    language_id => 1,
+    comment => 'A comment',
+    events => [
+        MusicBrainz::Server::Entity::ReleaseEvent->new(
+            country_id => 221,
+            date => MusicBrainz::Server::Entity::PartialDate->new( year => 2001, month => 2, day => 15 ),
+        )
+    ]
+});
 
 $release = $release_data->get_by_id($release->id);
 ok(defined $release, 'get release by id');
@@ -351,20 +390,25 @@ is($release->artist_credit_id, 1);
 is($release->release_group_id, 1);
 is($release->packaging_id, 1);
 is($release->status_id, 1);
-ok(!$release->date->is_empty);
-is($release->date->year, 2001);
-is($release->date->month, 2);
-is($release->date->day, 15);
-is($release->country_id, 1);
 is($release->script_id, 1);
 is($release->language_id, 1);
 is($release->comment, 'A comment');
 
+$release_data->load_release_events($release);
+ok(!$release->events->[0]->date->is_empty);
+is($release->events->[0]->date->year, 2001);
+is($release->events->[0]->date->month, 2);
+is($release->events->[0]->date->day, 15);
+is($release->events->[0]->country_id, 221);
+
 $release_data->update($release->id, {
-        name => 'Blue Lines',
-        country_id => 1,
-        date => { year => 2002 },
-    });
+    name => 'Blue Lines',
+    events => [
+        MusicBrainz::Server::Entity::ReleaseEvent->new(
+            date => MusicBrainz::Server::Entity::PartialDate->new( year => 2002 )
+        )
+    ]
+});
 
 $release = $release_data->get_by_id($release->id);
 ok(defined $release);
@@ -373,11 +417,13 @@ is($release->artist_credit_id, 1);
 is($release->release_group_id, 1);
 is($release->packaging_id, 1);
 is($release->status_id, 1);
-ok(!$release->date->is_empty);
-is($release->date->year, 2002);
-is($release->date->month, 2);
-is($release->date->day, 15);
-is($release->country_id, 1);
+
+$release_data->load_release_events($release);
+ok(!$release->events->[0]->date->is_empty);
+is($release->events->[0]->date->year, 2002);
+is($release->events->[0]->date->month, undef);
+is($release->events->[0]->date->day, undef);
+is($release->events->[0]->country_id, undef);
 
 $release_data->delete($release->id);
 
@@ -502,6 +548,155 @@ ok(!defined $release);
 
 $sql->commit;
 
+};
+
+test 'find_by_artist orders by release date and country' => sub {
+    my $test = shift;
+    my $c = $test->c;
+
+    MusicBrainz::Server::Test->prepare_test_database($test->c, '+release');
+    $c->sql->do(<<EOSQL);
+INSERT INTO area (id, gid, name, sort_name, type) VALUES
+  (1, '8a754a16-0027-4a29-c6d7-2b40ea0481ed', 'Estonia', 'Estonia', 1),
+  (2, '8a754a16-0027-3a29-c6d7-2b40ea0481ed', 'France', 'France', 1);
+INSERT INTO country_area (area) VALUES (1), (2);
+INSERT INTO iso_3166_1 (area, code) VALUES (1, 'EE'), (2, 'FR');
+
+INSERT INTO release_unknown_country (release, date_year, date_month, date_day)
+VALUES (9, 2009, 5, 8), (8, 2008, 12, 3);
+
+INSERT INTO release_country (release, country, date_year, date_month, date_day)
+VALUES (7, 2, 2009, 5, 8), (7, 1, 2009, 5, 8);
+EOSQL
+
+    my ($releases, undef) = $c->model('Release')->find_by_artist(1, 10, 0);
+    is_deeply(
+        [map { $_->id } @$releases],
+        [8, 7, 1, 9, 2, 6]
+    );
+};
+
+test 'find_by_label orders by release date, catalog_number, name, country, barcode' => sub {
+    my $test = shift;
+    my $c = $test->c;
+
+    MusicBrainz::Server::Test->prepare_test_database($test->c, '+release');
+    $c->sql->do(<<EOSQL);
+INSERT INTO area (id, gid, name, sort_name, type) VALUES
+  (1, '8a754a16-0027-4a29-c6d7-2b40ea0481ed', 'Estonia', 'Estonia', 1),
+  (2, '8a754a16-0027-3a29-c6d7-2b40ea0481ed', 'France', 'France', 1);
+INSERT INTO country_area (area) VALUES (1), (2);
+INSERT INTO iso_3166_1 (area, code) VALUES (1, 'EE'), (2, 'FR');
+
+INSERT INTO release_country (release, country, date_year, date_month, date_day)
+VALUES (2, 2, 2007, 5, 8), (7, 1, 2008, 5, 8), (7, 2, 2008, 5, 8);
+
+INSERT INTO release_label (release, label, catalog_number) VALUES (2, 1, 'ABC-123'), (7, 1, 'ZZZ');
+EOSQL
+
+    my ($releases, undef) = $c->model('Release')->find_by_label(1, 10, 0);
+    is_deeply(
+        [map { $_->id } @$releases],
+        [2, 7, 1]
+    );
+};
+
+test 'find_by_cdtoc' => sub {
+    my $test = shift;
+    my $c = $test->c;
+
+    MusicBrainz::Server::Test->prepare_test_database($test->c, '+release');
+
+    my ($releases, undef) = $c->model('Release')->find_for_cdtoc(1, 1);
+    is_deeply(
+      [map { $_->id } @$releases],
+      [8, 9, 6, 7]
+    );
+};
+
+test 'load_with_medium_for_recording' => sub {
+    my $test = shift;
+    my $c = $test->c;
+
+    MusicBrainz::Server::Test->prepare_test_database($test->c, '+release');
+
+    my ($releases, undef) = $c->model('Release')->load_with_medium_for_recording(1);
+    is_deeply(
+      [map { $_->id } @$releases],
+      [3]
+    );
+};
+
+test 'find_by_disc_id' => sub {
+    my $test = shift;
+    my $c = $test->c;
+
+    MusicBrainz::Server::Test->prepare_test_database($test->c, '+cdtoc');
+    my @releases = $c->model('Release')->find_by_disc_id(
+        'tLGBAiCflG8ZI6lFcOt87vXjEcI-'
+    );
+
+    is(@releases, 2);
+};
+
+test 'find_gid_for_track' => sub {
+    my $c = shift->c;
+    MusicBrainz::Server::Test->prepare_test_database($c);
+
+    my $track = $c->model('Track')->get_by_gid ('3fd2523e-1ced-4f83-8b93-c7ecf6960b32');
+    my $mbid = $c->model('Release')->find_gid_for_track($track->id);
+
+    is ($mbid, 'f34c079d-374e-4436-9448-da92dedef3ce');
+};
+
+test 'find_by_collection ordering' => sub {
+    my $test = shift;
+    my $c = $test->c;
+
+    MusicBrainz::Server::Test->prepare_test_database($c, '+collection');
+    MusicBrainz::Server::Test->prepare_test_database($c, <<EOSQL);
+INSERT INTO medium (id, release, track_count, position) VALUES (1, 1, 0, 1), (3, 3, 0, 1);
+EOSQL
+
+    for my $order (qw( date title country label artist catno format tracks )) {
+        my ($releases, undef) =
+            $c->model('Release')->find_by_collection(1, 50, 0, $order);
+
+        is (@$releases, 2);
+    }
+};
+
+test 'Merging releases with the same date should discard unknown country events' => sub {
+    my $test = shift;
+    my $c = $test->c;
+    my $release_data = $c->model('Release');
+
+    MusicBrainz::Server::Test->prepare_test_database($test->c, '+release');
+    $c->sql->do(<<EOSQL);
+INSERT INTO area (id, gid, name, sort_name, type) VALUES
+  (1, '8a754a16-0027-4a29-c6d7-2b40ea0481ed', 'Estonia', 'Estonia', 1);
+INSERT INTO country_area (area) VALUES (1);
+
+INSERT INTO release_unknown_country (release, date_year, date_month, date_day)
+VALUES (8, 2009, 5, 8);
+
+INSERT INTO release_country (release, country, date_year, date_month, date_day)
+VALUES (9, 1, 2009, 5, 8);
+EOSQL
+
+    $release_data->merge(
+        old_ids => [ 9 ],
+        new_id => 8,
+        merge_strategy => $MusicBrainz::Server::Data::Release::MERGE_MERGE
+    );
+    my $release = $release_data->get_by_id(8);
+    $release_data->load_release_events($release);
+
+    is((grep { $_->country_id == 1 } $release->all_events), 1,
+        'one release event in Estonia');
+
+    is((grep { !defined($_->country_id) } $release->all_events), 0,
+       'no unknown release events');
 };
 
 1;

@@ -2,6 +2,7 @@ package MusicBrainz::Server::Entity::Role::Linkable;
 use Moose::Role;
 
 use MusicBrainz::Server::Entity::Types;
+use List::UtilsBy qw( sort_by );
 
 has 'relationships' => (
     is => 'rw',
@@ -23,12 +24,7 @@ sub grouped_relationships
     my $filter_present = @types > 0;
 
     my %groups;
-    my @relationships = sort {
-        $a->link->begin_date        <=> $b->link->begin_date ||
-        $a->link->end_date          <=> $b->link->end_date   ||
-        $a->link->type->child_order <=> $b->link->type->child_order ||
-        $a->target->name            cmp $b->target->name
-    } $self->all_relationships;
+    my @relationships = sort { $a <=> $b } $self->all_relationships;
 
     for my $relationship (@relationships) {
         next if ($filter_present && !$filter{ $relationship->target_type });

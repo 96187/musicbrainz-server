@@ -4,14 +4,16 @@ use namespace::autoclean;
 
 use List::Util qw( max );
 use Moose::Util qw( does_role );
-use MusicBrainz::Server::Types qw( :edit_status );
+use MusicBrainz::Server::Constants qw( :edit_status );
 
 use aliased 'MusicBrainz::Server::Email';
-use aliased 'MusicBrainz::Server::Entity::ArtistSubscription';
+use aliased 'MusicBrainz::Server::Entity::Subscription::Artist' => 'ArtistSubscription';
+use aliased 'MusicBrainz::Server::Entity::CollectionSubscription';
 use aliased 'MusicBrainz::Server::Entity::EditorSubscription';
-use aliased 'MusicBrainz::Server::Entity::LabelSubscription';
-use aliased 'MusicBrainz::Server::Entity::Role::Subscription::Delete' => 'DeleteRole';
-use aliased 'MusicBrainz::Server::Entity::Role::Subscription::Merge' => 'MergeRole';
+use aliased 'MusicBrainz::Server::Entity::Subscription::Label' => 'LabelSubscription';
+
+use aliased 'MusicBrainz::Server::Entity::Subscription::Active' => 'ActiveRole';
+use aliased 'MusicBrainz::Server::Entity::Subscription::Deleted' => 'DeleteRole';
 
 with 'MooseX::Runnable';
 with 'MooseX::Getopt';
@@ -114,10 +116,7 @@ sub extract_subscription_data
     my ($self, @subscriptions) = @_;
     my (@deletions, %edits);
     for my $sub (@subscriptions) {
-        if (deleted($sub)) {
-            push @deletions, $sub;
-        }
-        else {
+        if (has_edits($sub)) {
             my $filter;
             $filter = sub { $_->editor_id != $sub->editor_id }
                 unless $sub->isa(EditorSubscription);
@@ -137,6 +136,9 @@ sub extract_subscription_data
                 subscription => $sub
             };
         }
+        else {
+            push @deletions, $sub;
+        }
     }
 
     my %data;
@@ -155,6 +157,9 @@ sub load_subscription
     elsif ($subscription->isa(LabelSubscription)) {
         $self->c->model('Label')->load($subscription);
     }
+    elsif ($subscription->isa(CollectionSubscription)) {
+        $self->c->model('Collection')->load($subscription);
+    }
     elsif ($subscription->isa(EditorSubscription)) {
         $subscription->subscribed_editor(
             $self->c->model('Editor')->get_by_id(
@@ -162,11 +167,13 @@ sub load_subscription
     }
 }
 
-sub deleted
+sub has_edits
 {
     my $sub = shift;
-    return (does_role($sub, DeleteRole) && $sub->deleted_by_edit) ||
-           (does_role($sub, MergeRole) && $sub->merged_by_edit);
+    return (
+        does_role($sub, ActiveRole) ||
+        ($sub->isa(CollectionSubscription) && $sub->available)
+    );
 }
 
 sub _edits_for_subscription {

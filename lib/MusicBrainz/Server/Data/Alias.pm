@@ -3,7 +3,13 @@ use Moose;
 use namespace::autoclean;
 
 use Class::MOP;
-use MusicBrainz::Server::Data::Utils qw( load_subobjects placeholders query_to_list );
+use MusicBrainz::Server::Data::Utils qw(
+    add_partial_date_to_row
+    load_subobjects
+    placeholders
+    query_to_list
+);
+use MusicBrainz::Server::Entity::PartialDate;
 
 extends 'MusicBrainz::Server::Data::Entity';
 
@@ -25,15 +31,32 @@ has [qw( table type entity )] => (
 sub _table
 {
     my $self = shift;
-    return sprintf '%s JOIN %s name ON %s.name=name.id',
-        $self->table, $self->parent->name_table, $self->table
+    if ($self->type eq 'area') {
+        return $self->table;
+    } else {
+        return sprintf '%s JOIN %s name ON %s.name=name.id JOIN %s sort_name ON %s.sort_name=sort_name.id',
+            $self->table, $self->parent->name_table, $self->table, $self->parent->name_table, $self->table;
+    }
 }
 
 sub _columns
 {
     my $self = shift;
-    return sprintf '%s.id, name.name, %s, locale, edits_pending',
-        $self->table, $self->type;
+    return sprintf '%s.id, %s, %s AS sort_name, %s, locale,
+                    edits_pending, begin_date_year, begin_date_month,
+                    begin_date_day, end_date_year, end_date_month,
+                    end_date_day, type AS type_id, primary_for_locale',
+        $self->table, $self->_name, $self->_sort_name, $self->type;
+}
+
+sub _name {
+    my $self = shift;
+    return $self->type eq 'area' ? $self->table . '.name' : 'name.name';
+}
+
+sub _sort_name {
+    my $self = shift;
+    return $self->type eq 'area' ? $self->table . '.sort_name' : 'sort_name.name';
 }
 
 sub _column_mapping
@@ -42,9 +65,14 @@ sub _column_mapping
     return {
         id                  => 'id',
         name                => 'name',
+        sort_name           => 'sort_name',
         $self->type . '_id' => $self->type,
         edits_pending       => 'edits_pending',
-        locale              => 'locale'
+        locale              => 'locale',
+        type_id             => 'type_id',
+        begin_date => sub { MusicBrainz::Server::Entity::PartialDate->new_from_row(shift, shift() . 'begin_date_') },
+        end_date => sub { MusicBrainz::Server::Entity::PartialDate->new_from_row(shift, shift() . 'end_date_') },
+        primary_for_locale  => 'primary_for_locale'
     };
 }
 
@@ -58,21 +86,34 @@ sub _entity_class
     return shift->entity;
 }
 
-sub find_by_entity_id
+sub find_by_entity_ids
 {
     my ($self, @ids) = @_;
-    return [] unless @ids;
+    return {} unless @ids;
 
     my $key = $self->type;
 
-    my $query = "SELECT " . $self->_columns . "
+    my $query = "SELECT $key parent_id, " . $self->_columns . "
                  FROM " . $self->_table . "
                  WHERE $key IN (" . placeholders(@ids) . ")
-                 ORDER BY locale NULLS LAST, musicbrainz_collate(name.name)";
+                 ORDER BY locale NULLS LAST, musicbrainz_collate(" . $self->_sort_name . "), musicbrainz_collate(" . $self->_name . ")";
 
-    return [ query_to_list($self->c->sql, sub {
-        $self->_new_from_row(@_)
-    }, $query, @ids) ];
+    my %ret = map { $_ => [] } @ids;
+
+    my $rows = $self->sql->select_list_of_hashes($query, @ids);
+    while (my $row = shift(@$rows)) {
+        push @{ $ret{$row->{parent_id}} },
+            $self->_new_from_row($row);
+    }
+
+    return \%ret;
+}
+
+sub find_by_entity_id
+{
+    my ($self, @ids) = @_;
+    my $alias_map = $self->find_by_entity_ids(@ids);
+    return [ map { @{ $alias_map->{$_} } } @ids ];
 }
 
 sub has_locale
@@ -118,16 +159,29 @@ sub insert
 {
     my ($self, @alias_hashes) = @_;
     my ($table, $type, $class) = ($self->table, $self->type, $self->entity);
-    my %names = $self->parent->find_or_insert_names(map { $_->{name} } @alias_hashes);
+    # Only use name tables if it's not an area
+    my %names;
+    if ($type ne 'area') {
+        %names = $self->parent->find_or_insert_names(map { $_->{name}, $_->{sort_name} } @alias_hashes);
+    } else {
+        %names = map { $_->{name} => $_->{name}, $_->{sort_name} => $_->{sort_name} } @alias_hashes;
+    }
     my @created;
     Class::MOP::load_class($class);
     for my $hash (@alias_hashes) {
-        push @created, $class->new(
-            id => $self->sql->insert_row($table, {
-                $type  => $hash->{$type . '_id'},
-                name   => $names{ $hash->{name} },
-                locale => $hash->{locale}
-            }, 'id'));
+        my $row = {
+            $type => $hash->{$type . '_id'},
+            name =>  $names{ $hash->{name} },
+            locale => $hash->{locale},
+            sort_name => $names{ $hash->{sort_name} },
+            primary_for_locale => $hash->{primary_for_locale},
+            type => $hash->{type_id},
+        };
+
+        add_partial_date_to_row($row, $hash->{begin_date}, "begin_date");
+        add_partial_date_to_row($row, $hash->{end_date}, "end_date");
+
+        push @created, $class->new(id => $self->sql->insert_row($table, $row, 'id'));
     }
     return wantarray ? @created : $created[0];
 }
@@ -137,29 +191,50 @@ sub merge
     my ($self, $new_id, @old_ids) = @_;
     my $table = $self->table;
     my $type = $self->type;
-    $self->sql->do(
-        "DELETE FROM $table
-         WHERE $type = any(?) AND
-           (name, locale, $type) NOT IN (
-             SELECT DISTINCT ON (name, locale) name, locale, $type
-             FROM $table WHERE $type = any(?)
-           )",
-        [ $new_id, @old_ids ],
-        [ $new_id, @old_ids ]);
 
+    # Fix primary_for_locale:
+    # turn off primary_for_locale on all but one per locale, preferring the target entity
+    # therefore, partition by locale only
+    $self->sql->do(
+        "UPDATE $table SET primary_for_locale = FALSE
+          WHERE id IN (
+             SELECT a.id FROM (
+                 SELECT id, rank() OVER (PARTITION BY locale
+                                         ORDER BY primary_for_locale DESC, ($type = ?) DESC) > 1 AS redundant
+                   FROM $table WHERE $type = any(?)
+             ) a WHERE redundant
+         )", $new_id, [ $new_id, @old_ids ]
+    );
+
+    # Merge based on all properties of each alias, other than primary_for_locale,
+    # preferring primary_for_locale and the target entity
+    # therefore, partition by everything except primary_by_locale
+    $self->sql->do(
+        "DELETE FROM $table WHERE id in (
+             SELECT a.id FROM (
+                 SELECT id, rank() OVER (PARTITION BY $type, name, locale, type, sort_name, begin_date_year, begin_date_month, begin_date_day, end_date_year, end_date_month, end_date_day
+                                         ORDER BY primary_for_locale DESC, ($type = ?) DESC) > 1 AS redundant
+                   FROM $table WHERE $type = any(?)
+             ) a WHERE redundant
+        )", $new_id, [ $new_id, @old_ids ]
+    );
+
+    # Update all aliases to the new entity
     $self->sql->do("UPDATE $table SET $type = ?
               WHERE $type IN (".placeholders(@old_ids).")", $new_id, @old_ids);
 
+    # Insert any aliases from old entity names
+    my $sortnamecol = $type eq 'work' ? 'name' : 'sort_name';
     $self->sql->do(
-        "INSERT INTO $table (name, $type)
-            SELECT DISTINCT ON (old_entity.name) old_entity.name, new_entity.id
+        "INSERT INTO $table (name, $type, sort_name)
+            SELECT DISTINCT ON (old_entity.name) old_entity.name, new_entity.id, old_entity.$sortnamecol
               FROM $type old_entity
          LEFT JOIN $table alias ON alias.name = old_entity.name
               JOIN $type new_entity ON (new_entity.id = ?)
-             WHERE old_entity.id IN (" . placeholders(@old_ids) . ")
+             WHERE old_entity.id = any(?)
                AND alias.id IS NULL
                AND old_entity.name != new_entity.name",
-        $new_id, @old_ids
+        $new_id, [ @old_ids ]
     );
 }
 
@@ -168,11 +243,51 @@ sub update
     my ($self, $alias_id, $alias_hash) = @_;
     my $table = $self->table;
     my $type = $self->type;
-    if (exists $alias_hash->{name}) {
-        my %names = $self->parent->find_or_insert_names($alias_hash->{name});
-        $alias_hash->{name} = $names{ $alias_hash->{name} };
+
+    my %row = %$alias_hash;
+    delete @row{qw( begin_date end_date )};
+
+    # Only change to name tables if it's not an area
+    if ($type ne 'area') {
+        delete @row{qw( name )};
+        if (exists $alias_hash->{name}) {
+            my %names = $self->parent->find_or_insert_names($alias_hash->{name});
+            $row{name} = $names{ $alias_hash->{name} };
+        }
+
+        if (exists $alias_hash->{sort_name}) {
+            my %names = $self->parent->find_or_insert_names($alias_hash->{sort_name});
+            $row{sort_name} = $names{ $alias_hash->{sort_name} };
+        }
     }
-    $self->sql->update_row($table, $alias_hash, { id => $alias_id });
+
+    add_partial_date_to_row(\%row, $alias_hash->{begin_date}, "begin_date")
+        if exists $alias_hash->{begin_date};
+    add_partial_date_to_row(\%row, $alias_hash->{end_date}, "end_date")
+        if exists $alias_hash->{end_date};
+    $row{type} = delete $row{type_id}
+        if exists $row{type_id};
+
+    $self->sql->update_row($table, \%row, { id => $alias_id });
+}
+
+sub exists {
+    my ($self, $alias) = @_;
+    my $name_table = $self->parent->name_table;
+    my $table = $self->table;
+    my $type = $self->type;
+    return $self->sql->select_single_value(
+        "SELECT EXISTS (
+             SELECT TRUE
+             FROM $table " .
+             ($type ne 'area' ? "JOIN $name_table name ON $table.name = name.id " : "") .
+             "WHERE " . $self->_name . " IS NOT DISTINCT FROM ?
+               AND locale IS NOT DISTINCT FROM ?
+               AND type IS NOT DISTINCT FROM ?
+               AND $table.id IS DISTINCT FROM ?
+               AND $type = ?
+         )", $alias->{name}, $alias->{locale}, $alias->{type_id}, $alias->{not_id}, $alias->{entity}
+    );
 }
 
 no Moose;

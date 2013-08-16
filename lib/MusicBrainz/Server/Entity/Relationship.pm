@@ -3,7 +3,11 @@ package MusicBrainz::Server::Entity::Relationship;
 use Moose;
 use Readonly;
 use MusicBrainz::Server::Entity::Types;
-use MusicBrainz::Server::Validation;
+use MusicBrainz::Server::Validation qw( trim_in_place );
+use MusicBrainz::Server::Translation qw( l );
+use MusicBrainz::Server::Data::Relationship;
+
+use overload '<=>' => \&_cmp, fallback => 1;
 
 Readonly our $DIRECTION_FORWARD  => 1;
 Readonly our $DIRECTION_BACKWARD => 2;
@@ -48,17 +52,24 @@ has 'entity1' => (
     isa => 'Linkable',
 );
 
-has 'phrase' => (
+has '_phrase' => (
     is => 'ro',
     builder => '_build_phrase',
     lazy => 1
 );
 
-has 'verbose_phrase' => (
+has '_verbose_phrase' => (
     is => 'ro',
     builder => '_build_verbose_phrase',
     lazy => 1
 );
+
+sub editor_can_edit
+{
+    my ($self, $editor) = @_;
+    return MusicBrainz::Server::Data::Relationship->editor_can_edit($editor,
+        $self->link->type->entity0_type, $self->link->type->entity1_type);
+}
 
 sub source
 {
@@ -106,13 +117,37 @@ sub target_key
         : $self->target->gid;
 }
 
+sub phrase
+{
+    my ($self) = @_;
+    return $self->_phrase->[0];
+}
+
+sub extra_phrase_attributes
+{
+    my ($self) = @_;
+    return $self->_phrase->[1];
+}
+
+sub verbose_phrase
+{
+    my ($self) = @_;
+    return $self->_verbose_phrase->[0];
+}
+
+sub extra_verbose_phrase_attributes
+{
+    my ($self) = @_;
+    return $self->_verbose_phrase->[1];
+}
+
 sub _join_attrs
 {
     my @attrs = map { $_ } @{$_[0]};
     if (scalar(@attrs) > 1) {
         my $a = pop(@attrs);
-        my $b = join(", ", @attrs);
-        return "$b and $a";
+        my $b = join(l(", "), @attrs);
+        return l("{b} and {a}", {b => $b, a => $a});
     }
     elsif (scalar(@attrs) == 1) {
         return $attrs[0];
@@ -124,14 +159,14 @@ sub _build_phrase {
     my ($self) = @_;
     $self->_interpolate(
         $self->direction == $DIRECTION_FORWARD
-            ? $self->link->type->link_phrase
-            : $self->link->type->reverse_link_phrase
+            ? $self->link->type->l_link_phrase()
+            : $self->link->type->l_reverse_link_phrase()
     );
 }
 
 sub _build_verbose_phrase {
     my ($self) = @_;
-    $self->_interpolate($self->link->type->short_link_phrase);
+    $self->_interpolate($self->link->type->l_long_link_phrase);
 }
 
 sub _interpolate
@@ -142,7 +177,7 @@ sub _interpolate
     my %attrs;
     foreach my $attr (@attrs) {
         my $name = lc $attr->root->name;
-        my $value = $attr->name;
+        my $value = $attr->l_name();
         if (exists $attrs{$name}) {
             push @{$attrs{$name}}, $value;
         }
@@ -150,9 +185,11 @@ sub _interpolate
             $attrs{$name} = [ $value ];
         }
     }
+    my %extra_attrs = %attrs;
 
     my $replace_attrs = sub {
         my ($name, $alt) = @_;
+        delete $extra_attrs{$name};
         if (!$alt) {
             return '' unless exists $attrs{$name};
             return _join_attrs($attrs{$name});
@@ -166,9 +203,25 @@ sub _interpolate
         }
     };
     $phrase =~ s/{(.*?)(?::(.*?))?}/$replace_attrs->(lc $1, $2)/eg;
-    MusicBrainz::Server::Validation::TrimInPlace($phrase);
+    trim_in_place($phrase);
 
-    return $phrase;
+    my @extra_attrs = map { @$_ } values %extra_attrs;
+    return [ $phrase, _join_attrs(\@extra_attrs) ];
+}
+
+sub _cmp {
+    my ($a, $b) = @_;
+
+    my $a_sortname = $a->target->can('sort_name')
+        ? $a->target->sort_name
+        : $a->target->name;
+    my $b_sortname = $b->target->can('sort_name')
+        ? $b->target->sort_name
+        : $b->target->name;
+    $a->link->begin_date        <=> $b->link->begin_date ||
+    $a->link->end_date          <=> $b->link->end_date   ||
+    $a->link->type->child_order <=> $b->link->type->child_order ||
+    $a_sortname cmp $b_sortname;
 }
 
 __PACKAGE__->meta->make_immutable;

@@ -10,7 +10,7 @@
 [%-# header XHTML+RDFa or HTML5 #-%]
 [%- MACRO rdfa_set_header(usesRDFa) BLOCK; -%]
 [%- IF doRDFa && usesRDFa -%]
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:dct="http://purl.org/dc/terms/"
       xmlns:foaf="http://xmlns.com/foaf/0.1/"
@@ -26,13 +26,13 @@
       xmlns:skos="http://www.w3.org/2004/02/skos/core#"
       xmlns:xhv="http://www.w3.org/1999/xhtml/vocab#"
       xmlns:owl="http://www.w3.org/2002/07/owl#"
-      xml:lang="[%- c.language() -%]"
-      lang="[%- c.language() -%]">
+      xml:lang="[%- current_language_html -%]"
+      lang="[%- current_language_html -%]">
 [%- ELSE -%]
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xml:lang="[%- c.language() -%]"
-      lang="[%- c.language() -%]">
+      xml:lang="[%- current_language_html -%]"
+      lang="[%- current_language_html -%]">
 [%- END -%]
 [%- END -%]
 
@@ -48,8 +48,9 @@
     'mo:MusicalWork' IF type =='work';
     'mo:Release' IF type == 'release';
     'mo:Track' IF type == 'track';
-    'mo:Record' IF type == 'tracklist' || type == 'medium';
+    'mo:Record' IF type == 'medium';
     'mo:Label' IF type == 'label';
+    'geo:SpatialThing' IF type == 'area';
 END -%]
 
 [%- MACRO rdfa_entity_curi(entity, action, text) BLOCK;
@@ -61,11 +62,12 @@ END -%]
     ELSIF type.search('Entity::ReleaseGroup='); rdfa_release_group_curi(entity);
     ELSIF type.search('Entity::Recording='); rdfa_recording_curi(entity);
     ELSIF type.search('Entity::URL='); link_url(entity, action, text);
+    ELSIF type.search('Entity::Area='); rdfa_area_curi(entity);
     END;
 END -%]
 
 [%- MACRO rdfa_country_to_curi(country) BLOCK;
- 'http://ontologi.es/place/' _ country.iso_code;
+ 'http://ontologi.es/place/' _ country.primary_code;
 END -%]
 
 [%- MACRO rdfa_format_curi(medium) BLOCK;
@@ -136,12 +138,20 @@ END -%]
  '[mbz:label/' _ label.gid _ '#' _ hash_suffix _']';
 END -%]
 
+[%- MACRO rdfa_track_curi(track) BLOCK;
+ '[mbz:track/' _ track.gid _ '#' _ hash_suffix _']';
+END -%]
+
 [%- MACRO rdfa_work_curi(work) BLOCK;
  '[mbz:work/' _ work.gid _ '#' _ hash_suffix _']';
 END -%]
 
-[%- MACRO rdfa_tracklist_curi(tl) BLOCK;
-    '[mbz:tracklist/' _ tl.id _ '#' _ hash_suffix _ ']';
+[%- MACRO rdfa_medium_curi(release, medium) BLOCK;
+    '[mbz:release/' _ release.gid _ '#disc' _ medium.position _ ']';
+END -%]
+
+[%- MACRO rdfa_area_curi(area) BLOCK;
+ '[mbz:area/' _ area.gid _ '#' _ hash_suffix _']';
 END -%]
 
 [%-##############-%]
@@ -149,7 +159,7 @@ END -%]
 [%-##############-%]
 
 [%- MACRO rdfa_label_title(title) BLOCK; -%]
-[%- IF doRDFa -%]<span property="dct:title rdfs:label" xml:lang="">[%- title | html -%]</span>[%- END -%]
+[%- IF doRDFa -%]<span property="dct:title rdfs:label" xml:lang="" lang="">[%- title | html -%]</span>[%- END -%]
 [%- END -%]
 
 [%- MACRO rdfa_about_attr(about) BLOCK; -%]
@@ -157,7 +167,7 @@ END -%]
 [%- END -%]
 
 [%- MACRO rdfa_typeof(type) BLOCK; -%]
-[%- IF doRDFa -%]typeof="[%- type -%]"[%- END -%]
+[%- IF doRDFa -%][%- IF type -%]typeof="[%- type -%]"[%- END -%][%- END -%]
 [%- END -%]
 
 [%-#####################-%]
@@ -198,9 +208,27 @@ END -%]
   END;
 END -%]
 
-[%- MACRO rdfa_artist_ipi(artist) BLOCK -%]
-    [%- IF doRDFa -%]<span about="[%- rdfa_artist_curi(artist) -%]" property="mo:ipi">[%- END -%]
-        [%- html_escape(artist.ipi_code) -%]
+[%- MACRO rdfa_artist_ipi(ipi_code) BLOCK -%]
+    [%- IF doRDFa -%]<span about="[%- rdfa_artist_curi(ipi_code.artist) -%]" property="mo:ipi">[%- END -%]
+        [%- html_escape(ipi_code.ipi) -%]
+    [%- IF doRDFa -%]</span>[%- END -%]
+[%- END -%]
+
+[%- MACRO rdfa_artist_isni(isni_code) BLOCK -%]
+    [%- IF doRDFa -%]<span about="[%- rdfa_artist_curi(isni_code.artist) -%]" property="mo:isni">[%- END -%]
+        [%- html_escape(isni_code.isni) -%]
+    [%- IF doRDFa -%]</span>[%- END -%]
+[%- END -%]
+
+[%- MACRO rdfa_label_ipi(ipi_code) BLOCK -%]
+    [%- IF doRDFa -%]<span about="[%- rdfa_label_curi(ipi_code.label) -%]" property="mo:ipi">[%- END -%]
+        [%- html_escape(ipi_code.ipi) -%]
+    [%- IF doRDFa -%]</span>[%- END -%]
+[%- END -%]
+
+[%- MACRO rdfa_label_isni(isni_code) BLOCK -%]
+    [%- IF doRDFa -%]<span about="[%- rdfa_label_curi(isni_code.label) -%]" property="mo:isni">[%- END -%]
+        [%- html_escape(isni_code.isni) -%]
     [%- IF doRDFa -%]</span>[%- END -%]
 [%- END -%]
 
@@ -210,7 +238,7 @@ END -%]
     link = c.uri_for_action("/artist/$action", [ artist.gid ]);
     text = text == '' ? html_escape(artist.name) : html_escape(text);
     '<span class="mp">' IF artist.edits_pending AND action == 'show';
-    '<a title="' _ html_escape(artist.sort_name) _ '" rel="foaf:isPrimaryTopicOf" href="' _ link _ '" property="foaf:name rdfs:label" xml:lang="">' _ text _ '</a>';
+    '<a title="' _ html_escape(artist.sort_name) _ '" rel="foaf:isPrimaryTopicOf" href="' _ link _ '" property="foaf:name rdfs:label" xml:lang="" lang="">' _ text _ '</a>';
     '</span>' IF artist.edits_pending AND action == 'show';
   ELSE;
     link_entity(artist, action, text);
@@ -229,7 +257,7 @@ END -%]
     link = c.uri_for_action("/release_group/$action", [ rg.gid ]);
     text = text == '' ? html_escape(rg.name) : html_escape(text);
     '<span class="mp">' IF rg.edits_pending AND action == 'show';
-    '<a rel="foaf:made" resource="' _ rdfa_release_group_curi(rg) _ '" href="' _ link _ '"><span about="' _ rdfa_release_group_curi(rg) _ '" typeof="' _ rdfa_concept_curi('release_group') _  '" property="dct:title rdfs:label" xml:lang="">' _ text _ '</span></a>';
+    '<a rel="foaf:made" resource="' _ rdfa_release_group_curi(rg) _ '" href="' _ link _ '"><span about="' _ rdfa_release_group_curi(rg) _ '" typeof="' _ rdfa_concept_curi('release_group') _  '" property="dct:title rdfs:label" xml:lang="" lang="">' _ text _ '</span></a>';
     '</span>' IF rg.edits_pending AND action == 'show';
   ELSE;
     link_release_group(rg, action, text);
@@ -250,7 +278,7 @@ END -%]
     link = c.uri_for_action("/release/$action", [ release.gid ]);
     text = text == '' ? html_escape(release.name) : html_escape(text);
     '<span class="mp">' IF release.edits_pending AND action == 'show';
-    '<a rel="foaf:made" resource="' _ rdfa_release_curi(release) _ '" href="' _ link _ '"><span about="' _ rdfa_release_curi(release) _ '" typeof="' _ rdfa_concept_curi('release') _ '" rel="mo:release_event" resource="[evn:]" property="dct:title rdfs:label" xml:lang="">' _ text _ '</span></a>';
+    '<a rel="foaf:made" resource="' _ rdfa_release_curi(release) _ '" href="' _ link _ '"><span about="' _ rdfa_release_curi(release) _ '" typeof="' _ rdfa_concept_curi('release') _ '" rel="mo:release_event" resource="[evn:]" property="dct:title rdfs:label" xml:lang="" lang="">' _ text _ '</span></a>';
     '</span>' IF release.edits_pending AND action == 'show';
   ELSE;
     link_release(release, action, text);
@@ -258,16 +286,16 @@ END -%]
 END -%]
 
 [%-# note assumes rdfa_release_ns() is active #-%]
-[%- MACRO rdfa_release_event_date(release) BLOCK -%]
+[%- MACRO rdfa_release_event_date(date) BLOCK -%]
  [%- IF doRDFa -%]
-   <span about="[evn:]" typeof="mo:ReleaseEvent" property="dct:date" datatype="[%- release.date.format | date_xsd_type -%]">[%- release.date.format -%]</span>
- [%- ELSE -%][%- release.date.format -%][%- END -%]
+   <span about="[evn:]" typeof="mo:ReleaseEvent" property="dct:date" datatype="[%- date.format | date_xsd_type -%]">[%- date.format -%]</span>
+ [%- ELSE -%][%- date.format -%][%- END -%]
 [%- END -%]
 
 [%-# note assumes rdfa_release_ns() is active #-%]
-[%- MACRO rdfa_release_country_abbr(release) BLOCK;
- '<span about="' _ rdfa_release_curi(release) _ '" rel="mo:publishing_location" resource="' _ rdfa_country_to_curi(release.country) _ '">' IF doRDFa;
- '<abbr title="' _ html_escape(l(release.country.name)) _ '">' _ release.country.iso_code _ '</abbr>';
+[%- MACRO rdfa_release_country_abbr(country) BLOCK;
+ '<span about="' _ rdfa_release_curi(release) _ '" rel="mo:publishing_location" resource="' _ rdfa_country_to_curi(country) _ '">' IF doRDFa;
+ '<abbr title="' _ html_escape(country.l_name) _ '">' _ country.primary_code _ '</abbr>';
  '</span>' IF doRDFa;
 END -%]
 
@@ -308,7 +336,7 @@ END -%]
     link = c.uri_for_action("/work/$action", [ work.gid ]);
     text = text == '' ? html_escape(work.name) : html_escape(text);
     '<span class="mp">' IF work.edits_pending AND action == 'show';
-    '<a rel="foaf:made" resource="' _ rdfa_work_curi(work) _ '" href="' _ link _ '"><span about="' _ rdfa_work_curi(work) _ '" typeof="' _ rdfa_concept_curi('work') _ '" property="dct:title rdfs:label" xml:lang="">' _ text _ '</span></a>';
+    '<a rel="foaf:made" resource="' _ rdfa_work_curi(work) _ '" href="' _ link _ '"><span about="' _ rdfa_work_curi(work) _ '" typeof="' _ rdfa_concept_curi('work') _ '" property="dct:title rdfs:label" xml:lang="" lang="">' _ text _ '</span></a>';
     '</span>' IF work.edits_pending AND action == 'show';
   ELSE;
     link_work(work, action, text);
@@ -325,7 +353,7 @@ END -%]
     link = c.uri_for_action("/recording/$action", [ rec.gid ]);
     text = text == '' ? html_escape(rec.name) : html_escape(text);
     '<span class="mp">' IF rec.edits_pending AND action == 'show';
-    '<a rel="foaf:made" resource="' _ rdfa_recording_curi(rec) _ '" href="' _ link _ '"><span about="' _ rdfa_recording_curi(rec) _ '" typeof="' _ rdfa_concept_curi('recording') _ '" property="dct:title rdfs:label" xml:lang="">' _ text _ '</span></a>';
+    '<a rel="foaf:made" resource="' _ rdfa_recording_curi(rec) _ '" href="' _ link _ '"><span about="' _ rdfa_recording_curi(rec) _ '" typeof="' _ rdfa_concept_curi('recording') _ '" property="dct:title rdfs:label" xml:lang="" lang="">' _ text _ '</span></a>';
     '</span>' IF rec.edits_pending AND action == 'show';
   ELSE;
     link_recording(rec, action, text);
@@ -349,6 +377,8 @@ END -%]
     '<span property="skos:altLabel">' _ alias _ '</span>';
     ELSIF type.search('Entity::Label=');
     '<span property="skos:altLabel">' _ alias _ '</span>';
+    ELSIF type.search('Entity::Area=');
+    '<span property="skos:altLabel">' _ alias _ '</span>';
     END;
   ELSE;
     '' _ alias _ '';
@@ -361,7 +391,7 @@ END -%]
 
 [%- MACRO rdfa_recording_hidden_published_as(track) BLOCK;
   IF doRDFa;
-    '<tr style="display: none;" rel="mo:published_as"><span about="' _ rdfa_track_blank_node(track) _ '"></span></tr>';
+    '<tr style="display: none;" rel="mo:published_as"><td><span about="' _ rdfa_track_blank_node(track) _ '"></span></td></tr>';
   END;
 END -%]
 
@@ -381,7 +411,7 @@ END -%]
   IF doRDFa;
     link = c.uri_for_action("/recording/show", [ recording.gid ]);
     '<span class="mp">' IF recording.edits_pending;
-    '<a rel="foaf:isPrimaryTopicOf" href="' _ link _ '" property="dct:title rdfs:label" xml:lang="" datatype="">' _ html_escape(recording.name) _ '</a>';
+    '<a rel="foaf:isPrimaryTopicOf" href="' _ link _ '" property="dct:title rdfs:label" xml:lang="" lang="" datatype="">' _ html_escape(recording.name) _ '</a>';
     '</span>' IF recording.edits_pending;
   ELSE;
     link_recording(recording);
@@ -391,7 +421,7 @@ END -%]
 [%- MACRO rdfa_artist_credit(ac, opts) BLOCK -%]
     [%- FOREACH name IN ac.names -%]
         [%- IF name.artist.gid && !opts.plain -%]
-          [%- rdfa_link_maker_artist(name.artist, 'show', name.name) -%]
+            [%- rdfa_link_maker_artist(name.artist, 'show', name.name) -%]
         [%- ELSE -%]
             [%- name.name | html -%]
         [%- END -%]
@@ -406,9 +436,11 @@ END -%]
     link = c.uri_for_action("/artist/$action", [ artist.gid ]);
     text = text == '' ? html_escape(artist.name) : html_escape(text);
     hover = html_escape(artist.sort_name);
-    IF artist.comment; hover = hover _ ' (' _ artist.comment _ ')'; END;
+    IF artist.comment; hover = hover _ ' (' _ html_escape(artist.comment) _ ')'; END;
     '<span class="mp">' IF artist.edits_pending AND action == 'show';
+    '<span class="name-variation">' IF text != artist.name AND action == 'show';
     '<a title="' _ hover _ '" rel="foaf:maker" resource="' _ rdfa_artist_curi(artist) _ '" href="' _ link _ '">' _ text _ '</a>';
+    '</span>' IF text != artist.name AND action == 'show';
     '</span>' IF artist.edits_pending AND action == 'show';
   ELSE;
     link_artist(artist, action, text);
@@ -436,7 +468,7 @@ END -%]
     FOR label=labels;
       IF label.catalog_number AND !seen.${ label.catalog_number };
         out.push(rdfa_release_catno(label.catalog_number));
-        seen.${ label.catolog_number } = 1;
+        seen.${ label.catalog_number } = 1;
       END;
     END;
     out.join(', ');
@@ -461,7 +493,7 @@ END -%]
     text = text == '' ? html_escape(release.name) : html_escape(text);
     '<span class="mp">' IF release.edits_pending AND action == 'show';
     '<span about="' _ rdfa_release_curi(release) _ '" rel="mo:track" resource="' _ rdfa_track_blank_node(track) _ '" typeof="' _ rdfa_concept_curi('release') _ '"></span>';
-    '<a href="' _ link _ '"><span about="' _ rdfa_release_curi(release) _ '" typeof="' _ rdfa_concept_curi('release') _ '" rel="mo:release_event" resource="[evn:]" property="dct:title rdfs:label" xml:lang="">' _ text _ '</span></a>';
+    '<a href="' _ link _ '"><span about="' _ rdfa_release_curi(release) _ '" typeof="' _ rdfa_concept_curi('release') _ '" rel="mo:release_event" resource="[evn:]" property="dct:title rdfs:label" xml:lang="" lang="">' _ text _ '</span></a>';
     rdfa_disambiguation(release);
     '</span>' IF release.edits_pending AND action == 'show';
   ELSE;
@@ -479,18 +511,12 @@ END -%]
     link = c.uri_for_action("/work/$action", [ work.gid ]);
     text = text == '' ? html_escape(work.name) : html_escape(text);
     '<span class="mp">' IF work.edits_pending AND action == 'show';
-    '<a rel="foaf:isPrimaryTopicOf" href="' _ link _ '" property="dct:title rdfs:label" xml:lang="">' _ text _ '</a>';
+    '<a rel="foaf:isPrimaryTopicOf" href="' _ link _ '" property="dct:title rdfs:label" xml:lang="" lang="">' _ text _ '</a>';
     '</span>' IF work.edits_pending AND action == 'show';
   ELSE;
     link_work(work);
   END;
 END -%]
-
-[%- MACRO rdfa_work_iswc(work) BLOCK -%]
-    [%- IF doRDFa -%]<span about="[%- rdfa_work_curi(work) -%]" property="mo:iswc">[%- END -%]
-        [%- html_escape(work.iswc) -%]
-    [%- IF doRDFa -%]</span>[%- END -%]
-[%- END -%]
 
 [%-###########-%]
 [%-# Release #-%]
@@ -502,7 +528,7 @@ END -%]
     link = c.uri_for_action("/release/$action", [ release.gid ]);
     text = text == '' ? html_escape(release.name) : html_escape(text);
     '<span class="mp">' IF release.edits_pending AND action == 'show';
-    '<a rel="foaf:isPrimaryTopicOf" href="' _ link _ '" property="dct:title rdfs:label" xml:lang="">' _ text _ '</a>';
+    '<a rel="foaf:isPrimaryTopicOf" href="' _ link _ '" property="dct:title rdfs:label" xml:lang="" lang="">' _ text _ '</a>';
     '</span>' IF release.edits_pending AND action == 'show';
   ELSE;
     link_release(release);
@@ -517,10 +543,11 @@ END -%]
 [%- END -%]
 [%- END -%]
 
-[%- MACRO rdfa_medium_in_release(medium) BLOCK -%]
-    <a rel="mo:record"
-       [%- IF doRDFa %] resource="[%- rdfa_tracklist_curi(medium) -%]" [%- END -%]
-       href="[%- c.uri_for_action('/tracklist/show', [medium.tracklist.id]) -%]">
+[%- MACRO rdfa_medium_in_release(release, medium) BLOCK -%]
+    [%- fragment = "disc" _ medium.position -%]
+    <a rel="mo:record" id="[%- fragment  -%]"
+       [%- IF doRDFa %] resource="[%- rdfa_medium_curi(release, medium) -%]" [%- END -%]
+       href="[%- c.uri_for_action("/release/show", [ release.gid ]) _ '#' _ fragment -%]">
     [%~ medium_format_name(medium) =%]
     [%= medium.position ~%]
     [%~ IF medium.name ~%]:
@@ -535,6 +562,12 @@ END -%]
 [%- '</span>' IF isrc.edits_pending; -%]
 [%- END -%]
 
+[%- MACRO rdfa_work_iswc(work, iswc) BLOCK -%]
+[%- '<span class="mp">' IF iswc.edits_pending; -%]
+<a href="[%- c.uri_for_action('/iswc/show', [ iswc.iswc ]) -%]">[%- IF doRDFa -%]<span about="[%- rdfa_work_curi(work) -%]" property="mo:iswc">[%- END -%][%- iswc.iswc -%][%- IF doRDFa -%]</span>[%- END -%]</a>
+[%- '</span>' IF iswc.edits_pending; -%]
+[%- END -%]
+
 [%-#################-%]
 [%-# Release Group #-%]
 [%-#################-%]
@@ -544,7 +577,7 @@ END -%]
     link = c.uri_for_action("/release_group/$action", [ rg.gid ]);
     text = text == '' ? html_escape(rg.name) : html_escape(text);
     '<span class="mp">' IF rg.edits_pending AND action == 'show';
-    '<a rel="foaf:isPrimaryTopicOf" href="' _ link _ '" property="dct:title rdfs:label" xml:lang="">' _ text _ '</a>';
+    '<a rel="foaf:isPrimaryTopicOf" href="' _ link _ '" property="dct:title rdfs:label" xml:lang="" lang="">' _ text _ '</a>';
     '</span>' IF rg.edits_pending AND action == 'show';
   ELSE;
     link_release_group(rg);
@@ -574,7 +607,7 @@ END -%]
     link = c.uri_for_action("/release/$action", [ release.gid ]);
     text = text == '' ? html_escape(release.name) : html_escape(text);
     '<span class="mp">' IF release.edits_pending AND action == 'show';
-    '<span about="[evn:]"><a rel="event:product" resource="' _ rdfa_release_curi(release) _ '" href="' _ link _ '"><span about="' _ rdfa_release_curi(release) _ '" typeof="' _ rdfa_concept_curi('release') _ '" property="dct:title rdfs:label" xml:lang="">' _ text _ '</span></a><span rel="event:factor" resource="[rg:]"></span></span>';
+    '<span about="[evn:]"><a rel="event:product" resource="' _ rdfa_release_curi(release) _ '" href="' _ link _ '"><span about="' _ rdfa_release_curi(release) _ '" typeof="' _ rdfa_concept_curi('release') _ '" property="dct:title rdfs:label" xml:lang="" lang="">' _ text _ '</span></a><span rel="event:factor" resource="[rg:]"></span></span>';
     '</span>' IF release.edits_pending AND action == 'show';
   ELSE;
     link_release(release);
@@ -590,9 +623,12 @@ END -%]
     action = action || 'show';
     link = c.uri_for_action("/recording/$action", [ recording.gid ]);
     text = text == '' ? html_escape(recording.name) : html_escape(text);
+    hover = html_escape(recording.name) IF text != recording.name AND action == 'show';
     '<span class="mp">' IF recording.edits_pending AND action == 'show';
-    '<span property="dct:title rdfs:label" xml:lang="" content="' _ text _ '"></span>';
-    '<a rel="mo:publication_of" resource="' _ rdfa_recording_curi(recording) _ '" href="' _ link _ '"><span property="dct:title rdfs:label" xml:lang="">' _ text _ '</span></a>';
+    '<span class="name-variation">' IF text != recording.name AND action == 'show';
+    '<span property="dct:title rdfs:label" xml:lang="" lang="" content="' _ text _ '"></span>';
+    '<a rel="mo:publication_of" resource="' _ rdfa_recording_curi(recording) _ '" href="' _ link _ '" title="' _ hover _ '"><span property="dct:title rdfs:label" xml:lang="" lang="">' _ text _ '</span></a>';
+    '</span>' IF text != recording.name AND action == 'show';
     '</span>' IF recording.edits_pending AND action == 'show';
   ELSE;
     link_recording(recording, action, text);
@@ -612,7 +648,7 @@ END -%]
     link = c.uri_for_action("/label/$action", [ label.gid ]);
     text = text == '' ? html_escape(label.name) : html_escape(text);
     '<span class="mp">' IF label.edits_pending AND action == 'show';
-    '<a rel="foaf:isPrimaryTopicOf" href="' _ link _ '" property="dct:title rdfs:label" xml:lang="">' _ text _ '</a>';
+    '<a rel="foaf:isPrimaryTopicOf" href="' _ link _ '" property="dct:title rdfs:label" xml:lang="" lang="">' _ text _ '</a>';
     '</span>' IF label.edits_pending AND action == 'show';
   ELSE;
     link_label(label);
@@ -624,16 +660,53 @@ END -%]
     link = c.uri_for_action("/release/show", [ release.gid ]);
     text = text == '' ? html_escape(release.name) : html_escape(text);
     '<span class="mp">' IF release.edits_pending AND action == 'show';
-    '<a rel="foaf:isPrimaryTopicOf" href="' _ link _ '"><span about="' _ rdfa_release_curi(release) _ '" property="dct:title rdfs:label" xml:lang="">' _ text _ '</span></a>';
+    '<a rel="foaf:isPrimaryTopicOf" href="' _ link _ '"><span about="' _ rdfa_release_curi(release) _ '" property="dct:title rdfs:label" xml:lang="" lang="">' _ text _ '</span></a>';
     '</span>' IF release.edits_pending AND action == 'show';
   ELSE;
     link_release(release);
   END;
 END -%]
 
+[%-#########-%]
+[%-# Areas #-%]
+[%-#########-%]
+
+[%- MACRO rdfa_link_area_header(area) BLOCK;
+  IF doRDFa;
+    action = action || 'show';
+    link = c.uri_for_action("/area/$action", [ area.gid ]);
+    text = text == '' ? html_escape(area.name) : html_escape(text);
+    '<span class="mp">' IF area.edits_pending AND action == 'show';
+    '<a rel="foaf:isPrimaryTopicOf" href="' _ link _ '" property="dct:title rdfs:area" xml:lang="" lang="">' _ text _ '</a>';
+    '</span>' IF area.edits_pending AND action == 'show';
+  ELSE;
+    link_area(area);
+  END;
+END -%]
+
 [%-########################-%]
 [%-# pagination / seeAlso #-%]
 [%-########################-%]
+
+[%- MACRO rdfa_paginator_previous_page(pager) BLOCK;
+  IF doRDFa -%]
+    <a rel="xhv:first" href="[% c.req.uri_with( page => pager.first_page ) | html %]">&#171;</a>
+    <a rel="xhv:prev" href="[% c.req.uri_with( page => pager.previous_page ) | html %]">&#8249;</a>
+  [%- ELSE -%]
+    <a href="[% c.req.uri_with( page => pager.first_page ) | html %]">&#171;</a>
+    <a href="[% c.req.uri_with( page => pager.previous_page ) | html %]">&#8249;</a>
+  [%- END;
+END -%]
+
+[%- MACRO rdfa_paginator_next_page(pager) BLOCK;
+  IF doRDFa -%]
+    <a rel="xhv:next" href="[% c.req.uri_with( page => pager.next_page ) | html %]">&#8250;</a>
+    <a rel="xhv:last" href="[% c.req.uri_with( page => pager.last_page ) | html %]">&#187;</a>
+  [%- ELSE -%]
+    <a href="[% c.req.uri_with( page => pager.next_page ) | html %]">&#8250;</a>
+    <a href="[% c.req.uri_with( page => pager.last_page ) | html %]">&#187;</a>
+  [%- END;
+END -%]
 
 [%- MACRO rdfa_seeAlso_link(entity, type, action, text) BLOCK;
   IF doRDFa;
@@ -670,6 +743,10 @@ END -%]
 
 [%- MACRO rdfa_seeAlso_link_work(w, action, text) BLOCK;
    rdfa_seeAlso_link(w, 'work', action, text);
+END -%]
+
+[%- MACRO rdfa_seeAlso_link_area(area, action, text) BLOCK;
+   rdfa_seeAlso_link(area, 'area', action, text);
 END -%]
 
 [%-#################-%]
@@ -727,4 +804,3 @@ END -%]
     link_url(url);
   END;
 END -%]
-

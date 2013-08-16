@@ -1,19 +1,25 @@
 package t::MusicBrainz::Server::Data::Editor;
+use Test::Fatal;
 use Test::Routine;
 use Test::Moose;
 use Test::More;
 
+use Authen::Passphrase::RejectAll;
 use DateTime;
+use DateTime::Format::Pg;
+use MusicBrainz::Server::Constants qw( :edit_status $EDIT_ARTIST_EDIT );
 use MusicBrainz::Server::Context;
-use MusicBrainz::Server::Test;
-use MusicBrainz::Server::Types qw( $STATUS_FAILEDVOTE $STATUS_APPLIED $STATUS_ERROR );
+use MusicBrainz::Server::Test qw( accept_edit );
+use Set::Scalar;
 use Sql;
+use Digest::MD5 qw( md5_hex );
+use t::Util::Moose::Attribute qw( object_attributes attribute_value_is );
 
 BEGIN { use MusicBrainz::Server::Data::Editor; }
 
 with 't::Context';
 
-test get_ratings => sub {
+test 'Test summarize_ratings' => sub {
     my $test = shift;
     MusicBrainz::Server::Test->prepare_test_database($test->c, '+editor');
     MusicBrainz::Server::Test->prepare_raw_test_database($test->c, '
@@ -22,12 +28,34 @@ INSERT INTO artist_rating_raw (artist, editor, rating) VALUES (1, 1, 80);
 ');
 
     my $editor = $test->c->model('Editor')->get_by_id(1);
-    my $ratings = $test->c->model('Editor')->get_ratings($editor);
+    my $ratings = $test->c->model('Editor')->summarize_ratings($editor);
 
-    is($ratings->{artist}->[0]->{artist}->id => 1, 'has artist entity');
-    is($ratings->{artist}->[0]->{rating} => 80, 'has raw rating');
-    is($ratings->{artist}->[0]->{artist}->rating => 80, 'has rating on entity');
-    is($ratings->{artist}->[0]->{artist}->rating_count => 1, 'has rating on entity');
+    is($ratings->{artist}->[0]->id => 1, 'has artist entity');
+    is($ratings->{artist}->[0]->rating, 80, 'has raw rating');
+    is($ratings->{artist}->[0]->rating_count => 1, 'has rating on entity');
+};
+
+test 'Remember me tokens' => sub {
+    my $test = shift;
+
+    MusicBrainz::Server::Test->prepare_test_database($test->c, '+editor');
+
+    my $model = $test->c->model('Editor');
+
+    my $user_name = 'Alice';
+    my $token = $model->allocate_remember_me_token($user_name);
+
+    ok($model->consume_remember_me_token($user_name, $token),
+       'Can consume "remember me" tokens');
+
+    ok( $test->c->redis->ttl("$user_name|$token") <= 5 * 60,
+        'TTL of remember me token at most 5 minutes' );
+
+    ok(!exception { $model->consume_remember_me_token('Unknown User', $token) },
+       'It is not an exception to attempt to consume tokens for non-existant users');
+
+    is($model->allocate_remember_me_token('Unknown User'), undef,
+       'Allocating tokens for unknown users returns undefined');
 };
 
 test all => sub {
@@ -43,14 +71,14 @@ ok(defined $editor, 'no editor returned');
 isa_ok($editor, 'MusicBrainz::Server::Entity::Editor', 'not a editor');
 is($editor->id, 1, 'id');
 is($editor->name, 'new_editor', 'name');
-is($editor->password, 'password', 'password');
+ok($editor->match_password('password'));
 is($editor->privileges, 1+8+32, 'privileges');
 is($editor->accepted_edits, 12, 'accepted edits');
 is($editor->rejected_edits, 2, 'rejected edits');
 is($editor->failed_edits, 9, 'failed edits');
 is($editor->accepted_auto_edits, 59, 'auto edits');
 
-is_deeply($editor->last_login_date, DateTime->new(year => 2009, month => 01, day => 01),
+is_deeply($editor->last_login_date, DateTime->new(year => 2013, month => 04, day => 05),
     'last login date');
 
 is_deeply($editor->email_confirmation_date, DateTime->new(year => 2005, month => 10, day => 20),
@@ -85,7 +113,6 @@ is($editor->accepted_auto_edits, 60, "editor has 60 accepted auto edits");
 
 my $alice = $editor_data->get_by_name('alice');
 # Test preferences
-is($alice->preferences->public_ratings, 1, 'use default preference');
 $editor_data->load_preferences($alice);
 is($alice->preferences->public_ratings, 0, 'load preferences');
 is($alice->preferences->datetime_format, '%m/%d/%Y %H:%M:%S', 'datetime_format loaded');
@@ -98,15 +125,17 @@ my $new_editor_2 = $editor_data->insert({
 });
 ok($new_editor_2->id > $editor->id);
 is($new_editor_2->name, 'new_editor_2', 'new editor 2 has name new_editor_2');
-is($new_editor_2->password, 'password', 'new editor 2 has correct password');
+ok($new_editor_2->match_password('password'), 'new editor 2 has correct password');
 is($new_editor_2->accepted_edits, 0, 'new editor 2 has no accepted edits');
 
 
 $editor = $editor_data->get_by_id($new_editor_2->id);
 is($editor->email, undef);
 is($editor->email_confirmation_date, undef);
+is($editor->ha1, md5_hex(join(':', $editor->name, 'musicbrainz.org', 'password')), 'ha1 was generated correctly');
 
-my $now = DateTime->now;
+my $now = DateTime::Format::Pg->parse_datetime(
+    $test->c->sql->select_single_value('SELECT now()'));
 $editor_data->update_email($new_editor_2, 'editor@example.com');
 
 $editor = $editor_data->get_by_id($new_editor_2->id);
@@ -114,10 +143,10 @@ is($editor->email, 'editor@example.com', 'editor has correct e-mail address');
 ok($now <= $editor->email_confirmation_date, 'email confirmation date updated correctly');
 is($new_editor_2->email_confirmation_date, $editor->email_confirmation_date);
 
-$editor_data->update_password($new_editor_2, 'password2');
+$editor_data->update_password($new_editor_2->name, 'password2');
 
 $editor = $editor_data->get_by_id($new_editor_2->id);
-is($editor->password, 'password2');
+ok($editor->match_password('password2'));
 
 my @editors = $editor_data->find_by_email('editor@example.com');
 is(scalar(@editors), 1);
@@ -146,9 +175,187 @@ subtest 'Find editors with subscriptions' => sub {
     is($editors[0]->id => 2, 'is editor #2');
 };
 
-# Test deleting editors
-$editor_data->delete(1);
+};
 
+test 'Deleting editors removes most information' => sub {
+    my $test = shift;
+    my $c = $test->c;
+    my $model = $c->model('Editor');
+
+    $c->sql->do(<<'EOSQL');
+INSERT INTO area_type (id, name) VALUES (1, 'Country');
+INSERT INTO area (id, gid, name, sort_name, type) VALUES
+  (221, '8a754a16-0027-3a29-b6d7-2b40ea0481ed', 'United Kingdom', 'United Kingdom', 1);
+INSERT INTO iso_3166_1 (area, code) VALUES (221, 'GB');
+INSERT INTO language (id, iso_code_3, name) VALUES (1, 'bob', 'Bobch');
+INSERT INTO gender (id, name) VALUES (1, 'Male');
+INSERT INTO editor (id, name, password, email, website, bio, member_since, email_confirm_date, last_login_date, edits_accepted, edits_rejected, auto_edits_accepted, edits_failed, privs, birth_date, area, gender, ha1) VALUES (1, 'Bob', '{CLEARTEXT}bob', 'bob@bob.bob', 'http://bob.bob/', 'Bobography', now(), now(), now(), 100, 101, 102, 103, 1, now(), 221, 1, '026299da47965340ef66ca485a57975d');
+INSERT INTO editor_language (editor, language, fluency) VALUES (1, 1, 'native');
+EOSQL
+
+    # Test deleting editors
+    $model->delete(1);
+    my $bob = $model->get_by_id(1);
+
+    is($bob->name, 'Deleted Editor #' . $bob->id);
+    is($bob->password, Authen::Passphrase::RejectAll->new->as_rfc2307);
+    is($bob->privileges, 0);
+    is($bob->accepted_edits, 100);
+    is($bob->rejected_edits, 101);
+    is($bob->accepted_auto_edits, 102);
+
+    # Ensure all other attributes are cleared
+    my $exclusions = Set::Scalar->new(
+        qw( id name password privileges accepted_edits rejected_edits
+            accepted_auto_edits last_login_date failed_edits languages
+            registration_date preferences ha1
+      ));
+
+    for my $attribute (grep { !$exclusions->contains($_->name) }
+                           object_attributes($bob)) {
+        attribute_value_is($attribute, $bob, undef,
+                           $attribute->name . " is now undef");
+    }
+
+    # Ensure all languages have been cleared
+    $c->model('EditorLanguage')->load_for_editor($bob);
+    is(@{ $bob->languages }, 0);
+
+    # Ensure all preferences are cleared
+    my $prefs = $bob->preferences;
+    for my $attribute (object_attributes($prefs)) {
+        if (!$attribute->has_default) {
+            diag("Editor preference " . attribute->name . " has no default");
+        }
+        else {
+            attribute_value_is(
+                $attribute, $prefs, $attribute->default($prefs),
+                "Preference " . $attribute->name . " was cleared");
+        }
+    }
+};
+
+test 'Deleting an editor cancels all open edits' => sub {
+    my $test = shift;
+    my $c = $test->c;
+
+    MusicBrainz::Server::Test->prepare_test_database($test->c, '+editor');
+
+    my $applied_edit = $c->model('Edit')->create(
+        edit_type => $EDIT_ARTIST_EDIT,
+        editor_id => 1,
+        to_edit => $c->model('Artist')->get_by_id(1),
+        comment => 'An additional comment',
+        ipi_codes => [],
+        isni_codes => []
+    );
+
+    accept_edit($c, $applied_edit);
+
+    my $open_edit = $c->model('Edit')->create(
+        edit_type => $EDIT_ARTIST_EDIT,
+        editor_id => 1,
+        to_edit => $c->model('Artist')->get_by_id(1),
+        comment => 'A Comment',
+        ipi_codes => [],
+        isni_codes => []
+    );
+
+    is ($open_edit->status, $STATUS_OPEN);
+
+    $c->model('Editor')->delete(1);
+
+    is($c->model('Edit')->get_by_id($applied_edit->id)->status, $STATUS_APPLIED);
+    is($c->model('Edit')->get_by_id($open_edit->id)->status, $STATUS_DELETED);
+};
+
+test 'Deleting an editor unsubscribes anyone who was subscribed to them' => sub {
+    my $test = shift;
+    my $c = $test->c;
+
+    $c->sql->do(<<'EOSQL');
+INSERT INTO editor (id, name, password, ha1) VALUES (1, 'Subject', '{CLEARTEXT}', '46182940755cef2bdcc0a03b6c1a3580'), (2, 'Subscriber', '{CLEARTEXT}', '37d4b8c8bd88e53c69068830c9e34efc');
+INSERT INTO editor_subscribe_editor (editor, subscribed_editor, last_edit_sent)
+  VALUES (2, 1, 1);
+EOSQL
+
+    $c->model('Editor')->delete(1);
+    is(scalar($c->model('Editor')->subscription->get_subscriptions(2)), 0);
+};
+
+test 'Open edit and last-24-hour counts' => sub {
+    my $test = shift;
+    my $c = $test->c;
+
+    MusicBrainz::Server::Test->prepare_test_database($test->c, '+editor');
+
+    my $applied_edit = $c->model('Edit')->create(
+        edit_type => $EDIT_ARTIST_EDIT,
+        editor_id => 1,
+        to_edit => $c->model('Artist')->get_by_id(1),
+        comment => 'An additional comment',
+        ipi_codes => [],
+        isni_codes => []
+    );
+
+    accept_edit($c, $applied_edit);
+
+    my $open_edit = $c->model('Edit')->create(
+        edit_type => $EDIT_ARTIST_EDIT,
+        editor_id => 1,
+        to_edit => $c->model('Artist')->get_by_id(1),
+        comment => 'A Comment',
+        ipi_codes => [],
+        isni_codes => []
+    );
+
+    is ($open_edit->status, $STATUS_OPEN);
+
+    is($c->model('Editor')->open_edit_count(1), 1, "Open edit count is 1");
+    is($c->model('Editor')->last_24h_edit_count(1), 2, "Last 24h count is 2");
+};
+
+test 'subscription_summary' => sub {
+    my $test = shift;
+    $test->c->sql->do(<<EOSQL);
+INSERT INTO artist_name VALUES (1, 'artist');
+INSERT INTO label_name VALUES (1, 'label');
+
+INSERT INTO artist (id, gid, name, sort_name)
+  VALUES (1, 'dd448d65-d7c5-4eef-8e13-12e1bfdacdc6', 1, 1);
+INSERT INTO label (id, gid, name, sort_name)
+  VALUES (1, 'dd448d65-d7c5-4eef-8e13-12e1bfdacdc6', 1, 1);
+
+INSERT INTO editor (id, name, password, ha1, email, email_confirm_date) VALUES
+(1, 'Alice', '{CLEARTEXT}al1c3', 'd61b477a6269ddd11dbd70644335a943', '', now()),
+(2, 'Bob', '{CLEARTEXT}b0b', '47ac7eb9fe940581057e46994840a4ae', '', now());
+
+INSERT INTO edit (id, editor, type, status, data, expire_time) VALUES (1, 1, 1, 1, '', now());
+
+INSERT INTO editor_collection (id, gid, editor, name)
+  VALUES (1, 'dd448d65-d7c5-4eef-8e13-12e1bfdacdc6', 1, 'Stuff');
+
+INSERT INTO editor_subscribe_artist (id, editor, artist, last_edit_sent) VALUES
+  (1, 1, 1, 1);
+INSERT INTO editor_subscribe_collection (id, editor, collection, last_edit_sent)
+  VALUES (1, 1, 1, 0);
+INSERT INTO editor_subscribe_label (id, editor, label, last_edit_sent) VALUES
+  (1, 1, 1, 1), (2, 2, 1, 1);
+INSERT INTO editor_subscribe_editor
+  (id, editor, subscribed_editor, last_edit_sent) VALUES (1, 1, 1, 1);
+EOSQL
+
+    is_deeply($test->c->model('Editor')->subscription_summary(1),
+              { artist => 1,
+                collection => 1,
+                label => 1,
+                editor => 1 });
+
+    is_deeply($test->c->model('Editor')->subscription_summary(2),
+              { artist => 0,
+                collection => 0,
+                label => 1,
+                editor => 0 });
 };
 
 1;

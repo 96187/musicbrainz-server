@@ -23,7 +23,6 @@ MB.Control.ArtistCredit = function(obj, boxnumber, container) {
 
     self.boxnumber = boxnumber;
     self.container = container;
-    self.placeholder_options = { 'submit_placeholder_if_empty': true };
 
     if (obj === null)
     {
@@ -67,15 +66,10 @@ MB.Control.ArtistCredit = function(obj, boxnumber, container) {
         self.$gid.val ('');
         self.$id.val ('');
         self.updateLookupPerformed ();
-
-        self.$credit.attr ('placeholder', '')
-            .mb_placeholder (self.placeholder_options);
+        self.$credit.val("");
     };
 
     self.render = function (data) {
-
-        var artist_name = data.artist.name;
-
         self.$name.val (data.artist.name).removeClass('error');
         self.container.clearError (self);
         self.$sortname.val (data.artist.sortname);
@@ -84,19 +78,7 @@ MB.Control.ArtistCredit = function(obj, boxnumber, container) {
         self.$gid.val (data.artist.gid);
         self.$id.val (data.artist.id);
         self.updateLookupPerformed ();
-
-        if (data.name === '' || data.name === artist_name)
-        {
-            self.$credit.val ('')
-        }
-        else
-        {
-            self.$credit.val (data.name);
-        }
-
-        self.$credit
-            .attr ('placeholder', artist_name)
-            .mb_placeholder (self.placeholder_options);
+        self.$credit.val(data.name || data.artist.name);
 
         if (self.$join.val () !== '')
         {
@@ -113,12 +95,6 @@ MB.Control.ArtistCredit = function(obj, boxnumber, container) {
             if (self.$credit.val () !== "")
             {
                 self.$credit.val (MB.GuessCase.artist.guess (self.$credit.val ()));
-            }
-            else if (self.$credit.attr ('placeholder') !== "")
-            {
-                self.$credit.attr (
-                    'placeholder',
-                    MB.GuessCase.artist.guess (self.$credit.attr ('placeholder')));
             }
         }
     };
@@ -156,20 +132,18 @@ MB.Control.ArtistCredit = function(obj, boxnumber, container) {
     self.update = function(event, data) {
         if (data.name)
         {
+            var oldName = self.$name.data("mb_selected_name");
+            var oldCredit = self.$credit.val();
             self.$name.data ('mb_selected_name', data.name);
             self.$name.val (data.name).removeClass ('error');
+            if (oldName === oldCredit) {
+                self.$credit.val(data.name);
+            }
             self.container.clearError (self);
             self.$sortname.val (data.sortname);
             self.$gid.val (data.gid);
             self.$id.val (data.id);
             self.updateLookupPerformed ();
-
-            if (self.$credit.val () === '' || self.$credit.hasClass ('mb_placeholder'))
-            {
-                self.$credit.attr ('placeholder', data.name)
-                    .mb_placeholder (self.placeholder_options);
-            }
-
             self.container.renderPreview();
         }
 
@@ -182,16 +156,6 @@ MB.Control.ArtistCredit = function(obj, boxnumber, container) {
         self.$name.removeClass ('error');
 
         return request;
-    };
-
-    self.resultHook = function (data) {
-
-        data.push ({
-            "action": function () { self.clear () },
-            "message": MB.text.RemoveLinkedEntity['artist']
-        });
-
-        return data;
     };
 
     self.nameBlurred = function(event) {
@@ -223,19 +187,14 @@ MB.Control.ArtistCredit = function(obj, boxnumber, container) {
             self.updateLookupPerformed ();
         }
 
-        /* if the artist credit is empty use the value of $name as
-         * placeholder.
-         */
-        if (self.$credit.val () === '')
-        {
-            self.$credit.attr ('placeholder', self.$name.val ())
-                .mb_placeholder (self.placeholder_options);
-        }
-
         self.container.renderPreview();
     };
 
     self.creditBlurred = function(event) {
+        if (self.$credit.val() === "") {
+            self.$credit.val(self.$name.val());
+        }
+
         self.container.renderPreview();
     };
 
@@ -275,12 +234,20 @@ MB.Control.ArtistCredit = function(obj, boxnumber, container) {
                (such as "feat.") it is likely that it should be surrounded
                by spaces.  Add those spaces automatically only this first
                time.
+               Also standardise "feat." according to our guidelines.
             */
 
             var join = self.$join.val ();
+            join = join.replace (/^\s*(feat\.?|ft\.?|featuring)\s*$/i,"feat.");
             if (join.match (/^[A-Za-z]*\.?$/))
             {
                 self.$join.val (' ' + join + ' ');
+            }
+            else if(join.match(/^,$/)) {
+                self.$join.val (', ');
+            }
+            else if(join.match(/^&$/)) {
+                self.$join.val (' & ');
             }
         }
 
@@ -315,18 +282,22 @@ MB.Control.ArtistCredit = function(obj, boxnumber, container) {
     };
 
     self.renderPreviewText = function () {
-        return self.renderName () + self.$join.val ();
+        return self.renderName () + self.renderJoinPhrase();
+    };
+
+    self.renderJoinPhrase = function() {
+        return self.$join.val() || '';
     };
 
     self.renderPreviewHTML = function () {
         if (self.$gid.val () === '')
         {
             return MB.utility.escapeHTML (self.renderName ()) +
-                MB.utility.escapeHTML (self.$join.val ());
+                MB.utility.escapeHTML (self.renderJoinPhrase());
         }
 
         var hover = self.$sortname.val ();
-        if (self.$comment.val () != '')
+        if (self.$comment.val () && self.$comment.val() != '')
         {
             hover = hover + ", " + self.$comment.val ();
         }
@@ -335,7 +306,7 @@ MB.Control.ArtistCredit = function(obj, boxnumber, container) {
             MB.utility.escapeHTML (self.$gid.val ()) + '" title="' +
             MB.utility.escapeHTML (hover) + '">' +
             MB.utility.escapeHTML (self.renderName ()) + '</a>' +
-            MB.utility.escapeHTML (self.$join.val ());
+            MB.utility.escapeHTML (self.renderJoinPhrase());
     };
 
     self.remove = function () {
@@ -398,8 +369,9 @@ MB.Control.ArtistCredit = function(obj, boxnumber, container) {
         'input': self.$name,
         'entity': 'artist',
         'select': self.update,
+        'clear': self.clear,
         'lookupHook': self.lookupHook,
-        'resultHook': self.resultHook
+        'allow_empty': true
     }).initialize ();
 
     if (obj === null)
@@ -410,17 +382,6 @@ MB.Control.ArtistCredit = function(obj, boxnumber, container) {
     }
     else
     {
-        /* if artist name and artist credit are identical on load, render
-           the artist credit as a placeholder.  Also initialize the placeholder
-           if the artist credit is empty. */
-        if (self.$name.val () === self.$credit.val ()
-            || self.$credit.val () === '')
-        {
-            self.$credit.val ('');
-            self.$credit.attr ('placeholder', self.$name.val ())
-                .mb_placeholder (self.placeholder_options);
-        }
-
         if (self.$id.val () !== '')
         {
             self.$name.data ('mb_selected_name', self.$name.val ());
@@ -461,8 +422,9 @@ MB.Control.ArtistCreditContainer = function($target, $container) {
             'input': self.$artist_input,
             'entity': 'artist',
             'select': self.update,
+            'clear': self.clear,
             'lookupHook': self.lookupHook,
-            'resultHook': self.resultHook
+            'allow_empty': true
         }).initialize ();
 
         self.$add_artist.bind ('click.mb', self.addArtistBox);
@@ -516,16 +478,6 @@ MB.Control.ArtistCreditContainer = function($target, $container) {
         self.$artist_input.removeClass ('error');
 
         return request;
-    };
-
-    self.resultHook = function (data) {
-
-        data.push ({
-            "action": function () { self.clear () },
-            "message": MB.text.RemoveLinkedEntity['artist']
-        });
-
-        return data;
     };
 
     self.addArtistBox = function () {
@@ -710,21 +662,32 @@ MB.Control.ArtistCreditContainer = function($target, $container) {
             if(item.isEmpty ())
                 return;
 
-            var artistcredit = item.$credit.val () ?
-                item.$credit.val () : item.$credit.attr ('placeholder');
+            var artistname = _.clean(item.$name.val()),
+                artistcredit = _.clean(item.$credit.val()) || artistname;
 
             ret.push({
                 'artist': {
-                    'name': MB.utility.trim (item.$name.val ()),
+                    'name': artistname,
                     'id': item.$id.val (),
                     'gid': item.$gid.val ()
                 },
-                'name': MB.utility.trim (artistcredit),
+                'name': artistcredit,
                 'join_phrase': item.$join.val () || ''
             });
         });
 
         return { 'names': ret };
+    };
+
+    self.isComplex = function () {
+        var ret = self.box.length > 1,
+            box = self.box[0];
+
+        if (!ret && box !== undefined) {
+            ret = box.$id.val() || box.$gid.val();
+        }
+
+        return ret;
     };
 
     self.targetBlurred = function(event) {
@@ -737,12 +700,12 @@ MB.Control.ArtistCreditContainer = function($target, $container) {
         if (self.box.length > 1 || self.box[0].hasCredit ())
             return;
 
-        $target.removeAttr ('disabled');
+        $target.prop('disabled', false);
         $target.closest ('span.autocomplete').removeClass ('disabled');
     };
 
     self.disableTarget = function () {
-        $target.attr ('disabled', 'disabled');
+        $target.prop('disabled', true);
         $target.closest ('span.autocomplete').addClass ('disabled');
     };
 

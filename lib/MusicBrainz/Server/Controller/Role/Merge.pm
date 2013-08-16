@@ -20,8 +20,8 @@ role {
 
     $extra{consumer}->name->config(
         action => {
-            merge => { Local => undef, RequireAuth => undef, Edit => undef },
-            merge_queue => { Local => undef, RequireAuth => undef, Edit => undef }
+            merge => { Local => undef, Edit => undef },
+            merge_queue => { Local => undef, Edit => undef }
         }
     );
 
@@ -148,20 +148,22 @@ role {
 
         log_assertion { @old_ids >= 1 } 'Got at least 1 entity to merge';
 
-        $self->_insert_edit(
-            $c, $form,
-            edit_type => $params->edit_type,
-            new_entity => {
-                id => $new->id,
-                name => $new->name,
-            },
-            old_entities => [ map +{
-                id => $entity_id{$_}->id,
-                name => $entity_id{$_}->name
-            }, @old_ids ],
-            (map { $_->name => $_->value } $form->edit_fields),
-            $self->_merge_parameters($c, $form, $entities)
-        );
+        $c->model('MB')->with_transaction(sub {
+            $self->_insert_edit(
+                $c, $form,
+                edit_type => $params->edit_type,
+                new_entity => {
+                    id => $new->id,
+                    name => $new->name,
+                },
+                old_entities => [ map +{
+                    id => $entity_id{$_}->id,
+                    name => $entity_id{$_}->name
+                }, @old_ids ],
+                (map { $_->name => $_->value } $form->edit_fields),
+                $self->_merge_parameters($c, $form, $entities)
+            );
+        });
 
         $c->session->{merger} = undef;
 

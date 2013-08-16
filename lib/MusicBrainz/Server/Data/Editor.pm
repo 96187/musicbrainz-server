@@ -4,10 +4,19 @@ use namespace::autoclean;
 use LWP;
 use URI::Escape;
 
+use Authen::Passphrase;
+use Authen::Passphrase::BlowfishCrypt;
+use Authen::Passphrase::RejectAll;
 use DateTime;
+use Digest::MD5 qw( md5_hex );
+use Encode;
+use Math::Random::Secure qw();
+use MusicBrainz::Server::Constants qw( $STATUS_DELETED $STATUS_OPEN );
 use MusicBrainz::Server::Entity::Preferences;
 use MusicBrainz::Server::Entity::Editor;
 use MusicBrainz::Server::Data::Utils qw(
+    generate_gid
+    hash_to_row
     load_subobjects
     placeholders
     query_to_list
@@ -15,13 +24,13 @@ use MusicBrainz::Server::Data::Utils qw(
     query_to_list
     type_to_model
 );
-use MusicBrainz::Server::Types qw( :edit_status :privileges );
+use MusicBrainz::Server::Constants qw( :edit_status :privileges );
 
 extends 'MusicBrainz::Server::Data::Entity';
 with 'MusicBrainz::Server::Data::Role::Subscription' => {
     table => 'editor_subscribe_editor',
     column => 'subscribed_editor',
-    class => 'MusicBrainz::Server::Entity::EditorSubscription'
+    active_class => 'MusicBrainz::Server::Entity::EditorSubscription'
 };
 
 sub _table
@@ -33,7 +42,8 @@ sub _columns
 {
     return 'editor.id, editor.name, password, privs, email, website, bio,
             member_since, email_confirm_date, last_login_date, edits_accepted,
-            edits_rejected, auto_edits_accepted, edits_failed';
+            edits_rejected, auto_edits_accepted, edits_failed, gender, area,
+            birth_date, ha1';
 }
 
 sub _column_mapping
@@ -53,6 +63,10 @@ sub _column_mapping
         email_confirmation_date => 'email_confirm_date',
         registration_date       => 'member_since',
         last_login_date         => 'last_login_date',
+        gender_id               => 'gender',
+        area_id                 => 'area',
+        birth_date              => 'birth_date',
+        ha1                     => 'ha1'
     };
 }
 
@@ -68,7 +82,9 @@ sub get_by_name
                 ' FROM ' . $self->_table .
                 ' WHERE lower(name) = ? LIMIT 1';
     my $row = $self->sql->select_single_row_hash($query, lc $name);
-    return $self->_new_from_row($row);
+    my $editor = $self->_new_from_row($row);
+    $self->load_preferences($editor);
+    return $editor;
 }
 
 sub find_by_name
@@ -78,60 +94,26 @@ sub find_by_name
                 '  FROM ' . $self->_table .
                 " WHERE musicbrainz_unaccent(lower(name)) LIKE musicbrainz_unaccent(lower(?)) || '%'
                  OFFSET ?";
-    return query_to_list_limited(
+    my @editors = query_to_list_limited(
         $self->c->sql, $offset, $limit, sub { $self->_new_from_row(@_) },
         $query, $name, $offset
     );
+    $self->load_preferences(@editors);
+    return @editors;
 }
 
-sub _get_ratings_for_type
-{
-    my ($self, $id, $type, $me) = @_;
-
-    my $query = "
-        SELECT $type AS id, rating FROM ${type}_rating_raw
-        WHERE editor = ? ORDER BY rating DESC, editor";
-
-    my $results = $self->c->sql->select_list_of_hashes ($query, $id);
-    my $entities = $self->c->model(type_to_model($type))->get_by_ids(map { $_->{id} } @$results);
-
-    my $ratings = [];
-
-    for my $row (@$results) {
-        if ($me) {
-            $entities->{$row->{id}}->user_rating($row->{rating});
-        }
-        else {
-            $entities->{$row->{id}}->rating($row->{rating});
-            $entities->{$row->{id}}->rating_count(1);
-        }
-        push @$ratings, {
-            $type => $entities->{$row->{id}},
-            rating => $row->{rating},
-        }
-    }
-
-    # Sort by rating DESC, name ASC
-    # Sadly we can't do this in SQL, as the name is in a different schema
-    return [ sort {
-        ($b->{rating} <=> $a->{rating})
-            or
-        ($a->{$type}->name cmp $b->{$type}->name)
-    } @$ratings ];
-}
-
-sub get_ratings
+sub summarize_ratings
 {
     my ($self, $user, $me) = @_;
 
-    my $ratings = {};
-    foreach my $entity ('artist', 'label', 'recording', 'release_group', 'work')
-    {
-        my $data = $self->_get_ratings_for_type ($user->id, $entity, $me);
-        $ratings->{$entity} = $data if @$data;
-    }
+    return {
+        map {
+            my ($entities) = $self->c->model(type_to_model($_))->rating
+                ->find_editor_ratings($user->id, $me, 10, 0);
 
-    return $ratings;
+            ($_ => $entities);
+        } qw( artist label recording release_group work)
+    };
 }
 
 sub _get_tags_for_type
@@ -185,6 +167,16 @@ sub get_tags
     return { max => $max, tags => \@tags };
 }
 
+around '_get_by_keys' => sub {
+    my $orig = shift;
+    my $self = shift;
+
+    my $ret = $self->$orig(@_);
+    $self->load_preferences(values %$ret);
+
+    return $ret;
+};
+
 sub find_by_email
 {
     my ($self, $email) = @_;
@@ -235,11 +227,16 @@ sub insert
 {
     my ($self, $data) = @_;
 
+    my $plaintext = $data->{password};
+    $data->{password} = hash_password($plaintext);
+    $data->{ha1} = ha1_password($data->{name}, $plaintext);
+
     return Sql::run_in_transaction(sub {
         return $self->_entity_class->new(
             id => $self->sql->insert_row('editor', $data, 'id'),
             name => $data->{name},
             password => $data->{password},
+            ha1 => $data->{ha1},
             accepted_edits => 0,
             rejected_edits => 0,
             failed_edits => 0,
@@ -272,21 +269,42 @@ sub update_email
 
 sub update_password
 {
-    my ($self, $editor, $password) = @_;
+    my ($self, $editor_name, $password) = @_;
 
     Sql::run_in_transaction(sub {
-        $self->sql->do('UPDATE editor SET password=? WHERE id=?',
-                 $password, $editor->id);
+        $self->sql->do('UPDATE editor SET password = ?, ha1 = md5(name || \':musicbrainz.org:\' || ?), last_login_date = now() WHERE name = ?',
+                       hash_password($password),
+                       $password,
+                       $editor_name);
     }, $self->sql);
 }
 
 sub update_profile
 {
-    my ($self, $editor, $website, $bio) = @_;
+    my ($self, $editor, $update) = @_;
+
+    my $row = hash_to_row(
+        $update,
+        {
+            bio => 'biography',
+            area => 'area_id',
+            gender => 'gender_id',
+            website => 'website',
+            birth_date => 'birth_date',
+        }
+    );
+
+    if (my $date = delete $row->{birth_date}) {
+        if (%$date) { # if date is given but all NULL, it will be an empty hash.
+            $row->{birth_date} = sprintf '%d-%d-%d', map { $date->{$_} } qw( year month day )
+        }
+        else {
+            $row->{birth_date} = undef;
+        }
+    }
 
     Sql::run_in_transaction(sub {
-        $self->sql->do('UPDATE editor SET website=?, bio=? WHERE id=?',
-                 $website || undef, $bio || undef, $editor->id);
+        $self->sql->update_row('editor', $row, { id => $editor->id });
     }, $self->sql);
 }
 
@@ -298,7 +316,7 @@ sub update_privileges
                 + $values->{bot}              * $BOT_FLAG
                 + $values->{untrusted}        * $UNTRUSTED_FLAG
                 + $values->{link_editor}      * $RELATIONSHIP_EDITOR_FLAG
-                + $values->{no_nag}           * $DONT_NAG_FLAG
+                + $values->{location_editor}  * $LOCATION_EDITOR_FLAG
                 + $values->{wiki_transcluder} * $WIKI_TRANSCLUSION_FLAG
                 + $values->{mbid_submitter}   * $MBID_SUBMITTER_FLAG
                 + $values->{account_admin}    * $ACCOUNT_ADMIN_FLAG;
@@ -321,6 +339,7 @@ sub load
 {
     my ($self, @objs) = @_;
     load_subobjects($self, 'editor', @objs);
+    $self->load_preferences(map { $_->editor } grep defined, @objs);
 }
 
 sub load_preferences
@@ -329,7 +348,8 @@ sub load_preferences
 
     return unless @editors;
 
-    my %editors = map { $_->id => $_ } @editors;
+    my %editors = map { $_->id => $_ } grep { defined } @editors
+        or return;
 
     my $query = sprintf "SELECT editor, name, value ".
         "FROM editor_preference WHERE editor IN (%s)",
@@ -381,37 +401,12 @@ sub credit
     $self->sql->do($query, $editor_id);
 }
 
-sub donation_check
+# Must be run in a transaction to actually do anything. Acquires a row-level lock for a given editor ID.
+sub lock_row
 {
-    my ($self, $obj) = @_;
-
-    my $nag = 1;
-    $nag = 0 if ($obj->is_nag_free || $obj->is_auto_editor || $obj->is_bot ||
-                 $obj->is_relationship_editor || $obj->is_wiki_transcluder);
-
-    my $days = 0.0;
-    if ($nag)
-    {
-        my $ua = LWP::UserAgent->new;
-        $ua->agent("MusicBrainz server");
-        $ua->timeout(5); # in seconds.
-
-        my $response = $ua->request(HTTP::Request->new (GET =>
-            'http://metabrainz.org/cgi-bin/nagcheck_days?moderator='.
-            uri_escape_utf8($obj->name)));
-
-        if ($response->is_success && $response->content =~ /\s*([-01]+),([-0-9.]+)\s*/)
-        {
-            $nag = $1;
-            $days = $2;
-        }
-        else
-        {
-            return undef;
-        }
-    }
-
-    return { nag => $nag, days => $days };
+    my ($self, $editor_id) = @_;
+    my $query = "SELECT 1 FROM " . $self->_table . " WHERE id = ? FOR UPDATE";
+    $self->sql->do($query, $editor_id);
 }
 
 sub editors_with_subscriptions
@@ -420,8 +415,11 @@ sub editors_with_subscriptions
 
     my @tables = qw(
         editor_subscribe_artist
+        editor_subscribe_artist_deleted
+        editor_subscribe_collection
         editor_subscribe_editor
         editor_subscribe_label
+        editor_subscribe_label_deleted
     );
     my $ids = join(' UNION ALL ', map { "SELECT editor FROM $_" } @tables);
     my $query = "SELECT " . $self->_columns . ", ep.value AS prefs_value
@@ -448,18 +446,27 @@ sub delete {
     $self->sql->begin;
     $self->sql->do(
         "UPDATE editor SET name = 'Deleted Editor #' || id,
-                           password = '',
+                           password = ?,
+                           ha1 = '',
                            privs = 0,
                            email = NULL,
+                           email_confirm_date = NULL,
                            website = NULL,
-                           bio = NULL
+                           bio = NULL,
+                           area = NULL,
+                           birth_date = NULL,
+                           gender = NULL
          WHERE id = ?",
+        Authen::Passphrase::RejectAll->new->as_rfc2307,
         $editor_id
     );
 
     $self->sql->do("DELETE FROM editor_preference WHERE editor = ?", $editor_id);
+    $self->c->model('EditorLanguage')->delete_editor($editor_id);
+    $self->c->model('EditorOAuthToken')->delete_editor($editor_id);
 
     $self->c->model('EditorSubscriptions')->delete_editor($editor_id);
+    $self->c->model('Editor')->unsubscribe_to($editor_id);
     $self->c->model('Collection')->delete_editor($editor_id);
     $self->c->model('WatchArtist')->delete_editor($editor_id);
 
@@ -480,7 +487,133 @@ sub delete {
                 Work
           );
 
+    # Cancel any open edits the editor still has
+    my @edits = values %{ $self->c->model('Edit')->get_by_ids(
+        @{ $self->sql->select_single_column_array(
+            'SELECT id FROM edit WHERE editor = ? AND status = ?',
+            $editor_id, $STATUS_OPEN)
+       }
+    ) };
+
+    for my $edit (@edits) {
+        $self->c->model('Edit')->cancel($edit);
+    }
+
     $self->sql->commit;
+}
+
+sub subscription_summary {
+    my ($self, $editor_id) = @_;
+
+    $self->sql->select_single_row_hash(
+        'SELECT ' .
+            join(', ', map {
+                "COALESCE(
+                   (SELECT count(*) FROM editor_subscribe_$_ WHERE editor = ?),
+                   0) AS $_"
+            } qw( artist collection label editor )),
+        ($editor_id) x 4
+    );
+}
+
+sub _edit_count
+{
+    my ($self, $editor_id, $status) = @_;
+    my $query =
+        'SELECT count(*)
+           FROM edit
+          WHERE status = ?
+          AND editor = ?
+       ';
+
+    return $self->sql->select_single_value($query, $status, $editor_id);
+}
+
+sub open_edit_count
+{
+    my ($self, $editor_id) = @_;
+    return $self->_edit_count ($editor_id, $STATUS_OPEN);
+}
+
+sub cancelled_edit_count
+{
+    my ($self, $editor_id) = @_;
+    return $self->_edit_count ($editor_id, $STATUS_DELETED);
+}
+
+sub last_24h_edit_count
+{
+    my ($self, $editor_id) = @_;
+    my $query =
+        "SELECT count(*)
+           FROM edit
+          WHERE editor = ?
+          AND open_time >= (now() - interval '1 day')
+       ";
+
+    return $self->sql->select_single_value($query, $editor_id);
+}
+
+sub unsubscribe_to {
+    my ($self, $editor_id) = @_;
+    $self->sql->do(
+        'DELETE FROM editor_subscribe_editor WHERE subscribed_editor = ?',
+        $editor_id);
+}
+
+sub update_last_login_date {
+    my ($self, $editor_id) = @_;
+    $self->sql->auto_commit(1);
+    $self->sql->do('UPDATE editor SET last_login_date = now() WHERE id = ?', $editor_id);
+}
+
+sub hash_password {
+    my $password = shift;
+    Authen::Passphrase::BlowfishCrypt->new(
+        salt_random => 1,
+        cost => 10,
+        passphrase => encode('utf-8', $password)
+    )->as_rfc2307
+}
+
+sub ha1_password {
+    my ($username, $password) = @_;
+    return md5_hex(join(':', encode('utf-8', $username), 'musicbrainz.org', encode('utf-8', $password)));
+}
+
+sub consume_remember_me_token {
+    my ($self, $user_name, $token) = @_;
+
+    my $token_key = "$user_name|$token";
+    # Expire consumed tokens in 5 minutes. This allows the case where the user
+    # has no session, and opens multiple tabs using the same remember_me token.
+    $self->redis->expire($token_key, 5 * 60);
+    $self->redis->exists($token_key);
+}
+
+sub allocate_remember_me_token {
+    my ($self, $user_name) = @_;
+
+    if (
+        $self->sql->select_single_value(
+            'SELECT TRUE FROM editor WHERE name = ?',
+            $user_name
+        )
+    ) {
+        # Generate a 128-bit token. irand is 32-bit.
+        my $token = join('', map { '' . Math::Random::Secure::irand() } (0 .. 3));
+
+        my $key = "$user_name|$token";
+        $self->redis->add($key, 1);
+
+        # Expire tokens after 1 year.
+        $self->redis->expire($key, 60 * 60 * 24 * 7 * 52);
+
+        return $token;
+    }
+    else {
+        return undef;
+    }
 }
 
 no Moose;

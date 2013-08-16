@@ -12,8 +12,10 @@ use MusicBrainz::Server::EditSearch::Predicate::Entity;
 use MusicBrainz::Server::EditSearch::Predicate::Editor;
 use MusicBrainz::Server::EditSearch::Predicate::Vote;
 use MusicBrainz::Server::EditSearch::Predicate::ReleaseLanguage;
-use MusicBrainz::Server::EditSearch::Predicate::ArtistCountry;
-use MusicBrainz::Server::EditSearch::Predicate::LabelCountry;
+use MusicBrainz::Server::EditSearch::Predicate::ReleaseQuality;
+use MusicBrainz::Server::EditSearch::Predicate::ArtistArea;
+use MusicBrainz::Server::EditSearch::Predicate::LabelArea;
+use MusicBrainz::Server::EditSearch::Predicate::ReleaseCountry;
 use MusicBrainz::Server::EditSearch::Predicate::RelationshipType;
 use MusicBrainz::Server::Log 'log_warning';
 use String::CamelCase qw( camelize );
@@ -31,8 +33,10 @@ my %field_map = (
     editor => 'MusicBrainz::Server::EditSearch::Predicate::Editor',
     vote => 'MusicBrainz::Server::EditSearch::Predicate::Vote',
     release_language => 'MusicBrainz::Server::EditSearch::Predicate::ReleaseLanguage',
-    artist_country => 'MusicBrainz::Server::EditSearch::Predicate::ArtistCountry',
-    label_country => 'MusicBrainz::Server::EditSearch::Predicate::LabelCountry',
+    release_quality => 'MusicBrainz::Server::EditSearch::Predicate::ReleaseQuality',
+    artist_area => 'MusicBrainz::Server::EditSearch::Predicate::ArtistArea',
+    label_area => 'MusicBrainz::Server::EditSearch::Predicate::LabelArea',
+    release_country => 'MusicBrainz::Server::EditSearch::Predicate::ReleaseCountry',
     link_type => 'MusicBrainz::Server::EditSearch::Predicate::RelationshipType',
 
     map {
@@ -154,9 +158,12 @@ sub as_string {
     my $comb = $self->combinator;
     my $ae_predicate = defined $self->auto_edit_filter ?
         'autoedit = ? AND ' : '';
+
     my $order = '';
-    $order = 'ORDER BY open_time ' . $self->order
+    $order = 'ORDER BY ' . join(', ', map { "$_ " . $self->order }
+                                        qw( edit.open_time edit.id ))
         unless $self->order eq 'rand';
+
     return 'SELECT DISTINCT edit.* FROM edit ' .
         join(' ', $self->join) .
         ' WHERE ' . $ae_predicate . ($self->negate ? 'NOT' : '') . ' (' .

@@ -5,8 +5,6 @@ use 5.10.0;
 
 extends 'MusicBrainz::Server::Connector';
 
-sub _schema { 'musicbrainz_test,public' }
-
 # *DISABLE* the thread saftey guarantees that DBIx::Connector provides.
 #
 # ocharles introduced this bit of horrible code, because of Selenium. When we
@@ -44,9 +42,13 @@ sub _schema { 'musicbrainz_test,public' }
     };
 }
 
+# No-op. In testing we need the connection to be set up by the test harness,
+# and remain over a web request (to share the same transaction).
+# t/lib/t/Context.pm manually refreshes connections.
+override refresh => sub { };
+override disconnect => sub { };
 
 __PACKAGE__->meta->make_immutable;
 no Moose;
 
 1;
-

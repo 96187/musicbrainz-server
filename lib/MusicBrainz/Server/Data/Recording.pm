@@ -24,6 +24,7 @@ use MusicBrainz::Server::Entity::Recording;
 extends 'MusicBrainz::Server::Data::CoreEntity';
 with 'MusicBrainz::Server::Data::Role::Annotation' => { type => 'recording' };
 with 'MusicBrainz::Server::Data::Role::Editable' => { table => 'recording' };
+with 'MusicBrainz::Server::Data::Role::Name' => { name_table => 'track_name' };
 with 'MusicBrainz::Server::Data::Role::Rating' => { type => 'recording' };
 with 'MusicBrainz::Server::Data::Role::Tag' => { type => 'recording' };
 with 'MusicBrainz::Server::Data::Role::LinksToEdit' => { table => 'recording' };
@@ -127,7 +128,7 @@ sub find_by_release
     my $query = "SELECT " . $self->_columns . "
                  FROM " . $self->_table . "
                      JOIN track ON track.recording = recording.id
-                     JOIN medium ON medium.tracklist = track.tracklist
+                     JOIN medium ON medium.id = track.medium
                      JOIN release ON release.id = medium.release
                  WHERE release.id = ?
                  ORDER BY musicbrainz_collate(name.name)
@@ -204,55 +205,6 @@ sub delete
         @recording_ids
     );
     return;
-}
-
-=method garbage_collect_orphans
-
-Remove any recordings that do not have a corresponding 'add track', 'add track kv' or
-'add standalone recording' edit (which means they were created through the release
-editor).
-
-=cut
-
-sub garbage_collect_orphans {
-    my ($self, @possibly_orphaned_recordings) = @_;
-
-    return unless @possibly_orphaned_recordings;
-
-    my @orphans = @{ $self->sql->select_single_column_array(
-        'SELECT id FROM recording outer_r
-         WHERE id IN (' . placeholders(@possibly_orphaned_recordings) . ')
-         AND edits_pending = 0
-         AND NOT EXISTS (
-             SELECT TRUE
-             FROM edit JOIN edit_recording er ON edit.id = er.edit
-             WHERE er.recording = outer_r.id
-             AND (type = ? OR type = ? OR type = ?)
-             LIMIT 1
-         ) AND NOT EXISTS (
-             SELECT TRUE FROM track WHERE track.recording = outer_r.id LIMIT 1
-         ) AND NOT EXISTS (
-             SELECT TRUE FROM l_artist_recording WHERE entity1 = outer_r.id
-             UNION ALL
-             SELECT TRUE FROM l_label_recording WHERE entity1 = outer_r.id
-             UNION ALL
-             SELECT TRUE FROM l_recording_recording WHERE entity1 = outer_r.id OR entity0 = outer_r.id
-             UNION ALL
-             SELECT TRUE FROM l_recording_release WHERE entity0 = outer_r.id
-             UNION ALL
-             SELECT TRUE FROM l_recording_release_group WHERE entity0 = outer_r.id
-             UNION ALL
-             SELECT TRUE FROM l_recording_work WHERE entity0 = outer_r.id
-             UNION ALL
-             SELECT TRUE FROM l_recording_url WHERE entity0 = outer_r.id
-         )',
-        @possibly_orphaned_recordings,
-        $EDIT_RECORDING_CREATE,
-        $EDIT_HISTORIC_ADD_TRACK,
-        $EDIT_HISTORIC_ADD_TRACK_KV
-    ) } or return;
-
-    $self->delete(@orphans);
 }
 
 sub _hash_to_row
@@ -343,13 +295,13 @@ sub appears_on
 
     my $query =
         "SELECT DISTINCT ON (recording.id, name.name, type)
-             rg.id, rg.gid, type AS type_id, name.name,
+             rg.id, rg.gid, type AS primary_type_id, name.name,
              rg.artist_credit AS artist_credit_id, recording.id AS recording
          FROM release_group rg
            JOIN release_name name ON rg.name=name.id
            JOIN release ON release.release_group = rg.id
            JOIN medium ON release.id = medium.release
-           JOIN track ON track.tracklist = medium.tracklist
+           JOIN track ON track.medium = medium.id
            JOIN recording ON recording.id = track.recording
          WHERE recording.id IN (" . placeholders (@ids) . ")";
 
@@ -366,7 +318,7 @@ sub appears_on
     {
         # A crude ordering of importance.
         my @rgs = uniq_by { $_->name }
-                  rev_nsort_by { $_->type_id // -1 }
+                  rev_nsort_by { $_->primary_type_id // -1 }
                   sort_by { $_->name  }
                   @{ $map{$rec_id} };
 
@@ -412,21 +364,20 @@ sub find_tracklist_offsets {
       r (id) AS ( SELECT ?::int ),
       bef AS (
         SELECT container.id AS container,
-               sum(tracklist.track_count)
+               sum(container.track_count)
         FROM medium container
-        JOIN track ON track.tracklist = container.tracklist
+        JOIN track ON track.medium = container.id
         JOIN medium bef ON (
           container.release = bef.release AND
           container.position > bef.position
         )
-        JOIN tracklist ON bef.tracklist = tracklist.id
         JOIN r ON r.id = track.recording
         GROUP BY container.id, track.id
       )
       SELECT medium.release, (track.position - 1) + COALESCE(bef.sum, 0)
       FROM track
       JOIN r ON r.id = track.recording
-      JOIN medium ON track.tracklist = medium.tracklist
+      JOIN medium ON track.medium = medium.id
       LEFT JOIN bef ON bef.container = medium.id;
 EOSQL
 

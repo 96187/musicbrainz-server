@@ -6,6 +6,7 @@ BEGIN { extends 'MusicBrainz::Server::Controller'; }
 use aliased 'MusicBrainz::Server::Entity::CDTOC';
 
 use MusicBrainz::Server::Translation qw( l ln );
+use MusicBrainz::Server::ControllerUtils::CDTOC qw( add_dash );
 
 with 'MusicBrainz::Server::Controller::Role::Load' => {
     model       => 'CDStubTOC',
@@ -17,6 +18,8 @@ sub base : Chained('/') PathPart('cdstub') CaptureArgs(0) { }
 sub _load 
 {
     my ($self, $c, $id) = @_;
+
+    add_dash($c, $id);
 
     if (!is_valid_discid($id)) {
         $c->stash(
@@ -46,7 +49,8 @@ sub _load
     $c->stash->{cdstub} = $cdstubtoc;
 }
 
-sub add : Path('add') {
+sub add : Path('add') DenyWhenReadonly
+{
     my ($self, $c) = @_;
 
     if ($c->user_exists) {
@@ -78,7 +82,7 @@ sub add : Path('add') {
             tracks => [ map +{}, (1..$toc->track_count) ]
         }
     );
-    $c->stash( template => 'cdstub/edit.tt' );
+    $c->stash( template => 'cdstub/add.tt' );
     if ($form->submitted_and_valid($c->req->params)) {
         my $form_val = $form->value;
         $c->model('CDStub')->insert({
@@ -112,7 +116,7 @@ sub browse : Path('browse')
              );
 }
 
-sub edit : Chained('load')
+sub edit : Chained('load') DenyWhenReadonly
 {
     my ($self, $c) = @_;
     my $cdstub_toc = $c->stash->{cdstub};

@@ -27,14 +27,16 @@ subtest 'Create artists with all fields' => sub {
             'edit-artist.name' => 'controller artist',
             'edit-artist.sort_name' => 'artist, controller',
             'edit-artist.type_id' => 1,
-            'edit-artist.country_id' => 2,
+            'edit-artist.area_id' => 222,
             'edit-artist.gender_id' => 2,
-            'edit-artist.begin_date.year' => 1990,
-            'edit-artist.begin_date.month' => 01,
-            'edit-artist.begin_date.day' => 02,
-            'edit-artist.end_date.year' => 2003,
-            'edit-artist.end_date.month' => 4,
-            'edit-artist.end_date.day' => 15,
+            'edit-artist.period.begin_date.year' => 1990,
+            'edit-artist.period.begin_date.month' => 01,
+            'edit-artist.period.begin_date.day' => 02,
+            'edit-artist.begin_area_id' => 222,
+            'edit-artist.period.end_date.year' => 2003,
+            'edit-artist.period.end_date.month' => 4,
+            'edit-artist.period.end_date.day' => 15,
+            'edit-artist.end_area_id' => 222,
             'edit-artist.comment' => 'artist created in controller_artist.t',
         }
     );
@@ -47,7 +49,7 @@ subtest 'Create artists with all fields' => sub {
         name => 'controller artist',
         sort_name => 'artist, controller',
         type_id => 1,
-        country_id => 2,
+        area_id => 222,
         gender_id => 2,
         comment => 'artist created in controller_artist.t',
         begin_date => {
@@ -55,12 +57,16 @@ subtest 'Create artists with all fields' => sub {
             month => 01,
             day => 02
         },
+        begin_area_id => 222,
         end_date => {
             year => 2003,
             month => 4,
             day => 15
         },
-        ipi_code => undef
+        end_area_id => 222,
+        ended => 1,
+        ipi_codes => [],
+        isni_codes => [],
     });
 
 
@@ -70,7 +76,7 @@ subtest 'Create artists with all fields' => sub {
     $mech->content_contains ('controller artist', '.. contains artist name');
     $mech->content_contains ('artist, controller', '.. contains sort name');
     $mech->content_contains ('Person', '.. contains artist type');
-    $mech->content_contains ('United States', '.. contains country');
+    $mech->content_contains ('United States', '.. contains area');
     $mech->content_contains ('Female', '.. contains artist gender');
     $mech->content_contains ('artist created in controller_artist.t',
                              '.. contains artist comment');
@@ -91,14 +97,16 @@ subtest 'Creating artists with only the minimal amount of fields' => sub {
             'edit-artist.name' => 'Alice Artist',
             'edit-artist.sort_name' => 'Artist, Alice',
             'edit-artist.type_id' => '',
-            'edit-artist.country_id' => '',
+            'edit-artist.area_id' => '',
             'edit-artist.gender_id' => '',
-            'edit-artist.begin_date.year' => '',
-            'edit-artist.begin_date.month' => '',
-            'edit-artist.begin_date.day' => '',
-            'edit-artist.end_date.year' => '',
-            'edit-artist.end_date.month' => '',
-            'edit-artist.end_date.day' => '',
+            'edit-artist.period.begin_date.year' => '',
+            'edit-artist.period.begin_date.month' => '',
+            'edit-artist.period.begin_date.day' => '',
+            'edit-artist.end_area_id' => '',
+            'edit-artist.period.end_date.year' => '',
+            'edit-artist.period.end_date.month' => '',
+            'edit-artist.period.end_date.day' => '',
+            'edit-artist.begin_area_id' => '',
             'edit-artist.comment' => '',
         }
     );
@@ -111,10 +119,11 @@ subtest 'Creating artists with only the minimal amount of fields' => sub {
     is($edit->data->{name}, 'Alice Artist');
     is($edit->data->{sort_name}, 'Artist, Alice');
     is($edit->data->{type_id}, undef);
-    is($edit->data->{country_id}, undef);
+    is($edit->data->{area_id}, undef);
+    is($edit->data->{begin_area_id}, undef);
+    is($edit->data->{end_area_id}, undef);
     is($edit->data->{gender_id}, undef);
-    is($edit->data->{comment}, undef);
-    is($edit->data->{ipi_code}, undef);
+    is($edit->data->{comment}, '');
 
     ok( PartialDate->new($edit->data->{begin_date})->is_empty );
     ok( PartialDate->new($edit->data->{end_date})->is_empty );
@@ -136,6 +145,7 @@ subtest 'Creating artists with only the minimal amount of fields' => sub {
 sub _delete_artist
 {
     my $c = shift;
+    $c->sql->do('DELETE FROM editor_subscribe_artist WHERE artist IN (?)', @_);
     $c->sql->do('DELETE FROM artist WHERE id IN (?)', @_);
 }
 

@@ -1,3 +1,4 @@
+[%- PROCESS 'edit/details/macros.tt' -%]
  <table class="details add-medium">
    [% UNLESS edit.preview %]
    <tr>
@@ -32,7 +33,7 @@
      <td>
        <table class="tbl">
          <tbody>
-         [% INCLUDE 'tracklist/tracklist.tt' tracklist=edit.display_data.tracklist
+         [% INCLUDE 'medium/tracklist.tt' tracks=edit.display_data.tracks
             hide_rating=1 show_artists=1 %]
          </tbody>
        </table>
@@ -40,22 +41,17 @@
    </tr>
 
    <tr>
-     <th>[% l('Artist Credits') %]</th>
+     <th>[% l('Artist Credits:') %]</th>
      <td>
        <table class="tbl">
          <thead>
            <tr>
-             <th>[% l('#') %]</th>
+             <th class="pos">[% l('#') %]</th>
              <th>[% l('Artist') %]</th>
            </tr>
          </thead>
          <tbody>
-           [% FOR track=edit.display_data.tracklist.tracks %]
-           <tr class="[% loop.index % 2 == 0 ? 'ev' : '' %]">
-             <td>[% loop.count %]</td>
-             <td>[% expanded_artist_credit(track.artist_credit) %]</td>
-           </tr>
-           [% END %]
+           [% display_condensed_track_acs(edit.display_data.tracks) %]
          </tbody>
        </table>
      </td>

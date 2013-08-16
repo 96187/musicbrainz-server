@@ -7,9 +7,10 @@ use Data::Page;
 use DBDefs;
 use MusicBrainz::Server::EditRegistry;
 use MusicBrainz::Server::Edit::Utils qw( status_names );
-use MusicBrainz::Server::Types qw( $STATUS_OPEN );
+use MusicBrainz::Server::Constants qw( $STATUS_OPEN :quality );
 use MusicBrainz::Server::Validation qw( is_positive_integer );
 use MusicBrainz::Server::EditSearch::Query;
+use MusicBrainz::Server::Translation qw( N_l );
 
 use aliased 'MusicBrainz::Server::EditRegistry';
 
@@ -64,7 +65,7 @@ sub show : Chained('load') PathPart('') RequireAuth
     $c->stash->{template} = 'edit/index.tt';
 }
 
-sub enter_votes : Local RequireAuth
+sub enter_votes : Local RequireAuth DenyWhenReadonly
 {
     my ($self, $c) = @_;
 
@@ -83,36 +84,42 @@ sub enter_votes : Local RequireAuth
     $c->detach;
 }
 
-sub approve : Chained('load') RequireAuth(auto_editor)
+sub approve : Chained('load') RequireAuth(auto_editor) DenyWhenReadonly
 {
     my ($self, $c) = @_;
 
-    my $edit = $c->stash->{edit};
-    if (!$edit->can_approve($c->user)) {
-        $c->stash( template => 'edit/cannot_approve.tt' );
-        $c->detach;
-    }
+    $c->model('MB')->with_transaction(sub {
+        my $edit = $c->model('Edit')->get_by_id_and_lock($c->stash->{edit}->id);
+        $c->model('Vote')->load_for_edits($edit);
 
-    if($edit->no_votes > 0) {
-        $c->model('EditNote')->load_for_edits($edit);
-        my $left_note;
-        for my $note (@{ $edit->edit_notes }) {
-            next if $note->editor_id != $c->user->id;
-            $left_note = 1;
-            last;
+        if (!$edit->can_approve($c->user)) {
+            $c->stash( template => 'edit/cannot_approve.tt' );
+            return;
         }
+        else {
+            if($edit->approval_requires_comment($c->user)) {
+                $c->model('EditNote')->load_for_edits($edit);
+                my $left_note;
+                for my $note (@{ $edit->edit_notes }) {
+                    next if $note->editor_id != $c->user->id;
+                    $left_note = 1;
+                    last;
+                }
 
-        unless($left_note) {
-            $c->stash( template => 'edit/require_note.tt' );
-            $c->detach;
-        };
-    }
+                unless($left_note) {
+                    $c->stash( template => 'edit/require_note.tt' );
+                    return;
+                };
+            }
 
-    $c->model('Edit')->approve($edit, $c->user->id);
-    $c->response->redirect($c->req->query_params->{url} || $c->uri_for_action('/edit/show', [ $edit->id ]));
+            $c->model('Edit')->approve($edit, $c->user->id);
+            $c->response->redirect(
+                $c->req->query_params->{url} || $c->uri_for_action('/edit/show', [ $edit->id ]));
+        }
+    });
 }
 
-sub cancel : Chained('load') RequireAuth
+sub cancel : Chained('load') RequireAuth DenyWhenReadonly
 {
     my ($self, $c) = @_;
     my $edit = $c->stash->{edit};
@@ -125,17 +132,19 @@ sub cancel : Chained('load') RequireAuth
 
     my $form = $c->form(form => 'Confirm');
     if ($c->form_posted && $form->submitted_and_valid($c->req->params)) {
-        $c->model('Edit')->cancel($edit);
+        $c->model('MB')->with_transaction(sub {
+            $c->model('Edit')->cancel($edit);
 
-        if (my $edit_note = $form->field('edit_note')->value) {
-            $c->model('EditNote')->add_note(
-                $edit->id,
-                {
-                    editor_id => $c->user->id,
-                    text      => $edit_note
-                }
-            );
-        }
+            if (my $edit_note = $form->field('edit_note')->value) {
+                $c->model('EditNote')->add_note(
+                    $edit->id,
+                    {
+                        editor_id => $c->user->id,
+                        text      => $edit_note
+                    }
+                );
+            }
+        });
 
         $c->response->redirect($c->req->query_params->{url} || $c->uri_for_action('/edit/show', [ $edit->id ]));
         $c->detach;
@@ -176,8 +185,9 @@ sub search : Path('/search/edits') RequireAuth
             ], sort keys %grouped
         ],
         status => status_names(),
-        languages => [ $c->model('Language')->get_all ],
-        countries => [ $c->model('Country')->get_all ],
+        quality => [ [$QUALITY_LOW => N_l('Low')], [$QUALITY_NORMAL => N_l('Normal')], [$QUALITY_HIGH => N_l('High')], [$QUALITY_UNKNOWN => N_l('Default')] ],
+        languages => [ grep { $_->frequency > 0 } $c->model('Language')->get_all ],
+        countries => [ $c->model('CountryArea')->get_all ],
         relationship_type => [ $c->model('LinkType')->get_full_tree ]
     );
     return unless %{ $c->req->query_params };
@@ -256,7 +266,7 @@ sub edit_types : Path('/doc/Edit_Types')
 
     for my $category (keys %by_category) {
         $by_category{$category} = [
-            sort { $a->edit_name cmp $b->edit_name }
+            sort { $a->l_edit_name cmp $b->l_edit_name }
                 @{ $by_category{$category} }
             ];
     }

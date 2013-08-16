@@ -5,8 +5,7 @@
   <script type="text/javascript">//<![CDATA[
     $(document).ready(function() {
 
-      var bubbles = MB.Control.BubbleCollection ();
-      MB.Control.initialize_guess_case (bubbles, 'label');
+      MB.Control.LabelEdit();
 
     });
   //]]></script>

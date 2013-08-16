@@ -14,6 +14,10 @@ use MusicBrainz::Server::Constants qw(
 );
 use MusicBrainz::Server::Entity::CDTOC;
 use MusicBrainz::Server::Translation qw( l ln );
+use MusicBrainz::Server::ControllerUtils::CDTOC qw( add_dash );
+use MusicBrainz::Server::ControllerUtils::Release qw( load_release_events );
+
+use List::UtilsBy qw( sort_by );
 
 use HTTP::Status qw( :constants );
 
@@ -28,6 +32,8 @@ sub _load
 {
     my ($self, $c, $discid) = @_;
 
+    add_dash($c, $discid);
+
     return $c->model('CDTOC')->get_by_discid($discid);
 }
 
@@ -39,10 +45,13 @@ sub _load_releases
     my @releases = $c->model('Release')->load(@mediums);
     $c->model('MediumFormat')->load(@mediums);
     $c->model('Medium')->load_for_releases(@releases);
-    $c->model('Country')->load(@releases);
+    my @rgs = $c->model('ReleaseGroup')->load(@releases);
+    $c->model('ReleaseGroup')->load_meta(@rgs);
+    load_release_events($c, @releases);
     $c->model('ReleaseLabel')->load(@releases);
     $c->model('Label')->load(map { $_->all_labels } @releases);
     $c->model('ArtistCredit')->load(@releases);
+    $c->model('CDTOC')->load(@medium_cdtocs);
     return \@medium_cdtocs;
 }
 
@@ -58,7 +67,7 @@ sub show : Chained('load') PathPart('')
     );
 }
 
-sub remove : Local RequireAuth
+sub remove : Local Edit
 {
     my ($self, $c) = @_;
     my $cdtoc_id  = $c->req->query_params->{cdtoc_id};
@@ -87,36 +96,40 @@ sub remove : Local RequireAuth
         },
         on_creation => sub {
             $c->response->redirect($c->uri_for_action('/release/discids', [ $release->gid ]));
-            $c->detach;
         }
     )
 }
 
-sub set_durations : Chained('load') PathPart('set-durations') Edit RequireAuth
+sub set_durations : Chained('load') PathPart('set-durations') Edit
 {
     my ($self, $c) = @_;
 
     my $cdtoc = $c->stash->{cdtoc};
-    my $tracklist_id = $c->req->query_params->{tracklist};
-    my ($mediums) = $c->model('Medium')->find_by_tracklist(
-        $tracklist_id, 100, 0)
-        or die "Could not find mediums";
+    my $medium_id = $c->req->query_params->{medium};
+    my $medium = $c->model('Medium')->get_by_id ($medium_id)
+        or die "Could not find medium";
 
-    $c->model('Release')->load(@$mediums);
-    $c->model('ArtistCredit')->load(map { $_->release } @$mediums);
+    $c->model('Release')->load($medium);
 
-    $c->stash( mediums => $mediums );
+    $c->model('Track')->load_for_mediums($medium);
+    $c->model('Recording')->load($medium->all_tracks);
+    $c->model('ArtistCredit')->load($medium->all_tracks, $medium->release);
+
+    $c->stash( medium => $medium );
+
+    # use Data::Dumper;
+    # warn "stash: ".Dumper ($c->stash)."\n";
 
     $self->edit_action($c,
         form => 'Confirm',
         type => $EDIT_SET_TRACK_LENGTHS,
         edit_args => {
-            tracklist_id => $tracklist_id,
+            medium_id => $medium_id,
             cdtoc_id => $cdtoc->id
         },
         on_creation => sub {
-            $c->response->redirect($c->uri_for_action($self->action_for('show'), [ $cdtoc->discid ]));
-            $c->detach;
+            $c->response->redirect(
+                $c->uri_for_action($self->action_for('show'), [ $cdtoc->discid ]));
         }
     );
 }
@@ -179,7 +192,6 @@ sub attach : Local
                 $c->response->redirect(
                     $c->uri_for_action(
                         '/release/discids' => [ $medium->release->gid ]));
-                $c->detach;
             }
         )
     }
@@ -192,15 +204,16 @@ sub attach : Local
         # List releases
         my $artist = $c->model('Artist')->get_by_id($artist_id);
         my $releases = $self->_load_paged($c, sub {
-            $c->model('Release')->find_for_cdtoc($artist_id, $cdtoc->track_count,shift, shift)
+            $c->model('Release')->find_for_cdtoc($artist_id, $cdtoc->track_count, shift, shift)
         });
         $c->model('Medium')->load_for_releases(@$releases);
         $c->model('MediumFormat')->load(map { $_->all_mediums } @$releases);
-        $c->model('Track')->load_for_tracklists(
-            map { $_->tracklist } map { $_->all_mediums } @$releases);
-        $c->model('Country')->load(@$releases);
+        $c->model('Track')->load_for_mediums (map { $_->all_mediums } @$releases);
+        load_release_events($c, @$releases);
         $c->model('ReleaseLabel')->load(@$releases);
         $c->model('Label')->load(map { $_->all_labels } @$releases);
+        my @rgs = $c->model('ReleaseGroup')->load(@$releases);
+        $c->model('ReleaseGroup')->load_meta(@rgs);
 
         $c->stash(
             artist => $artist,
@@ -234,17 +247,22 @@ sub attach : Local
             my @releases = map { $_->entity } @$releases;
             $c->model('Medium')->load_for_releases(@releases);
             $c->model('MediumFormat')->load(map { $_->all_mediums } @releases);
-            my @mediums = grep { !$_->format || $_->format->has_discids }
-                map { $_->all_mediums } @releases;
-            $c->model('Track')->load_for_tracklists( map { $_->tracklist } @mediums);
+            my @mediums = map { $_->all_mediums } @releases;
+            $c->model('Track')->load_for_mediums(@mediums);
 
-            my @tracks = map { $_->all_tracks } map { $_->tracklist } @mediums;
+            my @tracks = map { $_->all_tracks } @mediums;
             $c->model('Recording')->load(@tracks);
             $c->model('ArtistCredit')->load(@releases, @tracks, map { $_->recording } @tracks);
+            load_release_events($c, @releases);
+            $c->model('ReleaseLabel')->load(@releases);
+            $c->model('Label')->load(map { $_->all_labels } @releases);
+
+            my @rgs = $c->model('ReleaseGroup')->load(@releases);
+            $c->model('ReleaseGroup')->load_meta(@rgs);
 
             $c->stash(
                 template => 'cdtoc/attach_filter_release.tt',
-                results => $releases
+                results => [sort_by { $_->entity->release_group ? $_->entity->release_group->gid : '' } @$releases]
             );
             $c->detach;
         }
@@ -275,12 +293,13 @@ sub attach : Local
 
         $c->stash(
             medium_cdtocs => $self->_load_releases($c, $cdtoc),
+            cdtoc => $cdtoc,
             template => 'cdtoc/lookup.tt',
         );
     }
 }
 
-sub move : Local RequireAuth Edit
+sub move : Local Edit
 {
     my ($self, $c) = @_;
 
@@ -316,9 +335,14 @@ sub move : Local RequireAuth Edit
         $c->model('Medium')->load($medium_cdtoc);
 
         $c->model('Release')->load($medium, $medium_cdtoc->medium);
+        load_release_events($c, $medium->release);
+        $c->model('ReleaseLabel')->load($medium->release);
+        $c->model('Label')->load($medium->release->all_labels);
         $c->model('ArtistCredit')->load($medium->release, $medium_cdtoc->medium->release);
 
-        $c->stash( release => $medium->release );
+        $c->stash(
+            medium => $medium
+        );
 
 
         $c->stash(template => 'cdtoc/attach_confirm.tt');
@@ -333,7 +357,6 @@ sub move : Local RequireAuth Edit
                 $c->response->redirect(
                     $c->uri_for_action(
                         '/release/discids' => [ $medium->release->gid ]));
-                $c->detach;
             }
         )
     }
@@ -350,10 +373,13 @@ sub move : Local RequireAuth Edit
             my @releases = map { $_->entity } @$releases;
             $c->model('ArtistCredit')->load(@releases);
             $c->model('Medium')->load_for_releases(@releases);
+            load_release_events($c, @releases);
+            $c->model('ReleaseLabel')->load(@releases);
+            $c->model('Label')->load(map { $_->all_labels } @releases);
             $c->model('MediumFormat')->load(map { $_->all_mediums } @releases);
             my @mediums = grep { !$_->format || $_->format->has_discids }
                 map { $_->all_mediums } @releases;
-            $c->model('Track')->load_for_tracklists( map { $_->tracklist } @mediums);
+            $c->model('Track')->load_for_mediums(@mediums);
             $c->stash(
                 template => 'cdtoc/attach_filter_release.tt',
                 results => $releases

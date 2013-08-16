@@ -2,7 +2,8 @@ package MusicBrainz::Server::Controller::WS::1::Collection;
 use Moose;
 BEGIN { extends 'MusicBrainz::Server::ControllerBase::WS::1' }
 
-use MusicBrainz::Server::Validation;
+use MusicBrainz::Server::Constants qw( $ACCESS_SCOPE_COLLECTION );
+use MusicBrainz::Server::Validation qw( is_guid trim_in_place );
 
 with 'MusicBrainz::Server::Controller::WS::1::Role::Serializer';
 with 'MusicBrainz::Server::Controller::WS::1::Role::XMLGeneration';
@@ -27,7 +28,7 @@ sub collection : Path('/ws/1/collection')
 {
     my ($self, $c) = @_;
 
-    $c->authenticate({}, 'musicbrainz.org');
+    $self->authenticate($c, $ACCESS_SCOPE_COLLECTION);
 
     if ($c->req->method eq 'POST') {
         $c->detach('add_remove');
@@ -98,9 +99,9 @@ sub _clean_mbid_list
 
     my @ok;
     for my $mbid (@mbids) {
-        MusicBrainz::Server::Validation::TrimInPlace($mbid);
+        trim_in_place($mbid);
         $self->bad_req($c, 'You must supply a list of valid MBIDs')
-            if (!MusicBrainz::Server::Validation::IsGUID($mbid));
+            if (!is_guid($mbid));
 
         push @ok, $mbid;
     }

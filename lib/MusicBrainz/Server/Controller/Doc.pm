@@ -4,6 +4,7 @@ use Moose;
 BEGIN { extends 'MusicBrainz::Server::Controller'; }
 
 use DBDefs;
+use MusicBrainz::Server::Validation qw( is_guid );
 
 sub show : Path('')
 {
@@ -28,10 +29,11 @@ sub show : Path('')
     $c->stash(
         id => $id,
         page => $page,
+        google_custom_search => DBDefs->GOOGLE_CUSTOM_SEARCH,
     );
 
-    if ($id =~ /^(Special|User|MetaBrainz|Proposal):/i) {
-        $c->response->redirect(sprintf('http://%s/%s', DBDefs::WIKITRANS_SERVER, $id));
+    if ($id =~ /^[^:]+:/i && $id !~ /^Category:/i) {
+        $c->response->redirect(sprintf('http://%s/%s', DBDefs->WIKITRANS_SERVER, $id));
         $c->detach;
     }
 
@@ -42,6 +44,20 @@ sub show : Path('')
         $c->response->status(404);
         $c->stash->{template} = $bare ? 'doc/bare_error.tt' : 'doc/error.tt';
     }
+}
+
+sub relationship_type : Path('/doc/relationship-types') Args(1) {
+    my ($self, $c, $link_type_gid) = @_;
+
+    if (!is_guid($link_type_gid)) {
+        $self->invalid_mbid($c, $link_type_gid);
+    }
+
+    my $relationship_type = $c->model('LinkType')->get_by_gid($link_type_gid)
+        or $self->not_found($c);
+
+    $c->model('LinkType')->load_documentation($relationship_type);
+    $c->stash( relationship_type => $relationship_type );
 }
 
 no Moose;

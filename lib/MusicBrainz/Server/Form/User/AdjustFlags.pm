@@ -6,6 +6,10 @@ extends 'MusicBrainz::Server::Form';
 
 has '+name' => ( default => 'flags' );
 
+has_field 'submitted' => (
+    type => 'Integer',
+);
+
 has_field 'auto_editor' => (
     type => 'Boolean',
 );
@@ -22,7 +26,7 @@ has_field 'link_editor' => (
     type => 'Boolean',
 );
 
-has_field 'no_nag' => (
+has_field 'location_editor' => (
     type => 'Boolean',
 );
 

@@ -24,13 +24,13 @@ my $response = $mech->submit_form(
         'edit-label.sort_name' => 'label, controller',
         'edit-label.type_id' => 2,
         'edit-label.label_code' => 12345,
-        'edit-label.country_id' => 1,
-        'edit-label.begin_date.year' => 1990,
-        'edit-label.begin_date.month' => 01,
-        'edit-label.begin_date.day' => 02,
-        'edit-label.end_date.year' => 2003,
-        'edit-label.end_date.month' => 4,
-        'edit-label.end_date.day' => 15,
+        'edit-label.area_id' => 221,
+        'edit-label.period.begin_date.year' => 1990,
+        'edit-label.period.begin_date.month' => 01,
+        'edit-label.period.begin_date.day' => 02,
+        'edit-label.period.end_date.year' => 2003,
+        'edit-label.period.end_date.month' => 4,
+        'edit-label.period.end_date.day' => 15,
         'edit-label.comment' => 'label created in controller_label.t',
     }
 );
@@ -43,7 +43,7 @@ is_deeply($edit->data, {
         name => 'controller label',
         sort_name => 'label, controller',
         type_id => 2,
-        country_id => 1,
+        area_id => 221,
         label_code => 12345,
         comment => 'label created in controller_label.t',
         begin_date => {
@@ -56,7 +56,9 @@ is_deeply($edit->data, {
             month => 4,
             day => 15
         },
-        ipi_code => undef,
+        ended => 1,
+        ipi_codes => [],
+        isni_codes => [],
     });
 
 $mech->get_ok('/edit/' . $edit->id, 'Fetch the edit page');
@@ -67,7 +69,7 @@ $mech->content_contains('label created in controller_label.t', '..has comment');
 $mech->content_like(qr/1990\D+01\D+02/, '..has begin date');
 $mech->content_like(qr/2003\D+04\D+15/, '..has end date');
 $mech->content_contains('Special MusicBrainz Label', '..has type name');
-$mech->content_contains('United Kingdom', '..has country');
+$mech->content_contains('United Kingdom', '..has area');
 $mech->content_contains('12345', '..has label code');
 
 };

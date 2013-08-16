@@ -7,7 +7,7 @@ with 'MusicBrainz::Server::Form::Role::Edit';
 
 sub edit_field_names {
     qw( parent_id child_order name link_phrase reverse_link_phrase
-        short_link_phrase description priority attributes
+        long_link_phrase description priority attributes documentation
   ) }
 
 has '+name' => ( default => 'linktype' );
@@ -39,7 +39,7 @@ has_field 'reverse_link_phrase' => (
     maxlength => 255
 );
 
-has_field 'short_link_phrase' => (
+has_field 'long_link_phrase' => (
     type      => 'Text',
     required  => 1,
     maxlength => 255
@@ -47,6 +47,7 @@ has_field 'short_link_phrase' => (
 
 has_field 'description' => (
     type => 'Text',
+    not_nullable => 1
 );
 
 has_field 'priority' => (
@@ -75,6 +76,16 @@ has_field 'attributes.max' => (
     type => '+MusicBrainz::Server::Form::Field::Integer'
 );
 
+has_field 'documentation' => (
+    type => 'TextArea',
+    not_nullable => 1
+);
+
+has root => (
+    is => 'ro',
+    required => 1
+);
+
 sub _build_parent_id_options
 {
     my ($self, $root, $indent) = @_;
@@ -82,7 +93,7 @@ sub _build_parent_id_options
     my @options;
     if ($root->id) {
         push @options, $root->id, $indent . $root->name if $root->id;
-        $indent .= '&nbsp;&nbsp;&nbsp;';
+        $indent .= '&#xa0;&#xa0;&#xa0;';
     }
     foreach my $child ($root->all_children) {
         push @options, $self->_build_parent_id_options($child, $indent);
@@ -93,9 +104,7 @@ sub _build_parent_id_options
 sub options_parent_id
 {
     my ($self) = @_;
-
-    my $root = $self->ctx->stash->{root};
-    return [ $self->_build_parent_id_options($root, '') ];
+    return [ $self->_build_parent_id_options($self->root, '') ];
 }
 
 1;

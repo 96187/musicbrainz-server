@@ -60,7 +60,7 @@
     [% WRAPPER form_row %]
       [% r.label(field_name, label || r.form.field(field_name).label) %]
       [% r.text(field_name, { size => 47 })  %]
-      [% field_errors(form, field_name) %]
+      [% field_errors(r.form, field_name) %]
     [% END %]
 [%- END -%]
 
@@ -88,10 +88,50 @@
     </div>
 [%- END -%]
 
-[%- MACRO form_row_select(r, field_name, label) BLOCK -%]
+[%- MACRO form_row_select(r, field_name, label, class) BLOCK -%]
     [% WRAPPER form_row %]
-      [% r.label(field_name, label || r.form.field(field_name).label) %]
-      [% r.select(field_name) %]
+      [% r.label(field_name, label || r.form.field(field_name).label, { class => class }) %]
+      [% r.select(field_name, { class => class }) -%]
+      [% field_errors(r.form, field_name) %]
+    [% END %]
+[%- END -%]
+
+[%- MACRO form_row_text_list(r, field_name, label, item_name) BLOCK -%]
+    [% WRAPPER form_row %]
+      <label>[% label || r.form.field(field_name).label %]</label>
+      <div class="form-row-text-list">
+          <div style="display: none;"
+               class="text-list-row [%- r.form.field(field_name).html_name _ "-template" -%]">
+              <input type="text" value="" name="" class="value with-remove" />
+              <button class="nobutton icon remove">
+                <div class="remove-item icon img" title="[% l('Remove {item}', item => item_name) %]"></div>
+              </button>
+          </div>
+          [% FOR value=r.form.field(field_name).value -%]
+          <div class="text-list-row">
+              <input type="text" value="[% value %]" name="[% r.form.field(field_name).html_name %].[% loop.index() %]" class="value with-remove" />
+              <button class="nobutton icon remove">
+                <img src="[% c.uri_for('/static/images/icons/delete_row.png') %]"
+                     title="[% l('Remove {item}', item => item_name) %]"
+                       alt="[% l('Remove {item}', item => item_name) %]" />
+              </button>
+          </div>
+          [% END -%]
+          <div class="form-row-add">
+            <button class="nobutton add">
+              <span class="add-row">[% l('Add {item}', item => item_name) %]</span>
+              <div class="add-item icon img" title="[% l('Add {item}', item => item_name) %]"></div>
+            </button>
+          </div>
+      </div>
+      <script>
+         [%- IF r.form.field(field_name).value.size -%]
+           MB.Form.TextList ("[%- r.form.field(field_name).html_name -%]").init([% r.form.field(field_name).value.size %]);
+         [%- ELSE -%]
+           MB.Form.TextList ("[%- r.form.field(field_name).html_name -%]").add('');
+         [%- END -%]
+      </script>
+
       [% field_errors(r.form, field_name) %]
     [% END %]
 [%- END -%]
@@ -109,29 +149,47 @@
     [%- WRAPPER form_row -%]
         <label for="[% id %]" class="required">[% l('Artist:') %]</label>
         <span class="autocomplete">
-          <input type="text" id="[% id %]" style="width: 262px"
+          <input type="text" id="[% id %]" class="artist-credit-input"
               value="[% html_escape(form.field('artist_credit').item.name) %]" />
           <img class="search" src="[% c.uri_for("/static/images/icons/search.png") %]" />
         </span>
-        <input type="button" id="open-ac" value=" &gt;&gt; " style="width: 32px; height: 22px; margin-left: 3px;" />
+        <input type="button" id="open-ac" value=" &gt;&gt; " />
         [% field_errors(r.form, 'artist_credit') %]
     [%- END -%]
 [%- END -%]
 
-[%- MACRO guesscase BLOCK -%]
+[%- MACRO form_row_paragraph(message, label) BLOCK -%]
+    [% WRAPPER form_row %]
+      <label>[%- IF label -%][%- label -%][%- ELSE -%]&#xa0;[%- END -%]</label>
+      <p>[%- message -%]</p>
+    [% END %]
+[%- END -%]
+
+[%- MACRO guesscase(show_icon) BLOCK -%]
   <fieldset class="guesscase">
-    <legend>[% l('Guess case') %]</legend>
+    <legend>[% lp('Guess case', 'header') %]</legend>
+    [% IF show_icon %]
+      <img src="[% c.uri_for("/static/images/icons/guesscase.32x32.png") %]" style="float: left; margin: 1em;" />
+    [% END %]
     <div style="float: right; margin: 10px;" class="buttons">
-      <a href="#guesscase">[% l('Guess case') %]</a>
+      <button type="button" data-bind="click: guessCase">[% lp('Guess case', 'button/menu') %]</button>
     </div>
     <p class="guesscase-options">
-        <select name="gc-mode" id="gc-mode"> </select>
-        <br />
-      <input type="checkbox" name="gc-keepuppercase" id="gc-keepuppercase" checked="checked">
-      <label for="gc-keepuppercase">[% l('Keep uppercase words uppercased') %]</label>
+      <select data-bind="value: modeName">
+        <option value="English">[% l('English') %]</option>
+        <option value="Sentence">[% l('Sentence') %]</option>
+        <option value="French">[% l('French') %]</option>
+      </select>
       <br />
-      <input type="checkbox" name="gc-roman" id="gc-roman">
-      <label for="gc-roman">[% l('Uppercase roman numerals') %]</label>
+      <label>
+        <input type="checkbox" data-bind="checked: keepUpperCase" />
+        [% l('Keep all-uppercase words uppercased') %]
+      </label>
+      <br />
+      <label>
+        <input type="checkbox" data-bind="checked: upperCaseRoman" />
+        [% l('Uppercase roman numerals') %]
+      </label>
     </p>
   </fieldset>
 [%- END -%]
@@ -143,24 +201,33 @@
         [%- (l('Please use the Guess Case button to fix common style errors.')) -%]
       </p>
       <div class="buttons">
-        <a href="#guesscase">[% l('Guess case') %]</a>
+        <a data-bind="click: guessCase">[% lp('Guess case', 'button/menu') %]</a>
       </div>
       <div class="guesscase-options">
         <table>
           <tr>
             <td>
             [%- UNLESS hide_mode -%]
-              <select name="gc-mode" id="gc-mode"> </select><br />
-              <input type="checkbox" name="gc-keepuppercase" id="gc-keepuppercase" checked="checked" />
-              <label for="gc-keepuppercase">[% l('Keep uppercase words uppercased') %]</label>
+              <select data-bind="value: modeName">
+                <option value="English">[% l('English') %]</option>
+                <option value="Sentence">[% l('Sentence') %]</option>
+                <option value="French">[% l('French') %]</option>
+              </select>
               <br />
-              <input type="checkbox" name="gc-roman" id="gc-roman" />
-              <label for="gc-roman">[% l('Uppercase roman numerals') %]</label>
+              <label>
+                <input type="checkbox" data-bind="checked: keepUpperCase" />
+                [% l('Keep all-uppercase words uppercased') %]
+              </label>
+              <br />
+              <label>
+                <input type="checkbox" data-bind="checked: upperCaseRoman" />
+                [% l('Uppercase roman numerals') %]
+              </label>
             [%- END -%]
             </td>
             <td>
             [%- UNLESS hide_mode -%]
-              <span id="gc-help"> </span>
+              <span data-bind="html: help"></span>
             [%- END -%]
             </td>
           </tr>
@@ -180,6 +247,36 @@
         <a href="#sortname">[% l('Sort Name') %]</a>
         <a href="#copy">[% l('Copy') %]</a>
       </div>
+    </div>
+  </div>
+[%- END -%]
+
+[%- MACRO iswc_bubble(work) BLOCK -%]
+  <div class="iswcs container" style="display: none">
+    <div class="iswcs bubble">
+      <p>[% l('You are about to add an ISWC to {work}. The ISWC must be entered in
+               standard <code>T-DDD.DDD.DDD-C</code> format:',
+              { work => work }) %]</p>
+      <ul>
+        <li>[% l('"DDD" is a nine digit work identifier.') %]</li>
+        <li>[% l('"C" is a single check digit.') %]</li>
+      </ul>
+    </div>
+  </div>
+[%- END -%]
+
+[%- MACRO isrc_bubble(recording) BLOCK -%]
+  <div class="isrcs container" style="display: none">
+    <div class="isrcs bubble">
+      <p>[% l('You are about to add an ISRC to {recording}. The ISRC must be entered in
+               standard <code>CCXXXYYNNNNNN</code> format:',
+              { recording => recording }) %]</p>
+      <ul>
+        <li>[% l('"CC" is the appropriate for the registrant two-character country code.') %]</li>
+        <li>[% l('"XXX" is a three character alphanumeric registrant code, uniquely identifying the organisation which registered the code.') %]</li>
+        <li>[% l('"YY" is the last two digits of the year of registration.') %]</li>
+        <li>[% l('"NNNNN" is a unique 5-digit number identifying the particular sound recording.') %]</li>
+      </ul>
     </div>
   </div>
 [%- END -%]
@@ -214,8 +311,7 @@
             </span>
 
             <input type="button" class="icon remove-artist-credit"
-              title="[% l('Remove Artist Credit') %]" 
-              style="background-image: url([% c.uri_for("/static/images/icons/delete_row.png") %]); width: 16px; height: 16px; border: 0;" />
+              title="[% l('Remove Artist Credit') %]" />
 
           </div>
 
@@ -237,15 +333,14 @@
       [%- END -%]
 
       <div class="row">
-        <label> &nbsp; </label>
+        <label> &#xa0; </label>
         <span style="display: inline-block; width: 170px; text-align: right; padding-right: 10px;">
             <button type="button" class="nobutton add-artist-credit">
                 [%- l('Add Artist Credit') -%]
             </button>
         </span>
         <input type="button" class="icon add-artist-credit"
-          title="[% l('Add Artist Credit') %]" 
-          style="background-image: url([% c.uri_for("/static/images/icons/add_row.png") %]); width: 16px; height: 16px; border: 0;" />
+          title="[% l('Add Artist Credit') %]" />
       </div>
 
     </div>

@@ -8,12 +8,22 @@ with 'MusicBrainz::Server::Controller::Role::Load' => {
     entity_name => 'collection',
     model       => 'Collection',
 };
+with 'MusicBrainz::Server::Controller::Role::Subscribe';
+
+use MusicBrainz::Server::Data::Utils qw( model_to_type );
+use MusicBrainz::Server::Constants qw( :edit_status );
+use MusicBrainz::Server::ControllerUtils::Release qw( load_release_events );
 
 sub base : Chained('/') PathPart('collection') CaptureArgs(0) { }
 after 'load' => sub
 {
     my ($self, $c) = @_;
     my $collection = $c->stash->{collection};
+
+    if ($c->user_exists) {
+        $c->stash->{subscribed} = $c->model('Collection')->subscription->check_subscription(
+            $c->user->id, $collection->id);
+    }
 
     # Load editor
     $c->model('Editor')->load($collection);
@@ -86,15 +96,55 @@ sub show : Chained('load') PathPart('')
     $c->model('ArtistCredit')->load(@$releases);
     $c->model('Medium')->load_for_releases(@$releases);
     $c->model('MediumFormat')->load(map { $_->all_mediums } @$releases);
-    $c->model('Country')->load(@$releases);
+    load_release_events($c, @$releases);
     $c->model('ReleaseLabel')->load(@$releases);
     $c->model('Label')->load(map { $_->all_labels } @$releases);
-
+    $c->model('ReleaseGroup')->load(@$releases);
+    $c->model('ReleaseGroup')->load_meta(map { $_->release_group } @$releases);
+    if ($c->user_exists) {
+        $c->model('ReleaseGroup')->rating->load_user_ratings($c->user->id, map { $_->release_group } @$releases);
+    }
     $c->stash(
         collection => $collection,
         order => $order,
         releases => $releases,
         template => 'collection/index.tt'
+    );
+}
+
+sub edits : Chained('load') PathPart RequireAuth
+{
+    my ($self, $c) = @_;
+
+    $self->_list_edits($c);
+}
+
+sub open_edits : Chained('load') PathPart RequireAuth
+{
+    my ($self, $c) = @_;
+
+    $self->_list_edits($c, $STATUS_OPEN);
+
+    $c->stash(
+        template => model_to_type( $self->{model} ) . '/edits.tt'
+    );
+}
+
+sub _list_edits {
+    my ($self, $c, $status) = @_;
+
+    my $edits  = $self->_load_paged($c, sub {
+        my ($limit, $offset) = @_;
+        $c->model('Edit')->find_by_collection($c->stash->{collection}->id, $limit, $offset, $status);
+    });
+
+    $c->model('Edit')->load_all(@$edits);
+    $c->model('Vote')->load_for_edits(@$edits);
+    $c->model('EditNote')->load_for_edits(@$edits);
+    $c->model('Editor')->load(map { ($_, @{ $_->votes, $_->edit_notes }) } @$edits);
+
+    $c->stash(
+        edits => $edits,
     );
 }
 
@@ -115,6 +165,12 @@ sub create : Local RequireAuth
         my %insert = $self->_form_to_hash($form);
 
         my $collection = $c->model('Collection')->insert($c->user->id, \%insert);
+
+        my $params = $c->req->params;
+        if (exists $params->{"release"}) {
+            my $release_id = $params->{"release"};
+            $c->model('Collection')->add_releases_to_collection($collection->id, $release_id);
+        }
 
         $c->response->redirect(
             $c->uri_for_action($self->action_for('show'), [ $collection->gid ]));

@@ -6,6 +6,7 @@ use warnings;
 use base 'Exporter';
 
 use Readonly;
+use DateTime::Duration;
 
 sub _get
 {
@@ -18,17 +19,45 @@ sub _get
 }
 
 our %EXPORT_TAGS = (
-    edit_type     => _get(qr/^EDIT_/),
-    expire_action => _get(qr/^EXPIRE_/),
-    quality       => _get(qr/^QUALITY_/),
-    annotation    => _get(qr/^EDIT_.*_ADD_ANNOTATION/),
-    historic      => _get(qr/^EDIT_HISTORIC/),
-    editor        => _get(qr/^EDITOR_/),
+    edit_type       => _get(qr/^EDIT_/),
+    expire_action   => _get(qr/^EXPIRE_/),
+    quality         => _get(qr/^QUALITY_/),
+    annotation      => _get(qr/^EDIT_.*_ADD_ANNOTATION/),
+    historic        => _get(qr/^EDIT_HISTORIC/),
+    editor          => _get(qr/^EDITOR_/),
+    vote            => _get(qr/^VOTE_/),
+    edit_status     => _get(qr/^STATUS_/),
+    access_scope    => _get(qr/^ACCESS_SCOPE_/),
+    privileges      => [
+        qw( $AUTO_EDITOR_FLAG         $BOT_FLAG           $UNTRUSTED_FLAG
+            $RELATIONSHIP_EDITOR_FLAG $WIKI_TRANSCLUSION_FLAG
+            $MBID_SUBMITTER_FLAG      $ACCOUNT_ADMIN_FLAG $LOCATION_EDITOR_FLAG )
+    ],
+    election_status => [
+        qw( $ELECTION_SECONDER_1 $ELECTION_SECONDER_2 $ELECTION_OPEN
+            $ELECTION_ACCEPTED   $ELECTION_REJECTED   $ELECTION_CANCELLED )
+    ],
+    election_vote => [
+        qw( $ELECTION_VOTE_YES $ELECTION_VOTE_NO $ELECTION_VOTE_ABSTAIN )
+    ],
+    vote => [
+        qw( $VOTE_NO $VOTE_ABSTAIN $VOTE_YES $VOTE_APPROVE )
+    ],
+    email_addresses => [
+        qw( $EMAIL_NOREPLY_ADDRESS $EMAIL_SUPPORT_ADDRESS )
+    ],
 );
 
 our @EXPORT_OK = (
-    qw( $DLABEL_ID $DARTIST_ID $VARTIST_ID $VARTIST_GID ),
-    @{ _get(qr/^(EDIT|EXPIRE|QUALITY|EDITOR)_/) },
+    qw( $DLABEL_ID $DARTIST_ID $VARTIST_ID $VARTIST_GID
+        $AUTO_EDITOR_FLAG         $BOT_FLAG            $UNTRUSTED_FLAG
+        $RELATIONSHIP_EDITOR_FLAG $WIKI_TRANSCLUSION_FLAG
+        $MBID_SUBMITTER_FLAG      $ACCOUNT_ADMIN_FLAG  $LOCATION_EDITOR_FLAG
+        $COVERART_FRONT_TYPE      $COVERART_BACK_TYPE  $INSTRUMENT_ROOT_ID
+        $REQUIRED_VOTES
+        $ARTIST_ARTIST_COLLABORATION
+    ),
+    @{ _get(qr/^(EDIT|EXPIRE|QUALITY|EDITOR|ELECTION|EMAIL|VOTE|STATUS|ACCESS_SCOPE)_/) },
 );
 
 Readonly our $DLABEL_ID => 1;
@@ -70,9 +99,10 @@ Readonly our $EDIT_LABEL_DELETE_ALIAS => 17;
 Readonly our $EDIT_LABEL_EDIT_ALIAS => 18;
 
 Readonly our $EDIT_RELEASEGROUP_CREATE => 20;
+Readonly our $EDIT_RELEASEGROUP_EDIT => 21;
+Readonly our $EDIT_RELEASEGROUP_SET_COVER_ART => 22;
 Readonly our $EDIT_RELEASEGROUP_DELETE => 23;
 Readonly our $EDIT_RELEASEGROUP_MERGE => 24;
-Readonly our $EDIT_RELEASEGROUP_EDIT => 21;
 Readonly our $EDIT_RELEASEGROUP_ADD_ANNOTATION => 25;
 
 Readonly our $EDIT_RELEASE_CREATE => 31;
@@ -88,6 +118,10 @@ Readonly our $EDIT_RELEASE_DELETE => 310;
 Readonly our $EDIT_RELEASE_MERGE => 311;
 Readonly our $EDIT_RELEASE_ARTIST => 312;
 Readonly our $EDIT_RELEASE_REORDER_MEDIUMS => 313;
+Readonly our $EDIT_RELEASE_ADD_COVER_ART => 314;
+Readonly our $EDIT_RELEASE_REMOVE_COVER_ART => 315;
+Readonly our $EDIT_RELEASE_EDIT_COVER_ART => 316;
+Readonly our $EDIT_RELEASE_REORDER_COVER_ART => 317;
 
 Readonly our $EDIT_WORK_CREATE => 41;
 Readonly our $EDIT_WORK_EDIT => 42;
@@ -97,6 +131,8 @@ Readonly our $EDIT_WORK_ADD_ANNOTATION => 45;
 Readonly our $EDIT_WORK_ADD_ALIAS => 46;
 Readonly our $EDIT_WORK_DELETE_ALIAS => 47;
 Readonly our $EDIT_WORK_EDIT_ALIAS => 48;
+Readonly our $EDIT_WORK_ADD_ISWCS => 49;
+Readonly our $EDIT_WORK_REMOVE_ISWC => 410;
 
 Readonly our $EDIT_MEDIUM_CREATE => 51;
 Readonly our $EDIT_MEDIUM_EDIT => 52;
@@ -114,6 +150,15 @@ Readonly our $EDIT_RECORDING_ADD_ANNOTATION => 75;
 Readonly our $EDIT_RECORDING_ADD_ISRCS => 76;
 Readonly our $EDIT_RECORDING_ADD_PUIDS => 77;
 Readonly our $EDIT_RECORDING_REMOVE_ISRC => 78;
+
+Readonly our $EDIT_AREA_CREATE => 81;
+Readonly our $EDIT_AREA_EDIT => 82;
+Readonly our $EDIT_AREA_DELETE => 83;
+Readonly our $EDIT_AREA_MERGE => 84;
+Readonly our $EDIT_AREA_ADD_ANNOTATION => 85;
+Readonly our $EDIT_AREA_ADD_ALIAS => 86;
+Readonly our $EDIT_AREA_DELETE_ALIAS => 87;
+Readonly our $EDIT_AREA_EDIT_ALIAS => 88;
 
 Readonly our $EDIT_RELATIONSHIP_CREATE => 90;
 Readonly our $EDIT_RELATIONSHIP_EDIT => 91;
@@ -169,6 +214,63 @@ Readonly our $EDIT_HISTORIC_SET_TRACK_LENGTHS_FROM_CDTOC => 253;
 Readonly our $EDIT_HISTORIC_REMOVE_LABEL_ALIAS      => 262;
 Readonly our $EDIT_HISTORIC_CHANGE_RELEASE_QUALITY  => 263;
 Readonly our $EDIT_HISTORIC_CHANGE_RELEASE_GROUP    => 273;
+
+Readonly our $ELECTION_SECONDER_1 => 1;
+Readonly our $ELECTION_SECONDER_2 => 2;
+Readonly our $ELECTION_OPEN       => 3;
+Readonly our $ELECTION_ACCEPTED   => 4;
+Readonly our $ELECTION_REJECTED   => 5;
+Readonly our $ELECTION_CANCELLED  => 6;
+
+Readonly our $EMAIL_NOREPLY_ADDRESS => 'MusicBrainz Server <noreply@musicbrainz.org>';
+Readonly our $EMAIL_SUPPORT_ADDRESS => 'MusicBrainz <support@musicbrainz.org>';
+
+Readonly our $VOTE_ABSTAIN => -1;
+Readonly our $VOTE_NO      =>  0;
+Readonly our $VOTE_YES     =>  1;
+Readonly our $VOTE_APPROVE =>  2;
+
+Readonly our $STATUS_OPEN         => 1;
+Readonly our $STATUS_APPLIED      => 2;
+Readonly our $STATUS_FAILEDVOTE   => 3;
+Readonly our $STATUS_FAILEDDEP    => 4;
+Readonly our $STATUS_ERROR        => 5;
+Readonly our $STATUS_FAILEDPREREQ => 6;
+Readonly our $STATUS_NOVOTES      => 7;
+Readonly our $STATUS_TOBEDELETED  => 8;
+Readonly our $STATUS_DELETED      => 9;
+
+Readonly our $AUTO_EDITOR_FLAG         => 1;
+Readonly our $BOT_FLAG                 => 2;
+Readonly our $UNTRUSTED_FLAG           => 4;
+Readonly our $RELATIONSHIP_EDITOR_FLAG => 8;
+Readonly our $WIKI_TRANSCLUSION_FLAG   => 32;
+Readonly our $MBID_SUBMITTER_FLAG      => 64;
+Readonly our $ACCOUNT_ADMIN_FLAG       => 128;
+Readonly our $LOCATION_EDITOR_FLAG     => 256;
+
+Readonly our $ELECTION_VOTE_NO      => -1;
+Readonly our $ELECTION_VOTE_ABSTAIN => 0;
+Readonly our $ELECTION_VOTE_YES     => 1;
+
+Readonly our $COVERART_FRONT_TYPE   => 1;
+Readonly our $COVERART_BACK_TYPE   => 2;
+
+Readonly our $INSTRUMENT_ROOT_ID => 14;
+
+Readonly our $REQUIRED_VOTES => 3;
+Readonly our $EDIT_MINIMUM_RESPONSE_PERIOD => DateTime::Duration->new(hours => 72);
+
+Readonly our $ACCESS_SCOPE_PROFILE        => 1;
+Readonly our $ACCESS_SCOPE_EMAIL          => 2;
+Readonly our $ACCESS_SCOPE_TAG            => 4;
+Readonly our $ACCESS_SCOPE_RATING         => 8;
+Readonly our $ACCESS_SCOPE_COLLECTION     => 16;
+Readonly our $ACCESS_SCOPE_SUBMIT_PUID    => 32;
+Readonly our $ACCESS_SCOPE_SUBMIT_ISRC    => 64;
+Readonly our $ACCESS_SCOPE_SUBMIT_BARCODE => 128;
+
+Readonly our $ARTIST_ARTIST_COLLABORATION => '75c09861-6857-4ec0-9729-84eefde7fc86';
 
 =head1 NAME
 

@@ -8,6 +8,8 @@ use MooseX::Types::Structured qw( Map );
 use String::TT qw( strip tt );
 use URI::Escape;
 use MusicBrainz::Server::Entity::Types;
+use MusicBrainz::Server::Constants qw( $EMAIL_SUPPORT_ADDRESS );
+use MusicBrainz::Server::Email;
 
 has 'editor' => (
     isa => 'Editor',
@@ -42,8 +44,10 @@ has 'edits' => (
 );
 
 sub extra_headers {
+    my $self = shift;
     return (
-        'Reply-To' => $MusicBrainz::Server::Email::SUPPORT_ADDRESS
+        'Reply-To' => $EMAIL_SUPPORT_ADDRESS,
+        'Message-Id' => MusicBrainz::Server::Email::_message_id('subscriptions-%s-%d', $self->editor->id, time())
     )
 }
 
@@ -59,6 +63,12 @@ sub text {
         [ sort_by { $_->{subscription}->artist->sort_name } @{ $self->edits->{artist} } ],
         'artist'
     ) if exists $self->edits->{artist};
+
+    push @sections, $self->edits_for_type(
+        'Changes for your subscribed collections',
+        [ sort_by { $_->{subscription}->collection->name } @{ $self->edits->{collection} } ],
+        'collection'
+    ) if exists $self->edits->{collection};
 
     push @sections, $self->edits_for_type(
         'Changes for your subscribed labels',
@@ -77,8 +87,8 @@ sub header {
     my $self = shift;
     my $escape = sub { uri_escape_utf8(shift) };
     return strip tt q{
-This is a notification that edits have been added for artists, labels and
-editors to whom you subscribed on the MusicBrainz web site.
+This is a notification that edits have been added for artists, labels,
+collections and editors to whom you subscribed on the MusicBrainz web site.
 To view or edit your subscription list, please use the following link:
 [% self.server %]/user/[% escape(self.editor.name) %]/subscriptions
 
@@ -135,16 +145,22 @@ sub deleted_subscriptions {
 Deleted and merged artists or labels
 --------------------------------------------------------------------------------
 
-Some of your subscribed artists or labels have been merged or deleted:
+Some of your subscribed artists, labels or collections have been merged,
+deleted or made private:
 
 [% FOR sub IN self.deletes;
-edit = sub.deleted_by_edit || sub.merged_by_edit;
-type = sub.artist_id ? 'artist' : 'label';
-entity_id = sub.artist_id || sub.label_id -%]
-[%- type | ucfirst %] #[% entity_id %] - [% sub.deleted_by_edit ? 'deleted' : 'merged' %] by edit #[% edit %]
+edit = sub.edit_id;
+type = sub.isa('MusicBrainz::Server::Entity::Subscription::DeletedArtist') ? 'artist'
+     : sub.isa('MusicBrainz::Server::Entity::Subscription::DeletedLabel') ? 'label'
+     : sub.isa('MusicBrainz::Server::Entity::CollectionSubscription') ? 'collection'
+     : 'unknown';  -%]
+[%- IF type == 'collection' -%]
+[%- type | ucfirst %] "[% sub.last_seen_name %]" - deleted or made private
+[% ELSE -%]
+[%- type | ucfirst %] "[% sub.last_known_name %]"[% '(' _ sub.last_known_comment _ ') ' IF sub.last_known_comment %] - [% sub.reason %] by edit #[% edit %]
 [% self.server %]/edit/[% edit %]
-
-[% END %]
+[% END -%]
+[%- END %]
 }
 }
 

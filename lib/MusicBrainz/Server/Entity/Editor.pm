@@ -1,8 +1,16 @@
 package MusicBrainz::Server::Entity::Editor;
 use Moose;
+use namespace::autoclean;
 
+use Authen::Passphrase;
+use DateTime;
+use Encode;
 use MusicBrainz::Server::Entity::Preferences;
-use MusicBrainz::Server::Types qw( :privileges );
+use MusicBrainz::Server::Entity::Types qw( Area );
+use MusicBrainz::Server::Constants qw( :privileges $EDITOR_MODBOT);
+use MusicBrainz::Server::Types DateTime => { -as => 'DateTimeType' };
+
+my $LATEST_SECURITY_VULNERABILITY = DateTime->new( year => 2013, month => 3, day => 28 );
 
 extends 'MusicBrainz::Server::Entity';
 
@@ -40,12 +48,6 @@ sub is_untrusted
     return (shift->privileges & $mask) > 0;
 }
 
-sub is_nag_free
-{
-    my $mask = $DONT_NAG_FLAG;
-    return (shift->privileges & $mask) > 0;
-}
-
 sub is_relationship_editor
 {
     my $mask = $RELATIONSHIP_EDITOR_FLAG;
@@ -67,6 +69,12 @@ sub is_mbid_submitter
 sub is_account_admin
 {
     my $mask = $ACCOUNT_ADMIN_FLAG;
+    return (shift->privileges & $mask) > 0;
+}
+
+sub is_location_editor
+{
+    my $mask = $LOCATION_EDITOR_FLAG;
     return (shift->privileges & $mask) > 0;
 }
 
@@ -95,7 +103,7 @@ has [qw( accepted_edits rejected_edits failed_edits accepted_auto_edits )] => (
 
 use DateTime;
 has [qw( registration_date )] => (
-    isa    => 'DateTime',
+    isa    => DateTimeType,
     is     => 'rw',
     coerce => 1,
     lazy   => 1,
@@ -105,7 +113,7 @@ has [qw( registration_date )] => (
 );
 
 has [qw( last_login_date email_confirmation_date )] => (
-    isa    => 'DateTime',
+    isa    => DateTimeType,
     is     => 'rw',
     coerce => 1,
 );
@@ -128,7 +136,7 @@ sub is_newbie
 sub is_admin
 {
     my $self = shift;
-    return $self->is_relationship_editor || $self->is_wiki_transcluder;
+    return $self->is_relationship_editor || $self->is_wiki_transcluder || $self->is_location_editor;
 }
 
 has 'preferences' => (
@@ -141,9 +149,68 @@ sub is_limited
 {
     my $self = shift;
     return
-        !$self->email_confirmation_date ||
-        $self->is_newbie ||
-        $self->accepted_edits < 10;
+        !($self->id == $EDITOR_MODBOT) &&
+        ( !$self->email_confirmation_date ||
+          $self->is_newbie ||
+          $self->accepted_edits < 10
+        );
+}
+
+has birth_date => (
+   is => 'rw',
+   isa => DateTimeType,
+   coerce => 1
+);
+
+has gender_id => (
+    is => 'rw',
+    isa => 'Int',
+);
+
+has gender => (
+    is => 'rw',
+);
+
+has area_id => (
+    is => 'rw',
+    isa => 'Int',
+);
+
+has area => (
+    is => 'rw',
+    isa => 'Area'
+);
+
+sub age {
+    my $self = shift;
+    return unless $self->birth_date;
+    return (DateTime->now - $self->birth_date)->in_units('years');
+}
+
+has languages => (
+    isa => 'ArrayRef',
+    is => 'rw',
+    default => sub { [] },
+    traits => [ 'Array' ],
+    handles => {
+        add_language => 'push',
+    }
+);
+
+sub requires_password_reset {
+    my $self = shift;
+    return $self->last_login_date < $LATEST_SECURITY_VULNERABILITY
+};
+
+has ha1 => (
+    isa => 'Str',
+    is => 'rw',
+);
+
+sub match_password {
+    my ($self, $password) = @_;
+    Authen::Passphrase->from_rfc2307($self->password)->match(
+        encode('utf-8', $password));
 }
 
 no Moose;
@@ -227,10 +294,6 @@ The editor is a bot, not a human being
 =head2 is_untrusted
 
 The editor is flagged untrusted
-
-=head2 is_nag_free
-
-The editor should not be nagged to donate
 
 =head2 is_mbid_submitter
 

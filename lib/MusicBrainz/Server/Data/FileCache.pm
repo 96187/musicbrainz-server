@@ -11,8 +11,16 @@ use List::MoreUtils qw( uniq );
 use Path::Class qw( dir file );
 use MooseX::Types::Moose qw( Str );
 use MooseX::Types::Structured qw( Map );
+use Try::Tiny;
 
 has manifest_signatures => (
+    isa => Map[Str, Str],
+    is => 'ro',
+    traits => [ 'Hash' ],
+    default => sub { {} }
+);
+
+has file_signatures => (
     isa => Map[Str, Str],
     is => 'ro',
     traits => [ 'Hash' ],
@@ -24,13 +32,47 @@ sub manifest_signature {
     unless (exists $self->manifest_signatures->{$manifest}) {
         my $signature = md5_hex(join ',', map {
             join(':', file($_)->basename, file_md5_hex($_));
-        } map { DBDefs::STATIC_FILES_DIR . "/$_" }
+        } map { DBDefs->STATIC_FILES_DIR . "/$_" }
             $self->manifest_files($manifest, $type));
 
         $self->manifest_signatures->{$manifest} = $signature;
     }
 
     return $self->manifest_signatures->{$manifest};
+}
+
+sub template_signature {
+    my ($self, $template) = @_;
+    my $signature_key = 'template' . $template;
+    unless (exists $self->file_signatures->{$signature_key}) {
+        $self->file_signatures->{$signature_key} = file_md5_hex(DBDefs->MB_SERVER_ROOT . "/root/" . $template);
+    }
+
+    return $self->file_signatures->{$signature_key};
+}
+
+sub pofile_signature {
+    my ($self, $domain, $language) = @_;
+    my $signature_key = 'pofile' . $domain . $language;
+    unless (exists $self->file_signatures->{$signature_key}) {
+        # First try the language as given, then fall back to the language without a country code.
+        my $hash = try {
+            file_md5_hex(_pofile_path($domain, $language));
+        } catch {
+            $language =~ s/[-_][A-Za-z]+$//;
+            file_md5_hex(_pofile_path($domain, $language));
+        };
+
+        $self->file_signatures->{$signature_key} = $hash;
+    }
+
+    return $self->file_signatures->{$signature_key};
+}
+
+sub _pofile_path
+{
+    my ($domain, $language) = @_;
+    return DBDefs->MB_SERVER_ROOT . "/po/" . $domain . "." . $language . ".po";
 }
 
 sub _expand {
@@ -48,7 +90,7 @@ sub _expand {
 sub manifest_files {
     my ($self, $manifest, $type) = @_;
 
-    my $relative_to = DBDefs::STATIC_FILES_DIR;
+    my $relative_to = DBDefs->STATIC_FILES_DIR;
 
     return
         # Convert paths back to relative paths of the manifest directory
@@ -64,27 +106,53 @@ sub manifest_files {
 
 sub squash {
     my ($self, $minifier, $manifest, $type, $prefix) = @_;
-    my $input = join("\n",
-        map { io($_)->all }
-             map { DBDefs::STATIC_FILES_DIR . "/$_" }
-                $self->manifest_files($manifest, $type));
-
     my $hash = $self->manifest_signature($manifest, $type);
+    my $filename = DBDefs->STATIC_FILES_DIR . "/$prefix$hash.$type";
 
-    printf STDERR "Compiling $manifest...";
-    my $output = $minifier->(input => $input);
-    $output > io(DBDefs::STATIC_FILES_DIR . "/$prefix$hash.$type");
-    printf STDERR "OK\n";
+    if (!-f $filename) {
+        my $input = join("\n",
+            map { io($_)->all }
+                 map { DBDefs->STATIC_FILES_DIR . "/$_" }
+                    $self->manifest_files($manifest, $type));
+
+        printf STDERR "Compiling $manifest...";
+        try {
+            my $output = $minifier->(input => $input);
+            if ($output =~ /^\s+$/) {
+                die "Empty file generated. Perhaps a trailing comma in a .js file?";
+            }
+            $output > io($filename);
+            printf STDERR "OK\n";
+        } catch {
+            my $err = $_;
+            printf STDERR "FAIL\n";
+            printf STDERR "Error: $err\n";
+            printf STDERR "Deleting $prefix$hash.$type.\n";
+            system("rm -f $filename");
+        }
+    } else {
+        printf STDERR "$manifest already compiled.\n";
+    }
 }
 
 sub compile_javascript_manifest {
     my ($self, $manifest) = @_;
-    return $self->squash(DBDefs::MINIFY_SCRIPTS, $manifest, 'js', '');
+    return $self->squash(DBDefs->MINIFY_SCRIPTS, $manifest, 'js', '');
 }
 
 sub compile_css_manifest {
     my ($self, $manifest) = @_;
-    return $self->squash(DBDefs::MINIFY_STYLES, $manifest, 'css', 'styles/');
+    my $less_manifest = $manifest;
+    $less_manifest =~ s/\.css\.manifest/\.less/;
+    if (-f $less_manifest) {
+        my $css = $less_manifest;
+        $css =~ s/\.less$/\.css/;
+        printf STDERR "Compiling $less_manifest to $css...\n";
+
+        my $lessc = DBDefs->MB_SERVER_ROOT . '/node_modules/.bin/lessc';
+        system "$lessc -x $less_manifest $css"
+    }
+    return $self->squash(DBDefs->MINIFY_STYLES, $manifest, 'css', 'styles/');
 }
 
 __PACKAGE__->meta->make_immutable;

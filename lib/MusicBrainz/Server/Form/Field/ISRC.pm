@@ -12,7 +12,7 @@ has '+maxlength' => ( default => 12 );
 apply ([
     {
         check => sub { is_valid_isrc(shift) },
-        message => l('This is not a valid ISRC'),
+        message => l('This is not a valid ISRC.'),
     }
 ]);
 

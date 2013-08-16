@@ -4,8 +4,9 @@ use namespace::autoclean;
 
 use Carp;
 use List::MoreUtils qw( uniq );
-use MusicBrainz::Server::Constants qw( $VARTIST_ID $DARTIST_ID );
+use MusicBrainz::Server::Constants qw( $VARTIST_ID $DARTIST_ID $STATUS_OPEN );
 use MusicBrainz::Server::Entity::Artist;
+use MusicBrainz::Server::Entity::PartialDate;
 use MusicBrainz::Server::Data::ArtistCredit;
 use MusicBrainz::Server::Data::Edit;
 use MusicBrainz::Server::Data::Utils qw(
@@ -17,15 +18,20 @@ use MusicBrainz::Server::Data::Utils qw(
     load_subobjects
     merge_table_attributes
     merge_partial_date
-    partial_date_from_row
     placeholders
     query_to_list_limited
 );
+use MusicBrainz::Server::Data::Utils::Cleanup qw( used_in_relationship );
+use MusicBrainz::Server::Data::Utils::Uniqueness qw( assert_uniqueness_conserved );
+use Scalar::Util qw( looks_like_number );
 
 extends 'MusicBrainz::Server::Data::CoreEntity';
 with 'MusicBrainz::Server::Data::Role::Annotation' => { type => 'artist' };
 with 'MusicBrainz::Server::Data::Role::Name' => { name_table => 'artist_name' };
 with 'MusicBrainz::Server::Data::Role::Alias' => { type => 'artist' };
+with 'MusicBrainz::Server::Data::Role::DeleteAndLog';
+with 'MusicBrainz::Server::Data::Role::IPI' => { type => 'artist' };
+with 'MusicBrainz::Server::Data::Role::ISNI' => { type => 'artist' };
 with 'MusicBrainz::Server::Data::Role::CoreEntityCache' => { prefix => 'artist' };
 with 'MusicBrainz::Server::Data::Role::Editable' => { table => 'artist' };
 with 'MusicBrainz::Server::Data::Role::Rating' => { type => 'artist' };
@@ -33,10 +39,12 @@ with 'MusicBrainz::Server::Data::Role::Tag' => { type => 'artist' };
 with 'MusicBrainz::Server::Data::Role::Subscription' => {
     table => 'editor_subscribe_artist',
     column => 'artist',
-    class => 'MusicBrainz::Server::Entity::ArtistSubscription'
+    active_class => 'MusicBrainz::Server::Entity::Subscription::Artist',
+    deleted_class => 'MusicBrainz::Server::Entity::Subscription::DeletedArtist'
 };
 with 'MusicBrainz::Server::Data::Role::Browse';
 with 'MusicBrainz::Server::Data::Role::LinksToEdit' => { table => 'artist' };
+with 'MusicBrainz::Server::Data::Role::Area';
 
 sub browse_column { 'sort_name.name' }
 
@@ -56,9 +64,11 @@ sub _table_join_name {
 sub _columns
 {
     return 'artist.id, artist.gid, name.name, sort_name.name AS sort_name, ' .
-           'artist.type, artist.country, gender, artist.edits_pending, artist.ipi_code, ' .
+           'artist.type, artist.area, artist.begin_area, artist.end_area, ' .
+           'gender, artist.edits_pending, artist.comment, artist.last_updated, ' .
            'begin_date_year, begin_date_month, begin_date_day, ' .
-           'end_date_year, end_date_month, end_date_day, artist.comment, artist.last_updated';
+           'end_date_year, end_date_month, end_date_day,' .
+           'ended';
 }
 
 sub _id_column
@@ -79,14 +89,16 @@ sub _column_mapping
         name => 'name',
         sort_name => 'sort_name',
         type_id => 'type',
-        country_id => 'country',
+        area_id => 'area',
+        begin_area_id => 'begin_area',
+        end_area_id => 'end_area',
         gender_id => 'gender',
-        begin_date => sub { partial_date_from_row(shift, shift() . 'begin_date_') },
-        end_date => sub { partial_date_from_row(shift, shift() . 'end_date_') },
+        begin_date => sub { MusicBrainz::Server::Entity::PartialDate->new_from_row(shift, shift() . 'begin_date_') },
+        end_date => sub { MusicBrainz::Server::Entity::PartialDate->new_from_row(shift, shift() . 'end_date_') },
         edits_pending => 'edits_pending',
         comment => 'comment',
-        ipi_code => 'ipi_code',
         last_updated => 'last_updated',
+        ended => 'ended'
     };
 }
 
@@ -94,6 +106,11 @@ sub _entity_class
 {
     return 'MusicBrainz::Server::Entity::Artist';
 }
+
+after '_delete_from_cache' => sub {
+    my ($self, @ids) = @_;
+    $self->c->model('ArtistCredit')->uncache_for_artist_ids(grep { looks_like_number($_) } @ids);
+};
 
 sub find_by_subscribed_editor
 {
@@ -133,7 +150,7 @@ sub find_by_release
                      FROM artist
                      JOIN artist_credit_name acn ON acn.artist = artist.id
                      JOIN track ON track.artist_credit = acn.artist_credit
-                     JOIN medium ON medium.tracklist = track.tracklist
+                     JOIN medium ON medium.id = track.medium
                      WHERE medium.release = ?)
                  OR artist.id IN (SELECT artist.id
                      FROM artist
@@ -164,17 +181,29 @@ sub find_by_release_group
 
 sub find_by_work
 {
-    my ($self, $recording_id, $limit, $offset) = @_;
-    my $query = "SELECT " . $self->_columns . "
-                 FROM " . $self->_table . "
-                    JOIN artist_credit_name acn ON acn.artist = artist.id
-                    JOIN work ON work.artist_credit = acn.artist_credit
-                 WHERE work.id = ?
-                 ORDER BY musicbrainz_collate(name.name), artist.id
+    my ($self, $work_id, $limit, $offset) = @_;
+    my $query = "SELECT DISTINCT musicbrainz_collate(name) name_collate, s.*
+                 FROM (
+                   SELECT " . $self->_columns . " FROM ". $self->_table . "
+                   JOIN artist_credit_name acn ON acn.artist = artist.id
+                   JOIN recording ON recording.artist_credit = acn.artist_credit
+                   JOIN l_recording_work lrw ON lrw.entity0 = recording.id
+                   WHERE lrw.entity1 = ?
+                   UNION ALL
+                   SELECT " . $self->_columns . " FROM ". $self->_table . "
+                   JOIN l_artist_work law ON law.entity0 = artist.id
+                   WHERE law.entity1 = ?
+                 ) s
+                 ORDER BY musicbrainz_collate(name), id
                  OFFSET ?";
     return query_to_list_limited(
         $self->c->sql, $offset, $limit, sub { $self->_new_from_row(@_) },
-        $query, $recording_id, $offset || 0);
+        $query, $work_id, $work_id, $offset || 0);
+}
+
+sub _area_cols
+{
+    return ['area', 'begin_area', 'end_area'];
 }
 
 sub load
@@ -194,11 +223,16 @@ sub insert
         my $row = $self->_hash_to_row($artist, \%names);
         $row->{gid} = $artist->{gid} || generate_gid();
 
-        push @created, $class->new(
+        my $created = $class->new(
             name => $artist->{name},
             id => $self->sql->insert_row('artist', $row, 'id'),
             gid => $row->{gid}
         );
+
+        $self->ipi->set_ipis($created->id, @{ $artist->{ipi_codes} });
+        $self->isni->set_isnis($created->id, @{ $artist->{isni_codes} });
+
+        push @created, $created;
     }
     return @artists > 1 ? @created : $created[0];
 }
@@ -209,7 +243,10 @@ sub update
     croak '$artist_id must be present and > 0' unless $artist_id > 0;
     my %names = $self->find_or_insert_names($update->{name}, $update->{sort_name});
     my $row = $self->_hash_to_row($update, \%names);
-    $self->sql->update_row('artist', $row, { id => $artist_id });
+
+    assert_uniqueness_conserved($self, artist => $artist_id, $update);
+
+    $self->sql->update_row('artist', $row, { id => $artist_id }) if %$row;
 }
 
 sub can_delete
@@ -232,11 +269,13 @@ sub delete
     $self->c->model('Relationship')->delete_entities('artist', @artist_ids);
     $self->annotation->delete(@artist_ids);
     $self->alias->delete_entities(@artist_ids);
+    $self->ipi->delete_entities(@artist_ids);
+    $self->isni->delete_entities(@artist_ids);
     $self->tags->delete(@artist_ids);
     $self->rating->delete(@artist_ids);
     $self->remove_gid_redirects(@artist_ids);
-    my $query = 'DELETE FROM artist WHERE id IN (' . placeholders(@artist_ids) . ')';
-    $self->sql->do($query, @artist_ids);
+    $self->delete_returning_gids('artist', @artist_ids);
+
     return 1;
 }
 
@@ -249,6 +288,8 @@ sub merge
     }
 
     $self->alias->merge($new_id, @$old_ids);
+    $self->ipi->merge($new_id, @$old_ids) unless is_special_artist($new_id);
+    $self->isni->merge($new_id, @$old_ids) unless is_special_artist($new_id);
     $self->tags->merge($new_id, @$old_ids);
     $self->rating->merge($new_id, @$old_ids);
     $self->subscription->merge_entities($new_id, @$old_ids);
@@ -257,23 +298,25 @@ sub merge
     $self->c->model('Edit')->merge_entities('artist', $new_id, @$old_ids);
     $self->c->model('Relationship')->merge_entities('artist', $new_id, @$old_ids);
 
-    merge_table_attributes(
-        $self->sql => (
-            table => 'artist',
-            columns => [ qw( ipi_code gender country type ) ],
-            old_ids => $old_ids,
-            new_id => $new_id
-        )
-    );
+    unless (is_special_artist($new_id)) {
+        merge_table_attributes(
+            $self->sql => (
+                table => 'artist',
+                columns => [ qw( gender area begin_area end_area type ) ],
+                old_ids => $old_ids,
+                new_id => $new_id
+            )
+        );
 
-    merge_partial_date(
-        $self->sql => (
-            table => 'artist',
-            field => $_,
-            old_ids => $old_ids,
-            new_id => $new_id
-        )
-    ) for qw( begin_date end_date );
+        merge_partial_date(
+            $self->sql => (
+                table => 'artist',
+                field => $_,
+                old_ids => $old_ids,
+                new_id => $new_id
+            )
+        ) for qw( begin_date end_date );
+    }
 
     $self->_delete_and_redirect_gids('artist', $new_id, @$old_ids);
     return 1;
@@ -284,11 +327,13 @@ sub _hash_to_row
     my ($self, $values, $names) = @_;
 
     my $row = hash_to_row($values, {
-        country => 'country_id',
+        area => 'area_id',
+        begin_area => 'begin_area_id',
+        end_area => 'end_area_id',
         type    => 'type_id',
         gender  => 'gender_id',
         comment => 'comment',
-        ipi_code => 'ipi_code',
+        ended => 'ended',
     });
 
     if (exists $values->{begin_date}) {
@@ -345,51 +390,23 @@ sub load_for_artist_credits {
 sub is_empty {
     my ($self, $artist_id) = @_;
 
-    return $self->sql->select_single_value(<<'EOSQL', $artist_id);
+    my $used_in_relationship = used_in_relationship($self->c, artist => 'artist_row.id');
+    return $self->sql->select_single_value(<<EOSQL, $artist_id, $STATUS_OPEN);
         SELECT TRUE
         FROM artist artist_row
         WHERE id = ?
         AND edits_pending = 0
         AND NOT (
           EXISTS (
+            SELECT TRUE FROM edit_artist
+            WHERE status = ? AND artist = artist_row.id
+          ) OR
+          EXISTS (
             SELECT TRUE FROM artist_credit_name
             WHERE artist = artist_row.id
             LIMIT 1
           ) OR
-          EXISTS (
-            SELECT TRUE FROM l_artist_recording
-            WHERE entity0 = artist_row.id
-            LIMIT 1
-          ) OR
-          EXISTS (
-            SELECT TRUE FROM l_artist_work
-            WHERE entity0 = artist_row.id
-            LIMIT 1
-          ) OR
-          EXISTS (
-            SELECT TRUE FROM l_artist_url
-            WHERE entity0 = artist_row.id
-            LIMIT 1
-          ) OR
-          EXISTS (
-            SELECT TRUE FROM l_artist_artist
-            WHERE entity0 = artist_row.id OR entity1 = artist_row.id
-            LIMIT 1
-          ) OR
-          EXISTS (
-            SELECT TRUE FROM l_artist_label
-            WHERE entity0 = artist_row.id
-            LIMIT 1
-          ) OR
-          EXISTS (
-            SELECT TRUE FROM l_artist_release
-            WHERE entity0 = artist_row.id
-            LIMIT 1
-          ) OR
-          EXISTS (
-            SELECT TRUE FROM l_artist_release_group WHERE entity0 = artist_row.id
-            LIMIT 1
-          )
+          $used_in_relationship
         )
 EOSQL
 }

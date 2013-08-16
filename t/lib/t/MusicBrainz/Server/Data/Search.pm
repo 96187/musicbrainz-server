@@ -13,6 +13,17 @@ use MusicBrainz::Server::Data::Search;
 
 with 't::Context';
 
+test 'Searching artists with area lookup' => sub {
+    my $test = shift;
+    my $c = $test->c;
+
+    my $area_name = 'Area';
+
+    my $data = load_data('artist', $c);
+    my $artist = $data->{results}[0]{entity};
+    is($artist->area->name, $area_name);
+};
+
 test all => sub {
 
 my $test = shift;
@@ -39,7 +50,7 @@ my $release_group = $data->{results}->[0]->{entity};
 ok ( defined $release_group->name );
 is ( $release_group->name, 'Love' );
 is ( $release_group->gid, '1b545f10-b62e-370b-80fc-dba87834836b' );
-is ( $release_group->type->name, 'single' );
+is ( $release_group->primary_type->name, 'single' );
 is ( $release_group->artist_credit->names->[0]->artist->name, 'Anouk' );
 is ( $release_group->artist_credit->names->[0]->artist->sort_name, 'Anouk' );
 is ( $release_group->artist_credit->names->[0]->artist->gid, '5e8da504-c75b-4bf5-9dfc-119057c1a9c0' );
@@ -53,14 +64,14 @@ is ( @{$data->{results} }, 25 );
 
 my $release = $data->{results}->[0]->{entity};
 
-is ( $release->name, 'LOVE' );
-is ( $release->gid, '64ea1dca-db9a-4945-ae68-78e02a27b158' );
-is ( $release->script->iso_code, 'latn' );
-is ( $release->language->iso_code_3t, 'eng' );
-is ( $release->artist_credit->names->[0]->artist->name, 'HOUND DOG' );
-is ( $release->artist_credit->names->[0]->artist->sort_name, 'HOUND DOG' );
-is ( $release->artist_credit->names->[0]->artist->gid, 'bd21b7a2-c6b5-45d6-bdb7-18e5de8bfa75' );
-is ( $release->mediums->[0]->tracklist->track_count, 9 );
+is ( $release->name, 'Love' );
+is ( $release->gid, 'da103965-b7e7-4618-98f5-3b9599ecc388' );
+is ( $release->script->iso_code, 'Latn' );
+is ( $release->language->iso_code_3, 'eng' );
+is ( $release->artist_credit->names->[0]->artist->name, 'Love' );
+is ( $release->artist_credit->names->[0]->artist->sort_name, 'Love' );
+is ( $release->artist_credit->names->[0]->artist->gid, '34ec9a8d-c65b-48fd-bcdd-aad2f72fdb47' );
+is ( $release->mediums->[0]->track_count, 14 );
 
 
 
@@ -81,11 +92,11 @@ is ( $recording->artist_credit->names->[0]->artist->gid, 'c2c70ed6-5f10-445c-969
 
 ok ( defined $extra );
 is ( @{$extra}, 3 );
-is ( $extra->[0]->release_group->type->name, "album" );
+is ( $extra->[0]->release_group->primary_type->name, "album" );
 is ( $extra->[0]->name, "Sixpence None the Richer" );
 is ( $extra->[0]->gid, "24efdbe1-a15d-4cc0-a6d7-59bd1ebbdcc3" );
-is ( $extra->[0]->mediums->[0]->tracklist->tracks->[0]->position, 11 );
-is ( $extra->[0]->mediums->[0]->tracklist->track_count, 12 );
+is ( $extra->[0]->mediums->[0]->tracks->[0]->position, 11 );
+is ( $extra->[0]->mediums->[0]->track_count, 12 );
 
 
 $data = load_data('label', $test->c);
@@ -159,7 +170,7 @@ sub load_data
         $type,
         'love',  # "Love" always has tons of hits
         25,      # items per page
-        0,       # paging offset
+        1,       # paging offset
         0,       # advanced search
         MusicBrainz::Server::Test::mock_search_server($type)
     );

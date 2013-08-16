@@ -4,7 +4,7 @@ INSERT INTO artist (id, gid, name, sort_name)
 
 INSERT INTO artist_credit (id, name, artist_count) VALUES (1, 1, 1);
 INSERT INTO artist_credit_name (artist_credit, name, position, artist, join_phrase)
-    VALUES (1, 1, 1, 1, NULL);
+    VALUES (1, 1, 1, 1, '');
 
 INSERT INTO label_name (id, name) VALUES (1, 'Label Name');
 INSERT INTO label (id, gid, name, sort_name)
@@ -27,4 +27,4 @@ INSERT INTO work_name (id, name) VALUES (1, 'Work Name');
 INSERT INTO work (id, gid, name)
     VALUES (1, 'b0c3aea0-8ff4-11de-8a39-0800200c9a66', 1);
 
-INSERT INTO editor (id, name, password) VALUES (1, 'editor', 'pass');
+INSERT INTO editor (id, name, password, ha1, email, email_confirm_date) VALUES (1, 'editor', '{CLEARTEXT}pass', '3f3edade87115ce351d63f42d92a1834', '', now());

@@ -5,9 +5,12 @@ BEGIN { extends 'MusicBrainz::Server::ControllerBase::WS::2' }
 use aliased 'MusicBrainz::Server::WebService::WebServiceStash';
 use MusicBrainz::Server::Constants qw(
     $EDIT_RELEASE_EDIT_BARCODES
+    $ACCESS_SCOPE_SUBMIT_BARCODE
 );
 use List::UtilsBy qw( uniq_by );
+use MusicBrainz::Server::ControllerUtils::Release qw( load_release_events );
 use MusicBrainz::Server::WebService::XML::XPath;
+use MusicBrainz::Server::Validation qw( is_guid is_valid_ean );
 use Readonly;
 use Try::Tiny;
 
@@ -15,21 +18,22 @@ my $ws_defs = Data::OptList::mkopt([
      release => {
                          method   => 'GET',
                          required => [ qw(query) ],
-                         optional => [ qw(limit offset) ],
+                         optional => [ qw(fmt limit offset) ],
      },
      release => {
                          method   => 'GET',
                          linked   => [ qw(track_artist artist label recording release-group) ],
                          inc      => [ qw(artist-credits labels recordings discids
-                                          release-groups media _relations) ],
-                         optional => [ qw(limit offset) ],
+                                          release-groups media _relations annotation) ],
+                         optional => [ qw(fmt limit offset) ],
      },
      release => {
                          method   => 'GET',
                          inc      => [ qw(artists labels recordings release-groups aliases
                                           tags user-tags ratings user-ratings collections
                                           artist-credits discids media recording-level-rels
-                                          work-level-rels _relations) ]
+                                          work-level-rels _relations annotation) ],
+                         optional => [ qw(fmt) ],
      },
      release => {
                          method   => 'POST',
@@ -55,9 +59,19 @@ sub release_toplevel
     my ($self, $c, $stash, $release) = @_;
 
     $c->model('Release')->load_meta($release);
+    load_release_events($c, $release);
     $self->linked_releases ($c, $stash, [ $release ]);
 
+    if ($release->cover_art_presence eq 'present') {
+        $stash->store($release)->{'cover-art-archive'} = $c->model('CoverArtArchive')->get_stats_for_release($release->id);
+    } else {
+        $stash->store($release)->{'cover-art-archive'} = {total => 0, front => 0, back => 0};
+    }
+
     my @rels_entities = $release;
+
+    $c->model('Release')->annotation->load_latest($release)
+        if $c->stash->{inc}->annotation;
 
     if ($c->stash->{inc}->artists)
     {
@@ -104,12 +118,11 @@ sub release_toplevel
             $c->model('CDTOC')->load (@medium_cdtocs);
         }
 
-        my @tracklists = grep { defined } map { $_->tracklist } @mediums;
-        $c->model('Track')->load_for_tracklists(@tracklists);
-        $c->model('ArtistCredit')->load(map { $_->all_tracks } @tracklists)
+        $c->model('Track')->load_for_mediums(@mediums);
+        $c->model('ArtistCredit')->load(map { $_->all_tracks } @mediums)
             if ($c->stash->{inc}->artist_credits);
 
-        my @recordings = $c->model('Recording')->load(map { $_->all_tracks } @tracklists);
+        my @recordings = $c->model('Recording')->load(map { $_->all_tracks } @mediums);
         $c->model('Recording')->load_meta(@recordings);
 
         if ($c->stash->{inc}->recording_level_rels)
@@ -120,20 +133,7 @@ sub release_toplevel
         $self->linked_recordings ($c, $stash, \@recordings);
     }
 
-    if ($c->stash->{inc}->has_rels)
-    {
-        my $types = $c->stash->{inc}->get_rel_types();
-        $c->model('Relationship')->load_subset($types, @rels_entities);
-
-        if ($c->stash->{inc}->work_level_rels)
-        {
-            my @works =
-                map { $_->target }
-                grep { $_->target_type eq 'work' }
-                map { $_->all_relationships } @rels_entities;
-            $c->model('Relationship')->load_subset($types, @works);
-        }
-    }
+    $self->load_relationships($c, $stash, @rels_entities);
 
     if ($c->stash->{inc}->collections)
     {
@@ -152,7 +152,7 @@ sub release: Chained('root') PathPart('release') Args(1)
 {
     my ($self, $c, $gid) = @_;
 
-    if (!MusicBrainz::Server::Validation::IsGUID($gid))
+    if (!is_guid($gid))
     {
         $c->stash->{error} = "Invalid mbid.";
         $c->detach('bad_req');
@@ -178,7 +178,7 @@ sub release_browse : Private
     my ($resource, $id) = @{ $c->stash->{linked} };
     my ($limit, $offset) = $self->_limit_and_offset ($c);
 
-    if (!MusicBrainz::Server::Validation::IsGUID($id))
+    if (!is_guid($id))
     {
         $c->stash->{error} = "Invalid mbid.";
         $c->detach('bad_req');
@@ -259,18 +259,20 @@ sub release_submit : Private
     $self->deny_readonly($c);
     my $xp = MusicBrainz::Server::WebService::XML::XPath->new( xml => $c->request->body );
 
+    my $client = $c->req->query_params->{client} // $c->req->user_agent // '';
+
     my @submit;
     for my $node ($xp->find('/mb:metadata/mb:release-list/mb:release')->get_nodelist) {
         my $id = $xp->find('@mb:id', $node)->string_value or
             $self->_error ($c, "All releases must have an MBID present");
 
         $self->_error($c, "$id is not a valid MBID")
-            unless MusicBrainz::Server::Validation::IsGUID($id);
+            unless is_guid($id);
 
         my $barcode = $xp->find('mb:barcode', $node)->string_value or next;
 
         $self->_error($c, "$barcode is not a valid barcode")
-            unless MusicBrainz::Server::Validation::IsValidEAN($barcode);
+            unless is_valid_ean($barcode);
 
         push @submit, { release => $id, barcode => $barcode };
     }
@@ -287,19 +289,22 @@ sub release_submit : Private
     @submit = $c->model('Release')->filter_barcode_changes(@submit);
 
     if (@submit) {
+        $self->forbidden($c)
+            unless $c->user->is_authorized($ACCESS_SCOPE_SUBMIT_BARCODE);
+
         try {
-            $c->model('Edit')->create(
-                editor_id => $c->user->id,
-                privileges => $c->user->privileges,
-                edit_type => $EDIT_RELEASE_EDIT_BARCODES,
-                submissions => [ map +{
-                    release => {
-                        id => $gid_map{ $_->{release} }->id,
-                        name => $gid_map{ $_->{release} }->name
-                    },
-                    barcode => $_->{barcode}
-                }, @submit ]
-            );
+            $c->model('MB')->with_transaction(sub {
+                $c->model('Edit')->create(
+                    editor_id => $c->user->id,
+                    privileges => $c->user->privileges,
+                    edit_type => $EDIT_RELEASE_EDIT_BARCODES,
+                    submissions => [ map +{
+                        release => $gid_map{ $_->{release} },
+                        barcode => $_->{barcode}
+                    }, @submit ],
+                    client_version => $client
+                );
+            });
         }
         catch {
             my $e = $_;

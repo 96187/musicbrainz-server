@@ -40,7 +40,7 @@ use MusicBrainz::Server::Constants qw(
     $EDIT_SET_TRACK_LENGTHS
     $EDIT_MEDIUM_EDIT
 );
-use MusicBrainz::Server::Types qw( $AUTO_EDITOR_FLAG );
+use MusicBrainz::Server::Constants qw( $AUTO_EDITOR_FLAG );
 use MusicBrainz::Server::Track qw( format_track_length );
 
 use Getopt::Long;
@@ -77,9 +77,8 @@ my @medium_ids = @{ $c->sql->select_single_column_array(
        FROM medium m
        JOIN medium_cdtoc mcd ON mcd.medium = m.id
   LEFT JOIN medium_format mf ON mf.id = m.format
-       JOIN tracklist tl ON tl.id = m.tracklist
-       JOIN track t ON t.tracklist = tl.id
-      WHERE t.length IS NULL OR t.length = 0 AND tl.track_count > 0
+       JOIN track t ON t.medium = m.id
+      WHERE t.length IS NULL OR t.length = 0 AND m.track_count > 0
         AND (mf.has_discids = TRUE OR mf.has_discids IS NULL)"
 ) };
 printf localtime() . " : Found %d medium%s\n",
@@ -92,8 +91,8 @@ my $mediums_fixed = 0;
 
 my %medium_by_id = %{ $c->model('Medium')->get_by_ids(@medium_ids) };
 my @mediums = values %medium_by_id;
-$c->model('Track')->load_for_tracklists(map { $_->tracklist } @mediums);
-$c->model('ArtistCredit')->load(map { $_->tracklist->all_tracks } @mediums);
+$c->model('Track')->load_for_mediums(@mediums);
+$c->model('ArtistCredit')->load(map { $_->all_tracks } @mediums);
 
 for my $medium (@mediums)
 {
@@ -104,9 +103,9 @@ for my $medium (@mediums)
     $c->model('CDTOC')->load(@cdtocs);
 
     @cdtocs = map { $_->cdtoc }
-        grep { $medium_by_id{$_->medium_id}->tracklist->track_count == $_->cdtoc->track_count }
+        grep { $medium_by_id{$_->medium_id}->track_count == $_->cdtoc->track_count }
             @cdtocs;
-    my @tracks = $medium->tracklist->all_tracks;
+    my @tracks = $medium->all_tracks;
 
     if ($debug) {
         print "TOCs:\n";
@@ -161,21 +160,23 @@ for my $medium (@mediums)
                         if $verbose;
 
                 unless ($dry_run) {
-                    my $edit = $c->model('Edit')->create(
-                        editor_id => $EDITOR_MODBOT,
-                        privileges => $AUTO_EDITOR_FLAG,
-                        edit_type => $EDIT_SET_TRACK_LENGTHS,
-                        tracklist_id => $medium->tracklist_id,
-                        cdtoc_id => $cdtoc->id
-                    );
-
-                    $c->model('EditNote')->add_note(
-                        $edit->id,
-                        {
+                    Sql::run_in_transaction(sub {
+                        my $edit = $c->model('Edit')->create(
                             editor_id => $EDITOR_MODBOT,
-                            text => 'FixTrackLength script'
-                        }
-                    );
+                            privileges => $AUTO_EDITOR_FLAG,
+                            edit_type => $EDIT_SET_TRACK_LENGTHS,
+                            medium_id => $medium->id,
+                            cdtoc_id => $cdtoc->id
+                        );
+
+                        $c->model('EditNote')->add_note(
+                            $edit->id,
+                            {
+                                editor_id => $EDITOR_MODBOT,
+                                text => 'FixTrackLength script'
+                            }
+                        );
+                    }, $c->sql);
                 }
 
                 ++$mediums_fixed;
@@ -241,17 +242,19 @@ for my $medium (@mediums)
             if ($sqdiff < 5) {
                 unless (@tracks) {
                     # FIXME This is a bug, and a hacky fix!
-                    # I have no idea why, but load_for_tracklists above sometimes
+                    # I have no idea why, but load_for_mediums above sometimes
                     # doesn't actually load all tracklists...
                     warn "A medium has lost its tracklist: " . $medium->id;
-                    $c->model('Track')->load_for_tracklists($medium->tracklist);
-                    @tracks = $medium->tracklist->all_tracks;
+                    $c->model('Track')->load_for_mediums($medium);
+                    @tracks = $medium->all_tracks;
                     $c->model('ArtistCredit')->load(@tracks);
                 }
 
                 my @new_tracklist = map {
                     Track->new(
+                        id => $_->id,
                         length => int($average_toc[$_->position - 1]),
+                        number => $_->number,
                         name => $_->name,
                         artist_credit => $_->artist_credit,
                         recording_id => $_->recording_id,
@@ -260,22 +263,24 @@ for my $medium (@mediums)
                 } @tracks;
 
                 unless ($dry_run) {
-                    my $edit = $c->model('Edit')->create(
-                        edit_type => $EDIT_MEDIUM_EDIT,
-                        editor_id => $EDITOR_MODBOT,
-                        privileges => $AUTO_EDITOR_FLAG,
-                        to_edit => $medium,
-                        tracklist => \@new_tracklist,
-                        separate_tracklists => 1 # TODO ?
-                    );
-
-                    $c->model('EditNote')->add_note(
-                        $edit->id,
-                        {
+                    Sql::run_in_transaction(sub {
+                        my $edit = $c->model('Edit')->create(
+                            edit_type => $EDIT_MEDIUM_EDIT,
                             editor_id => $EDITOR_MODBOT,
-                            text => 'FixTrackLength script'
-                        }
-                    );
+                            privileges => $AUTO_EDITOR_FLAG,
+                            to_edit => $medium,
+                            tracklist => \@new_tracklist,
+                            separate_tracklists => 1 # TODO ?
+                        );
+
+                        $c->model('EditNote')->add_note(
+                            $edit->id,
+                            {
+                                editor_id => $EDITOR_MODBOT,
+                                text => 'FixTrackLength script'
+                            }
+                        );
+                    }, $c->sql);
 
                 }
 

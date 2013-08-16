@@ -7,10 +7,16 @@ use MusicBrainz::Server::Edit::Exceptions;
 use MusicBrainz::Server::Edit::Utils qw( edit_status_name );
 use MusicBrainz::Server::Entity::Types;
 use MusicBrainz::Server::Constants qw( :expire_action :quality );
-use MusicBrainz::Server::Types qw( :edit_status :vote $AUTO_EDITOR_FLAG );
+use MusicBrainz::Server::Constants qw( :edit_status :vote $AUTO_EDITOR_FLAG $REQUIRED_VOTES );
+use MusicBrainz::Server::Translation qw( l );
+use MusicBrainz::Server::Types
+    DateTime => { -as => 'DateTimeType' }, 'EditStatus', 'Quality';
+
+use Data::Compare qw( Compare );
 
 sub edit_type { die 'Unimplemented' }
 sub edit_name { die 'Unimplemented' }
+sub l_edit_name { l(shift->edit_name) }
 
 sub edit_template
 {
@@ -46,12 +52,12 @@ has 'language' => (
 );
 
 has 'quality' => (
-    isa => 'Quality',
+    isa => Quality,
     is => 'rw'
 );
 
 has [qw( created_time expires_time close_time )] => (
-    isa => 'DateTime',
+    isa => DateTimeType,
     is => 'rw',
     coerce => 1
 );
@@ -65,7 +71,7 @@ sub is_expired
 }
 
 has 'status' => (
-    isa => 'EditStatus',
+    isa => EditStatus,
     is => 'rw',
     default => $STATUS_OPEN,
 );
@@ -140,7 +146,7 @@ sub editor_may_vote
     my ($self, $editor) = @_;
     return $self->is_open &&
            defined $editor && $editor->id != $self->editor_id &&
-           !$editor->is_limited;
+           !$editor->is_limited && !$editor->is_bot;
 }
 
 sub editor_may_add_note
@@ -162,25 +168,20 @@ sub editor_may_add_note
 sub edit_conditions
 {
     return {
-        $QUALITY_LOW => {
-            duration      => 4,
-            votes         => 1,
-            expire_action => $EXPIRE_ACCEPT,
-            auto_edit     => 1,
-        },
-        $QUALITY_NORMAL => {
-            duration      => 14,
-            votes         => 3,
-            expire_action => $EXPIRE_ACCEPT,
-            auto_edit     => 1,
-        },
-        $QUALITY_HIGH => {
-            duration      => 14,
-            votes         => 4,
-            expire_action => $EXPIRE_REJECT,
-            auto_edit     => 0,
-        },
+        map { $_ =>
+               { duration      => 7,
+                 votes         => $REQUIRED_VOTES,
+                 expire_action => $EXPIRE_ACCEPT,
+                 auto_edit     => 1 }
+            } ($QUALITY_LOW, $QUALITY_NORMAL, $QUALITY_HIGH)
     };
+}
+
+sub edit_conditions_vary
+{
+    my $self = shift;
+    my ($low, $normal, $high) = map { $self->edit_conditions->{$_} } ($QUALITY_LOW, $QUALITY_NORMAL, $QUALITY_HIGH);
+    return !Compare($low, $normal) || !Compare($normal, $high);
 }
 
 sub allow_auto_edit
@@ -219,6 +220,25 @@ sub can_cancel
     return
          $self->is_open
       && $self->editor_id == $user->id;
+}
+
+sub was_approved
+{
+    my $self = shift;
+    
+    return 0 if $self->is_open;
+    
+    return scalar $self->_grep_votes(sub { $_->vote == $VOTE_APPROVE })
+}
+
+sub approval_requires_comment {
+    my ($self, $editor) = @_;
+
+    return $self->_grep_votes(sub {
+        $_->vote == $VOTE_NO &&
+            !$_->superseded &&
+                $_->editor_id != $editor->id
+    }) > 0;
 }
 
 =head2 related_entities
@@ -273,6 +293,7 @@ sub build_display_data
 sub accept { }
 sub reject { }
 sub insert { }
+sub post_insert { }
 
 sub to_hash { shift->data }
 sub restore { shift->data(shift) }

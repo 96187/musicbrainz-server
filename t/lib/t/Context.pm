@@ -3,6 +3,8 @@ use Moose::Role;
 use namespace::autoclean;
 
 use Carp 'confess';
+use DBDefs;
+use File::Temp;
 use MusicBrainz::Server::Test;
 
 has c => (
@@ -47,6 +49,8 @@ around run_test => sub {
     my $self = shift;
 
     MusicBrainz::Server::Test->prepare_test_server;
+
+    $self->c->connector->_disconnect;
 
     $self->c->sql->begin;
     $self->_clear_cache_aware_c;

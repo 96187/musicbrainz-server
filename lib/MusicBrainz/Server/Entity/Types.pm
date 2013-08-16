@@ -8,6 +8,18 @@ subtype 'AggregatedTag'
 subtype 'Annotation'
     => as class_type 'MusicBrainz::Server::Entity::Annotation';
 
+subtype 'Application'
+    => as class_type 'MusicBrainz::Server::Entity::Application';
+
+subtype 'Area'
+    => as class_type 'MusicBrainz::Server::Entity::Area';
+
+subtype 'AreaAlias'
+    => as class_type 'MusicBrainz::Server::Entity::AreaAlias';
+
+subtype 'AreaType'
+    => as class_type 'MusicBrainz::Server::Entity::AreaType';
+
 subtype 'Artist'
     => as class_type 'MusicBrainz::Server::Entity::Artist';
 
@@ -38,11 +50,17 @@ subtype 'CDTOC'
 subtype 'CDStub'
     => as class_type 'MusicBrainz::Server::Entity::CDStub';
 
+subtype 'Collection'
+    => as class_type 'MusicBrainz::Server::Entity::Collection';
+
 subtype 'Edit'
     => as class_type 'MusicBrainz::Server::Edit';
 
 subtype 'Editor'
     => as class_type 'MusicBrainz::Server::Entity::Editor';
+
+subtype 'EditorOAuthToken'
+    => as class_type 'MusicBrainz::Server::Entity::EditorOAuthToken';
 
 subtype 'Entity'
     => as class_type 'MusicBrainz::Server::Entity';
@@ -73,9 +91,6 @@ subtype 'LinkType'
 
 subtype 'LinkTypeAttribute'
     => as class_type 'MusicBrainz::Server::Entity::LinkTypeAttribute';
-
-subtype 'Country'
-    => as class_type 'MusicBrainz::Server::Entity::Country';
 
 subtype 'Gender'
     => as class_type 'MusicBrainz::Server::Entity::Gender';
@@ -112,6 +127,9 @@ subtype 'ReleaseGroupType'
 
 subtype 'Release'
     => as class_type 'MusicBrainz::Server::Entity::Release';
+
+subtype 'ReleaseEvent'
+    => as class_type 'MusicBrainz::Server::Entity::ReleaseEvent';
 
 subtype 'ReleaseStatus'
     => as class_type 'MusicBrainz::Server::Entity::ReleaseStatus';
@@ -150,7 +168,7 @@ subtype 'WorkType'
 
 =head1 COPYRIGHT
 
-Copyright (C) 2009 Lukas Lalinsky
+Copyright (C) 2009-2013 Lukas Lalinsky, MetaBrainz Foundation
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

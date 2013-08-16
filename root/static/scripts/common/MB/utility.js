@@ -17,15 +17,23 @@
 */
 
 MB.utility.keys = function (obj) {
-    var ret = [];
-    for (var key in obj) {
-        if (obj.hasOwnProperty (key))
-        {
-            ret.push (key);
-        }
+    if (null === obj) {
+        return [];
     }
+    else if (Object.keys) {
+        return Object.keys(obj);
+    }
+    else {
+        var ret = [];
+        for (var key in obj) {
+            if (obj.hasOwnProperty (key))
+            {
+                ret.push (key);
+            }
+        }
 
-    return ret;
+        return ret;
+    }
 };
 
 MB.utility.displayedValue = function(element) {
@@ -148,8 +156,9 @@ MB.utility.structureToString = function (obj) {
 /* Set a particular button to be the default submit action for a form. */
 MB.utility.setDefaultAction = function (form, button) {
 
+    var withDataAndEvents = true;
     $(form).prepend (
-        $(button).clone ().removeAttr ('id').css ({
+        $(button).clone (withDataAndEvents).removeAttr ('id').css ({
            position: 'absolute',
            left: "-999px", top: "-999px", height: 0, width: 0
         }));
@@ -163,11 +172,11 @@ MB.utility.rememberCheckbox = function (id, name) {
        value from the html. */
     if ($.cookie (name) === "1")
     {
-        $(id).attr ('checked', 'checked');
+        $(id).prop('checked', true);
     }
     else if ($.cookie (name) === "0")
     {
-        $(id).removeAttr ('checked');
+        $(id).prop('checked', false);
     }
 
     $(id).bind ('change.mb', function () {
@@ -178,46 +187,60 @@ MB.utility.rememberCheckbox = function (id, name) {
 
 MB.utility.formatTrackLength = function (duration)
 {
-    var length_str = '';
-
     if (duration === null)
     {
-        length_str = '?:??';
-    }
-    else
-    {
-        var length_in_secs = (duration / 1000 + 0.5);
-        length_str = String (Math.floor (length_in_secs / 60)) + ":" +
-            ("00" + String (Math.floor (length_in_secs % 60))).slice (-2);
+        return '';
     }
 
-    return length_str;
+    if (duration < 1000)
+    {
+        return duration + ' ms';
+    }
+
+    var seconds = Math.round(duration / 1000.0);
+
+    var one_minute = 60;
+    var one_hour = 60 * one_minute;
+
+    var hours = Math.floor(seconds / one_hour);
+    seconds = seconds % one_hour;
+
+    var minutes = Math.floor(seconds / one_minute);
+    seconds = seconds % one_minute;
+
+    var ret = '';
+    ret = ('00' + seconds).slice(-2);
+
+    if (hours > 0) {
+        ret = hours + ':' + ('00' + minutes).slice(-2) + ':' + ret;
+    }
+    else {
+        ret = minutes + ':' + ret;
+    }
+
+    return ret;
 };
 
 
 MB.utility.unformatTrackLength = function (duration)
 {
-    var parts = duration.replace(/[:\.]/, ':').split (":");
-    if (parts.length != 2)
+    if (duration.slice (-2) == 'ms')
+    {
+        return parseInt (duration, 10);
+    }
+
+    var parts = duration.replace(/[:\.]/, ':').split (':');
+    if (parts[0] == '?' || parts[0] == '??' || duration === '')
     {
         return null;
     }
 
-    if (parts[1] == '??')
-    {
-        return null;
-    }
+    var seconds = parseInt (parts.pop (), 10);
+    var minutes = parseInt (parts.pop () || 0, 10) * 60;
+    var hours = parseInt (parts.pop () || 0, 10) * 3600;
 
-    // MBS-3352: Handle the case of ":57"
-    parts[0] = parts[0] || 0;
-
-    return parseInt (parts[0], 10) * 60000 + parseInt (parts[1], 10) * 1000;
+    return (hours + minutes + seconds) * 1000;
 };
-
-MB.utility.trim = function (str)
-{
-    return str.replace (/\s+/g, " ").replace (/^ /, "").replace (/ $/, "");
-}
 
 MB.utility.renderArtistCredit = function (ac) {
     var html = '';
@@ -227,4 +250,93 @@ MB.utility.renderArtistCredit = function (ac) {
 
     return html;
 }
+
+/* This takes a list of asynchronous functions (i.e. functions which
+   return a jquery promise) and runs them in sequence.  It in turn
+   returns a promise which is only resolved when all promises in the
+   queue have been resolved.  If one of the promises is rejected, the
+   rest of the queue is still processed (but the returned promise will
+   be rejected).
+
+   Note that any results are currently ignored, it is assumed you are
+   interested in the side effects of the functions executed.
+*/
+MB.utility.iteratePromises = function (promises) {
+    var deferred = $.Deferred ();
+    var queue = promises;
+    var iterate = null;
+    var failed = false;
+
+    iterate = function () {
+        if (queue.length > 0)
+        {
+            queue.shift ()().then (iterate, function () {
+                failed = true;
+                iterate ();
+            });
+        }
+        else
+        {
+            if (failed)
+            {
+                deferred.reject ();
+            }
+            else
+            {
+                deferred.resolve ();
+            }
+        }
+    };
+
+    iterate ();
+    return deferred.promise ();
+};
+
+// Based on http://javascript.crockford.com/prototypal.html
+MB.utility.beget = function(o) {
+    function F() {};
+    F.prototype = o;
+    return new F;
+};
+
+MB.utility.validDate = (function() {
+    var daysInMonth = {
+        "true":  [0, 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31],
+        "false": [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    };
+
+    return function(y, m, d) {
+        y = parseInt(y, 10) || null;
+        m = parseInt(m, 10) || null;
+        d = parseInt(d, 10) || null;
+
+        if (y === null && m === null && d === null)
+            return false;
+
+        var leapYear = (y % 400 ? (y % 100 ? !Boolean(y % 4) : false) : true).toString();
+
+        if (y === null || (d !== null && m === null) || y < 1 || (m !== null &&
+            (m < 1 || m > 12 || (d !== null && (d < 1 || d > daysInMonth[leapYear][m]))))) {
+            return false;
+        }
+        return true;
+    };
+}());
+
+MB.utility.joinList = function (items) {
+    if (items.length > 1) {
+        var a = items.pop();
+        var b = items.join(MB.text.EnumerationComma);
+        return MB.text.EnumerationAnd.replace("{b}", b).replace("{a}", a);
+    } else if (items.length === 1) {
+        return items[0];
+    }
+    return "";
+};
+
+
+MB.utility.filesize = function (size) {
+    /* 1 decimal place.  false disables bit sizes. */
+    return filesize (size, 1, false);
+};
 

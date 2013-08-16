@@ -2,9 +2,13 @@ package MusicBrainz::Server::Controller::WS::1::Track;
 use Moose;
 BEGIN { extends 'MusicBrainz::Server::ControllerBase::WS::1' }
 
-use MusicBrainz::Server::Constants qw( $EDIT_RECORDING_ADD_PUIDS $EDIT_RECORDING_ADD_ISRCS );
+use MusicBrainz::Server::Constants qw(
+    $EDIT_RECORDING_ADD_PUIDS
+    $EDIT_RECORDING_ADD_ISRCS
+    $ACCESS_SCOPE_SUBMIT_PUID
+    $ACCESS_SCOPE_SUBMIT_ISRC
+);
 use MusicBrainz::Server::Validation qw( is_valid_isrc is_guid );
-use Function::Parameters 'f';
 use List::Util qw( first );
 use Try::Tiny;
 use aliased 'MusicBrainz::Server::Buffer';
@@ -74,7 +78,7 @@ around 'search' => sub
         }
 
         my @releases  = map { @$_ } values %recording_release_map;
-        my %track_map = map { $_->tracklist->medium->release_id => $_ } @tracks;
+        my %track_map = map { $_->medium->release_id => $_ } @tracks;
 
         $c->res->content_type($c->stash->{serializer}->mime_type . '; charset=utf-8');
         $c->res->body(
@@ -93,8 +97,6 @@ sub submit : Private
 {
     my ($self, $c) = @_;
 
-    $c->authenticate({}, 'musicbrainz.org');
-
     my (@puids, @isrcs);
     if (my $submitted = $c->req->params->{puid}) {
         @puids = ref($submitted) ? @$submitted : ($submitted);
@@ -104,12 +106,17 @@ sub submit : Private
         @isrcs = ref($submitted) ? @$submitted : ($submitted);
     }
 
+    my $scope = 0;
+    $scope |= $ACCESS_SCOPE_SUBMIT_PUID if @puids;
+    $scope |= $ACCESS_SCOPE_SUBMIT_ISRC if @isrcs;
+    $self->authenticate($c, $scope);
+
     if (@isrcs && @puids) {
         $c->stash->{error} = 'You cannot submit PUIDs and ISRCs in one call';
         $c->detach('bad_req');
     }
 
-    if (DBDefs::REPLICATION_TYPE == DBDefs::RT_SLAVE) {
+    if (DBDefs->REPLICATION_TYPE == DBDefs->RT_SLAVE) {
         $c->stash->{error} = 'Cannot submit PUIDs or ISRCs to a slave server.';
         $c->detach('bad_req');
     }
@@ -120,7 +127,7 @@ sub submit : Private
     for my $pair (@pairs) {
         my ($recording_id, $gid) = split(' ', $pair);
 
-        unless (MusicBrainz::Server::Validation::IsGUID($recording_id)) {
+        unless (is_guid($recording_id)) {
             $c->stash->{error} = 'Recording IDs be valid MBIDs';
             $c->detach('bad_req');
         }
@@ -161,7 +168,7 @@ sub submit_puid : Private
 
     for my $puids (values %$submit) {
         for my $puid (@$puids) {
-            unless (MusicBrainz::Server::Validation::IsGUID($puid)) {
+            unless (is_guid($puid)) {
                 $c->stash->{error} = 'PUIDs must be specified in MBID format';
                 $c->detach('bad_req');
             }
@@ -170,7 +177,8 @@ sub submit_puid : Private
 
     my $buffer = Buffer->new(
         limit   => 100,
-        on_full => f($contents) {
+        on_full => sub {
+            my $contents = shift;
             my $new_rows = $c->model('RecordingPUID')->filter_additions(@$contents);
             return unless @$new_rows;
 
@@ -183,17 +191,19 @@ sub submit_puid : Private
         }
     );
 
-    $buffer->flush_on_complete(sub {
-        while(my ($recording_gid, $puids) = each %$submit) {
-            next unless exists $recordings->{ $recording_gid };
-            $buffer->add_items(map +{
-                recording => {
-                    id   => $recordings->{ $recording_gid }->id,
-                    name => $recordings->{ $recording_gid }->name
-                },
-                puid      => $_
-            }, @$puids);
-        }
+    $c->model('MB')->with_transaction(sub {
+        $buffer->flush_on_complete(sub {
+            while(my ($recording_gid, $puids) = each %$submit) {
+                next unless exists $recordings->{ $recording_gid };
+                $buffer->add_items(map +{
+                    recording => {
+                        id   => $recordings->{ $recording_gid }->id,
+                        name => $recordings->{ $recording_gid }->name
+                    },
+                    puid      => $_
+                }, @$puids);
+            }
+        })
     });
 
     $c->detach;
@@ -214,7 +224,8 @@ sub submit_isrc : Private
 
     my $buffer = Buffer->new(
         limit   => 100,
-        on_full => f($contents) {
+        on_full => sub {
+            my $contents = shift;
             try {
                 $c->model('Edit')->create(
                     edit_type      => $EDIT_RECORDING_ADD_ISRCS,
@@ -232,17 +243,19 @@ sub submit_isrc : Private
         }
     );
 
-    $buffer->flush_on_complete(sub {
-        while(my ($recording_gid, $isrcs) = each %$submit) {
-            next unless exists $recordings->{ $recording_gid };
-            $buffer->add_items(map +{
-                recording => {
-                    id   => $recordings->{ $recording_gid }->id,
-                    name => $recordings->{ $recording_gid }->name
-                },
-                isrc         => $_
-            }, @$isrcs);
-        }
+    $c->model('MB')->with_transaction(sub {
+        $buffer->flush_on_complete(sub {
+            while(my ($recording_gid, $isrcs) = each %$submit) {
+                next unless exists $recordings->{ $recording_gid };
+                $buffer->add_items(map +{
+                    recording => {
+                        id   => $recordings->{ $recording_gid }->id,
+                        name => $recordings->{ $recording_gid }->name
+                    },
+                    isrc         => $_
+                }, @$isrcs);
+            }
+        });
     });
 
     $c->detach;

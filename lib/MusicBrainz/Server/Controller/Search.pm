@@ -3,7 +3,7 @@ use Moose;
 BEGIN { extends 'MusicBrainz::Server::Controller' }
 
 use List::Util qw( min max );
-use LWP::UserAgent;
+use MusicBrainz::Server::ControllerUtils::Release qw( load_release_events );
 use MusicBrainz::Server::Data::Utils qw( model_to_type type_to_model );
 use MusicBrainz::Server::Form::Search::Query;
 use MusicBrainz::Server::Form::Search::Search;
@@ -50,6 +50,10 @@ sub search : Path('')
             $form->field('method')->value('direct');
             $c->forward('direct');
         }
+        elsif ($form->field('type')->value eq 'doc')
+        {
+            $c->forward('doc');
+        }
         else {
             $c->forward($form->field('method')->value eq 'direct' ? 'direct' : 'external');
         }
@@ -59,6 +63,17 @@ sub search : Path('')
         $c->stash( template => 'search/index.tt' );
     }
 }
+
+sub doc : Private
+{
+    my ($self, $c) = @_;
+
+    $c->stash(
+      google_custom_search => DBDefs->GOOGLE_CUSTOM_SEARCH,
+      template             => 'search/results-doc.tt'
+    );
+}
+
 
 sub direct : Private
 {
@@ -71,25 +86,38 @@ sub direct : Private
 
     my $results = $self->_load_paged($c, sub {
        $c->model('Search')->search($type, $query, shift, shift);
-    }, $form->field('limit')->value);
+    }, limit => $form->field('limit')->value);
 
     my @entities = map { $_->entity } @$results;
 
     given($type) {
         when ('artist') {
             $c->model('ArtistType')->load(@entities);
+            $c->model('Area')->load(@entities);
+            $c->model('Gender')->load(@entities);
+        }
+        when ('editor') {
+            $c->model('Editor')->load_preferences(@entities);
         }
         when ('release_group') {
             $c->model('ReleaseGroupType')->load(@entities);
         }
         when ('release') {
-            $c->model('Country')->load(@entities);
             $c->model('Language')->load(@entities);
+            load_release_events($c, @entities);
             $c->model('Script')->load(@entities);
             $c->model('Medium')->load_for_releases(@entities);
+            $c->model('MediumFormat')->load(map { $_->all_mediums } @entities);
+            $c->model('ReleaseStatus')->load(@entities);
+            $c->model('ReleaseLabel')->load(@entities);
+            $c->model('Label')->load(map { $_->all_labels} @entities);
+            $c->model('ReleaseGroup')->load(@entities);
+            $c->model('ReleaseGroupType')->load(map { $_->release_group }
+                @entities);
         }
         when ('label') {
             $c->model('LabelType')->load(@entities);
+            $c->model('Area')->load(@entities);
         }
         when ('recording') {
             my %recording_releases_map = $c->model('Release')->find_by_recordings(map {
@@ -105,16 +133,21 @@ sub direct : Private
             $c->model('ReleaseGroup')->load(@releases);
             $c->model('ReleaseGroupType')->load(map { $_->release_group } @releases);
             $c->model('Medium')->load_for_releases(@releases);
-            $c->model('Tracklist')->load(map { $_->all_mediums } @releases);
-            $c->model('Track')->load_for_tracklists(map { $_->tracklist }
-                                                    map { $_->all_mediums } @releases);
-            $c->model('Recording')->load(map { $_->tracklist->all_tracks }
-                                         map { $_->all_mediums } @releases);
+            $c->model('Track')->load_for_mediums(map { $_->all_mediums } @releases);
+            $c->model('Recording')->load(
+                map { $_->all_tracks } map { $_->all_mediums } @releases);
             $c->model('ISRC')->load_for_recordings(map { $_->entity } @$results);
         }
         when ('work') {
             $c->model('Work')->load_writers(@entities);
             $c->model('Work')->load_recording_artists(@entities);
+            $c->model('ISWC')->load_for_works(@entities);
+            $c->model('Language')->load(@entities);
+            $c->model('WorkType')->load(@entities);
+        }
+        when ('area') {
+            $c->model('Area')->load_codes(@entities);
+            $c->model('AreaType')->load(@entities);
         }
     }
 
@@ -192,6 +225,7 @@ sub do_external_search {
             when (414) { $template .= 'uri-too-large.tt'; };
             when (500) { $template .= 'internal-error.tt'; }
             when (400) { $template .= 'invalid.tt'; }
+            when (503) { $template .= 'rate-limit.tt'; }
 
             default { $template .= 'general.tt'; }
         }
@@ -208,6 +242,7 @@ sub do_external_search {
         $c->stash->{pager}    = $ret->{pager};
         $c->stash->{offset}   = $ret->{offset};
         $c->stash->{results}  = $ret->{results};
+        $c->stash->{last_updated}  = $ret->{last_updated};
     }
 }
 
@@ -296,6 +331,7 @@ C<state> method of the current context. For example:
 =head1 LICENSE
 
 Copyright (C) 2009 Oliver Charles
+Copyright (C) 2012 Pavan Chander
 
 This software is provided "as is", without warranty of any kind, express or
 implied, including  but not limited  to the warranties of  merchantability,

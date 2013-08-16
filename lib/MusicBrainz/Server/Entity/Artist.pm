@@ -12,6 +12,8 @@ with 'MusicBrainz::Server::Entity::Role::Annotation';
 with 'MusicBrainz::Server::Entity::Role::LastUpdate';
 with 'MusicBrainz::Server::Entity::Role::Rating';
 with 'MusicBrainz::Server::Entity::Role::Age';
+with 'MusicBrainz::Server::Entity::Role::IPI';
+with 'MusicBrainz::Server::Entity::Role::ISNI';
 
 has 'sort_name' => (
     is => 'rw',
@@ -34,6 +36,12 @@ sub type_name
     return $self->type ? $self->type->name : undef;
 }
 
+sub l_type_name
+{
+    my ($self) = @_;
+    return $self->type ? $self->type->l_name : undef;
+}
+
 has 'gender_id' => (
     is => 'rw',
     isa => 'Int'
@@ -50,19 +58,40 @@ sub gender_name
     return $self->gender ? $self->gender->name : undef;
 }
 
-has 'country_id' => (
+sub l_gender_name
+{
+    my ($self) = @_;
+    return $self->gender ? $self->gender->l_name : undef;
+}
+
+has 'area_id' => (
     is => 'rw',
     isa => 'Int'
 );
 
-has 'country' => (
+has 'area' => (
     is => 'rw',
-    isa => 'Country'
+    isa => 'Area'
 );
 
-has 'ipi_code' => (
-    isa => 'Str',
-    is  => 'rw',
+has 'begin_area_id' => (
+    is => 'rw',
+    isa => 'Int'
+);
+
+has 'begin_area' => (
+    is => 'rw',
+    isa => 'Area'
+);
+
+has 'end_area_id' => (
+    is => 'rw',
+    isa => 'Int'
+);
+
+has 'end_area' => (
+    is => 'rw',
+    isa => 'Area'
 );
 
 has 'comment' => (

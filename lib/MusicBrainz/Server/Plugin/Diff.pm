@@ -12,7 +12,7 @@ use Digest::MD5 qw( md5_hex );
 use Encode;
 use HTML::Tiny;
 use MusicBrainz::Server::Translation qw( l );
-use MusicBrainz::Server::Validation;
+use MusicBrainz::Server::Validation qw( trim_in_place );
 
 sub html_filter {
     my $text = shift;
@@ -109,7 +109,7 @@ sub _link_artist_credit_name {
     if ($acn->artist->gid) {
         return $h->a({
             href => $self->uri_for_action('/artist/show', [ $acn->artist->gid ]),
-            title => html_filter($acn->artist->sort_name . $comment)
+            title => $acn->artist->sort_name . $comment
         }, $name || html_filter($acn->name));
     }
     else {
@@ -165,8 +165,8 @@ sub diff_artist_credits {
                 );
 
                 # Diff the join phrases
-                $sides{old} .= $self->diff_side($old_name->join_phrase, $new_name->join_phrase, '-');
-                $sides{new} .= $self->diff_side($old_name->join_phrase, $new_name->join_phrase, '+');
+                $sides{old} .= $self->diff_side($old_name->join_phrase, $new_name->join_phrase, '-', '\s+');
+                $sides{new} .= $self->diff_side($old_name->join_phrase, $new_name->join_phrase, '+', '\s+');
             }
 
             when('-') {
@@ -261,7 +261,7 @@ sub parse_paragraphs
     my $text = shift;
 
     $text =~ s/(\015\012|\012\015|\012|\015)\1+/\n\n/g;
-    MusicBrainz::Server::Validation::TrimInPlace($text);
+    trim_in_place($text);
 
     my @paras = split /\n\n+/, $text;
 

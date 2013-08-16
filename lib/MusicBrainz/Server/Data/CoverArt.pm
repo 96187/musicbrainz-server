@@ -151,13 +151,6 @@ sub load
             $release->cover_art($cover_art);
             last;
         }
-
-        unless ($release->has_cover_art) {
-            my $cover_art = $self->parse_from_release($release)
-                or next;
-
-            $release->cover_art($cover_art);
-        }
     }
 }
 
@@ -168,10 +161,10 @@ sub find_outdated_releases
     my @url_types = $self->handled_types;
 
     my $query = '
-    SELECT r_id, r_barcode, url, link_type, last_updated AS c_last_updated
+    SELECT r_id, url, link_type, last_updated AS c_last_updated
     FROM (
         SELECT DISTINCT ON (release.id)
-            release.id AS r_id, release.barcode AS r_barcode,
+            release.id AS r_id,
             url.url, link_type.name AS link_type,
             release_coverart.last_updated,
             CASE '.
@@ -197,14 +190,10 @@ sub find_outdated_releases
             SELECT id FROM release_coverart
             WHERE
                last_updated IS NULL OR NOW() - last_updated > ?
-        ) AND (
-            link_type.name IS NOT NULL OR
-            release.barcode IS NOT NULL
-        )
+        ) AND link_type.name IS NOT NULL
         ORDER BY release.id,
                  _sort_order DESC NULLS LAST,
-                 l.last_updated DESC,
-                 release.barcode NULLS LAST
+                 l.last_updated DESC
     ) s
     ORDER BY last_updated ASC';
 
@@ -220,15 +209,16 @@ sub find_outdated_releases
                 )
             );
 
-            if ($row->{link_type}) {
-                $release->add_relationship(
-                    Relationship->new(
-                        entity0 => $release,
-                        entity1 => $self->c->model('URL')->_new_from_row($row),
-                        link => Link->new(
-                            type => LinkType->new( name => $row->{link_type} )
-                        )))
-            }
+            $release->add_relationship(
+                Relationship->new(
+                    entity0 => $release,
+                    entity1 => $self->c->model('URL')->_new_from_row($row),
+                    link => Link->new(
+                        type => LinkType->new( name => $row->{link_type} )
+                    )
+                )
+            );
+
             return $release;
         }
     }, $query, @url_types, $pg_date_formatter->format_duration($since));
@@ -237,16 +227,32 @@ sub find_outdated_releases
 sub cache_cover_art
 {
     my ($self, $release) = @_;
+    my @ordered_relationships =
+        rev_sort_by { $_->last_updated } $release->all_relationships;
+
     my $cover_art;
-    for my $relationship (rev_sort_by { $_->last_updated } $release->all_relationships) {
-        last if defined($cover_art);
+    for my $relationship (@ordered_relationships) {
         $cover_art = $self->parse_from_type_url(
             $relationship->link->type->name,
             $relationship->entity1->url
-        );
+        ) and last;
     }
 
-    $cover_art ||= $self->parse_from_release($release);
+    my $meta_update = { info_url => undef, amazon_asin => undef };
+    if ($cover_art) {
+        $meta_update = $cover_art->cache_data;
+    }
+    else {
+        for my $relationship (@ordered_relationships) {
+            if (my $meta = $self->fallback_meta(
+                $relationship->link->type->name,
+                $relationship->entity1->url
+            )) {
+                $meta_update = $meta;
+                last;
+            }
+        }
+    }
 
     my $cover_update = {
         last_updated => DateTime->now,
@@ -254,11 +260,8 @@ sub cache_cover_art
     };
     $self->c->sql->update_row('release_coverart', $cover_update, { id => $release->id });
 
-    if ($cover_art) {
-        my $meta_update  = $cover_art->cache_data;
-        $self->c->sql->update_row('release_meta', $meta_update, { id => $release->id })
-            if keys %$meta_update;
-    }
+    $self->c->sql->update_row('release_meta', $meta_update, { id => $release->id })
+        if keys %$meta_update;
 
     return $cover_art;
 }
@@ -272,24 +275,20 @@ sub parse_from_type_url
     for my $provider (@{ $self->get_providers($type) }) {
         next unless $provider->handles($url);
         $cover_art = $provider->lookup_cover_art($url, undef)
-            and last;
+            and return $cover_art;
     }
-
-    return $cover_art;
 }
 
-sub parse_from_release
+sub fallback_meta
 {
-    my ($self, $release) = @_;
-    return unless $release->barcode;
+    my ($self, $type, $url) = @_;
+    return unless $self->can_parse($type);
 
-    for my $provider (@{ $self->providers }) {
-        next unless $provider->does('MusicBrainz::Server::CoverArt::BarcodeSearch');
-
-        my $cover_art = $provider->search_by_barcode($release)
-            or next;
-
-        return $cover_art;
+    my $meta;
+    for my $provider (@{ $self->get_providers($type) }) {
+        next unless $provider->handles($url);
+        $meta = $provider->fallback_meta($url)
+            and return $meta;
     }
 }
 
@@ -306,6 +305,21 @@ sub url_updated {
     my @releases = values %{ $self->c->model('Release')->get_by_ids(@release_ids) };
     $self->c->model('Relationship')->load_subset([ 'url' ], @releases);
     $self->cache_cover_art($_) for @releases;
+}
+
+sub mime_types {
+    my $self = shift;
+
+    return $self->c->sql->select_list_of_hashes (
+        'SELECT mime_type, suffix FROM cover_art_archive.image_type');
+}
+
+sub image_type_suffix {
+    my ($self, $mime_type) = @_;
+
+    return $self->c->sql->select_single_value (
+        'SELECT suffix FROM cover_art_archive.image_type WHERE mime_type = ?',
+        $mime_type);
 }
 
 1;

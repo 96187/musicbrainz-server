@@ -12,7 +12,6 @@ use aliased 'MusicBrainz::Server::CoverArt::Amazon' => 'CoverArt';
 use MusicBrainz::Server::Log qw( log_error );
 
 extends 'MusicBrainz::Server::CoverArt::Provider';
-with 'MusicBrainz::Server::CoverArt::BarcodeSearch';
 
 has '+link_type_name' => (
     default => 'amazon asin',
@@ -49,8 +48,8 @@ my $last_request_time;
 
 sub _build__aws_signature
 {
-    my $public  = DBDefs::AWS_PUBLIC();
-    my $private = DBDefs::AWS_PRIVATE();
+    my $public  = DBDefs->AWS_PUBLIC();
+    my $private = DBDefs->AWS_PRIVATE();
     return Net::Amazon::AWSSign->new($public, $private);
 }
 
@@ -58,15 +57,21 @@ sub handles
 {
     # Handle any thing that is an Amazon ASIN url relationship (but only if
     # the server config has AWS keys)
-    my $public  = DBDefs::AWS_PUBLIC();
-    my $private = DBDefs::AWS_PRIVATE();
+    my $public  = DBDefs->AWS_PUBLIC();
+    my $private = DBDefs->AWS_PRIVATE();
     return $public && $private;
+}
+
+sub parse_asin {
+    my $uri = shift;
+    my ($store, $asin) = $uri =~ m{^http://(?:www.)?(.*?)(?:\:[0-9]+)?/.*/([0-9B][0-9A-Z]{9})(?:[^0-9A-Z]|$)}i;
+    return ($store, $asin);
 }
 
 sub lookup_cover_art
 {
     my ($self, $uri) = @_;
-    my ($store, $asin) = $uri =~ m{^http://(?:www.)?(.*?)(?:\:[0-9]+)?/.*/([0-9B][0-9A-Z]{9})(?:[^0-9A-Z]|$)}i;
+    my ($store, $asin) = parse_asin($uri);
     return unless $asin;
 
     my $end_point = $self->get_store_api($store);
@@ -90,27 +95,17 @@ sub lookup_cover_art
     return $cover_art;
 }
 
-sub search_by_barcode
-{
-    my ($self, $release) = @_;
-
-    return unless $release->barcode and $release->barcode != 0;
-
-    my $url = "http://ecs.amazonaws.com/onca/xml?" .
-                  "Service=AWSECommerceService&" .
-                  "Operation=ItemLookup&" .
-                  "ResponseGroup=Images&" .
-                  "IdType=" . $release->barcode->type . "&" .
-                  "SearchIndex=Music&" .
-                  "ItemId=" . $release->barcode;
-
-    return $self->_lookup_coverart($url);
+sub fallback_meta {
+    my ($self, $uri) = @_;
+    my ($store, $asin) = parse_asin($uri);
+    return unless $asin;
+    return { amazon_asin => $asin };
 }
 
 sub _lookup_coverart {
     my ($self, $url) = @_;
 
-    $url .= "&AssociateTag=" . DBDefs::AMAZON_ASSOCIATE_TAG;
+    $url .= "&AssociateTag=" . DBDefs->AMAZON_ASSOCIATE_TAG;
     $url = $self->_aws_signature->addRESTSecret($url);
 
     # Respect Amazon SLA
@@ -122,6 +117,7 @@ sub _lookup_coverart {
 
     my $lwp = LWP::UserAgent->new;
     $lwp->env_proxy;
+    $lwp->timeout(10);
     my $response = $lwp->get($url) or return;
     if (!$response->is_success) {
         log_error { "Failed to lookup cover art: $_" } $response->decoded_content;

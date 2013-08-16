@@ -10,14 +10,19 @@ with 'MusicBrainz::Server::Controller::Role::Load' => {
 with 'MusicBrainz::Server::Controller::Role::LoadWithRowID';
 with 'MusicBrainz::Server::Controller::Role::Annotation';
 with 'MusicBrainz::Server::Controller::Role::Alias';
+with 'MusicBrainz::Server::Controller::Role::Cleanup';
 with 'MusicBrainz::Server::Controller::Role::Details';
 with 'MusicBrainz::Server::Controller::Role::EditListing';
+with 'MusicBrainz::Server::Controller::Role::IPI';
+with 'MusicBrainz::Server::Controller::Role::ISNI';
 with 'MusicBrainz::Server::Controller::Role::Relationship';
 with 'MusicBrainz::Server::Controller::Role::Rating';
 with 'MusicBrainz::Server::Controller::Role::Tag';
 with 'MusicBrainz::Server::Controller::Role::Subscribe';
+with 'MusicBrainz::Server::Controller::Role::WikipediaExtract';
 
 use MusicBrainz::Server::Constants qw( $DLABEL_ID $EDIT_LABEL_CREATE $EDIT_LABEL_DELETE $EDIT_LABEL_EDIT $EDIT_LABEL_MERGE );
+use MusicBrainz::Server::ControllerUtils::Release qw( load_release_events );
 use Data::Page;
 
 use MusicBrainz::Server::Form::Confirm;
@@ -63,20 +68,9 @@ after 'load' => sub
     }
 
     $c->model('LabelType')->load($label);
-    $c->model('Country')->load($c->stash->{label});
+    $c->model('Area')->load($c->stash->{label});
+    $c->model('Area')->load_codes($label->area);
 };
-
-=head2 relations
-
-Show all relations to this label
-
-=cut
-
-sub relations : Chained('load')
-{
-    my ($self, $c) = @_;
-    $c->stash->{relations} = $c->model('Relation')->load_relations($self->entity);
-}
 
 =head2 show
 
@@ -94,7 +88,7 @@ sub show : PathPart('') Chained('load')
         });
 
     $c->model('ArtistCredit')->load(@$releases);
-    $c->model('Country')->load(@$releases);
+    load_release_events($c, @$releases);
     $c->model('Medium')->load_for_releases(@$releases);
     $c->model('MediumFormat')->load(map { $_->all_mediums } @$releases);
     $c->model('ReleaseLabel')->load(@$releases);

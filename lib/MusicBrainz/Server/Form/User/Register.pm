@@ -17,7 +17,8 @@ has_field 'password' => (
     type      => 'Password',
     required  => 1,
     minlength => 1,
-    maxlength => 64
+    maxlength => 64,
+    messages  => { required => l('Please enter a password in this field') }
 );
 
 has_field 'confirm_password' => (
@@ -25,6 +26,7 @@ has_field 'confirm_password' => (
     password_field => 'password',
     required       => 1,
     minlength      => 1,
+    messages       => { pass_conf_not_matched => l('The password confirmation does not match the password') }
 );
 
 has_field 'email' => (
@@ -37,7 +39,7 @@ sub validate_username
     my ($self, $field) = @_;
 
     my $username = $field->value;
-    if ($username) {
+    if (defined $username) {
         my $editor = $self->ctx->model('Editor')->get_by_name($username);
         if (defined $editor) {
             $field->add_error(l('Please choose another username, this one is already taken'));

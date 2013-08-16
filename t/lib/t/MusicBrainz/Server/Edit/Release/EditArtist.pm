@@ -14,10 +14,7 @@ my $test = shift;
 my $c = $test->c;
 
 MusicBrainz::Server::Test->prepare_test_database($c, '+tracklist');
-MusicBrainz::Server::Test->prepare_test_database(
-    $c,
-    "INSERT INTO artist (id, gid, name, sort_name)
-          VALUES (2, '145c079d-374e-4436-9448-da92dedef3cf', 1, 1)");
+extra_test_data($c);
 
 my $original_release = $c->model('Release')->get_by_id(1);
 
@@ -41,7 +38,7 @@ is($release->edits_pending => 0, "release does not have pending edits");
 ok($release->artist_credit_id != 1, "release artist credit was changed");
 is($release->artist_credit->names->[0]->artist_id => 2);
 is($_->artist_credit_id => 1)
-    for map { $_->tracklist->all_tracks } $release->all_mediums;
+    for map { $_->all_tracks } $release->all_mediums;
 
 };
 
@@ -51,10 +48,7 @@ my $test = shift;
 my $c = $test->c;
 
 MusicBrainz::Server::Test->prepare_test_database($c, '+tracklist');
-MusicBrainz::Server::Test->prepare_test_database(
-    $c,
-    "INSERT INTO artist (id, gid, name, sort_name)
-          VALUES (2, '145c079d-374e-4436-9448-da92dedef3cf', 1, 1)");
+extra_test_data($c);
 
 my $original_release = $c->model('Release')->get_by_id(1);
 
@@ -62,7 +56,7 @@ my $edit = create_edit($c, $original_release, 1);
 accept_edit($c, $edit);
 
 my $release = load_release($c);
-for (map { $_->tracklist->all_tracks } $release->all_mediums) {
+for (map { $_->all_tracks } $release->all_mediums) {
     ok($_->artist_credit_id != 1);
     is($_->artist_credit->names->[0]->artist_id => 2);
 }
@@ -89,10 +83,19 @@ sub load_release {
     my $c = shift;
     my $release = $c->model('Release')->get_by_id(1);
     $c->model('Medium')->load_for_releases($release);
-    $c->model('Track')->load_for_tracklists(map { $_->tracklist } $release->all_mediums);
+    $c->model('Track')->load_for_mediums($release->all_mediums);
     $c->model('ArtistCredit')->load(
-        $release, map { $_->tracklist->all_tracks } $release->all_mediums);
+        $release, map { $_->all_tracks } $release->all_mediums);
     return $release;
+}
+
+sub extra_test_data {
+    my $c = shift;
+    MusicBrainz::Server::Test->prepare_test_database(
+        $c,
+        "INSERT INTO artist (id, gid, name, sort_name, comment)
+           VALUES (2, '145c079d-374e-4436-9448-da92dedef3cf', 1, 1, 'Other artist')");
+
 }
 
 1;

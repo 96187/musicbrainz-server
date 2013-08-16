@@ -1,4 +1,31 @@
+[%- MACRO print_language_link(language) BLOCK -%]
+    <a href="[% c.uri_for_action('/set_language', [ language.0 ]) %]">
+    [%- IF language.1.native_language != '' -%]
+        [%- language.1.native_language | ucfirst -%][%- IF language.1.native_territory != '' %] ([%- language.1.native_territory | ucfirst -%])[%- END -%]
+    [%- ELSE -%][[%- language.1.id -%]][%- END -%]
+    </a>
+[%- END -%]
 <ul class="r">
+    [% IF server_languages.size > 1 -%]
+    <li class="language-selector">
+        [% FOREACH language = server_languages; IF language.0 == current_language -%]
+            [%- print_language_link(language) -%]
+            [%- LAST; END -%]
+        [%- END %]
+        <ul>
+        [%- FOREACH language = server_languages -%]
+            [%- IF language.0 == current_language; selected_language = 1; ELSE; selected_language = 0; END %]
+            <li>[%- IF selected_language == 1 -%]<strong>[%- END %]
+                [%- print_language_link(language) -%]
+                [%- IF selected_language == 1 -%]</strong>[%- END %]
+            </li>
+        [%- END %]
+            <li>
+                <a href="[% c.uri_for_action('/set_language', [ 'unset' ] ) %]">[%- l('(reset language)') -%]</a>
+            </li>
+        </ul>
+    </li>
+    [%- END %]
     [%- IF c.user_exists -%]
         <li class="account">
             [% link_entity(c.user) %]
@@ -11,6 +38,9 @@
                 </li>
                 <li>
                     <a href="[% c.uri_for_action('/account/preferences') %]">[% l('Preferences') %]</a>
+                </li>
+                <li>
+                    <a href="[% c.uri_for_action('/account/applications') %]">[% l('Applications') %]</a>
                 </li>
                 <li>
                     <a href="[% c.uri_for_action('/user/subscriptions/artist', [ c.user.name ]) %]">[% l('Subscriptions') %]</a>
@@ -50,6 +80,11 @@
             <li class="admin">
                 <a href="[% c.uri_for_action('/admin/index') %]">[% l('Admin') %]</a>
                 <ul>
+                    [% IF c.user.is_location_editor %]
+                        <li>
+                            <a href="[% c.uri_for('/area/create') %]">[% lp('Add Area', 'button/menu') %]</a>
+                        </li>
+                    [% END %]
                     [% IF c.user.is_relationship_editor %]
                         <li>
                             <a href="[% c.uri_for_action('/relationship/linktype/index') %]">[% l('Edit Relationship Types') %]</a>
@@ -77,7 +112,7 @@
         <a href="[% doc_link('About') %]">[% l('About') %]</a>
         <ul>
             <li>
-                <a href="[% doc_link('About/Sponsors') %]">[% l('Sponsors') %]</a>
+                <a href="http://metabrainz.org/doc/Sponsors">[% l('Sponsors') %]</a>
             </li>
             <li>
                 <a href="[% doc_link('About/Team') %]">[% l('Team') %]</a>
@@ -121,10 +156,16 @@
                 <a href="[% doc_link('MusicBrainz_Picard') %]">[% l('MusicBrainz Picard') %]</a>
             </li>
             <li>
-                <a href="[% doc_link('Jaikoz') %]">[% l('Jaikoz') %]</a>
+                <a href="[% doc_link('Jaikoz') %]">[% l('Jaikoz Tagger') %]</a>
             </li>
             <li>
                 <a href="[% doc_link('Magic_MP3_Tagger') %]">[% l('Magic MP3 Tagger') %]</a>
+            </li>
+            <li>
+                <a href="[% doc_link('Yate_Music_Tagger') %]">[% l('Yate Music Tagger') %]</a>
+            </li>
+            <li>
+                <a href="[% doc_link('SongKong_Tagger') %]">[% l('SongKong Tagger') %]</a>
             </li>
             <li class="separator">
                 <a href="[% doc_link('MusicBrainz_for_Android') %]">[% l('MusicBrainz for Android') %]</a>
@@ -173,25 +214,25 @@
             <a href="[% doc_link('How_Editing_Works') %]">[% l('Editing') %]</a>
             <ul>
                 <li>
-                    <a href="[% c.uri_for('/artist/create') %]">[% l('Add Artist') %]</a>
+                    <a href="[% c.uri_for('/artist/create') %]">[% lp('Add Artist', 'button/menu') %]</a>
                 </li>
                 <li>
-                    <a href="[% c.uri_for('/label/create') %]">[% l('Add Label') %]</a>
+                    <a href="[% c.uri_for('/label/create') %]">[% lp('Add Label', 'button/menu') %]</a>
                 </li>
                 <li>
-                    <a href="[% c.uri_for_action('/release_group/create') %]">[% l('Add Release Group') %]</a>
+                    <a href="[% c.uri_for_action('/release_group/create') %]">[% lp('Add Release Group', 'button/menu') %]</a>
                 </li>
                 <li>
-                    <a href="[% c.uri_for_action('/release_editor/add') %]">[% l('Add Release') %]</a>
+                    <a href="[% c.uri_for_action('/release_editor/add') %]">[% lp('Add Release', 'button/menu') %]</a>
                 </li>
                 <li>
                     <a href="[% c.uri_for_action('/release_editor/add', { artist = various_artist_mbid }) %]">[% l('Add Various Artists Release') %]</a>
                 </li>
                 <li>
-                    <a href="[% c.uri_for_action('/recording/create') %]">[% l('Add Standalone Recording') %]</a>
+                    <a href="[% c.uri_for_action('/recording/create') %]">[% lp('Add Standalone Recording', 'button/menu') %]</a>
                 </li>
                 <li>
-                    <a href="[% c.uri_for_action('/work/create') %]">[% l('Add Work') %]</a>
+                    <a href="[% c.uri_for_action('/work/create') %]">[% lp('Add Work', 'button/menu') %]</a>
                 </li>
                 <li class="separator">
                     <a href="[% c.uri_for('/edit/open') %]">[% l('Vote on Edits') %]</a>
@@ -210,6 +251,9 @@
             </li>
             <li>
                 <a href="[% doc_link('Style') %]">[% l('Style Guidelines') %]</a>
+            </li>
+            <li>
+                <a href="[% doc_link('How_To') %]">[% l('How Tos') %]</a>
             </li>
             <li>
                 <a href="[% doc_link('Frequently_Asked_Questions') %]">[% l('FAQs') %]</a>
@@ -246,6 +290,9 @@
             </li>
             <li>
                 <a href="[% doc_link('Copyright_Violation_Notice') %]">[% l('Report a Copyright Violation') %]</a>
+            </li>
+            <li>
+                <a href="[% doc_link('Data_Removal_Policy') %]">[% l('Data Removal Policy') %]</a>
             </li>
         </ul>
     </li>

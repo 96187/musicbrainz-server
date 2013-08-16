@@ -2,6 +2,7 @@ package MusicBrainz::Server::Entity::LinkType;
 use Moose;
 
 use MusicBrainz::Server::Entity::Types;
+use MusicBrainz::Server::Translation::Relationships qw( l );
 
 extends 'MusicBrainz::Server::Entity';
 
@@ -40,20 +41,40 @@ has 'link_phrase' => (
     isa => 'Str',
 );
 
+sub l_link_phrase {
+    my $self = shift;
+    return l($self->link_phrase);
+}
+
 has 'reverse_link_phrase' => (
     is => 'rw',
     isa => 'Str',
 );
 
-has 'short_link_phrase' => (
+sub l_reverse_link_phrase {
+    my $self = shift;
+    return l($self->reverse_link_phrase);
+}
+
+has 'long_link_phrase' => (
     is => 'rw',
     isa => 'Str',
 );
+
+sub l_long_link_phrase {
+    my $self = shift;
+    return l($self->long_link_phrase);
+}
 
 has 'description' => (
     is => 'rw',
     isa => 'Str',
 );
+
+sub l_description {
+    my $self = shift;
+    return l($self->description);
+}
 
 has 'child_order' => (
     is => 'rw',
@@ -90,6 +111,33 @@ has 'attributes' => (
         add_attribute => 'push'
     }
 );
+
+sub sorted_children {
+    my $self = shift;
+    return sort { $a->child_order <=> $b->child_order || lc($a->name) cmp lc($b->name) } $self->all_children;
+}
+
+has 'documentation' => (
+    is => 'rw'
+);
+
+has 'examples' => (
+    is => 'rw',
+    isa => 'ArrayRef',
+    traits => [ 'Array' ],
+    handles => {
+        all_examples => 'elements',
+    }
+);
+
+sub published_examples {
+    my $self = shift;
+    return grep { $_->published } $self->all_examples;
+}
+
+sub is_deprecated {
+    return shift->description =~ /deprecated/;
+}
 
 __PACKAGE__->meta->make_immutable;
 no Moose;

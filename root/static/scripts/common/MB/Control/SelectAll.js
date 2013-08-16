@@ -25,9 +25,13 @@ MB.Control.SelectAll = function (table) {
     self.$checkboxes = self.$table.find('td input[type="checkbox"]');
     self.lastChecked = null;
 
-    self.$table.find('th input[type="checkbox"]').change(function() {
+    self.$selector = self.$table.find('th input[type="checkbox"]');
+
+    self.$selector.toggle(self.$checkboxes.length > 0);
+
+    self.$selector.change(function() {
         var $input = $(this);
-        self.$checkboxes.attr('checked', $input.attr('checked'));
+        self.$checkboxes.prop('checked', $input.prop('checked'));
     });
 
     self.$checkboxes.click(function(event) {
@@ -37,10 +41,10 @@ MB.Control.SelectAll = function (table) {
 
             if (first > last) {
                 self.$checkboxes.slice(last, first + 1)
-                    .attr('checked', this.checked);
+                    .prop('checked', this.checked);
             } else if (last > first) {
                 self.$checkboxes.slice(first, last + 1)
-                    .attr('checked', this.checked);
+                    .prop('checked', this.checked);
             }
         }
         self.lastChecked = this;

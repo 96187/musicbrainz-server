@@ -1,15 +1,10 @@
-[%- BLOCK layout_head -%]
-    <script type="text/javascript">//<![CDATA[
-        $(function() {
-            MB.Control.EditNote($('textarea'));
-        });
-    //]]></script>
-[%- END -%]
-
 [%- WRAPPER 'layout.tt' title=l('Edit #{id}', { id => edit.id }) -%]
+  [%- IF !full_width -%]
     [% WRAPPER 'layout/sidebar.tt' %]
-        [%- INCLUDE "edit/info.tt" -%]
+      [%- INCLUDE "edit/info.tt" -%]
     [% END %]
+  [%- END -%]
+
     <div id="content">
 
         [% INCLUDE 'edit/edit_header.tt' %]
@@ -29,11 +24,7 @@
           <table class="vote-tally">
             <tr class="noborder">
                 <th>[% l('Vote tally:') %]</th>
-                <td class="vote">
-                    [%- l('{yes} yes : {no} no',
-                         { yes => '<strong>' _ edit.yes_votes _ '</strong>',
-                           no => '<strong>' _ edit.no_votes _ '</strong>' }) -%]
-                </td>
+                <td class="vote">[%- vote_tally(edit) -%]</td>
             </tr>
             [% IF edit.editor_may_vote(c.user) %]
                 <tr class="noborder">
@@ -49,7 +40,7 @@
                 <tr class="[% 'superseded' IF vote.superseded %][% 'first' IF edit.votes.size == 1 %]">
                     <th>[% link_entity(vote.editor) %]</th>
                     <td class="vote">
-                        [% vote.vote_name %]
+                        [% l(vote.vote_name) %]
                         <span class="date">[% UserDate.format(vote.vote_time) %]</span>
                     </td>
                 </tr>
@@ -83,7 +74,11 @@
 
             <h2>[% l('Edit notes') %]</h2>
             [% INCLUDE 'edit/notes.tt' %]
-            [% form_submit(l('Add note and votes')) %]
+            [%- IF edit.editor_may_vote(c.user) -%]
+                    [%- form_submit(l('Submit vote and note')) -%]
+            [%- ELSIF edit.editor_may_add_note(c.user) -%]
+                    [%- form_submit(l('Submit note')) -%]
+            [%- END -%]
         </form>
     </div>
 [%- END -%]

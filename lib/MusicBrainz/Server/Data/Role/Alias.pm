@@ -2,6 +2,7 @@ package MusicBrainz::Server::Data::Role::Alias;
 use MooseX::Role::Parameterized;
 
 use MusicBrainz::Server::Data::Alias;
+use MusicBrainz::Server::Data::AliasType;
 use Moose::Util qw( ensure_all_roles );
 
 parameter 'type' => (
@@ -27,6 +28,12 @@ role
         lazy => 1
     );
 
+    has 'alias_type' => (
+        is => 'ro',
+        builder => '_build_alias_type',
+        lazy => 1
+    );
+
     method '_build_alias' => sub
     {
         my $self = shift;
@@ -40,26 +47,49 @@ role
         ensure_all_roles($alias, 'MusicBrainz::Server::Data::Role::Editable' => { table => $params->table });
     };
 
+    method '_build_alias_type' => sub
+    {
+        my $self = shift;
+        my $alias_type = MusicBrainz::Server::Data::AliasType->new(
+            c      => $self->c,
+            type => $params->type,
+            table => $params->table . '_type',
+        );
+        return $alias_type;
+    };
+
     around 'search_by_names' => sub {
         my ($orig, $self, @names) = @_;
         return {} unless scalar @names;
 
-        my $nametable = $self->name_table;
         my $type = $params->type;
-        my $id = $self->_id_column;
         my $query =
             "WITH search (term) AS (".
-            "    VALUES " . join (",", ("(?)") x scalar @names) . "), ".
-            "    matching_names (term, name) AS (" .
-            "        SELECT term, $nametable.id FROM $nametable, search" .
-            "        WHERE musicbrainz_unaccent(lower(term)) = musicbrainz_unaccent(lower($nametable.name))" .
-            "    ), ".
-            "    entity_matches (term, entity) AS (" .
-            "        SELECT term, $type FROM ${type}_alias".
-            "        JOIN matching_names ON matching_names.name = ${type}_alias.name" .
-            "        UNION SELECT term, id FROM $type JOIN matching_names ON matching_names.name = $type.name " .
-            "        UNION SELECT term, id FROM $type JOIN matching_names ON matching_names.name = $type.sort_name " .
-            "    ) SELECT term AS search_term, ".$self->_columns.
+            "    VALUES " . join (",", ("(?)") x scalar @names) . "), ";
+        if ($self->has_name_table) {
+            my $nametable = $self->name_table;
+            $query = $query .
+                "    matching_names (term, name) AS (" .
+                "        SELECT term, $nametable.id FROM $nametable, search" .
+                "        WHERE musicbrainz_unaccent(lower(term)) = musicbrainz_unaccent(lower($nametable.name))" .
+                "    ), ".
+                "    entity_matches (term, entity) AS (" .
+                "        SELECT term, $type FROM ${type}_alias".
+                "        JOIN matching_names ON matching_names.name = ${type}_alias.name" .
+                "        UNION SELECT term, id FROM $type JOIN matching_names ON matching_names.name = $type.name " .
+                "        UNION SELECT term, id FROM $type JOIN matching_names ON matching_names.name = $type.sort_name) ";
+        } else {
+            $query = $query .
+                "    entity_matches (term, entity) AS (" .
+                "        SELECT term, $type FROM ${type}_alias".
+                "           JOIN search ON musicbrainz_unaccent(lower(${type}_alias.name)) = musicbrainz_unaccent(lower(term))" .
+                "        UNION SELECT term, id FROM $type " .
+                "           JOIN search ON musicbrainz_unaccent(lower(${type}.name)) = musicbrainz_unaccent(lower(term))" .
+                "        UNION SELECT term, id FROM $type " .
+                "           JOIN search ON musicbrainz_unaccent(lower(${type}.sort_name)) = musicbrainz_unaccent(lower(term))) ";
+        }
+        $query = $query .
+            "      SELECT term AS search_term, ".$self->_columns.
             "      FROM ".$self->_table ("JOIN entity_matches ON entity_matches.entity = $type.id");
 
         $self->c->sql->select($query, @names);

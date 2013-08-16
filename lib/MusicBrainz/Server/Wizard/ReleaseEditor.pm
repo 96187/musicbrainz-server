@@ -2,18 +2,20 @@ package MusicBrainz::Server::Wizard::ReleaseEditor;
 use Moose;
 use namespace::autoclean;
 
-use MusicBrainz::Server::CGI::Expand qw( collapse_hash expand_hash );
 use Clone 'clone';
+use Data::Dumper::Concise;
 use JSON::Any;
 use List::UtilsBy 'uniq_by';
+use MusicBrainz::Server::CGI::Expand qw( collapse_hash expand_hash );
+use MusicBrainz::Server::Constants qw( $AUTO_EDITOR_FLAG );
 use MusicBrainz::Server::Data::Search qw( escape_query );
 use MusicBrainz::Server::Data::Utils qw( artist_credit_to_ref hash_structure trim );
 use MusicBrainz::Server::Edit::Utils qw( clean_submitted_artist_credits );
 use MusicBrainz::Server::Track qw( unformat_track_length format_track_length );
 use MusicBrainz::Server::Translation qw( l ln );
-use MusicBrainz::Server::Types qw( $AUTO_EDITOR_FLAG );
 use MusicBrainz::Server::Validation qw( is_guid normalise_strings );
 use MusicBrainz::Server::Wizard;
+use Scalar::Util qw( looks_like_number );
 use Try::Tiny;
 
 use aliased 'MusicBrainz::Server::Entity::ArtistCredit';
@@ -29,6 +31,7 @@ use MusicBrainz::Server::Constants qw(
     $EDIT_MEDIUM_ADD_DISCID
     $EDIT_MEDIUM_DELETE
     $EDIT_MEDIUM_EDIT
+    $EDIT_RECORDING_EDIT
     $EDIT_RELEASE_ADDRELEASELABEL
     $EDIT_RELEASE_ADD_ANNOTATION
     $EDIT_RELEASE_DELETERELEASELABEL
@@ -114,6 +117,15 @@ sub load
         );
     }
 
+    if (!$release->event_count)
+    {
+        $release->add_event(
+            MusicBrainz::Server::Entity::ReleaseEvent->new (
+                date => MusicBrainz::Server::Entity::PartialDate->new
+            )
+        );
+    }
+
     $self->initialize($release);
 }
 
@@ -130,12 +142,12 @@ sub _load_release_groups
 
     my ($tracks, $hits) = $self->c->model('Track')->find_by_recording ($recording->id, 6, 0);
 
-    $self->c->model('ReleaseGroup')->load(map { $_->tracklist->medium->release } @{ $tracks });
+    $self->c->model('ReleaseGroup')->load(map { $_->medium->release } @{ $tracks });
 
     my %rgs;
     for (@{ $tracks })
     {
-        my $rg = $_->tracklist->medium->release->release_group;
+        my $rg = $_->medium->release->release_group;
         $rgs{$rg->gid} = $rg;
     }
 
@@ -197,9 +209,9 @@ sub recording_edits_by_hash
     return %recording_edits;
 }
 
-=method recording_edits_from_tracklist
+=method recording_edits_from_medium
 
-Create no-op recording association edits for a particular tracklist
+Create no-op recording association edits for a particular medium
 which are confirmed and linked to the edit_sha1 hashes of unedited
 tracks.
 
@@ -210,7 +222,7 @@ method.
 
 =cut
 
-sub recording_edits_from_tracklist
+sub recording_edits_from_medium
 {
     my ($self, $tracklist) = @_;
 
@@ -236,6 +248,28 @@ sub recording_edits_from_tracklist
     return %recording_edits;
 }
 
+=method track_edits_from_medium
+
+Create no-op track edits for a particular medium.
+
+=cut
+
+sub track_edits_from_medium
+{
+    my ($self, $medium) = @_;
+
+    $self->c->model('Track')->load_for_mediums ($medium);
+    $self->c->model('ArtistCredit')->load ($medium->all_tracks);
+    $self->c->model('Recording')->load ($medium->all_tracks);
+
+    my @data = map { $self->track_edit_from_track ($_) } $medium->all_tracks;
+
+    use Data::Dumper;
+    warn "track edits from medium: ".Dumper (
+        { input => $medium, output => \@data });
+
+    return @data;
+}
 
 =method _search_recordings
 
@@ -286,7 +320,7 @@ about the suggestion and require the user to confirm our choice.
 
 sub associate_recordings
 {
-    my ($self, $edits, $tracklist, $recording_edits) = @_;
+    my ($self, $edits, $medium, $recording_edits) = @_;
 
     my @ret;
     my @suggestions;
@@ -294,66 +328,13 @@ sub associate_recordings
     my $trk_edit;
     my $suggested_tracklist;
 
-    # First, try to find a matching tracklist.  For this we will need
-    # to figure out artist_credit ids for all artists.
-    my $look_for_tracklist = 1;
-    TRACKLIST: for $trk_edit (@$edits)
-    {
-        my @artist_joinphrase;
-        for (@{ $trk_edit->{artist_credit}->{names} })
-        {
-            if (!$_->{id})
-            {
-                $look_for_tracklist = 0;
-                last TRACKLIST;
-            }
-
-            push @artist_joinphrase, {
-                name => $_->{name},
-                artist => $_->{id},
-            };
-            push @artist_joinphrase, $_->{join_phrase};
-        }
-
-        pop @artist_joinphrase unless $artist_joinphrase[$#artist_joinphrase];
-
-
-        my $id = $self->c->model ('ArtistCredit')->find (@artist_joinphrase);
-        if (!$id)
-        {
-            $look_for_tracklist = 0;
-            last TRACKLIST;
-        }
-
-        $trk_edit->{artist_credit_id} = $id;
-    }
-
-    if ($look_for_tracklist)
-    {
-        my @possible_tracklists = $self->c->model ('Tracklist')->find ([
-            map {
-                {
-                    name => $_->{name},
-                    artist_credit => $_->{artist_credit_id},
-                    position => $_->{position}
-                }
-            } @$edits ]);
-
-        if (scalar @possible_tracklists)
-        {
-            $suggested_tracklist =
-                $self->c->model ('Tracklist')->get_by_id ($possible_tracklists[0]);
-            $self->c->model ('Track')->load_for_tracklists ($suggested_tracklist);
-        }
-    }
-
     my $trackno = 0;
     for $trk_edit (@$edits)
     {
         my @track_suggestions;
 
-        my $trk = $tracklist->tracks->[$trk_edit->{original_position} - 1];
-        my $trk_at_pos = $tracklist->tracks->[$trk_edit->{position} - 1];
+        my $trk = $medium->tracks->[$trk_edit->{original_position} - 1];
+        my $trk_at_pos = $medium->tracks->[$trk_edit->{position} - 1];
 
         my $rec_edit = $recording_edits->{$trk_edit->{edit_sha1}}->[$trk_edit->{position}];
         if (! $rec_edit)
@@ -366,26 +347,22 @@ sub associate_recordings
             }
         }
 
+        # MBS-3957: Track length has been changed by >10 seconds.
+        # Always require confirmation
+        if ($trk && $trk_edit->{length} && $trk->length &&
+            abs($trk_edit->{length} - $trk->length) > 10000) {
+            push @load_recordings, $trk->recording_id;
+            push @ret, { 'id' => $trk->recording_id, 'confirmed' => 0 };
+        }
+
         # Track edit is already associated with a recording edit.
         # (but ignore that association if it concerns an automatically
         #  selected "add new recording").
-        if ($rec_edit && ($rec_edit->{confirmed} || $rec_edit->{gid} ne "new"))
+        elsif ($rec_edit && ($rec_edit->{confirmed} || $rec_edit->{gid} ne "new"))
         {
             push @load_recordings, $rec_edit->{id} if $rec_edit->{id};
             push @ret, $rec_edit;
             $self->c->stash->{confirmation_required} = 1 unless $rec_edit->{confirmed};
-        }
-
-        # A tracklist is suggested.
-        elsif ($suggested_tracklist)
-        {
-            my $t = $suggested_tracklist->tracks->[$trackno];
-            # if the suggested recording is the same as the previously associated
-            # recording no confirmation is neccesary.
-            my $confirmed = $trk->recording_id == $t->recording_id;
-
-            push @load_recordings, $t->recording_id;
-            push @ret, { 'id' => $t->recording_id, 'confirmed' => $confirmed };
         }
 
         # Track hasn't changed OR track has minor changes (case / punctuation).
@@ -612,7 +589,6 @@ sub prepare_tracklist
                     'deleted' => '0',
                     'edits' => '[]',
                     'toc' => undef,
-                    'tracklist_id' => undef,
                     'id' => undef
                 }]);
     }
@@ -626,44 +602,50 @@ sub prepare_recordings
 
     my $json = JSON::Any->new( utf8 => 1 );
 
+    my @medium_edits = @{ $self->get_value ('tracklist', 'mediums') // [] };
     my @recording_edits = @{ $self->get_value ('recordings', 'rec_mediums') // [] };
-    my @tracklist_edits = @{ $self->get_value ('tracklist', 'mediums') // [] };
 
-    my $tracklists_by_id = $self->c->model('Tracklist')->get_by_ids(
-        map { $_->{tracklist_id} } grep { defined $_->{tracklist_id} }
-        @tracklist_edits);
+    my $mediums_by_id = $self->c->model('Medium')->get_by_ids(
+        map { $_->{id} || $_->{medium_id_for_recordings} }
+        grep { defined $_->{id} || defined $_->{medium_id_for_recordings} }
+        @medium_edits);
 
-    $self->c->model('Track')->load_for_tracklists (values %$tracklists_by_id);
+    $self->c->model('Track')->load_for_mediums (values %$mediums_by_id);
 
     my @suggestions;
-    my @tracklists;
+    my @mediums;
 
     my $count = -1;
-    for my $medium (@tracklist_edits)
+    for my $medium_edit (@medium_edits)
     {
         $count += 1;
 
-        $recording_edits[$count]->{tracklist_id} = $medium->{tracklist_id};
+        $recording_edits[$count]->{medium_id} = $medium_edit->{id};
 
-        next if $medium->{deleted};
+        next if $medium_edit->{deleted};
 
         my %recording_edits = scalar $recording_edits[$count] ?
             $self->recording_edits_by_hash ($recording_edits[$count]) :
-            $self->recording_edits_from_tracklist ($tracklists_by_id->{$medium->{tracklist_id}});
+            $self->recording_edits_from_medium ($mediums_by_id->{$medium_edit->{id}});
 
-        $medium->{edits} = $self->edited_tracklist ($json->decode ($medium->{edits}))
-            if $medium->{edits};
+        $medium_edit->{edits} = $self->edited_tracklist (
+            $json->decode ($medium_edit->{edits})) if $medium_edit->{edits};
 
-        if ($medium->{edits} && defined $medium->{tracklist_id})
+        my $medium = defined $medium_edit->{id} ?
+            $mediums_by_id->{$medium_edit->{id}} :
+            defined $medium_edit->{medium_id_for_recordings} ?
+            $mediums_by_id->{$medium_edit->{medium_id_for_recordings}} :
+            undef;
+
+        if ($medium_edit->{edits} && $medium)
         {
-            my $tracklist = $tracklists_by_id->{$medium->{tracklist_id}};
-            $self->c->model ('Recording')->load ($tracklist->all_tracks);
-            $self->c->model ('ArtistCredit')->load (map { $_->recording } $tracklist->all_tracks);
+            $self->c->model ('Recording')->load ($medium->all_tracks);
+            $self->c->model ('ArtistCredit')->load (map { $_->recording } $medium->all_tracks);
 
             # Tracks were edited, suggest which recordings should be
             # associated with the edited tracks.
             my ($first_suggestions, $extra_suggestions) = $self->associate_recordings (
-                $medium->{edits}, $tracklist, \%recording_edits);
+                $medium_edit->{edits}, $medium, \%recording_edits);
 
             my $trackno = 0;
             $suggestions[$count] = [
@@ -685,14 +667,24 @@ sub prepare_recordings
                     'edit_sha1' => $_->{edit_sha1}
                 } } @$first_suggestions ];
         }
-        elsif ($medium->{edits})
+        elsif ($medium_edit->{edits})
         {
-            # A new tracklist has been entered, create new recordings
+            if (defined $medium_edit->{id})
+            {
+                # We have a medium id, but failed to load it.  That
+                # probably means the release is being edited by
+                # multiple people at the same time -- one of them
+                # removed this medium so we cannot find it anymore.
+
+                $self->c->stash( medium_vanished => 1 );
+            }
+
+            # A new medium has been added, create new recordings
             # for all these tracks by default (no recording
             # assocations are suggested).
             $recording_edits[$count]->{associations} ||= [];
             my $edit_idx = 0;
-            for my $edit (@{ $medium->{edits} }) {
+            for my $edit (@{ $medium_edit->{edits} }) {
                 $recording_edits[$count]->{associations}[$edit_idx] ||= {
                     'gid' => 'new',
                     'confirmed' => 1,
@@ -731,10 +723,10 @@ sub prepare_recordings
             $self->c->model('ArtistCredit')->load (grep { $_ } @recordings);
             $suggestions[$count] = [ map { [ $_ ] } @recordings ];
 
-            # Also load the tracklist, as tracks cannot be rendered
+            # Also load the medium, as tracks cannot be rendered
             # from the (non-existent) track edits.
-            $tracklists[$count] = $tracklists_by_id->{$medium->{tracklist_id}};
-            $self->c->model('ArtistCredit')->load (@{ $tracklists[$count]->tracks });
+            $mediums[$count] = $mediums_by_id->{$medium_edit->{id}};
+            $self->c->model('ArtistCredit')->load (@{ $mediums[$count]->tracks });
         }
         else
         {
@@ -745,8 +737,8 @@ sub prepare_recordings
     }
 
     $self->c->stash->{suggestions} = \@suggestions;
-    $self->c->stash->{tracklist_edits} = \@tracklist_edits;
-    $self->c->stash->{tracklists} = \@tracklists;
+    $self->c->stash->{medium_edits} = \@medium_edits;
+    $self->c->stash->{mediums} = \@mediums;
     $self->c->stash->{appears_on} = {};
 
     for my $medium_recordings (@suggestions)
@@ -872,6 +864,8 @@ sub create_edits
 
     $self->_expand_mediums($data);
 
+    $self->c->model('MB')->context->sql->begin unless $previewing;
+
     # Artists and labels:
     # ----------------------------------------
     my (%created) = $self->_edit_missing_entities(%args);
@@ -896,6 +890,8 @@ sub create_edits
 
     # Add any other extra edits (adding mediums, etc)
     $self->create_common_edits(%args);
+
+    $self->c->model('MB')->context->sql->commit unless $previewing;
 
     return $self->release;
 }
@@ -922,8 +918,41 @@ sub create_common_edits
 
     $self->_edit_release_annotation(%args);
 
+    # recording edits
+    # ----------------------------------------
+
+    $self->_edit_recording_edits(%args);
+
     if ($previewing) {
         $self->c->model ('Edit')->load_all (@{ $self->c->stash->{edits} });
+    }
+}
+
+sub _edit_recording_edits {
+    my ($self, %args) = @_;
+
+    my ($data, $create_edit, $editnote, $previewing)
+        = @args{qw( data create_edit edit_note previewing )};
+
+    my $medium_index = -1;
+    for my $medium (@{ $data->{rec_mediums} }) {
+        $medium_index++;
+        my $track_index = -1;
+        for my $track_association (@{ $medium->{associations} }) {
+            $track_index++;
+            next if $track_association->{gid} eq 'new';
+            if ($track_association->{update_recording}) {
+                my $track = $data->{mediums}[ $medium_index ]{tracks}[ $track_index ];
+                $create_edit->(
+                    $EDIT_RECORDING_EDIT, $editnote,
+                    to_edit => $self->c->model('Recording')->get_by_gid( $track_association->{gid} ),
+                    name => $track->name,
+                    artist_credit => artist_credit_to_ref($track->artist_credit, [ "gid" ]),
+                    length => $track->length,
+                    as_auto_editor => $data->{as_auto_editor},
+                );
+            }
+        }
     }
 }
 
@@ -940,9 +969,11 @@ sub _edit_missing_entities
             $EDIT_ARTIST_CREATE,
             $editnote,
             as_auto_editor => $data->{as_auto_editor},
-            name => $artist->{name},
-            sort_name => $artist->{sort_name} || '',
-            comment => $artist->{comment} || '');
+            name => trim ($artist->{name}),
+            sort_name => trim ($artist->{sort_name}) || '',
+            comment => trim ($artist->{comment}) || '',
+            ipi_codes => [ ],
+            isni_codes => [ ]);
     } grep { !$_->{entity_id} } @missing_artist;
 
     my @missing_label = @{ $data->{missing}{label} || [] };
@@ -952,7 +983,11 @@ sub _edit_missing_entities
             $EDIT_LABEL_CREATE,
             $editnote,
             as_auto_editor => $data->{as_auto_editor},
-            map { $_ => $label->{$_} } qw( name sort_name comment ));
+            name => trim ($label->{name}),
+            sort_name => trim ($label->{sort_name}) || '',
+            comment => trim ($label->{comment}) || '',
+            ipi_codes => [ ],
+            isni_codes => [ ]);
     } grep { !$_->{entity_id} } @{ $data->{missing}{label} };
 
     return () if $previewing;
@@ -972,6 +1007,16 @@ sub _edit_missing_entities
                  grep { $_->{entity_id} } @missing_label)
         }
     )
+}
+
+sub _release_label_empty {
+    my ($release_label) = @_;
+    # An 'empty' release label is either deleted in the UI, or has no catalog
+    # number nor label.
+    return $release_label->{'deleted'} || (
+        ($release_label->{catalog_number} eq '' || !defined($release_label->{catalog_number}))
+            && !$release_label->{label_id}
+    );
 }
 
 sub _edit_release_labels
@@ -998,7 +1043,7 @@ sub _edit_release_labels
 
         if ($old_label)
         {
-            if ($new_label->{'deleted'})
+            if (_release_label_empty($new_label))
             {
                 # Delete ReleaseLabel
                 $create_edit->(
@@ -1020,9 +1065,10 @@ sub _edit_release_labels
                 $create_edit->($EDIT_RELEASE_EDITRELEASELABEL, $editnote, %args);
             }
         }
-        elsif ($new_label->{'deleted'})
+        elsif (_release_label_empty($new_label))
         {
-            # Ignore new labels which have already been deleted.
+            # Ignore new labels which have already been deleted, or contain no
+            # useful information.
         }
         elsif (
             $previewing ?
@@ -1104,7 +1150,6 @@ sub _edit_release_track_edits
                     name => trim ($new->{name}),
                     format_id => $new->{format_id},
                     to_edit => $entity,
-                    separate_tracklists => 1,
                     as_auto_editor => $data->{as_auto_editor},
                 );
 
@@ -1132,22 +1177,12 @@ sub _edit_release_track_edits
             $opts->{name} = trim ($new->{name}) if $new->{name};
             $opts->{format_id} = $new->{format_id} if $new->{format_id};
 
-            if ($new->{tracks}) {
-                $self->c->model('Artist')->load_for_artist_credits (
-                    map { $_->artist_credit } @{ $new->{tracks} });
-                $opts->{tracklist} = $new->{tracks};
-            }
-            elsif (my $tracklist_id = $new->{tracklist_id}) {
-                my $tracklist_entity = $self->c->model('Tracklist')->get_by_id($tracklist_id);
-                $self->c->model('Track')->load_for_tracklists($tracklist_entity);
-                $self->c->model('ArtistCredit')->load($tracklist_entity->all_tracks);
-                $self->c->model('Artist')->load_for_artist_credits (
-                    map { $_->artist_credit } $tracklist_entity->all_tracks);
-                $opts->{tracklist} = $tracklist_entity->tracks;
-            }
-            else {
-                die "Medium data does not contain sufficient information to create a tracklist";
-            }
+            die "Medium data does not contain sufficient information to create a tracklist"
+                unless $new->{tracks};
+
+            $self->c->model('Artist')->load_for_artist_credits (
+                map { $_->artist_credit } @{ $new->{tracks} });
+            $opts->{tracklist} = $new->{tracks};
 
             # Add medium
             my $add_medium = $create_edit->($EDIT_MEDIUM_CREATE, $editnote, %$opts);
@@ -1229,6 +1264,9 @@ sub _submit_edit
         $privs &= ~$AUTO_EDITOR_FLAG;
     }
 
+    # Set as autoedits edits that cannot fail
+    $privs |= $AUTO_EDITOR_FLAG if $self->should_approve($type);
+
     my $edit = $self->_create_edit(
         sub { $self->c->model('Edit')->create(@_) },
         $type, $self->c->user->id,
@@ -1248,6 +1286,16 @@ sub _submit_edit
     return $edit;
 }
 
+=method should_approve
+
+Takes a type, and should return 1 if the edit should be an autoedit
+
+=cut
+
+sub should_approve {
+    return 0;
+}
+
 sub _create_edit {
     my ($self, $method, $type, $user_id, %args) = @_;
     return unless %args;
@@ -1265,7 +1313,13 @@ sub _create_edit {
         push @{ $self->c->stash->{edits} }, $edit;
     }
     catch {
-        die $_ unless ref($_) eq 'MusicBrainz::Server::Edit::Exceptions::NoChanges';
+        unless(ref($_) eq 'MusicBrainz::Server::Edit::Exceptions::NoChanges') {
+            die join("\n",
+                "Failed to create edit",
+                "Wizard data:" . Dumper($self->value),
+                $_
+            );
+        }
     };
 
     return $edit;
@@ -1305,13 +1359,17 @@ sub _expand_track
         $names[$i]->{artist} = $artist if $artist;
     }
 
-    my $entity = Track->new(
+    my %new_track = (
         length => $trk->{length} // (($infer_durations and $assoc) ? $assoc->length : undef),
         name => $trk->{name},
         position => trim ($trk->{position}),
+        number => trim ($trk->{number} // $trk->{position}),
         artist_credit => ArtistCredit->from_array ([
             grep { $_->{name} } @names
         ]));
+
+    $new_track{id} = $trk->{id} if looks_like_number ($trk->{id});
+    my $entity = Track->new(%new_track);
 
     if ($assoc)
     {
@@ -1339,7 +1397,7 @@ sub _expand_mediums
     my $count = 0;
     for my $disc (@{ $data->{mediums} }) {
         my $rec_medium = $data->{rec_mediums}->[$count];
-        my $tracklist_id = $rec_medium->{tracklist_id};
+        my $medium_id = $rec_medium->{medium_id};
         my $associations = $rec_medium->{associations};
         my $edits = $disc->{edits};
         $count++;
@@ -1363,12 +1421,12 @@ sub _expand_mediums
         {
             $disc->{tracks} = [ ];
         }
-        elsif ($tracklist_id)
+        elsif ($medium_id)
         {
-            my $tracklist = $self->c->model('Tracklist')->get_by_id ($tracklist_id);
-            $self->c->model('Track')->load_for_tracklists ($tracklist);
-            $self->c->model('ArtistCredit')->load ($tracklist->all_tracks);
-            $self->c->model('Artist')->load ($tracklist->all_tracks);
+            my $medium = $self->c->model('Medium')->get_by_id ($medium_id);
+            $self->c->model('Track')->load_for_mediums ($medium);
+            $self->c->model('ArtistCredit')->load ($medium->all_tracks);
+            $self->c->model('Artist')->load ($medium->all_tracks);
 
             my $pos = 0;
             $disc->{tracks} = [ map {
@@ -1384,7 +1442,7 @@ sub _expand_mediums
                     $_->clear_recording;
                 }
                 $_
-            } $tracklist->all_tracks ];
+            } $medium->all_tracks ];
         }
     }
 
@@ -1425,7 +1483,8 @@ sub track_edit_from_track
         deleted => 0,
         length => $track->length,
         name => $track->name,
-        position => $track->position
+        position => $track->position,
+        number => $track->number
     });
 }
 
@@ -1458,7 +1517,10 @@ sub _seed_parameters {
         ],
         [
             'country_id', 'country',
-            sub { shift->model('Country')->find_by_code(shift) },
+            sub {
+                my ($c, $iso) = @_;
+                $c->model('Area')->get_by_iso_3166_1($iso)->{$iso}
+            },
         ],
         [
             'script_id', 'script',
@@ -1469,14 +1531,31 @@ sub _seed_parameters {
             sub { shift->model('ReleaseStatus')->find_by_name(shift) },
         ],
         [
-            'type_id', 'type',
-            sub { shift->model('ReleaseGroupType')->find_by_name(shift) },
-        ],
-        [
             'packaging_id', 'packaging',
             sub { shift->model('ReleasePackaging')->find_by_name(shift) },
         ],
     );
+
+    if (exists $params->{type})
+    {
+        my %primary_types = map { lc($_->name) => $_ } $self->c->model('ReleaseGroupType')->get_all ();
+        my %secondary_types = map { lc($_->name) => $_ } $self->c->model('ReleaseGroupSecondaryType')->get_all ();
+
+        for my $typename (ref($params->{type}) eq 'ARRAY' ? @{ $params->{type} } : ($params->{type}))
+        {
+            if (defined $primary_types{$typename})
+            {
+                $params->{primary_type_id} = $primary_types{$typename}->id;
+            }
+            elsif (defined $secondary_types{$typename})
+            {
+                $params->{secondary_type_ids} = [] unless defined $params->{secondary_type_ids};
+                push @{ $params->{secondary_type_ids} }, $secondary_types{$typename}->id;
+            }
+        }
+
+        delete $params->{type};
+    }
 
     for my $trans (@transformations) {
         my ($key, $alias, $transform) = @$trans;
@@ -1484,6 +1563,24 @@ sub _seed_parameters {
             my $obj = $transform->($self->c, delete $params->{$alias}) or next;
             $params->{$key} = $obj->id;
         }
+
+        if (exists $params->{events}) {
+            for my $i (0 .. $#{ $params->{events} }) {
+                if (exists $params->{events}->[$i]->{$alias}) {
+                    my $obj = $transform->($self->c,
+                        delete $params->{events}->[$i]->{$alias}) or next;
+                    $params->{events}->[$i]->{$key} = $obj->id;
+                }
+            }
+        }
+    }
+
+    if (exists $params->{country_id} || exists $params->{date})
+    {
+        # schema 16 style country/date pair, convert to schema 18 release event.
+        $params->{events} = [ { deleted => 0 } ];
+        $params->{events}->[0]->{date} = $params->{date} if exists $params->{date};
+        $params->{events}->[0]->{country_id} = $params->{country_id} if exists $params->{country_id};
     }
 
     if (my $release_group_mbid = delete $params->{release_group}) {
@@ -1508,7 +1605,6 @@ sub _seed_parameters {
             $label->{name} = $name;
         }
     }
-
 
     $params->{mediums} = [ map {
         defined $_ ? $_ : { position => 1 }
@@ -1661,12 +1757,43 @@ sub _seed_parameters {
         { label => '', catalog_number => '' }
     ] unless @{ $params->{labels}||[] };
 
+    $params->{events} = [
+        { deleted => 0 }
+    ] unless @{ $params->{events}||[] };
+
     $params->{seeded} = 1;
 
     return collapse_hash($params);
 };
 
 
+sub _filter_release_events {
+    my ($self, $events) = @_;
+
+    return $self->_filter_empty_release_events (
+        $self->_filter_deleted_release_events ($events));
+}
+
+sub _filter_empty_release_events {
+    my (undef, $events) = @_;
+
+    return [
+        grep {
+            (defined $_->{country_id} ||
+             defined $_->{date}->{year} ||
+             defined $_->{date}->{month} ||
+             defined $_->{date}->{day})
+        } @$events ];
+}
+
+sub _filter_deleted_release_events {
+    my (undef, $events) = @_;
+    return [
+        map { delete $_->{deleted}; $_ }
+            grep { !$_->{deleted} }
+                @$events
+    ];
+}
 
 =head1 LICENSE
 

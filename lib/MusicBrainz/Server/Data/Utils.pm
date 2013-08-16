@@ -1,34 +1,37 @@
 package MusicBrainz::Server::Data::Utils;
 
+use strict;
+use warnings;
+
 use base 'Exporter';
 use Carp 'confess';
 use Class::MOP;
 use Data::Compare;
 use Data::UUID::MT;
+use Math::Random::Secure qw( irand );
+use MIME::Base64 qw( encode_base64url );
 use Digest::SHA1 qw( sha1_base64 );
 use Encode qw( decode encode );
 use List::MoreUtils qw( natatime zip );
 use MusicBrainz::Server::Constants qw( $DARTIST_ID $VARTIST_ID $DLABEL_ID );
-use MusicBrainz::Server::Entity::Barcode;
-use MusicBrainz::Server::Entity::PartialDate;
 use Readonly;
 use Scalar::Util 'blessed';
 use Sql;
 use Storable;
-use Text::Trim;
+use Text::Trim qw ();
 
 our @EXPORT_OK = qw(
     add_partial_date_to_row
     artist_credit_to_ref
-    barcode_from_row
     check_data
     check_in_use
+    collapse_whitespace
     copy_escape
     defined_hash
     generate_gid
+    generate_token
     hash_structure
     hash_to_row
-    insert_and_create
     is_special_artist
     is_special_label
     load_meta
@@ -39,13 +42,14 @@ our @EXPORT_OK = qw(
     model_to_type
     object_to_ids
     order_by
-    partial_date_from_row
     partial_date_to_hash
     placeholders
     query_to_list
     query_to_list_limited
     ref_to_type
     remove_equal
+    remove_invalid_characters
+    take_while
     trim
     type_to_model
 );
@@ -53,7 +57,9 @@ our @EXPORT_OK = qw(
 Readonly my %TYPE_TO_MODEL => (
     'annotation'    => 'Annotation',
     'artist'        => 'Artist',
+    'area'          => 'Area',
     'cdstub'        => 'CDStub',
+    'collection'    => 'Collection',
     'editor'        => 'Editor',
     'freedb'        => 'FreeDB',
     'label'         => 'Label',
@@ -62,6 +68,8 @@ Readonly my %TYPE_TO_MODEL => (
     'release_group' => 'ReleaseGroup',
     'url'           => 'URL',
     'work'          => 'Work',
+    'isrc'          => 'ISRC',
+    'iswc'          => 'ISWC'
 );
 
 sub copy_escape {
@@ -129,17 +137,34 @@ sub load_subobjects
     @objs = grep { defined } @objs;
     return unless @objs;
 
-    my $attr_id = $attr_obj . "_id";
-    @objs = grep { $_->meta->find_attribute_by_name($attr_id) } grep { defined } @objs;
-    my %ids = map { ($_->meta->find_attribute_by_name($attr_id)->get_value($_) || "") => 1 } @objs;
-    my @ids = grep { $_ } keys %ids;
+    my @ids;
+    my %attr_ids;
+    my %objs;
+    if (ref($attr_obj) ne 'ARRAY') {
+        $attr_obj = [ $attr_obj ];
+    }
+
+    for my $obj_type (@$attr_obj) {
+        my $attr_id = $obj_type . "_id";
+        $attr_ids{$attr_id} = $obj_type;
+
+        $objs{$attr_id} = [ grep { $_->meta->find_attribute_by_name($attr_id) } @objs ];
+        my %ids = map { ($_->meta->find_attribute_by_name($attr_id)->get_value($_) || "") => 1 } @{ $objs{$attr_id} };
+
+        @ids = grep { !($ids{$_}) } @ids if scalar @ids;
+        push @ids, grep { $_ } keys %ids;
+    }
+
     my $data;
     if (@ids) {
         $data = $data_access->get_by_ids(@ids);
-        foreach my $obj (@objs) {
-            my $id = $obj->meta->find_attribute_by_name($attr_id)->get_value($obj);
-            if (defined $id && exists $data->{$id}) {
-                $obj->meta->find_attribute_by_name($attr_obj)->set_value($obj, $data->{$id});
+        for my $attr_id (keys %attr_ids) {
+            my $attr_obj = $attr_ids{$attr_id};
+            for my $obj (@{ $objs{$attr_id} }) {
+                my $id = $obj->meta->find_attribute_by_name($attr_id)->get_value($obj);
+                if (defined $id && exists $data->{$id}) {
+                    $obj->meta->find_attribute_by_name($attr_obj)->set_value($obj, $data->{$id});
+                }
             }
         }
     }
@@ -170,23 +195,6 @@ sub check_in_use
     my $query = join ' UNION ', map { "SELECT 1 FROM $_" } @queries;
     return 1 if $sql->select_single_value($query, map { @{$queries{$_}} } @queries );
     return;
-}
-
-sub barcode_from_row
-{
-    my ($row, $prefix) = @_;
-
-    return MusicBrainz::Server::Entity::Barcode->new($row->{$prefix."barcode"});
-}
-
-sub partial_date_from_row
-{
-    my ($row, $prefix) = @_;
-    my %info;
-    $info{year} = $row->{$prefix . 'year'} if defined $row->{$prefix . 'year'};
-    $info{month} = $row->{$prefix . 'month'} if defined $row->{$prefix . 'month'};
-    $info{day} = $row->{$prefix . 'day'} if defined $row->{$prefix . 'day'};
-    return MusicBrainz::Server::Entity::PartialDate->new(%info);
 }
 
 sub partial_date_to_hash
@@ -221,14 +229,24 @@ sub query_to_list
 sub query_to_list_limited
 {
     my ($sql, $offset, $limit, $builder, $query, @args) = @_;
-    $sql->select($query, @args);
+    my $wrapping_query = "
+        WITH x AS ($query)
+        SELECT x.*, c.count AS total_row_count
+        FROM x, (SELECT count(*) from x) c";
+    if (defined $limit) {
+        $wrapping_query = $wrapping_query . " LIMIT $limit";
+    }
+    $sql->select($wrapping_query, @args);
     my @result;
-    while (!defined($limit) || $limit--) {
+    my $hits = 0;
+    while (1) {
         my $row = $sql->next_row_hash_ref or last;
+        $hits = $row->{total_row_count};
         my $obj = $builder->($row);
         push @result, $obj;
     }
-    my $hits = $sql->row_count + $offset;
+
+    $hits = $hits + ($offset || 0);
     $sql->finish;
     return (\@result, $hits);
 }
@@ -271,26 +289,14 @@ sub hash_structure
     return sha1_base64 (encode ("utf-8", structure_to_string (shift)));
 }
 
-sub insert_and_create
-{
-    my ($data, @objs) = @_;
-    my $class = $data->_entity_class;
-    Class::MOP::load_class($class);
-    my %map = $data->_attribute_mapping;
-    my @ret;
-    for my $obj (@objs)
-    {
-        my %row = map { ($map{$_} || $_) => $obj->{$_} } keys %$obj;
-        my $id = $data->sql->insert_row($data->_table, \%row, 'id');
-        push @ret, $class->new( id => $id, %$obj);
-    }
-
-    return wantarray ? @ret : $ret[0];
-}
-
 sub generate_gid
 {
-    Data::UUID::MT->new( version => 4 )->create_string();
+    lc(Data::UUID::MT->new( version => 4 )->create_string());
+}
+
+sub generate_token
+{
+    encode_base64url(pack('LLLL', irand(), irand(), irand(), irand()));
 }
 
 sub defined_hash
@@ -326,10 +332,8 @@ sub add_partial_date_to_row
     }
 }
 
-sub trim
-{
-    # Remove leading and trailing space
-    my $t = Text::Trim::trim (shift);
+sub collapse_whitespace {
+    my $t = shift;
 
     # Compress whitespace
     $t =~ s/\s+/ /g;
@@ -338,6 +342,25 @@ sub trim
     $t =~ s/[^[:print:]]//g;
 
     return $t;
+}
+
+sub trim {
+    # Remove leading and trailing space
+    my $t = Text::Trim::trim (shift);
+
+    $t = remove_invalid_characters($t);
+
+    return collapse_whitespace ($t);
+}
+
+sub remove_invalid_characters {
+    my $t = shift;
+    # trim XML-invalid characters
+    $t =~ s/[^\x09\x0A\x0D\x20-\x{D7FF}\x{E000}-\x{FFFD}\x{10000}-\x{10FFFF}]//go;
+    # trim other undesirable characters
+    $t =~ s/[\x{200B}\x{00AD}]//go;
+    #        zwsp    shy
+    return $t
 }
 
 sub type_to_model
@@ -353,11 +376,12 @@ sub model_to_type
 
 sub object_to_ids
 {
+    my @objects = @_;
     my %ret;
-    foreach (@_)
+    foreach my $object (@objects)
     {
-        $ret{$_->id} = [] unless $ret{$_->id};
-        push @{ $ret{$_->id} }, $_;
+        $ret{$object->id} = [] unless $ret{$object->id};
+        push @{ $ret{$object->id} }, $object;
     }
 
     return %ret;
@@ -367,24 +391,30 @@ sub order_by
 {
     my ($order, $default, $map) = @_;
 
+    my $desc = 0;
     my $order_by = $map->{$default};
     if ($order) {
-        my $desc = 0;
-        if ($order =~ /-(.*)/) {
-            $desc = 1;
-            $order = $1;
+        if ($order =~ /^-(.*)/) {
+           $desc = 1;
+           $order = $1;
         }
         if (exists $map->{$order}) {
             $order_by = $map->{$order};
-            if (ref($order_by) eq 'CODE') {
-                $order_by = $order_by->();
-            }
-            if ($desc) {
-                my @list = map { "$_ DESC" } split ',', $order_by;
-                $order_by = join ',', @list;
-            }
+        }
+        else {
+            $desc = 0;
         }
     }
+
+    if (ref($order_by) eq 'CODE') {
+        $order_by = $order_by->();
+    }
+
+    if ($desc) {
+        my @list = map { "$_ DESC" } split ',', $order_by;
+        $order_by = join ',', @list;
+    }
+
     return $order_by;
 }
 
@@ -424,7 +454,7 @@ sub check_data
 }
 
 sub merge_table_attributes {
-    my (my $sql, %named_params) = @_;
+    my ($sql, %named_params) = @_;
     my $table = $named_params{table} or confess 'Missing parameter $table';
     my $new_id = $named_params{new_id} or confess 'Missing parameter $new_id';
     my @old_ids = @{ $named_params{old_ids} } or confess 'Missing parameter \@old_ids';
@@ -492,11 +522,26 @@ sub is_special_label {
     return $label_id == $DLABEL_ID;
 }
 
+sub take_while (&@) {
+    my $f = shift;
+    my @r;
+    for my $x (@_) {
+        local $_ = $x;
+        if ($f->()) {
+            push @r, $x;
+        }
+        else {
+            last;
+        }
+    }
+    return @r;
+}
+
 1;
 
 =head1 COPYRIGHT
 
-Copyright (C) 2009 Lukas Lalinsky
+Copyright (C) 2009 Lukas Lalinsky, 2009-2013 MetaBrainz Foundation
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

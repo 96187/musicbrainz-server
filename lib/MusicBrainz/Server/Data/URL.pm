@@ -3,7 +3,8 @@ use Moose;
 use namespace::autoclean;
 
 use Carp;
-use MusicBrainz::Server::Data::Utils qw( generate_gid hash_to_row );
+use MusicBrainz::Server::Data::Utils
+    qw( generate_gid hash_to_row query_to_list );
 use MusicBrainz::Server::Entity::URL;
 
 extends 'MusicBrainz::Server::Data::CoreEntity';
@@ -13,30 +14,79 @@ with
     'MusicBrainz::Server::Data::Role::Merge';
 
 my %URL_SPECIALIZATIONS = (
-    'Allmusic'        => qr{^https?://(?:www.)?allmusic.com/}i,
-    'ASIN'            => qr{^https?://(?:www.)?amazon(.*?)(?:\:[0-9]+)?/.*/([0-9B][0-9A-Z]{9})(?:[^0-9A-Z]|$)}i,
-    'BBCMusic'        => qr{^https?://(?:www.)?bbc.co.uk/music/}i,
-    'CDBaby'          => qr{^https?://(?:www.)?cdbaby.com/}i,
-    'Discogs'         => qr{^https?://(?:www.)?discogs.com/}i,
-    'Facebook'        => qr{^https?://(?:www.)?facebook.com/}i,
-    'IBDb'            => qr{^https?://(?:www.)?ibdb.com/}i,
-    'IMDb'            => qr{^https?://(?:www.)?imdb.com/}i,
-    'IMSLP'           => qr{^https?://(?:www.)?imslp.org/wiki/}i,
-    'InternetArchive' => qr{^https?://(?:www.)?archive.org/details/}i,
-    'Jamendo'         => qr{^https?://(?:www.)?jamendo.com/}i,
-    'LastFM'          => qr{^https?://(?:www.)?last.fm/}i,
-    'LyricWiki'       => qr{^https?://lyrics.wikia.com/}i,
-    'MetalArchives'   => qr{^https?://(?:www.)?metal-archives.com/}i,
-    'MusicMoz'        => qr{^https?://(?:www.)?musicmoz.org/}i,
-    'MySpace'         => qr{^https?://(?:www.)?myspace.com/}i,
-    'Ozon'            => qr{^https?://(?:www.)?ozon.ru/}i,
-    'PureVolume'      => qr{^https?://(?:www.)?purevolume.com/}i,
-    'SecondHandSongs' => qr{^https?://(?:www.)?secondhandsongs.com/}i,
-    'Songfacts'       => qr{^https?://(?:www.)?songfacts.com/}i,
-    'Twitter'         => qr{^https?://(?:www.)?twitter.com/}i,
-    'VGMdb'           => qr{^https?://(?:www.)?vgmdb.net/}i,
-    'Wikipedia'       => qr{^https?://([\w-]{2,})\.wikipedia.org/wiki/}i,
-    'YouTube'         => qr{^https?://(?:www.)?youtube.com/}i,
+
+    # External links section
+    '45cat'            => qr{^https?://(?:www.)?45cat.com/}i,
+    'Allmusic'         => qr{^https?://(?:www.)?allmusic.com/}i,
+    'AnimeNewsNetwork' => qr{^https?://(?:www.)?animenewsnetwork.com/}i,
+    'ASIN'             => qr{^https?://(?:www.)?amazon(.*?)(?:\:[0-9]+)?/.*/([0-9B][0-9A-Z]{9})(?:[^0-9A-Z]|$)}i,
+    'BBCMusic'         => qr{^https?://(?:www.)?bbc.co.uk/music/}i,
+    'Bandcamp'         => qr{^https?://([^/]+.)?bandcamp.com/}i,
+    'Canzone'          => qr{^https?://(?:www.)?discografia.dds.it/}i,
+    'CDBaby'           => qr{^https?://(?:www.)?cdbaby.com/}i,
+    'DHHU'             => qr{^https?://(?:www.)?dhhu.dk/}i,
+    'Discogs'          => qr{^https?://(?:www.)?discogs.com/}i,
+    'DiscosDoBrasil'   => qr{^https?://(?:www.)?discosdobrasil.com.br/}i,
+    'Encyclopedisque'  => qr{^https?://(?:www.)?encyclopedisque.fr/}i,
+    'ESTERTallinn'     => qr{^https?://tallinn.ester.ee/}i,
+    'ESTERTartu'       => qr{^https?://tartu.ester.ee/}i,
+    'Facebook'         => qr{^https?://(?:www.)?facebook.com/}i,
+    'Generasia'        => qr{^https?://(?:www.)?generasia.com/wiki/}i,
+    'GooglePlus'       => qr{^https?://(?:www.)?plus.google.com/}i,
+    'IBDb'             => qr{^https?://(?:www.)?ibdb.com/}i,
+    'IMDb'             => qr{^https?://(?:www.)?imdb.com/}i,
+    'IMSLP'            => qr{^https?://(?:www.)?imslp.org/wiki/}i,
+    'IOBDb'            => qr{^https?://(?:www.)?lortel.org/}i,
+    'InternetArchive'  => qr{^https?://(?:www.)?archive.org/details/}i,
+    'iTunes'           => qr{^https?://itunes.apple.com/}i,
+    'ISRCTW'           => qr{^https?://(?:www.)?isrc.ncl.edu.tw/}i,
+    'Jamendo'          => qr{^https?://(?:www.)?jamendo.com/}i,
+    'LastFM'           => qr{^https?://(?:www.)?last.fm/}i,
+    'Lieder'           => qr{^https?://(?:www.)?recmusic.org/lieder/}i,
+    'LyricWiki'        => qr{^https?://lyrics.wikia.com/}i,
+    'MetalArchives'    => qr{^https?://(?:www.)?metal-archives.com/}i,
+    'MusicMoz'         => qr{^https?://(?:www.)?musicmoz.org/}i,
+    'MusikSammler'     => qr{^https?://(?:www.)?musik-sammler.de/}i,
+    'MySpace'          => qr{^https?://(?:www.)?myspace.com/}i,
+    'OCReMix'          => qr{^https?://(?:www.)?ocremix.org/}i,
+    'OpenLibrary'      => qr{^https?://(?:www.)?openlibrary.org/}i,
+    'Ozon'             => qr{^https?://(?:www.)?ozon.ru/}i,
+    'PsyDB'            => qr{^https?://(?:www.)?psydb.net/}i,
+    'PureVolume'       => qr{^https?://(?:www.)?purevolume.com/}i,
+    'Rateyourmusic'    => qr{^https?://(?:www.)?rateyourmusic.com/}i,
+    'RockInChina'      => qr{^https?://(?:www.)?rockinchina.com/}i,
+    'Rolldabeats'      => qr{^https?://(?:www.)?rolldabeats.com/}i,
+    'SecondHandSongs'  => qr{^https?://(?:www.)?secondhandsongs.com/}i,
+    'Songfacts'        => qr{^https?://(?:www.)?songfacts.com/}i,
+    'SoundCloud'       => qr{^https?://(?:www.)?soundcloud.com/}i,
+    'STcollector'      => qr{^https?://(?:www.)?soundtrackcollector.com/}i,
+    'Spotify'          => qr{^https?://([^/]+.)?spotify.com/}i,
+    'SpiritOfMetal'    => qr{^https?://(?:www.)?spirit-of-metal.com/}i,
+    'Theatricalia'     => qr{^https?://(?:www.)?theatricalia.com/}i,
+    'TheSession'       => qr{^https?://(?:www.)?thesession.org/}i,
+    'Trove'            => qr{^https?://(?:www.)?(?:trove.)?nla.gov.au/}i,
+    'Twitter'          => qr{^https?://(?:www.)?twitter.com/}i,
+    'VGMdb'            => qr{^https?://(?:www.)?vgmdb.net/}i,
+    'VIAF'             => qr{^https?://(?:www.)?viaf.org/}i,
+    'Wikidata'         => qr{^https?://(?:www.)?wikidata.org/wiki/}i,
+    'Wikipedia'        => qr{^https?://([\w-]{2,})\.wikipedia.org/wiki/}i,
+    'Worldcat'         => qr{^https?://(?:www.)?worldcat.org/}i,
+    'YouTube'          => qr{^https?://(?:www.)?youtube.com/}i,
+
+    # License links
+    'CCBY'              => qr{^http://creativecommons.org/licenses/by/}i,
+    'CCBYND'            => qr{^http://creativecommons.org/licenses/by-nd/}i,
+    'CCBYNC'            => qr{^http://creativecommons.org/licenses/by-nc/}i,
+    'CCBYNCND'          => qr{^http://creativecommons.org/licenses/by-nc-nd/}i,
+    'CCBYNCSA'          => qr{^http://creativecommons.org/licenses/by-nc-sa/}i,
+    'CCBYSA'            => qr{^http://creativecommons.org/licenses/by-sa/}i,
+    'CC0'               => qr{^http://creativecommons.org/publicdomain/zero/}i,
+    'CCPD'              => qr{^http://creativecommons.org/licenses/publicdomain/}i,
+    'CCSampling'        => qr{^http://creativecommons.org/licenses/sampling/}i,
+    'CCNCSamplingPlus'  => qr{^http://creativecommons.org/licenses/nc-sampling\+/}i,
+    'CCSamplingPlus'    => qr{^http://creativecommons.org/licenses/sampling\+/}i,
+    'ArtLibre'          => qr{^http://artlibre.org/licence/lal}i,
+
 );
 
 sub _gid_redirect_table
@@ -51,9 +101,7 @@ sub _table
 
 sub _columns
 {
-    return 'id, gid, url, description,
-            edits_pending,
-            ref_count AS reference_count';
+    return 'id, gid, url, edits_pending';
 }
 
 sub _entity_class
@@ -97,14 +145,27 @@ sub _merge_impl
     return 1;
 }
 
+sub find_by_url {
+    my ($self, $url) = @_;
+    my $query = 'SELECT ' . $self->_columns . ' FROM ' . $self->_table .
+                ' WHERE url = ?';
+    return query_to_list(
+        $self->sql, sub { $self->_new_from_row(@_) },
+        $query, $url
+    );
+}
+
 sub update
 {
     my ($self, $url_id, $url_hash) = @_;
     croak '$url_id must be present and > 0' unless $url_id > 0;
-    my $query = 'SELECT id FROM url WHERE url = ? AND id != ?';
-    if (my $merge = $self->sql->select_single_value($query, $url_hash->{url}, $url_id)) {
-        $self->merge($merge, $url_id);
-        return $merge;
+
+    my ($merge_into) = grep { $_->id != $url_id }
+        $self->find_by_url($url_hash->{url});
+
+    if ($merge_into) {
+        $self->merge($merge_into->id, $url_id);
+        return $merge_into->id;
     }
     else {
         my $row = $self->_hash_to_row($url_hash);
@@ -123,7 +184,6 @@ sub _hash_to_row
     my ($self, $values) = @_;
     return hash_to_row($values, {
         url => 'url',
-        description => 'description'
     });
 }
 

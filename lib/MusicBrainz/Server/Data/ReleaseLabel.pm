@@ -48,8 +48,10 @@ sub load
     return unless @ids; # nothing to do
     my $query = "SELECT " . $self->_columns . "
                  FROM " . $self->_table . "
+                 LEFT JOIN label ON rl.label = label.id
+                 LEFT JOIN label_name sort_name ON label.sort_name = sort_name.id
                  WHERE release IN (" . placeholders(@ids) . ")
-                 ORDER BY release, rl_catalog_number";
+                 ORDER BY release, rl_catalog_number, musicbrainz_collate(sort_name.name)";
     my @labels = query_to_list($self->c->sql, sub { $self->_new_from_row(@_) },
                                $query, @ids);
     foreach my $label (@labels) {
@@ -58,26 +60,6 @@ sub load
             $_->add_label($label);
         }
     }
-}
-
-sub find_by_label
-{
-    my ($self, $label_id, $limit, $offset) = @_;
-    my $query = "SELECT " . $self->_columns . ",
-                    " . MusicBrainz::Server::Data::Release->_columns . "
-                 FROM " . $self->_table . "
-                    JOIN release ON release.id=rl.release
-                    JOIN release_name name ON release.name=name.id
-                 WHERE rl.label = ?
-                 ORDER BY date_year, date_month, date_day, catalog_number, musicbrainz_collate(name.name)
-                 OFFSET ?";
-    return query_to_list_limited(
-        $self->c->sql, $offset, $limit, sub {
-            my $rl = $self->_new_from_row(@_);
-            $rl->release(MusicBrainz::Server::Data::Release->_new_from_row(@_));
-            return $rl;
-        },
-        $query, $label_id, $offset || 0);
 }
 
 sub merge_labels
@@ -91,6 +73,7 @@ sub merge_releases
 {
     my ($self, $new_id, @old_ids) = @_;
     my @ids = ($new_id, @old_ids);
+
     $self->sql->do(
         'DELETE FROM release_label
           WHERE release IN (' . placeholders(@ids) . ")
@@ -103,6 +86,24 @@ sub merge_releases
 
     $self->sql->do('UPDATE release_label SET release = ?
               WHERE release IN ('.placeholders(@old_ids).')', $new_id, @old_ids);
+
+    # If we have >1 release_labels with the same label and at least 1 has a
+    # catalog number, remove any release_labels that have a NULL catalog number
+    $self->sql->do(
+        'DELETE FROM release_label
+           WHERE id IN (
+             SELECT this.id
+             FROM release_label this
+             JOIN release_label other ON (
+               other.id     != this.id AND
+               other.release = this.release AND
+               other.label   = this.label
+             )
+             WHERE this.release IN (' . placeholders(@ids) . ')
+             AND this.catalog_number IS NULL
+             AND this.label IS NOT NULL
+             AND other.catalog_number IS NOT NULL
+           )', @ids);
 }
 
 sub insert

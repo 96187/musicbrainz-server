@@ -133,7 +133,7 @@ MB.GuessCase.Handler.Base = function () {
 	    // check them.
 	    var handled = false;
 	    if (!gc.re.SPECIALCASES) {
-		gc.re.SPECIALCASES = /(&|\?|\!|;|:|'|‘|’|"|\-|\+|,|\*|\.|#|%|\/|\(|\)|\{|\}|\[|\])/;
+		gc.re.SPECIALCASES = /(&|¿|¡|\?|\!|;|:|'|‘|’|"|\-|\+|,|\*|\.|#|%|\/|\(|\)|\{|\}|\[|\])/;
 	    }
 	    if (gc.i.matchCurrentWord(gc.re.SPECIALCASES)) {
 		handled = true;
@@ -148,6 +148,7 @@ MB.GuessCase.Handler.Base = function () {
 		} else if (self.doSlash()) {
 		} else if (self.doColon()) {
 		} else if (self.doHyphen()) {
+        } else if (self.doInvertedMarks()) {
 		} else if (self.doPlus()) {
 		} else if (self.doAsterix()) {
 		} else if (self.doDiamond()) {
@@ -217,7 +218,7 @@ MB.GuessCase.Handler.Base = function () {
 
 		// force capitalization of the last word,
 		// because we are starting a new subtitle
-	        gc.o.capitalizeLastWord(!gc.getMode().isSentenceCaps());
+	        gc.o.capitalizeLastWord(!gc.mode.isSentenceCaps());
 	    }
 
 	    // from next position on, skip spaces and dots.
@@ -335,7 +336,7 @@ MB.GuessCase.Handler.Base = function () {
 
 	    // force caps on word before the colon, if
 	    // the mode is not sentencecaps
-	    gc.o.capitalizeLastWord(!gc.getMode().isSentenceCaps());
+	    gc.o.capitalizeLastWord(!gc.mode.isSentenceCaps());
 
 	    gc.f.forceCaps = true;
 	    gc.f.spaceNextWord = true;
@@ -362,11 +363,29 @@ MB.GuessCase.Handler.Base = function () {
 	    gc.f.resetContext();
 
 	    // don't capitalize next word after hyphen in sentence mode.
-	    gc.f.forceCaps = !gc.getMode().isSentenceCaps();
+	    gc.f.forceCaps = !gc.mode.isSentenceCaps();
 	    gc.f.hypen = true;
 	    return true;
 	}
 	return false;
+    };
+
+    /**
+     * Deal with inverted question (¿) and exclamation marks (¡).
+     **/
+    self.doInvertedMarks = function() {
+	    if (!gc.re.INVERTEDMARKS) {
+	        gc.re.INVERTEDMARKS = /(¿|¡)/;
+	    }
+	    if (gc.i.matchCurrentWord(gc.re.INVERTEDMARKS)) {
+	        gc.o.appendWordPreserveWhiteSpace({apply: true, capslast: false});
+	        gc.f.resetContext();
+
+	        // next word is start of a new sentence.
+	        gc.f.forceCaps = true;
+	        return true;
+	    }
+	    return false;
     };
 
     /**
@@ -497,7 +516,7 @@ MB.GuessCase.Handler.Base = function () {
 
 	    // force caps on last word before the opending bracket,
 	    // if the current mode is not sentence mode.
-	    gc.o.capitalizeLastWord(!gc.getMode().isSentenceCaps());
+	    gc.o.capitalizeLastWord(!gc.mode.isSentenceCaps());
 
 	    // register current bracket as openening bracket
 	    gc.f.pushBracket(gc.i.getCurrentWord());
@@ -555,7 +574,7 @@ MB.GuessCase.Handler.Base = function () {
 		gc.f.slurpExtraTitleInformation = false;
 	    }
 	    gc.f.resetContext();
-	    gc.f.forceCaps = !gc.getMode().isSentenceCaps();
+	    gc.f.forceCaps = !gc.mode.isSentenceCaps();
 	    gc.f.spaceNextWord = true;
 	    gc.o.appendCurrentWord();
 	    return true;

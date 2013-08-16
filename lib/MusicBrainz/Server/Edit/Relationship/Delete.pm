@@ -2,27 +2,28 @@ package MusicBrainz::Server::Edit::Relationship::Delete;
 use Moose;
 
 use MusicBrainz::Server::Constants qw( $EDIT_RELATIONSHIP_DELETE );
-use MusicBrainz::Server::Constants qw( :expire_action :quality );
+use MusicBrainz::Server::Edit::Utils qw( conditions_without_autoedit );
 use MusicBrainz::Server::Data::Utils qw(
     partial_date_to_hash
-    partial_date_from_row
     type_to_model
 );
 use MusicBrainz::Server::Edit::Types qw( PartialDateHash );
 use MusicBrainz::Server::Entity::Types;
-use MooseX::Types::Moose qw( Int Str );
-use MooseX::Types::Structured qw( Dict );
+use MooseX::Types::Moose qw( Int Str ArrayRef );
+use MooseX::Types::Structured qw( Dict Optional );
 
 use MusicBrainz::Server::Entity::Relationship;
 use MusicBrainz::Server::Entity::Link;
-use MusicBrainz::Server::Translation qw( l ln );
+use MusicBrainz::Server::Entity::LinkAttributeType;
+use MusicBrainz::Server::Entity::PartialDate;
+use MusicBrainz::Server::Translation qw ( N_l );
 
 extends 'MusicBrainz::Server::Edit';
 with 'MusicBrainz::Server::Edit::Relationship';
 with 'MusicBrainz::Server::Edit::Relationship::RelatedEntities';
 
 sub edit_type { $EDIT_RELATIONSHIP_DELETE }
-sub edit_name { l("Remove relationship") }
+sub edit_name { N_l("Remove relationship") }
 
 has '+data' => (
     isa => Dict[
@@ -36,13 +37,21 @@ has '+data' => (
                 id => Int,
                 name => Str,
             ],
-            phrase     => Str,
+            phrase => Optional[Str],
+            extra_phrase_attributes => Optional[Str],
             link => Dict[
                 begin_date => PartialDateHash,
                 end_date => PartialDateHash,
+                attributes => Optional[ArrayRef[Dict[
+                    root_name => Str,
+                    root_id => Int,
+                    name => Str
+                ]]],
                 type => Dict[
+                    id => Optional[Int],
                     entity0_type => Str,
-                    entity1_type => Str
+                    entity1_type => Str,
+                    long_link_phrase => Optional[Str]
                 ]
             ]
         ]
@@ -54,29 +63,10 @@ has 'relationship' => (
     is => 'rw'
 );
 
-sub edit_conditions
-{
-    return {
-        $QUALITY_LOW => {
-            duration      => 4,
-            votes         => 1,
-            expire_action => $EXPIRE_ACCEPT,
-            auto_edit     => 0,
-        },
-        $QUALITY_NORMAL => {
-            duration      => 14,
-            votes         => 3,
-            expire_action => $EXPIRE_ACCEPT,
-            auto_edit     => 0,
-        },
-        $QUALITY_HIGH => {
-            duration      => 14,
-            votes         => 4,
-            expire_action => $EXPIRE_REJECT,
-            auto_edit     => 0,
-        },
-    };
-}
+around edit_conditions => sub {
+    my ($orig, $self, @args) = @_;
+    return conditions_without_autoedit($self->$orig(@args));
+};
 
 sub model0 { type_to_model(shift->data->{relationship}{link}{type}{entity0_type}) }
 sub model1 { type_to_model(shift->data->{relationship}{link}{type}{entity1_type}) }
@@ -99,21 +89,35 @@ sub build_display_data
 {
     my ($self, $loaded) = @_;
 
+    my $attrs = $self->data->{relationship}{phrase} ? [] : [map { MusicBrainz::Server::Entity::LinkAttributeType->new(name => $_->{name}, root => MusicBrainz::Server::Entity::LinkAttributeType->new( name => $_->{root_name}, id => $_->{root_id})); } @{ $self->data->{relationship}{link}{attributes} }];
+    my $link = MusicBrainz::Server::Entity::Link->new(
+        begin_date => MusicBrainz::Server::Entity::PartialDate->new_from_row($self->data->{relationship}{link}{begin_date}),
+        end_date => MusicBrainz::Server::Entity::PartialDate->new_from_row($self->data->{relationship}{link}{end_date}),
+        type => MusicBrainz::Server::Entity::LinkType->new(long_link_phrase => $self->data->{relationship}{link}{type}{long_link_phrase} // ''),
+        attributes => $attrs
+    );
+
+    my %relationship_opts = (
+        entity0 => $loaded->{ $self->model0 }->{ $self->data->{relationship}{entity0}{id} } ||
+            $self->c->model($self->model0)->_entity_class->new(
+                name => $self->data->{relationship}{entity0}{name}
+            ),
+        entity1 => $loaded->{ $self->model1 }->{ $self->data->{relationship}{entity1}{id} } ||
+            $self->c->model($self->model1)->_entity_class->new(
+                name => $self->data->{relationship}{entity1}{name}
+            ),
+        link => $link
+    );
+    if ($self->data->{relationship}{phrase}) {
+        $relationship_opts{_verbose_phrase} = [
+                $self->data->{relationship}{phrase},
+                $self->data->{relationship}{extra_phrase_attributes},
+            ],
+    }
+
     return {
         relationship => MusicBrainz::Server::Entity::Relationship->new(
-            entity0 => $loaded->{ $self->model0 }->{ $self->data->{relationship}{entity0}{id} } ||
-                $self->c->model($self->model0)->_entity_class->new(
-                    name => $self->data->{relationship}{entity0}{name}
-                ),
-            entity1 => $loaded->{ $self->model1 }->{ $self->data->{relationship}{entity1}{id} } ||
-                $self->c->model($self->model1)->_entity_class->new(
-                    name => $self->data->{relationship}{entity1}{name}
-                ),
-            verbose_phrase => $self->data->{relationship}{phrase},
-            link => MusicBrainz::Server::Entity::Link->new(
-                begin_date => partial_date_from_row($self->data->{relationship}{link}{begin_date}),
-                end_date => partial_date_from_row($self->data->{relationship}{link}{end_date}), 
-            )
+            %relationship_opts
         )
     }
 }
@@ -180,13 +184,17 @@ sub initialize
                 id => $relationship->entity1_id,
                 name => $relationship->entity1->name
             },
-            phrase => $relationship->verbose_phrase,
             link => {
                 begin_date => partial_date_to_hash($relationship->link->begin_date),
                 end_date => partial_date_to_hash($relationship->link->end_date),
+                attributes => [map { { root_name => $_->root->name,
+                                       root_id => $_->root->id,
+                                       name => $_->name } } $relationship->link->all_attributes],
                 type => {
+                    id => $relationship->link->type->id,
                     entity0_type => $relationship->link->type->entity0_type,
                     entity1_type => $relationship->link->type->entity1_type,
+                    long_link_phrase => $relationship->link->type->long_link_phrase,
                 }
             }
         }

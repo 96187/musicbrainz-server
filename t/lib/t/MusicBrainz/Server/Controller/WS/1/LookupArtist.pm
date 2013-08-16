@@ -20,8 +20,9 @@ my $mech = $test->mech;
 
 MusicBrainz::Server::Test->prepare_test_database($c, '+webservice');
 MusicBrainz::Server::Test->prepare_test_database($c, <<'EOSQL');
-INSERT INTO editor (id, name, password)
-    VALUES (1, 'editor', 'password'), (2, 'other editor', 'password');
+INSERT INTO editor (id, name, password, ha1, email, email_confirm_date)
+VALUES (1, 'editor', '{CLEARTEXT}password', '3a115bc4f05ea9856bd4611b75c80bca', 'foo@example.com', now()),
+       (2, 'other editor', '{CLEARTEXT}password', '63965b645d6c64e41ad695fd80f1f1e9', 'foo@example.com', now());
 EOSQL
 
 
@@ -73,6 +74,16 @@ ws_test 'artist lookup with release groups',
                 <title>Repercussions</title>
             </release-group>
         </release-group-list>
+    </artist>
+</metadata>';
+
+ws_test 'artist lookup with release groups filter by single',
+    '/artist/472bc127-8861-45e8-bc9e-31e8dd32de7a?type=xml&inc=release-groups+sa-Single' =>
+    '<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="http://musicbrainz.org/ns/mmd-1.0#">
+    <artist id="472bc127-8861-45e8-bc9e-31e8dd32de7a" type="Person">
+        <name>Distance</name><sort-name>Distance</sort-name>
+        <disambiguation>UK dubstep artist Greg Sanders</disambiguation>
     </artist>
 </metadata>';
 

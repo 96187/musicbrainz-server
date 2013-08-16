@@ -1,12 +1,12 @@
 package MusicBrainz::Server::Form::Field::PartialDate;
+use MusicBrainz::Server::Translation qw( l );
 use HTML::FormHandler::Moose;
 use Date::Calc ();
 
 extends 'HTML::FormHandler::Field::Compound';
 
 has_field 'year' => (
-    type => '+MusicBrainz::Server::Form::Field::Integer',
-    required => 1,
+    type => '+MusicBrainz::Server::Form::Field::Integer'
 );
 
 has_field 'month' => (
@@ -63,7 +63,7 @@ sub validate {
 
     return 1 if Date::Calc::check_date ($year, $month, $day);
 
-    return $self->add_error ("invalid date");
+    return $self->add_error (l("invalid date"));
 }
 
 1;

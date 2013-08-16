@@ -3,16 +3,18 @@ package MusicBrainz::Server::Filters;
 use strict;
 use warnings;
 
+use Digest::MD5 qw( md5_hex );
 use Encode;
 use Locale::Language;
 use MusicBrainz::Server::Track;
 use MusicBrainz::Server::Validation qw( encode_entities );
+use Text::Trim qw( trim );
 use Text::WikiFormat;
 use Try::Tiny;
 use URI::Escape;
 
 use Sub::Exporter -setup => {
-    exports => [qw( format_editnote )]
+    exports => [qw( format_editnote format_wikitext )]
 };
 
 sub release_date
@@ -36,7 +38,7 @@ sub date_xsd_type
 {
     my $date = shift;
     if($date =~ /^[\d-]+$/){
-	
+
 	my ($y, $m, $d) = split /-/, $date;
 
 	return 'xsd:date' if ($y && 0 + $y && $m && 0 + $m && $d && 0 + $d);
@@ -74,16 +76,36 @@ sub format_wikitext
 
     $text =~ s/</&lt;/g;
     $text =~ s/>/&gt;/g;
+
+    # MBS-2437: Expand MBID entity links
+    $text =~ s/
+      \[
+      (artist|label|recording|release|release-group|url|work):
+      ([0-9a-f]{8} -
+       [0-9a-f]{4} -
+       [0-9a-f]{4} -
+       [0-9a-f]{4} -
+       [0-9a-f]{12})(?:\|([^\]]+))?\]
+    /_make_link($1,$2,$3)/eixg;
+
     return decode(
         'utf-8',
         Text::WikiFormat::format(
             encode('utf-8' => $text), {}, {
-                prefix => "http://wiki.musicbrainz.org/",
+                prefix => "//wiki.musicbrainz.org/",
                 extended => 1,
                 absolute_links => 1,
                 implicit_links => 0
             })
       );
+}
+
+sub _make_link
+{
+    my ($type, $mbid, $content) = @_;
+    $content //= "$type:$mbid";
+    my $ws = DBDefs->WEB_SERVER;
+    return "<a href=\"/$type/$mbid/\">$content</a>"
 }
 
 sub _display_trimmed {
@@ -96,7 +118,7 @@ sub _display_trimmed {
         : $encoded_url;
 
     $encoded_url = "http://$encoded_url"
-        unless $encoded_url =~ m{^https?://};
+        unless $encoded_url =~ m{^(?:https?:)?//};
 
     return qq{<a href="$encoded_url">$display_url</a>};
 }
@@ -117,10 +139,10 @@ sub format_editnote
     my ($html) = @_;
 
     my $is_url = 1;
-    my $server = &DBDefs::WEB_SERVER;
+    my $server = DBDefs->WEB_SERVER;
 
     # Pre-pass the edit note to attempt to normalise any URLs
-    $html =~ s{(http://[^\s]+)}{normalise_url($1)}eg;
+    $html =~ s{(https?://[^\s]+)}{normalise_url($1)}eg;
 
     # Encode < and >
     $html =~ s/</&lt;/g;
@@ -128,10 +150,13 @@ sub format_editnote
 
     # The following taken from http://daringfireball.net/2010/07/improved_regex_for_matching_urls
     $html =~ s{
-    \b
-    (                       # Capture 1: entire matched URL
+    # Match the start of the edit note entirely, or ensure that the proceeding
+    # character is not a : (as we don't want to match foo://bar.com as
+    # foo:<a..>).
+    (?:^|(?<!:))
+    (                                    # Capture 1: entire matched URL
       (?:
-        https?://               # http or https protocol
+        (?:https?:)?//               # http or https protocol
         |                       #   or
         www\d{0,3}[.]           # "www.", "www1.", "www2." … "www999."
         |                           #   or
@@ -151,7 +176,7 @@ sub format_editnote
     }{_display_trimmed($1, $2, $3, $4)}egsxi;
 
     $html =~ s[\b(?:mod(?:eration)? #?|edit[#:\h]+|edit id[#:\h]+|change[#:\h]+)(\d+)\b]
-         [<a href="http://$server/edit/$1">edit #$1</a>]gi;
+         [<a href="//$server/edit/$1">edit #$1</a>]gi;
 
     # links to wikidocs
     $html =~ s/doc:(\w[\/\w]*)(``)*/<a href="\/doc\/$1">$1<\/a>/gi;
@@ -200,6 +225,31 @@ sub locale
     catch {
         return;
     }
+}
+
+sub gravatar {
+    my $email = shift;
+    return sprintf '//gravatar.com/avatar/%s?d=mm', md5_hex(lc(trim($email)));
+}
+
+sub _amazon_https {
+    my $url = shift;
+    $url =~ s,http://ec[x4]\.images-amazon\.com/,https://images-na.ssl-images-amazon.com/,;
+    return $url;
+}
+
+sub _generic_https {
+    my $url = shift;
+    # list only those sites that support https
+    $url =~ s,http://(www\.cdbaby\.com|www\.ozon\.ru|www\.archive\.org)/,https://$1/,;
+    return $url;
+}
+
+sub coverart_https {
+    my $url = shift;
+    $url = _amazon_https($url);
+    $url = _generic_https($url);
+    return $url;
 }
 
 1;

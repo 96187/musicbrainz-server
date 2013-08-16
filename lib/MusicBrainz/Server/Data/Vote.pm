@@ -2,7 +2,6 @@ package MusicBrainz::Server::Data::Vote;
 use Moose;
 use namespace::autoclean;
 
-use Moose::Util::TypeConstraints qw( find_type_constraint );
 use List::Util qw( sum );
 use MusicBrainz::Server::Data::Utils qw(
     map_query
@@ -11,7 +10,8 @@ use MusicBrainz::Server::Data::Utils qw(
 );
 use MusicBrainz::Server::Email;
 use MusicBrainz::Server::Translation qw( l ln );
-use MusicBrainz::Server::Types qw( :vote );
+use MusicBrainz::Server::Constants qw( :vote );
+use MusicBrainz::Server::Types qw( VoteOption );
 
 extends 'MusicBrainz::Server::Data::Entity';
 
@@ -47,8 +47,7 @@ sub enter_votes
     return unless @votes;
 
     # Filter any invalid votes
-    my $vote_tc = find_type_constraint('VoteOption');
-    @votes = grep { $vote_tc->check($_->{vote}) } @votes;
+    @votes = grep { VoteOption->check($_->{vote}) } @votes;
 
     my $query;
     Sql::run_in_transaction(sub {
@@ -60,6 +59,12 @@ sub enter_votes
         @votes = grep {
             my $edit = $edits->{ $_->{edit_id} };
             defined $edit && $edit->is_open
+        } @votes;
+
+        # Filter out self-votes
+        @votes = grep {
+            $_->{vote} == $VOTE_APPROVE ||
+            $editor_id != $edits->{ $_->{edit_id} }->editor_id
         } @votes;
 
         return unless @votes;
@@ -94,10 +99,10 @@ sub enter_votes
             --( $delta{ $id }->{yes} ) if $s->{vote} == $VOTE_YES;
         }
 
-        # Select all the edits that have not yet received a no vote
-        $query = 'SELECT edit FROM vote WHERE edit IN (' . placeholders(@edit_ids) . ') AND vote = ?';
-        my $emailed = $self->sql->select_single_column_array($query, @edit_ids, $VOTE_NO);
-        my %already_emailed = map { $_ => 1 } @$emailed;
+        # Select all edits which have more than 0 'no' votes already.
+        $query = 'SELECT id FROM edit WHERE id IN (' . placeholders(@edit_ids) . ') AND no_votes > 0';
+        my $no_voted = $self->sql->select_single_column_array($query, @edit_ids);
+        my %already_no_voted = map { $_ => 1 } @$no_voted;
 
         # Insert our new votes
         $query = 'INSERT INTO vote (editor, edit, vote) VALUES ';
@@ -105,8 +110,6 @@ sub enter_votes
         $query .= ' RETURNING edit, vote';
         my $voted = $self->sql->select_list_of_hashes($query, map { $editor_id, $_->{edit_id}, $_->{vote} } @votes);
         my %edit_to_vote = map { $_->{edit} => $_->{vote} } @$voted;
-        my @email_edit_ids = grep { $edit_to_vote{$_} == $VOTE_NO }
-                             grep { !exists $already_emailed{$_} } @edit_ids;
 
         # Change the vote count delta for any votes that were changed
         for my $s (@$voted) {
@@ -120,23 +123,30 @@ sub enter_votes
         }
 
         # Send out the emails for no votes
+        my @email_extend_edit_ids = grep { $edit_to_vote{$_} == $VOTE_NO }
+                             grep { !exists $already_no_voted{$_} } @edit_ids;
         my $email = MusicBrainz::Server::Email->new( c => $self->c );
-        my $editors = $self->c->model('Editor')->get_by_ids((map { $edits->{$_}->editor_id } @email_edit_ids),
+        my $editors = $self->c->model('Editor')->get_by_ids((map { $edits->{$_}->editor_id } @email_extend_edit_ids),
                                                             $editor_id);
         $self->c->model('Editor')->load_preferences(values %$editors);
-        for my $edit_id (@email_edit_ids) {
+
+        for my $edit_id (@email_extend_edit_ids) {
             my $edit = $edits->{ $edit_id };
             my $voter = $editors->{ $editor_id  };
             my $editor = $editors->{ $edit->editor_id };
             $email->send_first_no_vote(edit_id => $edit_id, voter => $voter, editor => $editor )
                 if $editor->preferences->email_on_no_vote;
         }
+
+        # Extend the expiration of no-voted edits where applicable
+        $self->c->model('Edit')->extend_expiration_time(@email_extend_edit_ids);
+
     }, $self->c->sql);
 }
 
 sub editor_statistics
 {
-    my ($self, $editor_id) = @_;
+    my ($self, $editor) = @_;
 
     my $base_query = "SELECT vote, count(vote) AS count " .
         "FROM vote " .
@@ -147,28 +157,19 @@ sub editor_statistics
         " AND vote_time > NOW() - INTERVAL '28 day' " .
         " GROUP BY vote";
 
-    my $all_votes = map_query($self->c->sql, 'vote' => 'count', $q_all_votes, $editor_id);
-    my $recent_votes = map_query($self->c->sql, 'vote' => 'count', $q_recent_votes, $editor_id);
-
-    my %names = (
-        $VOTE_ABSTAIN => l('Abstain'),
-        $VOTE_NO => l('No'),
-        $VOTE_YES => l('Yes'),
-    );
+    my $all_votes = map_query($self->c->sql, 'vote' => 'count', $q_all_votes, $editor->id);
+    my $recent_votes = map_query($self->c->sql, 'vote' => 'count', $q_recent_votes, $editor->id);
 
     return [
         # Summarise for each vote type
-        (map { +{
-            name   => $names{$_},
-            recent => {
-                count      => $recent_votes->{$_} || 0,
-                percentage => int(($recent_votes->{$_} || 0) / (sum(values %$recent_votes) || 1) * 100 + 0.5)
-            },
-            all   => {
-                count      => ($all_votes->{$_} || 0),
-                percentage => int(($all_votes->{$_} || 0) / (sum(values %$all_votes) || 1) * 100 + 0.5)
-            }
-        } } ( $VOTE_YES, $VOTE_NO, $VOTE_ABSTAIN )),
+        $self->summarize_votes($VOTE_YES, $all_votes, $recent_votes),
+        $self->summarize_votes($VOTE_NO, $all_votes, $recent_votes),
+        $self->summarize_votes($VOTE_ABSTAIN, $all_votes, $recent_votes),
+
+        # Show Approve only if there are approves to be shown or if editor is an autoeditor
+        $all_votes->{$VOTE_APPROVE} || $editor->is_auto_editor
+            ? $self->summarize_votes($VOTE_APPROVE, $all_votes, $recent_votes)
+            : (),
 
         # Add totals
         {
@@ -181,6 +182,31 @@ sub editor_statistics
             }
         }
     ]
+}
+
+sub summarize_votes
+{
+    my ($self, $vote_kind, $all_votes, $recent_votes) = @_;
+    my %names = (
+        $VOTE_ABSTAIN => l('Abstain'),
+        $VOTE_NO => l('No'),
+        $VOTE_YES => l('Yes'),
+        $VOTE_APPROVE => l('Approve'),
+    );
+
+    return (
+        {
+            name    => $names{$vote_kind},
+            recent  => {
+                count      => $recent_votes->{$vote_kind} || 0,
+                percentage => int(($recent_votes->{$vote_kind} || 0) / (sum(values %$recent_votes) || 1) * 100 + 0.5)
+            },
+            all     => {
+                count      => ($all_votes->{$vote_kind} || 0),
+                percentage => int(($all_votes->{$vote_kind} || 0) / (sum(values %$all_votes) || 1) * 100 + 0.5)
+            }
+        }
+    )
 }
 
 sub load_for_edits

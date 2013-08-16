@@ -1,7 +1,11 @@
 package MusicBrainz::Server::Entity::CDStub;
 
 use Moose;
+use MusicBrainz::Server::Entity::Barcode;
 use MusicBrainz::Server::Entity::Types;
+use MusicBrainz::Server::Types qw( DateTime );
+
+use namespace::autoclean;
 
 extends 'MusicBrainz::Server::Entity';
 
@@ -22,13 +26,13 @@ has 'artist' => (
 
 has 'date_added' => (
     is => 'rw',
-    isa => 'DateTime',
+    isa => DateTime,
     coerce => 1
 );
 
 has 'last_modified' => (
     is => 'rw',
-    isa => 'DateTime',
+    isa => DateTime,
     coerce => 1
 );
 

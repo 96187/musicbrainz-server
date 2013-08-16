@@ -3,20 +3,27 @@ use Moose;
 
 BEGIN { extends 'MusicBrainz::Server::Controller' };
 
+use DateTime;
+use DBDefs;
 use Digest::SHA1 qw(sha1_base64);
 use Encode;
+use HTTP::Status qw( :constants );
+use List::Util 'sum';
 use MusicBrainz::Server::Authentication::User;
+use MusicBrainz::Server::ControllerUtils::SSL qw( ensure_ssl );
 use MusicBrainz::Server::Data::Utils qw( type_to_model );
 use MusicBrainz::Server::Log qw( log_debug );
 use MusicBrainz::Server::Translation qw ( l ln );
+use Try::Tiny;
 
 with 'MusicBrainz::Server::Controller::Role::Subscribe';
 
-use MusicBrainz::Server::Types qw(
+use MusicBrainz::Server::Constants qw(
     $BOT_FLAG
     $AUTO_EDITOR_FLAG
     $WIKI_TRANSCLUSION_FLAG
     $RELATIONSHIP_EDITOR_FLAG
+    $LOCATION_EDITOR_FLAG
 );
 
 with 'MusicBrainz::Server::Controller::Role::Load' => {
@@ -61,29 +68,47 @@ sub index : Private
     $c->detach('/user/profile', [ $c->user->name ]);
 }
 
+sub _perform_login {
+    my ($self, $c, $user_name, $password) = @_;
+
+    if( !$c->authenticate({ username => $user_name, password => $password }) )
+    {
+        # Bad username / password combo
+        $c->log->info('Invalid username/password');
+        $c->stash( bad_login => 1 );
+        return 0;
+    }
+    else {
+        if ($c->user->requires_password_reset) {
+            $c->response->redirect($c->uri_for_action('/account/change_password', {
+                username => $c->user->name,
+                mandatory => 1
+            } ));
+            $c->logout;
+            $c->detach;
+        }
+        else {
+            $c->model('Editor')->update_last_login_date($c->user->id)
+                unless DBDefs->DB_READ_ONLY;
+
+            return 1;
+        }
+    }
+}
+
 sub do_login : Private
 {
     my ($self, $c) = @_;
     return 1 if $c->user_exists;
 
     my $form = $c->form(form => 'User::Login');
-    my $redirect = defined $c->req->query_params->{uri}
-        ? $c->req->query_params->{uri}
-        : $c->relative_uri;
+    my $redirect = $c->req->query_params->{uri} // $c->relative_uri;
 
     if ($c->form_posted && $form->process(params => $c->req->params))
     {
-        if( !$c->authenticate({ username => $form->field("username")->value,
-                                password => $form->field("password")->value }) )
-        {
-            # Bad username / password combo
-            $c->log->info('Invalid username/password');
-            $c->stash( bad_login => 1 );
-        }
-        else
-        {
+        if ($self->_perform_login($c, $form->field("username")->value, $form->field("password")->value)) {
             if ($form->field('remember_me')->value) {
-                $self->_set_login_cookie($c);
+                $self->_renew_login_cookie($c, $form->field('username')->value);
             }
 
             # Logged in OK
@@ -93,10 +118,12 @@ sub do_login : Private
     }
 
     # Form not even posted
+    ensure_ssl($c);
+
     $c->stash(
+        login_action => $c->req->uri_with({ uri => $redirect }),
         template => 'user/login.tt',
-        login_form => $form,
-        redirect => $redirect,
+        login_form => $form
     );
 
     $c->stash->{required_login} = 1
@@ -105,7 +132,7 @@ sub do_login : Private
     $c->detach;
 }
 
-sub login : Path('/login') ForbiddenOnSlaves
+sub login : Path('/login') ForbiddenOnSlaves RequireSSL
 {
     my ($self, $c) = @_;
 
@@ -119,55 +146,51 @@ sub login : Path('/login') ForbiddenOnSlaves
     $c->forward('/user/do_login');
 }
 
+sub logout : Path('/logout')
+{
+    my ($self, $c) = @_;
+
+    if ($c->user_exists) {
+        $self->_consume_remember_me_cookie($c, $c->user->name);
+        $c->logout;
+        $c->delete_session;
+    }
+
+    $self->redirect_back($c, '/logout', '/');
+}
+
 sub cookie_login : Private
 {
     my ($self, $c) = @_;
-    my $cookie = $c->req->cookie('remember_login') or return;
-    return unless $cookie->value;
+
     return if $c->user_exists;
 
-    my ($user_name, $password, $delete_cookie);
+    $c->model('MB')->with_transaction(sub {
+        if (my $user_name = $self->_consume_remember_me_cookie($c)) {
+            $self->_renew_login_cookie($c, $user_name);
+            $c->set_authenticated($c->find_user({ username => $user_name }));
+        }
+    });
+}
+
+sub _consume_remember_me_cookie {
+    my ($self, $c) = @_;
+
+    my $cookie = $c->req->cookie('remember_login') or return;
+    return unless $cookie->value;
+
     my $value = decode('utf-8', $cookie->value);
+    $self->_clear_login_cookie($c);
 
-    # Format 1: plaintext user + password
-    try {
-        if ($value =~ /^1\t(.*?)\t(.*)$/) {
-            ($user_name, $password) = ($1, $2);
+    if ($value =~ /^3\t(.*?)\t(.*)$/) {
+        my ($user_name, $token) = ($1, $2);
+
+        if ($c->model('Editor')->consume_remember_me_token($user_name, $token)) {
+            return $user_name;
         }
-        # Format 2: username, sha1(password + secret), expiry time,
-        # IP address mask, sha1(previous fields + secret)
-        elsif ($value =~ /^2\t(.*?)\t(\S+)\t(\d+)\t(\S*)\t(\S+)$/)
-        {
-            $c->log->info('Found version 2 format cookie');
-            ($user_name, my $pass_sha1, my $expiry, my $ipmask, my $sha1)
-                = ($1, $2, $3, $4, $5);
-
-            my $correct_sha1 = _cookie_sha($1, $2, $3, $4);
-            die "Invalid cookie sha1 - got $sha1, expected $correct_sha1"
-                unless $sha1 eq $correct_sha1;
-
-            die "Expired"
-                if time() > $expiry;
-
-            my $user = $c->model('Editor')->get_by_name($user_name) or last;
-
-            my $correct_pass_sha1 = sha1_base64($user->password . "\t" . DBDefs::SMTP_SECRET_CHECKSUM);
-            die "Password sha1 do not match"
-                unless $pass_sha1 eq $correct_pass_sha1;
-
-            $password = $user->password;
-        }
-        else {
-            # TODO add other formats: e.g. sha1(password), tied to IP, etc
-            die "Didn't recognise permanent cookie format";
-        }
-
-        $c->authenticate({ username => $user_name, password => $password });
     }
-    catch {
-        $c->log->error($_);
-        $self->_clear_login_cookie($c);
-    };
+
+    return;
 }
 
 sub _clear_login_cookie
@@ -179,40 +202,18 @@ sub _clear_login_cookie
     };
 }
 
-sub _cookie_sha {
-    my ($user_name, $password_sha1, $expiry_time, $ip_mask) = @_;
-    return sha1_base64(
-        encode('utf-8', "2\t$user_name\t$password_sha1\t$expiry_time\t$ip_mask") .
-            DBDefs::SMTP_SECRET_CHECKSUM
-    );
-}
-
-sub _set_login_cookie
+sub _renew_login_cookie
 {
-    my ($self, $c) = @_;
-    my $expiry_time = time + 86400 * 635;
-    my $password_sha1 = sha1_base64($c->user->password . "\t" . DBDefs::SMTP_SECRET_CHECKSUM);
-    my $ip_mask = '';
-    my $value = sprintf("2\t%s\t%s\t%s\t%s", $c->user->name, $password_sha1,
-                                             $expiry_time, $ip_mask);
+    my ($self, $c, $user_name) = @_;
+    my $token = $c->model('Editor')->allocate_remember_me_token($user_name);
+    my $cookie_version = 3;
     $c->res->cookies->{remember_login} = {
         expires => '+1y',
         name => 'remember_me',
-        value => encode('utf-8', $value . "\t" . _cookie_sha($c->user->name, $password_sha1, $expiry_time, $ip_mask))
+        value => $token
+            ? encode('utf-8', join("\t", $cookie_version, $user_name, $token))
+            : ''
     };
-}
-
-sub logout : Path('/logout')
-{
-    my ($self, $c) = @_;
-
-    if ($c->user_exists) {
-        $c->logout;
-        $c->delete_session;
-        $self->_clear_login_cookie($c);
-    }
-
-    $self->redirect_back($c, '/logout', '/');
 }
 
 sub base : Chained PathPart('user') CaptureArgs(0) HiddenOnSlaves { }
@@ -226,6 +227,15 @@ sub _load
 
     return $user;
 }
+
+after 'load' => sub {
+    my ($self, $c) = @_;
+
+    my $user = $c->stash->{entity};
+
+    $c->model('Area')->load($user);
+
+};
 
 =head2 contact
 
@@ -286,8 +296,10 @@ sub collections : Chained('load') PathPart('collections')
     my $show_private = $c->stash->{viewing_own_profile};
 
     my $collections = $self->_load_paged($c, sub {
-        $c->model('Collection')->find_by_editor($user->id, $show_private, shift, shift);
+        my ($collections, $hits) = $c->model('Collection')->find_by_editor($user->id, $show_private, shift, shift);
+        return ($collections, $hits);
     });
+    $c->model('Collection')->load_release_count(@$collections);
 
     $c->stash(
         user => $user,
@@ -304,15 +316,21 @@ sub profile : Chained('load') PathPart('') HiddenOnSlaves
     my $subscr_model = $c->model('Editor')->subscription;
     $c->stash->{subscribed}       = $c->user_exists && $subscr_model->check_subscription($c->user->id, $user->id);
     $c->stash->{subscriber_count} = $subscr_model->get_subscribed_editor_count($user->id);
-    $c->stash->{votes}            = $c->model('Vote')->editor_statistics($user->id);
+    $c->stash->{votes}            = $c->model('Vote')->editor_statistics($user);
+
+    $c->model('Gender')->load($user);
+    $c->model('EditorLanguage')->load_for_editor($user);
 
     $c->stash(
         user     => $user,
         template => 'user/profile.tt',
+        last_day_count => $c->model('Editor')->last_24h_edit_count($user->id),
+        open_count => $c->model('Editor')->open_edit_count($user->id),
+        cancelled_count => $c->model('Editor')->cancelled_edit_count($user->id)
     );
 }
 
-sub ratings : Chained('load') PathPart('ratings') HiddenOnSlaves
+sub rating_summary : Chained('load') PathPart('ratings') Args(0) HiddenOnSlaves
 {
     my ($self, $c) = @_;
 
@@ -325,13 +343,46 @@ sub ratings : Chained('load') PathPart('ratings') HiddenOnSlaves
             unless $user->preferences->public_ratings;
     }
 
-    my $ratings = $c->model('Editor')->get_ratings($user,
+    my $ratings = $c->model('Editor')->summarize_ratings($user,
                         $c->stash->{viewing_own_profile});
 
     $c->stash(
-        user => $user,
         ratings => $ratings,
-        template => 'user/ratings.tt',
+        template => 'user/ratings_summary.tt',
+    );
+}
+
+sub ratings : Chained('load') PathPart('ratings') Args(1) HiddenOnSlaves
+{
+    my ($self, $c, $type) = @_;
+
+    my $model = try { type_to_model($type) };
+
+    if (!$model || !$c->model($model)->can('rating')) {
+        $c->stash(
+            message  => l(
+                "'{type}' is not an entity type that can have ratings.",
+                { type => $type }
+            )
+        );
+        $c->detach('/error_400');
+    }
+
+    my $user = $c->stash->{user};
+    if (!defined $c->user || $c->user->id != $user->id) {
+        $c->model('Editor')->load_preferences($user);
+        $c->detach('/error_403')
+            unless $user->preferences->public_ratings;
+    }
+
+    my $ratings = $self->_load_paged($c, sub {
+        $c->model($model)->rating->find_editor_ratings(
+            $user->id, $c->user_exists && $user->id == $c->user->id, shift, shift)
+    }, limit => 100);
+
+    $c->stash(
+        ratings => $ratings,
+        type => $type
     );
 }
 
@@ -350,7 +401,6 @@ sub tags : Chained('load') PathPart('tags')
 
     my $tags = $c->model('Editor')->get_tags ($user);
 
-    use List::Util 'sum';
     $c->stash(
         user => $user,
         tags => $tags,
@@ -392,19 +442,24 @@ sub privileged : Path('/privileged')
 {
     my ($self, $c) = @_;
 
+    my @bots = $c->model ('Editor')->find_by_privileges ($BOT_FLAG);
+    my @auto_editors = $c->model ('Editor')->find_by_privileges ($AUTO_EDITOR_FLAG);
+    my @transclusion_editors = $c->model ('Editor')->find_by_privileges ($WIKI_TRANSCLUSION_FLAG);
+    my @relationship_editors = $c->model ('Editor')->find_by_privileges ($RELATIONSHIP_EDITOR_FLAG);
+    my @location_editors = $c->model ('Editor')->find_by_privileges ($LOCATION_EDITOR_FLAG);
+
+    $c->model ('Editor')->load_preferences (@bots);
+    $c->model ('Editor')->load_preferences (@auto_editors);
+    $c->model ('Editor')->load_preferences (@transclusion_editors);
+    $c->model ('Editor')->load_preferences (@relationship_editors);
+    $c->model ('Editor')->load_preferences (@location_editors);
+
     $c->stash(
-        bots => [
-            $c->model ('Editor')->find_by_privileges ($BOT_FLAG)
-        ],
-        auto_editors => [
-            $c->model ('Editor')->find_by_privileges ($AUTO_EDITOR_FLAG)
-        ],
-        transclusion_editors => [
-            $c->model ('Editor')->find_by_privileges ($WIKI_TRANSCLUSION_FLAG)
-        ],
-        relationship_editors => [
-            $c->model ('Editor')->find_by_privileges ($RELATIONSHIP_EDITOR_FLAG)
-        ],
+        bots => [ @bots ],
+        auto_editors => [ @auto_editors ],
+        transclusion_editors => [ @transclusion_editors ],
+        relationship_editors => [ @relationship_editors ],
+        location_editors => [ @location_editors ],
         template => 'user/privileged.tt',
     );
 }

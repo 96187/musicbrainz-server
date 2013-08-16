@@ -1,15 +1,20 @@
 package MusicBrainz::Server::Test;
 
+binmode STDOUT, ":utf8";
+binmode STDERR, ":utf8";
+
 use DBDefs;
-use Encode qw( encode );
+use Encode qw( decode encode );
 use FindBin '$Bin';
 use Getopt::Long;
 use HTTP::Headers;
 use HTTP::Request;
+use List::UtilsBy qw( nsort_by );
 use MusicBrainz::Server::CacheManager;
 use MusicBrainz::Server::Context;
 use MusicBrainz::Server::Data::Edit;
 use MusicBrainz::Server::Replication ':replication_type';
+use MusicBrainz::Server::Test::HTML5 qw( xhtml_ok html5_ok );
 use MusicBrainz::WWW::Mechanize;
 use Sql;
 use Template;
@@ -18,6 +23,7 @@ use Test::Differences;
 use Test::Mock::Class ':all';
 use Test::WWW::Mechanize::Catalyst;
 use Test::XML::SemanticCompare;
+use Test::XPath;
 use XML::LibXML;
 use Email::Sender::Transport::Test;
 use Try::Tiny;
@@ -26,15 +32,27 @@ use Sub::Exporter -setup => {
     exports => [
         qw(
             accept_edit reject_edit xml_ok schema_validator xml_post
-            compare_body html_ok commandline_override
+            compare_body html_ok test_xpath_html commandline_override
             capture_edits
         ),
         ws_test => \&_build_ws_test,
+        ws_test_json => \&_build_ws_test_json,
     ],
 };
 
+BEGIN {
+    no warnings 'redefine';
+    use DBDefs;
+    *DBDefs::WEB_SERVER = sub { "localhost" };
+    *DBDefs::WEB_SERVER_USED_IN_EMAIL = sub { "localhost" };
+    *DBDefs::RECAPTCHA_PUBLIC_KEY = sub { undef };
+    *DBDefs::RECAPTCHA_PRIVATE_KEY = sub { undef };
+    *DBDefs::OAUTH2_ENFORCE_TLS = sub { 0 };
+}
+
 use MusicBrainz::Server::DatabaseConnectionFactory;
 MusicBrainz::Server::DatabaseConnectionFactory->connector_class('MusicBrainz::Server::Test::Connector');
+MusicBrainz::Server::DatabaseConnectionFactory->alias('READWRITE' => 'TEST');
 
 our $test_context;
 our $test_transport = Email::Sender::Transport::Test->new();
@@ -81,7 +99,7 @@ sub _load_query
     # comment PostgreSQL interactive terminal commands.
     $query =~ s/^(\\.*)$/-- $1/mg;
 
-    return $query;
+    return decode ("utf-8", $query);
 }
 
 sub prepare_test_database
@@ -137,7 +155,7 @@ sub capture_edits (&$)
     $code->();
     my $new_max = $c->sql->select_single_value('SELECT max(id) FROM edit');
     return () if $new_max <= $current_max;
-    return values %{ $c->model('Edit')->get_by_ids(
+    return nsort_by { $_->id } values %{ $c->model('Edit')->get_by_ids(
         ($current_max + 1)..$new_max
     ) };
 }
@@ -154,26 +172,41 @@ sub diag_lineno
     }
 }
 
+=func test_xpath_html
+
+Instantiate Test::XPath with the html namespace.
+
+=cut
+
+sub test_xpath_html
+{
+    my $content = shift;
+
+    return Test::XPath->new(
+        xml => $content,
+        xmlns => { "html" => "http://www.w3.org/1999/xhtml" });
+}
+
+=func html_ok
+
+Validate html by checking if it is well-formed XML and validating
+HTML5 with validator.nu.
+
+=cut
+
 sub html_ok
 {
     my ($content, $message) = @_;
 
-    $message ||= "invalid HTML";
-
-    try {
-        XML::LibXML->load_html(string => $content);
-        $Test->ok(1, $message);
-    }
-    catch {
-        $Test->ok(0, $_);
-    }
+    xhtml_ok ($Test, $content, $message);
+    html5_ok ($Test, $content, $message);
 }
 
 sub xml_ok
 {
     my ($content, $message) = @_;
 
-    $message ||= "invalid XML";
+    $message ||= "well-formed XML";
 
     my $parser = XML::Parser->new(Style => 'Tree');
     eval { $parser->parse($content) };
@@ -347,6 +380,7 @@ sub _build_ws_test_xml {
         $opts ||= {};
 
         my $mech = MusicBrainz::WWW::Mechanize->new(catalyst_app => 'MusicBrainz::Server');
+        $mech->default_header ("Accept" => "application/xml");
         $Test->subtest($msg => sub {
             if (exists $opts->{username} && exists $opts->{password}) {
                 $mech->credentials('localhost:80', 'musicbrainz.org', $opts->{username}, $opts->{password});
@@ -358,7 +392,7 @@ sub _build_ws_test_xml {
             $validator->($mech->content, 'validating');
 
             is_xml_same($expected, $mech->content);
-            $Test->note(encode('utf-8', $mech->content));
+            $Test->note($mech->content);
         });
     }
 }
@@ -370,6 +404,7 @@ sub _build_ws_test_json {
     my $end_point = '/ws/' . $args->{version};
 
     my $mech = MusicBrainz::WWW::Mechanize->new(catalyst_app => 'MusicBrainz::Server');
+    $mech->default_header ("Accept" => "application/json");
 
     return sub {
         my ($msg, $url, $expected, $opts) = @_;
@@ -446,15 +481,10 @@ sub commandline_override
 {
     my ($prefix, @default_tests) = @_;
 
-    my @tests;
-    GetOptions ("tests=s" => \@tests);
-    @tests = split(/,/,join(',',@tests));
+    my $test_re = '';
+    GetOptions ("tests=s" => \$test_re);
 
-    @default_tests = map {
-        /^t::/ ? $_ : $prefix.$_;
-    } @tests if scalar @tests;
-
-    return @default_tests;
+    return grep { $_ =~ /$test_re/ } @default_tests;
 }
 
 1;

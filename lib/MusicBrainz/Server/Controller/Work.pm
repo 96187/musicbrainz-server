@@ -7,7 +7,10 @@ use MusicBrainz::Server::Constants qw(
     $EDIT_WORK_CREATE
     $EDIT_WORK_EDIT
     $EDIT_WORK_MERGE
+    $EDIT_WORK_ADD_ISWCS
+    $EDIT_WORK_REMOVE_ISWC
 );
+use MusicBrainz::Server::Translation qw( l );
 
 with 'MusicBrainz::Server::Controller::Role::Load' => {
     model       => 'Work',
@@ -21,6 +24,7 @@ with 'MusicBrainz::Server::Controller::Role::Rating';
 with 'MusicBrainz::Server::Controller::Role::Tag';
 with 'MusicBrainz::Server::Controller::Role::EditListing';
 with 'MusicBrainz::Server::Controller::Role::Cleanup';
+with 'MusicBrainz::Server::Controller::Role::WikipediaExtract';
 
 use aliased 'MusicBrainz::Server::Entity::ArtistCredit';
 
@@ -32,21 +36,23 @@ after 'load' => sub
 
     my $work = $c->stash->{work};
     $c->model('Work')->load_meta($work);
+    $c->model('ISWC')->load_for_works($work);
     if ($c->user_exists) {
         $c->model('Work')->rating->load_user_ratings($c->user->id, $work);
     }
 };
 
-sub show : PathPart('') Chained('load') 
+sub show : PathPart('') Chained('load')
 {
     my ($self, $c) = @_;
 
     my $work = $c->stash->{work};
     $c->model('WorkType')->load($work);
+    $c->model('Language')->load($work);
+    $c->model('Work')->load_writers($work);
 
     # need to call relationships for overview page
     $self->relationships($c);
-
 
     $c->stash->{template} = 'work/index.tt';
 }
@@ -56,14 +62,27 @@ for my $action (qw( relationships aliases tags details )) {
         my ($self, $c) = @_;
         my $work = $c->stash->{work};
         $c->model('WorkType')->load($work);
+        $c->model('Language')->load($work);
     };
 }
 
-
+with 'MusicBrainz::Server::Controller::Role::IdentifierSet' => {
+    entity_type => 'work',
+    identifier_type => 'iswc',
+    add_edit => $EDIT_WORK_ADD_ISWCS,
+    remove_edit => $EDIT_WORK_REMOVE_ISWC
+};
 
 with 'MusicBrainz::Server::Controller::Role::Edit' => {
     form           => 'Work',
     edit_type      => $EDIT_WORK_EDIT,
+    edit_arguments => sub {
+        my ($self, $c, $work) = @_;
+
+        return (
+            post_creation => $self->edit_with_identifiers($c, $work)
+        );
+    }
 };
 
 with 'MusicBrainz::Server::Controller::Role::Merge' => {
@@ -79,16 +98,37 @@ before 'edit' => sub
     $c->model('WorkType')->load($work);
 };
 
+after 'merge' => sub
+{
+    my ($self, $c) = @_;
+    $c->model('Work')->load_meta(@{ $c->stash->{to_merge} });
+    $c->model('WorkType')->load(@{ $c->stash->{to_merge} });
+    if ($c->user_exists) {
+        $c->model('Work')->rating->load_user_ratings($c->user->id, @{ $c->stash->{to_merge} });
+    }
+    $c->model('Work')->load_writers(@{ $c->stash->{to_merge} });
+    $c->model('Work')->load_recording_artists(@{ $c->stash->{to_merge} });
+    $c->model('Language')->load(@{ $c->stash->{to_merge} });
+    $c->model('ISWC')->load_for_works(@{ $c->stash->{to_merge} });
+};
+
 with 'MusicBrainz::Server::Controller::Role::Create' => {
     form      => 'Work',
     edit_type => $EDIT_WORK_CREATE,
+    edit_arguments => sub {
+        my ($self, $c) = @_;
+
+        return (
+            post_creation => $self->create_with_identifiers($c)
+        );
+    }
 };
 
 1;
 
 =head1 COPYRIGHT
 
-Copyright (C) 2009 Lukas Lalinsky
+Copyright (C) 2009 Lukas Lalinsky, 2013 MetaBrainz Foundation
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

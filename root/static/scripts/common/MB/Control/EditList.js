@@ -40,12 +40,12 @@ MB.Control.EditList = function(container) {
             $(this).attr('name', 'vote-on-all');
         });
 
-        $voteOptions.find(':input').attr('checked', false);
+        $voteOptions.find(':input').prop('checked', false);
 
         $voteOptions.find('.vote').attr('class', 'vote');
 
         $voteOptions.prepend(
-            $('<div>Vote on all edits:</div>')
+            $('<div>').text(MB.text.VoteOnAllEdits)
         );
 
         // :nth-child would make more sense, but I couldn't get it working
@@ -54,7 +54,7 @@ MB.Control.EditList = function(container) {
             $(this).click(function() {
                     $container.find('div.voteopts').each(function() {
                             $(this).find('input').eq(i)
-                                .attr('checked', 'checked')
+                                .prop('checked', true)
                                 .change();
                         });
             });
@@ -70,7 +70,7 @@ MB.Control.EditList = function(container) {
 $(function() {
     $('div.vote input[type="radio"]').change(function() {
         $(this).parents('.voteopts').find('.vote').attr('class', 'vote');
-        $(this).parent('.vote').addClass(MB.constants.SELECTED_CLASS[ $(this).val() ]);
+        $(this).parent('label').parent('.vote').addClass(MB.constants.SELECTED_CLASS[ $(this).val() ]);
     })
 
     $('div.vote input[checked="checked"]').change();

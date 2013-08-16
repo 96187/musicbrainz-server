@@ -1,7 +1,8 @@
 package MusicBrainz::Server::Entity::Statistics::ByDate;
 use Moose;
+use namespace::autoclean;
 
-use MusicBrainz::Server::Types;
+use MusicBrainz::Server::Types qw( DateTime );
 use MooseX::Types::Moose qw( Str Int );
 use MooseX::Types::Structured qw( Map );
 
@@ -18,8 +19,7 @@ has data => (
 
 has date_collected => (
    is => 'rw',
-   isa => 'DateTime',
-   coerce => 1
+   isa => Str
 );
 
 sub summed_statistics {
@@ -39,7 +39,7 @@ sub ratio {
     my ($self, $num_stat, $denom_stat) = @_;
     my $denominator = $self->summed_statistics($denom_stat);
 
-    return unless $denominator > 0;
+    return 0 unless $denominator > 0;
     return $self->summed_statistics($num_stat) * 100 / $denominator;
 }
 
