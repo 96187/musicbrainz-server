@@ -7,13 +7,14 @@
 # çilek  <email address hidden>, 2012
 # Nikolai Prokoschenko <email address hidden>, 2011
 # Nikolai Prokoschenko <email address hidden>, 2011
+# portik <email address hidden>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-06-11 17:13+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2013-08-16 14:41+0000\n"
+"Last-Translator: portik <email address hidden>\n"
 "Language-Team: Turkish (http://www.transifex.com/projects/p/musicbrainz/language/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -727,19 +728,19 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Edit/Historic/AddLink.pm:10
 #: ../lib/MusicBrainz/Server/Edit/Relationship/Create.pm:23
 msgid "Add relationship"
-msgstr ""
+msgstr "İlişki ekle"
 
 #: ../root/artist/layout.tt:83 ../root/label/layout.tt:61
 #: ../root/release_group/layout.tt:36
 #: ../lib/MusicBrainz/Server/Edit/Historic/AddRelease.pm:17
 #: ../lib/MusicBrainz/Server/Edit/Release/Create.pm:30
 msgid "Add release"
-msgstr ""
+msgstr "Sürüm ekle"
 
 #: ../root/artist/layout.tt:78
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/Create.pm:23
 msgid "Add release group"
-msgstr ""
+msgstr "Sürüm grubu ekle"
 
 #: ../root/report/duplicate_artists.tt:51
 msgid "Add selected artists for merging"
@@ -3539,7 +3540,7 @@ msgstr ""
 #: ../root/doc/edit_types.tt:5 ../root/doc/edit_types.tt:19
 #: ../root/doc/edit_types.tt:21 ../lib/MusicBrainz/Server/Edit/Historic.pm:12
 msgid "Historic"
-msgstr ""
+msgstr "Tarihi"
 
 #: ../root/user/profile.tt:90
 msgid "Homepage:"
@@ -10832,7 +10833,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:140
 msgid "Invalid barcode"
-msgstr ""
+msgstr "Geçersiz barkod"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:150
 msgid "There are already MusicBrainz releases with this disc ID"
@@ -10873,7 +10874,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/Create.pm:19
 msgid "Add artist"
-msgstr ""
+msgstr "Artist Ekle"
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/Delete.pm:11
 msgid "Remove artist"
@@ -10881,7 +10882,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/Edit.pm:32
 msgid "Edit artist"
-msgstr ""
+msgstr "Artisti düzenle"
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/EditArtistCredit.pm:24
 msgid "Edit artist credit"
@@ -10889,17 +10890,17 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/Merge.pm:13
 msgid "Merge artists"
-msgstr ""
+msgstr "Artistleri birleştir"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/AddDiscID.pm:11
 #: ../lib/MusicBrainz/Server/Edit/Medium/AddDiscID.pm:10
 msgid "Add disc ID"
-msgstr ""
+msgstr "Disk ID'si ekle"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/AddReleaseAnnotation.pm:13
 #: ../lib/MusicBrainz/Server/Edit/Release/AddAnnotation.pm:13
 msgid "Add release annotation"
-msgstr ""
+msgstr "Sürüm açıklaması ekle"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/AddReleaseEvents.pm:11
 msgid "Add release events (historic)"
@@ -10927,7 +10928,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditLink.pm:17
 msgid "Edit relationship (historic)"
-msgstr ""
+msgstr "İlişkileri düzenle (tarihi)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditReleaseAttrs.pm:15
 msgid "Edit release attributes (historic)"
@@ -10966,12 +10967,12 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Edit/Historic/MergeReleaseMAC.pm:9
 #: ../lib/MusicBrainz/Server/Edit/Release/Merge.pm:49
 msgid "Merge releases"
-msgstr ""
+msgstr "Sürümleri birleştirme"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/MoveDiscID.pm:11
 #: ../lib/MusicBrainz/Server/Edit/Medium/MoveDiscID.pm:19
 msgid "Move disc ID"
-msgstr ""
+msgstr "Disk IDsini taşıma"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/MoveRelease.pm:12
 msgid "Move release (historic)"
@@ -10984,7 +10985,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveDiscID.pm:11
 #: ../lib/MusicBrainz/Server/Edit/Medium/RemoveDiscID.pm:11
 msgid "Remove disc ID"
-msgstr ""
+msgstr "Disk IDsini kaldırma"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveLink.pm:10
 msgid "Remove relationship (historic)"
@@ -11009,19 +11010,19 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Edit/Label/AddAnnotation.pm:12
 msgid "Add label annotation"
-msgstr ""
+msgstr "Şirket açıklaması ekle"
 
 #: ../lib/MusicBrainz/Server/Edit/Label/Create.pm:20
 msgid "Add label"
-msgstr ""
+msgstr "Şirket ekle"
 
 #: ../lib/MusicBrainz/Server/Edit/Label/Edit.pm:30
 msgid "Edit label"
-msgstr ""
+msgstr "Şirketi düzenle"
 
 #: ../lib/MusicBrainz/Server/Edit/Label/Merge.pm:12
 msgid "Merge labels"
-msgstr ""
+msgstr "Şirketleri birleştirme"
 
 #: ../lib/MusicBrainz/Server/Edit/Medium/Create.pm:26
 msgid "Add medium"
@@ -11041,11 +11042,11 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/AddISRCs.pm:21
 msgid "Add ISRCs"
-msgstr ""
+msgstr "ISRC ekle"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/AddPUIDs.pm:13
 msgid "Add PUIDs"
-msgstr ""
+msgstr "PUIDler ekle"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/Create.pm:24
 msgid "Add standalone recording"
@@ -11069,7 +11070,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Edit/Relationship/AddLinkType.pm:13
 msgid "Add relationship type"
-msgstr ""
+msgstr "İlişki tipi ekle"
 
 #: ../lib/MusicBrainz/Server/Edit/Relationship/Delete.pm:25
 msgid "Remove relationship"
@@ -11406,7 +11407,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Form/Field/URL.pm:21
 msgid "Enter a valid url e.g. \"http://google.com/\""
-msgstr ""
+msgstr "Geçerli bir url girin örn: \"http://google.com\""
 
 #: ../lib/MusicBrainz/Server/Form/Field/URL.pm:24
 msgid "URL protocol must be HTTP, HTTPS or FTP"
@@ -11553,7 +11554,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Form/User/ChangePassword.pm:49
 msgid "The old password is incorrect"
-msgstr ""
+msgstr "Eski şifre geçersiz"
 
 #: ../lib/MusicBrainz/Server/Form/User/ChangePassword.pm:54
 msgid "An account with this name could not be found"
@@ -11561,7 +11562,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Form/User/EditProfile.pm:22
 msgid "Invalid URL format"
-msgstr ""
+msgstr "Geçersiz URL formatı"
 
 #: ../lib/MusicBrainz/Server/Form/User/EditProfile.pm:61
 msgid "Basic"
@@ -11613,7 +11614,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Form/User/Register.pm:45
 msgid "Please choose another username, this one is already taken"
-msgstr ""
+msgstr "Lütfen başka bir kullanıcı adı seçin, bu ad halihazırda alınmış"
 
 #: ../lib/MusicBrainz/Server/Form/User/WatchPreferences.pm:35
 msgid "A day"
