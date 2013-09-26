@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-09-26 08:52+0000\n"
+"PO-Revision-Date: 2013-09-26 09:14+0000\n"
 "Last-Translator: th1rtyf0ur\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/musicbrainz/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -800,19 +800,19 @@ msgstr "{add} に追加、{lastmod} に更新"
 
 #: ../root/cdstub/layout.tt:8
 msgid "Added:"
-msgstr ""
+msgstr "追加した："
 
 #: ../root/release/sidebar.tt:36
 msgid "Additional details"
-msgstr ""
+msgstr "その他の詳細"
 
 #: ../root/release/edit/information.tt:144
 msgid "Additional information"
-msgstr ""
+msgstr "その他の情報"
 
 #: ../root/edit/details/add_isrcs.tt:10 ../root/edit/details/add_iswcs.tt:3
 msgid "Additions:"
-msgstr ""
+msgstr "追加："
 
 #: ../root/admin/edit_user.tt:1
 msgid "Adjust User Account Flags"
@@ -916,7 +916,7 @@ msgstr ""
 
 #: ../root/release/edit/recordings.tt:362
 msgid "Also update the recording with track changes"
-msgstr ""
+msgstr " トラックの変更をレコーディングにも与える"
 
 #: ../root/search/results-area.tt:44
 msgid "Alternatively, you may {uri|add a new area}."
@@ -924,15 +924,15 @@ msgstr ""
 
 #: ../root/search/results-artist.tt:5
 msgid "Alternatively, you may {uri|add a new artist}."
-msgstr ""
+msgstr "又は、新たな{uri|アーティストを追加}できます。"
 
 #: ../root/search/results-label.tt:45
 msgid "Alternatively, you may {uri|add a new label}."
-msgstr ""
+msgstr "又は、新たな{uri|レーベルを追加}できます。"
 
 #: ../root/search/results-recording.tt:5
 msgid "Alternatively, you may {uri|add a new recording}."
-msgstr ""
+msgstr "又は、新たな{uri|レコーディングを追加}できます。"
 
 #: ../root/search/results-release_group.tt:28
 #: ../root/search/results-release-group.tt:28
@@ -945,16 +945,16 @@ msgstr ""
 
 #: ../root/search/results-work.tt:61
 msgid "Alternatively, you may {uri|add a new work}."
-msgstr ""
+msgstr "又は、新たな{uri|ワークを追加}できます。"
 
 #: ../root/report/asins_with_multiple_releases.tt:1
 #: ../root/report/asins_with_multiple_releases.tt:3
 msgid "Amazon URLs Linked to Multiple Releases"
-msgstr ""
+msgstr "複数のリリースに接続されたAmazonのURL"
 
 #: ../root/report/index.tt:54
 msgid "Amazon URLs linked to multiple releases"
-msgstr ""
+msgstr "複数のリリースに接続されたAmazonのURL"
 
 #: ../root/alias/edit_form.tt:2 ../root/components/aliases.tt:3
 msgid ""
@@ -967,7 +967,7 @@ msgstr ""
 #: ../root/label/subscribers.tt:17 ../root/user/subscribers.tt:17
 msgid "An anonymous user"
 msgid_plural "{n} anonymous users"
-msgstr[0] ""
+msgstr[0] "匿名ユーザー{n}名"
 
 #: ../root/edit/index.tt:16 ../root/edit/list.tt:83
 #: ../root/release/edit/editnote.tt:27
@@ -1020,7 +1020,7 @@ msgstr ""
 #: ../root/release_group/annotation_history.tt:2
 #: ../root/work/annotation_history.tt:1 ../root/work/annotation_history.tt:2
 msgid "Annotation history"
-msgstr ""
+msgstr "注釈の履歴"
 
 #: ../root/annotation/common.tt:15
 msgid "Annotation last modified by {user} on {date}."
@@ -1067,7 +1067,7 @@ msgstr ""
 
 #: ../root/edit/edit_header.tt:75 ../root/edit/info.tt:17
 msgid "Approve edit"
-msgstr ""
+msgstr "編集を承認して"
 
 #: ../root/release/merge_confirm.tt:4
 msgid ""
