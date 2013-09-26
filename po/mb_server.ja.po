@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-09-26 06:59+0000\n"
+"PO-Revision-Date: 2013-09-26 07:51+0000\n"
 "Last-Translator: th1rtyf0ur\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/musicbrainz/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../root/recording/add_isrc.tt:8
 msgid "\"CC\" is the appropriate for the registrant two-character country code."
-msgstr ""
+msgstr "「CC」は、登録者の適切な２文字国コード。"
 
 #: ../root/components/forms.tt:241
 msgid "\"DDD\" is a nine digit work identifier."
@@ -49,7 +49,7 @@ msgstr ""
 msgid ""
 "\"NNNNN\" is a unique 5-digit number identifying the particular sound "
 "recording."
-msgstr ""
+msgstr "「NNNNN」は特定のレコーディングを識別する唯一の５桁番号です。"
 
 #: ../root/recording/add_isrc.tt:9
 msgid ""
@@ -70,7 +70,7 @@ msgstr ""
 #: ../root/freedb/show.tt:62 ../root/recording/index.tt:9
 #: ../root/release/edit/tracklist.tt:263 ../root/release/edit/tracklist.tt:415
 msgid "#"
-msgstr ""
+msgstr "＃"
 
 #: ../root/doc/edit_type.tt:78 ../root/doc/edit_type.tt:81
 msgid "&#10004;"
@@ -96,7 +96,7 @@ msgstr ""
 
 #: ../root/components/tag-cloud.tt:26
 msgid "'{tag}' has been used {num} times"
-msgstr ""
+msgstr "「{tag}」は{num}回使用されてます"
 
 #: ../root/components/aliases.tt:43
 msgid "(<span class=\"comment\">primary</span>)"
@@ -104,20 +104,20 @@ msgstr ""
 
 #: ../root/user/profile.tt:27
 msgid "(<strong>unverified!</strong>)"
-msgstr ""
+msgstr "（<strong>未確認！</strong>）"
 
 #: ../root/main/400.tt:12 ../root/main/500.tt:41
 msgid "(No details about this error are available)"
-msgstr ""
+msgstr "（このエラーについて詳細がありません）"
 
 #: ../root/release/edit/recordings.tt:209
 #: ../root/release/edit/recordings.tt:323
 msgid "(add a new recording)"
-msgstr ""
+msgstr "（新しいレコーディングを追加）"
 
 #: ../root/edit/details/add_release_annotation.tt:17
 msgid "(click here to display annotation)"
-msgstr ""
+msgstr "（ここにクリックして注釈を表示します）"
 
 #: ../root/edit/details/macros.tt:28
 msgid "(ended)"
@@ -125,11 +125,11 @@ msgstr ""
 
 #: ../root/user/profile.tt:19
 msgid "(hidden)"
-msgstr ""
+msgstr "（隠れた）"
 
 #: ../root/edit/details/add_release.tt:22
 msgid "(new release group)"
-msgstr ""
+msgstr "（新たなリリースグループ）"
 
 #: ../root/annotation/common.tt:9
 #: ../root/edit/details/add_area_annotation.tt:10
@@ -141,7 +141,7 @@ msgstr ""
 #: ../root/edit/details/add_release_group_annotation.tt:10
 #: ../root/edit/details/add_work_annotation.tt:10
 msgid "(no changelog)"
-msgstr ""
+msgstr "（更新履歴無し）"
 
 #: ../root/release/add_cover_art.tt:26
 msgid "(no other cover art)"
@@ -188,7 +188,7 @@ msgstr ""
 
 #: ../root/elections/show.tt:124
 msgid "(private)"
-msgstr ""
+msgstr "（内緒）"
 
 #: ../root/layout/menu.tt:24
 msgid "(reset language)"
@@ -196,7 +196,7 @@ msgstr "(言語をリセット)"
 
 #: ../root/search/lib/inline-results-recording.tt:60
 msgid "(standalone recording)"
-msgstr ""
+msgstr "（スタンドアロンレコーディング）"
 
 #: ../root/components/details.tt:1 ../root/edit/details/add_isrcs.tt:5
 #: ../root/edit/details/historic/convert_release_to_multiple_artists.tt:11
@@ -210,19 +210,19 @@ msgstr "(不明)"
 
 #: ../root/user/profile.tt:23
 msgid "(verified at {date})"
-msgstr ""
+msgstr "（{date}に確認された）"
 
 #: ../root/release/merge.tt:108
 msgid "(was medium {position} on release {release})"
-msgstr ""
+msgstr "（リリース「{release}」のメディア{position}でした）"
 
 #: ../root/release/merge.tt:103
 msgid "(was medium {position}: {name} on release {release})"
-msgstr ""
+msgstr "（リリース「{release}」のメディア{position}：「{name}」でした）"
 
 #: ../root/recording/layout.tt:19
 msgid "({delete_uri|remove})"
-msgstr ""
+msgstr "({delete_uri|削除})"
 
 #: ../root/release/lookup.tt:31
 msgid ""
@@ -10631,7 +10631,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Controller/AutoEditorElections.pm:70
 #, perl-brace-format
 msgid "'{id}' is not a valid election ID"
-msgstr ""
+msgstr "選挙ID {id} は無効です。"
 
 #: ../lib/MusicBrainz/Server/Controller/CDStub.pm:62
 msgid "The required TOC parameter was invalid or not present"
@@ -10789,7 +10789,7 @@ msgstr "このディスク ID に対する CD スタブが、既にあります"
 #: ../lib/MusicBrainz/Server/Data/LinkType.pm:150
 #, perl-brace-format
 msgid "{t0}-{t1} relationships"
-msgstr ""
+msgstr "{t0}・{t1} の関連"
 
 #: ../lib/MusicBrainz/Server/Data/Vote.pm:171
 msgid "Total"
@@ -11217,7 +11217,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Entity/Barcode.pm:25
 msgid "[none]"
-msgstr ""
+msgstr "【無】"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:76
 msgid "View your public account information"
@@ -11401,7 +11401,7 @@ msgstr ""
 msgid ""
 "You must provide an edit note when adding a release. Even just a URL or "
 "something like “CD in hand” helps!"
-msgstr ""
+msgstr "リリースを追加する際に、編集メモが必要です。URLや「CD持ち」だけでも助かります！"
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Information.pm:81
 msgid ""
@@ -11417,21 +11417,21 @@ msgstr ""
 msgid ""
 "You must select an existing release group. If you wish to move this release,\n"
 "           use the \"change release group\" action from the sidebar."
-msgstr ""
+msgstr "存在しているリリースグループを選ばなければなりません。このリリースを移動したい場合は、サイドバーの「リリースグループ変更」をお使いください。"
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:60
 msgid "New tracklisting contains an empty track"
-msgstr ""
+msgstr "新たなトラックリストに空のトラックがあります。"
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:65
 #, perl-brace-format
 msgid "A track name is required on track {pos}"
-msgstr ""
+msgstr "トラック{pos}にトラック名が必要です。"
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:70
 #, perl-brace-format
 msgid "A position is required for \"{name}\""
-msgstr ""
+msgstr "「{name}」にポジションが必要です。"
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:75
 #, perl-brace-format
@@ -11441,7 +11441,7 @@ msgstr "\"{name1}\" と \"{name2}\" が同じ場所を指しています"
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:88
 #, perl-brace-format
 msgid "An artist is required on track {pos}"
-msgstr ""
+msgstr "トラック{pos}にアーティストが必要です。"
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:115
 #, perl-brace-format
