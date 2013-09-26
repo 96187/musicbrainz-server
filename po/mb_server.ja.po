@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-09-26 07:51+0000\n"
+"PO-Revision-Date: 2013-09-26 08:52+0000\n"
 "Last-Translator: th1rtyf0ur\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/musicbrainz/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -228,7 +228,7 @@ msgstr "({delete_uri|削除})"
 msgid ""
 "* Match indicates the total difference in seconds between the CD you "
 "requested and the matches we found."
-msgstr ""
+msgstr "＊マッチは、リクエストしたCDとマッチされたアイテムの時差の秒数。"
 
 #: ../root/artist/relationships.tt:56 ../root/scripts/text_strings.tt:128
 #: ../lib/MusicBrainz/Server/Entity/Relationship.pm:149
@@ -242,20 +242,20 @@ msgstr ""
 
 #: ../root/user/profile.tt:101
 msgid "0"
-msgstr ""
+msgstr "0"
 
 #: ../root/edit/info.tt:48
 msgid "1 vote"
 msgid_plural "{n} unanimous votes"
-msgstr[0] ""
+msgstr[0] "満場一致投票数：{n}"
 
 #: ../root/user/profile.tt:230 ../root/user/profile.tt:234
 msgid "100%"
-msgstr ""
+msgstr "100%"
 
 #: ../root/elections/show.tt:17
 msgid "1st seconder:"
-msgstr ""
+msgstr "第一賛成者："
 
 #: ../root/components/common-macros.tt:117
 msgid "250px"
@@ -263,7 +263,7 @@ msgstr ""
 
 #: ../root/elections/show.tt:20
 msgid "2nd seconder:"
-msgstr ""
+msgstr "第二賛成者："
 
 #: ../root/components/common-macros.tt:118
 msgid "500px"
@@ -271,15 +271,15 @@ msgstr ""
 
 #: ../root/admin/edit_user.tt:18
 msgid "<abbr title=\"MusicBrainz Identifier\">MBID</abbr> submitter"
-msgstr ""
+msgstr "<abbr title=\"MusicBrainz ID\">MBID</abbr> の提出者"
 
 #: ../root/edit/info.tt:42
 msgid "<em>Cancelling</em>"
-msgstr ""
+msgstr "<em>キャンセル中</em>"
 
 #: ../root/annotation/history.tt:31
 msgid "<em>no changelog specified</em>"
-msgstr ""
+msgstr "<em>更新履歴未特定</em>"
 
 #: ../root/edit/edit_header.tt:60
 msgid "<strong>Approved:</strong> {date}"
@@ -287,11 +287,11 @@ msgstr ""
 
 #: ../root/edit/edit_header.tt:58
 msgid "<strong>Closed:</strong> <em>Cancelling</em>"
-msgstr ""
+msgstr "<strong>終了：</strong> <em>キャンセル中</em>"
 
 #: ../root/edit/edit_header.tt:62
 msgid "<strong>Closed:</strong> {date}"
-msgstr ""
+msgstr "<strong>終了：</strong> {date}"
 
 #: ../root/browse/page_selector.tt:24
 msgid ""
@@ -349,16 +349,16 @@ msgstr ""
 #: ../root/components/common-macros.tt:822 ../root/recording/edit.tt:43
 #: ../root/release/edit/tracklist.tt:129
 msgid "<strong>Warning</strong>:"
-msgstr ""
+msgstr "<strong>注意</strong>"
 
 #: ../root/scripts/text_strings.tt:50
 msgid "<strong>Warning</strong>: #{disc} has a discid, you cannot add tracks"
-msgstr ""
+msgstr "<strong>注意</strong>： #{disc}はDisc IDが載せてるため、トラックの追加はできません。"
 
 #: ../root/scripts/text_strings.tt:51
 msgid ""
 "<strong>Warning</strong>: #{disc} has a discid, you cannot remove tracks"
-msgstr ""
+msgstr "<strong>注意</strong>： #{disc}はDisc IDが載せてるため、トラックの削除はできません。"
 
 #: ../root/annotation/edit.tt:45
 msgid ""
@@ -392,21 +392,21 @@ msgstr[0] ""
 msgid ""
 "A relationship between {entity0} and {entity1} already exists with these "
 "attributes"
-msgstr ""
+msgstr "この属性で {entity0} と {entity1} の関連は既に存在しています。"
 
 #: ../root/edit/relationship/edit.tt:52
 msgid ""
 "A relationship between {entity0} and {entity1} already exists with these "
 "attributes."
-msgstr ""
+msgstr "この属性で {entity0} と {entity1} の関連は既に存在しています。"
 
 #: ../root/edit/relationship/create_url.tt:30
 msgid "A relationship between {entity} and {url} already exists."
-msgstr ""
+msgstr "{entity} と {url} の関連は既に存在しています。"
 
 #: ../root/layout/menu.tt:112
 msgid "About"
-msgstr ""
+msgstr "このサイトについて"
 
 #: ../root/edit/search_macros.tt:242 ../root/edit/vote.tt:20
 #: ../root/elections/show.tt:76 ../lib/MusicBrainz/Server/Data/Vote.pm:186
@@ -415,7 +415,7 @@ msgstr "棄権"
 
 #: ../root/doc/edit_type.tt:15
 msgid "Accept"
-msgstr ""
+msgstr "同意"
 
 #: ../root/edit/index.tt:64
 msgid "Accept edit"
@@ -436,26 +436,26 @@ msgstr ""
 
 #: ../root/account/registered.tt:1 ../root/account/registered.tt:2
 msgid "Account Created"
-msgstr ""
+msgstr "アカウント作成しました"
 
 #: ../root/admin/edit_user.tt:25 ../root/admin/edit_user.tt:29
 msgid "Account admin"
-msgstr ""
+msgstr "アカウント設定"
 
 #: ../root/search/results-freedb.tt:19
 msgid "Action"
-msgstr ""
+msgstr "アクション"
 
 #: ../root/account/applications.tt:27 ../root/account/applications.tt:58
 #: ../root/admin/wikidoc/index.tt:36 ../root/artist/aliases.tt:23
 #: ../root/components/aliases.tt:19 ../root/recording/fingerprints.tt:14
 #: ../root/recording/fingerprints.tt:49 ../root/user/collections.tt:13
 msgid "Actions"
-msgstr ""
+msgstr "アクション"
 
 #: ../root/release/edit-links.tt:3
 msgid "Add <abbr title=\"Creative Commons\">CC</abbr> License"
-msgstr ""
+msgstr "<abbr title=\"Creative Commons\">CC</abbr> ライセンスを追加"
 
 #: ../root/layout/menu.tt:85
 msgctxt "button/menu"
@@ -741,20 +741,20 @@ msgstr "リリースグループを追加"
 
 #: ../root/report/duplicate_artists.tt:51
 msgid "Add selected artists for merging"
-msgstr ""
+msgstr "選択されたアーティストを合併"
 
 #: ../root/artist/recordings.tt:13 ../root/isrc/index.tt:37
 msgid "Add selected recordings for merging"
-msgstr ""
+msgstr "選択されたレコーディングを合併"
 
 #: ../root/artist/releases.tt:13 ../root/label/index.tt:34
 #: ../root/release_group/index.tt:74
 msgid "Add selected releases for merging"
-msgstr ""
+msgstr "選択されたリリースを合併"
 
 #: ../root/artist/works.tt:8 ../root/iswc/index.tt:60
 msgid "Add selected works for merging"
-msgstr ""
+msgstr "選択されたワークを合併"
 
 #: ../root/release/sidebar.tt:138
 msgid "Add to a new collection"
@@ -766,7 +766,7 @@ msgstr "自分のコレクションに追加"
 
 #: ../root/release/sidebar.tt:129
 msgid "Add to {collection}"
-msgstr ""
+msgstr "{collection} に追加"
 
 #: ../root/release/edit/tracklist.tt:446
 msgid "Add track(s)"
@@ -792,11 +792,11 @@ msgstr "{num}件のトラックを追加"
 
 #: ../root/edit/details/edit_release_events.tt:16
 msgid "Added"
-msgstr ""
+msgstr "追加しました"
 
 #: ../root/cdstub/browse.tt:23
 msgid "Added {add}, last modified {lastmod}"
-msgstr ""
+msgstr "{add} に追加、{lastmod} に更新"
 
 #: ../root/cdstub/layout.tt:8
 msgid "Added:"
