@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-09-26 03:22+0000\n"
+"PO-Revision-Date: 2013-09-26 04:32+0000\n"
 "Last-Translator: th1rtyf0ur\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/musicbrainz/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -11615,7 +11615,7 @@ msgstr "シングルは大体代表曲１曲で、他のＢ面曲やリミック
 msgid ""
 "An EP is an Extended Play release and often contains the letters EP in the "
 "title."
-msgstr ""
+msgstr "EPはExtended Playの略称で、収録時間は大体シングルとアルバムの間です。ミニ・アルバムとも呼ばれて、タイトルに「EP」が含む事も多い。"
 
 #: ../lib/MusicBrainz/Server/Release.pm:61
 msgid ""
@@ -11651,19 +11651,19 @@ msgstr "以前リリースした素材をリミックスしたリリースです
 
 #: ../lib/MusicBrainz/Server/Release.pm:68
 msgid "Any release that does not fit any of the categories above."
-msgstr ""
+msgstr "以上のカテゴリーどれにも当てはまらないリリース。"
 
 #: ../lib/MusicBrainz/Server/Release.pm:70
 msgid ""
 "Any release officially sanctioned by the artist and/or their record company."
 " (Most releases will fit into this category.)"
-msgstr ""
+msgstr "アーティストやレコード会社の許諾で発売されるリリース（大半のリリースはこのカテゴリー）。"
 
 #: ../lib/MusicBrainz/Server/Release.pm:71
 msgid ""
 "A giveaway release or a release intended to promote an upcoming official "
 "release. (e.g. prerelease albums or releases included with a magazine)"
-msgstr ""
+msgstr "無料で出されたリリースや、未来のリリースを宣伝するためのリリース（例：プレリリースアルバムや、雑誌添付のリリース）。"
 
 #: ../lib/MusicBrainz/Server/Release.pm:72
 msgid ""
