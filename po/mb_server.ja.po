@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-09-26 05:36+0000\n"
+"PO-Revision-Date: 2013-09-26 06:59+0000\n"
 "Last-Translator: th1rtyf0ur\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/musicbrainz/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -7842,12 +7842,12 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Form/Role/LinkType.pm:111
 #, perl-brace-format
 msgid "This attribute can only be specified {max} times. You specified {n}."
-msgstr ""
+msgstr "この属性は最大{max}回指定できます。{n}回指定しました。"
 
 #: ../root/scripts/text_strings.tt:116
 #: ../lib/MusicBrainz/Server/Form/Role/LinkType.pm:95
 msgid "This attribute is not supported for the selected relationship type."
-msgstr ""
+msgstr "この属性は選択された関連に対応していません。"
 
 #: ../root/scripts/text_strings.tt:118
 #: ../lib/MusicBrainz/Server/Form/Role/LinkType.pm:106
@@ -10622,7 +10622,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Controller/Artist.pm:524
 msgid "You cannot merge a special purpose artist into another artist"
-msgstr ""
+msgstr "特殊目的のアーティストを他のアーティストと合併出来ません。"
 
 #: ../lib/MusicBrainz/Server/Controller/Artist.pm:529
 msgid "You cannot merge into Deleted Artist"
@@ -10635,7 +10635,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Controller/CDStub.pm:62
 msgid "The required TOC parameter was invalid or not present"
-msgstr ""
+msgstr "必須のTOCパラメータは無効、又は不在でした。"
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:146
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:310
@@ -10645,20 +10645,20 @@ msgstr "与えた CD TOC は有効ではありません。"
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:159
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:324
 msgid "The provided medium id is not valid"
-msgstr ""
+msgstr "与えたメディアIDは無効です。"
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:165
 msgid "This CDTOC is already attached to this medium"
-msgstr ""
+msgstr "このCD TOCは既にこのメディアに接続されてます。"
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:174
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:332
 msgid "The selected medium cannot have disc IDs"
-msgstr ""
+msgstr "選択されたメディアはDisc IDに与えられません。"
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:201
 msgid "The provided artist id is not valid"
-msgstr ""
+msgstr "与えたアーティストIDは無効です。"
 
 #: ../lib/MusicBrainz/Server/Controller/Edit.pm:188
 msgid "Default"
@@ -10696,7 +10696,7 @@ msgstr "この ISRC は存在しません"
 
 #: ../lib/MusicBrainz/Server/Controller/Recording.pm:233
 msgid "This ISRC already exists for this recording"
-msgstr ""
+msgstr "このISRCは既にこのレコーディングに与えてます。"
 
 #: ../lib/MusicBrainz/Server/Controller/Relationship/LinkType.pm:48
 #, perl-brace-format
@@ -10714,7 +10714,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Controller/Release.pm:582
 msgid ""
 "This merge strategy is not applicable to the releases you have selected."
-msgstr ""
+msgstr "この合併方法は選択されたリリースに適用できません。"
 
 #: ../lib/MusicBrainz/Server/Controller/Role/Annotation.pm:174
 msgid "The old and new annotation ids must be unique, positive integers."
@@ -10829,7 +10829,7 @@ msgstr "アーティストを編集"
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/EditArtistCredit.pm:24
 msgid "Edit artist credit"
-msgstr ""
+msgstr "アーティストクレジットを編集"
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/Merge.pm:13
 msgid "Merge artists"
@@ -11289,7 +11289,7 @@ msgstr "{credit} のアーティスト名を追加してください。"
 msgid ""
 "Artist \"{artist}\" is unlinked, please select an existing artist.\n"
 "                       You may need to add a new artist to MusicBrainz first."
-msgstr ""
+msgstr "アーティスト「{artist}」は削除されてます。他のアーティストをお選びください。\nMusicBrainzに新たなアーティストを追加する必要がある場合があります。"
 
 #: ../lib/MusicBrainz/Server/Form/Field/ArtistCredit.pm:74
 msgid "Artist credit field is required"
@@ -11334,7 +11334,7 @@ msgstr "有効な ISWC ではありません"
 
 #: ../lib/MusicBrainz/Server/Form/Field/LabelCode.pm:14
 msgid "Label codes must be greater than 0 and 5 digits at most"
-msgstr ""
+msgstr "レーベルコードは１～５桁です"
 
 #: ../lib/MusicBrainz/Server/Form/Field/Length.pm:31
 msgid "Not a valid time. Must be in the format MM:SS"
@@ -11362,7 +11362,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Form/Merge/Release.pm:61
 msgid "Another medium is already in this position"
-msgstr ""
+msgstr "このポジションに既に他のメディアがあります。"
 
 #: ../lib/MusicBrainz/Server/Form/Merge/Release.pm:64
 msgid "Positions must be greater than 0"
@@ -11407,7 +11407,7 @@ msgstr ""
 msgid ""
 "This barcode is invalid, please check that you've correctly entered the "
 "barcode."
-msgstr ""
+msgstr "このバーコードは無効です。ご確認ください。"
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Information.pm:93
 msgid "You cannot use the same country more than once"
@@ -11675,7 +11675,7 @@ msgstr "非公式や非合法のリリース、すなわちアーティストや
 msgid ""
 "A pseudo-release is a duplicate release for translation/transliteration "
 "purposes."
-msgstr ""
+msgstr "擬似リリースは、翻訳・翻字のための副リリース。"
 
 #: ../lib/MusicBrainz/Server/Wizard/ReleaseEditor.pm:53
 msgid "Release Information"
