@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-09-27 01:28+0000\n"
+"PO-Revision-Date: 2013-09-27 03:59+0000\n"
 "Last-Translator: th1rtyf0ur\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/musicbrainz/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1531,15 +1531,15 @@ msgstr "自動編集"
 
 #: ../root/account/preferences.tt:43
 msgid "Automatically subscribe me to artists I create."
-msgstr ""
+msgstr "自分で追加したアーティストを自動的に加入。"
 
 #: ../root/account/preferences.tt:45
 msgid "Automatically subscribe me to labels I create."
-msgstr ""
+msgstr "自分で追加したレーベルを自動的に加入。"
 
 #: ../root/browse/page_selector.tt:54
 msgid "Back"
-msgstr ""
+msgstr "戻る"
 
 #: ../root/elections/not_found.tt:5
 msgid "Back to all elections."
@@ -1547,15 +1547,15 @@ msgstr ""
 
 #: ../root/elections/show.tt:5
 msgid "Back to elections"
-msgstr ""
+msgstr "選挙に戻る"
 
 #: ../root/report/bad_amazon_urls.tt:1 ../root/report/bad_amazon_urls.tt:3
 msgid "Bad Amazon URLs"
-msgstr ""
+msgstr "無効のAmazon URL"
 
 #: ../root/main/400.tt:1 ../root/main/400.tt:3
 msgid "Bad Request"
-msgstr ""
+msgstr "無効のリクエスト"
 
 #: ../root/cdtoc/attach_artist_releases.tt:39
 #: ../root/cdtoc/attach_filter_release.tt:53 ../root/cdtoc/list.tt:11
@@ -1564,7 +1564,7 @@ msgstr ""
 #: ../root/release_group/index.tt:22 ../root/release_group/releases-list.tt:28
 #: ../root/release/merge.tt:35
 msgid "Barcode"
-msgstr ""
+msgstr "バーコード"
 
 #: ../root/cdstub/edit_form.tt:7 ../root/cdstub/layout.tt:16
 #: ../root/edit/details/add_release.tt:67
@@ -1575,7 +1575,7 @@ msgstr ""
 #: ../root/release/edit/information.tt:139 ../root/release/index.tt:17
 #: ../root/release/sidebar.tt:27
 msgid "Barcode:"
-msgstr ""
+msgstr "バーコード："
 
 #: ../root/cdtoc/lookup.tt:30
 msgid ""
@@ -1708,7 +1708,7 @@ msgstr ""
 #: ../root/account/edit.tt:51 ../root/admin/edit_user.tt:36
 #: ../root/user/profile.tt:113
 msgid "Bio:"
-msgstr ""
+msgstr "プロフィール："
 
 #: ../root/account/edit.tt:45
 msgid "Birth date:"
@@ -1724,7 +1724,7 @@ msgstr ""
 
 #: ../root/components/common-macros.tt:907 ../root/scripts/text_strings.tt:73
 msgid "Born:"
-msgstr ""
+msgstr "出生："
 
 #: ../root/admin/edit_user.tt:13
 msgid "Bot"
@@ -1732,12 +1732,12 @@ msgstr ""
 
 #: ../root/user/privileged.tt:46
 msgid "Bots"
-msgstr ""
+msgstr "ボット"
 
 #: ../root/browse/index.tt:1 ../root/browse/index.tt:3
 #: ../root/layout/menu.tt:202
 msgid "Browse"
-msgstr ""
+msgstr "参照"
 
 #: ../root/browse/area.tt:1 ../root/browse/area.tt:3
 msgid "Browse Areas"
@@ -1745,23 +1745,23 @@ msgstr ""
 
 #: ../root/browse/artist.tt:1 ../root/browse/artist.tt:3
 msgid "Browse Artists"
-msgstr ""
+msgstr "アーティストを参照"
 
 #: ../root/browse/label.tt:1 ../root/browse/label.tt:3
 msgid "Browse Labels"
-msgstr ""
+msgstr "レーベルを参照"
 
 #: ../root/browse/release_group.tt:1 ../root/browse/release_group.tt:3
 msgid "Browse Release Groups"
-msgstr ""
+msgstr "リリースグループを参照"
 
 #: ../root/browse/release.tt:1 ../root/browse/release.tt:3
 msgid "Browse Releases"
-msgstr ""
+msgstr "リリースを参照"
 
 #: ../root/browse/work.tt:1 ../root/browse/work.tt:3
 msgid "Browse Works"
-msgstr ""
+msgstr "ワークを参照"
 
 #: ../root/browse/index.tt:10
 msgid "Browse areas"
@@ -1769,49 +1769,49 @@ msgstr ""
 
 #: ../root/browse/index.tt:5 ../root/search/index.tt:5
 msgid "Browse artists"
-msgstr ""
+msgstr "アーティストを参照"
 
 #: ../root/browse/page_selector.tt:17
 msgid "Browse further"
-msgstr ""
+msgstr "もっと参照"
 
 #: ../root/browse/index.tt:6 ../root/search/index.tt:6
 msgid "Browse labels"
-msgstr ""
+msgstr "レーベルを参照"
 
 #: ../root/artist/browse_various_recordings.tt:2
 msgid "Browse recordings"
-msgstr ""
+msgstr "レコーディングを参照"
 
 #: ../root/artist/browse_various.tt:2 ../root/browse/index.tt:8
 #: ../root/search/index.tt:8
 msgid "Browse release groups"
-msgstr ""
+msgstr "リリースグループを参照"
 
 #: ../root/artist/browse_various_releases.tt:2 ../root/browse/index.tt:7
 #: ../root/search/index.tt:7
 msgid "Browse releases"
-msgstr ""
+msgstr "リリースを参照"
 
 #: ../root/browse/index.tt:9 ../root/search/index.tt:9
 msgid "Browse works"
-msgstr ""
+msgstr "ワークを参照"
 
 #: ../root/layout.tt:152
 msgid "Bug Tracker"
-msgstr ""
+msgstr "バグ管理"
 
 #: ../root/release/lookup.tt:1
 msgid "CD Lookup"
-msgstr ""
+msgstr "CD読み込み"
 
 #: ../root/release/lookup.tt:2
 msgid "CD Lookup results"
-msgstr ""
+msgstr "CD読み込みの結果"
 
 #: ../root/cdtoc/lookup.tt:83
 msgid "CD Not Found"
-msgstr ""
+msgstr "CD見つかりません"
 
 #: ../root/search/results-cdstub.tt:8
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:41
@@ -1828,15 +1828,15 @@ msgstr ""
 
 #: ../root/cdtoc/not_found.tt:1 ../root/cdtoc/not_found.tt:2
 msgid "CD TOC Not Found"
-msgstr ""
+msgstr "CD TOC見つかりません"
 
 #: ../root/cdtoc/info.tt:1
 msgid "CD TOC details"
-msgstr ""
+msgstr "CD TOC の詳細"
 
 #: ../root/edit/details/historic/add_disc_id.tt:13
 msgid "CD TOC:"
-msgstr ""
+msgstr "CD TOC:"
 
 #: ../root/cdstub/header.tt:5
 msgid "CD stub by {artist}"
@@ -1886,32 +1886,32 @@ msgstr ""
 #: ../root/release/merge.tt:152 ../root/scripts/text_strings.tt:27
 #: ../root/work/merge.tt:62
 msgid "Cancel"
-msgstr ""
+msgstr "キャンセル"
 
 #: ../root/edit/cancel.tt:1 ../root/edit/cancel.tt:2
 msgid "Cancel Edit"
-msgstr ""
+msgstr "編集キャンセル"
 
 #: ../root/components/common-macros.tt:563
 msgid "Cancel creating relationship with {name}"
-msgstr ""
+msgstr "{name} との関連をキャンセル"
 
 #: ../root/edit/cancel.tt:24 ../root/edit/edit_header.tt:79
 #: ../root/edit/info.tt:21
 msgid "Cancel edit"
-msgstr ""
+msgstr "編集キャンセル"
 
 #: ../root/elections/show.tt:100
 msgid "Cancel the election"
-msgstr ""
+msgstr "選挙キャンセル"
 
 #: ../root/elections/index.tt:9
 msgid "Candidate"
-msgstr ""
+msgstr "候補"
 
 #: ../root/elections/show.tt:11
 msgid "Candidate:"
-msgstr ""
+msgstr "候補："
 
 #: ../root/release/caa_darkened.tt:1 ../root/release/caa_darkened.tt:2
 #: ../root/release/cover_art.tt:59
@@ -1921,11 +1921,11 @@ msgstr ""
 #: ../root/edit/relationship/cannot_create.tt:1
 #: ../root/edit/relationship/cannot_create.tt:2
 msgid "Cannot Create Relationship"
-msgstr ""
+msgstr "関連を作成できません"
 
 #: ../root/artist/special_purpose.tt:1
 msgid "Cannot edit"
-msgstr ""
+msgstr "編集できません"
 
 #: ../root/account/register.tt:5
 msgid "Captcha incorrect. Try again."
@@ -1938,11 +1938,11 @@ msgstr ""
 #: ../root/edit/details/historic/add_release.tt:78
 #: ../root/report/cat_no_looks_like_asin.tt:18
 msgid "Catalog Number"
-msgstr ""
+msgstr "カタログ番号"
 
 #: ../root/edit/details/edit_release_events.tt:8
 msgid "Catalog number"
-msgstr ""
+msgstr "カタログ番号"
 
 #: ../root/edit/details/add_release_label.tt:13
 #: ../root/edit/details/edit_release_label.tt:23
@@ -1950,7 +1950,7 @@ msgstr ""
 #: ../root/edit/details/remove_release_label.tt:11
 #: ../root/otherlookup/form.tt:3
 msgid "Catalog number:"
-msgstr ""
+msgstr "カタログ番号："
 
 #: ../root/cdtoc/attach_artist_releases.tt:38
 #: ../root/cdtoc/attach_filter_release.tt:52 ../root/cdtoc/list.tt:10
@@ -1958,31 +1958,31 @@ msgstr ""
 #: ../root/release_group/index.tt:21 ../root/release_group/releases-list.tt:27
 #: ../root/release/merge.tt:34
 msgid "Catalog#"
-msgstr ""
+msgstr "カタログ番号"
 
 #: ../root/release/edit/recordings.tt:212
 #: ../root/release/edit/recordings.tt:329 ../root/scripts/text_strings.tt:28
 msgid "Change"
-msgstr ""
+msgstr "変更"
 
 #: ../root/release/edit-links.tt:3
 msgid "Change Data Quality"
-msgstr ""
+msgstr "データ品質を変更"
 
 #: ../root/account/change_password.tt:1 ../root/account/change_password.tt:3
 #: ../root/account/change_password.tt:27 ../root/layout/menu.tt:37
 msgid "Change Password"
-msgstr ""
+msgstr "パスワード変更"
 
 #: ../root/edit/relationship/create.tt:50
 #: ../root/edit/relationship/create.tt:54 ../root/edit/relationship/edit.tt:76
 #: ../root/edit/relationship/edit.tt:80 ../root/scripts/text_strings.tt:106
 msgid "Change direction"
-msgstr ""
+msgstr "方向を変える"
 
 #: ../root/release/change_quality.tt:1 ../root/release/change_quality.tt:2
 msgid "Change release data quality"
-msgstr ""
+msgstr "リリース品質を変更"
 
 #: ../root/release/sidebar.tt:85
 #: ../lib/MusicBrainz/Server/Edit/Historic/ChangeReleaseQuality.pm:12
@@ -1999,11 +1999,11 @@ msgstr "リリース品質を変更"
 #: ../root/edit/details/add_work_annotation.tt:7
 #: ../root/edit/details/historic/add_release_annotation.tt:19
 msgid "Changelog:"
-msgstr ""
+msgstr "更新履歴："
 
 #: ../root/cdtoc/set_durations.tt:15 ../root/edit/index.tt:12
 msgid "Changes"
-msgstr ""
+msgstr "変更"
 
 #: ../root/edit/details/add_relationship_attribute.tt:11
 #: ../root/edit/details/edit_relationship_attribute.tt:18
@@ -2012,7 +2012,7 @@ msgstr ""
 #: ../root/relationship/linktype/form.tt:7
 #: ../root/relationship/linktype/tree.tt:10
 msgid "Child order:"
-msgstr ""
+msgstr " 子順序："
 
 #: ../root/release/cover_art_uploader.tt:15
 msgid "Choose file:"
@@ -2048,7 +2048,7 @@ msgstr ""
 
 #: ../root/release/edit/recordings.tt:376
 msgid "Click Edit to edit the recording associations for this disc."
-msgstr ""
+msgstr "編集をクリックして、このディスクのレコーディング関連を編集。"
 
 #: ../root/scripts/text_strings.tt:120
 msgid "Click here to choose a vocal"
@@ -2102,7 +2102,7 @@ msgstr ""
 
 #: ../root/collection/edits.tt:18 ../root/user/collections.tt:9
 msgid "Collection"
-msgstr ""
+msgstr "コレクション"
 
 #: ../root/collection/not_found.tt:1 ../root/collection/not_found.tt:2
 msgid "Collection Not Found"
