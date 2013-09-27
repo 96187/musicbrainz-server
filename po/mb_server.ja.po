@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-09-27 04:25+0000\n"
+"PO-Revision-Date: 2013-09-27 05:58+0000\n"
 "Last-Translator: th1rtyf0ur\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/musicbrainz/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -2367,7 +2367,7 @@ msgstr ""
 
 #: ../root/edit/search_macros.tt:110
 msgid "Delete"
-msgstr ""
+msgstr "削除"
 
 #: ../root/admin/delete_user.tt:3 ../root/admin/delete_user.tt:13
 #: ../root/admin/delete_user.tt:14 ../root/user/profile/layout.tt:39
@@ -2380,7 +2380,7 @@ msgstr ""
 
 #: ../root/admin/delete_user.tt:2
 msgid "Delete User"
-msgstr ""
+msgstr "ユーザーを削除"
 
 #: ../root/admin/delete_user.tt:23
 msgid "Delete my account"
@@ -2388,7 +2388,7 @@ msgstr "自分のアカウントを削除して"
 
 #: ../root/admin/delete_user.tt:8
 msgid "Delete {e}"
-msgstr ""
+msgstr "{e} を削除"
 
 #: ../root/collection/index.tt:5 ../root/doc/edit_type.tt:40
 msgid "Description"
@@ -2421,7 +2421,7 @@ msgstr ""
 #: ../root/work/details.tt:3 ../root/work/details.tt:4
 #: ../root/work/header.tt:1
 msgid "Details"
-msgstr ""
+msgstr "詳細"
 
 #: ../root/release/edit/tracklist.tt:196
 msgid "Detect track durations"
@@ -2449,7 +2449,7 @@ msgstr ""
 
 #: ../root/components/common-macros.tt:915 ../root/scripts/text_strings.tt:73
 msgid "Died:"
-msgstr ""
+msgstr "死没："
 
 #: ../root/search/form.tt:35 ../root/search/form.tt:40
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:57
@@ -2472,23 +2472,23 @@ msgstr ""
 #: ../root/release/edit_relationships.tt:195
 #: ../root/release_group/edit_form.tt:9 ../root/work/edit_form.tt:8
 msgid "Disambiguation:"
-msgstr ""
+msgstr "曖昧さ回避："
 
 #: ../root/release/discids.tt:8
 msgid "Disc ID"
-msgstr ""
+msgstr "ディスク ID"
 
 #: ../root/cdstub/index.tt:10
 msgid "Disc ID information"
-msgstr ""
+msgstr "ディスクIDの情報"
 
 #: ../root/cdtoc/index.tt:3
 msgid "Disc ID “<code>{discid}</code>”"
-msgstr ""
+msgstr "ディスク ID 「<code>{discid}</code>」"
 
 #: ../root/cdtoc/index.tt:1
 msgid "Disc ID “{discid}”"
-msgstr ""
+msgstr "ディスク ID 「{discid}」"
 
 #: ../root/cdtoc/info.tt:11 ../root/edit/details/add_disc_id.tt:15
 #: ../root/edit/details/historic/add_disc_id.tt:17
@@ -2499,28 +2499,28 @@ msgstr ""
 #: ../root/edit/details/set_track_lengths_from_discid.tt:16
 #: ../root/edit/details/set_track_lengths.tt:16 ../root/otherlookup/form.tt:3
 msgid "Disc ID:"
-msgstr ""
+msgstr "ディスク ID："
 
 #: ../root/release/discids.tt:3 ../root/release/tabs.tt:1
 msgid "Disc IDs"
-msgstr ""
+msgstr "ディスク ID"
 
 #: ../root/report/superfluous_data_tracks.tt:1
 msgid "Disc IDs with superfluous data tracks"
-msgstr ""
+msgstr "余分なデータトラックを含むディスク ID"
 
 #: ../root/release/edit/tracklist.tt:374
 msgid "Disc title"
-msgstr ""
+msgstr "ディスク・タイトル"
 
 #: ../root/release/edit/recordings.tt:255
 #: ../root/release/edit/tracklist.tt:349
 msgid "Disc {num}"
-msgstr ""
+msgstr "ディスク {num}"
 
 #: ../root/release/edit/recordings.tt:249
 msgid "Disc {num}: {title}"
-msgstr ""
+msgstr "ディスク {num}：{title}"
 
 #: ../root/artist/index.tt:33
 msgid "Discography"
@@ -2600,7 +2600,7 @@ msgstr ""
 #: ../root/layout/menu.tt:247
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:47
 msgid "Documentation"
-msgstr ""
+msgstr "ドキュメント"
 
 #: ../root/search/results-doc.tt:1 ../root/search/results-doc.tt:3
 msgid "Documentation Search"
@@ -2618,7 +2618,7 @@ msgstr "アカウント登録がまだの場合は{uri|こちらへ作成}。"
 
 #: ../root/layout.tt:149
 msgid "Donate"
-msgstr ""
+msgstr "寄付する"
 
 #: ../root/account/donation.tt:1 ../root/account/donation.tt:3
 #: ../root/user/profile/layout.tt:33
@@ -2628,7 +2628,7 @@ msgstr ""
 #: ../root/release/edit_relationships.tt:175
 #: ../root/release/edit/tracklist.tt:158 ../root/scripts/text_strings.tt:29
 msgid "Done"
-msgstr ""
+msgstr "完了"
 
 #: ../root/release/edit-links.tt:3
 msgid "Duplicate"
@@ -2636,7 +2636,7 @@ msgstr ""
 
 #: ../root/taglookup/form.tt:8
 msgid "Duration:"
-msgstr ""
+msgstr "収録時間："
 
 #: ../root/release/edit/recordings.tt:106
 msgid ""
@@ -2658,7 +2658,7 @@ msgstr ""
 #: ../root/url/header.tt:1 ../root/user/collections.tt:25
 #: ../root/work/header.tt:1
 msgid "Edit"
-msgstr ""
+msgstr "編集"
 
 #: ../root/edit/index.tt:1
 msgid "Edit #{id}"
@@ -2670,11 +2670,11 @@ msgstr ""
 
 #: ../root/release/edit-links.tt:3
 msgid "Edit All"
-msgstr ""
+msgstr "全てを編集"
 
 #: ../root/label/edit_annotation.tt:1
 msgid "Edit Annotation"
-msgstr ""
+msgstr "注釈を編集"
 
 #: ../root/account/edit_application.tt:1 ../root/account/edit_application.tt:3
 msgid "Edit Application"
@@ -2694,23 +2694,23 @@ msgstr ""
 
 #: ../root/artist/edit.tt:17
 msgid "Edit Artist"
-msgstr ""
+msgstr "アーティストを編集"
 
 #: ../root/artist/edit_alias.tt:12
 msgid "Edit Artist Alias"
-msgstr ""
+msgstr "アーティストの別名を編集"
 
 #: ../root/artist/edit_annotation.tt:1
 msgid "Edit Artist Annotation"
-msgstr ""
+msgstr "アーティストの注釈を編集"
 
 #: ../root/artist/edit_credit.tt:15 ../root/artist/edit_credit.tt:20
 msgid "Edit Artist Credit"
-msgstr ""
+msgstr "アーティストクレジットを編集"
 
 #: ../root/collection/edit.tt:1
 msgid "Edit Collection"
-msgstr ""
+msgstr "コレクションを編集"
 
 #: ../root/release/edit_cover_art.tt:5 ../root/release/edit_cover_art.tt:6
 msgid "Edit Cover Art"
@@ -2722,11 +2722,11 @@ msgstr ""
 
 #: ../root/label/edit.tt:17
 msgid "Edit Label"
-msgstr ""
+msgstr "レーベルを編集"
 
 #: ../root/label/edit_alias.tt:12
 msgid "Edit Label Alias"
-msgstr ""
+msgstr "レーベルの別名を編集"
 
 #: ../root/edit/not_found.tt:1 ../root/edit/not_found.tt:2
 msgid "Edit Not Found"
@@ -2741,33 +2741,33 @@ msgstr "メモを編集"
 #: ../root/account/edit.tt:13 ../root/account/edit.tt:15
 #: ../root/layout/menu.tt:34
 msgid "Edit Profile"
-msgstr ""
+msgstr "プロフィールを編集"
 
 #: ../root/recording/edit_annotation.tt:1
 msgid "Edit Recording Annotation"
-msgstr ""
+msgstr "レコーディングの注釈を編集"
 
 #: ../root/edit/relationship/edit.tt:13 ../root/edit/relationship/edit.tt:15
 msgid "Edit Relationship"
-msgstr ""
+msgstr "関連を編集"
 
 #: ../root/relationship/linkattributetype/edit.tt:1
 #: ../root/relationship/linkattributetype/edit.tt:3
 msgid "Edit Relationship Attribute"
-msgstr ""
+msgstr "関連属性を編集"
 
 #: ../root/admin/index.tt:7
 msgid "Edit Relationship Attributes"
-msgstr ""
+msgstr "関連属性を編集"
 
 #: ../root/relationship/linktype/edit.tt:5
 #: ../root/relationship/linktype/edit.tt:7
 msgid "Edit Relationship Type"
-msgstr ""
+msgstr "関連タイプを編集"
 
 #: ../root/admin/index.tt:6 ../root/layout/menu.tt:90
 msgid "Edit Relationship Types"
-msgstr ""
+msgstr "関連タイプを編集"
 
 #: ../root/release/edit_relationships.tt:316
 msgid "Edit Relationships: {release}"
@@ -2775,21 +2775,21 @@ msgstr ""
 
 #: ../root/release/edit_annotation.tt:1
 msgid "Edit Release Annotation"
-msgstr ""
+msgstr "リリースの注釈を編集"
 
 #: ../root/release_group/edit.tt:21
 msgid "Edit Release Group"
-msgstr ""
+msgstr "リリースグループを編集"
 
 #: ../root/release_group/edit_annotation.tt:1
 msgid "Edit Release Group Annotation"
-msgstr ""
+msgstr "リリースグループの注釈を編集"
 
 #: ../root/doc/edit_types.tt:1 ../root/doc/edit_types.tt:3
 #: ../root/doc/edit_type.tt:35 ../root/edit/info.tt:59
 #: ../root/layout/menu.tt:262
 msgid "Edit Types"
-msgstr ""
+msgstr "タイプを編集"
 
 #: ../root/url/edit.tt:14 ../root/url/edit.tt:15
 #: ../lib/MusicBrainz/Server/Edit/URL/Edit.pm:22
