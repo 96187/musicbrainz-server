@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-09-26 09:14+0000\n"
+"PO-Revision-Date: 2013-09-27 01:28+0000\n"
 "Last-Translator: th1rtyf0ur\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/musicbrainz/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1387,35 +1387,35 @@ msgstr ""
 
 #: ../root/browse/artist.tt:8
 msgid "Artists starting with “{index}”"
-msgstr ""
+msgstr "「{index}」から始まるアーティスト"
 
 #: ../root/report/possible_collaborations.tt:1
 #: ../root/report/possible_collaborations.tt:3
 msgid "Artists that may be collaborations"
-msgstr ""
+msgstr "コラボであろうアーティスト"
 
 #: ../root/report/artists_that_may_be_groups.tt:1
 #: ../root/report/artists_that_may_be_groups.tt:3 ../root/report/index.tt:17
 msgid "Artists that may be groups"
-msgstr ""
+msgstr "グループであろうアーティスト"
 
 #: ../root/report/artists_that_may_be_persons.tt:1
 #: ../root/report/artists_that_may_be_persons.tt:3 ../root/report/index.tt:18
 msgid "Artists that may be persons"
-msgstr ""
+msgstr "人であろうアーティスト"
 
 #: ../root/report/index.tt:21
 msgid "Artists which have collaboration relationships"
-msgstr ""
+msgstr "コラボ関連持ちのアーティスト"
 
 #: ../root/report/index.tt:22
 msgid "Artists which look like collaborations"
-msgstr ""
+msgstr "コラボにみえるアーティスト"
 
 #: ../root/report/collaboration_relationships.tt:1
 #: ../root/report/collaboration_relationships.tt:3
 msgid "Artists with Collaboration Relationships"
-msgstr ""
+msgstr "コラボ関連持ちのアーティスト"
 
 #: ../root/report/artists_with_no_subscribers.tt:1
 #: ../root/report/artists_with_no_subscribers.tt:3 ../root/report/index.tt:19
@@ -1430,11 +1430,11 @@ msgstr ""
 
 #: ../root/recording/fingerprints.tt:3
 msgid "Associated AcoustIDs"
-msgstr ""
+msgstr "関連のAcoustID"
 
 #: ../root/recording/fingerprints.tt:5
 msgid "Associated PUIDs"
-msgstr ""
+msgstr "関連のPUID"
 
 #: ../root/puid/index.tt:5
 msgid "Associated with recordings"
@@ -1469,7 +1469,7 @@ msgstr "CD TOC の添付"
 
 #: ../root/cdtoc/lookup.tt:52
 msgid "Attach Disc ID"
-msgstr ""
+msgstr "DiscIDを接続"
 
 #: ../root/cdtoc/index.tt:7
 msgid "Attached to releases"
@@ -1477,7 +1477,7 @@ msgstr ""
 
 #: ../root/artist/relationships.tt:15
 msgid "Attributes"
-msgstr ""
+msgstr "属性"
 
 #: ../root/edit/details/add_relationship_type.tt:19
 #: ../root/edit/details/edit_relationship_type.tt:39
@@ -1487,7 +1487,7 @@ msgstr ""
 #: ../root/relationship/linktype/form.tt:30
 #: ../root/release/edit_relationships.tt:110
 msgid "Attributes:"
-msgstr ""
+msgstr "属性："
 
 #: ../root/oauth2/authorize.tt:3
 msgid "Authorization"
@@ -1499,23 +1499,23 @@ msgstr ""
 
 #: ../root/admin/edit_user.tt:7
 msgid "Auto-editor"
-msgstr ""
+msgstr "自動エディター"
 
 #: ../root/layout/menu.tt:133
 msgid "Auto-editor Elections"
-msgstr ""
+msgstr "自動エディター選挙"
 
 #: ../root/elections/show.tt:1 ../root/elections/show.tt:3
 msgid "Auto-editor election #{no}"
-msgstr ""
+msgstr "自動エディター選挙 {no}号"
 
 #: ../root/elections/index.tt:1 ../root/elections/index.tt:3
 msgid "Auto-editor elections"
-msgstr ""
+msgstr "自動エディター選挙"
 
 #: ../root/user/privileged.tt:18
 msgid "Auto-editors"
-msgstr ""
+msgstr "自動エディター"
 
 #: ../root/user/privileged.tt:19
 msgid ""
@@ -1527,7 +1527,7 @@ msgstr ""
 
 #: ../root/user/profile.tt:151
 msgid "Auto-edits"
-msgstr ""
+msgstr "自動編集"
 
 #: ../root/account/preferences.tt:43
 msgid "Automatically subscribe me to artists I create."
