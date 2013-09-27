@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-09-27 03:59+0000\n"
+"PO-Revision-Date: 2013-09-27 04:25+0000\n"
 "Last-Translator: th1rtyf0ur\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/musicbrainz/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1089,7 +1089,7 @@ msgstr ""
 
 #: ../root/admin/delete_user.tt:20
 msgid "Are you sure you want to delete your account? This cannot be undone!"
-msgstr ""
+msgstr "本当にアカウントを削除して宜しいでしょうか？元に戻す事はできません！"
 
 #: ../root/elections/nominate.tt:5
 msgid ""
@@ -1716,7 +1716,7 @@ msgstr "生年月日:"
 
 #: ../root/layout/menu.tt:148
 msgid "Blog"
-msgstr ""
+msgstr "ブログ"
 
 #: ../root/components/common-macros.tt:911 ../root/scripts/text_strings.tt:78
 msgid "Born in:"
@@ -1728,7 +1728,7 @@ msgstr "出生："
 
 #: ../root/admin/edit_user.tt:13
 msgid "Bot"
-msgstr ""
+msgstr "ボット"
 
 #: ../root/user/privileged.tt:46
 msgid "Bots"
@@ -2082,19 +2082,19 @@ msgstr ""
 
 #: ../root/layout/menu.tt:127
 msgid "Code of Conduct"
-msgstr ""
+msgstr "行動規範"
 
 #: ../root/report/collaboration_relationships.tt:19
 msgid "Collaboration"
-msgstr ""
+msgstr "コラボレーション"
 
 #: ../root/report/collaboration_relationships.tt:20
 msgid "Collaborator"
-msgstr ""
+msgstr "コラボレーたー"
 
 #: ../root/release/edit/tracklist.tt:358
 msgid "Collapse Disc"
-msgstr ""
+msgstr "ディスクを折りたたむ"
 
 #: ../root/relationship/linktype/tree.tt:50
 msgid "Collapse all descriptions"
@@ -2106,7 +2106,7 @@ msgstr "コレクション"
 
 #: ../root/collection/not_found.tt:1 ../root/collection/not_found.tt:2
 msgid "Collection Not Found"
-msgstr ""
+msgstr "コレクション見つかりません"
 
 #: ../root/user/subscriptions/collection.tt:1
 #: ../root/user/subscriptions/menu.tt:4
@@ -2115,7 +2115,7 @@ msgstr ""
 
 #: ../root/collection/edit_form.tt:4
 msgid "Collection details"
-msgstr ""
+msgstr "コレクションの詳細"
 
 #: ../root/collection/layout.tt:5
 msgid "Collection information"
@@ -2123,13 +2123,13 @@ msgstr ""
 
 #: ../root/collection/layout.tt:1
 msgid "Collection “{collection}”"
-msgstr ""
+msgstr "「{collection}」のコレクション"
 
 #: ../root/release/collections.tt:1 ../root/release/collections.tt:2
 #: ../root/release/sidebar.tt:111 ../root/user/collections.tt:1
 #: ../root/user/collections.tt:3 ../root/user/profile/layout.tt:12
 msgid "Collections"
-msgstr ""
+msgstr "コレクション"
 
 #: ../root/cdstub/index.tt:3
 msgid "Comment"
@@ -2177,7 +2177,7 @@ msgstr ""
 #: ../root/account/change_password.tt:24 ../root/account/register.tt:30
 #: ../root/account/reset_password.tt:11
 msgid "Confirm password:"
-msgstr ""
+msgstr "パスワード確認："
 
 #: ../root/account/registered.tt:4
 msgid ""
@@ -2195,15 +2195,15 @@ msgstr ""
 
 #: ../root/components/forms.tt:228
 msgid "Copy"
-msgstr ""
+msgstr "コピー"
 
 #: ../root/release/edit/missing_entities.tt:21
 msgid "Copy Name"
-msgstr ""
+msgstr "名前をコピー"
 
 #: ../root/release/edit/recordings.tt:402
 msgid "Copy all track changes to associated recordings."
-msgstr ""
+msgstr "トラックの変更を関連したレコーディングにも加える"
 
 #: ../root/cdtoc/attach_artist_releases.tt:36
 #: ../root/cdtoc/attach_filter_release.tt:50 ../root/collection/index.tt:22
@@ -2223,7 +2223,7 @@ msgstr "国:"
 
 #: ../root/release/cover_art.tt:3 ../root/release/tabs.tt:1
 msgid "Cover Art"
-msgstr ""
+msgstr "カバーアート"
 
 #: ../root/layout.tt:160
 msgid ""
@@ -2245,20 +2245,20 @@ msgstr ""
 
 #: ../root/admin/wikidoc/create.tt:12
 msgid "Create"
-msgstr ""
+msgstr "作成"
 
 #: ../root/account/register.tt:43 ../root/layout/menu.tt:106
 msgid "Create Account"
-msgstr ""
+msgstr "アカウント作成"
 
 #: ../root/edit/relationship/create.tt:13
 #: ../root/edit/relationship/create.tt:15
 msgid "Create Relationship"
-msgstr ""
+msgstr "関連を作成"
 
 #: ../root/user/collections.tt:42
 msgid "Create a new collection"
-msgstr ""
+msgstr "新しいコレクションを作成"
 
 #: ../root/relationship/linkattributetype/instruments.tt:8
 msgid "Create a new instrument"
@@ -2278,19 +2278,19 @@ msgstr ""
 
 #: ../root/account/register.tt:1 ../root/account/register.tt:8
 msgid "Create an Account"
-msgstr ""
+msgstr "アカウント作成"
 
 #: ../root/collection/edit_form.tt:18
 msgid "Create collection"
-msgstr ""
+msgstr "コレクションを作成"
 
 #: ../root/components/common-macros.tt:627
 msgid "Create relationship"
-msgstr ""
+msgstr "関連を作成"
 
 #: ../root/components/common-macros.tt:563
 msgid "Create relationship with {other}"
-msgstr ""
+msgstr "{other} との関連を作成"
 
 #: ../root/release/edit_relationships.tt:244
 msgid "Create work"
@@ -2298,7 +2298,7 @@ msgstr ""
 
 #: ../root/edit/search_macros.tt:287
 msgid "Created"
-msgstr ""
+msgstr "作成時刻"
 
 #: ../root/release/edit_relationships.tt:136
 #: ../root/release/edit_relationships.tt:145
@@ -2312,7 +2312,7 @@ msgstr ""
 
 #: ../root/doc/edit_type.tt:50
 msgid "Data Quality"
-msgstr ""
+msgstr "データ品質"
 
 #: ../root/edit/details/change_release_quality.tt:7
 #: ../root/edit/details/historic/change_artist_quality.tt:7
@@ -2320,7 +2320,7 @@ msgstr ""
 #: ../root/edit/info.tt:46 ../root/release/change_quality.tt:5
 #: ../root/release/sidebar.tt:37
 msgid "Data Quality:"
-msgstr ""
+msgstr "データ品質："
 
 #: ../root/layout/menu.tt:295
 msgid "Data Removal Policy"
@@ -2336,7 +2336,7 @@ msgstr "データの削除ポリシー"
 #: ../root/release/lookup.tt:11 ../root/release/merge.tt:31
 #: ../root/search/lib/inline-results-release.tt:12
 msgid "Date"
-msgstr ""
+msgstr "日付"
 
 #: ../root/alias/edit_form.tt:26 ../root/area/edit_form.tt:16
 #: ../root/artist/edit_form.tt:59 ../root/label/edit_form.tt:59
@@ -2372,7 +2372,7 @@ msgstr ""
 #: ../root/admin/delete_user.tt:3 ../root/admin/delete_user.tt:13
 #: ../root/admin/delete_user.tt:14 ../root/user/profile/layout.tt:39
 msgid "Delete Account"
-msgstr ""
+msgstr "アカウント削除"
 
 #: ../root/scripts/text_strings.tt:123
 msgid "Delete Note"
@@ -2384,7 +2384,7 @@ msgstr ""
 
 #: ../root/admin/delete_user.tt:23
 msgid "Delete my account"
-msgstr ""
+msgstr "自分のアカウントを削除して"
 
 #: ../root/admin/delete_user.tt:8
 msgid "Delete {e}"
@@ -2614,7 +2614,7 @@ msgstr ""
 
 #: ../root/user/login.tt:12
 msgid "Don't have an account? {uri|Create one now}!"
-msgstr ""
+msgstr "アカウント登録がまだの場合は{uri|こちらへ作成}。"
 
 #: ../root/layout.tt:149
 msgid "Donate"
