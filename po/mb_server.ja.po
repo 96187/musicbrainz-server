@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-09-27 07:58+0000\n"
+"PO-Revision-Date: 2013-09-27 09:00+0000\n"
 "Last-Translator: th1rtyf0ur\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/musicbrainz/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1095,7 +1095,7 @@ msgstr "本当にアカウントを削除して宜しいでしょうか？元に
 msgid ""
 "Are you sure you want to nominate the editor {editor} for auto-editor "
 "status?"
-msgstr ""
+msgstr "{editor}を本当に自動エディターとして推薦しますか？"
 
 #: ../root/recording/delete_puid.tt:2
 msgid ""
@@ -4983,11 +4983,11 @@ msgid ""
 "Note! If you do not know the month or day of release, please leave them "
 "empty.  January 1st is not often the actual release date, please double "
 "check that you have entered the release date correctly."
-msgstr ""
+msgstr "注意！リリースの発売日が知らない場合、空白のままにしておいてください。１月１日は大体本当の発売日ではないから、ご確認ください。"
 
 #: ../root/edit/details/set_track_lengths.tt:42
 msgid "Note:"
-msgstr ""
+msgstr "備考："
 
 #: ../root/edit/search_macros.tt:221
 msgid ""
@@ -5001,11 +5001,11 @@ msgstr ""
 
 #: ../root/release/edit/recordings.tt:382
 msgid "Now loading recording associations..."
-msgstr ""
+msgstr "レコーディング情報を読み込み中…"
 
 #: ../root/release/edit/tracklist.tt:284 ../root/release/edit/tracklist.tt:406
 msgid "Now loading tracklist..."
-msgstr ""
+msgstr "トラックリストを読み込み中…"
 
 #: ../root/oauth2/authorize.tt:1 ../root/oauth2/oob.tt:1
 msgid "OAuth Authorization"
@@ -5025,7 +5025,7 @@ msgstr ""
 
 #: ../root/layout/sidebar/sidebar-favicons.tt:14
 msgid "Official homepage"
-msgstr ""
+msgstr "公式サイト"
 
 #: ../root/account/applications.tt:5
 msgid "Offline Access"
@@ -5033,11 +5033,11 @@ msgstr ""
 
 #: ../root/annotation/history.tt:6
 msgid "Old"
-msgstr ""
+msgstr "前"
 
 #: ../root/edit/details/edit_medium.tt:210
 msgid "Old Artist"
-msgstr ""
+msgstr "前のアーティスト"
 
 #: ../root/edit/details/edit_medium.tt:48
 msgid "Old Tracklist"
@@ -5049,7 +5049,7 @@ msgstr ""
 
 #: ../root/account/change_password.tt:22
 msgid "Old password:"
-msgstr ""
+msgstr "前のパスワード："
 
 #: ../root/edit/details/reorder_cover_art.tt:14
 msgid "Old positions:"
@@ -5057,36 +5057,36 @@ msgstr ""
 
 #: ../root/edit/details/edit_medium.tt:179
 msgid "Old recording"
-msgstr ""
+msgstr "前のレコーディング"
 
 #: ../root/edit/details/historic/edit_relationship.tt:6
 msgid "Old relationships:"
-msgstr ""
+msgstr "前の関連："
 
 #: ../root/edit/details/historic/merge_releases.tt:3
 msgid "Old releases:"
-msgstr ""
+msgstr "前のリリース："
 
 #: ../root/edit/details/change_wikidoc.tt:11
 #: ../root/edit/details/change_wikidoc.tt:16
 msgid "Old version:"
-msgstr ""
+msgstr "前のバージョン："
 
 #: ../root/edit/details/historic/edit_release_language.tt:3
 msgid "Old:"
-msgstr ""
+msgstr "前："
 
 #: ../root/cdtoc/move_search.tt:5
 msgid ""
 "Only releases with the same amount of tracks ({n}) as the release the disc "
 "ID is currently attached to are shown."
-msgstr ""
+msgstr "ディスクIDが接続してるリリースと同じトラック数（{n}）のリリースしか表示していません。"
 
 #: ../root/edit/cannot_cancel.tt:6
 msgid ""
 "Only the user who created an edit can cancel it, either you did not create "
 "{edit} or perhaps it has already been closed."
-msgstr ""
+msgstr "編集を作成したユーザーしかキャンセルできません。{edit}を作成してない、又は既に終了しました。"
 
 #: ../root/release/edit_relationships.tt:41
 #: ../root/release/edit_relationships.tt:182
@@ -5097,7 +5097,7 @@ msgstr ""
 
 #: ../root/edit/cannot_approve.tt:10
 msgid "Only {doc|auto-editors} can approve an edit."
-msgstr ""
+msgstr "{doc|自動エディター}しか編集承認できません。"
 
 #: ../root/edit/search_macros.tt:90
 msgid ""
@@ -5116,7 +5116,7 @@ msgstr ""
 #: ../root/edit/open.tt:14 ../root/edit/open.tt:16
 #: ../root/user/profile/layout.tt:19
 msgid "Open Edits"
-msgstr ""
+msgstr "オープン中編集"
 
 #: ../root/area/layout.tt:85 ../root/artist/layout.tt:121
 #: ../root/collection/layout.tt:14 ../root/edit/list_header.tt:15
@@ -5124,7 +5124,7 @@ msgstr ""
 #: ../root/release_group/layout.tt:62 ../root/release/sidebar.tt:102
 #: ../root/url/layout.tt:13 ../root/work/layout.tt:52
 msgid "Open edits"
-msgstr ""
+msgstr "オープン中編集"
 
 #: ../root/components/common-macros.tt:489
 #: ../root/components/common-macros.tt:494
@@ -5133,12 +5133,12 @@ msgstr ""
 
 #: ../root/edit/info.tt:34
 msgid "Opened:"
-msgstr ""
+msgstr "開始："
 
 #: ../root/release/edit/recordings.tt:395
 #: ../root/release/edit/tracklist.tt:154 ../root/release/edit/tracklist.tt:184
 msgid "Options"
-msgstr ""
+msgstr "オプション"
 
 #: ../root/cdtoc/lookup.tt:97
 msgid "Or..."
@@ -5146,26 +5146,26 @@ msgstr ""
 
 #: ../root/otherlookup/results.tt:1 ../root/otherlookup/results.tt:3
 msgid "Other Lookup Results"
-msgstr ""
+msgstr "他の探索の結果"
 
 #: ../root/otherlookup/index.tt:1 ../root/otherlookup/index.tt:3
 msgid "Other Lookups"
-msgstr ""
+msgstr "他の探索"
 
 #: ../root/search/index.tt:16
 msgid "Other lookups"
-msgstr ""
+msgstr "他の探索"
 
 #: ../root/user/profile.tt:200
 msgid "Overall"
-msgstr ""
+msgstr "合計"
 
 #: ../root/area/header.tt:1 ../root/artist/header.tt:1
 #: ../root/cdstub/header.tt:9 ../root/collection/header.tt:1
 #: ../root/release_group/header.tt:1 ../root/tag/header.tt:1
 #: ../root/url/header.tt:1 ../root/work/header.tt:1
 msgid "Overview"
-msgstr ""
+msgstr "概要"
 
 #: ../root/collection/layout.tt:7
 msgid "Owner:"
@@ -5173,36 +5173,36 @@ msgstr ""
 
 #: ../root/recording/fingerprints.tt:11
 msgid "PUID"
-msgstr ""
+msgstr "PUID"
 
 #: ../root/puid/index.tt:1 ../root/puid/index.tt:3
 msgid "PUID “{puid}”"
-msgstr ""
+msgstr "PUID「{puid}」"
 
 #: ../root/edit/details/remove_puid.tt:7 ../root/otherlookup/form.tt:3
 #: ../root/taglookup/form.tt:10
 msgid "PUID:"
-msgstr ""
+msgstr "PUID："
 
 #: ../root/edit/details/add_puids.tt:8
 msgid "PUIDs:"
-msgstr ""
+msgstr "PUID："
 
 #: ../root/edit/details/add_release.tt:60
 #: ../root/edit/details/edit_release.tt:60
 #: ../root/release/edit/information.tt:98 ../root/release/sidebar.tt:37
 msgid "Packaging:"
-msgstr ""
+msgstr "パッケージ："
 
 #: ../root/doc/bare_error.tt:1 ../root/doc/error.tt:1 ../root/doc/error.tt:7
 #: ../root/main/404.tt:4 ../root/main/404.tt:6 ../root/main/mirror_404.tt:1
 #: ../root/main/mirror_404.tt:3
 msgid "Page Not Found"
-msgstr ""
+msgstr "ページが見つかりませんでした"
 
 #: ../root/admin/wikidoc/index.tt:32
 msgid "Page name"
-msgstr ""
+msgstr "ページ名"
 
 #: ../root/edit/details/change_wikidoc.tt:29
 msgid "Page removed"
@@ -8000,7 +8000,7 @@ msgid ""
 "This label has no relationships or releases and will be removed "
 "automatically in the next few days. If this is not intended, please add more"
 " data to this label."
-msgstr ""
+msgstr "このレーベルは関連やリリースが付いてないため、数日後に自動的に削除されます。削除されないため、レーベルにデータをもっと付加してください。"
 
 #: ../root/label/tags.tt:2
 msgid "This label has no tags."
@@ -8456,7 +8456,7 @@ msgstr ""
 
 #: ../root/components/common-macros.tt:457
 msgid "This user is automated."
-msgstr ""
+msgstr "このユーザーはボットです。"
 
 #: ../root/components/common-macros.tt:456
 msgid "This user is new to MusicBrainz."
@@ -9863,11 +9863,11 @@ msgstr ""
 
 #: ../root/edit/search_macros.tt:14
 msgid "auto-edits"
-msgstr ""
+msgstr "自動編集"
 
 #: ../root/components/common-macros.tt:690
 msgid "automatically applied"
-msgstr ""
+msgstr "自動適用"
 
 #: ../root/edit/search_macros.tt:159
 msgid "before"
@@ -10028,11 +10028,11 @@ msgstr ""
 
 #: ../root/user/profile.tt:55
 msgid "nominate for auto-editor"
-msgstr ""
+msgstr "自動エディターとして推薦します"
 
 #: ../root/edit/search_macros.tt:14
 msgid "non-auto-edits"
-msgstr ""
+msgstr "非自動編集"
 
 #: ../root/relationship/linkattributetype/common.tt:19
 msgid "none"
@@ -10266,7 +10266,7 @@ msgstr ""
 
 #: ../root/user/profile.tt:44
 msgid "{doc|Auto-Editor}"
-msgstr ""
+msgstr "{doc|自動エディター}"
 
 #: ../root/cdstub/index.tt:13
 msgid "{doc|Disc ID}:"
