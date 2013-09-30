@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-09-30 05:59+0000\n"
+"PO-Revision-Date: 2013-09-30 06:59+0000\n"
 "Last-Translator: th1rtyf0ur\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/musicbrainz/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -6207,7 +6207,7 @@ msgstr ""
 #: ../root/report/releases_with_unlikely_language_script.tt:1
 #: ../root/report/releases_with_unlikely_language_script.tt:3
 msgid "Releases with unlikely language/script pairs"
-msgstr ""
+msgstr "言語と表記が合わないリリース"
 
 #: ../root/report/index.tt:49 ../root/report/releases_without_language.tt:1
 #: ../root/report/releases_without_language.tt:3
@@ -6257,7 +6257,7 @@ msgstr ""
 #: ../root/release/edit-links.tt:3 ../root/scripts/text_strings.tt:44
 #: ../root/user/collections.tt:26
 msgid "Remove"
-msgstr ""
+msgstr "削除"
 
 #: ../root/account/remove_application.tt:1
 #: ../root/account/remove_application.tt:3
@@ -6274,11 +6274,11 @@ msgstr ""
 
 #: ../root/artist/delete_alias.tt:1
 msgid "Remove Artist Alias"
-msgstr ""
+msgstr "アーティストの別名を削除"
 
 #: ../root/components/forms.tt:278 ../root/release/edit/tracklist.tt:73
 msgid "Remove Artist Credit"
-msgstr ""
+msgstr "アーティストクレジットを削除"
 
 #: ../root/release/remove_cover_art.tt:1 ../root/release/remove_cover_art.tt:2
 msgid "Remove Cover Art"
@@ -6286,7 +6286,7 @@ msgstr ""
 
 #: ../root/cdtoc/remove.tt:1 ../root/cdtoc/remove.tt:2
 msgid "Remove Disc ID"
-msgstr ""
+msgstr "ディスク ID を削除"
 
 #: ../root/release/edit/information.tt:79
 msgid "Remove Event"
@@ -6298,15 +6298,15 @@ msgstr ""
 
 #: ../root/isrc/delete.tt:1 ../root/isrc/delete.tt:3
 msgid "Remove ISRC “{isrc}”"
-msgstr ""
+msgstr "ISRC「{isrc}」を削除"
 
 #: ../root/label/delete.tt:2 ../root/release/edit/information.tt:121
 msgid "Remove Label"
-msgstr ""
+msgstr "レーベルを削除"
 
 #: ../root/label/delete_alias.tt:1
 msgid "Remove Label Alias"
-msgstr ""
+msgstr "レーベルの別名を削除"
 
 #: ../root/recording/delete_puid.tt:1
 #: ../lib/MusicBrainz/Server/Edit/PUID/Delete.pm:14
@@ -6315,41 +6315,41 @@ msgstr "PUIDを削除"
 
 #: ../root/admin/wikidoc/delete.tt:1 ../root/admin/wikidoc/delete.tt:3
 msgid "Remove Page"
-msgstr ""
+msgstr "ページを削除"
 
 #: ../root/recording/delete.tt:2
 msgid "Remove Recording"
-msgstr ""
+msgstr "レコーディングを削除"
 
 #: ../root/edit/relationship/delete.tt:1 ../root/edit/relationship/delete.tt:3
 msgid "Remove Relationship"
-msgstr ""
+msgstr "関連を削除"
 
 #: ../root/relationship/linkattributetype/delete.tt:1
 #: ../root/relationship/linkattributetype/delete.tt:3
 msgid "Remove Relationship Attribute"
-msgstr ""
+msgstr "関連属性を削除"
 
 #: ../root/relationship/linktype/delete.tt:1
 #: ../root/relationship/linktype/delete.tt:3
 msgid "Remove Relationship Type"
-msgstr ""
+msgstr "関連タイプを削除"
 
 #: ../root/release/delete.tt:2
 msgid "Remove Release"
-msgstr ""
+msgstr "リリースを削除"
 
 #: ../root/release_group/delete.tt:1
 msgid "Remove Release Group"
-msgstr ""
+msgstr "リリースグループを削除"
 
 #: ../root/release_group/delete.tt:2
 msgid "Remove Release Group "
-msgstr ""
+msgstr "リリースグループを削除"
 
 #: ../root/work/delete_alias.tt:1
 msgid "Remove Work Alias"
-msgstr ""
+msgstr "ワークの別名を削除"
 
 #: ../root/area/layout.tt:63 ../lib/MusicBrainz/Server/Edit/Area/Delete.pm:10
 msgid "Remove area"
@@ -6367,19 +6367,19 @@ msgstr "アーティストの別名を削除"
 
 #: ../root/collection/delete.tt:2 ../root/collection/delete.tt:7
 msgid "Remove collection"
-msgstr ""
+msgstr "コレクションを削除"
 
 #: ../root/release/edit/tracklist.tt:397
 msgid "Remove disc"
-msgstr ""
+msgstr "ディスクを削除"
 
 #: ../root/release/sidebar.tt:119
 msgid "Remove from my collection"
-msgstr ""
+msgstr "自分のコレクションから外す"
 
 #: ../root/release/sidebar.tt:121
 msgid "Remove from {collection}"
-msgstr ""
+msgstr "{collection}から外しました"
 
 #: ../root/label/layout.tt:73
 #: ../lib/MusicBrainz/Server/Edit/Label/Delete.pm:12
@@ -6405,11 +6405,11 @@ msgstr "リリースを削除"
 
 #: ../root/layout/merge-helper.tt:33
 msgid "Remove selected entities"
-msgstr ""
+msgstr "選択されたエンティティを削除"
 
 #: ../root/collection/index.tt:51
 msgid "Remove selected releases from collection"
-msgstr ""
+msgstr "コレクションから選択されたリリースを外す"
 
 #: ../root/release/edit/tracklist.tt:333
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveTrack.pm:10
@@ -6423,7 +6423,7 @@ msgstr "ワークの別名を削除"
 
 #: ../root/components/rating-macros.tt:1
 msgid "Remove your rating"
-msgstr ""
+msgstr "自分の評価を削除"
 
 #: ../root/components/forms.tt:107 ../root/components/forms.tt:115
 #: ../root/components/forms.tt:116
@@ -6432,7 +6432,7 @@ msgstr ""
 
 #: ../root/edit/details/edit_release_events.tt:37
 msgid "Removed"
-msgstr ""
+msgstr "削除しました"
 
 #: ../root/edit/details/merge_artists.tt:4
 msgid "Rename artist credits"
@@ -6451,7 +6451,7 @@ msgstr "カバーアートの並べ替え"
 
 #: ../root/layout/menu.tt:288
 msgid "Report a Bug"
-msgstr ""
+msgstr "バグを報告"
 
 #: ../root/layout/menu.tt:292
 msgid "Report a Copyright Violation"
@@ -6460,7 +6460,7 @@ msgstr ""
 #: ../root/layout/menu.tt:241 ../root/report/index.tt:1
 #: ../root/report/index.tt:3
 msgid "Reports"
-msgstr ""
+msgstr "レポート"
 
 #: ../root/main/500.tt:27
 msgid "Request data:"
@@ -6482,7 +6482,7 @@ msgstr ""
 #: ../root/account/reset_password_ok.tt:3 ../root/account/reset_password.tt:1
 #: ../root/account/reset_password.tt:3 ../root/account/reset_password.tt:14
 msgid "Reset Password"
-msgstr ""
+msgstr "パスワードをリセット"
 
 #: ../root/release/edit/tracklist.tt:433 ../root/release/edit/tracklist.tt:434
 msgid "Reset track numbers"
@@ -6501,7 +6501,7 @@ msgstr ""
 
 #: ../root/user/contact.tt:16
 msgid "Reveal my email address"
-msgstr ""
+msgstr "メルアドを表示して"
 
 #: ../root/edit/details/edit_relationship_type.tt:25
 #: ../root/relationship/linktype/form.tt:14
@@ -6532,7 +6532,7 @@ msgstr ""
 #: ../root/relationship/linkattributetype/form.tt:21
 #: ../root/relationship/linktype/form.tt:164
 msgid "Save"
-msgstr ""
+msgstr "保管"
 
 #: ../root/search/lib/inline-results-artist.tt:6
 #: ../root/search/lib/inline-results-recording.tt:6
@@ -6544,7 +6544,7 @@ msgstr ""
 #: ../root/search/results-release-group.tt:7 ../root/search/results-tag.tt:7
 #: ../root/search/results-work.tt:7
 msgid "Score"
-msgstr ""
+msgstr "スコア"
 
 #: ../root/edit/details/add_release.tt:53
 #: ../root/edit/details/edit_release.tt:37
@@ -6563,15 +6563,15 @@ msgstr "表記："
 #: ../root/search/form.tt:42 ../root/search/index.tt:1
 #: ../root/search/index.tt:3 ../root/taglookup/form.tt:13
 msgid "Search"
-msgstr ""
+msgstr "検索"
 
 #: ../root/layout/menu.tt:198
 msgid "Search Edits"
-msgstr ""
+msgstr "編集を検索"
 
 #: ../root/search/error/wrapper.tt:1 ../root/search/error/wrapper.tt:2
 msgid "Search Error"
-msgstr ""
+msgstr "検索エラー"
 
 #: ../root/otherlookup/results-release.tt:1
 #: ../root/otherlookup/results-release.tt:3
@@ -6580,24 +6580,24 @@ msgstr ""
 #: ../root/search/editor.tt:2 ../root/search/results-layout.tt:3
 #: ../root/search/results-layout.tt:5
 msgid "Search Results"
-msgstr ""
+msgstr "検索結果"
 
 #: ../root/cdtoc/lookup.tt:57
 msgid "Search by artist"
-msgstr ""
+msgstr "アーティストで検索"
 
 #: ../root/cdtoc/lookup.tt:67
 msgid "Search by release"
-msgstr ""
+msgstr "リリースで検索"
 
 #: ../root/edit/search_results.tt:24 ../root/edit/search_results.tt:26
 #: ../root/edit/search.tt:2 ../root/edit/search.tt:4
 msgid "Search for Edits"
-msgstr ""
+msgstr "編集を検索"
 
 #: ../root/search/editor.tt:1
 msgid "Search for an Editor"
-msgstr ""
+msgstr "編集者を検索"
 
 #: ../root/cdtoc/attach_filter_artist.tt:3
 msgid "Search for an artist"
@@ -6605,11 +6605,11 @@ msgstr ""
 
 #: ../root/edit/list_header.tt:8
 msgid "Search for edits"
-msgstr ""
+msgstr "編集を検索"
 
 #: ../root/release/edit/recordings.tt:95
 msgid "Search for recordings"
-msgstr ""
+msgstr "レコーディングを検索"
 
 #: ../root/search/form.tt:52
 msgid ""
@@ -6638,11 +6638,11 @@ msgstr ""
 
 #: ../root/release/edit/recordings.tt:110
 msgid "Search:"
-msgstr ""
+msgstr "検索："
 
 #: ../root/release/edit/tracklist.tt:107 ../root/scripts/text_strings.tt:40
 msgid "Searching..."
-msgstr ""
+msgstr "検索中…"
 
 #: ../root/elections/show.tt:64
 msgid "Second this candidate"
@@ -6665,7 +6665,7 @@ msgstr ""
 
 #: ../root/cdtoc/info.tt:38 ../root/cdtoc/info.tt:40 ../root/cdtoc/info.tt:42
 msgid "Sectors"
-msgstr ""
+msgstr "セクター"
 
 #: ../root/collection/header.tt:17
 msgid "See all of your collections"
@@ -6722,7 +6722,7 @@ msgstr ""
 #: ../root/release/edit/recordings.tt:333
 #: ../root/release_group/set_cover_art.tt:38
 msgid "Select"
-msgstr ""
+msgstr "選択"
 
 #: ../root/release/edit/tracklist.tt:97
 msgid "Select a disc from the search results below and then click \"Add Disc\"."
@@ -6736,7 +6736,7 @@ msgstr ""
 
 #: ../root/user/contact.tt:20
 msgid "Send"
-msgstr ""
+msgstr "送信"
 
 #: ../root/account/lost_username.tt:14 ../root/user/contact.tt:1
 #: ../root/user/contact.tt:3 ../lib/MusicBrainz/Server/Controller/User.pm:248
@@ -6745,7 +6745,7 @@ msgstr "emilを送信"
 
 #: ../root/user/contact.tt:17
 msgid "Send a copy to my own email address"
-msgstr ""
+msgstr "自分のメルアドへも送信"
 
 #: ../root/account/preferences.tt:38
 msgid "Send me mails with edits to my subscriptions:"
@@ -7092,15 +7092,15 @@ msgstr ""
 #: ../root/search/lib/inline-results-artist.tt:8
 #: ../root/search/results-area.tt:9 ../root/search/results-label.tt:9
 msgid "Sort Name"
-msgstr ""
+msgstr "ソート名"
 
 #: ../root/area/edit_form.tt:8 ../root/release/edit/missing_entities.tt:17
 msgid "Sort Name:"
-msgstr ""
+msgstr "ソート名："
 
 #: ../root/components/aliases.tt:12 ../root/report/duplicate_artists.tt:26
 msgid "Sort name"
-msgstr ""
+msgstr "ソート名"
 
 #: ../root/alias/edit_form.tt:14 ../root/area/layout.tt:7
 #: ../root/artist/edit_form.tt:39 ../root/artist/layout.tt:6
@@ -7124,23 +7124,23 @@ msgstr ""
 #: ../root/edit/details/remove_work_alias.tt:16 ../root/label/edit_form.tt:35
 #: ../root/label/layout.tt:6
 msgid "Sort name:"
-msgstr ""
+msgstr "ソート名："
 
 #: ../root/artist/split.tt:15
 msgid "Split Artist"
-msgstr ""
+msgstr "アーティストを分割"
 
 #: ../root/artist/cannot_split.tt:2 ../root/artist/split.tt:20
 msgid "Split Into Separate Artists"
-msgstr ""
+msgstr "別のアーティストに分割"
 
 #: ../root/artist/layout.tt:101
 msgid "Split into separate artists"
-msgstr ""
+msgstr "別のアーティストに分割"
 
 #: ../root/layout/menu.tt:115
 msgid "Sponsors"
-msgstr ""
+msgstr "主催者"
 
 #: ../root/main/500.tt:19
 msgid "Stack trace:"
@@ -7148,19 +7148,19 @@ msgstr ""
 
 #: ../root/cdtoc/info.tt:32
 msgid "Start"
-msgstr ""
+msgstr "スタート"
 
 #: ../root/elections/index.tt:11
 msgid "Start date"
-msgstr ""
+msgstr "開始日"
 
 #: ../root/browse/page_selector.tt:57
 msgid "Start over"
-msgstr ""
+msgstr "やり直す"
 
 #: ../root/layout/menu.tt:139 ../root/user/profile.tt:138
 msgid "Statistics"
-msgstr ""
+msgstr "統計"
 
 #: ../root/edit/search_macros.tt:287
 msgctxt "edit status"
@@ -7205,19 +7205,19 @@ msgstr ""
 
 #: ../root/layout/menu.tt:253
 msgid "Style Guidelines"
-msgstr ""
+msgstr "スタイル指針"
 
 #: ../root/edit/list_header.tt:29 ../root/main/index.tt:22
 msgid "Style guidelines"
-msgstr ""
+msgstr "スタイル指針"
 
 #: ../root/user/contact.tt:8
 msgid "Subject:"
-msgstr ""
+msgstr "件名："
 
 #: ../root/cdstub/edit_form.tt:24
 msgid "Submit"
-msgstr ""
+msgstr "提出"
 
 #: ../root/edit/index.tt:80
 msgid "Submit note"
@@ -7238,27 +7238,27 @@ msgstr ""
 #: ../root/artist/layout.tt:136 ../root/collection/layout.tt:27
 #: ../root/label/layout.tt:97
 msgid "Subscribe"
-msgstr ""
+msgstr "加入"
 
 #: ../root/label/subscriptions.tt:25
 msgid "Subscribe to this Label."
-msgstr ""
+msgstr "このレーベルを加入"
 
 #: ../root/artist/subscribe.tt:20
 msgid "Subscribe to this artist."
-msgstr ""
+msgstr "このアーティストを加入"
 
 #: ../root/artist/subscribe.tt:1 ../root/label/subscriptions.tt:1
 msgid "Subscribed Editors"
-msgstr ""
+msgstr "加入してる編集者"
 
 #: ../root/edit/list_header.tt:19
 msgid "Subscribed editors"
-msgstr ""
+msgstr "加入してる編集者"
 
 #: ../root/edit/list_header.tt:17
 msgid "Subscribed entities"
-msgstr ""
+msgstr "加入してるエンティティ"
 
 #: ../root/artist/layout.tt:138 ../root/artist/subscribers.tt:1
 #: ../root/artist/subscribers.tt:2 ../root/collection/layout.tt:29
@@ -7267,7 +7267,7 @@ msgstr ""
 #: ../root/label/subscribers.tt:2 ../root/user/profile/layout.tt:12
 #: ../root/user/subscribers.tt:1 ../root/user/subscribers.tt:2
 msgid "Subscribers"
-msgstr ""
+msgstr "加入者"
 
 #: ../root/user/profile.tt:97
 msgid "Subscribers:"
@@ -7277,7 +7277,7 @@ msgstr ""
 #: ../root/label/layout.tt:91 ../root/layout/menu.tt:46
 #: ../root/user/profile/layout.tt:12
 msgid "Subscriptions"
-msgstr ""
+msgstr "加入"
 
 #: ../root/oauth2/oob.tt:3
 msgid "Success!"
@@ -7289,7 +7289,7 @@ msgstr ""
 
 #: ../root/edit/details/add_release_annotation.tt:30
 msgid "Summary:"
-msgstr ""
+msgstr "概要："
 
 #: ../root/release/edit/tracklist.tt:437 ../root/release/edit/tracklist.tt:438
 msgid "Swap track titles with artist credits"
@@ -7316,7 +7316,7 @@ msgstr ""
 
 #: ../root/taglookup/index.tt:1 ../root/taglookup/index.tt:3
 msgid "Tag Lookup"
-msgstr ""
+msgstr "タグ検索"
 
 #: ../root/taglookup/not_found.tt:1 ../root/taglookup/not_found.tt:2
 msgid "Tag Lookup Error"
@@ -7324,11 +7324,11 @@ msgstr ""
 
 #: ../root/taglookup/results.tt:1 ../root/taglookup/results.tt:3
 msgid "Tag Lookup Results"
-msgstr ""
+msgstr "タグ検索の結果"
 
 #: ../root/tag/not_found.tt:1 ../root/tag/not_found.tt:2
 msgid "Tag Not Used"
-msgstr ""
+msgstr "タグ未使用"
 
 #: ../root/main/index.tt:5
 msgid "Tag Your Music"
@@ -7336,47 +7336,47 @@ msgstr ""
 
 #: ../root/search/index.tt:14
 msgid "Tag lookup"
-msgstr ""
+msgstr "タグ検索"
 
 #: ../root/release/sidebar.tt:75
 msgid "Tag release"
-msgstr ""
+msgstr "リリースをタグして"
 
 #: ../root/release_group/layout.tt:26
 msgid "Tag release group"
-msgstr ""
+msgstr "リリースグループをタグして"
 
 #: ../root/artist/layout.tt:67 ../root/artist/tags.tt:3
 msgid "Tag this artist"
-msgstr ""
+msgstr "このアーティストをタグして"
 
 #: ../root/collection/tag.tt:2
 msgid "Tag this collection"
-msgstr ""
+msgstr "このコレクションをタグして"
 
 #: ../root/label/layout.tt:51 ../root/label/tags.tt:3
 msgid "Tag this label"
-msgstr ""
+msgstr "このレーベルをタグして"
 
 #: ../root/recording/layout.tt:26 ../root/recording/tags.tt:3
 msgid "Tag this recording"
-msgstr ""
+msgstr "このレコーディングをタグして"
 
 #: ../root/release/tags.tt:3
 msgid "Tag this release"
-msgstr ""
+msgstr "このリリースをタグして"
 
 #: ../root/release_group/tags.tt:3
 msgid "Tag this release group"
-msgstr ""
+msgstr "このリリースグループをタグして"
 
 #: ../root/work/layout.tt:26 ../root/work/tags.tt:3
 msgid "Tag this work"
-msgstr ""
+msgstr "このワークをタグして"
 
 #: ../root/tag/header.tt:11 ../root/tag/layout.tt:1
 msgid "Tag “{tag}”"
-msgstr ""
+msgstr "「{tag}」タグ"
 
 #: ../root/cdtoc/attach_artist_releases.tt:41
 #: ../root/cdtoc/attach_filter_release.tt:55 ../root/cdtoc/list.tt:13
@@ -7385,7 +7385,7 @@ msgstr ""
 #: ../root/search/lib/inline-results-recording.tt:13
 #: ../root/search/lib/inline-results-release.tt:16
 msgid "Tagger"
-msgstr ""
+msgstr "タグ者"
 
 #: ../root/artist/header.tt:1 ../root/artist/tags.tt:1
 #: ../root/collection/tags.tt:1 ../root/components/tags.tt:5
@@ -7413,7 +7413,7 @@ msgstr ""
 
 #: ../root/edit/details/add_release_annotation.tt:13
 msgid "Text:"
-msgstr ""
+msgstr "内容："
 
 #: ../root/account/donation.tt:14
 msgid "Thank you for contributing to MusicBrainz."
@@ -7443,13 +7443,13 @@ msgstr ""
 
 #: ../root/release/edit/information.tt:228
 msgid "The annotation field functions like a miniature wiki."
-msgstr ""
+msgstr "注釈は小さなwikiみたい。"
 
 #: ../root/artist/special_purpose.tt:3
 msgid ""
 "The artist you are trying to edit is a special purpose artist, and you may "
 "not make direct changes to this data."
-msgstr ""
+msgstr "このアーティストは特殊目的のアーティストだから、直接編集できません。"
 
 #: ../root/release/cover_art.tt:45
 msgid ""
@@ -9716,11 +9716,11 @@ msgstr ""
 msgid ""
 "You have used the {valink|Various Artists} special purpose artist on this "
 "recording."
-msgstr ""
+msgstr "このレコーディングに「{valink|Various Artists}」という特殊目的のアーティストを使いました。"
 
 #: ../root/release/edit/tracklist.tt:130
 msgid "You have used the {valink|Various Artists} special purpose artist on:"
-msgstr ""
+msgstr "以下のトラックに「{valink|Various Artists}」という特殊目的のアーティストを使いました："
 
 #: ../root/scripts/text_strings.tt:121
 msgid "You haven't made any changes!"
