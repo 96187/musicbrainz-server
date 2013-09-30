@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-09-30 04:26+0000\n"
+"PO-Revision-Date: 2013-09-30 05:59+0000\n"
 "Last-Translator: th1rtyf0ur\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/musicbrainz/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -4761,7 +4761,7 @@ msgstr "新しい関連："
 
 #: ../root/edit/details/historic/edit_release_language.tt:30
 msgid "New script:"
-msgstr "新しい文字体系："
+msgstr "新しい表記："
 
 #: ../root/edit/details/change_wikidoc.tt:23
 #: ../root/edit/details/change_wikidoc.tt:28
@@ -5633,7 +5633,7 @@ msgstr "評価"
 #: ../root/user/ratings_summary.tt:1 ../root/user/ratings_summary.tt:31
 #: ../root/work/ratings.tt:1
 msgid "Ratings"
-msgstr ""
+msgstr "評価"
 
 #: ../root/main/index.tt:41
 msgid "Read more »"
@@ -5643,7 +5643,7 @@ msgstr ""
 msgid ""
 "Read the {doc|WikiDocs} documentation for an overview of how transclusion "
 "works."
-msgstr ""
+msgstr "トランスクルージョンの説明は{doc|WikiDocs}をご参照ください。"
 
 #: ../root/main/index.tt:118
 msgid "Recent Additions"
@@ -5661,27 +5661,27 @@ msgstr "レコーディング"
 
 #: ../root/recording/edit_form.tt:6
 msgid "Recording Details"
-msgstr ""
+msgstr "レコーディング詳細"
 
 #: ../root/recording/not_found.tt:1 ../root/recording/not_found.tt:2
 msgid "Recording Not Found"
-msgstr ""
+msgstr "レコーディングは見つかりませんでした"
 
 #: ../root/recording/edits.tt:20 ../root/recording/header.tt:16
 msgid "Recording by {artist}"
-msgstr ""
+msgstr "{artist}のレコーディング"
 
 #: ../root/recording/layout.tt:8
 msgid "Recording information"
-msgstr ""
+msgstr "レコーディング情報"
 
 #: ../root/user/ratings_summary.tt:3 ../root/user/ratings.tt:1
 msgid "Recording ratings"
-msgstr ""
+msgstr "レコーディングの評価"
 
 #: ../root/recording/layout.tt:1
 msgid "Recording “{name}” by {artist}"
-msgstr ""
+msgstr "{artist}のレコーディング「{name}」"
 
 #: ../root/components/common-macros.tt:539
 #: ../root/edit/details/add_recording_annotation.tt:3
@@ -5694,7 +5694,7 @@ msgstr ""
 #: ../root/edit/details/remove_isrc.tt:7 ../root/edit/details/remove_puid.tt:3
 #: ../root/edit/details/remove_recording.tt:3
 msgid "Recording:"
-msgstr ""
+msgstr "レコーディング："
 
 #: ../root/artist/header.tt:1 ../root/artist/recordings.tt:1
 #: ../root/artist/recordings.tt:4 ../root/report/index.tt:75
@@ -5705,7 +5705,7 @@ msgstr "レコーディング"
 
 #: ../root/artist/browse_various_recordings.tt:5
 msgid "Recordings starting with “{index}”"
-msgstr ""
+msgstr "「{index}」から始まるレコーディング"
 
 #: ../root/report/recordings_with_earliest_release_relationships.tt:1
 #: ../root/report/recordings_with_earliest_release_relationships.tt:3
@@ -5725,11 +5725,11 @@ msgstr ""
 #: ../root/report/featuring_recordings.tt:1
 #: ../root/report/featuring_recordings.tt:3 ../root/report/index.tt:80
 msgid "Recordings with titles containing featuring artists"
-msgstr ""
+msgstr "フィーチャリングアーティストを含むレコーディング名"
 
 #: ../root/edit/details/edit_medium.tt:173
 msgid "Recordings:"
-msgstr ""
+msgstr "レコーディング："
 
 #: ../root/edit/list_header.tt:12
 msgid "Refine this search"
@@ -5737,7 +5737,7 @@ msgstr ""
 
 #: ../root/account/preferences.tt:12
 msgid "Regional settings"
-msgstr ""
+msgstr "地域の設定"
 
 #: ../root/account/register_application.tt:38
 msgid "Register"
@@ -5750,15 +5750,15 @@ msgstr ""
 
 #: ../root/doc/edit_type.tt:15
 msgid "Reject"
-msgstr ""
+msgstr "拒否"
 
 #: ../root/edit/index.tt:65
 msgid "Reject edit"
-msgstr ""
+msgstr "編集を拒否"
 
 #: ../root/components/common-macros.tt:640
 msgid "Reject upon expiration"
-msgstr ""
+msgstr "締め切りに拒否"
 
 #: ../root/scripts/text_strings.tt:99
 msgid "Relate recording to work"
@@ -5766,11 +5766,11 @@ msgstr ""
 
 #: ../root/components/common-macros.tt:584
 msgid "Relate to ..."
-msgstr ""
+msgstr "関連して…"
 
 #: ../root/release/edit-links.tt:3
 msgid "Relate to <abbr title=\"Uniform Resource Locator\">URL</abbr>"
-msgstr ""
+msgstr "<abbr title=\"ユニフォーム・リソース・ロケータ（リンク）\">URL</abbr>と関連して"
 
 #: ../root/release/edit_relationships.tt:370
 msgid "Related Works"
@@ -5778,49 +5778,49 @@ msgstr ""
 
 #: ../root/recording/index.tt:52 ../root/recording/relationships.tt:6
 msgid "Related works"
-msgstr ""
+msgstr "関連されたワーク"
 
 #: ../root/relationship/header.tt:2
 #: ../root/relationship/linkattributetype/index.tt:3
 #: ../root/relationship/linkattributetype/not_found.tt:1
 msgid "Relationship Attributes"
-msgstr ""
+msgstr "関連属性"
 
 #: ../root/edit/relationship/create.tt:33
 #: ../root/edit/relationship/create_url.tt:36
 #: ../root/edit/relationship/edit.tt:59
 msgid "Relationship Details"
-msgstr ""
+msgstr "関連詳細"
 
 #: ../root/edit/search_macros.tt:287
 msgid "Relationship Type"
-msgstr ""
+msgstr "関連タイプ"
 
 #: ../root/relationship/linktype/in_use.tt:1
 #: ../root/relationship/linktype/in_use.tt:3
 msgid "Relationship Type In Use"
-msgstr ""
+msgstr "関連タイプ使用中"
 
 #: ../root/layout/menu.tt:265 ../root/relationship/header.tt:2
 #: ../root/relationship/linktype/index.tt:1
 msgid "Relationship Types"
-msgstr ""
+msgstr "関連タイプ"
 
 #: ../root/relationship/linkattributetype/in_use.tt:1
 msgid "Relationship attribute in use"
-msgstr ""
+msgstr "関連属性は使用中"
 
 #: ../root/relationship/linkattributetype/in_use.tt:2
 msgid "Relationship attribute still in use"
-msgstr ""
+msgstr "関連属性まだ使用中"
 
 #: ../root/admin/edit_user.tt:9
 msgid "Relationship editor"
-msgstr ""
+msgstr "関連エディター"
 
 #: ../root/user/privileged.tt:26
 msgid "Relationship editors"
-msgstr ""
+msgstr "関連編集者"
 
 #: ../root/user/privileged.tt:27
 msgid ""
@@ -5828,14 +5828,14 @@ msgid ""
 "the database. If you would like to propose a new relationship, please do so "
 "through the {url|Style Council}. Relationship editors will only make changes"
 " that have been approved by the Style Council."
-msgstr ""
+msgstr "関連編集者は、データベースの関連タイプを編集できる方です。新たな関連タイプを提案したい場合は、{url|スタイル会議}でやってください。関連編集者は、スタイル会議が承認した変更のみを行います。"
 
 #: ../root/edit/details/add_relationship.tt:3
 #: ../root/edit/details/edit_relationship.tt:8
 #: ../root/edit/details/macros.tt:63
 #: ../root/edit/details/remove_relationship.tt:3
 msgid "Relationship:"
-msgstr ""
+msgstr "関連："
 
 #: ../root/area/index.tt:6 ../root/area/relationships.tt:1
 #: ../root/area/relationships.tt:3 ../root/artist/header.tt:1
@@ -5851,7 +5851,7 @@ msgstr ""
 #: ../root/url/relationships.tt:2 ../root/work/index.tt:27
 #: ../root/work/relationships.tt:1 ../root/work/relationships.tt:3
 msgid "Relationships"
-msgstr ""
+msgstr "関連"
 
 #: ../root/release/edit_relationships.tt:321
 msgid ""
@@ -5864,7 +5864,7 @@ msgstr ""
 #: ../root/edit/details/historic/add_relationship.tt:3
 #: ../root/edit/details/remove_relationship_(historic).tt:3
 msgid "Relationships:"
-msgstr ""
+msgstr "関連："
 
 #: ../root/cdtoc/attach_artist_releases.tt:34
 #: ../root/cdtoc/attach_filter_release.tt:47 ../root/cdtoc/lookup.tt:37
@@ -5886,7 +5886,7 @@ msgstr "リリース"
 
 #: ../root/recording/index.tt:13
 msgid "Release Artist"
-msgstr ""
+msgstr "リリースアーティスト"
 
 #: ../root/edit/search_macros.tt:287
 msgid "Release Country"
@@ -5898,7 +5898,7 @@ msgstr ""
 
 #: ../root/edit/details/historic/add_release.tt:70
 msgid "Release Events:"
-msgstr ""
+msgstr "リリースイベント："
 
 #: ../root/components/common-macros.tt:552
 #: ../root/components/common-macros.tt:610 ../root/edit/search_macros.tt:287
@@ -5911,11 +5911,11 @@ msgstr "リリースグループ"
 
 #: ../root/release_group/edit_form.tt:6
 msgid "Release Group Details"
-msgstr ""
+msgstr "リリースグループ詳細"
 
 #: ../root/release_group/not_found.tt:1 ../root/release_group/not_found.tt:2
 msgid "Release Group Not Found"
-msgstr ""
+msgstr "リリースグループ見つかりません"
 
 #: ../root/release/edit_relationships.tt:395
 msgid "Release Group Relationships"
@@ -5926,7 +5926,7 @@ msgstr ""
 #: ../root/edit/details/edit_release.tt:21
 #: ../root/release/edit/information.tt:28
 msgid "Release Group:"
-msgstr ""
+msgstr "リリースグループ："
 
 #: ../root/cdtoc/attach_artist_releases.tt:51
 #: ../root/cdtoc/attach_filter_release.tt:66
@@ -5935,15 +5935,15 @@ msgstr ""
 
 #: ../root/tag/header.tt:1 ../root/tag/index.tt:8 ../root/user/tag.tt:4
 msgid "Release Groups"
-msgstr ""
+msgstr "リリースグループ"
 
 #: ../root/edit/search_macros.tt:287
 msgid "Release Language"
-msgstr ""
+msgstr "リリース言語"
 
 #: ../root/release/not_found.tt:1 ../root/release/not_found.tt:2
 msgid "Release Not Found"
-msgstr ""
+msgstr "リリースが見つかりません"
 
 #: ../root/edit/search_macros.tt:287
 msgid "Release Quality"
@@ -5955,15 +5955,15 @@ msgstr ""
 
 #: ../root/recording/index.tt:12
 msgid "Release Title"
-msgstr ""
+msgstr "リリース名"
 
 #: ../root/release/edits.tt:20 ../root/release/header.tt:8
 msgid "Release by {artist}"
-msgstr ""
+msgstr "{artist}のリリース"
 
 #: ../root/release/edit/information.tt:62
 msgid "Release event"
-msgstr ""
+msgstr "リリースイベント"
 
 #: ../root/release/sidebar.tt:69
 msgid "Release events"
@@ -5982,27 +5982,27 @@ msgstr "リリースグループ"
 
 #: ../root/release_group/edits.tt:20 ../root/release_group/header.tt:12
 msgid "Release group by {artist}"
-msgstr ""
+msgstr "{artist}のリリースグループ"
 
 #: ../root/layout/sidebar/sidebar-favicons.tt:47
 msgid "Release group external links"
-msgstr ""
+msgstr "リリースグループの外部リンク"
 
 #: ../root/release_group/layout.tt:15
 msgid "Release group information"
-msgstr ""
+msgstr "リリースグループ情報"
 
 #: ../root/user/ratings_summary.tt:3 ../root/user/ratings.tt:1
 msgid "Release group ratings"
-msgstr ""
+msgstr "リリースグループ評価"
 
 #: ../root/release/relationships.tt:4
 msgid "Release group relationships"
-msgstr ""
+msgstr "リリースグループの関連"
 
 #: ../root/release_group/layout.tt:1
 msgid "Release group “{name}” by {artist}"
-msgstr ""
+msgstr "{artist}のリリースグループ「{name}」"
 
 #: ../root/components/common-macros.tt:539
 #: ../root/edit/details/add_release_group_annotation.tt:3
@@ -6012,15 +6012,15 @@ msgstr ""
 #: ../root/edit/details/remove_release_group.tt:3
 #: ../root/edit/details/set_cover_art.tt:5
 msgid "Release group:"
-msgstr ""
+msgstr "リリースグループ："
 
 #: ../root/report/index.tt:35
 msgid "Release groups"
-msgstr ""
+msgstr "リリースグループ"
 
 #: ../root/artist/browse_various.tt:5 ../root/browse/release_group.tt:8
 msgid "Release groups starting with “{index}”"
-msgstr ""
+msgstr "「{index}」から始まるリリースグループ"
 
 #: ../root/report/index.tt:38
 msgid "Release groups that might need to be merged"
@@ -6035,19 +6035,19 @@ msgstr ""
 #: ../root/report/featuring_release_groups.tt:1
 #: ../root/report/featuring_release_groups.tt:3 ../root/report/index.tt:39
 msgid "Release groups with titles containing featuring artists"
-msgstr ""
+msgstr "フィーチャリングアーティストを含む曲名のあるリリースグループ"
 
 #: ../root/release/edit/information.tt:23 ../root/release/sidebar.tt:25
 msgid "Release information"
-msgstr ""
+msgstr "リリース情報"
 
 #: ../root/cdtoc/attach_filter_release.tt:28 ../root/cdtoc/move_search.tt:13
 msgid "Release title:"
-msgstr ""
+msgstr "リリース名："
 
 #: ../root/release/layout.tt:1
 msgid "Release “{name}” by {artist}"
-msgstr ""
+msgstr "{artist}のリリース「{name}」"
 
 #: ../root/cdtoc/lookup.tt:71 ../root/components/common-macros.tt:539
 #: ../root/edit/details/add_cover_art.tt:5
@@ -6069,7 +6069,7 @@ msgstr ""
 #: ../root/edit/details/reorder_mediums.tt:4
 #: ../root/release/edit/tracklist.tt:208 ../root/taglookup/form.tt:5
 msgid "Release:"
-msgstr ""
+msgstr "リリース："
 
 #: ../root/area/header.tt:1 ../root/area/releases.tt:1
 #: ../root/area/releases.tt:4 ../root/artist/browse_various_releases.tt:1
@@ -6081,31 +6081,31 @@ msgstr ""
 #: ../root/report/index.tt:44 ../root/tag/header.tt:1 ../root/tag/index.tt:8
 #: ../root/user/collections.tt:10 ../root/user/tag.tt:4
 msgid "Releases"
-msgstr ""
+msgstr "リリース"
 
 #: ../root/report/tracks_named_with_sequence.tt:1
 #: ../root/report/tracks_named_with_sequence.tt:3
 msgid "Releases Where Track Names Start With Their Track Number"
-msgstr ""
+msgstr "トラック番号から始まるトラック名のあるリリース"
 
 #: ../root/report/cat_no_looks_like_asin.tt:1
 #: ../root/report/cat_no_looks_like_asin.tt:3
 msgid "Releases With Catalog Numbers That Look Like ASINs"
-msgstr ""
+msgstr "ASINに見えるカタログ番号のあるリリース"
 
 #: ../root/report/multiple_asins.tt:1 ../root/report/multiple_asins.tt:3
 msgid "Releases With Multiple ASINs"
-msgstr ""
+msgstr "ASINが複数あるリリース"
 
 #: ../root/report/multiple_discogs_links.tt:1
 #: ../root/report/multiple_discogs_links.tt:3
 msgid "Releases With Multiple Discogs Links"
-msgstr ""
+msgstr "Discogsリンクが複数あるリリース"
 
 #: ../root/report/some_formats_unset.tt:1
 #: ../root/report/some_formats_unset.tt:3
 msgid "Releases With Some Formats Unset"
-msgstr ""
+msgstr "フォーマット未定のリリース"
 
 #: ../root/report/index.tt:66
 #: ../root/report/releases_in_caa_with_cover_art_relationships.tt:1
@@ -6120,11 +6120,11 @@ msgstr ""
 #: ../root/report/index.tt:61 ../root/report/released_too_early.tt:1
 #: ../root/report/released_too_early.tt:3
 msgid "Releases released too early"
-msgstr ""
+msgstr "発売日が早すぎるリリース"
 
 #: ../root/artist/browse_various_releases.tt:5 ../root/browse/release.tt:8
 msgid "Releases starting with “{index}”"
-msgstr ""
+msgstr "「{index}」から始まるリリース"
 
 #: ../root/report/index.tt:62
 msgid "Releases where some (but not all) mediums have no format set"
@@ -6132,11 +6132,11 @@ msgstr ""
 
 #: ../root/report/index.tt:52
 msgid "Releases which have multiple ASINs"
-msgstr ""
+msgstr "ASINが複数あるリリース"
 
 #: ../root/report/index.tt:53
 msgid "Releases which have multiple Discogs links"
-msgstr ""
+msgstr "Discogsリンクが複数あるリリース"
 
 #: ../root/report/index.tt:56
 msgid "Releases which have part of set relationships"
@@ -6144,7 +6144,7 @@ msgstr ""
 
 #: ../root/report/index.tt:51
 msgid "Releases which have unexpected Amazon URLs"
-msgstr ""
+msgstr "意外なAmazonリンクのあるリリース"
 
 #: ../root/report/index.tt:48 ../root/report/releases_to_convert.tt:1
 #: ../root/report/releases_to_convert.tt:3
@@ -6159,11 +6159,11 @@ msgstr ""
 #: ../root/report/index.tt:47 ../root/report/releases_with_cc_links.tt:1
 #: ../root/report/releases_with_cc_links.tt:3
 msgid "Releases with Creative Commons Download relationships"
-msgstr ""
+msgstr "クリエイティブ・コモンズ・ダウンロード関連のあるリリース"
 
 #: ../root/report/index.tt:63
 msgid "Releases with catalog numbers that look like ASINs"
-msgstr ""
+msgstr "ASINに見えるカタログ番号のあるリリース"
 
 #: ../root/report/mediums_with_sequence_issues.tt:1
 #: ../root/report/mediums_with_sequence_issues.tt:3
@@ -6176,7 +6176,7 @@ msgstr ""
 
 #: ../root/report/index.tt:58
 msgid "Releases with non-sequential track numbers"
-msgstr ""
+msgstr "非順次的なトラック番号のあるリリース"
 
 #: ../root/report/duplicate_relationships_releases.tt:1
 #: ../root/report/duplicate_relationships_releases.tt:3
@@ -6186,12 +6186,12 @@ msgstr ""
 
 #: ../root/report/index.tt:59 ../root/report/superfluous_data_tracks.tt:3
 msgid "Releases with superfluous data tracks"
-msgstr ""
+msgstr "余分なデータトラックのあるリリース"
 
 #: ../root/report/featuring_releases.tt:1
 #: ../root/report/featuring_releases.tt:3 ../root/report/index.tt:60
 msgid "Releases with titles containing featuring artists"
-msgstr ""
+msgstr "フィーチャリングアーティストを含む曲名のあるリリース"
 
 #: ../root/report/tracks_with_sequence_issues.tt:1
 #: ../root/report/tracks_with_sequence_issues.tt:3
@@ -6212,12 +6212,12 @@ msgstr ""
 #: ../root/report/index.tt:49 ../root/report/releases_without_language.tt:1
 #: ../root/report/releases_without_language.tt:3
 msgid "Releases without language"
-msgstr ""
+msgstr "言語未定のリリース"
 
 #: ../root/report/index.tt:50 ../root/report/releases_without_script.tt:1
 #: ../root/report/releases_without_script.tt:3
 msgid "Releases without script"
-msgstr ""
+msgstr "表記未定のリリース"
 
 #: ../root/edit/details/historic/add_disc_id.tt:3
 #: ../root/edit/details/historic/add_release_annotation.tt:3
@@ -6551,7 +6551,7 @@ msgstr ""
 #: ../root/edit/details/historic/add_release.tt:34
 #: ../root/release/edit/information.tt:57 ../root/release/sidebar.tt:37
 msgid "Script:"
-msgstr ""
+msgstr "表記："
 
 #: ../root/cdtoc/attach_filter_artist.tt:10
 #: ../root/cdtoc/attach_filter_release.tt:30 ../root/cdtoc/lookup.tt:63
