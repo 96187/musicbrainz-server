@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-10-01 04:45+0000\n"
+"PO-Revision-Date: 2013-10-01 05:49+0000\n"
 "Last-Translator: th1rtyf0ur\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/musicbrainz/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1278,7 +1278,7 @@ msgstr "アーティストクレジット"
 
 #: ../root/edit/details/add_medium.tt:44
 msgid "Artist Credits:"
-msgstr ""
+msgstr "アーティストクレジット:"
 
 #: ../root/artist/edit_form.tt:37
 msgid "Artist Details"
@@ -1660,7 +1660,7 @@ msgstr ""
 
 #: ../root/components/aliases.tt:13
 msgid "Begin Date"
-msgstr ""
+msgstr "開始日"
 
 #: ../root/components/common-macros.tt:911 ../root/scripts/text_strings.tt:77
 msgid "Begin area:"
@@ -2605,7 +2605,7 @@ msgstr "ドキュメント"
 
 #: ../root/search/results-doc.tt:1 ../root/search/results-doc.tt:3
 msgid "Documentation Search"
-msgstr ""
+msgstr "ドキュメント検索"
 
 #: ../root/edit/details/add_relationship_type.tt:33
 #: ../root/edit/details/edit_relationship_type.tt:69
@@ -2667,7 +2667,7 @@ msgstr ""
 
 #: ../root/edit/edit_header.tt:69 ../root/edit/edit_header.tt:84
 msgid "Edit #{id} - {name}"
-msgstr ""
+msgstr "エディット{id}号：{name}"
 
 #: ../root/release/edit-links.tt:3
 msgid "Edit All"
@@ -3072,7 +3072,7 @@ msgstr ""
 
 #: ../root/components/aliases.tt:14
 msgid "End Date"
-msgstr ""
+msgstr "終了日"
 
 #: ../root/components/common-macros.tt:919 ../root/scripts/text_strings.tt:77
 msgid "End area:"
@@ -3558,7 +3558,7 @@ msgstr "ID"
 
 #: ../root/artist/edit_form.tt:54 ../root/label/edit_form.tt:54
 msgid "IPI code"
-msgstr ""
+msgstr "IPI コード"
 
 #: ../root/artist/layout.tt:57 ../root/edit/details/add_artist.tt:73
 #: ../root/edit/details/add_label.tt:68 ../root/edit/details/edit_artist.tt:63
@@ -3569,7 +3569,7 @@ msgstr "IPI コード："
 #: ../root/artist/edit_form.tt:54 ../root/edit/details/edit_artist.tt:67
 #: ../root/edit/details/edit_label.tt:56 ../root/label/edit_form.tt:54
 msgid "IPI codes:"
-msgstr ""
+msgstr "IPI コード："
 
 #: ../root/artist/edit_form.tt:55 ../root/label/edit_form.tt:55
 msgid "ISNI code"
@@ -3655,15 +3655,15 @@ msgstr "ISWC"
 
 #: ../root/iswc/not_found.tt:1 ../root/iswc/not_found.tt:2
 msgid "ISWC Not Currently Used"
-msgstr ""
+msgstr "ISWC 未使用"
 
 #: ../root/edit/details/add_iswcs.tt:8
 msgid "ISWC {iswc} to {work}"
-msgstr ""
+msgstr "ワーク {work} に ISWC {iswc}"
 
 #: ../root/iswc/index.tt:1 ../root/iswc/index.tt:3
 msgid "ISWC “{iswc}”"
-msgstr ""
+msgstr "ISWC 「{iswc}」"
 
 #: ../root/edit/details/add_work.tt:23 ../root/edit/details/edit_work.tt:19
 #: ../root/edit/details/remove_iswc.tt:3 ../root/otherlookup/form.tt:3
@@ -3913,7 +3913,7 @@ msgstr "Disc ID が不正"
 
 #: ../root/layout/menu.tt:159 ../root/main/index.tt:9
 msgid "Jaikoz Tagger"
-msgstr ""
+msgstr "Jaikoz Tagger"
 
 #: ../root/release/edit/layout.tt:32
 msgid "Javascript needs to be enabled to edit releases."
@@ -5536,7 +5536,7 @@ msgstr "前へ"
 #: ../root/release/edit/information.tt:43
 #: ../root/release_group/edit_form.tt:10
 msgid "Primary Type:"
-msgstr ""
+msgstr "一次タイプ："
 
 #: ../root/edit/details/add_area_alias.tt:28
 #: ../root/edit/details/add_artist_alias.tt:28
@@ -5551,7 +5551,7 @@ msgstr ""
 #: ../root/edit/details/remove_label_alias.tt:25
 #: ../root/edit/details/remove_work_alias.tt:25
 msgid "Primary for locale:"
-msgstr ""
+msgstr "ロケールの一次："
 
 #: ../root/relationship/linktype/form.tt:24
 msgid "Priority:"
@@ -5947,7 +5947,7 @@ msgstr "リリースが見つかりません"
 
 #: ../root/edit/search_macros.tt:287
 msgid "Release Quality"
-msgstr ""
+msgstr "リリース品質"
 
 #: ../root/release/edit_relationships.tt:389
 msgid "Release Relationships"
@@ -6428,7 +6428,7 @@ msgstr "自分の評価を削除"
 #: ../root/components/forms.tt:107 ../root/components/forms.tt:115
 #: ../root/components/forms.tt:116
 msgid "Remove {item}"
-msgstr ""
+msgstr "{item}を削除"
 
 #: ../root/edit/details/edit_release_events.tt:37
 msgid "Removed"
@@ -6634,7 +6634,7 @@ msgstr ""
 
 #: ../root/components/common-macros.tt:877
 msgid "Search the documentation..."
-msgstr ""
+msgstr "ドキュメントを検索…"
 
 #: ../root/release/edit/recordings.tt:110
 msgid "Search:"
@@ -6653,7 +6653,7 @@ msgstr ""
 #: ../root/release/edit/information.tt:44
 #: ../root/release_group/edit_form.tt:11
 msgid "Secondary Types:"
-msgstr ""
+msgstr "二次タイプ："
 
 #: ../root/elections/index.tt:14
 msgid "Seconder 1"
@@ -6792,7 +6792,7 @@ msgstr ""
 
 #: ../root/account/preferences.tt:26
 msgid "Show my Gravatar"
-msgstr ""
+msgstr "Gravatarを表示"
 
 #: ../root/report/filter_link.tt:6
 msgid "Show only results that are in my subscribed entities."
@@ -7008,7 +7008,7 @@ msgstr ""
 #: ../root/relationship/linkattributetype/not_found.tt:3
 msgid ""
 "Sorry, we could not find a relationship attribute with that MusicBrainz ID."
-msgstr ""
+msgstr "そのMusicBrainz IDとの関連属性は見つかりませんでした。"
 
 #: ../root/release_group/not_found.tt:4
 msgid ""
@@ -7807,7 +7807,7 @@ msgstr "このアーティストはリリースがありません。"
 
 #: ../root/artist/edit_form.tt:76 ../root/scripts/text_strings.tt:72
 msgid "This artist has ended."
-msgstr ""
+msgstr "このアーティストは解散（死亡）しました。"
 
 #: ../root/artist/index.tt:23
 msgid ""
@@ -7944,7 +7944,7 @@ msgstr ""
 
 #: ../root/scripts/text_strings.tt:74
 msgid "This group has dissolved."
-msgstr ""
+msgstr "このグループは解散しました。"
 
 #: ../root/layout.tt:96 ../lib/DBDefs/Default.pm:126
 msgid "This is a MusicBrainz development server."
@@ -7980,7 +7980,7 @@ msgstr ""
 
 #: ../root/alias/edit_form.tt:20
 msgid "This is the primary alias for this locale"
-msgstr ""
+msgstr "このロケールの一次エイリアスです"
 
 #: ../root/label/delete.tt:14
 msgid ""
@@ -7994,7 +7994,7 @@ msgstr "このレーベルはリリースがありません。"
 
 #: ../root/label/edit_form.tt:65
 msgid "This label has ended."
-msgstr ""
+msgstr "このレーベルは解散しました。"
 
 #: ../root/label/index.tt:21
 msgid ""
@@ -8009,7 +8009,7 @@ msgstr "このレーベルはタグがありません。"
 
 #: ../root/cdtoc/attach_list.tt:24
 msgid "This medium format cannot have a disc ID attached"
-msgstr ""
+msgstr "このメディアフォーマットにディスクID付けられません。"
 
 #: ../root/scripts/text_strings.tt:52
 msgid ""
@@ -8044,7 +8044,7 @@ msgstr "このページはJavaScriptが必要となります。"
 
 #: ../root/scripts/text_strings.tt:73
 msgid "This person is deceased."
-msgstr ""
+msgstr "この方は死亡しました。"
 
 #: ../root/recording/delete.tt:18
 msgid ""
@@ -8067,7 +8067,7 @@ msgstr "このレコーディングはタグがありません。"
 #: ../root/edit/relationship/edit.tt:139
 #: ../root/release/edit_relationships.tt:153
 msgid "This relationship has ended."
-msgstr ""
+msgstr "この関連は終了しました。"
 
 #: ../root/relationship/linktype/form.tt:79
 msgid "This relationship type does not have any examples."
@@ -8461,7 +8461,7 @@ msgstr "このユーザーはボットです。"
 
 #: ../root/components/common-macros.tt:456
 msgid "This user is new to MusicBrainz."
-msgstr ""
+msgstr "MusicBrainzの初心者です。"
 
 #: ../root/release/edit_relationships.tt:26
 msgid "This will add a relationship to all checked recordings."
@@ -8550,7 +8550,7 @@ msgstr ""
 
 #: ../root/release/edit/information.tt:50
 msgid "To edit types, please edit the release group."
-msgstr ""
+msgstr "タイプの編集はリリースグループで行ってください。"
 
 #: ../root/elections/show.tt:91
 msgid "To find out if you can vote for this candidate, please {url|log in}."
@@ -9826,7 +9826,7 @@ msgstr ""
 #: ../root/label/layout.tt:30 ../root/search/lib/inline-results-artist.tt:32
 #: ../root/search/results-area.tt:28 ../root/search/results-label.tt:30
 msgid "[unknown]"
-msgstr ""
+msgstr "［不明］"
 
 #: ../root/scripts/text_strings.tt:35
 msgid "add a disambiguation comment"
@@ -9880,7 +9880,7 @@ msgstr ""
 
 #: ../root/components/common-macros.tt:457
 msgid "bot"
-msgstr ""
+msgstr "ボット"
 
 #: ../root/release/edit/recordings.tt:81
 #: ../root/release/edit/recordings.tt:218
@@ -9922,7 +9922,7 @@ msgstr ""
 
 #: ../root/components/common-macros.tt:725
 msgid "ended"
-msgstr ""
+msgstr "終了"
 
 #: ../root/components/common-macros.tt:712 ../root/edit/details/macros.tt:28
 msgid "from {begin_date} until {end_date}"
@@ -9930,7 +9930,7 @@ msgstr "{begin_date} から {end_date} まで"
 
 #: ../root/components/common-macros.tt:718 ../root/edit/details/macros.tt:28
 msgid "from {date} to ????"
-msgstr ""
+msgstr "{date}から"
 
 #: ../root/components/common-macros.tt:720 ../root/edit/details/macros.tt:28
 msgid "from {date} to present"
@@ -10004,7 +10004,7 @@ msgstr "レーベル"
 
 #: ../root/components/common-macros.tt:456
 msgid "limited user"
-msgstr ""
+msgstr "制限ユーザー"
 
 #: ../root/edit/relationship/edit.tt:37 ../root/scripts/text_strings.tt:92
 msgid "link"
@@ -10097,11 +10097,11 @@ msgstr "リリース"
 
 #: ../root/user/profile.tt:31
 msgid "resend verification email"
-msgstr ""
+msgstr "確認メールを再送信"
 
 #: ../root/layout.tt:70
 msgid "search"
-msgstr ""
+msgstr "検索"
 
 #: ../root/layout/sidebar/sidebar-rating.tt:5
 msgid "see all ratings"
@@ -10232,7 +10232,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Entity/Relationship.pm:150
 #, perl-brace-format
 msgid "{b} and {a}"
-msgstr ""
+msgstr "{b} と {a}"
 
 #: ../root/release/collections.tt:10
 msgid "{collection} by {owner}"
@@ -10483,7 +10483,7 @@ msgstr "{uri|URLと関連}"
 
 #: ../root/user/profile/layout.tt:8
 msgid "{user}"
-msgstr ""
+msgstr "{user}"
 
 #: ../root/user/collections.tt:37
 msgid "{user} has no public collections."
@@ -11114,7 +11114,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Edit/Utils.pm:258
 msgid "Cancelled"
-msgstr ""
+msgstr "キャンセルされた"
 
 #: ../lib/MusicBrainz/Server/Edit/WikiDoc.pm:7
 msgid "Wiki documentation"
@@ -11130,7 +11130,7 @@ msgstr "ワークの注釈を追加"
 
 #: ../lib/MusicBrainz/Server/Edit/Work/AddISWCs.pm:22
 msgid "Add ISWCs"
-msgstr ""
+msgstr "ISWCを追加"
 
 #: ../lib/MusicBrainz/Server/Edit/Work/Delete.pm:11
 msgid "Remove work"
@@ -11146,7 +11146,7 @@ msgstr "ワークをマージ"
 
 #: ../lib/MusicBrainz/Server/Edit/Work/RemoveISWC.pm:16
 msgid "Remove ISWC"
-msgstr ""
+msgstr "ISWC を削除"
 
 #: ../lib/MusicBrainz/Server/EditSearch/Predicate.pm:66
 msgid "This operator is not supported"
@@ -11485,7 +11485,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Form/Role/LinkType.pm:75
 msgid "This relationship type is deprecated."
-msgstr ""
+msgstr "この関連タイプは撤廃されました。"
 
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:43
 msgid "FreeDB"
@@ -11509,19 +11509,19 @@ msgstr "不正なURL形式です"
 
 #: ../lib/MusicBrainz/Server/Form/User/EditProfile.pm:61
 msgid "Basic"
-msgstr ""
+msgstr "基礎的"
 
 #: ../lib/MusicBrainz/Server/Form/User/EditProfile.pm:62
 msgid "Intermediate"
-msgstr ""
+msgstr "中級"
 
 #: ../lib/MusicBrainz/Server/Form/User/EditProfile.pm:63
 msgid "Advanced"
-msgstr ""
+msgstr "上級"
 
 #: ../lib/MusicBrainz/Server/Form/User/EditProfile.pm:64
 msgid "Native"
-msgstr ""
+msgstr "母語"
 
 #: ../lib/MusicBrainz/Server/Form/User/EditProfile.pm:78
 msgid "You must supply a complete birth date for us to display your age."
