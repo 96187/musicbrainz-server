@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-10-01 07:59+0000\n"
+"PO-Revision-Date: 2013-10-01 08:58+0000\n"
 "Last-Translator: th1rtyf0ur\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/musicbrainz/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -151,41 +151,41 @@ msgstr "（他のカバーアートありません）"
 #: ../root/edit/details/historic/add_release_annotation.tt:21
 msgctxt "annotation changes"
 msgid "(none)"
-msgstr ""
+msgstr "（無し）"
 
 #: ../root/edit/details/remove_cover_art.tt:27
 msgctxt "comment"
 msgid "(none)"
-msgstr ""
+msgstr "（無し）"
 
 #: ../root/edit/details/add_relationship_type.tt:9
 #: ../root/relationship/linktype/tree.tt:15
 msgctxt "description"
 msgid "(none)"
-msgstr ""
+msgstr "（無し）"
 
 #: ../root/user/profile.tt:38
 msgctxt "email"
 msgid "(none)"
-msgstr ""
+msgstr "（無し）"
 
 #: ../root/relationship/linktype/tree.tt:12
 #: ../root/relationship/linktype/tree.tt:13
 #: ../root/relationship/linktype/tree.tt:14
 msgctxt "link phrase"
 msgid "(none)"
-msgstr ""
+msgstr "（無し）"
 
 #: ../root/layout/sidebar/sidebar-tags.tt:26
 #: ../root/scripts/text_strings.tt:23
 msgctxt "tag"
 msgid "(none)"
-msgstr ""
+msgstr "（無し）"
 
 #: ../root/edit/details/remove_cover_art.tt:15
 msgctxt "type"
 msgid "(none)"
-msgstr ""
+msgstr "（無し）"
 
 #: ../root/elections/show.tt:124
 msgid "(private)"
@@ -239,7 +239,7 @@ msgstr "、"
 #: ../root/report/iswc_with_many_works.tt:47
 #: ../root/report/iswc_with_many_works.tt:61
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #: ../root/user/profile.tt:101
 msgid "0"
@@ -1124,7 +1124,7 @@ msgstr "本当にこのアプリケーションの許可を取り消しますか
 
 #: ../root/account/revoke_application_access.tt:5
 msgid "Are you sure you want to revoke this application's access?"
-msgstr ""
+msgstr "本当にこのアプリケーションの許可を取り消しますか？"
 
 #: ../root/edit/cancel.tt:3
 msgid "Are you sure you wish to cancel edit #{n}? This cannot be undone!"
@@ -1427,7 +1427,7 @@ msgstr ""
 #: ../root/report/duplicate_relationships_artists.tt:3
 #: ../root/report/index.tt:25
 msgid "Artists with possible duplicate relationships"
-msgstr ""
+msgstr "複写の関連を持つ可能性のあるアーティスト"
 
 #: ../root/recording/fingerprints.tt:3
 msgid "Associated AcoustIDs"
@@ -3152,7 +3152,7 @@ msgstr "エンティティが見つかりません"
 
 #: ../root/edit/details/edit_relationship_type.tt:6
 msgid "Entity types:"
-msgstr ""
+msgstr "エンティティのタイプ："
 
 #: ../root/report/not_available.tt:1 ../root/report/not_available.tt:3
 #: ../lib/MusicBrainz/Server/Edit/Utils.pm:255
@@ -4034,7 +4034,7 @@ msgstr "「{index}」から始まるレーベル"
 #: ../root/report/duplicate_relationships_labels.tt:3
 #: ../root/report/index.tt:32
 msgid "Labels with possible duplicate relationships"
-msgstr ""
+msgstr "複写の関連を持つ可能性のあるレーベル"
 
 #: ../root/release/index.tt:15
 msgid "Labels:"
@@ -4326,21 +4326,21 @@ msgstr "メディア"
 msgid ""
 "Medium <span class=\"new\">{new}</span> (moved from position <span "
 "class=\"old\">{old}</span>)"
-msgstr ""
+msgstr "メディア<span class=\"new\">{new}</span> （<span class=\"old\">{old}</span>から移動）"
 
 #: ../root/edit/details/reorder_mediums.tt:29
 msgid "Medium <span class=\"new\">{new}</span> (new medium)"
-msgstr ""
+msgstr "メディア<span class=\"new\">{new}</span> （新しいメディア）"
 
 #: ../root/edit/details/reorder_mediums.tt:26
 msgid ""
 "Medium <span class=\"new\">{new}</span>: {title} (moved from position <span "
 "class=\"old\">{old}</span>)"
-msgstr ""
+msgstr "メディア<span class=\"new\">{new}</span>：{title} （<span class=\"old\">{old}</span>から移動）"
 
 #: ../root/edit/details/reorder_mediums.tt:23
 msgid "Medium <span class=\"new\">{new}</span>: {title} (new medium)"
-msgstr ""
+msgstr "メディア<span class=\"new\">{new}</span>：{title} （新しいメディア）"
 
 #: ../root/edit/details/merge_releases.tt:36
 msgid "Medium {position} is now medium {new_position}"
@@ -5720,7 +5720,7 @@ msgstr ""
 #: ../root/report/duplicate_relationships_recordings.tt:3
 #: ../root/report/index.tt:81
 msgid "Recordings with possible duplicate relationships"
-msgstr ""
+msgstr "複写の関連を持つ可能性のあるレコーディング"
 
 #: ../root/report/featuring_recordings.tt:1
 #: ../root/report/featuring_recordings.tt:3 ../root/report/index.tt:80
@@ -6030,7 +6030,7 @@ msgstr ""
 #: ../root/report/duplicate_relationships_release_groups.tt:3
 #: ../root/report/index.tt:41
 msgid "Release groups with possible duplicate relationships"
-msgstr ""
+msgstr "複写の関連を持つ可能性のあるリリースグループ"
 
 #: ../root/report/featuring_release_groups.tt:1
 #: ../root/report/featuring_release_groups.tt:3 ../root/report/index.tt:39
@@ -6182,7 +6182,7 @@ msgstr "非順次的なトラック番号のあるリリース"
 #: ../root/report/duplicate_relationships_releases.tt:3
 #: ../root/report/index.tt:72
 msgid "Releases with possible duplicate relationships"
-msgstr ""
+msgstr "複写の関連を持つ可能性のあるリリース"
 
 #: ../root/report/index.tt:59 ../root/report/superfluous_data_tracks.tt:3
 msgid "Releases with superfluous data tracks"
@@ -6201,7 +6201,7 @@ msgstr ""
 #: ../root/report/index.tt:71 ../root/report/tracks_without_times.tt:1
 #: ../root/report/tracks_without_times.tt:3
 msgid "Releases with unknown track times"
-msgstr ""
+msgstr "トラック時間が不明のリリース"
 
 #: ../root/report/index.tt:70
 #: ../root/report/releases_with_unlikely_language_script.tt:1
@@ -6522,7 +6522,7 @@ msgstr ""
 #: ../root/account/revoke_application_access.tt:1
 #: ../root/account/revoke_application_access.tt:3
 msgid "Revoke Application Access"
-msgstr ""
+msgstr "アプリケーションの許可を取り消す"
 
 #: ../root/layout.tt:78
 msgid "Running: <span class=\"tooltip\" title=\"{msg}\">{branch} ({sha})</span>"
@@ -6677,37 +6677,37 @@ msgstr ""
 
 #: ../root/tag/index.tt:25
 msgid "See all {num} "
-msgstr ""
+msgstr "{num}の全てを表示"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} artists"
 msgid_plural "See all {num} artists"
-msgstr[0] ""
+msgstr[0] "{num}アーティストの全てを表示"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} labels"
 msgid_plural "See all {num} labels"
-msgstr[0] ""
+msgstr[0] "{num}レーベルの全てを表示"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} recordings"
 msgid_plural "See all {num} recordings"
-msgstr[0] ""
+msgstr[0] "{num}レコーディングの全てを表示"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} release groups"
 msgid_plural "See all {num} release groups"
-msgstr[0] ""
+msgstr[0] "{num}リリースグループの全てを表示"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} releases"
 msgid_plural "See all {num} releases"
-msgstr[0] ""
+msgstr[0] "{num}リリースの全てを表示"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} works"
 msgid_plural "See all {num} works"
-msgstr[0] ""
+msgstr[0] "{num}ワークの全てを表示"
 
 #: ../root/account/edit.tt:18
 msgid ""
@@ -9424,7 +9424,7 @@ msgstr "「{index}」から始まるワーク"
 #: ../root/report/duplicate_relationships_works.tt:3
 #: ../root/report/index.tt:87
 msgid "Works with possible duplicate relationships"
-msgstr ""
+msgstr "複写の関連を持つ可能性のあるワーク"
 
 #: ../root/artist/works-list.tt:10 ../root/iswc/index.tt:17
 #: ../root/otherlookup/results-work.tt:8
@@ -10173,7 +10173,7 @@ msgstr "{date} まで"
 #: ../root/edit/details/remove_label_alias.tt:10
 #: ../root/edit/details/remove_work_alias.tt:10
 msgid "view all aliases"
-msgstr ""
+msgstr "別名の全てを表示"
 
 #: ../root/components/common-macros.tt:161
 msgid "works"
@@ -11343,11 +11343,11 @@ msgstr "有効な時間ではありません。形式は MM:SS としてくだ�
 
 #: ../lib/MusicBrainz/Server/Form/Field/OAuthRedirectURI.pm:20
 msgid "URL protocol must be HTTP or HTTPS"
-msgstr ""
+msgstr "URLのプロトコルは HTTP か HTTPS でなければなりません"
 
 #: ../lib/MusicBrainz/Server/Form/Field/PartialDate.pm:66
 msgid "invalid date"
-msgstr ""
+msgstr "無効な日付"
 
 #: ../lib/MusicBrainz/Server/Form/Field/URL.pm:21
 msgid "Enter a valid url e.g. \"http://google.com/\""
