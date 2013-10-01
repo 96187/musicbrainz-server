@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-09-30 08:58+0000\n"
+"PO-Revision-Date: 2013-10-01 04:00+0000\n"
 "Last-Translator: th1rtyf0ur\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/musicbrainz/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -9532,7 +9532,7 @@ msgstr ""
 
 #: ../root/artist/edit_form.tt:3
 msgid "You are about to add an artist to MusicBrainz."
-msgstr ""
+msgstr "MusicBrainzにアーティストを追加するところです。"
 
 #: ../root/cdtoc/set_durations.tt:4
 msgid ""
@@ -9607,7 +9607,7 @@ msgstr ""
 #: ../root/artist/subscribers.tt:27 ../root/collection/subscribers.tt:27
 #: ../root/label/subscribers.tt:27 ../root/user/subscribers.tt:32
 msgid "You are currently subscribed. {unsub|Unsubscribe}?"
-msgstr ""
+msgstr "現在購読中。{unsub|購読を解除}？"
 
 #: ../root/watch/list.tt:7
 msgid "You are currently watching the following artists for new releases."
@@ -9624,7 +9624,7 @@ msgstr ""
 #: ../root/artist/subscribers.tt:33 ../root/collection/subscribers.tt:33
 #: ../root/label/subscribers.tt:33 ../root/user/subscribers.tt:38
 msgid "You are not currently subscribed. {sub|Subscribe}?"
-msgstr ""
+msgstr "現在非購読です。{sub|購読する}？"
 
 #: ../root/watch/list.tt:32
 msgid "You are not currently watching any artists for new releases."
@@ -9702,7 +9702,7 @@ msgstr ""
 
 #: ../root/release/sidebar.tt:136
 msgid "You have no collections!"
-msgstr ""
+msgstr "コレクションがありません。"
 
 #: ../root/user/collections.tt:35
 msgid "You have no collections."
@@ -9744,7 +9744,7 @@ msgstr ""
 
 #: ../root/edit/index.tt:70
 msgid "You must be logged in to vote on edits"
-msgstr ""
+msgstr "編集に投票するため、ログインしてください。"
 
 #: ../root/main/401.tt:9
 msgid ""
@@ -9768,15 +9768,15 @@ msgstr ""
 
 #: ../root/user/login.tt:7
 msgid "You need to be logged in to view this page."
-msgstr ""
+msgstr "このページを見るため、ログインしてください。"
 
 #: ../root/release/edit/information.tt:192
 msgid "You selected {label}."
-msgstr ""
+msgstr "{label}を選択しました。"
 
 #: ../root/release/edit/information.tt:163
 msgid "You selected {releasegroup}."
-msgstr ""
+msgstr "{releasegroup}を選択しました。"
 
 #: ../root/account/donation.tt:22
 msgid "You will never be nagged again!"
@@ -9794,7 +9794,7 @@ msgstr ""
 
 #: ../root/account/reset_password_ok.tt:5
 msgid "Your password has been reset."
-msgstr ""
+msgstr "パスワードはリセットされました。"
 
 #: ../root/account/preferences_ok.tt:5
 msgid ""
@@ -9804,7 +9804,7 @@ msgstr ""
 
 #: ../root/account/edit_ok.tt:6
 msgid "Your profile has been updated."
-msgstr ""
+msgstr "プロフィール更新しました。"
 
 #: ../root/search/error/invalid.tt:3
 msgid "Your search query was deemed invalid by our ruthless search server."
@@ -9816,7 +9816,7 @@ msgstr ""
 
 #: ../root/scripts/text_strings.tt:34
 msgid "[ Unknown ]"
-msgstr ""
+msgstr "［不明］"
 
 #: ../root/components/common-macros.tt:256
 msgid "[removed]"
@@ -9830,7 +9830,7 @@ msgstr ""
 
 #: ../root/scripts/text_strings.tt:35
 msgid "add a disambiguation comment"
-msgstr ""
+msgstr "曖昧さ回避のメモを追加"
 
 #: ../root/edit/search_macros.tt:159
 msgid "after"
@@ -9860,7 +9860,7 @@ msgstr ""
 
 #: ../root/components/common-macros.tt:161
 msgid "artists"
-msgstr ""
+msgstr "アーティスト"
 
 #: ../root/edit/search_macros.tt:14
 msgid "auto-edits"
@@ -9897,7 +9897,7 @@ msgstr ""
 
 #: ../root/release/edit/tracklist.tt:322
 msgid "credits"
-msgstr ""
+msgstr "クレジット"
 
 #: ../root/admin/wikidoc/index.tt:53
 msgid "diff"
@@ -9906,7 +9906,7 @@ msgstr "差分"
 #: ../root/release/edit/recordings.tt:64
 #: ../root/release/edit/recordings.tt:140
 msgid "disambiguation:"
-msgstr ""
+msgstr "曖昧さ回避"
 
 #: ../root/edit/search_macros.tt:24
 msgid "do not match"
@@ -9914,7 +9914,7 @@ msgstr ""
 
 #: ../root/components/common-macros.tt:161
 msgid "editors"
-msgstr ""
+msgstr "編集者"
 
 #: ../root/edit/search_macros.tt:14
 msgid "edits"
@@ -9926,7 +9926,7 @@ msgstr ""
 
 #: ../root/components/common-macros.tt:712 ../root/edit/details/macros.tt:28
 msgid "from {begin_date} until {end_date}"
-msgstr ""
+msgstr "{begin_date} から {end_date} まで"
 
 #: ../root/components/common-macros.tt:718 ../root/edit/details/macros.tt:28
 msgid "from {date} to ????"
@@ -9934,7 +9934,7 @@ msgstr ""
 
 #: ../root/components/common-macros.tt:720 ../root/edit/details/macros.tt:28
 msgid "from {date} to present"
-msgstr ""
+msgstr "{date} かれ現在まで"
 
 #: ../root/release/edit_relationships.tt:65
 #: ../root/release/edit_relationships.tt:111
@@ -9943,7 +9943,7 @@ msgstr ""
 
 #: ../root/search/results-freedb.tt:31
 msgid "import"
-msgstr ""
+msgstr "インポート"
 
 #: ../root/area/header.tt:20
 msgid "in {country}"
@@ -9956,7 +9956,7 @@ msgstr ""
 #: ../root/components/common-macros.tt:369
 #: ../root/components/rdfa-macros.tt:769 ../root/components/rdfa-macros.tt:782
 msgid "info"
-msgstr ""
+msgstr "情報"
 
 #: ../root/edit/search_macros.tt:125 ../root/edit/search_macros.tt:142
 #: ../root/edit/search_macros.tt:176 ../root/edit/search_macros.tt:188
@@ -10000,7 +10000,7 @@ msgstr ""
 
 #: ../root/components/common-macros.tt:161
 msgid "labels"
-msgstr ""
+msgstr "レーベル"
 
 #: ../root/components/common-macros.tt:456
 msgid "limited user"
@@ -10008,7 +10008,7 @@ msgstr ""
 
 #: ../root/edit/relationship/edit.tt:37 ../root/scripts/text_strings.tt:92
 msgid "link"
-msgstr ""
+msgstr "リンク"
 
 #: ../root/edit/search_macros.tt:24
 msgid "match"
@@ -10063,7 +10063,7 @@ msgstr ""
 #: ../root/label/subscribers.tt:14 ../root/user/subscribers.tt:14
 msgid "plus {n} other anonymous user"
 msgid_plural "Plus {n} other anonymous users"
-msgstr[0] ""
+msgstr[0] "兼匿名ユーザー{n}名"
 
 #: ../root/release/collections.tt:15
 msgid "plus {n} other private collection"
@@ -10085,15 +10085,15 @@ msgstr ""
 
 #: ../root/components/common-macros.tt:161
 msgid "recordings"
-msgstr ""
+msgstr "レコーディング"
 
 #: ../root/components/common-macros.tt:161
 msgid "release groups"
-msgstr ""
+msgstr "リリースグループ"
 
 #: ../root/components/common-macros.tt:161
 msgid "releases"
-msgstr ""
+msgstr "リリース"
 
 #: ../root/user/profile.tt:31
 msgid "resend verification email"
