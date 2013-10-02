@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-10-02 06:52+0000\n"
+"PO-Revision-Date: 2013-10-02 07:52+0000\n"
 "Last-Translator: th1rtyf0ur\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/musicbrainz/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -56,11 +56,11 @@ msgstr "「NNNNN」は特定のレコーディングを識別する唯一の５�
 msgid ""
 "\"XXX\" is a three character alphanumeric registrant code, uniquely "
 "identifying the organisation which registered the code."
-msgstr ""
+msgstr "「XXX」は登録した組織の固有な３文字の英数字コードです。"
 
 #: ../root/recording/add_isrc.tt:11
 msgid "\"YY\" is the last two digits of the year of registration."
-msgstr ""
+msgstr "「YY」は登録された年の最後の２桁。"
 
 #: ../root/cdstub/cdstub.tt:4 ../root/edit/details/add_medium.tt:49
 #: ../root/edit/details/edit_medium.tt:52
@@ -313,7 +313,7 @@ msgid ""
 "license. Furthermore, you give the MetaBrainz Foundation the right to "
 "license this data for commercial use. Please read our {doc|license page} for"
 " more details.</strong>"
-msgstr ""
+msgstr "<strong>MusicBrainzに提出したものは全てパブリックドメイン若しくはCreative Commonsの表示・非営利・継承ライセンスで公開されます。その上、MetaBrainz Foundationに営利目的での二次使用権も付与することになります。詳細は{doc|ライセンスページ}をご参照ください。</strong>"
 
 #: ../root/admin/wikidoc/index.tt:16
 msgid ""
@@ -325,13 +325,13 @@ msgstr ""
 
 #: ../root/components/common-macros.tt:828
 msgid "<strong>Note</strong>:"
-msgstr ""
+msgstr "<strong>注目：</strong>"
 
 #: ../root/main/index.tt:61
 msgid ""
 "<strong>The ultimate source of music information</strong> by allowing anyone"
 " to contribute and releasing the {doc|data} under {doc2|open licenses}."
-msgstr ""
+msgstr "誰でも投稿でき、{doc|データ}を{doc2|オープンライセンス}で公開する<strong>音楽情報の究極的な源</strong>であること。"
 
 #: ../root/main/index.tt:66
 msgid ""
@@ -742,20 +742,20 @@ msgstr "リリースグループを追加"
 
 #: ../root/report/duplicate_artists.tt:51
 msgid "Add selected artists for merging"
-msgstr "選択されたアーティストを合併"
+msgstr "選択されたアーティストをマージ"
 
 #: ../root/artist/recordings.tt:13 ../root/isrc/index.tt:37
 msgid "Add selected recordings for merging"
-msgstr "選択されたレコーディングを合併"
+msgstr "選択されたレコーディングをマージ"
 
 #: ../root/artist/releases.tt:13 ../root/label/index.tt:34
 #: ../root/release_group/index.tt:74
 msgid "Add selected releases for merging"
-msgstr "選択されたリリースを合併"
+msgstr "選択されたリリースをマージ"
 
 #: ../root/artist/works.tt:8 ../root/iswc/index.tt:60
 msgid "Add selected works for merging"
-msgstr "選択されたワークを合併"
+msgstr "選択されたワークをマージ"
 
 #: ../root/release/sidebar.tt:138
 msgid "Add to a new collection"
@@ -10623,11 +10623,11 @@ msgstr "ユーザー編集しました。"
 
 #: ../lib/MusicBrainz/Server/Controller/Artist.pm:524
 msgid "You cannot merge a special purpose artist into another artist"
-msgstr "特殊目的のアーティストを他のアーティストと合併出来ません。"
+msgstr "特殊目的のアーティストを他のアーティストとマージ出来ません。"
 
 #: ../lib/MusicBrainz/Server/Controller/Artist.pm:529
 msgid "You cannot merge into Deleted Artist"
-msgstr "削除されたアーティストに合併できません。"
+msgstr "削除されたアーティストにマージできません。"
 
 #: ../lib/MusicBrainz/Server/Controller/AutoEditorElections.pm:70
 #, perl-brace-format
@@ -10715,7 +10715,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Controller/Release.pm:582
 msgid ""
 "This merge strategy is not applicable to the releases you have selected."
-msgstr "この合併方法は選択されたリリースに適用できません。"
+msgstr "このマージ方法は選択されたリリースに適用できません。"
 
 #: ../lib/MusicBrainz/Server/Controller/Role/Annotation.pm:174
 msgid "The old and new annotation ids must be unique, positive integers."
