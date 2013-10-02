@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-10-02 07:52+0000\n"
+"PO-Revision-Date: 2013-10-02 08:59+0000\n"
 "Last-Translator: th1rtyf0ur\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/musicbrainz/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -338,7 +338,7 @@ msgid ""
 "<strong>The universal lingua franca for music</strong> by providing a "
 "reliable and unambiguous form of {doc|music identification}, enabling both "
 "people and machines to have meaningful conversations about music."
-msgstr ""
+msgstr "頼りで、曖昧でない{doc|音楽の識別}を提供し、人間もパソコンも音楽について有意義な会話ができるための<strong>音楽の国際語</strong>となること。"
 
 #: ../root/recording/merge.tt:8
 msgid ""
@@ -376,7 +376,7 @@ msgid ""
 "A CD Stub was found that matches the disc ID you provided. If the below "
 "tracklist appears correct, you may use it as a starting point as a new "
 "MusicBrainz release"
-msgstr ""
+msgstr "提出したディスクIDはCDスタブとマッチしました。以下のトラックリストは正しそうであれば、新しいMusicBrainzリリースの起点として使えます。"
 
 #: ../root/release/edit/recordings.tt:183
 msgid ""
@@ -387,7 +387,7 @@ msgstr ""
 #: ../root/release/collections.tt:18
 msgid "A private collection"
 msgid_plural "{n} private collections"
-msgstr[0] ""
+msgstr[0] "{n} 非公開のコレクション"
 
 #: ../root/edit/relationship/create.tt:26
 msgid ""
@@ -420,11 +420,11 @@ msgstr "同意"
 
 #: ../root/edit/index.tt:64
 msgid "Accept edit"
-msgstr ""
+msgstr "編集を承認"
 
 #: ../root/components/common-macros.tt:640
 msgid "Accept upon expiration"
-msgstr ""
+msgstr "締め切りに承認"
 
 #: ../root/user/profile.tt:147
 msgctxt "edit descriptor"
@@ -821,15 +821,15 @@ msgstr ""
 
 #: ../root/layout/menu.tt:81
 msgid "Admin"
-msgstr ""
+msgstr "アドミン"
 
 #: ../root/admin/index.tt:1 ../root/admin/index.tt:3
 msgid "Administration"
-msgstr ""
+msgstr "経営"
 
 #: ../root/admin/edit_user.tt:17
 msgid "Administration flags"
-msgstr ""
+msgstr "経営フラグ"
 
 #: ../root/user/profile.tt:61
 msgid "Age:"
@@ -897,23 +897,23 @@ msgstr "アクセス承認"
 
 #: ../root/account/preferences.tt:25
 msgid "Allow other users to see my ratings"
-msgstr ""
+msgstr "自分の評価を公開して"
 
 #: ../root/account/preferences.tt:23
 msgid "Allow other users to see my subscriptions"
-msgstr ""
+msgstr "自分の購読を公開して"
 
 #: ../root/account/preferences.tt:24
 msgid "Allow other users to see my tags"
-msgstr ""
+msgstr "自分のタグを公開して"
 
 #: ../root/collection/edit_form.tt:13
 msgid "Allow other users to see this collection"
-msgstr ""
+msgstr "このコレクションを公開して"
 
 #: ../root/components/common-macros.tt:685
 msgid "Already expired"
-msgstr ""
+msgstr "既に締め切りました"
 
 #: ../root/release/edit/recordings.tt:362
 msgid "Also update the recording with track changes"
@@ -973,11 +973,11 @@ msgstr[0] "匿名ユーザー{n}名"
 #: ../root/edit/index.tt:16 ../root/edit/list.tt:83
 #: ../root/release/edit/editnote.tt:27
 msgid "An error occured while loading this edit"
-msgstr ""
+msgstr "この編集をロード中にエラーが発生しました"
 
 #: ../root/release/edit/tracklist.tt:116
 msgid "An error occured: "
-msgstr ""
+msgstr "エラーが発生しました："
 
 #: ../root/release/edit_relationships.tt:164
 #: ../root/release/edit_relationships.tt:236
@@ -1007,7 +1007,7 @@ msgstr ""
 #: ../root/release_group/annotation_diff.tt:1
 #: ../root/work/annotation_diff.tt:1
 msgid "Annotation comparison"
-msgstr ""
+msgstr "注釈の比較"
 
 #: ../root/area/annotation_history.tt:1 ../root/area/annotation_history.tt:2
 #: ../root/artist/annotation_history.tt:9
@@ -1025,11 +1025,11 @@ msgstr "注釈の履歴"
 
 #: ../root/annotation/common.tt:15
 msgid "Annotation last modified by {user} on {date}."
-msgstr ""
+msgstr "注釈は{date}に{user}で更新しました。"
 
 #: ../root/annotation/common.tt:34
 msgid "Annotation last modified on {date}."
-msgstr ""
+msgstr "注釈は{date}に更新しました。"
 
 #: ../root/annotation/edit.tt:15 ../root/release/edit/information.tt:145
 msgid "Annotation:"
@@ -1041,11 +1041,11 @@ msgstr ""
 
 #: ../root/artist/relationships.tt:9
 msgid "Appearances"
-msgstr ""
+msgstr "出場"
 
 #: ../root/recording/index.tt:3
 msgid "Appears on releases"
-msgstr ""
+msgstr "リリースの出場"
 
 #: ../root/edit/details/merge_releases.tt:67
 #: ../lib/MusicBrainz/Server/Form/Merge/Release.pm:50
@@ -1074,7 +1074,7 @@ msgstr "編集を承認して"
 msgid ""
 "Are you sure that you want to merge {release1} by {artist1} into {release2} "
 "by {artist2}?"
-msgstr ""
+msgstr "本当に{artist1}の{release1}を{artist2}の{release2}にマージしますか？"
 
 #: ../root/cdtoc/attach_confirm.tt:3
 msgid ""
@@ -1086,7 +1086,7 @@ msgstr ""
 msgid ""
 "Are you sure you want to delete all information about {e}? This cannot be "
 "undone!"
-msgstr ""
+msgstr "本当に{e}の情報を全て削除しますか？削除してから元に戻す事はできません！"
 
 #: ../root/admin/delete_user.tt:20
 msgid "Are you sure you want to delete your account? This cannot be undone!"
@@ -1102,7 +1102,7 @@ msgstr "{editor}を本当に自動エディターとして推薦しますか？"
 msgid ""
 "Are you sure you want to remove the PUID <code>{puid}</code> from "
 "{recording} by {ac}?"
-msgstr ""
+msgstr "本当に{ac}の{recording}からPUID <code>{puid}</code>を削除しますか？"
 
 #: ../root/alias/delete.tt:1
 msgid "Are you sure you want to remove the alias <em>{alias}</em>?"
@@ -1110,13 +1110,13 @@ msgstr "本当に<em>{alias}</em>という別名を削除して宜しいです�
 
 #: ../root/collection/delete.tt:4
 msgid "Are you sure you want to remove the collection {collection}?"
-msgstr ""
+msgstr "本当に{collection}というコレクションを削除しますか？"
 
 #: ../root/cdtoc/remove.tt:5
 msgid ""
 "Are you sure you want to remove the disc ID <code>{discid}</code> from the "
 "release {release} by {artist}?"
-msgstr ""
+msgstr "本当に{artist}の{release}から<code>{discid}</code>のディスクIDを削除しますか？"
 
 #: ../root/account/remove_application.tt:5
 msgid "Are you sure you want to remove this application?"
@@ -1128,7 +1128,7 @@ msgstr "本当にこのアプリケーションの許可を取り消しますか
 
 #: ../root/edit/cancel.tt:3
 msgid "Are you sure you wish to cancel edit #{n}? This cannot be undone!"
-msgstr ""
+msgstr "本当に編集{n}号をキャンセルしますか？元に戻す事はできません！"
 
 #: ../root/admin/wikidoc/delete.tt:4
 msgid ""
@@ -1140,19 +1140,19 @@ msgstr ""
 msgid ""
 "Are you sure you wish to remove the <strong>{link_attr_type}</strong> "
 "relationship attribute?"
-msgstr ""
+msgstr "本当に<strong>{link_attr_type}</strong>という関連属性を削除しますか？"
 
 #: ../root/relationship/linktype/delete.tt:6
 msgid ""
 "Are you sure you wish to remove the <strong>{link_type}</strong> "
 "relationship type?"
-msgstr ""
+msgstr "本当に<strong>{link_type}</strong>という関連タイプを削除しますか？"
 
 #: ../root/isrc/delete.tt:5
 msgid ""
 "Are you sure you wish to remove the ISRC <code>{isrc}</code> from "
 "{recording} by {artist}?"
-msgstr ""
+msgstr "本当に{artist}の{recording}から<code>{isrc}</code>のISRCを削除しますか？"
 
 #: ../root/area/delete.tt:5
 msgid "Are you sure you wish to remove the area {area} from MusicBrainz?"
@@ -1166,28 +1166,28 @@ msgstr ""
 
 #: ../root/label/delete.tt:5
 msgid "Are you sure you wish to remove the label {label} from MusicBrainz?"
-msgstr ""
+msgstr "本当にMusicBrainzから{label}というレーベルを削除しますか？"
 
 #: ../root/recording/delete.tt:9
 msgid ""
 "Are you sure you wish to remove the recording {recording} from MusicBrainz?"
-msgstr ""
+msgstr "本当にMusicBrainzから{recording}というレコーディングを削除しますか？"
 
 #: ../root/edit/relationship/delete.tt:6
 msgid ""
 "Are you sure you wish to remove the relationship: {entity0} {relationship}?"
-msgstr ""
+msgstr "本当に{entity0}と{relationship}の関連を削除しますか？"
 
 #: ../root/release_group/delete.tt:5
 msgid ""
 "Are you sure you wish to remove the release group {rg} by {artist} from "
 "MusicBrainz?"
-msgstr ""
+msgstr "本当に{artist}の{rg}というリリースグループを削除しますか？"
 
 #: ../root/release/delete.tt:7
 msgid ""
 "Are you sure you wish to remove the release {release} from MusicBrainz?"
-msgstr ""
+msgstr "本当に{release}というリリースを削除しますか？"
 
 #: ../root/area/edits.tt:18 ../root/area/header.tt:20
 #: ../root/components/common-macros.tt:552
@@ -1286,7 +1286,7 @@ msgstr "アーティストの詳細"
 
 #: ../root/otherlookup/form.tt:3
 msgid "Artist IPI:"
-msgstr ""
+msgstr "アーティストIPI:"
 
 #: ../root/otherlookup/form.tt:3
 msgid "Artist ISNI:"
@@ -1298,7 +1298,7 @@ msgstr "アーティストが見つかりません"
 
 #: ../root/user/subscriptions/artist.tt:1 ../root/user/subscriptions/menu.tt:3
 msgid "Artist Subscriptions"
-msgstr ""
+msgstr "アーティストの購読"
 
 #: ../root/components/forms.tt:283
 msgid "Artist as credited"
