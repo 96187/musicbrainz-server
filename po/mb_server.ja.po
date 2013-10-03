@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-10-02 08:59+0000\n"
+"PO-Revision-Date: 2013-10-03 06:49+0000\n"
 "Last-Translator: th1rtyf0ur\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/musicbrainz/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1439,12 +1439,12 @@ msgstr "関連のPUID"
 
 #: ../root/puid/index.tt:5
 msgid "Associated with recordings"
-msgstr ""
+msgstr "レコーディングの関連"
 
 #: ../root/isrc/index.tt:5
 msgid "Associated with {num} recording"
 msgid_plural "Associated with {num} recordings"
-msgstr[0] ""
+msgstr[0] "{num}レコーディングとの関連"
 
 #: ../root/iswc/index.tt:5
 msgid "Associated with {num} work"
@@ -1474,7 +1474,7 @@ msgstr "DiscIDを接続"
 
 #: ../root/cdtoc/index.tt:7
 msgid "Attached to releases"
-msgstr ""
+msgstr "リリースの関連"
 
 #: ../root/artist/relationships.tt:15
 msgid "Attributes"
@@ -1582,7 +1582,7 @@ msgstr "バーコード："
 msgid ""
 "Based on the above CD stub, we also found the following releases in "
 "MusicBrainz that may be related:"
-msgstr ""
+msgstr "以上のCDスタブにより、MusicBrainzに以下のリリースは関係ある可能性があります："
 
 #: ../root/release/edit/duplicates.tt:13
 msgid ""
