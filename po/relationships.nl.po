@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
-"PO-Revision-Date: 2013-10-07 18:56+0000\n"
+"PO-Revision-Date: 2013-10-07 19:31+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -2571,7 +2571,7 @@ msgstr "is een remix van"
 
 #: DB:link_type/long_link_phrase:278
 msgid "is a {partial} {live} {instrumental} {cover} recording of"
-msgstr "is een {partial:gedeeltelijke} {live} {instrumental:instrumentale} {cover}opname van"
+msgstr "is een {partial:gedeeltelijke} {live:live} {instrumental:instrumentale} {cover:cover}opname van"
 
 #: DB:link_type/long_link_phrase:15
 msgid "is a {translated} {parody} cover of"
@@ -2656,7 +2656,7 @@ msgstr "is/was de moedermaatschappij van"
 
 #: DB:link_type/long_link_phrase:103
 msgid "is/was {additional:an additional|a} member of {founder:and founded|}"
-msgstr "is/was {additional:aanvullend|een} lid van {founder:en richtte op|}"
+msgstr "is/was {additional:aanvullend|een} lid van {founder:en oprichter van|}"
 
 #: DB:link_type/long_link_phrase:305
 msgid ""
@@ -2678,7 +2678,7 @@ msgstr "latere uitgaves"
 
 #: DB:link_type/link_phrase:241
 msgid "later {translated} {parody} versions"
-msgstr "latere {translated:vertaalde} {parody:parodie}-versies"
+msgstr "latere {translated:vertaalde} {parody:parodie-}versies"
 
 #: DB:link_attribute_type/name:4
 msgid "lead vocals"
@@ -3392,7 +3392,7 @@ msgstr "schreef {additional:aanvullend}"
 msgid ""
 "{additional:additionally} {assistant} {associate} programmed {instrument:% "
 "on}"
-msgstr "programmeerde {additional:aanvullend|additionally:aanvullend} {assistant:assisterend} {associate:geassocieerd} {instrument:% op}"
+msgstr "programmeerde {additional:aanvullend} {assistant:assisterend} {associate:geassocieerd} {instrument:% op}"
 
 #: DB:link_type/link_phrase:140 DB:link_type/link_phrase:31
 #: DB:link_type/long_link_phrase:140 DB:link_type/long_link_phrase:31
@@ -3446,7 +3446,7 @@ msgstr "produceerde {additional:aanvullend|additionally:aanvullend} {assistant:a
 #: DB:link_type/link_phrase:51 DB:link_type/link_phrase:156
 #: DB:link_type/long_link_phrase:51 DB:link_type/long_link_phrase:156
 msgid "{additional:additionally} {guest} {solo} performed"
-msgstr "voerde {additional:aanvullend|additionally:aanvullend} {guest:gast} {solo:solo} uit"
+msgstr "voerde {additional:aanvullend} {guest:gast} {solo:solo} uit"
 
 #: DB:link_type/link_phrase:282 DB:link_type/link_phrase:158
 #: DB:link_type/link_phrase:41
@@ -3560,12 +3560,12 @@ msgstr "{additional:aanvullend} {assistant:assistent} {associate:geassocieerd} {
 #: DB:link_type/reverse_link_phrase:28 DB:link_type/reverse_link_phrase:138
 msgid ""
 "{additional} {assistant} {associate} {co:co-}{executive:executive }engineer"
-msgstr "{additional:aanvullend} {assistant:assistent} {associate:geassocieerd} {co:co-}{executive:bestuurlijk}technicus"
+msgstr "{additional:aanvullend} {assistant:assistent} {associate:geassocieerd} {co:co-}{executive:bestuurlijk} technicus"
 
 #: DB:link_type/reverse_link_phrase:30 DB:link_type/reverse_link_phrase:141
 msgid ""
 "{additional} {assistant} {associate} {co:co-}{executive:executive }producer"
-msgstr "{additional:aanvullend} {assistant:assistent} {associate:geassocieerd} {co:co-}{executive:uitvoerend} producent"
+msgstr "{additional:aanvullend} {assistant:assistent} {associate:geassocieerd} {co:co-}{executive:bestuurlijk} producent"
 
 #: DB:link_type/link_phrase:37 DB:link_type/link_phrase:132
 #: DB:link_type/reverse_link_phrase:37 DB:link_type/reverse_link_phrase:132
@@ -3597,7 +3597,7 @@ msgstr ""
 #: DB:link_type/reverse_link_phrase:282 DB:link_type/reverse_link_phrase:158
 #: DB:link_type/reverse_link_phrase:41
 msgid "{additional} {instrument} arranger"
-msgstr "{additional:aanvullend} {instrument} arrangeur"
+msgstr "{additional:aanvullend} arrangeur van {instrument}"
 
 #: DB:link_type/link_phrase:166 DB:link_type/link_phrase:39
 #: DB:link_type/link_phrase:299 DB:link_type/reverse_link_phrase:166
