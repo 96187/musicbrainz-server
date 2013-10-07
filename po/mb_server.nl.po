@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-07-24 06:02+0000\n"
+"PO-Revision-Date: 2013-10-07 16:17+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -154,7 +154,7 @@ msgstr "(geen veranderingslogboek)"
 
 #: ../root/release/add_cover_art.tt:26
 msgid "(no other cover art)"
-msgstr "(geen andere hoesafbeeldingen)"
+msgstr "(geen andere afbeeldingen)"
 
 #: ../root/edit/details/historic/add_release_annotation.tt:21
 msgctxt "annotation changes"
@@ -498,12 +498,12 @@ msgstr "CD-beginsel toevoegen"
 #: ../root/release/cover_art.tt:53
 msgctxt "button/menu"
 msgid "Add Cover Art"
-msgstr "Hoesafbeelding toevoegen"
+msgstr "Afbeelding toevoegen"
 
 #: ../root/release/add_cover_art.tt:5 ../root/release/add_cover_art.tt:6
 msgctxt "header"
 msgid "Add Cover Art"
-msgstr "Hoesafbeelding toevoegen"
+msgstr "Afbeelding toevoegen"
 
 #: ../root/release/edit/tracklist.tt:165 ../root/release/edit/tracklist.tt:291
 #: ../root/release/edit/tracklist.tt:483
@@ -1173,7 +1173,7 @@ msgstr "Weet u zeker dat u het gebied {area} wilt verwijderen van Musicbrainz?"
 msgid ""
 "Are you sure you wish to remove the below cover art from {release} by "
 "{artist}?"
-msgstr "Weet u zeker dat u de onderstaande hoesafbeelding van {release} van {artist} wilt verwijderen?"
+msgstr "Weet u zeker dat u de onderstaande afbeelding van {release} van {artist} wilt verwijderen?"
 
 #: ../root/label/delete.tt:5
 msgid "Are you sure you wish to remove the label {label} from MusicBrainz?"
@@ -1930,7 +1930,7 @@ msgstr "Kandidaat:"
 #: ../root/release/caa_darkened.tt:1 ../root/release/caa_darkened.tt:2
 #: ../root/release/cover_art.tt:59
 msgid "Cannot Add Cover Art"
-msgstr "Kan geen hoesafbeelding toevoegen"
+msgstr "Kan geen afbeelding toevoegen"
 
 #: ../root/edit/relationship/cannot_create.tt:1
 #: ../root/edit/relationship/cannot_create.tt:2
@@ -2237,25 +2237,25 @@ msgstr "Land:"
 
 #: ../root/release/cover_art.tt:3 ../root/release/tabs.tt:1
 msgid "Cover Art"
-msgstr "Hoesafbeelding(en)"
+msgstr "Afbeelding(en)"
 
 #: ../root/layout.tt:160
 msgid ""
 "Cover Art provided by the {caa|Cover Art Archive}. Hosted by {host|Digital "
 "West}. Sponsored by: {url1|Google}, {url2|OSUOSL} and {more|others...}. "
-msgstr "Hoesafbeeldingen geleverd door de {caa|Cover Art Archive}. Gehost door {host|Digital West}. Gesponsord door: {url1|Google}, {url2|OSUOSL} en {more|anderen…}"
+msgstr "Afbeeldingen geleverd door de {caa|Cover Art Archive}. Gehost door {host|Digital West}. Gesponsord door: {url1|Google}, {url2|OSUOSL} en {more|anderen…}"
 
 #: ../root/release/sidebar.tt:9
 msgid "Cover art from {cover|Amazon}"
-msgstr "Hoesafbeelding van {cover|Amazon}"
+msgstr "Afbeelding van {cover|Amazon}"
 
 #: ../root/release/sidebar.tt:11
 msgid "Cover art from {cover|host}"
-msgstr "Hoesafbeelding van {cover|host}"
+msgstr "Afbeelding van {cover|host}"
 
 #: ../root/edit/details/macros.tt:94
 msgid "Cover art:"
-msgstr "Hoesafbeelding:"
+msgstr "Afbeelding:"
 
 #: ../root/admin/wikidoc/create.tt:12
 msgid "Create"
@@ -2728,7 +2728,7 @@ msgstr "Collectie bewerken"
 
 #: ../root/release/edit_cover_art.tt:5 ../root/release/edit_cover_art.tt:6
 msgid "Edit Cover Art"
-msgstr "Hoesafbeelding bewerken"
+msgstr "Afbeelding bewerken"
 
 #: ../root/layout/menu.tt:93
 msgid "Edit Instrument Tree"
@@ -4240,7 +4240,7 @@ msgstr "Aanmelden om te bewerken"
 
 #: ../root/release/cover_art.tt:64
 msgid "Log in to upload cover art"
-msgstr "Meld u aan om hoesafbeeldingen te uploaden"
+msgstr "Meld u aan om afbeeldingen te uploaden"
 
 #: ../root/edit/details/edit_relationship_type.tt:29
 #: ../root/relationship/linktype/form.tt:15
@@ -4747,7 +4747,7 @@ msgstr "Nieuw type:"
 
 #: ../root/edit/details/set_cover_art.tt:32
 msgid "New cover art:"
-msgstr "Nieuwe hoesafbeeldingen:"
+msgstr "Nieuwe afbeeldingen:"
 
 #: ../root/release/merge.tt:98
 msgid "New disc title:"
@@ -4843,7 +4843,7 @@ msgstr "Geen collecties met dit etiket gevonden."
 
 #: ../root/release/sidebar.tt:14 ../root/release/sidebar.tt:21
 msgid "No cover art available."
-msgstr "Geen hoesafbeelding beschikbaar."
+msgstr "Geen afbeelding beschikbaar."
 
 #: ../root/edit/notes.tt:40
 msgid "No edit notes have been added."
@@ -4859,7 +4859,7 @@ msgstr "Geen verkiezingen gevonden."
 
 #: ../root/release/sidebar.tt:17
 msgid "No front cover image available.<br/>{all|View all artwork}."
-msgstr "Geen afbeelding van de voorkant aanwezig.<br/>{all|Bekijk alle hoesafbeeldingen}"
+msgstr "Geen afbeelding van de voorkant aanwezig.<br/>{all|Bekijk alle afbeeldingen}"
 
 #: ../root/relationship/linkattributetype/instruments.tt:31
 msgid "No instruments found."
@@ -4919,7 +4919,7 @@ msgstr "Geen uitgaves gevonden."
 
 #: ../root/release_group/set_cover_art.tt:63
 msgid "No releases have cover art, cannot set cover art."
-msgstr "Geen uitgaves hebben hoesafbeeldingen, er kan geen hoesafbeelding worden ingesteld."
+msgstr "Geen uitgaves hebben afbeeldingen, er kan geen afbeelding worden ingesteld."
 
 #: ../root/tag/release.tt:1
 msgid "No releases with this tag were found."
@@ -5068,7 +5068,7 @@ msgstr "Oude nummerlijst"
 
 #: ../root/edit/details/set_cover_art.tt:13
 msgid "Old cover art:"
-msgstr "Oude hoesafbeeldingen:"
+msgstr "Oude afbeeldingen:"
 
 #: ../root/account/change_password.tt:22
 msgid "Old password:"
@@ -5441,7 +5441,7 @@ msgstr "Zoek naar de artiest waar u een nieuwe uitgave voor wilt toevoegen:"
 msgid ""
 "Please see the <a href=\"{doc}\" target=\"_blank\">Cover Art Types</a> "
 "documentation for a description of these types."
-msgstr "Lees de <a href=\"{doc}\" target=\"_blank\">documentatie over hoesafbeeldingstypes</a> voor een beschrijving van deze types."
+msgstr "Lees de <a href=\"{doc}\" target=\"_blank\">documentatie over afbeeldingstypes</a> voor een beschrijving van deze types."
 
 #: ../root/scripts/text_strings.tt:42
 msgid "Please select a relationship type."
@@ -6134,11 +6134,11 @@ msgstr "Uitgaves waarbij sommige mediumtypes ontbreken."
 #: ../root/report/releases_in_caa_with_cover_art_relationships.tt:1
 msgid ""
 "Releases in the Cover Art Archive that still have cover art relationships"
-msgstr "Uitgaves in de Cover Art Archive die nog steeds relaties hebben voor hoesafbeeldingen."
+msgstr "Uitgaves in de Cover Art Archive die nog steeds relaties hebben voor afbeeldingen."
 
 #: ../root/report/index.tt:68
 msgid "Releases of any sort that still have cover art relationships"
-msgstr "Uitgaves van elk type die nog relaties voor hoesafbeeldingen hebben."
+msgstr "Uitgaves van elk type die nog relaties voor afbeeldingen hebben."
 
 #: ../root/report/index.tt:61 ../root/report/released_too_early.tt:1
 #: ../root/report/released_too_early.tt:3
@@ -6177,7 +6177,7 @@ msgstr "Uitgaves die misschien moeten worden omgezet naar „diverse artiesten�
 #: ../root/report/releases_with_coverart_links.tt:1
 #: ../root/report/releases_with_coverart_links.tt:3
 msgid "Releases with Cover Art relationships"
-msgstr "Uitgaves met relaties voor hoesafbeeldingen."
+msgstr "Uitgaves met relaties voor afbeeldingen."
 
 #: ../root/report/index.tt:47 ../root/report/releases_with_cc_links.tt:1
 #: ../root/report/releases_with_cc_links.tt:3
@@ -6305,7 +6305,7 @@ msgstr "Vermelding van artiest verwijderen"
 
 #: ../root/release/remove_cover_art.tt:1 ../root/release/remove_cover_art.tt:2
 msgid "Remove Cover Art"
-msgstr "Hoesafbeelding verwijderen"
+msgstr "Afbeelding verwijderen"
 
 #: ../root/cdtoc/remove.tt:1 ../root/cdtoc/remove.tt:2
 msgid "Remove Disc ID"
@@ -6464,13 +6464,13 @@ msgstr "Vermelding van artiest hernoemen"
 #: ../root/release/cover_art.tt:55
 msgctxt "button/menu"
 msgid "Reorder Cover Art"
-msgstr "Volgorde van de hoesafbeeldingen bewerken"
+msgstr "Volgorde van de afbeeldingen bewerken"
 
 #: ../root/release/reorder_cover_art.tt:5
 #: ../root/release/reorder_cover_art.tt:6
 msgctxt "header"
 msgid "Reorder Cover Art"
-msgstr "Volgorde van de hoesafbeeldingen bewerken"
+msgstr "Volgorde van de afbeeldingen bewerken"
 
 #: ../root/layout/menu.tt:288
 msgid "Report a Bug"
@@ -6782,7 +6782,7 @@ msgstr "Stuur mij e-mails met bewerkingen in mijn abonnementen:"
 
 #: ../root/release_group/set_cover_art.tt:5
 msgid "Set Release Group Cover Art"
-msgstr "Stel hoesafbeelding voor de uitgavegroep in"
+msgstr "Stel afbeelding voor de uitgavegroep in"
 
 #: ../root/cdtoc/set_durations.tt:1 ../root/cdtoc/set_durations.tt:2
 msgid "Set Tracklist Durations"
@@ -6795,7 +6795,7 @@ msgstr "Stel een nieuw wachtwoord in voor uw MusicBrainz gebruikersaccount."
 #: ../root/release_group/layout.tt:49 ../root/release_group/set_cover_art.tt:7
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/SetCoverArt.pm:19
 msgid "Set cover art"
-msgstr "Stel hoesafbeelding in"
+msgstr "Stel afbeelding in"
 
 #: ../root/cdtoc/list.tt:45
 msgid "Set track durations"
@@ -7464,7 +7464,7 @@ msgstr "Die zoekopdracht kan niet worden uitgevoerd omdat u ten minste één „
 msgid ""
 "The Cover Art Archive has had a take down request in the past for this "
 "release, so we are unable to allow any more uploads."
-msgstr "De Cover Art Archive heeft in het verleden het verzoek gekregen om hoesafbeeldingen voor deze uitgave te verwijderen, dus we kunnen u niet meer toestaan om deze toe te voegen."
+msgstr "De Cover Art Archive heeft in het verleden het verzoek gekregen om afbeeldingen voor deze uitgave te verwijderen, dus we kunnen u niet meer toestaan om deze toe te voegen."
 
 #: ../root/user/profile.tt:81
 msgid "The Dawn of the Project"
@@ -8397,7 +8397,7 @@ msgstr "Dit rapport toont uitgaves waarvan het schrift niet is ingesteld. Als u 
 
 #: ../root/report/releases_with_coverart_links.tt:6
 msgid "This report shows releases that still have Cover Art relationships."
-msgstr "Dit rapport laat uitgaves zien die nog steeds relaties hebben voor hoesafbeeldingen."
+msgstr "Dit rapport laat uitgaves zien die nog steeds relaties hebben voor afbeeldingen."
 
 #: ../root/report/releases_with_cc_links.tt:6
 msgid ""
@@ -8432,7 +8432,7 @@ msgstr "Dit rapport laat uitgaves zien die (disc n) of (bonus disc) in de titel 
 msgid ""
 "This report shows releases which have artwork in the Cover Art Archive, but "
 "still have a cover art relationship (pointing to a URL)."
-msgstr "Dit rapport toont uitgaves met hoesafbeeldingen in de Cover Art Archive die nog steeds relaties voor hoesafbeeldingen hebben (die naar URL's verwijzen)."
+msgstr "Dit rapport toont uitgaves met afbeeldingen in de Cover Art Archive die nog steeds relaties voor afbeeldingen hebben (die naar URL's verwijzen)."
 
 #: ../root/report/cat_no_looks_like_asin.tt:6
 msgid ""
@@ -9234,14 +9234,14 @@ msgstr "Onze excuses, maar voor dit rapport zijn nu geen gegevens beschikbaar."
 
 #: ../root/edit/details/macros.tt:96
 msgid "We are unable to display history for this cover art."
-msgstr "We kunnen de geschiedenis van deze hoesafbeelding niet laten zien."
+msgstr "We kunnen de geschiedenis van deze afbeelding niet laten zien."
 
 #: ../root/edit/details/macros.tt:96
 #: ../root/edit/details/reorder_cover_art.tt:2
 msgid ""
 "We are unable to display history for this cover art. For a current listing "
 "of cover art, please see the {coverart|release's cover art page}."
-msgstr "We kunnen de geschiedenis van deze hoesafbeelding niet laten zien. Zie voor een huidige lijst van hoesafbeeldingen de {coverart|pagina met hoesafbeeldingen van de uitgave}"
+msgstr "We kunnen de geschiedenis van deze afbeelding niet laten zien. Zie voor een huidige lijst van afbeeldingen de {coverart|pagina met afbeeldingen van de uitgave}"
 
 #: ../root/release/edit/missing_entities.tt:149
 msgid ""
@@ -9257,7 +9257,7 @@ msgstr "We konden geen artiest vinden met de naam die u invoerde. Vul als u een 
 
 #: ../root/release/cover_art.tt:42
 msgid "We do not currently have any cover art for {release}."
-msgstr "We hebben momenteel geen hoesafbeelding van {release}."
+msgstr "We hebben momenteel geen afbeelding van {release}."
 
 #: ../root/cdtoc/lookup.tt:79
 msgid ""
@@ -11102,7 +11102,7 @@ msgstr "Relatietype verwijderen"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/AddCoverArt.pm:20
 msgid "Add cover art"
-msgstr "Hoesafbeeldingen toevoegen"
+msgstr "Afbeeldingen toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/AddReleaseLabel.pm:16
 msgid "Add release label"
@@ -11126,7 +11126,7 @@ msgstr "Streepjescodes bewerken"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/EditCoverArt.pm:22
 msgid "Edit cover art"
-msgstr "Hoesafbeelding bewerken"
+msgstr "Afbeelding bewerken"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/EditReleaseLabel.pm:22
 msgid "Edit release label"
@@ -11134,11 +11134,11 @@ msgstr "Platenmaatschappij van de uitgave bewerken"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/RemoveCoverArt.pm:19
 msgid "Remove cover art"
-msgstr "Hoesafbeelding verwijderen"
+msgstr "Afbeelding verwijderen"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/ReorderCoverArt.pm:22
 msgid "Reorder cover art"
-msgstr "Volgorde van de hoesafbeeldingen bewerken"
+msgstr "Volgorde van de afbeeldingen bewerken"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/ReorderMediums.pm:11
 msgid "Reorder mediums"
