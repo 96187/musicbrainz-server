@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-10-03 07:40+0000\n"
+"PO-Revision-Date: 2013-10-08 06:56+0000\n"
 "Last-Translator: th1rtyf0ur\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/musicbrainz/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -321,7 +321,7 @@ msgid ""
 " matches the page name, it will take the version number and provide whatever"
 " page is associated with it. Make sure to double check your work when "
 "updating a page!"
-msgstr ""
+msgstr "<strong>備考：</strong> MediaWikiはバージョン番号とページ名が合ってるかどうかを確認せず、バージョン番号と関連してるページを表示します。ページを更新する際は十分注意してご確認ください。"
 
 #: ../root/components/common-macros.tt:828
 msgid "<strong>Note</strong>:"
@@ -817,7 +817,7 @@ msgstr "追加："
 
 #: ../root/admin/edit_user.tt:1
 msgid "Adjust User Account Flags"
-msgstr ""
+msgstr "ユーザーアカウントフラグを編集"
 
 #: ../root/layout/menu.tt:81
 msgid "Admin"
@@ -1524,7 +1524,7 @@ msgid ""
 "privileges. These privileges allow them to make select edits that are "
 "automatically approved without going through the normal voting process, as "
 "well as the ability to instantly approve other users' edits."
-msgstr ""
+msgstr "{url|自動編集者}は、編集したデータが査読を行わずに自動的に承認されます。他のユーザーの編集も自動的に承認できます。"
 
 #: ../root/user/profile.tt:151
 msgid "Auto-edits"
@@ -1638,7 +1638,7 @@ msgid ""
 "review entered data to create the most accurate music database on the "
 "internet. If this appeals to you, please {reg|create an account} or "
 "{login_url|login}."
-msgstr ""
+msgstr "MusicBrainzは{how|査読を行い}、インターネットの最も正確な音楽情報データベースです。提出や手伝いの興味ある方は{reg|アカウントを作成}、または{login_url|ログインして}ください。"
 
 #: ../root/scripts/text_strings.tt:72
 msgid "Began:"
@@ -11481,7 +11481,7 @@ msgstr ""
 msgid ""
 "This relationship type is used to group other relationships. Please select a"
 " subtype of the currently selected relationship type."
-msgstr ""
+msgstr "この関連タイプはグループ化のためです。選択された関連タイプの下に、サブタイプのいずれかを選んでください。"
 
 #: ../lib/MusicBrainz/Server/Form/Role/LinkType.pm:75
 msgid "This relationship type is deprecated."
