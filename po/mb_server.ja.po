@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-10-08 06:56+0000\n"
+"PO-Revision-Date: 2013-10-08 07:57+0000\n"
 "Last-Translator: th1rtyf0ur\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/musicbrainz/language/ja/)\n"
 "MIME-Version: 1.0\n"
@@ -1704,7 +1704,7 @@ msgid ""
 "Below is the error information. If you wish to file a bug report, you may do"
 " so at {bugs|our bug tracker}. The below information will help, so please be"
 " sure to include it!"
-msgstr ""
+msgstr "エラーの詳細は以下に表示してます。バグの報告は、詳細にまとめて{bugs|バグ管理システム}で行ってください。"
 
 #: ../root/account/edit.tt:51 ../root/admin/edit_user.tt:36
 #: ../root/user/profile.tt:113
@@ -1821,11 +1821,11 @@ msgstr "CDスタブ"
 
 #: ../root/cdstub/error.tt:2
 msgid "CD Stub Not Found"
-msgstr ""
+msgstr "CDスタブ見つかりません"
 
 #: ../root/cdtoc/lookup.tt:18
 msgid "CD Stub found"
-msgstr ""
+msgstr "CDスタブ発見しました"
 
 #: ../root/cdtoc/not_found.tt:1 ../root/cdtoc/not_found.tt:2
 msgid "CD TOC Not Found"
@@ -1841,26 +1841,26 @@ msgstr "CD TOC:"
 
 #: ../root/cdstub/header.tt:5
 msgid "CD stub by {artist}"
-msgstr ""
+msgstr "{artist}のCDスタブ"
 
 #: ../root/cdstub/edit_form.tt:4
 msgid "CD stub details"
-msgstr ""
+msgstr "CDスタブの詳細"
 
 #: ../root/release/edit/tracklist.tt:172
 msgid "CD stub import"
-msgstr ""
+msgstr "CDスタブをインポート"
 
 #: ../root/cdstub/layout.tt:2
 msgid "CD stub “{title}” by {artist}"
-msgstr ""
+msgstr "{artist}のCDスタブ「{title}」"
 
 #: ../root/cdstub/logged_in.tt:7
 msgid ""
 "CD stubs are a feature to allow anonymous users to submit data to "
 "MusicBrainz. For more information, see {cdstub|the documentation on CD "
 "stubs}."
-msgstr ""
+msgstr "CDスタブは、匿名でMusicBrainzにデータを提出できるフィーチャーです。詳細は{cdstub|CDスタブのドキュメント}をご覧ください。"
 
 #: ../root/account/edit_application.tt:10
 #: ../root/account/register_application.tt:35
@@ -1869,7 +1869,7 @@ msgstr "コールバックURL："
 
 #: ../root/doc/edit_type.tt:75
 msgid "Can be approved"
-msgstr ""
+msgstr "承認できる"
 
 #: ../root/account/remove_application.tt:9
 #: ../root/account/revoke_application_access.tt:9 ../root/area/merge.tt:19
@@ -2025,27 +2025,27 @@ msgstr "この画像に一つまた複数のカバーアート種類を選択し
 
 #: ../root/scripts/text_strings.tt:85
 msgid "Clear artist"
-msgstr ""
+msgstr "アーティストをクリア"
 
 #: ../root/scripts/text_strings.tt:86
 msgid "Clear label"
-msgstr ""
+msgstr "レーベルをクリア"
 
 #: ../root/scripts/text_strings.tt:87
 msgid "Clear recording"
-msgstr ""
+msgstr "レコーディングをクリア"
 
 #: ../root/scripts/text_strings.tt:88
 msgid "Clear release"
-msgstr ""
+msgstr "リリースをクリア"
 
 #: ../root/scripts/text_strings.tt:89
 msgid "Clear release group"
-msgstr ""
+msgstr "リリースグループをクリア"
 
 #: ../root/scripts/text_strings.tt:90
 msgid "Clear work"
-msgstr ""
+msgstr "ワークをクリア"
 
 #: ../root/release/edit/recordings.tt:376
 msgid "Click Edit to edit the recording associations for this disc."
@@ -2061,25 +2061,25 @@ msgstr "ここにクリックして楽器を追加"
 
 #: ../root/account/edit_ok.tt:12
 msgid "Click {link|here} to continue to your user page."
-msgstr ""
+msgstr "ユーザーページは{link|こちらへ}。"
 
 #: ../root/edit/details/add_isrcs.tt:4 ../root/edit/details/add_puids.tt:3
 #: ../root/edit/details/edit_barcodes.tt:5
 msgid "Client:"
-msgstr ""
+msgstr "クライアント："
 
 #: ../root/edit/search_macros.tt:287
 msgid "Closed"
-msgstr ""
+msgstr "終了"
 
 #: ../root/edit/info.tt:42
 msgid "Closed:"
-msgstr ""
+msgstr "終了："
 
 #: ../root/area/labels-list.tt:6 ../root/search/results-area.tt:11
 #: ../root/search/results-label.tt:11
 msgid "Code"
-msgstr ""
+msgstr "コード"
 
 #: ../root/layout/menu.tt:127
 msgid "Code of Conduct"
@@ -2149,17 +2149,17 @@ msgstr "コミュニティー"
 
 #: ../root/annotation/history.tt:38
 msgid "Compare versions"
-msgstr ""
+msgstr "バージョンを比較"
 
 #: ../root/annotation/diff.tt:10
 msgid ""
 "Comparing revision by {user_old} on {date_old} with revision by {user_new} "
 "on {date_new}."
-msgstr ""
+msgstr "{user_old}の{date_old}時点における版と{user_new}の{date_new}時点における版間の差分。"
 
 #: ../root/edit/info.tt:51
 msgid "Conditions:"
-msgstr ""
+msgstr "条件："
 
 #: ../root/artist/edit_form.tt:29
 msgid ""
@@ -2184,11 +2184,11 @@ msgstr "パスワード確認："
 msgid ""
 "Congratulations, your new account has been created and you are now logged "
 "into MusicBrainz!"
-msgstr ""
+msgstr "おめでとうございます！アカウントが作成され、今MusicBrainzにログインしてます！"
 
 #: ../root/layout/menu.tt:276
 msgid "Contact Us"
-msgstr ""
+msgstr "お問い合わせ"
 
 #: ../root/components/wikipedia_extract.tt:4
 msgid "Continue reading at Wikipedia..."
@@ -2309,7 +2309,7 @@ msgstr "DD"
 
 #: ../root/layout/menu.tt:121
 msgid "Data Licenses"
-msgstr ""
+msgstr "データのライセンス"
 
 #: ../root/doc/edit_type.tt:50
 msgid "Data Quality"
@@ -2342,17 +2342,17 @@ msgstr "日付"
 #: ../root/alias/edit_form.tt:26 ../root/area/edit_form.tt:16
 #: ../root/artist/edit_form.tt:59 ../root/label/edit_form.tt:59
 msgid "Date Period"
-msgstr ""
+msgstr "期間"
 
 #: ../root/account/preferences.tt:14
 msgid "Date/time format:"
-msgstr ""
+msgstr "日付フォーマット："
 
 #: ../root/edit/details/edit_release_label.tt:38
 #: ../root/edit/details/edit_release.tt:43
 #: ../root/release/edit/information.tt:68
 msgid "Date:"
-msgstr ""
+msgstr "日付："
 
 #: ../root/alias/edit_form.tt:28 ../root/area/edit_form.tt:18
 #: ../root/artist/edit_form.tt:61 ../root/label/edit_form.tt:61
