@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-10-07 16:17+0000\n"
+"PO-Revision-Date: 2013-10-13 09:42+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -475,7 +475,7 @@ msgstr "Gebied toevoegen"
 
 #: ../root/area/add_alias.tt:12
 msgid "Add Area Alias"
-msgstr "Alias voor gebied toevoegen"
+msgstr "Alias aan gebied toevoegen"
 
 #: ../root/layout/menu.tt:217
 msgctxt "button/menu"
@@ -484,7 +484,7 @@ msgstr "Artiest toevoegen"
 
 #: ../root/artist/add_alias.tt:12
 msgid "Add Artist Alias"
-msgstr "Alias voor deze artiest toevoegen"
+msgstr "Alias aan deze artiest toevoegen"
 
 #: ../root/components/forms.tt:303 ../root/components/forms.tt:307
 #: ../root/release/edit/tracklist.tt:83 ../root/release/edit/tracklist.tt:88
@@ -546,7 +546,7 @@ msgstr "Platenmaatschappij toevoegen"
 
 #: ../root/label/add_alias.tt:12
 msgid "Add Label Alias"
-msgstr "Alias voor deze platenmaatschappij toevoegen"
+msgstr "Alias aan deze platenmaatschappij toevoegen"
 
 #: ../root/release_group/create.tt:16
 msgid "Add New Release Group"
@@ -687,12 +687,12 @@ msgstr "Nog een nummer toevoegen"
 #: ../root/area/add_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Area/AddAlias.pm:14
 msgid "Add area alias"
-msgstr "Een alias voor een gebied toevoegen"
+msgstr "Alias aan gebied toevoegen"
 
 #: ../root/artist/add_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Artist/AddAlias.pm:14
 msgid "Add artist alias"
-msgstr "Alias voor deze artiest toevoegen"
+msgstr "Alias van deze artiest toevoegen"
 
 #: ../root/relationship/linkattributetype/common.tt:24
 msgid "Add child"
@@ -791,7 +791,7 @@ msgstr "Compositie toevoegen"
 #: ../root/work/add_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Work/AddAlias.pm:15
 msgid "Add work alias"
-msgstr "Alias voor deze compositie toevoegen"
+msgstr "Alias van deze compositie toevoegen"
 
 #: ../root/components/forms.tt:122 ../root/components/forms.tt:123
 msgid "Add {item}"
@@ -1537,7 +1537,7 @@ msgid ""
 "privileges. These privileges allow them to make select edits that are "
 "automatically approved without going through the normal voting process, as "
 "well as the ability to instantly approve other users' edits."
-msgstr "Autoredacteurs zijn vertrouwde gebruikers die {url|autoredacteur} privileges hebben gekregen. Deze privileges laat hen een select aantal bewerkingen maken die automatisch worden doorgevoerd zonder door de normale stemmingsprocedure te gaan. Ook geeft dit hen de mogelijkheid om bewerkingen van andere gebruikers direct goed te keuren."
+msgstr "Autoredacteurs zijn vertrouwde gebruikers die {url|autoredacteur} privileges hebben gekregen. Deze privileges laten hen een select aantal bewerkingen maken die automatisch worden doorgevoerd zonder door de normale stemmingsprocedure te gaan. Ook geeft dit hen de mogelijkheid om bewerkingen van andere gebruikers direct goed te keuren."
 
 #: ../root/user/profile.tt:151
 msgid "Auto-edits"
@@ -2820,7 +2820,7 @@ msgstr "Compositie bewerken"
 
 #: ../root/work/edit_alias.tt:12
 msgid "Edit Work Alias"
-msgstr "Alias van deze compositie bewerken"
+msgstr "Alias van de compositie bewerken"
 
 #: ../root/work/edit_annotation.tt:1
 msgid "Edit Work Annotation"
@@ -2842,7 +2842,7 @@ msgstr "Aantekening van gebied bewerken"
 #: ../root/artist/edit_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Artist/EditAlias.pm:12
 msgid "Edit artist alias"
-msgstr "Alias voor deze artiest bewerken"
+msgstr "Alias van deze artiest bewerken"
 
 #: ../root/artist/edit_annotation.tt:2
 msgid "Edit artist annotation"
@@ -2855,7 +2855,7 @@ msgstr "Bewerking door {editor}"
 #: ../root/label/edit_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Label/EditAlias.pm:12
 msgid "Edit label alias"
-msgstr "Alias voor deze platenmaatschappij bewerken"
+msgstr "Alias van deze platenmaatschappij bewerken"
 
 #: ../root/label/edit_annotation.tt:2
 msgid "Edit label annotation"
@@ -2907,7 +2907,7 @@ msgstr "Gebruiker bewerken"
 #: ../root/work/edit_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Work/EditAlias.pm:13
 msgid "Edit work alias"
-msgstr "Alias voor deze compositie bewerken"
+msgstr "Alias van deze compositie bewerken"
 
 #: ../root/work/edit_annotation.tt:2
 msgid "Edit work annotation"
@@ -4556,7 +4556,7 @@ msgstr "MusicBrainz Picard"
 
 #: ../root/layout/menu.tt:174
 msgid "MusicBrainz Server"
-msgstr "MusicBrainz server"
+msgstr "MusicBrainz-server"
 
 #: ../root/main/index.tt:56
 msgid "MusicBrainz aims to be:"
@@ -6372,7 +6372,7 @@ msgstr "Uitgavegroep verwijderen"
 
 #: ../root/work/delete_alias.tt:1
 msgid "Remove Work Alias"
-msgstr "Alias van deze compositie verwijderen"
+msgstr "Alias van de compositie verwijderen"
 
 #: ../root/area/layout.tt:63 ../lib/MusicBrainz/Server/Edit/Area/Delete.pm:10
 msgid "Remove area"
@@ -6386,7 +6386,7 @@ msgstr "Alias van gebied verwijderen"
 #: ../root/artist/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Artist/DeleteAlias.pm:14
 msgid "Remove artist alias"
-msgstr "Deze alias van deze artiest verwijderen"
+msgstr "Alias van de artiest verwijderen"
 
 #: ../root/collection/delete.tt:2 ../root/collection/delete.tt:7
 msgid "Remove collection"
@@ -6442,7 +6442,7 @@ msgstr "Nummer verwijderen"
 #: ../root/work/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Work/DeleteAlias.pm:15
 msgid "Remove work alias"
-msgstr "Alias van deze compositie verwijderen"
+msgstr "Alias van de compositie verwijderen"
 
 #: ../root/components/rating-macros.tt:1
 msgid "Remove your rating"
@@ -6795,7 +6795,7 @@ msgstr "Stel een nieuw wachtwoord in voor uw MusicBrainz gebruikersaccount."
 #: ../root/release_group/layout.tt:49 ../root/release_group/set_cover_art.tt:7
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/SetCoverArt.pm:19
 msgid "Set cover art"
-msgstr "Stel afbeelding in"
+msgstr "Afbeelding instellen"
 
 #: ../root/cdtoc/list.tt:45
 msgid "Set track durations"
@@ -7569,7 +7569,7 @@ msgstr "De einddatum kan niet voor de begindatum zijn."
 
 #: ../root/user/privileged.tt:47
 msgid "The following {count} user accounts are bots:"
-msgstr "De volgende {count} gebruikersaccounts zijn robots:"
+msgstr "De volgende {count} gebruikers zijn robots:"
 
 #: ../root/user/privileged.tt:43
 msgid "The following {count} users are location editors:"
@@ -7983,7 +7983,7 @@ msgstr "Deze groep is uit elkaar."
 
 #: ../root/layout.tt:96 ../lib/DBDefs/Default.pm:126
 msgid "This is a MusicBrainz development server."
-msgstr "Dit is een MusicBrainz server voor ontwikkeling."
+msgstr "Dit is een MusicBrainz-server voor ontwikkeling."
 
 #: ../root/layout.tt:105
 msgid ""
@@ -11014,7 +11014,7 @@ msgstr "Zet uitgave om naar meerdere artiesten (historisch)"
 #: ../lib/MusicBrainz/Server/Edit/Historic/SetTrackLengthsFromCDTOC.pm:10
 #: ../lib/MusicBrainz/Server/Edit/Medium/SetTrackLengths.pm:18
 msgid "Set track lengths"
-msgstr "Stel de lengtes van de nummers in"
+msgstr "Lengtes van de nummers instellen"
 
 #: ../lib/MusicBrainz/Server/Edit/Label/AddAnnotation.pm:12
 msgid "Add label annotation"
