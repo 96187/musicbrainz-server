@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-10-28 04:04+0000\n"
+"PO-Revision-Date: 2013-10-28 15:53+0000\n"
 "Last-Translator: ListMyCDs.com Martikainen <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -1210,11 +1210,11 @@ msgstr "Alue"
 
 #: ../root/area/edit_form.tt:6
 msgid "Area Details"
-msgstr ""
+msgstr "Lisätietoja alueesta"
 
 #: ../root/area/layout.tt:5
 msgid "Area information"
-msgstr ""
+msgstr "Tietoa alueesta"
 
 #: ../root/artist/edit_form.tt:45 ../root/artist/index.tt:14
 #: ../root/artist/layout.tt:52 ../root/components/common-macros.tt:539
@@ -2204,7 +2204,7 @@ msgstr "Ota meihin yhteyttä"
 
 #: ../root/components/wikipedia_extract.tt:4
 msgid "Continue reading at Wikipedia..."
-msgstr ""
+msgstr "Jatka lukemista Wikipediassa..."
 
 #: ../root/components/forms.tt:228
 msgid "Copy"
@@ -2832,7 +2832,7 @@ msgstr "Muokkaa lisätietoja"
 #: ../root/area/edit_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Area/EditAlias.pm:12
 msgid "Edit area alias"
-msgstr ""
+msgstr "Muokkaa alueen aliasta"
 
 #: ../root/area/edit_annotation.tt:2
 msgid "Edit area annotation"
@@ -4045,7 +4045,7 @@ msgstr "Levymerkki:"
 #: ../root/report/index.tt:28 ../root/tag/header.tt:1 ../root/tag/index.tt:8
 #: ../root/user/tag.tt:4
 msgid "Labels"
-msgstr "Levymerkit:"
+msgstr "Levymerkit"
 
 #: ../root/browse/label.tt:8
 msgid "Labels starting with “{index}”"
@@ -6103,7 +6103,7 @@ msgstr "Julkaisu:"
 #: ../root/report/index.tt:44 ../root/tag/header.tt:1 ../root/tag/index.tt:8
 #: ../root/user/collections.tt:10 ../root/user/tag.tt:4
 msgid "Releases"
-msgstr "Julkaisuja"
+msgstr "Julkaisut"
 
 #: ../root/report/tracks_named_with_sequence.tt:1
 #: ../root/report/tracks_named_with_sequence.tt:3
@@ -6841,12 +6841,12 @@ msgstr ""
 #: ../root/artist/recordings.tt:23
 msgid ""
 "Showing all recordings. {show_sa|Show only standalone recordings instead}."
-msgstr ""
+msgstr "Näytetään kaikki äänitteet. {show_sa|Näytä vain itsenäiset äänitteet}."
 
 #: ../root/artist/recordings.tt:20
 msgid ""
 "Showing only standalone recordings. {show_all|Show all recordings instead}."
-msgstr ""
+msgstr "Näytetään vain itsenäiset äänitteet. {show_all|Näytä kaikki äänitteet}."
 
 #: ../root/artist/index.tt:109
 msgid ""
@@ -8499,7 +8499,7 @@ msgstr "Tämä on MusicBrainzin uusi käyttäjä."
 
 #: ../root/release/edit_relationships.tt:26
 msgid "This will add a relationship to all checked recordings."
-msgstr ""
+msgstr "Tämä lisää yhteyden kaikkiin valittuihin äänitteisiin."
 
 #: ../root/release/edit_relationships.tt:31
 msgid "This will add a relationship to all checked works."
@@ -9035,7 +9035,7 @@ msgstr "Käytä {doc|kehittyneempää hakusyntaksia}"
 msgid ""
 "User accounts must be more than 2 weeks old, have a confirmed email address,"
 " and more than 10 accepted edits in order to vote on others' edits."
-msgstr ""
+msgstr "Käyttäjätunnuksen tulee olla vähintään kaksi viikkoa vanha, sen sähköpostiosoite on oltava vahvistettu, sekä käyttäjältä tulee löytyä 10 hyväksyttyä muokkausta, jotta hän voi äänestää muiden muokkauksista. "
 
 #: ../root/account/change_password.tt:21
 msgid "User name:"
@@ -9786,7 +9786,7 @@ msgstr "Sinun tulee olla sisäänkirjautunut äänestääksesi muokkauksista."
 msgid ""
 "You must first {url|add and verify your email address} before being able to "
 "edit or add anything to the database."
-msgstr ""
+msgstr "Sinun tulee ensin {url|lisätä ja vahtistaa sähköpostiosoitteesi} muokataksesi tai lisätäksesi jotakin tietokantaan. "
 
 #: ../root/account/register.tt:33
 msgid ""
@@ -11289,7 +11289,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:77
 msgid "View your email address"
-msgstr ""
+msgstr "Näytä sähköpostiosoitteesi"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:78
 msgid "View and modify your private tags"
