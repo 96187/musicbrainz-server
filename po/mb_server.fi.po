@@ -14,14 +14,14 @@
 # nikki <email address hidden>, 2012
 # Timo Martikainen <>, 2012
 # Timo Martikainen <email address hidden>, 2012
-# ListMyCDs.com Martikainen <email address hidden>, 2012
+# ListMyCDs.com Martikainen <email address hidden>, 2012-2013
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-06-11 17:13+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2013-10-28 02:35+0000\n"
+"Last-Translator: ListMyCDs.com Martikainen <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3164,7 +3164,7 @@ msgstr "Kohdetta ei löytynyt"
 
 #: ../root/edit/details/edit_relationship_type.tt:6
 msgid "Entity types:"
-msgstr ""
+msgstr "Entiteettityypit:"
 
 #: ../root/report/not_available.tt:1 ../root/report/not_available.tt:3
 #: ../lib/MusicBrainz/Server/Edit/Utils.pm:255
@@ -3594,44 +3594,44 @@ msgstr "IPI-koodit:"
 
 #: ../root/artist/edit_form.tt:55 ../root/label/edit_form.tt:55
 msgid "ISNI code"
-msgstr ""
+msgstr "ISNI-koodi"
 
 #: ../root/artist/layout.tt:61 ../root/edit/details/add_artist.tt:82
 #: ../root/edit/details/add_label.tt:77 ../root/label/layout.tt:39
 msgid "ISNI code:"
-msgstr ""
+msgstr "ISNI-koodi:"
 
 #: ../root/artist/edit_form.tt:55 ../root/edit/details/edit_artist.tt:72
 #: ../root/edit/details/edit_label.tt:61 ../root/label/edit_form.tt:55
 msgid "ISNI codes:"
-msgstr ""
+msgstr "ISNI-koodit:"
 
 #: ../root/area/edit_form.tt:10
 msgid "ISO 3166-1"
-msgstr ""
+msgstr "ISO 3166-1"
 
 #: ../root/area/edit_form.tt:10 ../root/area/layout.tt:36
 #: ../root/edit/details/add_area.tt:28 ../root/edit/details/edit_area.tt:23
 msgid "ISO 3166-1:"
-msgstr ""
+msgstr "ISO 3166-1:"
 
 #: ../root/area/edit_form.tt:11
 msgid "ISO 3166-2"
-msgstr ""
+msgstr "ISO 3166-2"
 
 #: ../root/area/edit_form.tt:11 ../root/area/layout.tt:39
 #: ../root/edit/details/add_area.tt:35 ../root/edit/details/edit_area.tt:27
 msgid "ISO 3166-2:"
-msgstr ""
+msgstr "ISO 3166-2:"
 
 #: ../root/area/edit_form.tt:12
 msgid "ISO 3166-3"
-msgstr ""
+msgstr "ISO 3166-3"
 
 #: ../root/area/edit_form.tt:12 ../root/area/layout.tt:42
 #: ../root/edit/details/add_area.tt:42 ../root/edit/details/edit_area.tt:31
 msgid "ISO 3166-3:"
-msgstr ""
+msgstr "ISO 3166-3:"
 
 #: ../root/report/isrc_with_many_recordings.tt:23
 msgid "ISRC"
@@ -4059,7 +4059,7 @@ msgstr ""
 
 #: ../root/release/index.tt:15
 msgid "Labels:"
-msgstr ""
+msgstr "Levymerkit:"
 
 #: ../root/artist/works-list.tt:14 ../root/iswc/index.tt:20
 #: ../root/otherlookup/results-release.tt:11
@@ -4143,7 +4143,7 @@ msgstr "Kesto:"
 
 #: ../root/layout/sidebar/sidebar-licenses.tt:19
 msgid "License"
-msgstr ""
+msgstr "Lisenssi"
 
 #: ../root/main/index.tt:72
 msgid ""
@@ -4210,11 +4210,11 @@ msgstr ""
 
 #: ../root/user/privileged.tt:41
 msgid "Location editors are users who can add or modify {uri|areas}."
-msgstr ""
+msgstr "Sijainti-editorit ovat käyttäjiä, jotka voivat lisätä ja muokata {uri|areas}. "
 
 #: ../root/account/edit.tt:34 ../root/user/profile.tt:73
 msgid "Location:"
-msgstr ""
+msgstr "Sijainti: "
 
 #: ../root/layout/menu.tt:105 ../root/user/login.tt:1 ../root/user/login.tt:3
 #: ../root/user/login.tt:34
@@ -5609,7 +5609,7 @@ msgstr "Profiili"
 
 #: ../root/elections/index.tt:13
 msgid "Proposer"
-msgstr ""
+msgstr "Ehdottaja"
 
 #: ../root/elections/show.tt:14
 msgid "Proposer:"
@@ -6679,11 +6679,11 @@ msgstr "Toissijaiset tyypit:"
 
 #: ../root/elections/index.tt:14
 msgid "Seconder 1"
-msgstr ""
+msgstr "Kannattaja 1"
 
 #: ../root/elections/index.tt:15
 msgid "Seconder 2"
-msgstr ""
+msgstr "Kannattaja 2"
 
 #: ../root/cdtoc/info.tt:38 ../root/cdtoc/info.tt:40 ../root/cdtoc/info.tt:42
 msgid "Sectors"
@@ -7225,7 +7225,7 @@ msgstr "Status:"
 
 #: ../root/layout.tt:155
 msgid "Stop using beta site"
-msgstr ""
+msgstr "Lopeta beta-sivuston käyttö"
 
 #: ../root/watch/list.tt:28
 msgid "Stop watching selected artists"
@@ -8618,7 +8618,7 @@ msgstr "ISRC-koodeja löytyi yhteensä: {count}"
 
 #: ../root/report/iswc_with_many_works.tt:15
 msgid "Total ISWCs found: {count}"
-msgstr ""
+msgstr "Yhteensä ISWC-koodeja löytyi: {count}"
 
 #: ../root/report/artists_containing_disambiguation_comments.tt:8
 #: ../root/report/artists_that_may_be_groups.tt:11
@@ -8938,7 +8938,7 @@ msgstr ""
 
 #: ../root/artist/index.tt:49
 msgid "Unspecified type"
-msgstr ""
+msgstr "Määrittelemätön tyyppi"
 
 #: ../root/artist/layout.tt:134 ../root/collection/layout.tt:25
 #: ../root/label/layout.tt:95 ../root/user/subscriptions/subscriptions.tt:60
@@ -8993,7 +8993,7 @@ msgstr "Käyttökerrat"
 
 #: ../root/layout.tt:155
 msgid "Use beta site"
-msgstr ""
+msgstr "Käytä beta-sivustoa"
 
 #: ../root/components/common-macros.tt:563
 msgid "Use in a relationship"
@@ -9039,7 +9039,7 @@ msgstr ""
 
 #: ../root/account/change_password.tt:21
 msgid "User name:"
-msgstr ""
+msgstr "Käyttäjänimi: "
 
 #: ../root/admin/edit_user.tt:6
 msgid "User permissions"
@@ -9501,7 +9501,7 @@ msgstr "Vuosi"
 
 #: ../root/release/index.tt:8
 msgid "Year:"
-msgstr ""
+msgstr "Vuosi: "
 
 #: ../root/edit/details/add_area_alias.tt:29
 #: ../root/edit/details/add_area.tt:63
@@ -10301,7 +10301,7 @@ msgstr[1] "{count} yksityistä arvostelu ei listattu."
 
 #: ../root/components/common-macros.tt:1018
 msgid "{date}"
-msgstr ""
+msgstr "{date}"
 
 #: ../root/components/common-macros.tt:1018
 msgid "{date} ({country})"
@@ -10590,7 +10590,7 @@ msgstr "« Aiempi"
 #: ../lib/DBDefs/Default.pm:127
 msgid ""
 "This beta test server allows testing of new features with the live database."
-msgstr ""
+msgstr "Tämä betatesti-palvelin mahdollistaa uusien ominaisuuksien testaamisen live-tietokannalla. "
 
 #: ../lib/MusicBrainz/Server/Controller.pm:29
 #, perl-brace-format
@@ -10671,7 +10671,7 @@ msgstr "Käyttäjää ei löydy tällä sähköpostiosoitteella"
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:346
 msgid "Your password has been changed."
-msgstr ""
+msgstr "Salasanasi on vaihdettu."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:528
 msgid ""
@@ -10682,7 +10682,7 @@ msgstr "<strong>Vahvistussähköpostin lähetys epäonnistui.</strong><br/>Varmi
 
 #: ../lib/MusicBrainz/Server/Controller/Admin.pm:76
 msgid "User successfully edited."
-msgstr ""
+msgstr "Käyttäjän muokattu onnistuneesti. "
 
 #: ../lib/MusicBrainz/Server/Controller/Artist.pm:524
 msgid "You cannot merge a special purpose artist into another artist"
@@ -10987,7 +10987,7 @@ msgstr "Siirrä julkaisu (historiallinen)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/MoveReleaseToRG.pm:17
 msgid "Change release group (historic)"
-msgstr ""
+msgstr "Vaihda julkaisuryhmää (historiallinen)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveDiscID.pm:11
 #: ../lib/MusicBrainz/Server/Edit/Medium/RemoveDiscID.pm:11
@@ -11377,19 +11377,19 @@ msgstr "Tämä ei ole kelvollinen MBID"
 
 #: ../lib/MusicBrainz/Server/Form/Field/ISO_3166_1.pm:12
 msgid "This is not a valid ISO 3166-1 code"
-msgstr ""
+msgstr "Tämä ei ole kelvollinen ISO 3166-1-koodi. "
 
 #: ../lib/MusicBrainz/Server/Form/Field/ISO_3166_2.pm:12
 msgid "This is not a valid ISO 3166-2 code"
-msgstr ""
+msgstr "Tämä ei ole kelvollinen ISO 3166-2-koodi. "
 
 #: ../lib/MusicBrainz/Server/Form/Field/ISO_3166_3.pm:12
 msgid "This is not a valid ISO 3166-3 code"
-msgstr ""
+msgstr "Tämä ei ole kelvollinen ISO 3166-3-koodi. "
 
 #: ../lib/MusicBrainz/Server/Form/Field/ISRC.pm:15
 msgid "This is not a valid ISRC."
-msgstr ""
+msgstr "Tämä ei ole kelvollinen ISRC-koodi."
 
 #: ../lib/MusicBrainz/Server/Form/Field/ISWC.pm:12
 #: ../lib/MusicBrainz/Server/Form/Field/ISWC.pm:16
@@ -11410,7 +11410,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Form/Field/PartialDate.pm:66
 msgid "invalid date"
-msgstr ""
+msgstr "Epäkelpo päiväys"
 
 #: ../lib/MusicBrainz/Server/Form/Field/URL.pm:21
 msgid "Enter a valid url e.g. \"http://google.com/\""
@@ -11565,7 +11565,7 @@ msgstr "Virheellinen vanha salasana"
 
 #: ../lib/MusicBrainz/Server/Form/User/ChangePassword.pm:54
 msgid "An account with this name could not be found"
-msgstr ""
+msgstr "Käyttäjätunnusta tällä nimellä ei löynyt. "
 
 #: ../lib/MusicBrainz/Server/Form/User/EditProfile.pm:22
 msgid "Invalid URL format"
