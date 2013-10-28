@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-06-11 10:09-0700\n"
-"PO-Revision-Date: 2013-10-28 02:35+0000\n"
+"PO-Revision-Date: 2013-10-28 03:57+0000\n"
 "Last-Translator: ListMyCDs.com Martikainen <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -470,11 +470,11 @@ msgstr "Lisää <abbr title=\"Creative Commons\">CC</abbr>-lisenssi"
 #: ../root/layout/menu.tt:85
 msgctxt "button/menu"
 msgid "Add Area"
-msgstr ""
+msgstr "Lisää alue"
 
 #: ../root/area/add_alias.tt:12
 msgid "Add Area Alias"
-msgstr ""
+msgstr "Lisää alueen alias"
 
 #: ../root/layout/menu.tt:217
 msgctxt "button/menu"
@@ -617,7 +617,7 @@ msgstr "Lisää teokselle alias"
 
 #: ../root/area/create.tt:15 ../root/area/create.tt:17
 msgid "Add a New Area"
-msgstr ""
+msgstr "Lisää uusi alue"
 
 #: ../root/artist/create.tt:16 ../root/artist/create.tt:18
 msgid "Add a New Artist"
@@ -686,7 +686,7 @@ msgstr "Listää toinen kappale"
 #: ../root/area/add_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Area/AddAlias.pm:14
 msgid "Add area alias"
-msgstr ""
+msgstr "Lisää alueen alias"
 
 #: ../root/artist/add_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Artist/AddAlias.pm:14
@@ -930,7 +930,7 @@ msgstr "Päivitä kappalelistan muutokset äänitteeseen"
 
 #: ../root/search/results-area.tt:44
 msgid "Alternatively, you may {uri|add a new area}."
-msgstr ""
+msgstr "Vaihtoehtoisesti, voit {uri|lisätä alueen}."
 
 #: ../root/search/results-artist.tt:5
 msgid "Alternatively, you may {uri|add a new artist}."
@@ -1166,7 +1166,7 @@ msgstr "Olet poistamassa ISRC-koodia <code>{isrc}</code> artistin {artist} ään
 
 #: ../root/area/delete.tt:5
 msgid "Are you sure you wish to remove the area {area} from MusicBrainz?"
-msgstr ""
+msgstr "Haluatko varmasti poistaa alueen {area} MusicBrainzista?"
 
 #: ../root/release/remove_cover_art.tt:4
 msgid ""
@@ -1206,7 +1206,7 @@ msgstr "Olet poistamassa julkaisun {release} MusicBrainzista."
 #: ../root/search/results-label.tt:12 ../lib/MusicBrainz/Server/Edit/Area.pm:7
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:39
 msgid "Area"
-msgstr ""
+msgstr "Alue"
 
 #: ../root/area/edit_form.tt:6
 msgid "Area Details"
@@ -1229,11 +1229,11 @@ msgstr ""
 #: ../root/edit/details/remove_area.tt:3 ../root/label/edit_form.tt:40
 #: ../root/label/index.tt:12 ../root/label/layout.tt:45
 msgid "Area:"
-msgstr ""
+msgstr "Alue:"
 
 #: ../root/browse/area.tt:8
 msgid "Areas starting with “{index}”"
-msgstr ""
+msgstr "Alueet jotka alkavat \"{index}\""
 
 #: ../root/area/artists-list.tt:4 ../root/artist/edits.tt:18
 #: ../root/artist/header.tt:20 ../root/artist/index.tt:57
@@ -1276,7 +1276,7 @@ msgstr "Artisti"
 
 #: ../root/edit/search_macros.tt:287
 msgid "Artist Area"
-msgstr ""
+msgstr "Artistin alue"
 
 #: ../root/edit/details/edit_artist_credit.tt:5
 msgid "Artist Credit:"
@@ -1754,7 +1754,7 @@ msgstr "Selaa"
 
 #: ../root/browse/area.tt:1 ../root/browse/area.tt:3
 msgid "Browse Areas"
-msgstr ""
+msgstr "Selaa alueita"
 
 #: ../root/browse/artist.tt:1 ../root/browse/artist.tt:3
 msgid "Browse Artists"
@@ -1778,7 +1778,7 @@ msgstr "Selaa teoksia"
 
 #: ../root/browse/index.tt:10
 msgid "Browse areas"
-msgstr ""
+msgstr "Selaa alueita"
 
 #: ../root/browse/index.tt:5 ../root/search/index.tt:5
 msgid "Browse artists"
@@ -2695,11 +2695,11 @@ msgstr ""
 
 #: ../root/area/edit.tt:15
 msgid "Edit Area"
-msgstr ""
+msgstr "Muokkaa aluetta"
 
 #: ../root/area/edit_alias.tt:12
 msgid "Edit Area Alias"
-msgstr ""
+msgstr "Muokkaa alueen aliasta"
 
 #: ../root/area/edit_annotation.tt:1
 msgid "Edit Area Annotation"
@@ -3169,7 +3169,7 @@ msgstr "Entiteettityypit:"
 #: ../root/report/not_available.tt:1 ../root/report/not_available.tt:3
 #: ../lib/MusicBrainz/Server/Edit/Utils.pm:255
 msgid "Error"
-msgstr "Virhe"
+msgstr "Virheellinen"
 
 #: ../root/edit/cannot_approve.tt:1 ../root/edit/cannot_approve.tt:2
 #: ../root/edit/require_note.tt:1 ../root/edit/require_note.tt:2
@@ -3985,7 +3985,7 @@ msgstr "Levymerkki"
 
 #: ../root/edit/search_macros.tt:287
 msgid "Label Area"
-msgstr ""
+msgstr "Levymerkin alue"
 
 #: ../root/label/index.tt:5
 msgid "Label Code:"
@@ -4206,7 +4206,7 @@ msgstr ""
 
 #: ../root/user/privileged.tt:40
 msgid "Location editors"
-msgstr ""
+msgstr "Sijainti-editorit"
 
 #: ../root/user/privileged.tt:41
 msgid "Location editors are users who can add or modify {uri|areas}."
@@ -4399,7 +4399,7 @@ msgstr "Yhdistä"
 
 #: ../root/area/merge.tt:1 ../root/area/merge.tt:3
 msgid "Merge Areas"
-msgstr ""
+msgstr "Yhdistä alueet"
 
 #: ../root/artist/merge.tt:1 ../root/artist/merge.tt:3
 msgid "Merge Artists"
@@ -4433,7 +4433,7 @@ msgstr "Yhdistä teokset"
 
 #: ../root/area/layout.tt:60
 msgid "Merge area"
-msgstr ""
+msgstr "Yhdistä alueen"
 
 #: ../root/artist/layout.tt:107
 msgid "Merge artist"
@@ -5133,7 +5133,7 @@ msgstr "Jotakin taisi mennä pieleen!"
 
 #: ../root/user/profile.tt:163 ../lib/MusicBrainz/Server/Edit/Utils.pm:251
 msgid "Open"
-msgstr "Avoimet"
+msgstr "Avoin"
 
 #: ../root/edit/open.tt:14 ../root/edit/open.tt:16
 #: ../root/user/profile/layout.tt:19
@@ -5309,7 +5309,7 @@ msgstr ""
 
 #: ../root/edit/search_macros.tt:285
 msgid "Please choose a condition"
-msgstr ""
+msgstr "Valitse ehto"
 
 #: ../root/release/cover_art_uploader.tt:19
 msgid ""
@@ -6288,11 +6288,11 @@ msgstr ""
 
 #: ../root/area/delete.tt:2
 msgid "Remove Area"
-msgstr ""
+msgstr "Poista alue"
 
 #: ../root/area/delete_alias.tt:1
 msgid "Remove Area Alias"
-msgstr ""
+msgstr "Poista alueen alias"
 
 #: ../root/artist/delete_alias.tt:1
 msgid "Remove Artist Alias"
@@ -6375,12 +6375,12 @@ msgstr "Poista teoksen alias"
 
 #: ../root/area/layout.tt:63 ../lib/MusicBrainz/Server/Edit/Area/Delete.pm:10
 msgid "Remove area"
-msgstr ""
+msgstr "Poista alue"
 
 #: ../root/area/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Area/DeleteAlias.pm:14
 msgid "Remove area alias"
-msgstr ""
+msgstr "Poista alueen alias"
 
 #: ../root/artist/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Artist/DeleteAlias.pm:14
@@ -6812,7 +6812,7 @@ msgstr "Näytä vähemmän..."
 msgid ""
 "Show me {autoedit_select_block} sorted {sort_select_block} that "
 "{match_or_negation_block} {and_vs_or_block} of the following conditions:"
-msgstr "Näytä {autoedit_select_block} järjestettynä {sort_select_block} siten että {match_or_negation_block} {and_vs_or_block} seuraaviin ehtoihin:"
+msgstr "Näytä {autoedit_select_block} järjestettynä {sort_select_block} siten, että nämä {match_or_negation_block} {and_vs_or_block} seuraaviin ehtoihin:"
 
 #: ../root/scripts/text_strings.tt:93
 msgid "Show more..."
@@ -7572,7 +7572,7 @@ msgstr "Seuraavat {count} käyttäjätunnusta ovat botteja: "
 
 #: ../root/user/privileged.tt:43
 msgid "The following {count} users are location editors:"
-msgstr ""
+msgstr "Seuraavat {count} käyttäjää ovat sijainti-editoreja: "
 
 #: ../root/user/privileged.tt:31
 msgid "The following {count} users are relationship editors:"
@@ -9878,11 +9878,11 @@ msgstr "{num} vuotiaana"
 
 #: ../root/edit/search_macros.tt:28
 msgid "all"
-msgstr "kaikki"
+msgstr "kaikkiin"
 
 #: ../root/edit/search_macros.tt:28
 msgid "any"
-msgstr ""
+msgstr "mihin tahansa"
 
 #: ../root/release/edit/recordings.tt:43 ../root/release/edit/recordings.tt:50
 #: ../root/release/edit/recordings.tt:82
@@ -9892,7 +9892,7 @@ msgstr "julkaisulla: "
 
 #: ../root/components/common-macros.tt:161
 msgid "areas"
-msgstr ""
+msgstr "alueet"
 
 #: ../root/components/common-macros.tt:161
 msgid "artists"
@@ -9912,7 +9912,7 @@ msgstr "ennen"
 
 #: ../root/edit/search_macros.tt:159
 msgid "between"
-msgstr ""
+msgstr "välillä"
 
 #: ../root/components/common-macros.tt:457
 msgid "bot"
@@ -9946,7 +9946,7 @@ msgstr "täsmennys:"
 
 #: ../root/edit/search_macros.tt:24
 msgid "do not match"
-msgstr ""
+msgstr "eivät täsmää"
 
 #: ../root/components/common-macros.tt:161
 msgid "editors"
@@ -10048,7 +10048,7 @@ msgstr "linkki"
 
 #: ../root/edit/search_macros.tt:24
 msgid "match"
-msgstr ""
+msgstr "täsmäävät"
 
 #: ../root/relationship/linktype/tree.tt:7
 msgid "more"
@@ -10069,7 +10069,7 @@ msgstr "ehdota auto-editoriksi"
 
 #: ../root/edit/search_macros.tt:14
 msgid "non-auto-edits"
-msgstr ""
+msgstr "ei auto-muokkaukset"
 
 #: ../root/relationship/linkattributetype/common.tt:19
 msgid "none"
@@ -10865,15 +10865,15 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Edit/Area/Create.pm:18
 msgid "Add area"
-msgstr ""
+msgstr "Lisää alue"
 
 #: ../lib/MusicBrainz/Server/Edit/Area/Edit.pm:30
 msgid "Edit area"
-msgstr ""
+msgstr "Muokkaa aluetta"
 
 #: ../lib/MusicBrainz/Server/Edit/Area/Merge.pm:11
 msgid "Merge areas"
-msgstr ""
+msgstr "Yhdistä alueet"
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/AddAnnotation.pm:12
 msgid "Add artist annotation"
@@ -11161,7 +11161,7 @@ msgstr "Hyväksytty"
 
 #: ../lib/MusicBrainz/Server/Edit/Utils.pm:253
 msgid "Failed vote"
-msgstr "Epäonnistunut äänestys"
+msgstr "Epäonnistunut"
 
 #: ../lib/MusicBrainz/Server/Edit/Utils.pm:254
 msgid "Failed dependency"
