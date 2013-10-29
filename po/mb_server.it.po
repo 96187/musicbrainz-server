@@ -22,8 +22,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-10-28 17:46-0700\n"
-"PO-Revision-Date: 2013-10-29 00:54+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2013-10-29 02:00+0000\n"
+"Last-Translator: Luca Salini <email address hidden>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/musicbrainz/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -98,27 +98,27 @@ msgstr "&#x2013; {enddate}"
 
 #: ../root/release/add_cover_art.tt:64
 msgid "&#x26a0; Error creating edit"
-msgstr ""
+msgstr "&#x26a0; Errore nella creazione della modifica"
 
 #: ../root/release/add_cover_art.tt:61
 msgid "&#x26a0; Error requesting signature"
-msgstr ""
+msgstr "&#x26a0; Errore nella richiesta della firma"
 
 #: ../root/release/add_cover_art.tt:62
 msgid "&#x26a0; Error uploading image"
-msgstr ""
+msgstr "&#x26a0; Errore nel caricamento dell'immagine"
 
 #: ../root/release/add_cover_art.tt:63
 msgid "&#x26a0; Server busy, try again later"
-msgstr ""
+msgstr "&#x26a0; Server occupato, riprovare più tardi"
 
 #: ../root/release/add_cover_art.tt:60
 msgid "&#x26a0; Unrecognized file"
-msgstr ""
+msgstr "&#x26a0; File non riconosciuto"
 
 #: ../root/release/add_cover_art.tt:59
 msgid "&#x2713; Success"
-msgstr ""
+msgstr "&#x2713; Operazione completata"
 
 #: ../root/relationship/linktype/tree.tt:44
 msgid "&lt; Back to all relationship types"
@@ -560,11 +560,11 @@ msgstr "Aggiungi pagina"
 #: ../root/layout/menu.tt:238
 msgctxt "button/menu"
 msgid "Add Place"
-msgstr ""
+msgstr "Aggiungi luogo"
 
 #: ../root/place/add_alias.tt:12
 msgid "Add Place Alias"
-msgstr ""
+msgstr "Aggiungi alias al luogo"
 
 #: ../root/layout/menu.tt:226
 msgctxt "button/menu"
@@ -640,7 +640,7 @@ msgstr "Aggiungi una nuova etichetta"
 
 #: ../root/place/create.tt:14 ../root/place/create.tt:16
 msgid "Add a New Place"
-msgstr ""
+msgstr "Aggiungi un nuovo luogo"
 
 #: ../root/release_group/create.tt:23
 msgid "Add a New Release Group"
@@ -732,7 +732,7 @@ msgstr "Aggiungi nuova registrazione"
 #: ../root/place/add_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Place/AddAlias.pm:14
 msgid "Add place alias"
-msgstr ""
+msgstr "Aggiungi alias al luogo"
 
 #: ../root/artist/layout.tt:88
 msgid "Add recording"
@@ -840,12 +840,12 @@ msgstr "Aggiunte:"
 #: ../root/edit/details/merge_places.tt:47 ../root/place/merge.tt:13
 #: ../root/search/results-place.tt:10
 msgid "Address"
-msgstr ""
+msgstr "Indirizzo"
 
 #: ../root/edit/details/add_place.tt:30 ../root/edit/details/edit_place.tt:23
 #: ../root/place/edit_form.tt:37 ../root/place/layout.tt:31
 msgid "Address:"
-msgstr ""
+msgstr "Indirizzo:"
 
 #: ../root/admin/edit_user.tt:1
 msgid "Adjust User Account Flags"
@@ -1241,7 +1241,7 @@ msgstr "Dettagli area"
 
 #: ../root/area/not_found.tt:1 ../root/area/not_found.tt:2
 msgid "Area Not Found"
-msgstr ""
+msgstr "Area non trovata"
 
 #: ../root/area/layout.tt:5
 msgid "Area information"
@@ -1545,7 +1545,7 @@ msgstr "Applicazioni autorizzate"
 
 #: ../root/edit/search_macros.tt:288
 msgid "Auto-Editor"
-msgstr ""
+msgstr "Auto-editor"
 
 #: ../root/admin/edit_user.tt:7
 msgid "Auto-editor"
@@ -1811,7 +1811,7 @@ msgstr "Esplora etichette"
 
 #: ../root/browse/place.tt:1 ../root/browse/place.tt:3
 msgid "Browse Places"
-msgstr ""
+msgstr "Esplora luoghi"
 
 #: ../root/browse/release_group.tt:1 ../root/browse/release_group.tt:3
 msgid "Browse Release Groups"
@@ -1843,7 +1843,7 @@ msgstr "Esplora etichette"
 
 #: ../root/browse/index.tt:11
 msgid "Browse places"
-msgstr ""
+msgstr "Esplora luoghi"
 
 #: ../root/artist/browse_various_recordings.tt:2
 msgid "Browse recordings"
@@ -2137,7 +2137,7 @@ msgstr "Client:"
 
 #: ../root/release/edit/tracklist.tt:159
 msgid "Close"
-msgstr ""
+msgstr "Chiudi"
 
 #: ../root/edit/search_macros.tt:307
 msgid "Closed"
@@ -2274,12 +2274,12 @@ msgstr "Continua a leggere su Wikipedia..."
 
 #: ../root/place/edit_form.tt:49
 msgid "Coordinates"
-msgstr ""
+msgstr "Coordinate"
 
 #: ../root/edit/details/add_place.tt:44 ../root/edit/details/edit_place.tt:32
 #: ../root/place/layout.tt:38
 msgid "Coordinates:"
-msgstr ""
+msgstr "Coordinate:"
 
 #: ../root/components/forms.tt:248
 msgid "Copy"
@@ -2389,11 +2389,11 @@ msgstr "Create"
 
 #: ../root/release/add_cover_art.tt:58
 msgid "Creating edit..."
-msgstr ""
+msgstr "Creazione della modifica in corso..."
 
 #: ../root/admin/wikidoc/edit.tt:14
 msgid "Current version:"
-msgstr ""
+msgstr "Versione attuale:"
 
 #: ../root/release/edit_relationships.tt:135
 #: ../root/release/edit_relationships.tt:144
@@ -2489,7 +2489,7 @@ msgstr "Elimina {e}"
 
 #: ../root/edit/details/edit_relationship_type.tt:39
 msgid "Deprecated:"
-msgstr ""
+msgstr "Obsoleto:"
 
 #: ../root/collection/index.tt:5 ../root/doc/edit_type.tt:40
 #: ../root/doc/relationship_type.tt:25
@@ -2839,11 +2839,11 @@ msgstr "Nota di modifica"
 
 #: ../root/place/edit.tt:14
 msgid "Edit Place"
-msgstr ""
+msgstr "Modifica luogo"
 
 #: ../root/place/edit_alias.tt:12
 msgid "Edit Place Alias"
-msgstr ""
+msgstr "Modifica alias del luogo"
 
 #: ../root/account/edit_ok.tt:1 ../root/account/edit_ok.tt:3
 #: ../root/account/edit.tt:13 ../root/account/edit.tt:15
@@ -2967,7 +2967,7 @@ msgstr "Note di modifica"
 #: ../root/place/edit_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Place/EditAlias.pm:12
 msgid "Edit place alias"
-msgstr ""
+msgstr "Modifica alias del luogo"
 
 #: ../root/place/edit_annotation.tt:2
 msgid "Edit place annotation"
@@ -3052,7 +3052,7 @@ msgstr "Editor"
 
 #: ../root/edit/search_macros.tt:307
 msgid "Editor Flag"
-msgstr ""
+msgstr "Indicatori degli editor"
 
 #: ../root/user/not_found.tt:1 ../root/user/not_found.tt:2
 msgid "Editor Not Found"
@@ -3263,7 +3263,7 @@ msgstr ""
 
 #: ../root/components/forms.tt:179 ../root/components/forms.tt:212
 msgid "English"
-msgstr ""
+msgstr "Inglese"
 
 #: ../root/release/edit/tracklist.tt:178
 msgid "Enter a tracklist below:"
@@ -3414,7 +3414,7 @@ msgstr "Fallite"
 
 #: ../root/release/add_cover_art.tt:72
 msgid "File:"
-msgstr ""
+msgstr "File:"
 
 #: ../root/edit/details/add_cover_art.tt:19
 #: ../root/edit/details/edit_cover_art.tt:11
@@ -3579,7 +3579,7 @@ msgstr "FreeDB:"
 
 #: ../root/components/forms.tt:181 ../root/components/forms.tt:214
 msgid "French"
-msgstr ""
+msgstr "Francese"
 
 #: ../root/edit/details/historic/move_disc_id.tt:8
 #: ../root/edit/details/move_disc_id.tt:8
@@ -3687,7 +3687,7 @@ msgstr "Ritocca titoli tracce"
 
 #: ../root/doc/relationship_type.tt:63
 msgid "Guidelines"
-msgstr ""
+msgstr "Linee guida"
 
 #: ../root/annotation/edit.tt:43
 msgid "Headings:"
@@ -3737,7 +3737,7 @@ msgstr "ID"
 
 #: ../root/doc/relationship_type.tt:31
 msgid "ID:"
-msgstr ""
+msgstr "ID:"
 
 #: ../root/artist/edit_form.tt:55 ../root/label/edit_form.tt:54
 msgid "IPI code"
@@ -3833,7 +3833,7 @@ msgstr "ISRC con più registrazioni"
 
 #: ../root/recording/edit_form.tt:12
 msgid "ISRCs:"
-msgstr ""
+msgstr "ISRC:"
 
 #: ../root/artist/works-list.tt:12 ../root/report/iswc_with_many_works.tt:24
 #: ../root/search/results-work.tt:11 ../root/work/edit_form.tt:11
@@ -4390,7 +4390,7 @@ msgstr "Ambiente linguistico:"
 
 #: ../root/edit/search_macros.tt:288
 msgid "Location Editor"
-msgstr ""
+msgstr "Editor di luoghi"
 
 #: ../root/admin/edit_user.tt:10
 msgid "Location editor"
@@ -4604,7 +4604,7 @@ msgstr "Unisci etichette"
 
 #: ../root/place/merge.tt:1 ../root/place/merge.tt:3
 msgid "Merge Places"
-msgstr ""
+msgstr "Unisci luoghi"
 
 #: ../root/layout/merge-helper.tt:3
 msgid "Merge Process"
@@ -4659,7 +4659,7 @@ msgstr "Metodo di unione:"
 
 #: ../root/place/layout.tt:54
 msgid "Merge place"
-msgstr ""
+msgstr "Unisci luogo"
 
 #: ../root/recording/layout.tt:32
 msgid "Merge recording"
@@ -5532,7 +5532,7 @@ msgstr "Frase:"
 #: ../lib/MusicBrainz/Server/Edit/Place.pm:7
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:40
 msgid "Place"
-msgstr ""
+msgstr "Luogo"
 
 #: ../root/place/edit_form.tt:33
 msgid "Place Details"
@@ -5540,7 +5540,7 @@ msgstr ""
 
 #: ../root/place/not_found.tt:1 ../root/place/not_found.tt:2
 msgid "Place Not Found"
-msgstr ""
+msgstr "Luogo non trovato"
 
 #: ../root/place/layout.tt:4
 msgid "Place information"
@@ -5555,11 +5555,11 @@ msgstr ""
 #: ../root/edit/details/remove_place_alias.tt:3
 #: ../root/edit/details/remove_place.tt:3
 msgid "Place:"
-msgstr ""
+msgstr "Luogo:"
 
 #: ../root/area/header.tt:1 ../root/area/places.tt:2
 msgid "Places"
-msgstr ""
+msgstr "Luoghi"
 
 #: ../root/browse/place.tt:8
 msgid "Places starting with “{index}”"
@@ -6105,7 +6105,7 @@ msgstr "Dettagli della relazione"
 
 #: ../root/edit/search_macros.tt:288
 msgid "Relationship Editor"
-msgstr ""
+msgstr "Editor di relazioni"
 
 #: ../root/doc/relationship_type.tt:2 ../root/edit/search_macros.tt:307
 msgid "Relationship Type"
@@ -6628,7 +6628,7 @@ msgstr "Rimuovi pagina"
 
 #: ../root/place/delete_alias.tt:1
 msgid "Remove Place Alias"
-msgstr ""
+msgstr "Rimuovi alias dal luogo"
 
 #: ../root/recording/delete.tt:2
 msgid "Remove Recording"
@@ -6708,7 +6708,7 @@ msgstr "Rimuovi alias dall'etichetta"
 #: ../root/place/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Place/DeleteAlias.pm:14
 msgid "Remove place alias"
-msgstr ""
+msgstr "Rimuovi alias dal luogo"
 
 #: ../root/recording/layout.tt:35
 #: ../lib/MusicBrainz/Server/Edit/Recording/Delete.pm:12
@@ -7658,7 +7658,7 @@ msgstr "Sottoscrizioni"
 
 #: ../root/oauth2/oob.tt:3
 msgid "Success!"
-msgstr "Eseguito!"
+msgstr "Operazione completata!"
 
 #: ../root/release/edit/recordings.tt:77
 msgid "Suggested recording:"
@@ -8169,7 +8169,7 @@ msgstr "Questo ISWC non è associato ad alcuna opera. Se desideri associarlo ad 
 
 #: ../root/alias/edit_form.tt:33
 msgid "This alias is no longer current."
-msgstr ""
+msgstr "Questo alias non è più attuale."
 
 #: ../root/area/delete.tt:14
 msgid ""
@@ -8191,11 +8191,11 @@ msgstr "Quest'area non è al momento associata a nessuna etichetta."
 
 #: ../root/area/places.tt:7
 msgid "This area is not currently associated with any places."
-msgstr ""
+msgstr "Quest'area non è al momento associata a nessun luogo."
 
 #: ../root/area/releases.tt:9
 msgid "This area is not currently associated with any releases."
-msgstr ""
+msgstr "Quest'area non è al momento associata a nessuna pubblicazione."
 
 #: ../root/artist/index.tt:99
 msgid "This artist does not have any release groups"
@@ -9442,7 +9442,7 @@ msgstr "Aggiorna collezione"
 
 #: ../root/release/add_cover_art.tt:57
 msgid "Uploading image..."
-msgstr ""
+msgstr "Caricamento dell'immagine in corso..."
 
 #: ../root/components/forms.tt:191 ../root/components/forms.tt:224
 msgid "Uppercase roman numerals"
@@ -9560,7 +9560,7 @@ msgstr ""
 #: ../root/edit/details/add_standalone_recording.tt:34
 #: ../root/edit/details/edit_recording.tt:26
 msgid "Video:"
-msgstr ""
+msgstr "Video:"
 
 #: ../root/user/ratings_summary.tt:25
 msgid "View all ratings"
@@ -10906,7 +10906,7 @@ msgstr "{edit} ha ricevuto almeno un voto negativo, devi lasciare una nota di mo
 
 #: ../root/doc/relationship_type.tt:5
 msgid "{entity0}-{entity1}"
-msgstr ""
+msgstr "{entity0}-{entity1}"
 
 #: ../root/components/common-macros.tt:272
 #: ../root/components/common-macros.tt:997 ../root/main/index.tt:124
@@ -11632,19 +11632,19 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Edit/Place/Create.pm:19
 msgid "Add place"
-msgstr ""
+msgstr "Aggiungi luogo"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/Delete.pm:10
 msgid "Remove place"
-msgstr ""
+msgstr "Rimuovi luogo"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/Edit.pm:33
 msgid "Edit place"
-msgstr ""
+msgstr "Modifica luogo"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/Merge.pm:11
 msgid "Merge places"
-msgstr ""
+msgstr "Unisci luoghi"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/AddAnnotation.pm:12
 msgid "Add recording annotation"
