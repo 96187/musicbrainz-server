@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-10-28 17:46-0700\n"
-"PO-Revision-Date: 2013-10-29 02:00+0000\n"
+"PO-Revision-Date: 2013-10-29 02:58+0000\n"
 "Last-Translator: Luca Salini <email address hidden>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/musicbrainz/language/it/)\n"
 "MIME-Version: 1.0\n"
@@ -970,7 +970,7 @@ msgstr "In alternativa, puoi {uri|aggiungere una nuova etichetta}."
 
 #: ../root/search/results-place.tt:43
 msgid "Alternatively, you may {uri|add a new place}."
-msgstr ""
+msgstr "In alternativa, puoi {uri|aggiungere un nuovo luogo}."
 
 #: ../root/search/results-recording.tt:5
 msgid "Alternatively, you may {uri|add a new recording}."
@@ -2971,7 +2971,7 @@ msgstr "Modifica alias del luogo"
 
 #: ../root/place/edit_annotation.tt:2
 msgid "Edit place annotation"
-msgstr ""
+msgstr "Modifica annotazione del luogo"
 
 #: ../root/admin/edit_user.tt:32
 msgid "Edit profile"
@@ -3119,7 +3119,7 @@ msgstr "Modifiche di {name}"
 
 #: ../root/place/edits.tt:17
 msgid "Edits for {place}"
-msgstr ""
+msgstr "Modifiche per {place}"
 
 #: ../root/release/edits.tt:17 ../root/release_group/edits.tt:17
 #: ../root/work/edits.tt:16
@@ -3259,7 +3259,7 @@ msgstr "Fine:"
 
 #: ../root/relationship/linktype/form.tt:92
 msgid "Endpoint:"
-msgstr ""
+msgstr "Punto finale:"
 
 #: ../root/components/forms.tt:179 ../root/components/forms.tt:212
 msgid "English"
@@ -3589,7 +3589,7 @@ msgstr "Da:"
 #: ../root/release/sidebar.tt:4
 msgid ""
 "Front cover image failed to load correctly.<br/>{all|View all artwork}."
-msgstr ""
+msgstr "Non è stato possibile caricare correttamente la copertina frontale.<br/>{all|Visualizza tutte le copertine}."
 
 #: ../root/cdstub/index.tt:30 ../root/cdtoc/info.tt:5
 msgid "Full TOC:"
@@ -4280,7 +4280,7 @@ msgstr "Ultima modifica:"
 
 #: ../root/layout.tt:167
 msgid "Last replication packet received at {datetime}"
-msgstr ""
+msgstr "Ultimo pacchetto di replica ricevuto il {datetime}"
 
 #: ../root/layout/sidebar/sidebar-lastupdate.tt:2
 msgid "Last updated on {date}"
@@ -4348,7 +4348,7 @@ msgstr "Frase di collegamento:"
 
 #: ../root/doc/relationship_type.tt:37
 msgid "Link phrases"
-msgstr ""
+msgstr "Frasi di collegamento"
 
 #: ../root/annotation/edit.tt:53
 msgid "Links:"
@@ -4729,11 +4729,11 @@ msgstr "Sposta disco verso l'alto"
 
 #: ../root/release/add_cover_art.tt:44
 msgid "Move file down"
-msgstr ""
+msgstr "Sposta file verso il basso"
 
 #: ../root/release/add_cover_art.tt:42
 msgid "Move file up"
-msgstr ""
+msgstr "Sposta file verso l'alto"
 
 #: ../root/release/edit/tracklist.tt:307
 msgid "Move track down"
@@ -5120,7 +5120,7 @@ msgstr "Nessuna registrazione trovata con questo tag."
 
 #: ../root/place/performances.tt:84
 msgid "No recordings, releases or release groups are linked to this place"
-msgstr ""
+msgstr "Nessuna registrazione, pubblicazione o gruppo di pubblicazioni è collegata a questo luogo"
 
 #: ../root/relationship/linkattributetype/index.tt:32
 msgid "No relationship attributes found."
@@ -5510,7 +5510,7 @@ msgstr "Esegui le operazioni qui sopra quando non sto utilizzando l'applicazione
 #: ../root/place/header.tt:1 ../root/place/performances.tt:1
 #: ../root/place/performances.tt:2
 msgid "Performances"
-msgstr ""
+msgstr "Esibizioni"
 
 #: ../root/area/details.tt:22 ../root/artist/details.tt:22
 #: ../root/label/details.tt:22 ../root/place/details.tt:22
@@ -5536,7 +5536,7 @@ msgstr "Luogo"
 
 #: ../root/place/edit_form.tt:33
 msgid "Place Details"
-msgstr ""
+msgstr "Dettagli del luogo"
 
 #: ../root/place/not_found.tt:1 ../root/place/not_found.tt:2
 msgid "Place Not Found"
@@ -5544,7 +5544,7 @@ msgstr "Luogo non trovato"
 
 #: ../root/place/layout.tt:4
 msgid "Place information"
-msgstr ""
+msgstr "Informazioni sul luogo"
 
 #: ../root/components/common-macros.tt:562
 #: ../root/edit/details/add_place_alias.tt:3
@@ -5563,7 +5563,7 @@ msgstr "Luoghi"
 
 #: ../root/browse/place.tt:8
 msgid "Places starting with “{index}”"
-msgstr ""
+msgstr "Luoghi che iniziano per \"{index}\""
 
 #: ../root/account/registered.tt:7
 msgid ""
@@ -5795,7 +5795,7 @@ msgstr "Etichette che potrebbero essere doppioni"
 
 #: ../root/place/edit_form.tt:12
 msgid "Possible Duplicate Places"
-msgstr ""
+msgstr "Luoghi che potrebbero essere doppioni"
 
 #: ../root/cdtoc/lookup.tt:29
 msgid "Possible Mediums"
@@ -6786,7 +6786,7 @@ msgstr "Richiesta di dati:"
 
 #: ../root/release/add_cover_art.tt:56
 msgid "Request signature..."
-msgstr ""
+msgstr "Richiesta firma in corso..."
 
 #: ../root/scripts/text_strings.tt:96
 #: ../lib/MusicBrainz/Server/Form/RelationshipEditor.pm:123
@@ -7069,7 +7069,7 @@ msgstr "Seleziona la pubblicazione in cui vuoi spostare l'ID disco <code>{discid
 
 #: ../root/release/add_cover_art.tt:31
 msgid "Select images..."
-msgstr ""
+msgstr "Seleziona immagini..."
 
 #: ../root/user/contact.tt:20
 msgid "Send"
@@ -7090,7 +7090,7 @@ msgstr "Inviami email con le modifiche alle mie sottoscrizioni:"
 
 #: ../root/components/forms.tt:180 ../root/components/forms.tt:213
 msgid "Sentence"
-msgstr ""
+msgstr "Frase"
 
 #: ../root/release_group/set_cover_art.tt:5
 msgid "Set Release Group Cover Art"
@@ -7155,7 +7155,7 @@ msgstr "Stai visualizzando le pubblicazioni di artisti vari. {show_subset|Visual
 msgid ""
 "Showing all recordings. {show_sa|Show only standalone recordings instead}, "
 "or {show_vid|show only videos}."
-msgstr ""
+msgstr "Stai visualizzando tutte le registrazioni. {show_sa|Visualizza solo le registrazioni indipendenti} o {show_vid|visualizza solo i video}."
 
 #: ../root/artist/recordings.tt:20
 msgid ""
@@ -7164,7 +7164,7 @@ msgstr "Stai visualizzando solo le registrazioni indipendenti. {show_all|Visuali
 
 #: ../root/artist/recordings.tt:23
 msgid "Showing only videos. {show_all|Show all recordings instead}."
-msgstr ""
+msgstr "Stai visualizzando solo i video. {show_all|Visualizza tutte le registrazioni}."
 
 #: ../root/artist/index.tt:109
 msgid ""
@@ -7299,7 +7299,7 @@ msgstr "Spiacenti, non ci sono etichette che iniziano per \"{index}\". {pre|Torn
 msgid ""
 "Sorry, there are no places starting with “{index}”. Please {pre|go back} and"
 " try again."
-msgstr ""
+msgstr "Spiacenti, non ci sono luoghi che iniziano per \"{index}\". {pre|Torna indietro} e riprova."
 
 #: ../root/artist/browse_various_recordings.tt:15
 msgid ""
@@ -7333,7 +7333,7 @@ msgstr "Spiacenti, si è verificato un problema con la tua richiesta."
 msgid ""
 "Sorry, we could find neither a recording nor a track with that MusicBrainz "
 "ID. You may wish to try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Spiacenti, non è stato possibile trovare né una registrazione né una traccia con quell'ID di MusicBrainz. Potresti provare a {search_url|usare la ricerca}."
 
 #: ../root/freedb/not_found.tt:4
 msgid ""
@@ -7345,7 +7345,7 @@ msgstr "Spiacenti, non è stato possibile trovare una voce di FreeDB con quell'I
 msgid ""
 "Sorry, we could not find a MusicBrainz entity with that ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Spiacenti, non è stato possibile trovare un'entità di MusicBrainz con quell'ID. Potresti provare a {search_url|usare la ricerca}."
 
 #: ../root/url/not_found.tt:4
 msgid "Sorry, we could not find a URL with that MusicBrainz ID."
@@ -7361,7 +7361,7 @@ msgstr "Spiacenti, non è stato possibile trovare un'etichetta con quell'ID di M
 msgid ""
 "Sorry, we could not find a place with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Spiacenti, non è stato possibile trovare un luogo con quell'ID di MusicBrainz. Potresti provare a {search_url|usare la ricerca}."
 
 #: ../root/recording/not_found.tt:4
 msgid ""
@@ -7396,7 +7396,7 @@ msgstr "Spiacenti, non è stato possibile trovare un'opera con quell'ID di Music
 msgid ""
 "Sorry, we could not find an area with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Spiacenti, non è stato possibile trovare un'area con quell'ID di MusicBrainz. Potresti provare a {search_url|usare la ricerca}."
 
 #: ../root/artist/not_found.tt:4
 msgid ""
@@ -7537,7 +7537,7 @@ msgstr "Statistiche"
 
 #: ../root/search/lib/inline-results-release.tt:20
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: ../root/edit/search_macros.tt:307
 msgctxt "edit status"
@@ -7737,7 +7737,7 @@ msgstr "Tagga questa etichetta"
 
 #: ../root/place/layout.tt:43 ../root/place/tags.tt:3
 msgid "Tag this place"
-msgstr ""
+msgstr "Tagga questo luogo"
 
 #: ../root/recording/layout.tt:21 ../root/recording/tags.tt:3
 msgid "Tag this recording"
@@ -8354,7 +8354,7 @@ msgstr "Questo è un server di sviluppo di MusicBrainz."
 msgid ""
 "This is a Musicbrainz mirror server. To edit or make changes to the data "
 "please {uri|return to musicbrainz.org}."
-msgstr ""
+msgstr "Questo è un server mirror di MusicBrainz. Per modificare o effettuare cambiamenti sui dati {uri|ritorna su musicbrainz.org}."
 
 #: ../root/account/edit.tt:27
 msgid ""
@@ -8448,17 +8448,17 @@ msgstr "Questa persona è deceduta."
 
 #: ../root/place/edit_form.tt:59
 msgid "This place has ended."
-msgstr ""
+msgstr "Questo luogo non è più attuale."
 
 #: ../root/place/index.tt:19
 msgid ""
 "This place has no relationships and will be removed automatically in the "
 "next few days. If this is not intended, please add more data to this place."
-msgstr ""
+msgstr "Questo luogo non ha relazioni e sarà rimosso automaticamente nei prossimi giorni. Se vuoi evitare che ciò succeda, aggiungi più dati."
 
 #: ../root/place/tags.tt:2
 msgid "This place has no tags."
-msgstr ""
+msgstr "Questo luogo non ha tag."
 
 #: ../root/recording/delete.tt:18
 msgid ""
@@ -8488,7 +8488,7 @@ msgstr "Questa relazione si è conclusa."
 
 #: ../root/relationship/linktype/form.tt:16
 msgid "This relationship is deprecated"
-msgstr ""
+msgstr "Questa relazione è obsoleta"
 
 #: ../root/relationship/linktype/form.tt:80
 msgid "This relationship type does not have any examples."
@@ -8496,11 +8496,11 @@ msgstr "Questo tipo di relazione non ha nessun esempio."
 
 #: ../root/scripts/text_strings.tt:132
 msgid "This relationship type is deprecated"
-msgstr ""
+msgstr "Questo tipo di relazione è obsoleto"
 
 #: ../root/doc/relationship_type.tt:11
 msgid "This relationship type is deprecated and should not be used."
-msgstr ""
+msgstr "Questo tipo di relazione è obsoleto e non dovrebbe essere utilizzato."
 
 #: ../root/doc/relationship_type.tt:95
 msgid ""
@@ -8522,7 +8522,7 @@ msgid ""
 "This release group has no relationships or releases associated, and will be "
 "removed automatically in the next few days. If this is not intended, please "
 "add more data to this release group."
-msgstr ""
+msgstr "Questo gruppo di pubblicazioni non ha relazioni né pubblicazioni e sarà rimosso automaticamente nei prossimi giorni. Se vuoi evitare che ciò succeda, aggiungi più dati."
 
 #: ../root/release_group/tags.tt:2
 msgid "This release group has no tags."
@@ -9143,7 +9143,7 @@ msgstr "Traccia"
 
 #: ../root/track/not_found.tt:1 ../root/track/not_found.tt:2
 msgid "Track Not Found"
-msgstr ""
+msgstr "Traccia non trovata"
 
 #: ../root/release/edit/tracklist.tt:150 ../root/release/edit/tracklist.tt:385
 #: ../root/release/edit/tracklist.tt:386
@@ -9531,7 +9531,7 @@ msgstr "L'utilizzo della {doc|sintassi di ricerca avanzata} in una ricerca diret
 
 #: ../root/release/add_cover_art.tt:54
 msgid "Validating file..."
-msgstr ""
+msgstr "Validazione file in corso..."
 
 #: ../root/cdstub/browse.tt:18 ../root/cdstub/layout.tt:26
 msgid "Various Artists"
@@ -9547,15 +9547,15 @@ msgstr "Versione:"
 
 #: ../root/recording/edit_form.tt:11
 msgid "Video"
-msgstr ""
+msgstr "Video"
 
 #: ../root/recording/header.tt:17
 msgid "Video by {artist}"
-msgstr ""
+msgstr "Video di {artist}"
 
 #: ../root/recording/layout.tt:3
 msgid "Video “{name}” by {artist}"
-msgstr ""
+msgstr "Video “{name}” di {artist}"
 
 #: ../root/edit/details/add_standalone_recording.tt:34
 #: ../root/edit/details/edit_recording.tt:26
@@ -9870,7 +9870,7 @@ msgstr "Wiki"
 
 #: ../root/edit/search_macros.tt:288
 msgid "Wiki Transcluder"
-msgstr ""
+msgstr "Transclusore wiki"
 
 #: ../root/admin/wikidoc/index.tt:34
 msgid "Wiki version"
@@ -10059,7 +10059,7 @@ msgstr "Sì, sono sicuro che questa etichetta non è un doppione e so quello che
 #: ../root/place/edit_form.tt:28
 msgid ""
 "Yes, I am sure this place is not duplicate, and I know what I am doing."
-msgstr ""
+msgstr "Sì, sono sicuro che questo luogo non sia un doppione e so quello che sto facendo."
 
 #: ../root/admin/wikidoc/delete.tt:9
 msgid "Yes, I'm sure"
@@ -10069,7 +10069,7 @@ msgstr "Sì, sono sicuro"
 msgid ""
 "You are about to add an ISRC to {recording}. The ISRC must be entered in "
 "standard <code>CCXXXYYNNNNNN</code> format:"
-msgstr ""
+msgstr "Stai per aggiungere un ISRC a {recording}. L'ISRC deve essere inserito nel formato standard <code>CCXXXYYNNNNNN</code>:"
 
 #: ../root/components/forms.tt:257
 msgid ""
@@ -10213,8 +10213,8 @@ msgstr ""
 #: ../root/user/subscriptions/collection.tt:7
 msgid "You are subscribed to {n} private collection."
 msgid_plural "You are subscribed to {n} private collections."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Sei sottoscritto a {n} collezione privata."
+msgstr[1] "Sei sottoscritto a {n} collezioni private."
 
 #: ../root/cdtoc/attach_artist_releases.tt:24
 msgid "You are viewing releases by {artist}."
@@ -10345,7 +10345,7 @@ msgstr "Devi effettuare l'accesso per visualizzare questa pagina."
 #: ../root/artist/edit_form.tt:118 ../root/label/edit_form.tt:78
 #: ../root/place/edit_form.tt:72
 msgid "You selected {area}."
-msgstr ""
+msgstr "Hai selezionato {area}."
 
 #: ../root/release/edit/information.tt:192
 msgid "You selected {label}."
@@ -10503,7 +10503,7 @@ msgstr "modifiche"
 
 #: ../root/doc/relationship_type.tt:58
 msgid "end date"
-msgstr ""
+msgstr "data finale"
 
 #: ../root/components/common-macros.tt:725
 msgid "ended"
@@ -10536,7 +10536,7 @@ msgstr "nel {date}"
 
 #: ../root/area/header.tt:23
 msgid "in {parent_areas}"
-msgstr ""
+msgstr "in {parent_areas}"
 
 #: ../root/components/common-macros.tt:399
 #: ../root/components/rdfa-macros.tt:788 ../root/components/rdfa-macros.tt:801
@@ -10638,7 +10638,7 @@ msgstr "il {date}"
 
 #: ../root/release/add_cover_art.tt:33
 msgid "or drop files here"
-msgstr ""
+msgstr "o rilascia qui i file"
 
 #: ../root/components/common-macros.tt:119
 msgid "original"
@@ -10650,7 +10650,7 @@ msgstr "pagina #{page} di #{total}"
 
 #: ../root/components/common-macros.tt:161
 msgid "places"
-msgstr ""
+msgstr "luoghi"
 
 #: ../root/artist/subscribers.tt:14 ../root/collection/subscribers.tt:14
 #: ../root/label/subscribers.tt:14 ../root/user/subscribers.tt:14
@@ -10722,7 +10722,7 @@ msgstr "spazio"
 
 #: ../root/doc/relationship_type.tt:55
 msgid "start date"
-msgstr ""
+msgstr "data iniziale"
 
 #: ../root/user/profile.tt:108
 msgid "subscribe"
@@ -10891,8 +10891,8 @@ msgstr "{doc|Editor di transclusione}"
 #: ../root/user/subscriptions/collection.tt:13
 msgid "{editor} is subscribed to {n} private collection."
 msgid_plural "{editor} is subscribed to {n} private collections."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{editor} è sottoscritto a {n} collezione privata."
+msgstr[1] "{editor} è sottoscritto a {n} collezioni private."
 
 #: ../root/user/subscriptions/layout.tt:12
 msgid "{editor} is subscribed to:"
@@ -11078,7 +11078,7 @@ msgstr "{percentage}%"
 
 #: ../root/relationship/linktype/tree.tt:23
 msgid "{relationship_documentation_url|Documentation}"
-msgstr ""
+msgstr "{relationship_documentation_url|Documentazione}"
 
 #: ../root/cdtoc/move_search.tt:31 ../root/cdtoc/set_durations.tt:22
 #: ../root/release/merge_search.tt:11
@@ -11117,7 +11117,7 @@ msgstr "{uri|Metti in relazione con URL}"
 
 #: ../root/layout.tt:98
 msgid "{uri|Return to musicbrainz.org}."
-msgstr ""
+msgstr "{uri|Ritorna a musicbrainz.org}."
 
 #: ../root/user/profile/layout.tt:8
 msgid "{user}"
@@ -11282,7 +11282,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:116
 msgid "Could not find medium"
-msgstr ""
+msgstr "Impossibile trovare il supporto"
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:153
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:317
@@ -11357,7 +11357,7 @@ msgstr "Questa strategia di unione non è applicabile alle pubblicazioni che hai
 
 #: ../lib/MusicBrainz/Server/Controller/Role/Annotation.pm:63
 msgid "The annotation revision ID must be a positive integer"
-msgstr ""
+msgstr "L'ID della revisione dell'annotazione deve essere un numero intero positivo"
 
 #: ../lib/MusicBrainz/Server/Controller/Role/Annotation.pm:182
 msgid "The old and new annotation ids must be unique, positive integers."
@@ -11628,7 +11628,7 @@ msgstr "Rimuovi PUID"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/AddAnnotation.pm:12
 msgid "Add place annotation"
-msgstr ""
+msgstr "Aggiungi annotazione al luogo"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/Create.pm:19
 msgid "Add place"
@@ -11960,7 +11960,7 @@ msgstr "Il campo accreditamento artista è necessario"
 
 #: ../lib/MusicBrainz/Server/Form/Field/Coordinates.pm:61
 msgid "These coordinates could not be parsed"
-msgstr ""
+msgstr "Non è stato possibile analizzare queste coordinate"
 
 #: ../lib/MusicBrainz/Server/Form/Field/DatePeriod.pm:39
 msgid "The end date must occur on or after the begin date"
@@ -12045,11 +12045,11 @@ msgstr "È necessario indicare il tipo di collegamento."
 
 #: ../lib/MusicBrainz/Server/Form/RelationshipEditor.pm:55
 msgid "ID must be an integer"
-msgstr ""
+msgstr "L'ID deve essere un numero intero"
 
 #: ../lib/MusicBrainz/Server/Form/RelationshipEditor.pm:62
 msgid "Unknown action"
-msgstr ""
+msgstr "Azione sconosciuta"
 
 #: ../lib/MusicBrainz/Server/Form/RelationshipEditor.pm:73
 msgid "The relationship is missing one or both entities."
@@ -12058,7 +12058,7 @@ msgstr "Alla relazione manca un'entità o entrambe le entità."
 #: ../lib/MusicBrainz/Server/Form/RelationshipEditor.pm:82
 #: ../lib/MusicBrainz/Server/Form/RelationshipEditor.pm:85
 msgid "Unknown entity type"
-msgstr ""
+msgstr "Tipo di entità sconosciuto"
 
 #: ../lib/MusicBrainz/Server/Form/RelationshipEditor.pm:90
 msgid ""
@@ -12133,7 +12133,7 @@ msgstr "La durata della traccia {pos} non può essere modificata perché questa 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:122
 #, perl-brace-format
 msgid "Track {pos} has a duration less than or equal to 0 seconds"
-msgstr ""
+msgstr "La traccia {pos} ha una durata inferiore o uguale a 0 secondi"
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:160
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:203
@@ -12214,7 +12214,7 @@ msgstr "Devi fornire una data di nascita completa affinché sia possibile visual
 
 #: ../lib/MusicBrainz/Server/Form/User/EditProfile.pm:82
 msgid "Birth year must be after 1900"
-msgstr ""
+msgstr "L'anno di nascita deve essere successivo al 1900"
 
 #: ../lib/MusicBrainz/Server/Form/User/Login.pm:9
 msgid "Username field is required"
