@@ -34,7 +34,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-10-28 17:46-0700\n"
-"PO-Revision-Date: 2013-10-29 19:00+0000\n"
+"PO-Revision-Date: 2013-10-29 19:38+0000\n"
 "Last-Translator: Shepard\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -110,27 +110,27 @@ msgstr "&#x2013; {enddate}"
 
 #: ../root/release/add_cover_art.tt:64
 msgid "&#x26a0; Error creating edit"
-msgstr ""
+msgstr "&#x26a0; Fehler beim Erstellen der Bearbeitung"
 
 #: ../root/release/add_cover_art.tt:61
 msgid "&#x26a0; Error requesting signature"
-msgstr ""
+msgstr "&#x26a0; Fehler beim Anfragen der Signatur"
 
 #: ../root/release/add_cover_art.tt:62
 msgid "&#x26a0; Error uploading image"
-msgstr ""
+msgstr "&#x26a0; Fehler beim Hochladen des Bildes"
 
 #: ../root/release/add_cover_art.tt:63
 msgid "&#x26a0; Server busy, try again later"
-msgstr ""
+msgstr "&#x26a0; Server ausgelastet, versuch es später wieder"
 
 #: ../root/release/add_cover_art.tt:60
 msgid "&#x26a0; Unrecognized file"
-msgstr ""
+msgstr "&#x26a0; Nicht erkannte Datei"
 
 #: ../root/release/add_cover_art.tt:59
 msgid "&#x2713; Success"
-msgstr ""
+msgstr "&#x2713; Erfolg"
 
 #: ../root/relationship/linktype/tree.tt:44
 msgid "&lt; Back to all relationship types"
@@ -576,7 +576,7 @@ msgstr "Örtlichkeit hinzufügen"
 
 #: ../root/place/add_alias.tt:12
 msgid "Add Place Alias"
-msgstr ""
+msgstr "Örtlichkeitsalias hinzufügen"
 
 #: ../root/layout/menu.tt:226
 msgctxt "button/menu"
@@ -652,7 +652,7 @@ msgstr "Ein neues Label hinzufügen"
 
 #: ../root/place/create.tt:14 ../root/place/create.tt:16
 msgid "Add a New Place"
-msgstr ""
+msgstr "Neue Örtlichkeit hinzufügen"
 
 #: ../root/release_group/create.tt:23
 msgid "Add a New Release Group"
@@ -744,7 +744,7 @@ msgstr "Neue Aufnahme hinzufügen"
 #: ../root/place/add_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Place/AddAlias.pm:14
 msgid "Add place alias"
-msgstr ""
+msgstr "Örtlichkeitsalias hinzufügen"
 
 #: ../root/artist/layout.tt:88
 msgid "Add recording"
@@ -970,7 +970,7 @@ msgstr "Titeländerungen auf auf Aufnahmen übertragen"
 
 #: ../root/search/results-area.tt:44
 msgid "Alternatively, you may {uri|add a new area}."
-msgstr "Stattdessen kannst du auch {uri|ein Gebiet hinzufügen}."
+msgstr "Du kannst auch {uri|ein Gebiet hinzufügen}."
 
 #: ../root/search/results-artist.tt:5
 msgid "Alternatively, you may {uri|add a new artist}."
@@ -982,7 +982,7 @@ msgstr "Du kannst auch {uri|ein neues Label hinzufügen}."
 
 #: ../root/search/results-place.tt:43
 msgid "Alternatively, you may {uri|add a new place}."
-msgstr ""
+msgstr "Du kannst auch {uri|eine neue Örtlichkeit hinzufügen}."
 
 #: ../root/search/results-recording.tt:5
 msgid "Alternatively, you may {uri|add a new recording}."
@@ -1823,7 +1823,7 @@ msgstr "Labels durchstöbern"
 
 #: ../root/browse/place.tt:1 ../root/browse/place.tt:3
 msgid "Browse Places"
-msgstr ""
+msgstr "Örtlichkeiten durchstöbern"
 
 #: ../root/browse/release_group.tt:1 ../root/browse/release_group.tt:3
 msgid "Browse Release Groups"
@@ -1855,7 +1855,7 @@ msgstr "Labels durchstöbern"
 
 #: ../root/browse/index.tt:11
 msgid "Browse places"
-msgstr ""
+msgstr "Örtlichkeiten durchstöbern"
 
 #: ../root/artist/browse_various_recordings.tt:2
 msgid "Browse recordings"
@@ -2851,11 +2851,11 @@ msgstr "Bearbeitungsbemerkung"
 
 #: ../root/place/edit.tt:14
 msgid "Edit Place"
-msgstr ""
+msgstr "Örtlichkeit bearbeiten"
 
 #: ../root/place/edit_alias.tt:12
 msgid "Edit Place Alias"
-msgstr ""
+msgstr "Örtlichkeitsalias bearbeiten"
 
 #: ../root/account/edit_ok.tt:1 ../root/account/edit_ok.tt:3
 #: ../root/account/edit.tt:13 ../root/account/edit.tt:15
@@ -2979,11 +2979,11 @@ msgstr "Bearbeitungsbemerkungen"
 #: ../root/place/edit_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Place/EditAlias.pm:12
 msgid "Edit place alias"
-msgstr ""
+msgstr "Örtlichkeitsalias bearbeiten"
 
 #: ../root/place/edit_annotation.tt:2
 msgid "Edit place annotation"
-msgstr ""
+msgstr "Anmerkungen zur Örtlichkeit bearbeiten"
 
 #: ../root/admin/edit_user.tt:32
 msgid "Edit profile"
@@ -3064,7 +3064,7 @@ msgstr "Bearbeiter"
 
 #: ../root/edit/search_macros.tt:307
 msgid "Editor Flag"
-msgstr ""
+msgstr "Bearbeiterrechte"
 
 #: ../root/user/not_found.tt:1 ../root/user/not_found.tt:2
 msgid "Editor Not Found"
@@ -3299,7 +3299,7 @@ msgid ""
 "is highly recommended. Not only does it make it clear where you got your "
 "information, but it can also encourage other users to vote on your edit "
 "&#x2014; thus making your edit get applied faster."
-msgstr "Das Eingeben eines {note|Bearbeitungsvermerks}, der beschreibt, wo Du Deine Informationen her hast, ist wärmstens empfohlen! Nicht nur, dass es deutlich macht, wie Du an die Informationen dran gekommen bist, sondern es bewegt andere Benutzer auch eher dazu, über Deine Bearbeitung abzustimmen - und sie damit schneller zur Anwendung zu bringen."
+msgstr "Das Eingeben einer {note|Bearbeitungsbemerkung}, die beschreibt, wo Du Deine Informationen her hast, ist wärmstens empfohlen! Nicht nur, dass es deutlich macht, wie Du an die Informationen ran gekommen bist, sondern es bewegt andere Benutzer auch eher dazu, über Deine Bearbeitung abzustimmen - und sie damit schneller zur Anwendung zu bringen."
 
 #: ../root/scripts/text_strings.tt:97
 msgid "Entities in a relationship cannot be the same."
@@ -4360,7 +4360,7 @@ msgstr "Beziehungsphrase"
 
 #: ../root/doc/relationship_type.tt:37
 msgid "Link phrases"
-msgstr ""
+msgstr "Beziehungsphrasen"
 
 #: ../root/annotation/edit.tt:53
 msgid "Links:"
@@ -4402,7 +4402,7 @@ msgstr "Locale:"
 
 #: ../root/edit/search_macros.tt:288
 msgid "Location Editor"
-msgstr ""
+msgstr "Ortsbearbeiter"
 
 #: ../root/admin/edit_user.tt:10
 msgid "Location editor"
@@ -4439,7 +4439,7 @@ msgstr "Einloggen"
 #: ../root/release_group/layout.tt:65 ../root/release/sidebar.tt:108
 #: ../root/url/layout.tt:16 ../root/work/layout.tt:55
 msgid "Log in to edit"
-msgstr "Einloggen, um bearbeiten zu können"
+msgstr "Zum Bearbeiten einloggen"
 
 #: ../root/release/cover_art.tt:64
 msgid "Log in to upload cover art"
@@ -4616,7 +4616,7 @@ msgstr "Labels vereinen"
 
 #: ../root/place/merge.tt:1 ../root/place/merge.tt:3
 msgid "Merge Places"
-msgstr ""
+msgstr "Örtlichkeiten vereinen"
 
 #: ../root/layout/merge-helper.tt:3
 msgid "Merge Process"
@@ -4671,7 +4671,7 @@ msgstr "Vereinigungsmethode:"
 
 #: ../root/place/layout.tt:54
 msgid "Merge place"
-msgstr ""
+msgstr "Örtlichkeit vereinen"
 
 #: ../root/recording/layout.tt:32
 msgid "Merge recording"
@@ -4741,11 +4741,11 @@ msgstr "Medium nach oben verschieben"
 
 #: ../root/release/add_cover_art.tt:44
 msgid "Move file down"
-msgstr ""
+msgstr "Datei runterschieben"
 
 #: ../root/release/add_cover_art.tt:42
 msgid "Move file up"
-msgstr ""
+msgstr "Datei hochschieben"
 
 #: ../root/release/edit/tracklist.tt:307
 msgid "Move track down"
@@ -5544,19 +5544,19 @@ msgstr "Phrase:"
 #: ../lib/MusicBrainz/Server/Edit/Place.pm:7
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:40
 msgid "Place"
-msgstr ""
+msgstr "Örtlichkeit"
 
 #: ../root/place/edit_form.tt:33
 msgid "Place Details"
-msgstr ""
+msgstr "Örtlichkeitsdetails"
 
 #: ../root/place/not_found.tt:1 ../root/place/not_found.tt:2
 msgid "Place Not Found"
-msgstr ""
+msgstr "Örtlichkeit nicht gefunden"
 
 #: ../root/place/layout.tt:4
 msgid "Place information"
-msgstr ""
+msgstr "Örtlichkeitsinformationen"
 
 #: ../root/components/common-macros.tt:562
 #: ../root/edit/details/add_place_alias.tt:3
@@ -5567,15 +5567,15 @@ msgstr ""
 #: ../root/edit/details/remove_place_alias.tt:3
 #: ../root/edit/details/remove_place.tt:3
 msgid "Place:"
-msgstr ""
+msgstr "Örtlichkeit:"
 
 #: ../root/area/header.tt:1 ../root/area/places.tt:2
 msgid "Places"
-msgstr ""
+msgstr "Örtlichkeiten"
 
 #: ../root/browse/place.tt:8
 msgid "Places starting with “{index}”"
-msgstr ""
+msgstr "Mit „{index}“ beginnende Örtlichkeiten"
 
 #: ../root/account/registered.tt:7
 msgid ""
@@ -5807,7 +5807,7 @@ msgstr "Möglicherweise doppelte Labels"
 
 #: ../root/place/edit_form.tt:12
 msgid "Possible Duplicate Places"
-msgstr ""
+msgstr "Möglicherweise doppelte Örtlichkeiten"
 
 #: ../root/cdtoc/lookup.tt:29
 msgid "Possible Mediums"
@@ -6033,7 +6033,7 @@ msgstr "Aufnahmen mit „früheste Veröffentlichung“-Beziehungen"
 #: ../root/report/recordings_with_varying_track_lengths.tt:1
 #: ../root/report/recordings_with_varying_track_lengths.tt:3
 msgid "Recordings with Varying Track Lengths"
-msgstr ""
+msgstr "Aufnahmen mit unterschiedlichen Titellängen"
 
 #: ../root/report/index.tt:80
 msgid "Recordings with earliest release relationships"
@@ -6052,7 +6052,7 @@ msgstr "Aufnahmen, deren Titel „featuring“ Künstler enthalten"
 
 #: ../root/report/index.tt:84
 msgid "Recordings with varying track times"
-msgstr ""
+msgstr "Aufnahmen mit unterschiedlichen Titellängen"
 
 #: ../root/edit/details/edit_medium.tt:173
 msgid "Recordings:"
@@ -6489,7 +6489,7 @@ msgstr "Veröffentlichungen mit Cover-Art-Beziehungen"
 #: ../root/report/single_medium_releases_with_medium_titles.tt:1
 #: ../root/report/single_medium_releases_with_medium_titles.tt:3
 msgid "Releases with a single medium that has a name"
-msgstr ""
+msgstr "Veröffentlichungen mit nur einem Medium, das einen Namen hat"
 
 #: ../root/report/index.tt:63
 msgid "Releases with catalog numbers that look like ASINs"
@@ -6640,7 +6640,7 @@ msgstr "Seite entfernen"
 
 #: ../root/place/delete_alias.tt:1
 msgid "Remove Place Alias"
-msgstr ""
+msgstr "Örtlichkeitsalias entfernen"
 
 #: ../root/recording/delete.tt:2
 msgid "Remove Recording"
@@ -6720,7 +6720,7 @@ msgstr "Labelalias entfernen"
 #: ../root/place/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Place/DeleteAlias.pm:14
 msgid "Remove place alias"
-msgstr ""
+msgstr "Örtlichkeitsalias entfernen"
 
 #: ../root/recording/layout.tt:35
 #: ../lib/MusicBrainz/Server/Edit/Recording/Delete.pm:12
@@ -6798,7 +6798,7 @@ msgstr "Anfragedaten:"
 
 #: ../root/release/add_cover_art.tt:56
 msgid "Request signature..."
-msgstr ""
+msgstr "Anfragesignatur ..."
 
 #: ../root/scripts/text_strings.tt:96
 #: ../lib/MusicBrainz/Server/Form/RelationshipEditor.pm:123
@@ -7041,14 +7041,14 @@ msgstr[1] "Alle {num} Veröffentlichungsgruppen anzeigen"
 #: ../root/tag/index.tt:8
 msgid "See all {num} releases"
 msgid_plural "See all {num} releases"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Alle {num} Veröffentlichungen anzeigen"
+msgstr[1] "Alle {num} Veröffentlichungen anzeigen"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} works"
 msgid_plural "See all {num} works"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Alle {num} Werke anzeigen"
+msgstr[1] "Alle {num} Werke anzeigen"
 
 #: ../root/account/edit.tt:18
 msgid ""
@@ -7057,7 +7057,7 @@ msgstr "Siehe auch Deine {uri|Benutzereinstellungen}, welche Einstellungen zur P
 
 #: ../root/doc/relationship_type.tt:66
 msgid "See the general {url|guidelines for URLs}."
-msgstr ""
+msgstr "Siehe die generellen {uri|Richtlinien für URLs}."
 
 #: ../root/relationship/linkattributetype/index.tt:21
 msgid "See the {uri|full instrument tree}."
@@ -7749,7 +7749,7 @@ msgstr "Dieses Label taggen"
 
 #: ../root/place/layout.tt:43 ../root/place/tags.tt:3
 msgid "Tag this place"
-msgstr ""
+msgstr "Diese Örtlichkeit taggen"
 
 #: ../root/recording/layout.tt:21 ../root/recording/tags.tt:3
 msgid "Tag this recording"
@@ -7934,7 +7934,7 @@ msgstr "Das Enddatum kann nicht vor dem Anfangsdatum liegen."
 
 #: ../root/doc/relationship_type.tt:48
 msgid "The following attributes can be used with this relationship type:"
-msgstr ""
+msgstr "Die folgenden Attribute können mit diesem Beziehungstyp verwendet werden:"
 
 #: ../root/user/privileged.tt:47
 msgid "The following {count} user accounts are bots:"
@@ -8203,11 +8203,11 @@ msgstr "Dieses Gebiet ist zur Zeit mit keinen Labeln verbunden."
 
 #: ../root/area/places.tt:7
 msgid "This area is not currently associated with any places."
-msgstr ""
+msgstr "Dieses Gebiet ist zur Zeit mit keinen Örtlichkeiten verbunden."
 
 #: ../root/area/releases.tt:9
 msgid "This area is not currently associated with any releases."
-msgstr ""
+msgstr "Dieses Gebiet ist zur Zeit mit keinen Veröffentlichungen verbunden."
 
 #: ../root/artist/index.tt:99
 msgid "This artist does not have any release groups"
@@ -8366,7 +8366,7 @@ msgstr "Dies ist ein MusicBrainz-Entwicklungsserver."
 msgid ""
 "This is a Musicbrainz mirror server. To edit or make changes to the data "
 "please {uri|return to musicbrainz.org}."
-msgstr ""
+msgstr "Dies ist ein MusicBrainz-Spiegelserver. Um die Daten zu bearbeiten oder zu ändern, gehe bitte {uri|zurück zu musicbrainz.org}."
 
 #: ../root/account/edit.tt:27
 msgid ""
@@ -8460,17 +8460,17 @@ msgstr "Diese Person ist verstorben."
 
 #: ../root/place/edit_form.tt:59
 msgid "This place has ended."
-msgstr ""
+msgstr "Diese Örtlichkeit ist beendet."
 
 #: ../root/place/index.tt:19
 msgid ""
 "This place has no relationships and will be removed automatically in the "
 "next few days. If this is not intended, please add more data to this place."
-msgstr ""
+msgstr "Dise Örtlichkeit hat keine Beziehungen und wird innerhalb der nächsten Tage automatisch entfernt werden. Wenn Du das nicht wünschst, füge bitte mehr Daten zu dieser Örtlichkeit hinzu."
 
 #: ../root/place/tags.tt:2
 msgid "This place has no tags."
-msgstr ""
+msgstr "Dise Örtlichkeit hat keine Tags."
 
 #: ../root/recording/delete.tt:18
 msgid ""
@@ -8490,7 +8490,7 @@ msgstr "Diese Aufnahme hat keine Tags."
 msgid ""
 "This relationship edit also included changes to relationship attributes "
 "which no longer exist."
-msgstr ""
+msgstr "Diese Beziehungsbearbeitung enthält auch Änderungen an Beziehungsattributen, die nicht mehr existieren."
 
 #: ../root/edit/relationship/create.tt:108
 #: ../root/edit/relationship/edit.tt:139
@@ -8500,7 +8500,7 @@ msgstr "Diese Beziehung ist beendet."
 
 #: ../root/relationship/linktype/form.tt:16
 msgid "This relationship is deprecated"
-msgstr ""
+msgstr "Diese Beziehung ist veraltet"
 
 #: ../root/relationship/linktype/form.tt:80
 msgid "This relationship type does not have any examples."
@@ -8508,16 +8508,16 @@ msgstr "Dieser Beziehungstyp hat noch keine Beispiele."
 
 #: ../root/scripts/text_strings.tt:132
 msgid "This relationship type is deprecated"
-msgstr ""
+msgstr "Dieser Beziehungstyp ist veraltet"
 
 #: ../root/doc/relationship_type.tt:11
 msgid "This relationship type is deprecated and should not be used."
-msgstr ""
+msgstr "Dieser Beziehungstyp ist veraltet und sollte nicht verwendet werden."
 
 #: ../root/doc/relationship_type.tt:95
 msgid ""
 "This relationship type is only used for grouping other relationship types."
-msgstr ""
+msgstr "Dieser Beziehungstyp wird nur zur Gruppierung von anderen Beziehungstypen verwendet."
 
 #: ../root/release/edit/information.tt:140
 msgid "This release does not have a barcode"
@@ -9408,7 +9408,7 @@ msgstr "Unverbundene Pseudo-Veröffentlichungen"
 
 #: ../root/artist/index.tt:49
 msgid "Unspecified type"
-msgstr ""
+msgstr "Unspezifizierter Typ"
 
 #: ../root/artist/layout.tt:134 ../root/collection/layout.tt:25
 #: ../root/label/layout.tt:95 ../root/user/subscriptions/table.tt:28
@@ -9882,7 +9882,7 @@ msgstr "Wiki"
 
 #: ../root/edit/search_macros.tt:288
 msgid "Wiki Transcluder"
-msgstr ""
+msgstr "Wiki-Transkludierer"
 
 #: ../root/admin/wikidoc/index.tt:34
 msgid "Wiki version"
@@ -10225,8 +10225,8 @@ msgstr ""
 #: ../root/user/subscriptions/collection.tt:7
 msgid "You are subscribed to {n} private collection."
 msgid_plural "You are subscribed to {n} private collections."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Du hast eine private Sammlung abonniert."
+msgstr[1] "Du hast {n} private Sammlungen abonniert."
 
 #: ../root/cdtoc/attach_artist_releases.tt:24
 msgid "You are viewing releases by {artist}."
@@ -10246,7 +10246,7 @@ msgstr "Du kannst die Daten zur CD direkt so eingeben, wie sie auf der CD ersche
 msgid ""
 "You can pick the level you prefer here: your country, region or city. Be as "
 "specific as you want to!"
-msgstr ""
+msgstr "Du kannst die gewünschte Genauigkeit hier festlegen: Dein Land, Deine Region oder Deine Stadt. Sei so spezifisch, wie Du willst!"
 
 #: ../root/cdstub/logged_in.tt:3
 msgid ""
@@ -10357,7 +10357,7 @@ msgstr "Um diese Seite zu betrachten, musst Du eingeloggt sein."
 #: ../root/artist/edit_form.tt:118 ../root/label/edit_form.tt:78
 #: ../root/place/edit_form.tt:72
 msgid "You selected {area}."
-msgstr ""
+msgstr "Du hast {area} ausgewählt."
 
 #: ../root/release/edit/information.tt:192
 msgid "You selected {label}."
@@ -10548,7 +10548,7 @@ msgstr "in {date}"
 
 #: ../root/area/header.tt:23
 msgid "in {parent_areas}"
-msgstr ""
+msgstr "in {parent_areas}"
 
 #: ../root/components/common-macros.tt:399
 #: ../root/components/rdfa-macros.tt:788 ../root/components/rdfa-macros.tt:801
@@ -10650,7 +10650,7 @@ msgstr "am {date}"
 
 #: ../root/release/add_cover_art.tt:33
 msgid "or drop files here"
-msgstr ""
+msgstr "oder ziehe Dateien hierhin"
 
 #: ../root/components/common-macros.tt:119
 msgid "original"
@@ -10662,7 +10662,7 @@ msgstr "Seite #{page} von #{total}"
 
 #: ../root/components/common-macros.tt:161
 msgid "places"
-msgstr ""
+msgstr "Örtlichkeiten"
 
 #: ../root/artist/subscribers.tt:14 ../root/collection/subscribers.tt:14
 #: ../root/label/subscribers.tt:14 ../root/user/subscribers.tt:14
@@ -10903,8 +10903,8 @@ msgstr "{doc|Transklusionsbearbeiter}"
 #: ../root/user/subscriptions/collection.tt:13
 msgid "{editor} is subscribed to {n} private collection."
 msgid_plural "{editor} is subscribed to {n} private collections."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{editor} hat eine private Sammlung abonniert."
+msgstr[1] "{editor} hat {n} private Sammlungen abonniert."
 
 #: ../root/user/subscriptions/layout.tt:12
 msgid "{editor} is subscribed to:"
@@ -10918,7 +10918,7 @@ msgstr "{edit} hat eine oder mehrere „Nein“-Stimmen bekommen. Du musst eine 
 
 #: ../root/doc/relationship_type.tt:5
 msgid "{entity0}-{entity1}"
-msgstr ""
+msgstr "{entity0}-{entity1}"
 
 #: ../root/components/common-macros.tt:272
 #: ../root/components/common-macros.tt:997 ../root/main/index.tt:124
@@ -11090,7 +11090,7 @@ msgstr "{percentage}&#xa0;%"
 
 #: ../root/relationship/linktype/tree.tt:23
 msgid "{relationship_documentation_url|Documentation}"
-msgstr ""
+msgstr "{relationship_documentation_url|Dokumentation}"
 
 #: ../root/cdtoc/move_search.tt:31 ../root/cdtoc/set_durations.tt:22
 #: ../root/release/merge_search.tt:11
@@ -11369,7 +11369,7 @@ msgstr "Dieses Vereinigungsverfahren ist nicht auf die von Dir gewählten Veröf
 
 #: ../lib/MusicBrainz/Server/Controller/Role/Annotation.pm:63
 msgid "The annotation revision ID must be a positive integer"
-msgstr ""
+msgstr "Die Anmerkungs-Revisions-ID muss eine positive Ganzzahl sein"
 
 #: ../lib/MusicBrainz/Server/Controller/Role/Annotation.pm:182
 msgid "The old and new annotation ids must be unique, positive integers."
@@ -11640,23 +11640,23 @@ msgstr "PUID entfernen"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/AddAnnotation.pm:12
 msgid "Add place annotation"
-msgstr ""
+msgstr "Örtlichkeitsanmerkungen hinzufügen"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/Create.pm:19
 msgid "Add place"
-msgstr ""
+msgstr "Örtlichkeit hinzufügen"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/Delete.pm:10
 msgid "Remove place"
-msgstr ""
+msgstr "Örtlichkeit entfernen"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/Edit.pm:33
 msgid "Edit place"
-msgstr ""
+msgstr "Örtlichkeit bearbeiten"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/Merge.pm:11
 msgid "Merge places"
-msgstr ""
+msgstr "Örtlichkeiten vereinen"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/AddAnnotation.pm:12
 msgid "Add recording annotation"
@@ -11940,7 +11940,7 @@ msgstr "Dieser Alias kann nur ein Primäralias werden, wenn ein Locale ausgewäh
 
 #: ../lib/MusicBrainz/Server/Form/Area.pm:90
 msgid "An area already exists with this ISO code"
-msgstr ""
+msgstr "Es existiert bereits ein Gebiet mit diesem ISO-Code"
 
 #: ../lib/MusicBrainz/Server/Form/CDStub.pm:38
 msgid "You must provide at least one track"
@@ -11972,7 +11972,7 @@ msgstr "Künstlernennungsfeld muss ausgefüllt werden"
 
 #: ../lib/MusicBrainz/Server/Form/Field/Coordinates.pm:61
 msgid "These coordinates could not be parsed"
-msgstr ""
+msgstr "Diese Koordinaten konnten nicht erkannt werden"
 
 #: ../lib/MusicBrainz/Server/Form/Field/DatePeriod.pm:39
 msgid "The end date must occur on or after the begin date"
