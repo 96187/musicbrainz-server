@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
 "POT-Creation-Date: 2013-10-28 17:46-0700\n"
-"PO-Revision-Date: 2013-10-29 02:58+0000\n"
+"PO-Revision-Date: 2013-10-29 03:42+0000\n"
 "Last-Translator: Luca Salini <email address hidden>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/musicbrainz/language/it/)\n"
 "MIME-Version: 1.0\n"
@@ -1434,7 +1434,7 @@ msgstr "Artisti che hanno commenti di disambiguazione nel loro nome"
 #: ../root/report/artists_with_multiple_occurances_in_artist_credits.tt:3
 #: ../root/report/index.tt:26
 msgid "Artists occuring multiple times in the same artist credit"
-msgstr ""
+msgstr "Artisti inseriti più volte nello stesso accreditamento"
 
 #: ../root/browse/artist.tt:8
 msgid "Artists starting with “{index}”"
@@ -2244,7 +2244,7 @@ msgid ""
 "Confirm by activating the checkbox below that you have read the "
 "{doc_comment|disambiguation documentation}, understood how we distinguish "
 "places with the same name, and that you know what you are doing."
-msgstr ""
+msgstr "Attivando la casella di controllo confermi di aver letto la {doc_comment|documentazione sulla disambiguazione}, di aver compreso come distinguiamo i luoghi con lo stesso nome e di sapere quello che stai facendo."
 
 #: ../root/label/edit_form.tt:25
 msgid ""
@@ -3906,7 +3906,7 @@ msgid ""
 "will be prompted to add a {doc_comment|disambiguation comment to this place}"
 " that will allow users to distinguish this entry from the other place(s) "
 "with the same name."
-msgstr ""
+msgstr "Se uno o più luoghi con lo stesso nome esistono già nel database, ti sarà chiesto di aggiungere un {doc_comment|commento di disambiguazione a questo luogo}, che permetterà agli utenti di distinguere questa voce dalle altre con lo stesso nome."
 
 #: ../root/main/500.tt:65
 msgid ""
@@ -5221,7 +5221,7 @@ msgstr "Nomina un candidato al ruolo di auto-editor"
 #: ../root/report/releases_with_download_relationships.tt:1
 #: ../root/report/releases_with_download_relationships.tt:3
 msgid "Non-digital releases with download relationships"
-msgstr ""
+msgstr "Pubblicazioni non digitali con relazioni di download"
 
 #: ../root/edit/edit_header.tt:42 ../root/edit/vote.tt:23
 msgid "None"
@@ -5255,7 +5255,7 @@ msgstr "Nota:"
 msgid ""
 "Note: only searches edits that: add or edit relationships, created after "
 "2011-05-16; or which remove relationships, created after 2013-07-08."
-msgstr ""
+msgstr "Nota: cerca solo modifiche che: aggiungono o modificano relazioni, create dopo il 16-05-2011; o che rimuovono relazioni, create dopo il 08-07-2013."
 
 #: ../root/account/preferences.tt:37
 msgid "Notify me by email on new releases to my watched artists"
@@ -5594,7 +5594,7 @@ msgstr "Scegli una condizione"
 msgid ""
 "Please choose a valid image. Currently the Cover Art Archive only supports "
 "JPEG, PNG and GIF files."
-msgstr ""
+msgstr "Seleziona un'immagine valida. Il Cover Art Archive supporta attualmente solo file JPEG, PNG e GIF."
 
 #: ../root/scripts/text_strings.tt:45
 msgid "Please click lookup to search"
@@ -5687,7 +5687,7 @@ msgstr "Consulta le {doc_styleguide|linee guida di stile}, poi utilizza i campi 
 msgid ""
 "Please read the {doc_styleguide|Style Guidelines} then use the fields below "
 "to update the information of this place."
-msgstr ""
+msgstr "Leggi le {doc_styleguide|linee guida di stile} e poi utilizza i campi qui sotto per aggiornare le informazioni su questo luogo."
 
 #: ../root/artist/edit_form.tt:4
 msgid ""
@@ -6021,7 +6021,7 @@ msgstr "Registrazioni con relazioni di prima pubblicazione"
 #: ../root/report/recordings_with_varying_track_lengths.tt:1
 #: ../root/report/recordings_with_varying_track_lengths.tt:3
 msgid "Recordings with Varying Track Lengths"
-msgstr ""
+msgstr "Registrazioni con durata delle tracce variabile"
 
 #: ../root/report/index.tt:80
 msgid "Recordings with earliest release relationships"
@@ -6040,7 +6040,7 @@ msgstr "Registrazioni che contengono \"feat.\" nel titolo"
 
 #: ../root/report/index.tt:84
 msgid "Recordings with varying track times"
-msgstr ""
+msgstr "Registrazioni con durata delle tracce variabile"
 
 #: ../root/edit/details/edit_medium.tt:173
 msgid "Recordings:"
@@ -6477,7 +6477,7 @@ msgstr "Pubblicazioni con relazioni di copertina"
 #: ../root/report/single_medium_releases_with_medium_titles.tt:1
 #: ../root/report/single_medium_releases_with_medium_titles.tt:3
 msgid "Releases with a single medium that has a name"
-msgstr ""
+msgstr "Pubblicazioni con un solo supporto che ha un titolo"
 
 #: ../root/report/index.tt:63
 msgid "Releases with catalog numbers that look like ASINs"
@@ -7045,7 +7045,7 @@ msgstr "Visualizza anche le tue {uri|preferenze utente}, che includono le tue im
 
 #: ../root/doc/relationship_type.tt:66
 msgid "See the general {url|guidelines for URLs}."
-msgstr ""
+msgstr "Visualizza le {url|linee guida generali per gli URL}."
 
 #: ../root/relationship/linkattributetype/index.tt:21
 msgid "See the {uri|full instrument tree}."
@@ -7922,7 +7922,7 @@ msgstr "La data finale non può precedere quella iniziale."
 
 #: ../root/doc/relationship_type.tt:48
 msgid "The following attributes can be used with this relationship type:"
-msgstr ""
+msgstr "È possibile utilizzare i seguenti attributi con questo tipo di relazione:"
 
 #: ../root/user/privileged.tt:47
 msgid "The following {count} user accounts are bots:"
@@ -8478,7 +8478,7 @@ msgstr "Questa registrazione non ha tag."
 msgid ""
 "This relationship edit also included changes to relationship attributes "
 "which no longer exist."
-msgstr ""
+msgstr "Questa modifica di relazione includeva anche cambiamenti ad attributi di relazione che non esistono più."
 
 #: ../root/edit/relationship/create.tt:108
 #: ../root/edit/relationship/edit.tt:139
@@ -8505,7 +8505,7 @@ msgstr "Questo tipo di relazione è obsoleto e non dovrebbe essere utilizzato."
 #: ../root/doc/relationship_type.tt:95
 msgid ""
 "This relationship type is only used for grouping other relationship types."
-msgstr ""
+msgstr "Questo tipo di relazione è utilizzato solamente per raggruppare altri tipi di relazione."
 
 #: ../root/release/edit/information.tt:140
 msgid "This release does not have a barcode"
@@ -8539,7 +8539,7 @@ msgid ""
 "separate real release. It should not be used to denote bootlegs, "
 "mixtape/street albums, demos, or digital albums. Be sure to link to the "
 "corresponding real release with the {url|transl(iter)ation relationship}."
-msgstr ""
+msgstr "Questo status della pubblicazione va usato per traduzioni e traslitterazioni non ufficiali di elenchi di tracce e titoli di pubblicazioni, e non indica una reale pubblicazione distinta. Non deve essere usato per indicare bootleg, album mixtape/street, demo o album digitali. Assicurati che la pubblicazione sia collegata alla corrispondente pubblicazione reale con una {url|relazione di traduzione/traslitterazione}."
 
 #: ../root/report/duplicate_artists.tt:6
 msgid ""
@@ -8591,7 +8591,7 @@ msgstr "Questo report elenca tutte le pubblicazioni in cui i numeri di traccia n
 msgid ""
 "This report lists artists that appear more than once in different positions "
 "within the same artist credit."
-msgstr ""
+msgstr "Questo report elenca gli artisti che appaiono più di una volta in posizioni diverse all'interno dello stesso accreditamento."
 
 #: ../root/report/artists_with_no_subscribers.tt:6
 msgid ""
@@ -8753,7 +8753,7 @@ msgstr "Questo report mostra le registrazioni che hanno la relazione obsoleta di
 msgid ""
 "This report shows recordings where the linked tracks have times that vary by"
 " more than 30 seconds."
-msgstr ""
+msgstr "Questo report mostra le registrazioni in cui le tracce collegate hanno durate che variano di più di 30 secondi."
 
 #: ../root/report/featuring_recordings.tt:6
 msgid ""
@@ -8788,7 +8788,7 @@ msgid ""
 "This report shows releases that have a single medium, where this medium also"
 " has a specific name. Usually, this is not necessary and is duplicate "
 "information which can be removed."
-msgstr ""
+msgstr "Questo report mostra le pubblicazioni che hanno un solo supporto, dotato di un suo specifico nome. Solitamente ciò non è necessario e costituisce un'informazione ridondante che può essere rimossa."
 
 #: ../root/report/releases_with_unlikely_language_script.tt:6
 msgid ""
@@ -8800,7 +8800,7 @@ msgstr "Questo report mostra le pubblicazioni che hanno una combinazione di ling
 msgid ""
 "This report shows releases that have download relationships, but have media "
 "who's format is not \"Digital Media\"."
-msgstr ""
+msgstr "Questo report mostra le pubblicazioni con relazioni di download, ma che hanno supporti il cui formato non è \"Supporto digitale\"."
 
 #: ../root/report/multiple_asins.tt:6
 msgid ""
@@ -10109,7 +10109,7 @@ msgstr "Stai per unire le seguenti etichette in un'etichetta unica. Seleziona l'
 msgid ""
 "You are about to merge the following places into a single place. Please "
 "select the place which you would like other places to be merged into:"
-msgstr ""
+msgstr "Stai per unire i seguenti luoghi in un unico luogo. Seleziona il luogo in cui vuoi che vengano uniti gli altri:"
 
 #: ../root/recording/merge.tt:4
 msgid ""
@@ -10148,7 +10148,7 @@ msgstr "Stai cercando di aggiungere un'etichetta che sembra essere molto simile,
 msgid ""
 "You are attempting to add a place which appears to be very similar, if not "
 "exactly the same, as these existing places:"
-msgstr ""
+msgstr "Stai tentando di aggiungere un luogo che sembra molto simile, se non esattamente uguale, a questi luoghi già esistenti:"
 
 #: ../root/artist/edit_form.tt:19
 msgid ""
@@ -10208,7 +10208,7 @@ msgid ""
 "You are required to enter a disambiguation comment which allows users to "
 "distinguish this place from the other places with the same name, if the "
 "final place name is similar to an existing place."
-msgstr ""
+msgstr "È necessario che tu inserisca un commento di disambiguazione che permetta agli utenti di distinguere questo luogo dagli altri con lo stesso nome, se il nome del luogo è simile a un altro già esistente."
 
 #: ../root/user/subscriptions/collection.tt:7
 msgid "You are subscribed to {n} private collection."
@@ -11278,7 +11278,7 @@ msgstr "Il parametro obbligatorio TOC non è valido o è assente"
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:111
 msgid "Please provide a medium ID"
-msgstr ""
+msgstr "Inserisci un ID supporto"
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:116
 msgid "Could not find medium"
@@ -11928,7 +11928,7 @@ msgstr "Questo alias può essere un alias primario solo in uno specifico ambient
 
 #: ../lib/MusicBrainz/Server/Form/Area.pm:90
 msgid "An area already exists with this ISO code"
-msgstr ""
+msgstr "Esiste già un'area con questo codice ISO"
 
 #: ../lib/MusicBrainz/Server/Form/CDStub.pm:38
 msgid "You must provide at least one track"
