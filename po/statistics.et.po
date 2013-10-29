@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
-"PO-Revision-Date: 2013-10-29 00:54+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2013-10-29 14:34+0000\n"
+"Last-Translator: Mihkel Tõnnov <email address hidden>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/musicbrainz/language/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -18,16 +18,16 @@ msgstr ""
 msgid ""
 "A new AJAX coverart uploader is released, making it easier to add cover art "
 "to releases."
-msgstr ""
+msgstr "Lisati varasemast palju mugavam AJAXi-põhine kaanepiltide üleslaadimise võimalus."
 
 #: DB:statistics.statistic_event/description:2006-08-15
 msgid "A rift in the MusicBrainz community leads to a Great Dispute."
-msgstr "Lahkheli MusicBrainzi kogukonnas viib Suure Vaidluseni."
+msgstr "Lahkheli MusicBrainzi kogukonnas viis Suure Vaidluseni."
 
 #: DB:statistics.statistic_event/description:2003-01-21
 msgid ""
 "Added support for improved TRM collision handling in the classic tagger."
-msgstr "Klassikaline sildistaja saab parema TRM-ide kokkupõrgete käsitlemise toe."
+msgstr "Klassikaline sildistaja sai parema TRM-ide kokkupõrgete käsitlemise toe."
 
 #: DB:statistics.statistic_event/title:2005-04-10
 msgid "Advanced relationships"
@@ -38,7 +38,7 @@ msgid ""
 "Advanced relationships that allow users to connect basic data entities is "
 "relased and unused TRMs pruned from the database. Inline editing is turned "
 "off by default, causing a drop in voting activity."
-msgstr ""
+msgstr "Lisati täpsemad seosed, mille kaudu saab ühendada peamisi andmeelemente. Kasutamata TRM-id eemaldati andmebaasist. Leheküljesisene hääletamine lülitati vaikimisi välja, mis põhjustas hääletusaktiivsuse langemist."
 
 #: DB:statistics.statistic_event/title:2005-05-22
 msgid "Album languages"
@@ -47,7 +47,7 @@ msgstr "Albumi keeled"
 #: DB:statistics.statistic_event/description:2005-05-22
 msgid ""
 "Album languages, guess case improvements and revamps edit forms released."
-msgstr "Avalikustatakse albumi keele tugi, parandatud suurtähestuse oletamine ja ümbertehtud redigeerimisvorm."
+msgstr "Lisati albumi keele tugi, parandati suurtähestuse oletamist ja muudeti toimetamisvormi."
 
 #: DB:statistics.statistic_event/title:2004-02-24
 msgid "Amazon Coverart"
@@ -57,23 +57,23 @@ msgstr "Amazoni kaanepildid"
 msgid ""
 "Amazon betas <a href=\"http://soundunwound.com\">SoundUnwound</a> with data "
 "from MusicBrainz."
-msgstr "Amazon beetakatsetab <a href=\"http://soundunwound.com\">SoundUnwoundi</a>, mis kasutab MusicBrainzi andmeid."
+msgstr "Amazon alustas MusicBrainzi andmeid kasutava <a href=\"http://soundunwound.com\">SoundUnwoundi</a> beetakatsetamist."
 
 #: DB:statistics.statistic_event/title:2008-09-01
 msgid "Amazon betas SoundUnwound"
-msgstr "Amazon beetakatsetab SoundUnwoundi"
+msgstr "Amazon alustas SoundUnwoundi beetatestimist"
 
 #: DB:statistics.statistic_event/description:2004-02-24
 msgid "Amazon coverart support released."
-msgstr "Lisatakse Amazoni kaanepiltide tugi."
+msgstr "Lisati Amazoni kaanepiltide tugi."
 
 #: DB:statistics.statistic_event/description:2006-07-12
 msgid "An improved release editor and a new site design are released."
-msgstr ""
+msgstr "Avalikustati senisest parem väljalasketoimeti ja uus lehekujundus."
 
 #: DB:statistics.statistic_event/description:2004-11-14
 msgid "Annotation support released."
-msgstr "Lisatakse annotatsioonide võimalus."
+msgstr "Lisati annotatsioonide võimalus."
 
 #: DB:statistics.statistic_event/title:2004-11-14
 msgid "Annotations"
@@ -87,11 +87,11 @@ msgstr "Artistide jälgimine"
 msgid ""
 "Artist subscriptions made public and various smaller user centric "
 "improvements are released."
-msgstr ""
+msgstr "Avalikustati artistide jälgimise võimalus, lisaks muid väiksemaid parandusi kasutajaliideses."
 
 #: DB:statistics.statistic_event/description:2003-06-22
 msgid "Artist subscriptions."
-msgstr "Lisatakse artistide jälgimise funktsioon."
+msgstr "Lisati artistide jälgimise funktsioon."
 
 #: DB:statistics.statistic_event/title:2008-07-30
 msgid "BBC dynamic artist pages"
@@ -99,11 +99,11 @@ msgstr "BBC dünaamilised artistilehed"
 
 #: DB:statistics.statistic_event/description:2008-07-30
 msgid "BBC launches the dynamic artist pages based on MusicBrainz data."
-msgstr "BBC käivitab MusicBrainzi andmetel põhinevat dünaamiliste artistilehtede süsteemi."
+msgstr "BBC käivitas MusicBrainzi andmetel põhinevat dünaamiliste artistilehtede süsteemi."
 
 #: DB:statistics.statistic_event/title:2007-06-28
 msgid "BBC partners with MetaBrainz"
-msgstr "BBC partnerlus MetaBrainziga"
+msgstr "Algas BBC partnerlus MetaBrainziga"
 
 #: DB:statistics.statistic_event/description:2003-03-02
 #: DB:statistics.statistic_event/description:2003-06-30
@@ -120,15 +120,15 @@ msgstr "Veaparandused"
 
 #: DB:statistics.statistic_event/title:2012-04-30
 msgid "CAA initial release"
-msgstr ""
+msgstr "Eelavalikustati CAA"
 
 #: DB:statistics.statistic_event/title:2012-10-10
 msgid "CAA official release"
-msgstr ""
+msgstr "CAA kuulutati avalikult välja"
 
 #: DB:statistics.statistic_event/description:2004-03-09
 msgid "Caching (memcached) and bugs fixed."
-msgstr "Puhverdamine (memcached) ja vigade parandus."
+msgstr "Lisati puhverdamine (memcached), parandati vigu."
 
 #: DB:statistics.statistic_event/title:2004-03-09
 msgid "Caching/bug fixes"
@@ -151,11 +151,11 @@ msgstr "Kogud, hinded, pooleldi sisestatud CD-d"
 
 #: DB:statistics.statistic_event/description:2008-11-24
 msgid "Collection, Ratings, CDStubs, LastUpdate released."
-msgstr "Lisatakse kogude, hinnete, pooleldi lisatud CD-de ja viimase uuendusaja tugi."
+msgstr "Lisati kogude, hinnete, pooleldi lisatud CD-de ja viimase uuendusaja tugi."
 
 #: DB:statistics.statistic_event/title:2013-08-05
 msgid "Cover Art Uploader"
-msgstr ""
+msgstr "Kaanepiltide üleslaadimine"
 
 #: DB:statistics.statistic_event/title:2003-03-29
 msgid "Dedicated database server"
@@ -165,7 +165,7 @@ msgstr "Eraldi andmebaasiserver"
 msgid ""
 "Edit display improvements, turned off RDF dumps, new install scripts "
 "released."
-msgstr ""
+msgstr "Parandati toimetuste kuvamist, lülitati välja RDF-andmetõmmised, avalikustati uued paigaldusskriptid."
 
 #: DB:statistics.statistic_event/title:2003-11-10
 msgid "Edit search"
@@ -175,21 +175,21 @@ msgstr "Toimetuste otsing"
 msgid ""
 "Editor ojnkpjg runs a script setting track times from DiscID values, "
 "creating a huge spike in edits."
-msgstr "Toimetaja ojnkpjg jooksutab skripti, mis määrab plaadi-ID järgi lugude kestused, tekitades tohutult toimetusi."
+msgstr "Toimetaja ojnkpjg jooksutas skripti, mis määras plaadi-ID järgi lugude kestused, tekitades tohutult toimetusi."
 
 #: DB:statistics.statistic_event/description:2007-10-17
 msgid "Folksonomy tagging, editor subscriptions are released."
-msgstr ""
+msgstr "Lisati nn folksonoomiasildistamine ja toimetajate jälgimise võimalus."
 
 #: DB:statistics.statistic_event/description:2004-10-10
 msgid ""
 "FreeDB auto import feature turned off and autoeditor elections released. "
 "Unused TRMs pruned from the database."
-msgstr ""
+msgstr "FreeDB automaatimport lülitati välja ja lisati vanemtoimetajavalimised. Kasutamata TRM-id eemaldati andmebaasist."
 
 #: DB:statistics.statistic_event/title:2004-10-10
 msgid "FreeDB off/Autoeditors"
-msgstr ""
+msgstr "FreeDB välja; vanemtoimetajad"
 
 #: DB:statistics.statistic_event/title:2006-08-15
 msgid "Great Dispute"
@@ -197,41 +197,41 @@ msgstr "Suur Vaidlus"
 
 #: DB:statistics.statistic_event/title:2009-06-17
 msgid "Imported CD Baby catalog as CD Stubs"
-msgstr ""
+msgstr "CD Baby kataloog imporditi pooleldi lisatud CD-dena"
 
 #: DB:statistics.statistic_event/description:2009-06-17
 msgid ""
 "Imported the metadata from the CD Baby catalog into our CD Stubs collection."
-msgstr ""
+msgstr "CD Baby kataloogi metaandmed imporditi meie pooleldi lisatud CD-de kogusse."
 
 #: DB:statistics.statistic_event/title:2004-07-24
 msgid "Improve voting"
-msgstr "Täiustatud hääletamine"
+msgstr "Täiustati hääletamist"
 
 #: DB:statistics.statistic_event/title:2003-04-05
 msgid "Improved search"
-msgstr "Täiustatud otsing"
+msgstr "Täiustati otsingut"
 
 #: DB:statistics.statistic_event/description:2003-04-05
 msgid "Improved search/cleanup."
-msgstr "Täiustatud otsing, puhastus."
+msgstr "Täiustati otsingut, puhastati koodi."
 
 #: DB:statistics.statistic_event/description:2013-02-11
 msgid ""
 "In an effort to reduce the size of the open edit queue and force less "
 "waiting for changes, the length of time edits stay open before expiration is"
 " reduced from 14 to 7 days."
-msgstr ""
+msgstr "Püüdes vähendada lahtiste toimetuste järjekorda ja muudatuste rakendumise ootamist, lühendati toimetuste aegumisaeg 14 päevalt 7-le."
 
 #: DB:statistics.statistic_event/description:2011-05-12
 msgid "In preparation for NGS, editing is turned off until release."
-msgstr ""
+msgstr "NGS-i ettevalmistusena lülitati toimetamine välja."
 
 #: DB:statistics.statistic_event/description:2011-05-02
 msgid ""
 "In preparation for NGS, editors are encouraged to avoid editing until "
 "release unless entirely necessary."
-msgstr ""
+msgstr "NGS-i ettevalmistusena soovitatakse toimetajatel andmete muutmist vältida, kui vähegi võimalik."
 
 #: DB:statistics.statistic_event/title:2006-03-05
 msgid "Indexed search/XML WS"
@@ -239,15 +239,15 @@ msgstr "Indekseeritud otsing, XML-veebiteenus"
 
 #: DB:statistics.statistic_event/description:2006-03-05
 msgid "Indexes search and a new XML based Web Service are released."
-msgstr "Avalikustatakse indekseeritud otsing ja uus XML-põhine veebiteenus."
+msgstr "Lisati indekseeritud otsing ja uus XML-põhine veebiteenus."
 
 #: DB:statistics.statistic_event/title:2004-01-17
 msgid "Inline edits"
-msgstr ""
+msgstr "Leheküljesisene hääletamine"
 
 #: DB:statistics.statistic_event/description:2004-01-17
 msgid "Inline edits, new reports, improved data import scripts."
-msgstr ""
+msgstr "Lisati leheküljesisene hääletamine ja uusi aruandeid, parandati andmete impordiskripte."
 
 #: DB:statistics.statistic_event/title:2004-05-09
 msgid "Install scripts"
@@ -255,7 +255,7 @@ msgstr "Paigaldusskriptid"
 
 #: DB:statistics.statistic_event/description:2009-12-14
 msgid "Kuno Woudt begins working for MusicBrainz full-time."
-msgstr "Kuno Woudt alustab täiskohaga tööd MusicBrainzi heaks."
+msgstr "Kuno Woudt alustas täiskohaga tööd MusicBrainzi heaks."
 
 #: DB:statistics.statistic_event/title:2009-12-14
 msgid "Kuno Woudt hired as full-time developer"
@@ -271,7 +271,7 @@ msgstr "Last.fm"
 
 #: DB:statistics.statistic_event/description:2007-11-07
 msgid "Last.fm signs up with MetaBrainz and starts using MusicBrainz data."
-msgstr "Last.fm-ist saab MetaBrainzi klient, hakkab kasutama MusicBrainzi andmeid."
+msgstr "Last.fm-ist sai MetaBrainzi klient, hakkas kasutama MusicBrainzi andmeid."
 
 #: DB:statistics.statistic_event/description:2003-11-10
 #: DB:statistics.statistic_event/description:2003-12-28
@@ -281,7 +281,7 @@ msgstr ""
 
 #: DB:statistics.statistic_event/description:2007-01-20
 msgid "Linkara Musica becomes first commercial customer of MetaBrainz."
-msgstr "Linkara Musicast saab MetaBrainzi esimene kommertsklient."
+msgstr "Linkara Musicast sai MetaBrainzi esimene kommertsklient."
 
 #: DB:statistics.statistic_event/title:2003-12-28
 msgid "Linking"
@@ -289,31 +289,31 @@ msgstr "Linkimine"
 
 #: DB:statistics.statistic_event/title:2005-10-23
 msgid "Menus/Client scripting"
-msgstr ""
+msgstr "Menüüd, kliendipoolne skriptimine"
 
 #: DB:statistics.statistic_event/description:2008-04-21
 msgid "MetaBrainz accepts three students for Google Summer of Code."
-msgstr "MetaBrainz võtab Google Summer of Code’i raames vastu kolm õpilast"
+msgstr "MetaBrainz võttis Google Summer of Code’i raames vastu kolm õpilast"
 
 #: DB:statistics.statistic_event/title:2008-09-23
 msgid "MetaBrainz hires Oliver Charles"
-msgstr ""
+msgstr "MetaBrainz võttis tööle Oliver Charlesi"
 
 #: DB:statistics.statistic_event/title:2005-04-19
 msgid "MetaBrainz launched"
-msgstr ""
+msgstr "MetaBrainz alustas tööd"
 
 #: DB:statistics.statistic_event/title:2007-01-20
 msgid "MetaBrainz signs first customer"
-msgstr "MetaBrainzil esimene klient"
+msgstr "MetaBrainzi leping esimese kliendiga"
 
 #: DB:statistics.statistic_event/description:2008-04-01
 msgid "MetaWeb comes MusicBrainz data user."
-msgstr "MetaWeb hakkab kasutama MusicBrainzi andmeid."
+msgstr "MetaWeb hakkas kasutama MusicBrainzi andmeid."
 
 #: DB:statistics.statistic_event/title:2008-04-01
 msgid "MetaWeb signed"
-msgstr ""
+msgstr "Leping MetaWebiga"
 
 #: DB:statistics.statistic_event/title:2006-02-27
 msgid "MusicBrainz Move"
@@ -321,22 +321,22 @@ msgstr "MusicBrainzi kolimine"
 
 #: DB:statistics.statistic_event/description:2010-02-08
 msgid "MusicBrainz Server source code moved to Git from Subversion."
-msgstr "MusicBrainzi serveri lähtekood kolitakse Subversionist Git-i. "
+msgstr "MusicBrainzi serveri lähtekood koliti Subversionist Git-i. "
 
 #: DB:statistics.statistic_event/description:2003-03-29
 msgid "MusicBrainz gets its first dedicated database server."
-msgstr "MusicBrainz saab oma esimese eraldiseisva andmebaasiserveri."
+msgstr "MusicBrainz sai oma esimese eraldiseisva andmebaasiserveri."
 
 #: DB:statistics.statistic_event/description:2006-02-27
 msgid "MusicBrainz moved to Digital West Networks in San Luis Obispo."
-msgstr "MusicBrainz kolib Digital West Networks’i San Luis Obispos."
+msgstr "MusicBrainz kolis Digital West Networks’i (San Luis Obispo’s)."
 
 #: DB:statistics.statistic_event/description:2006-03-12
 msgid ""
 "MusicBrainz partners with MusicIP and starts using MusicDNS's PUID acoustic "
 "fingerprints. Picard becomes the official MusicBrainz tagger with PUID "
 "support, which causes edit activity to decrease."
-msgstr ""
+msgstr "MusicBrainz alustas partnerlust MusicIP-ga ja hakkas kasutama MusicDNS-i „akustilisi sõrmejälgi” (PUID). Picardist sai ametlik MusicBrainzi sildistusprogramm koos PUID toega, põhjustades toimetusaktiivsuse langemist."
 
 #: DB:statistics.statistic_event/title:2006-03-12
 msgid "MusicIP PUID"
@@ -356,7 +356,7 @@ msgstr "NGS: väljalase"
 
 #: DB:statistics.statistic_event/description:2011-05-18
 msgid "NGS, a MusicBrainz major rewrite, is released!"
-msgstr "Avalikustatakse NGS, MusicBrainzi suur ümberkorraldus!"
+msgstr "Avalikustati NGS (Next Generation Schema), MusicBrainzi suur ümberkorraldus!"
 
 #: DB:statistics.statistic_event/title:2003-10-13
 msgid "Non album tracks"
@@ -364,15 +364,15 @@ msgstr "Albumivälised lood"
 
 #: DB:statistics.statistic_event/description:2003-10-13
 msgid "Non album tracks are released."
-msgstr ""
+msgstr "Lisati albumiväliste lugude võimalus."
 
 #: DB:statistics.statistic_event/description:2008-09-23
 msgid "Oliver Charles becomes employee #1 of MetaBrainz Foundation."
-msgstr "Oliver Charles saab MetaBrainz Foundationi töötajaks #1."
+msgstr "Oliver Charles sai MetaBrainz Foundationi töötajaks #1."
 
 #: DB:statistics.statistic_event/description:2010-06-18
 msgid "Oliver Charles begins working for MusicBrainz full-time."
-msgstr "Oliver Charles alustab täiskohaga MusicBrainzi heaks töötamist."
+msgstr "Oliver Charles alustas täiskohaga MusicBrainzi heaks töötamist."
 
 #: DB:statistics.statistic_event/title:2010-06-18
 msgid "Oliver Charles joins MusicBrainz full-time"
@@ -393,12 +393,12 @@ msgstr "Väljalasketoimeti"
 
 #: DB:statistics.statistic_event/description:2003-10-19
 msgid "Release editor and Guess Case released."
-msgstr ""
+msgstr "Lisati väljalasketoimeti ja suurtähestuse oletamise nupp."
 
 #: DB:statistics.statistic_event/description:2009-05-24
 msgid ""
 "Release groups, ISRC support, CDStub searching and search fixes released."
-msgstr ""
+msgstr "Lisati väljalaskerühmad ja ISRC-de tugi, lubati otsida pooleldi lisatud CD-sid, parandati otsingusüsteemi."
 
 #: DB:statistics.statistic_event/title:2006-01-08
 msgid "SG5 Fixes"
@@ -420,11 +420,11 @@ msgstr ""
 
 #: DB:statistics.statistic_event/description:2007-04-01
 msgid "Support for Labels and data quality are released."
-msgstr ""
+msgstr "Lisati plaadifirmade ja andmekvaliteedi tugi."
 
 #: DB:statistics.statistic_event/title:2003-01-21
 msgid "TRM collisions"
-msgstr ""
+msgstr "TRM-i kokkupõrked"
 
 #: DB:statistics.statistic_event/title:2007-10-17
 #: ../root/statistics/view_js.tt:172
@@ -434,27 +434,27 @@ msgstr "Sildid"
 #: DB:statistics.statistic_event/description:2007-06-28
 msgid ""
 "The BBC becomes a MetaBrainz customer and starts using MusicBrainz data."
-msgstr "BBC-st saab MetaBrainzi klient, hakkab kasutama MusicBrainzi andmeid."
+msgstr "BBC-st sai MetaBrainzi klient, hakkas kasutama MusicBrainzi andmeid."
 
 #: DB:statistics.statistic_event/description:2012-04-30
 msgid "The Cover Art Archive becomes initially available"
-msgstr "Kaanepildiarhiiv tehakse kättesaadavaks."
+msgstr "Kaanepildiarhiiv tehti varajastele huvilistele kättesaadavaks."
 
 #: DB:statistics.statistic_event/description:2012-10-10
 msgid "The Cover Art Archive is officially released"
-msgstr "Kaanepildiarhiiv kuulutatakse ametlikult avatuks."
+msgstr "Kaanepildiarhiiv kuulutati ametlikult avatuks."
 
 #: DB:statistics.statistic_event/description:2005-04-19
 msgid ""
 "The MetaBrainz Foundation, the legal home for MusicBrainz is announced to "
 "the public."
-msgstr ""
+msgstr "Avalikustati MetaBrainz Foundation, MusicBrainzi juriidiline kodu."
 
 #: DB:statistics.statistic_event/description:2012-10-15
 msgid ""
 "The relationship editor, for bulk-editing relationships for a release, is "
 "released to production."
-msgstr ""
+msgstr "Avalikustati seosetoimeti väljalaske seoste hulgitoimetamiseks."
 
 #: DB:statistics.statistic_event/description:2006-12-17
 msgid "The search features and web service improvements are released."
@@ -472,19 +472,19 @@ msgstr "Loopikkused plaadi-ID-dest"
 
 #: DB:statistics.statistic_event/title:2005-02-13
 msgid "User improvements"
-msgstr ""
+msgstr "Kasutajaliidese parandused"
 
 #: DB:statistics.statistic_event/description:2004-07-24
 msgid "Voting logic was improved, web based autoeditor elections released."
-msgstr ""
+msgstr "Parandati hääletusloogikat, lisati veebipõhised vanemtoimetajavalimised."
 
 #: DB:statistics.statistic_event/title:2013-02-11
 msgid "Voting period shortened to 7 days"
-msgstr "Hääletusaeg lühendatakse 7 päevale"
+msgstr "Hääletusaega lühendati 7 päevale"
 
 #: DB:statistics.statistic_event/title:2010-02-08
 msgid "mb_server now hosted on Git"
-msgstr "mb_serveri projekt kolib Git-i"
+msgstr "mb_serveri projekt kolis Git-i"
 
 #: ../root/statistics/formats.tt:29
 msgid "% of total mediums"
@@ -961,7 +961,7 @@ msgstr ""
 
 #: ../root/statistics/view_js.tt:50
 msgid "Count of all areas"
-msgstr ""
+msgstr "Piirkondade arv"
 
 #: ../root/statistics/view_js.tt:43
 msgid "Count of all artists"
@@ -985,7 +985,7 @@ msgstr ""
 
 #: ../root/statistics/view_js.tt:51
 msgid "Count of all places"
-msgstr ""
+msgstr "Kohtade arv"
 
 #: ../root/statistics/view_js.tt:44
 msgid "Count of all recordings"
@@ -1431,7 +1431,7 @@ msgstr "Toimetuste statistika pole saadaval."
 
 #: ../root/statistics/coverart.tt:88
 msgid "No format"
-msgstr ""
+msgstr "[määramata]"
 
 #: ../root/statistics/index.tt:306
 msgid "No front cover art:"
@@ -1447,15 +1447,15 @@ msgstr "Seoste statistika pole saadaval."
 
 #: ../root/statistics/coverart.tt:72
 msgid "No status"
-msgstr ""
+msgstr "[määramata]"
 
 #: ../root/statistics/index.tt:248
 msgid "No status set"
-msgstr "[ääramata]"
+msgstr "[määramata]"
 
 #: ../root/statistics/coverart.tt:56 ../root/statistics/coverart.tt:116
 msgid "No type"
-msgstr ""
+msgstr "[määramata]"
 
 #: ../root/statistics/index.tt:697
 msgid "No:"
@@ -1528,19 +1528,19 @@ msgstr ""
 
 #: ../root/statistics/coverart.tt:97
 msgid "Pieces of cover art"
-msgstr ""
+msgstr "Kaane- jm pildid"
 
 #: ../root/statistics/coverart.tt:27 ../root/statistics/coverart.tt:109
 msgid "Pieces of cover art:"
-msgstr ""
+msgstr "Pilte:"
 
 #: ../root/statistics/index.tt:544 ../root/statistics/view_js.tt:51
 msgid "Places"
-msgstr ""
+msgstr "Kohad"
 
 #: ../root/statistics/index.tt:56 ../root/statistics/index.tt:551
 msgid "Places:"
-msgstr ""
+msgstr "Kohti:"
 
 #: ../root/statistics/index.tt:435
 msgid "Primary Types"
@@ -1717,7 +1717,7 @@ msgstr "Vähemalt ühe plaadi-ID-ga väljalaskeid:"
 #: ../root/statistics/coverart.tt:65 ../root/statistics/coverart.tt:81
 #: ../root/statistics/coverart.tt:125
 msgid "Releases with cover art:"
-msgstr ""
+msgstr "Kaanepiltidega väljalaskeid:"
 
 #: ../root/statistics/view_js.tt:84
 msgid "Releases with no country set"
@@ -1887,7 +1887,7 @@ msgstr ""
 
 #: ../root/statistics/index.tt:481
 msgid "Videos:"
-msgstr ""
+msgstr "Videoid:"
 
 #: ../root/statistics/index.tt:627
 msgid "Voted down:"
@@ -2000,7 +2000,7 @@ msgstr "10 või enama plaadi-ID-ga:"
 
 #: ../root/statistics/coverart.tt:139
 msgid "with 30 or more pieces of cover art:"
-msgstr ""
+msgstr "30 või rohkema pildiga:"
 
 #: ../root/statistics/index.tt:163
 msgid "with appearances in artist credits:"
@@ -2027,7 +2027,7 @@ msgstr[1] "{num} plaadi-ID-ga:"
 #: ../root/statistics/coverart.tt:132
 msgid "with {num} piece of cover art:"
 msgid_plural "with {num} pieces of cover art:"
-msgstr[0] ""
+msgstr[0] "{num} pildiga:"
 msgstr[1] ""
 
 #: ../root/statistics/view_js.tt:86
