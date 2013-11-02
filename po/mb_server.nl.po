@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-10-28 17:46-0700\n"
-"PO-Revision-Date: 2013-11-02 12:46+0000\n"
+"PO-Revision-Date: 2013-11-02 13:43+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -97,27 +97,27 @@ msgstr "&#x2013; {enddate}"
 
 #: ../root/release/add_cover_art.tt:64
 msgid "&#x26a0; Error creating edit"
-msgstr ""
+msgstr "&#x26a0; Fout bij het aanmaken van een bewerking"
 
 #: ../root/release/add_cover_art.tt:61
 msgid "&#x26a0; Error requesting signature"
-msgstr ""
+msgstr "&#x26a0; Fout bij een aanvragen van een ondertekening"
 
 #: ../root/release/add_cover_art.tt:62
 msgid "&#x26a0; Error uploading image"
-msgstr ""
+msgstr "&#x26a0; Fout bij het uploaden van een afbeelding"
 
 #: ../root/release/add_cover_art.tt:63
 msgid "&#x26a0; Server busy, try again later"
-msgstr ""
+msgstr "&#x26a0; De server is overbelast, probeer het later opnieuw"
 
 #: ../root/release/add_cover_art.tt:60
 msgid "&#x26a0; Unrecognized file"
-msgstr ""
+msgstr "&#x26a0; Niet herkend bestand"
 
 #: ../root/release/add_cover_art.tt:59
 msgid "&#x2713; Success"
-msgstr ""
+msgstr "&#x2713; Succes"
 
 #: ../root/relationship/linktype/tree.tt:44
 msgid "&lt; Back to all relationship types"
@@ -559,11 +559,11 @@ msgstr "Pagina toevoegen"
 #: ../root/layout/menu.tt:238
 msgctxt "button/menu"
 msgid "Add Place"
-msgstr ""
+msgstr "Plaats toevoegen"
 
 #: ../root/place/add_alias.tt:12
 msgid "Add Place Alias"
-msgstr ""
+msgstr "Alias aan deze plaats toevoegen"
 
 #: ../root/layout/menu.tt:226
 msgctxt "button/menu"
@@ -639,7 +639,7 @@ msgstr "Nieuwe platenmaatschappij toevoegen"
 
 #: ../root/place/create.tt:14 ../root/place/create.tt:16
 msgid "Add a New Place"
-msgstr ""
+msgstr "Een nieuwe plaats toevoegen"
 
 #: ../root/release_group/create.tt:23
 msgid "Add a New Release Group"
@@ -697,7 +697,7 @@ msgstr "Alias aan gebied toevoegen"
 #: ../root/artist/add_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Artist/AddAlias.pm:14
 msgid "Add artist alias"
-msgstr "Alias van deze artiest toevoegen"
+msgstr "Alias aan deze artiest toevoegen"
 
 #: ../root/relationship/linkattributetype/common.tt:24
 msgid "Add child"
@@ -714,7 +714,7 @@ msgstr "Bewerkingsnotitie toevoegen"
 #: ../root/label/add_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Label/AddAlias.pm:14
 msgid "Add label alias"
-msgstr "Platenmaatschappijen samenvoegen"
+msgstr "Alias aan deze platenmaatschappij toevoegen"
 
 #: ../root/release/edit/missing_entities.tt:72
 msgid "Add new artist"
@@ -731,7 +731,7 @@ msgstr "Nieuwe opname toevoegen"
 #: ../root/place/add_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Place/AddAlias.pm:14
 msgid "Add place alias"
-msgstr ""
+msgstr "Alias aan deze plaats toevoegen"
 
 #: ../root/artist/layout.tt:88
 msgid "Add recording"
@@ -801,7 +801,7 @@ msgstr "Compositie toevoegen"
 #: ../root/work/add_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Work/AddAlias.pm:15
 msgid "Add work alias"
-msgstr "Alias van deze compositie toevoegen"
+msgstr "Alias aan deze compositie toevoegen"
 
 #: ../root/components/forms.tt:122 ../root/components/forms.tt:123
 msgid "Add {item}"
@@ -839,12 +839,12 @@ msgstr "Toevoegingen:"
 #: ../root/edit/details/merge_places.tt:47 ../root/place/merge.tt:13
 #: ../root/search/results-place.tt:10
 msgid "Address"
-msgstr ""
+msgstr "Adres"
 
 #: ../root/edit/details/add_place.tt:30 ../root/edit/details/edit_place.tt:23
 #: ../root/place/edit_form.tt:37 ../root/place/layout.tt:31
 msgid "Address:"
-msgstr ""
+msgstr "Adres:"
 
 #: ../root/admin/edit_user.tt:1
 msgid "Adjust User Account Flags"
@@ -969,7 +969,7 @@ msgstr "U kunt ook {uri|een nieuwe platenmaatschappij toevoegen}."
 
 #: ../root/search/results-place.tt:43
 msgid "Alternatively, you may {uri|add a new place}."
-msgstr ""
+msgstr "U kunt ook {uri|een nieuwe plaats toevoegen}."
 
 #: ../root/search/results-recording.tt:5
 msgid "Alternatively, you may {uri|add a new recording}."
@@ -1240,7 +1240,7 @@ msgstr "Details van het gebied"
 
 #: ../root/area/not_found.tt:1 ../root/area/not_found.tt:2
 msgid "Area Not Found"
-msgstr ""
+msgstr "Gebied niet gevonden"
 
 #: ../root/area/layout.tt:5
 msgid "Area information"
@@ -1433,7 +1433,7 @@ msgstr "Artiesten met een opmerking in de naam"
 #: ../root/report/artists_with_multiple_occurances_in_artist_credits.tt:3
 #: ../root/report/index.tt:26
 msgid "Artists occuring multiple times in the same artist credit"
-msgstr ""
+msgstr "Artiesten die meerdere keren in één vermelding staan."
 
 #: ../root/browse/artist.tt:8
 msgid "Artists starting with “{index}”"
@@ -1544,7 +1544,7 @@ msgstr "Gemachtigde applicaties"
 
 #: ../root/edit/search_macros.tt:288
 msgid "Auto-Editor"
-msgstr ""
+msgstr "Auto-redacteur"
 
 #: ../root/admin/edit_user.tt:7
 msgid "Auto-editor"
@@ -1810,7 +1810,7 @@ msgstr "Door platenmaatschappijen bladeren"
 
 #: ../root/browse/place.tt:1 ../root/browse/place.tt:3
 msgid "Browse Places"
-msgstr ""
+msgstr "Door plaatsen bladeren"
 
 #: ../root/browse/release_group.tt:1 ../root/browse/release_group.tt:3
 msgid "Browse Release Groups"
@@ -1842,7 +1842,7 @@ msgstr "Door platenmaatschappijen bladeren"
 
 #: ../root/browse/index.tt:11
 msgid "Browse places"
-msgstr ""
+msgstr "Door plaatsen bladeren"
 
 #: ../root/artist/browse_various_recordings.tt:2
 msgid "Browse recordings"
@@ -2136,7 +2136,7 @@ msgstr "Client:"
 
 #: ../root/release/edit/tracklist.tt:159
 msgid "Close"
-msgstr ""
+msgstr "Afsluiten"
 
 #: ../root/edit/search_macros.tt:307
 msgid "Closed"
@@ -2842,7 +2842,7 @@ msgstr ""
 
 #: ../root/place/edit_alias.tt:12
 msgid "Edit Place Alias"
-msgstr ""
+msgstr "Alias van deze plaats bewerken"
 
 #: ../root/account/edit_ok.tt:1 ../root/account/edit_ok.tt:3
 #: ../root/account/edit.tt:13 ../root/account/edit.tt:15
@@ -2966,7 +2966,7 @@ msgstr "Bewerkingsnotities"
 #: ../root/place/edit_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Place/EditAlias.pm:12
 msgid "Edit place alias"
-msgstr ""
+msgstr "Alias van deze plaats bewerken"
 
 #: ../root/place/edit_annotation.tt:2
 msgid "Edit place annotation"
@@ -6627,7 +6627,7 @@ msgstr "Pagina verwijderen"
 
 #: ../root/place/delete_alias.tt:1
 msgid "Remove Place Alias"
-msgstr ""
+msgstr "Alias van deze plaats verwijderen"
 
 #: ../root/recording/delete.tt:2
 msgid "Remove Recording"
@@ -6707,7 +6707,7 @@ msgstr "Alias van platenmaatschappij verwijderen"
 #: ../root/place/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Place/DeleteAlias.pm:14
 msgid "Remove place alias"
-msgstr ""
+msgstr "Alias van deze plaats verwijderen"
 
 #: ../root/recording/layout.tt:35
 #: ../lib/MusicBrainz/Server/Edit/Recording/Delete.pm:12
@@ -8168,7 +8168,7 @@ msgstr "Deze ISWC is niet gekoppeld aan een compositie. {search_url|Zoek naar de
 
 #: ../root/alias/edit_form.tt:33
 msgid "This alias is no longer current."
-msgstr ""
+msgstr "Deze alias wordt niet meer gebruikt."
 
 #: ../root/area/delete.tt:14
 msgid ""
