@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2013-11-02 18:34+0000\n"
+"PO-Revision-Date: 2013-11-03 07:41+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -1693,7 +1693,7 @@ msgid ""
 "This relationship type is <strong>deprecated</strong>! <a "
 "href=\"http://musicbrainz.org/doc/Style/Recording#Recordings_with_Different_Mastering\">Different"
 " remasters should be merged.</a>"
-msgstr ""
+msgstr "Dit relatietype is <strong>verouder</strong>! <a href=\"http://musicbrainz.org/doc/Style/Recording#Recordings_with_Different_Mastering\"> Verschillende masters moeten worden samengevoegd."
 
 #: DB:link_type/description:238
 msgid ""
@@ -1705,7 +1705,7 @@ msgstr "Dit relatietype is <strong>verouderd</strong>!  Als twee opnames identie
 msgid ""
 "This relationship type is <strong>deprecated</strong>! Please add mastering "
 "engineers at the release level."
-msgstr ""
+msgstr "Dit relatietype is <strong>verouder</strong>! Voeg relaties voor mastering toe op uitgaveniveau."
 
 #: DB:link_type/description:1
 msgid ""
@@ -1730,26 +1730,26 @@ msgstr "Deze type relatie is <strong>verouderd</strong>! Upload afbeeldingen op 
 #: DB:link_type/description:270 DB:link_type/description:261
 #: DB:link_type/description:252 DB:link_type/description:269
 msgid "This relationship type is <strong>deprecated</strong>."
-msgstr ""
+msgstr "Dit relatietype is <strong>verouderd</strong>."
 
 #: DB:link_type/description:131
 msgid ""
 "This relationship type is <strong>deprecated</strong>. Add liner notes info "
 "on the release level."
-msgstr ""
+msgstr "Dit relatietype is <strong>verouderd</strong>. Voeg relaties voor boekteksten in op uitgaveniveau."
 
 #: DB:link_type/description:166 DB:link_type/description:39
 #: DB:link_type/description:299
 msgid ""
 "This relationship type is <strong>deprecated</strong>. Please use an "
 "(instrument) arranger relationship instead!"
-msgstr ""
+msgstr "Dit relatietype is <strong>verouderd</strong>. Gebruik in plaats hiervan het „arrangeerde (instrument)“ relatietype."
 
 #: DB:link_type/description:91 DB:link_type/description:181
 msgid ""
 "This relationship type is <strong>deprecated</strong>. Use \"has a page in a"
 " database\" instead."
-msgstr ""
+msgstr "Dit relatietype is <strong>verouderd</strong>. Gebruik in plaats hiervan „heeft een pagina in een gegevensbank“."
 
 #: DB:link_type/description:210
 msgid ""
@@ -2296,7 +2296,7 @@ msgstr "heeft Amazon ASIN"
 
 #: DB:link_type/long_link_phrase:310 DB:link_type/long_link_phrase:311
 msgid "has VIAF ID at"
-msgstr ""
+msgstr "Heeft een VIAF-ID op"
 
 #: DB:link_type/long_link_phrase:190
 msgid "has a BBC Music page at"
@@ -2599,7 +2599,7 @@ msgstr "is gelicenseerd onder"
 
 #: DB:link_type/long_link_phrase:312
 msgid "is the VIAF ID for"
-msgstr ""
+msgstr "is de VIAF-ID van"
 
 #: DB:link_type/link_phrase:314 DB:link_type/long_link_phrase:314
 msgid "is the basis for"
@@ -3150,7 +3150,7 @@ msgstr "recensies"
 
 #: DB:link_type/reverse_link_phrase:315
 msgid "revision of"
-msgstr ""
+msgstr "revisie van"
 
 #: DB:link_type/reverse_link_phrase:349
 msgid "rights society"
