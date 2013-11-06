@@ -11,10 +11,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-10-28 17:46-0700\n"
-"PO-Revision-Date: 2013-10-29 00:54+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2013-11-06 02:57+0000\n"
+"Last-Translator: th1rtyf0ur\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/musicbrainz/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3168,7 +3168,7 @@ msgstr "この編集に{autoed|自動編集者}の権利を使用。"
 #: ../root/search/results-area.tt:13 ../root/search/results-label.tt:14
 #: ../root/search/results-place.tt:13
 msgid "End"
-msgstr ""
+msgstr "終了"
 
 #: ../root/search/lib/inline-results-artist.tt:15
 msgid "End Area"
@@ -3249,7 +3249,7 @@ msgstr ""
 
 #: ../root/components/forms.tt:179 ../root/components/forms.tt:212
 msgid "English"
-msgstr ""
+msgstr "英語"
 
 #: ../root/release/edit/tracklist.tt:178
 msgid "Enter a tracklist below:"
@@ -3556,12 +3556,12 @@ msgstr "FreeDB："
 
 #: ../root/components/forms.tt:181 ../root/components/forms.tt:214
 msgid "French"
-msgstr ""
+msgstr "フランス語"
 
 #: ../root/edit/details/historic/move_disc_id.tt:8
 #: ../root/edit/details/move_disc_id.tt:8
 msgid "From:"
-msgstr ""
+msgstr "開始："
 
 #: ../root/release/sidebar.tt:4
 msgid ""
@@ -3714,7 +3714,7 @@ msgstr "ID"
 
 #: ../root/doc/relationship_type.tt:31
 msgid "ID:"
-msgstr ""
+msgstr "ＩＤ："
 
 #: ../root/artist/edit_form.tt:55 ../root/label/edit_form.tt:54
 msgid "IPI code"
@@ -3747,30 +3747,30 @@ msgstr "ISNIコード："
 
 #: ../root/area/edit_form.tt:11
 msgid "ISO 3166-1"
-msgstr ""
+msgstr "ISO 3166-1"
 
 #: ../root/area/edit_form.tt:11 ../root/area/layout.tt:36
 #: ../root/edit/details/add_area.tt:35 ../root/edit/details/edit_area.tt:28
 msgid "ISO 3166-1:"
-msgstr ""
+msgstr "ISO 3166-1："
 
 #: ../root/area/edit_form.tt:12
 msgid "ISO 3166-2"
-msgstr ""
+msgstr "ISO 3166-2"
 
 #: ../root/area/edit_form.tt:12 ../root/area/layout.tt:39
 #: ../root/edit/details/add_area.tt:42 ../root/edit/details/edit_area.tt:32
 msgid "ISO 3166-2:"
-msgstr ""
+msgstr "ISO 3166-2："
 
 #: ../root/area/edit_form.tt:13
 msgid "ISO 3166-3"
-msgstr ""
+msgstr "ISO 3166-3"
 
 #: ../root/area/edit_form.tt:13 ../root/area/layout.tt:42
 #: ../root/edit/details/add_area.tt:49 ../root/edit/details/edit_area.tt:36
 msgid "ISO 3166-3:"
-msgstr ""
+msgstr "ISO 3166-3："
 
 #: ../root/recording/edit_form.tt:12
 #: ../root/report/isrc_with_many_recordings.tt:23
@@ -3810,7 +3810,7 @@ msgstr ""
 
 #: ../root/recording/edit_form.tt:12
 msgid "ISRCs:"
-msgstr ""
+msgstr "ISRC："
 
 #: ../root/artist/works-list.tt:12 ../root/report/iswc_with_many_works.tt:24
 #: ../root/search/results-work.tt:11 ../root/work/edit_form.tt:11
@@ -5202,7 +5202,7 @@ msgstr ""
 
 #: ../root/edit/edit_header.tt:42 ../root/edit/vote.tt:23
 msgid "None"
-msgstr ""
+msgstr "無し"
 
 #: ../root/components/common-macros.tt:660
 #: ../lib/MusicBrainz/Server/Controller/Edit.pm:188
@@ -6533,7 +6533,7 @@ msgstr "表記未定のリリース"
 #: ../root/edit/details/set_track_lengths_from_discid.tt:5
 #: ../root/edit/details/set_track_lengths.tt:5
 msgid "Releases:"
-msgstr ""
+msgstr "リリース："
 
 #: ../root/account/applications.tt:76 ../root/account/edit.tt:63
 #: ../root/account/edit.tt:72 ../root/admin/wikidoc/index.tt:62
@@ -6795,7 +6795,7 @@ msgstr ""
 #: ../root/cdtoc/attach_filter_release.tt:77 ../root/cdtoc/move_search.tt:23
 #: ../root/components/search.tt:19
 msgid "Results:"
-msgstr ""
+msgstr "結果："
 
 #: ../root/user/contact.tt:16
 msgid "Reveal my email address"
@@ -7507,7 +7507,7 @@ msgstr "統計"
 
 #: ../root/search/lib/inline-results-release.tt:20
 msgid "Status"
-msgstr ""
+msgstr "ステータス"
 
 #: ../root/edit/search_macros.tt:307
 msgctxt "edit status"
@@ -7527,7 +7527,7 @@ msgstr "ステータス"
 #: ../root/edit/info.tt:33
 msgctxt "edit status"
 msgid "Status:"
-msgstr ""
+msgstr "ステータス："
 
 #: ../root/elections/show.tt:38
 msgctxt "election status"
@@ -7659,7 +7659,7 @@ msgstr "タグ"
 #: ../root/collection/tag.tt:1
 msgctxt "verb"
 msgid "Tag"
-msgstr ""
+msgstr "タグ"
 
 #: ../root/taglookup/index.tt:1 ../root/taglookup/index.tt:3
 msgid "Tag Lookup"
@@ -7749,7 +7749,7 @@ msgstr "タグ者"
 #: ../root/tag/cloud.tt:4 ../root/user/profile/layout.tt:19
 #: ../root/user/tags.tt:1 ../root/work/header.tt:1 ../root/work/tags.tt:1
 msgid "Tags"
-msgstr ""
+msgstr "タグ"
 
 #: ../root/layout/menu.tt:118
 msgid "Team"
