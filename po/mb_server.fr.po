@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the PACKAGE package.
 # 
 # Translators:
+# Alain-Olivier  Breysse <email address hidden>, 2013
 # Benjamin <email address hidden>, 2011
 # Benjamin Sonntag <email address hidden>, 2011
 # Dibou <email address hidden>, 2012
@@ -20,7 +21,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-10-28 17:46-0700\n"
-"PO-Revision-Date: 2013-11-13 13:32+0000\n"
+"PO-Revision-Date: 2013-11-13 18:57+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -39,7 +40,7 @@ msgid ""
 " Enter your username and email below. We will send you an email with a link "
 "to reset your password. If you have forgotten your username, {link|retrieve "
 "it} first and then reset your password. "
-msgstr "Saisissez votre nom d'utilisateur et votre adresse e-mail ci-dessous. Nous vous enverrons un e-mail incluant un lien pour réinitialiser votre mot de passe. Si vous avez oublié votre mot de passe, {link|retrouvez-le} en premier et après réinitialisez votre mot de passe."
+msgstr "Saisissez votre nom d'utilisateur et votre adresse courriel ci-dessous. Nous vous enverrons un e-mail incluant un lien pour réinitialiser votre mot de passe. Si vous avez oublié votre mot de passe, {link|retrouvez-le} en premier et après réinitialisez votre mot de passe."
 
 #: ../root/components/forms.tt:262
 msgid "\"C\" is a single check digit."
@@ -225,7 +226,7 @@ msgstr "(privé)"
 
 #: ../root/layout/menu.tt:24
 msgid "(reset language)"
-msgstr ""
+msgstr "(réinitialiser la langue)"
 
 #: ../root/search/lib/inline-results-recording.tt:63
 msgid "(standalone recording)"
@@ -1670,7 +1671,7 @@ msgid ""
 "Because you provided an email address, an verification email has been sent "
 "to <code>{addr}</code>. Please check your mailbox and click on the link in "
 "the email to verify the new email address."
-msgstr "Vous nous avez fourni une adresse email. Un email de confirmation vient de vous être envoyé à l'adresse <code>{addr}</code>. Vérifiez votre boite aux lettres et cliquez sur le lien dans l'email pour vérifier votre adresse email."
+msgstr "Vous nous avez fourni une adresse courriel. Un courriel de confirmation vient de vous être envoyé à l'adresse <code>{addr}</code>. Vérifiez votre boite aux lettres et cliquez sur le lien dans le courriel pour vérifier votre adresse courriel."
 
 #: ../root/main/index.tt:96
 msgid ""
@@ -1685,7 +1686,7 @@ msgid ""
 "review entered data to create the most accurate music database on the "
 "internet. If this appeals to you, please {reg|create an account} or "
 "{login_url|login}."
-msgstr ""
+msgstr "Devenez partie intégrante de MusicBrainz en créant un compte et en {how|lisant sur le processus} pour transmettre de l'information à MusicBrainz. Découvrez notre révision par des pairs afin de créer la base de données musicale la plus précise sur internet. Si ceci vous plaît {reg|créer un compte} ou {login_url|connectez-vous}."
 
 #: ../root/scripts/text_strings.tt:72
 msgid "Began:"
@@ -3136,31 +3137,31 @@ msgstr "Élection non trouvée"
 
 #: ../root/account/preferences.tt:30
 msgid "Email"
-msgstr "Email"
+msgstr "Courriel"
 
 #: ../root/account/verify_email_error.tt:1
 #: ../root/account/verify_email_error.tt:3
 msgid "Email Address Verification"
-msgstr "Vérification de l'adresse email"
+msgstr "Vérification de l'adresse courriel"
 
 #: ../root/account/verified.tt:1 ../root/account/verified.tt:3
 msgid "Email Address Verified"
-msgstr "Adresse email vérifiée"
+msgstr "Adresse courriel vérifiée"
 
 #: ../root/user/email_sent.tt:1 ../root/user/email_sent.tt:3
 msgid "Email Sent"
-msgstr "Email envoyé"
+msgstr "courriel envoyé"
 
 #: ../root/account/lost_password_sent.tt:3
 #: ../root/account/lost_username_sent.tt:3
 msgid "Email Sent!"
-msgstr "Email envoyé !"
+msgstr "courriel envoyé !"
 
 #: ../root/account/edit.tt:29 ../root/account/lost_password.tt:15
 #: ../root/account/lost_username.tt:11 ../root/account/register.tt:31
 #: ../root/admin/edit_user.tt:33 ../root/user/profile.tt:14
 msgid "Email:"
-msgstr "Email :"
+msgstr "Courriel :"
 
 #: ../root/annotation/edit.tt:39
 msgid "Emphasis:"
@@ -3277,7 +3278,7 @@ msgstr "Entrer une modification"
 msgid ""
 "Enter your email address below and we will send you an email with your "
 "MusicBrainz account information."
-msgstr "Saisir votre adresse email ci-dessous, et nous vous enverrons un email avec vos informations de comptes MusicBrainz."
+msgstr "Saisir votre adresse courriel ci-dessous, et nous vous enverrons un courriel avec vos informations de comptes MusicBrainz."
 
 #: ../root/forms/edit-note.tt:5
 msgid ""
@@ -3936,7 +3937,7 @@ msgstr "Si vous ne trouvez pas ce que vous cherchez, vous pouvez créer une nouv
 
 #: ../root/account/edit.tt:19
 msgid "If you change your email address, you will be required to verify it. "
-msgstr "Si vous modifiez votre adresse email, vous devrez la faire valider."
+msgstr "Si vous modifiez votre adresse courriel, vous devrez la faire valider."
 
 #: ../root/release/edit/information.tt:220
 msgid ""
@@ -4498,7 +4499,7 @@ msgstr "Tagger MP3 Magique"
 msgid ""
 "Mail me when one of my edits gets a \"no\" vote. (Note: the email is only "
 "sent for the first \"no\" vote, not each one)"
-msgstr "Envoyez-moi un email si ma modification n'a pas de vote. (notez que cet email n'est envoyé que pour la première modification sans vote, pas pour chaque modification)"
+msgstr "Envoyez-moi un courriel si ma modification n'a pas de vote. (notez que cet courriel n'est envoyé que pour la première modification sans vote, pas pour chaque modification)"
 
 #: ../root/layout/menu.tt:282
 msgid "Mailing Lists"
@@ -5257,7 +5258,7 @@ msgstr ""
 
 #: ../root/account/preferences.tt:37
 msgid "Notify me by email on new releases to my watched artists"
-msgstr "Signalez-moi par email toute nouvelle sortie dans la liste des artistes que je surveille"
+msgstr "Signalez-moi par courriel toute nouvelle sortie dans la liste des artistes que je surveille"
 
 #: ../root/release/edit/recordings.tt:383
 msgid "Now loading recording associations..."
@@ -6806,7 +6807,7 @@ msgstr "Réinitialiser le mot de passe"
 
 #: ../root/release/edit/tracklist.tt:432 ../root/release/edit/tracklist.tt:433
 msgid "Reset track numbers"
-msgstr ""
+msgstr "Réinitialiser les numéros de piste"
 
 #: ../root/search/form.tt:7
 msgid "Results per page:"
@@ -6821,7 +6822,7 @@ msgstr "Résultats :"
 
 #: ../root/user/contact.tt:16
 msgid "Reveal my email address"
-msgstr "Montrer mon adresse email"
+msgstr "Montrer mon adresse courriel"
 
 #: ../root/doc/relationship_type.tt:41
 #: ../root/edit/details/edit_relationship_type.tt:25
@@ -7076,11 +7077,11 @@ msgstr "Envoyer"
 #: ../root/account/lost_username.tt:14 ../root/user/contact.tt:1
 #: ../root/user/contact.tt:3 ../lib/MusicBrainz/Server/Controller/User.pm:251
 msgid "Send Email"
-msgstr "Envoyer un email"
+msgstr "Envoyer un courriel"
 
 #: ../root/user/contact.tt:17
 msgid "Send a copy to my own email address"
-msgstr "Envoyer une copie à mon adresse email personnelle"
+msgstr "Envoyer une copie à mon adresse courriel personnelle"
 
 #: ../root/account/preferences.tt:38
 msgid "Send me mails with edits to my subscriptions:"
@@ -7803,7 +7804,7 @@ msgstr "Merci de votre contribution à MusicBrainz."
 msgid ""
 "Thank you, your email address has now been verified! If you still can't "
 "edit, please try to log out and log in again."
-msgstr ""
+msgstr "Merci, votre adresse courriel a maintenant été vérifiée ! Si vous ne pouvez toujours pas modifier, déconnectez-vous et connectez-vous à nouveau SVP."
 
 #: ../root/taglookup/not_found.tt:4
 msgid ""
@@ -8295,7 +8296,7 @@ msgstr "La modification est ouverte et attend les votes avant d'être appliquée
 
 #: ../root/edit/details/set_track_lengths.tt:43
 msgid "This edit makes subsecond changes to track lengths"
-msgstr ""
+msgstr "Cette modification apporte des changements sub-secondaires aux durées de piste"
 
 #: ../root/edit/details/historic/merge_releases.tt:37
 msgid ""
@@ -8358,7 +8359,7 @@ msgstr ""
 msgid ""
 "This is a development server. Your email address is not private or secure. "
 "Proceed with caution!"
-msgstr ""
+msgstr "Ceci est un serveur de développement. Votre adresse courriel n'est ni privée ni en sécurité. Avancer avec précaution !"
 
 #: ../root/user/login.tt:27
 msgid "This is a development server; all passwords have been reset to \"mb\"."
@@ -8420,7 +8421,7 @@ msgid ""
 "This merge strategy will merge all mediums together into a single set of "
 "mediums. Recordings between mediums will also be merged, into the recordings"
 " used on the target mediums."
-msgstr ""
+msgstr "Cette stratégie de fusion fusionnera tous les supports en un seul ensemble de supports. Les enregistrements entre différents supports seront aussi fusionnés en enregistrements utilisés par les supports cible."
 
 #: ../root/doc/page.tt:22
 msgid ""
@@ -9494,7 +9495,7 @@ msgstr "Utiliser la {doc|syntaxe avancée de recherche}"
 msgid ""
 "User accounts must be more than 2 weeks old, have a confirmed email address,"
 " and more than 10 accepted edits in order to vote on others' edits."
-msgstr ""
+msgstr "Les comptes utilisateurs doivent avoir plus de 2 semaines, une adresse de courriel confirmée et plus de 10 modifications acceptées afin de pouvoir voter sur les modifications des autres."
 
 #: ../root/account/change_password.tt:21
 msgid "User name:"
@@ -9791,7 +9792,7 @@ msgid ""
 "We have sent you a verification email to <code>{email}</code>. Please check "
 "your mailbox and click on the link in the email to verify the new email "
 "address."
-msgstr "Nous vous avons envoyé un email de vérification à l'adresse <code>{email}</code>. Vérifiez votre boite aux lettres et cliquez sur le lien pour valider votre adresse email."
+msgstr "Nous vous avons envoyé un courriel de vérification à l'adresse <code>{email}</code>. Vérifiez votre boite aux lettres et cliquez sur le lien pour valider votre adresse courriel."
 
 #: ../root/cdtoc/lookup.tt:10
 msgid "We used DiscID <code>{discid}</code> to look up this information."
@@ -9820,14 +9821,14 @@ msgid ""
 "We've sent you information about your MusicBrainz account. If you don't "
 "receive this email or still have problems logging in, please {link|contact "
 "us}."
-msgstr "Nous vous avont envoyé des informations au sujet de votre compte MusicBrainz. Si vous ne recevez pas cet email ou que vous avez des problèmes pour vous connecter, {link|contactez nous}."
+msgstr "Nous vous avons envoyé des informations au sujet de votre compte MusicBrainz. Si vous ne recevez pas ce courriel ou que vous avez des problèmes pour vous connecter, {link|contactez nous}."
 
 #: ../root/account/lost_password_sent.tt:5
 msgid ""
 "We've sent you instructions on how to reset your password. If you don't "
 "receive this email or still have problems logging in, please {link|contact "
 "us}."
-msgstr "Nous vous avont envoyé des instructions pour réinitialiser votre mot de passe. Si vous ne recevez pas cet email ou que vous avez des problèmes pour vous connecter, {link|contactez nous}."
+msgstr "Nous vous avons envoyé des instructions pour réinitialiser votre mot de passe. Si vous ne recevez pas ce courriel ou que vous avez des problèmes pour vous connecter, {link|contactez-nous}."
 
 #: ../root/account/applications.tt:67
 msgid "Web Application"
@@ -10320,13 +10321,13 @@ msgstr "Vous devez être connecté pour voter sur les modifications"
 msgid ""
 "You must first {url|add and verify your email address} before being able to "
 "edit or add anything to the database."
-msgstr ""
+msgstr "Vous devez d'abord {url|ajouter et vérifier votre adresse courriel} avant de pouvoir modifier ou ajouter quoi que ce soit à la base de données. "
 
 #: ../root/account/register.tt:33
 msgid ""
 "You must provide a working email address if you wish to contribute to the "
 "database."
-msgstr "Vous devez fournir une adresse email valide avant de pouvoir contribuer à la base de données."
+msgstr "Vous devez fournir une adresse courriel valide avant de pouvoir contribuer à la base de données."
 
 #: ../root/cdtoc/remove.tt:11
 msgid ""
@@ -10365,7 +10366,7 @@ msgstr "Vous ne serez plus embêté pendant {days} jours."
 msgid ""
 "Your email has been successfully sent! Click {link|here} to continue to "
 "{user}'s profile."
-msgstr "Votre email a été envoyé avec succès ! Cliquez {link|ici} pour retourner au profile de {user}."
+msgstr "Votre courriel a été envoyé avec succès ! Cliquez {link|ici} pour retourner au profile de {user}."
 
 #: ../root/account/reset_password_ok.tt:5
 msgid "Your password has been reset."
@@ -10690,7 +10691,7 @@ msgstr "sorties"
 
 #: ../root/user/profile.tt:31
 msgid "resend verification email"
-msgstr "Renvoyer l'e-mail de vérification"
+msgstr "Renvoyer le courriel de vérification"
 
 #: ../root/layout.tt:71
 msgid "search"
@@ -10708,7 +10709,7 @@ msgstr[1] ""
 
 #: ../root/user/profile.tt:35
 msgid "send email"
-msgstr "envoyer un email"
+msgstr "envoyer un courriel"
 
 #: ../root/cdtoc/attach_list.tt:31
 msgid "show tracklist"
@@ -11185,7 +11186,7 @@ msgstr "L'identifiant utilisateur est manquant ou son format est invalide."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:52
 msgid "The email address is missing."
-msgstr "L'adresse email est manquante."
+msgstr "L'adresse courriel est manquante."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:59
 msgid "The time is missing or is in an invalid format."
@@ -11198,11 +11199,11 @@ msgstr "La clé de vérification est manquante."
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:75
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:212
 msgid "The checksum is invalid, please double check your email."
-msgstr "La somme de contrôle est invalide, revérifiez votre email."
+msgstr "La somme de contrôle est invalide, revérifiez votre courriel."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:83
 msgid "Sorry, this email verification link has expired."
-msgstr "Désolé, ce lien de vérification d'email a expiré."
+msgstr "Désolé, ce lien de vérification de courriel a expiré."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:92
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:221
@@ -11214,7 +11215,7 @@ msgstr "L'utilisateur #{user_id} n'a pas été trouvé."
 msgid ""
 "We were unable to send login information to your email address.  Please try again,\n"
 "             however if you continue to experience difficulty contact us at support@musicbrainz.org."
-msgstr "Nous n'avons pas pu envoyer vos informations de compte sur votre adresse email. Merci de réessayer. \nCependant, si cette erreur persiste, veuillez nous contacter à l'adresse support@musicbrainz.org."
+msgstr "Nous n'avons pas pu envoyer vos informations de compte sur votre adresse courriel. Merci de réessayer. \nCependant, si cette erreur persiste, veuillez nous contacter à l'adresse support@musicbrainz.org."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:159
 msgid "There is no user with this username"
@@ -11222,13 +11223,13 @@ msgstr "Il n'y a pas d'utilisateur ayant ce nom"
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:164
 msgid "There is no user with this username and email"
-msgstr "Il n'y a pas d'utilisateur ayant ce nom et cet email"
+msgstr "Il n'y a pas d'utilisateur ayant ce nom et cet courriel"
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:167
 msgid ""
 "We can't send a password reset email, because we have no email on record for"
 " this user."
-msgstr ""
+msgstr "Nous ne pouvons pas envoyer un courriel de réinitialisation de mot de passe car nous n'avons pas d'adresse courriel d'enregistrée pour cet utilisateur."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:196
 msgid "Missing one or more required parameters."
@@ -11240,7 +11241,7 @@ msgstr "Désolé, mais ce lien de réinitialisation de mot de passe a expiré."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:262
 msgid "There is no user with this email"
-msgstr "Il n'y a pas d'utilisateur ayant cet email"
+msgstr "Il n'y a pas d'utilisateur ayant cet courriel"
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:346
 msgid "Your password has been changed."
@@ -11251,7 +11252,7 @@ msgid ""
 "<strong>We were unable to send a confirmation email to you.</strong><br/>Please confirm that you have entered a valid\n"
 "             address by editing your {settings|account settings}. If the problem still persists, please contact us at\n"
 "             <a href=\"mailto:support@musicbrainz.org\">support@musicbrainz.org</a>."
-msgstr "<strong>Nous n'avons pas pu vous envoyer un mail de confirmation d'adresse </strong><br/> Merci de vérifier que vous avez saisi une adresse valide en éditant {settings|vos paramètres utilisateur}. Si le problème persiste, contactez nous à <a href=\"mailto:support@musicbrainz.org\">support@musicbrainz.org</a>."
+msgstr "<strong>Nous n'avons pas pu vous envoyer un courriel de confirmation d'adresse </strong><br/> Merci de vérifier que vous avez saisi une adresse valide en éditant {settings|vos paramètres utilisateur}. Si le problème persiste, contactez nous à <a href=\"mailto:support@musicbrainz.org\">support@musicbrainz.org</a>."
 
 #: ../lib/MusicBrainz/Server/Controller/Admin.pm:76
 msgid "User successfully edited."
@@ -11364,7 +11365,7 @@ msgstr "Les ancien et nouveau identifiants d'annotation doivent être des entier
 #: ../lib/MusicBrainz/Server/Controller/User.pm:252
 #, perl-brace-format
 msgid "The editor {name} has no email address attached to their account."
-msgstr "L'éditeur nommé {name} n'a pas d'adresse email attaché à son compte."
+msgstr "L'éditeur nommé {name} n'a pas d'adresse courriel attaché à son compte."
 
 #: ../lib/MusicBrainz/Server/Controller/User.pm:280
 msgid "Your message could not be sent"
@@ -11886,7 +11887,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:77
 msgid "View your email address"
-msgstr ""
+msgstr "Afficher votre adresse courriel"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:78
 msgid "View and modify your private tags"
