@@ -1,12 +1,20 @@
 # 
 # Translators:
+# Benjamin <email address hidden>, 2011
+# Benjamin Sonntag <email address hidden>, 2011-2012
+# Benjamin Sonntag <email address hidden>, 2011
+# Dibou <email address hidden>, 2012
+# Dibou  <email address hidden>, 2012
+#   <email address hidden>, 2012
+# kmartin <email address hidden>, 2013
+# murdos <email address hidden>, 2011-2012
+# murdos <email address hidden>, 2011
 # redapplz <email address hidden>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
-"PO-Revision-Date: 2013-10-29 00:53+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2013-11-13 13:31+0000\n"
+"Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,22 +25,22 @@ msgstr ""
 #: DB:medium_format/name:30
 msgctxt "medium_format"
 msgid "10\" Vinyl"
-msgstr "Vinyle 10\""
+msgstr "Vinyl 10\""
 
 #: DB:medium_format/name:31
 msgctxt "medium_format"
 msgid "12\" Vinyl"
-msgstr "Vinyle 12\""
+msgstr "Vinyl 12\""
 
 #: DB:medium_format/name:29
 msgctxt "medium_format"
 msgid "7\" Vinyl"
-msgstr "Vinyle 7\""
+msgstr "Vinyl 7\""
 
 #: DB:medium_format/name:34
 msgctxt "medium_format"
 msgid "8cm CD"
-msgstr "CD 8cm"
+msgstr "CD de 8 cm"
 
 #: DB:release_group_primary_type/name:1
 msgctxt "release_group_primary_type"
@@ -52,12 +60,12 @@ msgstr "Aria"
 #: DB:artist_alias_type/name:1
 msgctxt "alias_type"
 msgid "Artist name"
-msgstr "Nom d'artiste"
+msgstr "Noms de l'artiste"
 
 #: DB:release_group_secondary_type/name:5
 msgctxt "release_group_secondary_type"
 msgid "Audiobook"
-msgstr "Livres audio"
+msgstr "Livre audio"
 
 #: DB:cover_art_archive.art_type/name:2
 msgctxt "cover_art_type"
@@ -77,7 +85,7 @@ msgstr "Betamax"
 #: DB:medium_format/name:20
 msgctxt "medium_format"
 msgid "Blu-ray"
-msgstr "Blu-ray"
+msgstr "blu-ray"
 
 #: DB:release_packaging/name:9
 msgctxt "release_packaging"
@@ -97,12 +105,12 @@ msgstr "Bootleg"
 #: DB:label_type/name:5
 msgctxt "label_type"
 msgid "Bootleg Production"
-msgstr ""
+msgstr "Production de bootleg"
 
 #: DB:release_group_primary_type/name:12
 msgctxt "release_group_primary_type"
 msgid "Broadcast"
-msgstr ""
+msgstr "Broadcast"
 
 #: DB:medium_format/name:1
 msgctxt "medium_format"
@@ -122,7 +130,7 @@ msgstr "Cantate"
 #: DB:release_packaging/name:4
 msgctxt "release_packaging"
 msgid "Cardboard/Paper Sleeve"
-msgstr "Pochette cartonnée/papier"
+msgstr "Emballage carton ou papier"
 
 #: DB:medium_format/name:9
 msgctxt "medium_format"
@@ -162,7 +170,7 @@ msgstr ""
 #: DB:medium_format/name:11
 msgctxt "medium_format"
 msgid "DAT"
-msgstr "Bande DAT"
+msgstr "DAT"
 
 #: DB:medium_format/name:16
 msgctxt "medium_format"
@@ -172,7 +180,7 @@ msgstr "DCC"
 #: DB:release_group_secondary_type/name:8
 msgctxt "release_group_secondary_type"
 msgid "DJ-mix"
-msgstr ""
+msgstr "DJ-mix"
 
 #: DB:medium_format/name:2
 msgctxt "medium_format"
@@ -187,7 +195,7 @@ msgstr "DVD-Audio"
 #: DB:medium_format/name:19
 msgctxt "medium_format"
 msgid "DVD-Video"
-msgstr ""
+msgstr "DVD-Vidéo"
 
 #: DB:release_packaging/name:3
 msgctxt "release_packaging"
@@ -197,7 +205,7 @@ msgstr "Digipak"
 #: DB:medium_format/name:12
 msgctxt "medium_format"
 msgid "Digital Media"
-msgstr "Médias numériques"
+msgstr "Digital Media"
 
 #: DB:label_type/name:1
 msgctxt "label_type"
@@ -212,7 +220,7 @@ msgstr ""
 #: DB:medium_format/name:4
 msgctxt "medium_format"
 msgid "DualDisc"
-msgstr ""
+msgstr "DualDisc"
 
 #: DB:release_group_primary_type/name:3
 msgctxt "release_group_primary_type"
@@ -222,7 +230,7 @@ msgstr "EP"
 #: DB:gender/name:2
 msgctxt "gender"
 msgid "Female"
-msgstr "Féminin"
+msgstr "Femme"
 
 #: DB:area_alias_type/name:2
 msgctxt "alias_type"
@@ -242,87 +250,87 @@ msgstr "Groupe"
 #: DB:medium_format/name:17
 msgctxt "medium_format"
 msgid "HD-DVD"
-msgstr ""
+msgstr "HD-DVD"
 
 #: DB:medium_format/name:25
 msgctxt "medium_format"
 msgid "HDCD"
-msgstr ""
+msgstr "HDCD"
 
 #: DB:label_type/name:2
 msgctxt "label_type"
 msgid "Holding"
-msgstr ""
+msgstr "Holding"
 
 #: DB:release_group_secondary_type/name:4
 msgctxt "release_group_secondary_type"
 msgid "Interview"
-msgstr ""
+msgstr "Interview"
 
 #: DB:release_packaging/name:1
 msgctxt "release_packaging"
 msgid "Jewel Case"
-msgstr ""
+msgstr "Boîtier cristal"
 
 #: DB:release_packaging/name:6
 msgctxt "release_packaging"
 msgid "Keep Case"
-msgstr ""
+msgstr "Boîtier DVD"
 
 #: DB:label_alias_type/name:1
 msgctxt "alias_type"
 msgid "Label name"
-msgstr "Nom de label"
+msgstr "Nom du label"
 
 #: DB:medium_format/name:5
 msgctxt "medium_format"
 msgid "LaserDisc"
-msgstr ""
+msgstr "LaserDisc"
 
 #: DB:artist_alias_type/name:2
 msgctxt "alias_type"
 msgid "Legal name"
-msgstr ""
+msgstr "Nom d'état civil"
 
 #: DB:release_group_secondary_type/name:6
 msgctxt "release_group_secondary_type"
 msgid "Live"
-msgstr "Concert"
+msgstr "Live"
 
 #: DB:work_type/name:7
 msgctxt "work_type"
 msgid "Madrigal"
-msgstr ""
+msgstr "Madrigal"
 
 #: DB:gender/name:1
 msgctxt "gender"
 msgid "Male"
-msgstr "Masculin"
+msgstr "Homme"
 
 #: DB:work_type/name:8
 msgctxt "work_type"
 msgid "Mass"
-msgstr ""
+msgstr "Messe"
 
 #: DB:cover_art_archive.art_type/name:4
 msgctxt "cover_art_type"
 msgid "Medium"
-msgstr ""
+msgstr "Milieu"
 
 #: DB:medium_format/name:6
 msgctxt "medium_format"
 msgid "MiniDisc"
-msgstr ""
+msgstr "MiniDisc"
 
 #: DB:release_group_secondary_type/name:9
 msgctxt "release_group_secondary_type"
 msgid "Mixtape/Street"
-msgstr ""
+msgstr "Mixtape / Street"
 
 #: DB:work_type/name:9
 msgctxt "work_type"
 msgid "Motet"
-msgstr ""
+msgstr "Motet"
 
 #: DB:area_type/name:4
 msgctxt "area_type"
@@ -332,7 +340,7 @@ msgstr ""
 #: DB:release_packaging/name:7
 msgctxt "release_packaging"
 msgid "None"
-msgstr "Aucun"
+msgstr "Rien"
 
 #: DB:cover_art_archive.art_type/name:5
 msgctxt "cover_art_type"
@@ -357,12 +365,12 @@ msgstr ""
 #: DB:work_type/name:11
 msgctxt "work_type"
 msgid "Oratorio"
-msgstr ""
+msgstr "Oratorio"
 
 #: DB:label_type/name:4
 msgctxt "label_type"
 msgid "Original Production"
-msgstr ""
+msgstr "Production originale"
 
 #: DB:artist_type/name:3
 msgctxt "artist_type"
@@ -372,7 +380,7 @@ msgstr "Autre"
 #: DB:cover_art_archive.art_type/name:8
 msgctxt "cover_art_type"
 msgid "Other"
-msgstr ""
+msgstr "Autre"
 
 #: DB:gender/name:3
 msgctxt "gender"
@@ -397,12 +405,12 @@ msgstr "Autre"
 #: DB:work_type/name:12
 msgctxt "work_type"
 msgid "Overture"
-msgstr ""
+msgstr "Ouverture"
 
 #: DB:work_type/name:13
 msgctxt "work_type"
 msgid "Partita"
-msgstr ""
+msgstr "Partita"
 
 #: DB:artist_type/name:1
 msgctxt "artist_type"
@@ -412,7 +420,7 @@ msgstr "Personne"
 #: DB:medium_format/name:15
 msgctxt "medium_format"
 msgid "Piano Roll"
-msgstr ""
+msgstr "Rouleau de piano pneumatique"
 
 #: DB:work_type/name:21
 msgctxt "work_type"
@@ -427,7 +435,7 @@ msgstr "Production"
 #: DB:release_status/name:2
 msgctxt "release_status"
 msgid "Promotion"
-msgstr ""
+msgstr "Promotion"
 
 #: DB:work_type/name:23
 msgctxt "work_type"
@@ -437,7 +445,7 @@ msgstr ""
 #: DB:release_status/name:4
 msgctxt "release_status"
 msgid "Pseudo-Release"
-msgstr ""
+msgstr "Pseudo-Release"
 
 #: DB:label_type/name:7
 msgctxt "label_type"
@@ -447,17 +455,17 @@ msgstr "Éditeur"
 #: DB:work_type/name:14
 msgctxt "work_type"
 msgid "Quartet"
-msgstr "Quartet"
+msgstr "Quatuor"
 
 #: DB:medium_format/name:10
 msgctxt "medium_format"
 msgid "Reel-to-reel"
-msgstr ""
+msgstr "Bande magnétique"
 
 #: DB:label_type/name:6
 msgctxt "label_type"
 msgid "Reissue Production"
-msgstr ""
+msgstr "Production de rééditions"
 
 #: DB:release_group_secondary_type/name:7
 msgctxt "release_group_secondary_type"
@@ -472,28 +480,28 @@ msgstr ""
 #: DB:medium_format/name:3
 msgctxt "medium_format"
 msgid "SACD"
-msgstr ""
+msgstr "SACD"
 
 #: DB:medium_format/name:23
 msgctxt "medium_format"
 msgid "SVCD"
-msgstr ""
+msgstr "SVCD"
 
 #: DB:artist_alias_type/name:3 DB:label_alias_type/name:2
 #: DB:work_alias_type/name:2 DB:area_alias_type/name:3
 msgctxt "alias_type"
 msgid "Search hint"
-msgstr ""
+msgstr "Conseil de recherche"
 
 #: DB:release_group_primary_type/name:2
 msgctxt "release_group_primary_type"
 msgid "Single"
-msgstr ""
+msgstr "Single"
 
 #: DB:release_packaging/name:2
 msgctxt "release_packaging"
 msgid "Slim Jewel Case"
-msgstr ""
+msgstr "Boîtier cristal extra-plat "
 
 #: DB:work_type/name:5
 msgctxt "work_type"
@@ -508,7 +516,7 @@ msgstr "Chanson"
 #: DB:work_type/name:15
 msgctxt "work_type"
 msgid "Song-cycle"
-msgstr ""
+msgstr "Série de chansons"
 
 #: DB:release_group_secondary_type/name:2
 msgctxt "release_group_secondary_type"
@@ -528,12 +536,12 @@ msgstr ""
 #: DB:release_group_secondary_type/name:3
 msgctxt "release_group_secondary_type"
 msgid "Spokenword"
-msgstr ""
+msgstr "Texte parlé"
 
 #: DB:cover_art_archive.art_type/name:10
 msgctxt "cover_art_type"
 msgid "Sticker"
-msgstr ""
+msgstr "Autocollant"
 
 #: DB:area_type/name:2
 msgctxt "area_type"
@@ -543,22 +551,22 @@ msgstr ""
 #: DB:work_type/name:6
 msgctxt "work_type"
 msgid "Suite"
-msgstr ""
+msgstr "Suite"
 
 #: DB:work_type/name:18
 msgctxt "work_type"
 msgid "Symphonic poem"
-msgstr ""
+msgstr "Poème symphonique"
 
 #: DB:work_type/name:16
 msgctxt "work_type"
 msgid "Symphony"
-msgstr ""
+msgstr "Symphonie"
 
 #: DB:cover_art_archive.art_type/name:7
 msgctxt "cover_art_type"
 msgid "Track"
-msgstr ""
+msgstr "Piste"
 
 #: DB:cover_art_archive.art_type/name:9
 msgctxt "cover_art_type"
@@ -568,12 +576,12 @@ msgstr ""
 #: DB:medium_format/name:28
 msgctxt "medium_format"
 msgid "UMD"
-msgstr ""
+msgstr "UMD"
 
 #: DB:medium_format/name:26
 msgctxt "medium_format"
 msgid "USB Flash Drive"
-msgstr "Lecteur flash USB"
+msgstr "Clef USB"
 
 #: DB:medium_format/name:22
 msgctxt "medium_format"
@@ -588,27 +596,27 @@ msgstr "VHS"
 #: DB:medium_format/name:32
 msgctxt "medium_format"
 msgid "Videotape"
-msgstr "Cassette vidéo"
+msgstr "Vidéocassette"
 
 #: DB:medium_format/name:7
 msgctxt "medium_format"
 msgid "Vinyl"
-msgstr "Disque vinyle"
+msgstr "Disque vinyl"
 
 #: DB:medium_format/name:14
 msgctxt "medium_format"
 msgid "Wax Cylinder"
-msgstr "Cylindre phonographique"
+msgstr "Cylindre de cire"
 
 #: DB:work_alias_type/name:1
 msgctxt "alias_type"
 msgid "Work name"
-msgstr "Nom d'œuvre"
+msgstr "Nom de l’œuvre"
 
 #: DB:work_type/name:19
 msgctxt "work_type"
 msgid "Zarzuela"
-msgstr ""
+msgstr "Zarzuela"
 
 #: DB:medium_format/name:27
 msgctxt "medium_format"
