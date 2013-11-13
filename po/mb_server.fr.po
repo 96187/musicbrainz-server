@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-10-28 17:46-0700\n"
-"PO-Revision-Date: 2013-11-13 18:57+0000\n"
+"PO-Revision-Date: 2013-11-13 19:33+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -8881,7 +8881,7 @@ msgid ""
 "released too early to have disc IDs, where one of the medium formats didn't "
 "exist at the time the release was released or where a disc ID is attached to"
 " a medium whose format does not have disc IDs."
-msgstr ""
+msgstr "Ce rapport indique les parutions qui ont des IDs de disque même si elles sont parues trop tôt pour avoir des IDs, si un des format de support n'existait pas lors de la parution ou si une ID de disque est attachée à un support dont le format n'a pas d'ID de disque."
 
 #: ../root/report/featuring_releases.tt:6
 msgid ""
@@ -8965,7 +8965,7 @@ msgstr "Heure"
 
 #: ../root/layout/menu.tt:142
 msgid "Timeline Graph"
-msgstr ""
+msgstr "Graphique chronologique"
 
 #: ../root/account/preferences.tt:18
 msgid "Timezone:"
@@ -9068,7 +9068,7 @@ msgstr "Nombre total d'artistes trouvés : {count}"
 
 #: ../root/report/duplicate_artists.tt:14
 msgid "Total duplicate groups: {count}"
-msgstr ""
+msgstr "Total des groupes dupliqués : {comptage}"
 
 #: ../root/report/discogs_links_with_multiple_labels.tt:7
 #: ../root/report/duplicate_relationships_labels.tt:8
@@ -9094,7 +9094,7 @@ msgstr "Nombre total de groupes de sorties trouvés : {count}"
 
 #: ../root/report/set_in_different_rg.tt:13
 msgid "Total release groups: {count}"
-msgstr ""
+msgstr "Total des groupes de parution : {comptage}"
 
 #: ../root/report/asins_with_multiple_releases.tt:15
 #: ../root/report/bad_amazon_urls.tt:10
@@ -9125,7 +9125,7 @@ msgstr "Nombre total de sorties trouvées : {count}"
 #: ../root/report/tracks_without_times.tt:7
 #: ../root/report/tracks_with_sequence_issues.tt:9
 msgid "Total releases: {count}"
-msgstr ""
+msgstr "Total des parutions : {comptage}"
 
 #: ../root/cdstub/index.tt:17 ../root/cdtoc/info.tt:19
 msgid "Total tracks:"
@@ -9147,7 +9147,7 @@ msgstr ""
 #: ../root/release/edit/tracklist.tt:150 ../root/release/edit/tracklist.tt:385
 #: ../root/release/edit/tracklist.tt:386
 msgid "Track Parser"
-msgstr ""
+msgstr "Analyseur de piste"
 
 #: ../root/release/edit_relationships.tt:333
 msgid "Track Relationships"
@@ -9212,7 +9212,7 @@ msgstr "Pistes"
 
 #: ../root/report/index.tt:81
 msgid "Tracks whose names include their sequence numbers"
-msgstr ""
+msgstr "Pistes dont le nom inclut leur numéro de séquence"
 
 #: ../root/edit/details/historic/add_release.tt:44
 #: ../root/release_group/set_cover_art.tt:28
@@ -9373,7 +9373,7 @@ msgstr ""
 #: ../root/doc/relationship_type.tt:34
 #: ../root/relationship/linktype/tree.tt:16
 msgid "UUID:"
-msgstr ""
+msgstr "UUID :"
 
 #: ../root/main/401.tt:1 ../root/main/401.tt:3
 msgid "Unauthorized Request"
@@ -9433,7 +9433,7 @@ msgstr "Mettre à jour les tags"
 
 #: ../root/artist/merge.tt:19
 msgid "Update artist credits to use the new artist's name"
-msgstr ""
+msgstr "Mettre à jour les valeurs d'artiste avec le nouveau nom d'artiste"
 
 #: ../root/collection/edit_form.tt:20
 msgid "Update collection"
@@ -9477,7 +9477,7 @@ msgstr "Utiliser les champs suivant pour entrer les collaborations. Voir la docu
 
 #: ../root/release/edit/tracklist.tt:230
 msgid "Use the following fields to search for a CD stub."
-msgstr ""
+msgstr "Utiliser"
 
 #: ../root/release/edit/tracklist.tt:237
 msgid "Use the following fields to search for a FreeDB entry."
@@ -9520,7 +9520,7 @@ msgid ""
 "may specify the new order of mediums. The order does not have to be "
 "continuous, but all medium positions must be positive, and multiple mediums "
 "cannot be in the same position"
-msgstr ""
+msgstr "En utilisant cette stratégie de fusion tous les supports de toutes les parutions seront utilisés. Vous pouvez spécifier le nouvel ordre des supports. L'ordre n'a pas à être continu mais toutes les positions de support doivent être positives et différents supports ne peuvent pas être à la me position."
 
 #: ../root/search/form.tt:54
 msgid ""
@@ -9615,7 +9615,7 @@ msgstr ""
 
 #: ../root/edit/index.tt:26
 msgid "Vote tally:"
-msgstr ""
+msgstr "Pointage des votes :"
 
 #: ../root/user/profile.tt:155
 msgid "Voted down"
@@ -9623,7 +9623,7 @@ msgstr "Voté contre"
 
 #: ../root/elections/show.tt:111
 msgid "Voter"
-msgstr ""
+msgstr "Votant"
 
 #: ../root/doc/edit_type.tt:62 ../root/edit/index.tt:19
 #: ../root/user/edits.tt:15
