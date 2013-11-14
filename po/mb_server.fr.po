@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-14 21:58+0000\n"
+"PO-Revision-Date: 2013-11-14 22:43+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -1145,7 +1145,7 @@ msgstr "Etes-vous sûr de vouloir promouvoir l'éditeur {editor} au statut d'aut
 
 #: ../root/alias/delete.tt:1
 msgid "Are you sure you want to remove the alias <em>{alias}</em>?"
-msgstr ""
+msgstr "Êtes-vous sûr de vouloir enlever l'alias <em>{alias}</em> ?"
 
 #: ../root/collection/delete.tt:4
 msgid "Are you sure you want to remove the collection {collection}?"
@@ -1159,7 +1159,7 @@ msgstr "Êtes-vous sûr de vouloir enlever l'ID de disque <code>{discid}</code> 
 
 #: ../root/account/remove_application.tt:5
 msgid "Are you sure you want to remove this application?"
-msgstr ""
+msgstr "Êtes-vous sur de vouloir enlever cette application ?"
 
 #: ../root/account/revoke_application_access.tt:5
 msgid "Are you sure you want to revoke this application's access?"
@@ -1189,7 +1189,7 @@ msgstr "Êtes-vous sûr de vouloir enlever la relation de type <strong>{link_typ
 
 #: ../root/area/delete.tt:5
 msgid "Are you sure you wish to remove the area {area} from MusicBrainz?"
-msgstr ""
+msgstr "Êtes-vous sur de vouloir enlever la zone {area} de MusicBrainz ?"
 
 #: ../root/release/remove_cover_art.tt:4
 msgid ""
@@ -5259,7 +5259,7 @@ msgstr "Note :"
 msgid ""
 "Note: only searches edits that: add or edit relationships, created after "
 "2011-05-16; or which remove relationships, created after 2013-07-08."
-msgstr ""
+msgstr "Attention : recherche seulement des modifications créées après le 16-05-2011 qui ajoutent ou modifient des relations ou créées après le 08-07-2013 qui enlèvent des relations."
 
 #: ../root/account/preferences.tt:37
 msgid "Notify me by email on new releases to my watched artists"
@@ -6180,7 +6180,7 @@ msgid ""
 "edited, relationships highlighted <span class=\"rel-remove\">red</span> will"
 " be removed, and relationships highlighted <span class=\"rel-"
 "add\">green</span> will be added."
-msgstr ""
+msgstr "Les relations en surbrillance <span class=\"rel-edit\">yellow</span> seront modifiées, les relations en surbrillance <span class=\"rel-remove\">red</span> seront enlevées et les relations en surbrillance <span class=\"rel-add\">green</span> seront ajoutées."
 
 #: ../root/edit/details/historic/add_relationship.tt:3
 #: ../root/edit/details/remove_relationship_(historic).tt:3
@@ -6585,15 +6585,15 @@ msgstr "Enlever"
 #: ../root/account/remove_application.tt:1
 #: ../root/account/remove_application.tt:3
 msgid "Remove Application"
-msgstr ""
+msgstr "Enlever l'application"
 
 #: ../root/area/delete.tt:2
 msgid "Remove Area"
-msgstr ""
+msgstr "Enlever la zone"
 
 #: ../root/area/delete_alias.tt:1
 msgid "Remove Area Alias"
-msgstr ""
+msgstr "Enlever l'alias de zone"
 
 #: ../root/artist/delete_alias.tt:1
 msgid "Remove Artist Alias"
@@ -6613,11 +6613,11 @@ msgstr "Enlever l'ID de disque"
 
 #: ../root/release/edit/information.tt:80
 msgid "Remove Event"
-msgstr ""
+msgstr "Enlever l'Évènement"
 
 #: ../root/relationship/linktype/form.tt:60
 msgid "Remove Example"
-msgstr ""
+msgstr "Enlever l'exemple"
 
 #: ../root/label/delete.tt:2 ../root/release/edit/information.tt:121
 msgid "Remove Label"
@@ -6633,7 +6633,7 @@ msgstr "Enlever la page"
 
 #: ../root/place/delete_alias.tt:1
 msgid "Remove Place Alias"
-msgstr ""
+msgstr "Enlever l'alias de Lieu"
 
 #: ../root/recording/delete.tt:2
 msgid "Remove Recording"
@@ -6671,12 +6671,12 @@ msgstr "Enlever l'alias d'oeuvre"
 
 #: ../root/area/layout.tt:63 ../lib/MusicBrainz/Server/Edit/Area/Delete.pm:10
 msgid "Remove area"
-msgstr ""
+msgstr "Enlever la zone"
 
 #: ../root/area/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Area/DeleteAlias.pm:14
 msgid "Remove area alias"
-msgstr ""
+msgstr "Enlever l'alias de zone"
 
 #: ../root/artist/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Artist/DeleteAlias.pm:14
@@ -6713,7 +6713,7 @@ msgstr "Enlever l'alias du label"
 #: ../root/place/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Place/DeleteAlias.pm:14
 msgid "Remove place alias"
-msgstr ""
+msgstr "Enlever l'alias de lieu"
 
 #: ../root/recording/layout.tt:35
 #: ../lib/MusicBrainz/Server/Edit/Recording/Delete.pm:12
@@ -8186,7 +8186,7 @@ msgstr ""
 msgid ""
 "This area cannot be removed because there are still artists, labels, and/or "
 "releases using it."
-msgstr ""
+msgstr "Cette zone ne peut pas être enlevée car des artistes, label et/ou parutions l'utilisent encore."
 
 #: ../root/area/edit_form.tt:23
 msgid "This area has ended."
@@ -8416,7 +8416,7 @@ msgid ""
 "This label has no relationships or releases and will be removed "
 "automatically in the next few days. If this is not intended, please add more"
 " data to this label."
-msgstr ""
+msgstr "Ce label n'a pas de relation ou de parution et sera enlevé automatiquement durant les prochains jours. Si cela n'est pas votre intention, veuillez ajouter des données à ce label."
 
 #: ../root/label/tags.tt:2
 msgid "This label has no tags."
@@ -8469,7 +8469,7 @@ msgstr ""
 msgid ""
 "This place has no relationships and will be removed automatically in the "
 "next few days. If this is not intended, please add more data to this place."
-msgstr ""
+msgstr "Ce lieu n'a pas de relation et sera enlevé automatiquement durant les prochains jours. Si ce n'est pas votre intention, veuillez ajouter plus de données à ce lieu."
 
 #: ../root/place/tags.tt:2
 msgid "This place has no tags."
@@ -8541,7 +8541,7 @@ msgid ""
 "This release group has no relationships or releases associated, and will be "
 "removed automatically in the next few days. If this is not intended, please "
 "add more data to this release group."
-msgstr ""
+msgstr "Ce groupe de parution n'a pas de relation ou de parution qui lui soit associé et sera enlevé automatiquement durant les prochains jours. Si ce n'est pas votre intention, veuillez ajouter plus de données à ce groupe de parution."
 
 #: ../root/release_group/tags.tt:2
 msgid "This release group has no tags."
@@ -8807,7 +8807,7 @@ msgid ""
 "This report shows releases that have a single medium, where this medium also"
 " has a specific name. Usually, this is not necessary and is duplicate "
 "information which can be removed."
-msgstr ""
+msgstr "Ce rapport montre les parutions sur support simple pour lesquelles le support a aussi un nom spécifique. Habituellement ceci n'est pas nécessaire et est de l'information en double qui sera enlevée."
 
 #: ../root/report/releases_with_unlikely_language_script.tt:6
 msgid ""
@@ -8866,7 +8866,7 @@ msgid ""
 " releases}. If the releases are not really part of a set (for example, if "
 "they are independently-released volumes in a series) just remove the "
 "relationship."
-msgstr "Ce rapport montre les parutions qui ont encore la relation obsolète « partie d'un ensemble » et devrait probablement être fusionnées. Pour des instructions sur comment les réparer, veuillez consulter la documentation sur {how_to_merge_releases|comment fusionner des parutions}. Si les parutions ne font pas vraiment partie d'un ensemble (par exemple si elles sont des volumes d'une série parus indépendamment) enlevez juste la relation. "
+msgstr "Ce rapport montre les parutions qui ont encore la relation obsolète « partie d'un ensemble » et devrait probablement être fusionnées. Pour des instructions sur comment les corriger, veuillez consulter la documentation sur {how_to_merge_releases|comment fusionner des parutions}. Si les parutions ne font pas vraiment partie d'un ensemble (par exemple si elles sont des volumes d'une série parus indépendamment) enlevez juste la relation. "
 
 #: ../root/report/some_formats_unset.tt:6
 msgid ""
@@ -8917,7 +8917,7 @@ msgid ""
 "This report shows releases with Amazon URLs which don't follow the expected "
 "format. They might still be correct if they're archive.org cover links, but "
 "in any other case they should probably be fixed or removed."
-msgstr ""
+msgstr "Ce rapport montre les parutions avec des URLs d'Amazon qui ne répondent au format attendu. Elles sont peut-être quand même correctes si elles sont des liens de jaquette archive.org, mais dans tous les autres cas elles devraient probablement être corrigées ou enlevées."
 
 #: ../root/report/unlinked_pseudo_releases.tt:6
 msgid ""
@@ -11608,7 +11608,7 @@ msgstr "Enlever l’événement de parution (historique)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveReleases.pm:11
 msgid "Remove releases (historic)"
-msgstr ""
+msgstr "Enlever les parutions (historique)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/SACToMAC.pm:15
 msgid "Convert release to multiple artists (historic)"
@@ -11661,7 +11661,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Edit/Place/Delete.pm:10
 msgid "Remove place"
-msgstr ""
+msgstr "Enlever le lieu"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/Edit.pm:35
 msgid "Edit place"
@@ -11761,7 +11761,7 @@ msgstr "Modifier le label de parution"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/RemoveCoverArt.pm:19
 msgid "Remove cover art"
-msgstr "Enlever une jaquette"
+msgstr "Enlever la jaquette"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/ReorderCoverArt.pm:22
 msgid "Reorder cover art"
