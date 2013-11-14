@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-14 19:54+0000\n"
+"PO-Revision-Date: 2013-11-14 20:59+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -1338,7 +1338,7 @@ msgstr ""
 
 #: ../root/artist/not_found.tt:1 ../root/artist/not_found.tt:2
 msgid "Artist Not Found"
-msgstr "Artiste non trouvé"
+msgstr "Artiste introuvable"
 
 #: ../root/user/subscriptions/artist.tt:1 ../root/user/subscriptions/menu.tt:3
 msgid "Artist Subscriptions"
@@ -1614,7 +1614,7 @@ msgstr "Mauvaise requête"
 #: ../root/release_group/index.tt:30 ../root/release_group/releases-list.tt:28
 #: ../root/release/merge.tt:35 ../root/search/lib/inline-results-release.tt:17
 msgid "Barcode"
-msgstr "Code-barre"
+msgstr "Code-barres"
 
 #: ../root/cdstub/edit_form.tt:7 ../root/cdstub/layout.tt:16
 #: ../root/edit/details/add_release.tt:67
@@ -1625,7 +1625,7 @@ msgstr "Code-barre"
 #: ../root/release/edit/information.tt:139 ../root/release/index.tt:17
 #: ../root/release/sidebar.tt:29
 msgid "Barcode:"
-msgstr "Code-barre :"
+msgstr "Code-barres :"
 
 #: ../root/cdtoc/lookup.tt:30
 msgid ""
@@ -1877,7 +1877,7 @@ msgstr "Résultat de la recherche de CD"
 
 #: ../root/cdtoc/lookup.tt:83
 msgid "CD Not Found"
-msgstr "CD non trouvé"
+msgstr "CD introuvable"
 
 #: ../root/search/results-cdstub.tt:8
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:42
@@ -2178,7 +2178,7 @@ msgstr "Collection"
 
 #: ../root/collection/not_found.tt:1 ../root/collection/not_found.tt:2
 msgid "Collection Not Found"
-msgstr "Collection non trouvée"
+msgstr "Collection introuvable"
 
 #: ../root/user/subscriptions/collection.tt:1
 #: ../root/user/subscriptions/menu.tt:4
@@ -2635,7 +2635,7 @@ msgstr "Discographie"
 #: ../root/report/discogs_links_with_multiple_artists.tt:1
 #: ../root/report/discogs_links_with_multiple_artists.tt:3
 msgid "Discogs URLs Linked to Multiple Artists"
-msgstr ""
+msgstr "URLs Discogs liées vers Plusieurs Artistes"
 
 #: ../root/report/discogs_links_with_multiple_labels.tt:1
 #: ../root/report/discogs_links_with_multiple_labels.tt:3
@@ -2654,7 +2654,7 @@ msgstr "URL Discogs liée à plusieurs parutions"
 
 #: ../root/report/index.tt:24
 msgid "Discogs URLs linked to multiple artists"
-msgstr ""
+msgstr "URLs Discogs liées vers plusieurs artistes"
 
 #: ../root/report/index.tt:32
 msgid "Discogs URLs linked to multiple labels"
@@ -2830,7 +2830,7 @@ msgstr "Modifier le alias du label"
 
 #: ../root/edit/not_found.tt:1 ../root/edit/not_found.tt:2
 msgid "Edit Not Found"
-msgstr "Modification non trouvée"
+msgstr "Modification introuvable"
 
 #: ../root/forms/edit-note.tt:2
 #: ../lib/MusicBrainz/Server/Wizard/ReleaseEditor.pm:83
@@ -3056,7 +3056,7 @@ msgstr ""
 
 #: ../root/user/not_found.tt:1 ../root/user/not_found.tt:2
 msgid "Editor Not Found"
-msgstr "Éditeur non trouvé"
+msgstr "Éditeur introuvable"
 
 #: ../root/user/subscriptions/editor.tt:1 ../root/user/subscriptions/menu.tt:6
 msgid "Editor Subscriptions"
@@ -3134,7 +3134,7 @@ msgstr "Modifications de \"{name}\""
 
 #: ../root/elections/not_found.tt:1 ../root/elections/not_found.tt:2
 msgid "Election Not Found"
-msgstr "Élection non trouvée"
+msgstr "Élection introuvable"
 
 #: ../root/account/preferences.tt:30
 msgid "Email"
@@ -3295,7 +3295,7 @@ msgstr ""
 
 #: ../root/otherlookup/not_found.tt:1 ../root/otherlookup/not_found.tt:2
 msgid "Entity Not Found"
-msgstr "Entité non trouvée"
+msgstr "Entité introuvable"
 
 #: ../root/edit/details/edit_relationship_type.tt:6
 msgid "Entity types:"
@@ -3555,7 +3555,7 @@ msgstr "Fondé le :"
 
 #: ../root/freedb/not_found.tt:1 ../root/freedb/not_found.tt:2
 msgid "FreeDB Entry Not Found"
-msgstr "Entrée FreeDB non trouvé"
+msgstr "Entrée FreeDB introuvable"
 
 #: ../root/layout/menu.tt:189
 msgid "FreeDB Gateway"
@@ -3725,7 +3725,7 @@ msgstr "Comment fonctionnent les modifications"
 
 #: ../root/release/edit/information.tt:215
 msgid "I confirm that this is the barcode as it appears on the release."
-msgstr "Je confirme que c'est le code à barres tel qu'il apparaît sur la parution."
+msgstr "Je confirme que c'est le code-barres tel qu'il est sur la parution."
 
 #: ../root/taglookup/nag.tt:25
 msgid "I just donated! Why am I seeing this?"
@@ -3944,7 +3944,7 @@ msgstr "Si vous modifiez votre adresse courriel, vous devrez la faire valider."
 msgid ""
 "If you do not know whether the release has a barcode or not, just leave this"
 " blank."
-msgstr "Si vous ne savez pas si cette parution a un code à barres ou pas, laissez ce champ vide."
+msgstr "Si vous ne savez pas si cette parution a un code-barres ou pas, laissez ce champ vide."
 
 #: ../root/cdtoc/attach_filter_artist.tt:48
 msgid ""
@@ -4182,7 +4182,7 @@ msgstr ""
 
 #: ../root/label/not_found.tt:1 ../root/label/not_found.tt:2
 msgid "Label Not Found"
-msgstr "Label non trouvé"
+msgstr "Label introuvable"
 
 #: ../root/user/subscriptions/label.tt:1 ../root/user/subscriptions/menu.tt:5
 msgid "Label Subscriptions"
@@ -5242,7 +5242,7 @@ msgstr "Utilisateur normal"
 
 #: ../root/scripts/text_strings.tt:82
 msgid "Not found? Try again with direct search."
-msgstr "Pas trouvé ? Essayez avec une recherche directe."
+msgstr "introuvable ? Essayez à nouveau avec une recherche directe."
 
 #: ../root/release/edit/information.tt:174
 msgid ""
@@ -5456,7 +5456,7 @@ msgstr "Emballage :"
 #: ../root/main/404.tt:4 ../root/main/404.tt:6 ../root/main/mirror_404.tt:1
 #: ../root/main/mirror_404.tt:3
 msgid "Page Not Found"
-msgstr "Page non trouvée"
+msgstr "Page introuvable"
 
 #: ../root/admin/wikidoc/index.tt:32
 msgid "Page name"
@@ -5613,7 +5613,7 @@ msgstr "Veuillez penser à ajouter ce CD, cette parution, à MusicBrainz. Pour a
 
 #: ../root/scripts/text_strings.tt:68
 msgid "Please double-check the barcode on the release."
-msgstr "Veuillez vérifier soigneusement le code à barre s de la parution."
+msgstr "Veuillez vérifier soigneusement le code-barres de la parution."
 
 #: ../root/components/tag.tt:7
 msgid ""
@@ -5625,7 +5625,7 @@ msgstr "Entrez les marqueurs dans la zone de texte ci-dessous. Les marqueurs son
 msgid ""
 "Please enter the barcode of the release you are entering, see <a "
 "href=\"{url}\" target=\"_blank\">Barcode</a> for more information."
-msgstr ""
+msgstr "Veuillez saisir le code-barres pour la parution. Voir <a href=\"{url}\" target=\"_blank\">Code-barres</a> pour plus d'informations."
 
 #: ../root/release/merge_search.tt:6
 msgid ""
@@ -5976,7 +5976,7 @@ msgstr "Détails de l'enregistrement"
 
 #: ../root/recording/not_found.tt:1 ../root/recording/not_found.tt:2
 msgid "Recording Not Found"
-msgstr "Enregistrement non trouvé"
+msgstr "Enregistrement introuvable"
 
 #: ../root/recording/edits.tt:20 ../root/recording/header.tt:19
 msgid "Recording by {artist}"
@@ -6471,7 +6471,7 @@ msgstr "Parutions ayant des URLs Amazon inattendues"
 #: ../root/report/index.tt:48 ../root/report/releases_to_convert.tt:1
 #: ../root/report/releases_to_convert.tt:3
 msgid "Releases which might need converting to \"multiple artists\""
-msgstr "Parutions qui devraient être converties en \"artistes divers\""
+msgstr "Parutions qui devraient être converties en \"plusieurs artistes\""
 
 #: ../root/report/releases_with_coverart_links.tt:1
 #: ../root/report/releases_with_coverart_links.tt:3
@@ -7852,30 +7852,30 @@ msgstr ""
 
 #: ../root/scripts/text_strings.tt:65
 msgid "The barcode you entered is a valid EAN code."
-msgstr "Le code-barre que vous avez entré est un code EAN valide."
+msgstr "Le code-barres que vous avez saisi est un code EAN valide."
 
 #: ../root/scripts/text_strings.tt:63
 msgid "The barcode you entered is a valid UPC code."
-msgstr "Le code-barre que vous avez entré est un code UPC valide."
+msgstr "Le code-barres que vous avez saisi est un code UPC valide."
 
 #: ../root/scripts/text_strings.tt:64
 msgid ""
 "The barcode you entered is either an invalid UPC code, or an EAN code with "
 "the check digit missing."
-msgstr "Le code-barre que vous avez entré n'est pas un code UPC valide, ou est un code EAN sans le chiffre de contrôle."
+msgstr "Le code-barres que vous avez saisi n'est pas un code UPC valide, ou est un code EAN sans le chiffre de contrôle."
 
 #: ../root/scripts/text_strings.tt:66
 msgid "The barcode you entered is not a valid EAN code."
-msgstr "Le code-barre que vous avez entré n'est pas un code EAN valide."
+msgstr "Le code-barres que vous avez saisi n'est pas un code EAN valide."
 
 #: ../root/scripts/text_strings.tt:67
 msgid "The barcode you entered is not a valid UPC or EAN code."
-msgstr "Le code-barre que vous avez entré n'est pas un code EAN ou UPC valide."
+msgstr "Le code-barres que vous avez saisi n'est pas un code EAN ou UPC valide."
 
 #: ../root/scripts/text_strings.tt:62
 msgid ""
 "The barcode you entered looks like a UPC code with the check digit missing."
-msgstr "Le code-barre que vous avez entré ressemble à un code UPC, mais sans son chiffre de contrôle."
+msgstr "Le code-barres que vous avez saisi ressemble à un code UPC, mais sans son chiffre de contrôle."
 
 #: ../root/main/index.tt:44
 msgid "The blog is currently unavailable."
@@ -8024,7 +8024,7 @@ msgid ""
 "The tracklist found looks like it may have different artists on some tracks."
 " If the below display looks correct, you should import this release as a "
 "release with multiple artists."
-msgstr ""
+msgstr "La liste des pistes trouvée semble avoir plusieurs artistes sur certaines pistes. Si cela semble correct, vous devriez importe cette parution en tant que parution à plusieurs artistes."
 
 #: ../root/taglookup/nag.tt:4
 msgid "The users make MusicBrainz happen and we appreciate your help!"
@@ -8318,7 +8318,7 @@ msgstr "Cette modification apporte des changements sub-secondaires aux durées d
 msgid ""
 "This edit was a \"Merge Releases (Various Artists)\" edit which additionally"
 " set the release artist to Various Artists."
-msgstr ""
+msgstr "Cette modification « Fusion des parutions (artistes divers) » change l'artiste de parution vers « Artistes divers »."
 
 #: ../root/components/common-macros.tt:673
 msgid "This edit was cancelled."
@@ -8584,7 +8584,7 @@ msgid ""
 "artists (because the track artists are on the title field, for example). "
 "Currently it does this by looking for releases where every track contains "
 "\"/\" or \"-\"."
-msgstr ""
+msgstr "Ce rapport vise à identifier les parutions qui doivent être converties en plusieurs artistes (car, par exemple, les artistes par piste sont dans le champs de titre). Actuellement cela ce fait pour les parutions dont toutes les pistes contiennent  « / » ou « - »."
 
 #: ../root/report/tracks_without_times.tt:6
 msgid ""
@@ -8667,7 +8667,7 @@ msgid ""
 "artist, label or URL using the same relationship type. For multiple "
 "relationships to release groups, recordings or works, see the reports for "
 "those entities."
-msgstr ""
+msgstr "Ce rapport liste les artistes qui ont plusieurs relations vers le même artiste, label ou URL tout en ayant le même type de relation. Pour plusieurs relations vers des groupes de parution, enregistrements ou œuvres, voir les rapports pour ces entités."
 
 #: ../root/report/duplicate_relationships_labels.tt:6
 msgid ""
@@ -8733,11 +8733,11 @@ msgid ""
 " barcode, you can also search Amazon for it and see which ASIN matches. You "
 "might also find some ASINs linked to several discs of a multi-disc release: "
 "just merge those (see {how_to_merge_releases|How to Merge Releases})."
-msgstr ""
+msgstr "Ce rapport montre les URLs d'Amazon qui sont liées à plusieurs parutions. Dans la plupart des cas les ASINs d'Amazon devrait mapper 1:1 vers des parutions MusicBrainz afin que seul un des liens soit correct. Vérifier quelle parution MusicBrainz convient avec la parution Amazon (regarder le format, liste des pistes, etc....) Si la parution a une code-barres vous pouvez le rechercher dans Amazon et voir quel ASIN concorde. Certains ASINs peuvent être liés à plusieurs disques d'une parution multi-disques : fusionnez-lez (voir {how_to_merge_releases|Comment fusionner des parutions})."
 
 #: ../root/report/discogs_links_with_multiple_artists.tt:6
 msgid "This report shows Discogs URLs which are linked to multiple artists."
-msgstr ""
+msgstr "Ce rapport montre les URLs Discogs qui sont liées à plusieurs artistes."
 
 #: ../root/report/discogs_links_with_multiple_labels.tt:6
 msgid "This report shows Discogs URLs which are linked to multiple labels."
@@ -8828,7 +8828,7 @@ msgid ""
 " be correct. Just check which ones do not fit the release (because of "
 "format, different number of tracks, etc). If the release has a barcode, you "
 "can search Amazon for it and see which ASIN matches."
-msgstr ""
+msgstr "Ce rapport montre les parutions qui ont plus d'un ASIN d'Amazon. Dans la plupart des cas les ASINs d'Amazon devrait mapper 1:1 vers des parutions MusicBrainz afin qu'un seul soit correct. Vérifier lequel ne correspond pas à la parution (à cause du format, nombre de pistes différent,etc....) Si la parution a une code-barres vous pouvez le rechercher dans Amazon et voir quel ASIN concorde."
 
 #: ../root/report/multiple_discogs_links.tt:6
 msgid ""
@@ -9373,7 +9373,7 @@ msgstr "Information de l'URL"
 
 #: ../root/url/not_found.tt:1 ../root/url/not_found.tt:2
 msgid "URL Not Found"
-msgstr "URL non trouvée"
+msgstr "URL introuvable"
 
 #: ../root/url/relationships.tt:1
 msgid "URL Relationships"
@@ -9923,7 +9923,7 @@ msgstr ""
 
 #: ../root/work/not_found.tt:1 ../root/work/not_found.tt:2
 msgid "Work Not Found"
-msgstr "Oeuvre non trouvée"
+msgstr "Oeuvre introuvable"
 
 #: ../root/release/edit_relationships.tt:96
 msgid "Work Type:"
@@ -10307,11 +10307,11 @@ msgstr ""
 msgid ""
 "You have used the {valink|Various Artists} special purpose artist on this "
 "recording."
-msgstr ""
+msgstr "Vous avez utilisé l'artiste à usage spécial {valink|Artistes divers} pour cet enregistrement."
 
 #: ../root/release/edit/tracklist.tt:126
 msgid "You have used the {valink|Various Artists} special purpose artist on:"
-msgstr ""
+msgstr "Vous avez utilisé l'artiste à usage spécial {valink|Artistes divers} pour :"
 
 #: ../root/scripts/text_strings.tt:123
 msgid "You haven't made any changes!"
@@ -11168,13 +11168,13 @@ msgstr "{user} n'a rien marqué."
 msgid ""
 "{valink|Various Artists} should very rarely be used on recordings, make sure"
 " that the artist has been entered correctly."
-msgstr ""
+msgstr "{valink|Artistes divers} ne devrait être utilisé que très rarement pour les enregistrements. Assurez-vous que l'artiste a été saisi correctement."
 
 #: ../root/release/edit/tracklist.tt:130
 msgid ""
 "{valink|Various Artists} should very rarely be used on tracks, make sure "
 "that the artists on these tracks have been entered correctly."
-msgstr ""
+msgstr "{valink|Artistes divers} ne devrait être utilisé que très rarement pour les pistes. Assurez-vous que les artistes sur ces pistes ont été saisis correctement."
 
 #: ../root/components/common-macros.tt:717
 msgid "{yes} yes : {no} no"
@@ -11235,7 +11235,7 @@ msgstr "Désolé, ce lien de vérification de courriel a expiré."
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:221
 #, perl-brace-format
 msgid "The user with ID '{user_id}' could not be found."
-msgstr "L'utilisateur #{user_id} n'a pas été trouvé."
+msgstr "L'utilisateur avec l'ID #{user_id} n'a pu être trouvé."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:135
 msgid ""
@@ -11355,7 +11355,7 @@ msgstr "Type invalide"
 
 #: ../lib/MusicBrainz/Server/Controller/Edit/Relationship.pm:326
 msgid "Entity not found"
-msgstr "Entité non trouvée"
+msgstr "Entité introuvable"
 
 #: ../lib/MusicBrainz/Server/Controller/FreeDB.pm:37
 #, perl-brace-format
@@ -11444,7 +11444,7 @@ msgstr "Le nombre de piste transmises ne correspond pas au nombre de pistes dans
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:144
 msgid "Invalid barcode"
-msgstr "Code-barre invalide"
+msgstr "Code-barres invalide"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:154
 msgid "There are already MusicBrainz releases with this disc ID"
@@ -11612,7 +11612,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/SACToMAC.pm:15
 msgid "Convert release to multiple artists (historic)"
-msgstr ""
+msgstr "Convertir la parution en plusieurs artistes (historique)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/SetTrackLengthsFromCDTOC.pm:10
 #: ../lib/MusicBrainz/Server/Edit/Medium/SetTrackLengths.pm:18
@@ -11749,7 +11749,7 @@ msgstr "Modifier l'artiste de parution"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/EditBarcodes.pm:19
 msgid "Edit barcodes"
-msgstr "Modifier le code-barre"
+msgstr "Modifier le code-barres"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/EditCoverArt.pm:22
 msgid "Edit cover art"
@@ -11965,7 +11965,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Form/CDStub.pm:73
 msgid "Must be a valid barcode"
-msgstr "Ce doit être un code barre valide"
+msgstr "Ce doit être un code-barres valide"
 
 #: ../lib/MusicBrainz/Server/Form/Field/ArtistCredit.pm:49
 #, perl-brace-format
@@ -12120,7 +12120,7 @@ msgstr "Vous devez fournir une note de modification lors de l'ajout d'une paruti
 msgid ""
 "This barcode is invalid, please check that you've correctly entered the "
 "barcode."
-msgstr "Ce code barre est invalide. Merci de vérifier que vous l'avez saisi correctement."
+msgstr "Ce code-barres est invalide. Veuillez vérifier que vous l'avez saisi correctement."
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Information.pm:93
 msgid "You cannot use the same country more than once"
@@ -12223,7 +12223,7 @@ msgstr "L'ancien mot de passe est incorrect"
 
 #: ../lib/MusicBrainz/Server/Form/User/ChangePassword.pm:54
 msgid "An account with this name could not be found"
-msgstr ""
+msgstr "Un compte avec ce nom n'a pu être trouvé"
 
 #: ../lib/MusicBrainz/Server/Form/User/EditProfile.pm:22
 msgid "Invalid URL format"
