@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-14 18:00+0000\n"
+"PO-Revision-Date: 2013-11-14 18:42+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -1125,7 +1125,7 @@ msgstr "Êtes-vous sûr de vouloir fusionner {release1} par {artist1} avec {rele
 msgid ""
 "Are you sure that you wish to attach the disc ID <code>{discid}</code> to "
 "{format} {pos} of {release} by {artist}?"
-msgstr "Voulez-vous vraiment rattacher le disc ID <code>{discid}</code> à {format} {pos} de la sortie {release} par {artist} ?"
+msgstr "Voulez-vous vraiment rattacher l'ID de disque <code>{discid}</code> à {format} {pos} de {release} par {artist} ?"
 
 #: ../root/admin/delete_user.tt:4
 msgid ""
@@ -1195,7 +1195,7 @@ msgstr ""
 msgid ""
 "Are you sure you wish to remove the below cover art from {release} by "
 "{artist}?"
-msgstr "Voulez-vous vraiment enlever la jaquette ci-dessous de la sortie {release} par {artist} ?"
+msgstr "Voulez-vous vraiment enlever la pochette ci-dessous de la parution {release} par {artist} ?"
 
 #: ../root/label/delete.tt:5
 msgid "Are you sure you wish to remove the label {label} from MusicBrainz?"
@@ -3934,7 +3934,7 @@ msgstr ""
 
 #: ../root/cdtoc/attach_artist_releases.tt:68
 msgid "If you can't find what you're looking for, you can add a new release:"
-msgstr "Si vous ne trouvez pas ce que vous cherchez, vous pouvez créer une nouvelle sortie :"
+msgstr "Si vous ne trouvez pas ce que vous cherchez, vous pouvez créer une nouvelle parution :"
 
 #: ../root/account/edit.tt:19
 msgid "If you change your email address, you will be required to verify it. "
@@ -3957,7 +3957,7 @@ msgstr "Si vous ne voyez pas l'artiste que vous cherchez, vous pouvez créer une
 msgid ""
 "If you don't see the release you are looking for, you can still add a new "
 "one, using this CD TOC:"
-msgstr "Si vous ne voyez pas la sortie que vous cherchez, vous pouvez en créer une nouvelle, en utilisant cet Index de CD :"
+msgstr "Si vous ne voyez pas la parution que vous cherchez, vous pouvez en créer une nouvelle, en utilisant cet Index de CD :"
 
 #: ../root/taglookup/nag.tt:18
 msgid ""
@@ -5724,7 +5724,7 @@ msgstr ""
 
 #: ../root/cdstub/import.tt:3
 msgid "Please search for the artist you wish to create a new release for:"
-msgstr "Merci de chercher l'artiste pour lequel vous souhaitez créer une nouvelle sortie :"
+msgstr "Veuillez chercher l'artiste pour lequel vous souhaitez créer une nouvelle parution :"
 
 #: ../root/release/add_cover_art.tt:90 ../root/release/cover_art_fields.tt:8
 msgid ""
@@ -6021,7 +6021,7 @@ msgstr "Enregistrements commençant par \"{index}\""
 #: ../root/report/recordings_with_earliest_release_relationships.tt:1
 #: ../root/report/recordings_with_earliest_release_relationships.tt:3
 msgid "Recordings with Earliest Release Relationships"
-msgstr "Enregistrements avec la plus récente relation avec la sortie"
+msgstr "Enregistrements avec les plus récentes relations de parution"
 
 #: ../root/report/recordings_with_varying_track_lengths.tt:1
 #: ../root/report/recordings_with_varying_track_lengths.tt:3
@@ -6030,7 +6030,7 @@ msgstr ""
 
 #: ../root/report/index.tt:80
 msgid "Recordings with earliest release relationships"
-msgstr "Enregistrements avec la plus récente relation avec la sortie"
+msgstr "Enregistrements avec les plus récentes relations de parution"
 
 #: ../root/report/duplicate_relationships_recordings.tt:1
 #: ../root/report/duplicate_relationships_recordings.tt:3
@@ -6207,7 +6207,7 @@ msgstr "Parution"
 
 #: ../root/recording/index.tt:13
 msgid "Release Artist"
-msgstr "Artiste de la sortie"
+msgstr "Artiste de parution"
 
 #: ../root/edit/search_macros.tt:307
 msgid "Release Country"
@@ -6219,7 +6219,7 @@ msgstr ""
 
 #: ../root/edit/details/historic/add_release.tt:70
 msgid "Release Events:"
-msgstr "Évènements de la sortie :"
+msgstr "Événements de parution :"
 
 #: ../root/components/common-macros.tt:576
 #: ../root/components/common-macros.tt:636 ../root/edit/search_macros.tt:307
@@ -6232,11 +6232,11 @@ msgstr "Groupe de parution"
 
 #: ../root/release_group/edit_form.tt:6
 msgid "Release Group Details"
-msgstr "Détails du groupe de sorties"
+msgstr "Détails du groupe de parution"
 
 #: ../root/release_group/not_found.tt:1 ../root/release_group/not_found.tt:2
 msgid "Release Group Not Found"
-msgstr "Groupe de sorties non trouvé"
+msgstr "Groupe de parution introuvable"
 
 #: ../root/release/edit_relationships.tt:394
 msgid "Release Group Relationships"
@@ -6247,7 +6247,7 @@ msgstr ""
 #: ../root/edit/details/edit_release.tt:21
 #: ../root/release/edit/information.tt:28
 msgid "Release Group:"
-msgstr "Groupe de sortie :"
+msgstr "Groupe de parution :"
 
 #: ../root/cdtoc/attach_artist_releases.tt:51
 #: ../root/cdtoc/attach_filter_release.tt:66
@@ -6256,15 +6256,15 @@ msgstr ""
 
 #: ../root/tag/header.tt:1 ../root/tag/index.tt:8 ../root/user/tag.tt:4
 msgid "Release Groups"
-msgstr "Groupe de sorties :"
+msgstr "Groupes de parution :"
 
 #: ../root/edit/search_macros.tt:307
 msgid "Release Language"
-msgstr "Langue de la sortie"
+msgstr "Langue de parution"
 
 #: ../root/release/not_found.tt:1 ../root/release/not_found.tt:2
 msgid "Release Not Found"
-msgstr "Sortie non trouvée"
+msgstr "Parution introuvable"
 
 #: ../root/edit/search_macros.tt:307
 msgid "Release Quality"
@@ -6276,15 +6276,15 @@ msgstr ""
 
 #: ../root/recording/index.tt:12
 msgid "Release Title"
-msgstr "Titre de la sortie"
+msgstr "Titre de parution"
 
 #: ../root/release/edits.tt:20 ../root/release/header.tt:8
 msgid "Release by {artist}"
-msgstr "Sortie par {artist}"
+msgstr "Parution par {artist}"
 
 #: ../root/release/edit/information.tt:62
 msgid "Release event"
-msgstr "Évènement de la sortie"
+msgstr "Événement de parution"
 
 #: ../root/release/sidebar.tt:71
 msgid "Release events"
@@ -6303,27 +6303,27 @@ msgstr "Groupe de parution"
 
 #: ../root/release_group/edits.tt:20 ../root/release_group/header.tt:12
 msgid "Release group by {artist}"
-msgstr "Groupe de sorties par {artist}"
+msgstr "Groupe de parution par {artist}"
 
 #: ../root/layout/sidebar/sidebar-favicons.tt:47
 msgid "Release group external links"
-msgstr "Lien externe du groupe de sortie"
+msgstr "Liens externes du groupe de parution"
 
 #: ../root/release_group/layout.tt:15
 msgid "Release group information"
-msgstr "Information du groupe de sortie"
+msgstr "Informations du groupe de parution"
 
 #: ../root/user/ratings_summary.tt:3 ../root/user/ratings.tt:2
 msgid "Release group ratings"
-msgstr "Note du groupe de sorties"
+msgstr "Évaluation du groupe de parution"
 
 #: ../root/release/relationships.tt:4
 msgid "Release group relationships"
-msgstr "Relation du groupe de sortie"
+msgstr "Relations du groupe de parution"
 
 #: ../root/release_group/layout.tt:1
 msgid "Release group “{name}” by {artist}"
-msgstr "Groupe de sorties \"{name}\" par {artist}"
+msgstr "Groupe de parution \"{name}\" par {artist}"
 
 #: ../root/components/common-macros.tt:562
 #: ../root/edit/details/add_release_group_annotation.tt:3
@@ -6333,19 +6333,19 @@ msgstr "Groupe de sorties \"{name}\" par {artist}"
 #: ../root/edit/details/remove_release_group.tt:3
 #: ../root/edit/details/set_cover_art.tt:5
 msgid "Release group:"
-msgstr "Groupe de sortie :"
+msgstr "Groupe de parution :"
 
 #: ../root/report/index.tt:36
 msgid "Release groups"
-msgstr "Groupes de sorties"
+msgstr "Groupes de parution"
 
 #: ../root/artist/browse_various.tt:5 ../root/browse/release_group.tt:8
 msgid "Release groups starting with “{index}”"
-msgstr "Groupes de sorties commençant par \"{index}\""
+msgstr "Groupes de parution commençant par \"{index}\""
 
 #: ../root/report/index.tt:39
 msgid "Release groups that might need to be merged"
-msgstr "Groupe de sortie qu'il ne faut pas fusionner"
+msgstr "Groupe de parution qu'il faudrait peut-être fusionner"
 
 #: ../root/report/duplicate_relationships_release_groups.tt:1
 #: ../root/report/duplicate_relationships_release_groups.tt:3
@@ -6356,19 +6356,19 @@ msgstr ""
 #: ../root/report/featuring_release_groups.tt:1
 #: ../root/report/featuring_release_groups.tt:3 ../root/report/index.tt:40
 msgid "Release groups with titles containing featuring artists"
-msgstr "Groupe de sortie avec un nom contenant des artistes invités"
+msgstr "Groupe de parution avec des noms contenant des artistes invités"
 
 #: ../root/release/edit/information.tt:23 ../root/release/sidebar.tt:27
 msgid "Release information"
-msgstr "Informations de la sortie"
+msgstr "Informations de parution"
 
 #: ../root/cdtoc/attach_filter_release.tt:28 ../root/cdtoc/move_search.tt:13
 msgid "Release title:"
-msgstr "Titre de la sortie :"
+msgstr "Titre de parution :"
 
 #: ../root/release/layout.tt:1
 msgid "Release “{name}” by {artist}"
-msgstr "Sortie \"{name}\" par {artist}"
+msgstr "Parution \"{name}\" par {artist}"
 
 #: ../root/cdtoc/lookup.tt:71 ../root/components/common-macros.tt:562
 #: ../root/edit/details/add_cover_art.tt:5
@@ -6390,7 +6390,7 @@ msgstr "Sortie \"{name}\" par {artist}"
 #: ../root/edit/details/reorder_mediums.tt:4
 #: ../root/release/edit/tracklist.tt:203 ../root/taglookup/form.tt:5
 msgid "Release:"
-msgstr "Sortie :"
+msgstr "Parution :"
 
 #: ../root/area/header.tt:1 ../root/area/releases.tt:1
 #: ../root/area/releases.tt:4 ../root/artist/browse_various_releases.tt:1
@@ -6403,31 +6403,31 @@ msgstr "Sortie :"
 #: ../root/tag/header.tt:1 ../root/tag/index.tt:8
 #: ../root/user/collections.tt:10 ../root/user/tag.tt:4
 msgid "Releases"
-msgstr "Sorties"
+msgstr "Parutions"
 
 #: ../root/report/tracks_named_with_sequence.tt:1
 #: ../root/report/tracks_named_with_sequence.tt:3
 msgid "Releases Where Track Names Start With Their Track Number"
-msgstr "Sorties pour lesquelles des noms de pistes commencent par leur numéro de piste"
+msgstr "Parutions pour lesquelles les noms de pistes commencent par leur numéro de piste"
 
 #: ../root/report/cat_no_looks_like_asin.tt:1
 #: ../root/report/cat_no_looks_like_asin.tt:3
 msgid "Releases With Catalog Numbers That Look Like ASINs"
-msgstr "Sorties avec des numéros de catalogue qui ressemblent à des ASINs"
+msgstr "Parutions avec des numéros de catalogue qui ressemblent à des ASINs"
 
 #: ../root/report/multiple_asins.tt:1 ../root/report/multiple_asins.tt:3
 msgid "Releases With Multiple ASINs"
-msgstr "Sorties avec des ASIN multiples"
+msgstr "Parutions avec plusieurs ASINs"
 
 #: ../root/report/multiple_discogs_links.tt:1
 #: ../root/report/multiple_discogs_links.tt:3
 msgid "Releases With Multiple Discogs Links"
-msgstr "Sorties avec des liens Discogs multiples"
+msgstr "Parutions avec des liens plusieurs Discogs"
 
 #: ../root/report/some_formats_unset.tt:1
 #: ../root/report/some_formats_unset.tt:3
 msgid "Releases With Some Formats Unset"
-msgstr "Sortie avec un format non précisé"
+msgstr "Parution avec un certains formats non précisés"
 
 #: ../root/report/index.tt:66
 #: ../root/report/releases_in_caa_with_cover_art_relationships.tt:1
@@ -6442,36 +6442,36 @@ msgstr ""
 #: ../root/report/index.tt:61 ../root/report/released_too_early.tt:1
 #: ../root/report/released_too_early.tt:3
 msgid "Releases released too early"
-msgstr "Sorties sorties trop tôt"
+msgstr "Parutions sorties trop tôt"
 
 #: ../root/artist/browse_various_releases.tt:5 ../root/browse/release.tt:8
 msgid "Releases starting with “{index}”"
-msgstr "Sortie commençant par \"{index}\""
+msgstr "Parution commençant par \"{index}\""
 
 #: ../root/report/index.tt:62
 msgid "Releases where some (but not all) mediums have no format set"
-msgstr "Sortie dont certains (mais pas tous) médias n'ont pas de format de précisé"
+msgstr "Parution dont certains (mais pas tous) supports n'ont pas de format de précisé"
 
 #: ../root/report/index.tt:52
 msgid "Releases which have multiple ASINs"
-msgstr "Sorties ayant des ASIN multiples"
+msgstr "Parutions ayant plusieurs ASINs"
 
 #: ../root/report/index.tt:53
 msgid "Releases which have multiple Discogs links"
-msgstr "Sorties avec des liens Discogs multiples"
+msgstr "Parutions avec plusieurs liens Discogs"
 
 #: ../root/report/index.tt:56
 msgid "Releases which have part of set relationships"
-msgstr "Sorties étant membres d'un jeu de relations"
+msgstr "Parutions ayant des relations en tant que membres d'un ensemble"
 
 #: ../root/report/index.tt:51
 msgid "Releases which have unexpected Amazon URLs"
-msgstr "Sorties ayant des URLs Amazon inattendues"
+msgstr "Parutions ayant des URLs Amazon inattendues"
 
 #: ../root/report/index.tt:48 ../root/report/releases_to_convert.tt:1
 #: ../root/report/releases_to_convert.tt:3
 msgid "Releases which might need converting to \"multiple artists\""
-msgstr "Sorties qui devraient être converties en \"artistes multiples\""
+msgstr "Parutions qui devraient être converties en \"artistes divers\""
 
 #: ../root/report/releases_with_coverart_links.tt:1
 #: ../root/report/releases_with_coverart_links.tt:3
@@ -6486,7 +6486,7 @@ msgstr ""
 
 #: ../root/report/index.tt:63
 msgid "Releases with catalog numbers that look like ASINs"
-msgstr "Sorties avec un numéro de catalogue qui ressemble à un ASIN"
+msgstr "Parutions avec des numéros de catalogue qui ressemble à des ASINs"
 
 #: ../root/report/mediums_with_sequence_issues.tt:1
 #: ../root/report/mediums_with_sequence_issues.tt:3
@@ -6499,7 +6499,7 @@ msgstr "Sortie avec des médias non séquentiels"
 
 #: ../root/report/index.tt:58
 msgid "Releases with non-sequential track numbers"
-msgstr "Sortie avec des pistes non séquentielles"
+msgstr "Parutions avec des numéros de piste non séquentiels"
 
 #: ../root/report/duplicate_relationships_releases.tt:1
 #: ../root/report/duplicate_relationships_releases.tt:3
@@ -6509,12 +6509,12 @@ msgstr ""
 
 #: ../root/report/index.tt:59 ../root/report/superfluous_data_tracks.tt:3
 msgid "Releases with superfluous data tracks"
-msgstr "Sortie avec des pistes de données superflues"
+msgstr "Parutions avec des pistes de données superflues"
 
 #: ../root/report/featuring_releases.tt:1
 #: ../root/report/featuring_releases.tt:3 ../root/report/index.tt:60
 msgid "Releases with titles containing featuring artists"
-msgstr "Sorties ayant des titres contenant un nom d'artiste invité"
+msgstr "Parutions ayant des titres contenant des artistes invités"
 
 #: ../root/report/tracks_with_sequence_issues.tt:1
 #: ../root/report/tracks_with_sequence_issues.tt:3
@@ -6535,12 +6535,12 @@ msgstr "Sortie avec des paires langue/encodage improbable"
 #: ../root/report/index.tt:49 ../root/report/releases_without_language.tt:1
 #: ../root/report/releases_without_language.tt:3
 msgid "Releases without language"
-msgstr "Sortie sans langue"
+msgstr "Parutions sans langue"
 
 #: ../root/report/index.tt:50 ../root/report/releases_without_script.tt:1
 #: ../root/report/releases_without_script.tt:3
 msgid "Releases without script"
-msgstr "Sortie sans encodage"
+msgstr "Parutions sans encodage"
 
 #: ../root/edit/details/historic/add_disc_id.tt:3
 #: ../root/edit/details/historic/add_release_annotation.tt:3
@@ -6562,7 +6562,7 @@ msgstr "Sortie sans encodage"
 #: ../root/edit/details/set_track_lengths_from_discid.tt:5
 #: ../root/edit/details/set_track_lengths.tt:5
 msgid "Releases:"
-msgstr "Sorties :"
+msgstr "Parutions :"
 
 #: ../root/account/applications.tt:76 ../root/account/edit.tt:63
 #: ../root/account/edit.tt:72 ../root/admin/wikidoc/index.tt:62
@@ -6655,15 +6655,15 @@ msgstr "Supprimer le type de relation"
 
 #: ../root/release/delete.tt:2
 msgid "Remove Release"
-msgstr "Supprimer la sortie"
+msgstr "Enlever la parution"
 
 #: ../root/release_group/delete.tt:1
 msgid "Remove Release Group"
-msgstr "Supprimer le groupe de sorties"
+msgstr "Enlever le groupe de parution"
 
 #: ../root/release_group/delete.tt:2
 msgid "Remove Release Group "
-msgstr "Supprimer le groupe de sorties"
+msgstr "Enlever le groupe de parution"
 
 #: ../root/work/delete_alias.tt:1
 msgid "Remove Work Alias"
@@ -6732,7 +6732,7 @@ msgstr "Supprimer les entités sélectionnées"
 
 #: ../root/collection/index.tt:51
 msgid "Remove selected releases from collection"
-msgstr "Supprimer les sorties sélectionnées de la collection"
+msgstr "Enlever les parutions sélectionnées de la collection"
 
 #: ../root/release/edit/tracklist.tt:328
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveTrack.pm:10
@@ -6916,7 +6916,7 @@ msgstr "Rechercher par artiste"
 
 #: ../root/cdtoc/lookup.tt:67
 msgid "Search by release"
-msgstr "Rechercher par sortie"
+msgstr "Rechercher par parution"
 
 #: ../root/edit/search_results.tt:24 ../root/edit/search_results.tt:26
 #: ../root/edit/search.tt:2 ../root/edit/search.tt:4
@@ -7154,13 +7154,13 @@ msgstr ""
 msgid ""
 "Showing Various Artist release groups. {show_subset|Show release groups by "
 "this artist instead}."
-msgstr "Affichage de groupes de sorties pour \"artistes divers\" {show_subset|Cliquez ici pour afficher plutôt le groupe de sorties pour cet artiste}."
+msgstr "Affichage des groupes de parution pour \"artistes divers\" {show_subset|Afficher plutôt le groupe de sorties pour cet artiste}."
 
 #: ../root/artist/releases.tt:31
 msgid ""
 "Showing Various Artist releases. {show_subset|Show releases by this artist "
 "instead}."
-msgstr "Affichage de des \"artistes divers\" {show_subset|Cliquez ici pour afficher plutôt les sorties de cet artiste}."
+msgstr "Affichage des parutions d'\"artistes divers\" {show_subset|Afficher plutôt les sorties de cet artiste}."
 
 #: ../root/artist/recordings.tt:26
 msgid ""
@@ -7181,13 +7181,13 @@ msgstr ""
 msgid ""
 "Showing release groups by this artist. {show_all|Show Various Artist release"
 " groups instead}."
-msgstr "Affichage des groupes de sorties de cet artiste {show_all|Cliquez ici pour afficher plutôt les groupes de sorties des \"artistes divers\"}."
+msgstr "Affichage des groupes de parution de cet artiste {show_all|Afficher plutôt les groupes de parution des \"artistes divers\"}."
 
 #: ../root/artist/releases.tt:28
 msgid ""
 "Showing releases by this artist. {show_all|Show Various Artist releases "
 "instead}."
-msgstr "Affichage des sorties de cet artiste {show_all|Cliquez ici pour afficher plutôt les sorties des \"artistes divers\"}."
+msgstr "Affichage des parutions de cet artiste {show_all|Afficher plutôt les parutions des \"artistes divers\"}."
 
 #: ../root/scripts/text_strings.tt:39
 msgid ""
@@ -7197,7 +7197,7 @@ msgstr "Affichage des résultats <strong>{start}</strong> à <strong>{end}</stro
 
 #: ../root/release/edit/duplicates.tt:12
 msgid "Similar releases"
-msgstr "Sorties similaires"
+msgstr "Parutions similaires"
 
 #: ../root/main/rate_limited.tt:1 ../root/main/rate_limited.tt:3
 msgid "Slow Down!"
@@ -7322,13 +7322,13 @@ msgstr "Désolé, il n'y a aucun enregistrement commençant par \"{index}\". Vou
 msgid ""
 "Sorry, there are no release groups starting with “{index}”. Please {pre|go "
 "back} and try again."
-msgstr "Désolé, il n'y a aucun groupe de sorties commençant par \"{index}\". Vous pouvez {pre|revenir en arrière} et essayer autre chose."
+msgstr "Désolé, il n'y a aucun groupe de parution commençant par \"{index}\". Veuillez {pre|revenir en arrière} et essayer autre chose."
 
 #: ../root/artist/browse_various_releases.tt:15 ../root/browse/release.tt:34
 msgid ""
 "Sorry, there are no releases starting with “{index}”. Please {pre|go back} "
 "and try again."
-msgstr "Désolé, il n'y a aucune sortie commençant par \"{index}\". Vous pouvez {pre|revenir en arrière} et essayer autre chose."
+msgstr "Désolé, il n'y a aucune parution commençant par \"{index}\". Veuillez {pre|revenir en arrière} et essayer autre chose."
 
 #: ../root/browse/work.tt:34
 msgid ""
@@ -7389,13 +7389,13 @@ msgstr "Désolé, nous n'avons pas trouvé d'attribut de relation ayant cet ID M
 msgid ""
 "Sorry, we could not find a release group with that MusicBrainz ID. You may "
 "wish to try and {search_url|search for it} instead."
-msgstr "Désolé, nous ne trouvons pas de groupe de sorties avec cet ID MusicBrainz. Vous pouvez peut-être essayer de {search_url|chercher après}."
+msgstr "Désolé, nous ne trouvons pas de groupe de parution avec cette ID MusicBrainz. Vous pouvez peut-être essayer de {search_url|plutôt le chercher}."
 
 #: ../root/release/not_found.tt:4
 msgid ""
 "Sorry, we could not find a release with that MusicBrainz ID. You may wish to"
 " try and {search_url|search for it} instead."
-msgstr "Désolé, nous ne trouvons pas de sortie avec cet ID MusicBrainz. Vous pouvez peut-être essayer de {search_url|chercher après}."
+msgstr "Désolé, nous ne trouvons pas de parution avec cette ID MusicBrainz. Vous pouvez peut-être essayer de {search_url|plutôt la chercher}."
 
 #: ../root/work/not_found.tt:4
 msgid ""
@@ -7728,11 +7728,11 @@ msgstr "Recherche de tag"
 
 #: ../root/release/sidebar.tt:77
 msgid "Tag release"
-msgstr "Taguer cette sortie"
+msgstr "Taguer cette parution"
 
 #: ../root/release_group/layout.tt:26
 msgid "Tag release group"
-msgstr "Taguer ce groupe de sortie"
+msgstr "Taguer ce groupe de parution"
 
 #: ../root/artist/layout.tt:67 ../root/artist/tags.tt:3
 msgid "Tag this artist"
@@ -7756,11 +7756,11 @@ msgstr "Taguer cet enregistrement"
 
 #: ../root/release/tags.tt:3
 msgid "Tag this release"
-msgstr "Taguer cette sortie"
+msgstr "Taguer cette parution"
 
 #: ../root/release_group/tags.tt:3
 msgid "Tag this release group"
-msgstr "Taguer ce groupe de sortie"
+msgstr "Taguer ce groupe de parution"
 
 #: ../root/work/layout.tt:26 ../root/work/tags.tt:3
 msgid "Tag this work"
@@ -7893,7 +7893,7 @@ msgstr "Le chiffre de contrôle est #checkdigit#."
 msgid ""
 "The comment field is used to help users distinguish between identically "
 "named releases."
-msgstr "Le champ commentaire est utilisé pour distinguer des noms de sorties identiques."
+msgstr "Le champ commentaire est utilisé pour distinguer des noms de parutions identiques."
 
 #: ../root/edit/details/merge_releases.tt:52
 msgid ""
@@ -8047,7 +8047,7 @@ msgid ""
 "There are currently no discs in MusicBrainz associated with the information "
 "you provided. You can search for the disc you are looking for using the "
 "forms below, or you may add a new release to MusicBrainz"
-msgstr "Il n'y a actuellement aucun disque dans MusicBrainz associé aux informations que vous avez entré. Vous pouvez chercher ce disque à l'aide du formulaire ci-dessous, ou vous pouvez l'ajouter comme nouvelle sortie dans MusicBrainz."
+msgstr "Il n'y a actuellement aucun disque dans MusicBrainz associé aux informations que vous avez saisies. Vous pouvez chercher ce disque à l'aide du formulaire ci-dessous, ou vous pouvez l'ajouter comme nouvelle parution dans MusicBrainz."
 
 #: ../root/user/subscribers.tt:23
 msgid "There are currently no users subscribed to edits that you make."
@@ -8214,7 +8214,7 @@ msgstr ""
 
 #: ../root/artist/releases.tt:18
 msgid "This artist does not have any releases"
-msgstr "Cet artiste n'a aucune sortie"
+msgstr "Cet artiste n'a aucune parution"
 
 #: ../root/artist/edit_form.tt:77 ../root/scripts/text_strings.tt:72
 msgid "This artist has ended."
@@ -8225,7 +8225,7 @@ msgid ""
 "This artist has no relationships, recordings, releases or release groups, "
 "and will be removed automatically in the next few days. If this is not "
 "intended, please add more data to this artist."
-msgstr "Cet artiste n'a aucuns enregistrements, releases, release groups ou relations, et sera donc supprimé automatiquement dans les prochains jours. Si ce n'est pas ce que vous souhaitez, vous devez ajouter plus d'information à cet artiste."
+msgstr "Cet artiste n'a aucun enregistrement, parution, groupe de parution ou relation et sera donc supprimé automatiquement dans les prochains jours. Si ce n'est pas ce que vous souhaitez, vous devez ajouter plus d'information à cet artiste."
 
 #: ../root/artist/index.tt:106
 msgid "This artist has no release groups, only standalone recordings."
@@ -8248,11 +8248,11 @@ msgstr "Cet artiste n'est actuellement associé à aucune oeuvre."
 
 #: ../root/artist/index.tt:113
 msgid "This artist only has release groups by various artists."
-msgstr "Cet artiste n'est présent que sur des groupes de sorties ayant des artistes multiples."
+msgstr "Cet artiste n'est présent que sur des groupes de parution ayant des artistes divers."
 
 #: ../root/artist/releases.tt:25
 msgid "This artist only has releases by various artists."
-msgstr "Cet artiste n'est présent que sur des sorties ayant des artistes multiples."
+msgstr "Cet artiste n'est présent que sur des parution ayant des artistes divers."
 
 #: ../root/scripts/text_strings.tt:119
 #: ../lib/MusicBrainz/Server/Form/Role/LinkType.pm:111
@@ -8341,14 +8341,14 @@ msgstr "Cette entité sera créée lorsque la modification sera acceptée."
 msgid ""
 "This field is not a place to store general background information about the "
 "release: that kind of information should go in the annotation field."
-msgstr "Ce champ ne sert pas à stocker les informations générales sur la sortie : ce type d'information doit être entré dans le champ \"annotation\"."
+msgstr "Ce champ ne sert pas à stocker les informations générales sur la parution : ce type d'information doit être entré dans le champ \"annotation\"."
 
 #: ../root/artist/edit_credit.tt:26
 msgid ""
 "This form allows you to edit the artist credit \"{ac}\". When the edit is "
 "accepted, all tracks, recordings, releases and release groups using this "
 "artist credit will be update to use the new one."
-msgstr "Ce formulaire vous permet de modifier le crédit \"{ac}\". Quand la modification sera acceptée, toutes les pistes, enregistrements, release et release groups utilisant ce crédit seront mis à jour en conséquence."
+msgstr "Ce formulaire vous permet de modifier le crédit \"{ac}\". Quand la modification sera acceptée, toutes les pistes, enregistrements, parutions et groupes de parutions utilisant ce crédit seront mis à jour en conséquence."
 
 #: ../root/artist/split.tt:43
 msgid ""
@@ -8401,7 +8401,7 @@ msgstr ""
 msgid ""
 "This label cannot be removed because there are still releases, recordings "
 "and/or relationships attributed to it."
-msgstr "Ce label ne peut pas être supprimé car il y a encore des sorties, enregistrements et/ou relations qui lui sont attaché."
+msgstr "Ce label ne peut pas être supprimé car il y a encore des parutions, enregistrements et/ou relations qui lui sont attachés."
 
 #: ../root/label/index.tt:37
 msgid "This label does not have any releases."
@@ -8528,13 +8528,13 @@ msgstr ""
 
 #: ../root/release/edit/information.tt:140
 msgid "This release does not have a barcode"
-msgstr "Cette release n'a aucun code-barres."
+msgstr "Cette parution n'a aucun code-barres."
 
 #: ../root/release_group/delete.tt:17
 msgid ""
 "This release group cannot be removed, because there are still releases, "
 "tracks and/or relationships attributed to it."
-msgstr "Ce groupe de sorties ne peut pas être supprimé, car il y a des sorties, pistes et/ou relations qui lui sont attaché."
+msgstr "Ce groupe de parution ne peut pas être supprimé, car il y a des parutions, pistes et/ou relations qui lui sont attachées."
 
 #: ../root/release_group/index.tt:6
 msgid ""
@@ -8545,11 +8545,11 @@ msgstr ""
 
 #: ../root/release_group/tags.tt:2
 msgid "This release group has no tags."
-msgstr "Ce groupe de sorties n'a pas de tag."
+msgstr "Ce groupe de parution n'a pas de tag."
 
 #: ../root/release/tags.tt:2
 msgid "This release has no tags."
-msgstr "Cette sortie n'a pas de tag."
+msgstr "Cette parution n'a pas de tag."
 
 #: ../root/release/edit/information.tt:250
 msgid ""
@@ -8746,7 +8746,7 @@ msgstr ""
 #: ../root/report/discogs_links_with_multiple_release_groups.tt:6
 msgid ""
 "This report shows Discogs URLs which are linked to multiple release groups."
-msgstr "Ce rapport liste les URLs Discogs qui sont liées à plusieurs release groups."
+msgstr "Ce rapport liste les URLs Discogs qui sont liées à plusieurs groupes de parution."
 
 #: ../root/report/discogs_links_with_multiple_releases.tt:6
 msgid ""
@@ -8879,7 +8879,7 @@ msgstr ""
 #: ../root/report/separate_discs.tt:6
 msgid ""
 "This report shows releases which have (disc n) or (bonus disc) in the title."
-msgstr "Ce rapport affiche les sorties qui ont (disc n) ou (bonus disc) dans le titre."
+msgstr "Ce rapport affiche les parutions qui ont (disc n) ou (bonus disc) dans le titre."
 
 #: ../root/report/releases_in_caa_with_cover_art_relationships.tt:7
 msgid ""
@@ -8967,7 +8967,7 @@ msgstr ""
 
 #: ../root/release/merge_search.tt:4
 msgid "This wizard allows you to merge {release} into another release."
-msgstr "Cet assistant vous permet de fusionner {release} dans une autre sortie."
+msgstr "Cet assistant vous permet de fusionner {release} dans une autre parution."
 
 #: ../root/work/index.tt:21
 msgid ""
@@ -9054,7 +9054,7 @@ msgstr ""
 msgid ""
 "To watch an artist and be notified of new releases, {search_url|search} for "
 "them and select 'Watch this artist for new releases' from the sidebar."
-msgstr "Pour suivre un artiste et recevoir un mail lors des nouvelles sorties, {search_url|chercher} les artistes concernés et choisissez \"s'abonner aux nouvelles sorties de cet artiste\" dans la barre latérale."
+msgstr "Pour surveiller un artiste et être prévenu lors de nouvelles parutions, {search_url|chercher} les artistes concernés et choisissez \"S'abonner aux nouvelles parutions de cet artiste\" dans la barre latérale."
 
 #: ../root/edit/details/historic/move_disc_id.tt:23
 #: ../root/edit/details/move_disc_id.tt:15
@@ -9110,7 +9110,7 @@ msgstr "Nombre total d'enregistrements trouvés : {count}"
 #: ../root/report/duplicate_relationships_release_groups.tt:8
 #: ../root/report/featuring_release_groups.tt:12
 msgid "Total release groups found: {count}"
-msgstr "Nombre total de groupes de sorties trouvés : {count}"
+msgstr "Nombre total de groupes de parution trouvés : {count}"
 
 #: ../root/report/set_in_different_rg.tt:13
 msgid "Total release groups: {count}"
@@ -9137,7 +9137,7 @@ msgstr "Total des groupes de parution : {count}"
 #: ../root/report/some_formats_unset.tt:9
 #: ../root/report/unlinked_pseudo_releases.tt:7
 msgid "Total releases found: {count}"
-msgstr "Nombre total de sorties trouvées : {count}"
+msgstr "Nombre total de parutions trouvées : {count}"
 
 #: ../root/report/mediums_with_sequence_issues.tt:9
 #: ../root/report/superfluous_data_tracks.tt:9
@@ -9711,7 +9711,7 @@ msgid ""
 "Warning! \"1990-10-25\" is the bogus date that Amazon gives to all releases "
 "for which they don't know the actual date. <b>Please use this date only if "
 "you're certain this date is correct!</b>"
-msgstr "Attention ! le 25/10/1990 est la date erronée que Amazon donne à toute sortie dont ils ne connaissent pas la véritable date. <b>N'utilisez cette date que si vous êtes certain qu'elle soit la bonne !</b>"
+msgstr "Attention ! \"1990-10-25\" est la fausse date qu'Amazon donne à toute parution dont ils ne connaissent pas la véritable date. <b>N'utilisez cette date que si vous êtes certain qu'elle est la bonne !</b>"
 
 #: ../root/artist/edit_form.tt:18 ../root/label/edit_form.tt:14
 #: ../root/place/edit_form.tt:14
@@ -9772,7 +9772,7 @@ msgid ""
 "We found discs matching the information you requested, listed below. If none"
 " of these are the release you are looking for, you may search using the form"
 " below in order to attach this disc to another MusicBrainz release."
-msgstr "Nous avons trouvé des disques correspondant aux informations que vous avez cherché, listés ci-dessous. Si aucun de ceux-ci ne correspond à la sortie que vous cherchez, vous pouvez chercher en utilisant le formulaire ci-dessous pour rattacher ce disque à une autre sortie MusicBrainz."
+msgstr "Nous avons trouvé des disques correspondant aux informations que vous avez cherché, listés ci-dessous. Si aucun de ceux-ci ne correspond à la parution que vous cherchez, vous pouvez chercher en utilisant le formulaire ci-dessous pour rattacher ce disque à une autre parution MusicBrainz."
 
 #: ../root/release/edit/missing_entities.tt:44
 msgid ""
@@ -9881,7 +9881,7 @@ msgstr "Lorsque vous êtes prêt à fusionner ces données, cliquez le bouton \"
 msgid ""
 "When you have found the release that you would like to merge {recording} "
 "into, please select that entity and click <em>merge</em>."
-msgstr "Lorsque vous aurez trouvé la sortie que vous souhaitez fusionner avec {recording}, choisissez la et cliquez sur <em>fusionner</em>."
+msgstr "Lorsque vous aurez trouvé la parution que vous souhaitez fusionner avec {recording}, choisissez-la et cliquez sur <em>fusionner</em>."
 
 #: ../root/layout.tt:158
 msgid "Wiki"
@@ -10142,14 +10142,14 @@ msgid ""
 "You are about to merge the following release groups into a single release "
 "group. Please select the release group which you would like other release "
 "groups to be merged into:"
-msgstr "Vous êtes sur le point de fusionner les groupes de sorties suivants dans un seul groupe. Choisissez le groupe de sorties vers lequel vous souhaitez fusionner : "
+msgstr "Vous êtes sur le point de fusionner les groupes de parution suivants dans un seul groupe. Choisissez le groupe de parution vers lequel vous souhaitez fusionner : "
 
 #: ../root/release/merge.tt:18
 msgid ""
 "You are about to merge the following releases into a single release. Please "
 "select the release which you would like the other releases to be merged "
 "into:"
-msgstr "Vous êtes sur le point de fusionner les releases suivantes en une release unique. Merci de selectionner la release dans laquelle vous voulez que les autres soient fusionnées :"
+msgstr "Vous êtes sur le point de fusionner les parutions suivantes en une parution unique. Merci de sélectionner la parution dans laquelle vous voulez que les autres soient fusionnées :"
 
 #: ../root/work/merge.tt:4
 msgid ""
@@ -10189,7 +10189,7 @@ msgstr "Vous êtes actuellement abonné. {unsub|Se désabonner} ?"
 
 #: ../root/watch/list.tt:7
 msgid "You are currently watching the following artists for new releases."
-msgstr "Vous surveillez actuellement les nouvelles sorties des artistes suivants."
+msgstr "Vous surveillez actuellement les nouvelles parutions des artistes suivants."
 
 #: ../root/edit/notes.tt:56
 msgid "You are not currently able to add notes to this edit. ({url|Details})"
@@ -10206,7 +10206,7 @@ msgstr "Vous n'êtes actuellement pas abonné. {sub|S'abonner} ?"
 
 #: ../root/watch/list.tt:32
 msgid "You are not currently watching any artists for new releases."
-msgstr "Vous ne surveillez actuellement aucune nouvelle sortie d'aucun artiste."
+msgstr "Vous ne surveillez actuellement aucune nouvelle parution d'aucun artiste."
 
 #: ../root/artist/edit_form.tt:28
 msgid ""
@@ -10703,11 +10703,11 @@ msgstr "enregistrements"
 
 #: ../root/components/common-macros.tt:161
 msgid "release groups"
-msgstr "release groups"
+msgstr "groupes de parution"
 
 #: ../root/components/common-macros.tt:161
 msgid "releases"
-msgstr "sorties"
+msgstr "parutions"
 
 #: ../root/user/profile.tt:31
 msgid "resend verification email"
@@ -10724,8 +10724,8 @@ msgstr ""
 #: ../root/release/header.tt:10
 msgid "see all versions of this release, {count} available"
 msgid_plural "see all versions of this release, {count} available"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Afficher toutes les versions de cette parution, {count} de disponible"
+msgstr[1] "Afficher toutes les versions de cette parution, {count} de disponible"
 
 #: ../root/user/profile.tt:35
 msgid "send email"
@@ -10834,7 +10834,7 @@ msgstr ""
 msgid "{artist} has no releases which have only {n} track."
 msgid_plural "{artist} has no releases which have {n} tracks."
 msgstr[0] "{artist} n'a pas de sortie n'ayant que {n} piste."
-msgstr[1] "{artist} n'a pas de sortie n'ayant que {n} pistes."
+msgstr[1] "{artist} n'a pas de parution ayant {n} pistes."
 
 #: ../root/artist/relationships.tt:33 ../root/place/performances.tt:27
 #: ../lib/MusicBrainz/Server/Entity/Link.pm:122
@@ -11052,8 +11052,8 @@ msgstr[1] ""
 #: ../root/tag/release.tt:1
 msgid "{num} release found"
 msgid_plural "{num} releases found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num} parution de trouvée"
+msgstr[1] "{num} parutions de trouvées"
 
 #: ../root/cdtoc/attach_filter_release.tt:39
 msgid "{num} release found matching your query."
@@ -11064,8 +11064,8 @@ msgstr[1] ""
 #: ../root/tag/release_group.tt:1
 msgid "{num} release group found"
 msgid_plural "{num} release groups found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num} groupe de parution de trouvé"
+msgstr[1] "{num} groupes de parution de trouvés"
 
 #: ../root/tag/work.tt:1
 msgid "{num} work found"
@@ -11113,12 +11113,12 @@ msgstr "{release} par {artist}"
 #: ../root/release/collections.tt:4
 msgid "{release} has been added to {num} collection:"
 msgid_plural "{release} has been added to {num} collections:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{release} a été ajouté à {count} collection :"
+msgstr[1] "{release} a été ajouté à {count} collections :"
 
 #: ../root/release/collections.tt:23
 msgid "{release} has not been added to any collections."
-msgstr ""
+msgstr "{release} n'a pas été ajouté à aucune collection."
 
 #: ../root/relationship/linktype/index.tt:21
 msgid "{type0}-{type1}"
@@ -12193,7 +12193,7 @@ msgstr "Ce media a déjà un ID de disque, vous ne pouvez donc changer son forma
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:227
 msgid "A release must have at least one medium."
-msgstr "Une sortie doit disposer d'au moins un media"
+msgstr "Une parution doit disposer d'au moins un support."
 
 #: ../lib/MusicBrainz/Server/Form/Role/EditNote.pm:19
 msgid "You must provide an edit note"
