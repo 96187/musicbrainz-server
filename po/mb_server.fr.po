@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-14 20:59+0000\n"
+"PO-Revision-Date: 2013-11-14 21:58+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -1149,13 +1149,13 @@ msgstr ""
 
 #: ../root/collection/delete.tt:4
 msgid "Are you sure you want to remove the collection {collection}?"
-msgstr "Êtes-vous sûr de vouloir supprimer la collection {collection} ?"
+msgstr "Êtes-vous sûr de vouloir enlever la collection {collection} ?"
 
 #: ../root/cdtoc/remove.tt:5
 msgid ""
 "Are you sure you want to remove the disc ID <code>{discid}</code> from the "
 "release {release} by {artist}?"
-msgstr "Êtes-vous sûr de vouloir supprimer l'ID de disque <code>{discid}</code> de la parution {release} par {artist} ?"
+msgstr "Êtes-vous sûr de vouloir enlever l'ID de disque <code>{discid}</code> de la parution {release} par {artist} ?"
 
 #: ../root/account/remove_application.tt:5
 msgid "Are you sure you want to remove this application?"
@@ -1173,19 +1173,19 @@ msgstr "Etes-vous sûr de vouloir annuler la modification N°{n} ? Cela sera dé
 msgid ""
 "Are you sure you wish to remove <strong>{page}</strong> from the "
 "transclusion table?"
-msgstr "Êtes-vous sûr de vouloir supprimer <strong>{page}</strong> de la table de transclusion ?"
+msgstr "Êtes-vous sûr de vouloir enlever <strong>{page}</strong> de la table de transclusion ?"
 
 #: ../root/relationship/linkattributetype/delete.tt:6
 msgid ""
 "Are you sure you wish to remove the <strong>{link_attr_type}</strong> "
 "relationship attribute?"
-msgstr "Êtes-vous sûr de vouloir supprimer la relation ayant l'attribut <strong>{link_attr_type}</strong> ?"
+msgstr "Êtes-vous sûr de vouloir enlever la relation ayant l'attribut <strong>{link_attr_type}</strong> ?"
 
 #: ../root/relationship/linktype/delete.tt:6
 msgid ""
 "Are you sure you wish to remove the <strong>{link_type}</strong> "
 "relationship type?"
-msgstr "Êtes-vous sûr de vouloir supprimer la relation de type <strong>{link_type}</strong> ?"
+msgstr "Êtes-vous sûr de vouloir enlever la relation de type <strong>{link_type}</strong> ?"
 
 #: ../root/area/delete.tt:5
 msgid "Are you sure you wish to remove the area {area} from MusicBrainz?"
@@ -1199,28 +1199,28 @@ msgstr "Voulez-vous vraiment enlever la jaquette ci-dessous de la parution {rele
 
 #: ../root/label/delete.tt:5
 msgid "Are you sure you wish to remove the label {label} from MusicBrainz?"
-msgstr "Êtes-vous sûr de vouloir supprimer le label {label} de MusicBrainz ?"
+msgstr "Êtes-vous sûr de vouloir enlever le label {label} de MusicBrainz ?"
 
 #: ../root/recording/delete.tt:9
 msgid ""
 "Are you sure you wish to remove the recording {recording} from MusicBrainz?"
-msgstr "Êtes-vous sûr de vouloir supprimer l'enregistrement {recording} de MusicBrainz ?"
+msgstr "Êtes-vous sûr de vouloir enlever l'enregistrement {recording} de MusicBrainz ?"
 
 #: ../root/edit/relationship/delete.tt:6
 msgid ""
 "Are you sure you wish to remove the relationship: {entity0} {relationship}?"
-msgstr "Êtes-vous sûr de vouloir supprimer la relation : {entity0} {relationship} ? "
+msgstr "Êtes-vous sûr de vouloir enlever la relation : {entity0} {relationship} ? "
 
 #: ../root/release_group/delete.tt:5
 msgid ""
 "Are you sure you wish to remove the release group {rg} by {artist} from "
 "MusicBrainz?"
-msgstr "Êtes-vous sûr de vouloir supprimer le groupe de parution {rg} par {artist} de MusicBrainz ?"
+msgstr "Êtes-vous sûr de vouloir enlever le groupe de parution {rg} par {artist} de MusicBrainz ?"
 
 #: ../root/release/delete.tt:7
 msgid ""
 "Are you sure you wish to remove the release {release} from MusicBrainz?"
-msgstr "Êtes-vous sûr de vouloir supprimer la parution {release} de MusicBrainz ?"
+msgstr "Êtes-vous sûr de vouloir enlever la parution {release} de MusicBrainz ?"
 
 #: ../root/area/edits.tt:18 ../root/area/header.tt:21
 #: ../root/components/common-macros.tt:576
@@ -1241,7 +1241,7 @@ msgstr ""
 
 #: ../root/area/not_found.tt:1 ../root/area/not_found.tt:2
 msgid "Area Not Found"
-msgstr ""
+msgstr "Aire de recherche introuvable"
 
 #: ../root/area/layout.tt:5
 msgid "Area information"
@@ -2658,7 +2658,7 @@ msgstr "URLs Discogs liées vers plusieurs artistes"
 
 #: ../root/report/index.tt:32
 msgid "Discogs URLs linked to multiple labels"
-msgstr ""
+msgstr "URLs Discogs liées à plusieurs labels"
 
 #: ../root/report/index.tt:41
 msgid "Discogs URLs linked to multiple release groups"
@@ -3829,7 +3829,7 @@ msgstr "ISRCs"
 #: ../root/report/index.tt:96 ../root/report/isrc_with_many_recordings.tt:1
 #: ../root/report/isrc_with_many_recordings.tt:3
 msgid "ISRCs with multiple recordings"
-msgstr "ISRCs pour des enregistrements multiples"
+msgstr "ISRCs avec plusieurs enregistrements"
 
 #: ../root/recording/edit_form.tt:12
 msgid "ISRCs:"
@@ -3866,7 +3866,7 @@ msgstr ""
 #: ../root/report/index.tt:102 ../root/report/iswc_with_many_works.tt:7
 #: ../root/report/iswc_with_many_works.tt:9
 msgid "ISWCs with multiple works"
-msgstr ""
+msgstr "ISWCs à plusieurs oeuvres "
 
 #: ../root/work/edit_form.tt:11 ../root/work/index.tt:13
 msgid "ISWCs:"
@@ -5464,7 +5464,7 @@ msgstr "Nom de la page"
 
 #: ../root/edit/details/change_wikidoc.tt:29
 msgid "Page removed"
-msgstr "Page supprimée"
+msgstr "Page enlevée"
 
 #: ../root/components/paginator.tt:29
 msgid "Page {cur} of at least {total}"
@@ -5544,7 +5544,7 @@ msgstr ""
 
 #: ../root/place/not_found.tt:1 ../root/place/not_found.tt:2
 msgid "Place Not Found"
-msgstr ""
+msgstr "Lieu introuvable"
 
 #: ../root/place/layout.tt:4
 msgid "Place information"
@@ -5704,7 +5704,7 @@ msgstr "Merci de lire la {doc_styleguide|documentation de style}, puis entrez le
 msgid ""
 "Please review the documentation about the {doc_remove|remove release group "
 "edit-type}, before entering this edit"
-msgstr "Veuillez lire la documentation sur {doc_remove|la suppression des types de groupes de parution} avant de procéder à cette modification"
+msgstr "Veuillez lire la documentation sur {doc_remove|enlever les types de modification des groupes de parution} avant de procéder à cette modification"
 
 #: ../root/account/register.tt:42
 msgid ""
@@ -5716,7 +5716,7 @@ msgstr "Merci de lire {coc|le règlement intérieur} avant de vous créer un com
 msgid ""
 "Please review the {doc_remove|remove release edit-type} documentation before"
 " entering this edit."
-msgstr "Veuillez lire la documentation sur {doc_remove|la suppression des parutions} avant de procéder à cette modification."
+msgstr "Veuillez lire la documentation sur {doc_remove|enlever les types de modifications des parutions} avant de procéder à cette modification."
 
 #: ../root/alias/delete.tt:4
 msgid "Please review the {doc|alias documentation} before entering this edit."
@@ -6580,7 +6580,7 @@ msgstr "Parutions :"
 #: ../root/release/delete.tt:1 ../root/release/discids.tt:36
 #: ../root/scripts/text_strings.tt:44 ../root/user/collections.tt:26
 msgid "Remove"
-msgstr "Supprimmer"
+msgstr "Enlever"
 
 #: ../root/account/remove_application.tt:1
 #: ../root/account/remove_application.tt:3
@@ -6597,11 +6597,11 @@ msgstr ""
 
 #: ../root/artist/delete_alias.tt:1
 msgid "Remove Artist Alias"
-msgstr "Supprimer l'alias d'artiste"
+msgstr "Enlever l'alias d'artiste"
 
 #: ../root/components/forms.tt:310 ../root/release/edit/tracklist.tt:74
 msgid "Remove Artist Credit"
-msgstr "Supprimer le crédit de l'artiste"
+msgstr "Enlever le crédit de l'artiste"
 
 #: ../root/release/remove_cover_art.tt:1 ../root/release/remove_cover_art.tt:2
 msgid "Remove Cover Art"
@@ -6609,7 +6609,7 @@ msgstr "Enlever la Jaquette"
 
 #: ../root/cdtoc/remove.tt:1 ../root/cdtoc/remove.tt:2
 msgid "Remove Disc ID"
-msgstr "Supprimer l'ID de disque"
+msgstr "Enlever l'ID de disque"
 
 #: ../root/release/edit/information.tt:80
 msgid "Remove Event"
@@ -6621,15 +6621,15 @@ msgstr ""
 
 #: ../root/label/delete.tt:2 ../root/release/edit/information.tt:121
 msgid "Remove Label"
-msgstr "Supprimer le label"
+msgstr "Enlever le label"
 
 #: ../root/label/delete_alias.tt:1
 msgid "Remove Label Alias"
-msgstr "Supprimer l'alias du label"
+msgstr "Enlever l'alias du label"
 
 #: ../root/admin/wikidoc/delete.tt:1 ../root/admin/wikidoc/delete.tt:3
 msgid "Remove Page"
-msgstr "Supprimer la page"
+msgstr "Enlever la page"
 
 #: ../root/place/delete_alias.tt:1
 msgid "Remove Place Alias"
@@ -6637,21 +6637,21 @@ msgstr ""
 
 #: ../root/recording/delete.tt:2
 msgid "Remove Recording"
-msgstr "Supprimer l'enregistrement"
+msgstr "Enlever l'enregistrement"
 
 #: ../root/edit/relationship/delete.tt:1 ../root/edit/relationship/delete.tt:3
 msgid "Remove Relationship"
-msgstr "Supprimer la relation"
+msgstr "Enlever la relation"
 
 #: ../root/relationship/linkattributetype/delete.tt:1
 #: ../root/relationship/linkattributetype/delete.tt:3
 msgid "Remove Relationship Attribute"
-msgstr "Supprimer l'attribut de la relation"
+msgstr "Enlever l'attribut de la relation"
 
 #: ../root/relationship/linktype/delete.tt:1
 #: ../root/relationship/linktype/delete.tt:3
 msgid "Remove Relationship Type"
-msgstr "Supprimer le type de relation"
+msgstr "Enlever le type de relation"
 
 #: ../root/release/delete.tt:2
 msgid "Remove Release"
@@ -6667,7 +6667,7 @@ msgstr "Enlever le groupe de parution"
 
 #: ../root/work/delete_alias.tt:1
 msgid "Remove Work Alias"
-msgstr "Supprimer l'alias d'oeuvre"
+msgstr "Enlever l'alias d'oeuvre"
 
 #: ../root/area/layout.tt:63 ../lib/MusicBrainz/Server/Edit/Area/Delete.pm:10
 msgid "Remove area"
@@ -6681,34 +6681,34 @@ msgstr ""
 #: ../root/artist/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Artist/DeleteAlias.pm:14
 msgid "Remove artist alias"
-msgstr "Supprimer un alias d'artiste"
+msgstr "Enlever l'alias d'artiste"
 
 #: ../root/collection/delete.tt:2 ../root/collection/delete.tt:7
 msgid "Remove collection"
-msgstr "Supprimer la collection"
+msgstr "Enlever la collection"
 
 #: ../root/release/edit/tracklist.tt:392
 msgid "Remove disc"
-msgstr "Supprimer le disque"
+msgstr "Enlever le disque"
 
 #: ../root/release/sidebar.tt:121
 msgid "Remove from my collection"
-msgstr "Supprimer de ma collection"
+msgstr "Enlever de ma collection"
 
 #: ../root/release/sidebar.tt:123
 msgid "Remove from {collection}"
-msgstr "Supprimer de {collection}"
+msgstr "Enlever de {collection}"
 
 #: ../root/label/layout.tt:73
 #: ../lib/MusicBrainz/Server/Edit/Label/Delete.pm:12
 msgid "Remove label"
-msgstr "Effacer le label"
+msgstr "Enlever le label"
 
 #: ../root/label/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveLabelAlias.pm:11
 #: ../lib/MusicBrainz/Server/Edit/Label/DeleteAlias.pm:14
 msgid "Remove label alias"
-msgstr "Effacer l'alias du label"
+msgstr "Enlever l'alias du label"
 
 #: ../root/place/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Place/DeleteAlias.pm:14
@@ -6718,17 +6718,17 @@ msgstr ""
 #: ../root/recording/layout.tt:35
 #: ../lib/MusicBrainz/Server/Edit/Recording/Delete.pm:12
 msgid "Remove recording"
-msgstr "Effacer un enregistrement"
+msgstr "Enlever un enregistrement"
 
 #: ../root/release/sidebar.tt:93
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveRelease.pm:14
 #: ../lib/MusicBrainz/Server/Edit/Release/Delete.pm:12
 msgid "Remove release"
-msgstr "Effacer la parution"
+msgstr "Enlever la parution"
 
 #: ../root/layout/merge-helper.tt:33
 msgid "Remove selected entities"
-msgstr "Supprimer les entités sélectionnées"
+msgstr "Enlever les entités sélectionnées"
 
 #: ../root/collection/index.tt:51
 msgid "Remove selected releases from collection"
@@ -6737,25 +6737,25 @@ msgstr "Enlever les parutions sélectionnées de la collection"
 #: ../root/release/edit/tracklist.tt:328
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveTrack.pm:10
 msgid "Remove track"
-msgstr "Supprimer cette piste"
+msgstr "Enlever la piste"
 
 #: ../root/work/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Work/DeleteAlias.pm:15
 msgid "Remove work alias"
-msgstr "Supprimer un alias d'œuvre"
+msgstr "Enlever un alias d'œuvre"
 
 #: ../root/components/rating-macros.tt:1
 msgid "Remove your rating"
-msgstr "Supprimer votre notation"
+msgstr "Enlever votre évaluation"
 
 #: ../root/components/forms.tt:107 ../root/components/forms.tt:115
 #: ../root/components/forms.tt:116
 msgid "Remove {item}"
-msgstr "Supprimer {item}"
+msgstr "Enlever {item}"
 
 #: ../root/edit/details/edit_release_events.tt:37
 msgid "Removed"
-msgstr "Supprimé"
+msgstr "Enlevé"
 
 #: ../root/edit/details/merge_artists.tt:4
 msgid "Rename artist credits"
@@ -8086,7 +8086,7 @@ msgid ""
 "at the bottom of the {alias_uri|aliases} tab and remove all existing "
 "{rel_uri|relationships} instead, which will allow ModBot to automatically "
 "remove this artist in the upcoming days."
-msgstr ""
+msgstr "Il n'y a pas d'enregistrement, de groupe de parution, de parution ou des pistes attribué seulement à {name}. Si vous essayez d'enlever {name}, veuillez plutôt modifier les crédits d'artiste en bas de l'onglet {alias_uri|alias} et enlever toutes les {rel_uri|relations}, ce qui permettra à ModBot d'enlever automatiquement cet artiste dans les jours à venir."
 
 #: ../root/label/subscriptions.tt:11
 msgid "There are no users currently subscribed to this Label."
@@ -8225,7 +8225,7 @@ msgid ""
 "This artist has no relationships, recordings, releases or release groups, "
 "and will be removed automatically in the next few days. If this is not "
 "intended, please add more data to this artist."
-msgstr "Cet artiste n'a aucun enregistrement, parution, groupe de parution ou relation et sera donc supprimé automatiquement dans les prochains jours. Si ce n'est pas ce que vous souhaitez, vous devez ajouter plus d'information à cet artiste."
+msgstr "Cet artiste n'a aucun enregistrement, parution, groupe de parution ou relation et sera donc enlevé automatiquement dans les prochains jours. Si ce n'est pas ce que vous souhaitez, vous devez ajouter plus d'information à cet artiste."
 
 #: ../root/artist/index.tt:106
 msgid "This artist has no release groups, only standalone recordings."
@@ -8240,7 +8240,7 @@ msgid ""
 "This artist has relationships other than collaboration relationships, and "
 "cannot be split until these are removed. {relationships|View all "
 "relationships}."
-msgstr "Cet artiste a des relations autres que de type collaboration, et donc ne peut pas être scindé. {relationships|Voir toutes les relations}."
+msgstr "Cet artiste a des relations autres que de type collaboration, et donc ne peut pas être scindé tant quelles n'ont pas été enlevées. {relationships|Voir toutes les relations}."
 
 #: ../root/artist/works.tt:11
 msgid "This artist is not currently associated with any works."
@@ -8331,7 +8331,7 @@ msgstr "La modification a été annulée récemment."
 #: ../root/components/common-macros.tt:263
 #: ../lib/MusicBrainz/Server/Plugin/Diff.pm:120
 msgid "This entity has been removed, and cannot be displayed correctly."
-msgstr "L'entité a été supprimée et ne peut donc plus être affichée correctement."
+msgstr "L'entité a été enlevée et ne peut donc plus être affichée correctement."
 
 #: ../root/components/common-macros.tt:263
 msgid "This entity will be created when edits are entered."
@@ -8355,7 +8355,7 @@ msgid ""
 "This form allows you to split {artist} into separate artists. When the edit "
 "is accepted, existing artist credits will be updated, and collaboration "
 "relationships will be removed"
-msgstr "Ce formulaire vous permet de diviser {artist} en plusieurs artistes. Quand la modification sera acceptée, les crédits existants seront mis à jour et les relations de collaboration seront supprimées."
+msgstr "Ce formulaire vous permet de diviser {artist} en plusieurs artistes. Quand la modification est acceptée, les crédits existants seront mis à jour et les relations de collaboration seront enlevées."
 
 #: ../root/scripts/text_strings.tt:74
 msgid "This group has dissolved."
@@ -8401,7 +8401,7 @@ msgstr ""
 msgid ""
 "This label cannot be removed because there are still releases, recordings "
 "and/or relationships attributed to it."
-msgstr "Ce label ne peut pas être supprimé car il y a encore des parutions, enregistrements et/ou relations qui lui sont attachés."
+msgstr "Ce label ne peut pas être enlevé car il y a encore des parutions, enregistrements et/ou relations qui lui sont attachés."
 
 #: ../root/label/index.tt:37
 msgid "This label does not have any releases."
@@ -8478,7 +8478,7 @@ msgstr ""
 #: ../root/recording/delete.tt:18
 msgid ""
 "This recording cannot be removed because it is still on use in tracklists."
-msgstr "Cet enregistrement ne peut pas être supprimé car il est utilisé dans une liste de pistes."
+msgstr "Cet enregistrement ne peut pas être enlevé car il est utilisé dans une liste de pistes."
 
 #: ../root/recording/fingerprints.tt:46
 msgid "This recording does not have any associated AcoustIDs"
@@ -8534,7 +8534,7 @@ msgstr "Cette parution n'a aucun code-barres."
 msgid ""
 "This release group cannot be removed, because there are still releases, "
 "tracks and/or relationships attributed to it."
-msgstr "Ce groupe de parution ne peut pas être supprimé, car il y a des parutions, pistes et/ou relations qui lui sont attachées."
+msgstr "Ce groupe de parution ne peut pas être enlevé, car il y a des parutions, pistes et/ou relations qui lui sont attachées."
 
 #: ../root/release_group/index.tt:6
 msgid ""
@@ -8673,25 +8673,25 @@ msgstr "Ce rapport liste les artistes qui ont plusieurs relations vers le même 
 msgid ""
 "This report lists labels which have multiple relationships to the same "
 "entity using the same relationship type."
-msgstr ""
+msgstr "Ce rapport montre les labels qui ont plusieurs relations vers la même entité tout en utilisant le même type de relation."
 
 #: ../root/report/duplicate_relationships_recordings.tt:6
 msgid ""
 "This report lists recordings which have multiple relationships to the same "
 "entity using the same relationship type."
-msgstr ""
+msgstr "Ce rapport montre les enregistrements qui ont plusieurs relations vers la même entité tout en utilisant le même type de relation."
 
 #: ../root/report/duplicate_relationships_release_groups.tt:6
 msgid ""
 "This report lists release groups which have multiple relationships to the "
 "same entity using the same relationship type."
-msgstr ""
+msgstr "Ce rapport montre les groupes de parution qui ont plusieurs relations vers la même entité tout en utilisant le même type de relation."
 
 #: ../root/report/duplicate_relationships_releases.tt:6
 msgid ""
 "This report lists releases which have multiple relationships to the same "
 "entity using the same relationship type."
-msgstr ""
+msgstr "Ce rapport montre les parutins qui ont plusieurs relations vers la même entité tout en utilisant le même type de relation."
 
 #: ../root/report/superfluous_data_tracks.tt:6
 msgid ""
@@ -8705,7 +8705,7 @@ msgid ""
 "This report lists works which have multiple relationships to the same entity"
 " using the same relationship type. This excludes recording-work "
 "relationships. See the recording version of this report for those."
-msgstr ""
+msgstr "Ce rapport montre les œuvres qui ont plusieurs relations vers la même entité tout en utilisant le même type de relation. Ceci exclut les relations enregistrements-œuvres. Pour ces dernières , voir le version de ce rapport pour les enregistrements"
 
 #: ../root/report/isrc_with_many_recordings.tt:6
 msgid ""
@@ -8741,7 +8741,7 @@ msgstr "Ce rapport montre les URLs Discogs qui sont liées à plusieurs artistes
 
 #: ../root/report/discogs_links_with_multiple_labels.tt:6
 msgid "This report shows Discogs URLs which are linked to multiple labels."
-msgstr ""
+msgstr "Ce rapport montre les URLs Discogs qui sont liées à plusieurs labels."
 
 #: ../root/report/discogs_links_with_multiple_release_groups.tt:6
 msgid ""
@@ -8757,7 +8757,7 @@ msgid ""
 "etc.). You might also find some Discogs URLs linked to several discs of a "
 "multi-disc release: just merge those (see {how_to_merge_releases|How to "
 "Merge Releases})."
-msgstr ""
+msgstr "Ce rapport montre les URLs Discogs qui sont liées à plusieurs parutions. Dans la plupart des cas les parutions Discogs devrait mapper 1:1 vers MusicBrainz. Ainsi seul un des lien sera correct. Vérifier quelle parution MusicBrainz concorde avec la parution Discogs (regarder le format, la liste des pistes, pays de parution, etc...). Vous pourriez aussi trouver des URLs Discogs liées à plusieurs disques d'une parution multi-disques : fusionnez-les (see {how_to_merge_releases|Comment fusionner des parutions})."
 
 #: ../root/report/recordings_with_earliest_release_relationships.tt:6
 msgid ""
@@ -8766,7 +8766,7 @@ msgid ""
 " they're not, the relationship should be removed. Please, do not merge "
 "recordings blindly just because the lengths fit, and do not merge recordings"
 " with very different times!"
-msgstr ""
+msgstr "Ce rapport montre les enregistrements qui ont des relations « parution la plus ancienne » obsolètes. Ils devraient être fusionnés s'ils sont vraiment le même enregistrement ; s'ils ne le sont pas, la relation devrait être enlevée. Veuillez ne pas fusionner des enregistrements à l'aveuglette juste parce que les durées sont équivalentes, et ne fusionnez pas des enregistrements avec des durées différentes !"
 
 #: ../root/report/recordings_with_varying_track_lengths.tt:6
 msgid ""
@@ -8838,7 +8838,7 @@ msgid ""
 "release (because of format, different number of tracks, etc). Any \"master\""
 " Discogs page belongs at the {release_group|release group level}, not at the"
 " release level, and should be removed from releases too."
-msgstr ""
+msgstr "Ce rapport montre les parutions qui ont plus d'un lien vers Discogs. Dans la plupart des cas une parution MusicBrainz ne devrait avoir qu'un équivalent Discogs. Ainsi un seul sera correct. Vérifiez juste lequel ne correspond pas à la parution ( à cause du format, nombre de pistes, etc...). Toute page « master » de Discogs appartient au {release_group|niveau groupe de parution}, pas au niveau parution et devrait aussi être enlevé des parutions."
 
 #: ../root/report/releases_without_language.tt:6
 msgid ""
@@ -8866,7 +8866,7 @@ msgid ""
 " releases}. If the releases are not really part of a set (for example, if "
 "they are independently-released volumes in a series) just remove the "
 "relationship."
-msgstr ""
+msgstr "Ce rapport montre les parutions qui ont encore la relation obsolète « partie d'un ensemble » et devrait probablement être fusionnées. Pour des instructions sur comment les réparer, veuillez consulter la documentation sur {how_to_merge_releases|comment fusionner des parutions}. Si les parutions ne font pas vraiment partie d'un ensemble (par exemple si elles sont des volumes d'une série parus indépendamment) enlevez juste la relation. "
 
 #: ../root/report/some_formats_unset.tt:6
 msgid ""
@@ -8973,7 +8973,7 @@ msgstr "Cet assistant vous permet de fusionner {release} dans une autre parution
 msgid ""
 "This work has no relationships and will be removed automatically in the next"
 " few days. If this is not intended, please add relationships to this work."
-msgstr "Cette œuvre n'a aucune relation, et sera donc supprimée automatiquement dans les prochains jours. Si ce n'est pas ce que vous souhaitez, vous devez ajouter plus d'information à cette œuvre."
+msgstr "Cette œuvre n'a aucune relation, et sera donc enlevée automatiquement dans les prochains jours. Si ce n'est pas ce que vous souhaitez, vous devez ajouter plus d'information à cette œuvre."
 
 #: ../root/work/tags.tt:2
 msgid "This work has no tags."
@@ -9162,7 +9162,7 @@ msgstr "Piste"
 
 #: ../root/track/not_found.tt:1 ../root/track/not_found.tt:2
 msgid "Track Not Found"
-msgstr ""
+msgstr "Piste introuvable"
 
 #: ../root/release/edit/tracklist.tt:146 ../root/release/edit/tracklist.tt:381
 #: ../root/release/edit/tracklist.tt:382
@@ -9540,7 +9540,7 @@ msgid ""
 "may specify the new order of mediums. The order does not have to be "
 "continuous, but all medium positions must be positive, and multiple mediums "
 "cannot be in the same position"
-msgstr "En utilisant cette stratégie de fusion tous les supports de toutes les parutions seront utilisés. Vous pouvez spécifier le nouvel ordre des supports. L'ordre n'a pas à être continu mais toutes les positions de support doivent être positives et différents supports ne peuvent pas être à la me position."
+msgstr "En utilisant cette stratégie de fusion tous les supports de toutes les parutions seront utilisés. Vous pouvez spécifier le nouvel ordre des supports. L'ordre n'a pas à être continu mais toutes les positions de support doivent être positives et plusieurs supports ne peuvent pas être à la même position."
 
 #: ../root/search/form.tt:54
 msgid ""
@@ -9834,7 +9834,7 @@ msgstr "Nous sommes absolument désolés de ce problème. Merci d'attendre quelq
 msgid ""
 "We're very sorry, an error occurred during submission. The server may be "
 "under heavy load; please wait a moment and try again."
-msgstr ""
+msgstr "Nous sommes désolé mais une erreur est survenue durant la transmission. Le serveur subit peut-être une forte charge ; veuillez attendre un peu et ressayer."
 
 #: ../root/account/lost_username_sent.tt:5
 msgid ""
@@ -10265,7 +10265,7 @@ msgstr "Vous ne pouvez ajouter un coupon de CD tant que vous êtes connecté à 
 msgid ""
 "You cannot remove the relationship attribute \"{type}\" as it is still in "
 "use by other relationships."
-msgstr "Vous ne pouvez pas supprimer l'attribut de relation \"{type}\" car il est toujours utilisé par d'autres relations."
+msgstr "Vous ne pouvez pas enlever l'attribut de relation \"{type}\" car il est toujours utilisé par d'autres relations."
 
 #: ../root/elections/show.tt:82
 msgid ""
@@ -10355,7 +10355,7 @@ msgid ""
 "erroneously, since a release can have multiple valid disc IDs, and each disc"
 " ID can belong to more than one release. For more in-depth information about"
 " this topic, please see our {doc|CD submission guide}."
-msgstr ""
+msgstr "Vous devez être sûr que cette ID de disque a été ajoutée à cette parution par erreur vu qu'une parution peut avoir plusieurs IDs de disque valides, et chaque ID de disque peut appartenir à plus d'une parution. Pour des informations plus approfondies à ce sujet voir doc|Comment proposer un CD}."
 
 #: ../root/user/login.tt:7
 msgid "You need to be logged in to view this page."
@@ -10416,7 +10416,7 @@ msgstr "[ Inconnu ]"
 
 #: ../root/components/common-macros.tt:263
 msgid "[removed]"
-msgstr "[supprimé]"
+msgstr "[enlevé]"
 
 #: ../root/area/layout.tt:31 ../root/artist/layout.tt:42
 #: ../root/components/aliases.tt:42 ../root/edit/details/merge_places.tt:27
@@ -11369,11 +11369,11 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Controller/RelationshipEditor.pm:47
 msgid "There were errors in your submission. Please fix them and try again."
-msgstr ""
+msgstr "Il y avait des erreurs dans votre proposition. Veuillez les corriger et ressayer."
 
 #: ../lib/MusicBrainz/Server/Controller/RelationshipEditor.pm:54
 msgid "Invalid submission."
-msgstr ""
+msgstr "Proposition invalide."
 
 #: ../lib/MusicBrainz/Server/Controller/Release.pm:569
 msgid ""
@@ -11489,7 +11489,7 @@ msgstr "Ajouter un artiste"
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/Delete.pm:11
 msgid "Remove artist"
-msgstr "Supprimer un artiste"
+msgstr "Enlever l'artiste"
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/Edit.pm:34
 msgid "Edit artist"
@@ -11596,15 +11596,15 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveDiscID.pm:11
 #: ../lib/MusicBrainz/Server/Edit/Medium/RemoveDiscID.pm:11
 msgid "Remove disc ID"
-msgstr "Effacer l'ID de disque"
+msgstr "Enlever l'ID de disque"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveLink.pm:10
 msgid "Remove relationship (historic)"
-msgstr "Effacer la relation (historique)"
+msgstr "Enlever la relation (historique)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveReleaseEvents.pm:11
 msgid "Remove release events (historic)"
-msgstr "Effacer l’événement de parution (historique)"
+msgstr "Enlever l’événement de parution (historique)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveReleases.pm:11
 msgid "Remove releases (historic)"
@@ -11641,7 +11641,7 @@ msgstr "Ajouter un média"
 
 #: ../lib/MusicBrainz/Server/Edit/Medium/Delete.pm:19
 msgid "Remove medium"
-msgstr "Effacer le média"
+msgstr "Enlever le média"
 
 #: ../lib/MusicBrainz/Server/Edit/Medium/Edit.pm:40
 msgid "Edit medium"
@@ -11649,7 +11649,7 @@ msgstr "Modifier le média"
 
 #: ../lib/MusicBrainz/Server/Edit/PUID/Delete.pm:15
 msgid "Remove PUID"
-msgstr "Supprimer le PUID"
+msgstr "Enlever le PUID"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/AddAnnotation.pm:12
 msgid "Add place annotation"
@@ -11693,7 +11693,7 @@ msgstr "Fusionner des enregistrements"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/RemoveISRC.pm:17
 msgid "Remove ISRC"
-msgstr "Effacer l'ISRC"
+msgstr "Enlever l'ISRC"
 
 #: ../lib/MusicBrainz/Server/Edit/Relationship.pm:7
 msgid "Relationship"
@@ -11709,7 +11709,7 @@ msgstr "Ajouter un type de relation"
 
 #: ../lib/MusicBrainz/Server/Edit/Relationship/Delete.pm:26
 msgid "Remove relationship"
-msgstr "Effacer la relation"
+msgstr "Enlever la relation"
 
 #: ../lib/MusicBrainz/Server/Edit/Relationship/EditLinkAttribute.pm:14
 msgid "Edit relationship attribute"
@@ -11721,11 +11721,11 @@ msgstr "Modifier le type de relation"
 
 #: ../lib/MusicBrainz/Server/Edit/Relationship/RemoveLinkAttribute.pm:13
 msgid "Remove relationship attribute"
-msgstr "Effacer l'attribut de la relation"
+msgstr "Enlever l'attribut de relation"
 
 #: ../lib/MusicBrainz/Server/Edit/Relationship/RemoveLinkType.pm:13
 msgid "Remove relationship type"
-msgstr "Effacer le type de relation"
+msgstr "Enlever le type de relation"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/AddCoverArt.pm:20
 msgid "Add cover art"
@@ -11737,7 +11737,7 @@ msgstr "Ajouter un label à la parution"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/DeleteReleaseLabel.pm:18
 msgid "Remove release label"
-msgstr "Supprimer un label à la parution"
+msgstr "Enlever un label à la parution"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/Edit.pm:42
 msgid "Edit release"
@@ -11777,7 +11777,7 @@ msgstr "Ajouter des annotations de groupe de parution"
 
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/Delete.pm:12
 msgid "Remove release group"
-msgstr "Effacer le groupe de parution"
+msgstr "Enlever le groupe de parution"
 
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/Edit.pm:37
 msgid "Edit release group"
@@ -11821,7 +11821,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Edit/Work/Delete.pm:11
 msgid "Remove work"
-msgstr "Supprimer une œuvre"
+msgstr "Enlever une œuvre"
 
 #: ../lib/MusicBrainz/Server/Edit/Work/Edit.pm:61
 msgid "Edit work"
@@ -11833,7 +11833,7 @@ msgstr "Fusionner des œuvres"
 
 #: ../lib/MusicBrainz/Server/Edit/Work/RemoveISWC.pm:16
 msgid "Remove ISWC"
-msgstr ""
+msgstr "Enlever l'ISWC"
 
 #: ../lib/MusicBrainz/Server/EditSearch/Predicate.pm:66
 msgid "This operator is not supported"
