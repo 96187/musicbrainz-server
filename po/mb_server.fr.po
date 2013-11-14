@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-14 18:42+0000\n"
+"PO-Revision-Date: 2013-11-14 19:54+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -386,12 +386,12 @@ msgstr "<strong>Attention</strong> :"
 
 #: ../root/scripts/text_strings.tt:50
 msgid "<strong>Warning</strong>: #{disc} has a discid, you cannot add tracks"
-msgstr "<strong>Attention</strong> : #{disc} a un ID de disque, vous ne pouvez pas lui ajouter de pistes"
+msgstr "<strong>Attention</strong> : #{disc} a une ID de disque, vous ne pouvez pas lui ajouter de piste"
 
 #: ../root/scripts/text_strings.tt:51
 msgid ""
 "<strong>Warning</strong>: #{disc} has a discid, you cannot remove tracks"
-msgstr "<strong>Attention</strong> : #{disc} a un ID de disque, vous ne pouvez pas lui enlever de pistes"
+msgstr "<strong>Attention</strong> : #{disc} a une ID de disque, vous ne pouvez pas lui enlever de piste"
 
 #: ../root/annotation/edit.tt:45
 msgid ""
@@ -1195,7 +1195,7 @@ msgstr ""
 msgid ""
 "Are you sure you wish to remove the below cover art from {release} by "
 "{artist}?"
-msgstr "Voulez-vous vraiment enlever la pochette ci-dessous de la parution {release} par {artist} ?"
+msgstr "Voulez-vous vraiment enlever la jaquette ci-dessous de la parution {release} par {artist} ?"
 
 #: ../root/label/delete.tt:5
 msgid "Are you sure you wish to remove the label {label} from MusicBrainz?"
@@ -1499,7 +1499,7 @@ msgstr[1] "Associé à {num} travaux"
 #: ../root/cdtoc/attach_filter_release.tt:74
 msgctxt "button/menu"
 msgid "Attach CD TOC"
-msgstr "Attacher un Table des matières de CD"
+msgstr "Attacher un index de CD"
 
 #: ../root/cdtoc/attach_artist_releases.tt:22
 #: ../root/cdtoc/attach_artist_releases.tt:23
@@ -1510,7 +1510,7 @@ msgstr "Attacher un Table des matières de CD"
 #: ../root/cdtoc/attach_filter_release.tt:23
 msgctxt "header"
 msgid "Attach CD TOC"
-msgstr "Attacher un Table des matières de CD"
+msgstr "Attacher un index de CD"
 
 #: ../root/cdtoc/lookup.tt:52
 msgid "Attach Disc ID"
@@ -1894,15 +1894,15 @@ msgstr "Coupon de CD trouvé"
 
 #: ../root/cdtoc/not_found.tt:1 ../root/cdtoc/not_found.tt:2
 msgid "CD TOC Not Found"
-msgstr "Table des matières du CD non trouvée"
+msgstr "Index de CD introuvable"
 
 #: ../root/cdtoc/info.tt:1
 msgid "CD TOC details"
-msgstr "Détails de la table des matières du CD"
+msgstr "Détails de l'index du CD"
 
 #: ../root/edit/details/historic/add_disc_id.tt:13
 msgid "CD TOC:"
-msgstr "Table des matières du CD :"
+msgstr "Index du CD :"
 
 #: ../root/cdstub/header.tt:5
 msgid "CD stub by {artist}"
@@ -2316,7 +2316,7 @@ msgstr "Jaquette"
 msgid ""
 "Cover Art provided by the {caa|Cover Art Archive}. Hosted by {host|Digital "
 "West}. Sponsored by: {url1|Google}, {url2|OSUOSL} and {more|others...}. "
-msgstr "Les jaquettes sont fournies par {caa|Cover Art Archive}. Hébergé par {host|Digital West}. Sponsorisé par : {url1|Google}, {url2|OSUOSL} et {more|d'autres...}. "
+msgstr "Les jaquettes sont fournies par {caa|« Cover Art Archive »}. Hébergé par {host|Digital West}. Commandité par : {url1|Google}, {url2|OSUOSL} et {more|d'autres...}. "
 
 #: ../root/release/sidebar.tt:11
 msgid "Cover art from {cover|Amazon}"
@@ -3523,7 +3523,7 @@ msgstr[1] "Trouvé dans {num} collections utilisateurs"
 
 #: ../root/release/lookup.tt:4
 msgid "Found more than one match for the CD with TOC {toc}: "
-msgstr "J'ai trouvé plus d'une correspondance pour le CD ayant la table de matières {toc} :"
+msgstr "J'ai trouvé plus d'une correspondance pour le CD ayant l'index {toc} :"
 
 #: ../root/edit/list.tt:62
 msgid "Found {n} edit"
@@ -3593,7 +3593,7 @@ msgstr ""
 
 #: ../root/cdstub/index.tt:30 ../root/cdtoc/info.tt:5
 msgid "Full TOC:"
-msgstr "Table de matières complètes :"
+msgstr "Index complet :"
 
 #: ../root/area/artists-list.tt:6
 #: ../root/search/lib/inline-results-artist.tt:10
@@ -3957,7 +3957,7 @@ msgstr "Si vous ne voyez pas l'artiste que vous cherchez, vous pouvez créer une
 msgid ""
 "If you don't see the release you are looking for, you can still add a new "
 "one, using this CD TOC:"
-msgstr "Si vous ne voyez pas la parution que vous cherchez, vous pouvez en créer une nouvelle, en utilisant cet Index de CD :"
+msgstr "Si vous ne voyez pas la parution que vous cherchez, vous pouvez en créer une nouvelle, en utilisant cet index de CD :"
 
 #: ../root/taglookup/nag.tt:18
 msgid ""
@@ -5088,7 +5088,7 @@ msgstr "Aucune élection de trouvée."
 
 #: ../root/release/sidebar.tt:17
 msgid "No front cover image available.<br/>{all|View all artwork}."
-msgstr ""
+msgstr "Aucune image de devant disponible.<br/>{all|Voir tous les éléments graphiques}. "
 
 #: ../root/relationship/linkattributetype/instruments.tt:31
 msgid "No instruments found."
@@ -5100,7 +5100,7 @@ msgstr "Aucun label de trouvé avec cet attribut."
 
 #: ../root/release/lookup.tt:33
 msgid "No matching CDs were found for TOC {toc}."
-msgstr "Aucun CD n'a été trouvé ayant la table des matières {toc}."
+msgstr "Aucun CD n'a été trouvé ayant l'index {toc}."
 
 #: ../root/admin/edit_user.tt:15
 msgid "No nag"
@@ -5750,7 +5750,7 @@ msgstr "Merci de choisir le crédit que vous voulez renommer pour suivre le nouv
 
 #: ../root/cdtoc/attach_artist_releases.tt:26
 msgid "Please select the medium you wish to attach this CD TOC to."
-msgstr "Merci de choisir le media que vous souhaitez attacher à cet Index de CD."
+msgstr "Merci de choisir le support que vous souhaitez attacher à cet Index de CD."
 
 #: ../root/main/rate_limited.tt:6
 msgid "Please slow down and then try again"
@@ -6433,7 +6433,7 @@ msgstr "Parution avec un certains formats non précisés"
 #: ../root/report/releases_in_caa_with_cover_art_relationships.tt:1
 msgid ""
 "Releases in the Cover Art Archive that still have cover art relationships"
-msgstr "Sorties présentes dans la Cover Art Archive qui ont encore une jaquette en relation"
+msgstr "Parutions présentes dans la « Cover Art Archive » qui ont encore une jaquette en relation"
 
 #: ../root/report/index.tt:68
 msgid "Releases of any sort that still have cover art relationships"
@@ -6491,11 +6491,11 @@ msgstr "Parutions avec des numéros de catalogue qui ressemble à des ASINs"
 #: ../root/report/mediums_with_sequence_issues.tt:1
 #: ../root/report/mediums_with_sequence_issues.tt:3
 msgid "Releases with medium number issues"
-msgstr "Sorties avec un problème de numéro de média"
+msgstr "Parutions avec un problème de numéro de support"
 
 #: ../root/report/index.tt:69
 msgid "Releases with non-sequential mediums"
-msgstr "Sortie avec des médias non séquentiels"
+msgstr "Parution avec des supports non séquentiels"
 
 #: ../root/report/index.tt:58
 msgid "Releases with non-sequential track numbers"
@@ -6519,7 +6519,7 @@ msgstr "Parutions ayant des titres contenant des artistes invités"
 #: ../root/report/tracks_with_sequence_issues.tt:1
 #: ../root/report/tracks_with_sequence_issues.tt:3
 msgid "Releases with track number issues"
-msgstr "Sortie avec un problème de numéro de piste"
+msgstr "Parution avec des problèmes de numéro de piste"
 
 #: ../root/report/index.tt:71 ../root/report/tracks_without_times.tt:1
 #: ../root/report/tracks_without_times.tt:3
@@ -6530,7 +6530,7 @@ msgstr ""
 #: ../root/report/releases_with_unlikely_language_script.tt:1
 #: ../root/report/releases_with_unlikely_language_script.tt:3
 msgid "Releases with unlikely language/script pairs"
-msgstr "Sortie avec des paires langue/encodage improbable"
+msgstr "Parution avec des paires langue/encodage improbable"
 
 #: ../root/report/index.tt:49 ../root/report/releases_without_language.tt:1
 #: ../root/report/releases_without_language.tt:3
@@ -7076,7 +7076,7 @@ msgstr "Choisissez un disque dans le résultat ci-dessous et cliquez sur \"Ajout
 msgid ""
 "Select a release to which the disc ID <code>{discid}</code>. should be moved"
 " to."
-msgstr "Choisissez la sortie vers laquelle l'ID de disque <code>{discid}</code> doit être déplacé."
+msgstr "Choisissez la parution vers laquelle l'ID de disque <code>{discid}</code> doit être déplacée."
 
 #: ../root/release/add_cover_art.tt:31
 msgid "Select images..."
@@ -7248,7 +7248,7 @@ msgstr "Désolé, <code>{discid}</code> ne correspond à aucun coupon de CD. Vou
 
 #: ../root/cdstub/error.tt:19
 msgid "Sorry, <code>{discid}</code> is not a valid disc ID."
-msgstr "Désolé, maix <code>{discid}</code> n'est pas un ID de disque valide."
+msgstr "Désolé, <code>{discid}</code> n'est pas une ID de disque valide."
 
 #: ../root/scripts/text_strings.tt:47
 msgid "Sorry, an error occurred during your search"
@@ -7439,7 +7439,7 @@ msgstr "Désolé, nous ne trouvons aucun utilisateur pour la requête <code>{que
 
 #: ../root/cdtoc/not_found.tt:4
 msgid "Sorry, we could not find the CD TOC you specified."
-msgstr "Désolé, nous ne trouvons pas la table des matières de CD spécifiée."
+msgstr "Désolé, nous ne trouvons pas l'index de CD spécifié."
 
 #: ../root/elections/not_found.tt:4
 msgid "Sorry, we could not find this election."
@@ -7828,7 +7828,7 @@ msgstr ""
 msgid ""
 "The Cover Art Archive has had a take down request in the past for this "
 "release, so we are unable to allow any more uploads."
-msgstr "La Cover Art Archive a reçu des requêtes de suppression dans le passé pour cette sortie, nous ne pouvons donc plus autoriser d'envois."
+msgstr "La « Cover Art Archive » a reçu des requêtes de suppression dans le passé pour cette parution, nous ne pouvons donc plus autoriser d'envois."
 
 #: ../root/user/profile.tt:81
 msgid "The Dawn of the Project"
@@ -8405,7 +8405,7 @@ msgstr "Ce label ne peut pas être supprimé car il y a encore des parutions, en
 
 #: ../root/label/index.tt:37
 msgid "This label does not have any releases."
-msgstr ""
+msgstr "Ce label n'a pas de parution."
 
 #: ../root/label/edit_form.tt:65
 msgid "This label has ended."
@@ -8430,7 +8430,7 @@ msgstr ""
 msgid ""
 "This medium has one or more discids which prevent this information from "
 "being changed."
-msgstr ""
+msgstr "Ce support a un ou plusieurs IDs de disque ce qui empêche de changer les informations."
 
 #: ../root/release/merge.tt:131
 msgid ""
@@ -8597,14 +8597,14 @@ msgid ""
 "This report lists all releases where the mediums are not continuous (e.g. "
 "there is no \"medium 2\"), or with duplicated mediums (e.g. there are two "
 "\"medium 4\"s)."
-msgstr ""
+msgstr "Ce rapport liste toutes les parutions pour lesquelles les supports ne sont pas continus (par exemple il n'y a pas de \"support 2\"), ou avec des supports dupliqués (par exemple il y a deux \"support 4\")."
 
 #: ../root/report/tracks_with_sequence_issues.tt:6
 msgid ""
 "This report lists all releases where the track numbers are not continuous "
 "(e.g. there is no \"track 2\"), or with duplicated track numbers (e.g. there"
 " are two \"track 4\"s)."
-msgstr ""
+msgstr "Ce rapport liste toutes les parutions pour lesquelles les numéros de piste ne sont pas continus (par exemple il n'y a pas de \"piste 2\"), ou avec des pistes dupliqués (par exemple il y a deux \"piste 4\")."
 
 #: ../root/report/artists_with_multiple_occurances_in_artist_credits.tt:6
 msgid ""
@@ -8813,7 +8813,7 @@ msgstr ""
 msgid ""
 "This report shows releases that have an unlikely combination of language and"
 " script properties, such as German and Ethiopic."
-msgstr ""
+msgstr "Ce rapport liste les parutions ayant une combinaison de langue et propriétés de caractère d'écriture improbables, tel qu'allemand et éthiopien."
 
 #: ../root/report/releases_with_download_relationships.tt:6
 msgid ""
@@ -8925,7 +8925,7 @@ msgid ""
 " the translation/transliteration relationship to an original version. This "
 "could be because the original version is missing, or just that the release "
 "status is set wrong."
-msgstr ""
+msgstr "Ce rapport montre les parutions avec un statut Pseudo-parution qui ne sont pas liées à une version originale par la relation traduction/translittération. Soit la version originale est manquante, soit le statut de parution est mal configuré."
 
 #: ../root/release/merge.tt:133
 msgid ""
@@ -9268,7 +9268,7 @@ msgstr "Les Éditeurs de transclusion sont des utilisateurs ayant le droit d'ajo
 #: ../root/report/index.tt:64
 msgid ""
 "Translated/Transliterated Pseudo-Releases not linked to an original version"
-msgstr ""
+msgstr "Pseudo-parutions traduites-translittérées sans lien vers une version originale."
 
 #: ../root/layout.tt:161
 msgid "Twitter"
@@ -9411,7 +9411,7 @@ msgstr "Délier"
 #: ../root/report/unlinked_pseudo_releases.tt:1
 #: ../root/report/unlinked_pseudo_releases.tt:3
 msgid "Unlinked Pseudo-Releases"
-msgstr ""
+msgstr "Pseudo-parutions sans lien"
 
 #: ../root/artist/index.tt:49
 msgid "Unspecified type"
@@ -9758,7 +9758,7 @@ msgstr ""
 
 #: ../root/release/cover_art.tt:42
 msgid "We do not currently have any cover art for {release}."
-msgstr ""
+msgstr "Nous n'avons pas de jaquette pour {release} pour l'instant."
 
 #: ../root/cdtoc/lookup.tt:79
 msgid ""
@@ -9816,7 +9816,7 @@ msgstr "Nous vous avons envoyé un courriel de vérification à l'adresse <code>
 
 #: ../root/cdtoc/lookup.tt:10
 msgid "We used DiscID <code>{discid}</code> to look up this information."
-msgstr ""
+msgstr "Nous avons utilisé l'ID de disque <code>{discid}</code> pour rechercher cette information."
 
 #: ../root/account/edit.tt:47
 msgid ""
@@ -11299,7 +11299,7 @@ msgstr "'{id}' n'est pas un identifiant d'élection valide"
 
 #: ../lib/MusicBrainz/Server/Controller/CDStub.pm:63
 msgid "The required TOC parameter was invalid or not present"
-msgstr "Le paramètre obligatoire TOC était invalide ou absent"
+msgstr "Le paramètre d'index obligatoire était invalide ou absent"
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:112
 msgid "Please provide a medium ID"
@@ -11312,7 +11312,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:151
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:315
 msgid "The provided CD TOC is not valid"
-msgstr "La table des matières de CD entrée est invalide"
+msgstr "L'index de CD fournie est invalide"
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:164
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:329
@@ -11321,7 +11321,7 @@ msgstr "L'identifiant fourni pour le support n'est pas valide"
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:170
 msgid "This CDTOC is already attached to this medium"
-msgstr "Cette table du contenu CD est déjà liée à ce medium"
+msgstr "Cet index CDTOC est déjà liée à ce support"
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:179
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:337
@@ -11404,7 +11404,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Controller/WS/2/DiscID.pm:88
 msgid "Invalid TOC"
-msgstr "Table des matières invalide"
+msgstr "Index invalide"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:108
 msgid "No title provided"
@@ -11428,7 +11428,7 @@ msgstr "Impossible d'ajouter un coupon de CD sans piste"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:128
 msgid "Incomplete TOC data"
-msgstr "Données de la table des matières de CD incomplètes"
+msgstr "Données d'index de CD incomplètes"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:132
 msgid "Missing disc ID"
@@ -11436,11 +11436,11 @@ msgstr "ID de disque manquant"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:136
 msgid "Disc ID does match parsed TOC"
-msgstr "L'ID de disque ne correspond pas à la table des matières lue"
+msgstr "L'ID de disque ne correspond pas à l'index lu"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:140
 msgid "Number of submitted tracks does not match track count in TOC"
-msgstr "Le nombre de piste transmises ne correspond pas au nombre de pistes dans la table des matières"
+msgstr "Le nombre de piste transmises ne correspond pas au nombre de pistes dans l'index"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:144
 msgid "Invalid barcode"
@@ -11729,7 +11729,7 @@ msgstr "Effacer le type de relation"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/AddCoverArt.pm:20
 msgid "Add cover art"
-msgstr "Ajouter une couverture"
+msgstr "Ajouter une jaquette"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/AddReleaseLabel.pm:16
 msgid "Add release label"
@@ -11753,7 +11753,7 @@ msgstr "Modifier le code-barre"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/EditCoverArt.pm:22
 msgid "Edit cover art"
-msgstr "Éditer une couverture"
+msgstr "Modifier une jaquette"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/EditReleaseLabel.pm:24
 msgid "Edit release label"
@@ -11761,11 +11761,11 @@ msgstr "Modifier le label de parution"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/RemoveCoverArt.pm:19
 msgid "Remove cover art"
-msgstr "Supprimer une couverture"
+msgstr "Enlever une jaquette"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/ReorderCoverArt.pm:22
 msgid "Reorder cover art"
-msgstr "Réordonner les couvertures"
+msgstr "Réordonner les jaquettes"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/ReorderMediums.pm:11
 msgid "Reorder mediums"
@@ -12042,7 +12042,7 @@ msgstr "Heure incorrecte. Elle doit être au format MM:SS"
 
 #: ../lib/MusicBrainz/Server/Form/Field/OAuthRedirectURI.pm:20
 msgid "URL protocol must be HTTP or HTTPS"
-msgstr ""
+msgstr "Le protocole d'URL doit être HTTP ou HTTPS"
 
 #: ../lib/MusicBrainz/Server/Form/Field/PartialDate.pm:66
 msgid "invalid date"
