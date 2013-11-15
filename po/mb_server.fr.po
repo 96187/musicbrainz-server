@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-14 22:43+0000\n"
+"PO-Revision-Date: 2013-11-15 01:56+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -1378,7 +1378,7 @@ msgstr "Nom de l'artiste :"
 
 #: ../root/user/ratings_summary.tt:3 ../root/user/ratings.tt:2
 msgid "Artist ratings"
-msgstr "Évaluation de l'artiste"
+msgstr "Évaluations des artistes"
 
 #: ../root/cdstub/edit_form.tt:19
 msgid "Artist {n}:"
@@ -4199,7 +4199,7 @@ msgstr "Informations du Label"
 
 #: ../root/user/ratings_summary.tt:3 ../root/user/ratings.tt:2
 msgid "Label ratings"
-msgstr "Note du label"
+msgstr "Évaluations des labels"
 
 #: ../root/components/common-macros.tt:562
 #: ../root/edit/details/add_label_alias.tt:3
@@ -5112,7 +5112,7 @@ msgstr ""
 
 #: ../root/user/ratings.tt:23
 msgid "No ratings."
-msgstr ""
+msgstr "Pas d'évaluation."
 
 #: ../root/artist/recordings.tt:16
 msgid "No recordings found."
@@ -5927,8 +5927,8 @@ msgstr "Liens rapides :"
 #: ../root/components/rating-macros.tt:1
 msgid "Rate: {rating} star"
 msgid_plural "Rate: {rating} stars"
-msgstr[0] "Note : {rating} étoile"
-msgstr[1] "Note : {rating} étoiles"
+msgstr[0] "Évaulaton : {rating} étoile"
+msgstr[1] "Évaluation : {rating} étoiles"
 
 #: ../root/area/artists-list.tt:8 ../root/area/labels-list.tt:8
 #: ../root/artist/browse_various.tt:16 ../root/artist/index.tt:59
@@ -5936,7 +5936,7 @@ msgstr[1] "Note : {rating} étoiles"
 #: ../root/collection/index.tt:25 ../root/layout/sidebar/sidebar-rating.tt:1
 #: ../root/release_group/merge.tt:16 ../root/release/index.tt:58
 msgid "Rating"
-msgstr "Note"
+msgstr "Évaluation"
 
 #: ../root/artist/ratings.tt:1 ../root/components/ratings.tt:1
 #: ../root/label/ratings.tt:1 ../root/recording/ratings.tt:1
@@ -5944,7 +5944,7 @@ msgstr "Note"
 #: ../root/user/ratings_summary.tt:1 ../root/user/ratings_summary.tt:31
 #: ../root/work/ratings.tt:1
 msgid "Ratings"
-msgstr "Notes"
+msgstr "Évaluations"
 
 #: ../root/main/index.tt:41
 msgid "Read more »"
@@ -5988,7 +5988,7 @@ msgstr "Informations d'enregistrement"
 
 #: ../root/user/ratings_summary.tt:3 ../root/user/ratings.tt:2
 msgid "Recording ratings"
-msgstr "Notes de l'enregistrement"
+msgstr "Évaluations des enregistrements"
 
 #: ../root/recording/layout.tt:3
 msgid "Recording “{name}” by {artist}"
@@ -6315,7 +6315,7 @@ msgstr "Informations du groupe de parution"
 
 #: ../root/user/ratings_summary.tt:3 ../root/user/ratings.tt:2
 msgid "Release group ratings"
-msgstr "Évaluation du groupe de parution"
+msgstr "Évaluations des groupes de parution"
 
 #: ../root/release/relationships.tt:4
 msgid "Release group relationships"
@@ -7848,7 +7848,7 @@ msgstr "L'artiste que vous essayez de modifier est un artiste particulier, vous 
 msgid ""
 "The artwork in the sidebar is being provided by a {relationships|URL "
 "relationship}."
-msgstr ""
+msgstr "L'illustration dans la barre latérale est fournie par un {relationships|URL de relation}."
 
 #: ../root/scripts/text_strings.tt:65
 msgid "The barcode you entered is a valid EAN code."
@@ -7998,7 +7998,7 @@ msgstr ""
 msgid ""
 "The relationship type \"{type}\" can not be deleted because it is is still "
 "in use."
-msgstr ""
+msgstr "Le type de relation \"{type}\" ne peut pas être effacé car il est encore utilisé."
 
 #: ../root/search/error/internal-error.tt:3
 msgid ""
@@ -8455,7 +8455,7 @@ msgstr "Cette page est une {doc|transclusion} de {title}."
 
 #: ../root/release/add_cover_art.tt:15
 msgid "This page requires JavaScript."
-msgstr ""
+msgstr "Cette page requiert Javascript."
 
 #: ../root/scripts/text_strings.tt:73
 msgid "This person is deceased."
@@ -9583,7 +9583,7 @@ msgstr ""
 
 #: ../root/user/ratings_summary.tt:25
 msgid "View all ratings"
-msgstr ""
+msgstr "Voir toutes les évaluations"
 
 #: ../root/layout/sidebar/sidebar-favicons.tt:32
 msgid "View all relationships"
@@ -9668,7 +9668,7 @@ msgstr ""
 
 #: ../root/elections/show.tt:106
 msgid "Votes cast"
-msgstr ""
+msgstr "Émettre des votes"
 
 #: ../root/elections/index.tt:16
 msgid "Votes for"
@@ -9684,7 +9684,7 @@ msgstr "Votes pour :"
 
 #: ../root/elections/show.tt:58
 msgid "Voting"
-msgstr ""
+msgstr "Vote en cours"
 
 #: ../root/edit/info.tt:63 ../root/edit/list_header.tt:25
 msgid "Voting FAQ"
@@ -9935,7 +9935,7 @@ msgstr "Données sur l’œuvre"
 
 #: ../root/user/ratings_summary.tt:3 ../root/user/ratings.tt:2
 msgid "Work ratings"
-msgstr "Note de l'oeuvre"
+msgstr "Évaluations des oeuvres"
 
 #: ../root/edit/details/edit_work.tt:23
 msgid "Work type:"
@@ -10270,12 +10270,12 @@ msgstr "Vous ne pouvez pas enlever l'attribut de relation \"{type}\" car il est 
 #: ../root/elections/show.tt:82
 msgid ""
 "You cannot vote for this candidate, because you are not an auto-editor."
-msgstr ""
+msgstr "Vous ne pouvez pas voter pour ce candidat car vous n'êtes pas un auto-éditeur."
 
 #: ../root/elections/show.tt:84
 msgid ""
 "You cannot vote for this candidate, because you proposed / seconded them."
-msgstr ""
+msgstr "Vous ne pouvez pas voter pour ce candidat car vous l'avez proposé / secondé."
 
 #: ../root/layout/merge-helper.tt:4
 msgid "You currently have the following entities selected for merging:"
@@ -10321,7 +10321,7 @@ msgstr ""
 msgid ""
 "You may enter an edit note while cancelling this edit. This can be useful to"
 " point editors to another edit."
-msgstr ""
+msgstr "Vous pouvez saisir une note de modification tout en annulant cette modification. Ce peut être utile pour diriger les éditeurs vers une autre modification."
 
 #: ../root/artist/special_purpose.tt:2
 msgid "You may not edit special purpose artists"
@@ -10438,7 +10438,7 @@ msgstr "après"
 
 #: ../root/components/common-macros.tt:53
 msgid "aged {num}"
-msgstr ""
+msgstr "vieilli {num}"
 
 #: ../root/edit/search_macros.tt:28
 msgid "all"
@@ -10506,7 +10506,7 @@ msgstr ""
 #: ../root/release/edit/recordings.tt:64
 #: ../root/release/edit/recordings.tt:140
 msgid "disambiguation:"
-msgstr ""
+msgstr "homonymie :"
 
 #: ../root/edit/search_macros.tt:24
 msgid "do not match"
@@ -10572,19 +10572,19 @@ msgstr "est"
 
 #: ../root/edit/search_macros.tt:127
 msgid "is after"
-msgstr ""
+msgstr "est après"
 
 #: ../root/edit/search_macros.tt:127
 msgid "is before"
-msgstr ""
+msgstr "est avant"
 
 #: ../root/edit/search_macros.tt:127 ../root/edit/search_macros.tt:144
 msgid "is between"
-msgstr ""
+msgstr "est entre"
 
 #: ../root/edit/search_macros.tt:258
 msgid "is in my subscriptions"
-msgstr ""
+msgstr "est dans mes abonements"
 
 #: ../root/edit/search_macros.tt:144
 msgid "is less than"
@@ -10620,12 +10620,12 @@ msgstr ""
 
 #: ../root/relationship/linktype/tree.tt:7
 msgid "more"
-msgstr ""
+msgstr "plus"
 
 #: ../root/layout/sidebar/sidebar-tags.tt:1
 #: ../root/layout/sidebar/sidebar-tags.tt:16
 msgid "more..."
-msgstr ""
+msgstr "plus..."
 
 #: ../root/edit/search_macros.tt:19
 msgid "newest first"
@@ -10681,8 +10681,8 @@ msgstr[1] "plus {n} autres utilisateurs anonymes"
 #: ../root/release/collections.tt:15
 msgid "plus {n} other private collection"
 msgid_plural "plus {n} other private collections"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "plus {n} autre collection privée"
+msgstr[1] "plus {n} autres collections privées"
 
 #: ../root/artist/edit_form.tt:100
 msgid "preview:"
@@ -10695,7 +10695,7 @@ msgstr ""
 #: ../root/release/edit/recordings.tt:195
 #: ../root/release/edit/recordings.tt:267
 msgid "recording"
-msgstr ""
+msgstr "enregistrement"
 
 #: ../root/components/common-macros.tt:161
 msgid "recordings"
@@ -10719,7 +10719,7 @@ msgstr ""
 
 #: ../root/layout/sidebar/sidebar-rating.tt:5
 msgid "see all ratings"
-msgstr ""
+msgstr "voir toutes les évaluations"
 
 #: ../root/release/header.tt:10
 msgid "see all versions of this release, {count} available"
@@ -10820,15 +10820,15 @@ msgstr ""
 #: ../root/report/iswc_with_many_works.tt:52 ../root/search/results-work.tt:25
 #: ../root/work/merge.tt:33
 msgid "{artist} ({roles})"
-msgstr ""
+msgstr "{artist} ({roles})"
 
 #: ../root/cdtoc/lookup.tt:21
 msgid "{artist} - {name}"
-msgstr ""
+msgstr "{artist} - {name}"
 
 #: ../root/components/common-macros.tt:220
 msgid "{artist} as {name}"
-msgstr ""
+msgstr "{artist} comme {name}"
 
 #: ../root/cdtoc/attach_artist_releases.tt:64
 msgid "{artist} has no releases which have only {n} track."
@@ -10880,8 +10880,8 @@ msgstr "{count} ({view_url|voir})"
 #: ../root/components/ratings.tt:16
 msgid "{count} private rating not listed."
 msgid_plural "{count} private ratings not listed."
-msgstr[0] "{count} note privée non affichée."
-msgstr[1] "{count} notes privées non affichées."
+msgstr[0] "{count} évaluation privée non affichée."
+msgstr[1] "{count} évaluatons privées non affichées."
 
 #: ../root/user/profile.tt:44
 msgid "{doc|Auto-Editor}"
@@ -10946,7 +10946,7 @@ msgstr ""
 
 #: ../root/components/ratings.tt:20
 msgid "{link} has no ratings."
-msgstr "{link} n'a pas de note."
+msgstr "{link} n'a pas d'évaluation."
 
 #: ../root/components/relationships.tt:30 ../root/release/index.tt:327
 msgid "{link} has no relationships."
@@ -11046,8 +11046,8 @@ msgstr[1] ""
 #: ../root/tag/recording.tt:1
 msgid "{num} recording found"
 msgid_plural "{num} recordings found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num} enregistrement de trouvé"
+msgstr[1] "{num} enregistrements de trouvés"
 
 #: ../root/tag/release.tt:1
 msgid "{num} release found"
@@ -11070,8 +11070,8 @@ msgstr[1] "{num} groupes de parution de trouvés"
 #: ../root/tag/work.tt:1
 msgid "{num} work found"
 msgid_plural "{num} works found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num} œuvre de trouvée"
+msgstr[1] "{num} œuvres de trouvées"
 
 #: ../root/components/common-macros.tt:53
 msgid "{num} year"
@@ -11158,7 +11158,7 @@ msgstr "{user} n'a rien évalué."
 
 #: ../root/user/tag.tt:23
 msgid "{user} has not tagged anything with '{tag}'."
-msgstr ""
+msgstr "{user} n'a pas tagué quoi que ce soit avec '{tag}'."
 
 #: ../root/user/tags.tt:7
 msgid "{user} has not tagged anything."
@@ -11400,7 +11400,7 @@ msgstr "Votre message ne peut pas être envoyé"
 #: ../lib/MusicBrainz/Server/Controller/User.pm:362
 #, perl-brace-format
 msgid "'{type}' is not an entity type that can have ratings."
-msgstr ""
+msgstr "'{type}' n'est pas un type d'entité qui peut avoir des évaluations."
 
 #: ../lib/MusicBrainz/Server/Controller/WS/2/DiscID.pm:88
 msgid "Invalid TOC"
@@ -11921,7 +11921,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:79
 msgid "View and modify your private ratings"
-msgstr ""
+msgstr "Voir et modifier vos évaluations privées"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:80
 msgid "View and modify your private collections"
