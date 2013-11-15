@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-15 01:56+0000\n"
+"PO-Revision-Date: 2013-11-15 02:58+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -410,7 +410,7 @@ msgstr "Un coupon de CD a été trouvé, dont l'ID de disque correspond. Si la l
 msgid ""
 "A medium on this release has been recently changed by someone else, cannot "
 "load recordings."
-msgstr ""
+msgstr "Un support de cette parution a récemment été changé par quelqu'un d'autre. Impossible de charger les enregistrements."
 
 #: ../root/release/collections.tt:18
 msgid "A private collection"
@@ -583,7 +583,7 @@ msgstr "Ajouter un groupe de sorties"
 
 #: ../root/release/edit/layout.tt:4 ../root/release/edit/layout.tt:13
 msgid "Add Release: {title}"
-msgstr ""
+msgstr "Ajouter la parution :{title}"
 
 #: ../root/layout/menu.tt:232
 msgctxt "button/menu"
@@ -684,7 +684,7 @@ msgstr "Ajouter un autre"
 
 #: ../root/scripts/text_strings.tt:49
 msgid "Add another medium"
-msgstr "Ajouter un autre média"
+msgstr "Ajouter un autre support"
 
 #: ../root/scripts/text_strings.tt:48
 msgid "Add another track"
@@ -983,7 +983,7 @@ msgstr "Sinon, vous pouvez {uri|créer un groupe de parution}."
 
 #: ../root/search/results-release.tt:4
 msgid "Alternatively, you may {uri|add a new release}."
-msgstr ""
+msgstr "Par ailleurs vous pouvez {uri|ajouter une nouvelle parution}."
 
 #: ../root/search/results-work.tt:61
 msgid "Alternatively, you may {uri|add a new work}."
@@ -2879,7 +2879,7 @@ msgstr "Modifier les types de relation"
 
 #: ../root/release/edit_relationships.tt:317
 msgid "Edit Relationships: {release}"
-msgstr ""
+msgstr "Modifier les relations : {release}"
 
 #: ../root/release/edit_annotation.tt:1
 msgid "Edit Release Annotation"
@@ -4515,7 +4515,7 @@ msgid ""
 "Make sure all mediums in the releases being merged are in the correct "
 "position. For example, to merge a medium into  medium 2 of a release, it "
 "will need to be set as medium 2 of the release being merged."
-msgstr ""
+msgstr "Assurez-vous que tous les supports de parution fusionnés soient la bonne position. Par exemple pour qu'un support soit fusionné vers le support 2 d'une parution, il doit déjà être le support 2 de sa parution."
 
 #: ../root/release/edit/tracklist.tt:165
 msgid "Manual entry"
@@ -4534,53 +4534,53 @@ msgstr "CDs Correspondants"
 #: ../root/search/lib/inline-results-recording.tt:17
 #: ../lib/MusicBrainz/Server/Edit/Medium.pm:7
 msgid "Medium"
-msgstr "Medium"
+msgstr "Support"
 
 #: ../root/edit/details/reorder_mediums.tt:32
 msgid ""
 "Medium <span class=\"new\">{new}</span> (moved from position <span "
 "class=\"old\">{old}</span>)"
-msgstr ""
+msgstr "Support <span class=\"new\">{new}</span> (déplacé de la position <span class=\"old\">{old}</span>)"
 
 #: ../root/edit/details/reorder_mediums.tt:29
 msgid "Medium <span class=\"new\">{new}</span> (new medium)"
-msgstr ""
+msgstr "Support <span class=\"new\">{new}</span> (nouveau support)"
 
 #: ../root/edit/details/reorder_mediums.tt:26
 msgid ""
 "Medium <span class=\"new\">{new}</span>: {title} (moved from position <span "
 "class=\"old\">{old}</span>)"
-msgstr ""
+msgstr "Support <span class=\"new\">{new}</span> : {title} (déplacé vers la position <span class=\"old\">{old}</span>)"
 
 #: ../root/edit/details/reorder_mediums.tt:23
 msgid "Medium <span class=\"new\">{new}</span>: {title} (new medium)"
-msgstr ""
+msgstr "Support <span class=\"new\">{new}</span> : {title} (nouveau support)"
 
 #: ../root/edit/details/merge_releases.tt:36
 msgid "Medium {position} is now medium {new_position}"
-msgstr "La position {position} du média est maintenant {new_position}"
+msgstr "Le support {position} est maintenant le {new_position}"
 
 #: ../root/edit/details/merge_releases.tt:30
 msgid "Medium {position} is now medium {new_position}: {new_name}"
-msgstr "La position {position} du média est maintenant {new_position} : {new_name}"
+msgstr "Le support {position} est maintenant le {new_position} : {new_name}"
 
 #: ../root/edit/details/merge_releases.tt:24
 msgid "Medium {position}: {name} is now medium {new_position}"
-msgstr "La position {position} du média {name} est maintenant {new_position}"
+msgstr "Le support {position} : {name} est maintenant le {new_position}"
 
 #: ../root/edit/details/merge_releases.tt:19
 msgid "Medium {position}: {name} is now medium {new_position}: {new_name}"
-msgstr "La position {position} du média {name} est maintenant {new_position} : {new_name}"
+msgstr "Le support {position} : {name} est maintenant le {new_position} : {new_name}"
 
 #: ../root/edit/details/add_disc_id.tt:4 ../root/edit/details/edit_medium.tt:5
 #: ../root/edit/details/remove_disc_id.tt:3
 #: ../root/edit/details/remove_medium.tt:3
 msgid "Medium:"
-msgstr "Medium :"
+msgstr "Support :"
 
 #: ../root/edit/details/reorder_mediums.tt:17
 msgid "Mediums:"
-msgstr "Mediums :"
+msgstr "Supports :"
 
 #: ../root/user/profile.tt:79
 msgid "Member since:"
@@ -4651,7 +4651,7 @@ msgstr "Fusionner des langues & encodages :"
 #: ../root/edit/details/merge_releases.tt:67
 #: ../lib/MusicBrainz/Server/Form/Merge/Release.pm:51
 msgid "Merge mediums and recordings"
-msgstr "Fusionner le média et les enregistrements"
+msgstr "Fusionner les supports et les enregistrements"
 
 #: ../root/release/merge_confirm.tt:10
 msgid "Merge method:"
@@ -5156,7 +5156,7 @@ msgstr "Aucune parution de trouvée."
 
 #: ../root/release_group/set_cover_art.tt:63
 msgid "No releases have cover art, cannot set cover art."
-msgstr ""
+msgstr "Aucune parution n'a de jaquette. Impossible d'assigner une jaquette."
 
 #: ../root/tag/release.tt:1
 msgid "No releases with this tag were found."
@@ -5774,7 +5774,7 @@ msgstr "Veuillez vous {log_in|connecter} pour ajouter ou modifier des alias"
 
 #: ../root/release/discids.tt:54
 msgid "Please {login|log in} to edit the disc IDs for this release."
-msgstr ""
+msgstr "Veuillez vous {login|connecter} afin de modifier les IDs de disque pour cette parution."
 
 #: ../root/taglookup/not_found.tt:6
 msgid "Please {search|try again}, providing at least one of these parameters"
@@ -5804,7 +5804,7 @@ msgstr ""
 
 #: ../root/cdtoc/lookup.tt:29
 msgid "Possible Mediums"
-msgstr "Médias probables"
+msgstr "Supports possible"
 
 #: ../root/relationship/linkattributetype/index.tt:18
 msgid "Possible values:"
@@ -5861,7 +5861,7 @@ msgstr "Type principal :"
 #: ../root/edit/details/remove_place_alias.tt:25
 #: ../root/edit/details/remove_work_alias.tt:25
 msgid "Primary for locale:"
-msgstr ""
+msgstr "Paramètre linguistique primaire :"
 
 #: ../root/relationship/linktype/form.tt:25
 msgid "Priority:"
@@ -6211,7 +6211,7 @@ msgstr "Artiste de parution"
 
 #: ../root/edit/search_macros.tt:307
 msgid "Release Country"
-msgstr ""
+msgstr "Pays de parution"
 
 #: ../root/cdtoc/list.tt:8
 msgid "Release Events"
@@ -6240,7 +6240,7 @@ msgstr "Groupe de parution introuvable"
 
 #: ../root/release/edit_relationships.tt:394
 msgid "Release Group Relationships"
-msgstr ""
+msgstr "Relations de groupe de parution"
 
 #: ../root/edit/details/add_release_group.tt:3
 #: ../root/edit/details/edit_release_group.tt:5
@@ -6252,7 +6252,7 @@ msgstr "Groupe de parution :"
 #: ../root/cdtoc/attach_artist_releases.tt:51
 #: ../root/cdtoc/attach_filter_release.tt:66
 msgid "Release Group: {release_group_link}"
-msgstr ""
+msgstr "Groupe de parution : {release_group_link}"
 
 #: ../root/tag/header.tt:1 ../root/tag/index.tt:8 ../root/user/tag.tt:4
 msgid "Release Groups"
@@ -6268,11 +6268,11 @@ msgstr "Parution introuvable"
 
 #: ../root/edit/search_macros.tt:307
 msgid "Release Quality"
-msgstr ""
+msgstr "Qualité de la parution"
 
 #: ../root/release/edit_relationships.tt:388
 msgid "Release Relationships"
-msgstr ""
+msgstr "Relations de parution"
 
 #: ../root/recording/index.tt:12
 msgid "Release Title"
@@ -6351,7 +6351,7 @@ msgstr "Groupe de parution qu'il faudrait peut-être fusionner"
 #: ../root/report/duplicate_relationships_release_groups.tt:3
 #: ../root/report/index.tt:42
 msgid "Release groups with possible duplicate relationships"
-msgstr ""
+msgstr "Groupes de parution avec des relations possiblement dupliquées"
 
 #: ../root/report/featuring_release_groups.tt:1
 #: ../root/report/featuring_release_groups.tt:3 ../root/report/index.tt:40
@@ -6482,7 +6482,7 @@ msgstr ""
 #: ../root/report/single_medium_releases_with_medium_titles.tt:1
 #: ../root/report/single_medium_releases_with_medium_titles.tt:3
 msgid "Releases with a single medium that has a name"
-msgstr ""
+msgstr "Parutions avec un support simple qui a un nom"
 
 #: ../root/report/index.tt:63
 msgid "Releases with catalog numbers that look like ASINs"
@@ -6505,7 +6505,7 @@ msgstr "Parutions avec des numéros de piste non séquentiels"
 #: ../root/report/duplicate_relationships_releases.tt:3
 #: ../root/report/index.tt:72
 msgid "Releases with possible duplicate relationships"
-msgstr ""
+msgstr "Parutions avec des relations possiblement dupliquées"
 
 #: ../root/report/index.tt:59 ../root/report/superfluous_data_tracks.tt:3
 msgid "Releases with superfluous data tracks"
@@ -6524,7 +6524,7 @@ msgstr "Parution avec des problèmes de numéro de piste"
 #: ../root/report/index.tt:71 ../root/report/tracks_without_times.tt:1
 #: ../root/report/tracks_without_times.tt:3
 msgid "Releases with unknown track times"
-msgstr ""
+msgstr "Parutions avec des durées de piste inconnues"
 
 #: ../root/report/index.tt:70
 #: ../root/report/releases_with_unlikely_language_script.tt:1
@@ -7105,7 +7105,7 @@ msgstr ""
 
 #: ../root/release_group/set_cover_art.tt:5
 msgid "Set Release Group Cover Art"
-msgstr ""
+msgstr "Assigner une jaquette de groupe de parution"
 
 #: ../root/cdtoc/set_durations.tt:1 ../root/cdtoc/set_durations.tt:2
 msgid "Set Tracklist Durations"
@@ -7822,7 +7822,7 @@ msgstr "Merci, votre adresse courriel a maintenant été vérifiée ! Si vous ne
 msgid ""
 "That search can't be performed, because you must provide at least one of "
 "'recording', 'track number', 'duration', 'release', or 'artist'."
-msgstr ""
+msgstr "Cette recherche ne peut être effectuées car vous devez fournir au moins un enregistrement, une durée, une parution ou un artiste."
 
 #: ../root/release/caa_darkened.tt:3 ../root/release/cover_art.tt:60
 msgid ""
@@ -7964,7 +7964,7 @@ msgstr "La majorité des données de <strong>la base de données MusicBrainz</st
 
 #: ../root/cdtoc/set_durations.tt:19
 msgid "The medium you are altering is part of the following release:"
-msgstr ""
+msgstr "Le support que vous modifiez fait partie de la parution suivante :"
 
 #: ../root/main/403.tt:5
 msgid "The page you requested is private."
@@ -7986,7 +7986,7 @@ msgstr "La raison de cela est inconnue."
 msgid ""
 "The recording artists do not match! Perhaps you meant to use the \"append "
 "mediums\" merge strategy?"
-msgstr "Les artistes liés aux enregistrements sonores ne correspondent pas ! Peut-être que vous souhaitez en réalité utiliser la stratégie de fusion \"Rassembler les médias\" ?"
+msgstr "Les artistes liés aux enregistrements ne correspondent pas ! Vous vouliez peut-être utiliser la stratégie de fusion \"Ajouter les supports\" ?"
 
 #: ../root/release/merge.tt:139
 msgid ""
@@ -8218,7 +8218,7 @@ msgstr "Cet artiste n'a aucune parution"
 
 #: ../root/artist/edit_form.tt:77 ../root/scripts/text_strings.tt:72
 msgid "This artist has ended."
-msgstr ""
+msgstr "Cet artiste n'en est plus un."
 
 #: ../root/artist/index.tt:23
 msgid ""
@@ -8359,7 +8359,7 @@ msgstr "Ce formulaire vous permet de diviser {artist} en plusieurs artistes. Qua
 
 #: ../root/scripts/text_strings.tt:74
 msgid "This group has dissolved."
-msgstr ""
+msgstr "Ce groupe s'est dissout."
 
 #: ../root/layout.tt:97 ../lib/DBDefs/Default.pm:126
 msgid "This is a MusicBrainz development server."
@@ -8395,7 +8395,7 @@ msgstr "Ceci est une {history|ancienne version} de cette annotation, telle que l
 
 #: ../root/alias/edit_form.tt:20
 msgid "This is the primary alias for this locale"
-msgstr ""
+msgstr "Ceci est l'alias primaire pour ce paramètre linguistique"
 
 #: ../root/label/delete.tt:14
 msgid ""
@@ -8409,7 +8409,7 @@ msgstr "Ce label n'a pas de parution."
 
 #: ../root/label/edit_form.tt:65
 msgid "This label has ended."
-msgstr ""
+msgstr "Ce label n'existe plus."
 
 #: ../root/label/index.tt:21
 msgid ""
@@ -8424,7 +8424,7 @@ msgstr "Ce label n'a pas de tag."
 
 #: ../root/cdtoc/attach_list.tt:24
 msgid "This medium format cannot have a disc ID attached"
-msgstr ""
+msgstr "Ce format de support ne peut avoir d'ID de disque rattachée."
 
 #: ../root/scripts/text_strings.tt:52
 msgid ""
@@ -8641,7 +8641,7 @@ msgstr ""
 msgid ""
 "This report lists artists that may have disambiguation comments in their "
 "name, rather than the actual disambiguation comment field."
-msgstr ""
+msgstr "Ce rapport liste les artistes qui on peut-être des commentaires d'homonymie dans leur nom plutôt que dans le champ d'homonymie. "
 
 #: ../root/report/possible_collaborations.tt:6
 msgid ""
@@ -8874,7 +8874,7 @@ msgid ""
 "others are unset. In most cases, it should be easy to find out which the "
 "correct formats are (don't just assume that they're all CDs because one is "
 "though!)."
-msgstr ""
+msgstr "Ce rapport montre les parutions avec certains formats de support, mais les autres sont vides. Dans la plupart des cas il devrait être facile de trouver quels sont les bons formats (n'assumez juste pas que ce sont tous des CDs parce qu'un l'est."
 
 #: ../root/report/separate_discs.tt:6
 msgid ""
@@ -8885,7 +8885,7 @@ msgstr "Ce rapport affiche les parutions qui ont (disc n) ou (bonus disc) dans l
 msgid ""
 "This report shows releases which have artwork in the Cover Art Archive, but "
 "still have a cover art relationship (pointing to a URL)."
-msgstr ""
+msgstr "Ce rapport montre les parutions qui ont des illustrations dans le « Cover Art Archive » mais qui ont encore une relation de jaquette (qui pointe vers une URL)."
 
 #: ../root/report/cat_no_looks_like_asin.tt:6
 msgid ""
@@ -8930,7 +8930,7 @@ msgstr "Ce rapport montre les parutions avec un statut Pseudo-parution qui ne so
 #: ../root/release/merge.tt:133
 msgid ""
 "This requires that corresponding mediums have the same number of tracks."
-msgstr ""
+msgstr "Ceci nécessite que les supports correspondants ont le même nombre de pistes."
 
 #: ../root/user/profile.tt:189
 msgid "This table shows a summary of votes cast by this editor."
@@ -9587,7 +9587,7 @@ msgstr "Voir toutes les évaluations"
 
 #: ../root/layout/sidebar/sidebar-favicons.tt:32
 msgid "View all relationships"
-msgstr ""
+msgstr "Voir toutes les relations"
 
 #: ../root/annotation/common.tt:21 ../root/components/common-macros.tt:933
 msgid "View annotation history"
@@ -9742,7 +9742,7 @@ msgstr ""
 msgid ""
 "We are unable to display history for this cover art. For a current listing "
 "of cover art, please see the {coverart|release's cover art page}."
-msgstr ""
+msgstr "Nous ne pouvons afficher l'historique pour cette jaquette. Pour une liste à jour des jaquettes, veuillez consulter {coverart|la page des jaquette de cette parution."
 
 #: ../root/release/edit/missing_entities.tt:149
 msgid ""
@@ -10237,7 +10237,7 @@ msgstr[1] ""
 
 #: ../root/cdtoc/attach_artist_releases.tt:24
 msgid "You are viewing releases by {artist}."
-msgstr ""
+msgstr "Vous regardez les parutions par {artist}."
 
 #: ../root/cdtoc/lookup.tt:99
 msgid ""
@@ -10629,7 +10629,7 @@ msgstr "plus..."
 
 #: ../root/edit/search_macros.tt:19
 msgid "newest first"
-msgstr ""
+msgstr "les plus récents en premier"
 
 #: ../root/user/profile.tt:55
 msgid "nominate for auto-editor"
@@ -10645,7 +10645,7 @@ msgstr "aucun"
 
 #: ../root/edit/search_macros.tt:19
 msgid "oldest first"
-msgstr ""
+msgstr "les plus anciens en premier"
 
 #: ../root/edit/search_macros.tt:161
 msgid "on"
@@ -10690,7 +10690,7 @@ msgstr ""
 
 #: ../root/edit/search_macros.tt:19
 msgid "randomly"
-msgstr ""
+msgstr "aléatoirement"
 
 #: ../root/release/edit/recordings.tt:195
 #: ../root/release/edit/recordings.tt:267
@@ -10733,7 +10733,7 @@ msgstr "envoyer un courriel"
 
 #: ../root/cdtoc/attach_list.tt:31
 msgid "show tracklist"
-msgstr ""
+msgstr "montrer la liste des pistes"
 
 #: ../root/browse/page_selector.tt:43
 msgid "space"
@@ -10860,7 +10860,7 @@ msgstr ""
 
 #: ../root/release/collections.tt:10
 msgid "{collection} by {owner}"
-msgstr ""
+msgstr "{collection} par {owner}"
 
 #: ../root/components/common-macros.tt:145
 msgid "{commas_only_list_item}, {rest}"
@@ -10965,7 +10965,7 @@ msgstr "{mbid|<abbr title=\"MusicBrainz Identifier\">MBID</abbr>} :"
 
 #: ../root/release/edit/layout.tt:2
 msgid "{name} - Edit Release"
-msgstr ""
+msgstr "{name} - Modifier la parution"
 
 #: ../root/tag/entity-list.tt:10
 msgid "{name} by {artist}"
@@ -11058,8 +11058,8 @@ msgstr[1] "{num} parutions de trouvées"
 #: ../root/cdtoc/attach_filter_release.tt:39
 msgid "{num} release found matching your query."
 msgid_plural "{num} release found matching your query."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num} parution de trouvée correspond avec votre requête."
+msgstr[1] "{num} parutions de trouvées correspondent avec votre requête."
 
 #: ../root/tag/release_group.tt:1
 msgid "{num} release group found"
@@ -11130,7 +11130,7 @@ msgstr "Relation {type0}-{type1} "
 
 #: ../root/relationship/linktype/tree.tt:46
 msgid "{type0}-{type1} relationship types"
-msgstr ""
+msgstr "{type0}-{type1} types de relation"
 
 #: ../root/work/layout.tt:1
 msgid "{type} “{work}”"
@@ -11303,11 +11303,11 @@ msgstr "Le paramètre d'index obligatoire était invalide ou absent"
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:112
 msgid "Please provide a medium ID"
-msgstr ""
+msgstr "Veuillez fournir une ID de support"
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:117
 msgid "Could not find medium"
-msgstr ""
+msgstr "Le support n'a pu être trouvé"
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:151
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:315
@@ -11317,16 +11317,16 @@ msgstr "L'index de CD fournie est invalide"
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:164
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:329
 msgid "The provided medium id is not valid"
-msgstr "L'identifiant fourni pour le support n'est pas valide"
+msgstr "L'identifiant de support n'est pas valide"
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:170
 msgid "This CDTOC is already attached to this medium"
-msgstr "Cet index CDTOC est déjà liée à ce support"
+msgstr "Cet index CDTOC est déjà lié à ce support"
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:179
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:337
 msgid "The selected medium cannot have disc IDs"
-msgstr "Le medium sélectionné ne peut avoir de disc IDs"
+msgstr "Le support sélectionné ne peut avoir d'ID de disque"
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:206
 msgid "The provided artist id is not valid"
@@ -11543,7 +11543,7 @@ msgstr "Modifier la relation (historique)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditReleaseAttrs.pm:15
 msgid "Edit release attributes (historic)"
-msgstr ""
+msgstr "Modifier les attributs de parution (historique)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditReleaseEvents.pm:11
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditReleaseEventsOld.pm:17
@@ -11552,11 +11552,11 @@ msgstr "Modifier les événement de parution (historique)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditReleaseLanguage.pm:13
 msgid "Edit release language (historic)"
-msgstr ""
+msgstr "Modifier les langues de parution (historique)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditReleaseName.pm:10
 msgid "Edit release name (historic)"
-msgstr ""
+msgstr "Modifier le nom de parution (historique)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditTrackLength.pm:10
 msgid "Edit track length (historic)"
@@ -11572,7 +11572,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/MACToSAC.pm:12
 msgid "Convert release to single artist (historic)"
-msgstr ""
+msgstr "Convertir la parution vers un artiste simple (historique)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/MergeRelease.pm:12
 #: ../lib/MusicBrainz/Server/Edit/Historic/MergeReleaseMAC.pm:9
@@ -11587,7 +11587,7 @@ msgstr "Déplacer l'ID de disque"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/MoveRelease.pm:12
 msgid "Move release (historic)"
-msgstr ""
+msgstr "Déplacer la parution (historique)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/MoveReleaseToRG.pm:17
 msgid "Change release group (historic)"
@@ -11637,15 +11637,15 @@ msgstr "Fusionner les labels"
 
 #: ../lib/MusicBrainz/Server/Edit/Medium/Create.pm:26
 msgid "Add medium"
-msgstr "Ajouter un média"
+msgstr "Ajouter un support"
 
 #: ../lib/MusicBrainz/Server/Edit/Medium/Delete.pm:19
 msgid "Remove medium"
-msgstr "Enlever le média"
+msgstr "Enlever le support"
 
 #: ../lib/MusicBrainz/Server/Edit/Medium/Edit.pm:40
 msgid "Edit medium"
-msgstr "Modifier le média"
+msgstr "Modifier le support"
 
 #: ../lib/MusicBrainz/Server/Edit/PUID/Delete.pm:15
 msgid "Remove PUID"
@@ -11769,7 +11769,7 @@ msgstr "Réordonner les jaquettes"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/ReorderMediums.pm:11
 msgid "Reorder mediums"
-msgstr "Réordonner les medias"
+msgstr "Réordonner les supports"
 
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/AddAnnotation.pm:12
 msgid "Add release group annotation"
@@ -11937,15 +11937,15 @@ msgstr "Transmettre de nouveaux code-barres vers la base de données"
 
 #: ../lib/MusicBrainz/Server/FilterUtils.pm:25
 msgid "Filter release groups"
-msgstr ""
+msgstr "Filtrer les groupes de parution"
 
 #: ../lib/MusicBrainz/Server/FilterUtils.pm:39
 msgid "Filter releases"
-msgstr ""
+msgstr "Filtrer les parutions"
 
 #: ../lib/MusicBrainz/Server/FilterUtils.pm:53
 msgid "Filter recordings"
-msgstr ""
+msgstr "Filtrer les enregistrements"
 
 #: ../lib/MusicBrainz/Server/Form/Alias.pm:104
 msgid "This alias can only be a primary alias if a locale is selected"
@@ -12177,8 +12177,8 @@ msgstr "La liste des pistes est obligatoire"
 #, perl-brace-format
 msgid "This medium has a Disc ID, it should have exactly {n} track."
 msgid_plural "This medium has a Disc ID, it should have exactly {n} tracks."
-msgstr[0] "Ce média a un ID de disque, il doit avoir exactement {n} piste."
-msgstr[1] "Ce média a un ID de disque, il doit avoir exactement {n} pistes."
+msgstr[0] "Ce support a une ID de disque, il devrait avoir exactement {n} piste."
+msgstr[1] "Ce support a une ID de disque, il devrait avoir exactement {n} pistes."
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:177
 #, perl-brace-format
@@ -12189,7 +12189,7 @@ msgstr "La piste {pos} est manquante."
 msgid ""
 "This medium already has disc IDs so you may only change the format\n"
 "                       to a format that can have disc IDs"
-msgstr "Ce media a déjà un ID de disque, vous ne pouvez donc changer son format que vers un pouvant accueillir des ID de disque."
+msgstr "Ce support a déjà une ID de disque, vous ne pouvez donc changer son format\nque vers un autre pouvant accueillir des ID de disque."
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:227
 msgid "A release must have at least one medium."
@@ -12215,7 +12215,7 @@ msgstr "FreeDB"
 
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:57
 msgid "Indexed search with advanced query syntax"
-msgstr ""
+msgstr "Recherche indexée avec une syntaxe de requête précise"
 
 #: ../lib/MusicBrainz/Server/Form/User/ChangePassword.pm:49
 msgid "The old password is incorrect"
