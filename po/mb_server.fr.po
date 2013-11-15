@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-15 02:58+0000\n"
+"PO-Revision-Date: 2013-11-15 03:41+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -5124,7 +5124,7 @@ msgstr "Aucun enregistrement de trouvé avec cet attribut."
 
 #: ../root/place/performances.tt:84
 msgid "No recordings, releases or release groups are linked to this place"
-msgstr ""
+msgstr "Aucun enregistrement, parution ou groupe de parution de lié vers cet endroit"
 
 #: ../root/relationship/linkattributetype/index.tt:32
 msgid "No relationship attributes found."
@@ -5225,7 +5225,7 @@ msgstr "Nominer un candidat être l'auto-éditeur"
 #: ../root/report/releases_with_download_relationships.tt:1
 #: ../root/report/releases_with_download_relationships.tt:3
 msgid "Non-digital releases with download relationships"
-msgstr ""
+msgstr "Parutions non numérique avec des relations de téléchargement"
 
 #: ../root/edit/edit_header.tt:42 ../root/edit/vote.tt:23
 msgid "None"
@@ -6215,7 +6215,7 @@ msgstr "Pays de parution"
 
 #: ../root/cdtoc/list.tt:8
 msgid "Release Events"
-msgstr ""
+msgstr "Événements de parutions"
 
 #: ../root/edit/details/historic/add_release.tt:70
 msgid "Release Events:"
@@ -6288,12 +6288,12 @@ msgstr "Événement de parution"
 
 #: ../root/release/sidebar.tt:71
 msgid "Release events"
-msgstr ""
+msgstr "Événements de parution"
 
 #: ../root/edit/details/add_release.tt:74
 #: ../root/edit/details/edit_release.tt:65
 msgid "Release events:"
-msgstr ""
+msgstr "Événements de parution :"
 
 #: ../root/report/release_group_url_list.tt:6
 #: ../root/scripts/text_strings.tt:114
@@ -6437,7 +6437,7 @@ msgstr "Parutions présentes dans la « Cover Art Archive » qui ont encore une 
 
 #: ../root/report/index.tt:68
 msgid "Releases of any sort that still have cover art relationships"
-msgstr ""
+msgstr "Parutions de toutes sortes qui ont encore des relations de jaquette."
 
 #: ../root/report/index.tt:61 ../root/report/released_too_early.tt:1
 #: ../root/report/released_too_early.tt:3
@@ -6476,7 +6476,7 @@ msgstr "Parutions qui devraient être converties en \"plusieurs artistes\""
 #: ../root/report/releases_with_coverart_links.tt:1
 #: ../root/report/releases_with_coverart_links.tt:3
 msgid "Releases with Cover Art relationships"
-msgstr ""
+msgstr "Parutions avec des relations de jaquettes."
 
 #: ../root/report/index.tt:73
 #: ../root/report/single_medium_releases_with_medium_titles.tt:1
@@ -8073,7 +8073,7 @@ msgstr "Il n'y a actuellement aucun utilisateur abonné à {label}."
 msgid ""
 "There are no disc IDs attached to this release; to find out more about how "
 "to add one, see {doc|How to Add Disc IDs}."
-msgstr ""
+msgstr "Il n'y aucune ID de disque de rattachée à cette parution ; pour en savoir plus sur comment en ajouter une voir {doc|Comment ajouter des IDs de disque}."
 
 #: ../root/artist/subscribe.tt:11
 msgid "There are no editors currently subscribed to this artist."
@@ -8206,11 +8206,11 @@ msgstr ""
 
 #: ../root/area/releases.tt:9
 msgid "This area is not currently associated with any releases."
-msgstr ""
+msgstr "Cette zone n'est actuellement associée à aucune parution,"
 
 #: ../root/artist/index.tt:103
 msgid "This artist does not have any release groups or standalone recordings."
-msgstr ""
+msgstr "Cet artiste n'a aucun groupe de parution ni d'enregistrement autonome."
 
 #: ../root/artist/releases.tt:18
 msgid "This artist does not have any releases"
@@ -8229,7 +8229,7 @@ msgstr "Cet artiste n'a aucun enregistrement, parution, groupe de parution ou re
 
 #: ../root/artist/index.tt:106
 msgid "This artist has no release groups, only standalone recordings."
-msgstr ""
+msgstr "Cet artiste n'a aucun groupe de parution ni d'enregistrement autonome."
 
 #: ../root/artist/tags.tt:2
 msgid "This artist has no tags."
@@ -8558,7 +8558,7 @@ msgid ""
 "separate real release. It should not be used to denote bootlegs, "
 "mixtape/street albums, demos, or digital albums. Be sure to link to the "
 "corresponding real release with the {url|transl(iter)ation relationship}."
-msgstr ""
+msgstr "Ce statut de parution devrait être utilisé pour les traductions et translittérations non officielles des listes de piste et des titres de parution, et n'indique pas une vraie parution séparée. Il ne devrait pas être utilisé pour indiquer les contrebandes, albums « mixtapes/street », démos ou albums numériques. Assurez-vous de faire le lien vers la vraie parution correspondante avec url|relation de translittération}."
 
 #: ../root/report/duplicate_artists.tt:6
 msgid ""
@@ -8590,7 +8590,7 @@ msgstr "Ce rapport vise à identifier les parutions qui doivent être converties
 msgid ""
 "This report lists all releases where some or all tracks have unknown track "
 "lengths."
-msgstr ""
+msgstr "Ce rapport liste toutes les parutions qui ont des durées de piste inconnues pour une ou toutes les pistes."
 
 #: ../root/report/mediums_with_sequence_issues.tt:6
 msgid ""
@@ -8617,7 +8617,7 @@ msgid ""
 "This report lists artists that have no editors subscribed to them, and whose"
 " changes may therefore be under-reviewed. Artists with more release groups "
 "and more open edits are listed first."
-msgstr ""
+msgstr "Ce rapport liste les artistes pour lesquels aucun éditeur ne s'est abonné, et pour lesquels les changements manqueront de révision. Les artistes avec plus de groupes de parution et plus de modifications ouvertes sont listés en premier."
 
 #: ../root/report/artists_that_may_be_groups.tt:6
 msgid ""
@@ -8790,7 +8790,7 @@ msgid ""
 "non-classical release groups, this is inherited from an older version of "
 "MusicBrainz and should be fixed. Consult the {featured_artists|page about "
 "featured artists} to know more."
-msgstr ""
+msgstr "Ce rapport liste les groupes de parution avec (feat. Artist) dans le titre. Pour les groupes de parution « classique », consulter {CSG|les directives du style classique}. Pour les groupes de parution autre que « classique », ceci est hérité d'une ancienne version de MusicBrainz et devrait être corrigé. Consulter la {featured_artists|page sur les artistes invités} pour en savoir plus."
 
 #: ../root/report/set_in_different_rg.tt:6
 msgid ""
@@ -8819,7 +8819,7 @@ msgstr "Ce rapport liste les parutions ayant une combinaison de langue et propri
 msgid ""
 "This report shows releases that have download relationships, but have media "
 "who's format is not \"Digital Media\"."
-msgstr ""
+msgstr "Ce rapport montre les parutions qui ont des relations de téléchargement mais dont le format de support n'est pas « Digital Media »."
 
 #: ../root/report/multiple_asins.tt:6
 msgid ""
@@ -8856,7 +8856,7 @@ msgstr ""
 
 #: ../root/report/releases_with_coverart_links.tt:6
 msgid "This report shows releases that still have Cover Art relationships."
-msgstr ""
+msgstr "Ce rapport montre les parutions qui ont encore des relations de jaquette."
 
 #: ../root/report/part_of_set_relationships.tt:6
 msgid ""
@@ -8910,7 +8910,7 @@ msgid ""
 "releases, this is inherited from an older version of MusicBrainz and should "
 "be fixed. Consult the {featured_artists|page about featured artists} to know"
 " more."
-msgstr ""
+msgstr "Ce rapport liste les parutions avec (feat. Artist) dans le titre. Pour les groupes de parution « classique », consulter {CSG|les directives du style classique}. Pour les parutions autre que « classique », ceci est hérité d'une d'une ancienne version de MusicBrainz et devrait être corrigé. Consulter la {featured_artists|page sur les artistes invités} pour en savoir plus."
 
 #: ../root/report/bad_amazon_urls.tt:6
 msgid ""
@@ -10355,7 +10355,7 @@ msgid ""
 "erroneously, since a release can have multiple valid disc IDs, and each disc"
 " ID can belong to more than one release. For more in-depth information about"
 " this topic, please see our {doc|CD submission guide}."
-msgstr "Vous devez être sûr que cette ID de disque a été ajoutée à cette parution par erreur vu qu'une parution peut avoir plusieurs IDs de disque valides, et chaque ID de disque peut appartenir à plus d'une parution. Pour des informations plus approfondies à ce sujet voir doc|Comment proposer un CD}."
+msgstr "Vous devez être sûr que cette ID de disque a été ajoutée à cette parution par erreur vu qu'une parution peut avoir plusieurs IDs de disque valides, et chaque ID de disque peut appartenir à plus d'une parution. Pour des informations plus approfondies à ce sujet voir {doc|Comment proposer un CD}."
 
 #: ../root/user/login.tt:7
 msgid "You need to be logged in to view this page."
@@ -11113,8 +11113,8 @@ msgstr "{release} par {artist}"
 #: ../root/release/collections.tt:4
 msgid "{release} has been added to {num} collection:"
 msgid_plural "{release} has been added to {num} collections:"
-msgstr[0] "{release} a été ajouté à {count} collection :"
-msgstr[1] "{release} a été ajouté à {count} collections :"
+msgstr[0] "{release} a été ajouté à {num} collection :"
+msgstr[1] "{release} a été ajouté à {num} collections :"
 
 #: ../root/release/collections.tt:23
 msgid "{release} has not been added to any collections."
@@ -11591,7 +11591,7 @@ msgstr "Déplacer la parution (historique)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/MoveReleaseToRG.pm:17
 msgid "Change release group (historic)"
-msgstr ""
+msgstr "Changer le groupe de parution (historique)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveDiscID.pm:11
 #: ../lib/MusicBrainz/Server/Edit/Medium/RemoveDiscID.pm:11
