@@ -12,17 +12,18 @@
 #   <email address hidden>, 2012
 # murdos <email address hidden>, 2011-2013
 # murdos <email address hidden>, 2011
-# nikki <email address hidden>, 2012
+# nikki <email address hidden>, 2012-2013
 # Nikolai Prokoschenko <email address hidden>, 2011
 # Nikolai Prokoschenko <email address hidden>, 2011
 # nikki <email address hidden>, 2013
+# redapplz <email address hidden>, 2013
 # redapplz <email address hidden>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-19 19:59+0000\n"
+"PO-Revision-Date: 2013-11-19 20:49+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -1135,13 +1136,13 @@ msgstr "Êtes-vous sûr de vouloir supprimer toutes les informations sur {e} ? C
 
 #: ../root/admin/delete_user.tt:20
 msgid "Are you sure you want to delete your account? This cannot be undone!"
-msgstr "Etes-vous sûr de vouloir supprimer votre compte ? Cela ne peut pas être annulé !"
+msgstr "Êtes-vous sûr de vouloir supprimer votre compte ? Cela ne peut pas être annulé !"
 
 #: ../root/elections/nominate.tt:5
 msgid ""
 "Are you sure you want to nominate the editor {editor} for auto-editor "
 "status?"
-msgstr "Etes-vous sûr de vouloir promouvoir l'éditeur {editor} au statut d'auto-éditeur ?"
+msgstr "Êtes-vous sûr de vouloir promouvoir l'éditeur {editor} au statut d'auto-éditeur ?"
 
 #: ../root/alias/delete.tt:1
 msgid "Are you sure you want to remove the alias <em>{alias}</em>?"
@@ -1167,7 +1168,7 @@ msgstr ""
 
 #: ../root/edit/cancel.tt:3
 msgid "Are you sure you wish to cancel edit #{n}? This cannot be undone!"
-msgstr "Etes-vous sûr de vouloir annuler la modification N°{n} ? Cela sera définitif !"
+msgstr "Êtes-vous sûr de vouloir annuler la modification N°{n} ? Cela sera définitif !"
 
 #: ../root/admin/wikidoc/delete.tt:4
 msgid ""
@@ -1553,7 +1554,7 @@ msgstr "Robot"
 
 #: ../root/layout/menu.tt:133
 msgid "Auto-editor Elections"
-msgstr "Élections des Auto-Éditeurs"
+msgstr "Élections des auto-éditeurs"
 
 #: ../root/elections/show.tt:1 ../root/elections/show.tt:3
 msgid "Auto-editor election #{no}"
@@ -1573,7 +1574,7 @@ msgid ""
 "privileges. These privileges allow them to make select edits that are "
 "automatically approved without going through the normal voting process, as "
 "well as the ability to instantly approve other users' edits."
-msgstr "Les Auto-Éditeurs sont des utilisateurs de confiance ayant le privilège {url|auto-editor}. Ce privilège leur permet de faire certaines modifications qui seront automatiquement approuvées sans avoir besoin de passer par le processus normal de vote, ainsi que le privilège d'approuver immédiatement les modifications des autres utilisateurs"
+msgstr "Les auto-éditeurs sont des utilisateurs de confiance ayant le privilège {url|auto-éditeur}. Ce privilège leur permet de faire certaines modifications qui seront automatiquement approuvées sans avoir besoin de passer par le processus normal de vote, ainsi que le privilège d'approuver immédiatement les modifications des autres utilisateurs"
 
 #: ../root/user/profile.tt:151
 msgid "Auto-edits"
@@ -2183,7 +2184,7 @@ msgstr "Collection introuvable"
 #: ../root/user/subscriptions/collection.tt:1
 #: ../root/user/subscriptions/menu.tt:4
 msgid "Collection Subscriptions"
-msgstr ""
+msgstr "Abonnements aux collections"
 
 #: ../root/collection/edit_form.tt:4
 msgid "Collection details"
@@ -3273,7 +3274,7 @@ msgstr "Entrez une liste de pistes ci-dessous :"
 #: ../root/release/edit/editnote.tt:42
 #: ../root/release/edit_relationships.tt:409
 msgid "Enter edit"
-msgstr "Entrer une modification"
+msgstr "Saisir une modification"
 
 #: ../root/account/lost_username.tt:7
 msgid ""
@@ -3866,7 +3867,7 @@ msgstr ""
 #: ../root/report/index.tt:102 ../root/report/iswc_with_many_works.tt:7
 #: ../root/report/iswc_with_many_works.tt:9
 msgid "ISWCs with multiple works"
-msgstr "ISWCs à plusieurs oeuvres "
+msgstr "ISWCs à plusieurs œuvres "
 
 #: ../root/work/edit_form.tt:11 ../root/work/index.tt:13
 msgid "ISWCs:"
@@ -3918,7 +3919,7 @@ msgstr "Si le problème persiste, veuillez {report|signaler un bogue} en y recop
 msgid ""
 "If this is an Amazon ASIN, please do not enter it in the catalog number "
 "field, but add it as a URL relationship later."
-msgstr "Si c'est un ASIN Amazon, ne l'entrez pas dans le champ \"numéro dans le catalogue\", mais créez-le sous forme de relation d'URL ensuite."
+msgstr "Si c'est un ASIN Amazon, ne pas le saisir dans le champ \"numéro dans le catalogue\", mais le créer sous forme de relation d'URL ensuite."
 
 #: ../root/release/edit/recordings.tt:107
 msgid ""
@@ -3971,25 +3972,25 @@ msgstr "Si vous donnez <b>$4</b>, vous ne verrez plus ce texte ennuyeux pendant 
 msgid ""
 "If you followed a link on our site to get here, please {report|report a bug}"
 " and the URL of the page that sent you here."
-msgstr "Si vous êtes arrivé ici via un lien de notre site, merci de {report|signaler un bug} et l'adresse URL de la page qui vous a ammené ici."
+msgstr "Si vous êtes arrivé ici via un lien de notre site, veuillez {report|signaler un bogue} et indiquer l'adresse URL de la page qui vous a amené ici."
 
 #: ../root/account/register.tt:47
 msgid ""
 "If you have any questions, please review the {faq|FAQs} or "
 "{doc|documentation} before {con|contacting us}. "
-msgstr "Si vous avez des questions, merci de consulter la {faq|FAQ} ou la {doc|documentation} avant de {con|nous contacter}."
+msgstr "Si vous avez des questions, veuillez consulter la {faq|FAQ} ou la {doc|documentation} avant de {con|nous contacter}."
 
 #: ../root/main/401.tt:16
 msgid ""
 "If you think this is a mistake, please contact "
 "<code>support@musicbrainz.org</code> with the name of your account."
-msgstr "Si vous pensez que cela est une erreur, merci de contacter <code>support@musicbrainz.org</code> avec le nom de votre compte."
+msgstr "Si vous pensez que ceci est une erreur, veuillez contacter <code>support@musicbrainz.org</code> avec le nom de votre compte."
 
 #: ../root/tag/not_found.tt:7
 msgid ""
 "If you wish to use this tag, please {url|search} for the entity first and "
 "apply the tag using the sidebar."
-msgstr "Si vous souhaitez utiliser ce tag, merci de commencer par {url|rechercher} l'entité, puis appliquer le tag en utilisant la barre latérale."
+msgstr "Si vous souhaitez utiliser ce tag, veuillez commencer par {url|rechercher} l'entité, puis appliquer le tag en utilisant la barre latérale."
 
 #: ../root/account/edit.tt:20
 msgid ""
@@ -4020,7 +4021,7 @@ msgstr "Si vous souhaitez recevoir des informations (en anglais) de l'équipe de
 
 #: ../root/components/common-macros.tt:102
 msgid "Image not available yet, please try again in a few minutes."
-msgstr "Image pas encore disponible, merci de réessayer dans quelques minutes."
+msgstr "Image pas encore disponible, veuillez réessayer dans quelques minutes."
 
 #: ../root/freedb/show.tt:45 ../root/freedb/show.tt:103
 msgid "Import"
@@ -4120,7 +4121,7 @@ msgstr "Vous devez autoriser javascript pour modifier les parutions."
 #: ../root/recording/edit.tt:24 ../root/release_group/create.tt:18
 #: ../root/release_group/edit.tt:24 ../root/work/create.tt:9
 msgid "Javascript needs to be enabled to edit the Artist field on this page."
-msgstr "Vous devez autoriser javascript pour modifier le champ artiste sur cette page."
+msgstr "Vous devez autoriser Javascript pour modifier le champ artiste sur cette page."
 
 #: ../root/artist/edit_credit.tt:17 ../root/artist/split.tt:17
 msgid "Javascript needs to be enabled."
@@ -4256,7 +4257,7 @@ msgstr "Langue :"
 
 #: ../root/edit/details/historic/edit_release_language.tt:8
 msgid "Language: {language}, script: {script}"
-msgstr "Langue : {language}, script : {script}"
+msgstr "Langue : {language}, caractère d'écriture : {script}"
 
 #: ../root/account/edit.tt:57
 msgid "Languages Known:"
@@ -4626,7 +4627,7 @@ msgstr "Fusionner des parutions"
 
 #: ../root/work/merge.tt:1 ../root/work/merge.tt:3
 msgid "Merge Works"
-msgstr "Fusionner des oeuvres"
+msgstr "Fusionner des œuvres"
 
 #: ../root/area/layout.tt:60
 msgid "Merge area"
@@ -4646,7 +4647,7 @@ msgstr "Fusionner le label"
 
 #: ../root/edit/details/historic/merge_releases.tt:30
 msgid "Merge language &amp; script:"
-msgstr "Fusionner des langues & encodages :"
+msgstr "Fusionner la langue &amp; le caractère d'écriture :"
 
 #: ../root/edit/details/merge_releases.tt:67
 #: ../lib/MusicBrainz/Server/Form/Merge/Release.pm:51
@@ -4776,7 +4777,7 @@ msgid ""
 "MusicBrainz believes strongly in the privacy of its users! Any personal "
 "information you choose to provide will not be sold or shared with anyone "
 "else. For full details, please read our {doc|Privacy Policy}."
-msgstr "MusicBrainz croit fermement au respect de la vie privée de ses utilisateurs ! Aucune donnée personnelle que vous entrerez sur ce site ne sera vendue ou partagée avec qui que ce soit. Pour plus d'informations, merci de lire notre {doc|Politique de vie privée}."
+msgstr "MusicBrainz croit fermement au respect de la vie privée de ses utilisateurs ! Aucune donnée personnelle que vous choisissez de fournir  ne sera vendue ou partagée avec qui que ce soit. Pour plus d'informations, veuillez lire notre {doc|Politique de vie privée}."
 
 #: ../root/cdtoc/lookup.tt:84
 msgid "MusicBrainz does not have any CDs with the TOC:"
@@ -4790,7 +4791,7 @@ msgstr "MusicBrainz pour Android"
 msgid ""
 "MusicBrainz has one account type for all users. If you represent an artist "
 "or label, please use the above form to create an account."
-msgstr "MusicBrainz n'a qu'un seul type de compte pour tout le monde. Si vous représentez un artiste ou un label, merci d'utiliser le formulaire ci-dessus pour créer un compte."
+msgstr "MusicBrainz n'a qu'un seul type de compte pour tous les utilisateurs. Si vous représentez un artiste ou un label, veuillez utiliser le formulaire ci-dessus pour créer un compte."
 
 #: ../root/main/index.tt:52
 msgid ""
@@ -4994,7 +4995,7 @@ msgstr "Nouvelle relation : "
 
 #: ../root/edit/details/historic/edit_release_language.tt:30
 msgid "New script:"
-msgstr "Nouvel encodage : "
+msgstr "Nouveeau caractère d'écriture : "
 
 #: ../root/admin/wikidoc/edit.tt:18 ../root/edit/details/change_wikidoc.tt:23
 #: ../root/edit/details/change_wikidoc.tt:28
@@ -5080,7 +5081,7 @@ msgstr "Aucune note de modification n'a été ajoutée."
 
 #: ../root/edit/list.tt:109
 msgid "No edits were found matching your query. Please {search|try again}."
-msgstr "Aucune modification n'a été trouvée selon vos critères. Merci de {search|réessayer}. "
+msgstr "Aucune modification n'a été trouvée selon vos critères. Veuillez {search|réessayer}. "
 
 #: ../root/elections/index.tt:39
 msgid "No elections found."
@@ -5242,14 +5243,14 @@ msgstr "Utilisateur normal"
 
 #: ../root/scripts/text_strings.tt:82
 msgid "Not found? Try again with direct search."
-msgstr "introuvable ? Essayez à nouveau avec une recherche directe."
+msgstr "Introuvable ? Essayez à nouveau avec une recherche directe."
 
 #: ../root/release/edit/information.tt:174
 msgid ""
 "Note! If you do not know the month or day of release, please leave them "
 "empty.  January 1st is not often the actual release date, please double "
 "check that you have entered the release date correctly."
-msgstr "Attention ! Si vous ne savez pas le mois ou le jour de la parution, ne précisez pas ces informations. Le 1er janvier n'est probablement pas une bonne date de parution, vérifiez que vous avez entré la date de parution correctement."
+msgstr "Attention ! Si vous ne savez pas le mois ou le jour de la parution, ne précisez pas ces informations. Le 1er janvier n'est probablement pas une bonne date de parution, vérifiez que vous avez saisi la date de parution correctement."
 
 #: ../root/edit/details/set_track_lengths.tt:42
 msgid "Note:"
@@ -5369,7 +5370,7 @@ msgstr "Seuls les {doc|robots} peuvent approuver une modification."
 msgid ""
 "Oops! It seems your search parameters are not correct, please double check "
 "your input!"
-msgstr "Oops ! Il semble que vos paramètres de recherche sont incorrects, merci de revérifier votre saisie !"
+msgstr "Oops ! Il semble que vos paramètres de recherche sont incorrects, veuillez revérifier votre saisie !"
 
 #: ../root/main/500.tt:5
 msgid "Oops, something went wrong!"
@@ -5574,7 +5575,7 @@ msgstr ""
 msgid ""
 "Please <a href=\"{uri}\">update your profile</a> when you get time, to let "
 "other editors know a bit more about you."
-msgstr "Merci de <a href=\"{uri}\">Mettre à jour votre profil</a> quand vous aurez le temps, cela permet aux éditeurs d'en savoir plus sur vous."
+msgstr "Veuillez <a href=\"{uri}\">mettre à jour votre profil</a> quand vous en aurez le temps, cela permet aux autres éditeurs d'en savoir plus sur vous."
 
 #: ../root/main/500.tt:70
 msgid ""
@@ -5635,7 +5636,7 @@ msgstr "Veuillez saisir le {name|nom de parution} de l'enregistrement dans leque
 
 #: ../root/account/change_password.tt:16
 msgid "Please enter your old password below, and then your new password."
-msgstr "Merci d'entrer votre ancien mot de passe ci-dessous, puis votre nouveau mot de passe."
+msgstr "Veuillez saisir votre ancien mot de passe ci-dessous, puis votre nouveau mot de passe."
 
 #: ../root/edit/relationship/no-start.tt:2
 msgid ""
@@ -5650,7 +5651,7 @@ msgstr "Veuillez vous connecter pour importer ce disque FreeDB"
 #: ../root/release/edit/missing_entities.tt:79
 #: ../root/release/edit/missing_entities.tt:142
 msgid "Please make a selection"
-msgstr "Merci d'effectuer un choix"
+msgstr "Veuillez effectuer un choix"
 
 #: ../root/recording/delete.tt:5
 msgid ""
@@ -5710,7 +5711,7 @@ msgstr "Veuillez lire la documentation sur {doc_remove|enlever les types de modi
 msgid ""
 "Please review the {coc|MusicBrainz Code of Conduct} before creating an "
 "account."
-msgstr "Merci de lire {coc|le règlement intérieur} avant de vous créer un compte."
+msgstr "Veuillez lire {coc|le code de conduite MusicBrainz} avant de créer un compte."
 
 #: ../root/release/delete.tt:4
 msgid ""
@@ -5746,11 +5747,11 @@ msgstr "Choisissez un sous-type pour le type de relation actuel. Le sous-type de
 msgid ""
 "Please select the artist credits that you want to rename to follow the new "
 "artist name."
-msgstr "Merci de choisir le crédit que vous voulez renommer pour suivre le nouveau nom de l'artiste."
+msgstr "Veuillez choisir le crédit que vous voulez renommer pour suivre le nouveau nom de l'artiste."
 
 #: ../root/cdtoc/attach_artist_releases.tt:26
 msgid "Please select the medium you wish to attach this CD TOC to."
-msgstr "Merci de choisir le support que vous souhaitez attacher à cet Index de CD."
+msgstr "Veuillez choisir le support que vous souhaitez attacher à cet Index de CD."
 
 #: ../root/main/rate_limited.tt:6
 msgid "Please slow down and then try again"
@@ -5766,7 +5767,7 @@ msgstr "Utilisez le bouton \"nom de tri\" pour deviner le nom à utiliser pour l
 
 #: ../root/main/503.tt:8
 msgid "Please wait a few minutes and repeat your request."
-msgstr "Merci de réessayer dans quelques minutes."
+msgstr "Veuillez réessayer dans quelques minutes."
 
 #: ../root/components/aliases.tt:83
 msgid "Please {log_in|log in} to add or edit aliases"
@@ -6094,7 +6095,7 @@ msgstr ""
 
 #: ../root/recording/index.tt:52 ../root/recording/relationships.tt:6
 msgid "Related works"
-msgstr "Oeuvres associées"
+msgstr "Œuvres associées"
 
 #: ../root/relationship/header.tt:2
 #: ../root/relationship/linkattributetype/index.tt:3
@@ -6540,7 +6541,7 @@ msgstr "Parutions sans langue"
 #: ../root/report/index.tt:50 ../root/report/releases_without_script.tt:1
 #: ../root/report/releases_without_script.tt:3
 msgid "Releases without script"
-msgstr "Parutions sans encodage"
+msgstr "Parutions sans caractère d'écriture"
 
 #: ../root/edit/details/historic/add_disc_id.tt:3
 #: ../root/edit/details/historic/add_release_annotation.tt:3
@@ -6667,7 +6668,7 @@ msgstr "Enlever le groupe de parution"
 
 #: ../root/work/delete_alias.tt:1
 msgid "Remove Work Alias"
-msgstr "Enlever l'alias d'oeuvre"
+msgstr "Enlever l'alias d’œuvre"
 
 #: ../root/area/layout.tt:63 ../lib/MusicBrainz/Server/Edit/Area/Delete.pm:10
 msgid "Remove area"
@@ -6879,7 +6880,7 @@ msgstr "Score"
 #: ../root/edit/details/historic/add_release.tt:34
 #: ../root/release/edit/information.tt:57 ../root/release/sidebar.tt:39
 msgid "Script:"
-msgstr "Encodage :"
+msgstr "Caractère d'écriture :"
 
 #: ../root/cdtoc/attach_filter_artist.tt:10
 #: ../root/cdtoc/attach_filter_release.tt:30 ../root/cdtoc/lookup.tt:63
@@ -7097,7 +7098,7 @@ msgstr "Envoyer une copie à mon adresse courriel personnelle"
 
 #: ../root/account/preferences.tt:38
 msgid "Send me mails with edits to my subscriptions:"
-msgstr "Envoyez-moi un mail quand une modification a lieu sur un de mes abonnements"
+msgstr "Envoyez-moi des courriels quand des modifications ont été apportés à mes abonnements"
 
 #: ../root/components/forms.tt:181 ../root/components/forms.tt:214
 msgid "Sentence"
@@ -7234,7 +7235,7 @@ msgstr "Certains artistes sont crédités sous d'autres noms"
 msgid ""
 "Some tracks were changed, please select a recording for each of these "
 "tracks."
-msgstr "Certaines pistes ont été modifiées, merci de choisir un enregistrement pour chacune de ces pistes."
+msgstr "Certaines pistes ont été modifiées, veuillez choisir un enregistrement pour chacune de ces pistes."
 
 #: ../root/layout/menu.tt:168 ../root/main/index.tt:12
 msgid "SongKong Tagger"
@@ -7334,7 +7335,7 @@ msgstr "Désolé, il n'y a aucune parution commençant par \"{index}\". Veuillez
 msgid ""
 "Sorry, there are no works starting with “{index}”. Please {pre|go back} and "
 "try again."
-msgstr "Désolé, il n'y a aucune oeuvre commençant par \"{index}\". Vous pouvez {pre|revenir en arrière} et essayer autre chose."
+msgstr "Désolé, il n'y a aucune œuvre commençant par \"{index}\". Vous pouvez {pre|revenir en arrière} et essayer autre chose."
 
 #: ../root/main/400.tt:5
 msgid "Sorry, there was a problem with your request."
@@ -7360,13 +7361,13 @@ msgstr ""
 
 #: ../root/url/not_found.tt:4
 msgid "Sorry, we could not find a URL with that MusicBrainz ID."
-msgstr "Désolé, nous ne trouvons pas d'URL pour cet ID MusicBrainz."
+msgstr "Désolé, nous ne trouvons pas d'URL pour cette ID MusicBrainz."
 
 #: ../root/label/not_found.tt:4
 msgid ""
 "Sorry, we could not find a label with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr "Désolé, nous ne trouvons pas de label avec cet ID MusicBrainz. Vous pouvez peut-être essayer de {search_url|chercher après}."
+msgstr "Désolé, nous ne trouvons pas de label avec cette ID MusicBrainz. Vous pourriez peut-être essayer de {search_url|la chercher}."
 
 #: ../root/place/not_found.tt:4
 msgid ""
@@ -7378,30 +7379,30 @@ msgstr ""
 msgid ""
 "Sorry, we could not find a recording with that MusicBrainz ID. You may wish "
 "to try and {search_url|search for it} instead."
-msgstr "Désolé, nous ne trouvons pas d'enregistrement avec cet ID MusicBrainz. Vous pouvez peut-être essayer de {search_url|chercher après}."
+msgstr "Désolé, nous ne trouvons pas d'enregistrement avec cette ID MusicBrainz. Vous pourriez peut-être essayer de {search_url|la chercher}."
 
 #: ../root/relationship/linkattributetype/not_found.tt:3
 msgid ""
 "Sorry, we could not find a relationship attribute with that MusicBrainz ID."
-msgstr "Désolé, nous n'avons pas trouvé d'attribut de relation ayant cet ID MusicBrainz."
+msgstr "Désolé, nous n'avons pas trouvé d'attribut de relation ayant cette ID MusicBrainz."
 
 #: ../root/release_group/not_found.tt:4
 msgid ""
 "Sorry, we could not find a release group with that MusicBrainz ID. You may "
 "wish to try and {search_url|search for it} instead."
-msgstr "Désolé, nous ne trouvons pas de groupe de parution avec cette ID MusicBrainz. Vous pouvez peut-être essayer de {search_url|plutôt le chercher}."
+msgstr "Désolé, nous ne trouvons pas de groupe de parution avec cette ID MusicBrainz. Vous pourriez peut-être plutôt essayer de {search_url|le chercher}."
 
 #: ../root/release/not_found.tt:4
 msgid ""
 "Sorry, we could not find a release with that MusicBrainz ID. You may wish to"
 " try and {search_url|search for it} instead."
-msgstr "Désolé, nous ne trouvons pas de parution avec cette ID MusicBrainz. Vous pouvez peut-être essayer de {search_url|plutôt la chercher}."
+msgstr "Désolé, nous ne trouvons pas de parution avec cette ID MusicBrainz. Vous pourriez peut-être essayer de {search_url|la chercher}."
 
 #: ../root/work/not_found.tt:4
 msgid ""
 "Sorry, we could not find a work with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr "Désolé, nous ne trouvons pas d'oeuvre avec cet ID MusicBrainz. Vous pouvez peut-être essayer de {search_url|chercher après}."
+msgstr "Désolé, nous ne trouvons pas d’œuvre avec cette ID MusicBrainz. Vous pourriez peut-être plutôt essayer de {search_url|la chercher}."
 
 #: ../root/area/not_found.tt:4
 msgid ""
@@ -7413,11 +7414,11 @@ msgstr ""
 msgid ""
 "Sorry, we could not find an artist with that MusicBrainz ID. You may wish to"
 " try and {search_url|search for it} instead."
-msgstr "Désolé, nous ne trouvons pas d'artiste avec cet ID MusicBrainz. Vous pouvez peut-être essayer de {search_url|chercher après}."
+msgstr "Désolé, nous ne trouvons pas d'artiste avec cette ID MusicBrainz. Vous pourriez peut-être essayer de {search_url|la chercher}."
 
 #: ../root/collection/not_found.tt:4
 msgid "Sorry, we could not find an collection with that MusicBrainz ID."
-msgstr "Désolé, nous ne trouvons pas de collection avec cet ID MusicBrainz."
+msgstr "Désolé, nous ne trouvons pas de collection avec cette ID MusicBrainz."
 
 #: ../root/edit/not_found.tt:4
 msgid ""
@@ -7764,7 +7765,7 @@ msgstr "Taguer ce groupe de parution"
 
 #: ../root/work/layout.tt:26 ../root/work/tags.tt:3
 msgid "Tag this work"
-msgstr "Taguer cette oeuvre"
+msgstr "Taguer cette œuvre"
 
 #: ../root/tag/header.tt:12 ../root/tag/layout.tt:1
 msgid "Tag “{tag}”"
@@ -7816,7 +7817,7 @@ msgstr "Merci de votre contribution à MusicBrainz."
 msgid ""
 "Thank you, your email address has now been verified! If you still can't "
 "edit, please try to log out and log in again."
-msgstr "Merci, votre adresse courriel a maintenant été vérifiée ! Si vous ne pouvez toujours pas modifier, déconnectez-vous et connectez-vous à nouveau SVP."
+msgstr "Merci, votre adresse courriel a maintenant été vérifiée ! Si vous ne pouvez toujours pas éditer, déconnectez-vous et connectez-vous à nouveau SVP."
 
 #: ../root/taglookup/not_found.tt:4
 msgid ""
@@ -8028,7 +8029,7 @@ msgstr "La liste des pistes trouvée semble avoir plusieurs artistes sur certain
 
 #: ../root/taglookup/nag.tt:4
 msgid "The users make MusicBrainz happen and we appreciate your help!"
-msgstr "Les utilisateurs sont ce qu'est MusicBrainz, et ils vous remercient de votre aide !"
+msgstr "Les utilisateurs constituent MusicBrainz et nous apprécions votre aide !"
 
 #: ../root/scripts/text_strings.tt:102
 msgid "The value you've entered is not valid."
@@ -8170,7 +8171,7 @@ msgstr "Ce CD possède des pistes de plus d'un artiste (par exemple une compilat
 msgid ""
 "This ISRC is not associated with any recordings. If you wish to associate it"
 " with a recording, please {search_url|search for the recording} and add it."
-msgstr "Cet ISRC n'est associé avec aucun enregistrement. Si vous souhaitez l'associer à un enregistrement, merci de {search_url|chercher un enregistrement} et l'y associer."
+msgstr "Cet ISRC n'est associé avec aucun enregistrement. Si vous souhaitez l'associer à un enregistrement, veuillez {search_url|chercher un enregistrement} et l'y associer."
 
 #: ../root/iswc/not_found.tt:4
 msgid ""
@@ -8244,7 +8245,7 @@ msgstr "Cet artiste a des relations autres que de type collaboration, et donc ne
 
 #: ../root/artist/works.tt:11
 msgid "This artist is not currently associated with any works."
-msgstr "Cet artiste n'est actuellement associé à aucune oeuvre."
+msgstr "Cet artiste n'est actuellement associé à aucune œuvre."
 
 #: ../root/artist/index.tt:113
 msgid "This artist only has release groups by various artists."
@@ -8459,7 +8460,7 @@ msgstr "Cette page requiert Javascript."
 
 #: ../root/scripts/text_strings.tt:73
 msgid "This person is deceased."
-msgstr ""
+msgstr "Cette personne est décédée."
 
 #: ../root/place/edit_form.tt:59
 msgid "This place has ended."
@@ -8977,7 +8978,7 @@ msgstr "Cette œuvre n'a aucune relation, et sera donc enlevée automatiquement 
 
 #: ../root/work/tags.tt:2
 msgid "This work has no tags."
-msgstr "Cette oeuvre n'a pas de tag."
+msgstr "Cette œuvre n'a pas de tag."
 
 #: ../root/cdtoc/info.tt:37 ../root/cdtoc/info.tt:39 ../root/cdtoc/info.tt:41
 msgid "Time"
@@ -9038,7 +9039,7 @@ msgstr "Afin de créer une nouvelle liste des pistes, en utiliser une existante 
 
 #: ../root/release/edit/information.tt:50
 msgid "To edit types, please edit the release group."
-msgstr "Pour modifier le type, merci de modifier le release group."
+msgstr "Pour modifier le type, veuillez modifier le release group."
 
 #: ../root/elections/show.tt:91
 msgid "To find out if you can vote for this candidate, please {url|log in}."
@@ -9828,7 +9829,7 @@ msgstr ""
 msgid ""
 "We're terribly sorry for this problem. Please wait a few minutes and repeat "
 "your request &#x2014; the problem may go away."
-msgstr "Nous sommes absolument désolés de ce problème. Merci d'attendre quelques minutes et de renouveler votre demande &#x2014; le problème devrait disparaître."
+msgstr "Nous sommes complètement désolés de ce problème. Veuillez attendre quelques minutes et renouveler votre demande &#x2014; le problème devrait disparaître."
 
 #: ../root/scripts/text_strings.tt:128
 msgid ""
@@ -9915,7 +9916,7 @@ msgstr "Œuvre"
 
 #: ../root/work/edit_form.tt:6
 msgid "Work Details"
-msgstr "Détail de l'oeuvre"
+msgstr "Détail de l’œuvre"
 
 #: ../root/release/edit_relationships.tt:185
 msgid "Work Name:"
@@ -9923,7 +9924,7 @@ msgstr ""
 
 #: ../root/work/not_found.tt:1 ../root/work/not_found.tt:2
 msgid "Work Not Found"
-msgstr "Oeuvre introuvable"
+msgstr "Œuvre introuvable"
 
 #: ../root/release/edit_relationships.tt:96
 msgid "Work Type:"
@@ -9935,7 +9936,7 @@ msgstr "Données sur l’œuvre"
 
 #: ../root/user/ratings_summary.tt:3 ../root/user/ratings.tt:2
 msgid "Work ratings"
-msgstr "Évaluations des oeuvres"
+msgstr "Évaluations des œuvres"
 
 #: ../root/edit/details/edit_work.tt:23
 msgid "Work type:"
@@ -9950,17 +9951,17 @@ msgstr "Type d’œuvre : "
 #: ../root/edit/details/remove_work_alias.tt:3
 #: ../root/edit/details/remove_work.tt:3
 msgid "Work:"
-msgstr "Oeuvre :"
+msgstr "Œuvre :"
 
 #: ../root/artist/header.tt:1 ../root/artist/works.tt:2
 #: ../root/report/index.tt:87 ../root/tag/header.tt:1 ../root/tag/index.tt:8
 #: ../root/user/tag.tt:4
 msgid "Works"
-msgstr "Oeuvres"
+msgstr "Œuvres"
 
 #: ../root/browse/work.tt:8
 msgid "Works starting with “{index}”"
-msgstr "Oeuvres commençant par \"{index}\""
+msgstr "Œuvres commençant par \"{index}\""
 
 #: ../root/report/duplicate_relationships_works.tt:1
 #: ../root/report/duplicate_relationships_works.tt:3
@@ -10149,13 +10150,13 @@ msgid ""
 "You are about to merge the following releases into a single release. Please "
 "select the release which you would like the other releases to be merged "
 "into:"
-msgstr "Vous êtes sur le point de fusionner les parutions suivantes en une parution unique. Merci de sélectionner la parution dans laquelle vous voulez que les autres soient fusionnées :"
+msgstr "Vous êtes sur le point de fusionner les parutions suivantes en une parution unique. Veuillez sélectionner la parution dans laquelle vous voulez que les autres soient fusionnées :"
 
 #: ../root/work/merge.tt:4
 msgid ""
 "You are about to merge the following works into a single work. Please select"
 " the work that you would like the other works merged into:"
-msgstr "Vous êtes sur le point de fusionner les oeuvres suivantes en une oeuvre unique. Merci de selectionner l'oeuvre dans laquelle vous voulez que les autres soient fusionnées :"
+msgstr "Vous êtes sur le point de fusionner les œuvres suivantes en une œuvre unique. Veuillez sélectionner l’œuvre dans laquelle vous voulez que les autres soient fusionnées :"
 
 #: ../root/label/edit_form.tt:15
 msgid ""
@@ -10885,7 +10886,7 @@ msgstr[1] "{count} évaluatons privées non affichées."
 
 #: ../root/user/profile.tt:44
 msgid "{doc|Auto-Editor}"
-msgstr "{doc|Auto-Editeur}"
+msgstr "{doc|Auto-Éditeur}"
 
 #: ../root/cdstub/index.tt:13
 msgid "{doc|Disc ID}:"
@@ -11195,7 +11196,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Controller.pm:29
 #, perl-brace-format
 msgid "'{id}' is not a valid MusicBrainz ID"
-msgstr "'{id}' n'est pas un identifiant MusicBrainz valide"
+msgstr "'{id}' n'est pas une ID MusicBrainz valide"
 
 #: ../lib/MusicBrainz/Server/Controller.pm:119
 msgid ""
@@ -12050,7 +12051,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Form/Field/URL.pm:21
 msgid "Enter a valid url e.g. \"http://google.com/\""
-msgstr "Entrez une url valide, par exemple \"http://google.com/\""
+msgstr "Saisir une URL valide, par exemple \"http://google.com/\""
 
 #: ../lib/MusicBrainz/Server/Form/Field/URL.pm:24
 msgid "URL protocol must be HTTP, HTTPS or FTP"
@@ -12058,7 +12059,7 @@ msgstr "Le protocole de l'URL doit être HTTP, HTTPS ou FTP"
 
 #: ../lib/MusicBrainz/Server/Form/Merge.pm:18
 msgid "Please pick the entity you want the others merged into."
-msgstr "Merci de choisir l'entité vers laquelle fusionner les autres."
+msgstr "Veuillez choisir l'entité vers laquelle fusionner les autres."
 
 #: ../lib/MusicBrainz/Server/Form/Merge/Release.pm:61
 msgid "Another medium is already in this position"
