@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-19 21:59+0000\n"
+"PO-Revision-Date: 2013-11-19 22:57+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -378,7 +378,7 @@ msgid ""
 "<strong>Warning:</strong> Some of the recordings you're merging have "
 "different ISRCs. Please make sure they are indeed the same recordings and "
 "you wish to continue with the merge."
-msgstr ""
+msgstr "<strong>Warning:</strong> Some of the recordings you're merging have different ISRC. Please make sure they are indeed the same recordings and you wish to continue with the merge."
 
 #: ../root/components/common-macros.tt:857 ../root/recording/edit.tt:30
 #: ../root/release/edit/tracklist.tt:125
@@ -2641,7 +2641,7 @@ msgstr "URLs Discogs liées vers Plusieurs Artistes"
 #: ../root/report/discogs_links_with_multiple_labels.tt:1
 #: ../root/report/discogs_links_with_multiple_labels.tt:3
 msgid "Discogs URLs Linked to Multiple Labels"
-msgstr ""
+msgstr "URLs Discogs reliées à plusieurs labels"
 
 #: ../root/report/discogs_links_with_multiple_release_groups.tt:1
 #: ../root/report/discogs_links_with_multiple_release_groups.tt:3
@@ -2771,7 +2771,7 @@ msgstr "Modification No {id}"
 
 #: ../root/edit/edit_header.tt:69 ../root/edit/edit_header.tt:84
 msgid "Edit #{id} - {name}"
-msgstr ""
+msgstr "Modification no {id} - {name}"
 
 #: ../root/label/edit_annotation.tt:1 ../root/place/edit_annotation.tt:1
 msgid "Edit Annotation"
@@ -3825,16 +3825,16 @@ msgstr "ISRC :"
 #: ../root/artist/recordings-list.tt:29 ../root/report/index.tt:93
 #: ../root/search/lib/inline-results-recording.tt:11
 msgid "ISRCs"
-msgstr "ISRCs"
+msgstr "ISRC"
 
 #: ../root/report/index.tt:96 ../root/report/isrc_with_many_recordings.tt:1
 #: ../root/report/isrc_with_many_recordings.tt:3
 msgid "ISRCs with multiple recordings"
-msgstr "ISRCs avec plusieurs enregistrements"
+msgstr "ISRC avec plusieurs enregistrements"
 
 #: ../root/recording/edit_form.tt:12
 msgid "ISRCs:"
-msgstr ""
+msgstr "ISRC :"
 
 #: ../root/artist/works-list.tt:12 ../root/report/iswc_with_many_works.tt:24
 #: ../root/search/results-work.tt:11 ../root/work/edit_form.tt:11
@@ -3862,16 +3862,16 @@ msgstr "ISWC :"
 
 #: ../root/report/index.tt:99
 msgid "ISWCs"
-msgstr ""
+msgstr "ISWC"
 
 #: ../root/report/index.tt:102 ../root/report/iswc_with_many_works.tt:7
 #: ../root/report/iswc_with_many_works.tt:9
 msgid "ISWCs with multiple works"
-msgstr "ISWCs à plusieurs œuvres "
+msgstr "ISWC à plusieurs œuvres "
 
 #: ../root/work/edit_form.tt:11 ../root/work/index.tt:13
 msgid "ISWCs:"
-msgstr ""
+msgstr "ISWC :"
 
 #: ../root/release/edit/missing_entities.tt:83
 msgid ""
@@ -4369,7 +4369,7 @@ msgstr ""
 
 #: ../root/components/aliases.tt:16
 msgid "Locale"
-msgstr "Locale"
+msgstr "Paramètre linguistique"
 
 #: ../root/alias/edit_form.tt:18 ../root/edit/details/add_area_alias.tt:22
 #: ../root/edit/details/add_artist_alias.tt:22
@@ -4387,7 +4387,7 @@ msgstr "Locale"
 #: ../root/edit/details/remove_place_alias.tt:21
 #: ../root/edit/details/remove_work_alias.tt:21
 msgid "Locale:"
-msgstr "Locale : "
+msgstr "Paramètre linguistique : "
 
 #: ../root/edit/search_macros.tt:288
 msgid "Location Editor"
@@ -6998,11 +6998,11 @@ msgstr "Secteurs"
 
 #: ../root/collection/header.tt:17
 msgid "See all of your collections"
-msgstr ""
+msgstr "Afficher toutes vos collections"
 
 #: ../root/collection/header.tt:17
 msgid "See all of {editor}'s public collections"
-msgstr ""
+msgstr "Afficher toutes les collections publiques de {editor}"
 
 #: ../root/tag/index.tt:26
 msgid "See all {num} "
@@ -7127,7 +7127,7 @@ msgstr "Entrer la durée des pistes"
 
 #: ../root/report/filter_link.tt:4
 msgid "Show all results."
-msgstr ""
+msgstr "Afficher tous les résultats."
 
 #: ../root/scripts/text_strings.tt:94
 msgid "Show less..."
@@ -7149,7 +7149,7 @@ msgstr "Afficher mon Gravatar"
 
 #: ../root/report/filter_link.tt:6
 msgid "Show only results that are in my subscribed entities."
-msgstr ""
+msgstr "Afficher seulement les résultats pour des entités auxquelles je suis abonné."
 
 #: ../root/artist/index.tt:119
 msgid ""
@@ -7993,7 +7993,7 @@ msgstr "Les artistes liés aux enregistrements ne correspondent pas ! Vous vouli
 msgid ""
 "The recordings that will be merged if you continue with the current merge "
 "strategy include the following, whose artists differ:"
-msgstr ""
+msgstr "Les enregistrements qui seront fusionnés si vous continuez votre stratégie de fusion actuelle, incluent les suivants, dont les artistes sont différents :"
 
 #: ../root/relationship/linktype/in_use.tt:4
 msgid ""
@@ -8177,7 +8177,7 @@ msgstr "Cet ISRC n'est associé avec aucun enregistrement. Si vous souhaitez l'a
 msgid ""
 "This ISWC is not associated with any works. If you wish to associate it with"
 " a work, please {search_url|search for the work} and add it."
-msgstr ""
+msgstr "Ce ISWC n'est associé à aucune œuvre. Si vous désirer l’associer à une œuvre, veuillez {search_url|rechercher l’œuvre} l'ajouter."
 
 #: ../root/alias/edit_form.tt:33
 msgid "This alias is no longer current."
@@ -8569,7 +8569,7 @@ msgid ""
 "they're different, add {disambiguation_comment|disambiguation comments} to "
 "them (and once a group of similarly named artists have disambiguation "
 "comments, they will stop appearing here)."
-msgstr ""
+msgstr "Ce rapport tend à identifier les artistes avec des noms très similaires. Si deux artistes sont en fait le même, fusionnez-les (souvenez-vous d'{how_to_write_edit_notes|écrire une note de modification} et donnez votre preuve). S'ils sont différents, y ajoutez un {disambiguation_comment|commentaire d'homonymie} (et quand un groupe d'artistes ayant le même nom aura des commentaires d'homonymie, il n'apparaîtra plus ici)."
 
 #: ../root/report/tracks_named_with_sequence.tt:6
 msgid ""
@@ -8717,13 +8717,13 @@ msgid ""
 "recording, the ISRCs are probably correct and should be left alone. If the "
 "same ISRC appears on two unrelated recordings on the same release, this is "
 "usually means there was an error when reading the disc."
-msgstr ""
+msgstr "Ce rapport liste les {isrc|ISRCs} qui sont rattachés à plus d'un enregistrement. Si les enregistrements sont les mêmes. ils devraient habituellement être fusionnés (des ISRC peuvent être assignés par erreur donc il faudrait s'assurer avec soin qu'ils sont vraiment les mêmes). Si les enregistrements dont partie d'un enregistrement plus grand, les ISRC sont probablement corrects et devraient être laissé ainsi. Si le même ISRC apparaît sur deux enregistrements sans rapport de la même parution, ceci dénote habituellement une erreur de lecture du disque."
 
 #: ../root/report/iswc_with_many_works.tt:12
 msgid ""
 "This report lists {iswc|ISWCs} that are attached to more than one work. If "
 "the works are the same, this usually means they should be merged."
-msgstr ""
+msgstr "Ce rapport liste les {iswc|ISWC} qui sont rattachés à plus d'une œuvre. Si les œuvres sont les mêmes, elles devraient habituellement être fusionnées."
 
 #: ../root/report/asins_with_multiple_releases.tt:6
 msgid ""
@@ -9069,11 +9069,11 @@ msgstr "Les meilleurs coupons de CD"
 
 #: ../root/report/isrc_with_many_recordings.tt:14
 msgid "Total ISRCs found: {count}"
-msgstr "Nombre total d'ISRCs trouvés : {count}"
+msgstr "Nombre total d'ISRC trouvés : {count}"
 
 #: ../root/report/iswc_with_many_works.tt:15
 msgid "Total ISWCs found: {count}"
-msgstr ""
+msgstr "Total des ISWC trouvés : {count}"
 
 #: ../root/report/artists_containing_disambiguation_comments.tt:8
 #: ../root/report/artists_that_may_be_groups.tt:11
@@ -10857,7 +10857,7 @@ msgstr "{begindate} &#x2013; {enddate}"
 #: ../lib/MusicBrainz/Server/Entity/Relationship.pm:150
 #, perl-brace-format
 msgid "{b} and {a}"
-msgstr ""
+msgstr "{b} et {a}"
 
 #: ../root/release/collections.tt:10
 msgid "{collection} by {owner}"
@@ -11678,7 +11678,7 @@ msgstr "Ajouter une annotation d'enregistrement"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/AddISRCs.pm:21
 msgid "Add ISRCs"
-msgstr "Ajouter des ISRCs"
+msgstr "Ajouter des ISRC"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/AddPUIDs.pm:15
 msgid "Add PUIDs"
@@ -11950,7 +11950,7 @@ msgstr "Filtrer les enregistrements"
 
 #: ../lib/MusicBrainz/Server/Form/Alias.pm:104
 msgid "This alias can only be a primary alias if a locale is selected"
-msgstr ""
+msgstr "Cet alias peut seulement être un alias primaire si un paramètre linguistique est sélectionné"
 
 #: ../lib/MusicBrainz/Server/Form/Area.pm:90
 msgid "An area already exists with this ISO code"
@@ -12022,16 +12022,16 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Form/Field/ISRC.pm:14
 msgid "This is not a valid ISRC"
-msgstr ""
+msgstr "Cet ISRC est invalide"
 
 #: ../lib/MusicBrainz/Server/Form/Field/ISRC.pm:18
 msgid "This is not a valid ISRC."
-msgstr ""
+msgstr "Cet ISRC est invalide."
 
 #: ../lib/MusicBrainz/Server/Form/Field/ISWC.pm:12
 #: ../lib/MusicBrainz/Server/Form/Field/ISWC.pm:16
 msgid "This is not a valid ISWC"
-msgstr "Cet ISWC n'est pas valide"
+msgstr "Ce ISWC n'est pas valide"
 
 #: ../lib/MusicBrainz/Server/Form/Field/LabelCode.pm:14
 msgid "Label codes must be greater than 0 and 5 digits at most"
@@ -12208,7 +12208,7 @@ msgstr "Ce type de relation est utilisée pour regrouper d'autre relations. Veil
 
 #: ../lib/MusicBrainz/Server/Form/Role/LinkType.pm:75
 msgid "This relationship type is deprecated."
-msgstr ""
+msgstr "Ce type de relation est obsolète."
 
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:44
 msgid "FreeDB"
@@ -12232,23 +12232,23 @@ msgstr "Format d'URL invalide"
 
 #: ../lib/MusicBrainz/Server/Form/User/EditProfile.pm:61
 msgid "Basic"
-msgstr ""
+msgstr "De base"
 
 #: ../lib/MusicBrainz/Server/Form/User/EditProfile.pm:62
 msgid "Intermediate"
-msgstr ""
+msgstr "Intermédiaire"
 
 #: ../lib/MusicBrainz/Server/Form/User/EditProfile.pm:63
 msgid "Advanced"
-msgstr ""
+msgstr "Avancé"
 
 #: ../lib/MusicBrainz/Server/Form/User/EditProfile.pm:64
 msgid "Native"
-msgstr ""
+msgstr "Natif"
 
 #: ../lib/MusicBrainz/Server/Form/User/EditProfile.pm:78
 msgid "You must supply a complete birth date for us to display your age."
-msgstr ""
+msgstr "Vous devez fournir une date de naissance complète afin que nous puissions afficher votre âge."
 
 #: ../lib/MusicBrainz/Server/Form/User/EditProfile.pm:82
 msgid "Birth year must be after 1900"
