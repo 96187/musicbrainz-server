@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-19 18:50+0000\n"
+"PO-Revision-Date: 2013-11-19 19:59+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -2237,7 +2237,7 @@ msgid ""
 "Confirm by activating the checkbox below that you have read the "
 "{doc_artistcomment|artist comment guideline}, understood how we distinguish "
 "artists with the same name, and that you know what you are doing."
-msgstr "Confirmez, en cochant la case ci-dessous, que vous avez lu le {doc_artistcomment|guide de commentaire d'un artiste}, compris comment distinguer un artiste du même nom, et que vous savez ce que vous faites."
+msgstr "Confirmez, en cochant la case ci-dessous, que vous avez lu les {doc_artistcomment|directives de commentaire d'artiste}, compris comment distinguer les artistes avec le même nom, et que vous savez ce que vous faites."
 
 #: ../root/place/edit_form.tt:25
 msgid ""
@@ -2251,7 +2251,7 @@ msgid ""
 "Confirm by activating the checkbox below that you have read the "
 "{doc_labelcomment|label comment guideline}, understood how we distinguish "
 "labels with the same name, and that you know what you are doing."
-msgstr "Confirmez, en cochant la case ci-dessous, que vous avez lu le {doc_labelcomment|guide de commentaire d'un label}, compris comment distinguer un label du même nom, et que vous savez ce que vous faites."
+msgstr "Confirmez, en cochant la case ci-dessous, que vous avez lu les {doc_labelcomment|directives de commentaire de label}, compris comment distinguer les labels avec le même nom, et que vous savez ce que vous faites."
 
 #: ../root/account/change_password.tt:24 ../root/account/register.tt:30
 #: ../root/account/reset_password.tt:11
@@ -3444,13 +3444,13 @@ msgstr "Pour de l'aide sur l'écriture des requêtes de recherche avancées, lis
 msgid ""
 "For information about the account deletion process, please read the "
 "{uri|account FAQ}."
-msgstr "Pour toute information sur le processus de suppression de compte, merci de lire la {uri|FAQ des comptes}."
+msgstr "Pour toute information sur le processus de suppression de compte, veuillez lire la {uri|FAQ des comptes}."
 
 #: ../root/report/separate_discs.tt:7
 msgid ""
 "For instructions on how to fix them, please see the documentation about "
 "{howto|how to merge releases}."
-msgstr "Vous trouverez les instructions pour réparer cela dans la documentation {howto|comment fusionner des parutions}."
+msgstr "Vous trouverez les instructions pour corriger cela dans la documentation {howto|comment fusionner des parutions}."
 
 #: ../root/edit/info.tt:61
 msgid "For more information:"
@@ -3687,7 +3687,7 @@ msgstr "Deviner la casse pour la piste"
 
 #: ../root/doc/relationship_type.tt:63
 msgid "Guidelines"
-msgstr ""
+msgstr "Directives"
 
 #: ../root/annotation/edit.tt:43
 msgid "Headings:"
@@ -3912,7 +3912,7 @@ msgstr ""
 msgid ""
 "If the problem persists, please {report|report a bug} and include any error "
 "message that is shown above."
-msgstr "Si le problème persiste, merci de {report|signaler un bug}, en y recopiant tout message d'erreur qui apparaîtrait ci-dessus."
+msgstr "Si le problème persiste, veuillez {report|signaler un bogue} en y recopiant tout message d'erreur qui apparaîtrait ci-dessus."
 
 #: ../root/release/edit/information.tt:198
 msgid ""
@@ -3924,7 +3924,7 @@ msgstr "Si c'est un ASIN Amazon, ne l'entrez pas dans le champ \"numéro dans le
 msgid ""
 "If we do not have a recording for this track in the database yet, please "
 "select \"Add a new recording\" below."
-msgstr "Si l'enregistrement de cette piste n'est pas déjà dans la base de données, merci de choisir \"Ajouter un enregistrement\" ci-dessous."
+msgstr "Si l'enregistrement de cette piste n'est pas déjà dans la base de données, veuillez choisir \"Ajouter un enregistrement\" ci-dessous."
 
 #: ../root/alias/delete.tt:7
 msgid ""
@@ -4010,7 +4010,7 @@ msgid ""
 "database looking for data that might require fixing, either to comply with "
 "the {style|style guidelines}, or in other cases where administrative \"clean"
 " up\" tasks are required."
-msgstr "Si vous souhaitez participer au processus de remplissage de la base mais que vous ne savez pas par où commencer, les rapports ci-dessous pourraient vous être utiles. Ces rapports sont issus d'un parcours dans la base de données à la recherche de données qui devraient être corrigées soit pour correspondre au {style|règles de style}, ou pour toute autre tache de \"nettoyage administratif\"."
+msgstr "Si vous souhaitez participer au processus d'édition mais que vous ne savez pas par où commencer, les rapports ci-dessous pourraient vous être utiles. Ces rapports fouille la base de données à la recherche de données qui devraient peut-être être corrigées soit pour correspondre au {style|directives de style}, ou pour toute autre tache de \"nettoyage administratif\"."
 
 #: ../root/account/register.tt:53
 msgid ""
@@ -5680,25 +5680,25 @@ msgstr "Notez ceci :"
 msgid ""
 "Please read the guideline on {doc_merging|how to merge releases} before "
 "entering this edit."
-msgstr "Veuillez lire la documentation sur {doc_merging|la fusion de parutions} avant de valider cette modification."
+msgstr "Veuillez lire les directives sur {doc_merging|Comment fusionner des parutions} avant de valider cette modification."
 
 #: ../root/label/edit_form.tt:2
 msgid ""
 "Please read the {doc_styleguide|Style Guidelines} then use the fields below "
 "to update the information of this label."
-msgstr "Merci de lire la {doc_styleguide|documentation sur les styles} avant d'utiliser les champs ci-dessous pour modifier les informations d'un label."
+msgstr "Veuillez lire les {doc_styleguide|directives sur le style} puis utilisez les champs ci-dessous pour mettre à jour les informations de ce label."
 
 #: ../root/place/edit_form.tt:2
 msgid ""
 "Please read the {doc_styleguide|Style Guidelines} then use the fields below "
 "to update the information of this place."
-msgstr ""
+msgstr "Veuillez lire les {doc_styleguide|directives de style} puis utilisez les champs ci-dessous pour mettre à jour les informations sur ce lieu."
 
 #: ../root/artist/edit_form.tt:4
 msgid ""
 "Please read the {doc_styleguide|Style Guidelines}, then provide the "
 "necessary information about the new artist below."
-msgstr "Merci de lire la {doc_styleguide|documentation de style}, puis entrez les informations nécessaires pour le nouvel artiste ci-dessous."
+msgstr "Veuillez lire les {doc_styleguide|directives de style}, puis entrez ci-dessous les informations nécessaires pour le nouvel artiste."
 
 #: ../root/release_group/delete.tt:8
 msgid ""
@@ -5758,7 +5758,7 @@ msgstr "Réessayez, en allant moins vite"
 
 #: ../root/components/forms.tt:202
 msgid "Please use the Guess Case button to fix common style errors."
-msgstr "Utilisez le bouton \"deviner la casse\" pour corriger vos erreurs de style classiques."
+msgstr "Utilisez le bouton \"deviner la casse\" pour corriger les erreurs courantes de style."
 
 #: ../root/components/forms.tt:245
 msgid "Please use the Sort Name button to guess the sort name."
@@ -7056,7 +7056,7 @@ msgstr "Voir aussi vos {uri|préférences utilisateur}, notamment vos paramètre
 
 #: ../root/doc/relationship_type.tt:66
 msgid "See the general {url|guidelines for URLs}."
-msgstr ""
+msgstr "Voir les {url|directives sur les URLs}."
 
 #: ../root/relationship/linkattributetype/index.tt:21
 msgid "See the {uri|full instrument tree}."
@@ -7593,11 +7593,11 @@ msgstr "Arrêter de surveiller les artistes sélectionnés"
 
 #: ../root/layout/menu.tt:256
 msgid "Style Guidelines"
-msgstr "Guide des styles"
+msgstr "Directives de Style"
 
 #: ../root/edit/list_header.tt:29 ../root/main/index.tt:22
 msgid "Style guidelines"
-msgstr "Guide des styles"
+msgstr "Directives de style"
 
 #: ../root/user/contact.tt:8
 msgid "Subject:"
@@ -8746,7 +8746,7 @@ msgstr "Ce rapport montre les URLs Discogs qui sont liées à plusieurs labels."
 #: ../root/report/discogs_links_with_multiple_release_groups.tt:6
 msgid ""
 "This report shows Discogs URLs which are linked to multiple release groups."
-msgstr "Ce rapport liste les URLs Discogs qui sont liées à plusieurs groupes de parution."
+msgstr "Ce rapport montre les URLs Discogs qui sont liées à plusieurs groupes de parution."
 
 #: ../root/report/discogs_links_with_multiple_releases.tt:6
 msgid ""
@@ -8772,7 +8772,7 @@ msgstr "Ce rapport montre les enregistrements qui ont des relations « parution 
 msgid ""
 "This report shows recordings where the linked tracks have times that vary by"
 " more than 30 seconds."
-msgstr ""
+msgstr "Ce rapport montre les enregistrements dont les pistes reliées ont des durées qui varient de plus de 30 secondes."
 
 #: ../root/report/featuring_recordings.tt:6
 msgid ""
@@ -8781,7 +8781,7 @@ msgid ""
 "  recordings, this is inherited from an older version of MusicBrainz and "
 "should  be fixed (both on the recordings and on the tracks!). Consult the  "
 "{featured_artists|page about featured artists} to know more."
-msgstr ""
+msgstr "Ce rapport montre les enregistrements avec (feat. Artist) dans le titre. Pour les enregistrements « classique », consulter {CSG|les directives du style classique}. Pour les enregistrements autre que « classique », ceci est hérité d'une d'une ancienne version de MusicBrainz et devrait être corrigé (à la fois sur les enregistrements et sur les pistes !). Consulter la {featured_artists|page sur les artistes invités} pour en savoir plus."
 
 #: ../root/report/featuring_release_groups.tt:6
 msgid ""
@@ -8790,7 +8790,7 @@ msgid ""
 "non-classical release groups, this is inherited from an older version of "
 "MusicBrainz and should be fixed. Consult the {featured_artists|page about "
 "featured artists} to know more."
-msgstr "Ce rapport liste les groupes de parution avec (feat. Artist) dans le titre. Pour les groupes de parution « classique », consulter {CSG|les directives du style classique}. Pour les groupes de parution autre que « classique », ceci est hérité d'une ancienne version de MusicBrainz et devrait être corrigé. Consulter la {featured_artists|page sur les artistes invités} pour en savoir plus."
+msgstr "Ce rapport montre les groupes de parution avec (feat. Artist) dans le titre. Pour les groupes de parution « classique », consulter {CSG|les directives du style classique}. Pour les groupes de parution autre que « classique », ceci est hérité d'une ancienne version de MusicBrainz et devrait être corrigé. Consulter la {featured_artists|page sur les artistes invités} pour en savoir plus."
 
 #: ../root/report/set_in_different_rg.tt:6
 msgid ""
@@ -8800,7 +8800,7 @@ msgid ""
 "them. If the releases are discs linked with \"part of set\" relationships, "
 "you might want to merge them too into one multi-disc release (see "
 "{how_to_merge_releases|How to Merge Releases})."
-msgstr ""
+msgstr "Ce rapport montre les groupes de parution avec des parutions qui sont liés à des parutions dans des groupes de parution différents par des relations partie-d'un-ensemble ou de translittération. Si une paire de groupes de parutions apparaît ici, vous devriez probablement les fusionner en une parution multi-disques (voir {how_to_merge_releases|Comment fusionner les parutions})."
 
 #: ../root/report/single_medium_releases_with_medium_titles.tt:6
 msgid ""
@@ -8813,7 +8813,7 @@ msgstr "Ce rapport montre les parutions sur support simple pour lesquelles le su
 msgid ""
 "This report shows releases that have an unlikely combination of language and"
 " script properties, such as German and Ethiopic."
-msgstr "Ce rapport liste les parutions ayant une combinaison de langue et propriétés de caractère d'écriture improbables, tel qu'allemand et éthiopien."
+msgstr "Ce rapport montre les parutions ayant une combinaison de langue et propriétés de caractère d'écriture improbables, tel qu'allemand et éthiopien."
 
 #: ../root/report/releases_with_download_relationships.tt:6
 msgid ""
@@ -8845,14 +8845,14 @@ msgid ""
 "This report shows releases that have no language set. If you recognize the "
 "language, please set it! Do it only if you are pretty sure, don't just "
 "guess: not everything written in Cyrillic is Russian, for example."
-msgstr ""
+msgstr "Ce rapport montre les parutions dont la langue n'est pas spécifiée. Si vous reconnaissez la langue, veuillez l'indiquer. Faites-le seulement si vous êtes pas mal certain, ne la devinez pas : par exemple, tout ce qui est écrit en cyrillique n'est pas du russe. "
 
 #: ../root/report/releases_without_script.tt:6
 msgid ""
 "This report shows releases that have no script set. If you recognize the "
 "script, just add it! Remember that the script used for English (and most "
 "other European languages) is Latin."
-msgstr ""
+msgstr "Ce rapport montre les parutions dont le caractère d'écriture n'est pas spécifiée. Si vous le reconnaissez, ajoutez-le ! Souvenez-vous que le caractère d'écriture utilisé en anglais (et pour la plupart des langues européennes) est Latin."
 
 #: ../root/report/releases_with_coverart_links.tt:6
 msgid "This report shows releases that still have Cover Art relationships."
@@ -8874,12 +8874,12 @@ msgid ""
 "others are unset. In most cases, it should be easy to find out which the "
 "correct formats are (don't just assume that they're all CDs because one is "
 "though!)."
-msgstr "Ce rapport montre les parutions avec certains formats de support, mais les autres sont vides. Dans la plupart des cas il devrait être facile de trouver quels sont les bons formats (n'assumez juste pas que ce sont tous des CDs parce qu'un l'est."
+msgstr "Ce rapport montre les parutions avec certains formats de support, mais les autres sont vides. Dans la plupart des cas il devrait être facile de trouver quels sont les bons formats (n'assumez juste pas que ce sont tous des CDs parce qu'un l'est !)."
 
 #: ../root/report/separate_discs.tt:6
 msgid ""
 "This report shows releases which have (disc n) or (bonus disc) in the title."
-msgstr "Ce rapport affiche les parutions qui ont (disc n) ou (bonus disc) dans le titre."
+msgstr "Ce rapport montre les parutions qui ont (disc n) ou (bonus disc) dans le titre."
 
 #: ../root/report/releases_in_caa_with_cover_art_relationships.tt:7
 msgid ""
@@ -8893,7 +8893,7 @@ msgid ""
 "This is almost always wrong: ASINs are just Amazon's entries for the "
 "releases and should be linked to the release with an Amazon URL relationship"
 " instead."
-msgstr ""
+msgstr "Ce rapport montre les parutions qui ont des numéros de catalogue qui ressemblent à des ASINs. C'est presque toujours faux : les ASINs sont utilisés par Amazon pour les parutions et devraient plutôt être liés aux parutions par des URLs Amazon."
 
 #: ../root/report/released_too_early.tt:6
 msgid ""
@@ -8901,7 +8901,7 @@ msgid ""
 "released too early to have disc IDs, where one of the medium formats didn't "
 "exist at the time the release was released or where a disc ID is attached to"
 " a medium whose format does not have disc IDs."
-msgstr "Ce rapport indique les parutions qui ont des IDs de disque même si elles sont parues trop tôt pour avoir des IDs, si un des format de support n'existait pas lors de la parution ou si une ID de disque est attachée à un support dont le format n'a pas d'ID de disque."
+msgstr "Ce rapport montre les parutions qui ont des IDs de disque même si elles sont parues trop tôt pour avoir des IDs, si un des format de support n'existait pas lors de la parution ou si une ID de disque est attachée à un support dont le format n'a pas d'ID de disque."
 
 #: ../root/report/featuring_releases.tt:6
 msgid ""
@@ -8910,14 +8910,14 @@ msgid ""
 "releases, this is inherited from an older version of MusicBrainz and should "
 "be fixed. Consult the {featured_artists|page about featured artists} to know"
 " more."
-msgstr "Ce rapport liste les parutions avec (feat. Artist) dans le titre. Pour les groupes de parution « classique », consulter {CSG|les directives du style classique}. Pour les parutions autre que « classique », ceci est hérité d'une d'une ancienne version de MusicBrainz et devrait être corrigé. Consulter la {featured_artists|page sur les artistes invités} pour en savoir plus."
+msgstr "Ce rapport montre les parutions avec (feat. Artist) dans le titre. Pour les groupes de parution « classique », consulter {CSG|les directives du style classique}. Pour les parutions autre que « classique », ceci est hérité d'une d'une ancienne version de MusicBrainz et devrait être corrigé. Consulter la {featured_artists|page sur les artistes invités} pour en savoir plus."
 
 #: ../root/report/bad_amazon_urls.tt:6
 msgid ""
 "This report shows releases with Amazon URLs which don't follow the expected "
 "format. They might still be correct if they're archive.org cover links, but "
 "in any other case they should probably be fixed or removed."
-msgstr "Ce rapport montre les parutions avec des URLs d'Amazon qui ne répondent au format attendu. Elles sont peut-être quand même correctes si elles sont des liens de jaquette archive.org, mais dans tous les autres cas elles devraient probablement être corrigées ou enlevées."
+msgstr "Ce rapport montre les parutions avec des URLs d'Amazon qui ne répondent au format attendu. Elles sont peut-être quand même correctes si elles sont des liens de couverture « archive.org », mais dans tous les autres cas elles devraient probablement être corrigées ou enlevées."
 
 #: ../root/report/unlinked_pseudo_releases.tt:6
 msgid ""
@@ -11241,7 +11241,7 @@ msgstr "L'utilisateur avec l'ID #{user_id} n'a pu être trouvé."
 msgid ""
 "We were unable to send login information to your email address.  Please try again,\n"
 "             however if you continue to experience difficulty contact us at support@musicbrainz.org."
-msgstr "Nous n'avons pas pu envoyer vos informations de compte sur votre adresse courriel. Merci de réessayer. \nCependant, si cette erreur persiste, veuillez nous contacter à l'adresse support@musicbrainz.org."
+msgstr "Nous n'avons pas pu envoyer vos informations de compte sur votre adresse courriel. Veuillez réessayer,\ncependant si cette erreur persiste, veuillez nous contacter à l'adresse support@musicbrainz.org."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:159
 msgid "There is no user with this username"
@@ -11278,7 +11278,7 @@ msgid ""
 "<strong>We were unable to send a confirmation email to you.</strong><br/>Please confirm that you have entered a valid\n"
 "             address by editing your {settings|account settings}. If the problem still persists, please contact us at\n"
 "             <a href=\"mailto:support@musicbrainz.org\">support@musicbrainz.org</a>."
-msgstr "<strong>Nous n'avons pas pu vous envoyer un courriel de confirmation d'adresse </strong><br/> Merci de vérifier que vous avez saisi une adresse valide en éditant {settings|vos paramètres utilisateur}. Si le problème persiste, contactez nous à <a href=\"mailto:support@musicbrainz.org\">support@musicbrainz.org</a>."
+msgstr "<strong>Nous n'avons pas pu vous envoyer un courriel de confirmation d'adresse </strong><br/> Veuillez vérifier que vous avez saisi une adresse valide en éditant {settings|vos paramètres utilisateur}. Si le problème persiste, contactez nous à <a href=\"mailto:support@musicbrainz.org\">support@musicbrainz.org</a>."
 
 #: ../lib/MusicBrainz/Server/Controller/Admin.pm:76
 msgid "User successfully edited."
@@ -11977,7 +11977,7 @@ msgstr "Veillez saisir un nom d'artiste pour {credit}"
 msgid ""
 "Artist \"{artist}\" is unlinked, please select an existing artist.\n"
 "                       You may need to add a new artist to MusicBrainz first."
-msgstr "L'artist \"{artist}\" est supprimé, merci de choisir un artiste existant. Vous pourriez devoir d'abord ajouter un nouvel artiste dans MusicBrainz."
+msgstr "L'artiste \"{artist}\" n'est pas relié, veuillez choisir un artiste existant.\nVous pourriez devoir d'abord ajouter un nouvel artiste dans MusicBrainz."
 
 #: ../lib/MusicBrainz/Server/Form/Field/ArtistCredit.pm:69
 msgid "Please add an artist name for each credit."
@@ -12283,7 +12283,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Form/User/Register.pm:45
 msgid "Please choose another username, this one is already taken"
-msgstr "Merci de choisir un autre nom d'utilisateur, celui-ci étant déjà pris"
+msgstr "Veuillez choisir un autre nom d'utilisateur, celui-ci étant déjà pris"
 
 #: ../lib/MusicBrainz/Server/Form/User/WatchPreferences.pm:35
 msgid "A day"
