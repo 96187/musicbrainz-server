@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-19 20:49+0000\n"
+"PO-Revision-Date: 2013-11-19 21:59+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -561,11 +561,11 @@ msgstr "Ajouter une page"
 #: ../root/layout/menu.tt:238
 msgctxt "button/menu"
 msgid "Add Place"
-msgstr ""
+msgstr "Ajouter un lieu"
 
 #: ../root/place/add_alias.tt:12
 msgid "Add Place Alias"
-msgstr ""
+msgstr "Ajouter un alias de lieu"
 
 #: ../root/layout/menu.tt:226
 msgctxt "button/menu"
@@ -641,7 +641,7 @@ msgstr "Ajouter un nouveau Label"
 
 #: ../root/place/create.tt:14 ../root/place/create.tt:16
 msgid "Add a New Place"
-msgstr ""
+msgstr "Ajouter un nouveau lieu"
 
 #: ../root/release_group/create.tt:23
 msgid "Add a New Release Group"
@@ -733,7 +733,7 @@ msgstr "Ajouter un nouvel enregistrement"
 #: ../root/place/add_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Place/AddAlias.pm:14
 msgid "Add place alias"
-msgstr ""
+msgstr "Ajouter un alias de lieu"
 
 #: ../root/artist/layout.tt:88
 msgid "Add recording"
@@ -971,7 +971,7 @@ msgstr "Sinon, vous pouvez {uri|créer un label}."
 
 #: ../root/search/results-place.tt:43
 msgid "Alternatively, you may {uri|add a new place}."
-msgstr ""
+msgstr "Vous pouvez également {uri|ajouter un nouveau lieu}."
 
 #: ../root/search/results-recording.tt:5
 msgid "Alternatively, you may {uri|add a new recording}."
@@ -1812,7 +1812,7 @@ msgstr "Parcourir les labels"
 
 #: ../root/browse/place.tt:1 ../root/browse/place.tt:3
 msgid "Browse Places"
-msgstr ""
+msgstr "Parcourir les lieux"
 
 #: ../root/browse/release_group.tt:1 ../root/browse/release_group.tt:3
 msgid "Browse Release Groups"
@@ -1844,7 +1844,7 @@ msgstr "Parcourir les labels"
 
 #: ../root/browse/index.tt:11
 msgid "Browse places"
-msgstr ""
+msgstr "Parcourir les lieux"
 
 #: ../root/artist/browse_various_recordings.tt:2
 msgid "Browse recordings"
@@ -2245,7 +2245,7 @@ msgid ""
 "Confirm by activating the checkbox below that you have read the "
 "{doc_comment|disambiguation documentation}, understood how we distinguish "
 "places with the same name, and that you know what you are doing."
-msgstr ""
+msgstr "En cochant la case ci-dessous vous confirmez avoir lu la {doc_comment|documentation sur l'homonymie}, avoir compris que nous distinguons les lieux ayant le même nom et que vous savez ce que vous faites."
 
 #: ../root/label/edit_form.tt:25
 msgid ""
@@ -2840,11 +2840,11 @@ msgstr "Notes de modification"
 
 #: ../root/place/edit.tt:14
 msgid "Edit Place"
-msgstr ""
+msgstr "Modifier le lieu"
 
 #: ../root/place/edit_alias.tt:12
 msgid "Edit Place Alias"
-msgstr ""
+msgstr "Modifier l'alias de lieu"
 
 #: ../root/account/edit_ok.tt:1 ../root/account/edit_ok.tt:3
 #: ../root/account/edit.tt:13 ../root/account/edit.tt:15
@@ -2968,11 +2968,11 @@ msgstr "Modifier les notes : "
 #: ../root/place/edit_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Place/EditAlias.pm:12
 msgid "Edit place alias"
-msgstr ""
+msgstr "Modifier l'alias de lieu"
 
 #: ../root/place/edit_annotation.tt:2
 msgid "Edit place annotation"
-msgstr ""
+msgstr "Modifier l'annotation de lieu"
 
 #: ../root/admin/edit_user.tt:32
 msgid "Edit profile"
@@ -3120,7 +3120,7 @@ msgstr "Modifications de {name}"
 
 #: ../root/place/edits.tt:17
 msgid "Edits for {place}"
-msgstr ""
+msgstr "Modifications pour {place}"
 
 #: ../root/release/edits.tt:17 ../root/release_group/edits.tt:17
 #: ../root/work/edits.tt:16
@@ -3268,7 +3268,7 @@ msgstr ""
 
 #: ../root/release/edit/tracklist.tt:174
 msgid "Enter a tracklist below:"
-msgstr "Entrez une liste de pistes ci-dessous :"
+msgstr "Saisir une liste de pistes ci-dessous :"
 
 #: ../root/components/forms.tt:24 ../root/release/add_cover_art.tt:146
 #: ../root/release/edit/editnote.tt:42
@@ -3288,7 +3288,7 @@ msgid ""
 "is highly recommended. Not only does it make it clear where you got your "
 "information, but it can also encourage other users to vote on your edit "
 "&#x2014; thus making your edit get applied faster."
-msgstr "Nous vous recommandons vivement d'entrer une {note|note de modification} décrivant où vous avez eu cette information. Non seulement cela clarifie la provenance de vos informations, mais cela encourage les autres à voter pour votre modification, et permet une validation plus rapide de celle-ci."
+msgstr "Il est fortement recommandé de saisir une {note|note de modification} décrivant où vous avez eu vos informations. Non seulement cela clarifie la provenance de vos informations, mais cela peut encourager les autres à voter pour votre modification &#x2014; ainsi votre modification sera appliquée plus rapidement."
 
 #: ../root/scripts/text_strings.tt:97
 msgid "Entities in a relationship cannot be the same."
@@ -3907,7 +3907,7 @@ msgid ""
 "will be prompted to add a {doc_comment|disambiguation comment to this place}"
 " that will allow users to distinguish this entry from the other place(s) "
 "with the same name."
-msgstr ""
+msgstr "Si un ou plusieurs lieux existe déjà dans la base de données, l'on vous demandera d'ajouter un {doc_comment|commentaire d'homonymie à ce lieu} qui permettra aux utilisateurs de le/les distinguer des autres ayant le même nom."
 
 #: ../root/main/500.tt:65
 msgid ""
@@ -4605,7 +4605,7 @@ msgstr "Fusionner des labels"
 
 #: ../root/place/merge.tt:1 ../root/place/merge.tt:3
 msgid "Merge Places"
-msgstr ""
+msgstr "Fusionner les lieux"
 
 #: ../root/layout/merge-helper.tt:3
 msgid "Merge Process"
@@ -4660,7 +4660,7 @@ msgstr "Fusionner des méthodes :"
 
 #: ../root/place/layout.tt:54
 msgid "Merge place"
-msgstr ""
+msgstr "Fusionner le lieu"
 
 #: ../root/recording/layout.tt:32
 msgid "Merge recording"
@@ -5109,7 +5109,7 @@ msgstr "Pas d'écran ennuyeux"
 
 #: ../root/tag/place.tt:1
 msgid "No places with this tag were found."
-msgstr ""
+msgstr "Aucun lieu de trouvé avec ce tag."
 
 #: ../root/user/ratings.tt:23
 msgid "No ratings."
@@ -5125,7 +5125,7 @@ msgstr "Aucun enregistrement de trouvé avec cet attribut."
 
 #: ../root/place/performances.tt:84
 msgid "No recordings, releases or release groups are linked to this place"
-msgstr "Aucun enregistrement, parution ou groupe de parution de lié vers cet endroit"
+msgstr "Aucun enregistrement, parution ou groupe de parution de lié vers ce lieu"
 
 #: ../root/relationship/linkattributetype/index.tt:32
 msgid "No relationship attributes found."
@@ -5537,11 +5537,11 @@ msgstr "Phrase : "
 #: ../lib/MusicBrainz/Server/Edit/Place.pm:7
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:40
 msgid "Place"
-msgstr ""
+msgstr "Lieu"
 
 #: ../root/place/edit_form.tt:33
 msgid "Place Details"
-msgstr ""
+msgstr "Détails de lieu"
 
 #: ../root/place/not_found.tt:1 ../root/place/not_found.tt:2
 msgid "Place Not Found"
@@ -5549,7 +5549,7 @@ msgstr "Lieu introuvable"
 
 #: ../root/place/layout.tt:4
 msgid "Place information"
-msgstr ""
+msgstr "Informations de lieu"
 
 #: ../root/components/common-macros.tt:562
 #: ../root/edit/details/add_place_alias.tt:3
@@ -5560,16 +5560,16 @@ msgstr ""
 #: ../root/edit/details/remove_place_alias.tt:3
 #: ../root/edit/details/remove_place.tt:3
 msgid "Place:"
-msgstr ""
+msgstr "Lieu :"
 
 #: ../root/area/header.tt:1 ../root/area/places.tt:2 ../root/tag/header.tt:1
 #: ../root/tag/index.tt:8 ../root/user/tag.tt:4
 msgid "Places"
-msgstr ""
+msgstr "Lieux"
 
 #: ../root/browse/place.tt:8
 msgid "Places starting with “{index}”"
-msgstr ""
+msgstr "Lieux commençant par “{index}”"
 
 #: ../root/account/registered.tt:7
 msgid ""
@@ -5620,7 +5620,7 @@ msgstr "Veuillez vérifier soigneusement le code-barres de la parution."
 msgid ""
 "Please enter tags in the text area below. Tags are comma separated, and you "
 "may wish to see the {tagsyn|tag syntax documentation} for more information"
-msgstr "Entrez les marqueurs dans la zone de texte ci-dessous. Les marqueurs sont séparés par une virgule, et vous serez sûrement intéressé par la {tagsyn|documentation sur la syntaxe des marqueurs} pour plus d'information"
+msgstr "Saisir les marqueurs dans la zone de texte ci-dessous. Les marqueurs sont séparés par une virgule, et vous serez sûrement intéressé par la {tagsyn|documentation sur la syntaxe des marqueurs} pour plus d'information"
 
 #: ../root/release/edit/information.tt:207
 msgid ""
@@ -5721,7 +5721,7 @@ msgstr "Veuillez lire la documentation sur {doc_remove|enlever les types de modi
 
 #: ../root/alias/delete.tt:4
 msgid "Please review the {doc|alias documentation} before entering this edit."
-msgstr ""
+msgstr "Veuillez relire la {doc|documentation sur les alias} avant de saisir cette modification."
 
 #: ../root/cdstub/import.tt:3
 msgid "Please search for the artist you wish to create a new release for:"
@@ -5801,7 +5801,7 @@ msgstr "Probable labels en doublons"
 
 #: ../root/place/edit_form.tt:12
 msgid "Possible Duplicate Places"
-msgstr ""
+msgstr "Lieux peut-être dupliqués "
 
 #: ../root/cdtoc/lookup.tt:29
 msgid "Possible Mediums"
@@ -7023,8 +7023,8 @@ msgstr[1] ""
 #: ../root/tag/index.tt:8
 msgid "See all {num} places"
 msgid_plural "See all {num} places"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Voir le {num} lieu"
+msgstr[1] "Voir les {num} lieux"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} recordings"
@@ -7311,7 +7311,7 @@ msgstr "Désolé, il n'y a aucun label commençant par \"{index}\". Vous pouvez 
 msgid ""
 "Sorry, there are no places starting with “{index}”. Please {pre|go back} and"
 " try again."
-msgstr ""
+msgstr "Désolé, il n'y a pas de lieu commençant par “{index}”. Veuillez {pre|revenir en arrière} et ressayer."
 
 #: ../root/artist/browse_various_recordings.tt:15
 msgid ""
@@ -7373,7 +7373,7 @@ msgstr "Désolé, nous ne trouvons pas de label avec cette ID MusicBrainz. Vous 
 msgid ""
 "Sorry, we could not find a place with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Désolé, nous n'avons pas trouvé de lieu avec cette ID MusicBrainz. Vous pourriez plutôt essayer de {search_url|la chercher}."
 
 #: ../root/recording/not_found.tt:4
 msgid ""
@@ -7749,7 +7749,7 @@ msgstr "Taguer ce label"
 
 #: ../root/place/layout.tt:43 ../root/place/tags.tt:3
 msgid "Tag this place"
-msgstr ""
+msgstr "Taguer ce lieu"
 
 #: ../root/recording/layout.tt:21 ../root/recording/tags.tt:3
 msgid "Tag this recording"
@@ -7884,7 +7884,7 @@ msgstr ""
 
 #: ../root/release/edit/information.tt:195
 msgid "The catalog number you have entered looks like an Amazon ASIN."
-msgstr "Le numéro de catalogue que vous avez entré ressemble à un ASIN Amazon."
+msgstr "Le numéro de catalogue que vous avez saisi ressemble à un ASIN Amazon."
 
 #: ../root/scripts/text_strings.tt:69
 msgid "The checkdigit is #checkdigit#."
@@ -7914,7 +7914,7 @@ msgstr "La base de données n'a pas de tags."
 
 #: ../root/scripts/text_strings.tt:100
 msgid "The date you've entered is not valid."
-msgstr ""
+msgstr "La date saisie est invalide."
 
 #: ../root/user/profile.tt:83
 msgid "The early days of the project"
@@ -8033,7 +8033,7 @@ msgstr "Les utilisateurs constituent MusicBrainz et nous apprécions votre aide 
 
 #: ../root/scripts/text_strings.tt:102
 msgid "The value you've entered is not valid."
-msgstr ""
+msgstr "La valeur saisie est invalide."
 
 #: ../root/watch/list.tt:4
 msgid "The watch artist feature is currently not active."
@@ -8203,7 +8203,7 @@ msgstr ""
 
 #: ../root/area/places.tt:7
 msgid "This area is not currently associated with any places."
-msgstr ""
+msgstr "Cette zone n'est actuellement associée à aucun lieu."
 
 #: ../root/area/releases.tt:9
 msgid "This area is not currently associated with any releases."
@@ -8286,7 +8286,7 @@ msgid ""
 "This edit failed because the data it was changing was modified after this "
 "edit was created. This may happen when the same edit is entered in twice; "
 "one will pass but the other will fail."
-msgstr "La modification a échoué car les données qu'elle modifiait ont été modifiées après que cette modification soit créée. Cela peut arriver si une modification est entrée deux fois ; une réussira mais la suivante échouera."
+msgstr "La modification a échoué car les données qu'elle modifiait ont été modifiées après que cette modification soit créée. Cela peut arriver si une modification est saisie deux fois ; une réussira mais la suivante échouera."
 
 #: ../root/components/common-macros.tt:673
 msgid "This edit failed because there were insufficient \"yes\" votes."
@@ -8336,13 +8336,13 @@ msgstr "L'entité a été enlevée et ne peut donc plus être affichée correcte
 
 #: ../root/components/common-macros.tt:263
 msgid "This entity will be created when edits are entered."
-msgstr "Cette entité sera créée lorsque la modification sera acceptée."
+msgstr "Cette entité sera créée lors de la saisie des modifications."
 
 #: ../root/release/edit/information.tt:242
 msgid ""
 "This field is not a place to store general background information about the "
 "release: that kind of information should go in the annotation field."
-msgstr "Ce champ ne sert pas à stocker les informations générales sur la parution : ce type d'information doit être entré dans le champ \"annotation\"."
+msgstr "Ce champ ne sert pas à stocker les informations générales sur la parution : ce type d'information doit être entré dans le champ d'annotation."
 
 #: ../root/artist/edit_credit.tt:26
 msgid ""
@@ -8464,7 +8464,7 @@ msgstr "Cette personne est décédée."
 
 #: ../root/place/edit_form.tt:59
 msgid "This place has ended."
-msgstr ""
+msgstr "Ce lieu n'existe plus."
 
 #: ../root/place/index.tt:19
 msgid ""
@@ -8474,7 +8474,7 @@ msgstr "Ce lieu n'a pas de relation et sera enlevé automatiquement durant les p
 
 #: ../root/place/tags.tt:2
 msgid "This place has no tags."
-msgstr ""
+msgstr "Ce lieu n'a pas de tag."
 
 #: ../root/recording/delete.tt:18
 msgid ""
@@ -8504,7 +8504,7 @@ msgstr ""
 #: ../root/edit/relationship/edit.tt:139
 #: ../root/release/edit_relationships.tt:150
 msgid "This relationship has ended."
-msgstr ""
+msgstr "Cette relation n'existe plus."
 
 #: ../root/relationship/linktype/form.tt:16
 msgid "This relationship is deprecated"
@@ -9494,7 +9494,7 @@ msgstr "Utiliser l'enregistrement suggéré"
 msgid ""
 "Use the following fields to enter collaborations, see the <a "
 "href=\"{url}\">Artist Credit</a> documentation for more information."
-msgstr "Utiliser les champs suivant pour entrer les collaborations. Voir la documentation sur le <a href=\"{url}\">Crédit d'artistes</a> pour plus d'information."
+msgstr "Utiliser les champs suivant pour saisir les collaborations. Voir la documentation sur le <a href=\"{url}\">Crédit d'artistes</a> pour plus d'information."
 
 #: ../root/release/edit/tracklist.tt:226
 msgid "Use the following fields to search for a CD stub."
@@ -9749,13 +9749,13 @@ msgstr "Nous ne pouvons afficher l'historique pour cette Illustration. Pour une 
 msgid ""
 "We couldn't find a label with the name you entered. Please fill in the "
 "fields below to create a new label:"
-msgstr ""
+msgstr "Nous n'avons pas trouvé de label avec ce nom. Veuillez remplir les champs ci-dessous pour créer un nouveau label :"
 
 #: ../root/release/edit/missing_entities.tt:86
 msgid ""
 "We couldn't find an artist with the name you entered. Please fill in the "
 "fields below to create a new artist:"
-msgstr ""
+msgstr "Nous n'avons pas trouvé d'artiste avec ce nom. Veuillez remplir les champs ci-dessous pour créer un nouvel artiste :"
 
 #: ../root/release/cover_art.tt:42
 msgid "We do not currently have any cover art for {release}."
@@ -9823,7 +9823,7 @@ msgstr "Nous avons utilisé l'ID de disque <code>{discid}</code> pour rechercher
 msgid ""
 "We will use your birth date to display your age in years on your profile "
 "page."
-msgstr ""
+msgstr "Nous utiliserons votre date de naissance pour afficher votre âge en années sur votre page de profil."
 
 #: ../root/main/500.tt:62
 msgid ""
@@ -10079,7 +10079,7 @@ msgstr "Oui, je suis sûr que ce label n'est pas un doublon, et je sais ce que 
 #: ../root/place/edit_form.tt:28
 msgid ""
 "Yes, I am sure this place is not duplicate, and I know what I am doing."
-msgstr ""
+msgstr "Oui je suis sûr que ce lieu n'est pas un double et je sais ce que je fais."
 
 #: ../root/admin/wikidoc/delete.tt:9
 msgid "Yes, I'm sure"
@@ -10089,13 +10089,13 @@ msgstr "Oui, je suis sûr"
 msgid ""
 "You are about to add an ISRC to {recording}. The ISRC must be entered in "
 "standard <code>CCXXXYYNNNNNN</code> format:"
-msgstr ""
+msgstr "Vous êtes sur le point d'ajouter un ISRC à {recording}. L'ISRC doit être saisi au format <code>CCXXXYYNNNNNN</code> standard :"
 
 #: ../root/components/forms.tt:258
 msgid ""
 "You are about to add an ISWC to {work}. The ISWC must be entered in standard"
 " <code>T-DDD.DDD.DDD-C</code> format:"
-msgstr ""
+msgstr "Vous êtes sur le point d'ajouter un ISWC à {work}. L'ISWC doit être saisi au format <code>T-DDD.DDD.DDD-C</code> standard :"
 
 #: ../root/artist/edit_form.tt:3
 msgid "You are about to add an artist to MusicBrainz."
@@ -10105,7 +10105,7 @@ msgstr "Vous êtes sur le point d'ajouter un artiste à MusicBrainz."
 msgid ""
 "You are about to enter an edit that will change the durations of tracks to "
 "match that of the below disc ID."
-msgstr "Vous êtes sur le point d'entrer une modification qui changera la durée des pistes pour correspondre à celle de l'ID de disque ci-dessous."
+msgstr "Vous êtes sur le point de saisir une modification qui changera la durée des pistes pour correspondre à celle de l'ID de disque ci-dessous."
 
 #: ../root/area/merge.tt:4
 msgid ""
@@ -10129,7 +10129,7 @@ msgstr "Vous êtes sur le point de fusionner les labels suivants dans un seul l
 msgid ""
 "You are about to merge the following places into a single place. Please "
 "select the place which you would like other places to be merged into:"
-msgstr ""
+msgstr "Vous être sur le point de fusionner les lieux suivants en un seul lieu. Veuillez choisir le lieu vers lequel vous souhaitez fusionner :"
 
 #: ../root/recording/merge.tt:4
 msgid ""
@@ -10168,7 +10168,7 @@ msgstr "Vous êtes sur le point d'ajouter un label qui est très similaire aux l
 msgid ""
 "You are attempting to add a place which appears to be very similar, if not "
 "exactly the same, as these existing places:"
-msgstr ""
+msgstr "Vous tentez d'ajouter un lieu qui semble très similaire sinon identique aux lieux suivants :"
 
 #: ../root/artist/edit_form.tt:19
 msgid ""
@@ -10228,7 +10228,7 @@ msgid ""
 "You are required to enter a disambiguation comment which allows users to "
 "distinguish this place from the other places with the same name, if the "
 "final place name is similar to an existing place."
-msgstr ""
+msgstr "Vous devez saisir un commentaire d'homonymie qui permet aux utilisateurs de distinguer ce lieu des autres lieux du même nom, si le lieu final est similaire à un lieu existant."
 
 #: ../root/user/subscriptions/collection.tt:7
 msgid "You are subscribed to {n} private collection."
@@ -10427,7 +10427,7 @@ msgstr "[enlevé]"
 #: ../root/search/results-area.tt:28 ../root/search/results-label.tt:30
 #: ../root/search/results-place.tt:28
 msgid "[unknown]"
-msgstr ""
+msgstr "[inconnu]"
 
 #: ../root/scripts/text_strings.tt:35
 msgid "add a disambiguation comment"
@@ -10527,7 +10527,7 @@ msgstr ""
 
 #: ../root/components/common-macros.tt:725
 msgid "ended"
-msgstr ""
+msgstr "terminé"
 
 #: ../root/components/common-macros.tt:725 ../root/edit/details/macros.tt:28
 msgid "from {begin_date} until {end_date}"
@@ -10535,7 +10535,7 @@ msgstr "du {begin_date} au {end_date}"
 
 #: ../root/components/common-macros.tt:725 ../root/edit/details/macros.tt:28
 msgid "from {date} to ????"
-msgstr ""
+msgstr "du {date} à ????"
 
 #: ../root/components/common-macros.tt:725 ../root/edit/details/macros.tt:28
 msgid "from {date} to present"
@@ -10670,7 +10670,7 @@ msgstr "page {page} sur {total}"
 
 #: ../root/components/common-macros.tt:161
 msgid "places"
-msgstr ""
+msgstr "lieux"
 
 #: ../root/artist/subscribers.tt:14 ../root/collection/subscribers.tt:14
 #: ../root/label/subscribers.tt:14 ../root/user/subscribers.tt:14
@@ -10716,7 +10716,7 @@ msgstr "Renvoyer le courriel de vérification"
 
 #: ../root/layout.tt:71
 msgid "search"
-msgstr ""
+msgstr "recherche"
 
 #: ../root/layout/sidebar/sidebar-rating.tt:5
 msgid "see all ratings"
@@ -11041,8 +11041,8 @@ msgstr[1] ""
 #: ../root/tag/place.tt:1
 msgid "{num} place found"
 msgid_plural "{num} places found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num} trouvé"
+msgstr[1] "{num} trouvés"
 
 #: ../root/tag/recording.tt:1
 msgid "{num} recording found"
@@ -11147,7 +11147,7 @@ msgstr ""
 
 #: ../root/user/profile/layout.tt:8
 msgid "{user}"
-msgstr ""
+msgstr "{user}"
 
 #: ../root/user/collections.tt:37
 msgid "{user} has no public collections."
@@ -11366,7 +11366,7 @@ msgstr "'{id}' n'est pas un identifiant FreeDB valide"
 #: ../lib/MusicBrainz/Server/Controller/Relationship/LinkType.pm:48
 #, perl-brace-format
 msgid "'{types}' is not a valid pair of types for relationships."
-msgstr ""
+msgstr "'{types}' n'est pas une paire de type de relation valide."
 
 #: ../lib/MusicBrainz/Server/Controller/RelationshipEditor.pm:47
 msgid "There were errors in your submission. Please fix them and try again."
@@ -11654,23 +11654,23 @@ msgstr "Enlever le PUID"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/AddAnnotation.pm:12
 msgid "Add place annotation"
-msgstr ""
+msgstr "Ajouter un annotation de lieu"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/Create.pm:19
 msgid "Add place"
-msgstr ""
+msgstr "Ajouter un lieu"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/Delete.pm:10
 msgid "Remove place"
-msgstr "Enlever le lieu"
+msgstr "Enlever un lieu"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/Edit.pm:35
 msgid "Edit place"
-msgstr ""
+msgstr "Modifier un lieu"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/Merge.pm:11
 msgid "Merge places"
-msgstr ""
+msgstr "Fusionner des lieux"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/AddAnnotation.pm:12
 msgid "Add recording annotation"
@@ -11818,7 +11818,7 @@ msgstr "Ajouter une annotation à l'œuvre"
 
 #: ../lib/MusicBrainz/Server/Edit/Work/AddISWCs.pm:22
 msgid "Add ISWCs"
-msgstr ""
+msgstr "Ajouter des ISWC"
 
 #: ../lib/MusicBrainz/Server/Edit/Work/Delete.pm:11
 msgid "Remove work"
@@ -12276,7 +12276,7 @@ msgstr "Jamais"
 
 #: ../lib/MusicBrainz/Server/Form/User/Register.pm:21
 msgid "Please enter a password in this field"
-msgstr ""
+msgstr "Veuillez saisir un mot de passe dans ce champs."
 
 #: ../lib/MusicBrainz/Server/Form/User/Register.pm:29
 msgid "The password confirmation does not match the password"
