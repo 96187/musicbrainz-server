@@ -22,8 +22,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-19 13:26+0000\n"
-"Last-Translator: nikki <email address hidden>\n"
+"PO-Revision-Date: 2013-11-19 18:50+0000\n"
+"Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -180,7 +180,7 @@ msgstr "(pas de log de changement)"
 
 #: ../root/release/add_cover_art.tt:111
 msgid "(no other cover art)"
-msgstr "(aucune autre jaquette)"
+msgstr "(aucune autre Illustration)"
 
 #: ../root/edit/details/historic/add_release_annotation.tt:21
 msgctxt "annotation changes"
@@ -513,12 +513,12 @@ msgstr "Ajouter un coupon de CD"
 #: ../root/release/cover_art.tt:53
 msgctxt "button/menu"
 msgid "Add Cover Art"
-msgstr "Ajouter une jaquette"
+msgstr "Ajouter une Illustration"
 
 #: ../root/release/add_cover_art.tt:11 ../root/release/add_cover_art.tt:12
 msgctxt "header"
 msgid "Add Cover Art"
-msgstr "Ajouter une jaquette"
+msgstr "Ajouter une Illustration"
 
 #: ../root/release/edit/tracklist.tt:160 ../root/release/edit/tracklist.tt:286
 #: ../root/release/edit/tracklist.tt:450
@@ -1195,7 +1195,7 @@ msgstr "Êtes-vous sur de vouloir enlever la zone {area} de MusicBrainz ?"
 msgid ""
 "Are you sure you wish to remove the below cover art from {release} by "
 "{artist}?"
-msgstr "Voulez-vous vraiment enlever la jaquette ci-dessous de la parution {release} par {artist} ?"
+msgstr "Voulez-vous vraiment enlever l'Illustration ci-dessous de la parution {release} par {artist} ?"
 
 #: ../root/label/delete.tt:5
 msgid "Are you sure you wish to remove the label {label} from MusicBrainz?"
@@ -1986,7 +1986,7 @@ msgstr "Candidat :"
 #: ../root/release/caa_darkened.tt:1 ../root/release/caa_darkened.tt:2
 #: ../root/release/cover_art.tt:59
 msgid "Cannot Add Cover Art"
-msgstr "Impossible d'ajouter une jaquette"
+msgstr "Impossible d'ajouter une Illustration"
 
 #: ../root/edit/relationship/cannot_create.tt:1
 #: ../root/edit/relationship/cannot_create.tt:2
@@ -2088,7 +2088,7 @@ msgstr "Choisir un fichier :"
 
 #: ../root/release/cover_art_fields.tt:6
 msgid "Choose one or more cover art types for this image"
-msgstr "Choisir un ou plusieurs types de jaquette pour cette image"
+msgstr "Choisir un ou plusieurs types d'Illustration pour cette image"
 
 #: ../root/scripts/text_strings.tt:85
 msgid "Clear artist"
@@ -2310,25 +2310,25 @@ msgstr "Pays : "
 
 #: ../root/release/cover_art.tt:3 ../root/release/tabs.tt:1
 msgid "Cover Art"
-msgstr "Jaquette"
+msgstr "Illustration"
 
 #: ../root/layout.tt:173
 msgid ""
 "Cover Art provided by the {caa|Cover Art Archive}. Hosted by {host|Digital "
 "West}. Sponsored by: {url1|Google}, {url2|OSUOSL} and {more|others...}. "
-msgstr "Les jaquettes sont fournies par {caa|« Cover Art Archive »}. Hébergé par {host|Digital West}. Commandité par : {url1|Google}, {url2|OSUOSL} et {more|d'autres...}. "
+msgstr "Les Illustrations sont fournies par {caa|« Cover Art Archive »}. Hébergé par {host|Digital West}. Commandité par : {url1|Google}, {url2|OSUOSL} et {more|d'autres...}. "
 
 #: ../root/release/sidebar.tt:11
 msgid "Cover art from {cover|Amazon}"
-msgstr ""
+msgstr "Illustration d'{cover|Amazon}"
 
 #: ../root/release/sidebar.tt:13
 msgid "Cover art from {cover|host}"
-msgstr ""
+msgstr "Illustration de {cover|host}"
 
 #: ../root/edit/details/macros.tt:94
 msgid "Cover art:"
-msgstr "Jaquette :"
+msgstr "Illustration :"
 
 #: ../root/admin/wikidoc/create.tt:12
 msgid "Create"
@@ -2814,7 +2814,7 @@ msgstr "Modifier la collection"
 
 #: ../root/release/edit_cover_art.tt:5 ../root/release/edit_cover_art.tt:6
 msgid "Edit Cover Art"
-msgstr "Modifier la Jaquette"
+msgstr "Modifier l'Illustration"
 
 #: ../root/layout/menu.tt:93
 msgid "Edit Instrument Tree"
@@ -3589,7 +3589,7 @@ msgstr "Origine :"
 #: ../root/release/sidebar.tt:4
 msgid ""
 "Front cover image failed to load correctly.<br/>{all|View all artwork}."
-msgstr ""
+msgstr "L'image de couverture n'a pu se charger correctement.<br/>{all|Voir toutes les illustrations}."
 
 #: ../root/cdstub/index.tt:30 ../root/cdtoc/info.tt:5
 msgid "Full TOC:"
@@ -4431,7 +4431,7 @@ msgstr "Connectez-vous pour modifier"
 
 #: ../root/release/cover_art.tt:64
 msgid "Log in to upload cover art"
-msgstr "Connectez-vous pour envoyer une jaquette"
+msgstr "Connectez-vous pour envoyer une Illustration"
 
 #: ../root/doc/relationship_type.tt:42
 #: ../root/edit/details/edit_relationship_type.tt:29
@@ -4958,7 +4958,7 @@ msgstr "Nouveau type : "
 
 #: ../root/edit/details/set_cover_art.tt:32
 msgid "New cover art:"
-msgstr ""
+msgstr "Nouvelle Illustration :"
 
 #: ../root/release/merge.tt:98
 msgid "New disc title:"
@@ -5072,7 +5072,7 @@ msgstr "Aucune collection de trouvée avec cet attribut."
 
 #: ../root/release/sidebar.tt:17
 msgid "No cover art available."
-msgstr "Aucune jaquette disponible."
+msgstr "Aucune Illustration de disponible."
 
 #: ../root/edit/notes.tt:40
 msgid "No edit notes have been added."
@@ -5088,7 +5088,7 @@ msgstr "Aucune élection de trouvée."
 
 #: ../root/release/sidebar.tt:17
 msgid "No front cover image available.<br/>{all|View all artwork}."
-msgstr "Aucune image de devant disponible.<br/>{all|Voir tous les éléments graphiques}. "
+msgstr "Aucune image de couverture de disponible.<br/>{all|Voir tous les éléments graphiques}. "
 
 #: ../root/relationship/linkattributetype/instruments.tt:31
 msgid "No instruments found."
@@ -5156,7 +5156,7 @@ msgstr "Aucune parution de trouvée."
 
 #: ../root/release_group/set_cover_art.tt:63
 msgid "No releases have cover art, cannot set cover art."
-msgstr "Aucune parution n'a de jaquette. Impossible d'assigner une jaquette."
+msgstr "Aucune parution n'a d'Illustration. Impossible d'assigner une Illustration."
 
 #: ../root/tag/release.tt:1
 msgid "No releases with this tag were found."
@@ -5311,7 +5311,7 @@ msgstr ""
 
 #: ../root/edit/details/set_cover_art.tt:13
 msgid "Old cover art:"
-msgstr ""
+msgstr "Ancienne Illustration :"
 
 #: ../root/account/change_password.tt:22
 msgid "Old password:"
@@ -5599,7 +5599,7 @@ msgstr ""
 msgid ""
 "Please choose a valid image. Currently the Cover Art Archive only supports "
 "JPEG, PNG and GIF files."
-msgstr ""
+msgstr "Veuillez choisir une image valide. Actuellement la « Cover Art Archive » ne prend en charge que les fichiers JPEG, PNG et GIF."
 
 #: ../root/scripts/text_strings.tt:45
 msgid "Please click lookup to search"
@@ -5730,7 +5730,7 @@ msgstr "Veuillez chercher l'artiste pour lequel vous souhaitez créer une nouvel
 msgid ""
 "Please see the <a href=\"{doc}\" target=\"_blank\">Cover Art Types</a> "
 "documentation for a description of these types."
-msgstr "Consultez la documentation sur les <a href=\"{doc}\" target=\"_blank\">Types de Jaquettes</a> pour une description complète de ces types."
+msgstr "Consultez la documentation sur les <a href=\"{doc}\" target=\"_blank\">Types d'Illustration</a> pour une description complète de ces types."
 
 #: ../root/scripts/text_strings.tt:42
 msgid "Please select a relationship type."
@@ -6433,11 +6433,11 @@ msgstr "Parution avec un certains formats non précisés"
 #: ../root/report/releases_in_caa_with_cover_art_relationships.tt:1
 msgid ""
 "Releases in the Cover Art Archive that still have cover art relationships"
-msgstr "Parutions présentes dans la « Cover Art Archive » qui ont encore une jaquette en relation"
+msgstr "Parutions présentes dans la « Cover Art Archive » qui ont encore une Illustration en relation"
 
 #: ../root/report/index.tt:68
 msgid "Releases of any sort that still have cover art relationships"
-msgstr "Parutions de toutes sortes qui ont encore des relations de jaquette."
+msgstr "Parutions de toutes sortes qui ont encore des relations d'Illustration."
 
 #: ../root/report/index.tt:61 ../root/report/released_too_early.tt:1
 #: ../root/report/released_too_early.tt:3
@@ -6476,7 +6476,7 @@ msgstr "Parutions qui devraient être converties en \"plusieurs artistes\""
 #: ../root/report/releases_with_coverart_links.tt:1
 #: ../root/report/releases_with_coverart_links.tt:3
 msgid "Releases with Cover Art relationships"
-msgstr "Parutions avec des relations de jaquettes."
+msgstr "Parutions avec des relations d'illustration."
 
 #: ../root/report/index.tt:73
 #: ../root/report/single_medium_releases_with_medium_titles.tt:1
@@ -6605,7 +6605,7 @@ msgstr "Enlever le crédit de l'artiste"
 
 #: ../root/release/remove_cover_art.tt:1 ../root/release/remove_cover_art.tt:2
 msgid "Remove Cover Art"
-msgstr "Enlever la Jaquette"
+msgstr "Enlever l'Illustration"
 
 #: ../root/cdtoc/remove.tt:1 ../root/cdtoc/remove.tt:2
 msgid "Remove Disc ID"
@@ -6764,13 +6764,13 @@ msgstr "Renommer le Crédit"
 #: ../root/release/cover_art.tt:55
 msgctxt "button/menu"
 msgid "Reorder Cover Art"
-msgstr "Réordonner les jaquettes"
+msgstr "Réordonner les Illustrations"
 
 #: ../root/release/reorder_cover_art.tt:5
 #: ../root/release/reorder_cover_art.tt:6
 msgctxt "header"
 msgid "Reorder Cover Art"
-msgstr "Réordonner les jaquettes"
+msgstr "Réordonner les Illustrations"
 
 #: ../root/layout/menu.tt:291
 msgid "Report a Bug"
@@ -7105,7 +7105,7 @@ msgstr ""
 
 #: ../root/release_group/set_cover_art.tt:5
 msgid "Set Release Group Cover Art"
-msgstr "Assigner une jaquette de groupe de parution"
+msgstr "Assigner une Illustration de groupe de parution"
 
 #: ../root/cdtoc/set_durations.tt:1 ../root/cdtoc/set_durations.tt:2
 msgid "Set Tracklist Durations"
@@ -7118,7 +7118,7 @@ msgstr "Entrer un nouveau mot de passe pour votre compte MusicBrainz."
 #: ../root/release_group/layout.tt:49 ../root/release_group/set_cover_art.tt:7
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/SetCoverArt.pm:19
 msgid "Set cover art"
-msgstr ""
+msgstr "Assigner une Illustration"
 
 #: ../root/cdtoc/list.tt:45
 msgid "Set track durations"
@@ -7828,7 +7828,7 @@ msgstr "Cette recherche ne peut être effectuées car vous devez fournir au moin
 msgid ""
 "The Cover Art Archive has had a take down request in the past for this "
 "release, so we are unable to allow any more uploads."
-msgstr "La « Cover Art Archive » a reçu des requêtes de suppression dans le passé pour cette parution, nous ne pouvons donc plus autoriser d'envois."
+msgstr "La « Cover Art Archive » a reçu des requêtes de suppression par le passé pour cette parution, nous ne pouvons donc plus autoriser d'envois."
 
 #: ../root/user/profile.tt:81
 msgid "The Dawn of the Project"
@@ -8160,7 +8160,7 @@ msgstr "Il y a une ou plusieurs erreurs, veuillez vérifier les champs suivants 
 msgid ""
 "These images provided by the {caa|Cover Art Archive}. You can also see them "
 "at the {ia|Internet Archive}."
-msgstr ""
+msgstr "Ces images sont fournies par {caa|« Cover Art Archive »}. Vous pouvez aussi les voir sur {ia|Internet Archive}."
 
 #: ../root/cdstub/edit_form.tt:9
 msgid "This CD has tracks from more than one artist (e.g. a compilation CD)"
@@ -8856,7 +8856,7 @@ msgstr ""
 
 #: ../root/report/releases_with_coverart_links.tt:6
 msgid "This report shows releases that still have Cover Art relationships."
-msgstr "Ce rapport montre les parutions qui ont encore des relations de jaquette."
+msgstr "Ce rapport montre les parutions qui ont encore des relations d'illustration."
 
 #: ../root/report/part_of_set_relationships.tt:6
 msgid ""
@@ -8885,7 +8885,7 @@ msgstr "Ce rapport affiche les parutions qui ont (disc n) ou (bonus disc) dans l
 msgid ""
 "This report shows releases which have artwork in the Cover Art Archive, but "
 "still have a cover art relationship (pointing to a URL)."
-msgstr "Ce rapport montre les parutions qui ont des illustrations dans le « Cover Art Archive » mais qui ont encore une relation de jaquette (qui pointe vers une URL)."
+msgstr "Ce rapport montre les parutions qui ont des Illustrations dans le « Cover Art Archive » mais qui ont encore une relation d'Illustration (qui pointe vers une URL)."
 
 #: ../root/report/cat_no_looks_like_asin.tt:6
 msgid ""
@@ -9735,14 +9735,14 @@ msgstr "Nous sommes désolé, mais les données de ce rapport ne sont pas dis
 
 #: ../root/edit/details/macros.tt:96
 msgid "We are unable to display history for this cover art."
-msgstr ""
+msgstr "Nous ne pouvons afficher d'historique pour cette Illustration."
 
 #: ../root/edit/details/macros.tt:96
 #: ../root/edit/details/reorder_cover_art.tt:2
 msgid ""
 "We are unable to display history for this cover art. For a current listing "
 "of cover art, please see the {coverart|release's cover art page}."
-msgstr "Nous ne pouvons afficher l'historique pour cette jaquette. Pour une liste à jour des jaquettes, veuillez consulter {coverart|la page des jaquette de cette parution."
+msgstr "Nous ne pouvons afficher l'historique pour cette Illustration. Pour une liste à jour des Illustrations, veuillez consulter {coverart|la page des Illustrations de cette parution}."
 
 #: ../root/release/edit/missing_entities.tt:149
 msgid ""
@@ -9758,7 +9758,7 @@ msgstr ""
 
 #: ../root/release/cover_art.tt:42
 msgid "We do not currently have any cover art for {release}."
-msgstr "Nous n'avons pas de jaquette pour {release} pour l'instant."
+msgstr "Nous n'avons pas d'Illustration pour {release} pour l'instant."
 
 #: ../root/cdtoc/lookup.tt:79
 msgid ""
@@ -11729,7 +11729,7 @@ msgstr "Enlever le type de relation"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/AddCoverArt.pm:20
 msgid "Add cover art"
-msgstr "Ajouter une jaquette"
+msgstr "Ajouter une Illustration"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/AddReleaseLabel.pm:16
 msgid "Add release label"
@@ -11753,7 +11753,7 @@ msgstr "Modifier le code-barres"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/EditCoverArt.pm:22
 msgid "Edit cover art"
-msgstr "Modifier une jaquette"
+msgstr "Modifier une Illustration"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/EditReleaseLabel.pm:24
 msgid "Edit release label"
@@ -11761,11 +11761,11 @@ msgstr "Modifier le label de parution"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/RemoveCoverArt.pm:19
 msgid "Remove cover art"
-msgstr "Enlever la jaquette"
+msgstr "Enlever l'Illustration"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/ReorderCoverArt.pm:22
 msgid "Reorder cover art"
-msgstr "Réordonner les jaquettes"
+msgstr "Réordonner les Illustrations"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/ReorderMediums.pm:11
 msgid "Reorder mediums"
