@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-19 22:57+0000\n"
+"PO-Revision-Date: 2013-11-19 23:05+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -2420,7 +2420,7 @@ msgstr "Qualité des données :"
 
 #: ../root/layout/menu.tt:298
 msgid "Data Removal Policy"
-msgstr ""
+msgstr "Règles de suppression des données"
 
 #: ../root/annotation/history.tt:9 ../root/artist/relationships.tt:13
 #: ../root/cdtoc/attach_artist_releases.tt:35
@@ -6855,7 +6855,7 @@ msgstr ""
 
 #: ../root/layout.tt:79
 msgid "Running: <span class=\"tooltip\" title=\"{msg}\">{branch} ({sha})</span>"
-msgstr ""
+msgstr "Running: <span class=\"tooltip\" title=\"{msg}\">{branch} ({sha})</span>"
 
 #: ../root/account/edit.tt:105 ../root/account/preferences.tt:50
 #: ../root/relationship/linkattributetype/form.tt:21
@@ -8577,7 +8577,7 @@ msgid ""
 "track number, e.g. \"1) Some Name\" (instead of just \"Some Name\"). Notice "
 "that sometimes this is justified and correct, don't automatically assume it "
 "is a mistake! If you confirm it is a mistake, please correct it."
-msgstr ""
+msgstr "Ce rapport tend a identifier les parutions dont les noms de piste inclus leur propre numéro de piste, par exemple « 1) Un nom » (au lieu de juste « Un nom »). Veuillez prendre note que cela est parfois justifié et correct. Ne pas assumer automatiquement que cela est faux ! Si vous confirmez que cela est faux, veuillez le corriger."
 
 #: ../root/report/releases_to_convert.tt:7
 msgid ""
@@ -9094,7 +9094,7 @@ msgstr "Total des groupes dupliqués : {count}"
 #: ../root/report/discogs_links_with_multiple_labels.tt:7
 #: ../root/report/duplicate_relationships_labels.tt:8
 msgid "Total labels found: {count}"
-msgstr ""
+msgstr "Total des labels trouvés : {count}"
 
 #: ../root/cdstub/index.tt:21 ../root/cdtoc/info.tt:23
 msgid "Total length:"
@@ -11520,7 +11520,7 @@ msgstr "Ajouter des événements de parution (historique)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/AddTrack.pm:11
 msgid "Add track (historic)"
-msgstr ""
+msgstr "Ajouter une piste (historique)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/AddTrackKV.pm:11
 msgid "Add track"
