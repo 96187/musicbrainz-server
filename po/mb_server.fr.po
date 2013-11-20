@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-20 18:59+0000\n"
+"PO-Revision-Date: 2013-11-20 19:59+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -50,7 +50,7 @@ msgstr "\"C\" est un chiffre de contrôle, unique."
 
 #: ../root/components/forms.tt:276
 msgid "\"CC\" is the appropriate for the registrant two-character country code."
-msgstr "\"CC\" doit être utilisé pour le code à 2 caractères du pays d'enregistrement."
+msgstr "« CC » doit être utilisé pour le code à 2 caractères du pays d'enregistrement."
 
 #: ../root/components/forms.tt:262
 msgid "\"DDD\" is a nine digit work identifier."
@@ -60,17 +60,17 @@ msgstr "\"DDDD\" est l'identifiant à 9 chiffres d'un travail"
 msgid ""
 "\"NNNNN\" is a unique 5-digit number identifying the particular sound "
 "recording."
-msgstr "\"NNNNN\" est un numéro unique à 5 chiffres identifiant un enregistrement particulier d'une œuvre."
+msgstr "« NNNNN » est un numéro unique à 5 chiffres identifiant un enregistrement particulier d'une œuvre."
 
 #: ../root/components/forms.tt:277
 msgid ""
 "\"XXX\" is a three character alphanumeric registrant code, uniquely "
 "identifying the organisation which registered the code."
-msgstr "\"XXX\" est un code alphanumérique à 3 caractères identifiant de manière unique l'organisation qui a enregistré le code."
+msgstr "« XXX » est un code alphanumérique à 3 caractères identifiant de manière unique l'organisation qui a enregistré le code."
 
 #: ../root/components/forms.tt:278
 msgid "\"YY\" is the last two digits of the year of registration."
-msgstr "\"YY\" sont les 2 derniers chiffres de l'année d'enregistrement."
+msgstr "« YY » sont les 2 derniers chiffres de l'année d'enregistrement."
 
 #: ../root/cdstub/cdstub.tt:4 ../root/edit/details/add_medium.tt:49
 #: ../root/edit/details/edit_medium.tt:52
@@ -305,7 +305,7 @@ msgstr "500 px"
 
 #: ../root/admin/edit_user.tt:18
 msgid "<abbr title=\"MusicBrainz Identifier\">MBID</abbr> submitter"
-msgstr "autorisé à envoyer des <abbr title=\"Identifiant MusicBrainz\">MBID</abbr>"
+msgstr "<abbr title=\"Identifiant MusicBrainz\">MBID</abbr>  envoyeur de données"
 
 #: ../root/edit/info.tt:48
 msgid "<em>Cancelling</em>"
@@ -364,7 +364,7 @@ msgstr "<strong>Note</strong> :"
 msgid ""
 "<strong>The ultimate source of music information</strong> by allowing anyone"
 " to contribute and releasing the {doc|data} under {doc2|open licenses}."
-msgstr "<strong>La source ultime d'information sur la musique<strong> permettant à chacun de contribuer. Les {doc|données} étant sous {doc2|licence libre}."
+msgstr "<strong>La source ultime d'informations sur la musique<strong> permettant à chacun de contribuer et en publiant les {doc|données} sous des {doc2|licences libres}."
 
 #: ../root/main/index.tt:66
 msgid ""
@@ -433,7 +433,7 @@ msgstr "Une relation entre {entity0} et {entity1} existe déjà avec ces attribu
 
 #: ../root/edit/relationship/create_url.tt:30
 msgid "A relationship between {entity} and {url} already exists."
-msgstr "La relation entre {entity} et {url} existe déjà."
+msgstr "Une relation entre {entity} et {url} existe déjà."
 
 #: ../root/layout/menu.tt:112
 msgid "About"
@@ -463,7 +463,7 @@ msgstr "Accepté"
 
 #: ../root/account/applications.tt:26
 msgid "Access"
-msgstr ""
+msgstr "Accéder"
 
 #: ../root/account/registered.tt:1 ../root/account/registered.tt:2
 msgid "Account Created"
@@ -931,7 +931,7 @@ msgstr "Toutes les tailles :"
 
 #: ../root/oauth2/authorize.tt:19
 msgid "Allow access"
-msgstr ""
+msgstr "Permettre l'accès"
 
 #: ../root/account/preferences.tt:25
 msgid "Allow other users to see my ratings"
@@ -993,11 +993,11 @@ msgstr "Sinon, vous pouvez {uri|créer un travail}."
 #: ../root/report/asins_with_multiple_releases.tt:1
 #: ../root/report/asins_with_multiple_releases.tt:3
 msgid "Amazon URLs Linked to Multiple Releases"
-msgstr "URLs Amazon liées à plusieurs parutions"
+msgstr "URLs d'Amazon reliées à plusieurs parutions"
 
 #: ../root/report/index.tt:54
 msgid "Amazon URLs linked to multiple releases"
-msgstr "URLs Amazon liées à plusieurs parutions"
+msgstr "URLs d'Amazon reliées à plusieurs parutions"
 
 #: ../root/alias/edit_form.tt:2 ../root/components/aliases.tt:3
 msgid ""
@@ -1100,12 +1100,12 @@ msgstr "Ajouter ces supports à la parution cible"
 
 #: ../root/account/applications.tt:25 ../root/account/applications.tt:54
 msgid "Application"
-msgstr ""
+msgstr "Application"
 
 #: ../root/account/applications.tt:1 ../root/account/applications.tt:3
 #: ../root/layout/menu.tt:43
 msgid "Applications"
-msgstr ""
+msgstr "Applications"
 
 #: ../root/edit/search_macros.tt:244
 #: ../lib/MusicBrainz/Server/Data/Vote.pm:194
@@ -1439,7 +1439,7 @@ msgstr ""
 
 #: ../root/browse/artist.tt:8
 msgid "Artists starting with “{index}”"
-msgstr "Artistes commençant par \"{index}\""
+msgstr "Artistes commençant par « {index} »"
 
 #: ../root/report/possible_collaborations.tt:1
 #: ../root/report/possible_collaborations.tt:3
@@ -1538,11 +1538,11 @@ msgstr "Attributs :"
 
 #: ../root/oauth2/authorize.tt:3
 msgid "Authorization"
-msgstr ""
+msgstr "Authorization"
 
 #: ../root/account/applications.tt:16
 msgid "Authorized Applications"
-msgstr ""
+msgstr "Applications autorisées"
 
 #: ../root/edit/search_macros.tt:288
 msgid "Auto-Editor"
@@ -1602,7 +1602,7 @@ msgstr "Revenir à la liste des élections"
 
 #: ../root/report/bad_amazon_urls.tt:1 ../root/report/bad_amazon_urls.tt:3
 msgid "Bad Amazon URLs"
-msgstr "Mauvaise URL d'Amazon"
+msgstr "Mauvaises URLs d'Amazon"
 
 #: ../root/main/400.tt:1 ../root/main/400.tt:3
 msgid "Bad Request"
@@ -1919,7 +1919,7 @@ msgstr "Importation d'un coupon de CD"
 
 #: ../root/cdstub/layout.tt:2
 msgid "CD stub “{title}” by {artist}"
-msgstr "Coupon de CD \"{title}\" par {artist}"
+msgstr "Coupon de CD « {title} » par {artist}"
 
 #: ../root/cdstub/logged_in.tt:7
 msgid ""
@@ -1931,7 +1931,7 @@ msgstr "Les coupons de CD sont une fonctionnalité permettant à des utilisateur
 #: ../root/account/edit_application.tt:10
 #: ../root/account/register_application.tt:35
 msgid "Callback URL:"
-msgstr ""
+msgstr "URL de rappel :"
 
 #: ../root/doc/edit_type.tt:75
 msgid "Can be approved"
@@ -2196,7 +2196,7 @@ msgstr "Informations de collection"
 
 #: ../root/collection/layout.tt:1
 msgid "Collection “{collection}”"
-msgstr "Collection \"{collection}\""
+msgstr "Collection « {collection} »"
 
 #: ../root/release/collections.tt:1 ../root/release/collections.tt:2
 #: ../root/release/sidebar.tt:113 ../root/user/collections.tt:1
@@ -2321,7 +2321,7 @@ msgstr "Les Illustrations sont fournies par {caa|« Cover Art Archive »}. Hébe
 
 #: ../root/release/sidebar.tt:11
 msgid "Cover art from {cover|Amazon}"
-msgstr "Illustration d'{cover|Amazon}"
+msgstr "Illustrations provenant d'{cover|Amazon}"
 
 #: ../root/release/sidebar.tt:13
 msgid "Cover art from {cover|host}"
@@ -2533,7 +2533,7 @@ msgstr "Détecter la durée des pistes"
 
 #: ../root/account/applications.tt:45
 msgid "Developer Applications"
-msgstr ""
+msgstr "Applications de développeurs"
 
 #: ../root/layout/menu.tt:180
 msgid "Developer Resources"
@@ -2591,11 +2591,11 @@ msgstr "ID d'information du disque"
 
 #: ../root/cdtoc/index.tt:3
 msgid "Disc ID “<code>{discid}</code>”"
-msgstr "ID de disque \"<code>{discid}</code>\""
+msgstr "ID de disque « <code>{discid}</code> »"
 
 #: ../root/cdtoc/index.tt:1
 msgid "Disc ID “{discid}”"
-msgstr "ID de disque \"{discid}\""
+msgstr "ID de disque « {discid} »"
 
 #: ../root/cdtoc/info.tt:11 ../root/edit/details/add_disc_id.tt:15
 #: ../root/edit/details/historic/add_disc_id.tt:17
@@ -2636,7 +2636,7 @@ msgstr "Discographie"
 #: ../root/report/discogs_links_with_multiple_artists.tt:1
 #: ../root/report/discogs_links_with_multiple_artists.tt:3
 msgid "Discogs URLs Linked to Multiple Artists"
-msgstr "URLs Discogs liées vers Plusieurs Artistes"
+msgstr "URLs Discogs reliées vers plusieurs artistes"
 
 #: ../root/report/discogs_links_with_multiple_labels.tt:1
 #: ../root/report/discogs_links_with_multiple_labels.tt:3
@@ -2646,28 +2646,28 @@ msgstr "URLs Discogs reliées à plusieurs labels"
 #: ../root/report/discogs_links_with_multiple_release_groups.tt:1
 #: ../root/report/discogs_links_with_multiple_release_groups.tt:3
 msgid "Discogs URLs Linked to Multiple Release Groups"
-msgstr "URL Discogs liée à plusieurs groupes de parution"
+msgstr "URL Discogs reliée à plusieurs groupes de parution"
 
 #: ../root/report/discogs_links_with_multiple_releases.tt:1
 #: ../root/report/discogs_links_with_multiple_releases.tt:3
 msgid "Discogs URLs Linked to Multiple Releases"
-msgstr "URL Discogs liée à plusieurs parutions"
+msgstr "URL Discogs reliée à plusieurs parutions"
 
 #: ../root/report/index.tt:24
 msgid "Discogs URLs linked to multiple artists"
-msgstr "URLs Discogs liées vers plusieurs artistes"
+msgstr "URLs Discogs reliées vers plusieurs artistes"
 
 #: ../root/report/index.tt:32
 msgid "Discogs URLs linked to multiple labels"
-msgstr "URLs Discogs liées à plusieurs labels"
+msgstr "URLs Discogs reliées à plusieurs labels"
 
 #: ../root/report/index.tt:41
 msgid "Discogs URLs linked to multiple release groups"
-msgstr "URL Discogs liée à plusieurs groupes de parution"
+msgstr "URL Discogs reliée à plusieurs groupes de parution"
 
 #: ../root/report/index.tt:55
 msgid "Discogs URLs linked to multiple releases"
-msgstr "URL Discogs liée à plusieurs parutions"
+msgstr "URL Discogs reliée à plusieurs parutions"
 
 #: ../root/report/separate_discs.tt:1 ../root/report/separate_discs.tt:3
 msgid "Discs as Separate Releases"
@@ -2745,7 +2745,7 @@ msgstr "Durée :"
 msgid ""
 "Each track in the MusicBrainz database has to be linked to a recording, "
 "choose the appropriate recording or look for it in the database."
-msgstr "Chaque piste de la base de données de MusicBrainz doit être attachée à un enregistrement, choisissez l'enregistrement adéquat en le cherchant dans la base de données."
+msgstr "Chaque piste de la base de données de MusicBrainz doit être reliée à un enregistrement, choisissez l'enregistrement adéquat ou cherchez-le dans la base de données."
 
 #: ../root/account/applications.tt:75 ../root/area/header.tt:12
 #: ../root/artist/aliases.tt:37 ../root/artist/header.tt:13
@@ -2779,7 +2779,7 @@ msgstr "Modifier l'annotation"
 
 #: ../root/account/edit_application.tt:1 ../root/account/edit_application.tt:3
 msgid "Edit Application"
-msgstr ""
+msgstr "Modifier l'application"
 
 #: ../root/area/edit.tt:15
 msgid "Edit Area"
@@ -3065,7 +3065,7 @@ msgstr "Abonnements de l'éditeur"
 
 #: ../root/user/profile/layout.tt:1
 msgid "Editor “{user}”"
-msgstr "Éditeur \"{user}\""
+msgstr "Éditeur « {user} »"
 
 #: ../root/artist/subscribe.tt:2
 msgid "Editors Subscribed to this Artist"
@@ -3125,13 +3125,13 @@ msgstr "Modifications pour {place}"
 #: ../root/release/edits.tt:17 ../root/release_group/edits.tt:17
 #: ../root/work/edits.tt:16
 msgid "Edits for “{link}”"
-msgstr "Modifications de \"{link}\""
+msgstr "Modifications de « {link} »"
 
 #: ../root/recording/edits.tt:15 ../root/recording/edits.tt:17
 #: ../root/release/edits.tt:15 ../root/release_group/edits.tt:15
 #: ../root/work/edits.tt:14
 msgid "Edits for “{name}”"
-msgstr "Modifications de \"{name}\""
+msgstr "Modifications de « {name} »"
 
 #: ../root/elections/not_found.tt:1 ../root/elections/not_found.tt:2
 msgid "Election Not Found"
@@ -3340,7 +3340,7 @@ msgstr "Erreur : type inconnu"
 
 #: ../root/oauth2/error.tt:3
 msgid "Error: {error}"
-msgstr ""
+msgstr "Erreur : {error}"
 
 #: ../root/forms/edit-note.tt:9
 msgid "Even just providing a URL or two is helpful!"
@@ -3541,8 +3541,8 @@ msgstr[1] "Trouvé {n} résultats"
 #: ../root/components/with-pager.tt:7
 msgid "Found {n} result for \"{q}\""
 msgid_plural "Found {n} results for \"{q}\""
-msgstr[0] "Trouvé {n} résultat pour \"{q}\""
-msgstr[1] "Trouvé {n} résultats pour \"{q}\""
+msgstr[0] "Trouvé {n} résultat pour « {q} »"
+msgstr[1] "Trouvé {n} résultats pour « {q} »"
 
 #: ../root/components/common-macros.tt:944 ../root/scripts/text_strings.tt:79
 msgid "Founded in:"
@@ -3815,7 +3815,7 @@ msgstr "ISRC {isrc} pour {recording} par {artist}"
 
 #: ../root/isrc/index.tt:1 ../root/isrc/index.tt:3
 msgid "ISRC “{isrc}”"
-msgstr "ISRC \"{isrc}\""
+msgstr "ISRC « \"{isrc} »"
 
 #: ../root/edit/details/remove_isrc.tt:3 ../root/otherlookup/form.tt:3
 #: ../root/recording/layout.tt:15
@@ -3919,13 +3919,13 @@ msgstr "Si le problème persiste, veuillez {report|signaler un bogue} en y recop
 msgid ""
 "If this is an Amazon ASIN, please do not enter it in the catalog number "
 "field, but add it as a URL relationship later."
-msgstr "Si ceci est un ASIN Amazon, ne pas le saisir dans le champ « numéro dans le catalogue », mais le créer sous forme de relation d'URL ensuite."
+msgstr "Si ceci est un ASIN d'Amazon, ne pas le saisir dans le champ « numéro dans le catalogue », mais le créer sous forme de relation d'URL ensuite."
 
 #: ../root/release/edit/recordings.tt:107
 msgid ""
 "If we do not have a recording for this track in the database yet, please "
 "select \"Add a new recording\" below."
-msgstr "Si l'enregistrement de cette piste n'est pas déjà dans la base de données, veuillez choisir \"Ajouter un enregistrement\" ci-dessous."
+msgstr "Si l'enregistrement de cette piste n'est pas déjà dans la base de données, veuillez choisir « Ajouter un enregistrement » ci-dessous."
 
 #: ../root/alias/delete.tt:7
 msgid ""
@@ -4011,7 +4011,7 @@ msgid ""
 "database looking for data that might require fixing, either to comply with "
 "the {style|style guidelines}, or in other cases where administrative \"clean"
 " up\" tasks are required."
-msgstr "Si vous souhaitez participer au processus d'édition mais que vous ne savez pas par où commencer, les rapports ci-dessous pourraient vous être utiles. Ces rapports fouille la base de données à la recherche de données qui devraient peut-être être corrigées soit pour correspondre au {style|directives de style}, ou pour toute autre tache de \"nettoyage administratif\"."
+msgstr "Si vous souhaitez participer au processus d'édition mais que vous ne savez pas par où commencer, les rapports ci-dessous pourraient vous être utiles. Ces rapports fouille la base de données à la recherche de données qui devraient peut-être être corrigées soit pour correspondre au {style|directives de style}, ou pour toute autre tache de « nettoyage administratif »."
 
 #: ../root/account/register.tt:53
 msgid ""
@@ -4077,7 +4077,7 @@ msgstr "Recopier la durée des enregistrements dans les pistes"
 
 #: ../root/account/applications.tt:69
 msgid "Installed Application"
-msgstr ""
+msgstr "Applications installées"
 
 #: ../root/admin/index.tt:8 ../root/layout/menu.tt:271
 #: ../root/relationship/header.tt:2
@@ -4227,7 +4227,7 @@ msgstr "Labels"
 
 #: ../root/browse/label.tt:8
 msgid "Labels starting with “{index}”"
-msgstr "Labels commençant par \"{index}\""
+msgstr "Labels commençant par « {index} »"
 
 #: ../root/report/duplicate_relationships_labels.tt:1
 #: ../root/report/duplicate_relationships_labels.tt:3
@@ -4439,7 +4439,7 @@ msgstr "Connectez-vous pour téléverser une Illustration"
 #: ../root/relationship/linktype/form.tt:15
 #: ../root/relationship/linktype/tree.tt:14
 msgid "Long link phrase:"
-msgstr ""
+msgstr "Phrase de lien longue :"
 
 #: ../root/doc/bare_error.tt:11 ../root/doc/error.tt:17 ../root/main/400.tt:18
 #: ../root/main/404.tt:18
@@ -5061,7 +5061,7 @@ msgstr "Non"
 
 #: ../root/tag/not_found.tt:4
 msgid "No MusicBrainz entities have yet been tagged with \"{tag}\"."
-msgstr "Aucune entité de MusicBrainz n'a pour l'instant l'attribut \"{tag}\"."
+msgstr "Aucune entité de MusicBrainz n'a pour l'instant l'attribut « {tag} »."
 
 #: ../root/tag/artist.tt:1
 msgid "No artists with this tag were found."
@@ -5125,7 +5125,7 @@ msgstr "Aucun enregistrement de trouvé avec cet attribut."
 
 #: ../root/place/performances.tt:84
 msgid "No recordings, releases or release groups are linked to this place"
-msgstr "Aucun enregistrement, parution ou groupe de parution de lié vers ce lieu"
+msgstr "Aucun enregistrement, parution ou groupe de parution de relié vers ce lieu"
 
 #: ../root/relationship/linkattributetype/index.tt:32
 msgid "No relationship attributes found."
@@ -5196,7 +5196,7 @@ msgstr "Aucun abonnement."
 
 #: ../root/oauth2/authorize.tt:18
 msgid "No thanks"
-msgstr ""
+msgstr "Non merci"
 
 #: ../root/user/privileged.tt:9
 msgid "No users found"
@@ -5276,19 +5276,19 @@ msgstr "Chargement de la liste des pistes ..."
 
 #: ../root/oauth2/authorize.tt:1 ../root/oauth2/oob.tt:1
 msgid "OAuth Authorization"
-msgstr ""
+msgstr "Autorisation OAuth "
 
 #: ../root/oauth2/error.tt:1
 msgid "OAuth Authorization Error"
-msgstr ""
+msgstr "Erreur d'autorisation d'OAuth "
 
 #: ../root/account/applications.tt:56
 msgid "OAuth Client ID"
-msgstr ""
+msgstr "ID client d'OAuth"
 
 #: ../root/account/applications.tt:57
 msgid "OAuth Client Secret "
-msgstr ""
+msgstr "Secret du client d'OAuth "
 
 #: ../root/layout/sidebar/sidebar-favicons.tt:14
 msgid "Official homepage"
@@ -5296,7 +5296,7 @@ msgstr "Page officielle"
 
 #: ../root/account/applications.tt:5
 msgid "Offline Access"
-msgstr ""
+msgstr "Accès horsligne"
 
 #: ../root/annotation/history.tt:6
 msgid "Old"
@@ -5510,7 +5510,7 @@ msgstr "Mot de passe :"
 
 #: ../root/oauth2/authorize.tt:12
 msgid "Perform the above operations when I'm not using the application"
-msgstr ""
+msgstr "Effectuer les opérations ci-dessus quand je n'utilise pas l'application"
 
 #: ../root/place/header.tt:1 ../root/place/performances.tt:1
 #: ../root/place/performances.tt:2
@@ -5664,7 +5664,7 @@ msgstr "Veuillez vous assurer de ne pas enlever un {doc_standalone|enregistremen
 msgid ""
 "Please navigate to the pages of other entities you wish to merge and select "
 "the \"merge\" link."
-msgstr "Rendez-vous sur les pages des autres entités avec lesquelles vous souhaitez fusionner et cliquez sur le lien \"fusionner\"."
+msgstr "Rendez-vous sur les pages des autres entités avec lesquelles vous souhaitez fusionner et cliquez sur le lien « fusionner »."
 
 #: ../root/annotation/edit.tt:1
 msgid ""
@@ -5759,11 +5759,11 @@ msgstr "Réessayez, en allant moins vite"
 
 #: ../root/components/forms.tt:202
 msgid "Please use the Guess Case button to fix common style errors."
-msgstr "Utilisez le bouton \"deviner la casse\" pour corriger les erreurs courantes de style."
+msgstr "Utilisez le bouton « deviner la casse » pour corriger les erreurs courantes de style."
 
 #: ../root/components/forms.tt:245
 msgid "Please use the Sort Name button to guess the sort name."
-msgstr "Utilisez le bouton \"nom de tri\" pour deviner le nom à utiliser pour le tri."
+msgstr "Utilisez le bouton « Nom de tri » pour deviner le nom à utiliser pour le tri."
 
 #: ../root/main/503.tt:8
 msgid "Please wait a few minutes and repeat your request."
@@ -5959,7 +5959,7 @@ msgstr "Lisez la documentation {doc|WikiDocs} pour un aperçu sur comment foncti
 
 #: ../root/main/index.tt:118
 msgid "Recent Additions"
-msgstr ""
+msgstr "Ajouts récents"
 
 #: ../root/components/common-macros.tt:576
 #: ../root/components/common-macros.tt:635 ../root/edit/search_macros.tt:307
@@ -5993,7 +5993,7 @@ msgstr "Évaluations des enregistrements"
 
 #: ../root/recording/layout.tt:3
 msgid "Recording “{name}” by {artist}"
-msgstr "Enregistrement \"{name}\" par {artist}"
+msgstr "Enregistrement « {name} » par {artist}"
 
 #: ../root/components/common-macros.tt:562
 #: ../root/edit/details/add_recording_annotation.tt:3
@@ -6017,7 +6017,7 @@ msgstr "Enregistrements"
 
 #: ../root/artist/browse_various_recordings.tt:5
 msgid "Recordings starting with “{index}”"
-msgstr "Enregistrements commençant par \"{index}\""
+msgstr "Enregistrements commençant par » {index} »"
 
 #: ../root/report/recordings_with_earliest_release_relationships.tt:1
 #: ../root/report/recordings_with_earliest_release_relationships.tt:3
@@ -6062,12 +6062,12 @@ msgstr "Paramètres régionaux"
 
 #: ../root/account/register_application.tt:38
 msgid "Register"
-msgstr ""
+msgstr "S'enregistrer"
 
 #: ../root/account/register_application.tt:26
 #: ../root/account/register_application.tt:28
 msgid "Register Application"
-msgstr ""
+msgstr "Enregistrer l'application"
 
 #: ../root/doc/edit_type.tt:15
 msgid "Reject"
@@ -6324,7 +6324,7 @@ msgstr "Relations du groupe de parution"
 
 #: ../root/release_group/layout.tt:1
 msgid "Release group “{name}” by {artist}"
-msgstr "Groupe de parution \"{name}\" par {artist}"
+msgstr "Groupe de parution « {name} » par {artist}"
 
 #: ../root/components/common-macros.tt:562
 #: ../root/edit/details/add_release_group_annotation.tt:3
@@ -6342,7 +6342,7 @@ msgstr "Groupes de parution"
 
 #: ../root/artist/browse_various.tt:5 ../root/browse/release_group.tt:8
 msgid "Release groups starting with “{index}”"
-msgstr "Groupes de parution commençant par \"{index}\""
+msgstr "Groupes de parution commençant par « {index} »"
 
 #: ../root/report/index.tt:39
 msgid "Release groups that might need to be merged"
@@ -6369,7 +6369,7 @@ msgstr "Titre de parution :"
 
 #: ../root/release/layout.tt:1
 msgid "Release “{name}” by {artist}"
-msgstr "Parution \"{name}\" par {artist}"
+msgstr "Parution « {name} » par {artist}"
 
 #: ../root/cdtoc/lookup.tt:71 ../root/components/common-macros.tt:562
 #: ../root/edit/details/add_cover_art.tt:5
@@ -6414,11 +6414,11 @@ msgstr "Parutions pour lesquelles les noms de pistes commencent par leur numéro
 #: ../root/report/cat_no_looks_like_asin.tt:1
 #: ../root/report/cat_no_looks_like_asin.tt:3
 msgid "Releases With Catalog Numbers That Look Like ASINs"
-msgstr "Parutions avec des numéros de catalogue qui ressemblent à des ASINs"
+msgstr "Parutions avec des numéros de catalogue qui ressemblent à des ASIN"
 
 #: ../root/report/multiple_asins.tt:1 ../root/report/multiple_asins.tt:3
 msgid "Releases With Multiple ASINs"
-msgstr "Parutions avec plusieurs ASINs"
+msgstr "Parutions avec plusieurs ASIN"
 
 #: ../root/report/multiple_discogs_links.tt:1
 #: ../root/report/multiple_discogs_links.tt:3
@@ -6447,7 +6447,7 @@ msgstr "Parutions sorties trop tôt"
 
 #: ../root/artist/browse_various_releases.tt:5 ../root/browse/release.tt:8
 msgid "Releases starting with “{index}”"
-msgstr "Parution commençant par \"{index}\""
+msgstr "Parution commençant par « {index} »"
 
 #: ../root/report/index.tt:62
 msgid "Releases where some (but not all) mediums have no format set"
@@ -6455,7 +6455,7 @@ msgstr "Parution dont certains (mais pas tous) supports n'ont pas de format de p
 
 #: ../root/report/index.tt:52
 msgid "Releases which have multiple ASINs"
-msgstr "Parutions ayant plusieurs ASINs"
+msgstr "Parutions ayant plusieurs ASIN"
 
 #: ../root/report/index.tt:53
 msgid "Releases which have multiple Discogs links"
@@ -6467,12 +6467,12 @@ msgstr "Parutions ayant des relations de partie d'un ensemble"
 
 #: ../root/report/index.tt:51
 msgid "Releases which have unexpected Amazon URLs"
-msgstr "Parutions ayant des URLs Amazon inattendues"
+msgstr "Parutions ayant des URLs d'Amazon inattendues"
 
 #: ../root/report/index.tt:48 ../root/report/releases_to_convert.tt:1
 #: ../root/report/releases_to_convert.tt:3
 msgid "Releases which might need converting to \"multiple artists\""
-msgstr "Parutions qui devraient être converties en \"plusieurs artistes\""
+msgstr "Parutions qui devraient peut-être être converties en « plusieurs artistes »"
 
 #: ../root/report/releases_with_coverart_links.tt:1
 #: ../root/report/releases_with_coverart_links.tt:3
@@ -6487,7 +6487,7 @@ msgstr "Parutions avec un support simple qui a un nom"
 
 #: ../root/report/index.tt:63
 msgid "Releases with catalog numbers that look like ASINs"
-msgstr "Parutions avec des numéros de catalogue qui ressemble à des ASINs"
+msgstr "Parutions avec des numéros de catalogue qui ressemble à des ASIN"
 
 #: ../root/report/mediums_with_sequence_issues.tt:1
 #: ../root/report/mediums_with_sequence_issues.tt:3
@@ -6846,7 +6846,7 @@ msgstr "Pour obtenir de l'aide, consulter la listes des types d'emballage <a hre
 
 #: ../root/account/applications.tt:35
 msgid "Revoke Access"
-msgstr ""
+msgstr "Révoquer l'accès"
 
 #: ../root/account/revoke_application_access.tt:1
 #: ../root/account/revoke_application_access.tt:3
@@ -6951,7 +6951,7 @@ msgid ""
 "Search indexes are updated every 3 hours. If you just added the content "
 "you're looking for and you can't find it here, go to {url|the search page} "
 "and select the \"direct database search\" option."
-msgstr "Les index de recherche sont mis à jour toutes les 3 heures. Si vous venez d'ajouter du contenu et que vous ne le trouvez pas ici, rendez-vous à la {url|page de recherche}, et choisissez l'option \"recherche directe en base\"."
+msgstr "Les index de recherche sont mis à jour toutes les 3 heures. Si vous venez juste d'ajouter le contenu que vous cherchez et que vous ne le trouvez pas ici, allez à la {url|page de recherche}, et choisissez l'option « recherche directe de la base de données »."
 
 #: ../root/search/form.tt:20
 msgid "Search method:"
@@ -7155,13 +7155,13 @@ msgstr "Afficher seulement les résultats pour des entités auxquelles je suis a
 msgid ""
 "Showing Various Artist release groups. {show_subset|Show release groups by "
 "this artist instead}."
-msgstr "Affichage des groupes de parution pour \"artistes divers\" {show_subset|Afficher plutôt le groupe de sorties pour cet artiste}."
+msgstr "Affichage des groupes de parution pour « artistes divers » {show_subset|Afficher plutôt le groupe de parution pour cet artiste}."
 
 #: ../root/artist/releases.tt:31
 msgid ""
 "Showing Various Artist releases. {show_subset|Show releases by this artist "
 "instead}."
-msgstr "Affichage des parutions d'\"artistes divers\" {show_subset|Afficher plutôt les sorties de cet artiste}."
+msgstr "Affichage des parutions d'« artistes divers » {show_subset|Afficher plutôt les parutions de cet artiste}."
 
 #: ../root/artist/recordings.tt:26
 msgid ""
@@ -7182,13 +7182,13 @@ msgstr ""
 msgid ""
 "Showing release groups by this artist. {show_all|Show Various Artist release"
 " groups instead}."
-msgstr "Affichage des groupes de parution de cet artiste {show_all|Afficher plutôt les groupes de parution des \"artistes divers\"}."
+msgstr "Affichage des groupes de parution de cet artiste {show_all|Afficher plutôt les groupes de parution des « artistes divers »}."
 
 #: ../root/artist/releases.tt:28
 msgid ""
 "Showing releases by this artist. {show_all|Show Various Artist releases "
 "instead}."
-msgstr "Affichage des parutions de cet artiste {show_all|Afficher plutôt les parutions des \"artistes divers\"}."
+msgstr "Affichage des parutions de cet artiste {show_all|Afficher plutôt les parutions des « artistes divers »}."
 
 #: ../root/scripts/text_strings.tt:39
 msgid ""
@@ -7260,7 +7260,7 @@ msgid ""
 "Sorry, but your query \"(<code>query</code>)\" did not match any {type}. "
 "Please check you used the correct spelling.  Sometimes searching for fewer "
 "or different words may also help."
-msgstr "Désolé, mais la requête \"(<code>query</code>)\" ne correspond à aucun {type}. Vérifiez que l'orthographe est correcte. Vous pouvez aussi essayer de chercher moins de mots ou d'autres mots."
+msgstr "Désolé, mais la requête « (<code>query</code>) » ne correspond à aucun {type}. Vérifiez que l'orthographe est correcte. Vous pouvez aussi essayer de chercher moins de mots ou d'autres mots."
 
 #: ../root/search/error/rate-limit.tt:3
 msgid ""
@@ -7299,13 +7299,13 @@ msgstr ""
 msgid ""
 "Sorry, there are no artists starting with “{index}”. Please {pre|go back} "
 "and try again."
-msgstr "Désolé, il n'y a aucun artiste commençant par \"{index}\". Vous pouvez {pre|revenir en arrière} et essayer autre chose."
+msgstr "Désolé, il n'y a aucun artiste commençant par « {index} ». Vous pouvez {pre|revenir en arrière} et essayer autre chose."
 
 #: ../root/browse/label.tt:34
 msgid ""
 "Sorry, there are no labels starting with “{index}”. Please {pre|go back} and"
 " try again."
-msgstr "Désolé, il n'y a aucun label commençant par \"{index}\". Vous pouvez {pre|revenir en arrière} et essayer autre chose."
+msgstr "Désolé, il n'y a aucun label commençant par « {index} ». Vous pouvez {pre|revenir en arrière} et essayer autre chose."
 
 #: ../root/browse/place.tt:34
 msgid ""
@@ -7317,25 +7317,25 @@ msgstr "Désolé, il n'y a pas de lieu commençant par “{index}”. Veuillez {
 msgid ""
 "Sorry, there are no recordings starting with “{index}”. Please {pre|go back}"
 " and try again."
-msgstr "Désolé, il n'y a aucun enregistrement commençant par \"{index}\". Vous pouvez {pre|revenir en arrière} et essayer autre chose."
+msgstr "Désolé, il n'y a aucun enregistrement commençant par « {index} ». Vous pouvez {pre|revenir en arrière} et essayer autre chose."
 
 #: ../root/artist/browse_various.tt:36 ../root/browse/release_group.tt:34
 msgid ""
 "Sorry, there are no release groups starting with “{index}”. Please {pre|go "
 "back} and try again."
-msgstr "Désolé, il n'y a aucun groupe de parution commençant par \"{index}\". Veuillez {pre|revenir en arrière} et essayer autre chose."
+msgstr "Désolé, il n'y a aucun groupe de parution commençant par « {index} ». Veuillez {pre|revenir en arrière} et essayer autre chose."
 
 #: ../root/artist/browse_various_releases.tt:15 ../root/browse/release.tt:34
 msgid ""
 "Sorry, there are no releases starting with “{index}”. Please {pre|go back} "
 "and try again."
-msgstr "Désolé, il n'y a aucune parution commençant par \"{index}\". Veuillez {pre|revenir en arrière} et essayer autre chose."
+msgstr "Désolé, il n'y a aucune parution commençant par « {index} ». Veuillez {pre|revenir en arrière} et essayer autre chose."
 
 #: ../root/browse/work.tt:34
 msgid ""
 "Sorry, there are no works starting with “{index}”. Please {pre|go back} and "
 "try again."
-msgstr "Désolé, il n'y a aucune œuvre commençant par \"{index}\". Vous pouvez {pre|revenir en arrière} et essayer autre chose."
+msgstr "Désolé, il n'y a aucune œuvre commençant par « {index} ». Vous pouvez {pre|revenir en arrière} et essayer autre chose."
 
 #: ../root/main/400.tt:5
 msgid "Sorry, there was a problem with your request."
@@ -7468,7 +7468,7 @@ msgstr "Désolé, votre requête est trop grosse."
 
 #: ../root/doc/bare_error.tt:5 ../root/doc/error.tt:11
 msgid "Sorry, “{id}” is not a valid documentation page."
-msgstr "Désolé, \"{id}\" n'est pas une page de documentation valide."
+msgstr "Désolé, « {id} » n'est pas une page de documentation valide."
 
 #: ../root/components/forms.tt:248
 #: ../root/search/lib/inline-results-artist.tt:8
@@ -7586,7 +7586,7 @@ msgstr "Statut :"
 
 #: ../root/layout.tt:163
 msgid "Stop using beta site"
-msgstr ""
+msgstr "Ne plus utiliser le site bêta"
 
 #: ../root/watch/list.tt:28
 msgid "Stop watching selected artists"
@@ -7594,7 +7594,7 @@ msgstr "Arrêter de surveiller les artistes sélectionnés"
 
 #: ../root/layout/menu.tt:256
 msgid "Style Guidelines"
-msgstr "Directives de Style"
+msgstr "Directives de style"
 
 #: ../root/edit/list_header.tt:29 ../root/main/index.tt:22
 msgid "Style guidelines"
@@ -7670,7 +7670,7 @@ msgstr "Abonnements"
 
 #: ../root/oauth2/oob.tt:3
 msgid "Success!"
-msgstr ""
+msgstr "Succès !"
 
 #: ../root/release/edit/recordings.tt:77
 msgid "Suggested recording:"
@@ -7884,7 +7884,7 @@ msgstr "Le blogue n'est pas disponible en ce moment."
 
 #: ../root/release/edit/information.tt:195
 msgid "The catalog number you have entered looks like an Amazon ASIN."
-msgstr "Le numéro de catalogue que vous avez saisi ressemble à un ASIN Amazon."
+msgstr "Le numéro de catalogue que vous avez saisi ressemble à un ASIN d'Amazon."
 
 #: ../root/scripts/text_strings.tt:69
 msgid "The checkdigit is #checkdigit#."
@@ -8734,20 +8734,20 @@ msgid ""
 " barcode, you can also search Amazon for it and see which ASIN matches. You "
 "might also find some ASINs linked to several discs of a multi-disc release: "
 "just merge those (see {how_to_merge_releases|How to Merge Releases})."
-msgstr "Ce rapport montre les URLs d'Amazon qui sont liées à plusieurs parutions. Dans la plupart des cas les ASINs d'Amazon devrait mapper 1:1 vers des parutions MusicBrainz afin que seul un des liens soit correct. Vérifier quelle parution MusicBrainz convient avec la parution Amazon (regarder le format, liste des pistes, etc....) Si la parution a une code-barres vous pouvez le rechercher dans Amazon et voir quel ASIN concorde. Certains ASINs peuvent être liés à plusieurs disques d'une parution multi-disques : fusionnez-lez (voir {how_to_merge_releases|Comment fusionner des parutions})."
+msgstr "Ce rapport montre les URLs d'Amazon qui sont reliées à plusieurs parutions. Dans la plupart des cas les ASIN d'Amazon devrait mapper 1:1 vers des parutions MusicBrainz afin que seul un des liens soit correct. Vérifier quelle parution MusicBrainz convient avec la parution d'Amazon (regarder le format, liste des pistes, etc....) Si la parution a une code-barres vous pouvez le rechercher dans Amazon et voir quel ASIN concorde. Certains ASIN peuvent être reliés à plusieurs disques d'une parution multi-disques : fusionnez-lez (voir {how_to_merge_releases|Comment fusionner des parutions})."
 
 #: ../root/report/discogs_links_with_multiple_artists.tt:6
 msgid "This report shows Discogs URLs which are linked to multiple artists."
-msgstr "Ce rapport montre les URLs Discogs qui sont liées à plusieurs artistes."
+msgstr "Ce rapport montre les URLs Discogs qui sont reliées à plusieurs artistes."
 
 #: ../root/report/discogs_links_with_multiple_labels.tt:6
 msgid "This report shows Discogs URLs which are linked to multiple labels."
-msgstr "Ce rapport montre les URLs Discogs qui sont liées à plusieurs labels."
+msgstr "Ce rapport montre les URLs Discogs qui sont reliées à plusieurs labels."
 
 #: ../root/report/discogs_links_with_multiple_release_groups.tt:6
 msgid ""
 "This report shows Discogs URLs which are linked to multiple release groups."
-msgstr "Ce rapport montre les URLs Discogs qui sont liées à plusieurs groupes de parution."
+msgstr "Ce rapport montre les URLs Discogs qui sont reliées à plusieurs groupes de parution."
 
 #: ../root/report/discogs_links_with_multiple_releases.tt:6
 msgid ""
@@ -8758,7 +8758,7 @@ msgid ""
 "etc.). You might also find some Discogs URLs linked to several discs of a "
 "multi-disc release: just merge those (see {how_to_merge_releases|How to "
 "Merge Releases})."
-msgstr "Ce rapport montre les URLs Discogs qui sont liées à plusieurs parutions. Dans la plupart des cas les parutions Discogs devrait mapper 1:1 vers MusicBrainz. Ainsi seul un des lien sera correct. Vérifier quelle parution MusicBrainz concorde avec la parution Discogs (regarder le format, la liste des pistes, pays de parution, etc...). Vous pourriez aussi trouver des URLs Discogs liées à plusieurs disques d'une parution multi-disques : fusionnez-les (see {how_to_merge_releases|Comment fusionner des parutions})."
+msgstr "Ce rapport montre les URLs Discogs qui sont reliées à plusieurs parutions. Dans la plupart des cas les parutions Discogs devrait mapper 1:1 vers MusicBrainz. Ainsi seul un des lien sera correct. Vérifier quelle parution MusicBrainz concorde avec la parution Discogs (regarder le format, la liste des pistes, pays de parution, etc...). Vous pourriez aussi trouver des URLs Discogs reliées à plusieurs disques d'une parution multi-disques : fusionnez-les (see {how_to_merge_releases|Comment fusionner des parutions})."
 
 #: ../root/report/recordings_with_earliest_release_relationships.tt:6
 msgid ""
@@ -8801,7 +8801,7 @@ msgid ""
 "them. If the releases are discs linked with \"part of set\" relationships, "
 "you might want to merge them too into one multi-disc release (see "
 "{how_to_merge_releases|How to Merge Releases})."
-msgstr "Ce rapport montre les groupes de parution avec des parutions qui sont liés à des parutions dans des groupes de parution différents par des relations partie-d'un-ensemble ou de translittération. Si une paire de groupes de parutions apparaît ici, vous devriez probablement les fusionner en une parution multi-disques (voir {how_to_merge_releases|Comment fusionner les parutions})."
+msgstr "Ce rapport montre les groupes de parution avec des parutions qui sont reliés à des parutions dans des groupes de parution différents par des relations partie-d'un-ensemble ou de translittération. Si une paire de groupes de parutions apparaît ici, vous devriez probablement les fusionner en une parution multi-disques (voir {how_to_merge_releases|Comment fusionner les parutions})."
 
 #: ../root/report/single_medium_releases_with_medium_titles.tt:6
 msgid ""
@@ -8820,7 +8820,7 @@ msgstr "Ce rapport montre les parutions ayant une combinaison de langue et propr
 msgid ""
 "This report shows releases that have download relationships, but have media "
 "who's format is not \"Digital Media\"."
-msgstr "Ce rapport montre les parutions qui ont des relations de téléchargement mais dont le format de support n'est pas « Digital Media »."
+msgstr "Ce rapport montre les parutions qui ont des relations de téléchargement mais dont le format de support n'est pas « Digital Media » (support numérique)."
 
 #: ../root/report/multiple_asins.tt:6
 msgid ""
@@ -8829,7 +8829,7 @@ msgid ""
 " be correct. Just check which ones do not fit the release (because of "
 "format, different number of tracks, etc). If the release has a barcode, you "
 "can search Amazon for it and see which ASIN matches."
-msgstr "Ce rapport montre les parutions qui ont plus d'un ASIN d'Amazon. Dans la plupart des cas les ASINs d'Amazon devrait mapper 1:1 vers des parutions MusicBrainz afin qu'un seul soit correct. Vérifier lequel ne correspond pas à la parution (à cause du format, nombre de pistes différent,etc....) Si la parution a une code-barres vous pouvez le rechercher dans Amazon et voir quel ASIN concorde."
+msgstr "Ce rapport montre les parutions qui ont plus d'un ASIN d'Amazon. Dans la plupart des cas les ASIN d'Amazon devrait mapper 1:1 vers des parutions MusicBrainz afin qu'un seul soit correct. Vérifier lequel ne correspond pas à la parution (à cause du format, nombre de pistes différent,etc....) Si la parution a une code-barres vous pouvez le rechercher dans Amazon et voir quel ASIN concorde."
 
 #: ../root/report/multiple_discogs_links.tt:6
 msgid ""
@@ -8894,7 +8894,7 @@ msgid ""
 "This is almost always wrong: ASINs are just Amazon's entries for the "
 "releases and should be linked to the release with an Amazon URL relationship"
 " instead."
-msgstr "Ce rapport montre les parutions qui ont des numéros de catalogue qui ressemblent à des ASINs. C'est presque toujours faux : les ASINs sont utilisés par Amazon pour les parutions et devraient plutôt être liés aux parutions par des URLs Amazon."
+msgstr "Ce rapport montre les parutions qui ont des numéros de catalogue qui ressemblent à des ASIN. C'est presque toujours faux : les ASIN sont utilisés par Amazon pour les parutions et devraient plutôt être reliés aux parutions par des URLs d'Amazon."
 
 #: ../root/report/released_too_early.tt:6
 msgid ""
@@ -8926,7 +8926,7 @@ msgid ""
 " the translation/transliteration relationship to an original version. This "
 "could be because the original version is missing, or just that the release "
 "status is set wrong."
-msgstr "Ce rapport montre les parutions avec un statut Pseudo-parution qui ne sont pas liées à une version originale par la relation traduction/translittération. Soit la version originale est manquante, soit le statut de parution est mal configuré."
+msgstr "Ce rapport montre les parutions avec un statut Pseudo-parution qui ne sont pas reliées à une version originale par la relation traduction/translittération. Soit la version originale est manquante, soit le statut de parution est mal configuré."
 
 #: ../root/release/merge.tt:133
 msgid ""
@@ -9474,7 +9474,7 @@ msgstr "Compteur d'utilisation"
 
 #: ../root/layout.tt:163
 msgid "Use beta site"
-msgstr ""
+msgstr "Utiliser le site bêta"
 
 #: ../root/components/common-macros.tt:588
 msgid "Use in a relationship"
@@ -9853,7 +9853,7 @@ msgstr "Nous vous avons envoyé des instructions pour réinitialiser votre mot d
 
 #: ../root/account/applications.tt:67
 msgid "Web Application"
-msgstr ""
+msgstr "Application Web"
 
 #: ../root/account/edit.tt:30 ../root/admin/edit_user.tt:34
 msgid "Website:"
@@ -10290,7 +10290,7 @@ msgstr ""
 msgid ""
 "You have granted access to {app}. Next, return to {app} and copy this token "
 "to complete the authorization process:"
-msgstr ""
+msgstr "Vous avez donné l'accès à {app}. Ensuite, retourner vers {app} et copier ce jeton pour compléter le processus d'autorisation :"
 
 #: ../root/release/sidebar.tt:138
 msgid "You have no collections!"
@@ -10766,8 +10766,8 @@ msgstr "piste"
 #: ../root/release/index.tt:303
 msgid "track {tracks}"
 msgid_plural "tracks {tracks}"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "piste {tracks}"
+msgstr[1] "pistes {tracks}"
 
 #: ../root/components/common-macros.tt:161
 msgid "tracks"
@@ -10814,7 +10814,7 @@ msgstr "{almost_last_list_item} et {last_list_item}"
 
 #: ../root/oauth2/authorize.tt:5
 msgid "{app} is requesting permission to:"
-msgstr ""
+msgstr "{app} demande l'autorisation de :"
 
 #: ../root/artist/works-list.tt:36 ../root/iswc/index.tt:37
 #: ../root/otherlookup/results-work.tt:20
@@ -10894,7 +10894,7 @@ msgstr "{doc|ID de disque} :"
 
 #: ../root/oauth2/error.tt:7
 msgid "{doc|Learn more}"
-msgstr ""
+msgstr "{doc|En apprendre plus}"
 
 #: ../root/user/profile.tt:48
 msgid "{doc|Location Editor}"
@@ -10987,8 +10987,8 @@ msgstr[1] "{num} artistes trouvés"
 #: ../root/user/subscriptions/layout.tt:22
 msgid "{num} collection"
 msgid_plural "{num} collections"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num} collection"
+msgstr[1] "{num} collections"
 
 #: ../root/tag/collection.tt:1
 msgid "{num} collection found"
@@ -11191,7 +11191,7 @@ msgstr "« Précédent"
 #: ../lib/DBDefs/Default.pm:127
 msgid ""
 "This beta test server allows testing of new features with the live database."
-msgstr ""
+msgstr "Ce serveur de test bêta permet de tester de fonctions nouvelles avec la base de données de production."
 
 #: ../lib/MusicBrainz/Server/Controller.pm:29
 #, perl-brace-format
@@ -11279,7 +11279,7 @@ msgid ""
 "<strong>We were unable to send a confirmation email to you.</strong><br/>Please confirm that you have entered a valid\n"
 "             address by editing your {settings|account settings}. If the problem still persists, please contact us at\n"
 "             <a href=\"mailto:support@musicbrainz.org\">support@musicbrainz.org</a>."
-msgstr "<strong>Nous n'avons pas pu vous envoyer un courriel de confirmation d'adresse </strong><br/> Veuillez vérifier que vous avez saisi une adresse valide en éditant {settings|vos paramètres utilisateur}. Si le problème persiste, contactez nous à <a href=\"mailto:support@musicbrainz.org\">support@musicbrainz.org</a>."
+msgstr "<strong>Nous n'avons pas pu vous envoyer un courriel de confirmation d'adresse </strong><br/> Veuillez vérifier que vous avez saisi une adresse valide en éditant {settings|vos paramètres de compte}. Si le problème persiste, contactez nous à <a href=\"mailto:support@musicbrainz.org\">support@musicbrainz.org</a>."
 
 #: ../lib/MusicBrainz/Server/Controller/Admin.pm:76
 msgid "User successfully edited."
@@ -11910,7 +11910,7 @@ msgstr "[aucun]"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:76
 msgid "View your public account information"
-msgstr ""
+msgstr "Afficher vos informations publiques de compte"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:77
 msgid "View your email address"
@@ -11918,7 +11918,7 @@ msgstr "Afficher votre adresse courriel"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:78
 msgid "View and modify your private tags"
-msgstr ""
+msgstr "Afficher et modifier vos tags privés"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:79
 msgid "View and modify your private ratings"
@@ -11926,7 +11926,7 @@ msgstr "Voir et modifier vos évaluations privées"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:80
 msgid "View and modify your private collections"
-msgstr ""
+msgstr "Afficher et modifier vos collections privées"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:81
 msgid "Submit new ISRCs to the database"
@@ -11978,7 +11978,7 @@ msgstr "Veillez saisir un nom d'artiste pour {credit}"
 msgid ""
 "Artist \"{artist}\" is unlinked, please select an existing artist.\n"
 "                       You may need to add a new artist to MusicBrainz first."
-msgstr "L'artiste \"{artist}\" n'est pas relié, veuillez choisir un artiste existant.\nVous pourriez devoir d'abord ajouter un nouvel artiste dans MusicBrainz."
+msgstr "L'artiste « {artist} » n'est pas relié, veuillez choisir un artiste existant.\nVous pourriez devoir d'abord ajouter un nouvel artiste dans MusicBrainz."
 
 #: ../lib/MusicBrainz/Server/Form/Field/ArtistCredit.pm:69
 msgid "Please add an artist name for each credit."
@@ -12115,7 +12115,7 @@ msgstr "Cette entité n'existe plus."
 msgid ""
 "You must provide an edit note when adding a release. Even just a URL or "
 "something like “CD in hand” helps!"
-msgstr "Vous devez fournir une note de modification lors de l'ajout d'une parution. Une simple URL ou un message tel que \"CD en main\" peuvent être utiles !"
+msgstr "Vous devez fournir une note de modification lors de l'ajout d'une parution. Une simple URL ou un message tel que « CD en main » peuvent être utiles !"
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Information.pm:81
 msgid ""
@@ -12131,7 +12131,7 @@ msgstr ""
 msgid ""
 "You must select an existing release group. If you wish to move this release,\n"
 "           use the \"change release group\" action from the sidebar."
-msgstr "Vous devez choisir un groupe de parution existant. Si vous souhaitez déplacer\ncette parution, utilisez l'action \"changer le groupe de parution\" dans la barre latérale."
+msgstr "Vous devez choisir un groupe de parution existant. Si vous souhaitez déplacer\ncette parution, utilisez l'action « changer le groupe de parution » dans la barre latérale."
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:60
 msgid "New tracklisting contains an empty track"
@@ -12145,12 +12145,12 @@ msgstr "Un titre de piste est nécessaire pour la piste {pos}"
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:70
 #, perl-brace-format
 msgid "A position is required for \"{name}\""
-msgstr "Une position est nécessaire pour \"{name}\""
+msgstr "Une position est nécessaire pour « {name} »"
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:75
 #, perl-brace-format
 msgid "\"{name1}\" and \"{name2}\" have the same position"
-msgstr "\"{name1}\" et \"{name2}\" ont la même position"
+msgstr "« {name1} » et « {name2} » ont la même position"
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:88
 #, perl-brace-format
