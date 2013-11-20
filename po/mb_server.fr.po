@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-20 01:51+0000\n"
+"PO-Revision-Date: 2013-11-20 05:19+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -4369,7 +4369,7 @@ msgstr "Chargement en cours..."
 
 #: ../root/components/aliases.tt:16
 msgid "Locale"
-msgstr "Paramètre linguistique"
+msgstr "Locale"
 
 #: ../root/alias/edit_form.tt:18 ../root/edit/details/add_area_alias.tt:22
 #: ../root/edit/details/add_artist_alias.tt:22
@@ -4387,7 +4387,7 @@ msgstr "Paramètre linguistique"
 #: ../root/edit/details/remove_place_alias.tt:21
 #: ../root/edit/details/remove_work_alias.tt:21
 msgid "Locale:"
-msgstr "Paramètre linguistique : "
+msgstr "Locale : "
 
 #: ../root/edit/search_macros.tt:288
 msgid "Location Editor"
@@ -5862,7 +5862,7 @@ msgstr "Type principal :"
 #: ../root/edit/details/remove_place_alias.tt:25
 #: ../root/edit/details/remove_work_alias.tt:25
 msgid "Primary for locale:"
-msgstr "Paramètre linguistique primaire :"
+msgstr "Locale primaire :"
 
 #: ../root/relationship/linktype/form.tt:25
 msgid "Priority:"
@@ -8396,7 +8396,7 @@ msgstr "Ceci est une {history|ancienne version} de cette annotation, telle que l
 
 #: ../root/alias/edit_form.tt:20
 msgid "This is the primary alias for this locale"
-msgstr "Ceci est l'alias primaire pour ce paramètre linguistique"
+msgstr "Ceci est l'alias primaire pour cette locale"
 
 #: ../root/label/delete.tt:14
 msgid ""
@@ -11950,7 +11950,7 @@ msgstr "Filtrer les enregistrements"
 
 #: ../lib/MusicBrainz/Server/Form/Alias.pm:104
 msgid "This alias can only be a primary alias if a locale is selected"
-msgstr "Cet alias peut seulement être un alias primaire si un paramètre linguistique est sélectionné"
+msgstr "Cet alias peut seulement être un alias primaire si une locale est sélectionnée"
 
 #: ../lib/MusicBrainz/Server/Form/Area.pm:90
 msgid "An area already exists with this ISO code"
