@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-20 10:32+0000\n"
+"PO-Revision-Date: 2013-11-20 16:58+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -107,7 +107,7 @@ msgstr ""
 
 #: ../root/release/add_cover_art.tt:62
 msgid "&#x26a0; Error uploading image"
-msgstr ""
+msgstr "&#x26a0; Erreur lors du téléversement de l'image"
 
 #: ../root/release/add_cover_art.tt:63
 msgid "&#x26a0; Server busy, try again later"
@@ -1323,7 +1323,7 @@ msgstr "Crédits"
 
 #: ../root/edit/details/add_medium.tt:44
 msgid "Artist Credits:"
-msgstr ""
+msgstr "Crédits d'artiste :"
 
 #: ../root/artist/edit_form.tt:37
 msgid "Artist Details"
@@ -1359,7 +1359,7 @@ msgstr "Crédits :"
 
 #: ../root/artist/aliases.tt:8
 msgid "Artist credits"
-msgstr ""
+msgstr "Crédits d'artiste"
 
 #: ../root/edit/details/edit_medium.tt:204
 msgid "Artist credits:"
@@ -3383,8 +3383,8 @@ msgstr "Expiré"
 msgid "Expires in <span class=\"tooltip\" title=\"{exactdate}\">{num} day</span>"
 msgid_plural ""
 "Expires in <span class=\"tooltip\" title=\"{exactdate}\">{num} days</span>"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Expire dans <span class=\"tooltip\" title=\"{exactdate}\">{num} jour</span>"
+msgstr[1] "Expire dans <span class=\"tooltip\" title=\"{exactdate}\">{num} jours</span>"
 
 #: ../root/components/common-macros.tt:699
 msgid "Expires in <span class=\"tooltip\" title=\"{exactdate}\">{num} hour</span>"
@@ -3599,7 +3599,7 @@ msgstr "Index complet :"
 #: ../root/area/artists-list.tt:6
 #: ../root/search/lib/inline-results-artist.tt:10
 msgid "Gender"
-msgstr ""
+msgstr "Genre"
 
 #: ../root/account/edit.tt:31 ../root/artist/edit_form.tt:42
 #: ../root/artist/index.tt:5 ../root/artist/layout.tt:12
@@ -4087,7 +4087,7 @@ msgstr "Arbre des instruments"
 
 #: ../root/main/500.tt:52
 msgid "Interface language:"
-msgstr ""
+msgstr "Langue de l'interface :"
 
 #: ../root/main/500.tt:1 ../root/main/500.tt:3
 msgid "Internal Server Error"
@@ -4432,7 +4432,7 @@ msgstr "Connectez-vous pour modifier"
 
 #: ../root/release/cover_art.tt:64
 msgid "Log in to upload cover art"
-msgstr "Connectez-vous pour envoyer une Illustration"
+msgstr "Connectez-vous pour téléverser une Illustration"
 
 #: ../root/doc/relationship_type.tt:42
 #: ../root/edit/details/edit_relationship_type.tt:29
@@ -5658,7 +5658,7 @@ msgid ""
 "Please make sure you're not removing a legitimate {doc_standalone|standalone"
 " recording}. If this recording duplicates another, please {doc_merge|merge "
 "rather than delete}."
-msgstr ""
+msgstr "Veuillez vous assurer de ne pas enlever un {doc_standalone|enregistrement isolé} légitime. Si cet enregistrement est le double d'un autre, veuillez {doc_merge|fusionner plutôt qu'effacer}."
 
 #: ../root/layout/merge-helper.tt:24
 msgid ""
@@ -7167,12 +7167,12 @@ msgstr "Affichage des parutions d'\"artistes divers\" {show_subset|Afficher plut
 msgid ""
 "Showing all recordings. {show_sa|Show only standalone recordings instead}, "
 "or {show_vid|show only videos}."
-msgstr ""
+msgstr "Affichage de tous les enregistrements. {show_sa|Montrer plutôt les enregistrements isolés seulement}, ou {show_vid|montrer seulement les vidéos}."
 
 #: ../root/artist/recordings.tt:20
 msgid ""
 "Showing only standalone recordings. {show_all|Show all recordings instead}."
-msgstr "Affichage des enregistrements isolés. {show_all|Afficher plutôt tous les enregistrements}."
+msgstr "Affichage des enregistrements isolés seulement. {show_all|Montrer plutôt tous les enregistrements}."
 
 #: ../root/artist/recordings.tt:23
 msgid "Showing only videos. {show_all|Show all recordings instead}."
@@ -7829,7 +7829,7 @@ msgstr "Cette recherche ne peut être effectuées car vous devez fournir au moin
 msgid ""
 "The Cover Art Archive has had a take down request in the past for this "
 "release, so we are unable to allow any more uploads."
-msgstr "La « Cover Art Archive » a reçu des requêtes de suppression par le passé pour cette parution, nous ne pouvons donc plus autoriser d'envois."
+msgstr "La « Cover Art Archive » a reçu des requêtes de suppression par le passé pour cette parution, nous ne pouvons donc plus autoriser de téléversements."
 
 #: ../root/user/profile.tt:81
 msgid "The Dawn of the Project"
@@ -8211,7 +8211,7 @@ msgstr "Cette zone n'est actuellement associée à aucune parution,"
 
 #: ../root/artist/index.tt:103
 msgid "This artist does not have any release groups or standalone recordings."
-msgstr "Cet artiste n'a aucun groupe de parution ni d'enregistrement autonome."
+msgstr "Cet artiste n'a aucun groupe de parution ni d'enregistrement isolé."
 
 #: ../root/artist/releases.tt:18
 msgid "This artist does not have any releases"
@@ -8230,7 +8230,7 @@ msgstr "Cet artiste n'a aucun enregistrement, parution, groupe de parution ou re
 
 #: ../root/artist/index.tt:106
 msgid "This artist has no release groups, only standalone recordings."
-msgstr "Cet artiste n'a aucun groupe de parution ni d'enregistrement autonome."
+msgstr "Cet artiste n'a aucun groupe de parution ni d'enregistrement isolé."
 
 #: ../root/artist/tags.tt:2
 msgid "This artist has no tags."
@@ -8386,7 +8386,7 @@ msgstr "Ceci est un serveur de développement, tous les mots de passe ont été 
 msgid ""
 "This is a list of all the different ways {artist} is credited in the "
 "database. View the {doc|artist credit documentation} for more details."
-msgstr ""
+msgstr "Voici une liste de tous les crédits reçu par {artist} dans la base de données. Voir la {doc| documentation sur les crédits d'artiste} pour plus d'informations."
 
 #: ../root/annotation/common.tt:25
 msgid ""
@@ -9049,7 +9049,7 @@ msgstr "Afin de déterminer si vous pouvez voter pour ce candidat, vous devez {u
 msgid ""
 "To use the batch tools, select some recordings or works using the "
 "checkboxes."
-msgstr ""
+msgstr "Pour utiliser les outils de traitement par lot, choisir des enregistrements ou œuvres en cochant les cases."
 
 #: ../root/watch/list.tt:36
 msgid ""
@@ -9462,7 +9462,7 @@ msgstr "Mettre à jour la collection"
 
 #: ../root/release/add_cover_art.tt:57
 msgid "Uploading image..."
-msgstr ""
+msgstr "Téléversement de l'image en cours..."
 
 #: ../root/components/forms.tt:192 ../root/components/forms.tt:225
 msgid "Uppercase roman numerals"
@@ -9724,7 +9724,7 @@ msgid ""
 "Warning: This relationship has pending edits. <a target=\"_blank\" data-"
 "bind=\"attr: {href: relationship().openEdits()}\">Click here</a> to view "
 "these edits and make sure they do not conflict with your own."
-msgstr ""
+msgstr "Attention : Cette relation a des modifications en attente. <a target=\"_blank\" data-bind=\"attr: {href: relationship().openEdits()}\">Cliquer ici</a> pour voir ces modifications et vous assurez qu'elles ne sont pas en conflit avec les vôtres."
 
 #: ../root/watch/list.tt:1 ../root/watch/list.tt:2
 msgid "Watched Artists"
@@ -11095,8 +11095,8 @@ msgstr[1] "{n} enregistrements de sélectionnés"
 #: ../root/release/edit_relationships.tt:337
 msgid "{n} work selected"
 msgid_plural "{n} works selected"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{n} œuvre sélectionnée"
+msgstr[1] "{n} œuvres sélectionnées"
 
 #: ../root/user/profile.tt:217 ../root/user/profile.tt:221
 msgid "{percentage}%"
@@ -12280,7 +12280,7 @@ msgstr "Veuillez saisir un mot de passe dans ce champs."
 
 #: ../lib/MusicBrainz/Server/Form/User/Register.pm:29
 msgid "The password confirmation does not match the password"
-msgstr ""
+msgstr "La confirmation du mot de passe ne concorde pas avec le mot de passe"
 
 #: ../lib/MusicBrainz/Server/Form/User/Register.pm:45
 msgid "Please choose another username, this one is already taken"
