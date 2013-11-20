@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-20 19:59+0000\n"
+"PO-Revision-Date: 2013-11-20 20:37+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -271,7 +271,7 @@ msgstr ", "
 #: ../root/report/iswc_with_many_works.tt:47
 #: ../root/report/iswc_with_many_works.tt:61
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #: ../root/user/profile.tt:101
 msgid "0"
@@ -487,11 +487,11 @@ msgstr "Actions"
 #: ../root/layout/menu.tt:85
 msgctxt "button/menu"
 msgid "Add Area"
-msgstr ""
+msgstr "Ajouter une région"
 
 #: ../root/area/add_alias.tt:12
 msgid "Add Area Alias"
-msgstr "Ajouter un alias de zone"
+msgstr "Ajouter un alias de région"
 
 #: ../root/layout/menu.tt:217
 msgctxt "button/menu"
@@ -530,11 +530,11 @@ msgstr "Ajouter un disque"
 #: ../root/release/edit/information.tt:92
 msgctxt "button/menu"
 msgid "Add Event"
-msgstr ""
+msgstr "Ajouter un évènement"
 
 #: ../root/relationship/linktype/form.tt:134
 msgid "Add Example"
-msgstr ""
+msgstr "Ajouter un exemple"
 
 #: ../root/layout/menu.tt:220 ../root/release/edit/information.tt:132
 #: ../root/release/edit/information.tt:133
@@ -621,7 +621,7 @@ msgstr "Ajouter un alias d'œuvre"
 
 #: ../root/area/create.tt:15 ../root/area/create.tt:17
 msgid "Add a New Area"
-msgstr ""
+msgstr "Ajouter une nouvelle région"
 
 #: ../root/artist/create.tt:13 ../root/artist/create.tt:15
 msgid "Add a New Artist"
@@ -694,7 +694,7 @@ msgstr "Ajouter une autre piste"
 #: ../root/area/add_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Area/AddAlias.pm:14
 msgid "Add area alias"
-msgstr "Ajouter un alias de zone"
+msgstr "Ajouter un alias de région"
 
 #: ../root/artist/add_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Artist/AddAlias.pm:14
@@ -959,7 +959,7 @@ msgstr "Met aussi à jour les enregistrements en même temps que les pistes"
 
 #: ../root/search/results-area.tt:44
 msgid "Alternatively, you may {uri|add a new area}."
-msgstr ""
+msgstr "Vous pouvez aussi {uri|ajouter une nouvelle région}."
 
 #: ../root/search/results-artist.tt:5
 msgid "Alternatively, you may {uri|add a new artist}."
@@ -1136,7 +1136,7 @@ msgstr "Êtes-vous sûr de vouloir supprimer toutes les informations sur {e} ? C
 
 #: ../root/admin/delete_user.tt:20
 msgid "Are you sure you want to delete your account? This cannot be undone!"
-msgstr "Êtes-vous sûr de vouloir supprimer votre compte ? Cela ne peut pas être annulé !"
+msgstr "Êtes-vous sûr de vouloir supprimer votre compte ? Ceci ne peut pas être annulé !"
 
 #: ../root/elections/nominate.tt:5
 msgid ""
@@ -1164,7 +1164,7 @@ msgstr "Êtes-vous sur de vouloir enlever cette application ?"
 
 #: ../root/account/revoke_application_access.tt:5
 msgid "Are you sure you want to revoke this application's access?"
-msgstr ""
+msgstr "Êtes-vous certain de vouloir révoquer l'accès de cette application ?"
 
 #: ../root/edit/cancel.tt:3
 msgid "Are you sure you wish to cancel edit #{n}? This cannot be undone!"
@@ -1190,7 +1190,7 @@ msgstr "Êtes-vous sûr de vouloir enlever la relation de type <strong>{link_typ
 
 #: ../root/area/delete.tt:5
 msgid "Are you sure you wish to remove the area {area} from MusicBrainz?"
-msgstr "Êtes-vous sur de vouloir enlever la zone {area} de MusicBrainz ?"
+msgstr "Êtes-vous sur de vouloir enlever la région {area} de MusicBrainz ?"
 
 #: ../root/release/remove_cover_art.tt:4
 msgid ""
@@ -1234,19 +1234,19 @@ msgstr "Êtes-vous sûr de vouloir enlever la parution {release} de MusicBrainz 
 #: ../lib/MusicBrainz/Server/Edit/Area.pm:7
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:39
 msgid "Area"
-msgstr ""
+msgstr "Région"
 
 #: ../root/area/edit_form.tt:6
 msgid "Area Details"
-msgstr ""
+msgstr "Détails sur la région"
 
 #: ../root/area/not_found.tt:1 ../root/area/not_found.tt:2
 msgid "Area Not Found"
-msgstr "Aire de recherche introuvable"
+msgstr "Région introuvable"
 
 #: ../root/area/layout.tt:5
 msgid "Area information"
-msgstr ""
+msgstr "Informations sur la région"
 
 #: ../root/artist/edit_form.tt:45 ../root/artist/index.tt:14
 #: ../root/artist/layout.tt:52 ../root/components/common-macros.tt:562
@@ -1262,11 +1262,11 @@ msgstr ""
 #: ../root/label/index.tt:12 ../root/label/layout.tt:45
 #: ../root/place/edit_form.tt:40 ../root/place/layout.tt:34
 msgid "Area:"
-msgstr ""
+msgstr "Région :"
 
 #: ../root/browse/area.tt:8
 msgid "Areas starting with “{index}”"
-msgstr ""
+msgstr "Régions commençant par « {index} »"
 
 #: ../root/area/artists-list.tt:4 ../root/artist/edits.tt:18
 #: ../root/artist/header.tt:20 ../root/artist/index.tt:57
@@ -1311,7 +1311,7 @@ msgstr "Artiste"
 
 #: ../root/edit/search_macros.tt:307
 msgid "Artist Area"
-msgstr ""
+msgstr "Région de l'artiste"
 
 #: ../root/edit/details/edit_artist_credit.tt:5
 msgid "Artist Credit:"
@@ -1704,12 +1704,12 @@ msgstr "Commence par"
 
 #: ../root/search/lib/inline-results-artist.tt:13
 msgid "Begin Area"
-msgstr ""
+msgstr "Début de région"
 
 #: ../root/artist/edit_form.tt:67 ../root/edit/details/add_artist.tt:49
 #: ../root/edit/details/edit_artist.tt:46
 msgid "Begin Area:"
-msgstr ""
+msgstr "Début de région :"
 
 #: ../root/components/aliases.tt:13
 msgid "Begin Date"
@@ -1717,7 +1717,7 @@ msgstr "Date de début"
 
 #: ../root/components/common-macros.tt:944 ../root/scripts/text_strings.tt:77
 msgid "Begin area:"
-msgstr ""
+msgstr "Début de région :"
 
 #: ../root/alias/edit_form.tt:31 ../root/area/edit_form.tt:21
 #: ../root/area/layout.tt:15 ../root/artist/edit_form.tt:64
@@ -1800,7 +1800,7 @@ msgstr "Parcourir"
 
 #: ../root/browse/area.tt:1 ../root/browse/area.tt:3
 msgid "Browse Areas"
-msgstr ""
+msgstr "Parcourir les régions"
 
 #: ../root/browse/artist.tt:1 ../root/browse/artist.tt:3
 msgid "Browse Artists"
@@ -1828,7 +1828,7 @@ msgstr "Parcourir les œuvres"
 
 #: ../root/browse/index.tt:10
 msgid "Browse areas"
-msgstr ""
+msgstr "Parcourir les régions :"
 
 #: ../root/browse/index.tt:5 ../root/search/index.tt:5
 msgid "Browse artists"
@@ -2470,7 +2470,7 @@ msgstr "Effacer"
 #: ../root/admin/delete_user.tt:3 ../root/admin/delete_user.tt:13
 #: ../root/admin/delete_user.tt:14 ../root/user/profile/layout.tt:39
 msgid "Delete Account"
-msgstr "Effacer le compte"
+msgstr "Supprimer le compte"
 
 #: ../root/scripts/text_strings.tt:125
 msgid "Delete Note"
@@ -2482,7 +2482,7 @@ msgstr "Effacer l'utilisateur"
 
 #: ../root/admin/delete_user.tt:23
 msgid "Delete my account"
-msgstr "Affacer mon compte"
+msgstr "Supprimer mon compte"
 
 #: ../root/admin/delete_user.tt:8
 msgid "Delete {e}"
@@ -2702,7 +2702,7 @@ msgid ""
 "Do you want to develop an application that uses the {ws|MusicBrainz web "
 "service}? {register|Register an application} to generate OAuth tokens. See "
 "our {oauth2|OAuth documentation} for more details."
-msgstr ""
+msgstr "Voulez-vous développer une application qui utilise le {ws|service web MusicBrainz} ? {register|Enregistrer une application} pour créer des jetons d'OAuth. Voir notre {oauth2|documentation sur OAuth} pour plus de détails."
 
 #: ../root/layout/menu.tt:250
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:48
@@ -2783,15 +2783,15 @@ msgstr "Modifier l'application"
 
 #: ../root/area/edit.tt:15
 msgid "Edit Area"
-msgstr ""
+msgstr "Modifier la région"
 
 #: ../root/area/edit_alias.tt:12
 msgid "Edit Area Alias"
-msgstr "Modifier l'alias de zone"
+msgstr "Modifier l'alias de région"
 
 #: ../root/area/edit_annotation.tt:1
 msgid "Edit Area Annotation"
-msgstr ""
+msgstr "Modifier l'annotation de région"
 
 #: ../root/artist/edit.tt:14
 msgid "Edit Artist"
@@ -2928,11 +2928,11 @@ msgstr "Modifier l'annotation"
 #: ../root/area/edit_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Area/EditAlias.pm:12
 msgid "Edit area alias"
-msgstr "Modifier l'alias de zone"
+msgstr "Modifier l'alias de région"
 
 #: ../root/area/edit_annotation.tt:2
 msgid "Edit area annotation"
-msgstr ""
+msgstr "Modifier l'annotation de région"
 
 #: ../root/artist/edit_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Artist/EditAlias.pm:12
@@ -3187,12 +3187,12 @@ msgstr "Fin"
 
 #: ../root/search/lib/inline-results-artist.tt:15
 msgid "End Area"
-msgstr ""
+msgstr "Fin de région"
 
 #: ../root/artist/edit_form.tt:80 ../root/edit/details/add_artist.tt:61
 #: ../root/edit/details/edit_artist.tt:54
 msgid "End Area:"
-msgstr ""
+msgstr "Fin de région :"
 
 #: ../root/components/aliases.tt:14
 msgid "End Date"
@@ -3200,7 +3200,7 @@ msgstr "Date de fin"
 
 #: ../root/components/common-macros.tt:952 ../root/scripts/text_strings.tt:77
 msgid "End area:"
-msgstr ""
+msgstr "Fin de région :"
 
 #: ../root/elections/index.tt:12
 msgid "End date"
@@ -3300,7 +3300,7 @@ msgstr "Entité introuvable"
 
 #: ../root/edit/details/edit_relationship_type.tt:6
 msgid "Entity types:"
-msgstr ""
+msgstr "Types d'entités :"
 
 #: ../root/report/not_available.tt:1 ../root/report/not_available.tt:3
 #: ../lib/MusicBrainz/Server/Edit/Utils.pm:267
@@ -3996,7 +3996,7 @@ msgstr "Si vous souhaitez utiliser ce tag, veuillez commencer par {url|recherche
 msgid ""
 "If you would like to delete your account, go to {uri|the \"Delete Account\" "
 "tab in your profile}."
-msgstr ""
+msgstr "Si vous désirez supprimer votre compte, allez vers {uri|l'onglet « Supprimer le compte » dans votre profile}."
 
 #: ../root/account/donation.tt:10
 msgid ""
@@ -4163,7 +4163,7 @@ msgstr "Label"
 
 #: ../root/edit/search_macros.tt:307
 msgid "Label Area"
-msgstr ""
+msgstr "Région du label"
 
 #: ../root/label/index.tt:5
 msgid "Label Code:"
@@ -4403,7 +4403,7 @@ msgstr ""
 
 #: ../root/user/privileged.tt:41
 msgid "Location editors are users who can add or modify {uri|areas}."
-msgstr ""
+msgstr "Les éditeurs de lieu sont des utilisateurs qui peuvent ajouter ou modifier des {uri|régions}."
 
 #: ../root/account/edit.tt:34 ../root/user/profile.tt:73
 msgid "Location:"
@@ -4593,7 +4593,7 @@ msgstr "Fusionner"
 
 #: ../root/area/merge.tt:1 ../root/area/merge.tt:3
 msgid "Merge Areas"
-msgstr ""
+msgstr "Fusionner des régions"
 
 #: ../root/artist/merge.tt:1 ../root/artist/merge.tt:3
 msgid "Merge Artists"
@@ -4631,7 +4631,7 @@ msgstr "Fusionner des œuvres"
 
 #: ../root/area/layout.tt:60
 msgid "Merge area"
-msgstr ""
+msgstr "Fusionner la région"
 
 #: ../root/artist/layout.tt:107
 msgid "Merge artist"
@@ -5779,7 +5779,7 @@ msgstr "Veuillez vous {login|connecter} afin de modifier les IDs de disque pour 
 
 #: ../root/taglookup/not_found.tt:6
 msgid "Please {search|try again}, providing at least one of these parameters"
-msgstr ""
+msgstr "Veuillez {search|essayer de nouveau} en fournissant au moins un de ces paramètres."
 
 #: ../root/cdtoc/list.tt:4
 msgid "Position"
@@ -6590,11 +6590,11 @@ msgstr "Enlever l'application"
 
 #: ../root/area/delete.tt:2
 msgid "Remove Area"
-msgstr "Enlever la zone"
+msgstr "Enlever la région"
 
 #: ../root/area/delete_alias.tt:1
 msgid "Remove Area Alias"
-msgstr "Enlever l'alias de zone"
+msgstr "Enlever l'alias de région"
 
 #: ../root/artist/delete_alias.tt:1
 msgid "Remove Artist Alias"
@@ -6672,12 +6672,12 @@ msgstr "Enlever l'alias d’œuvre"
 
 #: ../root/area/layout.tt:63 ../lib/MusicBrainz/Server/Edit/Area/Delete.pm:10
 msgid "Remove area"
-msgstr "Enlever la zone"
+msgstr "Enlever la région"
 
 #: ../root/area/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Area/DeleteAlias.pm:14
 msgid "Remove area alias"
-msgstr "Enlever l'alias de zone"
+msgstr "Enlever l'alias de région"
 
 #: ../root/artist/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Artist/DeleteAlias.pm:14
@@ -6851,7 +6851,7 @@ msgstr "Révoquer l'accès"
 #: ../root/account/revoke_application_access.tt:1
 #: ../root/account/revoke_application_access.tt:3
 msgid "Revoke Application Access"
-msgstr ""
+msgstr "Révoquer l'accès d'une application"
 
 #: ../root/layout.tt:79
 msgid "Running: <span class=\"tooltip\" title=\"{msg}\">{branch} ({sha})</span>"
@@ -7006,19 +7006,19 @@ msgstr "Afficher toutes les collections publiques de {editor}"
 
 #: ../root/tag/index.tt:26
 msgid "See all {num} "
-msgstr ""
+msgstr "Voir tous les {num} "
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} artists"
 msgid_plural "See all {num} artists"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Voir tout l'{num} artiste"
+msgstr[1] "Voir tous les {num} artistes"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} labels"
 msgid_plural "See all {num} labels"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Voir tout l'{num} label"
+msgstr[1] "Voir tous les {num} labels"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} places"
@@ -7029,26 +7029,26 @@ msgstr[1] "Voir les {num} lieux"
 #: ../root/tag/index.tt:8
 msgid "See all {num} recordings"
 msgid_plural "See all {num} recordings"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Voir tout l'{num} enregistrement"
+msgstr[1] "Voir tous les {num} enregistrements"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} release groups"
 msgid_plural "See all {num} release groups"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Voir tout l'{num} groupe de parution"
+msgstr[1] "Voir tous les {num} groupes de parution"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} releases"
 msgid_plural "See all {num} releases"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Voir tout l'{num} parution"
+msgstr[1] "Voir toutes les {num} parutions"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} works"
 msgid_plural "See all {num} works"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Voir tout l'{num} œuvre"
+msgstr[1] "Voir toutes l'{num} œuvres"
 
 #: ../root/account/edit.tt:18
 msgid ""
@@ -7293,7 +7293,7 @@ msgstr "Désolé, la page que vous demandez n'est pas disponible sur un serveur 
 msgid ""
 "Sorry, there are no areas starting with “{index}”. Please {pre|go back} and "
 "try again."
-msgstr ""
+msgstr "Désolé, il n'y a aucune région commençant par « {index} ». Veuillez {pre|revenir en arrière} et essayer de nouveau."
 
 #: ../root/browse/artist.tt:33
 msgid ""
@@ -7408,7 +7408,7 @@ msgstr "Désolé, nous ne trouvons pas d’œuvre avec cette ID MusicBrainz. Vou
 msgid ""
 "Sorry, we could not find an area with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Désolé, nous n'avons pas trouvé de région avec cette ID MusicBrainz. Vous pourriez peut-être plutôt essayer de {search_url|la rechercher}."
 
 #: ../root/artist/not_found.tt:4
 msgid ""
@@ -7709,7 +7709,7 @@ msgstr "Recherche de tag"
 
 #: ../root/taglookup/not_found.tt:1 ../root/taglookup/not_found.tt:2
 msgid "Tag Lookup Error"
-msgstr ""
+msgstr "Erreur de recherche de tag"
 
 #: ../root/taglookup/results.tt:1 ../root/taglookup/results.tt:3
 msgid "Tag Lookup Results"
@@ -8187,27 +8187,27 @@ msgstr "L'alias n'est plus à jour."
 msgid ""
 "This area cannot be removed because there are still artists, labels, and/or "
 "releases using it."
-msgstr "Cette zone ne peut pas être enlevée car des artistes, label et/ou parutions l'utilisent encore."
+msgstr "Cette région ne peut pas être enlevée car des artistes, label et/ou parutions l'utilisent encore."
 
 #: ../root/area/edit_form.tt:23
 msgid "This area has ended."
-msgstr ""
+msgstr "Cette région n'existe plus."
 
 #: ../root/area/artists.tt:7
 msgid "This area is not currently associated with any artists."
-msgstr ""
+msgstr "Cette région n'est actuellement associée à aucun artiste."
 
 #: ../root/area/labels.tt:7
 msgid "This area is not currently associated with any labels."
-msgstr ""
+msgstr "Cette région n'est actuellement associée à aucun label."
 
 #: ../root/area/places.tt:7
 msgid "This area is not currently associated with any places."
-msgstr "Cette zone n'est actuellement associée à aucun lieu."
+msgstr "Cette région n'est actuellement associée à aucun lieu."
 
 #: ../root/area/releases.tt:9
 msgid "This area is not currently associated with any releases."
-msgstr "Cette zone n'est actuellement associée à aucune parution,"
+msgstr "Cette région n'est actuellement associée à aucune parution,"
 
 #: ../root/artist/index.tt:103
 msgid "This artist does not have any release groups or standalone recordings."
@@ -9154,7 +9154,7 @@ msgstr "Nombre de pistes :"
 
 #: ../root/report/duplicate_relationships_works.tt:8
 msgid "Total works found: {count}"
-msgstr ""
+msgstr "Total d'oeuvres de trouvées : {count}"
 
 #: ../root/cdtoc/info.tt:31 ../root/freedb/show.tt:11
 #: ../root/freedb/show.tt:63 ../root/search/lib/inline-results-recording.tt:16
@@ -10111,7 +10111,7 @@ msgstr "Vous êtes sur le point de saisir une modification qui changera la duré
 msgid ""
 "You are about to merge the following areas into a single area. Please select"
 " the area which you would like other areas to be merged into:"
-msgstr ""
+msgstr "Vous êtes sur le point de fusionner les régions suivantes en une seule région. Veuillez choisir la région vers laquelle vous voulez fusionner les autres :"
 
 #: ../root/artist/merge.tt:4
 msgid ""
@@ -10284,7 +10284,7 @@ msgstr "Vous avez sélectionné actuellement les entités suivantes en vue d'une
 
 #: ../root/account/applications.tt:84
 msgid "You do not have any registered applications."
-msgstr ""
+msgstr "Vous n'avez aucune application d'enregistrée."
 
 #: ../root/oauth2/oob.tt:5
 msgid ""
@@ -10302,7 +10302,7 @@ msgstr "Vous n'avez pas de collection"
 
 #: ../root/account/applications.tt:42
 msgid "You have not authorized any applications."
-msgstr ""
+msgstr "Vous n'avez autorisé aucune application."
 
 #: ../root/recording/edit.tt:31
 msgid ""
@@ -10365,7 +10365,7 @@ msgstr "Vous devez être connecté pour voir cette page."
 #: ../root/artist/edit_form.tt:118 ../root/label/edit_form.tt:78
 #: ../root/place/edit_form.tt:72
 msgid "You selected {area}."
-msgstr ""
+msgstr "Vous avez choisi {area}."
 
 #: ../root/release/edit/information.tt:192
 msgid "You selected {label}."
@@ -10457,7 +10457,7 @@ msgstr "apparaît dans :"
 
 #: ../root/components/common-macros.tt:161
 msgid "areas"
-msgstr ""
+msgstr "régions"
 
 #: ../root/components/common-macros.tt:161
 msgid "artists"
@@ -10556,7 +10556,7 @@ msgstr "le {date}"
 
 #: ../root/area/header.tt:23
 msgid "in {parent_areas}"
-msgstr ""
+msgstr "Dans {parent_areas}"
 
 #: ../root/components/common-macros.tt:399
 #: ../root/components/rdfa-macros.tt:788 ../root/components/rdfa-macros.tt:801
@@ -11466,19 +11466,19 @@ msgstr "Total"
 
 #: ../lib/MusicBrainz/Server/Edit/Area/AddAnnotation.pm:12
 msgid "Add area annotation"
-msgstr ""
+msgstr "Ajouter une annotation de région"
 
 #: ../lib/MusicBrainz/Server/Edit/Area/Create.pm:18
 msgid "Add area"
-msgstr ""
+msgstr "Ajouter une région"
 
 #: ../lib/MusicBrainz/Server/Edit/Area/Edit.pm:32
 msgid "Edit area"
-msgstr ""
+msgstr "Modifier la région"
 
 #: ../lib/MusicBrainz/Server/Edit/Area/Merge.pm:11
 msgid "Merge areas"
-msgstr ""
+msgstr "Fusionner des régions"
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/AddAnnotation.pm:12
 msgid "Add artist annotation"
@@ -11954,7 +11954,7 @@ msgstr "Cet alias peut seulement être un alias primaire si une locale est séle
 
 #: ../lib/MusicBrainz/Server/Form/Area.pm:90
 msgid "An area already exists with this ISO code"
-msgstr ""
+msgstr "Une région avec ce code ISO existe déjà."
 
 #: ../lib/MusicBrainz/Server/Form/CDStub.pm:38
 msgid "You must provide at least one track"
@@ -12047,7 +12047,7 @@ msgstr "Le protocole d'URL doit être HTTP ou HTTPS"
 
 #: ../lib/MusicBrainz/Server/Form/Field/PartialDate.pm:66
 msgid "invalid date"
-msgstr ""
+msgstr "Date invalide"
 
 #: ../lib/MusicBrainz/Server/Form/Field/URL.pm:21
 msgid "Enter a valid url e.g. \"http://google.com/\""
