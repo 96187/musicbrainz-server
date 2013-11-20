@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-20 17:58+0000\n"
+"PO-Revision-Date: 2013-11-20 18:59+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -123,7 +123,7 @@ msgstr ""
 
 #: ../root/relationship/linktype/tree.tt:44
 msgid "&lt; Back to all relationship types"
-msgstr "&lt; Retour à la liste des types de relation"
+msgstr "&lt; Retour vers tous les types de relation"
 
 #: ../root/annotation/edit.tt:40
 msgid "''italics''; '''bold'''; '''''bold italics'''''; ---- horizontal rule"
@@ -429,7 +429,7 @@ msgstr "Une relation entre {entity0} et {entity1} existe déjà avec les mêmes 
 msgid ""
 "A relationship between {entity0} and {entity1} already exists with these "
 "attributes."
-msgstr "une relation entre {entity0} et {entity1} existe déjà avec ces attributs."
+msgstr "Une relation entre {entity0} et {entity1} existe déjà avec ces attributs."
 
 #: ../root/edit/relationship/create_url.tt:30
 msgid "A relationship between {entity} and {url} already exists."
@@ -491,7 +491,7 @@ msgstr ""
 
 #: ../root/area/add_alias.tt:12
 msgid "Add Area Alias"
-msgstr ""
+msgstr "Ajouter un alias de zone"
 
 #: ../root/layout/menu.tt:217
 msgctxt "button/menu"
@@ -544,7 +544,7 @@ msgstr "Ajouter un Label"
 
 #: ../root/label/add_alias.tt:12
 msgid "Add Label Alias"
-msgstr "Ajouter un alias de Label"
+msgstr "Ajouter un alias de label"
 
 #: ../root/release_group/create.tt:16
 msgid "Add New Release Group"
@@ -599,7 +599,7 @@ msgstr "Ajouter un enregistrement isolé"
 #: ../root/edit/relationship/create_url.tt:15
 #: ../root/edit/relationship/create_url.tt:17
 msgid "Add URL Relationship"
-msgstr "Ajouter une relation avec une URL"
+msgstr "Ajouter une relation d'URL"
 
 #: ../root/layout/menu.tt:229
 msgid "Add Various Artists Release"
@@ -694,7 +694,7 @@ msgstr "Ajouter une autre piste"
 #: ../root/area/add_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Area/AddAlias.pm:14
 msgid "Add area alias"
-msgstr ""
+msgstr "Ajouter un alias de zone"
 
 #: ../root/artist/add_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Artist/AddAlias.pm:14
@@ -1174,7 +1174,7 @@ msgstr "Êtes-vous sûr de vouloir annuler la modification N°{n} ? Cela sera d�
 msgid ""
 "Are you sure you wish to remove <strong>{page}</strong> from the "
 "transclusion table?"
-msgstr "Êtes-vous sûr de vouloir enlever <strong>{page}</strong> de la table de transclusion ?"
+msgstr "Êtes-vous sûr de vouloir enlever <strong>{page}</strong> de la table de transclusions ?"
 
 #: ../root/relationship/linkattributetype/delete.tt:6
 msgid ""
@@ -1458,7 +1458,7 @@ msgstr "Artistes pouvant être des personnes"
 
 #: ../root/report/index.tt:21
 msgid "Artists which have collaboration relationships"
-msgstr "Artistes ayant travaillé ensemble"
+msgstr "Artistes ayant des relations de collaboration"
 
 #: ../root/report/index.tt:22
 msgid "Artists which look like collaborations"
@@ -1467,7 +1467,7 @@ msgstr "Artistes qui ressemblent à des collaborations"
 #: ../root/report/collaboration_relationships.tt:1
 #: ../root/report/collaboration_relationships.tt:3
 msgid "Artists with Collaboration Relationships"
-msgstr "Artistes ayant travaillé ensemble"
+msgstr "Artistes ayant des relations de collaboration"
 
 #: ../root/report/artists_with_no_subscribers.tt:1
 #: ../root/report/artists_with_no_subscribers.tt:3 ../root/report/index.tt:19
@@ -1478,7 +1478,7 @@ msgstr ""
 #: ../root/report/duplicate_relationships_artists.tt:3
 #: ../root/report/index.tt:25
 msgid "Artists with possible duplicate relationships"
-msgstr ""
+msgstr "Artistes avec relations dupliquées possibles"
 
 #: ../root/recording/fingerprints.tt:3
 msgid "Associated AcoustIDs"
@@ -1643,11 +1643,11 @@ msgstr "Sur la base des informations que vous nous avez fourni, nous avons trouv
 
 #: ../root/release/edit_relationships.tt:344
 msgid "Batch-add a relationship to recordings"
-msgstr "Ajout par lot de relations aux enregistrements"
+msgstr "Ajout par lot de relation aux enregistrements"
 
 #: ../root/release/edit_relationships.tt:356
 msgid "Batch-add a relationship to works"
-msgstr "Ajout par lot de relations aux oeuvres"
+msgstr "Ajout par lot de relation aux oeuvres"
 
 #: ../root/release/edit_relationships.tt:350
 msgid "Batch-create new works"
@@ -2192,7 +2192,7 @@ msgstr "Détails de la collection"
 
 #: ../root/collection/layout.tt:5
 msgid "Collection information"
-msgstr ""
+msgstr "Informations de collection"
 
 #: ../root/collection/layout.tt:1
 msgid "Collection “{collection}”"
@@ -2679,11 +2679,11 @@ msgstr "Disques entrés sous forme de parutions séparées"
 
 #: ../root/release/index.tt:49
 msgid "Display Credits Inline"
-msgstr ""
+msgstr "Afficher les crédits en ligne"
 
 #: ../root/release/index.tt:47
 msgid "Display Credits at Bottom"
-msgstr ""
+msgstr "Afficher les crédits en bas"
 
 #: ../root/components/common-macros.tt:952 ../root/scripts/text_strings.tt:79
 msgid "Dissolved in:"
@@ -2787,7 +2787,7 @@ msgstr ""
 
 #: ../root/area/edit_alias.tt:12
 msgid "Edit Area Alias"
-msgstr ""
+msgstr "Modifier l'alias de zone"
 
 #: ../root/area/edit_annotation.tt:1
 msgid "Edit Area Annotation"
@@ -2799,7 +2799,7 @@ msgstr "Modifier l'artiste"
 
 #: ../root/artist/edit_alias.tt:12
 msgid "Edit Artist Alias"
-msgstr "Modifier le alias de l'artiste"
+msgstr "Modifier l'alias de l'artiste"
 
 #: ../root/artist/edit_annotation.tt:1
 msgid "Edit Artist Annotation"
@@ -2827,7 +2827,7 @@ msgstr "Modifier le label"
 
 #: ../root/label/edit_alias.tt:12
 msgid "Edit Label Alias"
-msgstr "Modifier le alias du label"
+msgstr "Modifier l'alias du label"
 
 #: ../root/edit/not_found.tt:1 ../root/edit/not_found.tt:2
 msgid "Edit Not Found"
@@ -2863,11 +2863,11 @@ msgstr "Modifier la relation"
 #: ../root/relationship/linkattributetype/edit.tt:1
 #: ../root/relationship/linkattributetype/edit.tt:3
 msgid "Edit Relationship Attribute"
-msgstr "Modifier l'attribut de la relation"
+msgstr "Modifier l'attribut de relation"
 
 #: ../root/admin/index.tt:7
 msgid "Edit Relationship Attributes"
-msgstr "Modifier les attributs de la relation"
+msgstr "Modifier les attributs de relation"
 
 #: ../root/relationship/linktype/edit.tt:1
 #: ../root/relationship/linktype/edit.tt:3
@@ -2928,7 +2928,7 @@ msgstr "Modifier l'annotation"
 #: ../root/area/edit_alias.tt:13
 #: ../lib/MusicBrainz/Server/Edit/Area/EditAlias.pm:12
 msgid "Edit area alias"
-msgstr ""
+msgstr "Modifier l'alias de zone"
 
 #: ../root/area/edit_annotation.tt:2
 msgid "Edit area annotation"
@@ -3292,7 +3292,7 @@ msgstr "Il est fortement recommandé de saisir une {note|note de modification} d
 
 #: ../root/scripts/text_strings.tt:97
 msgid "Entities in a relationship cannot be the same."
-msgstr ""
+msgstr "Les entités d'une relation ne peuvent pas être les mêmes."
 
 #: ../root/otherlookup/not_found.tt:1 ../root/otherlookup/not_found.tt:2
 msgid "Entity Not Found"
@@ -3429,7 +3429,7 @@ msgstr "Filtrer"
 
 #: ../root/relationship/linktype/form.tt:106
 msgid "Find Relationships"
-msgstr ""
+msgstr "Trouver les relations"
 
 #: ../root/recording/header.tt:1
 msgid "Fingerprints"
@@ -3714,7 +3714,7 @@ msgstr "Page d'accueil :"
 
 #: ../root/main/500.tt:47
 msgid "Host:"
-msgstr ""
+msgstr "Hôte :"
 
 #: ../root/layout/menu.tt:259
 msgid "How Tos"
@@ -3919,7 +3919,7 @@ msgstr "Si le problème persiste, veuillez {report|signaler un bogue} en y recop
 msgid ""
 "If this is an Amazon ASIN, please do not enter it in the catalog number "
 "field, but add it as a URL relationship later."
-msgstr "Si c'est un ASIN Amazon, ne pas le saisir dans le champ \"numéro dans le catalogue\", mais le créer sous forme de relation d'URL ensuite."
+msgstr "Si ceci est un ASIN Amazon, ne pas le saisir dans le champ « numéro dans le catalogue », mais le créer sous forme de relation d'URL ensuite."
 
 #: ../root/release/edit/recordings.tt:107
 msgid ""
@@ -4233,7 +4233,7 @@ msgstr "Labels commençant par \"{index}\""
 #: ../root/report/duplicate_relationships_labels.tt:3
 #: ../root/report/index.tt:33
 msgid "Labels with possible duplicate relationships"
-msgstr ""
+msgstr "Labels avec relations dupliquées possibles"
 
 #: ../root/release/index.tt:15
 msgid "Labels:"
@@ -4929,7 +4929,7 @@ msgstr "Nouveau Crédit"
 
 #: ../root/release/add_cover_art.tt:124
 msgid "New Image Goes Here"
-msgstr ""
+msgstr "La nouvelle image vient ici"
 
 #: ../root/relationship/linkattributetype/create.tt:1
 #: ../root/relationship/linkattributetype/create.tt:3
@@ -4951,7 +4951,7 @@ msgstr "Nouveau statut : "
 
 #: ../root/edit/details/edit_medium.tt:49
 msgid "New Tracklist"
-msgstr ""
+msgstr "Nouvelle liste de pistes"
 
 #: ../root/edit/details/historic/edit_release_attributes.tt:22
 msgid "New Type:"
@@ -4991,7 +4991,7 @@ msgstr "Nouvel enregistrement"
 
 #: ../root/edit/details/historic/edit_relationship.tt:29
 msgid "New relationships:"
-msgstr "Nouvelle relation : "
+msgstr "Nouvelles relations : "
 
 #: ../root/edit/details/historic/edit_release_language.tt:30
 msgid "New script:"
@@ -5216,7 +5216,7 @@ msgstr "Aucun travail de trouvé avec cet attribut."
 
 #: ../root/relationship/linktype/tree.tt:64
 msgid "No {type0}-{type1} relationship types found."
-msgstr "Aucune relation de type {type0}-{type1}."
+msgstr "Aucune relation de type {type0}-{type1} de trouvée."
 
 #: ../root/elections/nominate.tt:1 ../root/elections/nominate.tt:3
 msgid "Nominate a candidate for auto-editor"
@@ -5226,7 +5226,7 @@ msgstr "Nominer un candidat être l'auto-éditeur"
 #: ../root/report/releases_with_download_relationships.tt:1
 #: ../root/report/releases_with_download_relationships.tt:3
 msgid "Non-digital releases with download relationships"
-msgstr "Parutions non numérique avec des relations de téléchargement"
+msgstr "Parutions non numériques avec des relations de téléchargement"
 
 #: ../root/edit/edit_header.tt:42 ../root/edit/vote.tt:23
 msgid "None"
@@ -5308,7 +5308,7 @@ msgstr "Ancien artiste"
 
 #: ../root/edit/details/edit_medium.tt:48
 msgid "Old Tracklist"
-msgstr ""
+msgstr "Ancienne liste de pistes"
 
 #: ../root/edit/details/set_cover_art.tt:13
 msgid "Old cover art:"
@@ -5328,7 +5328,7 @@ msgstr "Ancien enregistrement"
 
 #: ../root/edit/details/historic/edit_relationship.tt:6
 msgid "Old relationships:"
-msgstr "Ancienne relation : "
+msgstr "Anciennes relations : "
 
 #: ../root/edit/details/historic/merge_releases.tt:3
 msgid "Old releases:"
@@ -5353,7 +5353,7 @@ msgstr "Seules les parutions ayant un nombre de pistes identique ({n}) à la par
 msgid ""
 "Only the user who created an edit can cancel it, either you did not create "
 "{edit} or perhaps it has already been closed."
-msgstr "Seuls les utilisateurs ayant créée une modification peuvent l'annuler. Soit vous n'avez pas créée {edit} soit cette modification a déjà été fermée."
+msgstr "Seul l'utilisateur ayant créé une modification peut l'annuler. Soit vous n'avez pas créé {edit} soit cette modification a déjà été fermée."
 
 #: ../root/release/edit_relationships.tt:40
 #: ../root/release/edit_relationships.tt:179
@@ -5445,7 +5445,7 @@ msgstr "PUID :"
 
 #: ../root/edit/details/add_puids.tt:8
 msgid "PUIDs:"
-msgstr "PUIDs :"
+msgstr "PUID :"
 
 #: ../root/edit/details/add_release.tt:60
 #: ../root/edit/details/edit_release.tt:71
@@ -5642,7 +5642,7 @@ msgstr "Veuillez saisir votre ancien mot de passe ci-dessous, puis votre nouveau
 msgid ""
 "Please first navigate to the page of the artist who you wish to relate  to "
 "recordings on this release and select \"use in relationship\""
-msgstr "Rendez-vous d'abord sur la page de l'artiste que vous souhaitez inclure dans la relation avec l'enregistrement de cette parution, et choisissez \"utiliser dans une relation\""
+msgstr "Veuillez naviguer vers la page de l'artiste que vous souhaitez mettre en relation avec les enregistrements de cette parution, et choisissez « utiliser dans une relation »"
 
 #: ../root/freedb/show.tt:48 ../root/freedb/show.tt:106
 msgid "Please login to import this FreeDB disc."
@@ -5735,13 +5735,13 @@ msgstr "Consultez la documentation sur les <a href=\"{doc}\" target=\"_blank\">T
 
 #: ../root/scripts/text_strings.tt:42
 msgid "Please select a relationship type."
-msgstr "Choisissez un type de relation."
+msgstr "Veuillez choisir un type de relation."
 
 #: ../root/scripts/text_strings.tt:41
 msgid ""
 "Please select a subtype of the currently selected relationship type. The "
 "selected relationship type is only used for grouping subtypes."
-msgstr "Choisissez un sous-type pour le type de relation actuel. Le sous-type de relation est uniquement utilisé pour regrouper par sous-types."
+msgstr "Veuillez choisir un sous-type pour le type de relation sélectionné actuellement. Le type de relation sélectionné est uniquement utilisé pour regrouper des sous-types."
 
 #: ../root/artist/edit_form.tt:95
 msgid ""
@@ -5955,7 +5955,7 @@ msgstr "Lire la suite »"
 msgid ""
 "Read the {doc|WikiDocs} documentation for an overview of how transclusion "
 "works."
-msgstr "Lisez la {doc|documentation WikiDocs} pour comprendre comment fonctionne la transclusion."
+msgstr "Lisez la documentation {doc|WikiDocs} pour un aperçu sur comment fonctionne la transclusion."
 
 #: ../root/main/index.tt:118
 msgid "Recent Additions"
@@ -6022,7 +6022,7 @@ msgstr "Enregistrements commençant par \"{index}\""
 #: ../root/report/recordings_with_earliest_release_relationships.tt:1
 #: ../root/report/recordings_with_earliest_release_relationships.tt:3
 msgid "Recordings with Earliest Release Relationships"
-msgstr "Enregistrements avec les plus récentes relations de parution"
+msgstr "Enregistrements avec des relations de parution la plus ancienne"
 
 #: ../root/report/recordings_with_varying_track_lengths.tt:1
 #: ../root/report/recordings_with_varying_track_lengths.tt:3
@@ -6031,13 +6031,13 @@ msgstr ""
 
 #: ../root/report/index.tt:80
 msgid "Recordings with earliest release relationships"
-msgstr "Enregistrements avec les plus récentes relations de parution"
+msgstr "Enregistrements avec des relations de parution la plus ancienne"
 
 #: ../root/report/duplicate_relationships_recordings.tt:1
 #: ../root/report/duplicate_relationships_recordings.tt:3
 #: ../root/report/index.tt:83
 msgid "Recordings with possible duplicate relationships"
-msgstr ""
+msgstr "Enregistrements avec relations dupliquées possibles"
 
 #: ../root/report/featuring_recordings.tt:1
 #: ../root/report/featuring_recordings.tt:3 ../root/report/index.tt:82
@@ -6101,17 +6101,17 @@ msgstr "Œuvres associées"
 #: ../root/relationship/linkattributetype/index.tt:3
 #: ../root/relationship/linkattributetype/not_found.tt:1
 msgid "Relationship Attributes"
-msgstr "Attributs de la relation"
+msgstr "Attributs de relation"
 
 #: ../root/edit/relationship/create.tt:33
 #: ../root/edit/relationship/create_url.tt:36
 #: ../root/edit/relationship/edit.tt:59
 msgid "Relationship Details"
-msgstr "Détails de la relation"
+msgstr "Détails de relation"
 
 #: ../root/edit/search_macros.tt:288
 msgid "Relationship Editor"
-msgstr ""
+msgstr "Éditeur de relation"
 
 #: ../root/doc/relationship_type.tt:2 ../root/edit/search_macros.tt:307
 msgid "Relationship Type"
@@ -6120,7 +6120,7 @@ msgstr "Type de relation"
 #: ../root/relationship/linktype/in_use.tt:1
 #: ../root/relationship/linktype/in_use.tt:3
 msgid "Relationship Type In Use"
-msgstr "Type de relation actuellement utilisé"
+msgstr "Type de relation utilisé"
 
 #: ../root/doc/relationship_type.tt:4 ../root/layout/menu.tt:268
 #: ../root/relationship/header.tt:2 ../root/relationship/linktype/index.tt:1
@@ -6129,11 +6129,11 @@ msgstr "Types de relation"
 
 #: ../root/relationship/linkattributetype/in_use.tt:1
 msgid "Relationship attribute in use"
-msgstr "Attributs de relation utilisé"
+msgstr "Attributs de relation utilisés"
 
 #: ../root/relationship/linkattributetype/in_use.tt:2
 msgid "Relationship attribute still in use"
-msgstr "Attributs de relation encore utilisé"
+msgstr "Attributs de relation encore utilisés"
 
 #: ../root/admin/edit_user.tt:9
 msgid "Relationship editor"
@@ -6149,7 +6149,7 @@ msgid ""
 "the database. If you would like to propose a new relationship, please do so "
 "through the {url|Style Council}. Relationship editors will only make changes"
 " that have been approved by the Style Council."
-msgstr "Les Éditeurs de relation sont des utilisateurs ayant le droit de modifier les types de relations dans la base de données. Si vous souhaitez proposer une nouvelle relation, faites le via le {url|Comité de Style}. Les éditeurs de relations pourront effectuer uniquement les modifications approuvées par le Comité de Style."
+msgstr "Les Éditeurs de relation sont des utilisateurs ayant le droit de modifier les types de relations dans la base de données. Si vous souhaitez proposer une nouvelle relation, faites-le via le {url|Comité de style}. Les éditeurs de relations pourront effectuer uniquement les modifications approuvées par le comité de style."
 
 #: ../root/edit/details/add_relationship.tt:3
 #: ../root/edit/details/edit_relationship.tt:8
@@ -6352,7 +6352,7 @@ msgstr "Groupe de parution qu'il faudrait peut-être fusionner"
 #: ../root/report/duplicate_relationships_release_groups.tt:3
 #: ../root/report/index.tt:42
 msgid "Release groups with possible duplicate relationships"
-msgstr "Groupes de parution avec des relations possiblement dupliquées"
+msgstr "Groupes de parution avec relations dupliquées possibles"
 
 #: ../root/report/featuring_release_groups.tt:1
 #: ../root/report/featuring_release_groups.tt:3 ../root/report/index.tt:40
@@ -6434,7 +6434,7 @@ msgstr "Parution avec un certains formats non précisés"
 #: ../root/report/releases_in_caa_with_cover_art_relationships.tt:1
 msgid ""
 "Releases in the Cover Art Archive that still have cover art relationships"
-msgstr "Parutions présentes dans la « Cover Art Archive » qui ont encore une Illustration en relation"
+msgstr "Parutions dans la « Cover Art Archive » qui ont encore des relations d'Illustration"
 
 #: ../root/report/index.tt:68
 msgid "Releases of any sort that still have cover art relationships"
@@ -6463,7 +6463,7 @@ msgstr "Parutions avec plusieurs liens Discogs"
 
 #: ../root/report/index.tt:56
 msgid "Releases which have part of set relationships"
-msgstr "Parutions ayant des relations en tant que membres d'un ensemble"
+msgstr "Parutions ayant des relations de partie d'un ensemble"
 
 #: ../root/report/index.tt:51
 msgid "Releases which have unexpected Amazon URLs"
@@ -6506,7 +6506,7 @@ msgstr "Parutions avec des numéros de piste non séquentiels"
 #: ../root/report/duplicate_relationships_releases.tt:3
 #: ../root/report/index.tt:72
 msgid "Releases with possible duplicate relationships"
-msgstr "Parutions avec des relations possiblement dupliquées"
+msgstr "Parutions avec relations dupliquées possibles"
 
 #: ../root/report/index.tt:59 ../root/report/superfluous_data_tracks.tt:3
 msgid "Releases with superfluous data tracks"
@@ -6626,7 +6626,7 @@ msgstr "Enlever le label"
 
 #: ../root/label/delete_alias.tt:1
 msgid "Remove Label Alias"
-msgstr "Enlever l'alias du label"
+msgstr "Enlever l'alias de label"
 
 #: ../root/admin/wikidoc/delete.tt:1 ../root/admin/wikidoc/delete.tt:3
 msgid "Remove Page"
@@ -6842,7 +6842,7 @@ msgstr "Inverser le sens du lien : "
 msgid ""
 "Review the <a href=\"{url}\" target=\"_blank\">list of packaging types</a> "
 "for help."
-msgstr ""
+msgstr "Pour obtenir de l'aide, consulter la listes des types d'emballage <a href=\"{url}\" target=\"_blank\"></a>."
 
 #: ../root/account/applications.tt:35
 msgid "Revoke Access"
@@ -7849,7 +7849,7 @@ msgstr "L'artiste que vous essayez de modifier est un artiste particulier, vous 
 msgid ""
 "The artwork in the sidebar is being provided by a {relationships|URL "
 "relationship}."
-msgstr "L'illustration dans la barre latérale est fournie par un {relationships|URL de relation}."
+msgstr "L'illustration dans la barre latérale est fournie par une {relationships|relation d'URL}."
 
 #: ../root/scripts/text_strings.tt:65
 msgid "The barcode you entered is a valid EAN code."
@@ -7894,7 +7894,7 @@ msgstr "Le chiffre de contrôle est #checkdigit#."
 msgid ""
 "The comment field is used to help users distinguish between identically "
 "named releases."
-msgstr "Le champ commentaire est utilisé pour distinguer des noms de parutions identiques."
+msgstr "Le champ commentaire est utilisé pour distinguer des parutions identiques ayant le même nom."
 
 #: ../root/edit/details/merge_releases.tt:52
 msgid ""
@@ -7934,7 +7934,7 @@ msgstr "La date de fin ne peut précéder la date de début."
 
 #: ../root/doc/relationship_type.tt:48
 msgid "The following attributes can be used with this relationship type:"
-msgstr ""
+msgstr "Les attributs suivants peuvent être utilisés avec ce type de relation :"
 
 #: ../root/user/privileged.tt:47
 msgid "The following {count} user accounts are bots:"
@@ -7950,7 +7950,7 @@ msgstr "Les {count} utilisateurs suivants sont éditeurs de relation :"
 
 #: ../root/user/privileged.tt:37
 msgid "The following {count} users are transclusion editors:"
-msgstr "Les {count} utilisateurs suivants sont des éditeurs de transclusion :"
+msgstr "Les {count} utilisateurs suivants sont des éditeurs de transclusions :"
 
 #: ../root/user/privileged.tt:23
 msgid "The following {count} users have auto-editor privileges:"
@@ -8064,7 +8064,7 @@ msgstr "Il n'y a actuellement aucun utilisateur abonné à {artist}."
 
 #: ../root/collection/subscribers.tt:22
 msgid "There are currently no users subscribed to {collection}."
-msgstr ""
+msgstr "Aucun utilisateur n'est actuellement abonné à {collection}."
 
 #: ../root/label/subscribers.tt:22
 msgid "There are currently no users subscribed to {label}."
@@ -8127,8 +8127,8 @@ msgstr[1] "Il y a actuellement {num} utilisateurs abonnés à {artist} :"
 #: ../root/collection/subscribers.tt:4
 msgid "There is currently {num} user subscribed to {collection}:"
 msgid_plural "There are currently {num} users subscribed to {collection}:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num} utilisateur est actuellement abonné à {collection}."
+msgstr[1] "{num} utilisateurs sont actuellement abonnés à {collection}."
 
 #: ../root/label/subscribers.tt:4
 msgid "There is currently {num} user subscribed to {label}:"
@@ -8181,7 +8181,7 @@ msgstr "Ce ISWC n'est associé à aucune œuvre. Si vous désirer l’associer �
 
 #: ../root/alias/edit_form.tt:33
 msgid "This alias is no longer current."
-msgstr ""
+msgstr "L'alias n'est plus à jour."
 
 #: ../root/area/delete.tt:14
 msgid ""
@@ -8241,7 +8241,7 @@ msgid ""
 "This artist has relationships other than collaboration relationships, and "
 "cannot be split until these are removed. {relationships|View all "
 "relationships}."
-msgstr "Cet artiste a des relations autres que de type collaboration, et donc ne peut pas être scindé tant quelles n'ont pas été enlevées. {relationships|Voir toutes les relations}."
+msgstr "Cet artiste a des relations autres que de collaboration, et donc ne peut pas être scindé tant quelles n'ont pas été enlevées. {relationships|Voir toutes les relations}."
 
 #: ../root/artist/works.tt:11
 msgid "This artist is not currently associated with any works."
@@ -8402,7 +8402,7 @@ msgstr "Ceci est l'alias primaire pour cette locale"
 msgid ""
 "This label cannot be removed because there are still releases, recordings "
 "and/or relationships attributed to it."
-msgstr "Ce label ne peut pas être enlevé car il y a encore des parutions, enregistrements et/ou relations qui lui sont attachés."
+msgstr "Ce label ne peut pas être enlevé car il y a encore des parutions, enregistrements et/ou relations qui lui sont attribués."
 
 #: ../root/label/index.tt:37
 msgid "This label does not have any releases."
@@ -8498,7 +8498,7 @@ msgstr ""
 msgid ""
 "This relationship edit also included changes to relationship attributes "
 "which no longer exist."
-msgstr ""
+msgstr "Cette modification de relation incluait aussi des changements à des attributs de relation qui n'existent plus."
 
 #: ../root/edit/relationship/create.tt:108
 #: ../root/edit/relationship/edit.tt:139
@@ -8508,24 +8508,24 @@ msgstr "Cette relation n'existe plus."
 
 #: ../root/relationship/linktype/form.tt:16
 msgid "This relationship is deprecated"
-msgstr ""
+msgstr "Cette relation est obsolète"
 
 #: ../root/relationship/linktype/form.tt:80
 msgid "This relationship type does not have any examples."
-msgstr ""
+msgstr "Ce type de relation n'a pas d'exemple."
 
 #: ../root/scripts/text_strings.tt:132
 msgid "This relationship type is deprecated"
-msgstr ""
+msgstr "Ce type de relation est obsolète"
 
 #: ../root/doc/relationship_type.tt:11
 msgid "This relationship type is deprecated and should not be used."
-msgstr ""
+msgstr "Ce type de relation est obsolète et ne devrait pas être utilisé."
 
 #: ../root/doc/relationship_type.tt:95
 msgid ""
 "This relationship type is only used for grouping other relationship types."
-msgstr ""
+msgstr "Ce type de relation est seulement utilisé pour regrouper d'autres types de relation."
 
 #: ../root/release/edit/information.tt:140
 msgid "This release does not have a barcode"
@@ -8535,7 +8535,7 @@ msgstr "Cette parution n'a aucun code-barres."
 msgid ""
 "This release group cannot be removed, because there are still releases, "
 "tracks and/or relationships attributed to it."
-msgstr "Ce groupe de parution ne peut pas être enlevé, car il y a des parutions, pistes et/ou relations qui lui sont attachées."
+msgstr "Ce groupe de parution ne peut pas être enlevé, car il y a des parutions, pistes et/ou relations qui lui sont attribués."
 
 #: ../root/release_group/index.tt:6
 msgid ""
@@ -8559,7 +8559,7 @@ msgid ""
 "separate real release. It should not be used to denote bootlegs, "
 "mixtape/street albums, demos, or digital albums. Be sure to link to the "
 "corresponding real release with the {url|transl(iter)ation relationship}."
-msgstr "Ce statut de parution devrait être utilisé pour les traductions et translittérations non officielles des listes de piste et des titres de parution, et n'indique pas une vraie parution séparée. Il ne devrait pas être utilisé pour indiquer les contrebandes, albums « mixtapes/street », démos ou albums numériques. Assurez-vous de faire le lien vers la vraie parution correspondante avec {url|relation de translittération}."
+msgstr "Ce statut de parution devrait être utilisé pour les traductions et translittérations non officielles des listes de piste et des titres de parution, et n'indique pas une vraie parution séparée. Il ne devrait pas être utilisé pour indiquer les contrebandes, albums « mixtapes/street », démos ou albums numériques. Assurez-vous de faire le lien vers la vraie parution correspondante avec la {url|relation de translittération}."
 
 #: ../root/report/duplicate_artists.tt:6
 msgid ""
@@ -8692,7 +8692,7 @@ msgstr "Ce rapport montre les groupes de parution qui ont plusieurs relations ve
 msgid ""
 "This report lists releases which have multiple relationships to the same "
 "entity using the same relationship type."
-msgstr "Ce rapport montre les parutins qui ont plusieurs relations vers la même entité tout en utilisant le même type de relation."
+msgstr "Ce rapport montre les parutions qui ont plusieurs relations vers la même entité tout en utilisant le même type de relation."
 
 #: ../root/report/superfluous_data_tracks.tt:6
 msgid ""
@@ -8954,11 +8954,11 @@ msgstr "Cet utilisateur est nouveau dans MusicBrainz"
 
 #: ../root/release/edit_relationships.tt:25
 msgid "This will add a relationship to all checked recordings."
-msgstr ""
+msgstr "Ceci ajoutera une relation à tous les enregistrements cochés."
 
 #: ../root/release/edit_relationships.tt:30
 msgid "This will add a relationship to all checked works."
-msgstr ""
+msgstr "Ceci ajoutera une relation à toutes les œuvres cochées."
 
 #: ../root/release/edit_relationships.tt:35
 msgid ""
@@ -9250,21 +9250,21 @@ msgstr "Version sous Transclusion"
 
 #: ../root/admin/wikidoc/index.tt:1 ../root/admin/wikidoc/index.tt:3
 msgid "Transclusion Table"
-msgstr "Table de transclusion"
+msgstr "Table de transclusions"
 
 #: ../root/admin/edit_user.tt:8
 msgid "Transclusion editor"
-msgstr "Éditeur de transclusion"
+msgstr "Éditeur de transclusions"
 
 #: ../root/user/privileged.tt:34
 msgid "Transclusion editors"
-msgstr "Éditeurs de transclusion"
+msgstr "Éditeurs de transclusions"
 
 #: ../root/user/privileged.tt:35
 msgid ""
 "Transclusion editors are users who add and maintain entries in the "
 "{uri|WikiDocs} transclusion table."
-msgstr "Les Éditeurs de transclusion sont des utilisateurs ayant le droit d'ajouter et de mettre à jour la table de transclusion des {uri|WikiDocs}."
+msgstr "Les éditeurs de transclusions sont des utilisateurs qui ajoutent et maintiennent les enregistrements dans la table de transclusions {uri|WikiDocs}."
 
 #: ../root/report/index.tt:64
 msgid ""
@@ -9378,7 +9378,7 @@ msgstr "URL introuvable"
 
 #: ../root/url/relationships.tt:1
 msgid "URL Relationships"
-msgstr "URL de Relations"
+msgstr "Relations d'URL"
 
 #: ../root/components/common-macros.tt:562 ../root/edit/details/edit_url.tt:9
 #: ../root/edit/details/edit_url.tt:15
@@ -9612,7 +9612,7 @@ msgstr "Voir cette version"
 
 #: ../root/admin/wikidoc/index.tt:12
 msgid "View transclusion history"
-msgstr "Voir l'historique de transclusion"
+msgstr "Voir l'historique des transclusions"
 
 #: ../root/elections/show.tt:112
 msgid "Vote"
@@ -9632,7 +9632,7 @@ msgstr "Voter sur les modifications"
 
 #: ../root/scripts/text_strings.tt:129
 msgid "Vote on all edits:"
-msgstr ""
+msgstr "Voter pour toutes les modifications :"
 
 #: ../root/edit/index.tt:26
 msgid "Vote tally:"
@@ -9967,7 +9967,7 @@ msgstr "Œuvres commençant par \"{index}\""
 #: ../root/report/duplicate_relationships_works.tt:3
 #: ../root/report/index.tt:90
 msgid "Works with possible duplicate relationships"
-msgstr ""
+msgstr "Oeuvres avec relations dupliquées possibles"
 
 #: ../root/artist/works-list.tt:10 ../root/iswc/index.tt:17
 #: ../root/otherlookup/results-work.tt:8
@@ -10797,7 +10797,7 @@ msgstr "jusqu'au {date}"
 #: ../root/edit/details/remove_place_alias.tt:10
 #: ../root/edit/details/remove_work_alias.tt:10
 msgid "view all aliases"
-msgstr ""
+msgstr "voir tous les alias"
 
 #: ../root/components/common-macros.tt:161
 msgid "works"
@@ -10906,7 +10906,7 @@ msgstr "{doc|Éditeur de relation}"
 
 #: ../root/user/profile.tt:47
 msgid "{doc|Transclusion Editor}"
-msgstr "{doc|Éditeur de Transclusion}"
+msgstr "{doc|Éditeur de transclusions}"
 
 #: ../root/user/subscriptions/collection.tt:13
 msgid "{editor} is subscribed to {n} private collection."
@@ -10935,7 +10935,7 @@ msgstr "{entity} par {artist}"
 
 #: ../root/components/aliases.tt:73
 msgid "{entity} has no aliases."
-msgstr "{entity} n'a pas d'alias"
+msgstr "{entity} n'a pas d'alias."
 
 #: ../root/edit/details/remove_medium.tt:6
 msgid "{format} {position} {name} on {release} by {artist}"
@@ -11104,7 +11104,7 @@ msgstr "{percentage}%"
 
 #: ../root/relationship/linktype/tree.tt:23
 msgid "{relationship_documentation_url|Documentation}"
-msgstr ""
+msgstr "{relationship_documentation_url|Documentation}"
 
 #: ../root/cdtoc/move_search.tt:31 ../root/cdtoc/set_durations.tt:22
 #: ../root/release/merge_search.tt:11
@@ -11127,7 +11127,7 @@ msgstr "{type0}-{type1}"
 
 #: ../root/relationship/linktype/tree.tt:40
 msgid "{type0}-{type1} Relationship Types"
-msgstr "Relation {type0}-{type1} "
+msgstr "Types de relation {type0}-{type1} "
 
 #: ../root/relationship/linktype/tree.tt:46
 msgid "{type0}-{type1} relationship types"
@@ -11682,7 +11682,7 @@ msgstr "Ajouter des ISRC"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/AddPUIDs.pm:15
 msgid "Add PUIDs"
-msgstr "Ajouter des PUIDs"
+msgstr "Ajouter des PUID"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/Create.pm:24
 msgid "Add standalone recording"
@@ -12097,7 +12097,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Form/RelationshipEditor.pm:90
 msgid ""
 "This relationship type is not valid between the given types of entities."
-msgstr ""
+msgstr "Ce type de relation est invalide pour ces types d'entités."
 
 #: ../lib/MusicBrainz/Server/Form/RelationshipEditor.pm:102
 msgid "This entity has an invalid ID or MBID."
