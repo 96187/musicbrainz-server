@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-19 23:05+0000\n"
+"PO-Revision-Date: 2013-11-20 00:59+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -127,7 +127,7 @@ msgstr "&lt; Retour à la liste des types de relation"
 
 #: ../root/annotation/edit.tt:40
 msgid "''italics''; '''bold'''; '''''bold italics'''''; ---- horizontal rule"
-msgstr ""
+msgstr "''italique''; '''gras'''; '''''italique gras'''''; ---- règle horizontale"
 
 #: ../root/components/tag-cloud.tt:26
 msgid "'{tag}' has been used {num} times"
@@ -317,7 +317,7 @@ msgstr "<em>aucun journal n'a été sélectionné</em>"
 
 #: ../root/edit/edit_header.tt:60
 msgid "<strong>Approved:</strong> {date}"
-msgstr ""
+msgstr "<strong>Approuvé :</strong> {date}"
 
 #: ../root/edit/edit_header.tt:58
 msgid "<strong>Closed:</strong> <em>Cancelling</em>"
@@ -781,7 +781,7 @@ msgstr "Ajouter les œuvres sélectionnées en vue de leur fusion"
 
 #: ../root/release/sidebar.tt:140
 msgid "Add to a new collection"
-msgstr ""
+msgstr "Ajouter une nouvelle collection"
 
 #: ../root/release/sidebar.tt:129
 msgid "Add to my collection"
@@ -874,7 +874,7 @@ msgstr "Pseudonyme"
 
 #: ../root/alias/edit_form.tt:11
 msgid "Alias Details"
-msgstr ""
+msgstr "Détails de l'alias"
 
 #: ../root/alias/edit_form.tt:12
 msgid "Alias name:"
@@ -1666,7 +1666,7 @@ msgid ""
 "hyperlinks. Example: If you want to use [unknown] in the annotation, you'll "
 "have to write <code>&amp;#91;unknown&amp;#93;</code> then it will appear the"
 " way you intended it to show."
-msgstr ""
+msgstr "Comme les crochets [] sont utilisés pour créer des hyperliens, vous devez utiliser le code HTML équivalent (<code>&amp;#91;</code> pour [) et (<code>&amp;#93;</code> pour ]) si vous ne voulez pas qu'ils soient convertis en hyperliens. Exemple : si voulez utiliser [inconnu] dans l'annotation, vous devrez écrire <code>&amp;#91;inconnu&amp;#93;</code> puis cela apparaîtra tel que vous le désirez."
 
 #: ../root/account/registered.tt:13
 msgid ""
@@ -1775,7 +1775,7 @@ msgstr "Date de naissance :"
 
 #: ../root/layout/menu.tt:148
 msgid "Blog"
-msgstr "Blog"
+msgstr "Blogue"
 
 #: ../root/components/common-macros.tt:944 ../root/scripts/text_strings.tt:78
 msgid "Born in:"
@@ -3167,7 +3167,7 @@ msgstr "Courriel :"
 
 #: ../root/annotation/edit.tt:39
 msgid "Emphasis:"
-msgstr ""
+msgstr "Emphase :"
 
 #: ../root/release/edit/tracklist.tt:188
 msgid "Enable vinyl track numbers"
@@ -3692,7 +3692,7 @@ msgstr "Directives"
 
 #: ../root/annotation/edit.tt:43
 msgid "Headings:"
-msgstr ""
+msgstr "Rubriques :"
 
 #: ../root/edit/list_header.tt:22
 msgid "Help:"
@@ -4353,11 +4353,11 @@ msgstr ""
 
 #: ../root/annotation/edit.tt:53
 msgid "Links:"
-msgstr ""
+msgstr "Liens  :"
 
 #: ../root/annotation/edit.tt:48
 msgid "Lists:"
-msgstr ""
+msgstr "Listes :"
 
 #: ../root/layout/menu.tt:186
 msgid "Live Data Feed"
@@ -4754,7 +4754,7 @@ msgstr "MusicBrainz - L'Encyclopédie musicale ouverte"
 
 #: ../root/main/index.tt:31
 msgid "MusicBrainz Blog"
-msgstr "Blog MusicBrainz"
+msgstr "Blogue MusicBrainz"
 
 #: ../root/layout/menu.tt:177 ../root/main/index.tt:101
 msgid "MusicBrainz Database"
@@ -5590,11 +5590,11 @@ msgid ""
 "original passwords from this mishap, we are requiring all of our users to "
 "change their passwords. Sorry for the inconvenience. For more information "
 "see {blog|the recent blog post}."
-msgstr ""
+msgstr "Veuillez changer votre mot de passe. Nous avons malheureusement découvert que les hachages sécurisés des mots de passe des utilisateurs étaient temporairement disponibles au téléchargement sur notre site FTP. Bien qu'il soit extrêmement improbable que quelqu'un soit capable de déduire les mots de passe originaux de cet incident, nous demandons à tous les utilisateurs de changer leur mot de passe. Désolé pour cet inconvénient. Pour plus d'informations voir le {blog|dernier billet de blogue}."
 
 #: ../root/edit/search_macros.tt:305
 msgid "Please choose a condition"
-msgstr ""
+msgstr "Veuillez choisir une condition"
 
 #: ../root/release/cover_art_uploader.tt:20
 msgid ""
@@ -6054,7 +6054,7 @@ msgstr "Enregistrements : "
 
 #: ../root/edit/list_header.tt:12
 msgid "Refine this search"
-msgstr ""
+msgstr "Affiner cette recherche"
 
 #: ../root/account/preferences.tt:12
 msgid "Regional settings"
@@ -7137,7 +7137,7 @@ msgstr "En voir moins..."
 msgid ""
 "Show me {autoedit_select_block} sorted {sort_select_block} that "
 "{match_or_negation_block} {and_vs_or_block} of the following conditions:"
-msgstr ""
+msgstr "Me montrer {autoedit_select_block} trié par {sort_select_block} qui {match_or_negation_block} {and_vs_or_block} pour les conditions suivantes :"
 
 #: ../root/scripts/text_strings.tt:93
 msgid "Show more..."
@@ -7267,7 +7267,7 @@ msgid ""
 "Sorry, but your query (<code>{query}</code>) could not be performed, because"
 " it appears you've been rate-limited. Either the server is overloaded or "
 "you're making a lot of requests all at once!"
-msgstr ""
+msgstr "Désolé mais votre requête (<code>{query}</code>) n'a pas pu être effectuée à cause d'une limitation de débit. Soit le serveur est surchargé, soit vous faites beaucoup de requêtes simultanées !"
 
 #: ../root/search/error/general.tt:3
 msgid ""
@@ -7880,7 +7880,7 @@ msgstr "Le code-barres que vous avez saisi ressemble à un code UPC, mais sans s
 
 #: ../root/main/index.tt:44
 msgid "The blog is currently unavailable."
-msgstr ""
+msgstr "Le blogue n'est pas disponible en ce moment."
 
 #: ../root/release/edit/information.tt:195
 msgid "The catalog number you have entered looks like an Amazon ASIN."
@@ -8652,7 +8652,7 @@ msgid ""
 "collaboration, it should be split if possible (see {how_to_split_artists|How"
 " to Split Artists}). If it is a collaboration with its own name and can't be"
 " split, collaboration relationships should be added to it."
-msgstr ""
+msgstr "Ce rapport liste les artistes qui ont « & » dans leur nom mais pas de relation de membre ou de collaboration. Si l'artiste est habituellement vu en tant que groupe, une relation de membre devrait être ajoutée. Si c'est une collaboration de courte durée, il devrait être si possible scindé (voir {how_to_split_artists|Comment scinder les artistes}). Si c'est une collaboration avec son propre nom et ne peut être scindée, une relation de collaboration devrait y être ajoutée."
 
 #: ../root/report/collaboration_relationships.tt:4
 msgid ""
@@ -8660,7 +8660,7 @@ msgid ""
 "relationships. If the collaboration has its own independent name, do "
 "nothing. If it is in a format like \"X with Y\" or \"X & Y\", you should "
 "probably split it. See {how_to_split_artists|How to Split Artists}."
-msgstr ""
+msgstr "Ce rapport liste les artistes qui ont des relations de collaboration mais pas d'URL de relation. Si la collaboration à son propre nom, ne rien faire. Si c'est un format comme « X avec Y » ou « X & Y », vous devriez probablement le scinder. Voir {how_to_split_artists|Comment scinder des artistes}."
 
 #: ../root/report/duplicate_relationships_artists.tt:6
 msgid ""
@@ -8699,7 +8699,7 @@ msgid ""
 "This report lists releases without any disc IDs that probably contain data "
 "tracks (like videos). A data track should be deleted if it is the last track"
 " of the CD and there is no disc ID."
-msgstr ""
+msgstr "Ce rapporte liste les parutions sans ID de disque qui contiennent probablement des pistes de données (telles que des vidéos). Une piste de données devrait être effacée si c'est la dernière piste du CD et qu'il n'y a pas d'ID de disque."
 
 #: ../root/report/duplicate_relationships_works.tt:6
 msgid ""
@@ -9389,7 +9389,7 @@ msgstr "URL : "
 
 #: ../root/annotation/edit.tt:55
 msgid "URL; [URL]; [URL|label]"
-msgstr ""
+msgstr "URL ; [URL] ; [URL|label]"
 
 #: ../root/doc/relationship_type.tt:34
 #: ../root/relationship/linktype/tree.tt:16
@@ -10443,7 +10443,7 @@ msgstr "vieilli {num}"
 
 #: ../root/edit/search_macros.tt:28
 msgid "all"
-msgstr ""
+msgstr "tout"
 
 #: ../root/edit/search_macros.tt:28
 msgid "any"
@@ -11528,7 +11528,7 @@ msgstr "Ajouter une piste"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/ChangeArtistQuality.pm:10
 msgid "Change artist quality (historic)"
-msgstr ""
+msgstr "Changer la qualité de l'artiste (historique)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/ChangeReleaseGroup.pm:10
 msgid "Change release group"
@@ -11536,7 +11536,7 @@ msgstr "Modifier le groupe de parution"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/ChangeTrackArtist.pm:12
 msgid "Change track artist (historic)"
-msgstr ""
+msgstr "Changer l'artiste de la piste (historique)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditLink.pm:17
 msgid "Edit relationship (historic)"
@@ -11561,15 +11561,15 @@ msgstr "Modifier le nom de parution (historique)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditTrackLength.pm:10
 msgid "Edit track length (historic)"
-msgstr ""
+msgstr "Modifier la durée de la piste (historique)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditTrackName.pm:20
 msgid "Edit track name (historic)"
-msgstr ""
+msgstr "Changer le nom de la piste (historique)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditTrackNum.pm:11
 msgid "Edit track number (historic)"
-msgstr ""
+msgstr "Changer le numéro de la piste (historique)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/MACToSAC.pm:12
 msgid "Convert release to single artist (historic)"
