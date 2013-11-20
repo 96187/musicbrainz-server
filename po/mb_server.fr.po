@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-20 16:58+0000\n"
+"PO-Revision-Date: 2013-11-20 17:58+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -398,7 +398,7 @@ msgstr "<strong>Attention</strong> : #{disc} a une ID de disque, vous ne pouvez 
 msgid ""
 "=&#xa0;Title&#xa0;1&#xa0;=; ==&#xa0;Title&#xa0;2&#xa0;==; "
 "===&#xa0;Title&#xa0;3&#xa0;==="
-msgstr ""
+msgstr "=&#xa0;Title&#xa0;1&#xa0;=; ==&#xa0;Title&#xa0;2&#xa0;==; ===&#xa0;Title&#xa0;3&#xa0;==="
 
 #: ../root/cdtoc/lookup.tt:19
 msgid ""
@@ -1004,7 +1004,7 @@ msgid ""
 "An alias is an alternate name for an entity. They typically contain contain "
 "common mispellings or variations of the name and are also used to improve "
 "search results. View the {doc|alias documentation} for more details."
-msgstr ""
+msgstr "Les alias sont d'autres noms pour une entité. Typiquement ils sont composés d'erreurs d'orthographe ou de variations du nom et sont aussi utilisés pour améliorer les résultats de recherche. Voir la {doc|documentation sur les alias} pour plus de détails."
 
 #: ../root/artist/subscribers.tt:17 ../root/collection/subscribers.tt:17
 #: ../root/label/subscribers.tt:17 ../root/user/subscribers.tt:17
@@ -2206,7 +2206,7 @@ msgstr "Collections"
 
 #: ../root/cdstub/index.tt:3
 msgid "Comment"
-msgstr ""
+msgstr "Commentaire"
 
 #: ../root/cdstub/edit_form.tt:8 ../root/edit/details/add_cover_art.tt:25
 #: ../root/edit/details/edit_cover_art.tt:24
@@ -3326,7 +3326,7 @@ msgstr "Message d'erreur : "
 
 #: ../root/admin/wikidoc/index.tt:50
 msgid "Error!"
-msgstr ""
+msgstr "Erreur !"
 
 #: ../root/main/500.tt:9
 msgid "Error:"
@@ -3425,7 +3425,7 @@ msgstr "Nom du fichier :"
 
 #: ../root/components/common-macros.tt:903
 msgid "Filter"
-msgstr ""
+msgstr "Filtrer"
 
 #: ../root/relationship/linktype/form.tt:106
 msgid "Find Relationships"
@@ -3513,8 +3513,8 @@ msgstr "Vous avez trouvé un problème sur notre site ? Dites-le nous en {report
 #: ../root/edit/list.tt:58
 msgid "Found at least {n} edit"
 msgid_plural "Found at least {n} edits"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Au moins {n} modification de trouvée"
+msgstr[1] "Au moins {n} modifications de trouvées"
 
 #: ../root/release/sidebar.tt:141
 msgid "Found in {num} user collection"
@@ -3803,7 +3803,7 @@ msgstr "ISRC"
 
 #: ../root/isrc/not_found.tt:1 ../root/isrc/not_found.tt:2
 msgid "ISRC Not Currently Used"
-msgstr "ISRC actuellement pas utilisé"
+msgstr "ISRC pas actuellement utilisé"
 
 #: ../root/edit/details/add_isrcs.tt:15
 msgid "ISRC {isrc} to {recording}"
@@ -3877,13 +3877,13 @@ msgstr "ISWC :"
 msgid ""
 "If none of these artists match the artist you intended, you can still create"
 " a new artist:"
-msgstr "Si aucun des artistes ne correspond à l'artiste qui vous concerne, vous pouvez toujours créer un nouvel artiste :"
+msgstr "Si aucun de ces artistes ne correspond à l'artiste prévu, vous pouvez toujours créer un nouvel artiste :"
 
 #: ../root/release/edit/missing_entities.tt:146
 msgid ""
 "If none of these labels match the label you intended, you can still create a"
 " new label:"
-msgstr ""
+msgstr "Si aucun de ces labels ne correspond au label prévu, vous pouvez toujours créer un nouveau label :"
 
 #: ../root/artist/edit_form.tt:5
 msgid ""
@@ -3931,7 +3931,7 @@ msgstr "Si l'enregistrement de cette piste n'est pas déjà dans la base de donn
 msgid ""
 "If you added this alias by mistake, please follow the instructions on "
 "{cancel|how to cancel pending edits} instead of removing this alias."
-msgstr ""
+msgstr "Si vous avez ajouté cet alias par erreur, veuillez suivre les instructions sur {cancel|comment annuler les modifications en attente} au lieu d'enlever cet alias."
 
 #: ../root/cdtoc/attach_artist_releases.tt:68
 msgid "If you can't find what you're looking for, you can add a new release:"
@@ -6986,11 +6986,11 @@ msgstr "Types secondaires :"
 
 #: ../root/elections/index.tt:14
 msgid "Seconder 1"
-msgstr ""
+msgstr "1er soutien"
 
 #: ../root/elections/index.tt:15
 msgid "Seconder 2"
-msgstr ""
+msgstr "2ème soutien"
 
 #: ../root/cdtoc/info.tt:38 ../root/cdtoc/info.tt:40 ../root/cdtoc/info.tt:42
 msgid "Sectors"
@@ -7239,7 +7239,7 @@ msgstr "Certaines pistes ont été modifiées, veuillez choisir un enregistremen
 
 #: ../root/layout/menu.tt:168 ../root/main/index.tt:12
 msgid "SongKong Tagger"
-msgstr ""
+msgstr "Tagueur SongKong"
 
 #: ../root/cdstub/error.tt:11
 msgid ""
@@ -8142,7 +8142,7 @@ msgstr "Il n'y a pas d'éditeur ayant ce nom."
 
 #: ../root/admin/wikidoc/index.tt:25
 msgid "There was a problem accessing the wiki API."
-msgstr ""
+msgstr "Un problème est survenu lors de l'accès à l'API du wiki."
 
 #: ../root/edit/cannot_approve.tt:3
 msgid "There was a problem approving {edit}."
@@ -8226,7 +8226,7 @@ msgid ""
 "This artist has no relationships, recordings, releases or release groups, "
 "and will be removed automatically in the next few days. If this is not "
 "intended, please add more data to this artist."
-msgstr "Cet artiste n'a aucun enregistrement, parution, groupe de parution ou relation et sera donc enlevé automatiquement dans les prochains jours. Si ce n'est pas ce que vous souhaitez, vous devez ajouter plus d'information à cet artiste."
+msgstr "Cet artiste n'a aucune relation, enregistrement, parution ou groupe de parution et sera donc enlevé automatiquement dans les prochains jours. Si ce n'est pas ce que vous souhaitez, veuillez ajouter plus d'information à cet artiste."
 
 #: ../root/artist/index.tt:106
 msgid "This artist has no release groups, only standalone recordings."
@@ -8974,7 +8974,7 @@ msgstr "Cet assistant vous permet de fusionner {release} dans une autre parution
 msgid ""
 "This work has no relationships and will be removed automatically in the next"
 " few days. If this is not intended, please add relationships to this work."
-msgstr "Cette œuvre n'a aucune relation, et sera donc enlevée automatiquement dans les prochains jours. Si ce n'est pas ce que vous souhaitez, vous devez ajouter plus d'information à cette œuvre."
+msgstr "Cette œuvre n'a aucune relation, et sera donc enlevée automatiquement dans les prochains jours. Si ce n'est pas ce que vous souhaitez, veuillez ajouter des relations à cette œuvre."
 
 #: ../root/work/tags.tt:2
 msgid "This work has no tags."
@@ -9701,7 +9701,7 @@ msgid ""
 " second their nomination. If you do not support this candidate, please note "
 "that you cannot cast a \"No\" vote (or abstain) until two seconders have "
 "been found."
-msgstr "Le vote n'est pas ouvert. Si vous voulez soutenir ce candidat, vous pouvez seconder sa nomination.Si vous ne soutenez pas ce candidat vous ne pouvez pas voter « Non » (ou vous abstenir) tant que deux personnes le secondant soient trouvées."
+msgstr "Le vote n'est pas ouvert. Si vous voulez soutenir ce candidat, vous pouvez seconder sa nomination. Si vous ne soutenez pas ce candidat vous ne pouvez pas voter « Non » (ou vous abstenir) tant que deux personnes le secondant soient trouvées."
 
 #: ../root/doc/edit_type.tt:59
 msgid "Voting period (days)"
@@ -9782,8 +9782,8 @@ msgid ""
 msgid_plural ""
 "We found the following artists named \"{artist}\" in MusicBrainz. If one of "
 "them was the artist you intended to use, please select them:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Nous avons trouvé l'artiste suivant nommé \"{artist}\" dans MusicBrainz. Si c'est l'artiste que vous prévoyiez utiliser, veuillez le choisir :"
+msgstr[1] "Nous avons trouvé les artistes suivants nommés \"{artist}\" dans MusicBrainz. Si ce sont les artistes que vous prévoyiez utiliser, veuillez les choisir :"
 
 #: ../root/release/edit/missing_entities.tt:107
 msgid ""
@@ -9792,8 +9792,8 @@ msgid ""
 msgid_plural ""
 "We found the following labels named \"{label}\" in MusicBrainz. If one of "
 "them was the label you intended to use, please select them:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Nous avons trouvé le label suivant nommé \"{label}\" dans MusicBrainz. Si c'est le label que vous prévoyiez utiliser, veuillez le choisir :"
+msgstr[1] "Nous avons trouvé les labels suivants nommés \"{label}\" dans MusicBrainz. Si c'est les labels que vous prévoyiez utiliser, veuillez les choisir :"
 
 #: ../root/search/editor.tt:5
 msgid ""
@@ -9999,7 +9999,7 @@ msgstr "AAAA"
 
 #: ../root/layout/menu.tt:165 ../root/main/index.tt:11
 msgid "Yate Music Tagger"
-msgstr ""
+msgstr "Tagueur Yate"
 
 #: ../root/artist/browse_various.tt:13 ../root/artist/index.tt:54
 #: ../root/edit/details/merge_release_groups.tt:7
@@ -10502,7 +10502,7 @@ msgstr "crédits"
 
 #: ../root/admin/wikidoc/index.tt:53
 msgid "diff"
-msgstr ""
+msgstr "diff"
 
 #: ../root/release/edit/recordings.tt:64
 #: ../root/release/edit/recordings.tt:140
@@ -10687,7 +10687,7 @@ msgstr[1] "plus {n} autres collections privées"
 
 #: ../root/artist/edit_form.tt:100
 msgid "preview:"
-msgstr ""
+msgstr "aperçu :"
 
 #: ../root/edit/search_macros.tt:19
 msgid "randomly"
@@ -10841,11 +10841,11 @@ msgstr[1] "{artist} n'a pas de parution ayant {n} pistes."
 #: ../lib/MusicBrainz/Server/Entity/Link.pm:122
 #, perl-brace-format
 msgid "{begindate} &#x2013;"
-msgstr ""
+msgstr "{begindate} &#x2013;"
 
 #: ../root/artist/relationships.tt:33 ../root/place/performances.tt:27
 msgid "{begindate} &#x2013; ????"
-msgstr ""
+msgstr "{begindate} &#x2013; ????"
 
 #: ../root/artist/relationships.tt:33 ../root/place/performances.tt:27
 #: ../lib/MusicBrainz/Server/Entity/Link.pm:115
@@ -11209,7 +11209,7 @@ msgstr "Merci, votre modification a été acceptée et appliquée"
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:45
 msgid "The user ID is missing or is in an invalid format."
-msgstr "L'identifiant utilisateur est manquant ou son format est invalide."
+msgstr "L'ID d'utilisateur est manquante ou son format est invalide."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:52
 msgid "The email address is missing."
@@ -11291,7 +11291,7 @@ msgstr "Il n'est pas possible de fusionner un artiste spécial dans un autre art
 
 #: ../lib/MusicBrainz/Server/Controller/Artist.pm:494
 msgid "You cannot merge into Deleted Artist"
-msgstr ""
+msgstr "Vous ne pouvez fusionner vers un artiste supprimé"
 
 #: ../lib/MusicBrainz/Server/Controller/AutoEditorElections.pm:70
 #, perl-brace-format
@@ -11843,66 +11843,66 @@ msgstr "Support"
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:89
 msgctxt "autoeditor election status"
 msgid "Awaiting 1st seconder"
-msgstr ""
+msgstr "En attente d'un 1er soutien"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:90
 msgctxt "autoeditor election status"
 msgid "Awaiting 2nd seconder"
-msgstr ""
+msgstr "En attente d'un 2ème soutien"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:91
 #, perl-brace-format
 msgctxt "autoeditor election status"
 msgid "Voting open since {date}"
-msgstr ""
+msgstr "Vote depuis le {date}"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:92
 #, perl-brace-format
 msgctxt "autoeditor election status"
 msgid "Accepted at {date}"
-msgstr ""
+msgstr "Accepté le {date}"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:93
 #, perl-brace-format
 msgctxt "autoeditor election status"
 msgid "Declined at {date}"
-msgstr ""
+msgstr "Refusé le {date}"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:94
 #, perl-brace-format
 msgctxt "autoeditor election status"
 msgid "Cancelled at {date}"
-msgstr ""
+msgstr "Annulé le {date}"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:98
 msgctxt "autoeditor election status (short)"
 msgid "Awaiting 1st seconder"
-msgstr ""
+msgstr "En attente d'un 1er soutien"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:99
 msgctxt "autoeditor election status (short)"
 msgid "Awaiting 2nd seconder"
-msgstr ""
+msgstr "En attente d'un 2ème soutien"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:100
 msgctxt "autoeditor election status (short)"
 msgid "Voting open"
-msgstr ""
+msgstr "Vote ouvert"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:101
 msgctxt "autoeditor election status (short)"
 msgid "Accepted"
-msgstr ""
+msgstr "Accepté"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:102
 msgctxt "autoeditor election status (short)"
 msgid "Declined"
-msgstr ""
+msgstr "Refusé"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:103
 msgctxt "autoeditor election status (short)"
 msgid "Cancelled"
-msgstr ""
+msgstr "Annulé"
 
 #: ../lib/MusicBrainz/Server/Entity/Barcode.pm:25
 msgid "[none]"
@@ -12391,7 +12391,7 @@ msgstr "Toute parution reconnue par l'artiste et/ou sa maison de disques comme o
 msgid ""
 "A giveaway release or a release intended to promote an upcoming official "
 "release. (e.g. prerelease albums or releases included with a magazine)"
-msgstr "Un parution cadeau ou dédiée à la promotion de la parution officielle à venir (par exemple, des albums en avant-première, ou des parutions proposées dans un magazine)."
+msgstr "Un parution cadeau ou dédiée à la promotion de la parution officielle à venir (par exemple, des albums en avant-première ou des parutions proposées dans un magazine)."
 
 #: ../lib/MusicBrainz/Server/Release.pm:72
 msgid ""
