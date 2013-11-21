@@ -1,5 +1,6 @@
 # 
 # Translators:
+# Alain-Olivier  Breysse <email address hidden>, 2013
 # Benjamin Sonntag <email address hidden>, 2011-2012
 # Benjamin Sonntag <email address hidden>, 2011
 # Dibou <email address hidden>, 2012
@@ -7,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2013-11-19 16:48+0000\n"
+"PO-Revision-Date: 2013-11-21 19:00+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -490,11 +491,11 @@ msgstr ""
 
 #: ../root/statistics/formats.tt:29
 msgid "% of total mediums"
-msgstr "% du nombre total de media"
+msgstr "% du nombre total de support"
 
 #: ../root/statistics/formats.tt:27
 msgid "% of total releases"
-msgstr "% du total des sorties"
+msgstr "% du total des parutions"
 
 #: ../root/statistics/view_js.tt:24
 msgid "/day"
@@ -502,11 +503,11 @@ msgstr "/jour"
 
 #: ../root/statistics/formats.tt:37 ../root/statistics/formats.tt:39
 msgid "100%"
-msgstr "100%"
+msgstr "100 %"
 
 #: ../root/statistics/index.tt:703
 msgid "Abstain:"
-msgstr "S'abstenir"
+msgstr "S'abstenir :"
 
 #: ../root/statistics/view_js.tt:73
 msgid "Abstentions"
@@ -534,15 +535,15 @@ msgstr "Toutes les modifications ont été appliquées"
 
 #: ../root/statistics/view_js.tt:64
 msgid "All edits that have failed by being voted down"
-msgstr "Toutes les modifications ont échouées du fait d'un vote négatif"
+msgstr "Toutes les modifications ayant échoué par vote négatif"
 
 #: ../root/statistics/view_js.tt:62
 msgid "All edits that have failed dependency checks"
-msgstr "Toutes les modifications ont échouées à cause de leurs dépendances"
+msgstr "Toutes les modifications ayant échoué les contrôles de dépendance"
 
 #: ../root/statistics/view_js.tt:63
 msgid "All edits that have failed prerequisite checks"
-msgstr "Toutes les modifications ont échouées à cause de prérequis non satisfaits"
+msgstr "Toutes les modifications ayant échoué les contrôles de prérequis"
 
 #: ../root/statistics/view_js.tt:61
 msgid "All edits that have hit an error"
@@ -578,7 +579,7 @@ msgstr ""
 
 #: ../root/statistics/view_js.tt:28
 msgid "Artist Countries"
-msgstr "Pays de l'artiste"
+msgstr "Pays des artistes"
 
 #: ../root/statistics/view_js.tt:121
 msgid "Artist Credits"
@@ -594,11 +595,11 @@ msgstr ""
 
 #: ../root/statistics/view_js.tt:160
 msgid "Artist Ratings"
-msgstr "Note de l'artiste"
+msgstr "Évaluations des artistes"
 
 #: ../root/statistics/view_js.tt:166
 msgid "Artist Ratings (raw)"
-msgstr "Note de l'artiste (brute)"
+msgstr "Évaluations des artistes (brute)"
 
 #: ../root/statistics/view_js.tt:174
 msgid "Artist Tags (raw)"
@@ -606,7 +607,7 @@ msgstr ""
 
 #: ../root/statistics/view_js.tt:33
 msgid "Artist Types and Genders"
-msgstr "Types et genre de l'artiste"
+msgstr "Types et genres des artistes"
 
 #: ../root/statistics/countries.tt:35 ../root/statistics/index.tt:126
 #: ../root/statistics/index.tt:130 ../root/statistics/view_js.tt:43
@@ -627,15 +628,15 @@ msgstr ""
 
 #: ../root/statistics/view_js.tt:110
 msgid "Artists with gender set to female"
-msgstr "Artistes féminines"
+msgstr "Artistes dont le genre est indiqué comme féminin"
 
 #: ../root/statistics/view_js.tt:109
 msgid "Artists with gender set to male"
-msgstr "Artistes masculins"
+msgstr "Artistes dont le genre est indiqué comme masculin"
 
 #: ../root/statistics/view_js.tt:111
 msgid "Artists with gender set to other"
-msgstr "Artiste d'un autre genre"
+msgstr "Artistes dont le genre est indiqué comme autre"
 
 #: ../root/statistics/view_js.tt:108
 msgid "Artists with gender unset (non-group artists)"
@@ -651,11 +652,11 @@ msgstr "Artistes sans précision de pays "
 
 #: ../root/statistics/view_js.tt:114
 msgid "Artists with type set to group"
-msgstr "Artistes de type \"groupe\""
+msgstr "Artistes de type « groupe »"
 
 #: ../root/statistics/view_js.tt:115
 msgid "Artists with type set to other"
-msgstr "Artistes de type \"autre\""
+msgstr "Artistes de type « autre »"
 
 #: ../root/statistics/view_js.tt:113
 msgid "Artists with type set to person"

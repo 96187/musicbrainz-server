@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-21 17:59+0000\n"
+"PO-Revision-Date: 2013-11-21 18:34+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -7345,19 +7345,19 @@ msgstr "Désolé, il y a un problème avec votre requête."
 msgid ""
 "Sorry, we could find neither a recording nor a track with that MusicBrainz "
 "ID. You may wish to try and {search_url|search for it} instead."
-msgstr "Désolé, nous n'avons pu trouver d'enregistrement ni de piste avec cette ID. Vous pourriez essayer d'essayer de {search_url|le chercher} plutôt."
+msgstr "Désolé, nous n'avons pu trouver d'enregistrement ni de piste avec cette ID. Vous pourriez peut-être plutôt essayer de {search_url|le chercher}."
 
 #: ../root/freedb/not_found.tt:4
 msgid ""
 "Sorry, we could not find a FreeDB entry with that ID. You may wish to try "
 "and {search_url|search for it} instead."
-msgstr "Désolé, nous n'avons pas trouvé d'entrée FreeDB avec cet ID. Vous devriez plutôt {search_url|essayer cette recherche}."
+msgstr "Désolé, nous n'avons pas trouvé d'entrée FreeDB avec cette ID. Vous pourriez peut-être plutôt essayer de le {search_url|chercher}."
 
 #: ../root/otherlookup/not_found.tt:4
 msgid ""
 "Sorry, we could not find a MusicBrainz entity with that ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Désolé, nous n'avons pu trouver d'entité MusicBrainz avec cette ID. Vous pourriez peut-être plutôt essayer de la {search_url|chercher}."
 
 #: ../root/url/not_found.tt:4
 msgid "Sorry, we could not find a URL with that MusicBrainz ID."
@@ -7373,7 +7373,7 @@ msgstr "Désolé, nous ne trouvons pas de label avec cette ID MusicBrainz. Vous 
 msgid ""
 "Sorry, we could not find a place with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr "Désolé, nous n'avons pas trouvé de lieu avec cette ID MusicBrainz. Vous pourriez plutôt essayer de {search_url|la chercher}."
+msgstr "Désolé, nous n'avons pas trouvé de lieu avec cette ID MusicBrainz. Vous pourriez peut-être plutôt essayer de {search_url|le chercher}."
 
 #: ../root/recording/not_found.tt:4
 msgid ""
@@ -7430,7 +7430,7 @@ msgstr "Désolé, nous ne trouvons pas de modification ayant cette ID. Vous pour
 msgid ""
 "Sorry, we could not find an editor with that name. You may wish to try and "
 "{search_url|search for them} instead."
-msgstr "Désolé, nous ne trouvons pas d'éditeur ayant ce nom. Vous pourriez plutôt essayer de {search_url|le chercher}. "
+msgstr "Désolé, nous ne trouvons pas d'éditeur ayant ce nom. Vous pourriez peut-être plutôt essayer de {search_url|le chercher}. "
 
 #: ../root/search/editor.tt:18
 msgid ""
@@ -7549,7 +7549,7 @@ msgstr "Statistiques"
 
 #: ../root/search/lib/inline-results-release.tt:20
 msgid "Status"
-msgstr ""
+msgstr "Statut"
 
 #: ../root/edit/search_macros.tt:307
 msgctxt "edit status"
@@ -8048,7 +8048,7 @@ msgid ""
 "There are currently no discs in MusicBrainz associated with the information "
 "you provided. You can search for the disc you are looking for using the "
 "forms below, or you may add a new release to MusicBrainz"
-msgstr "Il n'y a actuellement aucun disque dans MusicBrainz associé aux informations que vous avez saisies. Vous pouvez chercher ce disque à l'aide du formulaire ci-dessous, ou vous pouvez l'ajouter comme nouvelle parution dans MusicBrainz."
+msgstr "Il n'y a actuellement aucun disque dans MusicBrainz associé aux informations que vous avez saisies. Vous pouvez chercher ce disque à l'aide des formulaires ci-dessous, ou vous pouvez ajouter une nouvelle parution dans MusicBrainz."
 
 #: ../root/user/subscribers.tt:23
 msgid "There are currently no users subscribed to edits that you make."
@@ -8177,7 +8177,7 @@ msgstr "Cet ISRC n'est associé avec aucun enregistrement. Si vous souhaitez l'a
 msgid ""
 "This ISWC is not associated with any works. If you wish to associate it with"
 " a work, please {search_url|search for the work} and add it."
-msgstr "Ce ISWC n'est associé à aucune œuvre. Si vous désirer l’associer à une œuvre, veuillez {search_url|rechercher l’œuvre} l'ajouter."
+msgstr "Ce ISWC n'est associé à aucune œuvre. Si vous désirer l’associer à une œuvre, veuillez {search_url|rechercher l’œuvre} l'y ajouter."
 
 #: ../root/alias/edit_form.tt:33
 msgid "This alias is no longer current."
@@ -8370,7 +8370,7 @@ msgstr "Ceci est un serveur de développement de MusicBrainz."
 msgid ""
 "This is a Musicbrainz mirror server. To edit or make changes to the data "
 "please {uri|return to musicbrainz.org}."
-msgstr ""
+msgstr "Ceci est un serveur mirroir de Musicbrainz. Pour modifier les données veuillez {uri|retourner vers musicbrainz.org}."
 
 #: ../root/account/edit.tt:27
 msgid ""
@@ -8491,7 +8491,7 @@ msgstr "Cet enregistrement n'a pas de tag."
 
 #: ../root/release/index.tt:79 ../root/release/index.tt:80
 msgid "This recording is a video"
-msgstr ""
+msgstr "Cet enregistrement est une vidéo"
 
 #: ../root/edit/details/add_relationship.tt:13
 #: ../root/edit/details/edit_relationship.tt:14
@@ -8611,7 +8611,7 @@ msgstr "Ce rapport liste toutes les parutions pour lesquelles les numéros de pi
 msgid ""
 "This report lists artists that appear more than once in different positions "
 "within the same artist credit."
-msgstr ""
+msgstr "Ce rapport liste les artistes qui apparaissent plus d'une fois en différentes positions pour un même crédit d'artiste."
 
 #: ../root/report/artists_with_no_subscribers.tt:6
 msgid ""
@@ -9551,7 +9551,7 @@ msgstr "L'utilisation de la {doc|syntaxe de recherche avancée} lorsque vous êt
 
 #: ../root/release/add_cover_art.tt:54
 msgid "Validating file..."
-msgstr ""
+msgstr "Validation du fichier en cours..."
 
 #: ../root/cdstub/browse.tt:18 ../root/cdstub/layout.tt:26
 msgid "Various Artists"
@@ -9567,20 +9567,20 @@ msgstr "Version :"
 
 #: ../root/recording/edit_form.tt:11
 msgid "Video"
-msgstr ""
+msgstr "Vidéo"
 
 #: ../root/recording/header.tt:17
 msgid "Video by {artist}"
-msgstr ""
+msgstr "Vidéo par {artist}"
 
 #: ../root/recording/layout.tt:3
 msgid "Video “{name}” by {artist}"
-msgstr ""
+msgstr "Vidéo “{name}” par {artist}"
 
 #: ../root/edit/details/add_standalone_recording.tt:34
 #: ../root/edit/details/edit_recording.tt:26
 msgid "Video:"
-msgstr ""
+msgstr "Vidéo :"
 
 #: ../root/user/ratings_summary.tt:25
 msgid "View all ratings"
@@ -9890,7 +9890,7 @@ msgstr "Wiki"
 
 #: ../root/edit/search_macros.tt:288
 msgid "Wiki Transcluder"
-msgstr ""
+msgstr "Wiki Transcluder"
 
 #: ../root/admin/wikidoc/index.tt:34
 msgid "Wiki version"
@@ -10233,8 +10233,8 @@ msgstr "Vous devez saisir un commentaire d'homonymie qui permet aux utilisateurs
 #: ../root/user/subscriptions/collection.tt:7
 msgid "You are subscribed to {n} private collection."
 msgid_plural "You are subscribed to {n} private collections."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Vous êtes abonné à {n} collection privée."
+msgstr[1] "Vous êtes abonné à {n} collections privées."
 
 #: ../root/cdtoc/attach_artist_releases.tt:24
 msgid "You are viewing releases by {artist}."
@@ -10523,7 +10523,7 @@ msgstr "modifications"
 
 #: ../root/doc/relationship_type.tt:58
 msgid "end date"
-msgstr ""
+msgstr "date de fin"
 
 #: ../root/components/common-macros.tt:725
 msgid "ended"
@@ -10658,7 +10658,7 @@ msgstr "le {date}"
 
 #: ../root/release/add_cover_art.tt:33
 msgid "or drop files here"
-msgstr ""
+msgstr "ou déposer des fichiers ici"
 
 #: ../root/components/common-macros.tt:119
 msgid "original"
@@ -10742,7 +10742,7 @@ msgstr "espace"
 
 #: ../root/doc/relationship_type.tt:55
 msgid "start date"
-msgstr ""
+msgstr "date de début"
 
 #: ../root/user/profile.tt:108
 msgid "subscribe"
@@ -10911,8 +10911,8 @@ msgstr "{doc|Éditeur de transclusions}"
 #: ../root/user/subscriptions/collection.tt:13
 msgid "{editor} is subscribed to {n} private collection."
 msgid_plural "{editor} is subscribed to {n} private collections."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{editor} est abonné à {n} collection privée."
+msgstr[1] "{editor} est abonné à {n} collections privées."
 
 #: ../root/user/subscriptions/layout.tt:12
 msgid "{editor} is subscribed to:"
@@ -10926,7 +10926,7 @@ msgstr "{edit} a reçu un ou plusieurs votes \"non\", vous devez laissez un comm
 
 #: ../root/doc/relationship_type.tt:5
 msgid "{entity0}-{entity1}"
-msgstr ""
+msgstr "{entity0}-{entity1}"
 
 #: ../root/components/common-macros.tt:272
 #: ../root/components/common-macros.tt:997 ../root/main/index.tt:124
@@ -11143,7 +11143,7 @@ msgstr "{uri|En relation avec l'URL}"
 
 #: ../root/layout.tt:98
 msgid "{uri|Return to musicbrainz.org}."
-msgstr ""
+msgstr "{uri|Retour vers musicbrainz.org}."
 
 #: ../root/user/profile/layout.tt:8
 msgid "{user}"
@@ -11250,7 +11250,7 @@ msgstr "Il n'y a pas d'utilisateur ayant ce nom"
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:164
 msgid "There is no user with this username and email"
-msgstr "Il n'y a pas d'utilisateur ayant ce nom et cet courriel"
+msgstr "Il n'y a pas d'utilisateur ayant ce nom et ce courriel"
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:167
 msgid ""
@@ -11268,7 +11268,7 @@ msgstr "Désolé, mais ce lien de réinitialisation de mot de passe a expiré."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:262
 msgid "There is no user with this email"
-msgstr "Il n'y a pas d'utilisateur ayant cet courriel"
+msgstr "Il n'y a pas d'utilisateur ayant ce courriel"
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:346
 msgid "Your password has been changed."
@@ -11383,7 +11383,7 @@ msgstr "Cette stratégie de fusion n'est pas applicable aux parutions que vous a
 
 #: ../lib/MusicBrainz/Server/Controller/Role/Annotation.pm:63
 msgid "The annotation revision ID must be a positive integer"
-msgstr ""
+msgstr "L'ID de révision d'annotation doit être un entier positif"
 
 #: ../lib/MusicBrainz/Server/Controller/Role/Annotation.pm:182
 msgid "The old and new annotation ids must be unique, positive integers."
@@ -11982,7 +11982,7 @@ msgstr "L'artiste « {artist} » n'est pas relié, veuillez choisir un artiste e
 
 #: ../lib/MusicBrainz/Server/Form/Field/ArtistCredit.pm:69
 msgid "Please add an artist name for each credit."
-msgstr ""
+msgstr "Veuillez ajouter un nom d'artiste pour chaque crédit."
 
 #: ../lib/MusicBrainz/Server/Form/Field/ArtistCredit.pm:79
 msgid "Artist credit field is required"
@@ -11990,7 +11990,7 @@ msgstr "Le champ de crédit d'artiste est requis"
 
 #: ../lib/MusicBrainz/Server/Form/Field/Coordinates.pm:93
 msgid "These coordinates could not be parsed"
-msgstr ""
+msgstr "Ces coordonnées n'ont pas pu être analysées"
 
 #: ../lib/MusicBrainz/Server/Form/Field/DatePeriod.pm:40
 msgid "The end date must occur on or after the begin date"
@@ -12079,11 +12079,11 @@ msgstr "Un type de lien est requis"
 
 #: ../lib/MusicBrainz/Server/Form/RelationshipEditor.pm:55
 msgid "ID must be an integer"
-msgstr ""
+msgstr "L'ID doit être un entier"
 
 #: ../lib/MusicBrainz/Server/Form/RelationshipEditor.pm:62
 msgid "Unknown action"
-msgstr ""
+msgstr "Action inconnue"
 
 #: ../lib/MusicBrainz/Server/Form/RelationshipEditor.pm:73
 msgid "The relationship is missing one or both entities."
@@ -12092,7 +12092,7 @@ msgstr "Une ou les deux entités manquent à la relation."
 #: ../lib/MusicBrainz/Server/Form/RelationshipEditor.pm:82
 #: ../lib/MusicBrainz/Server/Form/RelationshipEditor.pm:85
 msgid "Unknown entity type"
-msgstr ""
+msgstr "Type d'entité inconnu"
 
 #: ../lib/MusicBrainz/Server/Form/RelationshipEditor.pm:90
 msgid ""
@@ -12167,7 +12167,7 @@ msgstr "La durée de la piste {pos} ne peut pas être changée car la parution �
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:122
 #, perl-brace-format
 msgid "Track {pos} has a duration less than or equal to 0 seconds"
-msgstr ""
+msgstr "La piste {pos} a une durée inférieure ou égale à 0 seconde"
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:160
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:203
@@ -12198,7 +12198,7 @@ msgstr "Une parution doit disposer d'au moins un support."
 
 #: ../lib/MusicBrainz/Server/Form/Role/EditNote.pm:19
 msgid "You must provide an edit note"
-msgstr ""
+msgstr "Vous devez fournir une note de modification"
 
 #: ../lib/MusicBrainz/Server/Form/Role/LinkType.pm:68
 msgid ""
@@ -12252,7 +12252,7 @@ msgstr "Vous devez fournir une date de naissance complète afin que nous puissio
 
 #: ../lib/MusicBrainz/Server/Form/User/EditProfile.pm:82
 msgid "Birth year must be after 1900"
-msgstr ""
+msgstr "L'année de naissance doit être après 1900"
 
 #: ../lib/MusicBrainz/Server/Form/User/Login.pm:9
 msgid "Username field is required"
