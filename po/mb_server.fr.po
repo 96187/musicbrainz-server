@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-22 21:00+0000\n"
+"PO-Revision-Date: 2013-11-22 21:08+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -2819,7 +2819,7 @@ msgstr "Modifier l'Illustration"
 
 #: ../root/layout/menu.tt:93
 msgid "Edit Instrument Tree"
-msgstr "Modifier l'arbre des instruments"
+msgstr "Modifier l'arborescence des instruments"
 
 #: ../root/label/edit.tt:14
 msgid "Edit Label"
@@ -4083,7 +4083,7 @@ msgstr "Applications installées"
 #: ../root/relationship/header.tt:2
 #: ../root/relationship/linkattributetype/instruments.tt:3
 msgid "Instrument Tree"
-msgstr "Arbre des instruments"
+msgstr "Arborescence des instruments"
 
 #: ../root/main/500.tt:52
 msgid "Interface language:"
@@ -6775,7 +6775,7 @@ msgstr "Réordonner les Illustrations"
 
 #: ../root/layout/menu.tt:291
 msgid "Report a Bug"
-msgstr "Signaler un bug"
+msgstr "Signaler un bogue"
 
 #: ../root/layout/menu.tt:295
 msgid "Report a Copyright Violation"
@@ -6836,7 +6836,7 @@ msgstr "Montrer mon adresse courriel"
 #: ../root/relationship/linktype/form.tt:14
 #: ../root/relationship/linktype/tree.tt:13
 msgid "Reverse link phrase:"
-msgstr "Inverser le sens du lien : "
+msgstr "Inverser la phrase de lien : "
 
 #: ../root/release/edit/information.tt:182
 msgid ""
@@ -6861,7 +6861,7 @@ msgstr "Running: <span class=\"tooltip\" title=\"{msg}\">{branch} ({sha})</span>
 #: ../root/relationship/linkattributetype/form.tt:21
 #: ../root/relationship/linktype/form.tt:181
 msgid "Save"
-msgstr "Sauver"
+msgstr "Enregistrer"
 
 #: ../root/search/lib/inline-results-artist.tt:6
 #: ../root/search/lib/inline-results-recording.tt:6
@@ -6944,7 +6944,7 @@ msgstr "Rechercher des enregistrements"
 msgid ""
 "Search indexes are updated every 3 hours, use the direct database search if "
 "you require up to the minute correct results."
-msgstr "Les index de recherche sont mis à jour toutes les 3 heures, utilisez une recherche directe en base si vous avez besoin de resultats issus de la base actuelle."
+msgstr "Les index de recherche sont mis à jour toutes les 3 heures, utiliser la recherche directe en base si vous avez besoin de résultats corrects à la minute près."
 
 #: ../root/taglookup/results.tt:12
 msgid ""
@@ -6971,11 +6971,11 @@ msgstr "Recherche :"
 
 #: ../root/release/edit/tracklist.tt:103 ../root/scripts/text_strings.tt:40
 msgid "Searching..."
-msgstr "Recherche ..."
+msgstr "Recherche en cours..."
 
 #: ../root/elections/show.tt:64
 msgid "Second this candidate"
-msgstr "Soutenir ce candidat"
+msgstr "Appuyer ce candidat"
 
 #: ../root/edit/details/add_release_group.tt:35
 #: ../root/edit/details/edit_release_group.tt:23
@@ -7053,7 +7053,7 @@ msgstr[1] "Voir toutes l'{num} œuvres"
 #: ../root/account/edit.tt:18
 msgid ""
 "See also your {uri|user preferences}, which includes your privacy settings."
-msgstr "Voir aussi vos {uri|préférences utilisateur}, notamment vos paramètres de vie privée."
+msgstr "Voir aussi vos {uri|préférences d'utilisateur} qui incluent vos paramètres de vie privée."
 
 #: ../root/doc/relationship_type.tt:66
 msgid "See the general {url|guidelines for URLs}."
@@ -7114,7 +7114,7 @@ msgstr "Modifier la durée des listes de pistes"
 
 #: ../root/account/reset_password.tt:5
 msgid "Set a new password for your MusicBrainz account."
-msgstr "Entrer un nouveau mot de passe pour votre compte MusicBrainz."
+msgstr "Saisir un nouveau mot de passe pour votre compte MusicBrainz."
 
 #: ../root/release_group/layout.tt:49 ../root/release_group/set_cover_art.tt:7
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/SetCoverArt.pm:19
@@ -7123,7 +7123,7 @@ msgstr "Assigner une Illustration"
 
 #: ../root/cdtoc/list.tt:45
 msgid "Set track durations"
-msgstr "Entrer la durée des pistes"
+msgstr "Saisir la durée des pistes"
 
 #: ../root/report/filter_link.tt:4
 msgid "Show all results."
