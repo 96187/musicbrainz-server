@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-22 16:37+0000\n"
+"PO-Revision-Date: 2013-11-22 19:59+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -305,7 +305,7 @@ msgstr "500 px"
 
 #: ../root/admin/edit_user.tt:18
 msgid "<abbr title=\"MusicBrainz Identifier\">MBID</abbr> submitter"
-msgstr "<abbr title=\"Identifiant MusicBrainz\">MBID</abbr>  envoyeur de données"
+msgstr "<abbr title=\"Identifiant MusicBrainz\">MBID</abbr>  envoyeur"
 
 #: ../root/edit/info.tt:48
 msgid "<em>Cancelling</em>"
@@ -1688,7 +1688,7 @@ msgid ""
 "review entered data to create the most accurate music database on the "
 "internet. If this appeals to you, please {reg|create an account} or "
 "{login_url|login}."
-msgstr "Devenez partie intégrante de MusicBrainz en créant un compte et en {how|lisant sur le processus} pour transmettre de l'information à MusicBrainz. Découvrez notre révision par des pairs afin de créer la base de données musicale la plus précise sur internet. Si ceci vous plaît {reg|créer un compte} ou {login_url|connectez-vous}."
+msgstr "Devenez partie intégrante de MusicBrainz en créant un compte et en {how|lisant sur le processus} pour envoyer de l'information à MusicBrainz. Découvrez notre révision par des pairs afin de créer la base de données musicale la plus précise sur internet. Si ceci vous plaît {reg|créer un compte} ou {login_url|connectez-vous}."
 
 #: ../root/scripts/text_strings.tt:72
 msgid "Began:"
@@ -1926,7 +1926,7 @@ msgid ""
 "CD stubs are a feature to allow anonymous users to submit data to "
 "MusicBrainz. For more information, see {cdstub|the documentation on CD "
 "stubs}."
-msgstr "Les coupons de CD sont une fonctionnalité permettant à des utilisateurs anonymes de transmettre des données à MusicBrainz. Pour plus d'information, voir {cdstub|la documentation sur les coupons de CD}."
+msgstr "Les coupons de CD sont une fonctionnalité permettant à des utilisateurs anonymes d'envoyer des données à MusicBrainz. Pour plus d'information, voir {cdstub|la documentation sur les coupons de CD}."
 
 #: ../root/account/edit_application.tt:10
 #: ../root/account/register_application.tt:35
@@ -5671,7 +5671,7 @@ msgid ""
 "Please note that any content submitted to MusicBrainz will be made available"
 " to the public under {open|open licenses}, do not submit any copyrighted "
 "text here! "
-msgstr "Notez que tout contenu transmis à MusicBrainz sera publié sous une licence {open|ouverte et libre}, ne publiez pas de texte protégé par copyright ici !"
+msgstr "Notez que tout contenu envoyés à MusicBrainz sera publié sous une licence {open|ouverte et libre}, ne publiez pas de texte protégé par copyright ici !"
 
 #: ../root/search/form.tt:49
 msgid "Please note:"
@@ -7225,7 +7225,7 @@ msgid ""
 "account. These are the applications that you have authorized to access your "
 "MusicBrainz account. If you no longer use some of the applications, you can "
 "revoke their access."
-msgstr "Certaines applications et sites Web prennent en charge l'accès aux données privées ou la transmission des celles-ci de/à MusicBrainz mais nécessitent votre permission afin d'accéder à vote compte. Voici les applications que vous avez autorisées à accéder à votre compte MusicBrainz. Si vous n'utilisez plus certaines d'entre elles, vous pouvez révoquer leur accès."
+msgstr "Certaines applications et sites Web prennent en charge l'accès aux données privées ou l'envoi de données de/à MusicBrainz mais nécessitent votre permission afin d'accéder à vote compte. Voici les applications que vous avez autorisées à accéder à votre compte MusicBrainz. Si vous n'utilisez plus certaines d'entre elles, vous pouvez révoquer leur accès."
 
 #: ../root/scripts/text_strings.tt:32
 msgid "Some artists credited with alternative names"
@@ -7606,23 +7606,23 @@ msgstr "Sujet :"
 
 #: ../root/cdstub/edit_form.tt:24
 msgid "Submit"
-msgstr "Transmettre"
+msgstr "Envoyer"
 
 #: ../root/edit/index.tt:80
 msgid "Submit note"
-msgstr "Transmettre la note"
+msgstr "Envoyer la note"
 
 #: ../root/cdtoc/lookup.tt:105
 msgid "Submit this CD using the simple method."
-msgstr "Transmettre ce CD avec la méthode simple."
+msgstr "Envoyer ce CD avec la méthode simple."
 
 #: ../root/edit/index.tt:78 ../root/edit/vote.tt:26
 msgid "Submit vote and note"
-msgstr "Transmettre le vote et la note"
+msgstr "Envoyer le vote et la note"
 
 #: ../root/edit/list.tt:102
 msgid "Submit votes &amp; edit notes"
-msgstr "Transmettre vos votes et notes de &amp; modification"
+msgstr "Envoyer vos votes et notes de &amp; modification"
 
 #: ../root/artist/layout.tt:136 ../root/collection/layout.tt:27
 #: ../root/label/layout.tt:97
@@ -7906,7 +7906,7 @@ msgstr "Les données issues de cette modification proviennent d'une ancienne ver
 msgid ""
 "The data you have submitted does not make any changes to the data already "
 "present."
-msgstr "Les données que vous avez transmises sont identiques aux données déjà présentes."
+msgstr "Les données que vous avez envoyées sont identiques aux données déjà présentes."
 
 #: ../root/tag/cloud.tt:9
 msgid "The database has no tags."
@@ -10248,7 +10248,7 @@ msgid ""
 "main MusicBrainz database until an editor decides to take your submitted "
 "information, ensures it meets our standards and inserts it into the main "
 "database."
-msgstr "Vous pouvez saisir les données du CD telles qu'elles y apparaissent sans avoir à faire partie de MusicBrainz. Les CDs saisis ainsi seront disponibles pour les programmes clients. Toutefois ces informations ne seront pas incluses dans la base de données principale de MusicBrainz tant qu'un éditeur ne les aura prises, se sera assuré quelles rencontrent nos normes et les insère dans la base de données principale."
+msgstr "Vous pouvez saisir les données du CD telles qu'elles y apparaissent sans avoir à faire partie de MusicBrainz. Les CDs saisis ainsi seront disponibles pour les programmes clients. Toutefois ces informations ne seront pas incluses dans la base de données principale de MusicBrainz tant qu'un éditeur ne les aura prises, se sera assuré quelles correspondent à nos normes et les insère dans la base de données principale."
 
 #: ../root/account/edit.tt:41
 msgid ""
@@ -11287,7 +11287,7 @@ msgstr "Utilisateur modifié avec succès."
 
 #: ../lib/MusicBrainz/Server/Controller/Artist.pm:489
 msgid "You cannot merge a special purpose artist into another artist"
-msgstr "Il n'est pas possible de fusionner un artiste spécial dans un autre artiste."
+msgstr "Il n'est pas possible de fusionner un artiste usage spécial vers un autre artiste."
 
 #: ../lib/MusicBrainz/Server/Controller/Artist.pm:494
 msgid "You cannot merge into Deleted Artist"
@@ -11441,7 +11441,7 @@ msgstr "L'ID de disque ne correspond pas à l'index lu"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:140
 msgid "Number of submitted tracks does not match track count in TOC"
-msgstr "Le nombre de piste transmises ne correspond pas au nombre de pistes dans l'index"
+msgstr "Le nombre de piste envoyées ne correspond pas au nombre de pistes dans l'index"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:144
 msgid "Invalid barcode"
@@ -11930,11 +11930,11 @@ msgstr "Afficher et modifier vos collections privées"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:81
 msgid "Submit new ISRCs to the database"
-msgstr "Transmettre de nouveaux ISRC vers la base de données"
+msgstr "Envoyer de nouveaux ISRC vers la base de données"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:82
 msgid "Submit new barcodes to the database"
-msgstr "Transmettre de nouveaux codes-barres vers la base de données"
+msgstr "Envoyer de nouveaux codes-barres vers la base de données"
 
 #: ../lib/MusicBrainz/Server/FilterUtils.pm:25
 msgid "Filter release groups"
@@ -12296,7 +12296,7 @@ msgstr "Une semaine"
 
 #: ../lib/MusicBrainz/Server/Form/User/WatchPreferences.pm:37
 msgid "2 weeks"
-msgstr "2 Semaines"
+msgstr "2 semaines"
 
 #: ../lib/MusicBrainz/Server/Form/User/WatchPreferences.pm:38
 msgid "A month"
@@ -12337,7 +12337,7 @@ msgid ""
 "A single typically has one main song and possibly a handful of additional "
 "tracks or remixes of the main track. A single is usually named after its "
 "main song."
-msgstr "Un single est typiquement constitué d'une chanson principale parfois accompagné de pistes additionnelles ou de remix de la principale. Un single est habituellement nommé au nom de la chanson principale."
+msgstr "Un simple est typiquement constitué d'une chanson principale parfois accompagnée de pistes additionnelles ou de remix de la principale. Un simple porte habituellement le nom de la chanson principale."
 
 #: ../lib/MusicBrainz/Server/Release.pm:60
 msgid ""
@@ -12355,7 +12355,7 @@ msgstr "Une compilation est une collection de pistes déjà parues, par un ou pl
 msgid ""
 "A soundtrack is the musical score to a movie, TV series, stage show, "
 "computer game etc."
-msgstr "Une bande originale est la musique d'un film, d'une série TV, d'une pièce de théâtre, d'un jeu vidéo etc."
+msgstr "Une bande originale est la musique d'un film, d'une série TV, d'un spectacle sur scène, d'un jeu vidéo etc..."
 
 #: ../lib/MusicBrainz/Server/Release.pm:63
 msgid "Non-music spoken word releases."
