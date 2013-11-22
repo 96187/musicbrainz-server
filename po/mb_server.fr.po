@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-21 19:01+0000\n"
+"PO-Revision-Date: 2013-11-22 15:20+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -3357,7 +3357,7 @@ msgstr "Exemples :"
 
 #: ../root/release/edit/tracklist.tt:166
 msgid "Existing tracklist"
-msgstr "Liste de piste existante"
+msgstr "Liste de pistes existante"
 
 #: ../root/release/edit/tracklist.tt:242
 msgid "Expand"
@@ -5272,7 +5272,7 @@ msgstr "Chargement de la liste des enregistrements associés..."
 
 #: ../root/release/edit/tracklist.tt:279 ../root/release/edit/tracklist.tt:401
 msgid "Now loading tracklist..."
-msgstr "Chargement de la liste des pistes ..."
+msgstr "Chargement de la liste de pistes ..."
 
 #: ../root/oauth2/authorize.tt:1 ../root/oauth2/oob.tt:1
 msgid "OAuth Authorization"
@@ -7110,7 +7110,7 @@ msgstr "Assigner une Illustration de groupe de parution"
 
 #: ../root/cdtoc/set_durations.tt:1 ../root/cdtoc/set_durations.tt:2
 msgid "Set Tracklist Durations"
-msgstr "Modifier la durée des pistes"
+msgstr "Modifier la durée des listes de pistes"
 
 #: ../root/account/reset_password.tt:5
 msgid "Set a new password for your MusicBrainz account."
@@ -8025,7 +8025,7 @@ msgid ""
 "The tracklist found looks like it may have different artists on some tracks."
 " If the below display looks correct, you should import this release as a "
 "release with multiple artists."
-msgstr "La liste des pistes trouvée semble avoir plusieurs artistes sur certaines pistes. Si cela semble correct, vous devriez importe cette parution en tant que parution à plusieurs artistes."
+msgstr "La liste de pistes trouvée semble avoir plusieurs artistes sur certaines pistes. Si cela semble correct, vous devriez importe cette parution en tant que parution à plusieurs artistes."
 
 #: ../root/taglookup/nag.tt:4
 msgid "The users make MusicBrainz happen and we appreciate your help!"
@@ -8479,7 +8479,7 @@ msgstr "Ce lieu n'a pas de tag."
 #: ../root/recording/delete.tt:18
 msgid ""
 "This recording cannot be removed because it is still on use in tracklists."
-msgstr "Cet enregistrement ne peut pas être enlevé car il est utilisé dans une liste de pistes."
+msgstr "Cet enregistrement ne peut pas être enlevé car il est encore utilisé dans des listes de pistes."
 
 #: ../root/recording/fingerprints.tt:46
 msgid "This recording does not have any associated AcoustIDs"
@@ -8559,7 +8559,7 @@ msgid ""
 "separate real release. It should not be used to denote bootlegs, "
 "mixtape/street albums, demos, or digital albums. Be sure to link to the "
 "corresponding real release with the {url|transl(iter)ation relationship}."
-msgstr "Ce statut de parution devrait être utilisé pour les traductions et translittérations non officielles des listes de piste et des titres de parution, et n'indique pas une vraie parution séparée. Il ne devrait pas être utilisé pour indiquer les contrebandes, albums « mixtapes/street », démos ou albums numériques. Assurez-vous de faire le lien vers la vraie parution correspondante avec la {url|relation de translittération}."
+msgstr "Ce statut de parution devrait être utilisé pour les traductions et translittérations non officielles de listes de piste et de titres de parution, et n'indique pas une vraie parution séparée. Il ne devrait pas être utilisé pour indiquer les contrebandes, albums « mixtapes/street », démos ou albums numériques. Assurez-vous de faire le lien vers la vraie parution correspondante avec la {url|relation de translittération}."
 
 #: ../root/report/duplicate_artists.tt:6
 msgid ""
@@ -8734,7 +8734,7 @@ msgid ""
 " barcode, you can also search Amazon for it and see which ASIN matches. You "
 "might also find some ASINs linked to several discs of a multi-disc release: "
 "just merge those (see {how_to_merge_releases|How to Merge Releases})."
-msgstr "Ce rapport montre les URLs d'Amazon qui sont reliées à plusieurs parutions. Dans la plupart des cas les ASIN d'Amazon devrait mapper 1:1 vers des parutions MusicBrainz afin que seul un des liens soit correct. Vérifier quelle parution MusicBrainz convient avec la parution d'Amazon (regarder le format, liste des pistes, etc....) Si la parution a une code-barres vous pouvez le rechercher dans Amazon et voir quel ASIN concorde. Certains ASIN peuvent être reliés à plusieurs disques d'une parution multi-disques : fusionnez-lez (voir {how_to_merge_releases|Comment fusionner des parutions})."
+msgstr "Ce rapport montre les URLs d'Amazon qui sont reliées à plusieurs parutions. Dans la plupart des cas les ASIN d'Amazon devrait mapper 1:1 vers des parutions MusicBrainz afin que seul un des liens soit correct. Vérifier quelle parution MusicBrainz convient avec la parution d'Amazon (regarder le format, liste de pistes, etc....) Si la parution a une code-barres vous pouvez le rechercher dans Amazon et voir quel ASIN concorde. Certains ASIN peuvent être reliés à plusieurs disques d'une parution multi-disques : fusionnez-lez (voir {how_to_merge_releases|Comment fusionner des parutions})."
 
 #: ../root/report/discogs_links_with_multiple_artists.tt:6
 msgid "This report shows Discogs URLs which are linked to multiple artists."
@@ -8758,7 +8758,7 @@ msgid ""
 "etc.). You might also find some Discogs URLs linked to several discs of a "
 "multi-disc release: just merge those (see {how_to_merge_releases|How to "
 "Merge Releases})."
-msgstr "Ce rapport montre les URLs Discogs qui sont reliées à plusieurs parutions. Dans la plupart des cas les parutions Discogs devrait mapper 1:1 vers MusicBrainz. Ainsi seul un des lien sera correct. Vérifier quelle parution MusicBrainz concorde avec la parution Discogs (regarder le format, la liste des pistes, pays de parution, etc...). Vous pourriez aussi trouver des URLs Discogs reliées à plusieurs disques d'une parution multi-disques : fusionnez-les (see {how_to_merge_releases|Comment fusionner des parutions})."
+msgstr "Ce rapport montre les URLs Discogs qui sont reliées à plusieurs parutions. Dans la plupart des cas les parutions Discogs devrait mapper 1:1 vers MusicBrainz. Ainsi seul un des lien sera correct. Vérifier quelle parution MusicBrainz concorde avec la parution Discogs (regarder le format, la liste de pistes, pays de parution, etc...). Vous pourriez aussi trouver des URLs Discogs reliées à plusieurs disques d'une parution multi-disques : fusionnez-les (see {how_to_merge_releases|Comment fusionner des parutions})."
 
 #: ../root/report/recordings_with_earliest_release_relationships.tt:6
 msgid ""
@@ -9035,7 +9035,7 @@ msgstr "Pour naviguer, choisissez une lettre ci-dessus."
 msgid ""
 "To create a new tracklist, use an existing tracklist or import a disc from a"
 " CD stub or FreeDB, select the appropriate tab."
-msgstr "Afin de créer une nouvelle liste des pistes, en utiliser une existante ou importer à partir d'un coupon de CD, sélectionner l'onglet approprié."
+msgstr "Afin de créer une nouvelle liste des pistes, en utiliser une existante ou importer un disque à partir d'un coupon de CD ou de FreeDB, sélectionner l'onglet approprié."
 
 #: ../root/release/edit/information.tt:50
 msgid "To edit types, please edit the release group."
@@ -9215,13 +9215,13 @@ msgstr "Piste :"
 #: ../root/release/edit/recordings.tt:258 ../root/release/index.tt:25
 #: ../lib/MusicBrainz/Server/Wizard/ReleaseEditor.pm:61
 msgid "Tracklist"
-msgstr "Liste des pistes"
+msgstr "Liste de pistes"
 
 #: ../root/edit/details/add_medium.tt:32
 #: ../root/edit/details/edit_medium.tt:43
 #: ../root/edit/details/remove_medium.tt:17
 msgid "Tracklist:"
-msgstr "Liste des pistes : "
+msgstr "Liste de pistes : "
 
 #: ../root/collection/index.tt:20 ../root/otherlookup/results-release.tt:9
 #: ../root/release/discids.tt:9 ../root/release_group/index.tt:25
@@ -10734,7 +10734,7 @@ msgstr "envoyer un courriel"
 
 #: ../root/cdtoc/attach_list.tt:31
 msgid "show tracklist"
-msgstr "montrer la liste des pistes"
+msgstr "montrer la liste de pistes"
 
 #: ../root/browse/page_selector.tt:43
 msgid "space"
@@ -12172,7 +12172,7 @@ msgstr "La piste {pos} a une durée inférieure ou égale à 0 seconde"
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:160
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:203
 msgid "A tracklist is required"
-msgstr "La liste des pistes est obligatoire"
+msgstr "Une liste de pistes est obligatoire"
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:169
 #, perl-brace-format
