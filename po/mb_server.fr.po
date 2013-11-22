@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-22 21:08+0000\n"
+"PO-Revision-Date: 2013-11-22 22:59+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -1836,7 +1836,7 @@ msgstr "Parcourir les artistes"
 
 #: ../root/browse/page_selector.tt:17
 msgid "Browse further"
-msgstr "Voir la suite"
+msgstr "Parcourir encore"
 
 #: ../root/browse/index.tt:6 ../root/search/index.tt:6
 msgid "Browse labels"
@@ -1866,7 +1866,7 @@ msgstr "Parcourir les œuvres"
 
 #: ../root/layout.tt:160
 msgid "Bug Tracker"
-msgstr "Suivi des bugs"
+msgstr "Gestionnaire  de bogues"
 
 #: ../root/release/lookup.tt:1
 msgid "CD Lookup"
@@ -2034,7 +2034,7 @@ msgstr "No dans le catalogue "
 #: ../root/release/edit/recordings.tt:213
 #: ../root/release/edit/recordings.tt:330 ../root/scripts/text_strings.tt:28
 msgid "Change"
-msgstr "Modifier"
+msgstr "Changer"
 
 #: ../root/account/change_password.tt:1 ../root/account/change_password.tt:3
 #: ../root/account/change_password.tt:27 ../root/layout/menu.tt:37
@@ -2067,11 +2067,11 @@ msgstr "Modifier la qualité de la parution"
 #: ../root/edit/details/add_work_annotation.tt:7
 #: ../root/edit/details/historic/add_release_annotation.tt:19
 msgid "Changelog:"
-msgstr "Historique des modifications :"
+msgstr "Journal des changements :"
 
 #: ../root/cdtoc/set_durations.tt:15 ../root/edit/index.tt:12
 msgid "Changes"
-msgstr "Modifications"
+msgstr "Changements"
 
 #: ../root/doc/relationship_type.tt:32
 #: ../root/edit/details/add_relationship_attribute.tt:11
@@ -2081,7 +2081,7 @@ msgstr "Modifications"
 #: ../root/relationship/linktype/form.tt:7
 #: ../root/relationship/linktype/tree.tt:10
 msgid "Child order:"
-msgstr "Ordre des fils :"
+msgstr "Ordre des enfants :"
 
 #: ../root/release/cover_art_uploader.tt:16
 msgid "Choose file:"
@@ -2113,7 +2113,7 @@ msgstr "Effacer le groupe de parution"
 
 #: ../root/scripts/text_strings.tt:90
 msgid "Clear work"
-msgstr "Effacer le travail"
+msgstr "Effacer l’œuvre"
 
 #: ../root/release/edit/recordings.tt:377
 msgid "Click Edit to edit the recording associations for this disc."
@@ -2167,7 +2167,7 @@ msgstr "Collaborateur"
 
 #: ../root/release/edit/tracklist.tt:353
 msgid "Collapse Disc"
-msgstr "Fermer le disque"
+msgstr "Réduire le disque"
 
 #: ../root/relationship/linktype/tree.tt:55
 msgid "Collapse all descriptions"
@@ -2263,7 +2263,7 @@ msgstr "Confirmer votre mot de passe :"
 msgid ""
 "Congratulations, your new account has been created and you are now logged "
 "into MusicBrainz!"
-msgstr "Félicitations, votre nouveau compte vient d'être créé et vous êtes maintenant connecté sur MusicBrainz !"
+msgstr "Félicitations, votre nouveau compte a été créé et vous êtes maintenant connecté à MusicBrainz !"
 
 #: ../root/layout/menu.tt:279
 msgid "Contact Us"
@@ -2292,7 +2292,7 @@ msgstr "Copier le nom"
 
 #: ../root/release/edit/recordings.tt:403
 msgid "Copy all track changes to associated recordings."
-msgstr "Copier toutes les pistes modifiées sur les enregistrements associés."
+msgstr "Copier toutes les changements de piste  vers les enregistrements associés."
 
 #: ../root/cdtoc/attach_artist_releases.tt:36
 #: ../root/cdtoc/attach_filter_release.tt:50 ../root/collection/index.tt:22
@@ -2386,7 +2386,7 @@ msgstr "Créer une oeuvre"
 
 #: ../root/edit/search_macros.tt:307
 msgid "Created"
-msgstr "Créés"
+msgstr "Créé"
 
 #: ../root/release/add_cover_art.tt:58
 msgid "Creating edit..."
@@ -2404,7 +2404,7 @@ msgstr "JJ"
 
 #: ../root/layout/menu.tt:121
 msgid "Data Licenses"
-msgstr "Licence des données"
+msgstr "Licence de données"
 
 #: ../root/doc/edit_type.tt:50
 msgid "Data Quality"
@@ -2579,7 +2579,7 @@ msgstr "Recherche directe dans la base de données"
 #: ../root/release/edit_relationships.tt:192
 #: ../root/release_group/edit_form.tt:9 ../root/work/edit_form.tt:8
 msgid "Disambiguation:"
-msgstr "Désambiguation :"
+msgstr "Homonymie :"
 
 #: ../root/release/discids.tt:8
 msgid "Disc ID"
@@ -2587,7 +2587,7 @@ msgstr "ID de disque"
 
 #: ../root/cdstub/index.tt:10
 msgid "Disc ID information"
-msgstr "ID d'information du disque"
+msgstr "Informations sur l'ID de disque"
 
 #: ../root/cdtoc/index.tt:3
 msgid "Disc ID “<code>{discid}</code>”"
@@ -2610,7 +2610,7 @@ msgstr "ID de disque :"
 
 #: ../root/release/discids.tt:3 ../root/release/tabs.tt:1
 msgid "Disc IDs"
-msgstr "IDs de disque"
+msgstr "ID de disque"
 
 #: ../root/report/superfluous_data_tracks.tt:1
 msgid "Disc IDs with superfluous data tracks"
@@ -2730,7 +2730,7 @@ msgstr "Don"
 #: ../root/account/donation.tt:1 ../root/account/donation.tt:3
 #: ../root/user/profile/layout.tt:33
 msgid "Donation Check"
-msgstr "Vérifier mon don"
+msgstr "Vérification de don"
 
 #: ../root/release/edit_relationships.tt:172
 #: ../root/scripts/text_strings.tt:29
@@ -3171,7 +3171,7 @@ msgstr "Emphase :"
 
 #: ../root/release/edit/tracklist.tt:188
 msgid "Enable vinyl track numbers"
-msgstr "Activer les numéros de pistes du vinyl"
+msgstr "Activer les numéros de pistes du vinyle"
 
 #: ../root/components/forms.tt:13
 msgid "Enable {autoed|auto-editor} privileges for this edit."
@@ -4456,7 +4456,7 @@ msgstr "Recherche de CD"
 
 #: ../root/cdstub/browse.tt:10
 msgid "Lookup count"
-msgstr "Nombre de recherche"
+msgstr "Comptage des recherches"
 
 #: ../root/cdstub/layout.tt:12
 msgid "Lookup count:"
