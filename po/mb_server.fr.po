@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-22 19:59+0000\n"
+"PO-Revision-Date: 2013-11-22 21:00+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -50,7 +50,7 @@ msgstr "\"C\" est un chiffre de contrôle, unique."
 
 #: ../root/components/forms.tt:276
 msgid "\"CC\" is the appropriate for the registrant two-character country code."
-msgstr "« CC » doit être utilisé pour le code à 2 caractères du pays d'enregistrement."
+msgstr "« CC » est approprié pour le code d'inscription à 2 caractères du pays d'enregistrement."
 
 #: ../root/components/forms.tt:262
 msgid "\"DDD\" is a nine digit work identifier."
@@ -60,17 +60,17 @@ msgstr "\"DDDD\" est l'identifiant à 9 chiffres d'un travail"
 msgid ""
 "\"NNNNN\" is a unique 5-digit number identifying the particular sound "
 "recording."
-msgstr "« NNNNN » est un numéro unique à 5 chiffres identifiant un enregistrement particulier d'une œuvre."
+msgstr "« NNNNN » est un numéro unique à 5 chiffres identifiant l'enregistrement sonore particulier."
 
 #: ../root/components/forms.tt:277
 msgid ""
 "\"XXX\" is a three character alphanumeric registrant code, uniquely "
 "identifying the organisation which registered the code."
-msgstr "« XXX » est un code alphanumérique à 3 caractères identifiant de manière unique l'organisation qui a enregistré le code."
+msgstr "« XXX » est un code d'inscription alphanumérique à 3 caractères identifiant de manière unique l'organisation qui a enregistré le code."
 
 #: ../root/components/forms.tt:278
 msgid "\"YY\" is the last two digits of the year of registration."
-msgstr "« YY » sont les 2 derniers chiffres de l'année d'enregistrement."
+msgstr "« YY » sont les 2 derniers chiffres de l'année d'inscription."
 
 #: ../root/cdstub/cdstub.tt:4 ../root/edit/details/add_medium.tt:49
 #: ../root/edit/details/edit_medium.tt:52
@@ -81,7 +81,7 @@ msgstr "« YY » sont les 2 derniers chiffres de l'année d'enregistrement."
 #: ../root/freedb/show.tt:62 ../root/recording/index.tt:9
 #: ../root/release/edit/tracklist.tt:258 ../root/release/edit/tracklist.tt:410
 msgid "#"
-msgstr "#"
+msgstr "no"
 
 #: ../root/doc/edit_type.tt:78 ../root/doc/edit_type.tt:81
 msgid "&#10004;"
@@ -148,7 +148,7 @@ msgstr "(Aucun détail disponible sur cette erreur)"
 #: ../root/release/edit/recordings.tt:210
 #: ../root/release/edit/recordings.tt:324
 msgid "(add a new recording)"
-msgstr "(ajout d'un nouve enregistrement)"
+msgstr "(ajouter un nouvel enregistrement)"
 
 #: ../root/edit/details/add_release_annotation.tt:17
 msgid "(click here to display annotation)"
@@ -177,7 +177,7 @@ msgstr "(nouveau groupe de parution)"
 #: ../root/edit/details/add_release_group_annotation.tt:10
 #: ../root/edit/details/add_work_annotation.tt:10
 msgid "(no changelog)"
-msgstr "(pas de log de changement)"
+msgstr "(pas de journal des changements)"
 
 #: ../root/release/add_cover_art.tt:111
 msgid "(no other cover art)"
@@ -285,11 +285,11 @@ msgstr[1] "{n} votes unanimes"
 
 #: ../root/user/profile.tt:234 ../root/user/profile.tt:238
 msgid "100%"
-msgstr "100%"
+msgstr "100 %"
 
 #: ../root/elections/show.tt:17
 msgid "1st seconder:"
-msgstr "1er soutien :"
+msgstr "1er appuyeur :"
 
 #: ../root/components/common-macros.tt:117
 msgid "250px"
@@ -297,7 +297,7 @@ msgstr "250 px"
 
 #: ../root/elections/show.tt:20
 msgid "2nd seconder:"
-msgstr "2ème soutien :"
+msgstr "2ème appuyeur :"
 
 #: ../root/components/common-macros.tt:118
 msgid "500px"
@@ -309,11 +309,11 @@ msgstr "<abbr title=\"Identifiant MusicBrainz\">MBID</abbr>  envoyeur"
 
 #: ../root/edit/info.tt:48
 msgid "<em>Cancelling</em>"
-msgstr "<em>Annulation</em>"
+msgstr "<em>Annulation en cours</em>"
 
 #: ../root/annotation/history.tt:31
 msgid "<em>no changelog specified</em>"
-msgstr "<em>aucun journal n'a été sélectionné</em>"
+msgstr "<em>aucun journal des changements n'a été sélectionné</em>"
 
 #: ../root/edit/edit_header.tt:60
 msgid "<strong>Approved:</strong> {date}"
@@ -955,7 +955,7 @@ msgstr "Déjà expiré"
 
 #: ../root/release/edit/recordings.tt:363
 msgid "Also update the recording with track changes"
-msgstr "Met aussi à jour les enregistrements en même temps que les pistes"
+msgstr "Met aussi à jour les enregistrements avec les changements de piste"
 
 #: ../root/search/results-area.tt:44
 msgid "Alternatively, you may {uri|add a new area}."
@@ -967,7 +967,7 @@ msgstr "Sinon, vous pouvez {uri|ajouter un nouvel artiste}."
 
 #: ../root/search/results-label.tt:45
 msgid "Alternatively, you may {uri|add a new label}."
-msgstr "Sinon, vous pouvez {uri|créer un label}."
+msgstr "Sinon, vous pouvez {uri|ajouter un nouveau label}."
 
 #: ../root/search/results-place.tt:43
 msgid "Alternatively, you may {uri|add a new place}."
@@ -975,7 +975,7 @@ msgstr "Vous pouvez également {uri|ajouter un nouveau lieu}."
 
 #: ../root/search/results-recording.tt:5
 msgid "Alternatively, you may {uri|add a new recording}."
-msgstr "Sinon, vous pouvez {uri|créer un enregistrement}."
+msgstr "Sinon, vous pouvez {uri|ajouter un nouvel enregistrement}."
 
 #: ../root/search/results-release_group.tt:28
 #: ../root/search/results-release-group.tt:28
@@ -988,7 +988,7 @@ msgstr "Par ailleurs vous pouvez {uri|ajouter une nouvelle parution}."
 
 #: ../root/search/results-work.tt:61
 msgid "Alternatively, you may {uri|add a new work}."
-msgstr "Sinon, vous pouvez {uri|créer un travail}."
+msgstr "Sinon, vous pouvez {uri|ajouter une nouvelle œuvre}."
 
 #: ../root/report/asins_with_multiple_releases.tt:1
 #: ../root/report/asins_with_multiple_releases.tt:3
@@ -1052,7 +1052,7 @@ msgstr "Format des annotations"
 #: ../root/release_group/annotation_diff.tt:1
 #: ../root/work/annotation_diff.tt:1
 msgid "Annotation comparison"
-msgstr "Comparaison des annotations"
+msgstr "Comparaison d'annotations"
 
 #: ../root/area/annotation_history.tt:1 ../root/area/annotation_history.tt:2
 #: ../root/artist/annotation_history.tt:9
@@ -1075,7 +1075,7 @@ msgstr "Annotation modifiée le {date} par {user}."
 
 #: ../root/annotation/common.tt:34
 msgid "Annotation last modified on {date}."
-msgstr "Annotation modifiée le {date}."
+msgstr "Annotation modifiée en dernier le {date}."
 
 #: ../root/annotation/edit.tt:15 ../root/release/edit/information.tt:145
 msgid "Annotation:"
@@ -1379,7 +1379,7 @@ msgstr "Nom de l'artiste :"
 
 #: ../root/user/ratings_summary.tt:3 ../root/user/ratings.tt:2
 msgid "Artist ratings"
-msgstr "Évaluations des artistes"
+msgstr "Évaluations de l'artiste"
 
 #: ../root/cdstub/edit_form.tt:19
 msgid "Artist {n}:"
@@ -1482,7 +1482,7 @@ msgstr "Artistes avec relations dupliquées possibles"
 
 #: ../root/recording/fingerprints.tt:3
 msgid "Associated AcoustIDs"
-msgstr "AcoustID associé"
+msgstr "AcoustID associée"
 
 #: ../root/isrc/index.tt:5
 msgid "Associated with {num} recording"
@@ -1515,7 +1515,7 @@ msgstr "Attacher un index de CD"
 
 #: ../root/cdtoc/lookup.tt:52
 msgid "Attach Disc ID"
-msgstr "ID de disque attaché"
+msgstr "Rattacher une ID de disque"
 
 #: ../root/cdtoc/index.tt:7
 msgid "Attached to releases"
@@ -1582,11 +1582,11 @@ msgstr "Modifications par auto-éditeur"
 
 #: ../root/account/preferences.tt:43
 msgid "Automatically subscribe me to artists I create."
-msgstr "Abonne-moi automatiquement aux artistes que je crée."
+msgstr "Abonnez-moi automatiquement aux artistes que je crée."
 
 #: ../root/account/preferences.tt:45
 msgid "Automatically subscribe me to labels I create."
-msgstr "Abonne-moi automatiquement aux labels que je crée."
+msgstr "Abonnez-moi automatiquement aux labels que je crée."
 
 #: ../root/browse/page_selector.tt:54
 msgid "Back"
@@ -1598,7 +1598,7 @@ msgstr "Revenir à la liste de toutes les élections."
 
 #: ../root/elections/show.tt:5
 msgid "Back to elections"
-msgstr "Revenir à la liste des élections"
+msgstr "Revenir aux élections"
 
 #: ../root/report/bad_amazon_urls.tt:1 ../root/report/bad_amazon_urls.tt:3
 msgid "Bad Amazon URLs"
@@ -1656,7 +1656,7 @@ msgstr "Création par lot de nouvelles oeuvres"
 #: ../root/artist/subscribers.tt:30 ../root/collection/subscribers.tt:30
 #: ../root/label/subscribers.tt:30 ../root/user/subscribers.tt:35
 msgid "Be the first! {sub|Subscribe}?"
-msgstr "Soyez le premier ! {sub|Je m'abonne} ?"
+msgstr "Soyez le premier ! {sub|Abonnez-vous} ?"
 
 #: ../root/annotation/edit.tt:60
 msgid ""
@@ -1679,7 +1679,7 @@ msgstr "Vous nous avez fourni une adresse courriel. Un courriel de confirmation 
 msgid ""
 "Become a part of our <strong>global community</strong> and <strong>start "
 "contributing!</strong>"
-msgstr "Devenez membre de notre <strong>communauté internationale</strong> et <strong>commencez à contribuer !</strong>"
+msgstr "Devenez membre de notre <strong>communauté mondiale</strong> et <strong>commencez à contribuer !</strong>"
 
 #: ../root/cdtoc/lookup.tt:90
 msgid ""
@@ -1692,7 +1692,7 @@ msgstr "Devenez partie intégrante de MusicBrainz en créant un compte et en {ho
 
 #: ../root/scripts/text_strings.tt:72
 msgid "Began:"
-msgstr "Commence par :"
+msgstr "A commencé par :"
 
 #: ../root/edit/details/merge_places.tt:12
 #: ../root/edit/details/merge_places.tt:49 ../root/place/merge.tt:15
@@ -1755,14 +1755,14 @@ msgstr "Guide du débutant"
 
 #: ../root/main/index.tt:20
 msgid "Beginners guide"
-msgstr "Guide du débutant"
+msgstr "Guide des débutants"
 
 #: ../root/search/error/internal-error.tt:6
 msgid ""
 "Below is the error information. If you wish to file a bug report, you may do"
 " so at {bugs|our bug tracker}. The below information will help, so please be"
 " sure to include it!"
-msgstr "Vous trouverez ci-dessous des informations sur l'erreur. Si vous souhaitez remplir un rapport de bug, vous pouvez le faire sur {bugs|notre outil de suivi}. Les informations ci-dessous nous seront utile, n'oubliez pas de les recopier !"
+msgstr "Informations sur l'erreur ci-dessous. Si vous souhaitez remplir un rapport de bogue, vous pouvez le faire avec {bugs|notre gestionnaire de bogues}. Les informations ci-dessous nous seront utile, n'oubliez pas de les recopier !"
 
 #: ../root/account/edit.tt:51 ../root/admin/edit_user.tt:36
 #: ../root/user/profile.tt:113
@@ -3361,11 +3361,11 @@ msgstr "Liste de pistes existante"
 
 #: ../root/release/edit/tracklist.tt:242
 msgid "Expand"
-msgstr "Étendre"
+msgstr "Développer"
 
 #: ../root/release/edit/tracklist.tt:351
 msgid "Expand Disc"
-msgstr "Étendre le disque"
+msgstr "Développer le disque"
 
 #: ../root/relationship/linktype/tree.tt:54
 msgid "Expand all descriptions"
@@ -3373,7 +3373,7 @@ msgstr "Étendre toutes les descriptions "
 
 #: ../root/doc/edit_type.tt:65
 msgid "Expire action"
-msgstr "Expirer l'action"
+msgstr "Faire expirer l'action"
 
 #: ../root/edit/search_macros.tt:307
 msgid "Expired"
@@ -3490,25 +3490,25 @@ msgstr "Forums"
 #: ../root/relationship/linktype/form.tt:13
 #: ../root/relationship/linktype/tree.tt:12
 msgid "Forward link phrase:"
-msgstr "Texte du lien :"
+msgstr "Phrase du lien en avant :"
 
 #: ../root/doc/bare_error.tt:17 ../root/doc/error.tt:23
 msgid ""
 "Found a broken link on our site? Please let us know by {report|reporting a "
 "bug}."
-msgstr "Vous avez trouvé un lien incorrect sur notre site ? Dites-le nous en {report|signalant un bug}."
+msgstr "Vous avez trouvé un lien brisé sur notre site ? Dites-le nous en {report|signalant un bogue}."
 
 #: ../root/main/404.tt:24
 msgid ""
 "Found a broken link on our site? Please {report|report a bug} and include "
 "any error message that is shown above."
-msgstr "Vous avez trouvé un lien incorrect sur notre site ? Dites-le nous en {report|signalant un bug}, et en indiquant le message d'erreur ci-dessus."
+msgstr "Vous avez trouvé un lien brisé sur notre site ? Dites-le nous en {report|signalant un bogue} et en indiquant le message d'erreur ci-dessus."
 
 #: ../root/main/400.tt:24
 msgid ""
 "Found a problem on our site? Please {report|report a bug} and include any "
 "error message that is shown above."
-msgstr "Vous avez trouvé un problème sur notre site ? Dites-le nous en {report|signalant un bug}, et en indiquant le message d'erreur ci-dessus."
+msgstr "Vous avez trouvé un problème sur notre site ? Dites-le nous en {report|signalant un bogue} et en indiquant le message d'erreur ci-dessus."
 
 #: ../root/edit/list.tt:58
 msgid "Found at least {n} edit"
@@ -3519,8 +3519,8 @@ msgstr[1] "Au moins {n} modifications de trouvées"
 #: ../root/release/sidebar.tt:141
 msgid "Found in {num} user collection"
 msgid_plural "Found in {num} user collections"
-msgstr[0] "Trouvé dans {num} collection utilisateurs"
-msgstr[1] "Trouvé dans {num} collections utilisateurs"
+msgstr[0] "Trouvé dans {num} collection d'utilisateurs"
+msgstr[1] "Trouvé dans {num} collections d'utilisateurs"
 
 #: ../root/release/lookup.tt:4
 msgid "Found more than one match for the CD with TOC {toc}: "
@@ -3684,7 +3684,7 @@ msgstr "Deviner la casse du titre du disque"
 
 #: ../root/release/edit/tracklist.tt:324
 msgid "Guess case track"
-msgstr "Deviner la casse pour la piste"
+msgstr "Deviner la casse de la piste"
 
 #: ../root/doc/relationship_type.tt:63
 msgid "Guidelines"
@@ -4017,7 +4017,7 @@ msgstr "Si vous souhaitez participer au processus d'édition mais que vous ne sa
 msgid ""
 "If you're interested in receiving information from MusicBrainz staff or "
 "communicating with other users, {ml|please subscribe to our mailing lists}."
-msgstr "Si vous souhaitez recevoir des informations (en anglais) de l'équipe de MusicBrainz, ou communiquer avec les autres utilisateurs, {ml|inscrivez-vous à nos listes de discussions}."
+msgstr "Si vous souhaitez recevoir des informations (en anglais) de l'équipe de MusicBrainz, ou communiquer avec d'autres utilisateurs, {ml|inscrivez-vous à nos listes de discussions}."
 
 #: ../root/components/common-macros.tt:102
 msgid "Image not available yet, please try again in a few minutes."
@@ -4073,7 +4073,7 @@ msgstr "Recherche dans l'index avec {doc|la syntaxe de recherche avancée}"
 
 #: ../root/release/edit/recordings.tt:399
 msgid "Infer track durations from associated recordings"
-msgstr "Recopier la durée des enregistrements dans les pistes"
+msgstr "Déduire la durée des pistes à partir des enregistrements associés"
 
 #: ../root/account/applications.tt:69
 msgid "Installed Application"
@@ -4091,7 +4091,7 @@ msgstr "Langue de l'interface :"
 
 #: ../root/main/500.tt:1 ../root/main/500.tt:3
 msgid "Internal Server Error"
-msgstr "Erreur Interne sur le Serveur"
+msgstr "Erreur Interne sur le serveur"
 
 #: ../root/user/profile.tt:45
 msgid "Internal/Bot"
@@ -4277,7 +4277,7 @@ msgstr "Les 28 derniers jours"
 
 #: ../root/cdstub/layout.tt:10
 msgid "Last modified:"
-msgstr "Date de dernière modification :"
+msgstr "Modifier en dernier :"
 
 #: ../root/layout.tt:167
 msgid "Last replication packet received at {datetime}"
@@ -4285,14 +4285,14 @@ msgstr "Dernier paquet de réplication reçu à {datetime}"
 
 #: ../root/layout/sidebar/sidebar-lastupdate.tt:2
 msgid "Last updated on {date}"
-msgstr "Modifié le {date}"
+msgstr "Modifié en dernier le {date}"
 
 #: ../root/area/details.tt:17 ../root/artist/details.tt:17
 #: ../root/label/details.tt:17 ../root/place/details.tt:17
 #: ../root/recording/details.tt:17 ../root/release/details.tt:17
 #: ../root/release_group/details.tt:17 ../root/work/details.tt:17
 msgid "Last updated:"
-msgstr "Date de dernière modification :"
+msgstr "Mis à jour en dernier :"
 
 #: ../root/search/results-layout.tt:6
 msgid "Last updated: {date}"
@@ -4312,7 +4312,7 @@ msgstr "Derniers billets :"
 #: ../root/release/index.tt:59 ../root/report/isrc_with_many_recordings.tt:26
 #: ../root/search/lib/inline-results-recording.tt:9
 msgid "Length"
-msgstr "Longueur"
+msgstr "Durée"
 
 #: ../root/edit/details/add_standalone_recording.tt:28
 #: ../root/edit/details/add_track_kv.tt:7
@@ -4321,7 +4321,7 @@ msgstr "Longueur"
 #: ../root/recording/edit_form.tt:10 ../root/recording/layout.tt:11
 #: ../root/release/index.tt:18 ../root/release/sidebar.tt:29
 msgid "Length:"
-msgstr "Longueur :"
+msgstr "Durée :"
 
 #: ../root/layout/sidebar/sidebar-licenses.tt:19
 msgid "License"
@@ -4345,7 +4345,7 @@ msgstr "Lien"
 #: ../root/edit/details/add_relationship_type.tt:13
 #: ../root/edit/details/edit_relationship_type.tt:21
 msgid "Link phrase:"
-msgstr "Texte du lien :"
+msgstr "Phrase de lien :"
 
 #: ../root/doc/relationship_type.tt:37
 msgid "Link phrases"
@@ -5401,7 +5401,7 @@ msgstr "Ouvrir dans le marqueur"
 
 #: ../root/edit/info.tt:40
 msgid "Opened:"
-msgstr "Ouverts : "
+msgstr "Ouvert : "
 
 #: ../root/release/edit/recordings.tt:396
 #: ../root/release/edit/tracklist.tt:150 ../root/release/edit/tracklist.tt:179
@@ -5426,7 +5426,7 @@ msgstr "Autres recherches"
 
 #: ../root/user/profile.tt:204
 msgid "Overall"
-msgstr "Au-delà"
+msgstr "Global"
 
 #: ../root/area/header.tt:1 ../root/artist/header.tt:1
 #: ../root/cdstub/header.tt:9 ../root/collection/header.tt:1
@@ -5469,11 +5469,11 @@ msgstr "Page enlevée"
 
 #: ../root/components/paginator.tt:29
 msgid "Page {cur} of at least {total}"
-msgstr "Page {cur} sur au moins {total}"
+msgstr "Page {cur} d'au moins {total}"
 
 #: ../root/components/paginator.tt:31
 msgid "Page {cur} of {total}"
-msgstr "Page {cur} sur {total}"
+msgstr "Page {cur} de {total}"
 
 #: ../root/admin/wikidoc/create.tt:8 ../root/admin/wikidoc/edit.tt:9
 msgid "Page:"
@@ -5492,11 +5492,11 @@ msgstr "Parent : "
 
 #: ../root/release/edit/tracklist.tt:154
 msgid "Parse Tracks"
-msgstr "Décoder les Pistes"
+msgstr "Analyser les pistes"
 
 #: ../root/release/edit/tracklist.tt:182
 msgid "Parse track artists"
-msgstr "Décoder les artistes de la piste"
+msgstr "Analyser les artistes de la piste"
 
 #: ../root/report/part_of_set_relationships.tt:1
 #: ../root/report/part_of_set_relationships.tt:3
@@ -5664,7 +5664,7 @@ msgstr "Veuillez vous assurer de ne pas enlever un {doc_standalone|enregistremen
 msgid ""
 "Please navigate to the pages of other entities you wish to merge and select "
 "the \"merge\" link."
-msgstr "Rendez-vous sur les pages des autres entités avec lesquelles vous souhaitez fusionner et cliquez sur le lien « fusionner »."
+msgstr "Veuillez vous rendre sur les pages des autres entités que vous souhaitez fusionner et cliquez sur le lien « fusionner »."
 
 #: ../root/annotation/edit.tt:1
 msgid ""
@@ -5675,7 +5675,7 @@ msgstr "Notez que tout contenu envoyés à MusicBrainz sera publié sous une lic
 
 #: ../root/search/form.tt:49
 msgid "Please note:"
-msgstr "Notez ceci :"
+msgstr "Veuillez prendre note :"
 
 #: ../root/release/merge_search.tt:5
 msgid ""
@@ -5711,7 +5711,7 @@ msgstr "Veuillez lire la documentation sur {doc_remove|enlever les types de modi
 msgid ""
 "Please review the {coc|MusicBrainz Code of Conduct} before creating an "
 "account."
-msgstr "Veuillez lire {coc|le code de conduite MusicBrainz} avant de créer un compte."
+msgstr "Veuillez passer en revue {coc|le code de conduite MusicBrainz} avant de créer un compte."
 
 #: ../root/release/delete.tt:4
 msgid ""
@@ -5755,19 +5755,19 @@ msgstr "Veuillez choisir le support que vous souhaitez attacher à cet Index de 
 
 #: ../root/main/rate_limited.tt:6
 msgid "Please slow down and then try again"
-msgstr "Réessayez, en allant moins vite"
+msgstr "Réessayez en allant moins vite"
 
 #: ../root/components/forms.tt:202
 msgid "Please use the Guess Case button to fix common style errors."
-msgstr "Utilisez le bouton « deviner la casse » pour corriger les erreurs courantes de style."
+msgstr "Veuillez utiliser le bouton « deviner la casse » pour corriger les erreurs de style courantes."
 
 #: ../root/components/forms.tt:245
 msgid "Please use the Sort Name button to guess the sort name."
-msgstr "Utilisez le bouton « Nom de tri » pour deviner le nom à utiliser pour le tri."
+msgstr "Veuillez utiliser le bouton « Nom de tri » pour deviner le nom à utiliser pour le tri."
 
 #: ../root/main/503.tt:8
 msgid "Please wait a few minutes and repeat your request."
-msgstr "Veuillez réessayer dans quelques minutes."
+msgstr "Veuillez réessayer votre requête dans quelques minutes."
 
 #: ../root/components/aliases.tt:83
 msgid "Please {log_in|log in} to add or edit aliases"
@@ -5793,11 +5793,11 @@ msgstr "Position :"
 
 #: ../root/artist/edit_form.tt:16
 msgid "Possible Duplicate Artists"
-msgstr "Probable artistes en doublons"
+msgstr "Artistes probablement en double"
 
 #: ../root/label/edit_form.tt:12
 msgid "Possible Duplicate Labels"
-msgstr "Probable labels en doublons"
+msgstr "Labels  probablement en double"
 
 #: ../root/place/edit_form.tt:12
 msgid "Possible Duplicate Places"
@@ -5814,7 +5814,7 @@ msgstr "Valeurs possibles :"
 #: ../root/report/duplicate_artists.tt:1 ../root/report/duplicate_artists.tt:3
 #: ../root/report/index.tt:20
 msgid "Possibly duplicate artists"
-msgstr "Artiste probablement en doublon"
+msgstr "Artiste  probablement en double"
 
 #: ../root/account/preferences_ok.tt:1 ../root/account/preferences_ok.tt:3
 #: ../root/account/preferences.tt:2 ../root/account/preferences.tt:4
@@ -5903,7 +5903,7 @@ msgstr "Proposeur"
 
 #: ../root/elections/show.tt:14
 msgid "Proposer:"
-msgstr "Proposer :"
+msgstr "Proposeur :"
 
 #: ../root/user/collections.tt:23
 msgid "Public"
@@ -5928,7 +5928,7 @@ msgstr "Liens rapides :"
 #: ../root/components/rating-macros.tt:1
 msgid "Rate: {rating} star"
 msgid_plural "Rate: {rating} stars"
-msgstr[0] "Évaulaton : {rating} étoile"
+msgstr[0] "Évaluaton : {rating} étoile"
 msgstr[1] "Évaluation : {rating} étoiles"
 
 #: ../root/area/artists-list.tt:8 ../root/area/labels-list.tt:8
@@ -5989,7 +5989,7 @@ msgstr "Informations d'enregistrement"
 
 #: ../root/user/ratings_summary.tt:3 ../root/user/ratings.tt:2
 msgid "Recording ratings"
-msgstr "Évaluations des enregistrements"
+msgstr "Évaluations d'enregistrement"
 
 #: ../root/recording/layout.tt:3
 msgid "Recording “{name}” by {artist}"
@@ -7843,7 +7843,7 @@ msgstr "Le champ annotation fonctionne comme un mini-wiki."
 msgid ""
 "The artist you are trying to edit is a special purpose artist, and you may "
 "not make direct changes to this data."
-msgstr "L'artiste que vous essayez de modifier est un artiste particulier, vous ne pouvez pas effectuer de modification directe sur ses données."
+msgstr "L'artiste que vous essayez de modifier est un artiste à usage spécial et vous ne pouvez pas effectuer de modification directe sur ces données."
 
 #: ../root/release/cover_art.tt:45
 msgid ""
@@ -10326,7 +10326,7 @@ msgstr "Vous pouvez saisir une note de modification tout en annulant cette modif
 
 #: ../root/artist/special_purpose.tt:2
 msgid "You may not edit special purpose artists"
-msgstr "Vous ne pouvez pas modifier les artistes spéciaux"
+msgstr "Vous ne pouvez pas modifier les artistes à usage spécial"
 
 #: ../root/account/registered.tt:21
 msgid ""
@@ -11296,7 +11296,7 @@ msgstr "Vous ne pouvez fusionner vers un artiste supprimé"
 #: ../lib/MusicBrainz/Server/Controller/AutoEditorElections.pm:70
 #, perl-brace-format
 msgid "'{id}' is not a valid election ID"
-msgstr "'{id}' n'est pas un identifiant d'élection valide"
+msgstr "'{id}' n'est pas une ID d'élection valide"
 
 #: ../lib/MusicBrainz/Server/Controller/CDStub.pm:63
 msgid "The required TOC parameter was invalid or not present"
@@ -11331,7 +11331,7 @@ msgstr "Le support sélectionné ne peut avoir d'ID de disque"
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:206
 msgid "The provided artist id is not valid"
-msgstr "L'identifiant d'artiste fourni n'est pas valide"
+msgstr "L'ID d'artiste fourni n'est pas valide"
 
 #: ../lib/MusicBrainz/Server/Controller/Edit.pm:188
 msgid "Default"
@@ -11361,7 +11361,7 @@ msgstr "Entité introuvable"
 #: ../lib/MusicBrainz/Server/Controller/FreeDB.pm:37
 #, perl-brace-format
 msgid "'{id}' is not a valid FreeDB ID"
-msgstr "'{id}' n'est pas un identifiant FreeDB valide"
+msgstr "'{id}' n'est pas une ID FreeDB valide"
 
 #: ../lib/MusicBrainz/Server/Controller/Relationship/LinkType.pm:48
 #, perl-brace-format
@@ -11838,7 +11838,7 @@ msgstr "Enlever l'ISWC"
 
 #: ../lib/MusicBrainz/Server/EditSearch/Predicate.pm:66
 msgid "This operator is not supported"
-msgstr "Support"
+msgstr "L'opérateur n'est pas pris en charge"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:89
 msgctxt "autoeditor election status"
@@ -11998,15 +11998,15 @@ msgstr "La date de fin doit être antérieure ou égale à la date de début"
 
 #: ../lib/MusicBrainz/Server/Form/Field/DiscID.pm:12
 msgid "This is not a valid disc ID"
-msgstr "Ceci n'est pas un identifiant de disque valide."
+msgstr "Ceci n'est pas une ID de disque valide."
 
 #: ../lib/MusicBrainz/Server/Form/Field/FreeDBID.pm:12
 msgid "This is not a valid FreeDB ID"
-msgstr "Ceci n'est pas un identifiant FreeDB valide"
+msgstr "Ceci n'est pas une ID FreeDB valide"
 
 #: ../lib/MusicBrainz/Server/Form/Field/GID.pm:12
 msgid "This is not a valid MBID"
-msgstr "Ceci n'est pas un MBID valide"
+msgstr "Ceci n'est pas une MBID valide"
 
 #: ../lib/MusicBrainz/Server/Form/Field/ISO_3166_1.pm:12
 msgid "This is not a valid ISO 3166-1 code"
@@ -12067,7 +12067,7 @@ msgstr "Un autre support est déjà à cette position"
 
 #: ../lib/MusicBrainz/Server/Form/Merge/Release.pm:64
 msgid "Positions must be greater than 0"
-msgstr "Une position doit être supérieure à 0"
+msgstr "Les positions doivent être supérieures à 0"
 
 #: ../lib/MusicBrainz/Server/Form/Recording/Standalone.pm:8
 msgid "You must provide an edit note when adding a standalone recording"
@@ -12140,12 +12140,12 @@ msgstr "La nouvelle liste de pistes contient une piste vide"
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:65
 #, perl-brace-format
 msgid "A track name is required on track {pos}"
-msgstr "Un titre de piste est nécessaire pour la piste {pos}"
+msgstr "Un titre de piste est requis pour la piste {pos}"
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:70
 #, perl-brace-format
 msgid "A position is required for \"{name}\""
-msgstr "Une position est nécessaire pour « {name} »"
+msgstr "Une position est requise pour « {name} »"
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:75
 #, perl-brace-format
@@ -12155,7 +12155,7 @@ msgstr "« {name1} » et « {name2} » ont la même position"
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:88
 #, perl-brace-format
 msgid "An artist is required on track {pos}"
-msgstr "Un artiste est nécessaire pour la piste {pos}"
+msgstr "Un artiste est requis pour la piste {pos}"
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:115
 #, perl-brace-format
