@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-22 15:20+0000\n"
+"PO-Revision-Date: 2013-11-22 16:37+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -321,7 +321,7 @@ msgstr "<strong>Approuvé :</strong> {date}"
 
 #: ../root/edit/edit_header.tt:58
 msgid "<strong>Closed:</strong> <em>Cancelling</em>"
-msgstr "<strong>Fermer :</strong> <em>Annulation</em>"
+msgstr "<strong>Fermé  :</strong> <em>Annulation en cours</em>"
 
 #: ../root/edit/edit_header.tt:62
 msgid "<strong>Closed:</strong> {date}"
@@ -332,7 +332,7 @@ msgid ""
 "<strong>Error:</strong> You are trying to browse the database using a query "
 "that is longer than 6 characters. We do not index data at this level of "
 "granularity, you may want to {uri|search the database} instead."
-msgstr "<strong>Erreur :</strong> Vous avez essayé de naviguer dans la base de données avec une requête de plus de 6 caractères. Nous n'indexons pas les données aussi profondément. Vous devriez plutôt essayer d'effectuer une {uri|recherche dans la base}."
+msgstr "<strong>Erreur :</strong> Vous essayé de naviguer dans la base de données avec une requête de plus de 6 caractères. Nous n'indexons pas les données à ce niveau de granularité, vous devriez peut-être plutôt  {uri|rechercher dans la base}."
 
 #: ../root/components/common-macros.tt:850
 #: ../root/release/edit/tracklist.tt:138
@@ -354,7 +354,7 @@ msgid ""
 " matches the page name, it will take the version number and provide whatever"
 " page is associated with it. Make sure to double check your work when "
 "updating a page!"
-msgstr "<strong>Attention :</strong> MediaWiki ne vérifie pas si le numéro de version correspond au nom de la page, il lira le numéro de version et fournira la page associée, quelle qu'elle soit. Vérifiez donc soigneusement votre travail avant de mettre à jour une page !"
+msgstr "<strong>Note :</strong> MediaWiki ne vérifie pas si le numéro de version correspond au nom de la page, il lira le numéro de version et fournira la page associée, quelle qu'elle soit. Vérifiez donc soigneusement votre travail avant de mettre à jour une page !"
 
 #: ../root/components/common-macros.tt:863
 msgid "<strong>Note</strong>:"
@@ -371,7 +371,7 @@ msgid ""
 "<strong>The universal lingua franca for music</strong> by providing a "
 "reliable and unambiguous form of {doc|music identification}, enabling both "
 "people and machines to have meaningful conversations about music."
-msgstr "<strong>La lingua franca universelle du monde de la musique</strong> qui permet d'{doc|identifier la musique} de manière fiable et non-ambigüe, permettant aux personnes comme aux machines de discuter de manière pertinente avec leur musique"
+msgstr "<strong>La lingua franca universelle du monde de la musique</strong> qui fournit une forme {doc|d'identification musicale } fiable et non-ambigüe, permettant aux personnes comme aux machines de discuter à propos de la musique de manière pertinente."
 
 #: ../root/recording/merge.tt:8
 msgid ""
@@ -768,7 +768,7 @@ msgstr "Ajouter les artistes sélectionnés en vue d'une fusion"
 
 #: ../root/artist/recordings.tt:13 ../root/isrc/index.tt:37
 msgid "Add selected recordings for merging"
-msgstr "Ajouter les enregistrements sélectionnés en vue de leur fusion"
+msgstr "Ajouter les enregistrements sélectionnés en vue d'une fusion"
 
 #: ../root/artist/releases.tt:13 ../root/label/index.tt:34
 #: ../root/release_group/index.tt:82
@@ -777,7 +777,7 @@ msgstr "Ajouter les parutions sélectionnées en vue de leur fusion"
 
 #: ../root/artist/works.tt:8 ../root/iswc/index.tt:60
 msgid "Add selected works for merging"
-msgstr "Ajouter les œuvres sélectionnées en vue de leur fusion"
+msgstr "Ajouter les œuvres sélectionnées en vue d'une fusion"
 
 #: ../root/release/sidebar.tt:140
 msgid "Add to a new collection"
@@ -793,7 +793,7 @@ msgstr "Ajouter à {collection}"
 
 #: ../root/release/edit/tracklist.tt:438
 msgid "Add track(s)"
-msgstr "Ajouter les pistes"
+msgstr "Ajouter la-les piste(s)"
 
 #: ../root/artist/layout.tt:93
 #: ../lib/MusicBrainz/Server/Edit/Work/Create.pm:16
@@ -850,7 +850,7 @@ msgstr "Adresse :"
 
 #: ../root/admin/edit_user.tt:1
 msgid "Adjust User Account Flags"
-msgstr "Ajuster les attributs du compte utilisateur"
+msgstr "Ajuster les drapeaux du compte utilisateur"
 
 #: ../root/layout/menu.tt:81
 msgid "Admin"
@@ -862,7 +862,7 @@ msgstr "Administration"
 
 #: ../root/admin/edit_user.tt:17
 msgid "Administration flags"
-msgstr "Attributs d'administration"
+msgstr "Drapeaux d'administration"
 
 #: ../root/user/profile.tt:61
 msgid "Age:"
@@ -11221,7 +11221,7 @@ msgstr "La durée manque ou son format est invalide."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:67
 msgid "The verification key is missing."
-msgstr "La clé de vérification est manquante."
+msgstr "La clef de vérification est manquante."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:75
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:212
@@ -11264,7 +11264,7 @@ msgstr "Il manque un ou plusieurs paramètres obligatoires."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:204
 msgid "Sorry, this password reset link has expired."
-msgstr "Désolé, mais ce lien de réinitialisation de mot de passe a expiré."
+msgstr "Désolé, ce lien de réinitialisation de mot de passe est expiré."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:262
 msgid "There is no user with this email"
@@ -11387,7 +11387,7 @@ msgstr "L'ID de révision d'annotation doit être un entier positif"
 
 #: ../lib/MusicBrainz/Server/Controller/Role/Annotation.pm:182
 msgid "The old and new annotation ids must be unique, positive integers."
-msgstr "Les ancien et nouveau identifiants d'annotation doivent être des entiers positifs uniques."
+msgstr "Les anciennes et nouvelles ID d'annotation doivent être des entiers positifs."
 
 #: ../lib/MusicBrainz/Server/Controller/User.pm:252
 #, perl-brace-format
@@ -11396,7 +11396,7 @@ msgstr "L'éditeur nommé {name} n'a pas d'adresse courriel attaché à son comp
 
 #: ../lib/MusicBrainz/Server/Controller/User.pm:280
 msgid "Your message could not be sent"
-msgstr "Votre message ne peut pas être envoyé"
+msgstr "Votre message n'a pas pu être envoyé"
 
 #: ../lib/MusicBrainz/Server/Controller/User.pm:362
 #, perl-brace-format
@@ -11409,11 +11409,11 @@ msgstr "Index invalide"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:108
 msgid "No title provided"
-msgstr "Aucun titre n'a été entré"
+msgstr "Aucun titre de fourni"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:112
 msgid "No artist names provided"
-msgstr "Aucun nom d'artiste n'a été entré"
+msgstr "Aucun nom d'artiste de fourni"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:116
 msgid "Not all tracks specify an artist"
@@ -11433,7 +11433,7 @@ msgstr "Données d'index de CD incomplètes"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:132
 msgid "Missing disc ID"
-msgstr "ID de disque manquant"
+msgstr "ID de disque manquante"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:136
 msgid "Disc ID does match parsed TOC"
@@ -11482,7 +11482,7 @@ msgstr "Fusionner des régions"
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/AddAnnotation.pm:12
 msgid "Add artist annotation"
-msgstr "Ajouter une annotation à l'artiste"
+msgstr "Ajouter une annotation d'artiste"
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/Create.pm:22
 msgid "Add artist"
@@ -11502,12 +11502,12 @@ msgstr "Modifier le crédit"
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/Merge.pm:13
 msgid "Merge artists"
-msgstr "fusionner les artistes"
+msgstr "Fusionner les artistes"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/AddDiscID.pm:11
 #: ../lib/MusicBrainz/Server/Edit/Medium/AddDiscID.pm:10
 msgid "Add disc ID"
-msgstr "Ajouter un ID de disque"
+msgstr "Ajouter une ID de disque"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/AddReleaseAnnotation.pm:13
 #: ../lib/MusicBrainz/Server/Edit/Release/AddAnnotation.pm:13
@@ -11622,7 +11622,7 @@ msgstr "Indiquer les durées de piste"
 
 #: ../lib/MusicBrainz/Server/Edit/Label/AddAnnotation.pm:12
 msgid "Add label annotation"
-msgstr "Ajouter une annotation au label"
+msgstr "Ajouter une annotation de label"
 
 #: ../lib/MusicBrainz/Server/Edit/Label/Create.pm:23
 msgid "Add label"
@@ -11806,15 +11806,15 @@ msgstr "Pas de vote"
 
 #: ../lib/MusicBrainz/Server/Edit/WikiDoc.pm:7
 msgid "Wiki documentation"
-msgstr "documentation du Wiki"
+msgstr "Documentation du Wiki"
 
 #: ../lib/MusicBrainz/Server/Edit/WikiDoc/Change.pm:14
 msgid "Change WikiDoc"
-msgstr "Modifier le WikiDoc"
+msgstr "Changer le WikiDoc"
 
 #: ../lib/MusicBrainz/Server/Edit/Work/AddAnnotation.pm:13
 msgid "Add work annotation"
-msgstr "Ajouter une annotation à l'œuvre"
+msgstr "Ajouter une annotation d.œuvre"
 
 #: ../lib/MusicBrainz/Server/Edit/Work/AddISWCs.pm:22
 msgid "Add ISWCs"
@@ -12039,7 +12039,7 @@ msgstr "Un code de label comprend entre 1 et 5 chiffres"
 
 #: ../lib/MusicBrainz/Server/Form/Field/Length.pm:31
 msgid "Not a valid time. Must be in the format MM:SS"
-msgstr "Heure incorrecte. Elle doit être au format MM:SS"
+msgstr "Heure invalide. Elle doit être au format MM:SS"
 
 #: ../lib/MusicBrainz/Server/Form/Field/OAuthRedirectURI.pm:20
 msgid "URL protocol must be HTTP or HTTPS"
