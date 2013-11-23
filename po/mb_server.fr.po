@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-22 23:59+0000\n"
+"PO-Revision-Date: 2013-11-23 00:58+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -703,7 +703,7 @@ msgstr "Ajouter un alias d'artiste"
 
 #: ../root/relationship/linkattributetype/common.tt:24
 msgid "Add child"
-msgstr "Ajouter un fils"
+msgstr "Ajouter un enfant"
 
 #: ../root/cdstub/layout.tt:24
 msgid "Add disc ID to an existing release"
@@ -1043,7 +1043,7 @@ msgstr "Annotation"
 
 #: ../root/annotation/edit.tt:34
 msgid "Annotation Formatting"
-msgstr "Format des annotations"
+msgstr "Formatage des annotations"
 
 #: ../root/annotation/diff.tt:2 ../root/area/annotation_diff.tt:1
 #: ../root/artist/annotation_diff.tt:1 ../root/label/annotation_diff.tt:1
@@ -1110,7 +1110,7 @@ msgstr "Applications"
 #: ../root/edit/search_macros.tt:244
 #: ../lib/MusicBrainz/Server/Data/Vote.pm:194
 msgid "Approve"
-msgstr "Approuve"
+msgstr "Approuver"
 
 #: ../root/edit/edit_header.tt:75 ../root/edit/info.tt:17
 msgid "Approve edit"
@@ -1478,7 +1478,7 @@ msgstr "Artistes sans abonné"
 #: ../root/report/duplicate_relationships_artists.tt:3
 #: ../root/report/index.tt:25
 msgid "Artists with possible duplicate relationships"
-msgstr "Artistes avec relations dupliquées possibles"
+msgstr "Artistes avec relations en double possibles"
 
 #: ../root/recording/fingerprints.tt:3
 msgid "Associated AcoustIDs"
@@ -1594,7 +1594,7 @@ msgstr "Retour"
 
 #: ../root/elections/not_found.tt:5
 msgid "Back to all elections."
-msgstr "Revenir à la liste de toutes les élections."
+msgstr "Revenir à toutes les élections."
 
 #: ../root/elections/show.tt:5
 msgid "Back to elections"
@@ -2171,7 +2171,7 @@ msgstr "Réduire le disque"
 
 #: ../root/relationship/linktype/tree.tt:55
 msgid "Collapse all descriptions"
-msgstr "Fermer toutes les descriptions"
+msgstr "Réduire toutes les descriptions"
 
 #: ../root/collection/edits.tt:18 ../root/user/collections.tt:9
 msgid "Collection"
@@ -2474,7 +2474,7 @@ msgstr "Supprimer le compte"
 
 #: ../root/scripts/text_strings.tt:125
 msgid "Delete Note"
-msgstr "Effacer la note"
+msgstr "Supprimer la note"
 
 #: ../root/admin/delete_user.tt:2
 msgid "Delete User"
@@ -4233,7 +4233,7 @@ msgstr "Labels commençant par « {index} »"
 #: ../root/report/duplicate_relationships_labels.tt:3
 #: ../root/report/index.tt:33
 msgid "Labels with possible duplicate relationships"
-msgstr "Labels avec relations dupliquées possibles"
+msgstr "Labels avec relations en double possibles"
 
 #: ../root/release/index.tt:15
 msgid "Labels:"
@@ -4261,7 +4261,7 @@ msgstr "Langue : {language}, caractère d'écriture : {script}"
 
 #: ../root/account/edit.tt:57
 msgid "Languages Known:"
-msgstr "Langage connu :"
+msgstr "Langues connus :"
 
 #: ../root/user/profile.tt:119
 msgid "Languages:"
@@ -4300,7 +4300,7 @@ msgstr "Dernière mise à jour : {date}"
 
 #: ../root/main/index.tt:33
 msgid "Latest posts:"
-msgstr "Derniers billets :"
+msgstr "Billets les plus récents :"
 
 #: ../root/artist/recordings-list.tt:31 ../root/cdstub/cdstub.tt:9
 #: ../root/cdtoc/info.tt:33 ../root/edit/details/edit_medium.tt:55
@@ -4332,7 +4332,7 @@ msgid ""
 "Like Wikipedia, MusicBrainz is maintained by a global community of users and"
 " we want everyone &#x2014; including you &#x2014; to {doc|participate and "
 "contribute}."
-msgstr "Comme Wikipedia, MusicBrainz est maintenu par une communauté mondiales d'utilisateur, et nous souhaitons que tout le monde &#x2014; vous y compris &#x2014; {doc|participe et contribue}."
+msgstr "Comme Wikipedia, MusicBrainz est maintenu par une communauté mondiale d'utilisateurs et nous souhaitons que tout le monde &#x2014; vous y compris &#x2014; {doc|participe et contribue}."
 
 #: ../root/user/profile.tt:49
 msgid "Limited User"
@@ -4967,7 +4967,7 @@ msgstr "Nouveau titre de disque :"
 
 #: ../root/edit/details/historic/edit_release_language.tt:25
 msgid "New language:"
-msgstr "Nouveau langage : "
+msgstr "Nouvelle langue : "
 
 #: ../root/edit/details/change_wikidoc.tt:17
 msgid "New page"
@@ -5093,7 +5093,7 @@ msgstr "Aucune image de couverture de disponible.<br/>{all|Voir tous les éléme
 
 #: ../root/relationship/linkattributetype/instruments.tt:31
 msgid "No instruments found."
-msgstr "Aucun instrument trouvé."
+msgstr "Aucun instrument de trouvé."
 
 #: ../root/tag/label.tt:1
 msgid "No labels with this tag were found."
@@ -5801,7 +5801,7 @@ msgstr "Labels  probablement en double"
 
 #: ../root/place/edit_form.tt:12
 msgid "Possible Duplicate Places"
-msgstr "Lieux peut-être dupliqués "
+msgstr "Lieux peut-être en double"
 
 #: ../root/cdtoc/lookup.tt:29
 msgid "Possible Mediums"
@@ -5844,7 +5844,7 @@ msgstr "Précédent"
 #: ../root/release/edit/information.tt:43
 #: ../root/release_group/edit_form.tt:10
 msgid "Primary Type:"
-msgstr "Type principal :"
+msgstr "Type primaire :"
 
 #: ../root/edit/details/add_area_alias.tt:28
 #: ../root/edit/details/add_artist_alias.tt:28
@@ -6037,7 +6037,7 @@ msgstr "Enregistrements avec des relations de parution la plus ancienne"
 #: ../root/report/duplicate_relationships_recordings.tt:3
 #: ../root/report/index.tt:83
 msgid "Recordings with possible duplicate relationships"
-msgstr "Enregistrements avec relations dupliquées possibles"
+msgstr "Enregistrements avec relations en double possibles"
 
 #: ../root/report/featuring_recordings.tt:1
 #: ../root/report/featuring_recordings.tt:3 ../root/report/index.tt:82
@@ -6352,7 +6352,7 @@ msgstr "Groupe de parution qu'il faudrait peut-être fusionner"
 #: ../root/report/duplicate_relationships_release_groups.tt:3
 #: ../root/report/index.tt:42
 msgid "Release groups with possible duplicate relationships"
-msgstr "Groupes de parution avec relations dupliquées possibles"
+msgstr "Groupes de parution avec relations en double possibles"
 
 #: ../root/report/featuring_release_groups.tt:1
 #: ../root/report/featuring_release_groups.tt:3 ../root/report/index.tt:40
@@ -6506,7 +6506,7 @@ msgstr "Parutions avec des numéros de piste non séquentiels"
 #: ../root/report/duplicate_relationships_releases.tt:3
 #: ../root/report/index.tt:72
 msgid "Releases with possible duplicate relationships"
-msgstr "Parutions avec relations dupliquées possibles"
+msgstr "Parutions avec relations en double possibles"
 
 #: ../root/report/index.tt:59 ../root/report/superfluous_data_tracks.tt:3
 msgid "Releases with superfluous data tracks"
@@ -6531,7 +6531,7 @@ msgstr "Parutions avec des durées de piste inconnues"
 #: ../root/report/releases_with_unlikely_language_script.tt:1
 #: ../root/report/releases_with_unlikely_language_script.tt:3
 msgid "Releases with unlikely language/script pairs"
-msgstr "Parution avec des paires langue/encodage improbable"
+msgstr "Parution avec des paires langue/caractère d'écriture improbable"
 
 #: ../root/report/index.tt:49 ../root/report/releases_without_language.tt:1
 #: ../root/report/releases_without_language.tt:3
@@ -6986,11 +6986,11 @@ msgstr "Types secondaires :"
 
 #: ../root/elections/index.tt:14
 msgid "Seconder 1"
-msgstr "1er soutien"
+msgstr "1er appuyeur"
 
 #: ../root/elections/index.tt:15
 msgid "Seconder 2"
-msgstr "2ème soutien"
+msgstr "2ème appuyeur"
 
 #: ../root/cdtoc/info.tt:38 ../root/cdtoc/info.tt:40 ../root/cdtoc/info.tt:42
 msgid "Sectors"
@@ -7131,7 +7131,7 @@ msgstr "Afficher tous les résultats."
 
 #: ../root/scripts/text_strings.tt:94
 msgid "Show less..."
-msgstr "En voir moins..."
+msgstr "En afficher moins..."
 
 #: ../root/edit/search_macros.tt:32
 msgid ""
@@ -7141,7 +7141,7 @@ msgstr "Me montrer {autoedit_select_block} trié par {sort_select_block} qui {ma
 
 #: ../root/scripts/text_strings.tt:93
 msgid "Show more..."
-msgstr "En voir plus..."
+msgstr "En afficher plus..."
 
 #: ../root/account/preferences.tt:26
 msgid "Show my Gravatar"
@@ -7194,7 +7194,7 @@ msgstr "Affichage des parutions de cet artiste {show_all|Afficher plutôt les pa
 msgid ""
 "Showing results <strong>{start}</strong>&ndash;<strong>{end}</strong> of "
 "<strong>{matches}</strong>"
-msgstr "Affichage des résultats <strong>{start}</strong> à <strong>{end}</strong> sur <strong>{matches}</strong>"
+msgstr "Affichage des résultats <strong>{start}</strong>&ndash;<strong>{end}</strong> de <strong>{matches}</strong>"
 
 #: ../root/release/edit/duplicates.tt:12
 msgid "Similar releases"
@@ -7202,7 +7202,7 @@ msgstr "Parutions similaires"
 
 #: ../root/main/rate_limited.tt:1 ../root/main/rate_limited.tt:3
 msgid "Slow Down!"
-msgstr "Prenez votre temps !"
+msgstr "Ralentissez !"
 
 #: ../root/scripts/text_strings.tt:83
 msgid "Slow? Switch back to indexed search."
@@ -7210,13 +7210,13 @@ msgstr "Trop lent ? Revenez à la recherche indexée."
 
 #: ../root/layout/menu.tt:124
 msgid "Social Contract"
-msgstr "Contrat Social"
+msgstr "Contrat social"
 
 #: ../root/search/results-freedb.tt:3
 msgid ""
 "Some FreeDB results may not be immediately available since they are only "
 "able to be updated after FreeDB's monthly database export."
-msgstr "Certains résultats ne seront pas immédiatement visibles dans FreeDB car ils ne seront visibles qu'après l'export mensuel de la base FreeDB."
+msgstr "Certains résultats de FreeDB  ne seront peut-être pas immédiatement disponible car ils ne peuvent être mis à jour qu'après l'export mensuel de la base FreeDB."
 
 #: ../root/account/applications.tt:18
 msgid ""
@@ -7235,7 +7235,7 @@ msgstr "Certains artistes sont crédités sous d'autres noms"
 msgid ""
 "Some tracks were changed, please select a recording for each of these "
 "tracks."
-msgstr "Certaines pistes ont été modifiées, veuillez choisir un enregistrement pour chacune de ces pistes."
+msgstr "Certaines pistes ont été changées, veuillez choisir un enregistrement pour chacune de ces pistes."
 
 #: ../root/layout/menu.tt:168 ../root/main/index.tt:12
 msgid "SongKong Tagger"
@@ -7253,14 +7253,14 @@ msgstr "Désolé, <code>{discid}</code> n'est pas une ID de disque valide."
 
 #: ../root/scripts/text_strings.tt:47
 msgid "Sorry, an error occurred during your search"
-msgstr "Désolé, une erreur est apparue pendant votre recherche"
+msgstr "Désolé, une erreur est survenue pendant votre recherche"
 
 #: ../root/search/error/no-results.tt:3
 msgid ""
 "Sorry, but your query \"(<code>query</code>)\" did not match any {type}. "
 "Please check you used the correct spelling.  Sometimes searching for fewer "
 "or different words may also help."
-msgstr "Désolé, mais la requête « (<code>query</code>) » ne correspond à aucun {type}. Vérifiez que l'orthographe est correcte. Vous pouvez aussi essayer de chercher moins de mots ou d'autres mots."
+msgstr "Désolé, mais votre requête « (<code>query</code>) » ne correspondait à aucun {type}. Veuillez vérifiez l'orthographe, . Chercher moins de mots ou des mots différents aide parfois."
 
 #: ../root/search/error/rate-limit.tt:3
 msgid ""
@@ -7278,7 +7278,7 @@ msgstr "Désolé, mais votre recherche (<code>{query}</code>) ne peut pas être 
 #: ../root/main/rate_limited.tt:4
 msgid ""
 "Sorry, but your requests are exceeding the allowable rate limit ({rlinfo})."
-msgstr "Désolé, vos requêtes dépassent le taux maximal autorisé ({rlinfo})."
+msgstr "Désolé, mais vos requêtes dépassent le taux maximal autorisé ({rlinfo})."
 
 #: ../root/main/404.tt:8
 msgid "Sorry, the page you're looking for does not exist."
@@ -7529,7 +7529,7 @@ msgstr "Commanditaires"
 
 #: ../root/main/500.tt:19
 msgid "Stack trace:"
-msgstr "Contenu de la pile :"
+msgstr "Trace de la pile :"
 
 #: ../root/cdtoc/info.tt:32
 msgid "Start"
@@ -8356,7 +8356,7 @@ msgid ""
 "This form allows you to split {artist} into separate artists. When the edit "
 "is accepted, existing artist credits will be updated, and collaboration "
 "relationships will be removed"
-msgstr "Ce formulaire vous permet de diviser {artist} en plusieurs artistes. Quand la modification est acceptée, les crédits existants seront mis à jour et les relations de collaboration seront enlevées."
+msgstr "Ce formulaire vous permet de scinder {artist} en des artistes séparés. Quand la modification est acceptée, les crédits existants seront mis à jour et les relations de collaboration seront enlevées."
 
 #: ../root/scripts/text_strings.tt:74
 msgid "This group has dissolved."
@@ -8598,14 +8598,14 @@ msgid ""
 "This report lists all releases where the mediums are not continuous (e.g. "
 "there is no \"medium 2\"), or with duplicated mediums (e.g. there are two "
 "\"medium 4\"s)."
-msgstr "Ce rapport liste toutes les parutions pour lesquelles les supports ne sont pas continus (par exemple il n'y a pas de \"support 2\"), ou avec des supports dupliqués (par exemple il y a deux \"support 4\")."
+msgstr "Ce rapport liste toutes les parutions pour lesquelles les supports ne sont pas continus (par exemple il n'y a pas de \"support 2\"), ou avec des supports en double (par exemple il y a deux \"support 4\")."
 
 #: ../root/report/tracks_with_sequence_issues.tt:6
 msgid ""
 "This report lists all releases where the track numbers are not continuous "
 "(e.g. there is no \"track 2\"), or with duplicated track numbers (e.g. there"
 " are two \"track 4\"s)."
-msgstr "Ce rapport liste toutes les parutions pour lesquelles les numéros de piste ne sont pas continus (par exemple il n'y a pas de \"piste 2\"), ou avec des pistes dupliqués (par exemple il y a deux \"piste 4\")."
+msgstr "Ce rapport liste toutes les parutions pour lesquelles les numéros de piste ne sont pas continus (par exemple il n'y a pas de \"piste 2\"), ou avec des pistes en double (par exemple il y a deux \"piste 4\")."
 
 #: ../root/report/artists_with_multiple_occurances_in_artist_credits.tt:6
 msgid ""
@@ -9089,7 +9089,7 @@ msgstr "Nombre total d'artistes trouvés : {count}"
 
 #: ../root/report/duplicate_artists.tt:14
 msgid "Total duplicate groups: {count}"
-msgstr "Total des groupes dupliqués : {count}"
+msgstr "Total des groupes en double : {count}"
 
 #: ../root/report/discogs_links_with_multiple_labels.tt:7
 #: ../root/report/duplicate_relationships_labels.tt:8
@@ -9425,7 +9425,7 @@ msgstr "Se désabonner "
 
 #: ../root/label/subscriptions.tt:21
 msgid "Unsubscribe from this Label."
-msgstr "Ce désabonner de ce label."
+msgstr "Se désabonner de ce label."
 
 #: ../root/artist/subscribe.tt:18
 msgid "Unsubscribe from this artist."
@@ -9433,7 +9433,7 @@ msgstr "Ce désabonner de cet artiste."
 
 #: ../root/admin/edit_user.tt:14 ../root/edit/search_macros.tt:288
 msgid "Untrusted"
-msgstr "Pas de confiance"
+msgstr "Non-fiable"
 
 #: ../root/search/form.tt:13
 msgid "Up to {n}"
@@ -9484,7 +9484,7 @@ msgstr "Utiliser dans une relation"
 msgid ""
 "Use our <strong>XML web service</strong> or <strong>development "
 "libraries</strong> to create your own MusicBrainz-enabled applications."
-msgstr "Utilisez notre <strong>Service Web</strong> ou nos <strong>librairies de développement</strong> pour créer vos applications utilisant MusicBrainz."
+msgstr "Utiliser notre <strong>service Web XML</strong> ou nos <strong>bibliothèques de développement</strong> pour créer vos applications utilisant MusicBrainz."
 
 #: ../root/release/edit/recordings.tt:94
 msgid "Use suggested recording"
@@ -9510,7 +9510,7 @@ msgstr "Utilisez les champs suivants pour chercher une liste de pistes existante
 
 #: ../root/search/form.tt:39
 msgid "Use {doc|advanced query syntax}"
-msgstr "Utiliser la {doc|syntaxe avancée de recherche}"
+msgstr "Utiliser la {doc|syntaxe précise de recherche}"
 
 #: ../root/user/profile.tt:49
 msgid ""
@@ -9547,7 +9547,7 @@ msgstr "En utilisant cette stratégie de fusion tous les supports de toutes les 
 msgid ""
 "Using {doc|advanced query syntax} while performing a direct database search "
 "will result in inaccurate results."
-msgstr "L'utilisation de la {doc|syntaxe de recherche avancée} lorsque vous êtes en recherche directe en base produira des résultats insensés."
+msgstr "L'utilisation de la {doc|syntaxe précise de recherche} lorsque vous êtes en recherche directe en base produira des résultats faux."
 
 #: ../root/release/add_cover_art.tt:54
 msgid "Validating file..."
@@ -9701,7 +9701,7 @@ msgid ""
 " second their nomination. If you do not support this candidate, please note "
 "that you cannot cast a \"No\" vote (or abstain) until two seconders have "
 "been found."
-msgstr "Le vote n'est pas ouvert. Si vous voulez soutenir ce candidat, vous pouvez seconder sa nomination. Si vous ne soutenez pas ce candidat vous ne pouvez pas voter « Non » (ou vous abstenir) tant que deux personnes le secondant soient trouvées."
+msgstr "Le vote n'est pas encore ouvert. Si vous voulez soutenir ce candidat, vous pouvez appuyer sa nomination. Si vous ne soutenez pas ce candidat vous ne pouvez pas voter « Non » (ou vous abstenir) tant que deux personnes l'appuyant soient trouvées."
 
 #: ../root/doc/edit_type.tt:59
 msgid "Voting period (days)"
@@ -9799,7 +9799,7 @@ msgstr[1] "Nous avons trouvé les labels suivants nommés \"{label}\" dans Music
 msgid ""
 "We found the following users that matched your query for "
 "<code>{query}</code>."
-msgstr "Nous avons trouvé les utilisateurs ci-dessous pour votre recherche de <code>{query}</code>."
+msgstr "Nous avons trouvé les utilisateurs suivants correspondants à votre recherche de <code>{query}</code>."
 
 #: ../root/account/donation.tt:7
 msgid ""
@@ -9829,7 +9829,7 @@ msgstr "Nous utiliserons votre date de naissance pour afficher votre âge en ann
 msgid ""
 "We're terribly sorry for this problem. Please wait a few minutes and repeat "
 "your request &#x2014; the problem may go away."
-msgstr "Nous sommes complètement désolés de ce problème. Veuillez attendre quelques minutes et renouveler votre demande &#x2014; le problème devrait disparaître."
+msgstr "Nous sommes réellement désolés de ce problème. Veuillez attendre quelques minutes et renouveler votre demande &#x2014; le problème disparaîtra peut-être."
 
 #: ../root/scripts/text_strings.tt:128
 msgid ""
@@ -9857,11 +9857,11 @@ msgstr "Application Web"
 
 #: ../root/account/edit.tt:30 ../root/admin/edit_user.tt:34
 msgid "Website:"
-msgstr "Site web : "
+msgstr "Site Web : "
 
 #: ../root/main/index.tt:50
 msgid "Welcome to MusicBrainz!"
-msgstr "Bienvenue dans MusicBrainz !"
+msgstr "Bienvenue à MusicBrainz !"
 
 #: ../root/account/preferences.tt:33
 msgid "When I add a note to an edit, mail me all future notes for that edit."
@@ -9894,7 +9894,7 @@ msgstr "Wiki Transcluder"
 
 #: ../root/admin/wikidoc/index.tt:34
 msgid "Wiki version"
-msgstr "Version dans le Wiki"
+msgstr "Version du Wiki"
 
 #: ../root/edit/details/change_wikidoc.tt:4
 msgid "WikiDoc:"
@@ -9916,7 +9916,7 @@ msgstr "Œuvre"
 
 #: ../root/work/edit_form.tt:6
 msgid "Work Details"
-msgstr "Détail de l’œuvre"
+msgstr "Détails de l’œuvre"
 
 #: ../root/release/edit_relationships.tt:185
 msgid "Work Name:"
@@ -9932,7 +9932,7 @@ msgstr "Type d'oeuvre :"
 
 #: ../root/work/layout.tt:9
 msgid "Work information"
-msgstr "Données sur l’œuvre"
+msgstr "Informations sur l’œuvre"
 
 #: ../root/user/ratings_summary.tt:3 ../root/user/ratings.tt:2
 msgid "Work ratings"
@@ -9967,14 +9967,14 @@ msgstr "Œuvres commençant par \"{index}\""
 #: ../root/report/duplicate_relationships_works.tt:3
 #: ../root/report/index.tt:90
 msgid "Works with possible duplicate relationships"
-msgstr "Oeuvres avec relations dupliquées possibles"
+msgstr "Œuvres avec relations en double possibles"
 
 #: ../root/artist/works-list.tt:10 ../root/iswc/index.tt:17
 #: ../root/otherlookup/results-work.tt:8
 #: ../root/report/iswc_with_many_works.tt:26 ../root/search/results-work.tt:9
 #: ../root/work/merge.tt:12
 msgid "Writers"
-msgstr "Auteurs"
+msgstr "Écrivains"
 
 #: ../root/work/index.tt:10
 msgid "Writers:"
@@ -10186,7 +10186,7 @@ msgstr "Vous êtes en train de naviguer dans la base de données via une requêt
 #: ../root/artist/subscribers.tt:27 ../root/collection/subscribers.tt:27
 #: ../root/label/subscribers.tt:27 ../root/user/subscribers.tt:32
 msgid "You are currently subscribed. {unsub|Unsubscribe}?"
-msgstr "Vous êtes actuellement abonné. {unsub|Se désabonner} ?"
+msgstr "Vous êtes actuellement abonné. {unsub|Vous désabonner} ?"
 
 #: ../root/watch/list.tt:7
 msgid "You are currently watching the following artists for new releases."
@@ -10203,7 +10203,7 @@ msgstr "Vous ne pouvez pas votez sur cette modification actuellement. ({url|Dét
 #: ../root/artist/subscribers.tt:33 ../root/collection/subscribers.tt:33
 #: ../root/label/subscribers.tt:33 ../root/user/subscribers.tt:38
 msgid "You are not currently subscribed. {sub|Subscribe}?"
-msgstr "Vous n'êtes actuellement pas abonné. {sub|S'abonner} ?"
+msgstr "Vous n'êtes actuellement pas abonné. {sub|Vous abonner} ?"
 
 #: ../root/watch/list.tt:32
 msgid "You are not currently watching any artists for new releases."
@@ -10276,7 +10276,7 @@ msgstr "Vous ne pouvez pas voter pour ce candidat car vous n'êtes pas un auto-�
 #: ../root/elections/show.tt:84
 msgid ""
 "You cannot vote for this candidate, because you proposed / seconded them."
-msgstr "Vous ne pouvez pas voter pour ce candidat car vous l'avez proposé / secondé."
+msgstr "Vous ne pouvez pas voter pour ce candidat car vous l'avez proposé / appuyé."
 
 #: ../root/layout/merge-helper.tt:4
 msgid "You currently have the following entities selected for merging:"
@@ -10377,11 +10377,11 @@ msgstr "Vous avez sélectionné {releasegroup}."
 
 #: ../root/account/donation.tt:22
 msgid "You will never be nagged again!"
-msgstr "Vous ne serez plus jamais embêté !"
+msgstr "Vous ne serez plus jamais ennuyé !"
 
 #: ../root/account/donation.tt:18
 msgid "You will not be nagged for another {days} days."
-msgstr "Vous ne serez plus embêté pendant {days} jours."
+msgstr "Vous ne serez plus ennuyé pendant {days} jours."
 
 #: ../root/user/email_sent.tt:5
 msgid ""
@@ -10397,7 +10397,7 @@ msgstr "Votre mot de passe a été réinitialisé."
 msgid ""
 "Your preferences have been saved. Click {link|here} to continue to your user"
 " page."
-msgstr "Vos préférences ont été sauvées. {link|Cliquez ici} pour retourner à votre page utilisateur."
+msgstr "Vos préférences ont été suvegardées. {link|Cliquez ici} pour continuer vers votre page utilisateur."
 
 #: ../root/account/edit_ok.tt:6
 msgid "Your profile has been updated."
@@ -10405,7 +10405,7 @@ msgstr "Votre profile a été mis à jour."
 
 #: ../root/search/error/invalid.tt:3
 msgid "Your search query was deemed invalid by our ruthless search server."
-msgstr "Votre recherche est considérée comme invalide par notre moteur de recherche."
+msgstr "Votre recherche a été considérée comme invalide par notre impitoyable moteur de recherche."
 
 #: ../root/account/register.tt:27
 msgid "Your username will be publicly visible."
@@ -10585,7 +10585,7 @@ msgstr "est entre"
 
 #: ../root/edit/search_macros.tt:258
 msgid "is in my subscriptions"
-msgstr "est dans mes abonements"
+msgstr "est dans mes abonnements"
 
 #: ../root/edit/search_macros.tt:144
 msgid "is less than"
@@ -10666,7 +10666,7 @@ msgstr "original"
 
 #: ../root/scripts/text_strings.tt:81
 msgid "page #{page} of #{total}"
-msgstr "page {page} sur {total}"
+msgstr "page no {page} sur no {total}"
 
 #: ../root/components/common-macros.tt:161
 msgid "places"
@@ -10806,7 +10806,7 @@ msgstr "œuvres"
 #: ../root/main/index.tt:77
 msgid ""
 "{about|More Information} &#x2014; {faq|FAQs} &#x2014; {contact|Contact Us}"
-msgstr "{about|Plus d'Informations} &#x2014; {faq|FAQs} &#x2014; {contact|Nous contacter}"
+msgstr "{about|Plus d'Informations} &#x2014; {faq|FAQ} &#x2014; {contact|Nous contacter}"
 
 #: ../root/components/common-macros.tt:134
 msgid "{almost_last_list_item} and {last_list_item}"
@@ -11100,7 +11100,7 @@ msgstr[1] "{n} œuvres sélectionnées"
 
 #: ../root/user/profile.tt:217 ../root/user/profile.tt:221
 msgid "{percentage}%"
-msgstr "{percentage}%"
+msgstr "{percentage} %"
 
 #: ../root/relationship/linktype/tree.tt:23
 msgid "{relationship_documentation_url|Documentation}"
@@ -11151,7 +11151,7 @@ msgstr "{user}"
 
 #: ../root/user/collections.tt:37
 msgid "{user} has no public collections."
-msgstr "{user} n'a pas de collections publiques."
+msgstr "{user} n'a pas de collection publique."
 
 #: ../root/user/ratings_summary.tt:32
 msgid "{user} has not rated anything."
@@ -11175,7 +11175,7 @@ msgstr "{valink|Artistes divers} ne devrait être utilisé que très rarement po
 msgid ""
 "{valink|Various Artists} should very rarely be used on tracks, make sure "
 "that the artists on these tracks have been entered correctly."
-msgstr "{valink|Artistes divers} ne devrait être utilisé que très rarement pour les pistes. Assurez-vous que les artistes sur ces pistes ont été saisis correctement."
+msgstr "{valink|Artistes divers} ne devrait être utilisés que très rarement pour les pistes. Assurez-vous que les artistes sur ces pistes ont été saisis correctement."
 
 #: ../root/components/common-macros.tt:717
 msgid "{yes} yes : {no} no"
@@ -11843,12 +11843,12 @@ msgstr "L'opérateur n'est pas pris en charge"
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:89
 msgctxt "autoeditor election status"
 msgid "Awaiting 1st seconder"
-msgstr "En attente d'un 1er soutien"
+msgstr "En attente d'un 1er appuyeur"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:90
 msgctxt "autoeditor election status"
 msgid "Awaiting 2nd seconder"
-msgstr "En attente d'un 2ème soutien"
+msgstr "En attente d'un 2ème appuyeur"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:91
 #, perl-brace-format
@@ -11877,12 +11877,12 @@ msgstr "Annulé le {date}"
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:98
 msgctxt "autoeditor election status (short)"
 msgid "Awaiting 1st seconder"
-msgstr "En attente d'un 1er soutien"
+msgstr "En attente d'un 1er appuyeur"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:99
 msgctxt "autoeditor election status (short)"
 msgid "Awaiting 2nd seconder"
-msgstr "En attente d'un 2ème soutien"
+msgstr "En attente d'un 2ème appuyeur"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:100
 msgctxt "autoeditor election status (short)"
@@ -12216,7 +12216,7 @@ msgstr "FreeDB"
 
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:57
 msgid "Indexed search with advanced query syntax"
-msgstr "Recherche indexée avec une syntaxe de requête précise"
+msgstr "Recherche indexée avec une syntaxe précise de requête"
 
 #: ../lib/MusicBrainz/Server/Form/User/ChangePassword.pm:49
 msgid "The old password is incorrect"
@@ -12403,7 +12403,7 @@ msgstr "Une parution non-officielle ou underground non reconnue par l'artiste et
 msgid ""
 "A pseudo-release is a duplicate release for translation/transliteration "
 "purposes."
-msgstr "Une pseudo-parution est une parution clonée pour traduction ou translitération."
+msgstr "Une pseudo-parution est une parution en double pour traduction ou translittération."
 
 #: ../lib/MusicBrainz/Server/Wizard/ReleaseEditor.pm:54
 msgid "Release Information"
