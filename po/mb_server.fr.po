@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-22 22:59+0000\n"
+"PO-Revision-Date: 2013-11-22 23:59+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -1429,7 +1429,7 @@ msgstr "Artistes"
 #: ../root/report/artists_containing_disambiguation_comments.tt:3
 #: ../root/report/index.tt:23
 msgid "Artists containing disambiguation comments in their name"
-msgstr "Artistes contenant des commentaires de désambiguation dans leur nom"
+msgstr "Artistes contenant des commentaires d'homonymie dans leur nom"
 
 #: ../root/report/artists_with_multiple_occurances_in_artist_credits.tt:1
 #: ../root/report/artists_with_multiple_occurances_in_artist_credits.tt:3
@@ -2245,7 +2245,7 @@ msgid ""
 "Confirm by activating the checkbox below that you have read the "
 "{doc_comment|disambiguation documentation}, understood how we distinguish "
 "places with the same name, and that you know what you are doing."
-msgstr "En cochant la case ci-dessous vous confirmez avoir lu la {doc_comment|documentation sur l'homonymie}, avoir compris que nous distinguons les lieux ayant le même nom et que vous savez ce que vous faites."
+msgstr "Confirmez en cochant la case ci-dessous que vous avez  lu la {doc_comment|documentation sur l'homonymie}, avez compris que nous distinguons les lieux ayant le même nom et que vous savez ce que vous faites."
 
 #: ../root/label/edit_form.tt:25
 msgid ""
@@ -3891,7 +3891,7 @@ msgid ""
 " will be prompted to {doc_addcomment|add a disambiguation comment to this "
 "artist}, which will allow users to distinguish this entry from the other "
 "artist(s) with the same name."
-msgstr "Si un ou plusieurs artistes du même nom existent déjà dans la base de données, nous vous demanderons d'{doc_addcomment|ajouter un commentaire de désambiguation pour cet artiste}, qui permettra aux utilisateurs de distinguer cette entrée des autres artistes du même nom."
+msgstr "Si un ou plusieurs artistes du même nom existent déjà dans la base de données, nous vous demanderons d'{doc_addcomment|ajouter un commentaire d'homonymie pour cet artiste}, qui permettra aux utilisateurs de distinguer cette entrée de l'/des autre(s) artiste(s) du même nom."
 
 #: ../root/label/edit_form.tt:3
 msgid ""
@@ -3899,7 +3899,7 @@ msgid ""
 "will be prompted to add a {doc_comment|disambiguation comment to this label}"
 " that will allow users to distinguish this entry from the other label(s) "
 "with the same name."
-msgstr "Si un ou plusieurs label du même nom existent déjà dans la base de données, nous vous demanderons d'{doc_comment|ajouter un commentaire de désambiguation pour ce label}, qui permettra aux utilisateurs de distinguer cette entrée des autres labels du même nom."
+msgstr "Si un ou plusieurs label du même nom existent déjà dans la base de données, nous vous demanderons d'{doc_comment|ajouter un commentaire d'homonymie pour ce label}, qui permettra aux utilisateurs de distinguer cette entrée du/des autre(s) label(s) du même nom."
 
 #: ../root/place/edit_form.tt:3
 msgid ""
@@ -3907,7 +3907,7 @@ msgid ""
 "will be prompted to add a {doc_comment|disambiguation comment to this place}"
 " that will allow users to distinguish this entry from the other place(s) "
 "with the same name."
-msgstr "Si un ou plusieurs lieux existe déjà dans la base de données, l'on vous demandera d'ajouter un {doc_comment|commentaire d'homonymie à ce lieu} qui permettra aux utilisateurs de le/les distinguer des autres ayant le même nom."
+msgstr "Si un ou plusieurs lieux existent déjà dans la base de données, l'on vous demandera d'ajouter un {doc_comment|commentaire d'homonymie à ce lieu} qui permettra aux utilisateurs de le  distinguer du/des autre(s) ayant le même nom."
 
 #: ../root/main/500.tt:65
 msgid ""
@@ -4456,7 +4456,7 @@ msgstr "Recherche de CD"
 
 #: ../root/cdstub/browse.tt:10
 msgid "Lookup count"
-msgstr "Comptage des recherches"
+msgstr "Nombre de recherches"
 
 #: ../root/cdstub/layout.tt:12
 msgid "Lookup count:"
@@ -4465,12 +4465,12 @@ msgstr "Nombre de recherche : "
 #: ../root/account/lost_password_sent.tt:1 ../root/account/lost_password.tt:1
 #: ../root/account/lost_password.tt:3
 msgid "Lost Password"
-msgstr "J'ai perdu mon mot de passe"
+msgstr "Mot de passe perdu"
 
 #: ../root/account/lost_username_sent.tt:1 ../root/account/lost_username.tt:1
 #: ../root/account/lost_username.tt:3
 msgid "Lost Username"
-msgstr "J'ai perdu mon nom d'utilisateur"
+msgstr "Nom d'utilisateur perdu"
 
 #: ../root/components/common-macros.tt:660
 #: ../lib/MusicBrainz/Server/Controller/Edit.pm:188
@@ -4495,7 +4495,7 @@ msgstr "MM"
 
 #: ../root/layout/menu.tt:162 ../root/main/index.tt:10
 msgid "Magic MP3 Tagger"
-msgstr "Tagger MP3 Magique"
+msgstr "Taggueer « Magic MP3 »"
 
 #: ../root/account/preferences.tt:31
 msgid ""
@@ -4509,7 +4509,7 @@ msgstr "Listes de discussion"
 
 #: ../root/taglookup/nag.tt:24
 msgid "Make a donation now!"
-msgstr "Faites un don maintenant !"
+msgstr "Faire un don maintenant !"
 
 #: ../root/release/merge.tt:134
 msgid ""
@@ -4520,7 +4520,7 @@ msgstr "Assurez-vous que tous les supports de parution fusionnés soient la bonn
 
 #: ../root/release/edit/tracklist.tt:165
 msgid "Manual entry"
-msgstr "Entrée manuelle"
+msgstr "Saisie manuelle"
 
 #: ../root/release/lookup.tt:8
 msgid "Match"
@@ -4685,7 +4685,7 @@ msgstr "Fusionner des stratégies : "
 
 #: ../root/work/layout.tt:38
 msgid "Merge work"
-msgstr "Fusionner le travail"
+msgstr "Fusionner l’œuvre"
 
 #: ../root/edit/details/merge_common.tt:2
 #: ../root/edit/details/merge_places.tt:3
@@ -4718,7 +4718,7 @@ msgstr "Déplacement "
 
 #: ../root/cdtoc/move_search.tt:1 ../root/cdtoc/move_search.tt:2
 msgid "Move Disc ID"
-msgstr "Déplacer un ID de disque"
+msgstr "Déplacer une ID de disque"
 
 #: ../root/release/edit/tracklist.tt:387
 msgid "Move disc down"
@@ -4750,7 +4750,7 @@ msgstr "Déplacer les pistes :"
 
 #: ../root/main/index.tt:1
 msgid "MusicBrainz - The Open Music Encyclopedia"
-msgstr "MusicBrainz - L'Encyclopédie musicale ouverte"
+msgstr "MusicBrainz - L'encyclopédie musicale libre"
 
 #: ../root/main/index.tt:31
 msgid "MusicBrainz Blog"
@@ -4770,7 +4770,7 @@ msgstr "Serveur MusicBrainz"
 
 #: ../root/main/index.tt:56
 msgid "MusicBrainz aims to be:"
-msgstr "MusicBrainz ambitionne d'être : "
+msgstr "MusicBrainz à l'ambition d'être : "
 
 #: ../root/account/register.tt:16
 msgid ""
@@ -4797,14 +4797,14 @@ msgstr "MusicBrainz n'a qu'un seul type de compte pour tous les utilisateurs. Si
 msgid ""
 "MusicBrainz is an open music encyclopedia that collects music metadata and "
 "makes it available to the public."
-msgstr "MusicBrainz est une encyclopédie musicale ouverte, qui collecte les métadonnées musicales et les rends disponible au public."
+msgstr "MusicBrainz est une encyclopédie musicale libre, qui collecte les métadonnées musicales et les rends disponible au public."
 
 #: ../root/main/index.tt:84
 msgid ""
 "MusicBrainz is operated by the {uri|MetaBrainz Foundation}, a California "
 "based 501(c)(3) tax-exempt non-profit corporation dedicated to keeping "
 "MusicBrainz {free|free and open source}."
-msgstr "MusicBrainz est géré par la {uri|Fondation MetaBrainz}, une association à but non lucratif basée en Californie, dont la mission est de s'assurer que MusicBrainz reste {free|libre et ouvert}."
+msgstr "MusicBrainz est exploité par la {uri|Fondation MetaBrainz}, une corporation à but non lucratif de type 501(c)(3 exempte d'impôts basée en Californie, dévouée à garder MusicBrainz {free|gratuit et libre}."
 
 #: ../root/layout.tt:12
 msgid "MusicBrainz: Artist"
@@ -4828,7 +4828,7 @@ msgstr "Mes Collections"
 
 #: ../root/layout/menu.tt:54
 msgid "My Data"
-msgstr "Mes Données"
+msgstr "Mes données"
 
 #: ../root/layout/menu.tt:66
 msgid "My Open Edits"
@@ -4840,7 +4840,7 @@ msgstr "Mes évaluations"
 
 #: ../root/layout/menu.tt:63
 msgid "My Tags"
-msgstr "Mes Tags"
+msgstr "Mes tags"
 
 #: ../root/edit/search_macros.tt:307
 msgid "My Vote"
@@ -4857,7 +4857,7 @@ msgstr "Mon vote :"
 
 #: ../root/edit/edit_header.tt:37
 msgid "N/A"
-msgstr "N/A"
+msgstr "S.O."
 
 #: ../root/artist/aliases.tt:19 ../root/artist/recordings-list.tt:25
 #: ../root/components/results-generic.tt:5
@@ -4995,7 +4995,7 @@ msgstr "Nouvelles relations : "
 
 #: ../root/edit/details/historic/edit_release_language.tt:30
 msgid "New script:"
-msgstr "Nouveeau caractère d'écriture : "
+msgstr "Nouveau caractère d'écriture : "
 
 #: ../root/admin/wikidoc/edit.tt:18 ../root/edit/details/change_wikidoc.tt:23
 #: ../root/edit/details/change_wikidoc.tt:28
@@ -5117,7 +5117,7 @@ msgstr "Pas d'évaluation."
 
 #: ../root/artist/recordings.tt:16
 msgid "No recordings found."
-msgstr "Aucun enregistrement trouvé."
+msgstr "Aucun enregistrement de trouvé."
 
 #: ../root/tag/recording.tt:1
 msgid "No recordings with this tag were found."
@@ -5188,7 +5188,7 @@ msgstr "Aucun résultat."
 #: ../root/search/results-release-group.tt:26
 #: ../root/search/results-work.tt:58
 msgid "No results found. Try refining your search query."
-msgstr "Aucun résultat. Essayez en affinant votre recherche."
+msgstr "Aucun résultat de trouvé. Essayez en affinant votre recherche."
 
 #: ../root/user/subscriptions/table.tt:34
 msgid "No subscriptions."
@@ -5200,7 +5200,7 @@ msgstr "Non merci"
 
 #: ../root/user/privileged.tt:9
 msgid "No users found"
-msgstr "Aucun utilisateur trouvé."
+msgstr "Aucun utilisateur de trouvé."
 
 #: ../root/edit/search_macros.tt:244
 msgid "No vote"
@@ -5243,7 +5243,7 @@ msgstr "Utilisateur normal"
 
 #: ../root/scripts/text_strings.tt:82
 msgid "Not found? Try again with direct search."
-msgstr "Introuvable ? Essayez à nouveau avec une recherche directe."
+msgstr "Introuvable ? Essayez à nouveau avec la recherche directe."
 
 #: ../root/release/edit/information.tt:174
 msgid ""
@@ -5268,7 +5268,7 @@ msgstr "Signalez-moi par courriel toute nouvelle parution dans la liste des arti
 
 #: ../root/release/edit/recordings.tt:383
 msgid "Now loading recording associations..."
-msgstr "Chargement de la liste des enregistrements associés..."
+msgstr "Chargement de la liste des associations d'enregistrement..."
 
 #: ../root/release/edit/tracklist.tt:279 ../root/release/edit/tracklist.tt:401
 msgid "Now loading tracklist..."
@@ -5292,7 +5292,7 @@ msgstr "Secret du client d'OAuth "
 
 #: ../root/layout/sidebar/sidebar-favicons.tt:14
 msgid "Official homepage"
-msgstr "Page officielle"
+msgstr "Page d'accueil officielle"
 
 #: ../root/account/applications.tt:5
 msgid "Offline Access"
@@ -5374,7 +5374,7 @@ msgstr "Oops ! Il semble que vos paramètres de recherche sont incorrects, veuil
 
 #: ../root/main/500.tt:5
 msgid "Oops, something went wrong!"
-msgstr "Oups, quelque chose a planté !"
+msgstr "Oups, quelque chose a mal tourné !"
 
 #: ../root/user/profile.tt:163 ../lib/MusicBrainz/Server/Edit/Utils.pm:263
 msgid "Open"
@@ -7282,12 +7282,12 @@ msgstr "Désolé, vos requêtes dépassent le taux maximal autorisé ({rlinfo}).
 
 #: ../root/main/404.tt:8
 msgid "Sorry, the page you're looking for does not exist."
-msgstr "Désolé, la page que vous demnadez n'existe pas."
+msgstr "Désolé, la page que vous cherchez n'existe pas."
 
 #: ../root/main/mirror_404.tt:5
 msgid ""
 "Sorry, the page you're looking for is not available on a mirror server."
-msgstr "Désolé, la page que vous demandez n'est pas disponible sur un serveur miroir."
+msgstr "Désolé, la page que vous chercher n'est pas disponible sur un serveur miroir."
 
 #: ../root/browse/area.tt:34
 msgid ""
@@ -7299,13 +7299,13 @@ msgstr "Désolé, il n'y a aucune région commençant par « {index} ». Veuille
 msgid ""
 "Sorry, there are no artists starting with “{index}”. Please {pre|go back} "
 "and try again."
-msgstr "Désolé, il n'y a aucun artiste commençant par « {index} ». Vous pouvez {pre|revenir en arrière} et essayer autre chose."
+msgstr "Désolé, il n'y a aucun artiste commençant par « {index} ». Veuillez {pre|revenir en arrière} et essayer de nouveau."
 
 #: ../root/browse/label.tt:34
 msgid ""
 "Sorry, there are no labels starting with “{index}”. Please {pre|go back} and"
 " try again."
-msgstr "Désolé, il n'y a aucun label commençant par « {index} ». Vous pouvez {pre|revenir en arrière} et essayer autre chose."
+msgstr "Désolé, il n'y a aucun label commençant par « {index} ». Veuillez {pre|revenir en arrière} et essayer de nouveau."
 
 #: ../root/browse/place.tt:34
 msgid ""
@@ -7317,7 +7317,7 @@ msgstr "Désolé, il n'y a pas de lieu commençant par “{index}”. Veuillez {
 msgid ""
 "Sorry, there are no recordings starting with “{index}”. Please {pre|go back}"
 " and try again."
-msgstr "Désolé, il n'y a aucun enregistrement commençant par « {index} ». Vous pouvez {pre|revenir en arrière} et essayer autre chose."
+msgstr "Désolé, il n'y a aucun enregistrement commençant par « {index} ». Veuillez {pre|revenir en arrière} et essayer de nouveau."
 
 #: ../root/artist/browse_various.tt:36 ../root/browse/release_group.tt:34
 msgid ""
@@ -7335,11 +7335,11 @@ msgstr "Désolé, il n'y a aucune parution commençant par « {index} ». Veuill
 msgid ""
 "Sorry, there are no works starting with “{index}”. Please {pre|go back} and "
 "try again."
-msgstr "Désolé, il n'y a aucune œuvre commençant par « {index} ». Vous pouvez {pre|revenir en arrière} et essayer autre chose."
+msgstr "Désolé, il n'y a aucune œuvre commençant par « {index} ». Veuillez {pre|revenir en arrière} et essayer de nouveau."
 
 #: ../root/main/400.tt:5
 msgid "Sorry, there was a problem with your request."
-msgstr "Désolé, il y a un problème avec votre requête."
+msgstr "Désolé, il y a eu un problème avec votre requête."
 
 #: ../root/track/not_found.tt:4
 msgid ""
@@ -7460,7 +7460,7 @@ msgid ""
 " to carry out a search. If you are attempting to find something that "
 "contains nothing but punctuation characters (e.g. !!!) then you need to use "
 "the {uri|browse page}, since this search ignores punctuation characters."
-msgstr "Désolé, votre requête (<code>{query}</code>) ne contient pas assez d'information pour effectuer une recherche. Si vous essayez de chercher quelque chose qui ne contient que des ponctuations (par exemple !!!) vous devriez essayer {uri|les pages d'index}, car la recherche ignore les caractères de ponctuation."
+msgstr "Désolé, votre requête (<code>{query}</code>) ne contient pas assez d'information pour effectuer une recherche. Si vous essayez de chercher quelque chose qui ne contient que des ponctuations (par exemple !!!) vous devez alors utiliser {uri|la page de navigation} car cette recherche ignore les ponctuations."
 
 #: ../root/search/error/uri-too-large.tt:3
 msgid "Sorry, your query was too large."
@@ -7513,19 +7513,19 @@ msgstr "Nom de tri :"
 
 #: ../root/artist/split.tt:15
 msgid "Split Artist"
-msgstr "Séparer l'artiste"
+msgstr "Scinder l'artiste"
 
 #: ../root/artist/cannot_split.tt:2 ../root/artist/split.tt:20
 msgid "Split Into Separate Artists"
-msgstr "Séparé en des artistes distincts"
+msgstr "Scinder en des artistes distincts"
 
 #: ../root/artist/layout.tt:101
 msgid "Split into separate artists"
-msgstr "Séparé en des artistes distincts"
+msgstr "Scinder en des artistes distincts"
 
 #: ../root/layout/menu.tt:115
 msgid "Sponsors"
-msgstr "Sponsors"
+msgstr "Commanditaires"
 
 #: ../root/main/500.tt:19
 msgid "Stack trace:"
@@ -7647,7 +7647,7 @@ msgstr "Éditeurs abonnés"
 
 #: ../root/edit/list_header.tt:17
 msgid "Subscribed entities"
-msgstr "Entités abonnées"
+msgstr "Abonné à ces entités"
 
 #: ../root/artist/layout.tt:138 ../root/artist/subscribers.tt:1
 #: ../root/artist/subscribers.tt:2 ../root/collection/layout.tt:29
@@ -7799,11 +7799,11 @@ msgstr "Équipe"
 
 #: ../root/admin/edit_user.tt:12
 msgid "Technical flags"
-msgstr "Attributs techniques"
+msgstr "Drapeaux techniques"
 
 #: ../root/edit/index.tt:61
 msgid "Testing features"
-msgstr "Fonctionnalité à l'essai"
+msgstr "Fonctionnalités de test"
 
 #: ../root/edit/details/add_release_annotation.tt:13
 msgid "Text:"
@@ -7833,11 +7833,11 @@ msgstr "La « Cover Art Archive » a reçu des requêtes de suppression par le p
 
 #: ../root/user/profile.tt:81
 msgid "The Dawn of the Project"
-msgstr "La genèse du projet"
+msgstr "L'aube du projet"
 
 #: ../root/release/edit/information.tt:228
 msgid "The annotation field functions like a miniature wiki."
-msgstr "Le champ annotation fonctionne comme un mini-wiki."
+msgstr "Le champ d'annotation fonctionne comme un mini-wiki."
 
 #: ../root/artist/special_purpose.tt:3
 msgid ""
@@ -7918,7 +7918,7 @@ msgstr "La date saisie est invalide."
 
 #: ../root/user/profile.tt:83
 msgid "The early days of the project"
-msgstr "Le commencement du projet"
+msgstr "Le début du projet"
 
 #: ../root/edit/cannot_approve.tt:6
 msgid "The edit has already been closed."
@@ -7981,7 +7981,7 @@ msgstr "Le but de ce champ est d'ajouter des informations qui ne rentrent pas da
 
 #: ../root/edit/cannot_approve.tt:12
 msgid "The reason for this was unknown."
-msgstr "La raison de cela est inconnue."
+msgstr "La raison de ceci était inconnue."
 
 #: ../root/release/merge.tt:138
 msgid ""
@@ -8005,11 +8005,11 @@ msgstr "Le type de relation \"{type}\" ne peut pas être effacé car il est enco
 msgid ""
 "The search server could not fulfill your request due to an internal error. "
 "This is usually only temporary, so please retry your search again later."
-msgstr "Le serveur de recherche ne peut pas répondre à votre requête du fait d'une erreur interne. C'est normalement temporaire, n'hésitez pas à réessayer sous peu."
+msgstr "Le serveur de recherche n'a pu compléter votre requête du fait d'une erreur interne. C'est normalement seulement temporaire, alors  réessayer à nouveau plus tard."
 
 #: ../root/layout.tt:124
 msgid "The server is temporary in read-only mode for database maintainance."
-msgstr "Le serveur est temporairement en lecture seule car la base de données est en maintenance."
+msgstr "Le serveur est temporairement en lecture seule pour la maintenance. de la base de données."
 
 #: ../root/main/503.tt:5
 msgid "The system is overloaded or you are making requests too fast."
@@ -8029,7 +8029,7 @@ msgstr "La liste de pistes trouvée semble avoir plusieurs artistes sur certaine
 
 #: ../root/taglookup/nag.tt:4
 msgid "The users make MusicBrainz happen and we appreciate your help!"
-msgstr "Les utilisateurs constituent MusicBrainz et nous apprécions votre aide !"
+msgstr "Les utilisateurs rendent MusicBrainz possible et nous apprécions votre aide !"
 
 #: ../root/scripts/text_strings.tt:102
 msgid "The value you've entered is not valid."
@@ -8642,7 +8642,7 @@ msgstr "Ce rapport liste les artistes qui ont un type autre que <em>person</em> 
 msgid ""
 "This report lists artists that may have disambiguation comments in their "
 "name, rather than the actual disambiguation comment field."
-msgstr "Ce rapport liste les artistes qui on peut-être des commentaires d'homonymie dans leur nom plutôt que dans le champ d'homonymie. "
+msgstr "Ce rapport liste des artistes qui on peut-être des commentaires d'homonymie dans leur nom plutôt que dans le champ de commentaire d'homonymie. "
 
 #: ../root/report/possible_collaborations.tt:6
 msgid ""
@@ -9029,7 +9029,7 @@ msgstr "Pour aider aux tests, les fonctionnalités suivantes ont été activées
 #: ../root/browse/place.tt:39 ../root/browse/release_group.tt:39
 #: ../root/browse/release.tt:39 ../root/browse/work.tt:39
 msgid "To begin browsing, please select a letter above."
-msgstr "Pour naviguer, choisissez une lettre ci-dessus."
+msgstr "Pour commencer à naviguer, veuillez choisir une lettre ci-dessus."
 
 #: ../root/release/edit/tracklist.tt:161
 msgid ""
@@ -9098,7 +9098,7 @@ msgstr "Total des labels trouvés : {count}"
 
 #: ../root/cdstub/index.tt:21 ../root/cdtoc/info.tt:23
 msgid "Total length:"
-msgstr "Longueur totale :"
+msgstr "Durée totale :"
 
 #: ../root/report/duplicate_relationships_recordings.tt:7
 #: ../root/report/featuring_recordings.tt:13
@@ -9150,11 +9150,11 @@ msgstr "Total des parutions : {count}"
 
 #: ../root/cdstub/index.tt:17 ../root/cdtoc/info.tt:19
 msgid "Total tracks:"
-msgstr "Nombre de pistes :"
+msgstr "Nombre total de pistes :"
 
 #: ../root/report/duplicate_relationships_works.tt:8
 msgid "Total works found: {count}"
-msgstr "Total d'oeuvres de trouvées : {count}"
+msgstr "Total des œuvres de trouvées : {count}"
 
 #: ../root/cdtoc/info.tt:31 ../root/freedb/show.tt:11
 #: ../root/freedb/show.tt:63 ../root/search/lib/inline-results-recording.tt:16
@@ -9200,7 +9200,7 @@ msgstr "Les noms de pistes commencent par un chiffre"
 #: ../root/edit/details/historic/edit_track_number.tt:13
 #: ../root/taglookup/form.tt:6
 msgid "Track number:"
-msgstr "Numéro de la piste :"
+msgstr "Numéro de piste :"
 
 #: ../root/cdstub/edit_form.tt:16
 msgid "Track {n}:"
@@ -9242,11 +9242,11 @@ msgstr "Pistes :"
 
 #: ../root/admin/index.tt:11 ../root/layout/menu.tt:98
 msgid "Transclude WikiDocs"
-msgstr "Transcluer ce WikiDocs "
+msgstr "Transclure WikiDocs "
 
 #: ../root/admin/wikidoc/index.tt:33
 msgid "Transcluded version"
-msgstr "Version sous Transclusion"
+msgstr "Version transcluse"
 
 #: ../root/admin/wikidoc/index.tt:1 ../root/admin/wikidoc/index.tt:3
 msgid "Transclusion Table"
@@ -9407,7 +9407,7 @@ msgstr "Inconnu"
 
 #: ../root/recording/fingerprints.tt:32
 msgid "Unlink"
-msgstr "Délier"
+msgstr "Annuler le lien"
 
 #: ../root/report/unlinked_pseudo_releases.tt:1
 #: ../root/report/unlinked_pseudo_releases.tt:3
@@ -10058,7 +10058,7 @@ msgstr "Oui"
 
 #: ../root/edit/search_macros.tt:307
 msgid "Yes vote count"
-msgstr "Nombre votes OUI"
+msgstr "Nombre de votes OUI"
 
 #: ../root/account/remove_application.tt:10
 #: ../root/account/revoke_application_access.tt:10
@@ -10214,14 +10214,14 @@ msgid ""
 "You are required to enter a disambiguation comment which allows users to "
 "distinguish this artist from the other artists with the same name, if the "
 "final artist name is similar to an existing artist."
-msgstr "Vous devez saisir un commentaire (homonymie) qui permet aux utilisateurs de distinguer cet artiste d'autres artistes avec le même nom si le nom d'artiste existe déjà."
+msgstr "Vous devez saisir un commentaire d'homonymie qui permet aux utilisateurs de distinguer cet artiste d'autres artistes avec le même nom si le nom final de l'artiste est similaire à un artiste existant."
 
 #: ../root/label/edit_form.tt:24
 msgid ""
 "You are required to enter a disambiguation comment which allows users to "
 "distinguish this label from the other labels with the same name, if the "
 "final label name is similar to an existing label."
-msgstr "Vous devez saisir un commentaire (homonymie) qui permet aux utilisateurs de distinguer ce label d'autres labels avec le même nom si le nom de label existe déjà."
+msgstr "Vous devez saisir un commentaire d'homonymie qui permet aux utilisateurs de distinguer ce label d'autres labels avec le même nom si le nom final du label est similaire à un label existant."
 
 #: ../root/place/edit_form.tt:24
 msgid ""
@@ -10431,7 +10431,7 @@ msgstr "[inconnu]"
 
 #: ../root/scripts/text_strings.tt:35
 msgid "add a disambiguation comment"
-msgstr "ajouter un commentaire de désambiguation"
+msgstr "ajouter un commentaire d'homonymie"
 
 #: ../root/edit/search_macros.tt:161
 msgid "after"
