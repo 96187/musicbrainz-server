@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2013-11-26 17:58+0000\n"
+"PO-Revision-Date: 2013-11-26 18:58+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -373,7 +373,7 @@ msgstr "Indique une représentation picturale (JPEG, GIF, PNG) d'un artiste. (<a
 msgid ""
 "Indicates a sibling relationship (i.e. brother or sister). (<a "
 "href=\"http://musicbrainz.org/doc/Sibling_Relationship_Type\">Details</a>)"
-msgstr "Indique une relation de fratrie (par exemple frère ou sœur). (<a href=\"http://musicbrainz.org/doc/Sibling_Relationship_Type\">Détails</a>)"
+msgstr "Indique une relation de fratrie (c.-à-d. frère ou sœur). (<a href=\"http://musicbrainz.org/doc/Sibling_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:94
 msgid ""
@@ -590,7 +590,7 @@ msgid ""
 " the tracks are pitched or blended into each other, the DJ-Mix relationship "
 "type is more appropriate. (<a "
 "href=\"http://musicbrainz.org/doc/Compilation_Relationship_Type\">Details</a>)"
-msgstr "Indique qu'une piste est une compilation de plusieurs autres. Ceci s'applique à une longue piste qui contient plusieurs chansons, l'une après l'autre, sur laquelle le contenu audio n'a pas été altéré. Si la vitesse des pistes a été modifiée ou qu'elles ont été mélangées, le type de relation DJ-mix est plus pertinent. (<a href=\"http://musicbrainz.org/doc/Compilation_Relationship_Type\">Détails</a>)"
+msgstr "Indique qu'une piste est une compilation de plusieurs autres. Ceci s'applique à une longue piste qui contient plusieurs chansons, l'une après l'autre, sur laquelle le contenu audio n'a pas été altéré. Si la vitesse des pistes a été modifiée ou qu'elles se fondent l'une en l'autre, le type de relation DJ-mix est plus pertinent. (<a href=\"http://musicbrainz.org/doc/Compilation_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:226
 msgid ""
@@ -693,7 +693,7 @@ msgid ""
 "performed by another artist. Use this only if you really cannot figure out "
 "the particular track that has been sampled. (<a "
 "href=\"http://musicbrainz.org/doc/Samples_Artist_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indique que l'album contient des échantillons d'un contenu interprété à l'origine par un autre artiste. N'utiliser ceci que si vous ne pouvez vraiment pas déterminer qu'elle piste spécifique a été échantillonnée. (<a href=\"http://musicbrainz.org/doc/Samples_Artist_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:232
 msgid ""
@@ -702,7 +702,7 @@ msgid ""
 "mixed together, over each other, or otherwise combined into a single track "
 "(usually by a third artist, the remixer). (<a "
 "href=\"http://musicbrainz.org/doc/Mash-up_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indique que la piste est composé de collages de contenu provenant de deux (ou plus) autres pistes. Ceci veut dire que deux pièces de musique par des artistes différents sont mélangées ensemble, l'une sur l'autre ou autrement combinées en une seule piste (habituellement par une troisième artiste, le remixeur). (<a href=\"http://musicbrainz.org/doc/Mash-up_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:154
 msgid ""
@@ -710,7 +710,7 @@ msgid ""
 "performed by another artist. Use this only if you really cannot figure out "
 "the particular track that has been sampled. (<a "
 "href=\"http://musicbrainz.org/doc/Samples_Artist_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indiques que la piste inclus des échantillons de contenu qui a été à l'origine interprété par un autre artiste. N'utiliser ceci que si vous ne pouvez vraiment pas déterminer qu'elle piste spécifique a été échantillonnée. (<a href=\"http://musicbrainz.org/doc/Samples_Artist_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:108
 msgid ""
@@ -726,7 +726,7 @@ msgid ""
 "Indicates that two persons were romantically involved with each other "
 "without being married. (<a "
 "href=\"http://musicbrainz.org/doc/Involved_With_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indique que deux personnes avaient une relation amoureuse sans être mariés. (<a href=\"http://musicbrainz.org/doc/Involved_With_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:293 DB:link_type/description:282
 #: DB:link_type/description:295 DB:link_type/description:297
@@ -737,82 +737,82 @@ msgid ""
 "Indicates the artist who arranged a tune into a form suitable for "
 "performance. (<a "
 "href=\"http://musicbrainz.org/doc/Arranger_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indique l'artiste ayant arrangé un morceau sous une forme adaptée à l'interprétation. (<a href=\"http://musicbrainz.org/doc/Arranger_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:140 DB:link_type/description:31
 msgid ""
 "Indicates the audio engineer for this work. (<a "
 "href=\"http://musicbrainz.org/doc/Engineer_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indique l'ingénieur du son pour cette œuvre. (<a href=\"http://musicbrainz.org/doc/Engineer_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:168
 msgid ""
 "Indicates the composer for this work, i.e. the person who wrote the music "
 "(not necessarily the lyrics) of this work. (<a "
 "href=\"http://musicbrainz.org/doc/Composer_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indique le compositeur de cette œuvre, c.-à-d. la personne qui a écrit la musique (pas automatiquement les paroles) de cette œuvre. (<a href=\"http://musicbrainz.org/doc/Composer_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:55
 msgid ""
 "Indicates the composer for this work. (<a "
 "href=\"http://musicbrainz.org/doc/Composer_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indique le compositeur de cette œuvre. (<a href=\"http://musicbrainz.org/doc/Composer_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:264
 msgid ""
 "Indicates the creative direction support for this work. (<a "
 "href=\"http://musicbrainz.org/doc/Miscellaneous_Production_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indique le soutien de direction créative pour cette œuvre. (<a href=\"http://musicbrainz.org/doc/Miscellaneous_Production_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:28 DB:link_type/description:138
 msgid ""
 "Indicates the engineer for this work. (<a "
 "href=\"http://musicbrainz.org/doc/Engineer_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indique l'ingénieur pour cette œuvre. (<a href=\"http://musicbrainz.org/doc/Engineer_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:57 DB:link_type/description:169
 msgid ""
 "Indicates the librettist for this work. (<a "
 "href=\"http://musicbrainz.org/doc/Librettist_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indique le librétiste pour cette œuvre. (<a href=\"http://musicbrainz.org/doc/Librettist_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:56 DB:link_type/description:165
 msgid ""
 "Indicates the lyricist for this work. (<a "
 "href=\"http://musicbrainz.org/doc/Lyricist_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indique le parolier pour cette œuvre. (<a href=\"http://musicbrainz.org/doc/Lyricist_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:42
 msgid ""
 "Indicates the mastering engineer for this work. (<a "
 "href=\"http://musicbrainz.org/doc/Engineer_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indique l'ingénieur de matriçage pour cette œuvre. (<a href=\"http://musicbrainz.org/doc/Engineer_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:143
 msgid ""
 "Indicates the mix engineer for this work, i.e. the person who did the final "
 "audio mixing. This is not a remixer! (<a "
 "href=\"http://musicbrainz.org/doc/Engineer_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indique l'ingénieur de mixage pour cette œuvre, c.-à-d. la personne qui a finalisé le mixage audio. Ce n'est pas un remixeur ! (<a href=\"http://musicbrainz.org/doc/Engineer_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:26
 msgid ""
 "Indicates the mix engineer for this work. (<a "
 "href=\"http://musicbrainz.org/doc/Engineer_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indique l'ingénieur de mixage pour cette œuvre. (<a href=\"http://musicbrainz.org/doc/Engineer_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:183
 msgid ""
 "Indicates the official homepage for an artist. (<a "
 "href=\"http://musicbrainz.org/doc/Official_Homepage_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indique la page Web d'un artiste. (<a href=\"http://musicbrainz.org/doc/Official_Homepage_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:61
 msgid ""
 "Indicates the person or agency that did the travel arrangements for this "
 "album. (<a "
 "href=\"http://musicbrainz.org/doc/Miscellaneous_Production_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indique la personne ou agence ayant effectué les préparatifs de voyage pour cet album. (<a href=\"http://musicbrainz.org/doc/Miscellaneous_Production_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:48
 msgid ""
@@ -820,7 +820,7 @@ msgid ""
 "compilation for the album. If the tracks are pitched or blended into each "
 "other, it is more appropriate to credit this person as a Mix-DJ. (<a "
 "href=\"http://musicbrainz.org/doc/Compiler_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indique la personne qui a choisi les pistes pour l'album et la séquence pour une compilation. Si la vitesse des pistes a été modifiée ou si elles se fondent l'une en l'autre, il est plus pertinent de donner le crédit à cette personne en tant que Mix-DJ. (<a href=\"http://musicbrainz.org/doc/Compiler_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:147
 msgid ""
@@ -829,7 +829,7 @@ msgid ""
 "one after the other. If the tracks are pitched or blended into each other, "
 "it is more appropriate to credit the person as a Mix-DJ. (<a "
 "href=\"http://musicbrainz.org/doc/Compiler_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indique la personne qui a choisi les pistes et la séquence pour une compilation. Ceci s'applique à une longue piste contenant plusieurs chansons, les unes après les autres. Si la vitesse des pistes a été modifiée ou si elles se fondent l'une en l'autre, il est plus pertinent de donner le crédit à cette personne en tant que Mix-DJ. (<a href=\"http://musicbrainz.org/doc/Compiler_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:43
 msgid ""
@@ -839,7 +839,7 @@ msgid ""
 "pitching (so that the tempo of one track matches the tempo of the following "
 "track). (<a href=\"http://musicbrainz.org/doc/Mix-"
 "DJ_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indique la personne ayant créé l'album DJ-Mix (ou  « mixtape »). La personne aura habituellement choisi les pistes, leur séquence et les aura légèrement modifiées en les fondant harmonieusement l'une à l'autre ou en ajustant la vitesse afin que le tempo de l'une concorde à la suivante.  (<a href=\"http://musicbrainz.org/doc/Mix-DJ_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:155
 msgid ""
@@ -2757,7 +2757,7 @@ msgstr ""
 
 #: DB:link_type/reverse_link_phrase:232 DB:link_type/reverse_link_phrase:10
 msgid "mash-ups"
-msgstr ""
+msgstr "collages"
 
 #: DB:link_attribute_type/name:568
 msgid "medium"
