@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2013-11-26 16:57+0000\n"
+"PO-Revision-Date: 2013-11-26 17:58+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -568,7 +568,7 @@ msgid ""
 "group to be linked to its associated singles, EPs, and remix release groups."
 " (<a "
 "href=\"http://musicbrainz.org/doc/Single_From_Relationship_Type\">Details</a>)"
-msgstr "Indique qu'un groupe de parution de simple ou EP inclus au moins une piste provenant d'un groupe de parution d'album ou de bande originale. Ceci permet de relier un groupe de parution à ses simples associés, EP et groupes de parution de remixes. (<a href=\"http://musicbrainz.org/doc/Single_From_Relationship_Type\">Détails</a>)"
+msgstr "Indique qu'un groupe de parution de simple ou EP comprend au moins une piste provenant d'un groupe de parution d'album ou de bande originale. Ceci permet de relier un groupe de parution à ses simples associés, EP et groupes de parution de remixes. (<a href=\"http://musicbrainz.org/doc/Single_From_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:69
 msgid ""
@@ -615,7 +615,7 @@ msgid ""
 " otherwise combined into a single work (usually by a third artist, the "
 "remixer). (<a href=\"http://musicbrainz.org/doc/Mash-"
 "up_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indique un collage d'albums. Ceci veut dire que deux pièces de musique par des artistes différents sont mélangées ensemble, l'une sur l'autre, ou combinées en une seule œuvre (habituellement par un troisième artiste, le mixeur). (<a href=\"http://musicbrainz.org/doc/Mash-up_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:8
 msgid ""
@@ -626,7 +626,7 @@ msgid ""
 "track blends in smoothly with the other). If the tracks have been more "
 "substantially altered, the remix relationship type is more appropriate. (<a "
 "href=\"http://musicbrainz.org/doc/DJ_Mix_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indique que toutes (ou presque) les pistes d'un album ont été mélangées ensemble à partir de toutes (au presque) les pistes d'un autre album pour créer un DJ-Mix. Les pistes peuvent avoir été altérée en modifiant la vitesse (afin que le tempo d'une piste concorde avec le tempo de la suivante) ou avec un fondu (afin qu'une piste s'incorpore harmonieusement dans l'autre). Si les pistes ont été modifiées de manière plus substantielle, le type de relation « remix » est plus pertinent. (<a href=\"http://musicbrainz.org/doc/DJ_Mix_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:2
 msgid ""
@@ -638,14 +638,14 @@ msgid ""
 "two albums are identical, and each of the titles corresponds in meaning. (<a"
 " "
 "href=\"http://musicbrainz.org/doc/Translation_Transliteration_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indique qu'un album a des titres traduits ou translittérés sur une autre parution d'album. Cette relation n'indique pas une couverture sur laquelle les paroles ont été traduites (ceci devrait plutôt être indiqué par « couverture », même si les deux relations peuvent s'appliquer dans certains cas). Cette relation ne devrait être utilisée que si le nombre, l'ordre et le contenu audio des pistes sur les deux albums sont identiques et que chaque titre veut dire la même chose. (<a href=\"http://musicbrainz.org/doc/Translation_Transliteration_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:9
 msgid ""
 "Indicates that an album includes remixed versions of all (or most of) the "
 "tracks of the other album. (<a "
 "href=\"http://musicbrainz.org/doc/Remix_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indique qu'un album comprend les versions remixées de toutes (au presque) les pistes  d'un autre album. (<a href=\"http://musicbrainz.org/doc/Remix_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:6
 msgid ""
@@ -654,14 +654,14 @@ msgid ""
 "material was used. Please take care to always point to the "
 "<strong>first</strong> version ever released! (<a "
 "href=\"http://musicbrainz.org/doc/Remaster_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indique qu'un album est le rematriçage d'un autre. Ceci veut dire que le contenu audio a été changé durant ce procédé mais que le même contenu d'enregistrement original a été utilisée, Veillez à toujours signaler la <strong>première</strong> version jamais parue ! (<a href=\"http://musicbrainz.org/doc/Remaster_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:17
 msgid ""
 "Indicates that an album was performed live and released as another album. "
 "Please use this relationship only if (almost) every track of the original "
 "recording was performed on the live version, not for normal live recordings."
-msgstr ""
+msgstr "Indique qu'un album a été interprété devant public et est paru comme autre album. Veuillez utiliser cette relation seulement si chaque (ou presque) piste de l'enregistrement originale a été interprété sur la version en public, pas pour des enregistrements normaux en public."
 
 #: DB:link_type/description:262
 msgid ""
@@ -677,7 +677,7 @@ msgstr "Indique qu'une représentation juridique était intégrée dans cette œ
 
 #: DB:link_attribute_type/description:567
 msgid "Indicates that one entity is a cover of another entity"
-msgstr ""
+msgstr "Indique qu'une entité est la couverture d'une autre entité."
 
 #: DB:link_type/description:230
 msgid ""
@@ -685,7 +685,7 @@ msgid ""
 "and mixed together with other material to form a new track. Remixes of "
 "multiple tracks or albums are usually called mash-ups. (<a "
 "href=\"http://musicbrainz.org/doc/Remix_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Indique qu'une ou plusieurs pistes originales ont été modifiées substantiellement et mélangées avec un autre contenu pour créer une nouvelle piste. Les remixes de plusieurs pistes ou albums sont généralement appelés collages. (<a href=\"http://musicbrainz.org/doc/Remix_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:49
 msgid ""
