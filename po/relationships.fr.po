@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2013-11-27 15:56+0000\n"
+"PO-Revision-Date: 2013-11-27 16:57+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -1287,14 +1287,14 @@ msgid ""
 "release.​This allows a release to be linked to its supporting singles, EPs, "
 "and remix releases. A 'supporting release' is one which is released to "
 "increase sales of an album or to create publicity for an album."
-msgstr ""
+msgstr "Ceci indique une parution soutenant une autre parution. Ceci permet de relier une parution à ses parutions de simples, EP et remixes de soutien. Une « parution de soutien » est lancée pour augmenter les ventes d'un album ou pour faire de la publicité pour un album."
 
 #: DB:link_type/description:281
 msgid ""
 "This indicates that a work is made up of multiple parts (e.g. an orchestral "
 "suite broken into movements) (<a "
 "href=\"http://musicbrainz.org/doc/Parts_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Ceci indique qu'une œuvre est constituée de plusieurs parties (par exemple une suite orchestrale coupée en mouvements). (<a href=\"http://musicbrainz.org/doc/Parts_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:305
 msgid ""
@@ -1303,30 +1303,30 @@ msgid ""
 " should be linked with this: it should be used only for cases where the "
 "conductor held a position in the orchestra/choir. (<a "
 "href=\"http://musicbrainz.org/doc/Conductor_Position_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Ceci indique qu'un artiste est ou était chef d'orchestre pour un autre artiste. Tous les chefs d'orchestre se produisant avec un orchestre/chœur lors d'une session d'enregistrement ne devrait pas être relié ainsi : ceci devrait être utilisé seulement pour les cas où le chef d'orchestre occupait une fonction au sein de l'orchestre/chœur. (<a href=\"http://musicbrainz.org/doc/Conductor_Position_Relationship_Type\">Détails</a>)"
 
 #: DB:link_attribute_type/description:618
 msgid ""
 "This indicates that the group had multiple conductors who were led by this "
 "conductor. This may be indicated by either the title of \"principal "
 "conductor\" or \"first conductor\"."
-msgstr ""
+msgstr "Ceci indique qu'un groupe avait plusieurs chefs d'orchestre qui était dirigés par ce chef d'orchestre. Ceci peut être indiqué par le titre de « chefs d'orchestre principal » ou « premier chefs d'orchestre »."
 
 #: DB:link_attribute_type/description:579
 msgid ""
 "This indicates that the recording is not of the entire work, e.g. excerpts "
 "from, conclusion of, etc."
-msgstr ""
+msgstr "Ceci indique qu'un enregistrement n'est pas une œuvre entière, par exemple des extraits, une conclusion etc..."
 
 #: DB:link_attribute_type/description:578
 msgid "This indicates that the recording is of a live performance."
-msgstr ""
+msgstr "Ceci indique qu'un enregistrement est une représentation en public."
 
 #: DB:link_attribute_type/description:545
 msgid ""
 "This indicates that the release group which is from the other release group "
 "is an EP rather than a single."
-msgstr ""
+msgstr "Ceci indique que le groupe de parution émanant d'un autre groupe de parution est un EP plutôt qu'un simple."
 
 #: DB:link_type/description:349
 msgid ""
@@ -1343,7 +1343,7 @@ msgid ""
 " eventually provide an index between the two systems, allowing MusicBrainz "
 "and Discogs to share data. (<a "
 "href=\"http://musicbrainz.org/doc/Discogs_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Ceci est utilisé pour relier un label à l'entrée équivalente dans Discogs. En plus d'offrir un lien offrant plus d'informations aux utilisateurs, espérons que ceci finira par fournir un index entre les deux systèmes permettant à MusicBrainz et Discogs de partager des données.  (<a href=\"http://musicbrainz.org/doc/Discogs_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:216
 msgid ""
@@ -1355,59 +1355,59 @@ msgstr "Ceci est utilisé pour relié un label à sa page Wikipédia corresponda
 msgid ""
 "This is used to link works to their recordings. (<a "
 "href=\"http://musicbrainz.org/doc/Performance_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Ceci est utilisé pour relier des œuvres à leurs enregistrements. (<a href=\"http://musicbrainz.org/doc/Performance_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:213
 msgid ""
 "This is used to provide a logo for the label. (<a "
 "href=\"http://musicbrainz.org/doc/Logo_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Ceci est utilisé pour fournir un logo pour le label. (<a href=\"http://musicbrainz.org/doc/Logo_Relationship_Type\">DÉtails</a>)"
 
 #: DB:link_type/description:192 DB:link_type/description:218
 msgid ""
 "This link is used to associate an artist or label with their page on a "
 "social networking site such as Facebook or Last.fm. (<a "
 "href=\"http://musicbrainz.org/doc/Social_Networking_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Ce lien est utilisé pour associer un artiste ou label à sa page sur un site de réseau social tel que Facebook ou Last.fm. (<a href=\"http://musicbrainz.org/doc/Social_Networking_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:190
 msgid ""
 "This link is used to link to specific artists on the /music pages at the BBC"
 " web site. (<a "
 "href=\"http://musicbrainz.org/doc/BBC_Music_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Ce lien est utilisé pour relié des artistes spécifiques sur les pages musicales du site Web de la BBC. (<a href=\"http://musicbrainz.org/doc/BBC_Music_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:214
 msgid ""
 "This link is used to relate to a label's fans site (<a "
 "href=\"http://musicbrainz.org/doc/Fanpage_Relationship_Type\">Details</a>)."
-msgstr ""
+msgstr "Ce lien est utilisé pour relier au site des fans d'un label. (<a href=\"http://musicbrainz.org/doc/Fanpage_Relationship_Type\">Détails</a>)."
 
 #: DB:link_type/description:219
 msgid ""
 "This link points to (one of) the official website(s) of the label (<a "
 "href=\"http://musicbrainz.org/doc/Official_Site_Relationship_Type\">Details</a>)."
-msgstr ""
+msgstr "Ce lien dirige vers le/un des site(s) Web officiel(s) d'un label. (<a href=\"http://musicbrainz.org/doc/Official_Site_Relationship_Type\">Détails</a>)."
 
 #: DB:link_type/description:288
 msgid ""
 "This link points to a page for a particular release within a discography for"
 " an artist."
-msgstr ""
+msgstr "Ce lien dirige vers la page d'une parution particulière de la discographie d'un artiste."
 
 #: DB:link_type/description:211
 msgid ""
 "This link points to a site describing relevant facts about the label "
 "history. (<a "
 "href=\"http://musicbrainz.org/doc/History_Site_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Ce lien dirige vers un site décrivant des faits pertinents à l'histoire du label. (<a href=\"http://musicbrainz.org/doc/History_Site_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:212
 msgid ""
 "This link points to a site that contains a catalog (eg: list) of records "
 "published by the label. (<a "
 "href=\"http://musicbrainz.org/doc/Catalog_Site_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Ce lien dirige vers un site contenant un catalogue (c-à-d. liste) de disques publiés par un label. (<a href=\"http://musicbrainz.org/doc/Catalog_Site_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:77
 msgid ""
@@ -1416,34 +1416,34 @@ msgid ""
 "right ASIN link already. <p/> Paste any URL to any Amazon product page that "
 "contains an Amazon ASIN and the ASIN will be parsed from that URL. (<a "
 "href=\"http://musicbrainz.org/doc/Amazon_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Ce type de lien est utilisé pour des ASIN d'Amazon. Ceci permet aux utilisateurs de relier les pages d'Amazon pour montrer la bonne illustration si MusicBrainz n'a pas déjà de lien vers le bon ASIN. <p/> Coller n'importe quelle URL vers n'importe quelle page de produit d'Amazon contenant un ASIN d'Amazon et l'ASIN sera analyser à partir de cette URL. (<a href=\"http://musicbrainz.org/doc/Amazon_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:304
 msgid ""
 "This links a label to a channel, playlist, or user page on a video sharing "
 "site containing videos curated by it."
-msgstr ""
+msgstr "Ceci relie un label à une chaîne, liste de lecture ou page d'utilisateur sur un site de partage de vidéos contenant des vidéos que ce label organise."
 
 #: DB:link_type/description:290
 msgid ""
 "This links a label to its profile at SoundCloud. (<a "
 "href=\"http://musicbrainz.org/doc/SoundCloud_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Ceci relie un label à son profil sur SoundCloud. (<a href=\"http://musicbrainz.org/doc/SoundCloud_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:302
 msgid "This links a recording to a license under which it is available."
-msgstr ""
+msgstr "Ceci relie un enregistrement à une licence sous laquelle il est disponible."
 
 #: DB:link_type/description:287
 msgid ""
 "This links a release group and the URL of that release group's official "
 "site. (<a "
 "href=\"http://musicbrainz.org/doc/Official_Homepage_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Ceci relie un groupe de parution et l'URL de son site officiel. (<a href=\"http://musicbrainz.org/doc/Official_Homepage_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:301
 msgid "This links a release to a license under which it is available."
-msgstr ""
+msgstr "Ceci relie une parution  à une licence sous laquelle elle est disponible."
 
 #: DB:link_type/description:350
 msgid ""
@@ -1461,19 +1461,19 @@ msgstr ""
 msgid ""
 "This links an (fictional) artist to the person that voice acted it. (<a "
 "href=\"http://musicbrainz.org/doc/Voice_Actor_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Ceci relie un artiste (fictif) à la personne ayant enregistré la voix. (<a href=\"http://musicbrainz.org/doc/Voice_Actor_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:303
 msgid ""
 "This links an artist to a channel, playlist, or user page on a video sharing"
 " site containing videos curated by it."
-msgstr ""
+msgstr "Ceci relie un artiste à une chaîne, liste de lecture ou page d'utilisateur sur un site de partage de vidéos contenant des vidéos que cet artiste organise."
 
 #: DB:link_type/description:291
 msgid ""
 "This links an artist to its profile at SoundCloud. (<a "
 "href=\"http://musicbrainz.org/doc/SoundCloud_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Ceci relie un artiste à son profil sur SoundCloud. (<a href=\"http://musicbrainz.org/doc/SoundCloud_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:309
 msgid ""
