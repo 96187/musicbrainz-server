@@ -6,12 +6,13 @@
 # Dibou <email address hidden>, 2012
 # murdos <email address hidden>, 2011-2012
 # nikki <email address hidden>, 2012
+# nikki <email address hidden>, 2013
 # redapplz <email address hidden>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2013-11-27 19:00+0000\n"
-"Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
+"PO-Revision-Date: 2013-11-27 19:56+0000\n"
+"Last-Translator: nikki <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2617,7 +2618,7 @@ msgstr "est la première version de {translated} {parody}"
 
 #: DB:link_type/long_link_phrase:2
 msgid "is the original for the transl{transliterated:iter}ated track listing"
-msgstr "est l'original de la liste translittérée des pistes"
+msgstr "est l'original de la liste {transliterated:translittérée|traduite} des pistes"
 
 #: DB:link_type/long_link_phrase:109
 msgid "is the parent of"
@@ -2711,11 +2712,11 @@ msgstr "licence pour"
 #: DB:link_type/link_phrase:81 DB:link_type/reverse_link_phrase:81
 #: DB:link_type/long_link_phrase:81
 msgid "links to affiliates"
-msgstr ""
+msgstr "liens vers les affiliés"
 
 #: DB:link_attribute_type/name:578
 msgid "live"
-msgstr ""
+msgstr "en public"
 
 #: DB:link_type/link_phrase:17
 msgid "live performance of"
@@ -2727,33 +2728,33 @@ msgstr "interprétations en public"
 
 #: DB:link_type/reverse_link_phrase:213
 msgid "logo of"
-msgstr ""
+msgstr "logo de"
 
 #: DB:link_type/link_phrase:213
 msgid "logos"
-msgstr ""
+msgstr "logos"
 
 #: DB:link_type/link_phrase:93 DB:link_type/link_phrase:197
 #: DB:link_type/reverse_link_phrase:271
 msgid "lyrics page"
-msgstr ""
+msgstr "page des paroles"
 
 #: DB:link_type/link_phrase:271 DB:link_type/reverse_link_phrase:93
 #: DB:link_type/reverse_link_phrase:197
 msgid "lyrics page for"
-msgstr ""
+msgstr "page des paroles pour"
 
 #: DB:link_type/reverse_link_phrase:79 DB:link_type/reverse_link_phrase:175
 msgid "mail-order purchase page for"
-msgstr ""
+msgstr "page d'achat par correspondance pour"
 
 #: DB:link_type/link_phrase:111 DB:link_type/reverse_link_phrase:111
 msgid "married"
-msgstr ""
+msgstr "marié/mariée"
 
 #: DB:link_type/link_phrase:232 DB:link_type/link_phrase:10
 msgid "mash-up of"
-msgstr ""
+msgstr "collage de"
 
 #: DB:link_type/reverse_link_phrase:232 DB:link_type/reverse_link_phrase:10
 msgid "mash-ups"
@@ -2761,47 +2762,47 @@ msgstr "collages"
 
 #: DB:link_attribute_type/name:568
 msgid "medium"
-msgstr ""
+msgstr "support"
 
 #: DB:link_attribute_type/name:570
 msgid "medium 1"
-msgstr ""
+msgstr "support 1"
 
 #: DB:link_attribute_type/name:569
 msgid "medium 2"
-msgstr ""
+msgstr "support 2"
 
 #: DB:link_attribute_type/name:571
 msgid "medium 3"
-msgstr ""
+msgstr "support 3"
 
 #: DB:link_attribute_type/name:577
 msgid "medium 4"
-msgstr ""
+msgstr "support 4"
 
 #: DB:link_attribute_type/name:576
 msgid "medium 5"
-msgstr ""
+msgstr "support 5"
 
 #: DB:link_attribute_type/name:575
 msgid "medium 6"
-msgstr ""
+msgstr "support 6"
 
 #: DB:link_attribute_type/name:574
 msgid "medium 7"
-msgstr ""
+msgstr "support 7"
 
 #: DB:link_attribute_type/name:573
 msgid "medium 8"
-msgstr ""
+msgstr "support 8"
 
 #: DB:link_attribute_type/name:572
 msgid "medium 9"
-msgstr ""
+msgstr "support 9"
 
 #: DB:link_type/link_phrase:239 DB:link_type/link_phrase:244
 msgid "medley of"
-msgstr ""
+msgstr "pot-pourri de "
 
 #: DB:link_attribute_type/description:9 DB:link_attribute_type/name:9
 msgid "mezzo-soprano vocals"
@@ -2809,79 +2810,79 @@ msgstr ""
 
 #: DB:link_type/reverse_link_phrase:198 DB:link_type/reverse_link_phrase:223
 msgid "microblog for"
-msgstr ""
+msgstr "microblogue pour"
 
 #: DB:link_type/link_phrase:198 DB:link_type/link_phrase:223
 msgid "microblogs"
-msgstr ""
+msgstr "microblogues"
 
 #: DB:link_attribute_type/name:2
 msgid "minor"
-msgstr ""
+msgstr "mineur"
 
 #: DB:link_type/link_phrase:270 DB:link_type/link_phrase:25
 #: DB:link_type/link_phrase:129 DB:link_type/link_phrase:162
 #: DB:link_type/reverse_link_phrase:261
 msgid "miscellaneous roles"
-msgstr ""
+msgstr "rôles divers"
 
 #: DB:link_type/link_phrase:261 DB:link_type/reverse_link_phrase:270
 #: DB:link_type/reverse_link_phrase:25 DB:link_type/reverse_link_phrase:129
 #: DB:link_type/reverse_link_phrase:162
 msgid "miscellaneous support"
-msgstr ""
+msgstr "soutien divers"
 
 #: DB:link_type/long_link_phrase:177
 msgid "music can be downloaded for free at"
-msgstr ""
+msgstr "la musique peut être téléchargée gratuitement sur"
 
 #: DB:link_type/long_link_phrase:176
 msgid "music can be purchased for download at"
-msgstr ""
+msgstr "la musique peut être acheter pour téléchargement sur"
 
 #: DB:link_type/long_link_phrase:175
 msgid "music can be purchased for mail-order at"
-msgstr ""
+msgstr "la musique peut être acheter par correspondance sur"
 
 #: DB:link_type/long_link_phrase:194
 msgid "music {video:videos} can be streamed for free at"
-msgstr ""
+msgstr " la {video:vidéo} peut-être diffusé en flux gratuit sur"
 
 #: DB:link_type/link_phrase:106 DB:link_type/reverse_link_phrase:106
 #: DB:link_type/long_link_phrase:106
 msgid "musical relationship"
-msgstr ""
+msgstr "relation musicale"
 
 #: DB:link_attribute_type/name:374
 msgid "noncommercial sampling plus"
-msgstr ""
+msgstr "non commerciale échantillon plus"
 
 #: DB:link_type/reverse_link_phrase:287 DB:link_type/reverse_link_phrase:183
 #: DB:link_type/reverse_link_phrase:219
 msgid "official homepage for"
-msgstr ""
+msgstr "site Web officiel de"
 
 #: DB:link_type/link_phrase:287 DB:link_type/link_phrase:183
 #: DB:link_type/link_phrase:219
 msgid "official homepages"
-msgstr ""
+msgstr "sites Web officiels de"
 
 #: DB:link_type/link_phrase:185
 msgid "online communities"
-msgstr ""
+msgstr "communautés en ligne"
 
 #: DB:link_type/reverse_link_phrase:185
 msgid "online community page for"
-msgstr ""
+msgstr "page de communauté en ligne pour"
 
 #: DB:link_type/link_phrase:221 DB:link_type/reverse_link_phrase:221
 #: DB:link_type/long_link_phrase:221
 msgid "online data"
-msgstr ""
+msgstr "données en ligne"
 
 #: DB:link_attribute_type/name:243
 msgid "orchestra"
-msgstr ""
+msgstr "orchestre"
 
 #: DB:link_type/reverse_link_phrase:316
 msgid "orchestration of"
@@ -2893,7 +2894,7 @@ msgstr ""
 
 #: DB:link_attribute_type/name:246
 msgid "other"
-msgstr ""
+msgstr "autre"
 
 #: DB:link_type/link_phrase:96 DB:link_type/link_phrase:82
 #: DB:link_type/link_phrase:306 DB:link_type/link_phrase:222
@@ -2902,7 +2903,7 @@ msgstr ""
 #: DB:link_type/reverse_link_phrase:306 DB:link_type/reverse_link_phrase:222
 #: DB:link_type/reverse_link_phrase:273 DB:link_type/reverse_link_phrase:188
 msgid "other databases"
-msgstr ""
+msgstr "autres bases de données"
 
 #: DB:link_type/link_phrase:233 DB:link_type/reverse_link_phrase:233
 #: DB:link_type/long_link_phrase:233
@@ -2915,11 +2916,11 @@ msgstr ""
 
 #: DB:link_type/reverse_link_phrase:200
 msgid "parent label"
-msgstr ""
+msgstr "label parent"
 
 #: DB:link_type/reverse_link_phrase:109
 msgid "parents"
-msgstr ""
+msgstr "parents"
 
 #: DB:link_attribute_type/name:511
 msgid "parody"
@@ -2927,15 +2928,15 @@ msgstr "parodie"
 
 #: DB:link_type/reverse_link_phrase:281 DB:link_type/reverse_link_phrase:356
 msgid "part of"
-msgstr ""
+msgstr "partie de"
 
 #: DB:link_attribute_type/name:579
 msgid "partial"
-msgstr ""
+msgstr "partiel"
 
 #: DB:link_type/link_phrase:281 DB:link_type/link_phrase:356
 msgid "parts"
-msgstr ""
+msgstr "parties"
 
 #: DB:link_type/link_phrase:34 DB:link_type/link_phrase:122
 #: DB:link_type/reverse_link_phrase:34 DB:link_type/reverse_link_phrase:122
@@ -2945,15 +2946,15 @@ msgstr "interprétation"
 
 #: DB:link_type/long_link_phrase:292
 msgid "performed the voice of"
-msgstr ""
+msgstr "a interprété la voix de"
 
 #: DB:link_type/long_link_phrase:152 DB:link_type/long_link_phrase:53
 msgid "performed {additional} chorus master on"
-msgstr ""
+msgstr "était {additional} chef de chœur sur"
 
 #: DB:link_type/long_link_phrase:44 DB:link_type/long_link_phrase:148
 msgid "performed {additional} {guest} {solo} {instrument} on"
-msgstr ""
+msgstr "a interprété {additional} {guest} {solo} {instrument} sur"
 
 #: DB:link_type/long_link_phrase:60
 msgid "performed {additional} {guest} {solo} {vocal} {vocal:|vocals} on"
@@ -2965,45 +2966,45 @@ msgstr ""
 
 #: DB:link_type/link_phrase:108 DB:link_type/long_link_phrase:108
 msgid "performs as"
-msgstr ""
+msgstr "est paru en tant que"
 
 #: DB:link_type/link_phrase:113 DB:link_type/reverse_link_phrase:113
 #: DB:link_type/long_link_phrase:113
 msgid "personal relationship"
-msgstr ""
+msgstr "relation personnelle"
 
 #: DB:link_type/reverse_link_phrase:173
 msgid "picture of"
-msgstr ""
+msgstr "photo de"
 
 #: DB:link_type/link_phrase:173
 msgid "pictures"
-msgstr ""
+msgstr "photos"
 
 #: DB:link_type/reverse_link_phrase:1
 msgid "previous disc"
-msgstr ""
+msgstr "disque précédent"
 
 #: DB:link_attribute_type/name:618
 msgid "principal"
-msgstr ""
+msgstr "principal"
 
 #: DB:link_type/link_phrase:49 DB:link_type/long_link_phrase:49
 msgid "produced material that was {additional:additionally} sampled in"
-msgstr ""
+msgstr "a produit du contenu qui a été {additional:additionally} échantillonné sur"
 
 #: DB:link_type/link_phrase:154 DB:link_type/long_link_phrase:154
 msgid ""
 "produced {instrument} material that was {additional:additionally} sampled in"
-msgstr ""
+msgstr "a produit du contenu {instrument} {additional:additionally} qui a été échantillonné sur"
 
 #: DB:link_type/link_phrase:117
 msgid "producer position"
-msgstr ""
+msgstr "poste de producteur"
 
 #: DB:link_type/reverse_link_phrase:117
 msgid "producers"
-msgstr ""
+msgstr "producteurs"
 
 #: DB:link_type/link_phrase:59 DB:link_type/link_phrase:72
 #: DB:link_type/link_phrase:87 DB:link_type/link_phrase:160
@@ -3014,7 +3015,7 @@ msgstr ""
 #: DB:link_type/long_link_phrase:87 DB:link_type/long_link_phrase:160
 #: DB:link_type/long_link_phrase:256
 msgid "production"
-msgstr ""
+msgstr "production"
 
 #: DB:link_type/long_link_phrase:135 DB:link_type/long_link_phrase:62
 msgid "provided artist & repertoire support for"
@@ -3030,7 +3031,7 @@ msgstr "a assuré la représentation juridique pour"
 
 #: DB:link_type/long_link_phrase:61
 msgid "provided travel arrangements for"
-msgstr ""
+msgstr "a effectué les préparatifs de voyage pour"
 
 #: DB:link_type/long_link_phrase:137 DB:link_type/long_link_phrase:18
 msgid "provided {additional} art direction on"
@@ -3265,11 +3266,11 @@ msgstr ""
 
 #: DB:link_type/reverse_link_phrase:61
 msgid "travel arrangements"
-msgstr ""
+msgstr "préparatifs de voyage"
 
 #: DB:link_type/link_phrase:61
 msgid "travel arrangements for"
-msgstr ""
+msgstr "préparatifs de voyage pour"
 
 #: DB:link_type/link_phrase:65
 msgid "tribute albums"
@@ -3539,39 +3540,39 @@ msgstr ""
 
 #: DB:link_type/reverse_link_phrase:140 DB:link_type/reverse_link_phrase:31
 msgid "{additional} {assistant} {associate} {co:co-}audio engineer"
-msgstr ""
+msgstr "{co:co-}ingénieur du son {additional} {assistant} {associate}"
 
 #: DB:link_type/reverse_link_phrase:38 DB:link_type/reverse_link_phrase:144
 msgid "{additional} {assistant} {associate} {co:co-}editor"
-msgstr ""
+msgstr "{co:co-}monteur {additional} {assistant} {associate}"
 
 #: DB:link_type/link_phrase:42 DB:link_type/link_phrase:136
 #: DB:link_type/reverse_link_phrase:42 DB:link_type/reverse_link_phrase:136
 msgid "{additional} {assistant} {associate} {co:co-}mastering"
-msgstr ""
+msgstr "{co:co-}matriçage {additional} {assistant} {associate}"
 
 #: DB:link_type/reverse_link_phrase:143 DB:link_type/reverse_link_phrase:26
 msgid "{additional} {assistant} {associate} {co:co-}mixer"
-msgstr ""
+msgstr "{co:co-}mixeur {additional} {assistant} {associate}"
 
 #: DB:link_type/reverse_link_phrase:29 DB:link_type/reverse_link_phrase:133
 msgid "{additional} {assistant} {associate} {co:co-}sound engineer"
-msgstr ""
+msgstr "{co:co-}ingénieur du son {additional} {assistant} {associate}"
 
 #: DB:link_type/reverse_link_phrase:28 DB:link_type/reverse_link_phrase:138
 msgid ""
 "{additional} {assistant} {associate} {co:co-}{executive:executive }engineer"
-msgstr ""
+msgstr "{co:co-}ingénieur {additional} {assistant} {associate} {executive:executive} "
 
 #: DB:link_type/reverse_link_phrase:30 DB:link_type/reverse_link_phrase:141
 msgid ""
 "{additional} {assistant} {associate} {co:co-}{executive:executive }producer"
-msgstr ""
+msgstr "{co:co-}producteur {additional} {assistant} {associate} {executive:executive}"
 
 #: DB:link_type/link_phrase:37 DB:link_type/link_phrase:132
 #: DB:link_type/reverse_link_phrase:37 DB:link_type/reverse_link_phrase:132
 msgid "{additional} {assistant} {associate} {instrument} programming"
-msgstr ""
+msgstr "programmation {additional} {assistant} {associate} {instrument}"
 
 #: DB:link_type/link_phrase:103
 msgid "{additional} {founder:founding} member of"
