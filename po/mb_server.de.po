@@ -35,7 +35,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-11-27 20:55+0000\n"
+"PO-Revision-Date: 2013-11-27 21:25+0000\n"
 "Last-Translator: nikki <email address hidden>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -7179,7 +7179,7 @@ msgstr "Zeige Veröffentlichungen diverser Künstler. {show_subset|Nur Veröffen
 msgid ""
 "Showing all recordings. {show_sa|Show only standalone recordings instead}, "
 "or {show_vid|show only videos}."
-msgstr ""
+msgstr "Zeige alle Aufnahmen. {show_sa|Nur alleinstehende Aufnahmen anzeigen} oder {show_vid|nur Videos anzeigen}."
 
 #: ../root/artist/recordings.tt:20
 msgid ""
@@ -7188,7 +7188,7 @@ msgstr "Zeige nur alleinstehende Aufnahmen. {show_all|Zeige stattdessen alle Auf
 
 #: ../root/artist/recordings.tt:23
 msgid "Showing only videos. {show_all|Show all recordings instead}."
-msgstr ""
+msgstr "Zeige nur Videos. {show_all|Stattdessen alle Aufnahmen anzeigen}."
 
 #: ../root/artist/index.tt:116
 msgid ""
@@ -7323,7 +7323,7 @@ msgstr "Tut uns Leid, es gibt keine Labels, die mit „{index}“ anfangen. Bitt
 msgid ""
 "Sorry, there are no places starting with “{index}”. Please {pre|go back} and"
 " try again."
-msgstr ""
+msgstr "Entschuldigung, es gibt keine Örtlichkeiten, die mit „{index}“ anfangen. Gehe bitte {pre|zurück} und versuche es noch einmal."
 
 #: ../root/artist/browse_various_recordings.tt:15
 msgid ""
@@ -7357,7 +7357,7 @@ msgstr "Entschuldigung, es gab ein Problem mit Deiner Anfrage."
 msgid ""
 "Sorry, we could find neither a recording nor a track with that MusicBrainz "
 "ID. You may wish to try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Tut uns Leid, wir konnten weder eine Aufnahme noch einen Titel mit dieser MusicBrainz-ID finden. Vielleicht möchtest Du stattdessen versuchen, {search_url|danach zu suchen}?"
 
 #: ../root/freedb/not_found.tt:4
 msgid ""
@@ -8223,7 +8223,7 @@ msgstr "Dieses Gebiet ist zur Zeit mit keinen Veröffentlichungen verbunden."
 
 #: ../root/artist/index.tt:103
 msgid "This artist does not have any release groups or standalone recordings."
-msgstr ""
+msgstr "Dieser Künstler hat keine Veröffentlichungsgruppen oder alleinstehende Aufnahmen."
 
 #: ../root/artist/releases.tt:18
 msgid "This artist does not have any releases"
@@ -8242,7 +8242,7 @@ msgstr "Dieser Künstler hat keine Beziehungen, Aufnahmen, Veröffentlichungen o
 
 #: ../root/artist/index.tt:106
 msgid "This artist has no release groups, only standalone recordings."
-msgstr ""
+msgstr "Dieser Künstler hat keine Veröffentlichungsgruppen, nur alleinstehende Aufnahmen."
 
 #: ../root/artist/tags.tt:2
 msgid "This artist has no tags."
@@ -8503,7 +8503,7 @@ msgstr "Diese Aufnahme hat keine Tags."
 
 #: ../root/release/index.tt:79 ../root/release/index.tt:80
 msgid "This recording is a video"
-msgstr ""
+msgstr "Diese Aufnahme ist ein Video"
 
 #: ../root/edit/details/add_relationship.tt:13
 #: ../root/edit/details/edit_relationship.tt:14
@@ -11053,8 +11053,8 @@ msgstr[1] "vor {num} Monaten"
 #: ../root/tag/place.tt:1
 msgid "{num} place found"
 msgid_plural "{num} places found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num} Örtlichkeit gefunden"
+msgstr[1] "{num} Örtlichkeiten gefunden"
 
 #: ../root/tag/recording.tt:1
 msgid "{num} recording found"
@@ -12034,7 +12034,7 @@ msgstr "Dies ist kein gültiger ISO 3166-3 Code"
 
 #: ../lib/MusicBrainz/Server/Form/Field/ISRC.pm:14
 msgid "This is not a valid ISRC"
-msgstr ""
+msgstr "Dies ist kein gültiger ISRC"
 
 #: ../lib/MusicBrainz/Server/Form/Field/ISRC.pm:18
 msgid "This is not a valid ISRC."
