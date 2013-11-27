@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2013-11-27 16:57+0000\n"
+"PO-Revision-Date: 2013-11-27 17:51+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -1490,7 +1490,7 @@ msgid ""
 "This links an entity to the appropriate listing in the Songfacts database, a"
 " user contributed database concerned with the stories behind the songs. (<a "
 "href=\"http://musicbrainz.org/doc/Songfacts_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Ceci relie une entité à la liste appropriée de la base de données Songfacts, une base de données auxquels les utilisateurs contribuent, se préoccupant des histoires derrière les chansons. (<a href=\"http://musicbrainz.org/doc/Songfacts_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:96 DB:link_type/description:82
 #: DB:link_type/description:306 DB:link_type/description:222
@@ -1531,7 +1531,7 @@ msgid ""
 "lyricist and/or librettist types should be used, rather than this "
 "relationship type. (<a "
 "href=\"http://musicbrainz.org/doc/Writer_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Cette relation est utilisée pour relier une parution à l'artiste ayant écrit la musique et/ou les mots (paroles, livret, etc...) quand plus aucune information spécifique n'est disponible. (<a href=\"http://musicbrainz.org/doc/Writer_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:268
 msgid ""
@@ -1548,14 +1548,14 @@ msgid ""
 "lyricist and/or librettist types should be used, rather than this "
 "relationship type. (<a "
 "href=\"http://musicbrainz.org/doc/Writer_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Cette relation est utilisée pour relier une œuvre à l'artiste ayant écrit la musique et/ou les mots (paroles, livret, etc...) quand plus aucune information spécifique n'est disponible. Si possible, les types plus spécifiques de chef d'orchestre, parolier et/ou librettiste devraient être utilisés plutôt que ce type de relation. (<a href=\"http://musicbrainz.org/doc/Writer_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:101
 msgid ""
 "This relationship is used to link an artist to a person who has compiled a "
 "catalogue of that artist's works. (<a "
 "href=\"http://musicbrainz.org/doc/Cataloguer_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Cette relation est utilisée pour relier un artiste à une personne ayant compilé un catalogue des oeuvres de cet artiste. (<a href=\"http://musicbrainz.org/doc/Cataloguer_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:194
 msgid ""
@@ -1573,21 +1573,21 @@ msgstr ""
 
 #: DB:link_type/description:86
 msgid "This relationship links a release to its corresponding page on VGMdb."
-msgstr ""
+msgstr "Cette relation relie une parution sa page correspondante sur VGMdb."
 
 #: DB:link_type/description:37 DB:link_type/description:132
 msgid ""
 "This relationship links a track or a release to the person who did "
 "programming of electronic instruments. (<a "
 "href=\"http://musicbrainz.org/doc/Programming_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Cette relation relie une piste ou une parution à la personne qui a programmé les instruments électroniques. (<a href=\"http://musicbrainz.org/doc/Programming_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:280
 msgid ""
 "This relationship links a work to its corresponding page in SecondHandSongs "
 "database. (<a "
 "href=\"http://musicbrainz.org/doc/Secondhandsongs_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Cette relation relie une œuvre à sa page correspondante de la base de données SecondHandsongs. (<a href=\"http://musicbrainz.org/doc/Secondhandsongs_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:307
 msgid ""
@@ -1598,7 +1598,7 @@ msgstr ""
 
 #: DB:link_type/description:191
 msgid "This relationship links an artist to its corresponding page on VGMdb."
-msgstr ""
+msgstr "Cette relation relie un artiste à sa page correspondante sur VGMdb."
 
 #: DB:link_type/description:283 DB:link_type/description:284
 #: DB:link_type/description:286 DB:link_type/description:285
@@ -1606,7 +1606,7 @@ msgid ""
 "This relationship links an artist, release group, work or recording to its "
 "corresponding page on allmusic. (<a "
 "href=\"http://musicbrainz.org/doc/Allmusic_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Cette relation relie un artiste, groupe de parution, œuvre ou enregistrement à leur page correspondante sur allmusic. (<a href=\"http://musicbrainz.org/doc/Allmusic_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:189
 msgid ""
@@ -1614,7 +1614,7 @@ msgid ""
 "equivalent entry in Myspace. Please, use URLs in format "
 "<code>http://www.myspace.com/<artist></code> (<a "
 "href=\"http://musicbrainz.org/doc/Myspace_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Ce type de relation peut être utilisé pour relier un artiste de MusicBrainz à son entrée équivalente sur Myspace. Veuillez utiliser des URLs au format <code>http://www.myspace.com/<artist></code>. (<a href=\"http://musicbrainz.org/doc/Myspace_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:174
 msgid ""
@@ -1622,14 +1622,14 @@ msgid ""
 "equivalent entry in PureVolume. Please use URLs in the format "
 "<code>http://www.purevolume.com/&lt;artist&gt;</code> (<a "
 "href=\"http://musicbrainz.org/doc/PureVolume_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Ce type de relation peut être utilisé pour relier un artiste de MusicBrainz à son entrée équivalente sur PureVolume. Veuillez utiliser des URLs au format <code>http://www.purevolume.com/&lt;artist&gt;</code>.  (<a href=\"http://musicbrainz.org/doc/PureVolume_Relationship_Type\">Details</a>)"
 
 #: DB:link_type/description:198
 msgid ""
 "This relationship type can be used to link a MusicBrainz artist to their "
 "microblog on a service such as Twitter or identi.ca (<a "
 "href=\"http://musicbrainz.org/doc/Microblog_Relationship_Type\">Details</a>)."
-msgstr ""
+msgstr "Ce type de relation peut être utilisé pour relier un artiste de MusicBrainz à son microblogue sur un service tel que Twitter ou identi.ca. (<a href=\"http://musicbrainz.org/doc/Microblog_Relationship_Type\">Détails</a>)."
 
 #: DB:link_type/description:185
 msgid ""
@@ -1639,21 +1639,21 @@ msgid ""
 "are often used by many artists in lieu of, or additionally to, their "
 "official homepage. (<a "
 "href=\"http://musicbrainz.org/doc/Online_Community_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Ce type de relation peut-être utilisé pour relié un artiste de MusicBrainz aux pages de ses communautés en ligne. En plus de fournir un lien pour que les utilisateurs puissent trouver plus d'informations et écouter la musique de l'artiste, les sites de communautés en ligne sont souvent utilisé par les artistes au lieu ou en plus de leur page Web officielle. (<a href=\"http://musicbrainz.org/doc/Online_Community_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:215
 msgid ""
 "This relationship type can be used to link a MusicBrainz label to the "
 "equivalent entry in Myspace. (<a "
 "href=\"http://musicbrainz.org/doc/Myspace_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Ce type de relation peut être utilisé pour relier un label de MusicBrainz à son entrée équivalente sur Myspace. (<a href=\"http://musicbrainz.org/doc/Myspace_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:223
 msgid ""
 "This relationship type can be used to link a MusicBrainz label to their "
 "microblog on a service such as Twitter or identi.ca (<a "
 "href=\"http://musicbrainz.org/doc/Microblog_Relationship_Type\">Details</a>)."
-msgstr ""
+msgstr "Ce type de relation peut être utilisé pour relier un label de MusicBrainz à son microblogue sur un service tel que Twitter ou identi.ca. (<a href=\"http://musicbrainz.org/doc/Microblog_Relationship_Type\">Détails</a>)."
 
 #: DB:link_type/description:224
 msgid ""
@@ -1667,14 +1667,14 @@ msgid ""
 "in YouTube. URLs should follow the format "
 "http://www.youtube.com/user/<username>. (<a "
 "href=\"http://musicbrainz.org/doc/YouTube_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Ce type de relation peut-être utilisé pour relié un label à son entrée équivalente sur YouTube. Les URLs devraient être au format <code>http://www.youtube.com/user/<username></code>. (<a href=\"http://musicbrainz.org/doc/YouTube_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:116
 msgid ""
 "This relationship type can be used to link a label to the person(s) who "
 "founded it. (<a "
 "href=\"http://musicbrainz.org/doc/Label_Founder_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Ce type de relation peut-être utilisé pour relier un label à la personne(s) qui l'a fondé. (<a href=\"http://musicbrainz.org/doc/Label_Founder_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:193
 msgid ""
@@ -1682,7 +1682,7 @@ msgid ""
 " in YouTube. URLs should follow the format "
 "http://www.youtube.com/user/<username>. (<a "
 "href=\"http://musicbrainz.org/doc/YouTube_Relationship_Type\">Details</a>)"
-msgstr ""
+msgstr "Ce type de relation peut-être utilisé pour relié un artiste à son entrée équivalente sur YouTube. Les URLs devraient être au format <code>http://www.youtube.com/user/<username></code>. (<a href=\"http://musicbrainz.org/doc/YouTube_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:199
 msgid ""
@@ -1701,7 +1701,7 @@ msgstr ""
 msgid ""
 "This relationship type is <strong>deprecated</strong>! If two recordings are"
 " identical, please merge them."
-msgstr ""
+msgstr "Ce type de relation est <strong>obsolète</strong> ! Si deux enregistrements sont identiques, veuillez les fusionner."
 
 #: DB:link_type/description:136
 msgid ""
@@ -1713,14 +1713,14 @@ msgstr ""
 msgid ""
 "This relationship type is <strong>deprecated</strong>! Please enter a "
 "release with multiple discs as a single release containing multiple discs."
-msgstr ""
+msgstr "Ce type de relation est <strong>obsolète</strong> ! Veuilles saisir une parution multi-disques en tant que parution simple contenant plusieurs disques."
 
 #: DB:link_type/description:84
 msgid ""
 "This relationship type is <strong>deprecated</strong>! Please enter separate"
 " relationships using the license relationship type and either the free "
 "download or paid download relationship type."
-msgstr ""
+msgstr "Ce type de relation est <strong>obsolète</strong> ! Veuillez saisir des relations séparées en utilisant le type de relation de licence et soit le type de relation de téléchargement gratuit soit celui de téléchargement payant."
 
 #: DB:link_type/description:78
 msgid ""
@@ -1763,32 +1763,32 @@ msgstr ""
 msgid ""
 "This should be used when an artist is credited in liner notes or a similar "
 "source as performing a solo part."
-msgstr ""
+msgstr "Ceci devrait être utilisé quand l'on donne crédit à un artiste dans les notes de livret ou une source similaire  en tant qu'interprétant une pièce solo."
 
 #: DB:link_attribute_type/description:617
 msgid ""
 "This title indicates that a conductor has at least partially retired, and no"
 " longer plays an active role with the group."
-msgstr ""
+msgstr "Ceci indique qu'un chef d'orchestre à au moins partiellement pris sa retraite et ne n'a plus de rôle actif dans le groupe."
 
 #: DB:link_attribute_type/description:526
 msgid ""
 "This typically indicates someone who is either a first-timer, or less "
 "experienced, and who is working under the direction of someone who is more "
 "experienced."
-msgstr ""
+msgstr "Ceci indique quelqu'un qui débute ou est moins expérimenté et qui travaille sous la direction de quelqu'un de plus expérimenté."
 
 #: DB:link_attribute_type/description:527
 msgid ""
 "This typically indicates someone who is less experienced and who is working "
 "under the direction of someone who is more experienced."
-msgstr ""
+msgstr "Ceci indique typiquement quelqu'un qui est moins expérimenté et qui travaille sous la direction de quelqu'un de plus expérimenté."
 
 #: DB:link_attribute_type/description:477
 msgid ""
 "Transliterated track listings don't change the language, just the script or "
 "spelling."
-msgstr ""
+msgstr "Les listes de pistes translittérés ne change pas la langue, juste le caractère d'écriture ou l'orthographe."
 
 #: DB:link_type/description:93
 msgid ""
@@ -1866,11 +1866,11 @@ msgstr "Page Wikipédia pour"
 
 #: DB:link_type/reverse_link_phrase:225 DB:link_type/reverse_link_phrase:193
 msgid "YouTube channel for"
-msgstr ""
+msgstr "Chaîne YouTube de"
 
 #: DB:link_type/link_phrase:225 DB:link_type/link_phrase:193
 msgid "YouTube channels"
-msgstr ""
+msgstr "Chaînes YouTube"
 
 #: DB:link_attribute_type/description:253
 msgid "a license used to release music under"
@@ -2315,7 +2315,7 @@ msgstr ""
 
 #: DB:link_type/long_link_phrase:189 DB:link_type/long_link_phrase:215
 msgid "has a Myspace page at"
-msgstr ""
+msgstr "a une page Myspace à"
 
 #: DB:link_type/long_link_phrase:174
 msgid "has a PureVolume page at"
@@ -2415,7 +2415,7 @@ msgstr ""
 
 #: DB:link_type/long_link_phrase:225 DB:link_type/long_link_phrase:193
 msgid "has an official YouTube channel at"
-msgstr ""
+msgstr "a une chaîne officielle YouTube à"
 
 #: DB:link_type/long_link_phrase:287 DB:link_type/long_link_phrase:183
 #: DB:link_type/long_link_phrase:219
