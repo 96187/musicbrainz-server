@@ -5,13 +5,14 @@
 # Dibou <email address hidden>, 2012
 # Lotheric <email address hidden>, 2011
 # nikki <email address hidden>, 2012
+# nikki <email address hidden>, 2013
 # nikki <email address hidden>, 2012
 # redapplz <email address hidden>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2013-11-27 19:25+0000\n"
-"Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
+"PO-Revision-Date: 2013-11-27 23:57+0000\n"
+"Last-Translator: nikki <email address hidden>\n"
 "Language-Team: French (Canada) (http://www.transifex.com/projects/p/musicbrainz/language/fr_CA/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2617,7 +2618,7 @@ msgstr "est la première version de {translated} {parody}"
 
 #: DB:link_type/long_link_phrase:2
 msgid "is the original for the transl{transliterated:iter}ated track listing"
-msgstr "est l'original de la liste translittérée des pistes"
+msgstr "est l'original de la liste {transliterated:translittérée|traduite} des pistes"
 
 #: DB:link_type/long_link_phrase:109
 msgid "is the parent of"
