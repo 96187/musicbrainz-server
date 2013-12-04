@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-12-04 09:56+0000\n"
+"PO-Revision-Date: 2013-12-04 11:37+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -4189,7 +4189,7 @@ msgstr "Label introuvable"
 
 #: ../root/user/subscriptions/label.tt:1 ../root/user/subscriptions/menu.tt:5
 msgid "Label Subscriptions"
-msgstr "Abonnement au label"
+msgstr "Abonnements au label"
 
 #: ../root/edit/details/add_label.tt:60 ../root/edit/details/edit_label.tt:29
 #: ../root/label/edit_form.tt:50 ../root/label/layout.tt:42
@@ -4259,7 +4259,7 @@ msgstr "Langue :"
 
 #: ../root/edit/details/historic/edit_release_language.tt:8
 msgid "Language: {language}, script: {script}"
-msgstr "Langue : {language}, caractère d'écriture : {script}"
+msgstr "Langue : {language}, système d'écriture : {script}"
 
 #: ../root/account/edit.tt:57
 msgid "Languages Known:"
@@ -4649,7 +4649,7 @@ msgstr "Fusionner le label"
 
 #: ../root/edit/details/historic/merge_releases.tt:30
 msgid "Merge language &amp; script:"
-msgstr "Fusionner la langue &amp; le caractère d'écriture :"
+msgstr "Fusionner la langue &amp; le système d'écriture :"
 
 #: ../root/edit/details/merge_releases.tt:67
 #: ../lib/MusicBrainz/Server/Form/Merge/Release.pm:51
@@ -4997,7 +4997,7 @@ msgstr "Nouvelles relations : "
 
 #: ../root/edit/details/historic/edit_release_language.tt:30
 msgid "New script:"
-msgstr "Nouveau caractère d'écriture : "
+msgstr "Nouveau système d'écriture : "
 
 #: ../root/admin/wikidoc/edit.tt:18 ../root/edit/details/change_wikidoc.tt:23
 #: ../root/edit/details/change_wikidoc.tt:28
@@ -6533,7 +6533,7 @@ msgstr "Parutions avec des durées de piste inconnues"
 #: ../root/report/releases_with_unlikely_language_script.tt:1
 #: ../root/report/releases_with_unlikely_language_script.tt:3
 msgid "Releases with unlikely language/script pairs"
-msgstr "Parution avec des paires langue/caractère d'écriture improbable"
+msgstr "Parution avec des paires langue/système d'écriture improbable"
 
 #: ../root/report/index.tt:49 ../root/report/releases_without_language.tt:1
 #: ../root/report/releases_without_language.tt:3
@@ -6543,7 +6543,7 @@ msgstr "Parutions sans langue"
 #: ../root/report/index.tt:50 ../root/report/releases_without_script.tt:1
 #: ../root/report/releases_without_script.tt:3
 msgid "Releases without script"
-msgstr "Parutions sans caractère d'écriture"
+msgstr "Parutions sans système d'écriture"
 
 #: ../root/edit/details/historic/add_disc_id.tt:3
 #: ../root/edit/details/historic/add_release_annotation.tt:3
@@ -6882,7 +6882,7 @@ msgstr "Score"
 #: ../root/edit/details/historic/add_release.tt:34
 #: ../root/release/edit/information.tt:57 ../root/release/sidebar.tt:39
 msgid "Script:"
-msgstr "Caractère d'écriture :"
+msgstr "Système d'écriture :"
 
 #: ../root/cdtoc/attach_filter_artist.tt:10
 #: ../root/cdtoc/attach_filter_release.tt:30 ../root/cdtoc/lookup.tt:63
@@ -8816,7 +8816,7 @@ msgstr "Ce rapport montre les parutions sur support simple pour lesquelles le su
 msgid ""
 "This report shows releases that have an unlikely combination of language and"
 " script properties, such as German and Ethiopic."
-msgstr "Ce rapport montre les parutions ayant une combinaison de langue et propriétés de caractère d'écriture improbables, tel qu'allemand et éthiopien."
+msgstr "Ce rapport montre les parutions ayant une combinaison de langue et propriétés de système d'écriture improbables, tel qu'allemand et éthiopien."
 
 #: ../root/report/releases_with_download_relationships.tt:6
 msgid ""
@@ -8855,7 +8855,7 @@ msgid ""
 "This report shows releases that have no script set. If you recognize the "
 "script, just add it! Remember that the script used for English (and most "
 "other European languages) is Latin."
-msgstr "Ce rapport montre les parutions dont le caractère d'écriture n'est pas spécifiée. Si vous le reconnaissez, ajoutez-le ! Souvenez-vous que le caractère d'écriture utilisé en anglais (et pour la plupart des langues européennes) est Latin."
+msgstr "Ce rapport montre les parutions dont le système d'écriture n'est pas spécifiée. Si vous le reconnaissez, ajoutez-le ! Souvenez-vous que le caractère d'écriture utilisé en anglais (et pour la plupart des langues européennes) est Latin."
 
 #: ../root/report/releases_with_coverart_links.tt:6
 msgid "This report shows releases that still have Cover Art relationships."
