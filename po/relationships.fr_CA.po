@@ -11,7 +11,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2013-12-05 12:58+0000\n"
+"PO-Revision-Date: 2013-12-05 13:54+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (Canada) (http://www.transifex.com/projects/p/musicbrainz/language/fr_CA/)\n"
 "MIME-Version: 1.0\n"
@@ -2032,7 +2032,7 @@ msgstr "co-[role]"
 
 #: DB:link_type/long_link_phrase:102
 msgid "collaborated {minor:minorly} {additional:additionally} on"
-msgstr "a collaboraté {minor:minorly} {additional:additionally} sur"
+msgstr "a apporté une collaboration {minor:mineure} {additional:complémentaire} sur"
 
 #: DB:link_type/link_phrase:228
 msgid "compilation of"
@@ -2086,15 +2086,15 @@ msgstr "contient la partition de "
 
 #: DB:link_type/reverse_link_phrase:49
 msgid "contains {additional} samples by"
-msgstr "contient {additional} des échantillons par"
+msgstr "contient des échantillons {additional:supplémentaires} par"
 
 #: DB:link_type/long_link_phrase:231
 msgid "contains {additional} samples from"
-msgstr "contient {additional} des échantillons de"
+msgstr "contient des échantillons {additional:supplémentaires} de"
 
 #: DB:link_type/reverse_link_phrase:154
 msgid "contains {additional} {instrument} samples by"
-msgstr "contient {additional} {instrument} des échantillons par"
+msgstr "contient des échantillons {additional:supplémentaires}  de/d' {instrument} par"
 
 #: DB:link_type/link_phrase:119 DB:link_type/reverse_link_phrase:119
 #: DB:link_type/long_link_phrase:119
@@ -2501,11 +2501,11 @@ msgstr "a un/des album(s) hommage"
 
 #: DB:link_type/long_link_phrase:250
 msgid "has {additional} photography by"
-msgstr "photograhie {additional} par"
+msgstr "photographie {additional:complémentaire} par"
 
 #: DB:link_type/long_link_phrase:69
 msgid "has/had {additional} {instrument} samples taken from"
-msgstr "a/avait des échantillons {additional} {instrument} pris de"
+msgstr "a/avait des échantillons {additional:supplémentaires} de/d' {instrument} provenant de"
 
 #: DB:link_type/link_phrase:211
 msgid "history page"
@@ -2614,7 +2614,7 @@ msgstr "est la première parution de"
 
 #: DB:link_type/long_link_phrase:241
 msgid "is the earliest version of {translated} {parody}"
-msgstr "est la première version de {translated:traduite} {parody}"
+msgstr "est la première version de {translated:traduite} {parody:parody}"
 
 #: DB:link_type/long_link_phrase:2
 msgid "is the original for the transl{transliterated:iter}ated track listing"
@@ -2658,7 +2658,7 @@ msgstr "est/était le label parent de"
 
 #: DB:link_type/long_link_phrase:103
 msgid "is/was {additional:an additional|a} member of {founder:and founded|}"
-msgstr "est/était {additional:an additional|un} membre de {founder:and founded|}"
+msgstr "en est/était un membre {additional:supplémentaire} {founder:et a fondé|}"
 
 #: DB:link_type/long_link_phrase:305
 msgid ""
@@ -2680,7 +2680,7 @@ msgstr "parutions plus récentes"
 
 #: DB:link_type/link_phrase:241
 msgid "later {translated} {parody} versions"
-msgstr "versions {translated:traduites} {parody} plus récentes"
+msgstr "versions {translated:traduites} {parody:parodiées} plus récentes"
 
 #: DB:link_attribute_type/name:4
 msgid "lead vocals"
@@ -2950,11 +2950,11 @@ msgstr "a interprété la voix de"
 
 #: DB:link_type/long_link_phrase:152 DB:link_type/long_link_phrase:53
 msgid "performed {additional} chorus master on"
-msgstr "était {additional} chef de chœur sur"
+msgstr "était chef de chœur {additional:supplémentaire} sur"
 
 #: DB:link_type/long_link_phrase:44 DB:link_type/long_link_phrase:148
 msgid "performed {additional} {guest} {solo} {instrument} on"
-msgstr "a interprété {additional} {guest} {solo} {instrument} sur"
+msgstr "a interprété {instrument} {additional:additionnel} {guest:invité} {solo} sur"
 
 #: DB:link_type/long_link_phrase:60
 msgid "performed {additional} {guest} {solo} {vocal} {vocal:|vocals} on"
@@ -2991,12 +2991,12 @@ msgstr "principal"
 
 #: DB:link_type/link_phrase:49 DB:link_type/long_link_phrase:49
 msgid "produced material that was {additional:additionally} sampled in"
-msgstr "a produit du contenu qui a été {additional:additionally} échantillonné sur"
+msgstr "a produit du contenu qui a {additional:aussi} été échantillonné sur"
 
 #: DB:link_type/link_phrase:154 DB:link_type/long_link_phrase:154
 msgid ""
 "produced {instrument} material that was {additional:additionally} sampled in"
-msgstr "a produit du contenu {instrument} {additional:additionally} qui a été échantillonné sur"
+msgstr "a produit du contenu {instrument} qui a {additional:aussi} été échantillonné sur"
 
 #: DB:link_type/link_phrase:117
 msgid "producer position"
@@ -3035,28 +3035,28 @@ msgstr "a effectué les préparatifs de voyage pour"
 
 #: DB:link_type/long_link_phrase:137 DB:link_type/long_link_phrase:18
 msgid "provided {additional} art direction on"
-msgstr "a assuré {additional} la direction artistique sur"
+msgstr "a assuré la direction artistique {additional:complémentaire} sur"
 
 #: DB:link_type/long_link_phrase:63 DB:link_type/long_link_phrase:146
 msgid "provided {additional} creative direction on"
-msgstr "a assuré {additional} la direction créative sur"
+msgstr "a assuré la direction créative {additional:complémentaire} sur"
 
 #: DB:link_type/long_link_phrase:19 DB:link_type/long_link_phrase:130
 msgid "provided {additional} design/illustration on"
-msgstr "a assuré {additional} la conception/illustration sur"
+msgstr "a assuré la conception/l'illustration {additional:complémentaire} sur"
 
 #: DB:link_type/long_link_phrase:27 DB:link_type/long_link_phrase:125
 msgid "provided {additional} graphic design on"
-msgstr "a assuré {additional} la conception graphique sur"
+msgstr "a assuré la conception graphique {additional:complémentaire} sur"
 
 #: DB:link_type/long_link_phrase:123 DB:link_type/long_link_phrase:20
 msgid "provided {additional} photography on"
-msgstr "a assuré {additional} la photographie sur"
+msgstr "a assuré la photographie {additional:complémentaire} sur"
 
 #: DB:link_type/long_link_phrase:166 DB:link_type/long_link_phrase:39
 #: DB:link_type/long_link_phrase:299
 msgid "provided {additional} {instrument} instrumentation for"
-msgstr "a assuré {additional} {instrument} l'instrumentation pour"
+msgstr "a assuré l'instrumentation {additional:complémentaire} {instrument} pour"
 
 #: DB:link_attribute_type/name:371
 msgid "public domain"
@@ -3322,7 +3322,7 @@ msgstr "a été renommé en"
 
 #: DB:link_type/long_link_phrase:101
 msgid "was {additional:additionally} catalogued by"
-msgstr "a été {additional:additionally} catalogué par"
+msgstr "a été {additional:aussi} catalogué par"
 
 #: DB:link_type/link_phrase:3 DB:link_type/long_link_phrase:3
 msgid "was/were released in support of"
@@ -3330,18 +3330,18 @@ msgstr "est/sont paru(s) en soutien à "
 
 #: DB:link_type/long_link_phrase:24 DB:link_type/long_link_phrase:131
 msgid "wrote {additional} liner notes for"
-msgstr "a écrit {additional} des notes de livret pour"
+msgstr "a écrit des notes {additional:additonnelles} de livret pour"
 
 #: DB:link_type/link_phrase:293 DB:link_type/link_phrase:295
 #: DB:link_type/link_phrase:297 DB:link_type/long_link_phrase:293
 #: DB:link_type/long_link_phrase:295 DB:link_type/long_link_phrase:297
 msgid "{additional:additionally} arranged"
-msgstr "{additional:additionally} a fait l'arrangement"
+msgstr "a {additional:aussi} fait l'arrangement"
 
 #: DB:link_type/long_link_phrase:282 DB:link_type/long_link_phrase:158
 #: DB:link_type/long_link_phrase:41
 msgid "{additional:additionally} arranged {instrument} on"
-msgstr "{additional:additionally} a fait l'arrangement {instrument} sur"
+msgstr "a {additional:aussi} fait l'arrangement {instrument} sur"
 
 #: DB:link_type/long_link_phrase:296 DB:link_type/long_link_phrase:298
 #: DB:link_type/long_link_phrase:294
@@ -3350,93 +3350,93 @@ msgstr "a {additional:additionally} fait les arrangements des {vocal:%|voix} sur
 
 #: DB:link_type/reverse_link_phrase:101
 msgid "{additional:additionally} catalogued"
-msgstr "{additional:additionally} catalogué"
+msgstr "{additional:aussi} catalogué"
 
 #: DB:link_type/link_phrase:101
 msgid "{additional:additionally} catalogued by"
-msgstr "{additional:additionally} catalogué par"
+msgstr "{additional:aussi} catalogué par"
 
 #: DB:link_type/link_phrase:55 DB:link_type/link_phrase:168
 #: DB:link_type/long_link_phrase:55 DB:link_type/long_link_phrase:168
 msgid "{additional:additionally} composed"
-msgstr "{additional:additionally} composé"
+msgstr "{additional:aussi} composé"
 
 #: DB:link_type/link_phrase:46 DB:link_type/link_phrase:151
 #: DB:link_type/long_link_phrase:46 DB:link_type/long_link_phrase:151
 msgid "{additional:additionally} conducted"
-msgstr "{additional:additionally} dirigé"
+msgstr "{additional:aussi} dirigé"
 
 #: DB:link_type/link_phrase:40 DB:link_type/link_phrase:164
 #: DB:link_type/link_phrase:300 DB:link_type/long_link_phrase:40
 #: DB:link_type/long_link_phrase:164 DB:link_type/long_link_phrase:300
 msgid "{additional:additionally} orchestrated"
-msgstr "{additional:additionally} orchestré"
+msgstr "{additional:aussi} orchestré"
 
 #: DB:link_type/reverse_link_phrase:40
 msgid "{additional:additionally} orchestrator"
-msgstr "{additional:additionally} orchestrateur"
+msgstr "{additional:aussi} orchestrateur"
 
 #: DB:link_type/link_phrase:47 DB:link_type/link_phrase:153
 #: DB:link_type/long_link_phrase:47 DB:link_type/long_link_phrase:153
 msgid "{additional:additionally} remixed"
-msgstr "{additional:additionally} remixé"
+msgstr "{additional:aussi} remixé"
 
 #: DB:link_type/reverse_link_phrase:231
 msgid "{additional:additionally} sampled by"
-msgstr "{additional:additionally} échantillonné par"
+msgstr "{additional:aussi} échantillonné par"
 
 #: DB:link_type/link_phrase:54 DB:link_type/link_phrase:167
 #: DB:link_type/long_link_phrase:54 DB:link_type/long_link_phrase:167
 msgid "{additional:additionally} wrote"
-msgstr "{additional:additionally} écrit"
+msgstr "{additional:aussi} écrit"
 
 #: DB:link_type/long_link_phrase:37 DB:link_type/long_link_phrase:132
 msgid ""
 "{additional:additionally} {assistant} {associate} programmed {instrument:% "
 "on}"
-msgstr "{additional:additionally} {assistant} {associate} a programmé {instrument:%} sur"
+msgstr "a {additional:aussi} programmé {instrument:%} {assistant:en tant qu'assistant} {associate:en tant qu'associé} sur"
 
 #: DB:link_type/link_phrase:140 DB:link_type/link_phrase:31
 #: DB:link_type/long_link_phrase:140 DB:link_type/long_link_phrase:31
 msgid ""
 "{additional:additionally} {assistant} {associate} {co:co-}audio engineered"
-msgstr "{co:co-}ingénieur du son {additional:additionally} {assistant} {associate}"
+msgstr "{additional:aussi} {co:co-}ingénieur du son {assistant} {associate:associé}"
 
 #: DB:link_type/link_phrase:38 DB:link_type/link_phrase:144
 #: DB:link_type/long_link_phrase:38 DB:link_type/long_link_phrase:144
 msgid "{additional:additionally} {assistant} {associate} {co:co-}edited"
-msgstr "{additional:additionally} {assistant} {associate} {co:co-}monté"
+msgstr "{additional:aussi} {co:co-}monté {assistant:en tant qu'assistant} {associate:en tant qu'associé}"
 
 #: DB:link_type/long_link_phrase:42 DB:link_type/long_link_phrase:136
 msgid "{additional:additionally} {assistant} {associate} {co:co-}mastered"
-msgstr "{additional:additionally} {assistant} {associate} {co:co-}matricé"
+msgstr "{additional:aussi} {co:co-}matricé {assistant:en tant qu'assistant} {associate:en tant qu'associé}"
 
 #: DB:link_type/link_phrase:143 DB:link_type/link_phrase:26
 #: DB:link_type/long_link_phrase:143 DB:link_type/long_link_phrase:26
 msgid "{additional:additionally} {assistant} {associate} {co:co-}mixed"
-msgstr "{additional:additionally} {assistant} {associate} {co:co-}mixé"
+msgstr "{additional:aussi} {co:co-}mixé {assistant:en tant qu'assistant} {associate:en tant qu'associé}"
 
 #: DB:link_type/link_phrase:36 DB:link_type/link_phrase:128
 #: DB:link_type/long_link_phrase:36 DB:link_type/long_link_phrase:128
 msgid "{additional:additionally} {assistant} {associate} {co:co-}recorded"
-msgstr "{additional:additionally} {assistant} {associate} {co:co-}enregistré"
+msgstr "{additional:aussi} {co:co-}enregistré {assistant:en tant qu'assistant} {associate:en tant qu'associé}"
 
 #: DB:link_type/reverse_link_phrase:36 DB:link_type/reverse_link_phrase:128
 msgid "{additional:additionally} {assistant} {associate} {co:co-}recorded by"
-msgstr "{additional:additionally} {assistant} {associate} {co:co-}enregistré par"
+msgstr "{additional:aussi} {co:co-}enregistré {assistant:en tant qu'assistant} {associate:en tant qu'associé} par"
 
 #: DB:link_type/link_phrase:29 DB:link_type/link_phrase:133
 #: DB:link_type/long_link_phrase:29 DB:link_type/long_link_phrase:133
 msgid ""
 "{additional:additionally} {assistant} {associate} {co:co-}sound engineered"
-msgstr "{additional:additionally} {assistant} {associate} était {co:co-}ingénieur du son"
+msgstr "était {additional:aussi} {co:co-}ingénieur du son {assistant} {associate:associé}"
 
 #: DB:link_type/link_phrase:28 DB:link_type/link_phrase:138
 #: DB:link_type/long_link_phrase:28 DB:link_type/long_link_phrase:138
 msgid ""
 "{additional:additionally} {assistant} {associate} "
 "{co:co-}{executive:executive }engineered"
-msgstr "{additional:additionally} {assistant} {associate} était {co:co-}{executive:executive }ingénieur"
+msgstr "était {additional:aussi} {co:co-}ingénieur du son {assistant} {associate:associé} {executive:exécutif}"
 
 #: DB:link_type/link_phrase:30 DB:link_type/link_phrase:141
 #: DB:link_type/long_link_phrase:30 DB:link_type/long_link_phrase:141
@@ -3462,7 +3462,7 @@ msgstr "{additional:additionally} {instrument} échantillonné par"
 #: DB:link_type/long_link_phrase:57 DB:link_type/long_link_phrase:169
 msgid ""
 "{additional:additionally} {translated:translated|wrote} the libretto for"
-msgstr "{additional:additionally} {translated:translated|a écrit} le livret pour "
+msgstr "{additional:additionall} {translated:a traduit|a écrit} le livret pour "
 
 #: DB:link_type/long_link_phrase:56 DB:link_type/long_link_phrase:165
 msgid "{additional:additionally} {translated:translated|wrote} the lyrics for"
@@ -3684,7 +3684,7 @@ msgstr "{parody:parodie|reprise} {translated:traduite} de"
 
 #: DB:link_type/reverse_link_phrase:241
 msgid "{translated} {parody} version of"
-msgstr "version {translated:traduite} {parody} de"
+msgstr "version {translated:traduite} {parody:parodiée} de"
 
 #: DB:link_type/long_link_phrase:85 DB:link_type/long_link_phrase:268
 msgid "{video} can be streamed for free at"
