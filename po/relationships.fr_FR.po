@@ -4,14 +4,15 @@
 # Benjamin Sonntag <email address hidden>, 2011
 # Benjamin Sonntag <email address hidden>, 2011, 2012
 # Benjamin Sonntag <email address hidden>, 2011
+# Dibou <email address hidden>, 2013
 # Dibou <email address hidden>, 2012
 # murdos <email address hidden>, 2011
 # nikki <email address hidden>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2013-11-20 12:48+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2013-12-05 15:23+0000\n"
+"Last-Translator: Dibou <email address hidden>\n"
 "Language-Team: French (France) (http://www.transifex.com/projects/p/musicbrainz/language/fr_FR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,7 +40,7 @@ msgstr "BBC Music"
 
 #: DB:link_type/reverse_link_phrase:190
 msgid "BBC Music page for"
-msgstr "page BBC Music de "
+msgstr "Page BBC Music de "
 
 #: DB:link_attribute_type/description:245
 msgid "Chamber orchestra"
@@ -98,7 +99,7 @@ msgstr ""
 
 #: DB:link_attribute_type/description:254
 msgid "Creative commons licenses"
-msgstr "Licence Créative Commons"
+msgstr "Licences Créative Commons"
 
 #: DB:link_type/description:24
 msgid ""
@@ -147,20 +148,20 @@ msgstr ""
 msgid ""
 "Describes the fact a person was contracted by a label as a producer. (<a "
 "href=\"http://musicbrainz.org/doc/Producer_Position_Relationship_Type\">Details</a>)"
-msgstr "Décrit le fait qu'une personne ait été en contrat avec un label en tant que producteur. (<a href=\"http://musicbrainz.org/doc/Producer_Position_Relationship_Type\">Détails</a>)"
+msgstr "Décrit le fait qu'une personne ait été sous contrat avec un label en tant que producteur. (<a href=\"http://musicbrainz.org/doc/Producer_Position_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:120
 msgid ""
 "Describes the fact a person was contracted by a label as an engineer. (<a "
 "href=\"http://musicbrainz.org/doc/Engineer_Position_Relationship_Type\">Details</a>)"
-msgstr "Décrit le fait qu'une personne ait été en contrat avec un label en tant qu'ingénieur. (<a href=\"http://musicbrainz.org/doc/Engineer_Position_Relationship_Type\">Détails</a>)"
+msgstr "Décrit le fait qu'une personne ait été sous contrat avec un label en tant qu'ingénieur. (<a href=\"http://musicbrainz.org/doc/Engineer_Position_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:115
 msgid ""
 "Describes the fact a person was contracted by a label in a creative "
 "position. (<a "
 "href=\"http://musicbrainz.org/doc/Creative_Position_Relationship_Type\">Details</a>)"
-msgstr "Décrit le fait qu'une personne ait été en contrat avec un label sur un poste de créatif. (<a href=\"http://musicbrainz.org/doc/Creative_Position_Relationship_Type\">Détails</a>)"
+msgstr "Décrit le fait qu'une personne ait été sous contrat avec un label sur un poste de créatif. (<a href=\"http://musicbrainz.org/doc/Creative_Position_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:357
 msgid "Designates that a work is or was the anthem for an area"
@@ -213,7 +214,7 @@ msgstr "Signale un disque bonus"
 msgid ""
 "Indicates a chorus master directed a choir or chorus on this work. (<a "
 "href=\"http://musicbrainz.org/doc/Chorus_Master_Relationship_Type\">Details</a>)"
-msgstr "Indique que le maître de chœur a dirigé le chœur ou la chorale sur ce travail. (<a href=\"http://musicbrainz.org/doc/Chorus_Master_Relationship_Type\">Détails</a>)"
+msgstr "Indique qu'un chef de chœur a dirigé un chœur ou une chorale pour cette oeuvre. (<a href=\"http://musicbrainz.org/doc/Chorus_Master_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:102
 msgid ""
@@ -222,7 +223,7 @@ msgid ""
 "together, but did not form a lasting group. For groups you should use the "
 "membership type. (<a "
 "href=\"http://musicbrainz.org/doc/Collaboration_Relationship_Type\">Details</a>)"
-msgstr "Indique une collaboration entre plusieurs artistes. Utilisez ceci pour les projets, single album, ou juste les pistes pour lesquelles plusieurs artistes ont travaillé ensemble, sans pour autant former un groupe pérenne. Pour les groupes, vous devez utiliser le type \"membre de\". (<a href=\"http://musicbrainz.org/doc/Collaboration_Relationship_Type\">Détails</a>)"
+msgstr "Indique une collaboration entre plusieurs artistes. Utilisez ceci pour les projets, albums single, ou juste les pistes pour lesquelles plusieurs artistes ont travaillé ensemble, sans pour autant former un groupe pérenne. Pour les groupes, vous devez utiliser le type \"membre de\". (<a href=\"http://musicbrainz.org/doc/Collaboration_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:15
 msgid ""
@@ -236,7 +237,7 @@ msgstr "Indique une reprise d'un album. Cela signifie qu'un autre artiste a inte
 msgid ""
 "Indicates a homepage by a fan for an artist. (<a "
 "href=\"http://musicbrainz.org/doc/Fanpage_Relationship_Type\">Details</a>)"
-msgstr "Indique une page web tenue par des fans pour un artiste. (<a href=\"http://musicbrainz.org/doc/Fanpage_Relationship_Type\">Détails</a>)"
+msgstr "Indique une page web d'un fan consacrée à un artiste. (<a href=\"http://musicbrainz.org/doc/Fanpage_Relationship_Type\">Détails</a>)"
 
 #: DB:link_type/description:111
 msgid ""
