@@ -25,7 +25,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-12-05 11:25+0000\n"
+"PO-Revision-Date: 2013-12-05 23:02+0000\n"
 "Last-Translator: Alain-Olivier  Breysse <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -48,7 +48,7 @@ msgstr "Saisissez votre nom d'utilisateur et votre adresse courriel ci-dessous. 
 
 #: ../root/components/forms.tt:263
 msgid "\"C\" is a single check digit."
-msgstr "\"C\" est un chiffre de contrôle, unique."
+msgstr "« C » est un chiffre de contrôle simple."
 
 #: ../root/components/forms.tt:276
 msgid "\"CC\" is the appropriate for the registrant two-character country code."
@@ -56,7 +56,7 @@ msgstr "« CC » est approprié pour le code d'inscription à 2 caractères du p
 
 #: ../root/components/forms.tt:262
 msgid "\"DDD\" is a nine digit work identifier."
-msgstr "\"DDDD\" est l'identifiant à 9 chiffres d'un travail"
+msgstr "« DDDD » est l'identifiant à 9 chiffres d'une œuvre."
 
 #: ../root/components/forms.tt:279
 msgid ""
@@ -133,7 +133,7 @@ msgstr "''italique''; '''gras'''; '''''italique gras'''''; ---- règle horizonta
 
 #: ../root/components/tag-cloud.tt:26
 msgid "'{tag}' has been used {num} times"
-msgstr "'{tag}' a été utilisé {num} fois"
+msgstr "« {tag} »  a été utilisé {num} fois"
 
 #: ../root/components/aliases.tt:54
 msgid "(<span class=\"comment\">primary</span>)"
@@ -307,7 +307,7 @@ msgstr "500 px"
 
 #: ../root/admin/edit_user.tt:18
 msgid "<abbr title=\"MusicBrainz Identifier\">MBID</abbr> submitter"
-msgstr "<abbr title=\"Identifiant MusicBrainz\">MBID</abbr>  envoyeur"
+msgstr "<abbr title=\"Identifiant MusicBrainz\">MBID</abbr> envoyeur"
 
 #: ../root/edit/info.tt:48
 msgid "<em>Cancelling</em>"
@@ -945,7 +945,7 @@ msgstr "Autoriser les autres utilisateurs à voir mes abonnements"
 
 #: ../root/account/preferences.tt:24
 msgid "Allow other users to see my tags"
-msgstr "Autoriser les autres utilisateurs à voir mes mots clés"
+msgstr "Autoriser les autres utilisateurs à voir mes balises"
 
 #: ../root/collection/edit_form.tt:13
 msgid "Allow other users to see this collection"
@@ -1495,8 +1495,8 @@ msgstr[1] "Associé avec {num} enregistrements"
 #: ../root/iswc/index.tt:5
 msgid "Associated with {num} work"
 msgid_plural "Associated with {num} works"
-msgstr[0] "Associé à {num} travail"
-msgstr[1] "Associé à {num} travaux"
+msgstr[0] "Associé à {num} œuvre"
+msgstr[1] "Associé à {num} œuvres"
 
 #: ../root/cdtoc/attach_artist_releases.tt:60
 #: ../root/cdtoc/attach_filter_release.tt:74
@@ -3817,7 +3817,7 @@ msgstr "ISRC {isrc} pour {recording} par {artist}"
 
 #: ../root/isrc/index.tt:1 ../root/isrc/index.tt:3
 msgid "ISRC “{isrc}”"
-msgstr "ISRC « \"{isrc} »"
+msgstr "ISRC « {isrc} »"
 
 #: ../root/edit/details/remove_isrc.tt:3 ../root/otherlookup/form.tt:3
 #: ../root/recording/layout.tt:15
@@ -3854,7 +3854,7 @@ msgstr "Code ISWC {iswc} pour {work}"
 
 #: ../root/iswc/index.tt:1 ../root/iswc/index.tt:3
 msgid "ISWC “{iswc}”"
-msgstr "Code ISWC \"{iswc}\""
+msgstr "Code ISWC « {iswc} »"
 
 #: ../root/edit/details/add_work.tt:23 ../root/edit/details/edit_work.tt:19
 #: ../root/edit/details/remove_iswc.tt:3 ../root/otherlookup/form.tt:3
@@ -3992,7 +3992,7 @@ msgstr "Si vous pensez que ceci est une erreur, veuillez contacter <code>support
 msgid ""
 "If you wish to use this tag, please {url|search} for the entity first and "
 "apply the tag using the sidebar."
-msgstr "Si vous souhaitez utiliser ce tag, veuillez commencer par {url|rechercher} l'entité, puis appliquer le tag en utilisant la barre latérale."
+msgstr "Si vous souhaitez utiliser cette balise, veuillez commencer par {url|rechercher} l'entité, puis appliquer la balise en utilisant la barre latérale."
 
 #: ../root/account/edit.tt:20
 msgid ""
@@ -4114,7 +4114,7 @@ msgstr "ID de disque invalide"
 
 #: ../root/layout/menu.tt:159 ../root/main/index.tt:9
 msgid "Jaikoz Tagger"
-msgstr "Tagueur Jaikoz "
+msgstr "Baliseur Jaikoz "
 
 #: ../root/release/edit/layout.tt:32
 msgid "Javascript needs to be enabled to edit releases."
@@ -4497,7 +4497,7 @@ msgstr "MM"
 
 #: ../root/layout/menu.tt:162 ../root/main/index.tt:10
 msgid "Magic MP3 Tagger"
-msgstr "Taggueer « Magic MP3 »"
+msgstr "Baliseur « Magic MP3 »"
 
 #: ../root/account/preferences.tt:31
 msgid ""
@@ -4779,7 +4779,7 @@ msgid ""
 "MusicBrainz believes strongly in the privacy of its users! Any personal "
 "information you choose to provide will not be sold or shared with anyone "
 "else. For full details, please read our {doc|Privacy Policy}."
-msgstr "MusicBrainz croit fermement au respect de la vie privée de ses utilisateurs ! Aucune donnée personnelle que vous choisissez de fournir  ne sera vendue ou partagée avec qui que ce soit. Pour plus d'informations, veuillez lire notre {doc|Politique de vie privée}."
+msgstr "MusicBrainz croit fermement au respect de la vie privée de ses utilisateurs ! Aucune donnée personnelle que vous choisissez de fournir ne sera vendue ou partagée avec qui que ce soit. Pour plus d'informations, veuillez lire notre {doc|Politique de vie privée}."
 
 #: ../root/cdtoc/lookup.tt:84
 msgid "MusicBrainz does not have any CDs with the TOC:"
@@ -4842,7 +4842,7 @@ msgstr "Mes évaluations"
 
 #: ../root/layout/menu.tt:63
 msgid "My Tags"
-msgstr "Mes tags"
+msgstr "Mes balises"
 
 #: ../root/edit/search_macros.tt:307
 msgid "My Vote"
@@ -5067,11 +5067,11 @@ msgstr "Aucune entité de MusicBrainz n'a pour l'instant l'attribut « {tag} ».
 
 #: ../root/tag/artist.tt:1
 msgid "No artists with this tag were found."
-msgstr "Aucun artiste de trouvé avec cet attribut."
+msgstr "Aucun artiste de trouvé avec cette balise"
 
 #: ../root/tag/collection.tt:1
 msgid "No collections with this tag were found."
-msgstr "Aucune collection de trouvée avec cet attribut."
+msgstr "Aucune collection de trouvée avec cette balise."
 
 #: ../root/release/sidebar.tt:17
 msgid "No cover art available."
@@ -5099,7 +5099,7 @@ msgstr "Aucun instrument de trouvé."
 
 #: ../root/tag/label.tt:1
 msgid "No labels with this tag were found."
-msgstr "Aucun label de trouvé avec cet attribut."
+msgstr "Aucun label de trouvé avec cette balise."
 
 #: ../root/release/lookup.tt:33
 msgid "No matching CDs were found for TOC {toc}."
@@ -5111,7 +5111,7 @@ msgstr "Pas d'écran ennuyeux"
 
 #: ../root/tag/place.tt:1
 msgid "No places with this tag were found."
-msgstr "Aucun lieu de trouvé avec ce tag."
+msgstr "Aucun lieu de trouvé avec cette balise."
 
 #: ../root/user/ratings.tt:23
 msgid "No ratings."
@@ -5123,7 +5123,7 @@ msgstr "Aucun enregistrement de trouvé."
 
 #: ../root/tag/recording.tt:1
 msgid "No recordings with this tag were found."
-msgstr "Aucun enregistrement de trouvé avec cet attribut."
+msgstr "Aucun enregistrement de trouvé avec cette balise."
 
 #: ../root/place/performances.tt:84
 msgid "No recordings, releases or release groups are linked to this place"
@@ -5139,7 +5139,7 @@ msgstr "Aucun groupe de parution de trouvé"
 
 #: ../root/tag/release_group.tt:1
 msgid "No release groups with this tag were found."
-msgstr "Aucun groupe de parution de trouvé avec ce tag."
+msgstr "Aucun groupe de parution de trouvé avec cette balise."
 
 #: ../root/artist/releases.tt:21
 msgid "No releases found"
@@ -5163,7 +5163,7 @@ msgstr "Aucune parution n'a d'Illustration. Impossible d'assigner une Illustrati
 
 #: ../root/tag/release.tt:1
 msgid "No releases with this tag were found."
-msgstr "Aucune parution de trouvée avec ce tag."
+msgstr "Aucune parution de trouvée avec cette balise."
 
 #: ../root/release/edit/tracklist.tt:108 ../root/scripts/text_strings.tt:38
 msgid "No results"
@@ -5214,7 +5214,7 @@ msgstr "Zéro vote"
 
 #: ../root/tag/work.tt:1
 msgid "No works with this tag were found."
-msgstr "Aucun travail de trouvé avec cet attribut."
+msgstr "Aucune œuvre de trouvée avec cette balise."
 
 #: ../root/relationship/linktype/tree.tt:64
 msgid "No {type0}-{type1} relationship types found."
@@ -5399,7 +5399,7 @@ msgstr "Modifications en attente"
 #: ../root/components/common-macros.tt:512
 #: ../root/components/common-macros.tt:517
 msgid "Open in tagger"
-msgstr "Ouvrir dans le marqueur"
+msgstr "Ouvrir dans le baliseur"
 
 #: ../root/edit/info.tt:40
 msgid "Opened:"
@@ -5622,7 +5622,7 @@ msgstr "Veuillez vérifier soigneusement le code-barres de la parution."
 msgid ""
 "Please enter tags in the text area below. Tags are comma separated, and you "
 "may wish to see the {tagsyn|tag syntax documentation} for more information"
-msgstr "Saisir les marqueurs dans la zone de texte ci-dessous. Les marqueurs sont séparés par une virgule, et vous serez sûrement intéressé par la {tagsyn|documentation sur la syntaxe des marqueurs} pour plus d'information"
+msgstr "Saisir les balises dans la zone de texte ci-dessous. Les balises sont séparées par une virgule, et vous serez sûrement intéressé par la {tagsyn|documentation sur la syntaxe des balises} pour plus d'information."
 
 #: ../root/release/edit/information.tt:207
 msgid ""
@@ -7073,7 +7073,7 @@ msgstr "Choisir"
 
 #: ../root/release/edit/tracklist.tt:93
 msgid "Select a disc from the search results below and then click \"Add Disc\"."
-msgstr "Choisissez un disque dans le résultat ci-dessous et cliquez sur \"Ajouter un disque\"."
+msgstr "Choisissez un disque dans le résultat ci-dessous et cliquez sur « Ajouter un disque »."
 
 #: ../root/cdtoc/move_search.tt:4
 msgid ""
@@ -7241,7 +7241,7 @@ msgstr "Certaines pistes ont été changées, veuillez choisir un enregistrement
 
 #: ../root/layout/menu.tt:168 ../root/main/index.tt:12
 msgid "SongKong Tagger"
-msgstr "Tagueur SongKong"
+msgstr "Baliseur SongKong"
 
 #: ../root/cdstub/error.tt:11
 msgid ""
@@ -7692,86 +7692,86 @@ msgstr "Système occupé"
 
 #: ../root/layout/sidebar/sidebar-tags.tt:36
 msgid "Tag"
-msgstr "Tag"
+msgstr "Balise"
 
 #: ../root/components/tags.tt:12
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:45
 msgctxt "noun"
 msgid "Tag"
-msgstr "Tag"
+msgstr "Balise"
 
 #: ../root/collection/tag.tt:1
 msgctxt "verb"
 msgid "Tag"
-msgstr "Tag"
+msgstr "Balise"
 
 #: ../root/taglookup/index.tt:1 ../root/taglookup/index.tt:3
 msgid "Tag Lookup"
-msgstr "Recherche de tag"
+msgstr "Recherche de balise"
 
 #: ../root/taglookup/not_found.tt:1 ../root/taglookup/not_found.tt:2
 msgid "Tag Lookup Error"
-msgstr "Erreur de recherche de tag"
+msgstr "Erreur de recherche de balise"
 
 #: ../root/taglookup/results.tt:1 ../root/taglookup/results.tt:3
 msgid "Tag Lookup Results"
-msgstr "Résultat de recherche de tag"
+msgstr "Résultat de recherche de balise"
 
 #: ../root/tag/not_found.tt:1 ../root/tag/not_found.tt:2
 msgid "Tag Not Used"
-msgstr "Tag non utilisé"
+msgstr "Balise non utilisée"
 
 #: ../root/main/index.tt:5
 msgid "Tag Your Music"
-msgstr "Tagguez votre musique"
+msgstr "Balisez votre musique"
 
 #: ../root/search/index.tt:14
 msgid "Tag lookup"
-msgstr "Recherche de tag"
+msgstr "Recherche de balise"
 
 #: ../root/release/sidebar.tt:77
 msgid "Tag release"
-msgstr "Taguer cette parution"
+msgstr "Baliser cette parution"
 
 #: ../root/release_group/layout.tt:26
 msgid "Tag release group"
-msgstr "Taguer ce groupe de parution"
+msgstr "Baliser ce groupe de parution"
 
 #: ../root/artist/layout.tt:67 ../root/artist/tags.tt:3
 msgid "Tag this artist"
-msgstr "Taguer cet artiste"
+msgstr "Baliser cet artiste"
 
 #: ../root/collection/tag.tt:2
 msgid "Tag this collection"
-msgstr "Taguer cette collection"
+msgstr "Baliser cette collection"
 
 #: ../root/label/layout.tt:51 ../root/label/tags.tt:3
 msgid "Tag this label"
-msgstr "Taguer ce label"
+msgstr "Baliser ce label"
 
 #: ../root/place/layout.tt:43 ../root/place/tags.tt:3
 msgid "Tag this place"
-msgstr "Taguer ce lieu"
+msgstr "Baliser ce lieu"
 
 #: ../root/recording/layout.tt:21 ../root/recording/tags.tt:3
 msgid "Tag this recording"
-msgstr "Taguer cet enregistrement"
+msgstr "Baliser cet enregistrement"
 
 #: ../root/release/tags.tt:3
 msgid "Tag this release"
-msgstr "Taguer cette parution"
+msgstr "Baliser cette parution"
 
 #: ../root/release_group/tags.tt:3
 msgid "Tag this release group"
-msgstr "Taguer ce groupe de parution"
+msgstr "Baliser ce groupe de parution"
 
 #: ../root/work/layout.tt:26 ../root/work/tags.tt:3
 msgid "Tag this work"
-msgstr "Taguer cette œuvre"
+msgstr "Baliser cette œuvre"
 
 #: ../root/tag/header.tt:12 ../root/tag/layout.tt:1
 msgid "Tag “{tag}”"
-msgstr "Tag \"{tag}\""
+msgstr "Balise « {tag} »"
 
 #: ../root/cdtoc/attach_artist_releases.tt:41
 #: ../root/cdtoc/attach_filter_release.tt:55 ../root/cdtoc/list.tt:13
@@ -7780,7 +7780,7 @@ msgstr "Tag \"{tag}\""
 #: ../root/search/lib/inline-results-recording.tt:14
 #: ../root/search/lib/inline-results-release.tt:22
 msgid "Tagger"
-msgstr "Tagueur"
+msgstr "Baliseur"
 
 #: ../root/artist/header.tt:1 ../root/artist/tags.tt:1
 #: ../root/collection/tags.tt:1 ../root/components/tags.tt:5
@@ -7793,7 +7793,7 @@ msgstr "Tagueur"
 #: ../root/tag/cloud.tt:4 ../root/user/profile/layout.tt:19
 #: ../root/user/tags.tt:1 ../root/work/header.tt:1 ../root/work/tags.tt:1
 msgid "Tags"
-msgstr "Tags"
+msgstr "Balises"
 
 #: ../root/layout/menu.tt:118
 msgid "Team"
@@ -7912,7 +7912,7 @@ msgstr "Les données que vous avez envoyées sont identiques aux données déjà
 
 #: ../root/tag/cloud.tt:9
 msgid "The database has no tags."
-msgstr "La base de données n'a pas de tags."
+msgstr "La base de données n'a pas de balise."
 
 #: ../root/scripts/text_strings.tt:100
 msgid "The date you've entered is not valid."
@@ -7989,7 +7989,7 @@ msgstr "La raison de ceci était inconnue."
 msgid ""
 "The recording artists do not match! Perhaps you meant to use the \"append "
 "mediums\" merge strategy?"
-msgstr "Les artistes liés aux enregistrements ne correspondent pas ! Vous vouliez peut-être utiliser la stratégie de fusion \"Ajouter les supports\" ?"
+msgstr "Les artistes liés aux enregistrements ne correspondent pas ! Vous vouliez peut-être utiliser la stratégie de fusion « Ajouter les supports »  ?"
 
 #: ../root/release/merge.tt:139
 msgid ""
@@ -8001,7 +8001,7 @@ msgstr "Les enregistrements qui seront fusionnés si vous continuez votre strat�
 msgid ""
 "The relationship type \"{type}\" can not be deleted because it is is still "
 "in use."
-msgstr "Le type de relation \"{type}\" ne peut pas être effacé car il est encore utilisé."
+msgstr "Le type de relation « {type} » ne peut pas être effacé car il est encore utilisé."
 
 #: ../root/search/error/internal-error.tt:3
 msgid ""
@@ -8236,7 +8236,7 @@ msgstr "Cet artiste n'a aucun groupe de parution ni d'enregistrement isolé."
 
 #: ../root/artist/tags.tt:2
 msgid "This artist has no tags."
-msgstr "Cet artiste n'a aucun tag."
+msgstr "Cet artiste n'a pas de balise."
 
 #: ../root/artist/cannot_split.tt:3
 msgid ""
@@ -8275,7 +8275,7 @@ msgstr "Cet attribut est requis."
 
 #: ../root/collection/tags.tt:2
 msgid "This collection has no tags."
-msgstr "Cette collection n'a aucun tag."
+msgstr "Cette collection n'a pas de balise."
 
 #: ../root/components/common-macros.tt:673
 msgid ""
@@ -8351,7 +8351,7 @@ msgid ""
 "This form allows you to edit the artist credit \"{ac}\". When the edit is "
 "accepted, all tracks, recordings, releases and release groups using this "
 "artist credit will be update to use the new one."
-msgstr "Ce formulaire vous permet de modifier le crédit \"{ac}\". Quand la modification sera acceptée, toutes les pistes, enregistrements, parutions et groupes de parutions utilisant ce crédit seront mis à jour en conséquence."
+msgstr "Ce formulaire vous permet de modifier le crédit « {ac} ». Quand la modification sera acceptée, toutes les pistes, enregistrements, parutions et groupes de parutions utilisant ce crédit seront mis à jour en conséquence."
 
 #: ../root/artist/split.tt:43
 msgid ""
@@ -8382,7 +8382,7 @@ msgstr "Ceci est un serveur de développement. Votre adresse courriel n'est ni p
 
 #: ../root/user/login.tt:27
 msgid "This is a development server; all passwords have been reset to \"mb\"."
-msgstr "Ceci est un serveur de développement, tous les mots de passe ont été réinitialisés à \"mb\"."
+msgstr "Ceci est un serveur de développement, tous les mots de passe ont été réinitialisés à « mb »."
 
 #: ../root/artist/aliases.tt:10
 msgid ""
@@ -8423,7 +8423,7 @@ msgstr "Ce label n'a pas de relation ou de parution et sera enlevé automatiquem
 
 #: ../root/label/tags.tt:2
 msgid "This label has no tags."
-msgstr "Ce label n'a pas de tag."
+msgstr "Ce label n'a pas de balise."
 
 #: ../root/cdtoc/attach_list.tt:24
 msgid "This medium format cannot have a disc ID attached"
@@ -8476,7 +8476,7 @@ msgstr "Ce lieu n'a pas de relation et sera enlevé automatiquement durant les p
 
 #: ../root/place/tags.tt:2
 msgid "This place has no tags."
-msgstr "Ce lieu n'a pas de tag."
+msgstr "Ce lieu n'a pas de balise."
 
 #: ../root/recording/delete.tt:18
 msgid ""
@@ -8489,7 +8489,7 @@ msgstr "Cet enregistrement n'a aucun AcoustID associé."
 
 #: ../root/recording/tags.tt:2
 msgid "This recording has no tags."
-msgstr "Cet enregistrement n'a pas de tag."
+msgstr "Cet enregistrement n'a pas de balise."
 
 #: ../root/release/index.tt:79 ../root/release/index.tt:80
 msgid "This recording is a video"
@@ -8548,11 +8548,11 @@ msgstr "Ce groupe de parution n'a pas de relation ou de parution qui lui soit as
 
 #: ../root/release_group/tags.tt:2
 msgid "This release group has no tags."
-msgstr "Ce groupe de parution n'a pas de tag."
+msgstr "Ce groupe de parution n'a pas de balise."
 
 #: ../root/release/tags.tt:2
 msgid "This release has no tags."
-msgstr "Cette parution n'a pas de tag."
+msgstr "Cette parution n'a pas de balise."
 
 #: ../root/release/edit/information.tt:250
 msgid ""
@@ -8600,14 +8600,14 @@ msgid ""
 "This report lists all releases where the mediums are not continuous (e.g. "
 "there is no \"medium 2\"), or with duplicated mediums (e.g. there are two "
 "\"medium 4\"s)."
-msgstr "Ce rapport liste toutes les parutions pour lesquelles les supports ne sont pas continus (par exemple il n'y a pas de \"support 2\"), ou avec des supports en double (par exemple il y a deux \"support 4\")."
+msgstr "Ce rapport liste toutes les parutions pour lesquelles les supports ne sont pas continus (par exemple il n'y a pas de « support 2 »), ou avec des supports en double (par exemple il y a deux « support 4 »)."
 
 #: ../root/report/tracks_with_sequence_issues.tt:6
 msgid ""
 "This report lists all releases where the track numbers are not continuous "
 "(e.g. there is no \"track 2\"), or with duplicated track numbers (e.g. there"
 " are two \"track 4\"s)."
-msgstr "Ce rapport liste toutes les parutions pour lesquelles les numéros de piste ne sont pas continus (par exemple il n'y a pas de \"piste 2\"), ou avec des pistes en double (par exemple il y a deux \"piste 4\")."
+msgstr "Ce rapport liste toutes les parutions pour lesquelles les numéros de piste ne sont pas continus (par exemple il n'y a pas de « piste 2 »), ou avec des pistes en double (par exemple il y a deux « piste 4 »)."
 
 #: ../root/report/artists_with_multiple_occurances_in_artist_credits.tt:6
 msgid ""
@@ -8980,7 +8980,7 @@ msgstr "Cette œuvre n'a aucune relation, et sera donc enlevée automatiquement 
 
 #: ../root/work/tags.tt:2
 msgid "This work has no tags."
-msgstr "Cette œuvre n'a pas de tag."
+msgstr "Cette œuvre n'a pas de balise."
 
 #: ../root/cdtoc/info.tt:37 ../root/cdtoc/info.tt:39 ../root/cdtoc/info.tt:41
 msgid "Time"
@@ -9057,7 +9057,7 @@ msgstr "Pour utiliser les outils de traitement par lot, choisir des enregistreme
 msgid ""
 "To watch an artist and be notified of new releases, {search_url|search} for "
 "them and select 'Watch this artist for new releases' from the sidebar."
-msgstr "Pour surveiller un artiste et être prévenu lors de nouvelles parutions, {search_url|chercher} les artistes concernés et choisissez \"S'abonner aux nouvelles parutions de cet artiste\" dans la barre latérale."
+msgstr "Pour surveiller un artiste et être prévenu lors de nouvelles parutions, {search_url|chercher} les artistes concernés et choisissez « S'abonner aux nouvelles parutions de cet artiste » dans la barre latérale."
 
 #: ../root/edit/details/historic/move_disc_id.tt:23
 #: ../root/edit/details/move_disc_id.tt:15
@@ -9452,7 +9452,7 @@ msgstr "Mettre à jour la page"
 
 #: ../root/components/tag.tt:3
 msgid "Update Tags"
-msgstr "Mettre à jour les tags"
+msgstr "Mettre à jour les balises"
 
 #: ../root/artist/merge.tt:19
 msgid "Update artist credits to use the new artist's name"
@@ -9714,7 +9714,7 @@ msgid ""
 "Warning! \"1990-10-25\" is the bogus date that Amazon gives to all releases "
 "for which they don't know the actual date. <b>Please use this date only if "
 "you're certain this date is correct!</b>"
-msgstr "Attention ! \"1990-10-25\" est la fausse date qu'Amazon donne à toute parution dont ils ne connaissent pas la véritable date. <b>N'utilisez cette date que si vous êtes certain qu'elle est la bonne !</b>"
+msgstr "Attention ! « 1990-10-25 » est la fausse date qu'Amazon donne à toute parution dont ils ne connaissent pas la véritable date. <b>N'utilisez cette date que si vous êtes certain qu'elle est la bonne !</b>"
 
 #: ../root/artist/edit_form.tt:18 ../root/label/edit_form.tt:14
 #: ../root/place/edit_form.tt:14
@@ -9878,7 +9878,7 @@ msgid ""
 "When you are ready to merge these, just click the Merge button. You may "
 "still add more to this merge queue by simply browsing to the entities page "
 "and following the merge link."
-msgstr "Lorsque vous êtes prêt à fusionner ces données, cliquez le bouton \"Fusionner\". Vous pourrez toujours ajouter d'autres données à cette fusion en cherchant les autres entités et en cliquant sur le lien \"fusionner\"."
+msgstr "Lorsque vous êtes prêt à fusionner ces données, cliquez le bouton » Fusionner ». Vous pourrez toujours ajouter d'autres données à cette fusion en cherchant les autres entités et en cliquant sur le lien « fusionner »."
 
 #: ../root/release/merge_search.tt:7
 msgid ""
@@ -9963,7 +9963,7 @@ msgstr "Œuvres"
 
 #: ../root/browse/work.tt:8
 msgid "Works starting with “{index}”"
-msgstr "Œuvres commençant par \"{index}\""
+msgstr "Œuvres commençant par « {index} »"
 
 #: ../root/report/duplicate_relationships_works.tt:1
 #: ../root/report/duplicate_relationships_works.tt:3
@@ -10001,7 +10001,7 @@ msgstr "AAAA"
 
 #: ../root/layout/menu.tt:165 ../root/main/index.tt:11
 msgid "Yate Music Tagger"
-msgstr "Tagueur Yate"
+msgstr "Baliseur Yate"
 
 #: ../root/artist/browse_various.tt:13 ../root/artist/index.tt:54
 #: ../root/edit/details/merge_release_groups.tt:7
@@ -10268,7 +10268,7 @@ msgstr "Vous ne pouvez ajouter un coupon de CD tant que vous êtes connecté à 
 msgid ""
 "You cannot remove the relationship attribute \"{type}\" as it is still in "
 "use by other relationships."
-msgstr "Vous ne pouvez pas enlever l'attribut de relation \"{type}\" car il est toujours utilisé par d'autres relations."
+msgstr "Vous ne pouvez pas enlever l'attribut de relation « {type} » car il est toujours utilisé par d'autres relations."
 
 #: ../root/elections/show.tt:82
 msgid ""
@@ -10924,7 +10924,7 @@ msgstr "{editor} est abonné à :"
 msgid ""
 "{edit} has received one or more \"no\" votes, you must leave an edit note "
 "before you can approve it."
-msgstr "{edit} a reçu un ou plusieurs votes \"non\", vous devez laissez un commentaire pour pouvoir l'approuver."
+msgstr "{edit} a reçu un ou plusieurs votes « non », vous devez laissez un commentaire pour pouvoir l'approuver."
 
 #: ../root/doc/relationship_type.tt:5
 msgid "{entity0}-{entity1}"
@@ -11161,11 +11161,11 @@ msgstr "{user} n'a rien évalué."
 
 #: ../root/user/tag.tt:23
 msgid "{user} has not tagged anything with '{tag}'."
-msgstr "{user} n'a pas tagué quoi que ce soit avec '{tag}'."
+msgstr "{user} n'a pas balisé quoi que ce soit avec « {tag} »."
 
 #: ../root/user/tags.tt:7
 msgid "{user} has not tagged anything."
-msgstr "{user} n'a rien marqué."
+msgstr "{user} n'a rien balisé."
 
 #: ../root/recording/edit.tt:34
 msgid ""
@@ -11920,7 +11920,7 @@ msgstr "Afficher votre adresse courriel"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:78
 msgid "View and modify your private tags"
-msgstr "Afficher et modifier vos tags privés"
+msgstr "Afficher et modifier vos balises privées"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:79
 msgid "View and modify your private ratings"
@@ -12053,7 +12053,7 @@ msgstr "Date invalide"
 
 #: ../lib/MusicBrainz/Server/Form/Field/URL.pm:21
 msgid "Enter a valid url e.g. \"http://google.com/\""
-msgstr "Saisir une URL valide, par exemple \"http://google.com/\""
+msgstr "Saisir une URL valide, par exemple « http://google.com/ »"
 
 #: ../lib/MusicBrainz/Server/Form/Field/URL.pm:24
 msgid "URL protocol must be HTTP, HTTPS or FTP"
