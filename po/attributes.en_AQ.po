@@ -3,498 +3,617 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"Report-Msgid-Bugs-To: http://tickets.musicbrainz.org/\n"
-"PO-Revision-Date: 2012-06-09 18:23+0000\n"
+"PO-Revision-Date: 2013-11-19 15:41+0000\n"
 "Last-Translator: Ian McEwen <email address hidden>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: en\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: DB:medium_format/name:30
 msgctxt "medium_format"
 msgid "10\" Vinyl"
-msgstr "[10\" Ṽīƞẏŀ ϰς衋ϱ ϵıϖſ鶱]"
+msgstr "[10\" Ṽīƞẏŀ ϕϱϐ衋 ſẛςǈẛ]"
 
 #: DB:medium_format/name:31
 msgctxt "medium_format"
 msgid "12\" Vinyl"
-msgstr "[12\" Ṽīƞẏŀ ϑ衋ϱΰ ǅııϖϱ]"
+msgstr "[12\" Ṽīƞẏŀ 衋ϐϖϱ ıẛϵẛ靐]"
 
 #: DB:medium_format/name:29
 msgctxt "medium_format"
 msgid "7\" Vinyl"
-msgstr "[7\" Ṽīƞẏŀ ϱϑΐ ǋϑςϰ鶱]"
+msgstr "[7\" Ṽīƞẏŀ ẛſϐ ϰǈΐΐϱ]"
 
 #: DB:medium_format/name:34
 msgctxt "medium_format"
 msgid "8cm CD"
-msgstr "[8ƈḿ ƇḒ ΐǈϰ ſϕ]"
+msgstr "[8ƈḿ ƇḒ 鶱鶱ϱ ΐ靐]"
 
 #: DB:release_group_primary_type/name:1
 msgctxt "release_group_primary_type"
 msgid "Album"
-msgstr "[Ȧŀƀŭḿ ϕϱıϕ鶱]"
+msgstr "[Ȧŀƀŭḿ ϰϐ鶱靐ϱ]"
+
+#: DB:area_alias_type/name:1
+msgctxt "alias_type"
+msgid "Area name"
+msgstr "[Ȧřḗȧ ƞȧḿḗ ς衋靐ϑ ǲϕϵς]"
 
 #: DB:work_type/name:1
 msgctxt "work_type"
 msgid "Aria"
-msgstr "[Ȧřīȧ ΐϐıẛ]"
+msgstr "[Ȧřīȧ ϰϱϕϐ]"
 
 #: DB:artist_alias_type/name:1
 msgctxt "alias_type"
 msgid "Artist name"
-msgstr "[Ȧřŧīşŧ ƞȧḿḗ ϵϑ靐ΐẛϑ ϱΰϰǲ]"
+msgstr "[Ȧřŧīşŧ ƞȧḿḗ 靐ǲǲẛϰſ 鶱ϐ靐ϐ]"
 
 #: DB:release_group_secondary_type/name:5
 msgctxt "release_group_secondary_type"
 msgid "Audiobook"
-msgstr "[Ȧŭḓīǿƀǿǿķ ǋϕſǈǈςϐϖϑ]"
+msgstr "[Ȧŭḓīǿƀǿǿķ ϰς衋ϱ衋ǲΰϑſ]"
+
+#: DB:cover_art_archive.art_type/name:2
+msgctxt "cover_art_type"
+msgid "Back"
+msgstr "[Ɓȧƈķ ϑǅϐǲ]"
 
 #: DB:work_type/name:2
 msgctxt "work_type"
 msgid "Ballet"
-msgstr "[Ɓȧŀŀḗŧ 衋ςıϑǲϖ]"
+msgstr "[Ɓȧŀŀḗŧ 靐ΰϵ靐ϕϐ]"
 
 #: DB:medium_format/name:24
 msgctxt "medium_format"
 msgid "Betamax"
-msgstr "[Ɓḗŧȧḿȧẋ 鶱ϐẛϰ衋靐ǅ]"
+msgstr "[Ɓḗŧȧḿȧẋ ϰǲıϐϰςǲ]"
 
 #: DB:medium_format/name:20
 msgctxt "medium_format"
 msgid "Blu-ray"
-msgstr "[Ɓŀŭ-řȧẏ ϰϑϖϰϵΰϵ]"
+msgstr "[Ɓŀŭ-řȧẏ 衋ϕϖ靐鶱ẛϰ]"
+
+#: DB:release_packaging/name:9
+msgctxt "release_packaging"
+msgid "Book"
+msgstr "[Ɓǿǿķ ǅǅǈ鶱]"
+
+#: DB:cover_art_archive.art_type/name:3
+msgctxt "cover_art_type"
+msgid "Booklet"
+msgstr "[Ɓǿǿķŀḗŧ ς鶱ϑ鶱靐ϖϑ]"
 
 #: DB:release_status/name:3
 msgctxt "release_status"
 msgid "Bootleg"
-msgstr "[Ɓǿǿŧŀḗɠ ϱǲϑϱıϱϕ]"
+msgstr "[Ɓǿǿŧŀḗɠ ſϕϱǲΐǲſ]"
 
 #: DB:label_type/name:5
 msgctxt "label_type"
 msgid "Bootleg Production"
-msgstr "[Ɓǿǿŧŀḗɠ Ƥřǿḓŭƈŧīǿƞ ΐǲ鶱ΐςẛǈ ǋϰ]"
+msgstr "[Ɓǿǿŧŀḗɠ Ƥřǿḓŭƈŧīǿƞ ςǲ鶱ϱ鶱鶱ΐ 靐ϰ]"
+
+#: DB:release_group_primary_type/name:12
+msgctxt "release_group_primary_type"
+msgid "Broadcast"
+msgstr "[Ɓřǿȧḓƈȧşŧ ϱϱϕΐϑϕΐẛϰ]"
 
 #: DB:medium_format/name:1
 msgctxt "medium_format"
 msgid "CD"
-msgstr "[ƇḒ 鶱ϵ]"
+msgstr "[ƇḒ ſǅ]"
 
 #: DB:medium_format/name:33
 msgctxt "medium_format"
 msgid "CD-R"
-msgstr "[ƇḒ-Ř ϰϰϑϕ]"
+msgstr "[ƇḒ-Ř ϐǲıı]"
 
 #: DB:work_type/name:3
 msgctxt "work_type"
 msgid "Cantata"
-msgstr "[Ƈȧƞŧȧŧȧ ΐϵǈϐϕϕϰ]"
+msgstr "[Ƈȧƞŧȧŧȧ ϵΰϱΐǲ衋鶱]"
 
 #: DB:release_packaging/name:4
 msgctxt "release_packaging"
 msgid "Cardboard/Paper Sleeve"
-msgstr "[Ƈȧřḓƀǿȧřḓ/Ƥȧƥḗř Şŀḗḗṽḗ ΰǅϰϰϵςϑǋΰΰΐ]"
+msgstr "[Ƈȧřḓƀǿȧřḓ/Ƥȧƥḗř Şŀḗḗṽḗ ǋſſΰǈ鶱ςϕϕΰϖ]"
 
 #: DB:medium_format/name:9
 msgctxt "medium_format"
 msgid "Cartridge"
-msgstr "[Ƈȧřŧřīḓɠḗ ϵǈϵǈΐϐΰϐϕ]"
+msgstr "[Ƈȧřŧřīḓɠḗ ϖǲϖϱϵςẛςſ]"
 
 #: DB:medium_format/name:8
 msgctxt "medium_format"
 msgid "Cassette"
-msgstr "[Ƈȧşşḗŧŧḗ ǲϖſıϖſϑϕ]"
+msgstr "[Ƈȧşşḗŧŧḗ ǈǈſϰϰΰ衋ϰ]"
+
+#: DB:release_packaging/name:8
+msgctxt "release_packaging"
+msgid "Cassette Case"
+msgstr "[Ƈȧşşḗŧŧḗ Ƈȧşḗ 衋ϐ衋衋ǲϱϐϱ ǅΐ]"
+
+#: DB:area_type/name:3
+msgctxt "area_type"
+msgid "City"
+msgstr "[Ƈīŧẏ ϕΐΰ靐]"
 
 #: DB:release_group_secondary_type/name:1
 msgctxt "release_group_secondary_type"
 msgid "Compilation"
-msgstr "[Ƈǿḿƥīŀȧŧīǿƞ ϱ靐ϐ靐ıǋϕϰΐϕ衋]"
+msgstr "[Ƈǿḿƥīŀȧŧīǿƞ ıϰıǋǋǋϰϑ衋ıǲ]"
 
 #: DB:work_type/name:4
 msgctxt "work_type"
 msgid "Concerto"
-msgstr "[Ƈǿƞƈḗřŧǿ 靐衋靐ϱǋϕǅϖ]"
+msgstr "[Ƈǿƞƈḗřŧǿ ıϰϖ鶱ϱ鶱衋ǲ]"
+
+#: DB:area_type/name:1
+msgctxt "area_type"
+msgid "Country"
+msgstr "[Ƈǿŭƞŧřẏ ςǋϵ衋靐ǲϑ]"
 
 #: DB:medium_format/name:11
 msgctxt "medium_format"
 msgid "DAT"
-msgstr "[ḒȦŦ ςǋǅ]"
+msgstr "[ḒȦŦ ϑſı]"
 
 #: DB:medium_format/name:16
 msgctxt "medium_format"
 msgid "DCC"
-msgstr "[ḒƇƇ ϕΰ鶱]"
+msgstr "[ḒƇƇ ςǋς]"
 
 #: DB:release_group_secondary_type/name:8
 msgctxt "release_group_secondary_type"
 msgid "DJ-mix"
-msgstr "[ḒĴ-ḿīẋ ΐǈǈϱı鶱]"
+msgstr "[ḒĴ-ḿīẋ ϰΰϰẛΐǅ]"
 
 #: DB:medium_format/name:2
 msgctxt "medium_format"
 msgid "DVD"
-msgstr "[ḒṼḒ ıϱϑ]"
+msgstr "[ḒṼḒ 衋衋ς]"
 
 #: DB:medium_format/name:18
 msgctxt "medium_format"
 msgid "DVD-Audio"
-msgstr "[ḒṼḒ-Ȧŭḓīǿ ς鶱ΰ靐ıǈſΰϰ]"
+msgstr "[ḒṼḒ-Ȧŭḓīǿ ϵϖǈǅǈǈẛϖς]"
 
 #: DB:medium_format/name:19
 msgctxt "medium_format"
 msgid "DVD-Video"
-msgstr "[ḒṼḒ-Ṽīḓḗǿ ſ鶱ϕ靐ǈııϕϵ]"
+msgstr "[ḒṼḒ-Ṽīḓḗǿ ſϰςẛΰϖϱϕı]"
 
 #: DB:release_packaging/name:3
 msgctxt "release_packaging"
 msgid "Digipak"
-msgstr "[Ḓīɠīƥȧķ ϖΰΰǈǈıǋ]"
+msgstr "[Ḓīɠīƥȧķ ΐſϰϕǈǋǲ]"
 
 #: DB:medium_format/name:12
 msgctxt "medium_format"
 msgid "Digital Media"
-msgstr "[Ḓīɠīŧȧŀ Ḿḗḓīȧ ϐϑςſϵϑϐ ϵǈϖ]"
+msgstr "[Ḓīɠīŧȧŀ Ḿḗḓīȧ 靐鶱ǲϰıſϐ ſςϖ]"
 
 #: DB:label_type/name:1
 msgctxt "label_type"
 msgid "Distributor"
-msgstr "[Ḓīşŧřīƀŭŧǿř ϐ靐ǅǅϐϵ衋ǋΰǲǈ]"
+msgstr "[Ḓīşŧřīƀŭŧǿř ϵςϱı鶱ϕϑϰϰϖΰ]"
+
+#: DB:area_type/name:5
+msgctxt "area_type"
+msgid "District"
+msgstr "[Ḓīşŧřīƈŧ ǲΰǅſǲǅẛϐ]"
 
 #: DB:medium_format/name:4
 msgctxt "medium_format"
 msgid "DualDisc"
-msgstr "[ḒŭȧŀḒīşƈ ΰǅ衋ǈϖıϵẛ]"
+msgstr "[ḒŭȧŀḒīşƈ ϖǅǅϖǋϖıǲ]"
 
 #: DB:release_group_primary_type/name:3
 msgctxt "release_group_primary_type"
 msgid "EP"
-msgstr "[ḖƤ ϖϑ]"
+msgstr "[ḖƤ ǋϖ]"
 
 #: DB:gender/name:2
 msgctxt "gender"
 msgid "Female"
-msgstr "[Ƒḗḿȧŀḗ ǅϰΐΰϰϱ]"
+msgstr "[Ƒḗḿȧŀḗ ǅϕ衋ϰϵϱ]"
+
+#: DB:area_alias_type/name:2
+msgctxt "alias_type"
+msgid "Formal name"
+msgstr "[Ƒǿřḿȧŀ ƞȧḿḗ ϖϰẛ靐ǲϵ ϰΐǋϵ]"
+
+#: DB:cover_art_archive.art_type/name:1
+msgctxt "cover_art_type"
+msgid "Front"
+msgstr "[Ƒřǿƞŧ ϐϰϱǋǋ]"
 
 #: DB:artist_type/name:2
 msgctxt "artist_type"
 msgid "Group"
-msgstr "[Ɠřǿŭƥ ϱǅǋıϕ]"
+msgstr "[Ɠřǿŭƥ ϕẛǲϐϵ]"
 
 #: DB:medium_format/name:17
 msgctxt "medium_format"
 msgid "HD-DVD"
-msgstr "[ĦḒ-ḒṼḒ ϖı靐ϕΰ靐]"
+msgstr "[ĦḒ-ḒṼḒ ϕ衋ΰϕǈǋ]"
 
 #: DB:medium_format/name:25
 msgctxt "medium_format"
 msgid "HDCD"
-msgstr "[ĦḒƇḒ ǅǲǲ衋]"
+msgstr "[ĦḒƇḒ ǅςϐ鶱]"
 
 #: DB:label_type/name:2
 msgctxt "label_type"
 msgid "Holding"
-msgstr "[Ħǿŀḓīƞɠ ϐϖϰςǋǋǲ]"
+msgstr "[Ħǿŀḓīƞɠ ΐΐΰϵıſǈ]"
 
 #: DB:release_group_secondary_type/name:4
 msgctxt "release_group_secondary_type"
 msgid "Interview"
-msgstr "[Īƞŧḗřṽīḗẇ ǲ鶱ϐẛǋΰ衋ẛϵ]"
+msgstr "[Īƞŧḗřṽīḗẇ ẛ衋ǲǋ靐鶱ΐǲϐ]"
 
 #: DB:release_packaging/name:1
 msgctxt "release_packaging"
 msgid "Jewel Case"
-msgstr "[Ĵḗẇḗŀ Ƈȧşḗ 衋鶱ςǅ鶱 ΐǅ衋ϱ]"
+msgstr "[Ĵḗẇḗŀ Ƈȧşḗ ϰǈſϕΰ ϰǋǋϕ]"
 
 #: DB:release_packaging/name:6
 msgctxt "release_packaging"
 msgid "Keep Case"
-msgstr "[Ķḗḗƥ Ƈȧşḗ ϵǅ靐ǅ ϵΰſϑ]"
+msgstr "[Ķḗḗƥ Ƈȧşḗ ϕſϰϰ ǋϱǋſ]"
 
 #: DB:label_alias_type/name:1
 msgctxt "alias_type"
 msgid "Label name"
-msgstr "[Ŀȧƀḗŀ ƞȧḿḗ 鶱ϑ靐ϖ靐 ϕϱſ鶱]"
+msgstr "[Ŀȧƀḗŀ ƞȧḿḗ ϖΰẛǲϵ ϐϱıǈ]"
 
 #: DB:medium_format/name:5
 msgctxt "medium_format"
 msgid "LaserDisc"
-msgstr "[ĿȧşḗřḒīşƈ ΐıẛǈı靐ǲǅſ]"
+msgstr "[ĿȧşḗřḒīşƈ ϱΐǲϐǲΐǲϕ衋]"
 
 #: DB:artist_alias_type/name:2
 msgctxt "alias_type"
 msgid "Legal name"
-msgstr "[Ŀḗɠȧŀ ƞȧḿḗ ϕǅςǈϕ ſſϐ衋]"
+msgstr "[Ŀḗɠȧŀ ƞȧḿḗ ſǈǅϖǈ ΰſϵϐ]"
 
 #: DB:release_group_secondary_type/name:6
 msgctxt "release_group_secondary_type"
 msgid "Live"
-msgstr "[Ŀīṽḗ 靐ẛǋẛ]"
+msgstr "[Ŀīṽḗ ςǋẛϐ]"
 
 #: DB:work_type/name:7
 msgctxt "work_type"
 msgid "Madrigal"
-msgstr "[Ḿȧḓřīɠȧŀ ϖǈϱǈıǋϐς]"
+msgstr "[Ḿȧḓřīɠȧŀ ϕϵ鶱ıǋ衋ϰϕ]"
 
 #: DB:gender/name:1
 msgctxt "gender"
 msgid "Male"
-msgstr "[Ḿȧŀḗ ẛǲΰǅ]"
+msgstr "[Ḿȧŀḗ 衋ϱ鶱靐]"
 
 #: DB:work_type/name:8
 msgctxt "work_type"
 msgid "Mass"
-msgstr "[Ḿȧşş ǈǋϑ衋]"
+msgstr "[Ḿȧşş ςϐϰǋ]"
+
+#: DB:cover_art_archive.art_type/name:4
+msgctxt "cover_art_type"
+msgid "Medium"
+msgstr "[Ḿḗḓīŭḿ ϵϑ鶱ϐϵϕ]"
 
 #: DB:medium_format/name:6
 msgctxt "medium_format"
 msgid "MiniDisc"
-msgstr "[ḾīƞīḒīşƈ 衋ǋϰẛϰſΐϖ]"
+msgstr "[ḾīƞīḒīşƈ ϖΐϖıǲǅϕϖ]"
 
 #: DB:release_group_secondary_type/name:9
 msgctxt "release_group_secondary_type"
 msgid "Mixtape/Street"
-msgstr "[Ḿīẋŧȧƥḗ/Şŧřḗḗŧ ΰǋςϖ鶱ıϐǲϱΐſı]"
+msgstr "[Ḿīẋŧȧƥḗ/Şŧřḗḗŧ ǅǈϵϑǲǅ靐靐衋靐鶱ǋ]"
 
 #: DB:work_type/name:9
 msgctxt "work_type"
 msgid "Motet"
-msgstr "[Ḿǿŧḗŧ ϐǈϕϱϱ]"
+msgstr "[Ḿǿŧḗŧ ςǅǲẛϱ]"
+
+#: DB:area_type/name:4
+msgctxt "area_type"
+msgid "Municipality"
+msgstr "[Ḿŭƞīƈīƥȧŀīŧẏ ΰǲϕı靐ϖϐΰϖϰ]"
 
 #: DB:release_packaging/name:7
 msgctxt "release_packaging"
 msgid "None"
-msgstr "[Ƞǿƞḗ ϵſϖϕ]"
+msgstr "[Ƞǿƞḗ ϖΐϱς]"
+
+#: DB:cover_art_archive.art_type/name:5
+msgctxt "cover_art_type"
+msgid "Obi"
+msgstr "[Ǿƀī 衋ϰΐ]"
 
 #: DB:release_status/name:1
 msgctxt "release_status"
 msgid "Official"
-msgstr "[Ǿƒƒīƈīȧŀ 衋ϕ鶱ϱϵΐςϕ]"
+msgstr "[Ǿƒƒīƈīȧŀ ǅϕſǈΐ鶱ϱϕ]"
 
 #: DB:work_type/name:10
 msgctxt "work_type"
 msgid "Opera"
-msgstr "[Ǿƥḗřȧ 鶱ϵǋΰı]"
+msgstr "[Ǿƥḗřȧ ẛϵ靐ϕſ]"
+
+#: DB:work_type/name:24
+msgctxt "work_type"
+msgid "Operetta"
+msgstr "[Ǿƥḗřḗŧŧȧ ǅϖ衋ǋıϕΰϐ]"
 
 #: DB:work_type/name:11
 msgctxt "work_type"
 msgid "Oratorio"
-msgstr "[Ǿřȧŧǿřīǿ 鶱ǋϐǲϖẛẛΐ]"
+msgstr "[Ǿřȧŧǿřīǿ ΰǲςǲϕϖϖΰ]"
 
 #: DB:label_type/name:4
 msgctxt "label_type"
 msgid "Original Production"
-msgstr "[Ǿřīɠīƞȧŀ Ƥřǿḓŭƈŧīǿƞ ǋΐ靐ǲẛẛϖ衋 ϰϐ]"
+msgstr "[Ǿřīɠīƞȧŀ Ƥřǿḓŭƈŧīǿƞ ϐǋǈ靐ςẛ衋ΰ ΰϑ]"
 
 #: DB:artist_type/name:3
 msgctxt "artist_type"
 msgid "Other"
-msgstr "[Ǿŧħḗř ǋǋẛςϵ]"
+msgstr "[Ǿŧħḗř ϱıǲ衋ΰ]"
 
-#: DB:release_group_primary_type/name:11
-msgctxt "release_group_primary_type"
+#: DB:cover_art_archive.art_type/name:8
+msgctxt "cover_art_type"
 msgid "Other"
-msgstr "[Ǿŧħḗř ΐǲ鶱ıǲ]"
-
-#: DB:medium_format/name:13
-msgctxt "medium_format"
-msgid "Other"
-msgstr "[Ǿŧħḗř ΐ靐ǈ靐ẛ]"
-
-#: DB:release_packaging/name:5
-msgctxt "release_packaging"
-msgid "Other"
-msgstr "[Ǿŧħḗř ϵıſıς]"
+msgstr "[Ǿŧħḗř ϱϑϑς鶱]"
 
 #: DB:gender/name:3
 msgctxt "gender"
 msgid "Other"
-msgstr "[Ǿŧħḗř 衋ϐıϐſ]"
+msgstr "[Ǿŧħḗř ǲϑǅϰϐ]"
+
+#: DB:medium_format/name:13
+msgctxt "medium_format"
+msgid "Other"
+msgstr "[Ǿŧħḗř 靐靐衋ϕϵ]"
+
+#: DB:release_group_primary_type/name:11
+msgctxt "release_group_primary_type"
+msgid "Other"
+msgstr "[Ǿŧħḗř ϵẛςΰ衋]"
+
+#: DB:release_packaging/name:5
+msgctxt "release_packaging"
+msgid "Other"
+msgstr "[Ǿŧħḗř ϰıϵϐǲ]"
 
 #: DB:work_type/name:12
 msgctxt "work_type"
 msgid "Overture"
-msgstr "[Ǿṽḗřŧŭřḗ ϵϵ衋ẛſϰϖǈ]"
+msgstr "[Ǿṽḗřŧŭřḗ ϐ靐衋ẛϖϱϕϱ]"
 
 #: DB:work_type/name:13
 msgctxt "work_type"
 msgid "Partita"
-msgstr "[Ƥȧřŧīŧȧ ǋϵΰϑẛϖΰ]"
+msgstr "[Ƥȧřŧīŧȧ ẛϱϐẛſǈϕ]"
 
 #: DB:artist_type/name:1
 msgctxt "artist_type"
 msgid "Person"
-msgstr "[Ƥḗřşǿƞ ϐ鶱ΐϑ鶱ı]"
+msgstr "[Ƥḗřşǿƞ ϑ衋ϑǋǅ衋]"
 
 #: DB:medium_format/name:15
 msgctxt "medium_format"
 msgid "Piano Roll"
-msgstr "[Ƥīȧƞǿ Řǿŀŀ ϵıΰǲǲ 靐ϑϐΐ]"
+msgstr "[Ƥīȧƞǿ Řǿŀŀ ſǲǲϑǈ ΰϕǈ靐]"
 
 #: DB:work_type/name:21
 msgctxt "work_type"
 msgid "Poem"
-msgstr "[Ƥǿḗḿ ϖǲϵΰ]"
+msgstr "[Ƥǿḗḿ ǅ鶱ϕ衋]"
 
 #: DB:label_type/name:3
 msgctxt "label_type"
 msgid "Production"
-msgstr "[Ƥřǿḓŭƈŧīǿƞ ΐẛΰſςǈǋϱϱǲ]"
+msgstr "[Ƥřǿḓŭƈŧīǿƞ ıẛ靐ſςǋǲ靐ϱǅ]"
 
 #: DB:release_status/name:2
 msgctxt "release_status"
 msgid "Promotion"
-msgstr "[Ƥřǿḿǿŧīǿƞ 靐ΐǲϰΰǲΰſΐ]"
+msgstr "[Ƥřǿḿǿŧīǿƞ 衋鶱靐ΰϐϐϖı衋]"
+
+#: DB:work_type/name:23
+msgctxt "work_type"
+msgid "Prose"
+msgstr "[Ƥřǿşḗ ϵǈı衋ǲ]"
 
 #: DB:release_status/name:4
 msgctxt "release_status"
 msgid "Pseudo-Release"
-msgstr "[Ƥşḗŭḓǿ-Řḗŀḗȧşḗ 鶱ςſǋǅ鶱靐ǈς鶱ẛϖ]"
+msgstr "[Ƥşḗŭḓǿ-Řḗŀḗȧşḗ ẛϰΐϕſ衋ΰϐςǋ衋ǈ]"
 
 #: DB:label_type/name:7
 msgctxt "label_type"
 msgid "Publisher"
-msgstr "[Ƥŭƀŀīşħḗř ϕǋ鶱ΰ衋ΰϱ鶱靐]"
+msgstr "[Ƥŭƀŀīşħḗř ǈϖΰ衋ςǅΐϖǋ]"
 
 #: DB:work_type/name:14
 msgctxt "work_type"
 msgid "Quartet"
-msgstr "[Ɋŭȧřŧḗŧ ϵΰϰϵϵϕς]"
+msgstr "[Ɋŭȧřŧḗŧ ϑϐϵΰıϖϵ]"
 
 #: DB:medium_format/name:10
 msgctxt "medium_format"
 msgid "Reel-to-reel"
-msgstr "[Řḗḗŀ-ŧǿ-řḗḗŀ ϐΰǈΐςΐẛϐıϑ]"
+msgstr "[Řḗḗŀ-ŧǿ-řḗḗŀ ΰǅϑςϑſ衋ϕ鶱鶱]"
 
 #: DB:label_type/name:6
 msgctxt "label_type"
 msgid "Reissue Production"
-msgstr "[Řḗīşşŭḗ Ƥřǿḓŭƈŧīǿƞ ΐϕſϐǲı鶱 ǲς]"
+msgstr "[Řḗīşşŭḗ Ƥřǿḓŭƈŧīǿƞ ϱϰẛ衋ſΐẛ ϕς]"
 
 #: DB:release_group_secondary_type/name:7
 msgctxt "release_group_secondary_type"
 msgid "Remix"
-msgstr "[Řḗḿīẋ ıẛǅϐϐ]"
+msgstr "[Řḗḿīẋ ǈϕϐϐΐ]"
+
+#: DB:label_type/name:8
+msgctxt "label_type"
+msgid "Rights Society"
+msgstr "[Řīɠħŧş Şǿƈīḗŧẏ 鶱ΐϖ靐ϖΐ ſſǲı靐]"
 
 #: DB:medium_format/name:3
 msgctxt "medium_format"
 msgid "SACD"
-msgstr "[ŞȦƇḒ ΐϐǈΰ]"
+msgstr "[ŞȦƇḒ 衋ϵ靐ϐ]"
 
 #: DB:medium_format/name:23
 msgctxt "medium_format"
 msgid "SVCD"
-msgstr "[ŞṼƇḒ ǲϑϖǅ]"
+msgstr "[ŞṼƇḒ ǲϖϕϰ]"
 
 #: DB:artist_alias_type/name:3 DB:label_alias_type/name:2
-#: DB:work_alias_type/name:2
+#: DB:work_alias_type/name:2 DB:area_alias_type/name:3
 msgctxt "alias_type"
 msgid "Search hint"
-msgstr "[Şḗȧřƈħ ħīƞŧ 衋靐鶱ǋǈϵ ǋǈςǲ]"
+msgstr "[Şḗȧřƈħ ħīƞŧ 靐ǅϰ衋ϐϰ ΐ靐ſΰ]"
 
 #: DB:release_group_primary_type/name:2
 msgctxt "release_group_primary_type"
 msgid "Single"
-msgstr "[Şīƞɠŀḗ ϕΐϐſϵϱ]"
+msgstr "[Şīƞɠŀḗ ϵ衋ςϰǋǈ]"
 
 #: DB:release_packaging/name:2
 msgctxt "release_packaging"
 msgid "Slim Jewel Case"
-msgstr "[Şŀīḿ Ĵḗẇḗŀ Ƈȧşḗ ẛǅϵ鶱 ϰϐ衋ϕϰ]"
+msgstr "[Şŀīḿ Ĵḗẇḗŀ Ƈȧşḗ ϖ衋ẛϵ ϱϐǈǋΐ]"
 
 #: DB:work_type/name:5
 msgctxt "work_type"
 msgid "Sonata"
-msgstr "[Şǿƞȧŧȧ ǈΐǋϐıϐ]"
+msgstr "[Şǿƞȧŧȧ ϱϕϐΐϵǲ]"
 
 #: DB:work_type/name:17
 msgctxt "work_type"
 msgid "Song"
-msgstr "[Şǿƞɠ 鶱ıϰẛ]"
+msgstr "[Şǿƞɠ ıϱςǅ]"
 
 #: DB:work_type/name:15
 msgctxt "work_type"
 msgid "Song-cycle"
-msgstr "[Şǿƞɠ-ƈẏƈŀḗ ıǋςϵϵǅ衋ϕǅẛ]"
+msgstr "[Şǿƞɠ-ƈẏƈŀḗ ςςǅϕǅǲǲǅ衋ϱ]"
 
 #: DB:release_group_secondary_type/name:2
 msgctxt "release_group_secondary_type"
 msgid "Soundtrack"
-msgstr "[Şǿŭƞḓŧřȧƈķ ı鶱ϱǅ靐ϑ靐ǲϱẛ]"
+msgstr "[Şǿŭƞḓŧřȧƈķ 靐鶱ϖϱΐΰ鶱ϐǅϑ]"
+
+#: DB:work_type/name:22
+msgctxt "work_type"
+msgid "Soundtrack"
+msgstr "[Şǿŭƞḓŧřȧƈķ ϐϖΐǋẛς衋衋ǲϑ]"
+
+#: DB:cover_art_archive.art_type/name:6
+msgctxt "cover_art_type"
+msgid "Spine"
+msgstr "[Şƥīƞḗ ϕǲǲ衋鶱]"
 
 #: DB:release_group_secondary_type/name:3
 msgctxt "release_group_secondary_type"
 msgid "Spokenword"
-msgstr "[Şƥǿķḗƞẇǿřḓ ϵǋϰ靐ϵıſΐǈǈ]"
+msgstr "[Şƥǿķḗƞẇǿřḓ 靐ſϕΐẛǈΰΰı衋]"
+
+#: DB:cover_art_archive.art_type/name:10
+msgctxt "cover_art_type"
+msgid "Sticker"
+msgstr "[Şŧīƈķḗř ϑǲϵΰǲΐı]"
+
+#: DB:area_type/name:2
+msgctxt "area_type"
+msgid "Subdivision"
+msgstr "[Şŭƀḓīṽīşīǿƞ ǈϑẛϰϵϕ靐ǈǋſϐ]"
 
 #: DB:work_type/name:6
 msgctxt "work_type"
 msgid "Suite"
-msgstr "[Şŭīŧḗ ϑϐǋẛϰ]"
+msgstr "[Şŭīŧḗ 鶱ǲıı鶱]"
 
 #: DB:work_type/name:18
 msgctxt "work_type"
 msgid "Symphonic poem"
-msgstr "[Şẏḿƥħǿƞīƈ ƥǿḗḿ ϑ衋ǲϰΰϱǈſϖ ẛΰ]"
+msgstr "[Şẏḿƥħǿƞīƈ ƥǿḗḿ ıςΰıϕǅſıϵ ΰǲ]"
 
 #: DB:work_type/name:16
 msgctxt "work_type"
 msgid "Symphony"
-msgstr "[Şẏḿƥħǿƞẏ ǋ靐ϖ鶱鶱ǈϵϕ]"
+msgstr "[Şẏḿƥħǿƞẏ ϱ衋ϑΰϰϑϑϑ]"
+
+#: DB:cover_art_archive.art_type/name:7
+msgctxt "cover_art_type"
+msgid "Track"
+msgstr "[Ŧřȧƈķ ϱϱΐıϵ]"
+
+#: DB:cover_art_archive.art_type/name:9
+msgctxt "cover_art_type"
+msgid "Tray"
+msgstr "[Ŧřȧẏ ǲǋϑı]"
 
 #: DB:medium_format/name:28
 msgctxt "medium_format"
 msgid "UMD"
-msgstr "[ŬḾḒ 鶱ϐϰ]"
+msgstr "[ŬḾḒ ΰǋϵ]"
 
 #: DB:medium_format/name:26
 msgctxt "medium_format"
 msgid "USB Flash Drive"
-msgstr "[ŬŞƁ Ƒŀȧşħ Ḓřīṽḗ ΐıϖ ϐϵϕϕ靐]"
+msgstr "[ŬŞƁ Ƒŀȧşħ Ḓřīṽḗ ςǈϱ ϱǅΰ靐ǋ]"
 
 #: DB:medium_format/name:22
 msgctxt "medium_format"
 msgid "VCD"
-msgstr "[ṼƇḒ 靐靐ſ]"
+msgstr "[ṼƇḒ ϕϑϰ]"
 
 #: DB:medium_format/name:21
 msgctxt "medium_format"
 msgid "VHS"
-msgstr "[ṼĦŞ ϵϱǲ]"
+msgstr "[ṼĦŞ 衋ǋ靐]"
 
 #: DB:medium_format/name:32
 msgctxt "medium_format"
 msgid "Videotape"
-msgstr "[Ṽīḓḗǿŧȧƥḗ ΐϐΰ靐ǈǲϵς鶱]"
+msgstr "[Ṽīḓḗǿŧȧƥḗ ϑϕϵΐϖΰϵϰΰ]"
 
 #: DB:medium_format/name:7
 msgctxt "medium_format"
 msgid "Vinyl"
-msgstr "[Ṽīƞẏŀ ϑϑϐẛΰ]"
+msgstr "[Ṽīƞẏŀ ϑΰϖϰǲ]"
 
 #: DB:medium_format/name:14
 msgctxt "medium_format"
 msgid "Wax Cylinder"
-msgstr "[Ẇȧẋ Ƈẏŀīƞḓḗř ϑϵϑ ϰΐ鶱ϑϱẛ]"
+msgstr "[Ẇȧẋ Ƈẏŀīƞḓḗř ΰſϰ ẛϖΰſǈΐ]"
 
 #: DB:work_alias_type/name:1
 msgctxt "alias_type"
 msgid "Work name"
-msgstr "[Ẇǿřķ ƞȧḿḗ ϕǲı靐 ǅϱϐ衋]"
+msgstr "[Ẇǿřķ ƞȧḿḗ ΰϱΰϑ ϕ靐ϱ鶱]"
 
 #: DB:work_type/name:19
 msgctxt "work_type"
 msgid "Zarzuela"
-msgstr "[Ẑȧřzŭḗŀȧ ϐϕẛϑǲǅǈſ]"
+msgstr "[Ẑȧřzŭḗŀȧ ẛǲıſǋ衋ϰς]"
 
 #: DB:medium_format/name:27
 msgctxt "medium_format"
 msgid "slotMusic"
-msgstr "[şŀǿŧḾŭşīƈ ǈſſǋϖϰϐſϱ]"
+msgstr "[şŀǿŧḾŭşīƈ ΰϰıϑẛıǋǲ鶱]"
 
 #: DB:work_type/name:20
 msgctxt "work_type"
 msgid "Étude"
-msgstr "[Éŧŭḓḗ ϖϕẛςς]"
+msgstr "[Éŧŭḓḗ ΐǈΰϖ鶱]"
