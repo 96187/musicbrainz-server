@@ -35,7 +35,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-12-07 17:35+0000\n"
+"PO-Revision-Date: 2013-12-07 19:52+0000\n"
 "Last-Translator: Shepard\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -5272,7 +5272,7 @@ msgstr "Beachte:"
 msgid ""
 "Note: only searches edits that: add or edit relationships, created after "
 "2011-05-16; or which remove relationships, created after 2013-07-08."
-msgstr ""
+msgstr "Beachte: Sucht nur nach Bearbeitungen, die: Beziehungen hinzufügen oder verändern und nach dem 16.05.2011 erstellt wurden; oder die Beziehungen entfernen und nach dem 08.07.2013 erstellt wurden."
 
 #: ../root/account/preferences.tt:37
 msgid "Notify me by email on new releases to my watched artists"
@@ -5612,7 +5612,7 @@ msgstr "Bitte wähle eine Bedingung"
 msgid ""
 "Please choose a valid image. Currently the Cover Art Archive only supports "
 "JPEG, PNG and GIF files."
-msgstr ""
+msgstr "Bitte wähle ein gültiges Bild. Zur Zeit unterstützt das Cover-Art-Archiv nur JPEG-, PNG-, und GIF-Dateien."
 
 #: ../root/scripts/text_strings.tt:45
 msgid "Please click lookup to search"
@@ -5705,7 +5705,7 @@ msgstr "Lies bitte die {doc_styleguide|Stilrichtlinien} und verwende dann die Fe
 msgid ""
 "Please read the {doc_styleguide|Style Guidelines} then use the fields below "
 "to update the information of this place."
-msgstr ""
+msgstr "Lies bitte die {doc_styleguide|Stilrichtlinien} und verwende dann die Felder unten, um die Informationen zu dieser Örtlichkeit zu aktualisieren."
 
 #: ../root/artist/edit_form.tt:4
 msgid ""
@@ -8554,7 +8554,7 @@ msgid ""
 "This release group has no relationships or releases associated, and will be "
 "removed automatically in the next few days. If this is not intended, please "
 "add more data to this release group."
-msgstr ""
+msgstr "Diese Veröffentlichungsgruppe hat keine Beziehungen oder Veröffentlichungen und wird innerhalb der nächsten Tage entfernt werden. Wenn das nicht beabsichtigt ist, füge bitte mehr Daten zu dieser Veröffentlichungsgruppe hinzu."
 
 #: ../root/release_group/tags.tt:2
 msgid "This release group has no tags."
@@ -8571,7 +8571,7 @@ msgid ""
 "separate real release. It should not be used to denote bootlegs, "
 "mixtape/street albums, demos, or digital albums. Be sure to link to the "
 "corresponding real release with the {url|transl(iter)ation relationship}."
-msgstr ""
+msgstr "Dieser Veröffentlichungsstatus sollte für inoffizielle Übersetzungen und Umschreibungen von Titellisten und Veröffentlichungstiteln verwendet werden, und stellt keine eigenständige, echte Veröffentlichung dar. Er sollte nicht für Bootlegs, Mixtape-/Street-Alben, Demos oder digitale Alben verwendet werden. Verlinke bitte auch die entsprechende echte Veröffentlichung mittels der {url|Übersetzungs-/Umschreibungs-Beziehung}."
 
 #: ../root/report/duplicate_artists.tt:6
 msgid ""
@@ -8623,7 +8623,7 @@ msgstr "Dieser Report listet alle Veröffentlichungen auf, bei denen die Titel n
 msgid ""
 "This report lists artists that appear more than once in different positions "
 "within the same artist credit."
-msgstr ""
+msgstr "Dieser Report listet Künstler auf, die mehr als einmal an verschiedenen Stellen innerhalb der selben Künstlernennung auftauchen."
 
 #: ../root/report/artists_with_no_subscribers.tt:6
 msgid ""
@@ -8785,7 +8785,7 @@ msgstr "Dieser Report zeigt Aufnahmen, die noch die veraltete „früheste Verö
 msgid ""
 "This report shows recordings where the linked tracks have times that vary by"
 " more than 30 seconds."
-msgstr ""
+msgstr "Dieser Report zeigt Aufnahmen, bei denen die verbundenen Titel Längen haben, die sich mehr als 30 Sekunden voneinander unterscheiden."
 
 #: ../root/report/featuring_recordings.tt:6
 msgid ""
@@ -8820,7 +8820,7 @@ msgid ""
 "This report shows releases that have a single medium, where this medium also"
 " has a specific name. Usually, this is not necessary and is duplicate "
 "information which can be removed."
-msgstr ""
+msgstr "Dieser Report zeigt Veröffentlichungen, die ein einziges Medium haben, das einen spezifischen Namen hat. Üblicherweise ist das nicht nötig und stellt eine Datenverdopplung dar, die entfernt werden kann."
 
 #: ../root/report/releases_with_unlikely_language_script.tt:6
 msgid ""
@@ -8832,7 +8832,7 @@ msgstr "Dieser Report zeigt Veröffentlichungen, die eine unwahrscheinliche Komb
 msgid ""
 "This report shows releases that have download relationships, but have media "
 "who's format is not \"Digital Media\"."
-msgstr ""
+msgstr "Dieser Report zeigt Veröffentlichungen, die Download-Beziehungen haben, aber Medien enthalten, deren Format nicht „Digitales Medium“ ist."
 
 #: ../root/report/multiple_asins.tt:6
 msgid ""
@@ -10101,7 +10101,7 @@ msgstr "Ja, ich bin sicher"
 msgid ""
 "You are about to add an ISRC to {recording}. The ISRC must be entered in "
 "standard <code>CCXXXYYNNNNNN</code> format:"
-msgstr ""
+msgstr "Du bist im Begriff einen ISRC zu {recording} hinzuzufügen. Der ISRC muss im Standardformat <code>CCXXXYYNNNNNN</code> eingegeben werden:"
 
 #: ../root/components/forms.tt:258
 msgid ""
@@ -10180,7 +10180,7 @@ msgstr "Du versuchst ein Label hinzuzufügen, welches den folgenden existierende
 msgid ""
 "You are attempting to add a place which appears to be very similar, if not "
 "exactly the same, as these existing places:"
-msgstr ""
+msgstr "Du versuchst eine Örtlichkeit hinzuzufügen, welche den folgenden existierenden Örtlichkeiten sehr ähnlich zu sein scheint, oder vielleicht so gar die gleiche ist:"
 
 #: ../root/artist/edit_form.tt:19
 msgid ""
@@ -10240,7 +10240,7 @@ msgid ""
 "You are required to enter a disambiguation comment which allows users to "
 "distinguish this place from the other places with the same name, if the "
 "final place name is similar to an existing place."
-msgstr ""
+msgstr "Du musst einen Unterscheidungskommentar angeben, der es Benutzern ermöglicht, diese Örtlichkeit von anderen Örtlichkeiten mit dem selben Namen zu unterscheiden, wenn der finale Örtlichkeitsname dem einer bestehenden Örtlichkeit ähnelt."
 
 #: ../root/user/subscriptions/collection.tt:7
 msgid "You are subscribed to {n} private collection."
