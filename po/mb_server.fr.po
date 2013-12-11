@@ -27,7 +27,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-12-11 06:59+0000\n"
+"PO-Revision-Date: 2013-12-11 07:14+0000\n"
 "Last-Translator: Alain-Olivier  Breysse\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -3443,7 +3443,7 @@ msgstr "Empreintes"
 msgid ""
 "For assistance in writing effective advanced search queries, read the "
 "{doc|syntax documentation}."
-msgstr "Pour de l'aide sur l'écriture des requêtes de recherche approfondie, lisez la {doc|documentation sur la syntaxe de recherche}."
+msgstr "Pour de l'aide sur l'écriture des requêtes de recherche approfondie, lisez la {doc|documentation sur la syntaxe}."
 
 #: ../root/admin/delete_user.tt:16
 msgid ""
@@ -4069,11 +4069,11 @@ msgstr "Nom d'utilisateur ou mot de passe incorrect"
 #: ../root/search/form.tt:24
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:56
 msgid "Indexed search"
-msgstr "Recherche dans l'index"
+msgstr "Recherche indexée"
 
 #: ../root/search/form.tt:29
 msgid "Indexed search with {doc|advanced query syntax}"
-msgstr "Recherche dans l'index avec {doc|la syntaxe de recherche approfondie}"
+msgstr "Recherche indexée avec {doc|la syntaxe de requête approfondie}"
 
 #: ../root/release/edit/recordings.tt:399
 msgid "Infer track durations from associated recordings"
@@ -5192,7 +5192,7 @@ msgstr "Aucun résultat."
 #: ../root/search/results-release-group.tt:26
 #: ../root/search/results-work.tt:58
 msgid "No results found. Try refining your search query."
-msgstr "Aucun résultat de trouvé. Essayez en affinant votre recherche."
+msgstr "Aucun résultat de trouvé. Essayez en affinant votre requête de recherche."
 
 #: ../root/user/subscriptions/table.tt:34
 msgid "No subscriptions."
@@ -6948,14 +6948,14 @@ msgstr "Rechercher des enregistrements"
 msgid ""
 "Search indexes are updated every 3 hours, use the direct database search if "
 "you require up to the minute correct results."
-msgstr "Les index de recherche sont mis à jour toutes les 3 heures, utiliser la recherche directe en base si vous avez besoin de résultats corrects à la minute près."
+msgstr "Les indexes de recherche sont mis à jour toutes les 3 heures, utiliser la recherche directe en base si vous avez besoin de résultats corrects à la minute près."
 
 #: ../root/taglookup/results.tt:12
 msgid ""
 "Search indexes are updated every 3 hours. If you just added the content "
 "you're looking for and you can't find it here, go to {url|the search page} "
 "and select the \"direct database search\" option."
-msgstr "Les index de recherche sont mis à jour toutes les 3 heures. Si vous venez juste d'ajouter le contenu que vous cherchez et que vous ne le trouvez pas ici, allez à la {url|page de recherche}, et choisissez l'option « recherche directe de la base de données »."
+msgstr "Les indexes de recherche sont mis à jour toutes les 3 heures. Si vous venez juste d'ajouter le contenu que vous cherchez et que vous ne le trouvez pas ici, allez à la {url|page de recherche}, et choisissez l'option « recherche directe de la base de données »."
 
 #: ../root/search/form.tt:20
 msgid "Search method:"
@@ -7210,7 +7210,7 @@ msgstr "Ralentissez !"
 
 #: ../root/scripts/text_strings.tt:83
 msgid "Slow? Switch back to indexed search."
-msgstr "Trop lent ? Revenez à la recherche indexée."
+msgstr "Lent ? Revenez à la recherche indexée."
 
 #: ../root/layout/menu.tt:124
 msgid "Social Contract"
@@ -7277,7 +7277,7 @@ msgstr "Désolé mais votre requête (<code>{query}</code>) n'a pas pu être eff
 msgid ""
 "Sorry, but your query (<code>{query}</code>) could not be performed, due to "
 "an error which we are not quite able to identify."
-msgstr "Désolé, mais votre recherche (<code>{query}</code>) ne peut pas être effectuée du fait d'une erreur que nous ne pouvons pas vraiment identifier."
+msgstr "Désolé, mais votre requête (<code>{query}</code>) ne peut pas être effectuée du fait d'une erreur que nous ne pouvons pas vraiment identifier."
 
 #: ../root/main/rate_limited.tt:4
 msgid ""
@@ -7440,7 +7440,7 @@ msgstr "Désolé, nous ne trouvons pas d'éditeur ayant ce nom. Vous pourriez pe
 msgid ""
 "Sorry, we could not find any users matching the query for "
 "<code>{query}</code>"
-msgstr "Désolé, nous ne trouvons aucun utilisateur pour la requête <code>{query}</code>"
+msgstr "Désolé, nous n'avons pas trouvé d'utilisateur pour la requête <code>{query}</code>"
 
 #: ../root/cdtoc/not_found.tt:4
 msgid "Sorry, we could not find the CD TOC you specified."
@@ -9514,7 +9514,7 @@ msgstr "Utilisez les champs suivants pour chercher une liste de pistes existante
 
 #: ../root/search/form.tt:39
 msgid "Use {doc|advanced query syntax}"
-msgstr "Utiliser la {doc|syntaxe de recherche approfondie}"
+msgstr "Utiliser la {doc|syntaxe de requête approfondie}"
 
 #: ../root/user/profile.tt:49
 msgid ""
@@ -9551,7 +9551,7 @@ msgstr "En utilisant cette stratégie de fusion tous les supports de toutes les 
 msgid ""
 "Using {doc|advanced query syntax} while performing a direct database search "
 "will result in inaccurate results."
-msgstr "L'utilisation de la {doc|syntaxe de recherche approfondies} lorsque vous êtes en recherche directe en base produira des résultats faux."
+msgstr "L'utilisation de la {doc|syntaxe de requête approfondie} lorsque vous êtes en recherche directe en base produira des résultats faux."
 
 #: ../root/release/add_cover_art.tt:54
 msgid "Validating file..."
@@ -9803,7 +9803,7 @@ msgstr[1] "Nous avons trouvé les labels suivants nommés \"{label}\" dans Music
 msgid ""
 "We found the following users that matched your query for "
 "<code>{query}</code>."
-msgstr "Nous avons trouvé les utilisateurs suivants correspondants à votre recherche de <code>{query}</code>."
+msgstr "Nous avons trouvé les utilisateurs suivants pour votre requête de <code>{query}</code>."
 
 #: ../root/account/donation.tt:7
 msgid ""
@@ -10409,7 +10409,7 @@ msgstr "Votre profile a été mis à jour."
 
 #: ../root/search/error/invalid.tt:3
 msgid "Your search query was deemed invalid by our ruthless search server."
-msgstr "Votre recherche a été considérée comme invalide par notre impitoyable moteur de recherche."
+msgstr "Votre requête de recherche a été considérée comme invalide par notre impitoyable serveur de recherche."
 
 #: ../root/account/register.tt:27
 msgid "Your username will be publicly visible."
