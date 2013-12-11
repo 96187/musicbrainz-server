@@ -14,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2013-12-11 11:59+0000\n"
+"PO-Revision-Date: 2013-12-11 13:00+0000\n"
 "Last-Translator: Alain-Olivier  Breysse\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -917,25 +917,25 @@ msgstr "Ceci crédite une personne ou agence qui a fourni une certaine inspirati
 msgid ""
 "This credits a person or agency whose photographs are included as part of a "
 "recording."
-msgstr ""
+msgstr "Ceci crédite une personne ou agence dont les photographies sont incluses comme partie d'un enregistrement."
 
 #: DB:link_type/description:20
 msgid ""
 "This credits a person or agency whose photographs are included as part of a "
 "release."
-msgstr ""
+msgstr "Ceci crédite une personne ou agence dont les photographies sont incluses comme partie d'une parution."
 
 #: DB:link_type/description:134
 msgid ""
 "This credits a person who was responsible for booking the studio or "
 "performance venue where the recording was recorded."
-msgstr ""
+msgstr "Ceci crédite une personne qui était responsable de réserver le studio ou lieu de représentation où l'enregistrement a été fait."
 
 #: DB:link_type/description:23
 msgid ""
 "This credits a person who was responsible for booking the studio or "
 "performance venue where the release was recorded."
-msgstr ""
+msgstr "Ceci crédite une personne qui était responsable de réserver le studio ou lieu de représentation où l'enregistrement de la parution a été fait."
 
 #: DB:link_type/description:24
 msgid ""
@@ -943,18 +943,18 @@ msgid ""
 " the sleeve). While most time liner notes are just personnel information and"
 " production data, in some cases they consist of a blurb of text (article). "
 "This relationship type should be used in this last case."
-msgstr ""
+msgstr "Ceci crédite l'auteur des notes de livret fournies avec cette parution (habituellement sur la pochette). Alors que la plupart des notes de livret sont juste des informations personnelles et des données de production, dans certains cas elles sont un texte de présentation (article). Ce type de relation devrait être utilisé dans ce dernier cas."
 
 #: DB:link_type/description:61
 msgid ""
 "This credits the person or agency who arranged travel for the musicians and "
 "other staff, in order to get them into the right place to create the work."
-msgstr ""
+msgstr "Ceci crédite la personne ou agence qui a organisé le transport des musiciens et autres équipiers afin de les amener sur les lieux de création de l’œuvre."
 
 #: DB:link_type/description:274
 msgid ""
 "This describes a URL where a score / sheet music for the work can be found."
-msgstr ""
+msgstr "Ceci décrit une URL où l'on peut trouver une partition de l’œuvre."
 
 #: DB:link_type/description:202
 msgid ""
@@ -965,7 +965,7 @@ msgid ""
 "the label <a href=\"/label/99a24d71-54c1-4d3f-88cc-00fbcc4fce83\">Verve</a> "
 "into <a href=\"/label/4fb00dfd-7674-44c0-bf67-79daf8c61767\">The Verve Music"
 " Group</a>, as Verve continued its existence thereafter as an imprint."
-msgstr ""
+msgstr "Ceci décrit une situation où le label a changé de nom, soit pour des raisons purement esthétiques, soit suite à un rachat/vente/scission. Un soin particulier devrait être porté dans les cas où des opérations compliquées de fusion/fractionnement/restructuration ont lieu. Par exemple, ce n'est pas une bonne idée de renommer le label <a href=\"/label/99a24d71-54c1-4d3f-88cc-00fbcc4fce83\">« Verve »</a> en <a href=\"/label/4fb00dfd-7674-44c0-bf67-79daf8c61767\">« The Verve Music Group »</a> car « Verve » a continué d'exister par la suite en tant que marque d'éditeur."
 
 #: DB:link_type/description:200
 msgid ""
@@ -974,13 +974,13 @@ msgid ""
 " describe the fact a label is a subdivision of another one, or, through "
 "corporate acquisition of the former label, has become a subdivision of "
 "another one."
-msgstr ""
+msgstr "Ceci décrit une situation où un label est (ou était) une filiale d'un autre label pendant un certain temps. Ceci devrait être utilisé pour décrire le fait qu'un label est une subdivision d'un autre, ou que, de par l'acquisition dudit label, il est devenu une subdivision d'un autre label."
 
 #: DB:link_type/description:203
 msgid ""
 "This describes a situation where one label is distributing (part of) another"
 " label's catalog, in a country/region of the world, during a period of time."
-msgstr ""
+msgstr "Ceci décrit une situation où un label distribue (partiellement) le catalogue d'un autre label dans un pays/région du monde pour un certain temps."
 
 #: DB:link_type/description:201
 msgid ""
@@ -990,52 +990,52 @@ msgid ""
 "<li>A label buys the rights to a defunct label's catalog, or buys a label (with its catalog) and dismantles it.</li>\n"
 "<li>A bootleg label reissues another label's catalog.</li>\n"
 "</ul>"
-msgstr ""
+msgstr "Ceci décrit une situation où un label réédite, sous son propre nom, (partiellement) le catalogue d'un autre label. Ceci a lieu dans au moins trois cas :\n<ul>\n<li>Un label loue le catalogue d'un autre label pour un certain temps, dans une région spécifique du monde.</li>\n<li>Un label achète les droits de catalogue d'un label défunt, ou achète un label (avec son catalogue) et le démantèle.</li>\n<li>Un label pirate réédite le catalogue d'un autre label.</li>\n</ul>"
 
 #: DB:link_type/description:103
 msgid "This indicates a person is a member of a group."
-msgstr ""
+msgstr "Ceci indique qu'une personne est membre d'un groupe."
 
 #: DB:link_type/description:135 DB:link_type/description:62
 msgid ""
 "This indicates a person or agency which is responsible for talent scouting, "
 "overseeing the artistic development of an artist, and acting as liaison "
 "between artists and the labels."
-msgstr ""
+msgstr "Ceci indique une personne ou agence qui est responsable du repérage de talents, supervise le développement artistique d'un artiste et agit en tant que liaison entre les artistes et les labels. "
 
 #: DB:link_type/description:19
 msgid ""
 "This indicates a person or agency who did design or illustration for the "
 "release."
-msgstr ""
+msgstr "Ceci indique une personne ou agence qui a fait de la conception ou de l'illustration pour cette parution."
 
 #: DB:link_type/description:130
 msgid ""
 "This indicates a person or agency who did design or illustration for the "
 "track."
-msgstr ""
+msgstr "Ceci indique une personne ou agence qui a fait de la conception ou de l'illustration pour cette piste."
 
 #: DB:link_type/description:151
 msgid ""
 "This indicates an artist who conducted an orchestra, band or choir on this "
 "recording."
-msgstr ""
+msgstr "Ceci indique un artiste qui a dirigé un orchestre ou une chorale pour cet enregistrement."
 
 #: DB:link_type/description:46
 msgid ""
 "This indicates an artist who conducted an orchestra, band or choir on this "
 "release."
-msgstr ""
+msgstr "Ceci indique un artiste qui a dirigé un orchestre ou une chorale pour cette parution."
 
 #: DB:link_type/description:305
 msgid "This indicates that a person is, or was, a conductor for a group.​"
-msgstr ""
+msgstr "Ceci indique qu'une personne est, ou était, le chef d'un orchestre."
 
 #: DB:link_type/description:137
 msgid ""
 "This indicates that a person or agency did the art direction for the "
 "recording."
-msgstr ""
+msgstr "Ceci indique qu'une personne ou agence a mené la direction artistique pour cet enregistrement."
 
 #: DB:link_type/description:18
 msgid ""
