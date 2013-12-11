@@ -27,7 +27,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-11-13 15:23-0700\n"
-"PO-Revision-Date: 2013-12-10 17:16+0000\n"
+"PO-Revision-Date: 2013-12-11 06:59+0000\n"
 "Last-Translator: Alain-Olivier  Breysse\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -3443,7 +3443,7 @@ msgstr "Empreintes"
 msgid ""
 "For assistance in writing effective advanced search queries, read the "
 "{doc|syntax documentation}."
-msgstr "Pour de l'aide sur l'écriture des requêtes de recherche avancées, lisez la {doc|documentation sur la syntaxe de recherche}."
+msgstr "Pour de l'aide sur l'écriture des requêtes de recherche approfondie, lisez la {doc|documentation sur la syntaxe de recherche}."
 
 #: ../root/admin/delete_user.tt:16
 msgid ""
@@ -4073,7 +4073,7 @@ msgstr "Recherche dans l'index"
 
 #: ../root/search/form.tt:29
 msgid "Indexed search with {doc|advanced query syntax}"
-msgstr "Recherche dans l'index avec {doc|la syntaxe de recherche avancée}"
+msgstr "Recherche dans l'index avec {doc|la syntaxe de recherche approfondie}"
 
 #: ../root/release/edit/recordings.tt:399
 msgid "Infer track durations from associated recordings"
@@ -7277,7 +7277,7 @@ msgstr "Désolé mais votre requête (<code>{query}</code>) n'a pas pu être eff
 msgid ""
 "Sorry, but your query (<code>{query}</code>) could not be performed, due to "
 "an error which we are not quite able to identify."
-msgstr "Désolé, mais votre recherche (<code>{query}</code>) ne peut pas être effectuée du fait d'une erreur que nous ne sommes pas capable d'identifier à cette heure."
+msgstr "Désolé, mais votre recherche (<code>{query}</code>) ne peut pas être effectuée du fait d'une erreur que nous ne pouvons pas vraiment identifier."
 
 #: ../root/main/rate_limited.tt:4
 msgid ""
@@ -9514,7 +9514,7 @@ msgstr "Utilisez les champs suivants pour chercher une liste de pistes existante
 
 #: ../root/search/form.tt:39
 msgid "Use {doc|advanced query syntax}"
-msgstr "Utiliser la {doc|syntaxe précise de recherche}"
+msgstr "Utiliser la {doc|syntaxe de recherche approfondie}"
 
 #: ../root/user/profile.tt:49
 msgid ""
@@ -9551,7 +9551,7 @@ msgstr "En utilisant cette stratégie de fusion tous les supports de toutes les 
 msgid ""
 "Using {doc|advanced query syntax} while performing a direct database search "
 "will result in inaccurate results."
-msgstr "L'utilisation de la {doc|syntaxe précise de recherche} lorsque vous êtes en recherche directe en base produira des résultats faux."
+msgstr "L'utilisation de la {doc|syntaxe de recherche approfondies} lorsque vous êtes en recherche directe en base produira des résultats faux."
 
 #: ../root/release/add_cover_art.tt:54
 msgid "Validating file..."
@@ -12220,7 +12220,7 @@ msgstr "FreeDB"
 
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:57
 msgid "Indexed search with advanced query syntax"
-msgstr "Recherche indexée avec une syntaxe précise de requête"
+msgstr "Recherche indexée avec une syntaxe de requête approfondie"
 
 #: ../lib/MusicBrainz/Server/Form/User/ChangePassword.pm:49
 msgid "The old password is incorrect"
