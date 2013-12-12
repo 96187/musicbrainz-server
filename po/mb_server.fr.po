@@ -27,7 +27,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-11 02:42-0700\n"
-"PO-Revision-Date: 2013-12-11 23:17+0000\n"
+"PO-Revision-Date: 2013-12-12 07:58+0000\n"
 "Last-Translator: Alain-Olivier  Breysse\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -4531,7 +4531,7 @@ msgid ""
 "Make sure all mediums in the releases being merged are in the correct "
 "position. For example, to merge a medium into medium 2 of a release, it will"
 " need to be set as medium 2 of the release being merged."
-msgstr ""
+msgstr "Assurez-vous que tous les supports, pour les parutions fusionnées, soient à la bonne position. Par exemple, pour fusionner un support  vers le support 2 d'une parution, il devra être le support 2 de la parution à fusionner."
 
 #: ../root/release/edit/tracklist.tt:134
 msgid "Manual entry"
@@ -5172,7 +5172,7 @@ msgstr "Aucune parution de trouvée."
 
 #: ../root/release_group/set_cover_art.tt:52
 msgid "No releases have cover art marked as \"Front\", cannot set cover art."
-msgstr ""
+msgstr "Aucune parution n'a d'illustration indiquée comme « Face avant », l'illustration ne peut être assignée. "
 
 #: ../root/tag/release.tt:1
 msgid "No releases with this tag were found."
@@ -7180,27 +7180,27 @@ msgstr "Affichage de tous les enregistrements. {show_sa|Montrer plutôt les enre
 msgid ""
 "Showing all release groups by this artist. {show_official|Show only official"
 " release groups instead}, or {show_va|show various artists release groups}."
-msgstr ""
+msgstr "Affichage de tous les groupes de parution de cet artiste. {show_official|Ne montrer plutôt que les groupes de parution officiels}, ou {show_va|montrer les groupes de parution des artistes divers}."
 
 #: ../root/artist/index.tt:128
 msgid ""
 "Showing all release groups for various artists. {show_official|Show only "
 "official various artists release groups instead}, or {show_non_va|show "
 "release groups by this artist}."
-msgstr ""
+msgstr "Affichage de tous les groupes de parution des artistes divers. {show_official|Ne montrer plutôt que les groupes de parution des artistes divers}, ou {show_va|montrer les groupes de parution par cet artiste}."
 
 #: ../root/artist/index.tt:119
 msgid ""
 "Showing official release groups by this artist. {show_all|Show all release "
 "groups instead}, or {show_va|show various artists release groups}."
-msgstr ""
+msgstr "Affichage des groupes de parution officiel par cet artiste. {show_official|Monter plutôt tous les groupes de parution}, ou {show_va|montrer les groupes de parution des artistes divers}."
 
 #: ../root/artist/index.tt:122
 msgid ""
 "Showing official release groups for various artists. {show_all|Show all "
 "various artists release groups instead}, or {show_non_va|show release groups"
 " by this artist}."
-msgstr ""
+msgstr "Affichage des groupes de parution officiels des artistes divers. {show_all|Montrer plutôt tous les groupes de parution des artistes divers}, ou {show_va|montrer les groupes de parution par cet artiste}."
 
 #: ../root/artist/recordings.tt:20
 msgid ""
@@ -8278,13 +8278,13 @@ msgstr "Cet artiste n'est actuellement associé à aucune œuvre."
 msgid ""
 "This artist only has release groups by various artists. Showing all release "
 "groups. {show_official|Show only official release groups instead}."
-msgstr ""
+msgstr "Cet artiste n'a que des groupes de parution par des artistes divers. Affichage de tous les groupes de parution. {show_official|Ne montrer plutôt que les groupes de parution officiels}."
 
 #: ../root/artist/index.tt:111
 msgid ""
 "This artist only has release groups by various artists. Showing official "
 "release groups only. {show_all|Show all release groups instead}."
-msgstr ""
+msgstr "Cet artiste n'a que des groupes de parution par des artistes divers. Affichage des groupes de parution officiels seulement. {show_official|Montrer plutôt tous les groupes de parution}."
 
 #: ../root/artist/releases.tt:25
 msgid "This artist only has releases by various artists."
@@ -8974,7 +8974,7 @@ msgstr "Cette table affiche un résumé des votes effectués par cet éditeur."
 
 #: ../root/edit/details/edit_medium.tt:2
 msgid "This track's MBID will change when this edit is applied."
-msgstr ""
+msgstr "La MBID de cette piste changera quand cette modification sera appliquée."
 
 #: ../root/scripts/text_strings.tt:126
 msgid ""
@@ -9947,7 +9947,7 @@ msgstr "Wikipedia"
 msgid ""
 "Wikipedia content provided under the terms of the {license_link|Creative "
 "Commons BY-SA license}"
-msgstr ""
+msgstr "Le contenu Wikipédia est fourni selon les modalités de la {license_link|licence Creative Commons BY-SA}"
 
 #: ../root/artist/works-list.tt:9 ../root/components/common-macros.tt:576
 #: ../root/components/common-macros.tt:638 ../root/edit/search_macros.tt:307
@@ -10593,7 +10593,7 @@ msgstr "aide"
 
 #: ../root/cdtoc/attach_list.tt:55
 msgid "hide tracklist"
-msgstr ""
+msgstr "cacher la liste des pistes"
 
 #: ../root/search/results-freedb.tt:31
 msgid "import"
