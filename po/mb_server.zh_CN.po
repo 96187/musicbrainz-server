@@ -29,8 +29,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-12-13 22:50-0700\n"
-"PO-Revision-Date: 2013-12-14 05:51+0000\n"
+"POT-Creation-Date: 2013-12-24 12:36-0700\n"
+"PO-Revision-Date: 2013-12-24 19:45+0000\n"
 "Last-Translator: Ian McEwen <email address hidden>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/musicbrainz/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -4035,6 +4035,10 @@ msgstr ""
 
 #: ../root/components/common-macros.tt:102
 msgid "Image not available yet, please try again in a few minutes."
+msgstr ""
+
+#: ../root/scripts/text_strings.tt:141
+msgid "Image {current} of {total}"
 msgstr ""
 
 #: ../root/freedb/show.tt:45 ../root/freedb/show.tt:103
@@ -11381,11 +11385,11 @@ msgstr "<strong>我们无法给您发送确认邮件</strong><br/>请确认在�
 msgid "User successfully edited."
 msgstr ""
 
-#: ../lib/MusicBrainz/Server/Controller/Artist.pm:494
+#: ../lib/MusicBrainz/Server/Controller/Artist.pm:496
 msgid "You cannot merge a special purpose artist into another artist"
 msgstr ""
 
-#: ../lib/MusicBrainz/Server/Controller/Artist.pm:499
+#: ../lib/MusicBrainz/Server/Controller/Artist.pm:501
 msgid "You cannot merge into Deleted Artist"
 msgstr ""
 

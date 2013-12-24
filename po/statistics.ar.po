@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2013-12-11 09:49+0000\n"
+"PO-Revision-Date: 2013-12-24 19:46+0000\n"
 "Last-Translator: Ian McEwen <email address hidden>\n"
 "Language-Team: Arabic (http://www.transifex.com/projects/p/musicbrainz/language/ar/)\n"
 "MIME-Version: 1.0\n"
@@ -681,7 +681,7 @@ msgstr ""
 msgid "Basics"
 msgstr ""
 
-#: ../root/statistics/coverart.tt:106
+#: ../root/statistics/coverart.tt:128
 msgid "By Cover Art Type"
 msgstr ""
 
@@ -689,12 +689,12 @@ msgstr ""
 msgid "By Release Format"
 msgstr ""
 
-#: ../root/statistics/coverart.tt:62
-msgid "By Release Status"
+#: ../root/statistics/coverart.tt:46
+msgid "By Release Group Type"
 msgstr ""
 
-#: ../root/statistics/coverart.tt:46
-msgid "By Release Type"
+#: ../root/statistics/coverart.tt:62
+msgid "By Release Status"
 msgstr ""
 
 #: ../root/statistics/index.tt:288
@@ -1014,11 +1014,11 @@ msgid "Count of deleted editors"
 msgstr ""
 
 #: ../root/statistics/view_js.tt:79
-msgid "Count of editors who have submitted edits during the last week"
+msgid "Count of editors who have submitted edits during the last 7 days"
 msgstr ""
 
 #: ../root/statistics/view_js.tt:80
-msgid "Count of editors who have voted on during the last week"
+msgid "Count of editors who have voted on during the last 7 days"
 msgstr ""
 
 #: ../root/statistics/view_js.tt:55
@@ -1344,8 +1344,8 @@ msgstr ""
 msgid "Languages/Scripts"
 msgstr ""
 
-#: ../root/statistics/index.tt:744 ../root/statistics/index.tt:796
-msgid "Last Week:"
+#: ../root/statistics/index.tt:796 ../root/statistics/index.tt:744
+msgid "Last 7 days:"
 msgstr ""
 
 #: ../root/statistics/countries.tt:20 ../root/statistics/coverart.tt:11
@@ -1435,7 +1435,7 @@ msgid "No Votes"
 msgstr ""
 
 #: ../root/statistics/coverart.tt:16 ../root/statistics/coverart.tt:40
-#: ../root/statistics/coverart.tt:100
+#: ../root/statistics/coverart.tt:122
 msgid "No coverart statistics available."
 msgstr ""
 
@@ -1467,7 +1467,7 @@ msgstr ""
 msgid "No status set"
 msgstr ""
 
-#: ../root/statistics/coverart.tt:56 ../root/statistics/coverart.tt:116
+#: ../root/statistics/coverart.tt:56 ../root/statistics/coverart.tt:138
 msgid "No type"
 msgstr ""
 
@@ -1528,7 +1528,7 @@ msgstr ""
 msgid "Overview"
 msgstr ""
 
-#: ../root/statistics/coverart.tt:122
+#: ../root/statistics/coverart.tt:144
 msgid "Per release"
 msgstr ""
 
@@ -1540,11 +1540,11 @@ msgstr ""
 msgid "Pieces of Cover Art"
 msgstr ""
 
-#: ../root/statistics/coverart.tt:97
+#: ../root/statistics/coverart.tt:119
 msgid "Pieces of cover art"
 msgstr ""
 
-#: ../root/statistics/coverart.tt:27 ../root/statistics/coverart.tt:109
+#: ../root/statistics/coverart.tt:27 ../root/statistics/coverart.tt:131
 msgid "Pieces of cover art:"
 msgstr ""
 
@@ -1694,6 +1694,14 @@ msgstr ""
 msgid "Release Tags (raw)"
 msgstr ""
 
+#: ../root/statistics/coverart.tt:97
+msgid "Release groups"
+msgstr ""
+
+#: ../root/statistics/coverart.tt:100
+msgid "Release groups with cover art:"
+msgstr ""
+
 #: ../root/statistics/formats.tt:16 ../root/statistics/formats.tt:20
 msgid "Release/Medium Formats"
 msgstr ""
@@ -1757,7 +1765,7 @@ msgstr ""
 
 #: ../root/statistics/coverart.tt:22 ../root/statistics/coverart.tt:49
 #: ../root/statistics/coverart.tt:65 ../root/statistics/coverart.tt:81
-#: ../root/statistics/coverart.tt:125
+#: ../root/statistics/coverart.tt:147
 msgid "Releases with cover art:"
 msgstr ""
 
@@ -2004,6 +2012,10 @@ msgstr ""
 msgid "active ever:"
 msgstr ""
 
+#: ../root/statistics/coverart.tt:112
+msgid "automatically inferred:"
+msgstr ""
+
 #: ../root/statistics/index.tt:224
 msgid "by a single artist:"
 msgstr ""
@@ -2018,6 +2030,10 @@ msgstr ""
 
 #: ../root/statistics/view_js.tt:186
 msgid "l_{first}_{second} Relationships"
+msgstr ""
+
+#: ../root/statistics/coverart.tt:106
+msgid "manually selected:"
 msgstr ""
 
 #: ../root/statistics/index.tt:145
@@ -2041,11 +2057,11 @@ msgid "who edit:"
 msgstr ""
 
 #: ../root/statistics/index.tt:592
-msgid "who edited and/or voted last week:"
+msgid "who edited and/or voted in the last 7 days:"
 msgstr ""
 
 #: ../root/statistics/index.tt:600
-msgid "who edited last week:"
+msgid "who edited in the last 7 days:"
 msgstr ""
 
 #: ../root/statistics/index.tt:664
@@ -2077,14 +2093,14 @@ msgid "who vote:"
 msgstr ""
 
 #: ../root/statistics/index.tt:608
-msgid "who voted last week:"
+msgid "who voted in the last 7 days:"
 msgstr ""
 
 #: ../root/statistics/index.tt:391 ../root/statistics/index.tt:424
 msgid "with 10 or more disc IDs:"
 msgstr ""
 
-#: ../root/statistics/coverart.tt:139
+#: ../root/statistics/coverart.tt:161
 msgid "with 30 or more pieces of cover art:"
 msgstr ""
 
@@ -2114,7 +2130,7 @@ msgstr[3] ""
 msgstr[4] ""
 msgstr[5] ""
 
-#: ../root/statistics/coverart.tt:132
+#: ../root/statistics/coverart.tt:154
 msgid "with {num} piece of cover art:"
 msgid_plural "with {num} pieces of cover art:"
 msgstr[0] ""
@@ -2150,8 +2166,9 @@ msgstr ""
 
 #: ../root/statistics/coverart.tt:24 ../root/statistics/coverart.tt:58
 #: ../root/statistics/coverart.tt:74 ../root/statistics/coverart.tt:90
-#: ../root/statistics/coverart.tt:118 ../root/statistics/coverart.tt:134
-#: ../root/statistics/coverart.tt:141 ../root/statistics/edits.tt:29
+#: ../root/statistics/coverart.tt:108 ../root/statistics/coverart.tt:114
+#: ../root/statistics/coverart.tt:140 ../root/statistics/coverart.tt:156
+#: ../root/statistics/coverart.tt:163 ../root/statistics/edits.tt:29
 #: ../root/statistics/formats.tt:7 ../root/statistics/formats.tt:9
 #: ../root/statistics/index.tt:141 ../root/statistics/index.tt:147
 #: ../root/statistics/index.tt:153 ../root/statistics/index.tt:159
