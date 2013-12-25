@@ -13,8 +13,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-24 12:36-0700\n"
-"PO-Revision-Date: 2013-12-24 19:46+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2013-12-25 11:08+0000\n"
+"Last-Translator: Mihkel Tõnnov <email address hidden>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/musicbrainz/language/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -97,7 +97,7 @@ msgstr "&#x26a0; Viga allkirja taotlemisel"
 
 #: ../root/release/add_cover_art.tt:58
 msgid "&#x26a0; Error uploading image"
-msgstr "&#x26a0; Vida pildi üleslaadimisel"
+msgstr "&#x26a0; Viga pildi üleslaadimisel"
 
 #: ../root/release/add_cover_art.tt:59
 msgid "&#x26a0; Server busy, try again later"
@@ -647,7 +647,7 @@ msgstr "Lisa uus alias"
 
 #: ../root/scripts/text_strings.tt:134
 msgid "Add a new artist"
-msgstr ""
+msgstr "Lisa uus artist"
 
 #: ../root/admin/wikidoc/index.tt:11
 msgid "Add a new entry"
@@ -655,15 +655,15 @@ msgstr "Lisa uus kirje"
 
 #: ../root/scripts/text_strings.tt:135
 msgid "Add a new label"
-msgstr ""
+msgstr "Lisa uus plaadifirma"
 
 #: ../root/scripts/text_strings.tt:136
 msgid "Add a new place"
-msgstr ""
+msgstr "Lisa uus koht"
 
 #: ../root/release/edit/recordings.tt:151 ../root/scripts/text_strings.tt:137
 msgid "Add a new recording"
-msgstr "Lisatakse uus salvestis"
+msgstr "Lisa uus salvestis"
 
 #: ../root/cdtoc/attach_artist_releases.tt:52
 #: ../root/cdtoc/attach_filter_artist.tt:47
@@ -675,11 +675,11 @@ msgstr "Lisa uus väljalase"
 
 #: ../root/scripts/text_strings.tt:138
 msgid "Add a new release group"
-msgstr ""
+msgstr "Lisa uus väljalaskerühm"
 
 #: ../root/scripts/text_strings.tt:139
 msgid "Add a new work"
-msgstr ""
+msgstr "Lisa uus teos"
 
 #: ../root/edit/notes.tt:50
 msgid "Add an edit note"
@@ -1479,7 +1479,7 @@ msgstr "Artistid koostöö-seostega"
 #: ../root/report/deprecated_relationship_works.tt:3
 #: ../root/report/index.tt:27
 msgid "Artists with deprecated relationships"
-msgstr ""
+msgstr "Artistid iganenud seostega"
 
 #: ../root/report/artists_with_no_subscribers.tt:1
 #: ../root/report/artists_with_no_subscribers.tt:3 ../root/report/index.tt:19
@@ -2257,7 +2257,7 @@ msgid ""
 "Confirm by activating the checkbox below that you have read the "
 "{doc_comment|disambiguation documentation}, understood how we distinguish "
 "places with the same name, and that you know what you are doing."
-msgstr "Kinnita alloleva ruudu märkimisega, et oled läbi lugenud {doc_comment|täpsustuse juhise}, saanud aru, kuidas me samanimelisi kohti eristame, ning tead, mida teed."
+msgstr "Kinnita alloleva ruudu märkimisega, et oled läbi lugenud {doc_comment|dokumentatsiooni täpsustuste kohta}, saanud aru, kuidas me samanimelisi kohti eristame, ning tead, mida teed."
 
 #: ../root/label/edit_form.tt:28
 msgid ""
@@ -2265,7 +2265,7 @@ msgid ""
 "{doc_labelcomment|documentation about disambiguation comments}, understood "
 "how we distinguish labels with the same name, and that you know what you are"
 " doing."
-msgstr ""
+msgstr "Kinnita alloleva ruudu märkimisega, et oled läbi lugenud {doc_labelcomment|dokumentatsiooni täpsustuste kohta}, saanud aru, kuidas me samanimelisi plaadifirmasid eristame, ning tead, mida teed."
 
 #: ../root/account/change_password.tt:24 ../root/account/register.tt:30
 #: ../root/account/reset_password.tt:11
@@ -4028,7 +4028,7 @@ msgstr "Kui soovid MusicBrainzi meeskonnalt infokirju saada või teiste kasutaja
 
 #: ../root/components/commons-image.tt:4
 msgid "Image from Wikimedia Commons"
-msgstr ""
+msgstr "Pilt on pärit Wikimedia Commonsist"
 
 #: ../root/components/common-macros.tt:102
 msgid "Image not available yet, please try again in a few minutes."
@@ -4036,7 +4036,7 @@ msgstr "Pilt pole veel saadaval, palun proovi mõne minuti pärast uuesti."
 
 #: ../root/scripts/text_strings.tt:141
 msgid "Image {current} of {total}"
-msgstr ""
+msgstr "Pilt {cur} / {total}"
 
 #: ../root/freedb/show.tt:45 ../root/freedb/show.tt:103
 msgid "Import"
@@ -4249,13 +4249,13 @@ msgstr "Plaadifirmad, mille nime alguses on „{index}”"
 #: ../root/report/deprecated_relationship_labels.tt:3
 #: ../root/report/index.tt:35
 msgid "Labels with deprecated relationships"
-msgstr ""
+msgstr "Plaadifirmad iganenud seostega"
 
 #: ../root/report/duplicate_relationships_labels.tt:1
 #: ../root/report/duplicate_relationships_labels.tt:3
 #: ../root/report/index.tt:34
 msgid "Labels with possible duplicate relationships"
-msgstr "Väljalasked võimalike topeltseostega"
+msgstr "Plaadifirmad võimalike topeltseostega"
 
 #: ../root/release/index.tt:15
 msgid "Labels:"
@@ -4537,7 +4537,7 @@ msgid ""
 "Make sure all mediums in the releases being merged are in the correct "
 "position. For example, to merge a medium into medium 2 of a release, it will"
 " need to be set as medium 2 of the release being merged."
-msgstr ""
+msgstr "Vaata, et mestitavate väljalasete kõik helikandjad oleks õiges kohas. Helikandja mestimiseks nt sihtväljalaske 2. helikandjaga peab ta mestitaval väljalaskel olema helikandja nr 2."
 
 #: ../root/release/edit/tracklist.tt:134
 msgid "Manual entry"
@@ -5178,7 +5178,7 @@ msgstr "Väljalaskeid ei leitud."
 
 #: ../root/release_group/set_cover_art.tt:52
 msgid "No releases have cover art marked as \"Front\", cannot set cover art."
-msgstr ""
+msgstr "Ühelgi väljalaskel pole esikaanepilti, seega ei saa siin kaanepilti määrata."
 
 #: ../root/tag/release.tt:1
 msgid "No releases with this tag were found."
@@ -5596,7 +5596,7 @@ msgstr "Kohad, mille nime alguses on „{index}”"
 #: ../root/report/deprecated_relationship_places.tt:3
 #: ../root/report/index.tt:95
 msgid "Places with deprecated relationships"
-msgstr ""
+msgstr "Kohad iganenud seostega"
 
 #: ../root/account/registered.tt:7
 msgid ""
@@ -6059,7 +6059,7 @@ msgstr "Varieeruvate loopikkustega salvestised"
 #: ../root/report/deprecated_relationship_recordings.tt:3
 #: ../root/report/index.tt:89
 msgid "Recordings with deprecated relationships"
-msgstr ""
+msgstr "Salvestised iganenud seostega"
 
 #: ../root/report/index.tt:84
 msgid "Recordings with earliest release relationships"
@@ -6303,7 +6303,7 @@ msgstr "Väljalaskerühmad"
 #: ../root/report/deprecated_relationship_release_groups.tt:3
 #: ../root/report/index.tt:45
 msgid "Release Groups with deprecated relationships"
-msgstr ""
+msgstr "Väljalaskerühmad iganenud seostega"
 
 #: ../root/edit/search_macros.tt:307
 msgid "Release Language"
@@ -6539,7 +6539,7 @@ msgstr "Väljalasked, mille katalooginumbrid näevad välja nagu ASIN-id"
 #: ../root/report/deprecated_relationship_releases.tt:3
 #: ../root/report/index.tt:78
 msgid "Releases with deprecated relationships"
-msgstr ""
+msgstr "Väljalasked iganenud seostega"
 
 #: ../root/report/mediums_with_sequence_issues.tt:1
 #: ../root/report/mediums_with_sequence_issues.tt:3
@@ -7205,7 +7205,7 @@ msgstr "Näita ainult mind huvitavaid tulemusi"
 msgid ""
 "Showing Various Artist releases. {show_subset|Show releases by this artist "
 "instead}."
-msgstr "Näidatakse erinevate esitajatega väljalaskeid. {show_subset|Näita selle artisti nimel väljalaskeid}"
+msgstr "Näidatakse eri esitajatega väljalaskeid. {show_subset|Näita selle artisti nimel väljalaskeid}"
 
 #: ../root/artist/recordings.tt:26
 msgid ""
@@ -7217,27 +7217,27 @@ msgstr "Näidatakse kõiki salvestisi. Näita {show_sa|ainult eraldiseisvaid sal
 msgid ""
 "Showing all release groups by this artist. {show_official|Show only official"
 " release groups instead}, or {show_va|show various artists release groups}."
-msgstr ""
+msgstr "Näidatakse selle artisti kõiki väljalaskerühmi. {show_official|Näita ainult ametlikke väljalaskerühmi} või {show_va|ainult eri esitajatega väljalaskerühmi}"
 
 #: ../root/artist/index.tt:128
 msgid ""
 "Showing all release groups for various artists. {show_official|Show only "
 "official various artists release groups instead}, or {show_non_va|show "
 "release groups by this artist}."
-msgstr ""
+msgstr "Näidatakse kõiki eri esitajatega väljalaskerühmi. {show_official|Näita ainult ametlikke eri esitajatega väljalaskerühmi} või {show_non_va|ainult selle artisti nimel väljalaskerühmi}"
 
 #: ../root/artist/index.tt:119
 msgid ""
 "Showing official release groups by this artist. {show_all|Show all release "
 "groups instead}, or {show_va|show various artists release groups}."
-msgstr ""
+msgstr "Näidatakse selle artisti ametlikke väljalaskerühmi. {show_all|Näita kõiki väljalaskerühmi} või {show_va|ainult eri esitajatega väljalaskerühmi}"
 
 #: ../root/artist/index.tt:122
 msgid ""
 "Showing official release groups for various artists. {show_all|Show all "
 "various artists release groups instead}, or {show_non_va|show release groups"
 " by this artist}."
-msgstr ""
+msgstr "Näidatakse ametlikke eri esitajatega väljalaskerühmi. {show_all|Näita kõiki eri esitajatega väljalaskerühmi} või {show_non_va|ainult selle artisti nimel väljalaskerühmi}"
 
 #: ../root/artist/recordings.tt:20
 msgid ""
@@ -8315,17 +8315,17 @@ msgstr "See artist pole hetkel ühegi teosega seostatud."
 msgid ""
 "This artist only has release groups by various artists. Showing all release "
 "groups. {show_official|Show only official release groups instead}."
-msgstr ""
+msgstr "Sel artistil on väljalaskerühmi ainult eri esitajate hulgas. Näidatakse kõiki väljalaskerühmi. {show_official|Näita ainult ametlikke väljalaskerühmi}"
 
 #: ../root/artist/index.tt:111
 msgid ""
 "This artist only has release groups by various artists. Showing official "
 "release groups only. {show_all|Show all release groups instead}."
-msgstr ""
+msgstr "Sel artistil on väljalaskerühmi ainult eri esitajate hulgas. Näidatakse ainult ametlikke väljalaskerühmi. {show_all|Näita kõiki väljalaskerühmi}"
 
 #: ../root/artist/releases.tt:25
 msgid "This artist only has releases by various artists."
-msgstr "Sel artistil on väljalaskeid ainult erinevate esitajate hulgas."
+msgstr "Sel artistil on väljalaskeid ainult eri esitajate hulgas."
 
 #: ../root/scripts/text_strings.tt:119
 #: ../lib/MusicBrainz/Server/Form/Role/LinkType.pm:111
@@ -8663,7 +8663,7 @@ msgstr "Selle aruande eesmärk on tuvastada väljalasked, mis tuleks teisendada 
 msgid ""
 "This report lists URLs which have relationships using deprecated and "
 "grouping-only relationship types"
-msgstr ""
+msgstr "See aruanne loetleb URL-id, millel on aegunud või teiste seoste rühmitamiseks mõeldud seosetüüpe."
 
 #: ../root/report/tracks_without_times.tt:6
 msgid ""
@@ -8752,7 +8752,7 @@ msgstr "See aruanne loetleb artistid, millel on mitu sama tüüpi seost ühe ja 
 msgid ""
 "This report lists artists which have relationships using deprecated and "
 "grouping-only relationship types"
-msgstr ""
+msgstr "See aruanne loetleb artistid, kellel on aegunud või teiste seoste rühmitamiseks mõeldud seosetüüpe."
 
 #: ../root/report/duplicate_relationships_labels.tt:6
 msgid ""
@@ -8764,13 +8764,13 @@ msgstr "See aruanne loetleb plaadifirmad, millel on mitu sama tüüpi seost ühe
 msgid ""
 "This report lists labels which have relationships using deprecated and "
 "grouping-only relationship types"
-msgstr ""
+msgstr "See aruanne loetleb plaadifirmad, millel on aegunud või teiste seoste rühmitamiseks mõeldud seosetüüpe."
 
 #: ../root/report/deprecated_relationship_places.tt:6
 msgid ""
 "This report lists places which have relationships using deprecated and "
 "grouping-only relationship types"
-msgstr ""
+msgstr "See aruanne loetleb kohad, millel on aegunud või teiste seoste rühmitamiseks mõeldud seosetüüpe."
 
 #: ../root/report/duplicate_relationships_recordings.tt:6
 msgid ""
@@ -8782,7 +8782,7 @@ msgstr "See aruanne loetleb salvestised, millel on mitu sama tüüpi seost ühe 
 msgid ""
 "This report lists recordings which have relationships using deprecated and "
 "grouping-only relationship types"
-msgstr ""
+msgstr "See aruanne loetleb salvestised, millel on aegunud või teiste seoste rühmitamiseks mõeldud seosetüüpe."
 
 #: ../root/report/duplicate_relationships_release_groups.tt:6
 msgid ""
@@ -8794,7 +8794,7 @@ msgstr "See aruanne loetleb väljalaskerühmad, millel on mitu sama tüüpi seos
 msgid ""
 "This report lists release groups which have relationships using deprecated "
 "and grouping-only relationship types"
-msgstr ""
+msgstr "See aruanne loetleb väljalaskerühmad, millel on aegunud või teiste seoste rühmitamiseks mõeldud seosetüüpe."
 
 #: ../root/report/duplicate_relationships_releases.tt:6
 msgid ""
@@ -8806,7 +8806,7 @@ msgstr "See aruanne loetleb väljalasked, millel on mitu sama tüüpi seost ühe
 msgid ""
 "This report lists releases which have relationships using deprecated and "
 "grouping-only relationship types"
-msgstr ""
+msgstr "See aruanne loetleb väljalasked, millel on aegunud või teiste seoste rühmitamiseks mõeldud seosetüüpe."
 
 #: ../root/report/superfluous_data_tracks.tt:6
 msgid ""
@@ -8826,7 +8826,7 @@ msgstr "See aruanne loetleb teosed, millel on mitu sama tüüpi seost ühe ja sa
 msgid ""
 "This report lists works which have relationships using deprecated and "
 "grouping-only relationship types"
-msgstr ""
+msgstr "See aruanne loetleb teosed, millel on aegunud või teiste seoste rühmitamiseks mõeldud seosetüüpe."
 
 #: ../root/report/isrc_with_many_recordings.tt:6
 msgid ""
@@ -9059,7 +9059,7 @@ msgstr "See tabel näitab selle toimetaja antud häälte kokkuvõtet."
 
 #: ../root/edit/details/edit_medium.tt:2
 msgid "This track's MBID will change when this edit is applied."
-msgstr ""
+msgstr "Selle loo MBID muutub, kui see toimetus rakendatakse."
 
 #: ../root/scripts/text_strings.tt:126
 msgid ""
@@ -9201,7 +9201,7 @@ msgstr "Leitud ISWC-sid: {count}"
 
 #: ../root/report/deprecated_relationship_urls.tt:8
 msgid "Total URLs found: {count}"
-msgstr ""
+msgstr "Leitud URL-e: {count}"
 
 #: ../root/report/artists_containing_disambiguation_comments.tt:8
 #: ../root/report/artists_that_may_be_groups.tt:11
@@ -9232,7 +9232,7 @@ msgstr "Kogupikkus:"
 
 #: ../root/report/deprecated_relationship_places.tt:8
 msgid "Total places found: {count}"
-msgstr ""
+msgstr "Leitud kohti: {count}"
 
 #: ../root/report/deprecated_relationship_recordings.tt:8
 #: ../root/report/duplicate_relationships_recordings.tt:7
@@ -9530,13 +9530,13 @@ msgstr "URL; [URL]; [URL|nähtav tekst]"
 
 #: ../root/report/index.tt:105
 msgid "URLs"
-msgstr ""
+msgstr "URL-id"
 
 #: ../root/report/deprecated_relationship_urls.tt:1
 #: ../root/report/deprecated_relationship_urls.tt:3
 #: ../root/report/index.tt:108
 msgid "URLs with deprecated relationships"
-msgstr ""
+msgstr "URL-id iganenud seostega"
 
 #: ../root/doc/relationship_type.tt:34
 #: ../root/relationship/linktype/tree.tt:12
@@ -10039,7 +10039,7 @@ msgstr "Wikipedia"
 msgid ""
 "Wikipedia content provided under the terms of the {license_link|Creative "
 "Commons BY-SA license}"
-msgstr ""
+msgstr "(Wikipedia sisu näidatakse {license_link|Creative Commonsi BY-SA litsentsi} alusel)"
 
 #: ../root/artist/works-list.tt:9 ../root/components/common-macros.tt:576
 #: ../root/components/common-macros.tt:638 ../root/edit/search_macros.tt:307
@@ -10099,7 +10099,7 @@ msgstr "Teosed, mille pealkirja alguses on „{index}”"
 #: ../root/report/deprecated_relationship_works.tt:1
 #: ../root/report/index.tt:102
 msgid "Works with deprecated relationships"
-msgstr ""
+msgstr "Teosed iganenud seostega"
 
 #: ../root/report/duplicate_relationships_works.tt:1
 #: ../root/report/duplicate_relationships_works.tt:3
@@ -12271,11 +12271,11 @@ msgstr "Sama maad ei saa kasutada rohkem kui korra."
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Information.pm:103
 msgid "You must select an existing label."
-msgstr ""
+msgstr "Valida tuleb olemasolev plaadifirma."
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Information.pm:113
 msgid "You must select an existing release group."
-msgstr ""
+msgstr "Valida tuleb olemasolev väljalaskerühm."
 
 #: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Tracklist.pm:60
 msgid "New tracklisting contains an empty track"
