@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2013-12-24 12:36-0700\n"
-"PO-Revision-Date: 2013-12-26 18:50+0000\n"
+"PO-Revision-Date: 2013-12-28 19:33+0000\n"
 "Last-Translator: Mihkel Tõnnov <email address hidden>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/musicbrainz/language/et/)\n"
 "MIME-Version: 1.0\n"
@@ -12105,7 +12105,7 @@ msgstr "Sisestada tuleb vähemalt üks rada"
 
 #: ../lib/MusicBrainz/Server/Form/CDStub.pm:41
 msgid "You must provide a title for track {0}"
-msgstr ""
+msgstr "{0}. rajale tuleb lisada pealkiri"
 
 #: ../lib/MusicBrainz/Server/Form/CDStub.pm:73
 msgid "Must be a valid barcode"
@@ -12121,7 +12121,7 @@ msgstr ""
 msgid ""
 "Artist \"{artist}\" is unlinked, please select an existing artist.\n"
 "                   You may need to add a new artist to MusicBrainz first."
-msgstr ""
+msgstr "{artist} pole lingitud ühegi andmebaasis leiduva artistiga — palun vali mõni olemasolev või lisa uus."
 
 #: ../lib/MusicBrainz/Server/Form/Field/ArtistCredit.pm:60
 msgid "Please add an artist name for each credit."
