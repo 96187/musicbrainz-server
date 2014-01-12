@@ -23,8 +23,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-12 04:59-0700\n"
-"PO-Revision-Date: 2014-01-12 12:02+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2014-01-12 16:20+0000\n"
+"Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1611,7 +1611,7 @@ msgstr "Abonneer me automatisch op platenmaatschappijen die ik toevoeg."
 
 #: ../root/components/ratings.tt:19
 msgid "Average rating:"
-msgstr ""
+msgstr "Gemiddelde waardering:"
 
 #: ../root/browse/page_selector.tt:54
 msgid "Back"
@@ -3457,7 +3457,7 @@ msgstr "Vingerafdrukken"
 msgid ""
 "Follow our {bl|blog} or {tw|twitter account}! To talk to other users, try "
 "the {fo|forums} or {irc|IRC}."
-msgstr ""
+msgstr "Volg ons {bl|weblog} of op {tw|Twitter}! Probeer het {fo|forum} of {irc|IRC} om met andere gebruikers te praten."
 
 #: ../root/search/error/wrapper.tt:5
 msgid ""
@@ -11362,8 +11362,8 @@ msgid ""
 msgid_plural ""
 "Thank you, your {num_edits} {edit_url|edits} ({edit_ids}) have been "
 "automatically accepted and applied."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Bedankt, uw {num_edits} {edit_url|bewerking} ({edit_ids}) is automatisch geaccepteerd en doorgevoerd."
+msgstr[1] "Bedankt, uw {num_edits} {edit_url|bewerkingen} ({edit_ids}) zijn automatisch geaccepteerd en doorgevoerd."
 
 #: ../lib/MusicBrainz/Server/Controller.pm:150
 #, perl-brace-format
@@ -11373,8 +11373,8 @@ msgid ""
 msgid_plural ""
 "Thank you, your {num_edits} {edit_url|edits} ({edit_ids}) have been entered "
 "into the edit queue for peer review."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Bedankt, uw {num_edits} {edit_url|bewerking} ({edit_ids}) is toegevoegd aan de wachtrij voor collegiale toetsing."
+msgstr[1] "Bedankt, uw {num_edits} {edit_url|bewerkingen} ({edit_ids}) zijn toegevoegd aan de wachtrij voor collegiale toetsing."
 
 #: ../lib/MusicBrainz/Server/Controller.pm:158
 #, perl-brace-format
@@ -11386,8 +11386,8 @@ msgid_plural ""
 "Thank you, your {num_edits} {edit_url|edits} ({edit_ids}) have been entered,"
 " with {num_open_edits} in the edit queue for peer review, and the rest "
 "automatically accepted and applied."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Bedankt, uw {edit_url|bewerking} ({edit_ids}) is ingevoerd, met {num_open_edits} in de wachtrij voor collegiale toetsing en de rest automatisch geaccepteerd en doorgevoerd."
+msgstr[1] "Bedankt, uw {num_edits} {edit_url|bewerkingen} ({edit_ids}) zijn ingevoerd, met {num_open_edits} in de wachtrij voor collegiale toetsing en de rest automatisch geaccepteerd en doorgevoerd."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:45
 msgid "The user ID is missing or is in an invalid format."

@@ -1,13 +1,13 @@
 # 
 # Translators:
 # Hinkus <email address hidden>, 2012
-# Mihkel Tõnnov <email address hidden>, 2008, 2009, 2011, 2012
+# Mihkel Tõnnov <email address hidden>, 2008-2009,2011-2012
 # nikki, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-01-12 12:02+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2014-01-12 16:19+0000\n"
+"Last-Translator: Mihkel Tõnnov <email address hidden>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/musicbrainz/language/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,7 +39,7 @@ msgstr ""
 
 #: DB:link_type/link_phrase:719 DB:link_type/link_phrase:718
 msgid "Bandcamp"
-msgstr ""
+msgstr "Bandcamp"
 
 #: DB:link_type/reverse_link_phrase:719 DB:link_type/reverse_link_phrase:718
 msgid "Bandcamp page for"
@@ -1732,7 +1732,7 @@ msgstr "See seosetüüp on <strong>iganenud</strong>! Kui kaks salvestist on ide
 msgid ""
 "This relationship type is <strong>deprecated</strong>! Please add mastering "
 "engineers at the release level."
-msgstr ""
+msgstr "See seosetüüp on <strong>iganenud</strong>! Palun lisa masterdajad väljalaske tasemel."
 
 #: DB:link_type/description:1
 msgid ""
@@ -1750,7 +1750,7 @@ msgstr ""
 #: DB:link_type/description:261 DB:link_type/description:270
 #: DB:link_type/description:252 DB:link_type/description:269
 msgid "This relationship type is <strong>deprecated</strong>."
-msgstr ""
+msgstr "See seosetüüp on <strong>iganenud</strong>!"
 
 #: DB:link_type/description:131
 msgid ""
@@ -1895,7 +1895,7 @@ msgstr ""
 #: DB:link_type/link_phrase:354 DB:link_type/link_phrase:358
 #: DB:link_type/link_phrase:594 DB:link_type/reverse_link_phrase:351
 msgid "Wikidata"
-msgstr ""
+msgstr "Wikidata"
 
 #: DB:link_type/link_phrase:351 DB:link_type/reverse_link_phrase:352
 #: DB:link_type/reverse_link_phrase:353 DB:link_type/reverse_link_phrase:354
@@ -2371,7 +2371,7 @@ msgstr "evib PureVolume’i lehte"
 
 #: DB:link_type/long_link_phrase:307 DB:link_type/long_link_phrase:308
 msgid "has a SecondHandSongs page at"
-msgstr ""
+msgstr "evib SecondHandSongsi lehte"
 
 #: DB:link_type/long_link_phrase:290 DB:link_type/long_link_phrase:291
 msgid "has a SoundCloud page at"
@@ -2386,7 +2386,7 @@ msgstr "evib VGMdb lehte"
 #: DB:link_type/long_link_phrase:354 DB:link_type/long_link_phrase:358
 #: DB:link_type/long_link_phrase:594
 msgid "has a Wikidata page at"
-msgstr ""
+msgstr "evib Wikidata lehte"
 
 #: DB:link_type/long_link_phrase:89 DB:link_type/long_link_phrase:216
 #: DB:link_type/long_link_phrase:179 DB:link_type/long_link_phrase:355
@@ -2626,7 +2626,7 @@ msgstr "on Songfactsi leht teosele"
 
 #: DB:link_type/long_link_phrase:351
 msgid "is a Wikidata page for"
-msgstr ""
+msgstr "on Wikidata leht olemile"
 
 #: DB:link_type/long_link_phrase:279
 msgid "is a Wikipedia page for"
@@ -3653,7 +3653,7 @@ msgstr ""
 #: DB:link_type/link_phrase:51 DB:link_type/link_phrase:156
 #: DB:link_type/long_link_phrase:51 DB:link_type/long_link_phrase:156
 msgid "{additional:additionally} {guest} {solo} performed"
-msgstr "oli {additional:täiendav} {guest:külalis}{solo:soolo}esitaja salvestisel"
+msgstr "oli {additional:täiendav} {guest:külalis}{soolo:soolo}esitaja salvestisel"
 
 #: DB:link_type/link_phrase:282 DB:link_type/link_phrase:158
 #: DB:link_type/link_phrase:41
