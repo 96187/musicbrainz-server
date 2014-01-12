@@ -15,15 +15,15 @@
 # nikki, 2013
 # nikki, 2012
 # Luca Salini <email address hidden>, 2012-2013
-# Luca Salini <email address hidden>, 2013
+# Luca Salini <email address hidden>, 2013-2014
 # Luca Salini <email address hidden>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-12 04:59-0700\n"
-"PO-Revision-Date: 2014-01-12 12:02+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2014-01-12 14:42+0000\n"
+"Last-Translator: Luca Salini <email address hidden>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/musicbrainz/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1610,7 +1610,7 @@ msgstr "Sottoscrivimi automaticamente alle etichette che creo."
 
 #: ../root/components/ratings.tt:19
 msgid "Average rating:"
-msgstr ""
+msgstr "Valutazione media:"
 
 #: ../root/browse/page_selector.tt:54
 msgid "Back"
@@ -3456,7 +3456,7 @@ msgstr "Impronte digitali"
 msgid ""
 "Follow our {bl|blog} or {tw|twitter account}! To talk to other users, try "
 "the {fo|forums} or {irc|IRC}."
-msgstr ""
+msgstr "Segui il nostro {bl|blog} o l'{tw|account twitter}! Per parlare con gli altri utenti, prova il {fo|forum} o il {irc|canale IRC}."
 
 #: ../root/search/error/wrapper.tt:5
 msgid ""
@@ -11361,8 +11361,8 @@ msgid ""
 msgid_plural ""
 "Thank you, your {num_edits} {edit_url|edits} ({edit_ids}) have been "
 "automatically accepted and applied."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Grazie, la tua {edit_url|modifica} ({edit_ids}) è stata accettata e applicata automaticamente."
+msgstr[1] "Grazie, le tue {num_edits} {edit_url|modifiche} ({edit_ids}) sono state accettate e applicate automaticamente."
 
 #: ../lib/MusicBrainz/Server/Controller.pm:150
 #, perl-brace-format
@@ -11372,8 +11372,8 @@ msgid ""
 msgid_plural ""
 "Thank you, your {num_edits} {edit_url|edits} ({edit_ids}) have been entered "
 "into the edit queue for peer review."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Grazie, la tua {edit_url|modifica} ({edit_ids}) è stata inserita nella coda di modifiche sottoposte a revisione paritaria."
+msgstr[1] "Grazie, le tue {num_edits} {edit_url|modifiche} ({edit_ids}) sono state inserite nella coda di modifiche sottoposte a revisione paritaria."
 
 #: ../lib/MusicBrainz/Server/Controller.pm:158
 #, perl-brace-format
@@ -11385,8 +11385,8 @@ msgid_plural ""
 "Thank you, your {num_edits} {edit_url|edits} ({edit_ids}) have been entered,"
 " with {num_open_edits} in the edit queue for peer review, and the rest "
 "automatically accepted and applied."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Grazie, la tua {edit_url|modifica} ({edit_ids}) è stata inserita, con {num_open_edits} nella coda di modifiche sottoposte a revisione paritaria e il resto accettato e applicato automaticamente."
+msgstr[1] "Grazie, le tue {num_edits} {edit_url|modifiche} ({edit_ids}) sono state inserite, con {num_open_edits} nella coda di modifiche sottoposte a revisione paritaria e il resto accettato e applicato automaticamente."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:45
 msgid "The user ID is missing or is in an invalid format."
