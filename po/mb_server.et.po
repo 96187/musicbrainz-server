@@ -7,6 +7,7 @@
 # <email address hidden>, 2012
 #   <email address hidden>, 2012
 # Mihkel Tõnnov <email address hidden>, 2008-2009,2011-2013
+# Mihkel Tõnnov <email address hidden>, 2014
 # nikki, 2012
 # nikki, 2012
 msgid ""
@@ -14,7 +15,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-01-12 04:59-0700\n"
-"PO-Revision-Date: 2014-01-12 16:09+0000\n"
+"PO-Revision-Date: 2014-01-17 18:31+0000\n"
 "Last-Translator: Mihkel Tõnnov <email address hidden>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/musicbrainz/language/et/)\n"
 "MIME-Version: 1.0\n"
@@ -5087,7 +5088,7 @@ msgstr "Ei"
 
 #: ../root/tag/not_found.tt:4
 msgid "No MusicBrainz entities have yet been tagged with \"{tag}\"."
-msgstr ""
+msgstr "Silti „{tag}” pole MusicBrainzis veel kellelegi ega millelegi pandud."
 
 #: ../root/tag/artist.tt:1
 msgid "No artists with this tag were found."
@@ -5395,7 +5396,7 @@ msgstr "Ainult {doc|vanemtoimetajad} saavad toimetusi heaks kiita."
 msgid ""
 "Oops! It seems your search parameters are not correct, please double check "
 "your input!"
-msgstr ""
+msgstr "Paistab, et antud otsinguparameetrid olid valed. Palun vaata sisestatu uuesti üle."
 
 #: ../root/main/500.tt:5
 msgid "Oops, something went wrong!"
@@ -7892,7 +7893,7 @@ msgstr "Sinu e-postiaadress on nüüd kinnitatud. Kui sa ikka veel toimetada ei 
 msgid ""
 "That search can't be performed, because you must provide at least one of "
 "'recording', 'track number', 'duration', 'release', or 'artist'."
-msgstr ""
+msgstr "Soovitud otsingu teostamine pole võimalik — sisestada tuleb vähemalt salvestis, loonumber, kestus, väljalase või artist."
 
 #: ../root/release/caa_darkened.tt:3 ../root/release/cover_art.tt:60
 msgid ""
@@ -7969,7 +7970,7 @@ msgstr "Täpsustusvälja kasutatakse väljalaske eri versioonide eristamiseks."
 msgid ""
 "The data in this edit originally came from an older version of this edit, "
 "and may not display correctly"
-msgstr ""
+msgstr "Selle toimetuse andmed pärinevad algselt selle toimetuse vanemast versioonist ning nende näitamisel võib esineda vigu."
 
 #: ../root/layout.tt:68
 msgid ""
@@ -9912,14 +9913,14 @@ msgid ""
 "We found discs matching the information you requested, listed below. If none"
 " of these are the release you are looking for, please see the instructions "
 "below."
-msgstr ""
+msgstr "Päringule vastasid alltoodud plaadid. Kui ükski neist pole otsitav väljalase, siis järgi juhiseid allpool."
 
 #: ../root/cdtoc/lookup.tt:6
 msgid ""
 "We found discs matching the information you requested, listed below. If none"
 " of these are the release you are looking for, you may search using the form"
 " below in order to attach this disc to another MusicBrainz release."
-msgstr ""
+msgstr "Päringule vastasid alltoodud plaadid. Kui ükski neist pole otsitav väljalase, võid allpool asuva vormi abil otsida MusicBrainzist väljalaset, millele see plaat liita."
 
 #: ../root/release/edit/missing_entities.tt:33
 msgid ""
@@ -11415,7 +11416,7 @@ msgstr "Kasutajat ID-ga „{user_id}” ei leitud."
 msgid ""
 "We were unable to send login information to your email address.  Please try again,\n"
 "             however if you continue to experience difficulty contact us at support@musicbrainz.org."
-msgstr ""
+msgstr "Sisselogimisteavet ei õnnestunud sinu e-postile saata. Palun proovi uuesti,\n             aga kui probleem siiski püsib, siis saada kiri aadressil support@musicbrainz.org."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:159
 msgid "There is no user with this username"
@@ -11429,7 +11430,7 @@ msgstr "Selle nime ja e-postiga kasutajat pole."
 msgid ""
 "We can't send a password reset email, because we have no email on record for"
 " this user."
-msgstr ""
+msgstr "Parooli lähtestamise kirja ei saa saata, kuna kasutaja e-post pole andmebaasis."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:196
 msgid "Missing one or more required parameters."
@@ -11452,7 +11453,7 @@ msgid ""
 "<strong>We were unable to send a confirmation email to you.</strong><br/>Please confirm that you have entered a valid\n"
 "             address by editing your {settings|account settings}. If the problem still persists, please contact us at\n"
 "             <a href=\"mailto:support@musicbrainz.org\">support@musicbrainz.org</a>."
-msgstr ""
+msgstr "<strong>Meil ei õnnestunud sulle kinnituskirja saata.</strong><br/>Palun vaata oma {settings|konto seadetest},\n             et sisestatud oleks korrektne e-postiaadress. Kui probleem siiski püsib, siis saada palun kiri aadressil\n             <a href=\"mailto:support@musicbrainz.org\">support@musicbrainz.org</a>."
 
 #: ../lib/MusicBrainz/Server/Controller/Admin.pm:76
 msgid "User successfully edited."
