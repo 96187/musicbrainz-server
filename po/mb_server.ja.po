@@ -13,9 +13,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-01-12 04:59-0700\n"
-"PO-Revision-Date: 2014-01-19 05:31+0000\n"
-"Last-Translator: nikki\n"
+"POT-Creation-Date: 2014-01-20 20:55-0700\n"
+"PO-Revision-Date: 2014-01-21 03:59+0000\n"
+"Last-Translator: Ian McEwen <email address hidden>\n"
 "Language-Team: Japanese (http://www.transifex.com/projects/p/musicbrainz/language/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -35,31 +35,31 @@ msgid ""
 "it} first and then reset your password. "
 msgstr "ユーザー名とメールアドレスを入力してください。パスワードをリセットできるリンクを送信します。ユーザー名も忘れた場合、{link|それを調べて}からパスワードをリセットしてください。"
 
-#: ../root/components/forms.tt:261
+#: ../root/components/forms.tt:260
 msgid "\"C\" is a single check digit."
 msgstr ""
 
-#: ../root/components/forms.tt:274
+#: ../root/components/forms.tt:272
 msgid "\"CC\" is the appropriate for the registrant two-character country code."
 msgstr "「CC」は、登録者の適切な２文字国コード。"
 
-#: ../root/components/forms.tt:260
+#: ../root/components/forms.tt:259
 msgid "\"DDD\" is a nine digit work identifier."
 msgstr ""
 
-#: ../root/components/forms.tt:277
+#: ../root/components/forms.tt:275
 msgid ""
 "\"NNNNN\" is a unique 5-digit number identifying the particular sound "
 "recording."
 msgstr "「NNNNN」は特定のレコーディングを識別する唯一の５桁番号です。"
 
-#: ../root/components/forms.tt:275
+#: ../root/components/forms.tt:273
 msgid ""
 "\"XXX\" is a three character alphanumeric registrant code, uniquely "
 "identifying the organisation which registered the code."
 msgstr "「XXX」は登録した組織の固有な３文字の英数字コードです。"
 
-#: ../root/components/forms.tt:276
+#: ../root/components/forms.tt:274
 msgid "\"YY\" is the last two digits of the year of registration."
 msgstr "「YY」は登録された年の最後の２桁。"
 
@@ -213,7 +213,7 @@ msgctxt "type"
 msgid "(none)"
 msgstr "（無し）"
 
-#: ../root/elections/show.tt:124
+#: ../root/elections/show.tt:130
 msgid "(private)"
 msgstr "（内緒）"
 
@@ -277,7 +277,7 @@ msgstr[0] "満場一致投票数：{n}"
 msgid "100%"
 msgstr "100%"
 
-#: ../root/elections/show.tt:17
+#: ../root/elections/show.tt:19
 msgid "1st seconder:"
 msgstr "第一賛成者："
 
@@ -285,7 +285,7 @@ msgstr "第一賛成者："
 msgid "250px"
 msgstr ""
 
-#: ../root/elections/show.tt:20
+#: ../root/elections/show.tt:23
 msgid "2nd seconder:"
 msgstr "第二賛成者："
 
@@ -429,7 +429,7 @@ msgid "About"
 msgstr "このサイトについて"
 
 #: ../root/edit/search_macros.tt:244 ../root/edit/vote.tt:20
-#: ../root/elections/show.tt:76 ../lib/MusicBrainz/Server/Data/Vote.pm:191
+#: ../root/elections/show.tt:82 ../lib/MusicBrainz/Server/Data/Vote.pm:191
 msgid "Abstain"
 msgstr "棄権"
 
@@ -469,7 +469,7 @@ msgstr "アクション"
 #: ../root/account/applications.tt:27 ../root/account/applications.tt:58
 #: ../root/admin/wikidoc/index.tt:36 ../root/artist/aliases.tt:23
 #: ../root/components/aliases.tt:19 ../root/recording/fingerprints.tt:8
-#: ../root/user/collections.tt:13
+#: ../root/user/collections.tt:14
 msgid "Actions"
 msgstr "アクション"
 
@@ -491,7 +491,7 @@ msgstr "アーティストを追加"
 msgid "Add Artist Alias"
 msgstr "アーティストの別名を追加"
 
-#: ../root/components/forms.tt:328 ../root/components/forms.tt:329
+#: ../root/components/forms.tt:326 ../root/components/forms.tt:327
 #: ../root/release/edit/tracklist.tt:47 ../root/release/edit/tracklist.tt:48
 msgid "Add Artist Credit"
 msgstr "アーティストクレジットの追加"
@@ -664,11 +664,11 @@ msgstr ""
 msgid "Add a new recording"
 msgstr "新しいレコーディングを追加"
 
-#: ../root/cdtoc/attach_artist_releases.tt:52
+#: ../root/cdtoc/attach_artist_releases.tt:55
 #: ../root/cdtoc/attach_filter_artist.tt:47
 #: ../root/cdtoc/attach_filter_artist.tt:55
-#: ../root/cdtoc/attach_filter_release.tt:64
-#: ../root/cdtoc/attach_filter_release.tt:71
+#: ../root/cdtoc/attach_filter_release.tt:67
+#: ../root/cdtoc/attach_filter_release.tt:74
 msgid "Add a new release"
 msgstr "新しいリリースを追加"
 
@@ -1275,7 +1275,7 @@ msgstr "「{index}」から始まる地域"
 #: ../root/artist/header.tt:20 ../root/artist/index.tt:57
 #: ../root/artist/recordings-list.tt:27 ../root/artist/relationships.tt:16
 #: ../root/cdstub/browse.tt:9 ../root/cdstub/cdstub.tt:7
-#: ../root/cdtoc/attach_filter_release.tt:27 ../root/cdtoc/list.tt:7
+#: ../root/cdtoc/attach_filter_release.tt:29 ../root/cdtoc/list.tt:7
 #: ../root/cdtoc/lookup.tt:39 ../root/collection/index.tt:18
 #: ../root/components/common-macros.tt:576
 #: ../root/components/common-macros.tt:633
@@ -1348,7 +1348,7 @@ msgstr "アーティストが見つかりません"
 msgid "Artist Subscriptions"
 msgstr "アーティストの購読"
 
-#: ../root/components/forms.tt:313
+#: ../root/components/forms.tt:311
 msgid "Artist as credited"
 msgstr "クレジットされたアーティスト"
 
@@ -1368,7 +1368,7 @@ msgstr "アーティストクレジット"
 msgid "Artist credits:"
 msgstr "アーティストクレジット:"
 
-#: ../root/components/forms.tt:298 ../root/release/edit/tracklist.tt:14
+#: ../root/components/forms.tt:296 ../root/release/edit/tracklist.tt:14
 msgid "Artist in MusicBrainz"
 msgstr "MusicBrainz内のアーティスト"
 
@@ -1504,18 +1504,18 @@ msgid "Associated with {num} work"
 msgid_plural "Associated with {num} works"
 msgstr[0] ""
 
-#: ../root/cdtoc/attach_artist_releases.tt:39
-#: ../root/cdtoc/attach_filter_release.tt:53
+#: ../root/cdtoc/attach_artist_releases.tt:41
+#: ../root/cdtoc/attach_filter_release.tt:55
 msgctxt "button/menu"
 msgid "Attach CD TOC"
 msgstr "CD TOC を添付"
 
-#: ../root/cdtoc/attach_artist_releases.tt:1
-#: ../root/cdtoc/attach_artist_releases.tt:2 ../root/cdtoc/attach_confirm.tt:1
+#: ../root/cdtoc/attach_artist_releases.tt:3
+#: ../root/cdtoc/attach_artist_releases.tt:4 ../root/cdtoc/attach_confirm.tt:1
 #: ../root/cdtoc/attach_confirm.tt:2 ../root/cdtoc/attach_filter_artist.tt:1
 #: ../root/cdtoc/attach_filter_artist.tt:2
-#: ../root/cdtoc/attach_filter_release.tt:1
-#: ../root/cdtoc/attach_filter_release.tt:2
+#: ../root/cdtoc/attach_filter_release.tt:3
+#: ../root/cdtoc/attach_filter_release.tt:4
 msgctxt "header"
 msgid "Attach CD TOC"
 msgstr "CD TOC の添付"
@@ -1619,8 +1619,8 @@ msgstr "無効のAmazon URL"
 msgid "Bad Request"
 msgstr "無効のリクエスト"
 
-#: ../root/cdtoc/attach_artist_releases.tt:18
-#: ../root/cdtoc/attach_filter_release.tt:32 ../root/cdtoc/list.tt:11
+#: ../root/cdtoc/attach_artist_releases.tt:20
+#: ../root/cdtoc/attach_filter_release.tt:34 ../root/cdtoc/list.tt:11
 #: ../root/edit/details/edit_release_events.tt:9
 #: ../root/edit/details/historic/add_release.tt:79
 #: ../root/edit/details/merge_releases.tt:26 ../root/release_group/index.tt:30
@@ -1979,7 +1979,7 @@ msgstr "{name} との関連をキャンセル"
 msgid "Cancel edit"
 msgstr "編集キャンセル"
 
-#: ../root/elections/show.tt:100
+#: ../root/elections/show.tt:106
 msgid "Cancel the election"
 msgstr "選挙キャンセル"
 
@@ -2034,8 +2034,8 @@ msgstr "カタログ番号"
 msgid "Catalog number:"
 msgstr "カタログ番号："
 
-#: ../root/cdtoc/attach_artist_releases.tt:17
-#: ../root/cdtoc/attach_filter_release.tt:31 ../root/cdtoc/list.tt:10
+#: ../root/cdtoc/attach_artist_releases.tt:19
+#: ../root/cdtoc/attach_filter_release.tt:33 ../root/cdtoc/list.tt:10
 #: ../root/collection/index.tt:24 ../root/edit/details/merge_releases.tt:25
 #: ../root/recording/index.tt:17 ../root/release_group/index.tt:29
 #: ../root/release_group/releases-list.tt:27 ../root/release/merge.tt:20
@@ -2185,7 +2185,7 @@ msgstr "ディスクを折りたたむ"
 msgid "Collapse all descriptions"
 msgstr "すべて折りたたむ"
 
-#: ../root/collection/edits.tt:5 ../root/user/collections.tt:9
+#: ../root/collection/edits.tt:5 ../root/user/collections.tt:10
 msgid "Collection"
 msgstr "コレクション"
 
@@ -2307,8 +2307,8 @@ msgstr "名前をコピー"
 msgid "Copy all track changes to associated recordings."
 msgstr "トラックの変更を関連したレコーディングにも加える"
 
-#: ../root/cdtoc/attach_artist_releases.tt:15
-#: ../root/cdtoc/attach_filter_release.tt:29 ../root/collection/index.tt:22
+#: ../root/cdtoc/attach_artist_releases.tt:17
+#: ../root/cdtoc/attach_filter_release.tt:31 ../root/collection/index.tt:22
 #: ../root/edit/details/edit_release_events.tt:6
 #: ../root/edit/details/historic/add_release.tt:76
 #: ../root/edit/details/merge_releases.tt:23
@@ -2357,7 +2357,7 @@ msgstr "アカウント作成"
 msgid "Create Relationship"
 msgstr "関連を作成"
 
-#: ../root/user/collections.tt:42
+#: ../root/user/collections.tt:44
 msgid "Create a new collection"
 msgstr "新しいコレクションを作成"
 
@@ -2428,11 +2428,11 @@ msgid "Data Removal Policy"
 msgstr "データの削除ポリシー"
 
 #: ../root/annotation/history.tt:9 ../root/artist/relationships.tt:13
-#: ../root/cdtoc/attach_artist_releases.tt:14
-#: ../root/cdtoc/attach_filter_release.tt:28 ../root/collection/index.tt:21
+#: ../root/cdtoc/attach_artist_releases.tt:16
+#: ../root/cdtoc/attach_filter_release.tt:30 ../root/collection/index.tt:21
 #: ../root/edit/details/edit_release_events.tt:5
 #: ../root/edit/details/historic/add_release.tt:75
-#: ../root/edit/details/merge_releases.tt:22 ../root/elections/show.tt:113
+#: ../root/edit/details/merge_releases.tt:22 ../root/elections/show.tt:119
 #: ../root/place/performances.tt:7 ../root/recording/index.tt:14
 #: ../root/release_group/index.tt:26 ../root/release_group/releases-list.tt:22
 #: ../root/release/lookup.tt:11 ../root/release/merge.tt:17
@@ -2765,7 +2765,7 @@ msgstr "MusicBrainzデータベースに、各トラックはレコーディン�
 #: ../root/relationship/linktype/tree.tt:15 ../root/release/cover_art.tt:27
 #: ../root/release/discids.tt:12 ../root/release/edit/recordings.tt:363
 #: ../root/release_group/header.tt:1 ../root/release/tabs.tt:1
-#: ../root/url/header.tt:1 ../root/user/collections.tt:25
+#: ../root/url/header.tt:1 ../root/user/collections.tt:26
 #: ../root/work/header.tt:1
 msgid "Edit"
 msgstr "編集"
@@ -3034,7 +3034,7 @@ msgstr "編集"
 msgid "Editing"
 msgstr "編集"
 
-#: ../root/edit/info.tt:64 ../root/edit/list_header.tt:27
+#: ../root/edit/info.tt:64 ../root/edit/list_header.tt:29
 msgid "Editing FAQ"
 msgstr "編集のよくある質問"
 
@@ -3704,7 +3704,7 @@ msgstr ""
 msgid "Headings:"
 msgstr "見出し："
 
-#: ../root/edit/list_header.tt:22
+#: ../root/edit/list_header.tt:24
 msgid "Help:"
 msgstr "ヘルプ："
 
@@ -3730,7 +3730,7 @@ msgstr ""
 msgid "How Tos"
 msgstr ""
 
-#: ../root/edit/list_header.tt:31
+#: ../root/edit/list_header.tt:33
 msgid "How editing works"
 msgstr "編集について"
 
@@ -3937,7 +3937,7 @@ msgid ""
 "{cancel|how to cancel pending edits} instead of removing this alias."
 msgstr ""
 
-#: ../root/cdtoc/attach_artist_releases.tt:47
+#: ../root/cdtoc/attach_artist_releases.tt:50
 msgid "If you can't find what you're looking for, you can add a new release:"
 msgstr ""
 
@@ -3958,7 +3958,7 @@ msgid ""
 " time"
 msgstr ""
 
-#: ../root/cdtoc/attach_filter_release.tt:65
+#: ../root/cdtoc/attach_filter_release.tt:68
 msgid ""
 "If you don't see the release you are looking for, you can still add a new "
 "one, using this CD TOC:"
@@ -4135,7 +4135,7 @@ msgstr "このページのアーティストフィールドを編集するには
 msgid "Javascript needs to be enabled."
 msgstr "Javascript を有効にしてください。"
 
-#: ../root/components/forms.tt:318 ../root/release/edit/tracklist.tt:16
+#: ../root/components/forms.tt:316 ../root/release/edit/tracklist.tt:16
 #: ../root/scripts/text_strings.tt:26
 msgid "Join phrase"
 msgstr "フレーズを結合"
@@ -4152,8 +4152,8 @@ msgstr "全て大文字の言葉を大文字のままで"
 msgid "Keep me logged in"
 msgstr " ログイン状態を保持"
 
-#: ../root/area/labels-list.tt:4 ../root/cdtoc/attach_artist_releases.tt:16
-#: ../root/cdtoc/attach_filter_release.tt:30 ../root/cdtoc/list.tt:9
+#: ../root/area/labels-list.tt:4 ../root/cdtoc/attach_artist_releases.tt:18
+#: ../root/cdtoc/attach_filter_release.tt:32 ../root/cdtoc/list.tt:9
 #: ../root/collection/index.tt:23 ../root/components/common-macros.tt:576
 #: ../root/components/common-macros.tt:634
 #: ../root/edit/details/edit_release_events.tt:7
@@ -5190,7 +5190,7 @@ msgid "No results found."
 msgstr ""
 
 #: ../root/cdtoc/attach_filter_artist.tt:41
-#: ../root/cdtoc/attach_filter_release.tt:58
+#: ../root/cdtoc/attach_filter_release.tt:61
 #: ../root/search/lib/inline-results-artist.tt:45
 #: ../root/search/lib/inline-results-recording.tt:76
 #: ../root/search/lib/inline-results-release.tt:57
@@ -5766,7 +5766,7 @@ msgid ""
 "artist name."
 msgstr ""
 
-#: ../root/cdtoc/attach_artist_releases.tt:5
+#: ../root/cdtoc/attach_artist_releases.tt:7
 msgid "Please select the medium you wish to attach this CD TOC to."
 msgstr ""
 
@@ -5839,7 +5839,7 @@ msgstr ""
 msgid "Preferences"
 msgstr "設定"
 
-#: ../root/annotation/edit.tt:27 ../root/components/forms.tt:290
+#: ../root/annotation/edit.tt:27 ../root/components/forms.tt:288
 #: ../root/release/edit/tracklist.tt:7
 msgid "Preview"
 msgstr "プレビュー"
@@ -5885,7 +5885,7 @@ msgstr "ロケールの一次："
 msgid "Priority:"
 msgstr "優先権："
 
-#: ../root/account/preferences.tt:22 ../root/user/collections.tt:12
+#: ../root/account/preferences.tt:22 ../root/user/collections.tt:13
 msgid "Privacy"
 msgstr "プライバシー"
 
@@ -5893,7 +5893,7 @@ msgstr "プライバシー"
 msgid "Privacy Policy"
 msgstr "プライバシーポリシー"
 
-#: ../root/user/collections.tt:23
+#: ../root/user/collections.tt:24
 msgid "Private"
 msgstr "プライベート"
 
@@ -5918,11 +5918,11 @@ msgstr "プロフィール"
 msgid "Proposer"
 msgstr "推薦者"
 
-#: ../root/elections/show.tt:14
+#: ../root/elections/show.tt:15
 msgid "Proposer:"
 msgstr "推薦者："
 
-#: ../root/user/collections.tt:23
+#: ../root/user/collections.tt:24
 msgid "Public"
 msgstr "公開"
 
@@ -6218,8 +6218,8 @@ msgstr ""
 msgid "Relationships:"
 msgstr "関連："
 
-#: ../root/cdtoc/attach_artist_releases.tt:13
-#: ../root/cdtoc/attach_filter_release.tt:26 ../root/cdtoc/lookup.tt:37
+#: ../root/cdtoc/attach_artist_releases.tt:15
+#: ../root/cdtoc/attach_filter_release.tt:28 ../root/cdtoc/lookup.tt:37
 #: ../root/collection/index.tt:17 ../root/components/common-macros.tt:576
 #: ../root/components/common-macros.tt:637
 #: ../root/edit/details/edit_release_events.tt:4
@@ -6280,8 +6280,8 @@ msgstr "リリースグループの関連"
 msgid "Release Group:"
 msgstr "リリースグループ："
 
-#: ../root/cdtoc/attach_artist_releases.tt:30
-#: ../root/cdtoc/attach_filter_release.tt:45
+#: ../root/cdtoc/attach_artist_releases.tt:32
+#: ../root/cdtoc/attach_filter_release.tt:47
 msgid "Release Group: {release_group_link}"
 msgstr "リリースグループ： {release_group_link}"
 
@@ -6399,7 +6399,7 @@ msgstr "フィーチャリングアーティストを含む曲名のあるリリ
 msgid "Release information"
 msgstr "リリース情報"
 
-#: ../root/cdtoc/attach_filter_release.tt:7 ../root/cdtoc/move_search.tt:13
+#: ../root/cdtoc/attach_filter_release.tt:9 ../root/cdtoc/move_search.tt:13
 msgid "Release title:"
 msgstr "リリース名："
 
@@ -6438,7 +6438,7 @@ msgstr "リリース："
 #: ../root/label/index.tt:29 ../root/recording/header.tt:1
 #: ../root/release_group/merge.tt:17 ../root/report/index.tt:48
 #: ../root/tag/header.tt:1 ../root/tag/index.tt:8
-#: ../root/user/collections.tt:10 ../root/user/tag.tt:4
+#: ../root/user/collections.tt:11 ../root/user/tag.tt:4
 msgid "Releases"
 msgstr "リリース"
 
@@ -6620,7 +6620,7 @@ msgstr "リリース："
 #: ../root/relationship/linktype/tree.tt:16
 #: ../root/release/add_cover_art.tt:63 ../root/release/cover_art.tt:30
 #: ../root/release/delete.tt:1 ../root/release/discids.tt:36
-#: ../root/scripts/text_strings.tt:44 ../root/user/collections.tt:26
+#: ../root/scripts/text_strings.tt:44 ../root/user/collections.tt:27
 msgid "Remove"
 msgstr "削除"
 
@@ -6641,7 +6641,7 @@ msgstr "地域の別名を削除"
 msgid "Remove Artist Alias"
 msgstr "アーティストの別名を削除"
 
-#: ../root/components/forms.tt:308 ../root/release/edit/tracklist.tt:39
+#: ../root/components/forms.tt:306 ../root/release/edit/tracklist.tt:39
 msgid "Remove Artist Credit"
 msgstr "アーティストクレジットを削除"
 
@@ -6862,7 +6862,7 @@ msgstr ""
 
 #: ../root/cdtoc/attach_filter_artist.tt:19
 #: ../root/cdtoc/attach_filter_artist.tt:39
-#: ../root/cdtoc/attach_filter_release.tt:56 ../root/cdtoc/move_search.tt:23
+#: ../root/cdtoc/attach_filter_release.tt:59 ../root/cdtoc/move_search.tt:23
 #: ../root/components/search.tt:19
 msgid "Results:"
 msgstr "結果："
@@ -6923,7 +6923,7 @@ msgid "Script:"
 msgstr "表記："
 
 #: ../root/cdtoc/attach_filter_artist.tt:10
-#: ../root/cdtoc/attach_filter_release.tt:9 ../root/cdtoc/lookup.tt:63
+#: ../root/cdtoc/attach_filter_release.tt:11 ../root/cdtoc/lookup.tt:63
 #: ../root/cdtoc/lookup.tt:73 ../root/cdtoc/move_search.tt:15
 #: ../root/components/common-macros.tt:911 ../root/components/search.tt:11
 #: ../root/edit/search_macros.tt:105 ../root/layout/menu.tt:194
@@ -7013,7 +7013,7 @@ msgstr "検索："
 msgid "Searching..."
 msgstr "検索中…"
 
-#: ../root/elections/show.tt:64
+#: ../root/elections/show.tt:70
 msgid "Second this candidate"
 msgstr ""
 
@@ -7618,7 +7618,7 @@ msgctxt "edit status"
 msgid "Status:"
 msgstr "ステータス："
 
-#: ../root/elections/show.tt:38
+#: ../root/elections/show.tt:43
 msgctxt "election status"
 msgid "Status:"
 msgstr "ステータス："
@@ -7643,7 +7643,7 @@ msgstr ""
 msgid "Style Guidelines"
 msgstr "スタイル指針"
 
-#: ../root/edit/list_header.tt:29 ../root/main/index.tt:22
+#: ../root/edit/list_header.tt:31 ../root/main/index.tt:22
 msgid "Style guidelines"
 msgstr "スタイル指針"
 
@@ -7818,8 +7818,8 @@ msgstr "このワークをタグして"
 msgid "Tag “{tag}”"
 msgstr "「{tag}」タグ"
 
-#: ../root/cdtoc/attach_artist_releases.tt:20
-#: ../root/cdtoc/attach_filter_release.tt:34 ../root/cdtoc/list.tt:13
+#: ../root/cdtoc/attach_artist_releases.tt:22
+#: ../root/cdtoc/attach_filter_release.tt:36 ../root/cdtoc/list.tt:13
 #: ../root/otherlookup/results-release.tt:13 ../root/release_group/index.tt:32
 #: ../root/release_group/releases-list.tt:30
 #: ../root/search/lib/inline-results-recording.tt:14
@@ -8062,7 +8062,7 @@ msgstr ""
 msgid "The system is overloaded or you are making requests too fast."
 msgstr ""
 
-#: ../root/elections/show.tt:26
+#: ../root/elections/show.tt:30
 msgid ""
 "The tally of votes cast will only be shown when the election is complete."
 msgstr ""
@@ -8472,7 +8472,7 @@ msgstr "このレーベルは関連やリリースが付いてないため、数
 msgid "This label has no tags."
 msgstr "このレーベルはタグがありません。"
 
-#: ../root/cdtoc/attach_list.tt:24
+#: ../root/cdtoc/attach_list.tt:25
 msgid "This medium format cannot have a disc ID attached"
 msgstr "このメディアフォーマットにディスクID付けられません。"
 
@@ -8487,6 +8487,28 @@ msgid ""
 "This merge strategy will merge all mediums together into a single set of "
 "mediums. Recordings between mediums will also be merged, into the recordings"
 " used on the target mediums."
+msgstr ""
+
+#: ../root/scripts/text_strings.tt:142
+msgid ""
+"This mode capitalises almost all words, with some words (mainly articles and"
+" short prepositions) lowercased. Some words may need to be manually "
+"capitalised to follow the {url|English capitalisation guidelines}."
+msgstr ""
+
+#: ../root/scripts/text_strings.tt:143
+msgid ""
+"This mode capitalises the first word of a sentence, most other words are "
+"lowercased. Some words, often proper nouns, may need to be manually fixed "
+"according to the {url|relevant language guidelines}."
+msgstr ""
+
+#: ../root/scripts/text_strings.tt:144
+msgid ""
+"This mode capitalises titles as sentence mode, but also inserts spaces "
+"before semicolons, colons, exclamation marks and question marks, and inside "
+"guillemets. Some words may need to be manually capitalised to follow the "
+"{url|French capitalisation guidelines}."
 msgstr ""
 
 #: ../root/doc/page.tt:22
@@ -9142,7 +9164,7 @@ msgstr ""
 msgid "To edit types, please edit the release group."
 msgstr "タイプの編集はリリースグループで行ってください。"
 
-#: ../root/elections/show.tt:91
+#: ../root/elections/show.tt:97
 msgid "To find out if you can vote for this candidate, please {url|log in}."
 msgstr ""
 
@@ -9614,7 +9636,7 @@ msgstr ""
 msgid "Use suggested recording"
 msgstr "提案されたレコーディングを使う"
 
-#: ../root/components/forms.tt:287
+#: ../root/components/forms.tt:285
 msgid ""
 "Use the following fields to enter collaborations, see the <a "
 "href=\"{url}\">Artist Credit</a> documentation for more information."
@@ -9738,15 +9760,15 @@ msgstr "このバージョンを表示"
 msgid "View transclusion history"
 msgstr ""
 
-#: ../root/elections/show.tt:112
+#: ../root/elections/show.tt:118
 msgid "Vote"
 msgstr "投票"
 
-#: ../root/elections/show.tt:75
+#: ../root/elections/show.tt:81
 msgid "Vote NO"
 msgstr "反対投票"
 
-#: ../root/elections/show.tt:74
+#: ../root/elections/show.tt:80
 msgid "Vote YES"
 msgstr "賛成投票"
 
@@ -9766,7 +9788,7 @@ msgstr "投票数："
 msgid "Voted down"
 msgstr "否決"
 
-#: ../root/elections/show.tt:111
+#: ../root/elections/show.tt:117
 msgid "Voter"
 msgstr "投票者"
 
@@ -9783,7 +9805,7 @@ msgstr "投票（{view_url|表示}）"
 msgid "Votes against"
 msgstr "反対投票数"
 
-#: ../root/elections/show.tt:33
+#: ../root/elections/show.tt:37
 msgid "Votes against:"
 msgstr "反対投票数："
 
@@ -9791,7 +9813,7 @@ msgstr "反対投票数："
 msgid "Votes by {name}"
 msgstr "{name}の投票"
 
-#: ../root/elections/show.tt:106
+#: ../root/elections/show.tt:112
 msgid "Votes cast"
 msgstr "投票数"
 
@@ -9799,27 +9821,27 @@ msgstr "投票数"
 msgid "Votes for"
 msgstr "賛成投票数"
 
-#: ../root/elections/show.tt:25
+#: ../root/elections/show.tt:29
 msgid "Votes for/against:"
 msgstr "可否の投票："
 
-#: ../root/elections/show.tt:30
+#: ../root/elections/show.tt:34
 msgid "Votes for:"
 msgstr "賛成投票数："
 
-#: ../root/elections/show.tt:58
+#: ../root/elections/show.tt:64
 msgid "Voting"
 msgstr "投票"
 
-#: ../root/edit/info.tt:63 ../root/edit/list_header.tt:25
+#: ../root/edit/info.tt:63 ../root/edit/list_header.tt:27
 msgid "Voting FAQ"
 msgstr "投票のよくある質問"
 
-#: ../root/elections/show.tt:88
+#: ../root/elections/show.tt:94
 msgid "Voting is closed."
 msgstr "投票は終了しました。"
 
-#: ../root/elections/show.tt:86
+#: ../root/elections/show.tt:92
 msgid ""
 "Voting is not yet open. If you would like to support this candidate, you can"
 " second their nomination. If you do not support this candidate, please note "
@@ -10199,16 +10221,16 @@ msgstr ""
 msgid "Yes, I'm sure"
 msgstr "確認"
 
-#: ../root/components/forms.tt:270
+#: ../root/components/forms.tt:269
 msgid ""
-"You are about to add an ISRC to {recording}. The ISRC must be entered in "
+"You are about to add an ISRC to this recording. The ISRC must be entered in "
 "standard <code>CCXXXYYNNNNNN</code> format:"
 msgstr ""
 
 #: ../root/components/forms.tt:256
 msgid ""
-"You are about to add an ISWC to {work}. The ISWC must be entered in standard"
-" <code>T-DDD.DDD.DDD-C</code> format:"
+"You are about to add an ISWC to this work. The ISWC must be entered in "
+"standard <code>T-DDD.DDD.DDD-C</code> format:"
 msgstr ""
 
 #: ../root/artist/edit_form.tt:6
@@ -10349,7 +10371,7 @@ msgid "You are subscribed to {n} private collection."
 msgid_plural "You are subscribed to {n} private collections."
 msgstr[0] ""
 
-#: ../root/cdtoc/attach_artist_releases.tt:3
+#: ../root/cdtoc/attach_artist_releases.tt:5
 msgid "You are viewing releases by {artist}."
 msgstr ""
 
@@ -10381,12 +10403,12 @@ msgid ""
 "use by other relationships."
 msgstr ""
 
-#: ../root/elections/show.tt:82
+#: ../root/elections/show.tt:88
 msgid ""
 "You cannot vote for this candidate, because you are not an auto-editor."
 msgstr ""
 
-#: ../root/elections/show.tt:84
+#: ../root/elections/show.tt:90
 msgid ""
 "You cannot vote for this candidate, because you proposed / seconded them."
 msgstr ""
@@ -10409,7 +10431,7 @@ msgstr ""
 msgid "You have no collections!"
 msgstr "コレクションがありません。"
 
-#: ../root/user/collections.tt:35
+#: ../root/user/collections.tt:37
 msgid "You have no collections."
 msgstr "コレクションがありません"
 
@@ -10659,7 +10681,7 @@ msgstr "{date} かれ現在まで"
 msgid "help"
 msgstr "ヘルプ"
 
-#: ../root/cdtoc/attach_list.tt:55
+#: ../root/cdtoc/attach_list.tt:58
 msgid "hide tracklist"
 msgstr "トラックリストを隠す"
 
@@ -10846,7 +10868,7 @@ msgstr[0] ""
 msgid "send email"
 msgstr "メール送信"
 
-#: ../root/cdtoc/attach_list.tt:31 ../root/cdtoc/attach_list.tt:53
+#: ../root/cdtoc/attach_list.tt:32 ../root/cdtoc/attach_list.tt:56
 msgid "show tracklist"
 msgstr ""
 
@@ -10944,7 +10966,7 @@ msgstr "{artist} - {name}"
 msgid "{artist} as {name}"
 msgstr "{artist} （{name}として）"
 
-#: ../root/cdtoc/attach_artist_releases.tt:43
+#: ../root/cdtoc/attach_artist_releases.tt:46
 msgid "{artist} has no releases which have only {n} track."
 msgid_plural "{artist} has no releases which have {n} tracks."
 msgstr[0] "{artist}は{n}トラックのあるリリースはありません。"
@@ -11152,7 +11174,7 @@ msgid "{num} release found"
 msgid_plural "{num} releases found"
 msgstr[0] ""
 
-#: ../root/cdtoc/attach_filter_release.tt:18
+#: ../root/cdtoc/attach_filter_release.tt:20
 msgid "{num} release found matching your query."
 msgid_plural "{num} release found matching your query."
 msgstr[0] ""
@@ -11237,7 +11259,7 @@ msgstr ""
 msgid "{user}"
 msgstr "{user}"
 
-#: ../root/user/collections.tt:37
+#: ../root/user/collections.tt:39
 msgid "{user} has no public collections."
 msgstr ""
 
@@ -12242,7 +12264,7 @@ msgstr "同じ国を一回以上使用できません。"
 msgid "You must select an existing label."
 msgstr ""
 
-#: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Information.pm:113
+#: ../lib/MusicBrainz/Server/Form/ReleaseEditor/Information.pm:109
 msgid "You must select an existing release group."
 msgstr ""
 
