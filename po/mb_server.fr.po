@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-02-03 17:44-0700\n"
-"PO-Revision-Date: 2014-02-04 01:59+0000\n"
+"PO-Revision-Date: 2014-02-04 02:28+0000\n"
 "Last-Translator: Alain-Olivier  Breysse\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -1362,11 +1362,11 @@ msgstr "Abonnement à cet artiste"
 
 #: ../root/release/edit/tracklist.tt:331
 msgid "Artist as credited on this track:"
-msgstr "Artiste tel que crédité sur cette piste :"
+msgstr "Artiste comme il est crédité sur cette piste :"
 
 #: ../root/components/forms.tt:309
 msgid "Artist as credited:"
-msgstr "Artiste tel que crédité :"
+msgstr "Artiste comme il est crédité :"
 
 #: ../root/components/filter-form.tt:11
 msgid "Artist credit:"
@@ -1683,7 +1683,7 @@ msgid ""
 "hyperlinks. Example: If you want to use [unknown] in the annotation, you'll "
 "have to write <code>&amp;#91;unknown&amp;#93;</code> then it will appear the"
 " way you intended it to show."
-msgstr "Comme les crochets [] sont utilisés pour créer des hyperliens, vous devez utiliser le code HTML équivalent (<code>&amp;#91;</code> pour [) et (<code>&amp;#93;</code> pour ]) si vous ne voulez pas qu'ils soient convertis en hyperliens. Exemple : si voulez utiliser [inconnu] dans l'annotation, vous devrez écrire <code>&amp;#91;inconnu&amp;#93;</code> puis cela apparaîtra tel que vous le désirez."
+msgstr "Comme les crochets [] sont utilisés pour créer des hyperliens, vous devez utiliser le code HTML équivalent (<code>&amp;#91;</code> pour [) et (<code>&amp;#93;</code> pour ]) si vous ne voulez pas qu'ils soient convertis en hyperliens. Exemple : si voulez utiliser [inconnu] dans l'annotation, vous devrez écrire <code>&amp;#91;inconnu&amp;#93;</code> puis cela apparaîtra comme vous le désirez."
 
 #: ../root/account/registered.tt:13
 msgid ""
@@ -3743,7 +3743,7 @@ msgstr "Comment fonctionnent les modifications"
 
 #: ../root/release/edit/information.tt:274
 msgid "I confirm that this is the barcode as it appears on the release."
-msgstr "Je confirme que c'est le code-barres tel qu'il est sur la parution."
+msgstr "Je confirme que c'est le code-barres comme l est sur la parution."
 
 #: ../root/taglookup/nag.tt:25
 msgid "I just donated! Why am I seeing this?"
@@ -8421,7 +8421,7 @@ msgstr "Voici une liste de tous les crédits reçu par {artist} dans la base de 
 msgid ""
 "This is an {history|old revision} of this annotation, as edited by {user} on"
 " {date}. {current|View current revision}."
-msgstr "Ceci est une {history|ancienne version} de cette annotation, telle que l'a modifié l'utilisateur {user} le {date}. {current|Voir la version actuelle}."
+msgstr "Ceci est une {history|ancienne version} de cette annotation, comme l'a modifiée l'utilisateur {user} le {date}. {current|Voir la version actuelle}."
 
 #: ../root/alias/edit_form.tt:23
 msgid "This is the primary alias for this locale"
@@ -8798,7 +8798,7 @@ msgid ""
 "This report lists releases without any disc IDs that probably contain data "
 "tracks (like videos). A data track should be deleted if it is the last track"
 " of the CD and there is no disc ID."
-msgstr "Ce rapporte liste les parutions sans ID de disque qui contiennent probablement des pistes de données (telles que des vidéos). Une piste de données devrait être effacée si c'est la dernière piste du CD et qu'il n'y a pas d'ID de disque."
+msgstr "Ce rapporte liste les parutions sans ID de disque qui contiennent probablement des pistes de données (comme des vidéos). Une piste de données devrait être effacée si c'est la dernière piste du CD et qu'il n'y a pas d'ID de disque."
 
 #: ../root/report/duplicate_relationships_works.tt:6
 msgid ""
@@ -9137,7 +9137,7 @@ msgstr "Afin de créer une nouvelle liste des pistes, en utiliser une existante 
 
 #: ../root/release/edit/information.tt:72
 msgid "To edit types, please {edit_page|edit the release group}."
-msgstr ""
+msgstr "Pour modifier les types, veuillez {edit_page|modifier le groupe de parution}."
 
 #: ../root/elections/show.tt:96
 msgid "To find out if you can vote for this candidate, please {url|log in}."
@@ -9515,7 +9515,7 @@ msgstr "UUID :"
 
 #: ../root/release/edit/tracklist.tt:8
 msgid "Unable to parse the tracklist you entered."
-msgstr ""
+msgstr "Impossible d'analyser la liste de pistes que vous avez saisie."
 
 #: ../root/main/401.tt:1 ../root/main/401.tt:3
 msgid "Unauthorized Request"
@@ -10329,7 +10329,7 @@ msgid ""
 "main MusicBrainz database until an editor decides to take your submitted "
 "information, ensures it meets our standards and inserts it into the main "
 "database."
-msgstr "Vous pouvez saisir les données du CD telles qu'elles y apparaissent sans avoir à faire partie de MusicBrainz. Les CDs saisis ainsi seront disponibles pour les programmes clients. Toutefois ces informations ne seront pas incluses dans la base de données principale de MusicBrainz tant qu'un éditeur ne les aura prises, se sera assuré quelles correspondent à nos normes et les insère dans la base de données principale."
+msgstr "Vous pouvez saisir les données du CD comme elles y apparaissent sans avoir à faire partie de MusicBrainz. Les CDs saisis ainsi seront disponibles pour les programmes clients. Toutefois ces informations ne seront pas incluses dans la base de données principale de MusicBrainz tant qu'un éditeur ne les aura prises, se sera assuré quelles correspondent à nos normes et les insère dans la base de données principale."
 
 #: ../root/account/edit.tt:30
 msgid ""
@@ -10351,7 +10351,7 @@ msgstr "Vous ne pouvez pas enlever l'attribut de relation « {type} » car il es
 
 #: ../root/scripts/text_strings.tt:156
 msgid "You cannot use the same country more than once."
-msgstr ""
+msgstr "Vous ne pouvez pas utiliser le même pays plus d'une fois."
 
 #: ../root/elections/show.tt:87
 msgid ""
@@ -10399,15 +10399,15 @@ msgstr "Vous avez utilisé l'artiste à usage spécial {valink|Artistes divers} 
 msgid ""
 "You haven't added any media yet. Click on the \"Add Disc\" button below to "
 "add one."
-msgstr ""
+msgstr "Vous n'avez encore ajouté aucun support. Cliquer sur le bouton « Ajouter un disque » ci-dessous pour en ajouter un."
 
 #: ../root/scripts/text_strings.tt:150
 msgid "You haven‘t entered a complete artist credit."
-msgstr ""
+msgstr "Vous n'avez pas saisi un crédit d'artiste complet."
 
 #: ../root/scripts/text_strings.tt:119
 msgid "You haven’t made any changes!"
-msgstr ""
+msgstr "Vous n'avez apporté aucun changement !"
 
 #: ../root/edit/cancel.tt:14
 msgid ""
@@ -10431,7 +10431,7 @@ msgstr "Vous devez être connecté pour voter sur les modifications"
 
 #: ../root/scripts/text_strings.tt:151
 msgid "You must enter a title and select an artist for every track."
-msgstr ""
+msgstr "Vous devez saisir un titre et choisir un artiste pour chaque piste."
 
 #: ../root/main/401.tt:9
 msgid ""
@@ -10524,7 +10524,7 @@ msgid ""
 "You’ve used the {valink|Various Artists} special purpose artist on some "
 "tracks below. {valink|Various Artists} should very rarely be used on tracks;"
 " please make sure the artists have been entered correctly."
-msgstr ""
+msgstr "Vous avez utilisé l'artiste à usage spécial {valink|Artistes divers} sur certaines pistes ci-dessous. {valink|Artistes divers} ne devrait que très rarement être utilisé pour des pistes. Veuillez vous assurer que les artistes ont été saisis correctement."
 
 #: ../root/scripts/text_strings.tt:30
 msgid "[ Unknown ]"
@@ -11067,7 +11067,7 @@ msgstr "{mbid|<abbr title=« Identifiant MusicBrainz »>MBID</abbr>} :"
 
 #: ../root/scripts/text_strings.tt:162
 msgid "{name} - Add Release"
-msgstr ""
+msgstr "{name} - Ajouter une parution"
 
 #: ../root/scripts/text_strings.tt:164
 msgid "{name} - Edit Release"
@@ -11409,7 +11409,7 @@ msgstr "Utilisateur modifié avec succès."
 
 #: ../lib/MusicBrainz/Server/Controller/Artist.pm:445
 msgid "You cannot merge a special purpose artist into another artist"
-msgstr "Il n'est pas possible de fusionner un artiste usage spécial vers un autre artiste."
+msgstr "Il n'est pas possible de fusionner un artiste à usage spécial vers un autre artiste."
 
 #: ../lib/MusicBrainz/Server/Controller/Artist.pm:450
 msgid "You cannot merge into Deleted Artist"
@@ -11515,7 +11515,7 @@ msgstr "Les anciennes et nouvelles ID d'annotation doivent être des entiers pos
 msgid ""
 "Our Redis server appears to be down; some features may not work as intended "
 "or expected."
-msgstr ""
+msgstr "Notre serveur Redis semble être hors service. Certaines fonctions pourraient ne pas fonctionner comme prévu ou comme qu'attendu."
 
 #: ../lib/MusicBrainz/Server/Controller/User.pm:252
 #, perl-brace-format
