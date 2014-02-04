@@ -28,8 +28,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-02-03 17:44-0700\n"
-"PO-Revision-Date: 2014-02-04 00:47+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2014-02-04 01:59+0000\n"
+"Last-Translator: Alain-Olivier  Breysse\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -426,11 +426,11 @@ msgstr "Une relation entre {entity} et {url} existe déjà."
 
 #: ../root/scripts/text_strings.tt:158
 msgid "A release must contain at least one medium."
-msgstr ""
+msgstr "Une parution doit disposer d'au moins un support."
 
 #: ../root/scripts/text_strings.tt:154
 msgid "A release title is required."
-msgstr ""
+msgstr "Un titre de parution est obligatoire."
 
 #: ../root/search/index.tt:10
 msgid ""
@@ -439,7 +439,7 @@ msgstr "Une liste simple de toutes le entités est disponible sur nos pages de {
 
 #: ../root/scripts/text_strings.tt:153
 msgid "A tracklist is required."
-msgstr ""
+msgstr "Une liste des pistes est obligatoire."
 
 #: ../root/layout/menu.tt:112
 msgid "About"
@@ -575,7 +575,7 @@ msgstr "Ajouter un alias de lieu"
 
 #: ../root/scripts/text_strings.tt:161
 msgid "Add Release"
-msgstr ""
+msgstr "Ajouter une parution"
 
 #: ../root/layout/menu.tt:223
 msgctxt "button/menu"
@@ -948,7 +948,7 @@ msgid ""
 "All tracks require an associated recording. Click “Edit” to select a "
 "recording for each track. Choose “Add a new recording” if an appropriate one"
 " doesn’t exist yet."
-msgstr ""
+msgstr "Toute piste doit avoir un enregistrement associé. Cliquer sur « Modifier » pour choisir un enregistrement pour chaque piste. Choisir « Ajouter un nouvel enregistrement » s'il n'en existe pas d'approprié."
 
 #: ../root/oauth2/authorize.tt:19
 msgid "Allow access"
@@ -1362,11 +1362,11 @@ msgstr "Abonnement à cet artiste"
 
 #: ../root/release/edit/tracklist.tt:331
 msgid "Artist as credited on this track:"
-msgstr ""
+msgstr "Artiste tel que crédité sur cette piste :"
 
 #: ../root/components/forms.tt:309
 msgid "Artist as credited:"
-msgstr ""
+msgstr "Artiste tel que crédité :"
 
 #: ../root/components/filter-form.tt:11
 msgid "Artist credit:"
@@ -1382,7 +1382,7 @@ msgstr "Crédits :"
 
 #: ../root/components/forms.tt:296 ../root/release/edit/tracklist.tt:330
 msgid "Artist in MusicBrainz:"
-msgstr ""
+msgstr "Artiste dans MusicBrainz:"
 
 #: ../root/artist/layout.tt:6
 msgid "Artist information"
@@ -2040,7 +2040,7 @@ msgstr "Changer de mot de passe"
 
 #: ../root/release/edit/tracklist.tt:371
 msgid "Change all artists on this medium that match “{name}”"
-msgstr ""
+msgstr "Changer tous les artistes sur ce support qui correspondent à « {name } »"
 
 #: ../root/edit/relationship/create.tt:39
 #: ../root/edit/relationship/create.tt:43 ../root/edit/relationship/edit.tt:65
@@ -2290,7 +2290,7 @@ msgstr "Copier"
 
 #: ../root/components/forms.tt:342 ../root/release/edit/tracklist.tt:378
 msgid "Copy Credits"
-msgstr ""
+msgstr "Copier les crédits"
 
 #: ../root/release/edit/recordings.tt:122
 msgid "Copy all track changes to associated recordings."
@@ -2880,7 +2880,7 @@ msgstr "Modifier les relations : {release}"
 
 #: ../root/scripts/text_strings.tt:163
 msgid "Edit Release"
-msgstr ""
+msgstr "Modifier la parution"
 
 #: ../root/release/edit_annotation.tt:1
 msgid "Edit Release Annotation"
@@ -3438,7 +3438,7 @@ msgstr "Empreintes"
 msgid ""
 "First enter all track information, including titles and artist credits, in "
 "order to edit their recordings."
-msgstr ""
+msgstr "Saisir d'abord toutes les informations des pistes, incluant les titres et crédits d'artistes, afin de modifier leurs enregistrements."
 
 #: ../root/account/register.tt:53
 msgid ""
@@ -4138,7 +4138,7 @@ msgstr "Phrase de jointure"
 
 #: ../root/components/forms.tt:316 ../root/release/edit/tracklist.tt:332
 msgid "Join phrase:"
-msgstr ""
+msgstr "Phrase de jointure :"
 
 #: ../root/relationship/linkattributetype/instruments.tt:12
 msgid "Jump to:"
@@ -4349,7 +4349,7 @@ msgstr "Utilisateur limité"
 
 #: ../root/release/edit/tracklist.tt:20
 msgid "Lines start with a track number"
-msgstr ""
+msgstr "Les lignes commencent par un numéro de piste"
 
 #: ../root/recording/fingerprints.tt:32
 msgid "Link"
@@ -4378,7 +4378,7 @@ msgstr "Flux de données en direct"
 
 #: ../root/release/edit/editnote.tt:15
 msgid "Loading edit previews..."
-msgstr ""
+msgstr "Chargements des prévisualisations des modifications..."
 
 #: ../root/scripts/text_strings.tt:100
 msgid "Loading..."
@@ -4465,7 +4465,7 @@ msgstr "Besoin d'aide ? Consultez la {doc|documentation} ou la {faq|FAQ}."
 
 #: ../root/release/edit/recordings.tt:148
 msgid "Looking for suggested recordings..."
-msgstr ""
+msgstr "Recherche d'enregistrement suggérés..."
 
 #: ../root/scripts/text_strings.tt:42
 msgid "Lookup"
@@ -5493,7 +5493,7 @@ msgstr "Page {cur} de {total}"
 
 #: ../root/scripts/text_strings.tt:77
 msgid "Page {page} of {total}"
-msgstr ""
+msgstr "Page {page} sur {total}"
 
 #: ../root/admin/wikidoc/create.tt:8 ../root/admin/wikidoc/edit.tt:9
 msgid "Page:"
@@ -5530,7 +5530,7 @@ msgstr "Mot de passe :"
 
 #: ../root/components/forms.tt:343 ../root/release/edit/tracklist.tt:379
 msgid "Paste Credits"
-msgstr ""
+msgstr "Coller les crédits"
 
 #: ../root/oauth2/authorize.tt:12
 msgid "Perform the above operations when I'm not using the application"
@@ -7291,7 +7291,7 @@ msgstr "Certains artistes sont crédités sous d'autres noms"
 msgid ""
 "Some errors were detected in the data you’ve entered. Click on the tabs "
 "shaded red and correct any visible errors."
-msgstr ""
+msgstr "Des erreurs ont été détectées dans les données que vous avez saisies. Cliquez sur les onglets rouges et corrigez toute erreur visible. "
 
 #: ../root/layout/menu.tt:168 ../root/main/index.tt:12
 msgid "SongKong Tagger"
@@ -7572,7 +7572,7 @@ msgstr "Statut"
 
 #: ../root/release/edit/information.tt:78
 msgid "Status:"
-msgstr ""
+msgstr "État :"
 
 #: ../root/edit/info.tt:33
 msgctxt "edit status"
@@ -7634,7 +7634,7 @@ msgstr "Envoyer vos votes et notes de &amp; modification"
 
 #: ../root/release/edit/editnote.tt:49
 msgid "Submitting edits..."
-msgstr ""
+msgstr "Envoi des modifications..."
 
 #: ../root/artist/layout.tt:138 ../root/collection/layout.tt:27
 #: ../root/label/layout.tt:97
@@ -7686,7 +7686,7 @@ msgstr "Succès !"
 
 #: ../root/release/edit/recordings.tt:155
 msgid "Suggested recordings:"
-msgstr ""
+msgstr "Enregistrements suggérés :"
 
 #: ../root/edit/details/add_release_annotation.tt:30
 msgid "Summary:"
@@ -7900,7 +7900,7 @@ msgstr "Le numéro de catalogue que vous avez saisi ressemble à un ASIN d'Amazo
 
 #: ../root/scripts/text_strings.tt:65
 msgid "The check digit is {checkdigit}."
-msgstr ""
+msgstr "Le chiffre de vérification est {checkdigit}."
 
 #: ../root/release/edit/information.tt:294
 msgid ""
@@ -7976,7 +7976,7 @@ msgstr "Les {count} utilisateurs suivants ont le droit super-éditeurs :"
 msgid ""
 "The information you‘ve provided contains errors, and was not entered; please"
 " visit the tabs shaded in red, fix all visible errors, and try again."
-msgstr ""
+msgstr "L'information que vous avez fournie contient des erreurs et n'a pas été acceptée. Veuillez vérifier les onglets rouges, corriger toute erreur visible et ressayer."
 
 #: ../root/main/index.tt:104
 msgid ""
@@ -8456,7 +8456,7 @@ msgstr "Ce label n'a pas de balise."
 msgid ""
 "This medium already has disc IDs, so you may only change the format to a "
 "format that can have disc IDs."
-msgstr ""
+msgstr "Ce support a déjà des ID de disque, donc vous ne pouvez changer son format\nque pour un autre format pouvant avoir des ID de disque."
 
 #: ../root/cdtoc/attach_list.tt:25
 msgid "This medium format cannot have a disc ID attached"
