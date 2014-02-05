@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-02-05 17:49+0000\n"
+"PO-Revision-Date: 2014-02-05 20:58+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -2084,7 +2084,7 @@ msgstr "bevat diverse ondersteuning van"
 
 #: DB:link_type/long_link_phrase:83 DB:link_type/long_link_phrase:258
 msgid "contains samples from the IMDb entry at"
-msgstr "bevat samples van het dit lemma op IMDB"
+msgstr "bevat samples van het dit lemma op IMDB:"
 
 #: DB:link_type/long_link_phrase:271
 msgid "contains the lyrics for"
@@ -2181,7 +2181,7 @@ msgstr "discografiepagina's"
 
 #: DB:link_type/link_phrase:361 DB:link_type/long_link_phrase:361
 msgid "distributed"
-msgstr "gedistribueerd"
+msgstr "distribueerde"
 
 #: DB:link_type/reverse_link_phrase:361
 msgid "distributed by"
@@ -3097,7 +3097,7 @@ msgstr "verzorgde {additional:aanvullende} {guest:gast} {solo:solo} {vocal:vocal
 
 #: DB:link_type/long_link_phrase:149
 msgid "performed {additional} {solo} {guest} {vocal} {vocal:|vocals} on"
-msgstr "verzorgde {guest:als gast} {additional:aanvullende} {solo:solo} {vocal:vocalen} {vocal|vocals:vocalen} op"
+msgstr "verzorgde {guest:als gast} {additional:aanvullende} {solo:solo} {vocal:vocalen} {vocal|vocalen} op"
 
 #: DB:link_type/link_phrase:108 DB:link_type/long_link_phrase:108
 msgid "performs as"
@@ -3229,7 +3229,7 @@ msgstr "verzorgde {additional:aanvullende} fotografie voor"
 #: DB:link_type/long_link_phrase:208 DB:link_type/long_link_phrase:161
 #: DB:link_type/long_link_phrase:269
 msgid "published"
-msgstr "gepubliceerd"
+msgstr "publiceerde"
 
 #: DB:link_type/link_phrase:252 DB:link_type/reverse_link_phrase:362
 #: DB:link_type/reverse_link_phrase:127 DB:link_type/reverse_link_phrase:206
@@ -3543,7 +3543,7 @@ msgstr "bijbehorend boekje {additional:aanvullend} geschreven door"
 #: DB:link_type/link_phrase:297 DB:link_type/long_link_phrase:293
 #: DB:link_type/long_link_phrase:295 DB:link_type/long_link_phrase:297
 msgid "{additional:additionally} arranged"
-msgstr "{additional:aanvullend} gearrangeerd"
+msgstr "arrangeerde {additional:aanvullend}"
 
 #: DB:link_type/long_link_phrase:282 DB:link_type/long_link_phrase:158
 #: DB:link_type/long_link_phrase:41
@@ -3586,7 +3586,7 @@ msgstr "{additional:aanvullend} orkestrator"
 #: DB:link_type/link_phrase:47 DB:link_type/link_phrase:153
 #: DB:link_type/long_link_phrase:47 DB:link_type/long_link_phrase:153
 msgid "{additional:additionally} remixed"
-msgstr "{additional:aanvullend} geremixt"
+msgstr "remixte {additional:aanvullend}"
 
 #: DB:link_type/reverse_link_phrase:69 DB:link_type/reverse_link_phrase:231
 msgid "{additional:additionally} sampled by"
@@ -3601,22 +3601,22 @@ msgstr "schreef {additional:aanvullend}"
 msgid ""
 "{additional:additionally} {assistant} {associate} programmed {instrument:% "
 "on}"
-msgstr "programmeerde {additional:aanvullend} {assistant:assisterend} {associate:geassocieerd} {instrument:% op}"
+msgstr "programmeerde {additional:aanvullend} {assistant:assisterend} {associate:geassocieerd} {instrument:% on}"
 
 #: DB:link_type/link_phrase:140 DB:link_type/link_phrase:31
 #: DB:link_type/long_link_phrase:140 DB:link_type/long_link_phrase:31
 msgid ""
 "{additional:additionally} {assistant} {associate} {co:co-}audio engineered"
-msgstr "{additional:aanvullend} {assistant:assisterend} {associate:geassocieerd} {co:co} audio-ingenieur"
+msgstr "{additional:aanvullend} {assistant:assisterend} {associate:geassocieerd} {co:co} audio-ingenieur op"
 
 #: DB:link_type/link_phrase:38 DB:link_type/link_phrase:144
 #: DB:link_type/long_link_phrase:38 DB:link_type/long_link_phrase:144
 msgid "{additional:additionally} {assistant} {associate} {co:co-}edited"
-msgstr "{additional:aanvullend} {assistant:assisterend} {associate:geassocieerd} {co:co} redigeerde"
+msgstr "{co:co}redigeerde {assistant:als assistent} {additional:aanvullend} {associate:geassocieerd} "
 
 #: DB:link_type/long_link_phrase:42 DB:link_type/long_link_phrase:136
 msgid "{additional:additionally} {assistant} {associate} {co:co-}mastered"
-msgstr "{additional:aanvullend} {assistant:als assistent} {associate:geassocieerd} {co:co} masterde"
+msgstr "masterde {additional:aanvullend} {assistant:als assistent} {associate:geassocieerd} {co:co}"
 
 #: DB:link_type/link_phrase:143 DB:link_type/link_phrase:26
 #: DB:link_type/long_link_phrase:143 DB:link_type/long_link_phrase:26
@@ -3643,7 +3643,7 @@ msgstr "{additional:aanvullend} {assistant:assisterend} {associate:geassocieerd}
 msgid ""
 "{additional:additionally} {assistant} {associate} "
 "{co:co-}{executive:executive }engineered"
-msgstr "werkte als {additional:aanvullend} {assistant:assistent} {associate:geassocieerd} {co:co-} {executive:leidinggevend} technicus"
+msgstr "werkte als {additional:aanvullend} {assistant:assistent} {associate:geassocieerd} {co:co-} {executive:leidinggevend} technicus op"
 
 #: DB:link_type/link_phrase:30 DB:link_type/link_phrase:141
 #: DB:link_type/long_link_phrase:30 DB:link_type/long_link_phrase:141
@@ -3655,7 +3655,7 @@ msgstr "produceerde {additional:aanvullend} {assistant:assistent} {associate:gea
 #: DB:link_type/link_phrase:51 DB:link_type/link_phrase:156
 #: DB:link_type/long_link_phrase:51 DB:link_type/long_link_phrase:156
 msgid "{additional:additionally} {guest} {solo} performed"
-msgstr "voerde {additional:aanvullend} {guest:gast} {solo:solo} uit"
+msgstr "voerde {additional:aanvullend} {guest:gast} {solo:solo} uit:"
 
 #: DB:link_type/link_phrase:282 DB:link_type/link_phrase:158
 #: DB:link_type/link_phrase:41
