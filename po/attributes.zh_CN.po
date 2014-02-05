@@ -8,14 +8,15 @@
 # RedHotHeat <email address hidden>, 2012
 #   LI Daobing <email address hidden>, 2007, 2008, 2009, 2010, 2011
 # LI Daobing <email address hidden>, 2007, 2008, 2009, 2010
+# mry_33 <email address hidden>, 2014
 #   Tobias Toedter <email address hidden>, 2007
 #   - Wang Jian <email address hidden>, 2000
 # YunQiang Su <email address hidden>, 2011
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-02-03 22:26+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2014-02-05 13:59+0000\n"
+"Last-Translator: mry_33 <email address hidden>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/musicbrainz/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,17 +27,17 @@ msgstr ""
 #: DB:medium_format/name:30
 msgctxt "medium_format"
 msgid "10\" Vinyl"
-msgstr "10寸乙烯基"
+msgstr "10寸黑胶唱片"
 
 #: DB:medium_format/name:31
 msgctxt "medium_format"
 msgid "12\" Vinyl"
-msgstr "12寸乙烯基"
+msgstr "12寸黑胶唱片"
 
 #: DB:medium_format/name:29
 msgctxt "medium_format"
 msgid "7\" Vinyl"
-msgstr "7寸乙烯基"
+msgstr "7寸黑胶唱片"
 
 #: DB:medium_format/name:34
 msgctxt "medium_format"
@@ -61,7 +62,7 @@ msgstr ""
 #: DB:work_type/name:1
 msgctxt "work_type"
 msgid "Aria"
-msgstr ""
+msgstr "咏叹调"
 
 #: DB:artist_alias_type/name:1
 msgctxt "alias_type"
@@ -71,7 +72,7 @@ msgstr ""
 #: DB:release_group_secondary_type/name:5
 msgctxt "release_group_secondary_type"
 msgid "Audiobook"
-msgstr ""
+msgstr "有声读物"
 
 #: DB:cover_art_archive.art_type/name:2
 msgctxt "cover_art_type"
@@ -81,12 +82,12 @@ msgstr ""
 #: DB:work_type/name:2
 msgctxt "work_type"
 msgid "Ballet"
-msgstr ""
+msgstr "芭蕾"
 
 #: DB:medium_format/name:24
 msgctxt "medium_format"
 msgid "Betamax"
-msgstr ""
+msgstr "Betamax录像带"
 
 #: DB:medium_format/name:20
 msgctxt "medium_format"
@@ -111,12 +112,12 @@ msgstr ""
 #: DB:release_status/name:3
 msgctxt "release_status"
 msgid "Bootleg"
-msgstr ""
+msgstr "非法制作"
 
 #: DB:label_type/name:5
 msgctxt "label_type"
 msgid "Bootleg Production"
-msgstr ""
+msgstr "非法制作的产品"
 
 #: DB:release_group_primary_type/name:12
 msgctxt "release_group_primary_type"
@@ -136,22 +137,22 @@ msgstr ""
 #: DB:medium_format/name:33
 msgctxt "medium_format"
 msgid "CD-R"
-msgstr "CD-R"
+msgstr "可写光盘"
 
 #: DB:work_type/name:3
 msgctxt "work_type"
 msgid "Cantata"
-msgstr ""
+msgstr "康塔塔"
 
 #: DB:release_packaging/name:4
 msgctxt "release_packaging"
 msgid "Cardboard/Paper Sleeve"
-msgstr ""
+msgstr "硬纸板"
 
 #: DB:medium_format/name:9
 msgctxt "medium_format"
 msgid "Cartridge"
-msgstr ""
+msgstr "打印机的墨盒"
 
 #: DB:medium_format/name:8
 msgctxt "medium_format"
@@ -176,12 +177,12 @@ msgstr ""
 #: DB:release_group_secondary_type/name:1
 msgctxt "release_group_secondary_type"
 msgid "Compilation"
-msgstr ""
+msgstr "曲集"
 
 #: DB:work_type/name:4
 msgctxt "work_type"
 msgid "Concerto"
-msgstr ""
+msgstr "协奏曲"
 
 #: DB:area_type/name:1
 msgctxt "area_type"
@@ -191,17 +192,17 @@ msgstr ""
 #: DB:medium_format/name:11
 msgctxt "medium_format"
 msgid "DAT"
-msgstr "DAT"
+msgstr "数字式录音带"
 
 #: DB:medium_format/name:16
 msgctxt "medium_format"
 msgid "DCC"
-msgstr ""
+msgstr "数据通信信道"
 
 #: DB:release_group_secondary_type/name:8
 msgctxt "release_group_secondary_type"
 msgid "DJ-mix"
-msgstr ""
+msgstr "混音DJ"
 
 #: DB:medium_format/name:2
 msgctxt "medium_format"
@@ -221,12 +222,12 @@ msgstr "DVD-Video"
 #: DB:release_packaging/name:3
 msgctxt "release_packaging"
 msgid "Digipak"
-msgstr ""
+msgstr "环保装CD"
 
 #: DB:medium_format/name:12
 msgctxt "medium_format"
 msgid "Digital Media"
-msgstr ""
+msgstr "数字媒体"
 
 #: DB:release_packaging/name:13
 msgctxt "release_packaging"
@@ -236,7 +237,7 @@ msgstr ""
 #: DB:label_type/name:1
 msgctxt "label_type"
 msgid "Distributor"
-msgstr ""
+msgstr "分销商"
 
 #: DB:area_type/name:5
 msgctxt "area_type"
@@ -246,12 +247,12 @@ msgstr ""
 #: DB:medium_format/name:4
 msgctxt "medium_format"
 msgid "DualDisc"
-msgstr ""
+msgstr "双面碟"
 
 #: DB:release_group_primary_type/name:3
 msgctxt "release_group_primary_type"
 msgid "EP"
-msgstr ""
+msgstr "细碟"
 
 #: DB:release_packaging/name:10
 msgctxt "release_packaging"
@@ -301,7 +302,7 @@ msgstr ""
 #: DB:label_type/name:2
 msgctxt "label_type"
 msgid "Holding"
-msgstr ""
+msgstr "举办"
 
 #: DB:medium_format/name:38
 msgctxt "medium_format"
@@ -316,17 +317,17 @@ msgstr ""
 #: DB:release_group_secondary_type/name:4
 msgctxt "release_group_secondary_type"
 msgid "Interview"
-msgstr ""
+msgstr "采访"
 
 #: DB:release_packaging/name:1
 msgctxt "release_packaging"
 msgid "Jewel Case"
-msgstr ""
+msgstr "塑料盒CD"
 
 #: DB:release_packaging/name:6
 msgctxt "release_packaging"
 msgid "Keep Case"
-msgstr ""
+msgstr "全塑料外壳"
 
 #: DB:label_alias_type/name:1
 msgctxt "alias_type"
@@ -336,7 +337,7 @@ msgstr ""
 #: DB:medium_format/name:5
 msgctxt "medium_format"
 msgid "LaserDisc"
-msgstr ""
+msgstr "激光光盘"
 
 #: DB:artist_alias_type/name:2
 msgctxt "alias_type"
@@ -351,12 +352,12 @@ msgstr ""
 #: DB:release_group_secondary_type/name:6
 msgctxt "release_group_secondary_type"
 msgid "Live"
-msgstr ""
+msgstr "现场的"
 
 #: DB:work_type/name:7
 msgctxt "work_type"
 msgid "Madrigal"
-msgstr ""
+msgstr "小曲"
 
 #: DB:gender/name:1
 msgctxt "gender"
@@ -366,7 +367,7 @@ msgstr "男性"
 #: DB:work_type/name:8
 msgctxt "work_type"
 msgid "Mass"
-msgstr ""
+msgstr "弥撒"
 
 #: DB:cover_art_archive.art_type/name:4
 msgctxt "cover_art_type"
@@ -376,7 +377,7 @@ msgstr ""
 #: DB:medium_format/name:6
 msgctxt "medium_format"
 msgid "MiniDisc"
-msgstr ""
+msgstr "迷你光盘"
 
 #: DB:release_group_secondary_type/name:9
 msgctxt "release_group_secondary_type"
@@ -386,7 +387,7 @@ msgstr ""
 #: DB:work_type/name:9
 msgctxt "work_type"
 msgid "Motet"
-msgstr ""
+msgstr "赞美诗"
 
 #: DB:area_type/name:4
 msgctxt "area_type"
@@ -406,12 +407,12 @@ msgstr ""
 #: DB:release_status/name:1
 msgctxt "release_status"
 msgid "Official"
-msgstr ""
+msgstr "官方的"
 
 #: DB:work_type/name:10
 msgctxt "work_type"
 msgid "Opera"
-msgstr ""
+msgstr "歌剧"
 
 #: DB:work_type/name:24
 msgctxt "work_type"
@@ -421,12 +422,12 @@ msgstr ""
 #: DB:work_type/name:11
 msgctxt "work_type"
 msgid "Oratorio"
-msgstr ""
+msgstr "清唱剧"
 
 #: DB:label_type/name:4
 msgctxt "label_type"
 msgid "Original Production"
-msgstr ""
+msgstr "初版"
 
 #: DB:artist_type/name:3
 msgctxt "artist_type"
@@ -461,27 +462,27 @@ msgstr ""
 #: DB:work_type/name:12
 msgctxt "work_type"
 msgid "Overture"
-msgstr ""
+msgstr "序曲"
 
 #: DB:work_type/name:13
 msgctxt "work_type"
 msgid "Partita"
-msgstr ""
+msgstr "组曲"
 
 #: DB:artist_type/name:1
 msgctxt "artist_type"
 msgid "Person"
-msgstr ""
+msgstr "个人"
 
 #: DB:medium_format/name:15
 msgctxt "medium_format"
 msgid "Piano Roll"
-msgstr ""
+msgstr "钢琴卷帘"
 
 #: DB:work_type/name:21
 msgctxt "work_type"
 msgid "Poem"
-msgstr ""
+msgstr "诗歌"
 
 #: DB:cover_art_archive.art_type/name:11
 msgctxt "cover_art_type"
@@ -491,12 +492,12 @@ msgstr ""
 #: DB:label_type/name:3
 msgctxt "label_type"
 msgid "Production"
-msgstr ""
+msgstr "产品"
 
 #: DB:release_status/name:2
 msgctxt "release_status"
 msgid "Promotion"
-msgstr ""
+msgstr "促销"
 
 #: DB:work_type/name:23
 msgctxt "work_type"
@@ -516,7 +517,7 @@ msgstr "出版者"
 #: DB:work_type/name:14
 msgctxt "work_type"
 msgid "Quartet"
-msgstr ""
+msgstr "四重奏"
 
 #: DB:medium_format/name:10
 msgctxt "medium_format"
@@ -526,12 +527,12 @@ msgstr ""
 #: DB:label_type/name:6
 msgctxt "label_type"
 msgid "Reissue Production"
-msgstr ""
+msgstr "重新发行的产品"
 
 #: DB:release_group_secondary_type/name:7
 msgctxt "release_group_secondary_type"
 msgid "Remix"
-msgstr ""
+msgstr "合成"
 
 #: DB:label_type/name:8
 msgctxt "label_type"
@@ -541,7 +542,7 @@ msgstr ""
 #: DB:medium_format/name:3
 msgctxt "medium_format"
 msgid "SACD"
-msgstr "SACD"
+msgstr "超级音频CD"
 
 #: DB:medium_format/name:36
 msgctxt "medium_format"
