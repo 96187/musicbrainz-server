@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-02-05 21:21-0700\n"
-"PO-Revision-Date: 2014-02-06 12:10+0000\n"
+"PO-Revision-Date: 2014-02-06 18:59+0000\n"
 "Last-Translator: Luca Salini <email address hidden>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/musicbrainz/language/it/)\n"
 "MIME-Version: 1.0\n"
@@ -942,7 +942,7 @@ msgid ""
 "All tracks require an associated recording. Click “Edit” to select a "
 "recording for each track. Choose “Add a new recording” if an appropriate one"
 " doesn’t exist yet."
-msgstr ""
+msgstr "Tutte le tracce necessitano di avere una registrazione associata. Clicca su \"Modifica\" per selezionare una registrazione per ogni traccia. Scegli \"Aggiungi una nuova registrazione\" se non ne esiste già una adatta."
 
 #: ../root/oauth2/authorize.tt:19
 msgid "Allow access"
@@ -2034,7 +2034,7 @@ msgstr "Cambia password"
 
 #: ../root/release/edit/tracklist.tt:371
 msgid "Change all artists on this medium that match “{name}”"
-msgstr ""
+msgstr "Cambia tutti gli artisti su questo supporto che corrispondono a \"{name}\""
 
 #: ../root/edit/relationship/create.tt:39
 #: ../root/edit/relationship/create.tt:43 ../root/edit/relationship/edit.tt:65
@@ -3432,7 +3432,7 @@ msgstr "Impronte digitali"
 msgid ""
 "First enter all track information, including titles and artist credits, in "
 "order to edit their recordings."
-msgstr ""
+msgstr "Per prima cosa inserisci le informazioni su ogni traccia, inclusi titoli e accreditamenti artista, per poter modificare le rispettive registrazioni."
 
 #: ../root/account/register.tt:53
 msgid ""
@@ -6883,7 +6883,7 @@ msgstr "Consulta la <a href=\"{url}\" target=\"_blank\">lista di tipi di confezi
 msgid ""
 "Review the {url|documentation} on release editor seeding and make sure your "
 "data is formatted correctly."
-msgstr ""
+msgstr "Consulta la {url|documentazione} sui valori di inizializzazione dell'editor di pubblicazioni e assicurati che i tuoi dati siano formattati correttamente."
 
 #: ../root/account/applications.tt:35
 msgid "Revoke Access"
@@ -7285,7 +7285,7 @@ msgstr "Alcuni artisti accreditati con nomi alternativi"
 msgid ""
 "Some errors were detected in the data you’ve entered. Click on the tabs "
 "shaded red and correct any visible errors."
-msgstr ""
+msgstr "Sono stati rilevati alcuni errori nei dati che hai inserito. Clicca sulle schede colorate di rosso e correggi gli errori evidenziati."
 
 #: ../root/layout/menu.tt:168 ../root/main/index.tt:12
 msgid "SongKong Tagger"
@@ -7916,7 +7916,7 @@ msgstr "I dati che hai inviato non apportano alcun cambiamento ai dati già pres
 
 #: ../root/release/edit/layout.tt:23
 msgid "The data you’ve seeded contained the following errors:"
-msgstr ""
+msgstr "I dati che hai fornito contengono i seguenti errori:"
 
 #: ../root/tag/cloud.tt:9
 msgid "The database has no tags."
@@ -7970,7 +7970,7 @@ msgstr "I {count} utenti seguenti hanno privilegi da auto-editor:"
 msgid ""
 "The information you‘ve provided contains errors, and was not entered; please"
 " visit the tabs shaded in red, fix all visible errors, and try again."
-msgstr ""
+msgstr "Le informazioni che hai fornito contengono errori e non sono state inserite; clicca sulle schede colorate di rosso, correggi tutti gli errori evidenziati e riprova."
 
 #: ../root/main/index.tt:104
 msgid ""
@@ -8198,7 +8198,7 @@ msgstr "Questo ISWC non è associato ad alcuna opera. Se desideri associarlo ad 
 msgid ""
 "This URL is not allowed for the selected relationship type, or is "
 "incorrectly formatted."
-msgstr ""
+msgstr "Questo URL non è consentito per il tipo di relazione selezionato o è formattato in modo non corretto."
 
 #: ../root/alias/edit_form.tt:36
 msgid "This alias is no longer current."
@@ -8456,7 +8456,7 @@ msgstr "Questa etichetta non ha tag."
 msgid ""
 "This medium already has disc IDs, so you may only change the format to a "
 "format that can have disc IDs."
-msgstr ""
+msgstr "Questo supporto possiede già ID disco, quindi puoi cambiarne il formato solo in uno che può possedere ID disco."
 
 #: ../root/cdtoc/attach_list.tt:25
 msgid "This medium format cannot have a disc ID attached"
@@ -9137,7 +9137,7 @@ msgstr "Per creare un nuovo elenco di tracce, riutilizzarne uno già esistente o
 
 #: ../root/release/edit/information.tt:72
 msgid "To edit types, please {edit_page|edit the release group}."
-msgstr ""
+msgstr "Per modificare i tipi, {edit_page|modifica il gruppo di pubblicazioni}."
 
 #: ../root/elections/show.tt:96
 msgid "To find out if you can vote for this candidate, please {url|log in}."
@@ -9515,7 +9515,7 @@ msgstr "UUID:"
 
 #: ../root/release/edit/tracklist.tt:8
 msgid "Unable to parse the tracklist you entered."
-msgstr ""
+msgstr "Non è possibile analizzare l'elenco di tracce che hai inserito."
 
 #: ../root/main/401.tt:1 ../root/main/401.tt:3
 msgid "Unauthorized Request"
@@ -10403,7 +10403,7 @@ msgstr ""
 
 #: ../root/scripts/text_strings.tt:151
 msgid "You haven‘t entered a complete artist credit."
-msgstr ""
+msgstr "Non hai inserito un accreditamento artista completo."
 
 #: ../root/scripts/text_strings.tt:119
 msgid "You haven’t made any changes!"
@@ -10431,7 +10431,7 @@ msgstr "Devi effettuare l'accesso per votare sulle modifiche."
 
 #: ../root/scripts/text_strings.tt:152
 msgid "You must enter a title and select an artist for every track."
-msgstr ""
+msgstr "Devi inserire un titolo e selezionare un artista per ogni traccia."
 
 #: ../root/main/401.tt:9
 msgid ""
@@ -10524,7 +10524,7 @@ msgid ""
 "You’ve used the {valink|Various Artists} special purpose artist on some "
 "tracks below. {valink|Various Artists} should very rarely be used on tracks;"
 " please make sure the artists have been entered correctly."
-msgstr ""
+msgstr "Hai utilizzato l'artista di uso speciale {valink|Artisti Vari} in alcune delle tracce qui sotto. {valink|Artisti Vari} non va normalmente utilizzato nelle tracce; assicurati di aver inserito correttamente gli artisti."
 
 #: ../root/scripts/text_strings.tt:30
 msgid "[ Unknown ]"
@@ -11519,7 +11519,7 @@ msgstr "Gli ID della vecchia e nuova annotazione devono essere numeri interi uni
 msgid ""
 "Our Redis server appears to be down; some features may not work as intended "
 "or expected."
-msgstr ""
+msgstr "Il nostro server Redis sembra essere inattivo; alcune funzionalità potrebbero non funzionare come previsto."
 
 #: ../lib/MusicBrainz/Server/Controller/User.pm:252
 #, perl-brace-format
