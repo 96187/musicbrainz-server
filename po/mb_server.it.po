@@ -22,8 +22,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-02-05 21:21-0700\n"
-"PO-Revision-Date: 2014-02-06 04:22+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2014-02-06 11:45+0000\n"
+"Last-Translator: Luca Salini <email address hidden>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/musicbrainz/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -420,7 +420,7 @@ msgstr "Una relazione tra {entity} e {url} è già esistente."
 
 #: ../root/scripts/text_strings.tt:159
 msgid "A release must contain at least one medium."
-msgstr ""
+msgstr "Una pubblicazione deve contenere almeno un supporto."
 
 #: ../root/scripts/text_strings.tt:155
 msgid "A release title is required."
@@ -569,7 +569,7 @@ msgstr "Aggiungi alias al luogo"
 
 #: ../root/scripts/text_strings.tt:162
 msgid "Add Release"
-msgstr ""
+msgstr "Aggiungi pubblicazione"
 
 #: ../root/layout/menu.tt:223
 msgctxt "button/menu"
@@ -1356,11 +1356,11 @@ msgstr "Sottoscrizioni di artisti"
 
 #: ../root/release/edit/tracklist.tt:331
 msgid "Artist as credited on this track:"
-msgstr ""
+msgstr "Artista come accreditato su questa traccia:"
 
 #: ../root/components/forms.tt:309
 msgid "Artist as credited:"
-msgstr ""
+msgstr "Artista come accreditato:"
 
 #: ../root/components/filter-form.tt:11
 msgid "Artist credit:"
@@ -1376,7 +1376,7 @@ msgstr "Accreditamenti artista:"
 
 #: ../root/components/forms.tt:296 ../root/release/edit/tracklist.tt:330
 msgid "Artist in MusicBrainz:"
-msgstr ""
+msgstr "Artista su MusicBrainz:"
 
 #: ../root/artist/layout.tt:6
 msgid "Artist information"
@@ -2284,7 +2284,7 @@ msgstr "Copia"
 
 #: ../root/components/forms.tt:342 ../root/release/edit/tracklist.tt:378
 msgid "Copy Credits"
-msgstr ""
+msgstr "Copia accreditamenti"
 
 #: ../root/release/edit/recordings.tt:122
 msgid "Copy all track changes to associated recordings."
@@ -2874,7 +2874,7 @@ msgstr "Modifica relazioni: {release}"
 
 #: ../root/scripts/text_strings.tt:164
 msgid "Edit Release"
-msgstr ""
+msgstr "Modifica pubblicazione"
 
 #: ../root/release/edit_annotation.tt:1
 msgid "Edit Release Annotation"
@@ -4132,7 +4132,7 @@ msgstr "Connettore"
 
 #: ../root/components/forms.tt:316 ../root/release/edit/tracklist.tt:332
 msgid "Join phrase:"
-msgstr ""
+msgstr "Connettore:"
 
 #: ../root/relationship/linkattributetype/instruments.tt:12
 msgid "Jump to:"
@@ -4343,7 +4343,7 @@ msgstr "Utente limitato"
 
 #: ../root/release/edit/tracklist.tt:20
 msgid "Lines start with a track number"
-msgstr ""
+msgstr "Le righe iniziano con il numero della traccia"
 
 #: ../root/recording/fingerprints.tt:32
 msgid "Link"
@@ -5487,7 +5487,7 @@ msgstr "Pagina {cur} di {total}"
 
 #: ../root/scripts/text_strings.tt:77
 msgid "Page {page} of {total}"
-msgstr ""
+msgstr "Pagina {page} di {total}"
 
 #: ../root/admin/wikidoc/create.tt:8 ../root/admin/wikidoc/edit.tt:9
 msgid "Page:"
@@ -5524,7 +5524,7 @@ msgstr "Password:"
 
 #: ../root/components/forms.tt:343 ../root/release/edit/tracklist.tt:379
 msgid "Paste Credits"
-msgstr ""
+msgstr "Incolla accreditamenti"
 
 #: ../root/oauth2/authorize.tt:12
 msgid "Perform the above operations when I'm not using the application"
@@ -7566,7 +7566,7 @@ msgstr "Status"
 
 #: ../root/release/edit/information.tt:78
 msgid "Status:"
-msgstr ""
+msgstr "Status:"
 
 #: ../root/edit/info.tt:33
 msgctxt "edit status"
@@ -7680,7 +7680,7 @@ msgstr "Operazione completata!"
 
 #: ../root/release/edit/recordings.tt:155
 msgid "Suggested recordings:"
-msgstr ""
+msgstr "Registrazioni suggerite:"
 
 #: ../root/edit/details/add_release_annotation.tt:30
 msgid "Summary:"
@@ -7894,7 +7894,7 @@ msgstr "Il numero di catalogo inserito sembra essere un ASIN di Amazon."
 
 #: ../root/scripts/text_strings.tt:65
 msgid "The check digit is {checkdigit}."
-msgstr ""
+msgstr "La cifra di controllo è {checkdigit}."
 
 #: ../root/release/edit/information.tt:294
 msgid ""
@@ -10351,7 +10351,7 @@ msgstr "Non puoi rimuovere l'attributo di relazione \"{type}\" poiché è ancora
 
 #: ../root/scripts/text_strings.tt:157
 msgid "You cannot use the same country more than once."
-msgstr ""
+msgstr "Non puoi utilizzare lo stesso Paese più di una volta."
 
 #: ../root/elections/show.tt:87
 msgid ""
@@ -10407,7 +10407,7 @@ msgstr ""
 
 #: ../root/scripts/text_strings.tt:119
 msgid "You haven’t made any changes!"
-msgstr ""
+msgstr "Non hai effettuato nessuna modifica!"
 
 #: ../root/edit/cancel.tt:14
 msgid ""
@@ -10884,7 +10884,7 @@ msgstr "fino al {date}"
 
 #: ../root/scripts/text_strings.tt:166
 msgid "video"
-msgstr ""
+msgstr "video"
 
 #: ../root/edit/details/add_area_alias.tt:10
 #: ../root/edit/details/add_artist_alias.tt:10
@@ -11071,7 +11071,7 @@ msgstr "{mbid|<abbr title=\"Identificatore di MusicBrainz\">MBID</abbr>}:"
 
 #: ../root/scripts/text_strings.tt:163
 msgid "{name} - Add Release"
-msgstr ""
+msgstr "{name} - Aggiungi pubblicazione"
 
 #: ../root/scripts/text_strings.tt:165
 msgid "{name} - Edit Release"
