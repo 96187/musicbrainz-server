@@ -4,17 +4,17 @@
 # 
 # Translators:
 # nikki, 2013-2014
-# nikki2 <email address hidden>, 2012
-# nikki2 <email address hidden>, 2012
+# nikki2 <b4931048@nwldx.com>, 2012
+# nikki2 <b4931048@nwldx.com>, 2012
 # <email address hidden>, 2012
 #   <email address hidden>, 2012
 # Ian McEwen <email address hidden>, 2012
-# Ian McEwen <email address hidden>, 2012
+# Ian McEwen <ianmcorvidae@ianmcorvidae.net>, 2012
 # Maurits Meulenbelt <email address hidden>, 2012
-# Maurits Meulenbelt <email address hidden>, 2012
-# Maurits Meulenbelt <email address hidden>, 2013-2014
+# Maurits Meulenbelt <mfmeulenbelt@gmail.com>, 2012
+# Maurits Meulenbelt <mfmeulenbelt@gmail.com>, 2013-2014
 # Nikolai Prokoschenko <email address hidden>, 2011
-# Nikolai Prokoschenko <email address hidden>, 2011
+# Nikolai Prokoschenko <nikolai@prokoschenko.de>, 2011
 # nikki, 2012
 # nikki, 2013
 # nikki, 2012
@@ -23,8 +23,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-02-10 16:54-0700\n"
-"PO-Revision-Date: 2014-02-10 23:55+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2014-02-12 14:57+0000\n"
+"Last-Translator: Maurits Meulenbelt <mfmeulenbelt@gmail.com>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -4176,7 +4176,7 @@ msgstr "Gebied van platenmaatschappij"
 #: ../root/edit/details/merge_labels.tt:10
 #: ../root/edit/details/merge_labels.tt:47 ../root/label/merge.tt:14
 msgid "Label Code"
-msgstr ""
+msgstr "Platenmaatschappij-code"
 
 #: ../root/label/index.tt:5
 msgid "Label Code:"
@@ -5149,7 +5149,7 @@ msgstr "Geen relatie-eigenschappen gevonden."
 
 #: ../root/artist/index.tt:106
 msgid "No release groups found."
-msgstr ""
+msgstr "Geen uitgavegroepen gevonden."
 
 #: ../root/tag/release_group.tt:1
 msgid "No release groups with this tag were found."
@@ -7203,17 +7203,17 @@ msgstr "De pagina laat nu alle uitgavegroepen van deze artiest zien. {show_offic
 msgid ""
 "Showing all release groups by this artist. {show_va|Show various artists "
 "release groups instead}."
-msgstr ""
+msgstr "De pagina laat nu alle uitgavegroepen van deze artiest zien. {show_va|Laat in plaats hiervan alleen uitgavegroepen van diverse artiesten zien}."
 
 #: ../root/artist/index.tt:123
 msgid "Showing all release groups for various artists."
-msgstr ""
+msgstr "De pagina laat nu uitgavegroepen van diverse artiesten zien."
 
 #: ../root/artist/index.tt:145
 msgid ""
 "Showing all release groups for various artists. {show_non_va|Show release "
 "groups by this artist instead}."
-msgstr ""
+msgstr "De pagina laat nu alle uitgavegroepen voor diverse artiesten zien. {show_non_va|Laat in plaats hiervan uitgavegroepen van deze artiest zien}."
 
 #: ../root/artist/index.tt:153
 msgid ""
@@ -7226,7 +7226,7 @@ msgstr "De pagina laat nu alle uitgavegroepen voor diverse artiesten zien. {show
 msgid ""
 "Showing all release groups for various artists. {show_official|Show only "
 "official various artists release groups instead}."
-msgstr ""
+msgstr "De pagina laat nu alle uitgavegroepen van diverse artiesten zien. {Laat in plaats hiervan alleen officiële uitgavegroepen van diverse artiesten zien}."
 
 #: ../root/artist/index.tt:109
 msgid ""
@@ -7245,7 +7245,7 @@ msgstr "De pagina laat nu officiële uitgavegroepen voor diverse artiesten zien.
 msgid ""
 "Showing official release groups for various artists. {show_all|Show all "
 "various artists release groups instead}."
-msgstr ""
+msgstr "De pagina laat officiële uitgavegroepen van diverse artiesten zien. {show_all|Laat in plaats hiervan alle uitgavegroepen van diverse artiesten zien}."
 
 #: ../root/artist/recordings.tt:20
 msgid ""
@@ -8264,7 +8264,7 @@ msgstr "Deze artiest heeft geen uitgaves"
 msgid ""
 "This artist does not have any various artists release groups. "
 "{show_non_va|Show release groups by this artist instead}."
-msgstr ""
+msgstr "Deze artiest heeft geen uitgavegroepen van diverse artiesten. {show_non_va|Laat in plaats hiervan alle uitgavegroepen van deze artiest zien}."
 
 #: ../root/artist/edit_form.tt:80 ../root/scripts/text_strings.tt:68
 msgid "This artist has ended."
@@ -8298,7 +8298,7 @@ msgstr "Deze artiest is momenteel niet verbonden met composities."
 
 #: ../root/artist/index.tt:116 ../root/artist/index.tt:132
 msgid "This artist only has release groups by various artists."
-msgstr ""
+msgstr "Deze artiest heeft alleen uitgavegroepen van diverse artiesten."
 
 #: ../root/artist/releases.tt:25
 msgid "This artist only has releases by various artists."
@@ -8306,11 +8306,11 @@ msgstr "Deze artiest heeft alleen uitgaves met diverse artiesten."
 
 #: ../root/artist/index.tt:122 ../root/artist/index.tt:144
 msgid "This artist only has unofficial release groups by various artists."
-msgstr ""
+msgstr "De artiest heeft alleen onofficiële uitgavegroepen van diverse artiesten."
 
 #: ../root/artist/index.tt:112
 msgid "This artist only has unofficial release groups."
-msgstr ""
+msgstr "Deze artiest heeft alleen onofficiële uitgavegroepen."
 
 #: ../root/scripts/text_strings.tt:115
 #: ../lib/MusicBrainz/Server/Form/Role/LinkType.pm:111
