@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-02-14 20:17-0700\n"
-"PO-Revision-Date: 2014-02-16 12:17+0000\n"
+"PO-Revision-Date: 2014-02-16 22:52+0000\n"
 "Last-Translator: Mihkel Tõnnov <email address hidden>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/musicbrainz/language/et/)\n"
 "MIME-Version: 1.0\n"
@@ -7194,7 +7194,7 @@ msgstr "Näidatakse selle artisti kõiki väljalaskerühmi. {show_official|Näit
 msgid ""
 "Showing all release groups by this artist. {show_va|Show various artists "
 "release groups instead}."
-msgstr "Näidatakse kõiki selle artisti nimel väljalaskerühmi. {show_all|Näita eri esitajatega väljalaskerühmi}"
+msgstr "Näidatakse kõiki selle artisti nimel väljalaskerühmi. {show_va|Näita eri esitajatega väljalaskerühmi}"
 
 #: ../root/artist/index.tt:123
 msgid "Showing all release groups for various artists."
@@ -7204,7 +7204,7 @@ msgstr "Näidatakse kõiki eri esitajatega väljalaskerühmi."
 msgid ""
 "Showing all release groups for various artists. {show_non_va|Show release "
 "groups by this artist instead}."
-msgstr "Näidatakse kõiki eri esitajatega väljalaskerühmi. {show_subset|Näita selle artisti nimel väljalaskerühmi}"
+msgstr "Näidatakse kõiki eri esitajatega väljalaskerühmi. {show_non_va|Näita selle artisti nimel väljalaskerühmi}"
 
 #: ../root/artist/index.tt:153
 msgid ""
@@ -8255,7 +8255,7 @@ msgstr "Sel artistil pole ühtki väljalaset."
 msgid ""
 "This artist does not have any various artists release groups. "
 "{show_non_va|Show release groups by this artist instead}."
-msgstr "Sel artistil pole väljalaskerühmi eri esitajate hulgas. {show_subset|Näita selle artisti nimel väljalaskerühmi}"
+msgstr "Sel artistil pole väljalaskerühmi eri esitajate hulgas. {show_non_va|Näita selle artisti nimel väljalaskerühmi}"
 
 #: ../root/artist/edit_form.tt:80 ../root/scripts/text_strings.tt:68
 msgid "This artist has ended."
