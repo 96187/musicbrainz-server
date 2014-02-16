@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-02-14 20:17-0700\n"
-"PO-Revision-Date: 2014-02-16 11:56+0000\n"
+"PO-Revision-Date: 2014-02-16 12:17+0000\n"
 "Last-Translator: Mihkel Tõnnov <email address hidden>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/musicbrainz/language/et/)\n"
 "MIME-Version: 1.0\n"
@@ -251,7 +251,7 @@ msgstr "(oli helikandja {position}: „{name}” väljalaskel „{release}”)"
 msgid ""
 "* Match indicates the total difference in seconds between the CD you "
 "requested and the matches we found."
-msgstr ""
+msgstr "* Vastavus näitab koguerinevust sekundites soovitud CD ja leitud vastete vahel."
 
 #: ../root/artist/relationships.tt:56 ../root/place/performances.tt:50
 #: ../root/scripts/text_strings.tt:127
@@ -1093,7 +1093,7 @@ msgstr "Annotatsioonis saab kasutada piiratud hulka wikivormindusvalikuid:"
 
 #: ../root/artist/relationships.tt:9
 msgid "Appearances"
-msgstr ""
+msgstr "Esinemised"
 
 #: ../root/recording/index.tt:3
 msgid "Appears on releases"
@@ -1431,7 +1431,7 @@ msgstr "Artistid, kelle nimes on täpsustav märkus"
 #: ../root/report/artists_with_multiple_occurances_in_artist_credits.tt:3
 #: ../root/report/index.tt:26
 msgid "Artists occuring multiple times in the same artist credit"
-msgstr ""
+msgstr "Artistid, keda on samal artistiteabe väljal mainitud mitu korda"
 
 #: ../root/report/possible_collaborations.tt:1
 #: ../root/report/possible_collaborations.tt:3
@@ -2346,7 +2346,7 @@ msgstr "Loo uus seoseatribuut"
 
 #: ../root/relationship/linktype/tree.tt:47
 msgid "Create a new {type0}-{type1} relationship"
-msgstr ""
+msgstr "Uue {type0}–{type1} seose loomine"
 
 #: ../root/account/register.tt:1 ../root/account/register.tt:8
 msgid "Create an Account"
@@ -4540,7 +4540,7 @@ msgstr "Käsitsi sisestamine"
 
 #: ../root/release/lookup.tt:8
 msgid "Match"
-msgstr "Vaste"
+msgstr "Vastavus"
 
 #: ../root/cdtoc/lookup.tt:4 ../root/cdtoc/lookup.tt:78
 msgid "Matching CDs"
@@ -5223,7 +5223,7 @@ msgstr "Selle sildiga teoseid ei leitud."
 
 #: ../root/relationship/linktype/tree.tt:62
 msgid "No {type0}-{type1} relationship types found."
-msgstr ""
+msgstr "Ühtegi {type0}–{type1} seosetüüpi ei leitud."
 
 #: ../root/elections/nominate.tt:1 ../root/elections/nominate.tt:3
 msgid "Nominate a candidate for auto-editor"
@@ -8116,7 +8116,7 @@ msgid ""
 "at the bottom of the {alias_uri|aliases} tab and remove all existing "
 "{rel_uri|relationships} instead, which will allow ModBot to automatically "
 "remove this artist in the upcoming days."
-msgstr ""
+msgstr "Pole ühtegi salvestist, väljalaskerühma, väljalaset ega lugu, mille ainus artist oleks {name}. Kui tahad, et {name} andmebaasist eemaldatakse, siis toimeta kõiki artisti nimekujusid {alias_uri|aliaste} kaardil ja eemalda kõik olemasolevad {rel_uri|seosed}. Nii saab ModBot selle artisti lähipäevil automaatselt andmebaasist eemaldada."
 
 #: ../root/label/subscriptions.tt:11
 msgid "There are no users currently subscribed to this Label."
@@ -8367,7 +8367,7 @@ msgstr "See toimetus teeb rajapikkustes alla-sekundilisi parandusi."
 msgid ""
 "This edit was a \"Merge Releases (Various Artists)\" edit which additionally"
 " set the release artist to Various Artists."
-msgstr ""
+msgstr "See toimetus mestis eri esitajate väljalasked ja lisaks määras väljalaskeartistiks eri esitajad."
 
 #: ../root/components/common-macros.tt:680
 msgid "This edit was cancelled."
@@ -8574,7 +8574,7 @@ msgstr "See salvestis on video"
 msgid ""
 "This relationship edit also included changes to relationship attributes "
 "which no longer exist."
-msgstr ""
+msgstr "See seosetoimetus muutis ka seoseatribuute, mida enam olemas pole."
 
 #: ../root/edit/relationship/create.tt:97
 #: ../root/edit/relationship/edit.tt:128
@@ -8693,7 +8693,7 @@ msgstr "See aruanne loetleb kõik väljalasked, kus loonumbrid pole järjestikus
 msgid ""
 "This report lists artists that appear more than once in different positions "
 "within the same artist credit."
-msgstr ""
+msgstr "See aruanne loetleb artistid, kelle nimi esineb ühel ja samal artistiteabe väljal mitu korda."
 
 #: ../root/report/artists_with_no_subscribers.tt:6
 msgid ""
@@ -10639,7 +10639,7 @@ msgstr "lõppkuupäev"
 
 #: ../root/components/common-macros.tt:732
 msgid "ended"
-msgstr ""
+msgstr "lõppenud"
 
 #: ../root/components/common-macros.tt:732 ../root/edit/details/macros.tt:28
 msgid "from {begin_date} until {end_date}"
@@ -11044,7 +11044,7 @@ msgstr "{edit} on saanud mõne vastuhääle; selle heakskiitmiseks pead jätma t
 
 #: ../root/doc/relationship_type.tt:5
 msgid "{entity0}-{entity1}"
-msgstr ""
+msgstr "{entity0}–{entity1}"
 
 #: ../root/components/common-macros.tt:276
 #: ../root/components/common-macros.tt:1019 ../root/main/index.tt:124
@@ -11245,7 +11245,7 @@ msgstr "„{release}” ei ole ühtegi kogusse lisatud."
 
 #: ../root/relationship/linktype/index.tt:21
 msgid "{type0}-{type1}"
-msgstr ""
+msgstr "{type0}–{type1}"
 
 #: ../root/relationship/linktype/tree.tt:36
 msgid "{type0}-{type1} Relationship Types"
@@ -11253,7 +11253,7 @@ msgstr "{type0}–{type1} seosetüübid"
 
 #: ../root/relationship/linktype/tree.tt:44
 msgid "{type0}-{type1} relationship types"
-msgstr ""
+msgstr "{type0}–{type1} seosetüübid"
 
 #: ../root/work/layout.tt:1
 msgid "{type} “{work}”"
@@ -12127,11 +12127,11 @@ msgstr "{artist} pole lingitud ühegi andmebaasis leiduva artistiga — palun va
 
 #: ../lib/MusicBrainz/Server/Form/Field/ArtistCredit.pm:61
 msgid "Please add an artist name for each credit."
-msgstr ""
+msgstr "Palun sisesta artistinimi igale artistiteabe väljale."
 
 #: ../lib/MusicBrainz/Server/Form/Field/ArtistCredit.pm:76
 msgid "Artist credit field is required"
-msgstr ""
+msgstr "Artisti nimekuju on kohustuslik väli."
 
 #: ../lib/MusicBrainz/Server/Form/Field/Coordinates.pm:93
 msgid "These coordinates could not be parsed"
