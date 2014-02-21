@@ -6,24 +6,24 @@
 # <email address hidden>, 2012
 #   <email address hidden>, 2012
 # Gioele  <email address hidden>, 2012
-# Gioele <gioele@svario.it>, 2012
-# leofiore <leofiore@libero.it>, 2012
-# leofiore <leofiore@libero.it>, 2012
+# Gioele <email address hidden>, 2012
+# leofiore <email address hidden>, 2012
+# leofiore <email address hidden>, 2012
 # Luca Salini <email address hidden>, 2012
-# Luca Salini <salo.rock@gmail.com>, 2012-2013
+# Luca Salini <email address hidden>, 2012-2013
 # nikki, 2012-2013
 # nikki, 2013
 # nikki, 2012
-# Luca Salini <salo.rock@gmail.com>, 2012-2013
-# Luca Salini <salo.rock@gmail.com>, 2013-2014
-# Luca Salini <salo.rock@gmail.com>, 2012
+# Luca Salini <email address hidden>, 2012-2013
+# Luca Salini <email address hidden>, 2013-2014
+# Luca Salini <email address hidden>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-02-21 00:18-0700\n"
-"PO-Revision-Date: 2014-02-21 15:49+0000\n"
-"Last-Translator: Luca Salini <salo.rock@gmail.com>\n"
+"PO-Revision-Date: 2014-02-21 16:28+0000\n"
+"Last-Translator: Luca Salini <email address hidden>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/musicbrainz/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -705,7 +705,7 @@ msgstr "Aggiungi un altro"
 
 #: ../root/components/forms.tt:377
 msgid "Add another link:"
-msgstr ""
+msgstr "Aggiungi un altro collegamento:"
 
 #: ../root/scripts/text_strings.tt:45
 msgid "Add another medium"
@@ -744,7 +744,7 @@ msgstr "Aggiungi alias all'etichetta"
 
 #: ../root/components/forms.tt:377
 msgid "Add link:"
-msgstr ""
+msgstr "Aggiungi collegamento:"
 
 #: ../root/place/add_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Place/AddAlias.pm:14
@@ -2040,7 +2040,7 @@ msgstr "Cambia password"
 
 #: ../root/release/edit/tracklist.tt:370
 msgid "Change all artists on this release that match “{name}”"
-msgstr ""
+msgstr "Cambia tutti gli artisti che corrispondono a \"{name}\" su questa pubblicazione"
 
 #: ../root/edit/relationship/create.tt:39
 #: ../root/edit/relationship/create.tt:43 ../root/edit/relationship/edit.tt:65
@@ -3411,7 +3411,7 @@ msgstr[1] "Scade tra <span class=\"tooltip\" title=\"{exactdate}\">{num} minuti<
 #: ../root/recording/edit_form.tt:19 ../root/release/edit/information.tt:227
 #: ../root/release_group/edit_form.tt:18 ../root/work/edit_form.tt:18
 msgid "External Links"
-msgstr ""
+msgstr "Collegamenti esterni"
 
 #: ../root/layout/sidebar/sidebar-favicons.tt:38
 msgid "External links"
@@ -4382,7 +4382,7 @@ msgstr "Frasi di collegamento"
 
 #: ../root/annotation/edit.tt:53
 msgid "Links:"
-msgstr "Link:"
+msgstr "Collegamenti:"
 
 #: ../root/annotation/edit.tt:48
 msgid "Lists:"
@@ -5756,7 +5756,7 @@ msgstr "Vai alla documentazione sui <a href=\"{doc}\" target=\"_blank\">tipi di 
 
 #: ../root/scripts/text_strings.tt:143
 msgid "Please select a link type for the URL you’ve entered."
-msgstr ""
+msgstr "Seleziona un tipo di collegamento per l'URL che hai inserito."
 
 #: ../root/scripts/text_strings.tt:38
 msgid "Please select a relationship type."
@@ -5948,7 +5948,7 @@ msgstr "Guida rapida"
 
 #: ../root/edit/list_header.tt:4
 msgid "Quick links:"
-msgstr "Link rapidi:"
+msgstr "Collegamenti rapidi:"
 
 #: ../root/components/rating-macros.tt:1
 msgid "Rate: {rating} star"
@@ -6358,7 +6358,7 @@ msgstr "Gruppo di pubblicazioni di {artist}"
 
 #: ../root/layout/sidebar/sidebar-favicons.tt:47
 msgid "Release group external links"
-msgstr "Link esterni del gruppo di pubblicazioni"
+msgstr "Collegamenti esterni del gruppo di pubblicazioni"
 
 #: ../root/release_group/layout.tt:15
 msgid "Release group information"
@@ -6468,7 +6468,7 @@ msgstr "Pubblicazioni con più ASIN"
 #: ../root/report/multiple_discogs_links.tt:1
 #: ../root/report/multiple_discogs_links.tt:3
 msgid "Releases With Multiple Discogs Links"
-msgstr "Pubblicazioni con più link di Discogs"
+msgstr "Pubblicazioni con più collegamenti a Discogs"
 
 #: ../root/report/some_formats_unset.tt:1
 #: ../root/report/some_formats_unset.tt:3
@@ -6500,7 +6500,7 @@ msgstr "Pubblicazioni che possiedono più ASIN"
 
 #: ../root/report/index.tt:56
 msgid "Releases which have multiple Discogs links"
-msgstr "Pubblicazioni che possiedono più link di Discogs"
+msgstr "Pubblicazioni che possiedono più collegamenti a Discogs"
 
 #: ../root/report/index.tt:59
 msgid "Releases which have part of set relationships"
@@ -6676,7 +6676,7 @@ msgstr "Rimuovi alias dall'etichetta"
 
 #: ../root/components/forms.tt:402
 msgid "Remove Link"
-msgstr ""
+msgstr "Rimuovi collegamento"
 
 #: ../root/admin/wikidoc/delete.tt:1 ../root/admin/wikidoc/delete.tt:3
 msgid "Remove Page"
@@ -8241,7 +8241,7 @@ msgstr "Questo ISWC non è associato ad alcuna opera. Se desideri associarlo ad 
 msgid ""
 "This URL is not allowed for the selected link type, or is incorrectly "
 "formatted."
-msgstr ""
+msgstr "Questo URL non è consentito per il tipo di collegamento selezionato o è formattato in modo non corretto."
 
 #: ../root/alias/edit_form.tt:36
 msgid "This alias is no longer current."
@@ -8601,7 +8601,7 @@ msgstr "Questa registrazione è un video"
 
 #: ../root/scripts/text_strings.tt:170
 msgid "This relationship already exists."
-msgstr ""
+msgstr "Questa relazione è già esistente."
 
 #: ../root/edit/details/add_relationship.tt:13
 #: ../root/edit/details/edit_relationship.tt:14
@@ -10772,7 +10772,7 @@ msgstr "utente limitato"
 
 #: ../root/edit/relationship/edit.tt:26 ../root/scripts/text_strings.tt:88
 msgid "link"
-msgstr "link"
+msgstr "collegamento"
 
 #: ../root/edit/search_macros.tt:24
 msgid "match"
@@ -11035,7 +11035,7 @@ msgstr[1] "{count} valutazioni private non elencate."
 
 #: ../root/scripts/text_strings.tt:172
 msgid "{description} ({url|more documentation})"
-msgstr ""
+msgstr "{description} ({url|altra documentazione})"
 
 #: ../root/user/profile.tt:44
 msgid "{doc|Auto-Editor}"
@@ -11438,7 +11438,7 @@ msgstr "Almeno un parametro necessario mancante."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:204
 msgid "Sorry, this password reset link has expired."
-msgstr "Spiacenti, il link per reimpostare la password è scaduto."
+msgstr "Spiacenti, questo link per reimpostare la password è scaduto."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:262
 msgid "There is no user with this email"
@@ -11591,7 +11591,7 @@ msgstr "TOC non valido"
 msgid ""
 "Since your edit adding this object was still open, that edit has been "
 "cancelled instead of opening a new edit."
-msgstr ""
+msgstr "Visto che la tua modifica che aggiungeva questo oggetto era ancora aperta, anziché aprire una nuova modifica abbiamo annullato quella esistente."
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:108
 msgid "No title provided"
