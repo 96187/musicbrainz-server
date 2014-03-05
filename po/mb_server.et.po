@@ -15,8 +15,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-05 11:40-0700\n"
-"PO-Revision-Date: 2014-03-05 18:43+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2014-03-05 22:18+0000\n"
+"Last-Translator: Mihkel Tõnnov <email address hidden>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/musicbrainz/language/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -936,7 +936,7 @@ msgstr "Sellelt lehelt lahkudes lähevad kõik tehtud muudatused kaotsi."
 
 #: ../root/edit/details/merge_releases.tt:127
 msgid "All recordings for these releases are already merged."
-msgstr ""
+msgstr "Kõik nende väljalasete salvestised on juba mestitud."
 
 #: ../root/release/cover_art.tt:22
 msgid "All sizes:"
@@ -1686,7 +1686,7 @@ msgid ""
 "Because you provided an email address, an verification email has been sent "
 "to <code>{addr}</code>. Please check your mailbox and click on the link in "
 "the email to verify the new email address."
-msgstr "Kuna sisestasid e-postiaadressi, saatsime sulle kinnituskirja aadressil <code>{addr}</code> Palun vaata oma postkasti ning klõpsa uue e-postiaadressi kinnitamiseks kirjas olevat linki."
+msgstr "Kuna sisestasid e-posti aadressi, saatsime sulle kinnituskirja aadressil <code>{addr}</code> Palun vaata oma postkasti ning klõpsa uue e-postiaadressi kinnitamiseks kirjas olevat linki."
 
 #: ../root/main/index.tt:96
 msgid ""
@@ -5640,7 +5640,7 @@ msgstr "Palun vali tingimus"
 msgid ""
 "Please choose a valid image. Currently the Cover Art Archive only supports "
 "JPEG, PNG, GIF and PDF files."
-msgstr ""
+msgstr "Palun vali sobiv pilt. Hetkel lubab Kaanepildiarhiiv kasutada ainult JPEG-, PNG-, GIF- ja PDF-faile."
 
 #: ../root/scripts/text_strings.tt:41
 msgid "Please click lookup to search"
@@ -6005,7 +6005,7 @@ msgstr "Salvestise üksikasjad"
 
 #: ../root/edit/details/merge_releases.tt:96
 msgid "Recording Merges"
-msgstr ""
+msgstr "Mestitavad salvestised"
 
 #: ../root/recording/not_found.tt:1 ../root/recording/not_found.tt:2
 msgid "Recording Not Found"
@@ -7874,7 +7874,7 @@ msgstr "Aitäh MusicBrainzi toetamise eest!"
 msgid ""
 "Thank you, your email address has now been verified! If you still can't "
 "edit, please try to log out and log in again."
-msgstr "Sinu e-postiaadress on nüüd kinnitatud. Kui sa ikka veel toimetada ei saa, proovi välja ja uuesti sisse logida."
+msgstr "Sinu e-posti aadress on nüüd kinnitatud. Kui sa ikka veel toimetada ei saa, proovi välja ja uuesti sisse logida."
 
 #: ../root/taglookup/not_found.tt:4
 msgid ""
@@ -8365,7 +8365,7 @@ msgstr "Seda kogu pole sildistatud."
 msgid ""
 "This edit does not store recording merge information and is closed, so no "
 "recording merge information can be shown."
-msgstr ""
+msgstr "See toimetus ei hõlma salvestiste mestimise teavet ning kuna see on juba suletud, pole salvestiste mestimise teavet võimalik näidata."
 
 #: ../root/components/common-macros.tt:682
 msgid ""
@@ -8468,7 +8468,7 @@ msgstr "See on MusicBrainzi peegelserver. Andmete lisamiseks või muutmiseks {ur
 msgid ""
 "This is a development server. Your email address is not private or secure. "
 "Proceed with caution!"
-msgstr "See on arendusserver. Sinu e-postiaadressi ei hoita privaatselt ega turvaliselt. Jätka ettevaatlikult!"
+msgstr "See on arendusserver. Sinu e-posti aadressi ei hoita privaatselt ega turvaliselt. Jätka ettevaatlikult!"
 
 #: ../root/user/login.tt:27
 msgid "This is a development server; all passwords have been reset to \"mb\"."
@@ -9339,7 +9339,7 @@ msgstr "Rada"
 
 #: ../root/edit/details/merge_releases.tt:99
 msgid "Track #"
-msgstr ""
+msgstr "Loo nr"
 
 #: ../root/track/not_found.tt:1 ../root/track/not_found.tt:2
 msgid "Track Not Found"
@@ -9969,7 +9969,7 @@ msgid ""
 "We have sent you a verification email to <code>{email}</code>. Please check "
 "your mailbox and click on the link in the email to verify the new email "
 "address."
-msgstr "Saatsime sulle kinnituskirja aadressil <code>{email}</code>. Palun vaata oma postkasti ning klõpsa uue e-postiaadressi kinnitamiseks kirjas olevat linki."
+msgstr "Saatsime sulle kinnituskirja aadressil <code>{email}</code>. Palun vaata oma postkasti ning klõpsa uue aadressi kinnitamiseks kirjas olevat linki."
 
 #: ../root/cdtoc/lookup.tt:10
 msgid "We used DiscID <code>{discid}</code> to look up this information."
@@ -10566,7 +10566,7 @@ msgstr "Sinu e-kiri on edukalt saadetud. Kasutaja {user} lehele minemiseks klõp
 msgid ""
 "Your homepage and biography will not show until you have confirmed your "
 "email."
-msgstr ""
+msgstr "Sinu veebisaiti ja enesetutvustust ei näidata enne, kui oled kinnitanud oma e-posti."
 
 #: ../root/account/reset_password_ok.tt:5
 msgid "Your password has been reset."
@@ -11481,7 +11481,7 @@ msgid ""
 "<strong>We were unable to send a confirmation email to you.</strong><br/>Please confirm that you have entered a valid\n"
 "             address by editing your {settings|account settings}. If the problem still persists, please contact us at\n"
 "             <a href=\"mailto:support@musicbrainz.org\">support@musicbrainz.org</a>."
-msgstr "<strong>Meil ei õnnestunud sulle kinnituskirja saata.</strong><br/>Palun vaata oma {settings|konto seadetest},\n             et sisestatud oleks korrektne e-postiaadress. Kui probleem siiski püsib, siis saada palun kiri aadressil\n             <a href=\"mailto:support@musicbrainz.org\">support@musicbrainz.org</a>."
+msgstr "<strong>Meil ei õnnestunud sulle kinnituskirja saata.</strong><br/>Palun vaata oma {settings|konto seadetest},\n             et sisestatud oleks korrektne e-posti aadress. Kui probleem siiski püsib, siis saada palun kiri aadressil\n             <a href=\"mailto:support@musicbrainz.org\">support@musicbrainz.org</a>."
 
 #: ../lib/MusicBrainz/Server/Controller/Admin.pm:76
 msgid "User successfully edited."
@@ -12380,7 +12380,7 @@ msgstr "Sünniaasta peab olema hilisem kui 1900"
 msgid ""
 "Biography and website fields may not be edited until your email address is "
 "confirmed."
-msgstr ""
+msgstr "Enesetutvustuse ja veebisaidi välju ei saa muuta enne, kui sinu e-posti aadress on kinnitatud."
 
 #: ../lib/MusicBrainz/Server/Form/User/Login.pm:9
 msgid "Username field is required"
