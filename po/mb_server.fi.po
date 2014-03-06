@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-05 11:40-0700\n"
-"PO-Revision-Date: 2014-03-06 12:58+0000\n"
+"PO-Revision-Date: 2014-03-06 13:12+0000\n"
 "Last-Translator: jozo <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -1395,7 +1395,7 @@ msgstr "Artistin nimi:"
 
 #: ../root/user/ratings_summary.tt:3 ../root/user/ratings.tt:2
 msgid "Artist ratings"
-msgstr "Artistin arvosanat"
+msgstr "Artistien arvostelut"
 
 #: ../root/cdstub/edit_form.tt:19
 msgid "Artist {n}:"
@@ -1606,7 +1606,7 @@ msgstr "Seuraa automaattisesti levymerkkejä, jotka luon."
 
 #: ../root/components/ratings.tt:19
 msgid "Average rating:"
-msgstr ""
+msgstr "Keskiarvo:"
 
 #: ../root/elections/not_found.tt:5
 msgid "Back to all elections."
@@ -4233,7 +4233,7 @@ msgstr "Levymerkin tiedot"
 
 #: ../root/user/ratings_summary.tt:3 ../root/user/ratings.tt:2
 msgid "Label ratings"
-msgstr "Levymerkin arvostelut"
+msgstr "Levymerkien arvostelut"
 
 #: ../root/components/common-macros.tt:571
 #: ../root/edit/details/add_label_alias.tt:3
@@ -6379,7 +6379,7 @@ msgstr "Julkaisuryhmän tiedot"
 
 #: ../root/user/ratings_summary.tt:3 ../root/user/ratings.tt:2
 msgid "Release group ratings"
-msgstr "Julkaisuryhmän arvostelut"
+msgstr "Julkaisuryhmien arvostelut"
 
 #: ../root/release/relationships.tt:4
 msgid "Release group relationships"
@@ -7677,7 +7677,7 @@ msgstr "Lähetä tämän CD-levyn tiedot käyttäen yksinkertaista menetelmää.
 
 #: ../root/edit/index.tt:76 ../root/edit/vote.tt:26
 msgid "Submit vote and note"
-msgstr "Lähetä ääni ja muokkausmerkintä"
+msgstr "Lähetä ääni ja merkintä"
 
 #: ../root/edit/list.tt:81
 msgid "Submit votes &amp; edit notes"
@@ -9778,7 +9778,7 @@ msgstr ""
 
 #: ../root/user/ratings_summary.tt:25
 msgid "View all ratings"
-msgstr ""
+msgstr "katso kaikki arvostelut"
 
 #: ../root/layout/sidebar/sidebar-favicons.tt:32
 msgid "View all relationships"
@@ -10094,7 +10094,7 @@ msgstr "Teoksen tiedot"
 
 #: ../root/user/ratings_summary.tt:3 ../root/user/ratings.tt:2
 msgid "Work ratings"
-msgstr "Teoksen arvostelut"
+msgstr "Teoksien arvostelut"
 
 #: ../root/edit/details/edit_work.tt:23
 msgid "Work type:"
@@ -12330,7 +12330,7 @@ msgstr "Tätä yhteyttä ei enää ole olemassa."
 
 #: ../lib/MusicBrainz/Server/Form/Role/EditNote.pm:19
 msgid "You must provide an edit note"
-msgstr ""
+msgstr "Muokkausmerkintä vaaditaan."
 
 #: ../lib/MusicBrainz/Server/Form/Role/LinkType.pm:43
 msgid ""
