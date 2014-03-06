@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-05 11:40-0700\n"
-"PO-Revision-Date: 2014-03-06 08:59+0000\n"
+"PO-Revision-Date: 2014-03-06 09:59+0000\n"
 "Last-Translator: jozo <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -504,7 +504,7 @@ msgstr "Lisää artistin alias"
 #: ../root/components/forms.tt:338 ../root/components/forms.tt:339
 #: ../root/release/edit/tracklist.tt:360
 msgid "Add Artist Credit"
-msgstr "Lisää artisti"
+msgstr "Lisää kirjoitusasu"
 
 #: ../root/cdstub/logged_in.tt:1 ../root/cdstub/logged_in.tt:2
 msgid "Add CD Stub"
@@ -1331,15 +1331,15 @@ msgstr "Artistin alue"
 
 #: ../root/edit/details/edit_artist_credit.tt:5
 msgid "Artist Credit:"
-msgstr ""
+msgstr "Kirjoitusasu:"
 
 #: ../root/artist/edit_form.tt:101
 msgid "Artist Credits"
-msgstr ""
+msgstr "Kirjoitusasut"
 
 #: ../root/edit/details/add_medium.tt:44
 msgid "Artist Credits:"
-msgstr ""
+msgstr "Kirjoitusasut:"
 
 #: ../root/artist/edit_form.tt:40
 msgid "Artist Details"
@@ -1363,7 +1363,7 @@ msgstr "Seuratut artistit"
 
 #: ../root/release/edit/tracklist.tt:330
 msgid "Artist as credited on this track:"
-msgstr ""
+msgstr "Artistin kirjoitusasu tässä kappaleessa:"
 
 #: ../root/components/forms.tt:320
 msgid "Artist as credited:"
@@ -1371,7 +1371,7 @@ msgstr ""
 
 #: ../root/components/filter-form.tt:11
 msgid "Artist credit:"
-msgstr ""
+msgstr "Kirjoitusasu:"
 
 #: ../root/artist/aliases.tt:8
 msgid "Artist credits"
@@ -1379,7 +1379,7 @@ msgstr ""
 
 #: ../root/edit/details/edit_medium.tt:215
 msgid "Artist credits:"
-msgstr ""
+msgstr "Kirjoitusasut:"
 
 #: ../root/components/forms.tt:307 ../root/release/edit/tracklist.tt:329
 msgid "Artist in MusicBrainz:"
@@ -2808,7 +2808,7 @@ msgstr "Muokkaa artistin lisätietoja"
 
 #: ../root/artist/edit_credit.tt:1 ../root/artist/edit_credit.tt:9
 msgid "Edit Artist Credit"
-msgstr ""
+msgstr "Muokkaa kirjoitusasua"
 
 #: ../root/collection/edit.tt:1
 msgid "Edit Collection"
@@ -4965,7 +4965,7 @@ msgstr "Uusi artisti"
 
 #: ../root/artist/edit_credit.tt:21 ../root/artist/split.tt:38
 msgid "New Artist Credit"
-msgstr ""
+msgstr "Uusi kirjoitusasu"
 
 #: ../root/release/add_cover_art.tt:120
 msgid "New Image Goes Here"
@@ -5780,7 +5780,7 @@ msgstr "Valitse jokin yhteystyyppi tämän alta. Tämä yhteystyyppi ryhmittää
 msgid ""
 "Please select the artist credits that you want to rename to follow the new "
 "artist name."
-msgstr "Valitse artistit jotka haluat uudelleennimetä uuden artistin nimeä vastaavaksi."
+msgstr "Valitse kirjoitusasut, jotka haluat uudelleennimetä uuden artistin nimeä vastaavaksi."
 
 #: ../root/cdtoc/attach_artist_releases.tt:7
 msgid "Please select the medium you wish to attach this CD TOC to."
@@ -6661,7 +6661,7 @@ msgstr "Poista artistin alias"
 
 #: ../root/components/forms.tt:316 ../root/release/edit/tracklist.tt:352
 msgid "Remove Artist Credit"
-msgstr ""
+msgstr "Poista kirjoitusasu"
 
 #: ../root/release/remove_cover_art.tt:1 ../root/release/remove_cover_art.tt:2
 msgid "Remove Cover Art"
@@ -6822,7 +6822,7 @@ msgstr "Poistettu"
 
 #: ../root/edit/details/merge_artists.tt:4
 msgid "Rename artist credits"
-msgstr ""
+msgstr "Muuta kirjoitusasua"
 
 #: ../root/release/cover_art.tt:55
 msgctxt "button/menu"
@@ -9688,7 +9688,7 @@ msgstr "Käytä <strong>XML-verkkopalveluamme</strong> tai <strong>sovelluskirja
 msgid ""
 "Use the following fields to enter collaborations, see the <a "
 "href=\"{url}\">Artist Credit</a> documentation for more information."
-msgstr "Käytä seuraavia kenttiä syöttääksesi yhteystyötä tehneiden artistien nimet. Lisätietoja <a href=\"{url}\">artistien nimeämisestä</a>. "
+msgstr "Käytä seuraavia kenttiä syöttääksesi yhteisstyötä tehneiden artistien nimet. Lisätietoja <a href=\"{url}\">artistien nimeämisestä</a>. "
 
 #: ../root/release/edit/tracklist.tt:160
 msgid "Use the following fields to search for a CD stub."
@@ -11718,7 +11718,7 @@ msgstr "Muokkaa artistia"
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/EditArtistCredit.pm:24
 msgid "Edit artist credit"
-msgstr "Muokkaa artistin tekijänimeä"
+msgstr "Muokkaa kirjoitusasua"
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/Merge.pm:13
 msgid "Merge artists"
