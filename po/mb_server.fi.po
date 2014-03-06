@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-05 11:40-0700\n"
-"PO-Revision-Date: 2014-03-06 07:59+0000\n"
+"PO-Revision-Date: 2014-03-06 08:59+0000\n"
 "Last-Translator: jozo <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -668,7 +668,7 @@ msgstr ""
 
 #: ../root/scripts/text_strings.tt:133
 msgid "Add a new place"
-msgstr ""
+msgstr "Lisää uusi paikka"
 
 #: ../root/release/edit/recordings.tt:185 ../root/scripts/text_strings.tt:134
 msgid "Add a new recording"
@@ -1138,7 +1138,7 @@ msgstr "Hyväksytty"
 
 #: ../root/edit/edit_header.tt:76 ../root/edit/info.tt:17
 msgid "Approve edit"
-msgstr "Hyväksy muokkaus: "
+msgstr "Hyväksy muokkaus"
 
 #: ../root/cdtoc/attach_confirm.tt:3
 msgid ""
@@ -5145,7 +5145,7 @@ msgstr "Ei nalkutusta"
 
 #: ../root/tag/place.tt:1
 msgid "No places with this tag were found."
-msgstr ""
+msgstr "Paikkoja ei löytynyt tällä luokituksella."
 
 #: ../root/user/ratings.tt:23
 msgid "No ratings."
@@ -5615,7 +5615,7 @@ msgstr "Paikat"
 #: ../root/report/deprecated_relationship_places.tt:3
 #: ../root/report/index.tt:95
 msgid "Places with deprecated relationships"
-msgstr ""
+msgstr "Paikat, joilla vanhentuneita yhteyksiä"
 
 #: ../root/account/registered.tt:7
 msgid ""
@@ -6697,7 +6697,7 @@ msgstr "Poista sivu"
 
 #: ../root/place/delete_alias.tt:1
 msgid "Remove Place Alias"
-msgstr ""
+msgstr "Poista paikan alias"
 
 #: ../root/recording/delete.tt:2
 msgid "Remove Recording"
@@ -6777,7 +6777,7 @@ msgstr "Poista levymerkin alias"
 #: ../root/place/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Place/DeleteAlias.pm:14
 msgid "Remove place alias"
-msgstr ""
+msgstr "Poista paikan alias"
 
 #: ../root/recording/layout.tt:35
 #: ../lib/MusicBrainz/Server/Edit/Recording/Delete.pm:12
@@ -7088,8 +7088,8 @@ msgstr[1] ""
 #: ../root/tag/index.tt:8
 msgid "See all {num} places"
 msgid_plural "See all {num} places"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Näytä {num} paikka"
+msgstr[1] "Näytä {num} paikkaa"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} recordings"
@@ -9276,7 +9276,7 @@ msgstr "Yhteiskesto:"
 
 #: ../root/report/deprecated_relationship_places.tt:8
 msgid "Total places found: {count}"
-msgstr ""
+msgstr "Löytyneitä paikkoja yhteensä: {count}"
 
 #: ../root/report/deprecated_relationship_recordings.tt:8
 #: ../root/report/duplicate_relationships_recordings.tt:7
@@ -10859,7 +10859,7 @@ msgstr "alkuperäinen"
 
 #: ../root/components/common-macros.tt:163
 msgid "places"
-msgstr ""
+msgstr "paikat"
 
 #: ../root/artist/subscribers.tt:14 ../root/collection/subscribers.tt:14
 #: ../root/label/subscribers.tt:14 ../root/user/subscribers.tt:14
@@ -11233,8 +11233,8 @@ msgstr[1] "{num} kuukautta sitten"
 #: ../root/tag/place.tt:1
 msgid "{num} place found"
 msgid_plural "{num} places found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num} paikka löytyi"
+msgstr[1] "{num} paikkaa löytyi"
 
 #: ../root/tag/recording.tt:1
 msgid "{num} recording found"
@@ -11874,23 +11874,23 @@ msgstr "Poista PUID-äänitunniste"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/AddAnnotation.pm:12
 msgid "Add place annotation"
-msgstr ""
+msgstr "Lisää paikalle lisätietoja"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/Create.pm:19
 msgid "Add place"
-msgstr ""
+msgstr "Lisää paikka"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/Delete.pm:10
 msgid "Remove place"
-msgstr ""
+msgstr "Poista paikka"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/Edit.pm:35
 msgid "Edit place"
-msgstr ""
+msgstr "Muokkaa paikkaa"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/Merge.pm:11
 msgid "Merge places"
-msgstr ""
+msgstr "Yhdistä paikat"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/AddAnnotation.pm:12
 msgid "Add recording annotation"
