@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-05 11:40-0700\n"
-"PO-Revision-Date: 2014-03-06 09:59+0000\n"
+"PO-Revision-Date: 2014-03-06 10:48+0000\n"
 "Last-Translator: jozo <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -1367,7 +1367,7 @@ msgstr "Artistin kirjoitusasu tässä kappaleessa:"
 
 #: ../root/components/forms.tt:320
 msgid "Artist as credited:"
-msgstr ""
+msgstr "Kirjoitusasu:"
 
 #: ../root/components/filter-form.tt:11
 msgid "Artist credit:"
@@ -1375,7 +1375,7 @@ msgstr "Kirjoitusasu:"
 
 #: ../root/artist/aliases.tt:8
 msgid "Artist credits"
-msgstr ""
+msgstr "Kirjoitusasut"
 
 #: ../root/edit/details/edit_medium.tt:215
 msgid "Artist credits:"
@@ -1383,7 +1383,7 @@ msgstr "Kirjoitusasut:"
 
 #: ../root/components/forms.tt:307 ../root/release/edit/tracklist.tt:329
 msgid "Artist in MusicBrainz:"
-msgstr ""
+msgstr "Artisti MusicBrainzissa:"
 
 #: ../root/artist/layout.tt:6
 msgid "Artist information"
@@ -2295,7 +2295,7 @@ msgstr "Kopioi"
 
 #: ../root/components/forms.tt:353 ../root/release/edit/tracklist.tt:377
 msgid "Copy Credits"
-msgstr ""
+msgstr "Kopioi artistitiedot"
 
 #: ../root/release/edit/recordings.tt:122
 msgid "Copy all track changes to associated recordings."
@@ -2350,7 +2350,7 @@ msgstr "Luo käyttäjätunnus"
 
 #: ../root/edit/relationship/create.tt:1 ../root/edit/relationship/create.tt:4
 msgid "Create Relationship"
-msgstr "Luo suhde"
+msgstr "Luo yhteys"
 
 #: ../root/user/collections.tt:44
 msgid "Create a new collection"
@@ -2378,11 +2378,11 @@ msgstr "Luo kokoelma"
 
 #: ../root/components/common-macros.tt:663
 msgid "Create relationship"
-msgstr "Luo suhde"
+msgstr "Luo yhteys"
 
 #: ../root/components/common-macros.tt:597
 msgid "Create relationship with {other}"
-msgstr "Lisää yhteis kohteeseen {other}"
+msgstr "Lisää yhteys kohteeseen {other}"
 
 #: ../root/edit/search_macros.tt:307
 msgid "Created"
@@ -2859,16 +2859,16 @@ msgstr "Muokkaa äänitteen lisätietoja"
 
 #: ../root/edit/relationship/edit.tt:1 ../root/edit/relationship/edit.tt:4
 msgid "Edit Relationship"
-msgstr "Muokkaa suhdetta"
+msgstr "Muokkaa yhteyttä"
 
 #: ../root/relationship/linkattributetype/edit.tt:1
 #: ../root/relationship/linkattributetype/edit.tt:3
 msgid "Edit Relationship Attribute"
-msgstr "Muokkaa yhteyden attribuuttia"
+msgstr "Muokkaa yhteyden ominaisuutta"
 
 #: ../root/admin/index.tt:7
 msgid "Edit Relationship Attributes"
-msgstr "Muokkaa yhteyden attribuuttia"
+msgstr "Muokkaa yhteyden ominaisuutta"
 
 #: ../root/relationship/linktype/edit.tt:1
 #: ../root/relationship/linktype/edit.tt:3
@@ -2950,7 +2950,7 @@ msgstr "Muokkaa artistin lisätietoja"
 
 #: ../root/edit/edit_header.tt:91
 msgid "Edit by {editor}"
-msgstr "Editorin {editor} muokkaus"
+msgstr "Muokkaaja: {editor}"
 
 #: ../root/label/edit_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Label/EditAlias.pm:12
@@ -2995,7 +2995,7 @@ msgstr "Muokkaa äänitteen lisätietoja"
 #: ../root/scripts/text_strings.tt:99
 #: ../lib/MusicBrainz/Server/Edit/Relationship/Edit.pm:29
 msgid "Edit relationship"
-msgstr "Muokkaa suhdetta"
+msgstr "Muokkaa yhteyttä"
 
 #: ../root/release/sidebar.tt:97
 msgid "Edit relationships"
@@ -3094,7 +3094,7 @@ msgstr "Seurattujen editorien muokkaukset"
 
 #: ../root/edit/subscribed-editors.tt:1 ../root/edit/subscribed-editors.tt:3
 msgid "Edits by Your Subscribed Editors"
-msgstr ""
+msgstr "Seuraamiesi editorien muokkaukset"
 
 #: ../root/user/edits.tt:1
 msgid "Edits by {name}"
@@ -4150,11 +4150,11 @@ msgstr "JavaScript tulee olla käytössä."
 
 #: ../root/scripts/text_strings.tt:26
 msgid "Join phrase"
-msgstr ""
+msgstr "Liitefraasi"
 
 #: ../root/components/forms.tt:327 ../root/release/edit/tracklist.tt:331
 msgid "Join phrase:"
-msgstr ""
+msgstr "Liitefraasi:"
 
 #: ../root/relationship/linkattributetype/instruments.tt:12
 msgid "Jump to:"
@@ -5549,7 +5549,7 @@ msgstr "Salasana:"
 
 #: ../root/components/forms.tt:354 ../root/release/edit/tracklist.tt:378
 msgid "Paste Credits"
-msgstr ""
+msgstr "Liitä artistitiedot"
 
 #: ../root/oauth2/authorize.tt:12
 msgid "Perform the above operations when I'm not using the application"
@@ -6163,12 +6163,12 @@ msgstr ""
 #: ../root/report/deprecated_relationship_urls.tt:13
 #: ../root/report/deprecated_relationship_works.tt:13
 msgid "Relationship Type"
-msgstr "Suhteen tyyppi"
+msgstr "Yhteyden tyyppi"
 
 #: ../root/relationship/linktype/in_use.tt:1
 #: ../root/relationship/linktype/in_use.tt:3
 msgid "Relationship Type In Use"
-msgstr "Suhteen tyyppi käytössä"
+msgstr "Yhteyden tyyppi käytössä"
 
 #: ../root/doc/relationship_type.tt:4 ../root/layout/menu.tt:265
 #: ../root/relationship/header.tt:2 ../root/relationship/linktype/index.tt:1
@@ -6705,7 +6705,7 @@ msgstr "Poista äänite"
 
 #: ../root/edit/relationship/delete.tt:1 ../root/edit/relationship/delete.tt:3
 msgid "Remove Relationship"
-msgstr "Poista suhde"
+msgstr "Poista yhteys"
 
 #: ../root/relationship/linkattributetype/delete.tt:1
 #: ../root/relationship/linkattributetype/delete.tt:3
@@ -7442,7 +7442,7 @@ msgstr ""
 #: ../root/relationship/linkattributetype/not_found.tt:3
 msgid ""
 "Sorry, we could not find a relationship attribute with that MusicBrainz ID."
-msgstr "Tälle MusicBrainz ID:lle ei löytynyt yhteys-attribuuttia. "
+msgstr "Tälle MusicBrainz ID:lle ei löytynyt yhteyden ominaisuutta. "
 
 #: ../root/release_group/not_found.tt:4
 msgid ""
@@ -7745,7 +7745,7 @@ msgstr "Tiivistelmä:"
 
 #: ../root/release/edit/tracklist.tt:299
 msgid "Swap track titles with artist credits"
-msgstr "Vaihda kappalenimi artistin nimeen"
+msgstr "Vaihda kappaleiden nimet artistien nimiin"
 
 #: ../root/main/503.tt:1 ../root/main/503.tt:3
 msgid "System Busy"
@@ -9782,7 +9782,7 @@ msgstr ""
 
 #: ../root/layout/sidebar/sidebar-favicons.tt:32
 msgid "View all relationships"
-msgstr "Näytä kaikki suhteet"
+msgstr "Näytä kaikki yhteydet"
 
 #: ../root/annotation/common.tt:21 ../root/components/common-macros.tt:901
 msgid "View annotation history"
@@ -11318,11 +11318,11 @@ msgstr "{type0}-{type1}"
 
 #: ../root/relationship/linktype/tree.tt:36
 msgid "{type0}-{type1} Relationship Types"
-msgstr "{type0}-{type1} julkaisutyypit"
+msgstr "{type0}-{type1} yhteystyypit"
 
 #: ../root/relationship/linktype/tree.tt:44
 msgid "{type0}-{type1} relationship types"
-msgstr "{type0}-{type1} julkaisutyypit"
+msgstr "{type0}-{type1} yhteystyypit"
 
 #: ../root/work/layout.tt:1
 msgid "{type} “{work}”"
@@ -11918,7 +11918,7 @@ msgstr "Poista ISRC-koodi"
 
 #: ../lib/MusicBrainz/Server/Edit/Relationship.pm:7
 msgid "Relationship"
-msgstr "Suhde"
+msgstr "Yhteys"
 
 #: ../lib/MusicBrainz/Server/Edit/Relationship/AddLinkAttribute.pm:13
 msgid "Add relationship attribute"
@@ -11946,7 +11946,7 @@ msgstr "Poista julkaisun ominaisuus"
 
 #: ../lib/MusicBrainz/Server/Edit/Relationship/RemoveLinkType.pm:13
 msgid "Remove relationship type"
-msgstr "Poista suhteen tyyppi"
+msgstr "Poista yhteyden tyyppi"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/AddCoverArt.pm:20
 msgid "Add cover art"
@@ -12326,7 +12326,7 @@ msgstr "Tätä kohdetta ei ole olemassa."
 
 #: ../lib/MusicBrainz/Server/Form/RelationshipEditor.pm:133
 msgid "This relationship no longer exists."
-msgstr "Tämä yhteyttä ei eneää ole olemassa."
+msgstr "Tätä yhteyttä ei enää ole olemassa."
 
 #: ../lib/MusicBrainz/Server/Form/Role/EditNote.pm:19
 msgid "You must provide an edit note"
