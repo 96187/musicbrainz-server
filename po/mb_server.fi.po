@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-05 11:40-0700\n"
-"PO-Revision-Date: 2014-03-06 16:12+0000\n"
+"PO-Revision-Date: 2014-03-06 19:36+0000\n"
 "Last-Translator: jozo <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -1918,7 +1918,7 @@ msgstr ""
 
 #: ../root/cdstub/header.tt:5
 msgid "CD stub by {artist}"
-msgstr "CD-tyngät liittyen artistiin {artist}"
+msgstr "CD-tyngät artistilta {artist}"
 
 #: ../root/cdstub/edit_form.tt:4
 msgid "CD stub details"
@@ -1930,7 +1930,7 @@ msgstr "CD-tyngän tuonti"
 
 #: ../root/cdstub/layout.tt:2
 msgid "CD stub “{title}” by {artist}"
-msgstr "CD-tynkä {artist}:{title}"
+msgstr "CD-tynkä {title} artistilta {artist}"
 
 #: ../root/cdstub/logged_in.tt:7
 msgid ""
@@ -2950,7 +2950,7 @@ msgstr "Muokkaa artistin lisätietoja"
 
 #: ../root/edit/edit_header.tt:91
 msgid "Edit by {editor}"
-msgstr "Muokkaaja: {editor}"
+msgstr "Muokkaaja {editor}"
 
 #: ../root/label/edit_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Label/EditAlias.pm:12
@@ -3090,11 +3090,11 @@ msgstr "Muokkaukset ({view_url|näytä})"
 
 #: ../root/layout/menu.tt:75
 msgid "Edits by Subscribed Editors"
-msgstr "Seurattujen editorien muokkaukset"
+msgstr "Seurattujen käyttäjien muokkaukset"
 
 #: ../root/edit/subscribed-editors.tt:1 ../root/edit/subscribed-editors.tt:3
 msgid "Edits by Your Subscribed Editors"
-msgstr "Seuraamiesi editorien muokkaukset"
+msgstr "Seuraamiesi käyttäjien muokkaukset"
 
 #: ../root/user/edits.tt:1
 msgid "Edits by {name}"
@@ -6019,7 +6019,7 @@ msgstr "Äänitettä ei löydy"
 
 #: ../root/recording/edits.tt:6 ../root/recording/header.tt:19
 msgid "Recording by {artist}"
-msgstr "Artistin {artist} äänite"
+msgstr "Äänite artistilta {artist}"
 
 #: ../root/recording/layout.tt:7
 msgid "Recording information"
@@ -6031,7 +6031,7 @@ msgstr "Äänitteiden arvostelut"
 
 #: ../root/recording/layout.tt:3
 msgid "Recording “{name}” by {artist}"
-msgstr "Artistin {artist} äänite \"{name}\""
+msgstr "Äänite “{name}” artistilta {artist}"
 
 #: ../root/components/common-macros.tt:571
 #: ../root/edit/details/add_recording_annotation.tt:3
@@ -6344,7 +6344,7 @@ msgstr "Julkaisun nimi"
 
 #: ../root/release/edits.tt:6 ../root/release/header.tt:8
 msgid "Release by {artist}"
-msgstr "Artisti(e)n {artist} julkaisu"
+msgstr "Julkaisu artistilta {artist}"
 
 #: ../root/release/edit/information.tt:89
 msgid "Release event"
@@ -6428,7 +6428,7 @@ msgstr "Julkaisun nimi:"
 
 #: ../root/release/layout.tt:1
 msgid "Release “{name}” by {artist}"
-msgstr ""
+msgstr "Julkaisu “{name}” artistilta {artist}"
 
 #: ../root/cdtoc/lookup.tt:71 ../root/components/common-macros.tt:571
 #: ../root/edit/details/add_cover_art.tt:5
@@ -9765,11 +9765,11 @@ msgstr ""
 
 #: ../root/recording/header.tt:17
 msgid "Video by {artist}"
-msgstr ""
+msgstr "Video artistilta {artist}"
 
 #: ../root/recording/layout.tt:3
 msgid "Video “{name}” by {artist}"
-msgstr ""
+msgstr "Video “{name}” artistilta {artist}"
 
 #: ../root/edit/details/add_standalone_recording.tt:34
 #: ../root/edit/details/edit_recording.tt:26
@@ -9859,7 +9859,7 @@ msgstr "Äänet vastaan:"
 
 #: ../root/user/edits.tt:1
 msgid "Votes by {name}"
-msgstr ""
+msgstr "Käyttäjän {name} äänet"
 
 #: ../root/elections/show.tt:111
 msgid "Votes cast"
@@ -10681,7 +10681,7 @@ msgstr ""
 
 #: ../root/scripts/text_strings.tt:162
 msgid "by {artist}"
-msgstr ""
+msgstr "artistilta {artist}"
 
 #: ../root/admin/wikidoc/index.tt:53
 msgid "diff"
@@ -11119,7 +11119,7 @@ msgstr ""
 #: ../root/components/common-macros.tt:980 ../root/main/index.tt:124
 #: ../root/scripts/text_strings.tt:163
 msgid "{entity} by {artist}"
-msgstr "{entity} artistina {artist}"
+msgstr "{entity} artistilta {artist}"
 
 #: ../root/components/aliases.tt:73
 msgid "{entity} has no aliases."
@@ -11127,7 +11127,7 @@ msgstr "Kohteelle {entity} ei ole luotu aliaksia."
 
 #: ../root/edit/details/remove_medium.tt:6
 msgid "{format} {position} {name} on {release} by {artist}"
-msgstr ""
+msgstr "{format} {position} {name} julkaisussa {release} artistilta {artist}"
 
 #: ../root/components/common-macros.tt:145
 msgid "{last_list_item}"
@@ -11162,7 +11162,7 @@ msgstr "{name} - Muokkaa julkaisua"
 
 #: ../root/tag/entity-list.tt:10
 msgid "{name} by {artist}"
-msgstr ""
+msgstr "{name} artistilta {artist}"
 
 #: ../root/user/subscriptions/layout.tt:19
 msgid "{num} artist"
@@ -11300,7 +11300,7 @@ msgstr ""
 
 #: ../root/cdtoc/move_search.tt:31 ../root/cdtoc/set_durations.tt:22
 msgid "{release} by {artist}"
-msgstr ""
+msgstr "{release} artistilta {artist}"
 
 #: ../root/release/collections.tt:4
 msgid "{release} has been added to {num} collection:"
