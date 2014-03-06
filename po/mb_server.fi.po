@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-05 11:40-0700\n"
-"PO-Revision-Date: 2014-03-06 15:30+0000\n"
+"PO-Revision-Date: 2014-03-06 16:12+0000\n"
 "Last-Translator: jozo <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -1262,7 +1262,7 @@ msgstr "Lisätietoja alueesta"
 
 #: ../root/area/not_found.tt:1 ../root/area/not_found.tt:2
 msgid "Area Not Found"
-msgstr ""
+msgstr "Aluetta ei löytynyt"
 
 #: ../root/area/layout.tt:5
 msgid "Area information"
@@ -1725,12 +1725,12 @@ msgstr "Aloitus"
 
 #: ../root/search/lib/inline-results-artist.tt:13
 msgid "Begin Area"
-msgstr ""
+msgstr "Aloitusalue"
 
 #: ../root/artist/edit_form.tt:70 ../root/edit/details/add_artist.tt:49
 #: ../root/edit/details/edit_artist.tt:46
 msgid "Begin Area:"
-msgstr ""
+msgstr "Aloitusalue:"
 
 #: ../root/components/aliases.tt:13
 msgid "Begin Date"
@@ -1738,7 +1738,7 @@ msgstr "Aloitusajankohta"
 
 #: ../root/components/common-macros.tt:912 ../root/scripts/text_strings.tt:73
 msgid "Begin area:"
-msgstr ""
+msgstr "Aloitusalue:"
 
 #: ../root/alias/edit_form.tt:34 ../root/area/edit_form.tt:24
 #: ../root/area/layout.tt:15 ../root/artist/edit_form.tt:67
@@ -1800,7 +1800,7 @@ msgstr "Blogi"
 
 #: ../root/components/common-macros.tt:912 ../root/scripts/text_strings.tt:74
 msgid "Born in:"
-msgstr ""
+msgstr "Syntymäpaikka:"
 
 #: ../root/components/common-macros.tt:908 ../root/scripts/text_strings.tt:69
 msgid "Born:"
@@ -2552,7 +2552,7 @@ msgstr "Sovelluskehitys"
 
 #: ../root/components/common-macros.tt:920 ../root/scripts/text_strings.tt:74
 msgid "Died in:"
-msgstr ""
+msgstr "Kuolinpaikka:"
 
 #: ../root/components/common-macros.tt:916 ../root/scripts/text_strings.tt:69
 msgid "Died:"
@@ -3194,12 +3194,12 @@ msgstr "Lopetus"
 
 #: ../root/search/lib/inline-results-artist.tt:15
 msgid "End Area"
-msgstr ""
+msgstr "Lopetusalue"
 
 #: ../root/artist/edit_form.tt:83 ../root/edit/details/add_artist.tt:61
 #: ../root/edit/details/edit_artist.tt:54
 msgid "End Area:"
-msgstr ""
+msgstr "Lopetusalue:"
 
 #: ../root/components/aliases.tt:14
 msgid "End Date"
@@ -3207,7 +3207,7 @@ msgstr "Lopetusajankohta"
 
 #: ../root/components/common-macros.tt:920 ../root/scripts/text_strings.tt:73
 msgid "End area:"
-msgstr ""
+msgstr "Lopetusalue:"
 
 #: ../root/elections/index.tt:12
 msgid "End date"
@@ -7219,7 +7219,7 @@ msgstr "Näytä kaikki tulokset liittyen tilauksiini."
 msgid ""
 "Showing Various Artist releases. {show_subset|Show releases by this artist "
 "instead}."
-msgstr ""
+msgstr "Näytetään useiden artistien julkaisut. {show_subset|Näytä vain artistin julkaisut}."
 
 #: ../root/artist/recordings.tt:26
 msgid ""
@@ -7294,7 +7294,7 @@ msgstr ""
 msgid ""
 "Showing releases by this artist. {show_all|Show Various Artist releases "
 "instead}."
-msgstr ""
+msgstr "Näytetään artistin julkaisut. {show_all|Näytä vain useiden artistien julkaisut}."
 
 #: ../root/scripts/text_strings.tt:35
 msgid ""
@@ -11686,7 +11686,7 @@ msgstr "Yhteensä"
 
 #: ../lib/MusicBrainz/Server/Edit/Area/AddAnnotation.pm:12
 msgid "Add area annotation"
-msgstr ""
+msgstr "Lisää alueen lisätietoja"
 
 #: ../lib/MusicBrainz/Server/Edit/Area/Create.pm:18
 msgid "Add area"
