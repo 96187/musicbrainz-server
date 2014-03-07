@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-05 11:40-0700\n"
-"PO-Revision-Date: 2014-03-07 19:59+0000\n"
+"PO-Revision-Date: 2014-03-07 20:43+0000\n"
 "Last-Translator: jozo <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -367,7 +367,7 @@ msgid ""
 "<strong>Warning:</strong> Some of the recordings you're merging have "
 "different ISRCs. Please make sure they are indeed the same recordings and "
 "you wish to continue with the merge."
-msgstr "<strong>Varoitus:</strong> Joillain yhdistettävillä äänitteillä on eri ISRC-koodi. Varmista äänitteiden todellakin olevan samat ja haluavasi jatkaa yhdistämistä."
+msgstr "<strong>Varoitus:</strong> Joillain sulautettavilla äänitteillä on eri ISRC-koodi. Varmista äänitteiden todellakin olevan samat ja haluavasi jatkaa sulauttamista."
 
 #: ../root/components/common-macros.tt:813 ../root/recording/edit.tt:10
 msgid "<strong>Warning</strong>:"
@@ -942,7 +942,7 @@ msgstr "Kaikki muutokset menetetään, jos jätät tämän sivun."
 
 #: ../root/edit/details/merge_releases.tt:127
 msgid "All recordings for these releases are already merged."
-msgstr ""
+msgstr "Kaikki äänitykset näistä julkaisuista on jo sulautettu."
 
 #: ../root/release/cover_art.tt:22
 msgid "All sizes:"
@@ -3481,7 +3481,7 @@ msgstr "Lisätietoja käyttäjätunnuksen poistamisesta löydät sivulta {uri|UK
 msgid ""
 "For instructions on how to fix them, please see the documentation about "
 "{howto|how to merge releases}."
-msgstr "Korjataksesi tilanteen, katso ohje {howto|kuinka yhdistää julkaisuja}."
+msgstr "Korjataksesi tilanteen, katso ohje {howto|kuinka sulautat julkaisuja}."
 
 #: ../root/edit/info.tt:61
 msgid "For more information:"
@@ -4634,97 +4634,97 @@ msgstr "Liittynyt jäseneksi:"
 
 #: ../root/layout/merge-helper.tt:30
 msgid "Merge"
-msgstr "Yhdistä"
+msgstr "Sulauta"
 
 #: ../root/area/merge.tt:1 ../root/area/merge.tt:3
 msgid "Merge Areas"
-msgstr "Yhdistä alueet"
+msgstr "Sulauta alueet"
 
 #: ../root/artist/merge.tt:1 ../root/artist/merge.tt:3
 msgid "Merge Artists"
-msgstr "Yhdistä artistit"
+msgstr "Sulauta artistit"
 
 #: ../root/label/merge.tt:1 ../root/label/merge.tt:3
 msgid "Merge Labels"
-msgstr "Yhdistä levymerkit"
+msgstr "Sulauta levymerkit"
 
 #: ../root/place/merge.tt:1 ../root/place/merge.tt:3
 msgid "Merge Places"
-msgstr "Yhdistä paikat"
+msgstr "Sulauta paikat"
 
 #: ../root/layout/merge-helper.tt:3
 msgid "Merge Process"
-msgstr "Yhdistämisprosessi"
+msgstr "Sulautumisprosessi"
 
 #: ../root/recording/merge.tt:1 ../root/recording/merge.tt:3
 msgid "Merge Recordings"
-msgstr "Yhdistä äänitteet"
+msgstr "Sulauta äänitteet"
 
 #: ../root/release_group/merge.tt:1 ../root/release_group/merge.tt:3
 msgid "Merge Release Groups"
-msgstr "Yhdistä julkaisuryhmät"
+msgstr "Sulauta julkaisuryhmät"
 
 #: ../root/release/merge.tt:1 ../root/release/merge.tt:3
 msgid "Merge Releases"
-msgstr "Yhdistä julkaisut"
+msgstr "Sulauta julkaisut"
 
 #: ../root/work/merge.tt:1 ../root/work/merge.tt:3
 msgid "Merge Works"
-msgstr "Yhdistä teokset"
+msgstr "Sulauta teokset"
 
 #: ../root/area/layout.tt:60
 msgid "Merge area"
-msgstr "Yhdistä alueen"
+msgstr "Sulauta alueen"
 
 #: ../root/artist/layout.tt:109
 msgid "Merge artist"
-msgstr "Yhdistä artistit"
+msgstr "Sulauta artistit"
 
 #: ../root/edit/details/historic/merge_releases.tt:25
 msgid "Merge attributes:"
-msgstr "Yhdistä ominaisuudet:"
+msgstr "Sulauta ominaisuudet:"
 
 #: ../root/label/layout.tt:70
 msgid "Merge label"
-msgstr "Yhdistä levymerkit"
+msgstr "Sulauta levymerkit"
 
 #: ../root/edit/details/historic/merge_releases.tt:30
 msgid "Merge language &amp; script:"
-msgstr "Yhdistä kieli &amp; merkistö"
+msgstr "Sulauta kieli &amp; merkistö"
 
 #: ../root/edit/details/merge_releases.tt:135
 #: ../lib/MusicBrainz/Server/Form/Merge/Release.pm:51
 msgid "Merge mediums and recordings"
-msgstr "Yhdistä tallenteet ja äänitteet"
+msgstr "Sulauta tallenteet ja äänitteet"
 
 #: ../root/place/layout.tt:56
 msgid "Merge place"
-msgstr "Yhdistä paikat"
+msgstr "Sulauta paikat"
 
 #: ../root/recording/layout.tt:32
 msgid "Merge recording"
-msgstr "Yhdistä äänitteet"
+msgstr "Sulauta äänitteet"
 
 #: ../root/release/sidebar.tt:90
 msgid "Merge release"
-msgstr "Yhdistä julkaisu"
+msgstr "Sulauta julkaisu"
 
 #: ../root/release_group/layout.tt:44
 msgid "Merge release group"
-msgstr "Yhdistä julkaisuryhmä"
+msgstr "Sulauta julkaisuryhmä"
 
 #: ../root/artist/index.tt:92
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/Merge.pm:13
 msgid "Merge release groups"
-msgstr "Yhdistä julkaisuryhmät"
+msgstr "Sulauta julkaisuryhmät"
 
 #: ../root/edit/details/merge_releases.tt:133 ../root/release/merge.tt:55
 msgid "Merge strategy:"
-msgstr "Yhdistämismenetelmä:"
+msgstr "Sulautumismenetelmä:"
 
 #: ../root/work/layout.tt:38
 msgid "Merge work"
-msgstr "Yhdistä teos"
+msgstr "Sulauta teos"
 
 #: ../root/edit/details/merge_common.tt:2
 #: ../root/edit/details/merge_labels.tt:3
@@ -4733,7 +4733,7 @@ msgstr "Yhdistä teos"
 #: ../root/edit/details/merge_release_groups.tt:13
 #: ../root/edit/details/merge_works.tt:3
 msgid "Merge:"
-msgstr "Yhdistä:"
+msgstr "Sulauta:"
 
 #: ../root/user/contact.tt:11
 msgid "Message:"
@@ -5185,7 +5185,7 @@ msgstr "Kokoelmasta ei löytynyt julkaisuja."
 
 #: ../root/recording/index.tt:43
 msgid "No releases found which feature this recording."
-msgstr "Julkaisuja, jotka sisältävät tämän äänitteen, ei löydy. "
+msgstr "Äänitteen sisältäviä julkaisuja ei löydy."
 
 #: ../root/release_group/index.tt:74
 msgid "No releases found."
@@ -5699,7 +5699,7 @@ msgstr ""
 msgid ""
 "Please navigate to the pages of other entities you wish to merge and select "
 "the \"merge\" link."
-msgstr "Siirry muiden kohteiden sivuille jotka aiot yhdistää, ja paina linkkiä \"yhdistä\"."
+msgstr "Siirry muiden kohteiden sivuille jotka aiot sulauttaa, ja paina linkkiä \"sulauta\"."
 
 #: ../root/annotation/edit.tt:1
 msgid ""
@@ -6011,7 +6011,7 @@ msgstr "Lisätietoja äänitteestä"
 
 #: ../root/edit/details/merge_releases.tt:96
 msgid "Recording Merges"
-msgstr "Äänitteiden yhdistämiset"
+msgstr "Äänitteiden sulautumiset"
 
 #: ../root/recording/not_found.tt:1 ../root/recording/not_found.tt:2
 msgid "Recording Not Found"
@@ -6405,7 +6405,7 @@ msgstr "Julkaisuryhmät"
 
 #: ../root/report/index.tt:41
 msgid "Release groups that might need to be merged"
-msgstr "Julkaisuryhmiä, jotka saattavat vaatia yhdistämisen"
+msgstr "Julkaisuryhmiä, jotka saattavat vaatia sulauttamisen"
 
 #: ../root/report/duplicate_relationships_release_groups.tt:1
 #: ../root/report/duplicate_relationships_release_groups.tt:3
@@ -8060,7 +8060,7 @@ msgstr "Syy tähän on tuntematon."
 msgid ""
 "The recording artists do not match! Perhaps you meant to use the \"append "
 "mediums\" merge strategy?"
-msgstr "Äänitteiden artistit eivät täsmää! Ehkä tarkoituksesi oli käyttää \"Liitä talleenteet kohteena olevaan julkaisuun\" yhdistämismenetelmää."
+msgstr "Äänitteiden artistit eivät täsmää! Ehkä tarkoituksesi oli käyttää \"Liitä talleenteet kohteena olevaan julkaisuun\" sulauttamismenetelmää."
 
 #: ../root/release/merge.tt:114
 msgid ""
@@ -9546,7 +9546,7 @@ msgstr "Tyypit:"
 #: ../root/scripts/text_strings.tt:111 ../root/url/edits.tt:5
 #: ../root/url/header.tt:13 ../lib/MusicBrainz/Server/Edit/URL.pm:7
 msgid "URL"
-msgstr "URL-osoite"
+msgstr "URL"
 
 #: ../root/url/index.tt:2
 msgid "URL Details"
@@ -10038,7 +10038,7 @@ msgid ""
 "When you are ready to merge these, just click the Merge button. You may "
 "still add more to this merge queue by simply browsing to the entities page "
 "and following the merge link."
-msgstr "Kun olet valmis yhdistämään nämä, paina Yhdistä-nappulaa. Voit yhä lisätä tähän jonoon enemmän kohteita menemällä niiden sivuille ja seuraamalla yhdistä-linkkiä."
+msgstr "Kun olet valmis sulauttamaan nämä, paina Sulauta-nappulaa. Voit yhä lisätä tähän jonoon enemmän kohteita menemällä niiden sivuille ja seuraamalla sulauta-linkkiä."
 
 #: ../root/layout.tt:91
 msgid "Wiki"
@@ -10270,52 +10270,52 @@ msgstr "Olet lisäämässä muokkausta, joka muuttaa kappaleiden kestoja vastaam
 msgid ""
 "You are about to merge the following areas into a single area. Please select"
 " the area which you would like other areas to be merged into:"
-msgstr ""
+msgstr "Olet sulauttamassa seuraavia alueita yhdeksi alueeksi. Valitse alue johon muut alueet tulisi sulauttaa:"
 
 #: ../root/artist/merge.tt:4
 msgid ""
 "You are about to merge the following artists into a single artist. Please "
 "select the artist which you would like other artists to be merged into:"
-msgstr "Olet yhdistämättä seuraavia artisteja yhdeksi artistiksi. Valitse artisti johon muut artistit tulisi yhdistää:"
+msgstr "Olet sulauttamassa seuraavia artisteja yhdeksi artistiksi. Valitse artisti johon muut artistit tulisi sulauttaa:"
 
 #: ../root/label/merge.tt:4
 msgid ""
 "You are about to merge the following labels into a single label. Please "
 "select the label which you would like other labels to be merged into:"
-msgstr "Olet yhdistämättä seuraavia levymerkkejä yhdeksi levymerkiksi. Valitse levymerkki johon muut levymerkit tulisi yhdistää:"
+msgstr "Olet sulauttamassa seuraavia levymerkkejä yhdeksi levymerkiksi. Valitse levymerkki johon muut levymerkit tulisi sulauttaa:"
 
 #: ../root/place/merge.tt:4
 msgid ""
 "You are about to merge the following places into a single place. Please "
 "select the place which you would like other places to be merged into:"
-msgstr ""
+msgstr "Olet sulauttamassa seuraavia paikkoja yhdeksi paikaksi. Valitse paikka johon muut paikat tulisi sulauttaa:"
 
 #: ../root/recording/merge.tt:4
 msgid ""
 "You are about to merge the following recordings into a single recording. "
 "Please select the recording which you would like other recordings to be "
 "merged into:"
-msgstr "Olet yhdistämättä seuraavia äänitteitä yhdeksi äänitteeksi. Valitse äänite johon muut äänitteet tulisi yhdistää:"
+msgstr "Olet sulauttamassa seuraavia äänitteitä yhdeksi äänitteeksi. Valitse äänite johon muut äänitteet tulisi sulauttaa:"
 
 #: ../root/release_group/merge.tt:4
 msgid ""
 "You are about to merge the following release groups into a single release "
 "group. Please select the release group which you would like other release "
 "groups to be merged into:"
-msgstr "Olet yhdistämässä seuraavat julkaisuryhmät yhteen. Valitse julkaisuryhmä, johon haluat muiden ryhmien yhdistettävän:"
+msgstr "Olet sulauttamassa seuraavat julkaisuryhmät yhteen. Valitse julkaisuryhmä, johon muut julkaisuryhmät tulisi sulauttaa:"
 
 #: ../root/release/merge.tt:4
 msgid ""
 "You are about to merge the following releases into a single release. Please "
 "select the release which you would like the other releases to be merged "
 "into:"
-msgstr "Olet yhdistämättä seuraavia julkaisuja yhdeksi julkaisuksi. Valitse julkaisu johon muut julkaisut tulisi yhdistää:"
+msgstr "Olet sulauttamassa seuraavia julkaisuja yhdeksi julkaisuksi. Valitse julkaisu johon muut julkaisut tulisi sulauttaa:"
 
 #: ../root/work/merge.tt:4
 msgid ""
 "You are about to merge the following works into a single work. Please select"
 " the work that you would like the other works merged into:"
-msgstr "Olet yhdistämässä seuraavat teokset yhdeksi. Valitse teos, johon haluat muiden teoksien yhdistettävän:"
+msgstr "Olet sulauttamassa seuraavat teokset yhdeksi. Valitse teos, johon muut teokset tulisi sulauttaa:"
 
 #: ../root/label/edit_form.tt:18
 msgid ""
@@ -11495,11 +11495,11 @@ msgstr "Käyttäjän muokattu onnistuneesti. "
 
 #: ../lib/MusicBrainz/Server/Controller/Artist.pm:460
 msgid "You cannot merge a special purpose artist into another artist"
-msgstr "Erityistarkoituksellista artistia ei voi yhdistää muihin artisteihin "
+msgstr "Erityistarkoituksellista artistia ei voi sulauttaa muihin artisteihin "
 
 #: ../lib/MusicBrainz/Server/Controller/Artist.pm:465
 msgid "You cannot merge into Deleted Artist"
-msgstr "Poistettuun artistiin ei voi yhdistää"
+msgstr "Poistettuun artistiin ei voi sulauttaa"
 
 #: ../lib/MusicBrainz/Server/Controller/AutoEditorElections.pm:70
 #, perl-brace-format
@@ -11587,7 +11587,7 @@ msgstr "Epäkelpo lähete."
 #: ../lib/MusicBrainz/Server/Controller/Release.pm:601
 msgid ""
 "This merge strategy is not applicable to the releases you have selected."
-msgstr "Tämä yhdistämistapa ei ole mahdollinen julkaisuille, jotka ovat valittuna."
+msgstr "Tämä sulautumistapa ei ole mahdollinen julkaisuille, jotka ovat valittuna."
 
 #: ../lib/MusicBrainz/Server/Controller/Role/Annotation.pm:63
 msgid "The annotation revision ID must be a positive integer"
@@ -11698,7 +11698,7 @@ msgstr "Muokkaa aluetta"
 
 #: ../lib/MusicBrainz/Server/Edit/Area/Merge.pm:11
 msgid "Merge areas"
-msgstr "Yhdistä alueet"
+msgstr "Sulauta alueet"
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/AddAnnotation.pm:12
 msgid "Add artist annotation"
@@ -11722,7 +11722,7 @@ msgstr "Muokkaa kirjoitusasua"
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/Merge.pm:13
 msgid "Merge artists"
-msgstr "Yhdistä artistit"
+msgstr "Sulauta artistit"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/AddDiscID.pm:11
 #: ../lib/MusicBrainz/Server/Edit/Medium/AddDiscID.pm:10
@@ -11799,7 +11799,7 @@ msgstr "Muunna julkaisu yksittäisen artistin julkaisuksi (historiallinen)"
 #: ../lib/MusicBrainz/Server/Edit/Historic/MergeReleaseMAC.pm:9
 #: ../lib/MusicBrainz/Server/Edit/Release/Merge.pm:112
 msgid "Merge releases"
-msgstr "Yhdistä julkaisut"
+msgstr "Sulauta julkaisut"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/MoveDiscID.pm:11
 #: ../lib/MusicBrainz/Server/Edit/Medium/MoveDiscID.pm:19
@@ -11854,7 +11854,7 @@ msgstr "Muokkaa levymerkki"
 
 #: ../lib/MusicBrainz/Server/Edit/Label/Merge.pm:12
 msgid "Merge labels"
-msgstr "Yhdistä levymerkit"
+msgstr "Sulauta levymerkit"
 
 #: ../lib/MusicBrainz/Server/Edit/Medium/Create.pm:30
 msgid "Add medium"
@@ -11890,7 +11890,7 @@ msgstr "Muokkaa paikkaa"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/Merge.pm:11
 msgid "Merge places"
-msgstr "Yhdistä paikat"
+msgstr "Sulauta paikat"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/AddAnnotation.pm:12
 msgid "Add recording annotation"
@@ -11910,7 +11910,7 @@ msgstr "Lisää yksittäinen äänite"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/Merge.pm:13
 msgid "Merge recordings"
-msgstr "Yhdistä äänitteet"
+msgstr "Sulauta äänitteet"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/RemoveISRC.pm:17
 msgid "Remove ISRC"
@@ -12050,7 +12050,7 @@ msgstr "Muokkaa teosta"
 
 #: ../lib/MusicBrainz/Server/Edit/Work/Merge.pm:12
 msgid "Merge works"
-msgstr "Yhdistä teokset"
+msgstr "Sulauta teokset"
 
 #: ../lib/MusicBrainz/Server/Edit/Work/RemoveISWC.pm:16
 msgid "Remove ISWC"
@@ -12275,7 +12275,7 @@ msgstr "URL-osoitteen protokollan tulee olla HTTP, HTTPS tai FTP"
 
 #: ../lib/MusicBrainz/Server/Form/Merge.pm:18
 msgid "Please pick the entity you want the others merged into."
-msgstr "Valitse kohde johon haluat yhdistää muut."
+msgstr "Valitse kohde johon haluat sulauttaa muut."
 
 #: ../lib/MusicBrainz/Server/Form/Merge/Release.pm:62
 msgid "Another medium is already in this position"
