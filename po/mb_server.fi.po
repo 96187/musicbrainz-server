@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-05 11:40-0700\n"
-"PO-Revision-Date: 2014-03-07 14:58+0000\n"
+"PO-Revision-Date: 2014-03-07 15:55+0000\n"
 "Last-Translator: jozo <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -1454,7 +1454,7 @@ msgstr ""
 #: ../root/report/possible_collaborations.tt:1
 #: ../root/report/possible_collaborations.tt:3
 msgid "Artists that may be collaborations"
-msgstr ""
+msgstr "Artistit, jotka voivat olla yhteistoiminnallisia"
 
 #: ../root/report/artists_that_may_be_groups.tt:1
 #: ../root/report/artists_that_may_be_groups.tt:3 ../root/report/index.tt:17
@@ -1472,7 +1472,7 @@ msgstr "Artisteja, joilla on yhteistyö-yhteyksiä"
 
 #: ../root/report/index.tt:22
 msgid "Artists which look like collaborations"
-msgstr ""
+msgstr "Artistit, jotka voivat olla yhteistöitä"
 
 #: ../root/report/collaboration_relationships.tt:1
 #: ../root/report/collaboration_relationships.tt:3
@@ -1504,8 +1504,8 @@ msgstr "Liitetyt AcoustID-tunnisteet"
 #: ../root/isrc/index.tt:5
 msgid "Associated with {num} recording"
 msgid_plural "Associated with {num} recordings"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Yhdistetty {num} äänitteeseen"
+msgstr[1] "Yhdistetty {num} äänitteeseen"
 
 #: ../root/iswc/index.tt:5
 msgid "Associated with {num} work"
@@ -1535,7 +1535,7 @@ msgstr "Liitä levyn tunniste"
 
 #: ../root/cdtoc/index.tt:7
 msgid "Attached to releases"
-msgstr ""
+msgstr "Liitetty julkaisuihin"
 
 #: ../root/artist/relationships.tt:15 ../root/doc/relationship_type.tt:46
 #: ../root/place/performances.tt:9
@@ -1651,7 +1651,7 @@ msgstr "Viivakoodi:"
 msgid ""
 "Based on the above CD stub, we also found the following releases in "
 "MusicBrainz that may be related:"
-msgstr ""
+msgstr "Edellämainitun CD-tyngän perusteella löysimme myös seuraavat julkaisut MusicBrainzista, jotka saattavat liittyä:"
 
 #: ../root/release/edit/duplicates.tt:4
 msgid ""
@@ -1711,7 +1711,7 @@ msgstr ""
 
 #: ../root/scripts/text_strings.tt:68
 msgid "Began:"
-msgstr ""
+msgstr "Alkoi:"
 
 #: ../root/edit/details/merge_labels.tt:12
 #: ../root/edit/details/merge_labels.tt:49
@@ -1906,15 +1906,15 @@ msgstr "CD-tynkä löytyi"
 
 #: ../root/cdtoc/not_found.tt:1 ../root/cdtoc/not_found.tt:2
 msgid "CD TOC Not Found"
-msgstr ""
+msgstr "CD-levyn sisällysluetteloa ei löytynyt"
 
 #: ../root/cdtoc/info.tt:1
 msgid "CD TOC details"
-msgstr ""
+msgstr "Lisätietoja CD-levyn sisällysluettelosta"
 
 #: ../root/edit/details/historic/add_disc_id.tt:13
 msgid "CD TOC:"
-msgstr ""
+msgstr "CD-levyn sisällysluettelo:"
 
 #: ../root/cdstub/header.tt:5
 msgid "CD stub by {artist}"
@@ -2087,7 +2087,7 @@ msgstr "Muutokset"
 #: ../root/relationship/linktype/form.tt:7
 #: ../root/relationship/linktype/tree.tt:6
 msgid "Child order:"
-msgstr ""
+msgstr "Lapsijärjestys:"
 
 #: ../root/release/cover_art_uploader.tt:17
 msgid "Choose file:"
@@ -3115,13 +3115,13 @@ msgstr "Muokkaukset levymerkille {label}"
 #: ../root/area/edits.tt:3 ../root/artist/edits.tt:3
 #: ../root/collection/edits.tt:3 ../root/url/edits.tt:3
 msgid "Edits for {link}"
-msgstr ""
+msgstr "Mukkaukset linkille {link}"
 
 #: ../root/area/edits.tt:1 ../root/artist/edits.tt:1
 #: ../root/collection/edits.tt:1 ../root/label/edits.tt:1
 #: ../root/place/edits.tt:1 ../root/url/edits.tt:1
 msgid "Edits for {name}"
-msgstr ""
+msgstr "Muokkaukset nimelle {name}"
 
 #: ../root/place/edits.tt:3
 msgid "Edits for {place}"
@@ -3130,13 +3130,13 @@ msgstr "{place} muokkaukset"
 #: ../root/release/edits.tt:3 ../root/release_group/edits.tt:3
 #: ../root/work/edits.tt:3
 msgid "Edits for “{link}”"
-msgstr ""
+msgstr "Muokkaukset linkille “{link}”"
 
 #: ../root/recording/edits.tt:1 ../root/recording/edits.tt:3
 #: ../root/release/edits.tt:1 ../root/release_group/edits.tt:1
 #: ../root/work/edits.tt:1
 msgid "Edits for “{name}”"
-msgstr ""
+msgstr "Muokkaukset nimelle “{name}”"
 
 #: ../root/elections/not_found.tt:1 ../root/elections/not_found.tt:2
 msgid "Election Not Found"
@@ -3557,7 +3557,7 @@ msgstr[1] "Löytyy {num} kokoelmasta"
 
 #: ../root/release/lookup.tt:4
 msgid "Found more than one match for the CD with TOC {toc}: "
-msgstr ""
+msgstr "Löytyi enemmän kuin yksi CD-levy sisällysluettelolla {toc}:"
 
 #: ../root/edit/list.tt:40
 msgid "Found {n} edit"
@@ -4059,7 +4059,7 @@ msgstr "Tuo CD-tynkä"
 
 #: ../root/freedb/show.tt:53
 msgid "Import as Multiple Artist Release"
-msgstr ""
+msgstr "Tuo usean artistin julkaisuna"
 
 #: ../root/cdstub/layout.tt:22
 msgid "Import as MusicBrainz release"
@@ -4067,7 +4067,7 @@ msgstr "Tuo MusicBrainz-julkaisuna"
 
 #: ../root/freedb/show.tt:5
 msgid "Import as a Single Artist Release"
-msgstr ""
+msgstr "Tuo yhden artistin julkaisuna"
 
 #: ../root/main/mirror.tt:9
 msgid ""
@@ -4158,7 +4158,7 @@ msgstr "Liitefraasi:"
 
 #: ../root/relationship/linkattributetype/instruments.tt:12
 msgid "Jump to:"
-msgstr ""
+msgstr "Hyppää kohtaan:"
 
 #: ../root/components/forms.tt:185 ../root/components/forms.tt:218
 msgid "Keep all-uppercase words uppercased"
@@ -4377,12 +4377,12 @@ msgstr ""
 
 #: ../root/recording/fingerprints.tt:32
 msgid "Link"
-msgstr ""
+msgstr "Linkki"
 
 #: ../root/edit/details/add_relationship_type.tt:13
 #: ../root/edit/details/edit_relationship_type.tt:21
 msgid "Link phrase:"
-msgstr ""
+msgstr "Linkkifraasi:"
 
 #: ../root/doc/relationship_type.tt:37
 msgid "Link phrases"
@@ -4569,7 +4569,7 @@ msgstr "Manuaalinen lisäys"
 
 #: ../root/release/lookup.tt:8
 msgid "Match"
-msgstr ""
+msgstr "Osuma"
 
 #: ../root/cdtoc/lookup.tt:4 ../root/cdtoc/lookup.tt:78
 msgid "Matching CDs"
@@ -4821,7 +4821,7 @@ msgstr "MusicBrainz uskoo voimakkaasti käyttäjiensä yksityiseen! Henkilökoht
 
 #: ../root/cdtoc/lookup.tt:84
 msgid "MusicBrainz does not have any CDs with the TOC:"
-msgstr ""
+msgstr "MusicBrainzissa ei ole yhtään CD-levyä tällä sisällysluettelolla:"
 
 #: ../root/layout/menu.tt:171
 msgid "MusicBrainz for Android"
@@ -5384,7 +5384,7 @@ msgstr "Vanha:"
 msgid ""
 "Only releases with the same amount of tracks ({n}) as the release the disc "
 "ID is currently attached to are shown."
-msgstr ""
+msgstr "Näytetään vain julkaisut joissa on sama määrä ({n}) kappaleita kuin levyn tunnisteen sisältävä julkaisu."
 
 #: ../root/edit/cannot_cancel.tt:6
 msgid ""
@@ -5540,7 +5540,7 @@ msgstr "Parsi kappaleiden artistit"
 #: ../root/report/part_of_set_relationships.tt:1
 #: ../root/report/part_of_set_relationships.tt:3
 msgid "Part of Set Relationships"
-msgstr ""
+msgstr "osana joukkoa -yhteys"
 
 #: ../root/account/register.tt:29 ../root/account/reset_password.tt:10
 #: ../root/user/login.tt:24
@@ -5569,7 +5569,7 @@ msgstr "Pysyvä linkki:"
 
 #: ../root/edit/details/remove_relationship_type.tt:11
 msgid "Phrase:"
-msgstr ""
+msgstr "Fraasi:"
 
 #: ../root/area/places-list.tt:4 ../root/components/common-macros.tt:585
 #: ../root/components/common-macros.tt:648
@@ -5686,7 +5686,7 @@ msgstr ""
 
 #: ../root/freedb/show.tt:47 ../root/freedb/show.tt:105
 msgid "Please login to import this FreeDB disc."
-msgstr ""
+msgstr "Kirjaudu sisään tuodaksesi tämän FreeDB levyn."
 
 #: ../root/recording/delete.tt:5
 msgid ""
@@ -5716,7 +5716,7 @@ msgstr "Huomioi:"
 msgid ""
 "Please read the {doc_styleguide|Style Guidelines} then use the fields below "
 "to update the information of this label."
-msgstr ""
+msgstr "Tutustu ensin {doc_styleguide|tyyliohjeisiin} ja vasta sitten käytä alla olevia kenttiä päivittääksesi tämän levymerkin tietoja."
 
 #: ../root/place/edit_form.tt:5
 msgid ""
@@ -5792,7 +5792,7 @@ msgstr "Hidasta ja yritä uudelleen."
 
 #: ../root/components/forms.tt:200
 msgid "Please use the Guess Case button to fix common style errors."
-msgstr ""
+msgstr "Käytäthän Guess Case -nappia korjataksesi tavalliset tyylivirheet."
 
 #: ../root/components/forms.tt:242
 msgid "Please use the Sort Name button to guess the sort name."
@@ -6056,7 +6056,7 @@ msgstr "Äänitteet"
 #: ../root/report/recordings_with_earliest_release_relationships.tt:1
 #: ../root/report/recordings_with_earliest_release_relationships.tt:3
 msgid "Recordings with Earliest Release Relationships"
-msgstr ""
+msgstr "Äänitteet, joissa aiempi julkaisu -yhteys"
 
 #: ../root/report/recordings_with_varying_track_lengths.tt:1
 #: ../root/report/recordings_with_varying_track_lengths.tt:3
@@ -6071,7 +6071,7 @@ msgstr ""
 
 #: ../root/report/index.tt:84
 msgid "Recordings with earliest release relationships"
-msgstr ""
+msgstr "Äänitteet, joissa aiempi julkaisu -yhteys"
 
 #: ../root/report/duplicate_relationships_recordings.tt:1
 #: ../root/report/duplicate_relationships_recordings.tt:3
@@ -6082,7 +6082,7 @@ msgstr ""
 #: ../root/report/featuring_recordings.tt:1
 #: ../root/report/featuring_recordings.tt:3 ../root/report/index.tt:86
 msgid "Recordings with titles containing featuring artists"
-msgstr ""
+msgstr "Äänitteet, joiden nimi sisältää vierailevan artistin "
 
 #: ../root/report/index.tt:88
 msgid "Recordings with varying track times"
@@ -6476,12 +6476,12 @@ msgstr "Julkaisuja, joiden luettelonumero näyttää Amazon ASIN-koodilta"
 
 #: ../root/report/multiple_asins.tt:1 ../root/report/multiple_asins.tt:3
 msgid "Releases With Multiple ASINs"
-msgstr ""
+msgstr "Julkaisut, joissa monta ASIN-koodia"
 
 #: ../root/report/multiple_discogs_links.tt:1
 #: ../root/report/multiple_discogs_links.tt:3
 msgid "Releases With Multiple Discogs Links"
-msgstr ""
+msgstr "Julkaisut, joissa monta Discogs-linkkiä"
 
 #: ../root/report/some_formats_unset.tt:1
 #: ../root/report/some_formats_unset.tt:3
