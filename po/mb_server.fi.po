@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-05 11:40-0700\n"
-"PO-Revision-Date: 2014-03-07 15:55+0000\n"
+"PO-Revision-Date: 2014-03-07 16:58+0000\n"
 "Last-Translator: jozo <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -6405,7 +6405,7 @@ msgstr "Julkaisuryhmät"
 
 #: ../root/report/index.tt:41
 msgid "Release groups that might need to be merged"
-msgstr "Julkaisuryhmät, jotka saattavat vaatia yhdistämisen"
+msgstr "Julkaisuryhmiä, jotka saattavat vaatia yhdistämisen"
 
 #: ../root/report/duplicate_relationships_release_groups.tt:1
 #: ../root/report/duplicate_relationships_release_groups.tt:3
@@ -6416,7 +6416,7 @@ msgstr ""
 #: ../root/report/featuring_release_groups.tt:1
 #: ../root/report/featuring_release_groups.tt:3 ../root/report/index.tt:42
 msgid "Release groups with titles containing featuring artists"
-msgstr "Julkaisuryhmät, joiden nimissä on vieraileva artisti"
+msgstr "Julkaisuryhmiä, joiden nimissä on vieraileva artisti"
 
 #: ../root/release/edit/information.tt:3 ../root/release/sidebar.tt:27
 msgid "Release information"
@@ -6467,7 +6467,7 @@ msgstr "Julkaisut"
 #: ../root/report/tracks_named_with_sequence.tt:1
 #: ../root/report/tracks_named_with_sequence.tt:3
 msgid "Releases Where Track Names Start With Their Track Number"
-msgstr "Julkaisut, joiden kappalenimet alkavat kappalenumeroilla."
+msgstr "Julkaisuja, joiden kappalenimet alkavat kappalenumeroilla."
 
 #: ../root/report/cat_no_looks_like_asin.tt:1
 #: ../root/report/cat_no_looks_like_asin.tt:3
@@ -6476,17 +6476,17 @@ msgstr "Julkaisuja, joiden luettelonumero näyttää Amazon ASIN-koodilta"
 
 #: ../root/report/multiple_asins.tt:1 ../root/report/multiple_asins.tt:3
 msgid "Releases With Multiple ASINs"
-msgstr "Julkaisut, joissa monta ASIN-koodia"
+msgstr "Julkaisuja, joihin liittyy monia ASIN-koodeja"
 
 #: ../root/report/multiple_discogs_links.tt:1
 #: ../root/report/multiple_discogs_links.tt:3
 msgid "Releases With Multiple Discogs Links"
-msgstr "Julkaisut, joissa monta Discogs-linkkiä"
+msgstr "Julkaisuja, joihin liittyy monia Discogs-linkkejä"
 
 #: ../root/report/some_formats_unset.tt:1
 #: ../root/report/some_formats_unset.tt:3
 msgid "Releases With Some Formats Unset"
-msgstr "Julkaisut, joiden jokin formaatti asettamatta"
+msgstr "Julkaisuja, joiden jokin formaatti asettamatta"
 
 #: ../root/report/index.tt:69
 #: ../root/report/releases_in_caa_with_cover_art_relationships.tt:1
@@ -6501,11 +6501,11 @@ msgstr ""
 #: ../root/report/index.tt:64 ../root/report/released_too_early.tt:1
 #: ../root/report/released_too_early.tt:3
 msgid "Releases released too early"
-msgstr "Julkaisut, joiden julkaisuajankohta on lian aikainen"
+msgstr "Julkaisuja, joiden julkaisuajankohta on liian aikainen"
 
 #: ../root/report/index.tt:65
 msgid "Releases where some (but not all) mediums have no format set"
-msgstr "Julkaisuja joissa tallenteen muoto on valitsematta"
+msgstr "Julkaisuja, joissa jonkin (mutta ei kaikkien) tallenteen muoto on valitsematta"
 
 #: ../root/report/index.tt:55
 msgid "Releases which have multiple ASINs"
@@ -6517,16 +6517,16 @@ msgstr "Julkaisuja, joihin liittyy monia Discogs-linkkejä"
 
 #: ../root/report/index.tt:59
 msgid "Releases which have part of set relationships"
-msgstr ""
+msgstr "Julkaisuja, j"
 
 #: ../root/report/index.tt:54
 msgid "Releases which have unexpected Amazon URLs"
-msgstr ""
+msgstr "Julkaisuja, joihin liittyy odottamattomia linkkejä Amazoniin"
 
 #: ../root/report/index.tt:51 ../root/report/releases_to_convert.tt:1
 #: ../root/report/releases_to_convert.tt:3
 msgid "Releases which might need converting to \"multiple artists\""
-msgstr ""
+msgstr "Julkaisuja, jotka saattavat vaatia muunnoksen usean artistin julkaisuksi"
 
 #: ../root/report/releases_with_coverart_links.tt:1
 #: ../root/report/releases_with_coverart_links.tt:3
@@ -6560,7 +6560,7 @@ msgstr ""
 
 #: ../root/report/index.tt:61
 msgid "Releases with non-sequential track numbers"
-msgstr ""
+msgstr "Julkaisuja, joissa ei-peräkkkäinen kappalenumerointi"
 
 #: ../root/report/duplicate_relationships_releases.tt:1
 #: ../root/report/duplicate_relationships_releases.tt:3
@@ -6570,7 +6570,7 @@ msgstr ""
 
 #: ../root/report/index.tt:62 ../root/report/superfluous_data_tracks.tt:3
 msgid "Releases with superfluous data tracks"
-msgstr ""
+msgstr "Julkaisuja, joissa turhia data-raitoja"
 
 #: ../root/report/featuring_releases.tt:1
 #: ../root/report/featuring_releases.tt:3 ../root/report/index.tt:63
@@ -6899,7 +6899,7 @@ msgstr "Paljasta sähköpostiosoitteeni"
 #: ../root/relationship/linktype/form.tt:14
 #: ../root/relationship/linktype/tree.tt:9
 msgid "Reverse link phrase:"
-msgstr ""
+msgstr "Käänteinen linkkifraasi:"
 
 #: ../root/release/edit/information.tt:270
 msgid ""
@@ -7300,7 +7300,7 @@ msgstr "Näytetään artistin julkaisut. {show_all|Näytä vain useiden artistie
 msgid ""
 "Showing results <strong>{start}</strong>&ndash;<strong>{end}</strong> of "
 "<strong>{matches}</strong>"
-msgstr ""
+msgstr "Näytetään tulokset <strong>{start}</strong>&ndash;<strong>{end}</strong> osumista <strong>{matches}</strong>"
 
 #: ../root/release/edit/duplicates.tt:2
 msgid "Similar releases"
@@ -7335,7 +7335,7 @@ msgstr ""
 
 #: ../root/scripts/text_strings.tt:28
 msgid "Some artists credited with alternative names"
-msgstr ""
+msgstr "Jotkut artistit kirjattu vaihtoehtoisella nimellä"
 
 #: ../root/scripts/text_strings.tt:120
 msgid ""
@@ -7355,18 +7355,18 @@ msgstr "Valitettavasti levyn tunniste <code>{discid}</code> ei täsmää yhteenk
 
 #: ../root/cdstub/error.tt:19
 msgid "Sorry, <code>{discid}</code> is not a valid disc ID."
-msgstr "Levyn tunniste <code>{discid}</code> ei ole kelvollinen."
+msgstr "Valitettavasti levyn tunniste <code>{discid}</code> ei ole kelvollinen."
 
 #: ../root/scripts/text_strings.tt:43
 msgid "Sorry, an error occurred during your search"
-msgstr "Hakusi aikana esiintyi virhetilanne"
+msgstr "Valitettavasti hakusi aikana esiintyi virhetilanne"
 
 #: ../root/search/error/no-results.tt:3
 msgid ""
 "Sorry, but your query \"(<code>query</code>)\" did not match any {type}. "
 "Please check you used the correct spelling.  Sometimes searching for fewer "
 "or different words may also help."
-msgstr ""
+msgstr "Valitettavaa, mutta kyselysi \"(<code>query</code>)\" ei vastaa mitään tyyppiä {type}. Tarkista oikeinkirjoitus. Joskus haku vähemmillä tai eri sanoilla voi auttaa."
 
 #: ../root/search/error/rate-limit.tt:3
 msgid ""
@@ -7379,25 +7379,25 @@ msgstr ""
 msgid ""
 "Sorry, but your query (<code>{query}</code>) could not be performed, due to "
 "an error which we are not quite able to identify."
-msgstr ""
+msgstr "Valitettavaa, mutta kyselyäsi (<code>{query}</code>) ei voida suorittaa johtuen virheistä joita emme aivan ole pystyneet tunnistamaan."
 
 #: ../root/main/rate_limited.tt:4
 msgid ""
 "Sorry, but your requests are exceeding the allowable rate limit ({rlinfo})."
-msgstr ""
+msgstr "Valitettavasti pyyntösi ylittävät sallitun nopeuden raja ({rlinfo})."
 
 #: ../root/main/404.tt:8
 msgid "Sorry, the page you're looking for does not exist."
-msgstr "Etsimääsi sivua ei löydy."
+msgstr "Valitettavasti etsimääsi sivua ei löydy."
 
 #: ../root/main/mirror_404.tt:5
 msgid ""
 "Sorry, the page you're looking for is not available on a mirror server."
-msgstr "Etsimäsi sivu ei ole saatavilla peilipalvelimellamme."
+msgstr "Valitettavasti etsimäsi sivu ei ole saatavilla peilipalvelimellamme."
 
 #: ../root/main/400.tt:5
 msgid "Sorry, there was a problem with your request."
-msgstr ""
+msgstr "Valitettavasti meillä oli ongelmia pyyntösi kanssa."
 
 #: ../root/track/not_found.tt:4
 msgid ""
@@ -7419,13 +7419,13 @@ msgstr ""
 
 #: ../root/url/not_found.tt:4
 msgid "Sorry, we could not find a URL with that MusicBrainz ID."
-msgstr "URL-osoitetta ei löydy antamallasi MusicBrainz-tunnisteella."
+msgstr "Valitettavasti URL-osoitetta ei löydy antamallasi MusicBrainz-tunnisteella."
 
 #: ../root/label/not_found.tt:4
 msgid ""
 "Sorry, we could not find a label with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Valitettavasti levymerkkiä ei löydy annetulla MusicBrainz-tunnisteella. Voit sen sijaan halutessasi {search_url|etsiä sitä}."
 
 #: ../root/place/not_found.tt:4
 msgid ""
@@ -7437,7 +7437,7 @@ msgstr ""
 msgid ""
 "Sorry, we could not find a recording with that MusicBrainz ID. You may wish "
 "to try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Valitettavasti äänitettä ei löydy annetulla MusicBrainz-tunnisteella. Voit sen sijaan halutessasi {search_url|etsiä sitä}."
 
 #: ../root/relationship/linkattributetype/not_found.tt:3
 msgid ""
@@ -7448,19 +7448,19 @@ msgstr "Tälle MusicBrainz ID:lle ei löytynyt yhteyden ominaisuutta. "
 msgid ""
 "Sorry, we could not find a release group with that MusicBrainz ID. You may "
 "wish to try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Valitettavasti julkaisuryhmää ei löydy annetulla MusicBrainz-tunnisteella. Voit sen sijaan halutessasi {search_url|etsiä sitä}."
 
 #: ../root/release/not_found.tt:4
 msgid ""
 "Sorry, we could not find a release with that MusicBrainz ID. You may wish to"
 " try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Valitettavasti julkaisua ei löydy annetulla MusicBrainz-tunnisteella. Voit sen sijaan halutessasi {search_url|etsiä sitä}."
 
 #: ../root/work/not_found.tt:4
 msgid ""
 "Sorry, we could not find a work with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr "Teosta ei löytynyt annetulla MusicBrainz-tunnisteella. Voit yrittää {search_url|etsiä sitä} sen sijaan."
+msgstr "Valitettavasti teosta ei löydy annetulla MusicBrainz-tunnisteella. Voit sen sijaan halutessasi {search_url|etsiä sitä}."
 
 #: ../root/area/not_found.tt:4
 msgid ""
@@ -7472,33 +7472,33 @@ msgstr ""
 msgid ""
 "Sorry, we could not find an artist with that MusicBrainz ID. You may wish to"
 " try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Valitettavasti artistia ei löydy annetulla MusicBrainz-tunnisteella. Voit sen sijaan halutessasi {search_url|etsiä sitä}."
 
 #: ../root/collection/not_found.tt:4
 msgid "Sorry, we could not find an collection with that MusicBrainz ID."
-msgstr ""
+msgstr "Valitttavasti kokoelmaa ei löydy annetulla MusicBrainz-tunnisteella."
 
 #: ../root/edit/not_found.tt:4
 msgid ""
 "Sorry, we could not find an edit with that edit ID. You may wish to try and "
 "perform an {search_url|edit search} instead."
-msgstr ""
+msgstr "Valitettavasti muokkausta ei löydy annetulla tunnisteella. Voit sen sijaan halutettasi  {search_url|etsiä sitä}."
 
 #: ../root/user/not_found.tt:4
 msgid ""
 "Sorry, we could not find an editor with that name. You may wish to try and "
 "{search_url|search for them} instead."
-msgstr "Editoria ei kyetty löytämään antamallasi nimellä. Voit sen sijaan halutessasi yrittää {search_url|etsiä heitä}."
+msgstr "Valitettavasti käyttäjää ei löydy annetulla nimellä. Voit sen sijaan halutessasi {search_url|etsiä häntä}."
 
 #: ../root/search/editor.tt:18
 msgid ""
 "Sorry, we could not find any users matching the query for "
 "<code>{query}</code>"
-msgstr "Käyttäjiä ei löydy Kyselyä <code>{query}</code>"
+msgstr "Valitettavasti käyttäjiä ei löydy kyselyllä <code>{query}</code>"
 
 #: ../root/cdtoc/not_found.tt:4
 msgid "Sorry, we could not find the CD TOC you specified."
-msgstr ""
+msgstr "Valitettavasti määriteltyä CD-levyn sisällysluetteloa ei löydy."
 
 #: ../root/elections/not_found.tt:4
 msgid "Sorry, we could not find this election."
@@ -7506,11 +7506,11 @@ msgstr "Tietoja näistä vaaleista ei ole saatavilla."
 
 #: ../root/main/401.tt:5
 msgid "Sorry, you are not authorized to view this page."
-msgstr "Et ole oikeutettu näkemään tätä sivua."
+msgstr "Valitettavasti et ole oikeutettu näkemään tätä sivua."
 
 #: ../root/main/mirror.tt:5
 msgid "Sorry, you are unable to perform that action on a mirror server."
-msgstr "Et voi suorittaa toimintoa peilipalvelimellamme."
+msgstr "Valitettavasti et voi suorittaa toimintoa peilipalvelimellamme."
 
 #: ../root/search/error/no-info.tt:3
 msgid ""
@@ -7518,15 +7518,15 @@ msgid ""
 " to carry out a search. If you are attempting to find something that "
 "contains nothing but punctuation characters (e.g. !!!) then you need to use "
 "the {uri|browse page}, since this search ignores punctuation characters."
-msgstr "Kyselysi (<code>{query}</code>) ei sisällä riittävästi informaatioa haun jatkamiseksi. Mikäli etsit jotakin joka sisältää lukuisia välimerkkejä (esim. huutomerkki), sinun tulee käyttää {uri|hakusivua}. Tämä haku ei huomioi välimerkkejä. "
+msgstr "Valitettavasti kyselysi (<code>{query}</code>) ei sisällä riittävästi tietoa haun jatkamiseksi. Mikäli etsit jotakin joka sisältää lukuisia välimerkkejä (esim. huutomerkki), sinun tulee käyttää {uri|hakusivua}. Tämä haku ei huomioi välimerkkejä. "
 
 #: ../root/search/error/uri-too-large.tt:3
 msgid "Sorry, your query was too large."
-msgstr "Hakusi oli liian laaja."
+msgstr "Valitattavasti hakusi oli liian laaja."
 
 #: ../root/doc/bare_error.tt:5 ../root/doc/error.tt:11
 msgid "Sorry, “{id}” is not a valid documentation page."
-msgstr "“{id}” dokumentaatiosivua ei löydy."
+msgstr "Valittavasti “{id}” ei ole kelvollinen dokumentaatiosivu."
 
 #: ../root/components/forms.tt:245
 #: ../root/search/lib/inline-results-artist.tt:8
@@ -7963,13 +7963,13 @@ msgstr "Kommenttikenttä auttaa käyttäjiä erottamaan samannimiset julkaisut t
 msgid ""
 "The data in this edit originally came from an older version of this edit, "
 "and may not display correctly"
-msgstr ""
+msgstr "Muokkauksen tiedot ovat alunperin tämän muokkauksen vanhemmasta versiosta ja eivätkä välttämättä näy oikein"
 
 #: ../root/layout.tt:68
 msgid ""
 "The data you have submitted does not make any changes to the data already "
 "present."
-msgstr "Lähettämäsi data ei tee muutoksia nykyiseen dataan nähden. "
+msgstr "Lähettämäsi tiedot eivät tee muutoksia nykyisiin tietoihin nähden. "
 
 #: ../root/release/edit/layout.tt:23
 msgid "The data you’ve seeded contained the following errors:"
