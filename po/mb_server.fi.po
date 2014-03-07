@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-05 11:40-0700\n"
-"PO-Revision-Date: 2014-03-07 21:37+0000\n"
+"PO-Revision-Date: 2014-03-07 22:35+0000\n"
 "Last-Translator: jozo <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -449,7 +449,7 @@ msgstr "Hyväksy"
 
 #: ../root/edit/index.tt:62 ../root/edit/info.tt:25
 msgid "Accept edit"
-msgstr "Hyväksy muokkaus"
+msgstr "Kelpuuta muokkaus"
 
 #: ../root/components/common-macros.tt:676
 msgid "Accept upon expiration"
@@ -1160,7 +1160,7 @@ msgstr "Olet poistamassa käyttäjätilisi. Tätä toimintoa ei voi kumota!"
 msgid ""
 "Are you sure you want to nominate the editor {editor} for auto-editor "
 "status?"
-msgstr "Olet ehdottamassa editoria {editor} auto-editoriksi."
+msgstr "Olet ehdottamassa käyttäjää {editor} auto-editoriksi."
 
 #: ../root/alias/delete.tt:1
 msgid "Are you sure you want to remove the alias <em>{alias}</em>?"
@@ -3054,7 +3054,7 @@ msgstr "Johdanto muokkauksiin"
 #: ../root/annotation/history.tt:8 ../root/edit/search_macros.tt:307
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:43
 msgid "Editor"
-msgstr "Editori"
+msgstr "Käyttäjä"
 
 #: ../root/edit/search_macros.tt:307
 msgid "Editor Flag"
@@ -3062,23 +3062,23 @@ msgstr ""
 
 #: ../root/user/not_found.tt:1 ../root/user/not_found.tt:2
 msgid "Editor Not Found"
-msgstr "Editoria ei löydy"
+msgstr "Käyttäjää ei löydy"
 
 #: ../root/user/subscriptions/editor.tt:1 ../root/user/subscriptions/menu.tt:6
 msgid "Editor Subscriptions"
-msgstr "Seuratut editorit"
+msgstr "Seuratut käyttäjät"
 
 #: ../root/user/profile/layout.tt:1
 msgid "Editor “{user}”"
-msgstr "Editori \"{user}\""
+msgstr "Käyttäjä \"{user}\""
 
 #: ../root/artist/subscribe.tt:2
 msgid "Editors Subscribed to this Artist"
-msgstr "Tätä artistia seuraavat editorit"
+msgstr "Tätä artistia seuraavat käyttäjät"
 
 #: ../root/label/subscriptions.tt:2
 msgid "Editors subscribed to this Label"
-msgstr "Tätä levymerkkiä seuraavat editorit"
+msgstr "Tätä levymerkkiä seuraavat käyttäjät"
 
 #: ../root/user/edits.tt:1
 msgid "Edits"
@@ -4129,7 +4129,7 @@ msgstr "Sisäinen/botti"
 #: ../root/edit/details/merge_releases.tt:101
 #: ../root/edit/details/merge_works.tt:10
 msgid "Into:"
-msgstr "Kohde:"
+msgstr "Kohteeseen:"
 
 #: ../root/cdstub/error.tt:5
 msgid "Invalid Disc ID"
@@ -6995,7 +6995,7 @@ msgstr "Etsi muokkauksia"
 
 #: ../root/search/editor.tt:1
 msgid "Search for an Editor"
-msgstr "Etsi editoria"
+msgstr "Etsi käyttäjää"
 
 #: ../root/cdtoc/attach_filter_artist.tt:3
 msgid "Search for an artist"
@@ -7702,11 +7702,11 @@ msgstr "Seuraa tätä artistia"
 
 #: ../root/artist/subscribe.tt:1 ../root/label/subscriptions.tt:1
 msgid "Subscribed Editors"
-msgstr "Seuratut editorit"
+msgstr "Seuratut käyttäjät"
 
 #: ../root/edit/list_header.tt:19
 msgid "Subscribed editors"
-msgstr "Seuratut editorit"
+msgstr "Seuratut käyttäjät"
 
 #: ../root/edit/list_header.tt:17
 msgid "Subscribed entities"
@@ -9847,7 +9847,7 @@ msgstr "Äänet"
 
 #: ../root/user/profile.tt:197
 msgid "Votes ({view_url|view})"
-msgstr "Äänet ({view_url|view})"
+msgstr "Äänet ({view_url|näytä})"
 
 #: ../root/elections/index.tt:17
 msgid "Votes against"
@@ -10693,7 +10693,7 @@ msgstr "eivät täsmää"
 
 #: ../root/components/common-macros.tt:163
 msgid "editors"
-msgstr "editorit"
+msgstr "käyttäjät"
 
 #: ../root/edit/search_macros.tt:14
 msgid "edits"
@@ -11059,7 +11059,7 @@ msgstr "{count} ({url|näytä lista})"
 #: ../root/user/profile.tt:168 ../root/user/profile.tt:172
 #: ../root/user/profile.tt:176
 msgid "{count} ({view_url|view})"
-msgstr "{count} ({view_url|view})"
+msgstr "{count} ({view_url|näytä})"
 
 #: ../root/components/ratings.tt:16
 msgid "{count} private rating not listed."
@@ -11204,7 +11204,7 @@ msgstr[1] "{num} päivää sitten"
 msgid "{num} editor"
 msgid_plural "{num} editors"
 msgstr[0] "{num} editori"
-msgstr[1] "{num} editoria"
+msgstr[1] "{num} käyttäjää"
 
 #: ../root/user/subscriptions/layout.tt:28
 msgid "{num} label"
@@ -11606,7 +11606,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Controller/User.pm:252
 #, perl-brace-format
 msgid "The editor {name} has no email address attached to their account."
-msgstr "Editori {name} ei ole antanut sähköpostiosoitetta tilitietoihinsa."
+msgstr "Käyttäjä {name} ei ole antanut sähköpostiosoitetta tilitietoihinsa."
 
 #: ../lib/MusicBrainz/Server/Controller/User.pm:280
 msgid "Your message could not be sent"
@@ -12080,7 +12080,7 @@ msgstr "Äänestys avoinna {date} lähtien"
 #, perl-brace-format
 msgctxt "autoeditor election status"
 msgid "Accepted at {date}"
-msgstr "Valittu {date}"
+msgstr "Hyväksytty {date}"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:93
 #, perl-brace-format
@@ -12112,7 +12112,7 @@ msgstr "Avoin äänestys"
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:101
 msgctxt "autoeditor election status (short)"
 msgid "Accepted"
-msgstr "Valittu"
+msgstr "Hyväksytty"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:102
 msgctxt "autoeditor election status (short)"
