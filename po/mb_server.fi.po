@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-05 11:40-0700\n"
-"PO-Revision-Date: 2014-03-07 16:58+0000\n"
+"PO-Revision-Date: 2014-03-07 17:59+0000\n"
 "Last-Translator: jozo <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -44,7 +44,7 @@ msgstr "Syötä alle käyttäjänimesi ja sähköpostiosoitteesi. Lähetämme si
 
 #: ../root/components/forms.tt:257
 msgid "\"C\" is a single check digit."
-msgstr ""
+msgstr "\"C\" on yksi tarkistusnumero."
 
 #: ../root/components/forms.tt:267
 msgid "\"CC\" is the appropriate for the registrant two-character country code."
@@ -225,7 +225,7 @@ msgstr "(yksityinen)"
 
 #: ../root/layout/menu.tt:24
 msgid "(reset language)"
-msgstr ""
+msgstr "(nollaa kieli)"
 
 #: ../root/search/lib/inline-results-recording.tt:63
 msgid "(standalone recording)"
@@ -367,7 +367,7 @@ msgid ""
 "<strong>Warning:</strong> Some of the recordings you're merging have "
 "different ISRCs. Please make sure they are indeed the same recordings and "
 "you wish to continue with the merge."
-msgstr ""
+msgstr "<strong>Varoitus:</strong> Joillain yhdistettävillä äänitteillä on eri ISRC-koodi. Varmista äänitteiden todellakin olevan samat ja haluavasi jatkaa yhdistämistä."
 
 #: ../root/components/common-macros.tt:813 ../root/recording/edit.tt:10
 msgid "<strong>Warning</strong>:"
@@ -938,7 +938,7 @@ msgstr "Kaikki muokkaukseni"
 
 #: ../root/scripts/text_strings.tt:124
 msgid "All of your changes will be lost if you leave this page."
-msgstr ""
+msgstr "Kaikki muutokset menetetään, jos jätät tämän sivun."
 
 #: ../root/edit/details/merge_releases.tt:127
 msgid "All recordings for these releases are already merged."
@@ -3589,7 +3589,7 @@ msgstr "Perustettu:"
 
 #: ../root/freedb/not_found.tt:1 ../root/freedb/not_found.tt:2
 msgid "FreeDB Entry Not Found"
-msgstr ""
+msgstr "FreeDB-merkintää ei löydy"
 
 #: ../root/layout/menu.tt:189
 msgid "FreeDB Gateway"
@@ -3977,7 +3977,7 @@ msgstr "Jos et löydä etsimääsi artistia, voit silti lisätä uuden julkaisen
 msgid ""
 "If you don't see the release you are looking for, you can still add a new "
 "one, using this CD TOC:"
-msgstr ""
+msgstr "Jos et löydä etsimääsi julkaisua, voit silti lisätä uuden käyttämällä CD-levyn sisällysluetteloa:"
 
 #: ../root/taglookup/nag.tt:18
 msgid ""
@@ -6123,7 +6123,7 @@ msgstr "Hylätään vanhentuessa"
 
 #: ../root/scripts/text_strings.tt:95
 msgid "Relate recording to work"
-msgstr ""
+msgstr "Yhdistä äänite teokseen"
 
 #: ../root/components/common-macros.tt:618
 msgid "Relate to ..."
@@ -6131,7 +6131,7 @@ msgstr "Lisää yhteys..."
 
 #: ../root/release/edit_relationships.tt:57
 msgid "Related Works"
-msgstr ""
+msgstr "Yhdistetyt teokset"
 
 #: ../root/recording/index.tt:51 ../root/recording/relationships.tt:6
 msgid "Related works"
@@ -6556,7 +6556,7 @@ msgstr "Julkaisuja, joilla epäselvyyksiä tallenteiden numeroinnissa"
 
 #: ../root/report/index.tt:72
 msgid "Releases with non-sequential mediums"
-msgstr ""
+msgstr "Julkaisuja, joissa ei-peräkkäisiä tallenteita"
 
 #: ../root/report/index.tt:61
 msgid "Releases with non-sequential track numbers"
@@ -6580,7 +6580,7 @@ msgstr "Julkaisut, joiden nimi sisältää artistin nimen"
 #: ../root/report/tracks_with_sequence_issues.tt:1
 #: ../root/report/tracks_with_sequence_issues.tt:3
 msgid "Releases with track number issues"
-msgstr "Julkaisut, joilla epäselvyyksiä kappelenumeroinnissa"
+msgstr "Julkaisuja, joilla epäselvyyksiä kappelenumeroinnissa"
 
 #: ../root/report/index.tt:74 ../root/report/tracks_without_times.tt:1
 #: ../root/report/tracks_without_times.tt:3
@@ -6591,7 +6591,7 @@ msgstr ""
 #: ../root/report/releases_with_unlikely_language_script.tt:1
 #: ../root/report/releases_with_unlikely_language_script.tt:3
 msgid "Releases with unlikely language/script pairs"
-msgstr "Julkaisut epätodennäköisillä kieli- ja merkistöpareilla"
+msgstr "Julkaisuja, joissa epätodennäköisiä kieli- ja merkistöpareja"
 
 #: ../root/report/index.tt:52 ../root/report/releases_without_language.tt:1
 #: ../root/report/releases_without_language.tt:3
@@ -6924,7 +6924,7 @@ msgstr ""
 
 #: ../root/layout.tt:20
 msgid "Running: <span class=\"tooltip\" title=\"{msg}\">{branch} ({sha})</span>"
-msgstr ""
+msgstr "Ajossa: <span class=\"tooltip\" title=\"{msg}\">{branch} ({sha})</span>"
 
 #: ../root/account/edit.tt:94 ../root/account/preferences.tt:50
 #: ../root/relationship/linkattributetype/form.tt:21
@@ -7373,7 +7373,7 @@ msgid ""
 "Sorry, but your query (<code>{query}</code>) could not be performed, because"
 " it appears you've been rate-limited. Either the server is overloaded or "
 "you're making a lot of requests all at once!"
-msgstr ""
+msgstr "Valitettavasti kyselyä (<code>{query}</code>) ei voida suorittaa, koska olet ylittänyt sallitun nopeuden rajan. Palvelin on ylikuormittunut tai teet kerralla paljon pyyntöjä!"
 
 #: ../root/search/error/general.tt:3
 msgid ""
@@ -7409,7 +7409,7 @@ msgstr ""
 msgid ""
 "Sorry, we could not find a FreeDB entry with that ID. You may wish to try "
 "and {search_url|search for it} instead."
-msgstr ""
+msgstr "Valitettavasti FreeDB-merkintää ei löydy annetulla tunnisteella. Voit sen sijaan halutessasi {search_url|etsiä sitä}."
 
 #: ../root/otherlookup/not_found.tt:4
 msgid ""
@@ -7502,7 +7502,7 @@ msgstr "Valitettavasti määriteltyä CD-levyn sisällysluetteloa ei löydy."
 
 #: ../root/elections/not_found.tt:4
 msgid "Sorry, we could not find this election."
-msgstr "Tietoja näistä vaaleista ei ole saatavilla."
+msgstr "Valitettavasti tietoja näistä vaaleista ei ole saatavilla."
 
 #: ../root/main/401.tt:5
 msgid "Sorry, you are not authorized to view this page."
@@ -8060,7 +8060,7 @@ msgstr "Syy tähän on tuntematon."
 msgid ""
 "The recording artists do not match! Perhaps you meant to use the \"append "
 "mediums\" merge strategy?"
-msgstr ""
+msgstr "Äänitteiden artistit eivät täsmää! Ehkä tarkoituksesi oli käyttää \"Liitä talleenteet kohteena olevaan julkaisuun\" yhdistämismenetelmää."
 
 #: ../root/release/merge.tt:114
 msgid ""
@@ -8106,7 +8106,7 @@ msgstr "MusicBrainzia ei olisi ilman käyttäjiämme. Arvostamme sinunkin apuasi
 
 #: ../root/scripts/text_strings.tt:98
 msgid "The value you've entered is not valid."
-msgstr ""
+msgstr "Syöttämäsi arvo on virheellinen."
 
 #: ../root/watch/list.tt:4
 msgid "The watch artist feature is currently not active."
@@ -8249,7 +8249,7 @@ msgstr "Tämä ISRC-koodi ei liity yhteenkään äänitteeseen. Jos haluat liitt
 msgid ""
 "This ISWC is not associated with any works. If you wish to associate it with"
 " a work, please {search_url|search for the work} and add it."
-msgstr ""
+msgstr "Tämä ISWC-koodi ei liity yhteenkään teokseen. Jos haluat liittää sen tiettyyn teokseen, {search_url|etsi teos} ja lisää se siihen."
 
 #: ../root/scripts/text_strings.tt:142
 msgid ""
@@ -9110,7 +9110,7 @@ msgstr ""
 #: ../root/release/merge.tt:108
 msgid ""
 "This requires that corresponding mediums have the same number of tracks."
-msgstr ""
+msgstr "Tämä edellyttää, että tallenteilla on yhtä monta kappaletta."
 
 #: ../root/user/profile.tt:193
 msgid "This table shows a summary of votes cast by this editor."
@@ -9588,7 +9588,7 @@ msgstr ""
 #: ../root/doc/relationship_type.tt:34
 #: ../root/relationship/linktype/tree.tt:12
 msgid "UUID:"
-msgstr ""
+msgstr "UUID:"
 
 #: ../root/release/edit/tracklist.tt:8
 msgid "Unable to parse the tracklist you entered."
@@ -9610,7 +9610,7 @@ msgstr "Poista"
 #: ../root/report/unlinked_pseudo_releases.tt:1
 #: ../root/report/unlinked_pseudo_releases.tt:3
 msgid "Unlinked Pseudo-Releases"
-msgstr ""
+msgstr "Linkittämättömät valejulkaisut"
 
 #: ../root/artist/index.tt:49
 msgid "Unspecified type"
@@ -10418,7 +10418,7 @@ msgstr "Et voi lisätä CD-tynkää ollessasi sisäänkirjautunut MusicBrainz:ii
 msgid ""
 "You cannot remove the relationship attribute \"{type}\" as it is still in "
 "use by other relationships."
-msgstr ""
+msgstr "Et voi poistaa yhteyden omaisuutta \"{type}\", koska toinen yhteys käyttää sitä vielä."
 
 #: ../root/scripts/text_strings.tt:158
 msgid "You cannot use the same country more than once."
@@ -10713,11 +10713,11 @@ msgstr "{begin_date} alkaen {end_date} asti"
 
 #: ../root/components/common-macros.tt:734 ../root/edit/details/macros.tt:28
 msgid "from {date} to ????"
-msgstr ""
+msgstr "{date} alkaen ???? asti "
 
 #: ../root/components/common-macros.tt:734 ../root/edit/details/macros.tt:28
 msgid "from {date} to present"
-msgstr ""
+msgstr "{date} alkaen nykyhetkeen asti"
 
 #: ../root/release/edit_relationships.tt:236
 #: ../root/release/edit_relationships.tt:248
@@ -10993,7 +10993,7 @@ msgstr "{about|Lisätietoja} &#x2014; {faq|Usein Kysytyt Kysymykset} &#x2014; {c
 
 #: ../root/components/common-macros.tt:136
 msgid "{almost_last_list_item} and {last_list_item}"
-msgstr ""
+msgstr "{almost_last_list_item} ja {last_list_item}"
 
 #: ../root/oauth2/authorize.tt:5
 msgid "{app} is requesting permission to:"
@@ -11004,7 +11004,7 @@ msgstr ""
 #: ../root/report/iswc_with_many_works.tt:52 ../root/search/results-work.tt:25
 #: ../root/work/merge.tt:34
 msgid "{artist} ({roles})"
-msgstr ""
+msgstr "{artist} ({roles})"
 
 #: ../root/cdtoc/lookup.tt:21
 msgid "{artist} - {name}"
@@ -11048,7 +11048,7 @@ msgstr "{owner}: {collection} "
 
 #: ../root/components/common-macros.tt:147
 msgid "{commas_only_list_item}, {rest}"
-msgstr ""
+msgstr "{commas_only_list_item}, {rest}"
 
 #: ../root/user/profile.tt:103
 msgid "{count} ({url|view list})"
@@ -11059,7 +11059,7 @@ msgstr "{count} ({url|näytä lista})"
 #: ../root/user/profile.tt:168 ../root/user/profile.tt:172
 #: ../root/user/profile.tt:176
 msgid "{count} ({view_url|view})"
-msgstr ""
+msgstr "{count} ({view_url|view})"
 
 #: ../root/components/ratings.tt:16
 msgid "{count} private rating not listed."
@@ -11131,7 +11131,7 @@ msgstr "{format} {position} {name} julkaisussa {release} artistilta {artist}"
 
 #: ../root/components/common-macros.tt:145
 msgid "{last_list_item}"
-msgstr ""
+msgstr "{last_list_item}"
 
 #: ../root/components/ratings.tt:21
 msgid "{link} has no ratings."
@@ -11143,14 +11143,14 @@ msgstr "Ei yhteyksiä kohteelle {link}."
 
 #: ../root/components/common-macros.tt:138
 msgid "{list_item}, {rest}"
-msgstr ""
+msgstr "{list_item}, {rest}"
 
 #: ../root/area/details.tt:11 ../root/artist/details.tt:11
 #: ../root/label/details.tt:11 ../root/place/details.tt:11
 #: ../root/recording/details.tt:11 ../root/release/details.tt:11
 #: ../root/release_group/details.tt:11 ../root/work/details.tt:11
 msgid "{mbid|<abbr title=\"MusicBrainz Identifier\">MBID</abbr>}:"
-msgstr ""
+msgstr "{mbid|<abbr title=\"MusicBrainz-tunniste\">MBID</abbr>}:"
 
 #: ../root/scripts/text_strings.tt:165
 msgid "{name} - Add Release"
@@ -11574,15 +11574,15 @@ msgstr "'{id}' ei ole kelvollinen FreeDB-tunniste"
 #: ../lib/MusicBrainz/Server/Controller/Relationship/LinkType.pm:48
 #, perl-brace-format
 msgid "'{types}' is not a valid pair of types for relationships."
-msgstr ""
+msgstr "'{types}' ei ole kelvollinen pari yhteystyypeiksi."
 
 #: ../lib/MusicBrainz/Server/Controller/RelationshipEditor.pm:50
 msgid "There were errors in your submission. Please fix them and try again."
-msgstr ""
+msgstr "Lähetteessäsi oli virheitä. Ole hyvä ja korjaa ne ja yritä uudelleen."
 
 #: ../lib/MusicBrainz/Server/Controller/RelationshipEditor.pm:57
 msgid "Invalid submission."
-msgstr ""
+msgstr "Epäkelpo lähete."
 
 #: ../lib/MusicBrainz/Server/Controller/Release.pm:601
 msgid ""
@@ -12010,15 +12010,15 @@ msgstr "Hyväksytty"
 
 #: ../lib/MusicBrainz/Server/Edit/Utils.pm:269
 msgid "Failed vote"
-msgstr "Epäonnistunut"
+msgstr "Epäonnistunut äänestys"
 
 #: ../lib/MusicBrainz/Server/Edit/Utils.pm:270
 msgid "Failed dependency"
-msgstr ""
+msgstr "Epäonnistunut riippuvuus"
 
 #: ../lib/MusicBrainz/Server/Edit/Utils.pm:272
 msgid "Failed prerequisite"
-msgstr ""
+msgstr "Epäonnistunut edellytys"
 
 #: ../lib/MusicBrainz/Server/Edit/Utils.pm:273
 msgid "No votes"
@@ -12206,7 +12206,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Form/Field/ArtistCredit.pm:76
 msgid "Artist credit field is required"
-msgstr ""
+msgstr "Kirjoitusasu vaaditaan"
 
 #: ../lib/MusicBrainz/Server/Form/Field/Coordinates.pm:93
 msgid "These coordinates could not be parsed"
@@ -12304,7 +12304,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Form/RelationshipEditor.pm:71
 msgid "The relationship is missing one or both entities."
-msgstr ""
+msgstr "Yhteydestä puuttuu yksi tai molemmat kohteet."
 
 #: ../lib/MusicBrainz/Server/Form/RelationshipEditor.pm:80
 #: ../lib/MusicBrainz/Server/Form/RelationshipEditor.pm:83
@@ -12318,7 +12318,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Form/RelationshipEditor.pm:100
 msgid "This entity has an invalid ID or MBID."
-msgstr ""
+msgstr "Tällä kohteella on epäkelpo ID tai MBID."
 
 #: ../lib/MusicBrainz/Server/Form/RelationshipEditor.pm:109
 msgid "This entity does not exist."
@@ -12439,22 +12439,22 @@ msgstr "Kuukausi"
 #: ../lib/MusicBrainz/Server/Form/Utils.pm:39
 msgctxt "language optgroup"
 msgid "Frequently used"
-msgstr ""
+msgstr "Usein käytetty"
 
 #: ../lib/MusicBrainz/Server/Form/Utils.pm:39
 msgctxt "language optgroup"
 msgid "Other"
-msgstr ""
+msgstr "Muu"
 
 #: ../lib/MusicBrainz/Server/Form/Utils.pm:63
 msgctxt "script optgroup"
 msgid "Frequently used"
-msgstr ""
+msgstr "Usein käytetty"
 
 #: ../lib/MusicBrainz/Server/Form/Utils.pm:63
 msgctxt "script optgroup"
 msgid "Other"
-msgstr ""
+msgstr "Muu"
 
 #: ../lib/MusicBrainz/Server/Release.pm:57
 msgid "(Special case)"
