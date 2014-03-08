@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-05 11:40-0700\n"
-"PO-Revision-Date: 2014-03-08 04:01+0000\n"
+"PO-Revision-Date: 2014-03-08 06:56+0000\n"
 "Last-Translator: jozo <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -1144,37 +1144,37 @@ msgstr "Hyväksy muokkaus"
 msgid ""
 "Are you sure that you wish to attach the disc ID <code>{discid}</code> to "
 "{format} {pos} of {release} by {artist}?"
-msgstr "Olet liittämässä levyn tunnisteen <code>{discid}</code> artistin {artist} julkaisuun {release}, tallenteeseen {format} kohdassa {pos}."
+msgstr "Haluatko varmasti lisätä levyn tunnisteen <code>{discid}</code> artistin {artist} julkaisuun {release}, tallenteeseen {format} kohdassa {pos}?"
 
 #: ../root/admin/delete_user.tt:4
 msgid ""
 "Are you sure you want to delete all information about {e}? This cannot be "
 "undone!"
-msgstr "Olet poistamassa kaiken tiedon käyttäjästä {e}. Tätä toimintoa ei voi kumota!"
+msgstr "Haluatko varmasti poistaa kaiken tiedon käyttäjästä {e}? Tätä toimintoa ei voi kumota!"
 
 #: ../root/admin/delete_user.tt:20
 msgid "Are you sure you want to delete your account? This cannot be undone!"
-msgstr "Olet poistamassa käyttäjätilisi. Tätä toimintoa ei voi kumota!"
+msgstr "Haluatko varmasti poistaa käyttäjätilisi? Tätä toimintoa ei voi kumota!"
 
 #: ../root/elections/nominate.tt:5
 msgid ""
 "Are you sure you want to nominate the editor {editor} for auto-editor "
 "status?"
-msgstr "Olet ehdottamassa käyttäjää {editor} auto-editoriksi."
+msgstr "Haluatko varmasti ehdottaa käyttäjää {editor} auto-editoriksi?"
 
 #: ../root/alias/delete.tt:1
 msgid "Are you sure you want to remove the alias <em>{alias}</em>?"
-msgstr ""
+msgstr "Haluatko varmasti poistaa aliaksen <em>{alias}</em>?"
 
 #: ../root/collection/delete.tt:4
 msgid "Are you sure you want to remove the collection {collection}?"
-msgstr "Olet poistamassa kokoelman {collection}."
+msgstr "Haluatko varmasti poistaa kokoelman {collection}?"
 
 #: ../root/cdtoc/remove.tt:5
 msgid ""
 "Are you sure you want to remove the disc ID <code>{discid}</code> from the "
 "release {release} by {artist}?"
-msgstr "Olet poistamassa levyn tunnistetta <code>{discid}</code> artistin {artist} julkaisusta {release}."
+msgstr "Haluatko varmasti poistaa levyn tunnisteen <code>{discid}</code> artistin {artist} julkaisusta {release}?"
 
 #: ../root/account/remove_application.tt:5
 msgid "Are you sure you want to remove this application?"
@@ -1182,29 +1182,29 @@ msgstr "Haluatko varmasti poistaa tämän sovelluksen?"
 
 #: ../root/account/revoke_application_access.tt:5
 msgid "Are you sure you want to revoke this application's access?"
-msgstr ""
+msgstr "Haluatko varmasti kumota tämän sovelluksen oikeudet?"
 
 #: ../root/edit/cancel.tt:3
 msgid "Are you sure you wish to cancel edit #{n}? This cannot be undone!"
-msgstr "Olet peruuttamassa muokkausta edit #{n}. Tätä toimintoa ei voi kumota!"
+msgstr "Haluatko varmasti peruuttaa muokkauksen edit #{n}? Tätä toimintoa ei voi kumota!"
 
 #: ../root/admin/wikidoc/delete.tt:4
 msgid ""
 "Are you sure you wish to remove <strong>{page}</strong> from the "
 "transclusion table?"
-msgstr "Olet poistamassa sivua <strong>{page}</strong> sisällytystaulusta."
+msgstr "Haluatko varmasti poistaa sivun <strong>{page}</strong> sisällytystaulusta?"
 
 #: ../root/relationship/linkattributetype/delete.tt:6
 msgid ""
 "Are you sure you wish to remove the <strong>{link_attr_type}</strong> "
 "relationship attribute?"
-msgstr "Olet poistamassa <strong>{link_attr_type}</strong> yhteyden ominaisuutta."
+msgstr "Haluatko varmasti poistaa <strong>{link_attr_type}</strong> yhteyden ominaisuuden?"
 
 #: ../root/relationship/linktype/delete.tt:6
 msgid ""
 "Are you sure you wish to remove the <strong>{link_type}</strong> "
 "relationship type?"
-msgstr "Olet poistamassa <strong>{link_type}</strong> yhteystyypin."
+msgstr "Haluatko varmasti poistaa <strong>{link_type}</strong> yhteystyypin?"
 
 #: ../root/area/delete.tt:5
 msgid "Are you sure you wish to remove the area {area} from MusicBrainz?"
@@ -1214,32 +1214,32 @@ msgstr "Haluatko varmasti poistaa alueen {area} MusicBrainzista?"
 msgid ""
 "Are you sure you wish to remove the below cover art from {release} by "
 "{artist}?"
-msgstr "Olet poistamassa alapuolella olevan kansitaiteen artistin {artist} julkaisusta {release}."
+msgstr "Haluatko varmasti poistaa alapuolella olevan kansitaiteen artistin {artist} julkaisusta {release}?"
 
 #: ../root/label/delete.tt:5
 msgid "Are you sure you wish to remove the label {label} from MusicBrainz?"
-msgstr "Olet poistamassa levymerkkiä {label} MusicBrainzista."
+msgstr "Haluatko varmasti poistaa levymerkin {label} MusicBrainzista?"
 
 #: ../root/recording/delete.tt:9
 msgid ""
 "Are you sure you wish to remove the recording {recording} from MusicBrainz?"
-msgstr "Olet poistamassa äänitteen {recording} MusicBrainzista."
+msgstr "Haluatko varmasti poistaa äänitteen {recording} MusicBrainzista?"
 
 #: ../root/edit/relationship/delete.tt:6
 msgid ""
 "Are you sure you wish to remove the relationship: {entity0} {relationship}?"
-msgstr "Olet poistamassa yhteyttä: {entity0} {relationship}."
+msgstr "Haluatko varmasti poistaa yhteyden: {entity0} {relationship}?"
 
 #: ../root/release_group/delete.tt:5
 msgid ""
 "Are you sure you wish to remove the release group {rg} by {artist} from "
 "MusicBrainz?"
-msgstr "Olet poistamassa artistin {artist} julkaisuryhmää {rg} MusicBrainzista."
+msgstr "Haluatko varmasti poistaa artistin {artist} julkaisuryhmän {rg} MusicBrainzista?"
 
 #: ../root/release/delete.tt:7
 msgid ""
 "Are you sure you wish to remove the release {release} from MusicBrainz?"
-msgstr "Olet poistamassa julkaisun {release} MusicBrainzista."
+msgstr "Haluatko varmasti poistaa julkaisun {release} MusicBrainzista?"
 
 #: ../root/area/edits.tt:5 ../root/area/header.tt:21
 #: ../root/components/common-macros.tt:585
@@ -1594,7 +1594,7 @@ msgstr "Auto-editorit ovat luotettuja käyttäjiä, joille on annettu {url|auto-
 
 #: ../root/user/profile.tt:155
 msgid "Auto-edits"
-msgstr "Auto-muokkauksia"
+msgstr "Automaattisia muokkauksia"
 
 #: ../root/account/preferences.tt:43
 msgid "Automatically subscribe me to artists I create."
@@ -3058,7 +3058,7 @@ msgstr "Käyttäjä"
 
 #: ../root/edit/search_macros.tt:307
 msgid "Editor Flag"
-msgstr ""
+msgstr "Käyttäjän lippu"
 
 #: ../root/user/not_found.tt:1 ../root/user/not_found.tt:2
 msgid "Editor Not Found"
@@ -5181,7 +5181,7 @@ msgstr "Julkaisuja ei löytynyt."
 
 #: ../root/collection/index.tt:56
 msgid "No releases found in collection."
-msgstr "Kokoelmasta ei löytynyt julkaisuja."
+msgstr "Kokoelmassa ei ole julkaisuja."
 
 #: ../root/recording/index.tt:43
 msgid "No releases found which feature this recording."
@@ -5915,7 +5915,7 @@ msgstr "Yksityinen"
 
 #: ../root/collection/header.tt:14
 msgid "Private collection"
-msgstr "Ykstyinen kokoelma"
+msgstr "Yksityinen kokoelma"
 
 #: ../root/layout/menu.tt:136 ../root/user/privileged.tt:14
 #: ../root/user/privileged.tt:16
@@ -6749,7 +6749,7 @@ msgstr "Poista artistin alias"
 
 #: ../root/collection/delete.tt:2 ../root/collection/delete.tt:7
 msgid "Remove collection"
-msgstr "Poista julkaisu"
+msgstr "Poista kokoelma"
 
 #: ../root/release/edit/tracklist.tt:213
 msgid "Remove disc"
@@ -6757,11 +6757,11 @@ msgstr "Poista levy"
 
 #: ../root/release/sidebar.tt:121
 msgid "Remove from my collection"
-msgstr "Poista kokoelmastasi"
+msgstr "Poista kokoelmastani"
 
 #: ../root/release/sidebar.tt:123
 msgid "Remove from {collection}"
-msgstr "Poista kokoelmastasi {collection}"
+msgstr "Poista kokoelmasta {collection}"
 
 #: ../root/label/layout.tt:73
 #: ../lib/MusicBrainz/Server/Edit/Label/Delete.pm:12
@@ -6796,7 +6796,7 @@ msgstr "Poista valitut kohteet"
 
 #: ../root/collection/index.tt:51
 msgid "Remove selected releases from collection"
-msgstr "Poista valitut julkaisut kokoelmastasi"
+msgstr "Poista valitut julkaisut kokoelmasta"
 
 #: ../root/release/edit/tracklist.tt:288
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveTrack.pm:10
@@ -7067,7 +7067,7 @@ msgstr "Näytä kaikki kokoelmasi"
 
 #: ../root/collection/header.tt:17
 msgid "See all of {editor}'s public collections"
-msgstr "Näytä kaikki editorin {editor} julkiset kokoelmat"
+msgstr "Näytä kaikki käyttäjän {editor} julkiset kokoelmat"
 
 #: ../root/tag/index.tt:26
 msgid "See all {num} "
@@ -10657,7 +10657,7 @@ msgstr "artistit"
 
 #: ../root/edit/search_macros.tt:14
 msgid "auto-edits"
-msgstr "auto-muokkaukset"
+msgstr "automaattiset muokkaukset"
 
 #: ../root/components/common-macros.tt:726
 msgid "automatically applied"
@@ -10831,7 +10831,7 @@ msgstr "ehdota auto-editoriksi"
 
 #: ../root/edit/search_macros.tt:14
 msgid "non-auto-edits"
-msgstr "ei auto-muokkaukset"
+msgstr "ei automaattiset muokkaukset"
 
 #: ../root/relationship/linkattributetype/common.tt:19
 msgid "none"
@@ -11044,7 +11044,7 @@ msgstr "{b} ja {a}"
 
 #: ../root/release/collections.tt:10
 msgid "{collection} by {owner}"
-msgstr "{owner}: {collection} "
+msgstr "Käyttäjän {owner} kokoelma {collection} "
 
 #: ../root/components/common-macros.tt:147
 msgid "{commas_only_list_item}, {rest}"
