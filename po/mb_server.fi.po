@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-05 11:40-0700\n"
-"PO-Revision-Date: 2014-03-08 00:49+0000\n"
+"PO-Revision-Date: 2014-03-08 01:55+0000\n"
 "Last-Translator: jozo <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -602,7 +602,7 @@ msgstr "Lisää yhteys URL-osoitteelle"
 
 #: ../root/layout/menu.tt:226
 msgid "Add Various Artists Release"
-msgstr "Lisää useiden artistien julkaisu"
+msgstr "Lisää eri esittäjien julkaisu"
 
 #: ../root/layout/menu.tt:232
 msgctxt "button/menu"
@@ -3457,7 +3457,7 @@ msgstr "Äänitunnisteet"
 msgid ""
 "First enter all track information, including titles and artist credits, in "
 "order to edit their recordings."
-msgstr ""
+msgstr "Ensin lisää kaikki kappaletiedot, sisältäen nimet ja artistit,  voidaksesi muokata niiden äänitteitä."
 
 #: ../root/account/register.tt:53
 msgid ""
@@ -4373,7 +4373,7 @@ msgstr "Rajoitetut käyttöoikeudet"
 
 #: ../root/release/edit/tracklist.tt:20
 msgid "Lines start with a track number"
-msgstr ""
+msgstr "Rivit alkaen numerolla"
 
 #: ../root/recording/fingerprints.tt:32
 msgid "Link"
@@ -6911,7 +6911,7 @@ msgstr "Tutustu <a href=\"{url}\" target=\"_blank\">listaan pakkaustyypeistä</a
 msgid ""
 "Review the {url|documentation} on release editor seeding and make sure your "
 "data is formatted correctly."
-msgstr ""
+msgstr "Tarkastele {url | dokumentaatiota} julkaisumuokkaimen kylvämisestä ja varmista, että antamasi tiedot on muotoiltu oikein."
 
 #: ../root/account/applications.tt:35
 msgid "Revoke Access"
@@ -7231,55 +7231,55 @@ msgstr "Näytetään kaikki äänitteet. {show_sa|Näytä vain itsenäiset ään
 msgid ""
 "Showing all release groups by this artist. {show_official|Show only official"
 " release groups instead}, or {show_va|show various artists release groups}."
-msgstr "Näytetään artistin kaikki julkaisuryhmät. {show_official|Näytä vain  artistin viralliset julkaisuryhmät}, tai {show_va|näytä useiden artistien julkaisuryhmät}."
+msgstr "Näytetään artistin kaikki julkaisuryhmät. {show_official|Näytä vain  artistin viralliset julkaisuryhmät}, tai {show_va|näytä eri esittäjien julkaisuryhmät}."
 
 #: ../root/artist/index.tt:112
 msgid ""
 "Showing all release groups by this artist. {show_va|Show various artists "
 "release groups instead}."
-msgstr "Näytetään kaikki artistin julkaisuryhmät. {show_va|Näytä  useiden artistien julkaisuryhmät}."
+msgstr "Näytetään kaikki artistin julkaisuryhmät. {show_va|Näytä eri esittäjien julkaisuryhmät}."
 
 #: ../root/artist/index.tt:122
 msgid "Showing all release groups for various artists."
-msgstr "Näytetään kaikki useiden artistien julkaisuryhmät."
+msgstr "Näytetään kaikki eri esittäjien julkaisuryhmät."
 
 #: ../root/artist/index.tt:144
 msgid ""
 "Showing all release groups for various artists. {show_non_va|Show release "
 "groups by this artist instead}."
-msgstr "Näytetään kaikki useiden artistien julkaisuryhmät. {show_non_va|Näytä artistin julkaisuryhmä}."
+msgstr "Näytetään kaikki eri esittäjien julkaisuryhmät. {show_non_va|Näytä artistin julkaisuryhmä}."
 
 #: ../root/artist/index.tt:152
 msgid ""
 "Showing all release groups for various artists. {show_official|Show only "
 "official various artists release groups instead}, or {show_non_va|show "
 "release groups by this artist}."
-msgstr "Näytetään kaikki useiden artistien julkaisuryhmät. {show_official|Näytä vain viralliset useiden artistien julkaisuryhmät}, tai {show_non_va|näytä artistin julkaisuryhmät}."
+msgstr "Näytetään kaikki eri esittäjien julkaisuryhmät. {show_official|Näytä vain viralliset eri esittäjien julkaisuryhmät}, tai {show_non_va|näytä artistin julkaisuryhmät}."
 
 #: ../root/artist/index.tt:132
 msgid ""
 "Showing all release groups for various artists. {show_official|Show only "
 "official various artists release groups instead}."
-msgstr "Näytetään kaikki useiden artistien julkaisuryhmät. {show_official|Näytä vain viralliset useiden artistien julkaisuryhmät}."
+msgstr "Näytetään kaikki eri esittäjien julkaisuryhmät. {show_official|Näytä vain viralliset eri esittäjien julkaisuryhmät}."
 
 #: ../root/artist/index.tt:108
 msgid ""
 "Showing official release groups by this artist. {show_all|Show all release "
 "groups instead}, or {show_va|show various artists release groups}."
-msgstr "Näytetään artistin viralliset julkaisuryhmät. {show_all|Näytä  artistin kaikki julkaisuryhmät}, tai {show_va|näytä useiden artistien julkaisuryhmät}."
+msgstr "Näytetään artistin viralliset julkaisuryhmät. {show_all|Näytä artistin kaikki julkaisuryhmät}, tai {show_va|näytä eri esittäjien julkaisuryhmät}."
 
 #: ../root/artist/index.tt:137
 msgid ""
 "Showing official release groups for various artists. {show_all|Show all "
 "various artists release groups instead}, or {show_non_va|show release groups"
 " by this artist}."
-msgstr "Näytetään viralliset useiden artistien julkaisuryhmät. {show_all|Näytä kaikki useiden artistien julkaisuryhmät}, tai {show_non_va|näytä artistin julkaisuryhmät}."
+msgstr "Näytetään viralliset eri esittäjien julkaisuryhmät. {show_all|Näytä kaikki eri esittäjien julkaisuryhmät}, tai {show_non_va|näytä artistin julkaisuryhmät}."
 
 #: ../root/artist/index.tt:116
 msgid ""
 "Showing official release groups for various artists. {show_all|Show all "
 "various artists release groups instead}."
-msgstr "Näytetään viralliset useiden artistien julkaisuryhmät. {show_all|Näytä kaikki useiden artistien julkaisuryhmät}."
+msgstr "Näytetään viralliset eri esittäjien julkaisuryhmät. {show_all|Näytä kaikki eri esittäjien julkaisuryhmät}."
 
 #: ../root/artist/recordings.tt:20
 msgid ""
@@ -7341,7 +7341,7 @@ msgstr "Jotkut artistit kirjattu vaihtoehtoisella nimellä"
 msgid ""
 "Some errors were detected in the data you’ve entered. Click on the tabs "
 "shaded red and correct any visible errors."
-msgstr ""
+msgstr "Joitakin virheitä havaittiin antamissasi tiedoissa. Klikkaa punaisella sävytettyjä välilehtiä ja korjaa näkyvät virheet."
 
 #: ../root/layout/menu.tt:168 ../root/main/index.tt:12
 msgid "SongKong Tagger"
@@ -7973,7 +7973,7 @@ msgstr "Lähettämäsi tiedot eivät tee muutoksia nykyisiin tietoihin nähden. 
 
 #: ../root/release/edit/layout.tt:23
 msgid "The data you’ve seeded contained the following errors:"
-msgstr ""
+msgstr "Kylvämäsi tiedot sisälsivät seuraavat virheet:"
 
 #: ../root/tag/cloud.tt:9
 msgid "The database has no tags."
@@ -8027,7 +8027,7 @@ msgstr "Seuraavat {count} käyttäjää ovat auto-editoreja:"
 msgid ""
 "The information you‘ve provided contains errors, and was not entered; please"
 " visit the tabs shaded in red, fix all visible errors, and try again."
-msgstr ""
+msgstr "Antamasi tiedot sisältävät virheitä. Käy lävitse punaisella sävytetyt välilehdet, korjaa kaikki näkyvät virheet ja yritä uudelleen."
 
 #: ../root/main/index.tt:104
 msgid ""
@@ -8299,7 +8299,7 @@ msgstr "Tällä artistilla ei ole yhtäkään julkaisua."
 msgid ""
 "This artist does not have any various artists release groups. "
 "{show_non_va|Show release groups by this artist instead}."
-msgstr "Tällä artistilla ei ole yhtään useiden artistien julkaisuryhmää. {show_non_va|Näytä artistin julkaisuryhmät}."
+msgstr "Tällä artistilla ei ole yhtään eri esittäjien julkaisuryhmää. {show_non_va|Näytä artistin julkaisuryhmät}."
 
 #: ../root/artist/edit_form.tt:80 ../root/scripts/text_strings.tt:68
 msgid "This artist has ended."
@@ -8333,15 +8333,15 @@ msgstr "Tätä artistia ei ole liitetty yhteenkään teokseen."
 
 #: ../root/artist/index.tt:115 ../root/artist/index.tt:131
 msgid "This artist only has release groups by various artists."
-msgstr "Tällä artistilla on vain useiden artistien julkaisuryhmiä."
+msgstr "Tällä artistilla on vain eri esittäjien julkaisuryhmiä."
 
 #: ../root/artist/releases.tt:25
 msgid "This artist only has releases by various artists."
-msgstr ""
+msgstr "Tällä artistilla on vain eri esittäjien julkaisuja."
 
 #: ../root/artist/index.tt:121 ../root/artist/index.tt:143
 msgid "This artist only has unofficial release groups by various artists."
-msgstr "Tällä artistilla on vain epävirallisia useiden artistien julkaisuryhmiä."
+msgstr "Tällä artistilla on vain epävirallisia eri esittäjien julkaisuryhmiä."
 
 #: ../root/artist/index.tt:111
 msgid "This artist only has unofficial release groups."
@@ -8417,7 +8417,7 @@ msgstr ""
 msgid ""
 "This edit was a \"Merge Releases (Various Artists)\" edit which additionally"
 " set the release artist to Various Artists."
-msgstr ""
+msgstr "Tämä muokkaus oli \"Sulauta julkaisut (eri esittäjiä)\" muokkaus, joka lisäksi asetti julkaisun artistiksi eri esittäjiä."
 
 #: ../root/components/common-macros.tt:682
 msgid "This edit was cancelled."
@@ -8525,7 +8525,7 @@ msgstr "Tällä levymerkillä ei ole luokituksia."
 msgid ""
 "This medium already has disc IDs, so you may only change the format to a "
 "format that can have disc IDs."
-msgstr ""
+msgstr "Tällä tallenteella on jo levyn tunniste, joten tallenteen muodon voi vaihtaa vain muotoon, joka voi sisältää levyn tunnisteita."
 
 #: ../root/cdtoc/attach_list.tt:25
 msgid "This medium format cannot have a disc ID attached"
@@ -9207,7 +9207,7 @@ msgstr "Valitse asiaankuuluva välilehti, käyttääksesi tietokannasta jo löyt
 
 #: ../root/release/edit/information.tt:72
 msgid "To edit types, please {edit_page|edit the release group}."
-msgstr ""
+msgstr "Muokataksesi tyyppejä valitse {edit_page|muokkaa julkaisuryhmää}."
 
 #: ../root/elections/show.tt:96
 msgid "To find out if you can vote for this candidate, please {url|log in}."
@@ -9592,7 +9592,7 @@ msgstr "UUID:"
 
 #: ../root/release/edit/tracklist.tt:8
 msgid "Unable to parse the tracklist you entered."
-msgstr ""
+msgstr "Ei voida jäsentää antamaasi kappalelistaa."
 
 #: ../root/main/401.tt:1 ../root/main/401.tt:3
 msgid "Unauthorized Request"
@@ -10422,7 +10422,7 @@ msgstr "Et voi poistaa yhteyden omaisuutta \"{type}\", koska toinen yhteys käyt
 
 #: ../root/scripts/text_strings.tt:158
 msgid "You cannot use the same country more than once."
-msgstr ""
+msgstr "Et voi käyttää samaa maata useammin kuin kerran."
 
 #: ../root/elections/show.tt:87
 msgid ""
@@ -10464,17 +10464,17 @@ msgstr ""
 msgid ""
 "You have used the {valink|Various Artists} special purpose artist on this "
 "recording."
-msgstr ""
+msgstr "Olet käyttänyt {valink|eri esittäjiä} erityiskäyttöön tarkoitettua artistia tällä äänitteellä."
 
 #: ../root/release/edit/tracklist.tt:180
 msgid ""
 "You haven't added any media yet. Click on the \"Add Disc\" button below to "
 "add one."
-msgstr ""
+msgstr "Et ole vielä lisännyt yhtään tallennetta. Klikkaa \"Lisää levy\" -nappulaa alhaalla lisätäksesi yhden."
 
 #: ../root/scripts/text_strings.tt:152
 msgid "You haven‘t entered a complete artist credit."
-msgstr ""
+msgstr "Et ole lisännyt valmista kirjoitusasua."
 
 #: ../root/scripts/text_strings.tt:119
 msgid "You haven’t made any changes!"
@@ -10502,7 +10502,7 @@ msgstr "Sinun tulee olla sisäänkirjautunut äänestääksesi muokkauksista."
 
 #: ../root/scripts/text_strings.tt:153
 msgid "You must enter a title and select an artist for every track."
-msgstr ""
+msgstr "Sinun täytyy lisätä nimi ja valita artisti jokaiselle kappaleelle."
 
 #: ../root/main/401.tt:9
 msgid ""
@@ -10601,7 +10601,7 @@ msgid ""
 "You’ve used the {valink|Various Artists} special purpose artist on some "
 "tracks below. {valink|Various Artists} should very rarely be used on tracks;"
 " please make sure the artists have been entered correctly."
-msgstr ""
+msgstr "Olet käyttänyt {valink|Eri esittäjiä} erityiskäyttöön tarkoitettua artistia allaolevissa kappaleissa. {valinks|Eri esittäjiä} käytetään erittäin harvoin kappaleissa. Varmista artistien olevan oikein."
 
 #: ../root/scripts/text_strings.tt:30
 msgid "[ Unknown ]"
@@ -11360,7 +11360,7 @@ msgstr "{user} ei ole luokitellut mitään."
 msgid ""
 "{valink|Various Artists} should very rarely be used on recordings, make sure"
 " that the artist has been entered correctly."
-msgstr ""
+msgstr "{valink|Eri esittäjiä} käytetään erittäin harvoin äänitteissä. Varmista artistin olevan oikein."
 
 #: ../root/components/common-macros.tt:726
 msgid "{yes} yes : {no} no"
