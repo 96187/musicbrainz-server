@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-05 11:40-0700\n"
-"PO-Revision-Date: 2014-03-08 01:55+0000\n"
+"PO-Revision-Date: 2014-03-08 02:59+0000\n"
 "Last-Translator: jozo <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -419,16 +419,16 @@ msgstr "Kohde {entity} ja {url} on jo yhdistetty."
 
 #: ../root/scripts/text_strings.tt:160
 msgid "A release must contain at least one medium."
-msgstr ""
+msgstr "Julkaisussa on oltava vähintään yksi tallenne."
 
 #: ../root/scripts/text_strings.tt:156
 msgid "A release title is required."
-msgstr ""
+msgstr "Julkaisun nimi on pakollinen."
 
 #: ../root/search/index.tt:10
 msgid ""
 "A simple list of all entities is available from our {url|browse} pages."
-msgstr ""
+msgstr "Yksinkertaiset luettelot kaikista kohteista on saatavilla {url|selattavilta} sivuiltamme."
 
 #: ../root/scripts/text_strings.tt:155
 msgid "A tracklist is required."
@@ -953,7 +953,7 @@ msgid ""
 "All tracks require an associated recording. Click “Edit” to select a "
 "recording for each track. Choose “Add a new recording” if an appropriate one"
 " doesn’t exist yet."
-msgstr ""
+msgstr "Kaikki kappaleet tulee olla liitettynä äänitteeseen. Klikkaa \"Muokkaa\" valitaksesi äänite kullekin kappaleelle. Valitse \"Lisää uusi äänite\" joillei sopivaa vielä ole olemassa."
 
 #: ../root/oauth2/authorize.tt:19
 msgid "Allow access"
@@ -3303,7 +3303,7 @@ msgstr "{note|Muokkausmerkintä}, joka kertoo mistä tiedot on saatu on erittäi
 
 #: ../root/scripts/text_strings.tt:93
 msgid "Entities in a relationship cannot be the same."
-msgstr ""
+msgstr "Yhteyden kohteet eivät voi olla samat."
 
 #: ../root/otherlookup/not_found.tt:1 ../root/otherlookup/not_found.tt:2
 msgid "Entity Not Found"
@@ -3463,7 +3463,7 @@ msgstr "Ensin lisää kaikki kappaletiedot, sisältäen nimet ja artistit,  void
 msgid ""
 "Follow our {bl|blog} or {tw|twitter account}! To talk to other users, try "
 "the {fo|forums} or {irc|IRC}."
-msgstr ""
+msgstr "Seuraa {bl|blogiamme} tai {tw|twitter-tiliämme}! Puhuaksesi muiden käyttäjien kanssa, kokeile {fo|keskustelufoorumia} tai {irc|IRC:tä}."
 
 #: ../root/search/error/wrapper.tt:5
 msgid ""
@@ -8147,7 +8147,7 @@ msgstr "Yksikään käyttäjä ei tällä hetkellä seuraa levy-yhtiötä {label
 msgid ""
 "There are no disc IDs attached to this release; to find out more about how "
 "to add one, see {doc|How to Add Disc IDs}."
-msgstr ""
+msgstr "Yhtään levyn tunnistetta ei ole liitetty julkaisuun. Selvittääksesi kuinka lisäät yhden, katso {doc|How to Add Disc IDs}."
 
 #: ../root/artist/subscribe.tt:11
 msgid "There are no editors currently subscribed to this artist."
@@ -8211,11 +8211,11 @@ msgstr[1] "Levy-yhtiötä {label} seuraa tällä hetkellä {num} käyttäjää:"
 
 #: ../root/browse/entity.tt:34
 msgid "There is no data to display."
-msgstr ""
+msgstr "Tietoa ei löydy näytettäväksi."
 
 #: ../root/search/editor-not-found.tt:4
 msgid "There is no editor with this name."
-msgstr "Editoria ei löydy tällä nimellä."
+msgstr "Käyttäjää ei löydy tällä nimellä."
 
 #: ../root/admin/wikidoc/index.tt:25
 msgid "There was a problem accessing the wiki API."
@@ -8265,7 +8265,7 @@ msgstr ""
 msgid ""
 "This area cannot be removed because there are still artists, labels, and/or "
 "releases using it."
-msgstr ""
+msgstr "Tätä aluetta ei voi poistaa, koska sitä käyttäviä artisteja, levymerkkejä ja/tai julkaisuja on vielä."
 
 #: ../root/area/edit_form.tt:26
 msgid "This area has ended."
@@ -8500,7 +8500,7 @@ msgstr "Tämä on ensisijainen alias tälle lokaalille."
 msgid ""
 "This label cannot be removed because there are still releases, recordings "
 "and/or relationships attributed to it."
-msgstr ""
+msgstr "Tätä levymerkkiä ei voi poistaa, koska sille on vielä määriteltynä julkaisuja, äänitteitä ja/tai yhteyksiä."
 
 #: ../root/label/index.tt:37
 msgid "This label does not have any releases."
@@ -8666,7 +8666,7 @@ msgstr "Tällä julkaisulla ei ole viivakoodia"
 msgid ""
 "This release group cannot be removed, because there are still releases, "
 "tracks and/or relationships attributed to it."
-msgstr "Tätä julkaisuryhmää ei voida poistaa, sillä sille on määritettynä vielä julkaisuja, kappaleita ja/tai yhteyksiä."
+msgstr "Tätä julkaisuryhmää ei voida poistaa, koska sille on vielä määritettynä julkaisuja, kappaleita ja/tai yhteyksiä."
 
 #: ../root/release_group/index.tt:6
 msgid ""
@@ -9918,7 +9918,7 @@ msgid ""
 "Warning: This relationship has pending edits. <a target=\"_blank\" data-"
 "bind=\"attr: { href: relationship().openEdits() }\">Click here</a> to view "
 "these edits and make sure they do not conflict with your own."
-msgstr ""
+msgstr "Varoitus: Tällä yhteydellä on vireillä olevia muokkauksia.  <a target=\"_blank\" data-bind=\"attr: { href: relationship().openEdits() }\">Klikkaa tästä</a> nähdäksesi nämä muutokset ja varmistuaksesi etteivät ne ole ristiriidassa muokkauksiesi kanssa."
 
 #: ../root/watch/list.tt:1 ../root/watch/list.tt:2
 msgid "Watched Artists"
@@ -10248,13 +10248,13 @@ msgstr "Kyllä, olen varma"
 msgid ""
 "You are about to add an ISRC to this recording. The ISRC must be entered in "
 "standard <code>CCXXXYYNNNNNN</code> format:"
-msgstr ""
+msgstr "Olet lisäämässä ISRC-koodia tälle äänitteelle. ISRC-koodin tulee olla standardissa <code>CCXXXYYNNNNNN</code> muodossa:"
 
 #: ../root/components/forms.tt:253
 msgid ""
 "You are about to add an ISWC to this work. The ISWC must be entered in "
 "standard <code>T-DDD.DDD.DDD-C</code> format:"
-msgstr ""
+msgstr "Olet lisäämässä ISWC-koodia tälle teokselle. ISWC-koodi tulee syöttää standardin <code>T-DDD.DDD.DDD-C</code> muodossa:"
 
 #: ../root/artist/edit_form.tt:6
 msgid "You are about to add an artist to MusicBrainz."
@@ -10436,7 +10436,7 @@ msgstr "Et voi äänestää tätä ehdosta, sillä ehdotit tai kannatit häntä.
 
 #: ../root/layout/merge-helper.tt:4
 msgid "You currently have the following entities selected for merging:"
-msgstr "Olet valinnut seuraavat kohteet yhdistämistä varten:"
+msgstr "Olet valinnut seuraavat kohteet sulauttamista varten:"
 
 #: ../root/account/applications.tt:84
 msgid "You do not have any registered applications."
@@ -10524,11 +10524,11 @@ msgstr "Muokkausmerkintä vaaditaan julkaisua lisättäessä. Jopa pelkkä URL-o
 
 #: ../root/scripts/text_strings.tt:159
 msgid "You must select an existing label."
-msgstr ""
+msgstr "Sinun täytyy valita olemassa oleva levymerkki."
 
 #: ../root/scripts/text_strings.tt:157
 msgid "You must select an existing release group."
-msgstr ""
+msgstr "Sinun täytyy valita olemassa oleva julkaisuryhmä."
 
 #: ../root/cdtoc/remove.tt:11
 msgid ""
@@ -10730,15 +10730,15 @@ msgstr "piilota kappalelista"
 
 #: ../root/components/common-macros.tt:206
 msgid "historical"
-msgstr ""
+msgstr "historiallinen"
 
 #: ../root/components/common-macros.tt:204
 msgid "historical, until {end}"
-msgstr ""
+msgstr "historiallinen, {end} saakka"
 
 #: ../root/components/common-macros.tt:202
 msgid "historical, {begin}-{end}"
-msgstr ""
+msgstr "historiallinen, {begin}-{end}"
 
 #: ../root/search/results-freedb.tt:31
 msgid "import"
@@ -11388,8 +11388,8 @@ msgid ""
 msgid_plural ""
 "Thank you, your {num_edits} {edit_url|edits} ({edit_ids}) have been "
 "automatically accepted and applied."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Kiitos, {num_edits} {edit_url|muokkauksesi} ({edit_ids}) on automaattisesti hyväksytty ja otettu käyttöön."
+msgstr[1] "Kiitos, {num_edits} {edit_url|muokkaustasi} ({edit_ids}) on automaattisesti hyväksytty ja otettu käyttöön."
 
 #: ../lib/MusicBrainz/Server/Controller.pm:150
 #, perl-brace-format
@@ -11399,8 +11399,8 @@ msgid ""
 msgid_plural ""
 "Thank you, your {num_edits} {edit_url|edits} ({edit_ids}) have been entered "
 "into the edit queue for peer review."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Kiitos, {num_edits} {edit_url|muokkauksesi} ({edit_ids}) on lisätty muokkausjonoon muiden tarkistusta varten."
+msgstr[1] "Kiitos, {num_edits} {edit_url|muokkaustasi} ({edit_ids}) on lisätty muokkausjonoon muiden tarkistusta varten."
 
 #: ../lib/MusicBrainz/Server/Controller.pm:158
 #, perl-brace-format
@@ -11412,8 +11412,8 @@ msgid_plural ""
 "Thank you, your {num_edits} {edit_url|edits} ({edit_ids}) have been entered,"
 " with {num_open_edits} in the edit queue for peer review, and the rest "
 "automatically accepted and applied."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Kiitos, {num_edits} {edit_url|muokkauksesi} ({edit_ids}) on saapunut, joista {num_open_edits} on lisätty muokkausjonoon muiden tarkistusta varten ja loput automaattisesti hyväksytty ja otettu käyttöön."
+msgstr[1] "Kiitos, {num_edits} {edit_url|muokkaustasi} ({edit_ids}) on saapunut, joista {num_open_edits} on lisätty muokkausjonoon muiden tarkistusta varten ja loput automaattisesti hyväksytty ja otettu käyttöön."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:45
 msgid "The user ID is missing or is in an invalid format."
@@ -12198,7 +12198,7 @@ msgstr ""
 msgid ""
 "Artist \"{artist}\" is unlinked, please select an existing artist.\n"
 "                   You may need to add a new artist to MusicBrainz first."
-msgstr ""
+msgstr "Artisti \"{artist}\" on linkittämätön, valitse olemassa oleva artisti.\nVoit joutua tekemään uuden artistin ensin."
 
 #: ../lib/MusicBrainz/Server/Form/Field/ArtistCredit.pm:61
 msgid "Please add an artist name for each credit."
