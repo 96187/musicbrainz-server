@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-05 11:40-0700\n"
-"PO-Revision-Date: 2014-03-08 06:56+0000\n"
+"PO-Revision-Date: 2014-03-08 07:59+0000\n"
 "Last-Translator: jozo <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -125,7 +125,7 @@ msgstr "&lt; Takaisin kaikkiin yhteystyyppeihin"
 
 #: ../root/annotation/edit.tt:40
 msgid "''italics''; '''bold'''; '''''bold italics'''''; ---- horizontal rule"
-msgstr ""
+msgstr "''kursiivi''; '''lihavoitu'''; '''''lihavoitu kursiivi'''''; ---- vaakaviiva"
 
 #: ../root/components/tag-cloud.tt:26
 msgid "'{tag}' has been used {num} times"
@@ -664,7 +664,7 @@ msgstr "Lisää uusi merkintä"
 
 #: ../root/scripts/text_strings.tt:132
 msgid "Add a new label"
-msgstr "Lisää uusi levy-merkki"
+msgstr "Lisää uusi levymerkki"
 
 #: ../root/scripts/text_strings.tt:133
 msgid "Add a new place"
@@ -1662,15 +1662,15 @@ msgstr "Antamiesi tietojen perusteella MusicBrainzistä löytyivät seuraavat sa
 
 #: ../root/release/edit_relationships.tt:30
 msgid "Batch-add a relationship to recordings"
-msgstr "Joukko-lisää yhteyksiä äänitteisiin"
+msgstr "Lisää yhteys kaikkiin valittuihin äänitteisiin"
 
 #: ../root/release/edit_relationships.tt:42
 msgid "Batch-add a relationship to works"
-msgstr "Joukko-lisää yhteyksiä teoksiin"
+msgstr "Lisää yhteys kaikkiin valittuihin teoksiin"
 
 #: ../root/release/edit_relationships.tt:36
 msgid "Batch-create new works"
-msgstr "Joukko-luo uusia teoksia"
+msgstr "Luo uusi teos kaikkille valituille äänitteille"
 
 #: ../root/artist/subscribers.tt:30 ../root/collection/subscribers.tt:30
 #: ../root/label/subscribers.tt:30 ../root/user/subscribers.tt:35
@@ -3299,7 +3299,7 @@ msgid ""
 "is highly recommended. Not only does it make it clear where you got your "
 "information, but it can also encourage other users to vote on your edit "
 "&#x2014; thus making your edit get applied faster."
-msgstr "{note|Muokkausmerkintä}, joka kertoo mistä tiedot on saatu on erittäin suositeltava. Sen lisäksi, että siitä tulee selville tietojen lähde, se helpottaa muita käyttäjiä äänestämään muokkaustasi &#x2014; mikä taas nopeuttaa sen hyväksymistä."
+msgstr "{note|Muokkausmerkintä}, joka kertoo mistä tiedot on saatu, on erittäin suositeltava. Sen lisäksi, että siitä tulee selville tietojen lähde, se helpottaa muita käyttäjiä äänestämään muokkaustasi &#x2014; mikä taas nopeuttaa sen hyväksymistä."
 
 #: ../root/scripts/text_strings.tt:93
 msgid "Entities in a relationship cannot be the same."
@@ -3523,7 +3523,7 @@ msgstr "Keskustelufoorumi"
 #: ../root/relationship/linktype/form.tt:13
 #: ../root/relationship/linktype/tree.tt:8
 msgid "Forward link phrase:"
-msgstr ""
+msgstr "Suora linkkifraasi:"
 
 #: ../root/doc/bare_error.tt:17 ../root/doc/error.tt:23
 msgid ""
@@ -4212,7 +4212,7 @@ msgstr "Levymerkin IPI-koodi:"
 
 #: ../root/otherlookup/form.tt:3
 msgid "Label ISNI:"
-msgstr ""
+msgstr "Levymerkin ISNI:"
 
 #: ../root/label/not_found.tt:1 ../root/label/not_found.tt:2
 msgid "Label Not Found"
@@ -4480,7 +4480,7 @@ msgstr "Sisäänkirjaudu lisätäksesi kansitaidetta"
 #: ../root/relationship/linktype/form.tt:15
 #: ../root/relationship/linktype/tree.tt:10
 msgid "Long link phrase:"
-msgstr ""
+msgstr "Pitkä linkkifraasi:"
 
 #: ../root/doc/bare_error.tt:11 ../root/doc/error.tt:17 ../root/main/400.tt:18
 #: ../root/main/404.tt:18
@@ -5396,7 +5396,7 @@ msgstr "Muokkauksen voi peruuttaa ainoastaan sen luonut käyttäjä. Joko et luo
 msgid ""
 "Only use this option after you’ve tried searching for the work(s) you want "
 "to create, and are certain they do not already exist on MusicBrainz."
-msgstr ""
+msgstr "Käytä tätä vaihtoehtoa vain jos olet jo etsinyt vastaavaa teosta ja olet varma ettei sitä vielä löydy MusicBrainzista."
 
 #: ../root/edit/cannot_approve.tt:10
 msgid "Only {doc|auto-editors} can approve an edit."
@@ -6585,7 +6585,7 @@ msgstr "Julkaisut, joilla epäselvyyksiä kappelenumeroinnissa"
 #: ../root/report/index.tt:74 ../root/report/tracks_without_times.tt:1
 #: ../root/report/tracks_without_times.tt:3
 msgid "Releases with unknown track times"
-msgstr ""
+msgstr "Julkaisut, joissa tuntemattomia kappaleiden kestoja"
 
 #: ../root/report/index.tt:73
 #: ../root/report/releases_with_unlikely_language_script.tt:1
@@ -7733,7 +7733,7 @@ msgstr "Seuratut kohteet"
 
 #: ../root/oauth2/oob.tt:3
 msgid "Success!"
-msgstr ""
+msgstr "Onnistui!"
 
 #: ../root/release/edit/recordings.tt:155
 msgid "Suggested recordings:"
@@ -8273,11 +8273,11 @@ msgstr ""
 
 #: ../root/area/artists.tt:7
 msgid "This area is not currently associated with any artists."
-msgstr ""
+msgstr "Tätä aluetta ei ole liitetty yhteenkään artistiin."
 
 #: ../root/area/labels.tt:7
 msgid "This area is not currently associated with any labels."
-msgstr ""
+msgstr "Tätä aluetta ei ole liitetty yhteenkään levymerkkiin."
 
 #: ../root/area/places.tt:7
 msgid "This area is not currently associated with any places."
@@ -8646,7 +8646,7 @@ msgstr "Tämä yhteystyyppi on vanhentunut."
 
 #: ../root/relationship/linktype/form.tt:80
 msgid "This relationship type does not have any examples."
-msgstr ""
+msgstr "Tällä yhteystyypillä ei ole yhtään esimerkkiä."
 
 #: ../root/doc/relationship_type.tt:11 ../root/scripts/text_strings.tt:129
 #: ../lib/MusicBrainz/Server/Form/Role/LinkType.pm:50
@@ -8656,7 +8656,7 @@ msgstr "Tämä yhteystyyppi on vanhentunut eikä sitä tulisi käyttää. "
 #: ../root/doc/relationship_type.tt:95
 msgid ""
 "This relationship type is only used for grouping other relationship types."
-msgstr ""
+msgstr "Tämä yhteystyyppi ryhmittää muita yhteystyyppejä."
 
 #: ../root/release/edit/information.tt:194
 msgid "This release does not have a barcode"
@@ -9147,7 +9147,7 @@ msgstr "Tämä lisää yhteyden kaikkiin valittuihin teoksiin."
 msgid ""
 "This will create a new work for each checked recording that has no work "
 "already. The work names will be the same as their respective recording."
-msgstr ""
+msgstr "Tämä luo uuden teoksen kaikille valituille äänitteille, jolla ei vielä ole teosta. Teoksien nimiksi tulee kunkin äänitteen nimi."
 
 #: ../root/work/index.tt:21
 msgid ""
@@ -9217,7 +9217,7 @@ msgstr "Selvittääksesi voitko äänestää tätä ehdokasta, {url|sisäänkirj
 msgid ""
 "To use the batch tools, select some recordings or works using the "
 "checkboxes."
-msgstr "Muokataksesi joukkoja, valitse useita äänitteitä tai teoksia kerrallaan."
+msgstr "Voit valita useampia äänitteitä tai teoksia tehdäksesi kerralla niille kaikille toiminteita."
 
 #: ../root/watch/list.tt:36
 msgid ""
@@ -9573,7 +9573,7 @@ msgstr "URL:"
 
 #: ../root/annotation/edit.tt:55
 msgid "URL; [URL]; [URL|label]"
-msgstr ""
+msgstr "URL; [URL]; [URL|label]"
 
 #: ../root/report/index.tt:105
 msgid "URLs"
@@ -10677,7 +10677,7 @@ msgstr "botti"
 
 #: ../root/release/edit/recordings.tt:63 ../root/release/edit/recordings.tt:66
 msgid "by"
-msgstr ""
+msgstr "artistilta"
 
 #: ../root/scripts/text_strings.tt:162
 msgid "by {artist}"
@@ -10742,7 +10742,7 @@ msgstr "historiallinen, {begin}-{end}"
 
 #: ../root/search/results-freedb.tt:31
 msgid "import"
-msgstr ""
+msgstr "tuo"
 
 #: ../root/components/common-macros.tt:734 ../root/edit/details/macros.tt:28
 msgid "in {date}"
@@ -10997,7 +10997,7 @@ msgstr "{almost_last_list_item} ja {last_list_item}"
 
 #: ../root/oauth2/authorize.tt:5
 msgid "{app} is requesting permission to:"
-msgstr ""
+msgstr "{app} pyytää lupaa:"
 
 #: ../root/artist/works-list.tt:36 ../root/iswc/index.tt:37
 #: ../root/otherlookup/results-work.tt:20
@@ -12130,7 +12130,7 @@ msgstr "[ei mitään]"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:76
 msgid "View your public account information"
-msgstr ""
+msgstr "Tarkastella sinun julkisia käyttäjätietoja"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:77
 msgid "View your email address"
@@ -12138,15 +12138,15 @@ msgstr "Näytä sähköpostiosoitteesi"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:78
 msgid "View and modify your private tags"
-msgstr ""
+msgstr "Tarkastella ja muokata sinun yksityisiä luokituksiasi"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:79
 msgid "View and modify your private ratings"
-msgstr ""
+msgstr "Tarkastella ja muokata sinun yksityisiä arvostelujasi"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:80
 msgid "View and modify your private collections"
-msgstr ""
+msgstr "Tarkastella ja muokata sinun yksityisiä kokoelmiasi"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:81
 msgid "Submit new ISRCs to the database"
@@ -12439,7 +12439,7 @@ msgstr "Kuukausi"
 #: ../lib/MusicBrainz/Server/Form/Utils.pm:39
 msgctxt "language optgroup"
 msgid "Frequently used"
-msgstr "Usein käytetty"
+msgstr "Usein käytettyjä"
 
 #: ../lib/MusicBrainz/Server/Form/Utils.pm:39
 msgctxt "language optgroup"
@@ -12449,7 +12449,7 @@ msgstr "Muu"
 #: ../lib/MusicBrainz/Server/Form/Utils.pm:63
 msgctxt "script optgroup"
 msgid "Frequently used"
-msgstr "Usein käytetty"
+msgstr "Usein käytettyjä"
 
 #: ../lib/MusicBrainz/Server/Form/Utils.pm:63
 msgctxt "script optgroup"
