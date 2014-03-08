@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-05 11:40-0700\n"
-"PO-Revision-Date: 2014-03-08 07:59+0000\n"
+"PO-Revision-Date: 2014-03-08 08:34+0000\n"
 "Last-Translator: jozo <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -2768,7 +2768,7 @@ msgstr "Muokkaa"
 
 #: ../root/edit/index.tt:1
 msgid "Edit #{id}"
-msgstr "Muokkaus edit #{id}"
+msgstr "Muokkaus #{id}"
 
 #: ../root/edit/edit_header.tt:70 ../root/edit/edit_header.tt:85
 msgid "Edit #{id} - {name}"
@@ -3153,7 +3153,7 @@ msgstr "Sähköpostiosoitteen vahvistaminen"
 
 #: ../root/account/verified.tt:1 ../root/account/verified.tt:3
 msgid "Email Address Verified"
-msgstr "Vahvistettu sähköpostiosoitevapaa käyttö"
+msgstr "Sähköpostiosoite vahvistettu"
 
 #: ../root/user/email_sent.tt:1 ../root/user/email_sent.tt:3
 msgid "Email Sent"
@@ -3316,7 +3316,7 @@ msgstr "Entiteettityypit:"
 #: ../root/report/not_available.tt:1 ../root/report/not_available.tt:3
 #: ../lib/MusicBrainz/Server/Edit/Utils.pm:271
 msgid "Error"
-msgstr "Virheellinen"
+msgstr "Virhe"
 
 #: ../root/edit/cannot_approve.tt:1 ../root/edit/cannot_approve.tt:2
 #: ../root/edit/require_note.tt:1 ../root/edit/require_note.tt:2
@@ -8468,7 +8468,7 @@ msgstr "Tämä on MusicBrainzin ohjelmistokehitykseen tarkoitettu testipalvelin.
 msgid ""
 "This is a Musicbrainz mirror server. To edit or make changes to the data "
 "please {uri|return to musicbrainz.org}."
-msgstr ""
+msgstr "Tämä on MusicBrainzin peilipalvelin. Muokataksesi tai tehdäksesi muutoksia tietoihin käytä {uri|palaa musicbrainz.org -sivulle}."
 
 #: ../root/account/edit.tt:16
 msgid ""
@@ -8590,7 +8590,7 @@ msgstr "Tämä henkilö on kuollut."
 
 #: ../root/place/edit_form.tt:62
 msgid "This place has ended."
-msgstr ""
+msgstr "Tämä paikka on lopettanut."
 
 #: ../root/place/index.tt:19
 msgid ""
@@ -8673,7 +8673,7 @@ msgid ""
 "This release group has no relationships or releases associated, and will be "
 "removed automatically in the next few days. If this is not intended, please "
 "add more data to this release group."
-msgstr ""
+msgstr "Tällä julkaisuryhmällä ei ole yhteyksiä tai julkaisuja, joten julkaisuryhmä tullaan poistamaan automaattisesti seuraavien päivien kuluessa. Jos tämä ei ole tarkoituksenmukaista, lisää tälle julkaisuryhmälle enemmän tietoja."
 
 #: ../root/release_group/tags.tt:2
 msgid "This release group has no tags."
@@ -9635,7 +9635,7 @@ msgstr "Epäluotettava"
 
 #: ../root/search/form.tt:13
 msgid "Up to {n}"
-msgstr "max {n}"
+msgstr "Enintään {n}"
 
 #: ../root/account/edit_application.tt:15 ../root/admin/wikidoc/edit.tt:21
 #: ../root/admin/wikidoc/index.tt:61
@@ -10685,7 +10685,7 @@ msgstr "artistilta {artist}"
 
 #: ../root/admin/wikidoc/index.tt:53
 msgid "diff"
-msgstr ""
+msgstr "vertaa"
 
 #: ../root/edit/search_macros.tt:24
 msgid "do not match"
@@ -10750,7 +10750,7 @@ msgstr ""
 
 #: ../root/area/header.tt:23
 msgid "in {parent_areas}"
-msgstr ""
+msgstr "{parent_areas}"
 
 #: ../root/components/common-macros.tt:408
 msgid "info"
@@ -11334,7 +11334,7 @@ msgstr "{uri|Lisää URL-osoite}"
 
 #: ../root/layout.tt:38
 msgid "{uri|Return to musicbrainz.org}."
-msgstr "{uri|Palaa musicbrainz.org}."
+msgstr "{uri|Palaa musicbrainz.org -sivulle}."
 
 #: ../root/user/profile/layout.tt:8
 msgid "{user}"
@@ -11373,7 +11373,7 @@ msgstr "« Aiempi"
 #: ../lib/DBDefs/Default.pm:127
 msgid ""
 "This beta test server allows testing of new features with the live database."
-msgstr "Tämä betatesti-palvelin mahdollistaa uusien ominaisuuksien testaamisen live-tietokannalla. "
+msgstr "Tämä betatestaus-palvelin mahdollistaa uusien ominaisuuksien testaamisen live-tietokannalla. "
 
 #: ../lib/MusicBrainz/Server/Controller.pm:29
 #, perl-brace-format
@@ -11678,7 +11678,7 @@ msgstr "Tällä levyn tunnisteella on jo CD-tynkä"
 #: ../lib/MusicBrainz/Server/Data/LinkType.pm:147
 #, perl-brace-format
 msgid "{t0}-{t1} relationships"
-msgstr "{t0}-{t1}-yhteydet"
+msgstr "{t0}-{t1} -yhteydet"
 
 #: ../lib/MusicBrainz/Server/Data/Vote.pm:176
 msgid "Total"
