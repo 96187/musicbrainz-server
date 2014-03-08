@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-03-08 09:15+0000\n"
+"PO-Revision-Date: 2014-03-08 22:58+0000\n"
 "Last-Translator: jozo <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -712,23 +712,23 @@ msgstr ""
 
 #: DB:link_type/description:89
 msgid "Points to the Wikipedia page for this album."
-msgstr ""
+msgstr "Viittaa tämän julkaisun Wikipedia-sivuun."
 
 #: DB:link_type/description:355
 msgid "Points to the Wikipedia page for this area."
-msgstr ""
+msgstr "Viittaa tämän alueen Wikipedia-sivuun."
 
 #: DB:link_type/description:179
 msgid "Points to the Wikipedia page for this artist."
-msgstr ""
+msgstr "Viittaa tämän artistin Wikipedia-sivuun."
 
 #: DB:link_type/description:595
 msgid "Points to the Wikipedia page for this place"
-msgstr ""
+msgstr "Viittaa tämän paikan Wikipedia-sivuun."
 
 #: DB:link_type/description:279
 msgid "Points to the Wikipedia page for this work."
-msgstr ""
+msgstr "Viittaa tämän teoksen Wikipedia-sivuun."
 
 #: DB:link_type/link_phrase:174
 msgid "PureVolume"
@@ -822,7 +822,7 @@ msgstr ""
 #: DB:link_attribute_type/description:582
 msgid ""
 "This attribute indicates that the streamable content is not audio but video."
-msgstr "Tämän ominaisuuden perusteella suoratoistettava sisällön kohteena on äänen sijasta video."
+msgstr "Tämän ominaisuuden perusteella suoratoistettavan sisällön kohteena on äänen sijasta video."
 
 #: DB:link_attribute_type/description:425
 msgid ""
@@ -2030,11 +2030,11 @@ msgstr "ladattavissa ilmaiseksi osoitteessa"
 
 #: DB:link_type/long_link_phrase:74 DB:link_type/long_link_phrase:254
 msgid "can be purchased for download at"
-msgstr "ostettavissa ladattavaksi osoitteessa"
+msgstr "ostettavissa ladattavaksi"
 
 #: DB:link_type/long_link_phrase:79
 msgid "can be purchased for mail-order at"
-msgstr "ostettavissa postimyynnitse osoitteessa"
+msgstr "ostettavissa postimyynnitse"
 
 #: DB:link_type/link_phrase:212 DB:link_type/reverse_link_phrase:212
 msgid "catalog of records"
@@ -2147,7 +2147,7 @@ msgstr "kansitaide"
 
 #: DB:link_type/reverse_link_phrase:78
 msgid "cover art for"
-msgstr ""
+msgstr "kansitaiteena"
 
 #: DB:link_type/long_link_phrase:12
 msgid "covers and versions"
@@ -2191,7 +2191,7 @@ msgstr ""
 
 #: DB:link_type/reverse_link_phrase:184
 msgid "discography page for"
-msgstr ""
+msgstr "diskgrafiasivuna"
 
 #: DB:link_type/link_phrase:184
 msgid "discography pages"
@@ -2232,7 +2232,7 @@ msgstr "lataa musiikkia ilmaiseksi"
 #: DB:link_type/reverse_link_phrase:74 DB:link_type/reverse_link_phrase:176
 #: DB:link_type/reverse_link_phrase:254
 msgid "download purchase page for"
-msgstr ""
+msgstr "ostettavissa ladattavaksi sivustona"
 
 #: DB:link_type/reverse_link_phrase:238
 msgid "earliest release"
@@ -2337,92 +2337,92 @@ msgstr ""
 
 #: DB:link_type/long_link_phrase:77
 msgid "has Amazon ASIN"
-msgstr "omaa Amazon ASIN-koodin"
+msgstr "omaa Amazon ASIN -tunnisteen"
 
 #: DB:link_type/long_link_phrase:719 DB:link_type/long_link_phrase:718
 msgid "has Bandcamp page at"
-msgstr "omaa Bandcamp-sivun osoitteessa"
+msgstr "omaa Bandcamp-sivun"
 
 #: DB:link_type/long_link_phrase:311 DB:link_type/long_link_phrase:310
 msgid "has VIAF ID at"
-msgstr "omaa VIAF-tunnisteen osoitteessa"
+msgstr "omaa VIAF-tunnisteen"
 
 #: DB:link_type/long_link_phrase:190
 msgid "has a BBC Music page at"
-msgstr "omaa BBC Music-sivun osoiteessa"
+msgstr "omaa BBC Music-sivun"
 
 #: DB:link_type/long_link_phrase:76 DB:link_type/long_link_phrase:217
 #: DB:link_type/long_link_phrase:180 DB:link_type/long_link_phrase:90
 #: DB:link_type/long_link_phrase:705
 msgid "has a Discogs page at"
-msgstr "omaa Discogs-sivun osoitteessa"
+msgstr "omaa Discogs-sivun"
 
 #: DB:link_type/long_link_phrase:713
 msgid "has a Geonames page at"
-msgstr "omaa Geonames-sivun osoitteessa"
+msgstr "omaa Geonames-sivun"
 
 #: DB:link_type/long_link_phrase:91 DB:link_type/long_link_phrase:181
 msgid "has a MusicMoz page at"
-msgstr "omaa MusicMoz-sivun osoitteessa"
+msgstr "omaa MusicMoz-sivun"
 
 #: DB:link_type/long_link_phrase:189 DB:link_type/long_link_phrase:215
 #: DB:link_type/long_link_phrase:462
 msgid "has a Myspace page at"
-msgstr "omaa Myspace-sivun osoitteessa"
+msgstr "omaa Myspace-sivun"
 
 #: DB:link_type/long_link_phrase:174
 msgid "has a PureVolume page at"
-msgstr "omaa PureVolume-sivun osoitteessa"
+msgstr "omaa PureVolume-sivun"
 
 #: DB:link_type/long_link_phrase:307 DB:link_type/long_link_phrase:308
 msgid "has a SecondHandSongs page at"
-msgstr "omaa SecondHandSongs-sivun osoitteessa"
+msgstr "omaa SecondHandSongs-sivun"
 
 #: DB:link_type/long_link_phrase:290 DB:link_type/long_link_phrase:291
 msgid "has a SoundCloud page at"
-msgstr "omaa SoundCloud-sivun osoitteessa"
+msgstr "omaa SoundCloud-sivun"
 
 #: DB:link_type/long_link_phrase:86 DB:link_type/long_link_phrase:191
 #: DB:link_type/long_link_phrase:210
 msgid "has a VGMdb page at"
-msgstr "omaa VGMdb-sivun osoitteessa"
+msgstr "omaa VGMdb-sivun"
 
 #: DB:link_type/long_link_phrase:352 DB:link_type/long_link_phrase:353
 #: DB:link_type/long_link_phrase:354 DB:link_type/long_link_phrase:358
 #: DB:link_type/long_link_phrase:594
 msgid "has a Wikidata page at"
-msgstr "omaa Wikidata-sivun osoitteessa"
+msgstr "omaa Wikidata-sivun"
 
 #: DB:link_type/long_link_phrase:89 DB:link_type/long_link_phrase:216
 #: DB:link_type/long_link_phrase:179 DB:link_type/long_link_phrase:355
 #: DB:link_type/long_link_phrase:595
 msgid "has a Wikipedia page at"
-msgstr "omaa Wikipedia-sivun osoitteessa"
+msgstr "omaa Wikipedia-sivun"
 
 #: DB:link_type/long_link_phrase:182
 msgid "has a biography page at"
-msgstr "omaa elämäkerran osoitteessa"
+msgstr "omaa elämäkerta-sivun"
 
 #: DB:link_type/long_link_phrase:199 DB:link_type/long_link_phrase:224
 #: DB:link_type/long_link_phrase:627
 msgid "has a blog at"
-msgstr "omaa blogin osoitteessa"
+msgstr "omaa blogin"
 
 #: DB:link_type/long_link_phrase:212
 msgid "has a catalog of records at"
-msgstr "omaa kataloogin äänitteistä osoitteessa"
+msgstr "omaa kataloogin äänitteistä"
 
 #: DB:link_type/long_link_phrase:288
 msgid "has a discography entry at"
-msgstr "omaa diskografia merkinnän osoitteessa"
+msgstr "omaa diskografia merkinnän"
 
 #: DB:link_type/long_link_phrase:184
 msgid "has a discography page at"
-msgstr "omaa diskografia-sivun osoitteessa"
+msgstr "omaa diskografia sivun"
 
 #: DB:link_type/long_link_phrase:172 DB:link_type/long_link_phrase:214
 msgid "has a fan page at"
-msgstr "omaa fanisivun osoitteessa"
+msgstr "omaa fanisivuston"
 
 #: DB:link_type/long_link_phrase:226
 msgid "has a karaoke version"
@@ -2430,7 +2430,7 @@ msgstr "omaa karaokeversion"
 
 #: DB:link_type/long_link_phrase:213
 msgid "has a logo at"
-msgstr "omaa logon osoitteessa"
+msgstr "omaa logon"
 
 #: DB:link_type/long_link_phrase:25 DB:link_type/long_link_phrase:129
 #: DB:link_type/long_link_phrase:162 DB:link_type/long_link_phrase:270
@@ -2445,49 +2445,49 @@ msgstr "omaa sivun tietokannassa"
 
 #: DB:link_type/long_link_phrase:173 DB:link_type/long_link_phrase:396
 msgid "has a picture at"
-msgstr "omaa kuvan osoitteessa"
+msgstr "omaa kuvan"
 
 #: DB:link_type/long_link_phrase:94
 msgid "has a review page at"
-msgstr "omaa arvostelusivun osoitteessa"
+msgstr "omaa arvostelusivun"
 
 #: DB:link_type/long_link_phrase:192 DB:link_type/long_link_phrase:218
 #: DB:link_type/long_link_phrase:429
 msgid "has a social networking page at"
-msgstr "omaa sosiaalisen verkostosivun osoitteessa"
+msgstr "omaa sosiaalisen verkostosivun"
 
 #: DB:link_type/long_link_phrase:283 DB:link_type/long_link_phrase:284
 #: DB:link_type/long_link_phrase:285
 msgid "has an Allmusic page at"
-msgstr "omaa Allmusic-sivun osoitteessa"
+msgstr "omaa Allmusic-sivun"
 
 #: DB:link_type/long_link_phrase:178 DB:link_type/long_link_phrase:313
 #: DB:link_type/long_link_phrase:97 DB:link_type/long_link_phrase:706
 msgid "has an IMDb page at"
-msgstr "omaa IMDb-sivun osoitteessa"
+msgstr "omaa IMDb-sivun"
 
 #: DB:link_type/long_link_phrase:707
 msgid "has an interview at"
-msgstr "omaa haastattelun osoitteessa"
+msgstr "omaa haastattelun"
 
 #: DB:link_type/long_link_phrase:193 DB:link_type/long_link_phrase:528
 #: DB:link_type/long_link_phrase:225
 msgid "has an official YouTube channel at"
-msgstr "omaa virallisen Youtube-kanavan osoitteessa"
+msgstr "omaa virallisen Youtube-kanavan"
 
 #: DB:link_type/long_link_phrase:287 DB:link_type/long_link_phrase:183
 #: DB:link_type/long_link_phrase:219 DB:link_type/long_link_phrase:363
 msgid "has an official homepage at"
-msgstr "omaa virallisen kotisivun osoitteessa"
+msgstr "omaa virallisen kotisivun"
 
 #: DB:link_type/long_link_phrase:303 DB:link_type/long_link_phrase:304
 #: DB:link_type/long_link_phrase:495
 msgid "has an official video channel at"
-msgstr "omaa virallisen videokanavan osoitteessa"
+msgstr "omaa virallisen videokanavan"
 
 #: DB:link_type/long_link_phrase:185
 msgid "has an online community page at"
-msgstr "omaa verkkoyhteisösivun osoitteessa"
+msgstr "omaa verkkoyhteisösivun"
 
 #: DB:link_type/long_link_phrase:357
 msgid "has anthem"
@@ -2507,7 +2507,7 @@ msgstr ""
 
 #: DB:link_type/long_link_phrase:78
 msgid "has cover art at"
-msgstr "omaa kansitaidetta osoitteessa"
+msgstr "omaa kansitaidetta"
 
 #: DB:link_type/long_link_phrase:264
 msgid "has creative direction by"
@@ -2527,7 +2527,7 @@ msgstr ""
 
 #: DB:link_type/link_phrase:707
 msgid "has interview at"
-msgstr "omaa haastattelun osoitteessa"
+msgstr "omaa haastattelun"
 
 #: DB:link_type/long_link_phrase:211
 msgid "has its history presented at"
@@ -2535,7 +2535,7 @@ msgstr ""
 
 #: DB:link_type/long_link_phrase:93 DB:link_type/long_link_phrase:197
 msgid "has lyrics available at"
-msgstr "omaa sanoitukset osoitteessa"
+msgstr "omaa sanoitukset "
 
 #: DB:link_type/long_link_phrase:316
 msgid "has orchestration"
@@ -2572,7 +2572,7 @@ msgstr ""
 
 #: DB:link_type/long_link_phrase:65
 msgid "has tribute album(s)"
-msgstr "omaa tribuutti-albumin"
+msgstr "omaa tribuutti-julkaisun"
 
 #: DB:link_type/long_link_phrase:69
 msgid "has/had {additional} samples taken from"
@@ -2871,7 +2871,7 @@ msgstr "lyriikkasivu"
 
 #: DB:link_type/reverse_link_phrase:175 DB:link_type/reverse_link_phrase:79
 msgid "mail-order purchase page for"
-msgstr ""
+msgstr "postimyyntisivustona"
 
 #: DB:link_type/link_phrase:360 DB:link_type/long_link_phrase:360
 msgid "manufactured"
@@ -2999,11 +2999,11 @@ msgstr ""
 
 #: DB:link_type/long_link_phrase:176
 msgid "music can be purchased for download at"
-msgstr ""
+msgstr "ostettavissa ladattavaksi sivuna"
 
 #: DB:link_type/long_link_phrase:175
 msgid "music can be purchased for mail-order at"
-msgstr ""
+msgstr "ostettavissa postimyynnitse sivuna"
 
 #: DB:link_type/long_link_phrase:194
 msgid "music can be streamed for free at"
