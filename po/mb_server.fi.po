@@ -21,7 +21,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-05 11:40-0700\n"
-"PO-Revision-Date: 2014-03-07 22:35+0000\n"
+"PO-Revision-Date: 2014-03-08 00:49+0000\n"
 "Last-Translator: jozo <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -1783,7 +1783,7 @@ msgid ""
 "Below is the error information. If you wish to file a bug report, you may do"
 " so at {bugs|our bug tracker}. The information below will help, so please be"
 " sure to include it!"
-msgstr ""
+msgstr "Alta löydät tietoja virheestä. Voit halutessasi lisätä virheraportin {bugs|virheidenseurantaamme}. Alta löytyvä tieto helpottaa vian paikallistamista, joten muistathan sisällyttää sen raporttiisi!"
 
 #: ../root/account/edit.tt:40 ../root/admin/edit_user.tt:36
 #: ../root/user/profile.tt:117
@@ -2045,7 +2045,7 @@ msgstr "Vaihda salasana"
 
 #: ../root/release/edit/tracklist.tt:370
 msgid "Change all artists on this release that match “{name}”"
-msgstr ""
+msgstr "Muuta kaikki artistit tässä julkaisussa, jotka vastaavat \"{name}\""
 
 #: ../root/edit/relationship/create.tt:39
 #: ../root/edit/relationship/create.tt:43 ../root/edit/relationship/edit.tt:65
@@ -4196,11 +4196,11 @@ msgstr "Levymerkin alue"
 #: ../root/edit/details/merge_labels.tt:10
 #: ../root/edit/details/merge_labels.tt:47 ../root/label/merge.tt:14
 msgid "Label Code"
-msgstr ""
+msgstr "Levymerkki-tunnus"
 
 #: ../root/label/index.tt:5
 msgid "Label Code:"
-msgstr ""
+msgstr "Levymerkki-tunnus:"
 
 #: ../root/label/edit_form.tt:36
 msgid "Label Details"
@@ -4225,7 +4225,7 @@ msgstr "Seuratut levymerkit"
 #: ../root/edit/details/add_label.tt:60 ../root/edit/details/edit_label.tt:29
 #: ../root/label/edit_form.tt:53 ../root/label/layout.tt:42
 msgid "Label code:"
-msgstr "Luettelonumero:"
+msgstr "Levymerkki-tunnus:"
 
 #: ../root/label/layout.tt:4
 msgid "Label information"
@@ -5764,7 +5764,7 @@ msgstr ""
 
 #: ../root/scripts/text_strings.tt:143
 msgid "Please select a link type for the URL you’ve entered."
-msgstr ""
+msgstr "Valitse linkin tyyppi kirjoittamallesi URL-osoitteelle."
 
 #: ../root/scripts/text_strings.tt:38
 msgid "Please select a relationship type."
@@ -7231,55 +7231,55 @@ msgstr "Näytetään kaikki äänitteet. {show_sa|Näytä vain itsenäiset ään
 msgid ""
 "Showing all release groups by this artist. {show_official|Show only official"
 " release groups instead}, or {show_va|show various artists release groups}."
-msgstr "Näytetään artistin kaikki julkaisuryhmät. {show_official|Näytä vain  artistin viralliset julkaisuryhmät}, tai {show_va|näytä vain useiden artistien julkaisuryhmät}."
+msgstr "Näytetään artistin kaikki julkaisuryhmät. {show_official|Näytä vain  artistin viralliset julkaisuryhmät}, tai {show_va|näytä useiden artistien julkaisuryhmät}."
 
 #: ../root/artist/index.tt:112
 msgid ""
 "Showing all release groups by this artist. {show_va|Show various artists "
 "release groups instead}."
-msgstr ""
+msgstr "Näytetään kaikki artistin julkaisuryhmät. {show_va|Näytä  useiden artistien julkaisuryhmät}."
 
 #: ../root/artist/index.tt:122
 msgid "Showing all release groups for various artists."
-msgstr ""
+msgstr "Näytetään kaikki useiden artistien julkaisuryhmät."
 
 #: ../root/artist/index.tt:144
 msgid ""
 "Showing all release groups for various artists. {show_non_va|Show release "
 "groups by this artist instead}."
-msgstr ""
+msgstr "Näytetään kaikki useiden artistien julkaisuryhmät. {show_non_va|Näytä artistin julkaisuryhmä}."
 
 #: ../root/artist/index.tt:152
 msgid ""
 "Showing all release groups for various artists. {show_official|Show only "
 "official various artists release groups instead}, or {show_non_va|show "
 "release groups by this artist}."
-msgstr "Näytetään kaikki useiden artistien julkaisuryhmät. {show_official|Näytä vain viralliset useiden artistien julkaisuryhmät}, tai {show_non_va|näytä vain artistin julkaisuryhmät}."
+msgstr "Näytetään kaikki useiden artistien julkaisuryhmät. {show_official|Näytä vain viralliset useiden artistien julkaisuryhmät}, tai {show_non_va|näytä artistin julkaisuryhmät}."
 
 #: ../root/artist/index.tt:132
 msgid ""
 "Showing all release groups for various artists. {show_official|Show only "
 "official various artists release groups instead}."
-msgstr ""
+msgstr "Näytetään kaikki useiden artistien julkaisuryhmät. {show_official|Näytä vain viralliset useiden artistien julkaisuryhmät}."
 
 #: ../root/artist/index.tt:108
 msgid ""
 "Showing official release groups by this artist. {show_all|Show all release "
 "groups instead}, or {show_va|show various artists release groups}."
-msgstr "Näytetään artistin viralliset julkaisuryhmät. {show_all|Näytä  artistin kaikki julkaisuryhmät}, tai {show_va|näytä vain useiden artistien julkaisuryhmät}."
+msgstr "Näytetään artistin viralliset julkaisuryhmät. {show_all|Näytä  artistin kaikki julkaisuryhmät}, tai {show_va|näytä useiden artistien julkaisuryhmät}."
 
 #: ../root/artist/index.tt:137
 msgid ""
 "Showing official release groups for various artists. {show_all|Show all "
 "various artists release groups instead}, or {show_non_va|show release groups"
 " by this artist}."
-msgstr "Näytetään viralliset useiden artistien julkaisuryhmät. {show_all|Näytä kaikki useiden artistien julkaisuryhmät}, tai {show_non_va|näytä vain artistin julkaisuryhmät}."
+msgstr "Näytetään viralliset useiden artistien julkaisuryhmät. {show_all|Näytä kaikki useiden artistien julkaisuryhmät}, tai {show_non_va|näytä artistin julkaisuryhmät}."
 
 #: ../root/artist/index.tt:116
 msgid ""
 "Showing official release groups for various artists. {show_all|Show all "
 "various artists release groups instead}."
-msgstr ""
+msgstr "Näytetään viralliset useiden artistien julkaisuryhmät. {show_all|Näytä kaikki useiden artistien julkaisuryhmät}."
 
 #: ../root/artist/recordings.tt:20
 msgid ""
@@ -8255,7 +8255,7 @@ msgstr "Tämä ISWC-koodi ei liity yhteenkään teokseen. Jos haluat liittää s
 msgid ""
 "This URL is not allowed for the selected link type, or is incorrectly "
 "formatted."
-msgstr ""
+msgstr "Tämä URL-osoite ei ole sallittu valitulle linkin tyypille,  tai se on väärin muotoiltu."
 
 #: ../root/alias/edit_form.tt:36
 msgid "This alias is no longer current."
@@ -8299,7 +8299,7 @@ msgstr "Tällä artistilla ei ole yhtäkään julkaisua."
 msgid ""
 "This artist does not have any various artists release groups. "
 "{show_non_va|Show release groups by this artist instead}."
-msgstr ""
+msgstr "Tällä artistilla ei ole yhtään useiden artistien julkaisuryhmää. {show_non_va|Näytä artistin julkaisuryhmät}."
 
 #: ../root/artist/edit_form.tt:80 ../root/scripts/text_strings.tt:68
 msgid "This artist has ended."
@@ -8333,7 +8333,7 @@ msgstr "Tätä artistia ei ole liitetty yhteenkään teokseen."
 
 #: ../root/artist/index.tt:115 ../root/artist/index.tt:131
 msgid "This artist only has release groups by various artists."
-msgstr ""
+msgstr "Tällä artistilla on vain useiden artistien julkaisuryhmiä."
 
 #: ../root/artist/releases.tt:25
 msgid "This artist only has releases by various artists."
@@ -8341,11 +8341,11 @@ msgstr ""
 
 #: ../root/artist/index.tt:121 ../root/artist/index.tt:143
 msgid "This artist only has unofficial release groups by various artists."
-msgstr ""
+msgstr "Tällä artistilla on vain epävirallisia useiden artistien julkaisuryhmiä."
 
 #: ../root/artist/index.tt:111
 msgid "This artist only has unofficial release groups."
-msgstr ""
+msgstr "Tällä artistilla on vain epävirallisia julkaisuryhmiä."
 
 #: ../root/scripts/text_strings.tt:115
 #: ../lib/MusicBrainz/Server/Form/Role/LinkType.pm:86
@@ -8625,7 +8625,7 @@ msgstr "Tämä äänite on video"
 
 #: ../root/scripts/text_strings.tt:170
 msgid "This relationship already exists."
-msgstr ""
+msgstr "Tämä yhteys on jo olemassa."
 
 #: ../root/edit/details/add_relationship.tt:13
 #: ../root/edit/details/edit_relationship.tt:14
@@ -10572,7 +10572,7 @@ msgstr "Sähköpostisi on lähetetty onnistuneesti! Klikkaa {link|tästä} jatka
 msgid ""
 "Your homepage and biography will not show until you have confirmed your "
 "email."
-msgstr ""
+msgstr "Kotisivusi ja elämänkertasi eivät näy ennen kuin sähköpostiosoitteesi on varmistettu."
 
 #: ../root/account/reset_password_ok.tt:5
 msgid "Your password has been reset."
@@ -11069,7 +11069,7 @@ msgstr[1] "{count} yksityistä arvostelu ei listattu."
 
 #: ../root/scripts/text_strings.tt:172
 msgid "{description} ({url|more documentation})"
-msgstr ""
+msgstr "{description} ({url|lisää dokumentaatiota})"
 
 #: ../root/user/profile.tt:50
 msgid "{doc|Auto-Editor}"
@@ -11601,7 +11601,7 @@ msgstr "Vanhan, sekä uuden lisätietokentän tunnisteiden tulee olla ainutkerta
 msgid ""
 "Our Redis server appears to be down; some features may not work as intended "
 "or expected."
-msgstr ""
+msgstr "Redis-palvelimemme tuntuu olevan kaatunut. Jotkin ominaisuudet eivät välttämättä toimi niin kuin olisi tarkoitus tai odotettaa."
 
 #: ../lib/MusicBrainz/Server/Controller/User.pm:252
 #, perl-brace-format
@@ -11625,7 +11625,7 @@ msgstr "TOC:n rakenne on kelpaamaton"
 msgid ""
 "Since your edit adding this object was still open, that edit has been "
 "cancelled instead of opening a new edit."
-msgstr ""
+msgstr "Koska tämän kohteen lisää muokkauksesi oli vielä auki,  perutetaan se uuden muokkauksen sijasta."
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:108
 msgid "No title provided"
@@ -12386,7 +12386,7 @@ msgstr ""
 msgid ""
 "Biography and website fields may not be edited until your email address is "
 "confirmed."
-msgstr ""
+msgstr "Elämänkerta ja kotisivu -kenttiä ei voi muokata ennen kuin sähköpostiosoitteesi on varmistettu."
 
 #: ../lib/MusicBrainz/Server/Form/User/Login.pm:9
 msgid "Username field is required"
