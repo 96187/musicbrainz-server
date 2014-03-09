@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-05 11:40-0700\n"
-"PO-Revision-Date: 2014-03-06 16:43+0000\n"
+"PO-Revision-Date: 2014-03-09 17:40+0000\n"
 "Last-Translator: Alain-Olivier  Breysse\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -580,17 +580,17 @@ msgstr "Ajouter une parution"
 #: ../root/layout/menu.tt:223
 msgctxt "button/menu"
 msgid "Add Release"
-msgstr "Ajouter une sortie"
+msgstr "Ajouter une parution"
 
 #: ../root/release/edit/layout.tt:7
 msgctxt "header"
 msgid "Add Release"
-msgstr "Ajouter une sortie"
+msgstr "Ajouter une parution"
 
 #: ../root/layout/menu.tt:220
 msgctxt "button/menu"
 msgid "Add Release Group"
-msgstr "Ajouter un groupe de sorties"
+msgstr "Ajouter un groupe de parutions"
 
 #: ../root/layout/menu.tt:229
 msgctxt "button/menu"
@@ -1732,12 +1732,12 @@ msgstr "Commence par"
 
 #: ../root/search/lib/inline-results-artist.tt:13
 msgid "Begin Area"
-msgstr "Début de région"
+msgstr "Région de début"
 
 #: ../root/artist/edit_form.tt:70 ../root/edit/details/add_artist.tt:49
 #: ../root/edit/details/edit_artist.tt:46
 msgid "Begin Area:"
-msgstr "Début de région :"
+msgstr "Région de début :"
 
 #: ../root/components/aliases.tt:13
 msgid "Begin Date"
@@ -1745,7 +1745,7 @@ msgstr "Date de début"
 
 #: ../root/components/common-macros.tt:912 ../root/scripts/text_strings.tt:73
 msgid "Begin area:"
-msgstr "Début de région :"
+msgstr "Région de début :"
 
 #: ../root/alias/edit_form.tt:34 ../root/area/edit_form.tt:24
 #: ../root/area/layout.tt:15 ../root/artist/edit_form.tt:67
@@ -2742,7 +2742,7 @@ msgstr "Vérification de don"
 #: ../root/components/forms.tt:355 ../root/release/edit/layout.tt:71
 #: ../root/release/edit_relationships.tt:112
 msgid "Done"
-msgstr "Effectué"
+msgstr "Terminé"
 
 #: ../root/taglookup/form.tt:8
 msgid "Duration:"
@@ -3201,12 +3201,12 @@ msgstr "Fin"
 
 #: ../root/search/lib/inline-results-artist.tt:15
 msgid "End Area"
-msgstr "Fin de région"
+msgstr "Région de fin"
 
 #: ../root/artist/edit_form.tt:83 ../root/edit/details/add_artist.tt:61
 #: ../root/edit/details/edit_artist.tt:54
 msgid "End Area:"
-msgstr "Fin de région :"
+msgstr "Région de fin :"
 
 #: ../root/components/aliases.tt:14
 msgid "End Date"
@@ -3214,7 +3214,7 @@ msgstr "Date de fin"
 
 #: ../root/components/common-macros.tt:920 ../root/scripts/text_strings.tt:73
 msgid "End area:"
-msgstr "Fin de région :"
+msgstr "Région de fin :"
 
 #: ../root/elections/index.tt:12
 msgid "End date"
@@ -11024,8 +11024,8 @@ msgstr "{artist} comme {name}"
 #: ../root/cdtoc/attach_artist_releases.tt:46
 msgid "{artist} has no releases which have only {n} track."
 msgid_plural "{artist} has no releases which have {n} tracks."
-msgstr[0] "{artist} n'a pas de sortie n'ayant que {n} piste."
-msgstr[1] "{artist} n'a pas de parution ayant {n} pistes."
+msgstr[0] "{artist} n'a aucune parution n'ayant que {n} piste."
+msgstr[1] "{artist} n'a aucune parution ayant {n} pistes."
 
 #: ../root/artist/relationships.tt:33 ../root/place/performances.tt:27
 #: ../lib/MusicBrainz/Server/Entity/Link.pm:122
