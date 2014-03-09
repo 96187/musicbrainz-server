@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-05 11:40-0700\n"
-"PO-Revision-Date: 2014-03-08 23:33+0000\n"
+"PO-Revision-Date: 2014-03-09 00:52+0000\n"
 "Last-Translator: jozo <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -1575,7 +1575,7 @@ msgstr "Auto-editorivaalit"
 
 #: ../root/elections/show.tt:1 ../root/elections/show.tt:3
 msgid "Auto-editor election #{no}"
-msgstr "Auto-editori vaalit nro {no}"
+msgstr "Auto-editori vaalit #{no}"
 
 #: ../root/elections/index.tt:1 ../root/elections/index.tt:3
 msgid "Auto-editor elections"
@@ -1976,7 +1976,7 @@ msgstr "Peruuta muokkaus"
 
 #: ../root/elections/show.tt:105
 msgid "Cancel the election"
-msgstr "Peruuta vaalit."
+msgstr "Peruuta vaalit"
 
 #: ../root/user/profile.tt:171 ../lib/MusicBrainz/Server/Edit/Utils.pm:274
 msgid "Cancelled"
@@ -9811,7 +9811,7 @@ msgstr "Näytä sisällyttämishistoria"
 
 #: ../root/elections/show.tt:117
 msgid "Vote"
-msgstr "Äänestä"
+msgstr "Ääni"
 
 #: ../root/elections/show.tt:80
 msgid "Vote NO"
@@ -10433,7 +10433,7 @@ msgstr "Et voit äänestää tätä ehdokasta, sillä et ole auto-editori."
 #: ../root/elections/show.tt:89
 msgid ""
 "You cannot vote for this candidate, because you proposed / seconded them."
-msgstr "Et voi äänestää tätä ehdosta, sillä ehdotit tai kannatit häntä."
+msgstr "Et voi äänestää tätä ehdokasta, sillä ehdotit tai kannatit häntä."
 
 #: ../root/layout/merge-helper.tt:4
 msgid "You currently have the following entities selected for merging:"
