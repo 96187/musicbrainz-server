@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-03-08 10:35+0000\n"
+"PO-Revision-Date: 2014-03-13 01:00+0000\n"
 "Last-Translator: jozo <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -265,7 +265,7 @@ msgstr "Kuno Woudt palkattiin täyspäiväiseksi kehittäjäksi"
 
 #: DB:statistics.statistic_event/title:2007-04-01
 msgid "Labels/data quality"
-msgstr "Levymerkki/datan laatu"
+msgstr "Levymerkki/tiedon laatu"
 
 #: DB:statistics.statistic_event/title:2007-11-07
 msgid "Last.fm"
@@ -538,11 +538,11 @@ msgstr "Kaikki muokkaukset, jotka on äänestetty kumoon"
 
 #: ../root/statistics/view_js.tt:62
 msgid "All edits that have failed dependency checks"
-msgstr ""
+msgstr "Kaikki muokkaukset, joiden riippuvuuksien tarkistus epäonnistui"
 
 #: ../root/statistics/view_js.tt:63
 msgid "All edits that have failed prerequisite checks"
-msgstr ""
+msgstr "Kaikki muokkaukset, joiden ennakkotarkistus epäonnistui"
 
 #: ../root/statistics/view_js.tt:61
 msgid "All edits that have hit an error"
@@ -751,7 +751,7 @@ msgstr ""
 
 #: ../root/statistics/index.tt:13 ../root/statistics/view_js.tt:26
 msgid "Core Entities"
-msgstr ""
+msgstr "Keskeisimmät entiteetit"
 
 #: ../root/statistics/view_js.tt:77
 msgid "Count of active editors"
@@ -1076,7 +1076,7 @@ msgstr ""
 
 #: ../root/statistics/index.tt:319
 msgid "Data Quality"
-msgstr "Datan laatu"
+msgstr "Tiedon laatu"
 
 #: ../root/statistics/layout.tt:24 ../root/statistics/layout.tt:38
 msgid "Database Statistics"
@@ -1088,11 +1088,11 @@ msgstr "Tietokannat tilastot - {title}"
 
 #: ../root/statistics/view_js.tt:155
 msgid "Default Data Quality"
-msgstr ""
+msgstr "Normaali tiedon laatu"
 
 #: ../root/statistics/index.tt:334
 msgid "Default Data Quality:"
-msgstr ""
+msgstr "Normaali tiedon laatu:"
 
 #: ../root/statistics/index.tt:361 ../root/statistics/view_js.tt:129
 msgid "Disc IDs"
@@ -1149,7 +1149,7 @@ msgstr "Käyttäjät (voimassa olevat):"
 
 #: ../root/statistics/index.tt:578
 msgid "Editors, Edits, and Votes"
-msgstr "Editorit, muokkaukset ja äänet."
+msgstr "Käyttäjät, muokkaukset ja äänet"
 
 #: ../root/statistics/edits.tt:2 ../root/statistics/edits.tt:9
 #: ../root/statistics/index.tt:694 ../root/statistics/layout.tt:5
@@ -1196,27 +1196,27 @@ msgstr "Suppea"
 
 #: ../root/statistics/index.tt:721
 msgid "Failed (dependency):"
-msgstr ""
+msgstr "Epäonnistunut (riippuvuus):"
 
 #: ../root/statistics/index.tt:733
 msgid "Failed (internal error):"
-msgstr ""
+msgstr "Epäonnistunut (sisäinen virhe):"
 
 #: ../root/statistics/index.tt:727
 msgid "Failed (prerequisite):"
-msgstr ""
+msgstr "Epäonnistunut (edellytys):"
 
 #: ../root/statistics/view_js.tt:62
 msgid "Failed edits (dependency)"
-msgstr ""
+msgstr "Epäonnistuneet muokkaukset (riippuvuus)"
 
 #: ../root/statistics/view_js.tt:63
 msgid "Failed edits (prerequisite)"
-msgstr ""
+msgstr "Epäonnistuneet muokkaukset (edellyt)"
 
 #: ../root/statistics/view_js.tt:64
 msgid "Failed edits (voted down)"
-msgstr ""
+msgstr "Epäonnistuneet muokkaukseet (äänestetty kumoon)"
 
 #: ../root/statistics/view_js.tt:111
 msgid "Female Artists"
@@ -1246,11 +1246,11 @@ msgstr "Ryhmät"
 
 #: ../root/statistics/view_js.tt:158
 msgid "High Data Quality"
-msgstr "Korkea datan laatu"
+msgstr "Korkea tiedon laatu"
 
 #: ../root/statistics/index.tt:328
 msgid "High Data Quality:"
-msgstr "Korkea datan laatu:"
+msgstr "Korkea tiedon laatu:"
 
 #: ../root/statistics/timeline.tt:52
 msgid "Hover and click on vertical lines"
@@ -1270,7 +1270,7 @@ msgstr ""
 
 #: ../root/statistics/index.tt:120
 msgid "ISNIs:"
-msgstr ""
+msgstr "ISNI-koodit:"
 
 #: ../root/statistics/view_js.tt:138
 msgid "ISRCs"
@@ -1374,11 +1374,11 @@ msgstr ""
 
 #: ../root/statistics/view_js.tt:159
 msgid "Low Data Quality"
-msgstr "Alhainen datan laatu"
+msgstr "Alhainen tiedon laatu"
 
 #: ../root/statistics/index.tt:354
 msgid "Low Data Quality:"
-msgstr "Alhainen datan laatu:"
+msgstr "Alhainen tiedon laatu:"
 
 #: ../root/statistics/view_js.tt:110
 msgid "Male Artists"
@@ -1395,24 +1395,24 @@ msgstr "Tallenteet"
 #: ../root/statistics/view_js.tt:149
 msgid "Mediums with 1 Disc ID"
 msgid_plural "Mediums with {n} Disc IDs"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Tallenteet, joissa {n} levyn tunnistetta"
+msgstr[1] "Tallenteet, joissa {n} levyn tunnistetta"
 
 #: ../root/statistics/view_js.tt:144
 msgid "Mediums with Disc IDs"
-msgstr ""
+msgstr "Tallenteet, joissa ei levyn tunnistetta"
 
 #: ../root/statistics/index.tt:414
 msgid "Mediums with at least one disc ID:"
-msgstr ""
+msgstr "Tallenteet, joissa ainakin yksi levyn tunniste:"
 
 #: ../root/statistics/index.tt:408
 msgid "Mediums with no disc IDs:"
-msgstr ""
+msgstr "Tallenteet, joissa ei levyn tunnistetta:"
 
 #: ../root/statistics/view_js.tt:103
 msgid "Mediums with no format set"
-msgstr ""
+msgstr "Tallenteet, joille ei ole asetettu tallennusformaattia"
 
 #: ../root/statistics/index.tt:28 ../root/statistics/index.tt:402
 msgid "Mediums:"
@@ -1485,7 +1485,7 @@ msgstr "Ei:"
 
 #: ../root/statistics/index.tt:180
 msgid "Non-group artists:"
-msgstr "Ryhmiin kuulumattomat artistit:"
+msgstr "Artistit, jotka eivät ole ryhmiä:"
 
 #: ../root/statistics/index.tt:515 ../root/statistics/index.tt:543
 #: ../root/statistics/index.tt:571
@@ -1494,11 +1494,11 @@ msgstr "Ei mitään"
 
 #: ../root/statistics/view_js.tt:157
 msgid "Normal Data Quality"
-msgstr "Normaali datan laatu"
+msgstr "Normaali tiedon laatu"
 
 #: ../root/statistics/index.tt:341
 msgid "Normal Data Quality:"
-msgstr "Normaali datan laatu:"
+msgstr "Normaali tiedon laatu:"
 
 #: ../root/statistics/view_js.tt:54
 msgid "Open Edits"
@@ -1588,7 +1588,7 @@ msgstr "Arvostelut"
 
 #: ../root/statistics/index.tt:87
 msgid "Ratings (raw / aggregated):"
-msgstr ""
+msgstr "Arvostelut (käsittelemättömät / koostetut):"
 
 #: ../root/statistics/view_js.tt:167
 msgid "Ratings (raw)"
@@ -1645,7 +1645,7 @@ msgstr "Julkaisumaat"
 
 #: ../root/statistics/view_js.tt:35
 msgid "Release Data Quality"
-msgstr "Julkaisun data laatu"
+msgstr "Julkaisun tiedon laatu"
 
 #: ../root/statistics/view_js.tt:165
 msgid "Release Group Ratings"
@@ -1818,7 +1818,7 @@ msgstr ""
 
 #: ../root/statistics/index.tt:79
 msgid "Tags (raw / aggregated):"
-msgstr "Luokitukset (käsittelemätön / koostettu):"
+msgstr "Luokitukset (käsittelemätön / koostetut):"
 
 #: ../root/statistics/view_js.tt:175
 msgid "Tags (raw)"
@@ -1889,11 +1889,11 @@ msgstr "Tuntematon maa"
 
 #: ../root/statistics/view_js.tt:156
 msgid "Unknown Data Quality"
-msgstr "Tuntematon datan laatu"
+msgstr "Tuntematon tiedon laatu"
 
 #: ../root/statistics/index.tt:348
 msgid "Unknown Data Quality:"
-msgstr "Tuntematon datan laatu:"
+msgstr "Tuntematon tiedon laatu:"
 
 #: ../root/statistics/formats.tt:5
 msgid "Unknown Format"
@@ -2006,7 +2006,7 @@ msgstr ""
 
 #: ../root/statistics/index.tt:591
 msgid "active ever:"
-msgstr "aktiivinen joskus:"
+msgstr "aktiivisia joskus:"
 
 #: ../root/statistics/coverart.tt:113
 msgid "automatically inferred:"
