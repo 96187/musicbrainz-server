@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-03-13 01:00+0000\n"
+"PO-Revision-Date: 2014-03-13 01:52+0000\n"
 "Last-Translator: jozo <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -598,11 +598,11 @@ msgstr "Artistien arvostelut"
 
 #: ../root/statistics/view_js.tt:168
 msgid "Artist Ratings (raw)"
-msgstr ""
+msgstr "Artistien arvostelut (käsittelemätön)"
 
 #: ../root/statistics/view_js.tt:176
 msgid "Artist Tags (raw)"
-msgstr "Artistien luokitukset (raaka)"
+msgstr "Artistien luokitukset (käsittelemätön)"
 
 #: ../root/statistics/view_js.tt:33
 msgid "Artist Types and Genders"
@@ -687,7 +687,7 @@ msgstr "Perustiedot"
 
 #: ../root/statistics/coverart.tt:13
 msgid "Basics"
-msgstr ""
+msgstr "Perusasiat"
 
 #: ../root/statistics/coverart.tt:129
 msgid "By Cover Art Type"
@@ -747,7 +747,7 @@ msgstr ""
 
 #: ../root/statistics/timeline.tt:47
 msgid "Controls"
-msgstr ""
+msgstr "Säätimet"
 
 #: ../root/statistics/index.tt:13 ../root/statistics/view_js.tt:26
 msgid "Core Entities"
@@ -895,11 +895,11 @@ msgstr ""
 
 #: ../root/statistics/view_js.tt:171
 msgid "Count of all Release Group Ratings (raw)"
-msgstr ""
+msgstr "Kaikkien julkaisuryhmien arvostelujen määrä (käsittelemätön)"
 
 #: ../root/statistics/view_js.tt:180
 msgid "Count of all Release Group Tags (raw)"
-msgstr ""
+msgstr "Kaikkien julkaisuryhmien luokittelujen määrä (käsittelemätön)"
 
 #: ../root/statistics/view_js.tt:151
 msgid "Count of all Release Groups with {n} Releases"
@@ -907,7 +907,7 @@ msgstr ""
 
 #: ../root/statistics/view_js.tt:179
 msgid "Count of all Release Tags (raw)"
-msgstr ""
+msgstr "Kaikkien julkaisujen luokittelujen määrä (käsittelemätön)"
 
 #: ../root/statistics/view_js.tt:155
 msgid "Count of all Releases at Default Data Quality"
@@ -1072,7 +1072,7 @@ msgstr "Kansitaide"
 
 #: ../root/statistics/index.tt:285
 msgid "Cover Art Sources"
-msgstr ""
+msgstr "Kansitaiteiden lähteet"
 
 #: ../root/statistics/index.tt:319
 msgid "Data Quality"
@@ -1108,7 +1108,7 @@ msgstr ""
 
 #: ../root/statistics/view_js.tt:27
 msgid "Edit Information"
-msgstr ""
+msgstr "Tietoja muokkauksista"
 
 #: ../root/statistics/editors.tt:36 ../root/statistics/editors.tt:37
 msgid "Editor"
@@ -1188,7 +1188,7 @@ msgstr ""
 
 #: ../root/statistics/timeline.tt:59
 msgid "Exact Values (items vs. day)"
-msgstr ""
+msgstr "Tarkat arvot (kohdetta verrattuna päivään)"
 
 #: ../root/statistics/relationships.tt:31
 msgid "Exclusive"
@@ -1230,7 +1230,7 @@ msgstr "Nainen:"
 msgid ""
 "For the vote statistics, only yes or no votes are counted, abstain votes are"
 " not counted."
-msgstr "Äänestystilastoissa vain kyllä ja ei äänet lasketaan, tyhjiä ei lasketa"
+msgstr "Äänestystilastoissa vain kyllä ja ei äänet lasketaan, tyhjiä ääniä ei lasketa"
 
 #: ../root/statistics/formats.tt:25
 msgid "Format"
@@ -1298,7 +1298,7 @@ msgstr "ISWC-koodit (kaikki)"
 
 #: ../root/statistics/index.tt:97
 msgid "Identifiers"
-msgstr ""
+msgstr "Tunnisteet"
 
 #: ../root/statistics/relationships.tt:31
 msgid "Inclusive"
@@ -1322,11 +1322,11 @@ msgstr ""
 
 #: ../root/statistics/view_js.tt:169
 msgid "Label Ratings (raw)"
-msgstr ""
+msgstr "Levymerkkien arvostelut (käsittelemätön)"
 
 #: ../root/statistics/view_js.tt:177
 msgid "Label Tags (raw)"
-msgstr ""
+msgstr "Levymerkkien luokitukset (käsittelemätön)"
 
 #: ../root/statistics/countries.tt:29 ../root/statistics/view_js.tt:49
 msgid "Labels"
@@ -1370,7 +1370,7 @@ msgstr "Päivitetty viimeksi: {date}"
 
 #: ../root/statistics/timeline.tt:36
 msgid "Legend"
-msgstr ""
+msgstr "Selite"
 
 #: ../root/statistics/view_js.tt:159
 msgid "Low Data Quality"
@@ -1428,11 +1428,11 @@ msgstr "Aktiivisimmat äänestäjät viikon ajalta"
 
 #: ../root/statistics/timeline.tt:40
 msgid "MusicBrainz Events"
-msgstr ""
+msgstr "MusicBrainzin tapahtumia"
 
 #: ../root/statistics/timeline.tt:52
 msgid "MusicBrainz Events:"
-msgstr ""
+msgstr "MusicBrainzin tapahtumia:"
 
 #: ../root/statistics/no_statistics.tt:2
 msgid "No Statistics"
@@ -1580,7 +1580,7 @@ msgstr ""
 
 #: ../root/statistics/timeline.tt:44
 msgid "Rate of Change Graph"
-msgstr ""
+msgstr "Muutosnopeuksien kuvaaja"
 
 #: ../root/statistics/view_js.tt:161
 msgid "Ratings"
@@ -1592,7 +1592,7 @@ msgstr "Arvostelut (käsittelemättömät / koostetut):"
 
 #: ../root/statistics/view_js.tt:167
 msgid "Ratings (raw)"
-msgstr ""
+msgstr "Arvostelut (käsittelemätön)"
 
 #: ../root/statistics/view_js.tt:36
 msgid "Ratings and Tags"
@@ -1604,11 +1604,11 @@ msgstr ""
 
 #: ../root/statistics/view_js.tt:170
 msgid "Recording Ratings (raw)"
-msgstr ""
+msgstr "Äänitteiden arvostelut (käsittelemätön)"
 
 #: ../root/statistics/view_js.tt:178
 msgid "Recording Tags (raw)"
-msgstr ""
+msgstr "Äänitteiden luokittelut (käsittelemätön)"
 
 #: ../root/statistics/index.tt:475 ../root/statistics/index.tt:479
 #: ../root/statistics/view_js.tt:44
@@ -1653,11 +1653,11 @@ msgstr "Julkaisuryhmän arvostelut"
 
 #: ../root/statistics/view_js.tt:171
 msgid "Release Group Ratings (raw)"
-msgstr ""
+msgstr "Julkaisuryhmien arvostelut (käsittelemätön)"
 
 #: ../root/statistics/view_js.tt:180
 msgid "Release Group Tags (raw)"
-msgstr ""
+msgstr "Julkaisuryhmien luokittelut (käsittelemätön)"
 
 #: ../root/statistics/index.tt:437 ../root/statistics/view_js.tt:48
 msgid "Release Groups"
@@ -1692,7 +1692,7 @@ msgstr "Julkaisun tila"
 
 #: ../root/statistics/view_js.tt:179
 msgid "Release Tags (raw)"
-msgstr ""
+msgstr "Julkaisujen luokitukset (käsittelemätön)"
 
 #: ../root/statistics/coverart.tt:97
 msgid "Release groups"
@@ -1704,7 +1704,7 @@ msgstr "Julkaisuryhmät, joilla kansitaidetta:"
 
 #: ../root/statistics/formats.tt:16 ../root/statistics/formats.tt:20
 msgid "Release/Medium Formats"
-msgstr ""
+msgstr "Julkaisu- ja tallenneformaatit"
 
 #: ../root/statistics/countries.tt:28 ../root/statistics/coverart.tt:35
 #: ../root/statistics/formats.tt:26 ../root/statistics/index.tt:215
@@ -1737,7 +1737,7 @@ msgstr ""
 
 #: ../root/statistics/view_js.tt:191
 msgid "Releases with Cover Art"
-msgstr ""
+msgstr "Julkaisut, joissa kansitaidetta"
 
 #: ../root/statistics/view_js.tt:195
 msgid "Releases with Cover Art from Relationships"
@@ -1818,7 +1818,7 @@ msgstr ""
 
 #: ../root/statistics/index.tt:79
 msgid "Tags (raw / aggregated):"
-msgstr "Luokitukset (käsittelemätön / koostetut):"
+msgstr "Luokitukset (käsittelemättömät / koostetut):"
 
 #: ../root/statistics/view_js.tt:175
 msgid "Tags (raw)"
@@ -1937,7 +1937,7 @@ msgstr "Videoita:"
 
 #: ../root/statistics/index.tt:715
 msgid "Voted down:"
-msgstr "Kumoon äänestetyt:"
+msgstr "Äänestetty kumoon:"
 
 #: ../root/statistics/editors.tt:42 ../root/statistics/editors.tt:43
 msgid "Voter"
@@ -2129,7 +2129,7 @@ msgstr[1] "joissa {num} levyn tunnistetta:"
 #: ../root/statistics/coverart.tt:155
 msgid "with {num} piece of cover art:"
 msgid_plural "with {num} pieces of cover art:"
-msgstr[0] "joissa {num} kappale kansikuvia:"
+msgstr[0] "joissa {num} kappale kansitaidetta:"
 msgstr[1] "joissa {num} kappaletta kansitaidetta:"
 
 #: ../root/statistics/view_js.tt:87
