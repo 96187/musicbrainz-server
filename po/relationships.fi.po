@@ -10,8 +10,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-03-13 02:50+0000\n"
-"Last-Translator: jozo <email address hidden>\n"
+"PO-Revision-Date: 2014-03-18 03:22+0000\n"
+"Last-Translator: Ian McEwen <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -186,24 +186,10 @@ msgstr ""
 msgid "Indicates a parent-child relationship."
 msgstr "Ilmaisee vanhempi-lapsi -yhteyttä"
 
-#: DB:link_type/description:248
-msgid ""
-"Indicates a person or agency that did the design/illustration for this work."
-" (<a "
-"href=\"http://musicbrainz.org/doc/Miscellaneous_Production_Relationship_Type\">Details</a>)"
-msgstr ""
-
 #: DB:link_type/description:27
 msgid ""
 "Indicates a person or agency that did the graphic design for this album. (<a"
 " "
-"href=\"http://musicbrainz.org/doc/Miscellaneous_Production_Relationship_Type\">Details</a>)"
-msgstr ""
-
-#: DB:link_type/description:249
-msgid ""
-"Indicates a person or agency that did the graphics design support for this "
-"work. (<a "
 "href=\"http://musicbrainz.org/doc/Miscellaneous_Production_Relationship_Type\">Details</a>)"
 msgstr ""
 
@@ -218,7 +204,7 @@ msgid ""
 msgstr ""
 
 #: DB:link_type/description:94
-msgid "Indicates a webpage that reviews the work of an artist."
+msgid "Indicates a webpage that reviews the release (group) in question."
 msgstr ""
 
 #: DB:link_type/description:75
@@ -239,12 +225,6 @@ msgid ""
 "Indicates a webpage where you can download an artist's work for free. (<a "
 "href=\"http://musicbrainz.org/doc/Free_Download_Relationship_Type\">Details</a>)"
 msgstr "Määrittää verkkosivun, jolta voi ladata artistin teoksia ilmaiseksi. (<a href=\"http://musicbrainz.org/doc/Free_Download_Relationship_Type\">Lisätietoja</a>)"
-
-#: DB:link_type/description:263
-msgid ""
-"Indicates an artist & repertoire support was included in this work. (<a "
-"href=\"http://musicbrainz.org/doc/Miscellaneous_Production_Relationship_Type\">Details</a>)"
-msgstr ""
 
 #: DB:link_type/description:104
 msgid ""
@@ -420,10 +400,6 @@ msgstr ""
 msgid ""
 "Indicates the composer for this work, i.e. the artist who wrote the music "
 "(not necessarily the lyrics)."
-msgstr ""
-
-#: DB:link_type/description:264
-msgid "Indicates the creative direction support for this work."
 msgstr ""
 
 #: DB:link_type/description:28 DB:link_type/description:138
@@ -874,12 +850,6 @@ msgid ""
 " the sleeve). While most time liner notes are just personnel information and"
 " production data, in some cases they consist of a blurb of text (article). "
 "This relationship type should be used in this last case."
-msgstr ""
-
-#: DB:link_type/description:61
-msgid ""
-"This credits the person or agency who arranged travel for the musicians and "
-"other staff, in order to get them into the right place to create the work."
 msgstr ""
 
 #: DB:link_type/description:274
@@ -1653,6 +1623,12 @@ msgid ""
 "href=\"http://musicbrainz.org/doc/Programming_Relationship_Type\">Details</a>)"
 msgstr ""
 
+#: DB:link_type/description:729
+msgid ""
+"This relationship links the release of a show's episode (for example a "
+"podcast) to the show notes for this episode."
+msgstr ""
+
 #: DB:link_type/description:728
 msgid ""
 "This relationship specifies that an artist is a <a "
@@ -1731,8 +1707,7 @@ msgid ""
 "Note about CD Baby: Many CD Baby releases are also available (usually with bigger covers) on Amazon.com."
 msgstr ""
 
-#: DB:link_type/description:261 DB:link_type/description:270
-#: DB:link_type/description:252 DB:link_type/description:269
+#: DB:link_type/description:270
 msgid "This relationship type is <strong>deprecated</strong>."
 msgstr ""
 
@@ -1959,8 +1934,7 @@ msgid "arrangements"
 msgstr ""
 
 #: DB:link_type/link_phrase:135 DB:link_type/link_phrase:62
-#: DB:link_type/link_phrase:263 DB:link_type/reverse_link_phrase:135
-#: DB:link_type/reverse_link_phrase:62 DB:link_type/reverse_link_phrase:263
+#: DB:link_type/reverse_link_phrase:135 DB:link_type/reverse_link_phrase:62
 msgid "artist & repertoire support"
 msgstr ""
 
@@ -2096,10 +2070,6 @@ msgstr ""
 msgid "composition"
 msgstr "sävellys"
 
-#: DB:link_type/long_link_phrase:261
-msgid "contains miscellaneous support from"
-msgstr "sisältää sekalaista tukea artistilta"
-
 #: DB:link_type/long_link_phrase:83 DB:link_type/long_link_phrase:258
 msgid "contains samples from the IMDb entry at"
 msgstr ""
@@ -2159,20 +2129,12 @@ msgstr "coverit ja versiot"
 msgid "covers or other versions"
 msgstr "coverit ja muut versiot"
 
-#: DB:link_type/link_phrase:264 DB:link_type/reverse_link_phrase:264
-msgid "creative direction"
-msgstr ""
-
 #: DB:link_type/reverse_link_phrase:115
 msgid "creative persons"
 msgstr ""
 
 #: DB:link_type/link_phrase:115
 msgid "creative position"
-msgstr ""
-
-#: DB:link_type/link_phrase:248 DB:link_type/reverse_link_phrase:248
-msgid "design/illustration"
 msgstr ""
 
 #: DB:link_type/link_phrase:88 DB:link_type/link_phrase:171
@@ -2306,10 +2268,6 @@ msgstr ""
 #: DB:link_type/long_link_phrase:257
 msgid "get the music"
 msgstr "musiikki hankittavissa"
-
-#: DB:link_type/link_phrase:249 DB:link_type/reverse_link_phrase:249
-msgid "graphic design"
-msgstr "graafinen suunnittelu"
 
 #: DB:link_attribute_type/name:194
 msgid "guest"
@@ -2497,10 +2455,6 @@ msgstr "omaa kansalllislaulun"
 msgid "has arrangement"
 msgstr ""
 
-#: DB:link_type/long_link_phrase:263
-msgid "has artist & repertoire support by"
-msgstr ""
-
 #: DB:link_type/long_link_phrase:66
 msgid "has business association with"
 msgstr ""
@@ -2508,18 +2462,6 @@ msgstr ""
 #: DB:link_type/long_link_phrase:78
 msgid "has cover art at"
 msgstr "omaa kansitaidetta"
-
-#: DB:link_type/long_link_phrase:264
-msgid "has creative direction by"
-msgstr ""
-
-#: DB:link_type/long_link_phrase:248
-msgid "has design/illustration by"
-msgstr ""
-
-#: DB:link_type/long_link_phrase:249
-msgid "has graphic design by"
-msgstr ""
 
 #: DB:link_type/long_link_phrase:725
 msgid "has imprint"
@@ -2560,6 +2502,10 @@ msgstr ""
 
 #: DB:link_type/link_phrase:315 DB:link_type/long_link_phrase:315
 msgid "has revision"
+msgstr ""
+
+#: DB:link_type/long_link_phrase:729
+msgid "has show notes at"
 msgstr ""
 
 #: DB:link_type/long_link_phrase:110
@@ -2967,13 +2913,11 @@ msgstr ""
 
 #: DB:link_type/link_phrase:25 DB:link_type/link_phrase:129
 #: DB:link_type/link_phrase:162 DB:link_type/link_phrase:270
-#: DB:link_type/reverse_link_phrase:261
 msgid "miscellaneous roles"
 msgstr "sekalaiset roolit"
 
-#: DB:link_type/link_phrase:261 DB:link_type/reverse_link_phrase:25
-#: DB:link_type/reverse_link_phrase:129 DB:link_type/reverse_link_phrase:162
-#: DB:link_type/reverse_link_phrase:270
+#: DB:link_type/reverse_link_phrase:25 DB:link_type/reverse_link_phrase:129
+#: DB:link_type/reverse_link_phrase:162 DB:link_type/reverse_link_phrase:270
 msgid "miscellaneous support"
 msgstr "sekalainen tuki"
 
@@ -3218,10 +3162,6 @@ msgstr ""
 msgid "provided legal representation for"
 msgstr ""
 
-#: DB:link_type/long_link_phrase:61
-msgid "provided travel arrangements for"
-msgstr ""
-
 #: DB:link_type/long_link_phrase:137 DB:link_type/long_link_phrase:18
 msgid "provided {additional} art direction on"
 msgstr ""
@@ -3245,18 +3185,15 @@ msgstr ""
 #: DB:link_type/link_phrase:362 DB:link_type/link_phrase:127
 #: DB:link_type/link_phrase:206 DB:link_type/link_phrase:32
 #: DB:link_type/link_phrase:208 DB:link_type/link_phrase:161
-#: DB:link_type/link_phrase:269 DB:link_type/reverse_link_phrase:252
 #: DB:link_type/long_link_phrase:362 DB:link_type/long_link_phrase:127
 #: DB:link_type/long_link_phrase:206 DB:link_type/long_link_phrase:32
 #: DB:link_type/long_link_phrase:208 DB:link_type/long_link_phrase:161
-#: DB:link_type/long_link_phrase:269
 msgid "published"
 msgstr "kustansi"
 
-#: DB:link_type/link_phrase:252 DB:link_type/reverse_link_phrase:362
-#: DB:link_type/reverse_link_phrase:127 DB:link_type/reverse_link_phrase:206
-#: DB:link_type/reverse_link_phrase:32 DB:link_type/reverse_link_phrase:208
-#: DB:link_type/reverse_link_phrase:161 DB:link_type/reverse_link_phrase:269
+#: DB:link_type/reverse_link_phrase:362 DB:link_type/reverse_link_phrase:127
+#: DB:link_type/reverse_link_phrase:206 DB:link_type/reverse_link_phrase:32
+#: DB:link_type/reverse_link_phrase:208 DB:link_type/reverse_link_phrase:161
 msgid "publisher"
 msgstr "kustantaja"
 
@@ -3376,6 +3313,14 @@ msgstr "nuotit"
 msgid "score for"
 msgstr "nuotit"
 
+#: DB:link_type/link_phrase:729
+msgid "show notes"
+msgstr ""
+
+#: DB:link_type/reverse_link_phrase:729
+msgid "show notes for"
+msgstr ""
+
 #: DB:link_type/link_phrase:110 DB:link_type/reverse_link_phrase:110
 msgid "siblings"
 msgstr "sisaruksia"
@@ -3466,14 +3411,6 @@ msgstr ""
 msgid "transl{transliterated:iter}ated track listings"
 msgstr ""
 
-#: DB:link_type/reverse_link_phrase:61
-msgid "travel arrangements"
-msgstr ""
-
-#: DB:link_type/link_phrase:61
-msgid "travel arrangements for"
-msgstr ""
-
 #: DB:link_type/link_phrase:65
 msgid "tribute albums"
 msgstr "tribuuttialbumit"
@@ -3510,10 +3447,6 @@ msgstr ""
 
 #: DB:link_type/reverse_link_phrase:292
 msgid "voiced by"
-msgstr ""
-
-#: DB:link_type/long_link_phrase:252
-msgid "was published by"
 msgstr ""
 
 #: DB:link_type/long_link_phrase:98 DB:link_type/long_link_phrase:260
