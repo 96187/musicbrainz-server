@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-03-17 20:19-0700\n"
-"PO-Revision-Date: 2014-03-21 10:37+0000\n"
+"PO-Revision-Date: 2014-03-22 08:27+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -5690,7 +5690,7 @@ msgstr "Voer alstublieft uw oude wachtwoord hieronder in, en daarna uw nieuwe wa
 msgid ""
 "Please first navigate to the page of the artist who you wish to relate to "
 "recordings on this release and select \"use in relationship\""
-msgstr ""
+msgstr "Navigeer eerst naar de pagina van de artiest die u wilt relateren aan opnames op deze uitgave en selecteer „In een relatie gebruiken“."
 
 #: ../root/freedb/show.tt:47 ../root/freedb/show.tt:104
 msgid "Please login to import this FreeDB disc."
@@ -7359,7 +7359,7 @@ msgstr "SongKong Tagger"
 msgid ""
 "Sorry, <code>{discid}</code> does not match a CD stub. You can try "
 "{search_url|searching for it} instead."
-msgstr ""
+msgstr "Onze excuses, <code>{discid}</code> komt niet overeen met een cd-beginsel. U kunt proberen {search_url|ernaar te zoeken}."
 
 #: ../root/cdstub/error.tt:19
 msgid "Sorry, <code>{discid}</code> is not a valid disc ID."
@@ -8969,7 +8969,7 @@ msgid ""
 " recordings, this is inherited from an older version of MusicBrainz and "
 "should be fixed (both on the recordings and on the tracks!). Consult the "
 "{featured_artists|page about featured artists} to know more."
-msgstr ""
+msgstr "Dit rapport toont opnames met (feat. Artist) in de titel. Bekijk voor klassieke opnames de {CSG|Klassieke stijlgids}. Voor niet-klassieke opnames is dit een overblijfsel van een oudere versie van Musicbrainz en moet dit worden verbeterd (zowel op de opnames als de bijbehorende nummers!). Lees {featured_artists|de pagina over gastartiesten} om meer te weten te komen."
 
 #: ../root/report/featuring_release_groups.tt:6
 msgid ""
@@ -10086,7 +10086,7 @@ msgstr "Compositie"
 
 #: ../root/work/edit_form.tt:19
 msgid "Work Attributes"
-msgstr ""
+msgstr "Compositie-eigenschappen"
 
 #: ../root/work/edit_form.tt:10
 msgid "Work Details"
@@ -11376,7 +11376,7 @@ msgstr "{valink|Diverse Artiesten} moet zelden worden gebruikt op opnames. Zorg 
 
 #: ../root/components/common-macros.tt:1077
 msgid "{variable}:"
-msgstr ""
+msgstr "{variable}:"
 
 #: ../root/components/common-macros.tt:727
 msgid "{yes} yes : {no} no"
@@ -12474,19 +12474,19 @@ msgstr "Overig"
 
 #: ../lib/MusicBrainz/Server/Form/Work.pm:50
 msgid "Please select a work attribute type."
-msgstr ""
+msgstr "Selecteer een type compositie-eigenschap."
 
 #: ../lib/MusicBrainz/Server/Form/Work.pm:57
 msgid "Please enter a work attribute value."
-msgstr ""
+msgstr "Voer een waarde in voor de compositie-eigenschap."
 
 #: ../lib/MusicBrainz/Server/Form/Work.pm:91
 msgid "Unknown work attribute type."
-msgstr ""
+msgstr "Onbekend type compositie-eigenschap."
 
 #: ../lib/MusicBrainz/Server/Form/Work.pm:104
 msgid "This value is not allowed for this work attribute type."
-msgstr ""
+msgstr "Deze waarde is niet toegestaan voor dit type compositie-eigenschap."
 
 #: ../lib/MusicBrainz/Server/Release.pm:57
 msgid "(Special case)"
