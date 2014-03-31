@@ -16,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-03-18 03:21+0000\n"
+"PO-Revision-Date: 2014-03-31 21:30+0000\n"
 "Last-Translator: Ian McEwen <email address hidden>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/musicbrainz/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
@@ -389,6 +389,11 @@ msgstr ""
 msgctxt "artist_type"
 msgid "Character"
 msgstr "特性"
+
+#: DB:artist_type/name:6
+msgctxt "artist_type"
+msgid "Choir"
+msgstr ""
 
 #: DB:work_attribute_type_allowed_value/value:71
 msgctxt "work_attribute_type_allowed_value"
@@ -1479,6 +1484,11 @@ msgstr "轻歌剧"
 msgctxt "work_type"
 msgid "Oratorio"
 msgstr "清唱剧"
+
+#: DB:artist_type/name:5
+msgctxt "artist_type"
+msgid "Orchestra"
+msgstr ""
 
 #: DB:label_type/name:4
 msgctxt "label_type"
