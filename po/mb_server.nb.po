@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-29 11:40-0700\n"
-"PO-Revision-Date: 2014-05-10 12:00+0000\n"
+"PO-Revision-Date: 2014-05-10 12:56+0000\n"
 "Last-Translator: Zaphod Beeblebrox\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/projects/p/musicbrainz/language/nb/)\n"
 "MIME-Version: 1.0\n"
@@ -493,16 +493,16 @@ msgstr ""
 
 #: ../root/artist/create.tt:1 ../root/artist/create.tt:3
 msgid "Add Artist"
-msgstr ""
+msgstr "Legg til Artist"
 
 #: ../root/layout/menu.tt:214
 msgctxt "button/menu"
 msgid "Add Artist"
-msgstr ""
+msgstr "Legg til Artist"
 
 #: ../root/artist/add_alias.tt:1
 msgid "Add Artist Alias"
-msgstr ""
+msgstr "Legg til artist alias"
 
 #: ../root/components/forms.tt:338 ../root/components/forms.tt:339
 #: ../root/release/edit/tracklist.tt:384
@@ -613,7 +613,7 @@ msgstr ""
 
 #: ../root/layout/menu.tt:226
 msgid "Add Various Artists Release"
-msgstr ""
+msgstr "Legg til en utgivelse av diverse artister"
 
 #: ../root/layout/menu.tt:232
 msgctxt "button/menu"
@@ -652,7 +652,7 @@ msgstr ""
 
 #: ../root/scripts/text_strings.tt:131
 msgid "Add a new artist"
-msgstr ""
+msgstr "Legg til en ny artist"
 
 #: ../root/admin/wikidoc/index.tt:11
 msgid "Add a new entry"
@@ -985,7 +985,7 @@ msgstr ""
 
 #: ../root/search/results-artist.tt:5
 msgid "Alternatively, you may {uri|add a new artist}."
-msgstr ""
+msgstr "Alternativt, kan du {uri|legge til en ny artist}."
 
 #: ../root/search/results-label.tt:45
 msgid "Alternatively, you may {uri|add a new label}."
@@ -1344,11 +1344,11 @@ msgstr ""
 
 #: ../root/release/edit/tracklist.tt:354
 msgid "Artist as credited on this track:"
-msgstr ""
+msgstr "Artisten på dette sporet som:"
 
 #: ../root/components/forms.tt:320
 msgid "Artist as credited:"
-msgstr ""
+msgstr "Artist som:"
 
 #: ../root/components/filter-form.tt:11
 msgid "Artist credit:"
@@ -1364,7 +1364,7 @@ msgstr ""
 
 #: ../root/components/forms.tt:307 ../root/release/edit/tracklist.tt:353
 msgid "Artist in MusicBrainz:"
-msgstr ""
+msgstr "Artisten i MusicBrainz:"
 
 #: ../root/artist/layout.tt:6
 msgid "Artist information"
@@ -1445,7 +1445,7 @@ msgstr "Artister som kan være grupper."
 #: ../root/report/artists_that_may_be_persons.tt:1
 #: ../root/report/artists_that_may_be_persons.tt:3 ../root/report/index.tt:18
 msgid "Artists that may be persons"
-msgstr ""
+msgstr "Artister som kan være personer"
 
 #: ../root/report/index.tt:21
 msgid "Artists which have collaboration relationships"
@@ -1453,12 +1453,12 @@ msgstr ""
 
 #: ../root/report/index.tt:22
 msgid "Artists which look like collaborations"
-msgstr ""
+msgstr "Artister som ser ut som samarbeider"
 
 #: ../root/report/collaboration_relationships.tt:1
 #: ../root/report/collaboration_relationships.tt:3
 msgid "Artists with Collaboration Relationships"
-msgstr ""
+msgstr "Artister med samarbeidsrelasjoner "
 
 #: ../root/report/deprecated_relationship_artists.tt:1
 #: ../root/report/deprecated_relationship_artists.tt:3
@@ -1580,7 +1580,7 @@ msgstr ""
 
 #: ../root/account/preferences.tt:43
 msgid "Automatically subscribe me to artists I create."
-msgstr ""
+msgstr "Abonnér meg automatisk til artister jeg oppretter."
 
 #: ../root/account/preferences.tt:45
 msgid "Automatically subscribe me to labels I create."
@@ -2027,7 +2027,7 @@ msgstr "Endre passord"
 
 #: ../root/release/edit/tracklist.tt:394
 msgid "Change all artists on this release that match “{name}”"
-msgstr ""
+msgstr "Endre på alle artistene i listen som passer navnet «{name}»"
 
 #: ../root/edit/relationship/create.tt:39
 #: ../root/edit/relationship/create.tt:43 ../root/edit/relationship/edit.tt:65
@@ -5296,7 +5296,7 @@ msgstr ""
 
 #: ../root/edit/details/edit_medium.tt:221
 msgid "Old Artist"
-msgstr ""
+msgstr "Gammel artist"
 
 #: ../root/edit/details/edit_medium.tt:51
 msgid "Old Tracklist"
@@ -5494,7 +5494,7 @@ msgstr ""
 
 #: ../root/release/edit/tracklist.tt:15
 msgid "Parse track artists"
-msgstr ""
+msgstr "Tolk sporartister"
 
 #: ../root/report/part_of_set_relationships.tt:1
 #: ../root/report/part_of_set_relationships.tt:3
@@ -5771,7 +5771,7 @@ msgstr ""
 
 #: ../root/artist/edit_form.tt:13
 msgid "Possible Duplicate Artists"
-msgstr ""
+msgstr "Mulige duplikatartister"
 
 #: ../root/label/edit_form.tt:13
 msgid "Possible Duplicate Labels"
@@ -5792,7 +5792,7 @@ msgstr "Mulige verdier:"
 #: ../root/report/duplicate_artists.tt:1 ../root/report/duplicate_artists.tt:3
 #: ../root/report/index.tt:20
 msgid "Possibly duplicate artists"
-msgstr ""
+msgstr "Mulige dupliserte artister"
 
 #: ../root/account/preferences_ok.tt:1 ../root/account/preferences_ok.tt:3
 #: ../root/account/preferences.tt:2 ../root/account/preferences.tt:4
@@ -6614,7 +6614,7 @@ msgstr ""
 
 #: ../root/artist/delete_alias.tt:1
 msgid "Remove Artist Alias"
-msgstr ""
+msgstr "Fjern artistalias"
 
 #: ../root/components/forms.tt:316 ../root/release/edit/tracklist.tt:376
 msgid "Remove Artist Credit"
@@ -6702,7 +6702,7 @@ msgstr ""
 #: ../root/artist/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Artist/DeleteAlias.pm:14
 msgid "Remove artist alias"
-msgstr "fjern artistalias"
+msgstr "Fjern artistalias"
 
 #: ../root/work/edit_form.tt:56
 msgid "Remove attribute"
@@ -6947,7 +6947,7 @@ msgstr "Søkeresultat"
 
 #: ../root/cdtoc/lookup.tt:57
 msgid "Search by artist"
-msgstr ""
+msgstr "Søk på artist"
 
 #: ../root/cdtoc/lookup.tt:67
 msgid "Search by release"
@@ -7045,8 +7045,8 @@ msgstr "Se alle {num}"
 #: ../root/tag/index.tt:8
 msgid "See all {num} artists"
 msgid_plural "See all {num} artists"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Se {num} artist"
+msgstr[1] "Se alle {num} artister"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} labels"
@@ -7210,7 +7210,7 @@ msgstr ""
 
 #: ../root/artist/index.tt:122
 msgid "Showing all release groups for various artists."
-msgstr ""
+msgstr "Viser alle diverse artisters utgivelsesgrupper"
 
 #: ../root/artist/index.tt:144
 msgid ""
@@ -7540,15 +7540,15 @@ msgstr "Sorteringsnavn:"
 
 #: ../root/artist/split.tt:1
 msgid "Split Artist"
-msgstr ""
+msgstr "Del artist"
 
 #: ../root/artist/cannot_split.tt:2 ../root/artist/split.tt:9
 msgid "Split Into Separate Artists"
-msgstr ""
+msgstr "Del opp i separate artister"
 
 #: ../root/artist/layout.tt:103
 msgid "Split into separate artists"
-msgstr ""
+msgstr "Del opp i separate artister"
 
 #: ../root/layout/menu.tt:115
 msgid "Sponsors"
@@ -7667,7 +7667,7 @@ msgstr ""
 
 #: ../root/artist/subscribe.tt:20
 msgid "Subscribe to this artist."
-msgstr ""
+msgstr "Abbonér på denne artisten."
 
 #: ../root/artist/subscribe.tt:1 ../root/label/subscriptions.tt:1
 msgid "Subscribed Editors"
@@ -8108,7 +8108,7 @@ msgstr ""
 
 #: ../root/artist/subscribers.tt:22
 msgid "There are currently no users subscribed to {artist}."
-msgstr ""
+msgstr "Ingen brukere "
 
 #: ../root/collection/subscribers.tt:22
 msgid "There are currently no users subscribed to {collection}."
@@ -8268,7 +8268,7 @@ msgstr ""
 
 #: ../root/artist/releases.tt:18
 msgid "This artist does not have any releases"
-msgstr ""
+msgstr "Denne artisten har ingen utgivelser"
 
 #: ../root/artist/index.tt:140 ../root/artist/index.tt:149
 msgid ""
@@ -8308,19 +8308,19 @@ msgstr ""
 
 #: ../root/artist/index.tt:115 ../root/artist/index.tt:131
 msgid "This artist only has release groups by various artists."
-msgstr ""
+msgstr "Denne artisten figurerer bare på utgivelsegrupper av diverse artister"
 
 #: ../root/artist/releases.tt:25
 msgid "This artist only has releases by various artists."
-msgstr ""
+msgstr "Denne artisten figurerer bare i utgivelser av diverse artister"
 
 #: ../root/artist/index.tt:121 ../root/artist/index.tt:143
 msgid "This artist only has unofficial release groups by various artists."
-msgstr ""
+msgstr "Denne artisten figurerer bare på uoffisielle utgivelsegrupper av diverse artister"
 
 #: ../root/artist/index.tt:111
 msgid "This artist only has unofficial release groups."
-msgstr ""
+msgstr "Denne artisten har bare uoffisielle utgivelsegrupper."
 
 #: ../root/scripts/text_strings.tt:115
 #: ../lib/MusicBrainz/Server/Form/Role/LinkType.pm:86
@@ -9749,7 +9749,7 @@ msgstr ""
 
 #: ../root/cdstub/browse.tt:18 ../root/cdstub/layout.tt:26
 msgid "Various Artists"
-msgstr ""
+msgstr "Diverse artister"
 
 #: ../root/annotation/history.tt:10
 msgid "Version History"
@@ -9765,11 +9765,11 @@ msgstr ""
 
 #: ../root/recording/header.tt:17
 msgid "Video by {artist}"
-msgstr ""
+msgstr "Video av {artist}"
 
 #: ../root/recording/layout.tt:3
 msgid "Video “{name}” by {artist}"
-msgstr ""
+msgstr "Video «{name}» av {artist}"
 
 #: ../root/edit/details/add_standalone_recording.tt:34
 #: ../root/edit/details/edit_recording.tt:26
@@ -9962,7 +9962,7 @@ msgstr ""
 
 #: ../root/artist/edit_form.tt:15
 msgid "We found the following artists with very similar names:"
-msgstr ""
+msgstr "Vi fant følgende artister med svært lignende navn:"
 
 #: ../root/label/edit_form.tt:15
 msgid "We found the following labels with very similar names:"
@@ -10246,7 +10246,7 @@ msgstr "Ja, jeg er sikker"
 
 #: ../root/artist/edit_form.tt:22
 msgid "Yes, I still want to create a new artist."
-msgstr ""
+msgstr "Jo, jeg ønsker fortsatt å opprette en ny artist."
 
 #: ../root/label/edit_form.tt:22
 msgid "Yes, I still want to create a new label."
@@ -10636,7 +10636,7 @@ msgstr ""
 
 #: ../root/components/common-macros.tt:141
 msgid "artists"
-msgstr ""
+msgstr "artister"
 
 #: ../root/edit/search_macros.tt:14
 msgid "auto-edits"
@@ -10664,7 +10664,7 @@ msgstr ""
 
 #: ../root/scripts/text_strings.tt:162
 msgid "by {artist}"
-msgstr ""
+msgstr "av {artist}"
 
 #: ../root/admin/wikidoc/index.tt:53
 msgid "diff"
@@ -10995,11 +10995,11 @@ msgstr ""
 #: ../root/report/iswc_with_many_works.tt:52 ../root/search/results-work.tt:25
 #: ../root/work/merge.tt:35
 msgid "{artist} ({roles})"
-msgstr ""
+msgstr "{artist} ({roles})"
 
 #: ../root/cdtoc/lookup.tt:21
 msgid "{artist} - {name}"
-msgstr ""
+msgstr "{artist} - {name}"
 
 #: ../root/components/common-macros.tt:206
 msgid "{artist} as {name}"
@@ -11112,7 +11112,7 @@ msgstr ""
 #: ../root/components/common-macros.tt:258 ../root/main/index.tt:124
 #: ../root/scripts/text_strings.tt:163
 msgid "{entity} by {artist}"
-msgstr ""
+msgstr "{entity} av {artist}"
 
 #: ../root/components/aliases.tt:73
 msgid "{entity} has no aliases."
@@ -11156,8 +11156,8 @@ msgstr ""
 #: ../root/user/subscriptions/layout.tt:19
 msgid "{num} artist"
 msgid_plural "{num} artists"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num} artist"
+msgstr[1] "{num} artister"
 
 #: ../root/tag/artist.tt:1
 msgid "{num} artist found"
@@ -11293,7 +11293,7 @@ msgstr ""
 
 #: ../root/cdtoc/move_search.tt:33 ../root/cdtoc/set_durations.tt:22
 msgid "{release} by {artist}"
-msgstr ""
+msgstr "{release} av {artist}"
 
 #: ../root/release/collections.tt:4
 msgid "{release} has been added to {num} collection:"
@@ -11357,7 +11357,7 @@ msgstr "{user} har ikke tagget noe ennå."
 msgid ""
 "{valink|Various Artists} should very rarely be used on recordings, make sure"
 " that the artist has been entered correctly."
-msgstr ""
+msgstr "{valink|Diverse artister} bør ikke brukes på innspillinger,  sørg for at artisten er riktig angitt."
 
 #: ../root/components/common-macros.tt:1050
 msgid "{variable}:"
@@ -11500,7 +11500,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Controller/Artist.pm:467
 msgid "You cannot merge into Deleted Artist"
-msgstr ""
+msgstr "Du kan ikke flette artister inn i \"Slettet Artist\""
 
 #: ../lib/MusicBrainz/Server/Controller/AutoEditorElections.pm:70
 #, perl-brace-format
@@ -11540,7 +11540,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:205
 msgid "The provided artist id is not valid"
-msgstr ""
+msgstr "Den angitte artist id er ikke gyldig"
 
 #: ../lib/MusicBrainz/Server/Controller/Edit.pm:198
 msgid "Default"
@@ -11634,11 +11634,11 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:112
 msgid "No artist names provided"
-msgstr ""
+msgstr "Ingen artistnavn gitt"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:116
 msgid "Not all tracks specify an artist"
-msgstr ""
+msgstr "Ikke alle spor har en artist angitt"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:120
 msgid "Not all tracks have a title"
@@ -12514,7 +12514,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Release.pm:64
 msgid "An interview release contains an interview with the Artist."
-msgstr ""
+msgstr "En intervjuutgivelse inneholder et intervju med artisten."
 
 #: ../lib/MusicBrainz/Server/Release.pm:65
 msgid "An audiobook is a book read by a narrator without music."
