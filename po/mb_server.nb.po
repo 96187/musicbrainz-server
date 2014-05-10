@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-29 11:40-0700\n"
-"PO-Revision-Date: 2014-05-10 19:50+0000\n"
+"PO-Revision-Date: 2014-05-10 20:49+0000\n"
 "Last-Translator: Zaphod Beeblebrox\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/projects/p/musicbrainz/language/nb/)\n"
 "MIME-Version: 1.0\n"
@@ -273,7 +273,7 @@ msgstr ""
 msgid "1 vote"
 msgid_plural "{n} unanimous votes"
 msgstr[0] "1 stemme"
-msgstr[1] "{n} anonyme stemmer"
+msgstr[1] "{n} enstemmige stemmer"
 
 #: ../root/user/profile.tt:238 ../root/user/profile.tt:242
 msgid "100%"
@@ -444,7 +444,7 @@ msgstr ""
 
 #: ../root/edit/index.tt:63 ../root/edit/info.tt:25
 msgid "Accept edit"
-msgstr ""
+msgstr "Akseptér endring"
 
 #: ../root/components/common-macros.tt:647
 msgid "Accept upon expiration"
@@ -688,7 +688,7 @@ msgstr ""
 
 #: ../root/edit/notes.tt:50
 msgid "Add an edit note"
-msgstr "Legg til endringsnotat"
+msgstr "Legg til redigeringsnotat"
 
 #: ../root/components/common-macros.tt:869
 msgid "Add annotation"
@@ -930,7 +930,7 @@ msgstr "Alle endringer"
 
 #: ../root/layout/menu.tt:69
 msgid "All My Edits"
-msgstr ""
+msgstr "Alle mine endringer"
 
 #: ../root/scripts/text_strings.tt:124
 msgid "All of your changes will be lost if you leave this page."
@@ -1138,7 +1138,7 @@ msgstr ""
 
 #: ../root/edit/edit_header.tt:76 ../root/edit/info.tt:17
 msgid "Approve edit"
-msgstr ""
+msgstr "Godta endring"
 
 #: ../root/cdtoc/attach_confirm.tt:3
 msgid ""
@@ -1548,7 +1548,7 @@ msgstr ""
 
 #: ../root/admin/edit_user.tt:7
 msgid "Auto-editor"
-msgstr ""
+msgstr "Autoredaktør"
 
 #: ../root/layout/menu.tt:133
 msgid "Auto-editor Elections"
@@ -1564,7 +1564,7 @@ msgstr ""
 
 #: ../root/user/privileged.tt:18
 msgid "Auto-editors"
-msgstr ""
+msgstr "Autoredaktører"
 
 #: ../root/user/privileged.tt:19
 msgid ""
@@ -1983,7 +1983,7 @@ msgstr ""
 
 #: ../root/artist/special_purpose.tt:1
 msgid "Cannot edit"
-msgstr ""
+msgstr "Kan ikke endre"
 
 #: ../root/account/register.tt:5
 msgid "Captcha incorrect. Try again."
@@ -2733,11 +2733,11 @@ msgstr "Endre"
 
 #: ../root/edit/index.tt:1
 msgid "Edit #{id}"
-msgstr ""
+msgstr "Endring Nr. {id}"
 
 #: ../root/edit/edit_header.tt:70 ../root/edit/edit_header.tt:85
 msgid "Edit #{id} - {name}"
-msgstr "Endring #{id} - {name}"
+msgstr "Endring Nr. {id} - {name}"
 
 #: ../root/label/edit_annotation.tt:1 ../root/place/edit_annotation.tt:1
 msgid "Edit Annotation"
@@ -2749,15 +2749,15 @@ msgstr ""
 
 #: ../root/area/edit.tt:1
 msgid "Edit Area"
-msgstr ""
+msgstr "Endre område"
 
 #: ../root/area/edit_alias.tt:1
 msgid "Edit Area Alias"
-msgstr ""
+msgstr "Endre områdealias"
 
 #: ../root/area/edit_annotation.tt:1
 msgid "Edit Area Annotation"
-msgstr ""
+msgstr "Endre områdeanmerkning"
 
 #: ../root/artist/edit.tt:1
 msgid "Edit Artist"
@@ -2789,7 +2789,7 @@ msgstr ""
 
 #: ../root/label/edit.tt:1
 msgid "Edit Label"
-msgstr ""
+msgstr "Endre plateselskap"
 
 #: ../root/label/edit_alias.tt:1
 msgid "Edit Label Alias"
@@ -2797,7 +2797,7 @@ msgstr ""
 
 #: ../root/edit/not_found.tt:1 ../root/edit/not_found.tt:2
 msgid "Edit Not Found"
-msgstr ""
+msgstr "Endring ikke funnet"
 
 #: ../root/forms/edit-note.tt:2 ../root/release/edit/editnote.tt:27
 #: ../root/release/edit/layout.tt:18
@@ -2824,25 +2824,25 @@ msgstr "Endre innspillingsanmerkning"
 
 #: ../root/edit/relationship/edit.tt:1 ../root/edit/relationship/edit.tt:4
 msgid "Edit Relationship"
-msgstr ""
+msgstr "Endre relasjon"
 
 #: ../root/relationship/linkattributetype/edit.tt:1
 #: ../root/relationship/linkattributetype/edit.tt:3
 msgid "Edit Relationship Attribute"
-msgstr ""
+msgstr "Endre relasjonegenskap"
 
 #: ../root/admin/index.tt:7
 msgid "Edit Relationship Attributes"
-msgstr ""
+msgstr "Endre relasjonegenskaper"
 
 #: ../root/relationship/linktype/edit.tt:1
 #: ../root/relationship/linktype/edit.tt:3
 msgid "Edit Relationship Type"
-msgstr ""
+msgstr "Endre relasjontype"
 
 #: ../root/admin/index.tt:6 ../root/layout/menu.tt:90
 msgid "Edit Relationship Types"
-msgstr ""
+msgstr "Endre relasjontyper"
 
 #: ../root/release/edit_relationships.tt:1
 msgid "Edit Relationships: {release}"
@@ -2868,28 +2868,28 @@ msgstr "Endre utgivelsesgruppeanmerkning"
 #: ../root/doc/edit_type.tt:35 ../root/edit/info.tt:67
 #: ../root/layout/menu.tt:262
 msgid "Edit Types"
-msgstr ""
+msgstr "Endringstyper"
 
 #: ../root/url/edit.tt:1 ../root/url/edit.tt:4
 #: ../lib/MusicBrainz/Server/Edit/URL/Edit.pm:24
 msgid "Edit URL"
-msgstr ""
+msgstr "Endre URL"
 
 #: ../root/user/profile/layout.tt:27
 msgid "Edit User"
-msgstr ""
+msgstr "Redigér bruker"
 
 #: ../root/work/edit.tt:1
 msgid "Edit Work"
-msgstr "Endre verk"
+msgstr "Endre åndsverk"
 
 #: ../root/work/edit_alias.tt:1
 msgid "Edit Work Alias"
-msgstr ""
+msgstr "Endre åndsverkalias"
 
 #: ../root/work/edit_annotation.tt:1
 msgid "Edit Work Annotation"
-msgstr "Endre verksanmerkning"
+msgstr "Endre åndsverkanmerkning"
 
 #: ../root/components/common-macros.tt:869
 msgid "Edit annotation"
@@ -2898,11 +2898,11 @@ msgstr "Endre anmerkningen"
 #: ../root/area/edit_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Area/EditAlias.pm:12
 msgid "Edit area alias"
-msgstr ""
+msgstr "Endre områdealias"
 
 #: ../root/area/edit_annotation.tt:2
 msgid "Edit area annotation"
-msgstr ""
+msgstr "Endre utgivelsesanmerkning"
 
 #: ../root/artist/edit_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Artist/EditAlias.pm:12
@@ -2915,7 +2915,7 @@ msgstr "Endre artistanmerkning"
 
 #: ../root/edit/edit_header.tt:91
 msgid "Edit by {editor}"
-msgstr ""
+msgstr "Endring av {editor}"
 
 #: ../root/edit/data.tt:1 ../root/edit/data.tt:3
 msgid "Edit data for edit #{id}"
@@ -2924,11 +2924,11 @@ msgstr ""
 #: ../root/label/edit_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Label/EditAlias.pm:12
 msgid "Edit label alias"
-msgstr ""
+msgstr "Endre plateselskapsalias"
 
 #: ../root/label/edit_annotation.tt:2
 msgid "Edit label annotation"
-msgstr "Endre plateselskapsanmerkning"
+msgstr "Endre plateselskapanmerkning"
 
 #: ../root/edit/cancel.tt:19 ../root/forms/edit-note.tt:13
 #: ../root/release/edit/editnote.tt:33
@@ -2980,7 +2980,7 @@ msgstr "Endre utgivelsesgruppeanmerkning"
 
 #: ../root/admin/edit_user.tt:42
 msgid "Edit user"
-msgstr ""
+msgstr "Rediger bruker"
 
 #: ../root/work/edit_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Work/EditAlias.pm:13
@@ -2989,11 +2989,11 @@ msgstr ""
 
 #: ../root/work/edit_annotation.tt:2
 msgid "Edit work annotation"
-msgstr "Endre verksanmerkning"
+msgstr "Endre åndsverksanmerkning"
 
 #: ../root/edit/details/edit_release_events.tt:58
 msgid "Edited"
-msgstr ""
+msgstr "Endret"
 
 #: ../root/account/preferences.tt:42 ../root/area/layout.tt:46
 #: ../root/artist/layout.tt:74 ../root/collection/layout.tt:11
@@ -3002,7 +3002,7 @@ msgstr ""
 #: ../root/release_group/layout.tt:31 ../root/release/sidebar.tt:83
 #: ../root/url/layout.tt:4 ../root/work/layout.tt:37
 msgid "Editing"
-msgstr ""
+msgstr "Endringer"
 
 #: ../root/edit/info.tt:66 ../root/edit/list_header.tt:29
 msgid "Editing FAQ"
@@ -3014,7 +3014,7 @@ msgstr ""
 #: ../root/release_group/layout.tt:63 ../root/release/sidebar.tt:105
 #: ../root/url/layout.tt:14 ../root/work/layout.tt:59
 msgid "Editing history"
-msgstr ""
+msgstr "Redigeringshistorie"
 
 #: ../root/main/index.tt:21
 msgid "Editing introduction"
@@ -3023,7 +3023,7 @@ msgstr ""
 #: ../root/annotation/history.tt:8 ../root/edit/search_macros.tt:307
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:43
 msgid "Editor"
-msgstr ""
+msgstr "Redaktør"
 
 #: ../root/edit/search_macros.tt:307
 msgid "Editor Flag"
@@ -3031,7 +3031,7 @@ msgstr ""
 
 #: ../root/user/not_found.tt:1 ../root/user/not_found.tt:2
 msgid "Editor Not Found"
-msgstr ""
+msgstr "Redaktør ikke funnet"
 
 #: ../root/user/subscriptions/editor.tt:1 ../root/user/subscriptions/menu.tt:6
 msgid "Editor Subscriptions"
@@ -3039,7 +3039,7 @@ msgstr ""
 
 #: ../root/user/profile/layout.tt:1
 msgid "Editor “{user}”"
-msgstr ""
+msgstr "Redaktør «{user}»"
 
 #: ../root/artist/subscribe.tt:2
 msgid "Editors Subscribed to this Artist"
@@ -3079,7 +3079,7 @@ msgstr ""
 
 #: ../root/label/edits.tt:3
 msgid "Edits for {label}"
-msgstr "Endringer til {label}"
+msgstr "Endringer for {label}"
 
 #: ../root/area/edits.tt:3 ../root/artist/edits.tt:3
 #: ../root/collection/edits.tt:3 ../root/url/edits.tt:3
@@ -3094,7 +3094,7 @@ msgstr "Endringer for {name}"
 
 #: ../root/place/edits.tt:3
 msgid "Edits for {place}"
-msgstr ""
+msgstr "Endringer for {place}"
 
 #: ../root/release/edits.tt:3 ../root/release_group/edits.tt:3
 #: ../root/work/edits.tt:3
@@ -3109,7 +3109,7 @@ msgstr "Endringer for «{name}»"
 
 #: ../root/main/500.tt:48
 msgid "Edits loaded for the page:"
-msgstr ""
+msgstr "Endringer lastet for siden:"
 
 #: ../root/elections/not_found.tt:1 ../root/elections/not_found.tt:2
 msgid "Election Not Found"
@@ -3530,8 +3530,8 @@ msgstr ""
 #: ../root/edit/list.tt:36
 msgid "Found at least {n} edit"
 msgid_plural "Found at least {n} edits"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Fant minst {n} endring"
+msgstr[1] "Fant minst {n} endringer"
 
 #: ../root/release/sidebar.tt:141
 msgid "Found in {num} user collection"
@@ -4827,7 +4827,7 @@ msgstr ""
 
 #: ../root/layout/menu.tt:66
 msgid "My Open Edits"
-msgstr ""
+msgstr "Mine utestående endringer"
 
 #: ../root/layout/menu.tt:60
 msgid "My Ratings"
@@ -5374,7 +5374,7 @@ msgstr ""
 #: ../root/edit/open.tt:1 ../root/edit/open.tt:3
 #: ../root/user/profile/layout.tt:19
 msgid "Open Edits"
-msgstr ""
+msgstr "Utestående endringer"
 
 #: ../root/area/layout.tt:85 ../root/artist/layout.tt:123
 #: ../root/collection/layout.tt:14 ../root/edit/list_header.tt:15
@@ -5383,7 +5383,7 @@ msgstr ""
 #: ../root/release/sidebar.tt:104 ../root/url/layout.tt:13
 #: ../root/work/layout.tt:58
 msgid "Open edits"
-msgstr ""
+msgstr "Utestående endringer"
 
 #: ../root/components/common-macros.tt:499
 #: ../root/components/common-macros.tt:504
@@ -6068,7 +6068,7 @@ msgstr ""
 
 #: ../root/edit/index.tt:64 ../root/edit/info.tt:26
 msgid "Reject edit"
-msgstr ""
+msgstr " Avvis endring"
 
 #: ../root/components/common-macros.tt:647
 msgid "Reject upon expiration"
@@ -7170,7 +7170,7 @@ msgstr "Vis mindre..."
 msgid ""
 "Show me {autoedit_select_block} sorted {sort_select_block} that "
 "{match_or_negation_block} {and_vs_or_block} of the following conditions:"
-msgstr ""
+msgstr "Hvis meg {autoedit_select_block} sortert {sort_select_block} som {match_or_negation_block} {and_vs_or_block} av følgende forhold:"
 
 #: ../root/scripts/text_strings.tt:89
 msgid "Show more..."
@@ -7650,7 +7650,7 @@ msgstr ""
 
 #: ../root/edit/list.tt:81
 msgid "Submit votes &amp; edit notes"
-msgstr ""
+msgstr "Send inn stemmer og endringsnotater"
 
 #: ../root/release/edit/editnote.tt:49
 msgid "Submitting edits..."
@@ -8406,7 +8406,7 @@ msgstr ""
 
 #: ../root/components/common-macros.tt:653
 msgid "This edit was cancelled."
-msgstr ""
+msgstr "Denne endringen ble avbrutt."
 
 #: ../root/components/common-macros.tt:653
 msgid "This edit was recently cancelled."
@@ -9191,7 +9191,7 @@ msgstr ""
 msgid ""
 "To <span class=\"rel-edit\">edit</span> a relationship, click on its name "
 "(e.g. \"composer\")."
-msgstr ""
+msgstr "For å <span class=\"rel-edit\">endre</span> en relasjon, klikk på navnet (f.eks. \"komponist\")."
 
 #: ../root/edit/index.tt:61
 msgid ""
@@ -9830,11 +9830,11 @@ msgstr "Stem på endringer"
 
 #: ../root/scripts/text_strings.tt:126
 msgid "Vote on all edits:"
-msgstr ""
+msgstr "Stem på alle endringene:"
 
 #: ../root/edit/index.tt:27
 msgid "Vote tally:"
-msgstr ""
+msgstr "Stemmeopptelling:"
 
 #: ../root/user/profile.tt:159
 msgid "Voted down"
@@ -9855,7 +9855,7 @@ msgstr "Stemmer ({view_url|view})"
 
 #: ../root/elections/index.tt:17
 msgid "Votes against"
-msgstr ""
+msgstr "Stemmer mot"
 
 #: ../root/elections/show.tt:37
 msgid "Votes against:"
@@ -9871,7 +9871,7 @@ msgstr ""
 
 #: ../root/elections/index.tt:16
 msgid "Votes for"
-msgstr ""
+msgstr "Stemmer for"
 
 #: ../root/elections/show.tt:28
 msgid "Votes for/against:"
@@ -10680,7 +10680,7 @@ msgstr ""
 
 #: ../root/edit/search_macros.tt:14
 msgid "edits"
-msgstr ""
+msgstr "endringer"
 
 #: ../root/doc/relationship_type.tt:58
 msgid "end date"
@@ -11151,7 +11151,7 @@ msgstr ""
 
 #: ../root/scripts/text_strings.tt:167
 msgid "{name} - Edit Release"
-msgstr ""
+msgstr "{name} - Endre utgivelse"
 
 #: ../root/user/subscriptions/layout.tt:19
 msgid "{num} artist"
@@ -11695,7 +11695,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Edit/Area/Edit.pm:32
 msgid "Edit area"
-msgstr ""
+msgstr "Endre område"
 
 #: ../lib/MusicBrainz/Server/Edit/Area/Merge.pm:11
 msgid "Merge areas"
@@ -11761,11 +11761,11 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditLink.pm:17
 msgid "Edit relationship (historic)"
-msgstr ""
+msgstr "Endre relasjon (historisk)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditReleaseAttrs.pm:15
 msgid "Edit release attributes (historic)"
-msgstr ""
+msgstr "Endre utgivelseegenskap (historisk)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditReleaseEvents.pm:11
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditReleaseEventsOld.pm:17
@@ -11774,23 +11774,23 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditReleaseLanguage.pm:13
 msgid "Edit release language (historic)"
-msgstr ""
+msgstr "Endre utgivelsespråk (historisk)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditReleaseName.pm:10
 msgid "Edit release name (historic)"
-msgstr ""
+msgstr "Endre utgivelsenavn (historisk)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditTrackLength.pm:10
 msgid "Edit track length (historic)"
-msgstr ""
+msgstr "Endre sporlengde (historisk)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditTrackName.pm:20
 msgid "Edit track name (historic)"
-msgstr ""
+msgstr "Endre spornavn (historisk)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditTrackNum.pm:11
 msgid "Edit track number (historic)"
-msgstr ""
+msgstr "Endre spornummer (historisk)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/MACToSAC.pm:12
 msgid "Convert release to single artist (historic)"
@@ -12023,7 +12023,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Edit/Utils.pm:274
 msgid "No votes"
-msgstr ""
+msgstr "Neistemmer"
 
 #: ../lib/MusicBrainz/Server/Edit/WikiDoc.pm:7
 msgid "Wiki documentation"
@@ -12047,7 +12047,7 @@ msgstr "fjern verk"
 
 #: ../lib/MusicBrainz/Server/Edit/Work/Edit.pm:71
 msgid "Edit work"
-msgstr "Endre verk"
+msgstr "Rediger åndsverk"
 
 #: ../lib/MusicBrainz/Server/Edit/Work/Merge.pm:12
 msgid "Merge works"
