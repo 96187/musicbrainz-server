@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-04-29 11:40-0700\n"
-"PO-Revision-Date: 2014-05-10 12:56+0000\n"
+"PO-Revision-Date: 2014-05-10 19:50+0000\n"
 "Last-Translator: Zaphod Beeblebrox\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/projects/p/musicbrainz/language/nb/)\n"
 "MIME-Version: 1.0\n"
@@ -926,7 +926,7 @@ msgstr ""
 
 #: ../root/user/profile/layout.tt:19
 msgid "All Edits"
-msgstr ""
+msgstr "Alle endringer"
 
 #: ../root/layout/menu.tt:69
 msgid "All My Edits"
@@ -2729,7 +2729,7 @@ msgstr ""
 #: ../root/release/tabs.tt:1 ../root/url/header.tt:1
 #: ../root/user/collections.tt:26 ../root/work/header.tt:1
 msgid "Edit"
-msgstr "Endring"
+msgstr "Endre"
 
 #: ../root/edit/index.tt:1
 msgid "Edit #{id}"
@@ -3051,7 +3051,7 @@ msgstr ""
 
 #: ../root/user/edits.tt:1
 msgid "Edits"
-msgstr ""
+msgstr "Endringer"
 
 #: ../root/user/profile.tt:146
 msgid "Edits ({view_url|view})"
@@ -3067,7 +3067,7 @@ msgstr ""
 
 #: ../root/user/edits.tt:1
 msgid "Edits by {name}"
-msgstr ""
+msgstr "Endringer av {name}"
 
 #: ../root/layout/menu.tt:72
 msgid "Edits for Subscribed Entities"
@@ -3079,18 +3079,18 @@ msgstr ""
 
 #: ../root/label/edits.tt:3
 msgid "Edits for {label}"
-msgstr ""
+msgstr "Endringer til {label}"
 
 #: ../root/area/edits.tt:3 ../root/artist/edits.tt:3
 #: ../root/collection/edits.tt:3 ../root/url/edits.tt:3
 msgid "Edits for {link}"
-msgstr ""
+msgstr "Endringer på {link}"
 
 #: ../root/area/edits.tt:1 ../root/artist/edits.tt:1
 #: ../root/collection/edits.tt:1 ../root/label/edits.tt:1
 #: ../root/place/edits.tt:1 ../root/url/edits.tt:1
 msgid "Edits for {name}"
-msgstr ""
+msgstr "Endringer for {name}"
 
 #: ../root/place/edits.tt:3
 msgid "Edits for {place}"
@@ -3099,13 +3099,13 @@ msgstr ""
 #: ../root/release/edits.tt:3 ../root/release_group/edits.tt:3
 #: ../root/work/edits.tt:3
 msgid "Edits for “{link}”"
-msgstr ""
+msgstr "Endringer på «{link}»"
 
 #: ../root/recording/edits.tt:1 ../root/recording/edits.tt:3
 #: ../root/release/edits.tt:1 ../root/release_group/edits.tt:1
 #: ../root/work/edits.tt:1
 msgid "Edits for “{name}”"
-msgstr ""
+msgstr "Endringer for «{name}»"
 
 #: ../root/main/500.tt:48
 msgid "Edits loaded for the page:"
@@ -4585,7 +4585,7 @@ msgstr "Medier:"
 
 #: ../root/user/profile.tt:83
 msgid "Member since:"
-msgstr ""
+msgstr "Medlem siden:"
 
 #: ../root/layout/merge-helper.tt:30
 msgid "Merge"
@@ -4966,7 +4966,7 @@ msgstr ""
 
 #: ../root/edit/details/change_wikidoc.tt:17
 msgid "New page"
-msgstr ""
+msgstr "Ny side"
 
 #: ../root/account/change_password.tt:23
 msgid "New password:"
@@ -5284,7 +5284,7 @@ msgstr ""
 
 #: ../root/layout/sidebar/sidebar-favicons.tt:16
 msgid "Official homepage"
-msgstr ""
+msgstr "Offisiell hjemmeside"
 
 #: ../root/account/applications.tt:5
 msgid "Offline Access"
@@ -5455,27 +5455,27 @@ msgstr ""
 
 #: ../root/admin/wikidoc/index.tt:32
 msgid "Page name"
-msgstr "Side navn"
+msgstr "Sidenavn"
 
 #: ../root/edit/details/change_wikidoc.tt:29
 msgid "Page removed"
-msgstr ""
+msgstr "Side fjernet"
 
 #: ../root/components/paginator.tt:31
 msgid "Page {cur} of at least {total}"
-msgstr ""
+msgstr "Side {cur} av minst {total}"
 
 #: ../root/components/paginator.tt:33
 msgid "Page {cur} of {total}"
-msgstr ""
+msgstr "Side {cur} av {total}"
 
 #: ../root/scripts/text_strings.tt:77
 msgid "Page {page} of {total}"
-msgstr ""
+msgstr "Side {page} av {total}"
 
 #: ../root/admin/wikidoc/create.tt:8 ../root/admin/wikidoc/edit.tt:9
 msgid "Page:"
-msgstr ""
+msgstr "Side:"
 
 #: ../root/edit/details/edit_relationship_type.tt:70
 msgid "Parent"
@@ -8578,7 +8578,7 @@ msgstr ""
 
 #: ../root/release/add_cover_art.tt:11
 msgid "This page requires JavaScript."
-msgstr ""
+msgstr "Denne siden krever Javascript."
 
 #: ../root/scripts/text_strings.tt:69
 msgid "This person is deceased."
@@ -9644,7 +9644,7 @@ msgstr "Oppdatér"
 
 #: ../root/admin/wikidoc/edit.tt:1 ../root/admin/wikidoc/edit.tt:3
 msgid "Update Page"
-msgstr ""
+msgstr "Oppdater siden"
 
 #: ../root/components/tag.tt:3
 msgid "Update Tags"
@@ -9722,7 +9722,7 @@ msgstr "Brukertillatelser"
 
 #: ../root/user/profile.tt:48
 msgid "User type:"
-msgstr "Bruker type:"
+msgstr "Brukertype:"
 
 #: ../root/account/lost_password.tt:14 ../root/account/register.tt:25
 #: ../root/user/login.tt:23
@@ -10471,7 +10471,7 @@ msgstr ""
 
 #: ../root/edit/index.tt:69
 msgid "You must be logged in to vote on edits"
-msgstr "Du må være logget inn for å vote på endringer"
+msgstr "Du må være logget inn for å stemme på endringer"
 
 #: ../root/scripts/text_strings.tt:153
 msgid "You must enter a title and select an artist for every track."
@@ -10904,8 +10904,8 @@ msgstr "Se alle vurderinger"
 #: ../root/release/header.tt:10
 msgid "see all versions of this release, {count} available"
 msgid_plural "see all versions of this release, {count} available"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "se alle versjonene av denne utgivelsen, {count} tilgjengelig"
+msgstr[1] "se alle versjonene av denne utgivelsen, {count} tilgjengelige"
 
 #: ../root/user/profile.tt:41
 msgid "send email"
