@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-05-16 20:00+0000\n"
+"PO-Revision-Date: 2014-05-16 20:15+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -820,7 +820,7 @@ msgid ""
 "recordings has not been altered. If the tracks are pitched or blended into "
 "each other, the <a href=\"/relationship/451076df-61cf-46ab-9921-555cab2f050d"
 "\">DJ-mix relationship type</a> may be more appropriate."
-msgstr ""
+msgstr "Dit geeft aan dat een opname een compilatie is van verschillende andere opnames. Dit is van toepassing op één lange opname die meerdere nummers achter elkaar bevat, waarbij het audiomateriaal van de originele opnames niet veranderd is. Als de nummers in elkaar overlopen of de toonhoogte is aangepast, is de <a href=\"/relationship/451076df-61cf-46ab-9921-555cab2f050d\">DJ-mix relatie</a> misschien toepasselijker."
 
 #: DB:link_type/description:3
 msgid ""
@@ -917,7 +917,7 @@ msgid ""
 "performance. 'Arrangement' is used as a catch-all term for all processes "
 "that turn a composition into a form that can be played by a specific type of"
 " ensemble."
-msgstr ""
+msgstr "Dit geeft de artiest aan die een melodie heeft aangepast naar een vorm die uitgevoerd kan worden. „Arrangement\" wordt gebruikt als algemene term voor alle processen die een compositie geschikt maken om door een specifiek ensemble gespeeld te worden."
 
 #: DB:link_type/description:152
 msgid ""
@@ -966,7 +966,7 @@ msgid ""
 "orchestra, band, choral group, individual instrumentalist(s) or vocalist(s)."
 " In practical terms it consists of deciding which instruments should play "
 "which notes in a piece of music."
-msgstr ""
+msgstr "Dit geeft de persoon aan die de opname orkestreerde. Orkestratie is een speciale vorm van arrangeren. Het betekent dat een compositie wordt aangepast voor een orkest, op een manier waarbij de muziek niet essentieel verandert. De orkestrator is ook verantwoordelijk voor het schrijven van de muziek voor een orkest, band, koor, individuele instrumentalist(en) of vocalist(en). In praktische zin bestaat het uit het bepalen welk instrument welke noten moet spelen in een muziekstuk."
 
 #: DB:link_type/description:40
 msgid ""
@@ -977,7 +977,7 @@ msgid ""
 "orchestra, band, choral group, individual instrumentalist(s) or vocalist(s)."
 " In practical terms it consists of deciding which instruments should play "
 "which notes in a piece of music."
-msgstr ""
+msgstr "Dit geeft de persoon aan die de uitgave orkestreerde. Orkestratie is een speciale vorm van arrangeren. Het betekent dat een compositie wordt aangepast voor een orkest, op een manier waarbij de muziek niet essentieel verandert. De orkestrator is ook verantwoordelijk voor het schrijven van de muziek voor een orkest, band, koor, individuele instrumentalist(en) of vocalist(en). In praktische zin bestaat het uit het bepalen welk instrument welke noten moet spelen in een muziekstuk."
 
 #: DB:link_type/description:164
 msgid ""
@@ -988,7 +988,7 @@ msgid ""
 "orchestra, band, choral group, individual instrumentalist(s) or vocalist(s)."
 " In practical terms it consists of deciding which instruments should play "
 "which notes in a piece of music."
-msgstr ""
+msgstr "Dit geeft de persoon aan die de compositie orkestreerde. Orkestratie is een speciale vorm van arrangeren. Het betekent dat een compositie wordt aangepast voor een orkest, op een manier waarbij de muziek niet essentieel verandert. De orkestrator is ook verantwoordelijk voor het schrijven van de muziek voor een orkest, band, koor, individuele instrumentalist(en) of vocalist(en). In praktische zin bestaat het uit het bepalen welk instrument welke noten moet spelen in een muziekstuk."
 
 #: DB:link_type/description:48
 msgid ""
@@ -1033,7 +1033,7 @@ msgid ""
 "the form of a medley. See <a "
 "href=\"/relationship/d3fd781c-5894-47e2-8c12-86cc0e2c8d08\">arranger</a> for"
 " crediting the person who arranges songs into a medley."
-msgstr ""
+msgstr "Geeft aan dat een compositie een medley is van verschillende nummers. Dit betekent dat de originele composities opnieuw gearrangeerd zijn om een nieuwe compositie in de vorm van een medley te creëren. Zie <a href=\"/relationship/d3fd781c-5894-47e2-8c12-86cc0e2c8d08\">arrangeur</a> voor de persoon die de nummers in de medley arrangeerde."
 
 #: DB:link_type/description:232
 msgid ""
@@ -1055,7 +1055,7 @@ msgid ""
 "recording to each of the source recordings. See <a "
 "href=\"/relationship/28338ee6-d578-485a-bb53-61dbfd7c6545\">DJ-mixer</a> for"
 " crediting the person who created the DJ-mix."
-msgstr ""
+msgstr "Dit wordt gebruikt om een <a href=\"/doc/Mix_Terminology#DJ_mix\">door een DJ gemixte</a> opname aan elk van de oorspronkelijke opnames te koppelen. Zie <a href=\"/relationship/28338ee6-d578-485a-bb53-61dbfd7c6545\">DJ-mixer</a> voor de persoon die hiervoor verantwoordelijk is."
 
 #: DB:link_type/description:226
 msgid ""
@@ -1093,7 +1093,7 @@ msgid ""
 "the release group containing the source release. See <a href=\"/relationship"
 "/9162dedd-790c-446c-838e-240f877dbfe2\">DJ-mixer</a> for crediting the "
 "person who created the DJ-mix."
-msgstr ""
+msgstr "Dit wordt gebruikt om een uitgavegroep met een <a href=\"/doc/Mix_Terminology#DJ_mix\">door een DJ gemixte</a> versie van een uitgave te koppelen aan de uitgavegroep met de oorspronkelijke uitgave. Zie <a href=\"/relationship/9162dedd-790c-446c-838e-240f877dbfe2\">DJ-mixer</a> voor de persoon die hiervoor verantwoordelijk is."
 
 #: DB:link_type/description:284
 msgid ""
@@ -1108,7 +1108,7 @@ msgstr "Dit wordt gebruikt om een uitgave aan de overeenkomstige pagina op Secon
 
 #: DB:link_type/description:747
 msgid "This is used to link a series to the equivalent entry in Discogs."
-msgstr ""
+msgstr "Dit wordt gebruikt om een serie aan de overeenkomstige pagina op Discogs te koppelen."
 
 #: DB:link_type/description:280
 msgid ""
@@ -1176,7 +1176,7 @@ msgstr "Dit wordt gebruikt om naar een pagina te verwijzen waar de uitgave kan w
 
 #: DB:link_type/description:278
 msgid "This is used to link works to their recordings."
-msgstr ""
+msgstr "Dit wordt gebruikt om composities aan bijbehorende opnames te koppelen."
 
 #: DB:link_type/description:102
 msgid ""
@@ -1436,7 +1436,7 @@ msgid ""
 "This links an entity to the equivalent entry in another database. Please "
 "respect the <a "
 "href=\"/doc/Other_Databases_Relationship_Type/Whitelist\">whitelist</a>."
-msgstr ""
+msgstr "Dit koppelt een object aan de overeenkomstige pagina in een andere gegevensbank. Respecteer hierbij de <a href=\"/doc/Other_Databases_Relationship_Type/Whitelist\">witte lijst</a>."
 
 #: DB:link_type/description:111
 msgid "This links artists who were married."
@@ -1587,13 +1587,13 @@ msgstr "Deze relatie is verouderd. Gebruik in plaats hiervan de eigenschap „me
 msgid ""
 "This relationship is used to link a catalogue work series to a person who "
 "was involved in compiling it."
-msgstr ""
+msgstr "Deze relatie wordt gebruikt om een compositiecatalogus te koppelen aan een persoon die betrokken was bij de samenstelling."
 
 #: DB:link_type/description:750
 msgid ""
 "This relationship is used to link a catalogue work series to a person whose "
 "work it catalogues."
-msgstr ""
+msgstr "Deze relatie wordt gebruikt om een compositiecatalogus te koppelen aan de persoon wiens werk gecatalogiseerd is."
 
 #: DB:link_type/description:54
 msgid ""
@@ -1662,21 +1662,21 @@ msgid ""
 "This relationship type describes that the recording contains samples taken from a movie, show or game, which has an IMDB page at the given URL.\n"
 "<br/><br/>\n"
 "To say that the recording is part of a soundtrack, please use the <a href=\"/relationship/85b0a010-3237-47c7-8476-6fcefd4761af\">IMDB relationship type for release groups</a>."
-msgstr ""
+msgstr "Deze relatie geeft aan dat de opname samples bevat die afkomstig zijn van een film, show of spel, dat een pagina heeft op IMDB op de opgegeven URL.<br/><br/>\nGebruik om aan te geven dat een opname deel uitmaakt van een soundtrack het <a href=\"/relationship/85b0a010-3237-47c7-8476-6fcefd4761af\">IMDB-relatietype voor uitgavegroepen</a>."
 
 #: DB:link_type/description:83
 msgid ""
 "This relationship type describes that the release contains samples taken from a movie, show or game, which has an IMDB page at the given URL.\n"
 "<br/><br/>\n"
 "To say that the release is a soundtrack, please use the <a href=\"/relationship/85b0a010-3237-47c7-8476-6fcefd4761af\">IMDB relationship type for release groups</a>."
-msgstr ""
+msgstr "Deze relatie geeft aan dat de uitgave samples bevat die afkomstig zijn van een film, show of spel, dat een pagina heeft op IMDB op de opgegeven URL.<br/><br/>\nGebruik om aan te geven dat een opname deel uitmaakt van een soundtrack het <a href=\"/relationship/85b0a010-3237-47c7-8476-6fcefd4761af\">IMDB-relatietype voor uitgavegroepen</a>."
 
 #: DB:link_type/description:236
 msgid ""
 "This relationship type is <strong>deprecated</strong>! <a "
 "href=\"/doc/Style/Recording#Recordings_with_Different_Mastering\">Different "
 "remasters should be merged.</a>"
-msgstr ""
+msgstr "Dit relatietype is <strong>verouder</strong>! <a href=\"/doc/Style/Recording#Recordings_with_Different_Mastering\">Verschillende masters moeten worden samengevoegd."
 
 #: DB:link_type/description:238
 msgid ""
@@ -2061,7 +2061,7 @@ msgstr "compositie"
 
 #: DB:link_type/link_phrase:739
 msgid "consists of"
-msgstr ""
+msgstr "bestaat uit"
 
 #: DB:link_type/long_link_phrase:83 DB:link_type/long_link_phrase:258
 msgid "contains samples from the IMDb entry at"
@@ -2531,7 +2531,7 @@ msgstr "heeft broer(s) of zus(sen)"
 
 #: DB:link_type/long_link_phrase:736
 msgid "has subtype"
-msgstr ""
+msgstr "heeft subtype"
 
 #: DB:link_type/reverse_link_phrase:3
 msgid "has supporting release(s)"
