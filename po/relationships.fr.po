@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-05-16 18:54+0000\n"
+"PO-Revision-Date: 2014-05-16 19:59+0000\n"
 "Last-Translator: Alain-Olivier  Breysse\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -289,7 +289,7 @@ msgstr "Indique que la parution fait partie d'une série."
 
 #: DB:link_type/description:743
 msgid "Indicates that the work is part of a series."
-msgstr "Indique que l'oeuvre fait partie d'une série."
+msgstr "Indique que l’œuvre fait partie d'une série."
 
 #: DB:link_type/description:112
 msgid ""
@@ -972,7 +972,7 @@ msgid ""
 "orchestra, band, choral group, individual instrumentalist(s) or vocalist(s)."
 " In practical terms it consists of deciding which instruments should play "
 "which notes in a piece of music."
-msgstr ""
+msgstr "Ceci indique la personne ayant orchestré l'enregistrement. L'orchestration est un type spécial d'arrangement. Elle implique l'adaptation d'une composition pour orchestre, effectuée de façon à ce que la substance musicale reste essentiellement inchangée. L'orchestrateur est aussi responsable de l'écriture des partitions pour orchestre, cœur, instrumentiste(s) individuel(s) et chanteur(s). Concrètement ceci consiste à décider quels instruments devraient jouer quelles notes d'une pièce musicale."
 
 #: DB:link_type/description:40
 msgid ""
@@ -983,7 +983,7 @@ msgid ""
 "orchestra, band, choral group, individual instrumentalist(s) or vocalist(s)."
 " In practical terms it consists of deciding which instruments should play "
 "which notes in a piece of music."
-msgstr ""
+msgstr "Ceci indique la personne ayant orchestré la parution. L'orchestration est un type spécial d'arrangement. Elle implique l'adaptation d'une composition pour orchestre, effectuée de façon à ce que la substance musicale reste essentiellement inchangée. L'orchestrateur est aussi responsable de l'écriture des partitions pour orchestre, cœur, instrumentiste(s) individuel(s) et chanteur(s). Concrètement ceci consiste à décider quels instruments devraient jouer quelles notes d'une pièce musicale."
 
 #: DB:link_type/description:164
 msgid ""
@@ -994,7 +994,7 @@ msgid ""
 "orchestra, band, choral group, individual instrumentalist(s) or vocalist(s)."
 " In practical terms it consists of deciding which instruments should play "
 "which notes in a piece of music."
-msgstr ""
+msgstr "Ceci indique la personne ayant orchestré l’œuvre. L'orchestration est un type spécial d'arrangement. Elle implique l'adaptation d'une composition pour orchestre, effectuée de façon à ce que la substance musicale reste essentiellement inchangée. L'orchestrateur est aussi responsable de l'écriture des partitions pour orchestre, cœur, instrumentiste(s) individuel(s) et chanteur(s). Concrètement ceci consiste à décider quels instruments devraient jouer quelles notes d'une pièce musicale."
 
 #: DB:link_type/description:48
 msgid ""
@@ -1039,7 +1039,7 @@ msgid ""
 "the form of a medley. See <a "
 "href=\"/relationship/d3fd781c-5894-47e2-8c12-86cc0e2c8d08\">arranger</a> for"
 " crediting the person who arranges songs into a medley."
-msgstr ""
+msgstr "Indique qu'une œuvre est un pot-pourri de plusieurs autres chansons. Ceci veut dire que les chansons originales ont été réarrangées pour créer une nouvelle œuvre en pot-pourri. Consultez <a href=\"/relationship/d3fd781c-5894-47e2-8c12-86cc0e2c8d08\"> arrangeur</a> pour créditer la personne ayant arrangé les chansons en pot-pourri."
 
 #: DB:link_type/description:232
 msgid ""
@@ -1061,7 +1061,7 @@ msgid ""
 "recording to each of the source recordings. See <a "
 "href=\"/relationship/28338ee6-d578-485a-bb53-61dbfd7c6545\">DJ-mixer</a> for"
 " crediting the person who created the DJ-mix."
-msgstr ""
+msgstr "Ceci est utilisé pour relier un enregistrement <a href=\"/doc/Mix_Terminology#DJ_mix\">mixé par un DJ</a> à chaque enregistrement source. Consultez <a href=\"/relationship/28338ee6-d578-485a-bb53-61dbfd7c6545\"> DJ mixeur</a> pour créditer la personne ayant créé le DJ-mix."
 
 #: DB:link_type/description:226
 msgid ""
@@ -1099,7 +1099,7 @@ msgid ""
 "the release group containing the source release. See <a href=\"/relationship"
 "/9162dedd-790c-446c-838e-240f877dbfe2\">DJ-mixer</a> for crediting the "
 "person who created the DJ-mix."
-msgstr ""
+msgstr "Ceci est utilisé pour relier un groupe de parution contenant une version <a href=\"/doc/Mix_Terminology#DJ_mix\">mixée par un DJ</a> d'une parution au groupe de parution contenant la parution source. Consultez <a href=\"/relationship/9162dedd-790c-446c-838e-240f877dbfe2\" DJ mixeur</a> pour créditer la personne ayant créé le DJ-mix."
 
 #: DB:link_type/description:284
 msgid ""
@@ -1114,7 +1114,7 @@ msgstr "Ceci est utilisé pour relier une parution à sa page correspondante dan
 
 #: DB:link_type/description:747
 msgid "This is used to link a series to the equivalent entry in Discogs."
-msgstr ""
+msgstr "Ceci est utilisé pour relier une série à l'entrée équivalente de Discogs."
 
 #: DB:link_type/description:280
 msgid ""
@@ -1182,7 +1182,7 @@ msgstr "Ceci est utilisé pour faire un lien vers une page où la parution peut 
 
 #: DB:link_type/description:278
 msgid "This is used to link works to their recordings."
-msgstr ""
+msgstr "Ceci est utilisé pour relier des oeuvres à leurs enregistrements."
 
 #: DB:link_type/description:102
 msgid ""
@@ -1442,7 +1442,7 @@ msgid ""
 "This links an entity to the equivalent entry in another database. Please "
 "respect the <a "
 "href=\"/doc/Other_Databases_Relationship_Type/Whitelist\">whitelist</a>."
-msgstr ""
+msgstr "Ceci relie un entité à l'entrée équivalente dans une autre base de données. Veuillez respecter la <a href=\"/doc/Other_Databases_Relationship_Type/Whitelist\">liste blanche</a>."
 
 #: DB:link_type/description:111
 msgid "This links artists who were married."
@@ -1593,13 +1593,13 @@ msgstr "Cette relation est obsolète, veuillez plutôt utiliser l'attribut « po
 msgid ""
 "This relationship is used to link a catalogue work series to a person who "
 "was involved in compiling it."
-msgstr ""
+msgstr "Cette relation est utilisée pour relier une série catalogue d’œuvres à une personne impliquée dans sa compilation."
 
 #: DB:link_type/description:750
 msgid ""
 "This relationship is used to link a catalogue work series to a person whose "
 "work it catalogues."
-msgstr ""
+msgstr "Cette relation est utilisée pour relier une série catalogue d’œuvres à une personne dont les œuvres sont cataloguées."
 
 #: DB:link_type/description:54
 msgid ""
@@ -1668,21 +1668,21 @@ msgid ""
 "This relationship type describes that the recording contains samples taken from a movie, show or game, which has an IMDB page at the given URL.\n"
 "<br/><br/>\n"
 "To say that the recording is part of a soundtrack, please use the <a href=\"/relationship/85b0a010-3237-47c7-8476-6fcefd4761af\">IMDB relationship type for release groups</a>."
-msgstr ""
+msgstr "Ce type de relation décrit que l'enregistrement contient des échantillons pris d'un film, spectacle ou jeu, qui a une page IMDb à l'URL donnée.\n<br/><br/>\nPour signifier que l'enregistrement fait partie d'une bande originale, veuillez utiliser le <a href=\"/relationship/85b0a010-3237-47c7-8476-6fcefd4761af\" type de relation IMDb pour les groupes de parution</a>."
 
 #: DB:link_type/description:83
 msgid ""
 "This relationship type describes that the release contains samples taken from a movie, show or game, which has an IMDB page at the given URL.\n"
 "<br/><br/>\n"
 "To say that the release is a soundtrack, please use the <a href=\"/relationship/85b0a010-3237-47c7-8476-6fcefd4761af\">IMDB relationship type for release groups</a>."
-msgstr ""
+msgstr "Ce type de relation décrit que la parution contient des échantillons pris d'un film, spectacle ou jeu, qui a une page IMDb à l'URL donnée.\n<br/><br/>\nPour signifier que la parution fait partie d'une bande originale, veuillez utiliser le <a href=\"/relationship/85b0a010-3237-47c7-8476-6fcefd4761af\">type de relation IMDb pour les groupes de parutions</a>."
 
 #: DB:link_type/description:236
 msgid ""
 "This relationship type is <strong>deprecated</strong>! <a "
 "href=\"/doc/Style/Recording#Recordings_with_Different_Mastering\">Different "
 "remasters should be merged.</a>"
-msgstr ""
+msgstr "Ce type de relation est <strong>obsolète</strong> ! <a href=\"/doc/Style/Recording#Recordings_with_Different_Mastering\">Des rematriçages différents devraient être fusionnés.</a>"
 
 #: DB:link_type/description:238
 msgid ""
@@ -2008,19 +2008,19 @@ msgstr "catalogue réédité par"
 
 #: DB:link_type/link_phrase:751 DB:link_type/long_link_phrase:751
 msgid "catalogued"
-msgstr ""
+msgstr "catalogué"
 
 #: DB:link_type/reverse_link_phrase:751
 msgid "cataloguer"
-msgstr ""
+msgstr "catalogueur"
 
 #: DB:link_type/reverse_link_phrase:750
 msgid "catalogues work of"
-msgstr ""
+msgstr "catalogue les oeuvres de "
 
 #: DB:link_type/reverse_link_phrase:735
 msgid "child of"
-msgstr ""
+msgstr "enfant de"
 
 #: DB:link_type/link_phrase:735 DB:link_type/link_phrase:109
 msgid "children"
@@ -2067,7 +2067,7 @@ msgstr "composition"
 
 #: DB:link_type/link_phrase:739
 msgid "consists of"
-msgstr ""
+msgstr "consiste en"
 
 #: DB:link_type/long_link_phrase:83 DB:link_type/long_link_phrase:258
 msgid "contains samples from the IMDb entry at"
@@ -2138,11 +2138,11 @@ msgstr "poste créatif"
 
 #: DB:link_type/link_phrase:737
 msgid "derivations"
-msgstr ""
+msgstr "dérivations"
 
 #: DB:link_type/description:737 DB:link_type/reverse_link_phrase:737
 msgid "derived from"
-msgstr ""
+msgstr "dérivé de"
 
 #: DB:link_type/link_phrase:88 DB:link_type/link_phrase:171
 #: DB:link_type/reverse_link_phrase:88 DB:link_type/reverse_link_phrase:171
@@ -2466,11 +2466,11 @@ msgstr "à une association commerciale avec"
 
 #: DB:link_type/link_phrase:750 DB:link_type/long_link_phrase:750
 msgid "has catalogue"
-msgstr ""
+msgstr "a un catalogue"
 
 #: DB:link_type/long_link_phrase:735
 msgid "has child"
-msgstr ""
+msgstr "a un enfant"
 
 #: DB:link_type/long_link_phrase:78
 msgid "has cover art at"
@@ -2478,7 +2478,7 @@ msgstr "à une illustration sur"
 
 #: DB:link_type/long_link_phrase:737
 msgid "has derived instrument"
-msgstr ""
+msgstr "a un instrument dérivé"
 
 #: DB:link_type/long_link_phrase:725
 msgid "has imprint"
@@ -2509,7 +2509,7 @@ msgstr "à une partie"
 #: DB:link_type/link_phrase:743 DB:link_type/reverse_link_phrase:740
 #: DB:link_type/reverse_link_phrase:741 DB:link_type/reverse_link_phrase:742
 msgid "has parts"
-msgstr ""
+msgstr "a des parties"
 
 #: DB:link_type/link_phrase:723 DB:link_type/long_link_phrase:723
 msgid "has personal label"
@@ -2537,7 +2537,7 @@ msgstr "a un/des frère(s) et sœur(s)"
 
 #: DB:link_type/long_link_phrase:736
 msgid "has subtype"
-msgstr ""
+msgstr "a un sous-type"
 
 #: DB:link_type/reverse_link_phrase:3
 msgid "has supporting release(s)"
@@ -2593,7 +2593,7 @@ msgstr "a accueilli la première de"
 #: DB:link_type/description:732 DB:link_type/link_phrase:732
 #: DB:link_type/reverse_link_phrase:732 DB:link_type/long_link_phrase:732
 msgid "image"
-msgstr ""
+msgstr "image"
 
 #: DB:link_type/reverse_link_phrase:725
 msgid "imprint of"
@@ -2606,7 +2606,7 @@ msgstr "marques"
 #: DB:link_type/description:734 DB:link_type/link_phrase:734
 #: DB:link_type/reverse_link_phrase:734 DB:link_type/long_link_phrase:734
 msgid "information page"
-msgstr ""
+msgstr "page d'information"
 
 #: DB:link_attribute_type/name:580
 msgid "instrumental"
@@ -2663,7 +2663,7 @@ msgstr "est une page dans une base données à"
 #: DB:link_type/long_link_phrase:740 DB:link_type/long_link_phrase:741
 #: DB:link_type/long_link_phrase:742
 msgid "is a part of"
-msgstr ""
+msgstr "fait partie de"
 
 #: DB:link_type/long_link_phrase:6 DB:link_type/long_link_phrase:236
 msgid "is a remaster of"
@@ -2705,7 +2705,7 @@ msgstr "est sous licence"
 
 #: DB:link_type/long_link_phrase:738
 msgid "is related to"
-msgstr ""
+msgstr "est associé à"
 
 #: DB:link_type/long_link_phrase:312
 msgid "is the VIAF ID for"
@@ -3001,7 +3001,7 @@ msgstr "relation musicale"
 
 #: DB:link_attribute_type/name:788
 msgid "number"
-msgstr ""
+msgstr "numéro"
 
 #: DB:link_type/reverse_link_phrase:745 DB:link_type/reverse_link_phrase:287
 #: DB:link_type/reverse_link_phrase:183 DB:link_type/reverse_link_phrase:219
@@ -3299,11 +3299,11 @@ msgstr "réédite le catalogue de "
 
 #: DB:link_type/link_phrase:738 DB:link_type/reverse_link_phrase:738
 msgid "related instruments"
-msgstr ""
+msgstr "instruments connexes"
 
 #: DB:link_type/description:738
 msgid "related to"
-msgstr ""
+msgstr "associé à"
 
 #: DB:link_type/link_phrase:6 DB:link_type/link_phrase:236
 msgid "remaster of"
@@ -3332,7 +3332,7 @@ msgstr "remixes"
 #: DB:link_type/long_link_phrase:50 DB:link_type/long_link_phrase:157
 #: DB:link_type/long_link_phrase:13 DB:link_type/long_link_phrase:234
 msgid "remixes and compilations"
-msgstr ""
+msgstr "remixes et compilations"
 
 #: DB:link_type/reverse_link_phrase:202
 msgid "renamed from"
@@ -3438,7 +3438,7 @@ msgstr "filiales"
 
 #: DB:link_type/link_phrase:736
 msgid "subtypes"
-msgstr ""
+msgstr "sous-types"
 
 #: DB:link_type/link_phrase:104
 msgid "supporting artist for"
@@ -3490,7 +3490,7 @@ msgstr "hommage à"
 
 #: DB:link_type/description:736 DB:link_type/reverse_link_phrase:736
 msgid "type of"
-msgstr ""
+msgstr "type de"
 
 #: DB:link_attribute_type/name:582
 msgid "video"
@@ -3549,11 +3549,11 @@ msgstr "est/sont paru(s) en soutien à "
 
 #: DB:link_type/description:733
 msgid "wikidata"
-msgstr ""
+msgstr "wikidata"
 
 #: DB:link_type/description:731
 msgid "wikipedia"
-msgstr ""
+msgstr "wikipédia"
 
 #: DB:link_type/long_link_phrase:704
 msgid "works as a mastering engineer at"

@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-16 07:14-0700\n"
-"PO-Revision-Date: 2014-05-16 18:58+0000\n"
+"PO-Revision-Date: 2014-05-16 19:26+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -1100,7 +1100,7 @@ msgstr "U kunt ook {uri|een nieuwe uitgave toevoegen}."
 
 #: ../root/search/results-series.tt:29
 msgid "Alternatively, you may {uri|add a new series}."
-msgstr ""
+msgstr "U kunt ook {uri|een nieuwe serie toevoegen}."
 
 #: ../root/search/results-work.tt:61
 msgid "Alternatively, you may {uri|add a new work}."
@@ -1305,7 +1305,7 @@ msgstr "Weet u zeker dat u het <strong>{link_type}</strong> relatietype wilt ver
 
 #: ../root/area/delete.tt:5
 msgid "Are you sure you wish to remove the area {area} from MusicBrainz?"
-msgstr "Weet u zeker dat u het gebied {area} wilt verwijderen van Musicbrainz?"
+msgstr "Weet u zeker dat u het gebied {area} wilt verwijderen van MusicBrainz?"
 
 #: ../root/release/remove_cover_art.tt:4
 msgid ""
@@ -1317,7 +1317,7 @@ msgstr "Weet u zeker dat u de onderstaande afbeelding van {release} van {artist}
 msgid ""
 "Are you sure you wish to remove the instrument {instrument} from "
 "MusicBrainz?"
-msgstr ""
+msgstr "Weet u zeker dat u het instrument {instrument} wilt verwijderen van MusicBrainz?"
 
 #: ../root/label/delete.tt:5
 msgid "Are you sure you wish to remove the label {label} from MusicBrainz?"
@@ -1325,7 +1325,7 @@ msgstr "Weet u zeker dat u de platenmaatschappij {label} wilt verwijderen van Mu
 
 #: ../root/series/delete.tt:5
 msgid "Are you sure you wish to remove the series {series} from MusicBrainz?"
-msgstr ""
+msgstr "Weet u zeker dat u de serie {series} wilt verwijderen van MusicBrainz?"
 
 #: ../root/area/edits.tt:5 ../root/area/header.tt:21
 #: ../root/components/common-macros.tt:581
@@ -1689,7 +1689,7 @@ msgstr "Abonneer me automatisch op platenmaatschappijen die ik toevoeg."
 
 #: ../root/account/preferences.tt:47
 msgid "Automatically subscribe me to series I create."
-msgstr ""
+msgstr "Abonneer me automatisch op series die ik toevoeg."
 
 #: ../root/components/ratings.tt:19
 msgid "Average rating:"
@@ -1966,7 +1966,7 @@ msgstr "Door uitgaves bladeren"
 
 #: ../root/browse/index.tt:13
 msgid "Browse series"
-msgstr ""
+msgstr "Door series bladeren"
 
 #: ../root/browse/index.tt:10
 msgid "Browse works"
@@ -2547,7 +2547,7 @@ msgstr "Verwijder {e}"
 
 #: ../root/user/profile.tt:50
 msgid "Deleted User"
-msgstr ""
+msgstr "Verwijderde gebruiker"
 
 #: ../root/edit/details/edit_relationship_type.tt:40
 msgid "Deprecated:"
@@ -2773,7 +2773,7 @@ msgid ""
 "Do you want to develop an application that uses the {ws|MusicBrainz web "
 "service}? {register|Register an application} to generate OAuth tokens. See "
 "our {oauth2|OAuth documentation} for more details."
-msgstr "Wilt u een applicatie ontwikkelen die de {ws|webdienst van Musicbrainz} gebruikt? {register|Registreer een applicatie} om OAuth-tokens te genereren. Bekijk onze {oauth2|OAuth documentatie} voor meer details."
+msgstr "Wilt u een applicatie ontwikkelen die de {ws|webdienst van MusicBrainz} gebruikt? {register|Registreer een applicatie} om OAuth-tokens te genereren. Bekijk onze {oauth2|OAuth documentatie} voor meer details."
 
 #: ../root/layout/menu.tt:250
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:50
@@ -4525,7 +4525,7 @@ msgstr "Koppeling"
 
 #: ../root/edit/details/add_relationship.tt:11
 msgid "Link order:"
-msgstr ""
+msgstr "Volgorde van de koppelingen:"
 
 #: ../root/edit/details/add_relationship_type.tt:13
 #: ../root/edit/details/edit_relationship_type.tt:23
@@ -4723,7 +4723,7 @@ msgstr "Handmatige invoer"
 
 #: ../root/components/common-macros.tt:1000
 msgid "Many relationships"
-msgstr ""
+msgstr "Veel relaties"
 
 #: ../root/release/lookup.tt:8
 msgid "Match"
@@ -4804,7 +4804,7 @@ msgstr "Artiesten samenvoegen"
 
 #: ../root/instrument/merge.tt:1 ../root/instrument/merge.tt:3
 msgid "Merge Instruments"
-msgstr ""
+msgstr "Instrumenten samenvoegen"
 
 #: ../root/label/merge.tt:1 ../root/label/merge.tt:3
 msgid "Merge Labels"
@@ -4832,7 +4832,7 @@ msgstr "Uitgaves samenvoegen"
 
 #: ../root/series/merge.tt:1 ../root/series/merge.tt:3
 msgid "Merge Series"
-msgstr ""
+msgstr "Series samenvoegen"
 
 #: ../root/work/merge.tt:1 ../root/work/merge.tt:3
 msgid "Merge Works"
@@ -4852,7 +4852,7 @@ msgstr "Eigenschappen samenvoegen:"
 
 #: ../root/instrument/layout.tt:33
 msgid "Merge instrument"
-msgstr ""
+msgstr "Instrument samenvoegen"
 
 #: ../root/label/layout.tt:67
 msgid "Merge label"
@@ -4891,7 +4891,7 @@ msgstr "Uitgavegroepen samenvoegen"
 #: ../root/series/layout.tt:19
 #: ../lib/MusicBrainz/Server/Edit/Series/Merge.pm:11
 msgid "Merge series"
-msgstr ""
+msgstr "Serie samenvoegen"
 
 #: ../root/edit/details/merge_releases.tt:133 ../root/release/merge.tt:55
 msgid "Merge strategy:"
@@ -4947,11 +4947,11 @@ msgstr "Medium omhoog verplaatsen"
 
 #: ../root/forms/relationship-editor.tt:34
 msgid "Move entity down"
-msgstr ""
+msgstr "Object omlaag verplaatsen"
 
 #: ../root/forms/relationship-editor.tt:35
 msgid "Move entity up"
-msgstr ""
+msgstr "Object omhoog verplaatsen"
 
 #: ../root/release/add_cover_art.tt:40
 msgid "Move file down"
@@ -5041,7 +5041,7 @@ msgstr "MusicBrainz: Platenmaatschappij"
 
 #: ../root/layout/head.tt:13
 msgid "MusicBrainz: Release"
-msgstr "MusicBrainz uitgave"
+msgstr "MusicBrainz: Uitgave"
 
 #: ../root/layout/head.tt:14
 msgid "MusicBrainz: Track"
@@ -5167,7 +5167,7 @@ msgstr "Nieuwe afbeelding komt hier"
 
 #: ../root/edit/details/reorder_relationships.tt:10
 msgid "New Order"
-msgstr ""
+msgstr "Nieuwe volgorde"
 
 #: ../root/relationship/linkattributetype/create.tt:1
 #: ../root/relationship/linkattributetype/create.tt:3
@@ -5550,7 +5550,7 @@ msgstr "Oude artiest"
 
 #: ../root/edit/details/reorder_relationships.tt:7
 msgid "Old Order"
-msgstr ""
+msgstr "Oude volgorde"
 
 #: ../root/edit/details/edit_medium.tt:51
 msgid "Old Tracklist"
@@ -5660,13 +5660,13 @@ msgstr "Of…"
 #: ../root/edit/details/merge_series.tt:10
 #: ../root/edit/details/merge_series.tt:35 ../root/series/merge.tt:14
 msgid "Ordering Type"
-msgstr ""
+msgstr "Type volgorde"
 
 #: ../root/edit/details/add_series.tt:30
 #: ../root/edit/details/edit_series.tt:23 ../root/series/edit_form.tt:34
 #: ../root/series/layout.tt:8
 msgid "Ordering Type:"
-msgstr ""
+msgstr "Type volgorde:"
 
 #: ../root/otherlookup/results.tt:1 ../root/otherlookup/results.tt:3
 msgid "Other Lookup Results"
@@ -6050,7 +6050,7 @@ msgstr "Mogelijk dubbele plaatsen"
 
 #: ../root/series/edit_form.tt:13
 msgid "Possible Duplicate Series"
-msgstr ""
+msgstr "Mogelijke dubbele series"
 
 #: ../root/cdtoc/lookup.tt:29
 msgid "Possible Mediums"
@@ -6902,11 +6902,11 @@ msgstr "Voorbeeld verwijderen"
 
 #: ../root/instrument/delete.tt:1 ../root/instrument/delete.tt:2
 msgid "Remove Instrument"
-msgstr ""
+msgstr "Instrument verwijderen"
 
 #: ../root/instrument/delete_alias.tt:1
 msgid "Remove Instrument Alias"
-msgstr ""
+msgstr "Alias van het instrument verwijderen"
 
 #: ../root/label/delete.tt:2 ../root/release/edit/information.tt:164
 msgid "Remove Label"
@@ -6956,11 +6956,11 @@ msgstr "Uitgavegroep verwijderen"
 
 #: ../root/series/delete.tt:2
 msgid "Remove Series"
-msgstr ""
+msgstr "Serie verwijderen"
 
 #: ../root/series/delete_alias.tt:1
 msgid "Remove Series Alias"
-msgstr ""
+msgstr "Alias van de serie verwijderen"
 
 #: ../root/work/delete_alias.tt:1
 msgid "Remove Work Alias"
@@ -7003,12 +7003,12 @@ msgstr "Uit {collection} verwijderen"
 #: ../root/instrument/layout.tt:36
 #: ../lib/MusicBrainz/Server/Edit/Instrument/Delete.pm:10
 msgid "Remove instrument"
-msgstr ""
+msgstr "Instrument verwijderen"
 
 #: ../root/instrument/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Instrument/DeleteAlias.pm:14
 msgid "Remove instrument alias"
-msgstr ""
+msgstr "Alias van het instrument verwijderen"
 
 #: ../root/label/layout.tt:70
 #: ../lib/MusicBrainz/Server/Edit/Label/Delete.pm:12
@@ -7048,7 +7048,7 @@ msgstr "Geselecteerde uitgaves uit de collectie verwijderen"
 #: ../root/series/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Series/DeleteAlias.pm:14
 msgid "Remove series alias"
-msgstr ""
+msgstr "Alias van de serie verwijderen"
 
 #: ../root/release/edit/tracklist.tt:297
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveTrack.pm:10
@@ -7435,26 +7435,26 @@ msgstr "Zin"
 #: ../root/series/merge.tt:12 ../lib/MusicBrainz/Server/Edit/Series.pm:7
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:47
 msgid "Series"
-msgstr ""
+msgstr "Serie"
 
 #: ../root/series/edit_form.tt:30
 msgid "Series Details"
-msgstr ""
+msgstr "Details van de serie"
 
 #: ../root/series/not_found.tt:1 ../root/series/not_found.tt:2
 msgid "Series Not Found"
-msgstr ""
+msgstr "Serie niet gevonden"
 
 #: ../root/series/layout.tt:4
 msgid "Series information"
-msgstr ""
+msgstr "Informatie over de serie"
 
 #: ../root/components/common-macros.tt:565
 #: ../root/edit/details/add_series_annotation.tt:3
 #: ../root/edit/details/add_series.tt:3 ../root/edit/details/edit_series.tt:5
 #: ../root/edit/details/remove_series.tt:3
 msgid "Series:"
-msgstr ""
+msgstr "Serie:"
 
 #: ../root/release_group/set_cover_art.tt:1
 msgid "Set Release Group Cover Art"
@@ -7619,7 +7619,7 @@ msgid ""
 "account. These are the applications that you have authorized to access your "
 "MusicBrainz account. If you no longer use some of the applications, you can "
 "revoke their access."
-msgstr "Sommige applicaties en websites ondersteunen toegang tot privégegevens of het sturen van gegevens naar Musicbrainz maar hebben toestemming nodig om toegang te krijgen tot uw gebruikersaccount. Dit zijn applicaties die u daarvoor toestemming hebt gegeven. Als u deze applicaties niet langer gebruikt, kunt u de toegang intrekken."
+msgstr "Sommige applicaties en websites ondersteunen toegang tot privégegevens of het sturen van gegevens naar MusicBrainz maar hebben toestemming nodig om toegang te krijgen tot uw gebruikersaccount. Dit zijn applicaties die u daarvoor toestemming hebt gegeven. Als u deze applicaties niet langer gebruikt, kunt u de toegang intrekken."
 
 #: ../root/scripts/text_strings.tt:28
 msgid "Some artists credited with alternative names"
@@ -7748,7 +7748,7 @@ msgstr "Onze excuses, we konden geen uitgave vinden met die MBID. U kunt ook pro
 msgid ""
 "Sorry, we could not find a series with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Onze excuses, we konden geen serie vinden met die MBID. U kunt ook proberen om {search_url|ernaar te zoeken}."
 
 #: ../root/work/not_found.tt:4
 msgid ""
@@ -7788,7 +7788,7 @@ msgstr "Onze excuses, we konden geen redacteur vinden met die naam. U kunt ook p
 msgid ""
 "Sorry, we could not find an instrument with that MusicBrainz ID. You may "
 "wish to try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Onze excuses, we konden geen instrument vinden met die MBID. U kunt ook proberen om {search_url|ernaar te zoeken}."
 
 #: ../root/search/editor.tt:18
 msgid ""
@@ -8337,7 +8337,7 @@ msgid ""
 "The majority of the data in the <strong>MusicBrainz Database</strong> is "
 "released into the <strong>Public Domain</strong> and can be downloaded and "
 "used <strong>for free</strong>."
-msgstr "De meerderheid van de gegevens in de <strong>gegevensbank van Musicbrainz</strong> is vrijgegeven in het <strong>Publiek Domein</strong> en kan <strong>gratis</strong> gedownload en gebruikt worden."
+msgstr "De meerderheid van de gegevens in de <strong>gegevensbank van MusicBrainz</strong> is vrijgegeven in het <strong>Publiek Domein</strong> en kan <strong>gratis</strong> gedownload en gebruikt worden."
 
 #: ../root/cdtoc/set_durations.tt:19
 msgid "The medium you are altering is part of the following release:"
@@ -8391,19 +8391,19 @@ msgstr "De zoekserver kon uw verzoek niet voldoen door een interne fout. Deze is
 
 #: ../root/scripts/text_strings.tt:190
 msgid "The series you’ve selected is for recordings."
-msgstr ""
+msgstr "De serie die u heeft geselecteerd is voor opnames."
 
 #: ../root/scripts/text_strings.tt:192
 msgid "The series you’ve selected is for release groups."
-msgstr ""
+msgstr "De serie die u heeft geselecteerd is voor uitgavegroepen."
 
 #: ../root/scripts/text_strings.tt:191
 msgid "The series you’ve selected is for releases."
-msgstr ""
+msgstr "De serie die u heeft geselecteerd is voor uitgaves."
 
 #: ../root/scripts/text_strings.tt:193
 msgid "The series you’ve selected is for works."
-msgstr ""
+msgstr "De serie die u heeft geselecteerd is voor composities."
 
 #: ../root/layout.tt:61
 msgid "The server is temporary in read-only mode for database maintainance."
@@ -8470,7 +8470,7 @@ msgstr "Er zijn momenteel geen gebruikers geabonneerd op {label}."
 
 #: ../root/series/subscribers.tt:22
 msgid "There are currently no users subscribed to {series}."
-msgstr ""
+msgstr "Er zijn momenteel geen gebruikers geabonneerd op {series}."
 
 #: ../root/release/discids.tt:49
 msgid ""
@@ -8535,8 +8535,8 @@ msgstr[1] "Er zijn momenteel {num} gebruikers geabonneerd op {label}:"
 #: ../root/series/subscribers.tt:4
 msgid "There is currently {num} user subscribed to {series}:"
 msgid_plural "There are currently {num} users subscribed to {series}:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Er is momenteel {num} gebruiker geabonneerd op {series}:"
+msgstr[1] "Er zijn momenteel {num} gebruikers geabonneerd op {series}:"
 
 #: ../root/browse/entity.tt:34
 msgid "There is no data to display."
@@ -8791,7 +8791,7 @@ msgstr "Deze groep is uit elkaar."
 msgid ""
 "This instrument cannot be removed because there are still relationships "
 "attributed to it."
-msgstr ""
+msgstr "Dit instrument kan niet worden verwijderd omdat er nog steeds relaties aan gekoppeld zijn."
 
 #: ../root/layout.tt:37 ../lib/DBDefs/Default.pm:136
 msgid "This is a MusicBrainz development server."
@@ -8968,7 +8968,7 @@ msgstr "Deze opname is een video"
 
 #: ../root/relationship/linktype/form.tt:17
 msgid "This relationship allows setting dates"
-msgstr ""
+msgstr "Deze relatie kan data hebben."
 
 #: ../root/scripts/text_strings.tt:171
 msgid "This relationship already exists."
@@ -8995,7 +8995,7 @@ msgstr "Dit relatietype heeft geen voorbeelden."
 
 #: ../root/doc/relationship_type.tt:51
 msgid "This relationship type doesn't allow any attributes."
-msgstr ""
+msgstr "Dit relatietype kan geen eigenschappen hebben."
 
 #: ../root/doc/relationship_type.tt:11 ../root/scripts/text_strings.tt:129
 msgid "This relationship type is deprecated and should not be used."
@@ -9309,7 +9309,7 @@ msgid ""
 " recordings, this is inherited from an older version of MusicBrainz and "
 "should be fixed (both on the recordings and on the tracks!). Consult the "
 "{featured_artists|page about featured artists} to know more."
-msgstr "Dit rapport toont opnames met (feat. Artist) in de titel. Bekijk voor klassieke opnames de {CSG|Klassieke stijlgids}. Voor niet-klassieke opnames is dit een overblijfsel van een oudere versie van Musicbrainz en moet dit worden verbeterd (zowel op de opnames als de bijbehorende nummers!). Lees {featured_artists|de pagina over gastartiesten} om meer te weten te komen."
+msgstr "Dit rapport toont opnames met (feat. Artist) in de titel. Bekijk voor klassieke opnames de {CSG|Klassieke stijlgids}. Voor niet-klassieke opnames is dit een overblijfsel van een oudere versie van MusicBrainz en moet dit worden verbeterd (zowel op de opnames als de bijbehorende nummers!). Lees {featured_artists|de pagina over gastartiesten} om meer te weten te komen."
 
 #: ../root/report/featuring_release_groups.tt:6
 msgid ""
@@ -9318,7 +9318,7 @@ msgid ""
 "non-classical release groups, this is inherited from an older version of "
 "MusicBrainz and should be fixed. Consult the {featured_artists|page about "
 "featured artists} to know more."
-msgstr "Dit rapport toont uitgavegroepen met (feat. Artist) in de titel. Bekijk voor klassieke opnames de {CSG|Klassieke stijlgids}. Voor niet-klassieke opnames is dit een overblijfsel van een oudere versie van Musicbrainz en moet dit worden verbeterd. Lees {featured_artists|de pagina over gastartiesten} om meer te weten te komen."
+msgstr "Dit rapport toont uitgavegroepen met (feat. Artist) in de titel. Bekijk voor klassieke opnames de {CSG|Klassieke stijlgids}. Voor niet-klassieke opnames is dit een overblijfsel van een oudere versie van MusicBrainz en moet dit worden verbeterd. Lees {featured_artists|de pagina over gastartiesten} om meer te weten te komen."
 
 #: ../root/report/set_in_different_rg.tt:6
 msgid ""
@@ -9438,7 +9438,7 @@ msgid ""
 "releases, this is inherited from an older version of MusicBrainz and should "
 "be fixed. Consult the {featured_artists|page about featured artists} to know"
 " more."
-msgstr "Dit rapport toont uitgaves met (feat. Artist) in de titel. Bekijk voor klassieke opnames de {CSG|Klassieke stijlgids}. Voor niet-klassieke opnames is dit een overblijfsel van een oudere versie van Musicbrainz en moet dit worden verbeterd. Lees {featured_artists| de pagina over gastartiesten} om meer te weten te komen."
+msgstr "Dit rapport toont uitgaves met (feat. Artist) in de titel. Bekijk voor klassieke opnames de {CSG|Klassieke stijlgids}. Voor niet-klassieke opnames is dit een overblijfsel van een oudere versie van MusicBrainz en moet dit worden verbeterd. Lees {featured_artists| de pagina over gastartiesten} om meer te weten te komen."
 
 #: ../root/report/bad_amazon_urls.tt:6
 msgid ""
@@ -9464,17 +9464,17 @@ msgstr "Hiervoor moeten de overeenkomstige media hetzelfde aantal nummers hebben
 msgid ""
 "This series cannot be removed because there are still relationships using "
 "it."
-msgstr ""
+msgstr "Deze serie kan niet worden verwijderd omdat er nog relaties aan gekoppeld zijn."
 
 #: ../root/series/index.tt:6
 msgid ""
 "This series has no relationships and will be removed automatically in the "
 "next few days. If this is not intended, please add more data to this series."
-msgstr ""
+msgstr "Deze serie heeft geen relaties en zal in de komende paar dagen worden verwijderd. Voeg meer gegevens toe aan deze serie als dit niet de bedoeling is."
 
 #: ../root/series/index.tt:48
 msgid "This series is currently empty."
-msgstr ""
+msgstr "Deze serie is momenteel leeg."
 
 #: ../root/user/profile.tt:194
 msgid "This table shows a summary of votes cast by this editor."
@@ -9982,7 +9982,7 @@ msgstr "Ongeautoriseerde aanvraag"
 
 #: ../root/browse/instrument.tt:21
 msgid "Unclassified instrument"
-msgstr ""
+msgstr "Ongeclassificeerd instrument"
 
 #: ../root/components/common-macros.tt:1000 ../root/report/artist_list.tt:17
 #: ../root/report/artists_with_multiple_occurances_in_artist_credits.tt:25
@@ -10357,7 +10357,7 @@ msgstr "We hebben de volgende plaatsen met zeer gelijkende namen gevonden:"
 
 #: ../root/series/edit_form.tt:15
 msgid "We found the following series with very similar names:"
-msgstr ""
+msgstr "We hebben de volgende series met sterk gelijkende namen gevonden:"
 
 #: ../root/search/editor.tt:5
 msgid ""
@@ -10655,7 +10655,7 @@ msgstr "Ja, ik wil nog steeds een nieuwe plaats toevoegen."
 
 #: ../root/series/edit_form.tt:22
 msgid "Yes, I still want to create a new series."
-msgstr ""
+msgstr "Ja, ik wil nog steeds een nieuwe serie aanmaken."
 
 #: ../root/admin/wikidoc/delete.tt:9
 msgid "Yes, I'm sure"
@@ -10696,7 +10696,7 @@ msgid ""
 "You are about to merge the following instruments into a single instrument. "
 "Please select the instrument which you would like other instruments to be "
 "merged into:"
-msgstr ""
+msgstr "U staat op het punt om de volgende instrumenten samen te voegen. Selecteer alstublieft het instrument waarin u de andere instrumenten wilt samenvoegen."
 
 #: ../root/label/merge.tt:4
 msgid ""
@@ -10735,7 +10735,7 @@ msgstr "U staat op het punt om de volgende uitgaves in één uitgave samen te vo
 msgid ""
 "You are about to merge the following series into a single series. Please "
 "select the series which you would like other series to be merged into:"
-msgstr ""
+msgstr "U staat op het punt om de volgende series samen te voegen. Selecteer alstublieft de serie waarin u de andere instrumenten wilt samenvoegen."
 
 #: ../root/work/merge.tt:4
 msgid ""
@@ -11348,7 +11348,7 @@ msgstr "e-mail versturen"
 #: ../root/components/common-macros.tt:141
 msgctxt "plural"
 msgid "series"
-msgstr ""
+msgstr "serie"
 
 #: ../root/cdtoc/attach_list.tt:32 ../root/cdtoc/attach_list.tt:56
 msgid "show tracklist"
@@ -11460,7 +11460,7 @@ msgstr[1] "{artist} heeft geen uitgaves met maar {n} nummers."
 #: ../lib/MusicBrainz/Server/Entity/Relationship.pm:207
 #, perl-brace-format
 msgid "{attribute}: {value}"
-msgstr ""
+msgstr "{attribute}: {value}"
 
 #: ../root/components/relationships-table.tt:21
 #: ../root/instrument/relationships.tt:33
@@ -11721,7 +11721,7 @@ msgstr[1] "{num} jaar geleden"
 
 #: ../root/scripts/text_strings.tt:188
 msgid "{num}. {relationship}"
-msgstr ""
+msgstr "{num}. {relationship}"
 
 #: ../root/release/edit_relationships.tt:24
 msgid "{n} recording selected"
@@ -11775,7 +11775,7 @@ msgstr "{type0}-{type1}-relatietypes"
 
 #: ../root/instrument/layout.tt:1
 msgid "{type} “{instrument}”"
-msgstr ""
+msgstr "{type} „{instrument}”"
 
 #: ../root/work/layout.tt:1
 msgid "{type} “{work}”"
@@ -12033,7 +12033,7 @@ msgstr "Onze Redis-server lijkt niet te werken; sommige functies werken misschie
 
 #: ../lib/MusicBrainz/Server/Controller/Series.pm:122
 msgid "Series that have different entity types cannot be merged."
-msgstr ""
+msgstr "Series die verschillende objecttypes hebben kunnen niet worden samengevoegd."
 
 #: ../lib/MusicBrainz/Server/Controller/User.pm:252
 #, perl-brace-format
@@ -12057,7 +12057,7 @@ msgstr "Ongeldige TOC"
 msgid ""
 "You must be logged in to submit edits. {url|Log in} first, and then try "
 "submitting your edits again."
-msgstr ""
+msgstr "U moet aangemeld zijn om bewerkingen in te dienen. {url|Meld u eerst aan}, en probeer uw bewerkingen daarna opnieuw in te dienen."
 
 #: ../lib/MusicBrainz/Server/ControllerUtils/Delete.pm:25
 msgid ""
@@ -12280,19 +12280,19 @@ msgstr "Lengtes van de nummers instellen"
 
 #: ../lib/MusicBrainz/Server/Edit/Instrument/AddAnnotation.pm:11
 msgid "Add instrument annotation"
-msgstr ""
+msgstr "Aantekening voor dit instrument toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Instrument/Create.pm:17
 msgid "Add instrument"
-msgstr ""
+msgstr "Instrument toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Instrument/Edit.pm:27
 msgid "Edit instrument"
-msgstr ""
+msgstr "Instrument bewerken"
 
 #: ../lib/MusicBrainz/Server/Edit/Instrument/Merge.pm:11
 msgid "Merge instruments"
-msgstr ""
+msgstr "Instrumenten samenvoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Label/AddAnnotation.pm:11
 msgid "Add label annotation"
@@ -12400,7 +12400,7 @@ msgstr "Relatietype verwijderen"
 
 #: ../lib/MusicBrainz/Server/Edit/Relationship/Reorder.pm:22
 msgid "Reorder relationships"
-msgstr ""
+msgstr "Relaties herschikken"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/AddCoverArt.pm:20
 msgid "Add cover art"
@@ -12460,19 +12460,19 @@ msgstr "Uitgavegroep bewerken"
 
 #: ../lib/MusicBrainz/Server/Edit/Series/AddAnnotation.pm:11
 msgid "Add series annotation"
-msgstr ""
+msgstr "Aantekening aan de serie toeveoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Series/Create.pm:20
 msgid "Add series"
-msgstr ""
+msgstr "Serie toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Series/Delete.pm:12
 msgid "Remove series"
-msgstr ""
+msgstr "Serie verwijderen"
 
 #: ../lib/MusicBrainz/Server/Edit/Series/Edit.pm:24
 msgid "Edit series"
-msgstr ""
+msgstr "Serie bewerken"
 
 #: ../lib/MusicBrainz/Server/Edit/Utils.pm:281
 msgid "Applied"
@@ -12843,7 +12843,7 @@ msgstr "De bevestiging van het wachtwoord komt niet overeen met het wachtwoord."
 
 #: ../lib/MusicBrainz/Server/Form/User/Register.pm:45
 msgid "This username is reserved for internal use"
-msgstr ""
+msgstr "Deze gebruikersnaam is gereserveerd voor intern gebruik."
 
 #: ../lib/MusicBrainz/Server/Form/User/Register.pm:49
 msgid "Please choose another username, this one is already taken"
