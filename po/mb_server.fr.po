@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-16 07:14-0700\n"
-"PO-Revision-Date: 2014-05-16 16:59+0000\n"
+"PO-Revision-Date: 2014-05-16 17:59+0000\n"
 "Last-Translator: Alain-Olivier  Breysse\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -1585,7 +1585,7 @@ msgstr "Artistes sans abonné"
 #: ../root/report/duplicate_relationships_artists.tt:3
 #: ../root/report/index.tt:25
 msgid "Artists with possible duplicate relationships"
-msgstr "Artistes avec relations en double possibles"
+msgstr "Artistes avec relations probablement en double"
 
 #: ../root/recording/fingerprints.tt:3
 msgid "Associated AcoustIDs"
@@ -4413,7 +4413,7 @@ msgstr "Labels avec des relations obsolètes"
 #: ../root/report/duplicate_relationships_labels.tt:3
 #: ../root/report/index.tt:34
 msgid "Labels with possible duplicate relationships"
-msgstr "Labels avec relations en double possibles"
+msgstr "Labels avec relations probablement en double"
 
 #: ../root/release/index.tt:15
 msgid "Labels:"
@@ -5915,7 +5915,7 @@ msgstr "Veuillez saisir une {doc_disambiguation|homonymie} pour aider à disting
 msgid ""
 "Please enter a {doc_disambiguation|disambiguation} to help distinguish this "
 "series from the others."
-msgstr ""
+msgstr "Veuillez saisir une {doc_disambiguation|homonymie} pour aider à distinguer cette série des autres."
 
 #: ../root/components/tag.tt:7
 msgid ""
@@ -6047,15 +6047,15 @@ msgstr "Artistes probablement en double"
 
 #: ../root/label/edit_form.tt:13
 msgid "Possible Duplicate Labels"
-msgstr "Labels  probablement en double"
+msgstr "Labels probablement en double"
 
 #: ../root/place/edit_form.tt:13
 msgid "Possible Duplicate Places"
-msgstr "Lieux peut-être en double"
+msgstr "Lieux probablement en double"
 
 #: ../root/series/edit_form.tt:13
 msgid "Possible Duplicate Series"
-msgstr ""
+msgstr "Séries probablement en double"
 
 #: ../root/cdtoc/lookup.tt:29
 msgid "Possible Mediums"
@@ -6314,7 +6314,7 @@ msgstr "Enregistrements avec des relations de parution la plus ancienne"
 #: ../root/report/duplicate_relationships_recordings.tt:3
 #: ../root/report/index.tt:87
 msgid "Recordings with possible duplicate relationships"
-msgstr "Enregistrements avec relations en double possibles"
+msgstr "Enregistrements avec relations probablement en double"
 
 #: ../root/report/featuring_recordings.tt:1
 #: ../root/report/featuring_recordings.tt:3 ../root/report/index.tt:86
@@ -6635,7 +6635,7 @@ msgstr "Groupe de parution qu'il faudrait peut-être fusionner"
 #: ../root/report/duplicate_relationships_release_groups.tt:3
 #: ../root/report/index.tt:44
 msgid "Release groups with possible duplicate relationships"
-msgstr "Groupes de parution avec relations en double possibles"
+msgstr "Groupes de parution avec relations probablement en double"
 
 #: ../root/report/featuring_release_groups.tt:1
 #: ../root/report/featuring_release_groups.tt:3 ../root/report/index.tt:42
@@ -6792,7 +6792,7 @@ msgstr "Parutions avec des numéros de piste non séquentiels"
 #: ../root/report/duplicate_relationships_releases.tt:3
 #: ../root/report/index.tt:75
 msgid "Releases with possible duplicate relationships"
-msgstr "Parutions avec relations en double possibles"
+msgstr "Parutions avec relations probablement en double"
 
 #: ../root/report/index.tt:62 ../root/report/superfluous_data_tracks.tt:3
 msgid "Releases with superfluous data tracks"
@@ -6907,11 +6907,11 @@ msgstr "Enlever l'exemple"
 
 #: ../root/instrument/delete.tt:1 ../root/instrument/delete.tt:2
 msgid "Remove Instrument"
-msgstr ""
+msgstr "Enlever l'instrument"
 
 #: ../root/instrument/delete_alias.tt:1
 msgid "Remove Instrument Alias"
-msgstr ""
+msgstr "Enlever l'alias d'instrument"
 
 #: ../root/label/delete.tt:2 ../root/release/edit/information.tt:164
 msgid "Remove Label"
@@ -6961,11 +6961,11 @@ msgstr "Enlever le groupe de parution"
 
 #: ../root/series/delete.tt:2
 msgid "Remove Series"
-msgstr ""
+msgstr "Enlever la série"
 
 #: ../root/series/delete_alias.tt:1
 msgid "Remove Series Alias"
-msgstr ""
+msgstr "Enlever l'alias de série"
 
 #: ../root/work/delete_alias.tt:1
 msgid "Remove Work Alias"
@@ -7008,12 +7008,12 @@ msgstr "Enlever de {collection}"
 #: ../root/instrument/layout.tt:36
 #: ../lib/MusicBrainz/Server/Edit/Instrument/Delete.pm:10
 msgid "Remove instrument"
-msgstr ""
+msgstr "Enlever l'instrument"
 
 #: ../root/instrument/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Instrument/DeleteAlias.pm:14
 msgid "Remove instrument alias"
-msgstr ""
+msgstr "Enlever l'alias d'instrument"
 
 #: ../root/label/layout.tt:70
 #: ../lib/MusicBrainz/Server/Edit/Label/Delete.pm:12
@@ -7053,7 +7053,7 @@ msgstr "Enlever les parutions sélectionnées de la collection"
 #: ../root/series/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Series/DeleteAlias.pm:14
 msgid "Remove series alias"
-msgstr ""
+msgstr "Enlever l'alias de série"
 
 #: ../root/release/edit/tracklist.tt:297
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveTrack.pm:10
@@ -7063,7 +7063,7 @@ msgstr "Enlever la piste"
 #: ../root/work/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Work/DeleteAlias.pm:15
 msgid "Remove work alias"
-msgstr "Enlever un alias d'œuvre"
+msgstr "Enlever l'alias d'œuvre"
 
 #: ../root/components/rating-macros.tt:1
 msgid "Remove your rating"
@@ -7440,26 +7440,26 @@ msgstr "Phrase"
 #: ../root/series/merge.tt:12 ../lib/MusicBrainz/Server/Edit/Series.pm:7
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:47
 msgid "Series"
-msgstr ""
+msgstr "Série"
 
 #: ../root/series/edit_form.tt:30
 msgid "Series Details"
-msgstr ""
+msgstr "Détails de la série"
 
 #: ../root/series/not_found.tt:1 ../root/series/not_found.tt:2
 msgid "Series Not Found"
-msgstr ""
+msgstr "Série introuvable"
 
 #: ../root/series/layout.tt:4
 msgid "Series information"
-msgstr ""
+msgstr "Informations sur la série"
 
 #: ../root/components/common-macros.tt:565
 #: ../root/edit/details/add_series_annotation.tt:3
 #: ../root/edit/details/add_series.tt:3 ../root/edit/details/edit_series.tt:5
 #: ../root/edit/details/remove_series.tt:3
 msgid "Series:"
-msgstr ""
+msgstr "Série :"
 
 #: ../root/release_group/set_cover_art.tt:1
 msgid "Set Release Group Cover Art"
@@ -7696,92 +7696,92 @@ msgstr "Désolé, il y a eu un problème avec votre requête."
 msgid ""
 "Sorry, we could find neither a recording nor a track with that MusicBrainz "
 "ID. You may wish to try and {search_url|search for it} instead."
-msgstr "Désolé, nous n'avons pu trouver d'enregistrement ni de piste avec cette ID. Vous pourriez peut-être plutôt essayer de {search_url|le chercher}."
+msgstr "Désolé, nous n'avons pu trouver d'enregistrement ni de piste avec cet ID. Vous pourriez peut-être plutôt essayer de {search_url|le chercher}."
 
 #: ../root/freedb/not_found.tt:4
 msgid ""
 "Sorry, we could not find a FreeDB entry with that ID. You may wish to try "
 "and {search_url|search for it} instead."
-msgstr "Désolé, nous n'avons pas trouvé d'entrée FreeDB avec cette ID. Vous pourriez peut-être plutôt essayer de le {search_url|chercher}."
+msgstr "Désolé, nous n'avons pas trouvé d'entrée FreeDB avec cet ID. Vous pourriez peut-être plutôt essayer de le {search_url|chercher}."
 
 #: ../root/otherlookup/not_found.tt:4
 msgid ""
 "Sorry, we could not find a MusicBrainz entity with that ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr "Désolé, nous n'avons pu trouver d'entité MusicBrainz avec cette ID. Vous pourriez peut-être plutôt essayer de la {search_url|chercher}."
+msgstr "Désolé, nous n'avons pu trouver d'entité MusicBrainz avec cet ID. Vous pourriez peut-être plutôt essayer de la {search_url|chercher}."
 
 #: ../root/url/not_found.tt:4
 msgid "Sorry, we could not find a URL with that MusicBrainz ID."
-msgstr "Désolé, nous ne trouvons pas d'URL pour cette ID MusicBrainz."
+msgstr "Désolé, nous ne trouvons pas d'URL pour cet ID MusicBrainz."
 
 #: ../root/label/not_found.tt:4
 msgid ""
 "Sorry, we could not find a label with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr "Désolé, nous ne trouvons pas de label avec cette ID MusicBrainz. Vous pourriez peut-être plutôt essayer de {search_url|le chercher}."
+msgstr "Désolé, nous ne trouvons pas de label avec cet ID MusicBrainz. Vous pourriez peut-être plutôt essayer de {search_url|le chercher}."
 
 #: ../root/place/not_found.tt:4
 msgid ""
 "Sorry, we could not find a place with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr "Désolé, nous n'avons pas trouvé de lieu avec cette ID MusicBrainz. Vous pourriez peut-être plutôt essayer de {search_url|le chercher}."
+msgstr "Désolé, nous n'avons pas trouvé de lieu avec cet ID MusicBrainz. Vous pourriez peut-être plutôt essayer de {search_url|le chercher}."
 
 #: ../root/recording/not_found.tt:4
 msgid ""
 "Sorry, we could not find a recording with that MusicBrainz ID. You may wish "
 "to try and {search_url|search for it} instead."
-msgstr "Désolé, nous ne trouvons pas d'enregistrement avec cette ID MusicBrainz. Vous pourriez peut-être plutôt essayer de {search_url|le chercher}."
+msgstr "Désolé, nous ne trouvons pas d'enregistrement avec cet ID MusicBrainz. Vous pourriez peut-être plutôt essayer de {search_url|le chercher}."
 
 #: ../root/relationship/linkattributetype/not_found.tt:3
 msgid ""
 "Sorry, we could not find a relationship attribute with that MusicBrainz ID."
-msgstr "Désolé, nous n'avons pas trouvé d'attribut de relation ayant cette ID MusicBrainz."
+msgstr "Désolé, nous n'avons pas trouvé d'attribut de relation ayant cet ID MusicBrainz."
 
 #: ../root/release_group/not_found.tt:4
 msgid ""
 "Sorry, we could not find a release group with that MusicBrainz ID. You may "
 "wish to try and {search_url|search for it} instead."
-msgstr "Désolé, nous ne trouvons pas de groupe de parution avec cette ID MusicBrainz. Vous pourriez peut-être plutôt essayer de {search_url|le chercher}."
+msgstr "Désolé, nous ne trouvons pas de groupe de parution avec cet ID MusicBrainz. Vous pourriez peut-être plutôt essayer de {search_url|le chercher}."
 
 #: ../root/release/not_found.tt:4
 msgid ""
 "Sorry, we could not find a release with that MusicBrainz ID. You may wish to"
 " try and {search_url|search for it} instead."
-msgstr "Désolé, nous ne trouvons pas de parution avec cette ID MusicBrainz. Vous pourriez peut-être plutôt essayer de {search_url|la chercher}."
+msgstr "Désolé, nous ne trouvons pas de parution avec cet ID MusicBrainz. Vous pourriez peut-être plutôt essayer de {search_url|la chercher}."
 
 #: ../root/series/not_found.tt:4
 msgid ""
 "Sorry, we could not find a series with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Désolé, nous ne trouvons pas de série avec cet ID MusicBrainz. Vous pouvez peut-être essayer de {search_url|plutôt la chercher}."
 
 #: ../root/work/not_found.tt:4
 msgid ""
 "Sorry, we could not find a work with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr "Désolé, nous ne trouvons pas d’œuvre avec cette ID MusicBrainz. Vous pourriez peut-être plutôt essayer de {search_url|la chercher}."
+msgstr "Désolé, nous ne trouvons pas d’œuvre avec cet ID MusicBrainz. Vous pourriez peut-être plutôt essayer de {search_url|la chercher}."
 
 #: ../root/area/not_found.tt:4
 msgid ""
 "Sorry, we could not find an area with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr "Désolé, nous n'avons pas trouvé de région avec cette ID MusicBrainz. Vous pourriez peut-être plutôt essayer de {search_url|la rechercher}."
+msgstr "Désolé, nous n'avons pas trouvé de région avec cet ID MusicBrainz. Vous pourriez peut-être plutôt essayer de {search_url|la rechercher}."
 
 #: ../root/artist/not_found.tt:4
 msgid ""
 "Sorry, we could not find an artist with that MusicBrainz ID. You may wish to"
 " try and {search_url|search for it} instead."
-msgstr "Désolé, nous ne trouvons pas d'artiste avec cette ID MusicBrainz. Vous pourriez peut-être plutôt essayer de {search_url|le chercher}."
+msgstr "Désolé, nous ne trouvons pas d'artiste avec cet ID MusicBrainz. Vous pourriez peut-être plutôt essayer de {search_url|le chercher}."
 
 #: ../root/collection/not_found.tt:4
 msgid "Sorry, we could not find an collection with that MusicBrainz ID."
-msgstr "Désolé, nous ne trouvons pas de collection avec cette ID MusicBrainz."
+msgstr "Désolé, nous ne trouvons pas de collection avec cet ID MusicBrainz."
 
 #: ../root/edit/not_found.tt:4
 msgid ""
 "Sorry, we could not find an edit with that edit ID. You may wish to try and "
 "perform an {search_url|edit search} instead."
-msgstr "Désolé, nous ne trouvons pas de modification ayant cette ID. Vous pourriez peut-être plutôt essayer de {search_url|chercher dans les modifications}."
+msgstr "Désolé, nous ne trouvons pas de modification ayant cet ID. Vous pourriez peut-être plutôt essayer de {search_url|chercher dans les modifications}."
 
 #: ../root/user/not_found.tt:4
 msgid ""
@@ -10536,7 +10536,7 @@ msgstr "Œuvres avec des relations obsolètes"
 #: ../root/report/duplicate_relationships_works.tt:3
 #: ../root/report/index.tt:101
 msgid "Works with possible duplicate relationships"
-msgstr "Œuvres avec relations en double possibles"
+msgstr "Œuvres avec relations probablement en double"
 
 #: ../root/components/works-list.tt:13 ../root/iswc/index.tt:17
 #: ../root/otherlookup/results-work.tt:8
@@ -10930,7 +10930,7 @@ msgid ""
 "erroneously, since a release can have multiple valid disc IDs, and each disc"
 " ID can belong to more than one release. For more in-depth information about"
 " this topic, please see our {doc|CD submission guide}."
-msgstr "Vous devez être sûr que cette ID de disque a été ajoutée à cette parution par erreur vu qu'une parution peut avoir plusieurs ID de disque valides, et chaque ID de disque peut appartenir à plus d'une parution. Pour des informations plus approfondies à ce sujet voir {doc|Comment proposer un CD}."
+msgstr "Vous devez être sûr que cet ID de disque a été ajoutée à cette parution par erreur vu qu'une parution peut avoir plusieurs ID de disque valides, et chaque ID de disque peut appartenir à plus d'une parution. Pour des informations plus approfondies à ce sujet voir {doc|Comment proposer un CD}."
 
 #: ../root/user/login.tt:7
 msgid "You need to be logged in to view this page."
@@ -11879,7 +11879,7 @@ msgstr[1] "Merci, vos {num_edits} {edit_url|modifications} ({edit_ids}) ont ét�
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:45
 msgid "The user ID is missing or is in an invalid format."
-msgstr "L'ID d'utilisateur est manquante ou son format est invalide."
+msgstr "L'ID d'utilisateur est manquant ou son format est invalide."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:52
 msgid "The email address is missing."
@@ -12028,7 +12028,7 @@ msgstr "L'ID de révision d'annotation doit être un entier positif"
 
 #: ../lib/MusicBrainz/Server/Controller/Role/Annotation.pm:185
 msgid "The old and new annotation ids must be unique, positive integers."
-msgstr "Les anciennes et nouvelles ID d'annotation doivent être des entiers positifs."
+msgstr "Les anciens et nouveaux ID d'annotation doivent être des entiers positifs."
 
 #: ../lib/MusicBrainz/Server/Controller/Root.pm:208
 msgid ""
@@ -12096,7 +12096,7 @@ msgstr "Données d'index de CD incomplètes"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:132
 msgid "Missing disc ID"
-msgstr "ID de disque manquante"
+msgstr "ID de disque manquant"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:136
 msgid "Disc ID does match parsed TOC"
@@ -12116,7 +12116,7 @@ msgstr "Une parution existe déjà pour cet ID de disque"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:161
 msgid "There is already a CD stub with this disc ID"
-msgstr "Il y a déjà un coupon de CD avec cette ID de disque"
+msgstr "Il y a déjà un coupon de CD avec cet ID de disque"
 
 #: ../lib/MusicBrainz/Server/Data/LinkType.pm:153
 #, perl-brace-format
