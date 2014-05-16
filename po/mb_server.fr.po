@@ -28,8 +28,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-16 07:14-0700\n"
-"PO-Revision-Date: 2014-05-16 14:15+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2014-05-16 16:59+0000\n"
+"Last-Translator: Alain-Olivier  Breysse\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -381,7 +381,7 @@ msgid ""
 "<strong>Warning:</strong> Some of the recordings you're merging have "
 "different ISRCs. Please make sure they are indeed the same recordings and "
 "you wish to continue with the merge."
-msgstr "<strong>Warning:</strong> Some of the recordings you're merging have different ISRC. Please make sure they are indeed the same recordings and you wish to continue with the merge."
+msgstr "<strong>Avertissement :</strong> Certains enregistrements que vous fusionnés ont des ISRC différents. Veuillez vous assurez que ce sont vraiment les mêmes enregistrements et que vous voulez continuer la fusion."
 
 #: ../root/components/common-macros.tt:743 ../root/recording/edit.tt:10
 msgid "<strong>Warning</strong>:"
@@ -543,16 +543,16 @@ msgstr "Ajouter un exemple"
 
 #: ../root/instrument/create.tt:1 ../root/instrument/create.tt:3
 msgid "Add Instrument"
-msgstr ""
+msgstr "Ajouter un instrument"
 
 #: ../root/admin/index.tt:10 ../root/layout/menu.tt:90
 msgctxt "button/menu"
 msgid "Add Instrument"
-msgstr ""
+msgstr "Ajouter un instrument"
 
 #: ../root/instrument/add_alias.tt:1
 msgid "Add Instrument Alias"
-msgstr ""
+msgstr "Ajouter un alias d'instrument"
 
 #: ../root/label/create.tt:1 ../root/label/create.tt:3
 msgid "Add Label"
@@ -614,16 +614,16 @@ msgstr "Ajouter un groupe de parution"
 
 #: ../root/series/create.tt:1 ../root/series/create.tt:3
 msgid "Add Series"
-msgstr ""
+msgstr "Ajouter une série"
 
 #: ../root/layout/menu.tt:238
 msgctxt "button/menu"
 msgid "Add Series"
-msgstr ""
+msgstr "Ajouter une série"
 
 #: ../root/series/add_alias.tt:1
 msgid "Add Series Alias"
-msgstr ""
+msgstr "Ajouter un alias de série"
 
 #: ../root/layout/menu.tt:229
 msgctxt "button/menu"
@@ -708,7 +708,7 @@ msgstr "Ajouter un nouveau groupe de parution"
 
 #: ../root/scripts/text_strings.tt:136
 msgid "Add a new series"
-msgstr ""
+msgstr "Ajouter une nouvelle séire"
 
 #: ../root/scripts/text_strings.tt:137
 msgid "Add a new work"
@@ -728,20 +728,20 @@ msgstr "Ajouter un autre"
 
 #: ../root/scripts/text_strings.tt:176
 msgid "Add another area"
-msgstr ""
+msgstr "Ajouter une autre région"
 
 #: ../root/scripts/text_strings.tt:177
 msgid "Add another artist"
-msgstr ""
+msgstr "Ajouter un autre artiste"
 
 #: ../root/components/relationship-editor.tt:117
 #: ../root/scripts/text_strings.tt:178
 msgid "Add another instrument"
-msgstr ""
+msgstr "Ajouter un autre instrument"
 
 #: ../root/scripts/text_strings.tt:179
 msgid "Add another label"
-msgstr ""
+msgstr "Ajouter un autre label"
 
 #: ../root/components/forms.tt:398
 msgid "Add another link:"
@@ -753,23 +753,23 @@ msgstr "Ajouter un autre support"
 
 #: ../root/scripts/text_strings.tt:180
 msgid "Add another place"
-msgstr ""
+msgstr "Ajouter un autre lieu"
 
 #: ../root/scripts/text_strings.tt:181
 msgid "Add another recording"
-msgstr ""
+msgstr "Ajouter un autre enregistrement"
 
 #: ../root/scripts/text_strings.tt:182
 msgid "Add another release"
-msgstr ""
+msgstr "Ajouter une autre parution"
 
 #: ../root/scripts/text_strings.tt:183
 msgid "Add another release group"
-msgstr ""
+msgstr "Ajouter un autre groupe de parution"
 
 #: ../root/scripts/text_strings.tt:184
 msgid "Add another series"
-msgstr ""
+msgstr "Ajouter une autre série"
 
 #: ../root/scripts/text_strings.tt:44
 msgid "Add another track"
@@ -777,7 +777,7 @@ msgstr "Ajouter une autre piste"
 
 #: ../root/scripts/text_strings.tt:185
 msgid "Add another work"
-msgstr ""
+msgstr "Ajouter une autre œuvre"
 
 #: ../root/area/add_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Area/AddAlias.pm:11
@@ -804,7 +804,7 @@ msgstr "Ajouter une note d'édition"
 #: ../root/instrument/add_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Instrument/AddAlias.pm:11
 msgid "Add instrument alias"
-msgstr ""
+msgstr "Ajouter un alias d'instrument"
 
 #: ../root/label/add_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Label/AddAlias.pm:11
@@ -869,7 +869,7 @@ msgstr "Ajouter les œuvres sélectionnées en vue d'une fusion"
 #: ../root/series/add_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Series/AddAlias.pm:11
 msgid "Add series alias"
-msgstr ""
+msgstr "Ajouter un alias de série"
 
 #: ../root/release/sidebar.tt:136
 msgid "Add to a new collection"
@@ -1064,7 +1064,7 @@ msgstr "Autoriser les autres utilisateurs à voir cette collection"
 
 #: ../root/edit/details/edit_relationship_type.tt:46
 msgid "Allows dates:"
-msgstr ""
+msgstr "Permet les dates :"
 
 #: ../root/components/common-macros.tt:647
 msgid "Already expired"
@@ -1076,40 +1076,40 @@ msgstr "Met aussi à jour les enregistrements avec les changements de piste"
 
 #: ../root/search/results-area.tt:42
 msgid "Alternatively, you may {uri|add a new area}."
-msgstr "Vous pouvez aussi {uri|ajouter une nouvelle région}."
+msgstr "Autrement, vous pouvez {uri|ajouter une nouvelle région}."
 
 #: ../root/search/results-artist.tt:5
 msgid "Alternatively, you may {uri|add a new artist}."
-msgstr "Sinon, vous pouvez {uri|ajouter un nouvel artiste}."
+msgstr "Autrement, vous pouvez {uri|ajouter un nouvel artiste}."
 
 #: ../root/search/results-label.tt:43
 msgid "Alternatively, you may {uri|add a new label}."
-msgstr "Sinon, vous pouvez {uri|ajouter un nouveau label}."
+msgstr "Autrement, vous pouvez {uri|ajouter un nouveau label}."
 
 #: ../root/search/results-place.tt:43
 msgid "Alternatively, you may {uri|add a new place}."
-msgstr "Vous pouvez également {uri|ajouter un nouveau lieu}."
+msgstr "Autrement, vous pouvez {uri|ajouter un nouveau lieu}."
 
 #: ../root/search/results-recording.tt:5
 msgid "Alternatively, you may {uri|add a new recording}."
-msgstr "Sinon, vous pouvez {uri|ajouter un nouvel enregistrement}."
+msgstr "Autrement, vous pouvez {uri|ajouter un nouvel enregistrement}."
 
 #: ../root/search/results-release_group.tt:28
 #: ../root/search/results-release-group.tt:28
 msgid "Alternatively, you may {uri|add a new release group}."
-msgstr "Sinon, vous pouvez {uri|créer un groupe de parution}."
+msgstr "Autrement, vous pouvez {uri|créer un groupe de parution}."
 
 #: ../root/search/results-release.tt:4
 msgid "Alternatively, you may {uri|add a new release}."
-msgstr "Par ailleurs vous pouvez {uri|ajouter une nouvelle parution}."
+msgstr "Autrement, vous pouvez {uri|ajouter une nouvelle parution}."
 
 #: ../root/search/results-series.tt:29
 msgid "Alternatively, you may {uri|add a new series}."
-msgstr ""
+msgstr "Autrement, vous pouvez {uri|ajouter une nouvelle série}."
 
 #: ../root/search/results-work.tt:61
 msgid "Alternatively, you may {uri|add a new work}."
-msgstr "Sinon, vous pouvez {uri|ajouter une nouvelle œuvre}."
+msgstr "Autrement, vous pouvez {uri|ajouter une nouvelle œuvre}."
 
 #: ../root/report/asins_with_multiple_releases.tt:1
 #: ../root/report/asins_with_multiple_releases.tt:3
@@ -1250,37 +1250,37 @@ msgstr "Approuver la modification"
 msgid ""
 "Are you sure that you wish to attach the disc ID <code>{discid}</code> to "
 "{format} {pos} of {release} by {artist}?"
-msgstr "Voulez-vous vraiment rattacher l'ID de disque <code>{discid}</code> à {format} {pos} de {release} par {artist} ?"
+msgstr "Êtes-vous certain de vouloir rattacher l'ID de disque <code>{discid}</code> à {format} {pos} de {release} par {artist} ?"
 
 #: ../root/admin/delete_user.tt:4
 msgid ""
 "Are you sure you want to delete all information about {e}? This cannot be "
 "undone!"
-msgstr "Êtes-vous sûr de vouloir supprimer toutes les informations sur {e} ? Cela ne peut pas être annulé !"
+msgstr "Êtes-vous certain de vouloir supprimer toutes les informations sur {e} ? Cela ne peut pas être annulé !"
 
 #: ../root/admin/delete_user.tt:20
 msgid "Are you sure you want to delete your account? This cannot be undone!"
-msgstr "Êtes-vous sûr de vouloir supprimer votre compte ? Ceci ne peut pas être annulé !"
+msgstr "Êtes-vous certain de vouloir supprimer votre compte ? Ceci ne peut pas être annulé !"
 
 #: ../root/elections/nominate.tt:5
 msgid ""
 "Are you sure you want to nominate the editor {editor} for auto-editor "
 "status?"
-msgstr "Êtes-vous sûr de vouloir promouvoir l'éditeur {editor} au statut d'auto-éditeur ?"
+msgstr "Êtes-vous certain de vouloir promouvoir l'éditeur {editor} au statut d'auto-éditeur ?"
 
 #: ../root/collection/delete.tt:4
 msgid "Are you sure you want to remove the collection {collection}?"
-msgstr "Êtes-vous sûr de vouloir enlever la collection {collection} ?"
+msgstr "Êtes-vous certain de vouloir enlever la collection {collection} ?"
 
 #: ../root/cdtoc/remove.tt:5
 msgid ""
 "Are you sure you want to remove the disc ID <code>{discid}</code> from the "
 "release {release} by {artist}?"
-msgstr "Êtes-vous sûr de vouloir enlever l'ID de disque <code>{discid}</code> de la parution {release} par {artist} ?"
+msgstr "Êtes-vous certain de vouloir enlever l'ID de disque <code>{discid}</code> de la parution {release} par {artist} ?"
 
 #: ../root/account/remove_application.tt:5
 msgid "Are you sure you want to remove this application?"
-msgstr "Êtes-vous sur de vouloir enlever cette application ?"
+msgstr "Êtes-vous certain de vouloir enlever cette application ?"
 
 #: ../root/account/revoke_application_access.tt:5
 msgid "Are you sure you want to revoke this application's access?"
@@ -1288,49 +1288,49 @@ msgstr "Êtes-vous certain de vouloir révoquer l'accès de cette application ?"
 
 #: ../root/edit/cancel.tt:3
 msgid "Are you sure you wish to cancel edit #{n}? This cannot be undone!"
-msgstr "Êtes-vous sûr de vouloir annuler la modification N°{n} ? Cela sera définitif !"
+msgstr "Êtes-vous certain de vouloir annuler la modification N°{n} ? Cela sera définitif !"
 
 #: ../root/admin/wikidoc/delete.tt:4
 msgid ""
 "Are you sure you wish to remove <strong>{page}</strong> from the "
 "transclusion table?"
-msgstr "Êtes-vous sûr de vouloir enlever <strong>{page}</strong> de la table de transclusions ?"
+msgstr "Êtes-vous certain de vouloir enlever <strong>{page}</strong> de la table de transclusions ?"
 
 #: ../root/relationship/linkattributetype/delete.tt:6
 msgid ""
 "Are you sure you wish to remove the <strong>{link_attr_type}</strong> "
 "relationship attribute?"
-msgstr "Êtes-vous sûr de vouloir enlever la relation ayant l'attribut <strong>{link_attr_type}</strong> ?"
+msgstr "Êtes-vous certain de vouloir enlever la relation ayant l'attribut <strong>{link_attr_type}</strong> ?"
 
 #: ../root/relationship/linktype/delete.tt:6
 msgid ""
 "Are you sure you wish to remove the <strong>{link_type}</strong> "
 "relationship type?"
-msgstr "Êtes-vous sûr de vouloir enlever la relation de type <strong>{link_type}</strong> ?"
+msgstr "Êtes-vous certain de vouloir enlever la relation de type <strong>{link_type}</strong> ?"
 
 #: ../root/area/delete.tt:5
 msgid "Are you sure you wish to remove the area {area} from MusicBrainz?"
-msgstr "Êtes-vous sur de vouloir enlever la région {area} de MusicBrainz ?"
+msgstr "Êtes-vous certain de vouloir enlever la région {area} de MusicBrainz ?"
 
 #: ../root/release/remove_cover_art.tt:4
 msgid ""
 "Are you sure you wish to remove the below cover art from {release} by "
 "{artist}?"
-msgstr "Voulez-vous vraiment enlever l'Illustration ci-dessous de la parution {release} par {artist} ?"
+msgstr "Êtes-vous certain de vouloir enlever l'Illustration ci-dessous de la parution {release} par {artist} ?"
 
 #: ../root/instrument/delete.tt:6
 msgid ""
 "Are you sure you wish to remove the instrument {instrument} from "
 "MusicBrainz?"
-msgstr ""
+msgstr "Êtes-vous certain de vouloir enlever l'instrument {instrument} de MusicBrainz ?"
 
 #: ../root/label/delete.tt:5
 msgid "Are you sure you wish to remove the label {label} from MusicBrainz?"
-msgstr "Êtes-vous sûr de vouloir enlever le label {label} de MusicBrainz ?"
+msgstr "Êtes-vous certain de vouloir enlever le label {label} de MusicBrainz ?"
 
 #: ../root/series/delete.tt:5
 msgid "Are you sure you wish to remove the series {series} from MusicBrainz?"
-msgstr ""
+msgstr "Êtes-vous certain de vouloir enlever la série {series} de MusicBrainz ?"
 
 #: ../root/area/edits.tt:5 ../root/area/header.tt:21
 #: ../root/components/common-macros.tt:581
@@ -1694,7 +1694,7 @@ msgstr "Abonnez-moi automatiquement aux labels que je crée."
 
 #: ../root/account/preferences.tt:47
 msgid "Automatically subscribe me to series I create."
-msgstr ""
+msgstr "Abonnez-moi automatiquement aux séries que je crée."
 
 #: ../root/components/ratings.tt:19
 msgid "Average rating:"
@@ -1971,7 +1971,7 @@ msgstr "Parcourir les parutions"
 
 #: ../root/browse/index.tt:13
 msgid "Browse series"
-msgstr ""
+msgstr "Parcourir la série"
 
 #: ../root/browse/index.tt:10
 msgid "Browse works"
@@ -2527,7 +2527,7 @@ msgstr "Défunt :"
 
 #: ../root/edit/search_macros.tt:112
 msgid "Delete"
-msgstr "Effacer"
+msgstr "Supprimer"
 
 #: ../root/admin/delete_user.tt:3 ../root/admin/delete_user.tt:13
 #: ../root/admin/delete_user.tt:14 ../root/user/profile/layout.tt:39
@@ -2540,7 +2540,7 @@ msgstr "Supprimer la note"
 
 #: ../root/admin/delete_user.tt:2
 msgid "Delete User"
-msgstr "Effacer l'utilisateur"
+msgstr "Supprimer l'utilisateur"
 
 #: ../root/admin/delete_user.tt:23
 msgid "Delete my account"
@@ -2548,11 +2548,11 @@ msgstr "Supprimer mon compte"
 
 #: ../root/admin/delete_user.tt:8
 msgid "Delete {e}"
-msgstr "Effacer {e}"
+msgstr "Supprimer {e}"
 
 #: ../root/user/profile.tt:50
 msgid "Deleted User"
-msgstr ""
+msgstr "Supprimer l'utilisateur"
 
 #: ../root/edit/details/edit_relationship_type.tt:40
 msgid "Deprecated:"
@@ -2897,11 +2897,11 @@ msgstr "Modifier l'Illustration"
 
 #: ../root/instrument/edit.tt:1
 msgid "Edit Instrument"
-msgstr ""
+msgstr "Modifier l'instrument"
 
 #: ../root/instrument/edit_alias.tt:1
 msgid "Edit Instrument Alias"
-msgstr ""
+msgstr "Modifier l'alias d'instrument"
 
 #: ../root/label/edit.tt:1
 msgid "Edit Label"
@@ -2974,11 +2974,11 @@ msgstr "Modifier l'annotation du groupe de parution"
 
 #: ../root/series/edit.tt:1
 msgid "Edit Series"
-msgstr ""
+msgstr "Modifier la série"
 
 #: ../root/series/edit_alias.tt:1
 msgid "Edit Series Alias"
-msgstr ""
+msgstr "Modifier l'alias de la série"
 
 #: ../root/doc/edit_types.tt:1 ../root/doc/edit_types.tt:3
 #: ../root/doc/edit_type.tt:35 ../root/edit/info.tt:67
@@ -3040,11 +3040,11 @@ msgstr "Données de modification pour la modification no {id}"
 #: ../root/instrument/edit_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Instrument/EditAlias.pm:12
 msgid "Edit instrument alias"
-msgstr ""
+msgstr "Modifier l'alias d'instrument"
 
 #: ../root/instrument/edit_annotation.tt:2
 msgid "Edit instrument annotation"
-msgstr ""
+msgstr "Modifier l'annotation de l'instrument"
 
 #: ../root/label/edit_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Label/EditAlias.pm:12
@@ -3106,11 +3106,11 @@ msgstr "Modifier l'annotation du groupe de parution"
 #: ../root/series/edit_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Series/EditAlias.pm:12
 msgid "Edit series alias"
-msgstr ""
+msgstr "Modifier l'alias de la série"
 
 #: ../root/series/edit_annotation.tt:2
 msgid "Edit series annotation"
-msgstr ""
+msgstr "Modifier l'annotation de la série"
 
 #: ../root/admin/edit_user.tt:42
 msgid "Edit user"
@@ -3215,7 +3215,7 @@ msgstr "Modifications pour les entités auxquelles vous êtes abonné"
 
 #: ../root/instrument/edits.tt:3
 msgid "Edits for {instrument}"
-msgstr ""
+msgstr "Modifications pour {instrument}"
 
 #: ../root/label/edits.tt:3
 msgid "Edits for {label}"
@@ -3239,7 +3239,7 @@ msgstr "Modifications pour {place}"
 
 #: ../root/series/edits.tt:3
 msgid "Edits for {series}"
-msgstr ""
+msgstr "Modifications pour {series}"
 
 #: ../root/release/edits.tt:3 ../root/release_group/edits.tt:3
 #: ../root/work/edits.tt:3
@@ -3562,7 +3562,7 @@ msgstr "Échec"
 
 #: ../root/components/common-macros.tt:1000
 msgid "Few relationships"
-msgstr ""
+msgstr "Peu de relations"
 
 #: ../root/release/add_cover_art.tt:68
 msgid "File:"
@@ -4223,27 +4223,27 @@ msgstr "Applications installées"
 #: ../lib/MusicBrainz/Server/Edit/Instrument.pm:7
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:46
 msgid "Instrument"
-msgstr ""
+msgstr "Instrument"
 
 #: ../root/instrument/edit_form.tt:9
 msgid "Instrument Details"
-msgstr ""
+msgstr "Détails sur l'instrument"
 
 #: ../root/browse/instrument.tt:11 ../root/browse/instrument.tt:13
 msgid "Instrument List"
-msgstr ""
+msgstr "Liste d'instruments"
 
 #: ../root/instrument/not_found.tt:1 ../root/instrument/not_found.tt:2
 msgid "Instrument Not Found"
-msgstr ""
+msgstr "Instrument introuvable"
 
 #: ../root/instrument/layout.tt:11
 msgid "Instrument information"
-msgstr ""
+msgstr "Informations sur l'instrument"
 
 #: ../root/browse/index.tt:14
 msgid "Instrument list"
-msgstr ""
+msgstr "Liste d'instruments"
 
 #: ../root/components/common-macros.tt:565
 #: ../root/edit/details/add_instrument_alias.tt:3
@@ -4254,7 +4254,7 @@ msgstr ""
 #: ../root/edit/details/remove_instrument_alias.tt:3
 #: ../root/edit/details/remove_instrument.tt:3
 msgid "Instrument:"
-msgstr ""
+msgstr "Instrument :"
 
 #: ../root/main/500.tt:67
 msgid "Interface language:"
@@ -4530,7 +4530,7 @@ msgstr "Lien"
 
 #: ../root/edit/details/add_relationship.tt:11
 msgid "Link order:"
-msgstr ""
+msgstr "Ordre des liens :"
 
 #: ../root/edit/details/add_relationship_type.tt:13
 #: ../root/edit/details/edit_relationship_type.tt:23
@@ -4728,7 +4728,7 @@ msgstr "Saisie manuelle"
 
 #: ../root/components/common-macros.tt:1000
 msgid "Many relationships"
-msgstr ""
+msgstr "Beaucoup de relations"
 
 #: ../root/release/lookup.tt:8
 msgid "Match"
@@ -4809,7 +4809,7 @@ msgstr "Fusionner des artistes"
 
 #: ../root/instrument/merge.tt:1 ../root/instrument/merge.tt:3
 msgid "Merge Instruments"
-msgstr ""
+msgstr "Fusionner les instruments"
 
 #: ../root/label/merge.tt:1 ../root/label/merge.tt:3
 msgid "Merge Labels"
@@ -4837,7 +4837,7 @@ msgstr "Fusionner des parutions"
 
 #: ../root/series/merge.tt:1 ../root/series/merge.tt:3
 msgid "Merge Series"
-msgstr ""
+msgstr "Fusionner les séries"
 
 #: ../root/work/merge.tt:1 ../root/work/merge.tt:3
 msgid "Merge Works"
@@ -4857,7 +4857,7 @@ msgstr "Fusionner des attributs : "
 
 #: ../root/instrument/layout.tt:33
 msgid "Merge instrument"
-msgstr ""
+msgstr "Fusionner l'instrument"
 
 #: ../root/label/layout.tt:67
 msgid "Merge label"
@@ -4896,7 +4896,7 @@ msgstr "Fusionner des groupes de parution"
 #: ../root/series/layout.tt:19
 #: ../lib/MusicBrainz/Server/Edit/Series/Merge.pm:11
 msgid "Merge series"
-msgstr ""
+msgstr "Fusionner la série"
 
 #: ../root/edit/details/merge_releases.tt:133 ../root/release/merge.tt:55
 msgid "Merge strategy:"
@@ -4952,11 +4952,11 @@ msgstr "Déplacer le disque vers le haut"
 
 #: ../root/forms/relationship-editor.tt:34
 msgid "Move entity down"
-msgstr ""
+msgstr "Déplacer l'entité vers le bas"
 
 #: ../root/forms/relationship-editor.tt:35
 msgid "Move entity up"
-msgstr ""
+msgstr "Déplacer l'entité vers le haut"
 
 #: ../root/release/add_cover_art.tt:40
 msgid "Move file down"
@@ -5172,7 +5172,7 @@ msgstr "La nouvelle image vient ici"
 
 #: ../root/edit/details/reorder_relationships.tt:10
 msgid "New Order"
-msgstr ""
+msgstr "Nouvelle ordre"
 
 #: ../root/relationship/linkattributetype/create.tt:1
 #: ../root/relationship/linkattributetype/create.tt:3
@@ -5555,7 +5555,7 @@ msgstr "Ancien artiste"
 
 #: ../root/edit/details/reorder_relationships.tt:7
 msgid "Old Order"
-msgstr ""
+msgstr "Ancien ordre"
 
 #: ../root/edit/details/edit_medium.tt:51
 msgid "Old Tracklist"
@@ -5665,13 +5665,13 @@ msgstr "Ou..."
 #: ../root/edit/details/merge_series.tt:10
 #: ../root/edit/details/merge_series.tt:35 ../root/series/merge.tt:14
 msgid "Ordering Type"
-msgstr ""
+msgstr "Type d'ordre"
 
 #: ../root/edit/details/add_series.tt:30
 #: ../root/edit/details/edit_series.tt:23 ../root/series/edit_form.tt:34
 #: ../root/series/layout.tt:8
 msgid "Ordering Type:"
-msgstr ""
+msgstr "Type d'ordre :"
 
 #: ../root/otherlookup/results.tt:1 ../root/otherlookup/results.tt:3
 msgid "Other Lookup Results"
