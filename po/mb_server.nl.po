@@ -23,8 +23,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-16 07:14-0700\n"
-"PO-Revision-Date: 2014-05-16 14:15+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2014-05-16 18:58+0000\n"
+"Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -538,16 +538,16 @@ msgstr "Voorbeeld toevoegen"
 
 #: ../root/instrument/create.tt:1 ../root/instrument/create.tt:3
 msgid "Add Instrument"
-msgstr ""
+msgstr "Instrument toevoegen"
 
 #: ../root/admin/index.tt:10 ../root/layout/menu.tt:90
 msgctxt "button/menu"
 msgid "Add Instrument"
-msgstr ""
+msgstr "Instrument toevoegen"
 
 #: ../root/instrument/add_alias.tt:1
 msgid "Add Instrument Alias"
-msgstr ""
+msgstr "Alias voor dit instrument toevoegen"
 
 #: ../root/label/create.tt:1 ../root/label/create.tt:3
 msgid "Add Label"
@@ -609,16 +609,16 @@ msgstr "Uitgavegroep toevoegen"
 
 #: ../root/series/create.tt:1 ../root/series/create.tt:3
 msgid "Add Series"
-msgstr ""
+msgstr "Serie toevoegen"
 
 #: ../root/layout/menu.tt:238
 msgctxt "button/menu"
 msgid "Add Series"
-msgstr ""
+msgstr "Serie toevoegen"
 
 #: ../root/series/add_alias.tt:1
 msgid "Add Series Alias"
-msgstr ""
+msgstr "Alias voor deze serie toevoegen"
 
 #: ../root/layout/menu.tt:229
 msgctxt "button/menu"
@@ -703,7 +703,7 @@ msgstr "Een nieuwe uitgavegroep toevoegen"
 
 #: ../root/scripts/text_strings.tt:136
 msgid "Add a new series"
-msgstr ""
+msgstr "Nieuwe serie toevoegen"
 
 #: ../root/scripts/text_strings.tt:137
 msgid "Add a new work"
@@ -723,20 +723,20 @@ msgstr "Nog één toevoegen"
 
 #: ../root/scripts/text_strings.tt:176
 msgid "Add another area"
-msgstr ""
+msgstr "Nog een gebied toevoegen"
 
 #: ../root/scripts/text_strings.tt:177
 msgid "Add another artist"
-msgstr ""
+msgstr "Nog een artiest toevoegen"
 
 #: ../root/components/relationship-editor.tt:117
 #: ../root/scripts/text_strings.tt:178
 msgid "Add another instrument"
-msgstr ""
+msgstr "Nog een instrument toevoegen"
 
 #: ../root/scripts/text_strings.tt:179
 msgid "Add another label"
-msgstr ""
+msgstr "Nog een platenmaatschappij toevoegen"
 
 #: ../root/components/forms.tt:398
 msgid "Add another link:"
@@ -748,23 +748,23 @@ msgstr "Ander medium toevoegen"
 
 #: ../root/scripts/text_strings.tt:180
 msgid "Add another place"
-msgstr ""
+msgstr "Nog een plaats toevoegen"
 
 #: ../root/scripts/text_strings.tt:181
 msgid "Add another recording"
-msgstr ""
+msgstr "Nog een opname toevoegen"
 
 #: ../root/scripts/text_strings.tt:182
 msgid "Add another release"
-msgstr ""
+msgstr "Nog een uitgave toevoegen"
 
 #: ../root/scripts/text_strings.tt:183
 msgid "Add another release group"
-msgstr ""
+msgstr "Nog een uitgavegroep toevoegen"
 
 #: ../root/scripts/text_strings.tt:184
 msgid "Add another series"
-msgstr ""
+msgstr "Nog een serie toevoegen"
 
 #: ../root/scripts/text_strings.tt:44
 msgid "Add another track"
@@ -772,7 +772,7 @@ msgstr "Nog een nummer toevoegen"
 
 #: ../root/scripts/text_strings.tt:185
 msgid "Add another work"
-msgstr ""
+msgstr "Nog een compositie toevoegen"
 
 #: ../root/area/add_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Area/AddAlias.pm:11
@@ -799,7 +799,7 @@ msgstr "Bewerkingsnotitie toevoegen"
 #: ../root/instrument/add_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Instrument/AddAlias.pm:11
 msgid "Add instrument alias"
-msgstr ""
+msgstr "Nog een alias voor dit instrument toevoegen"
 
 #: ../root/label/add_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Label/AddAlias.pm:11
@@ -864,7 +864,7 @@ msgstr "Geselecteerde composities samenvoegen"
 #: ../root/series/add_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Series/AddAlias.pm:11
 msgid "Add series alias"
-msgstr ""
+msgstr "Een alias voor deze serie toevoegen"
 
 #: ../root/release/sidebar.tt:136
 msgid "Add to a new collection"
@@ -2892,11 +2892,11 @@ msgstr "Afbeelding bewerken"
 
 #: ../root/instrument/edit.tt:1
 msgid "Edit Instrument"
-msgstr ""
+msgstr "Instrument bewerken"
 
 #: ../root/instrument/edit_alias.tt:1
 msgid "Edit Instrument Alias"
-msgstr ""
+msgstr "Alias van dit instrument bewerken"
 
 #: ../root/label/edit.tt:1
 msgid "Edit Label"
@@ -2969,11 +2969,11 @@ msgstr "Aantekening van de uitgavegroep bewerken"
 
 #: ../root/series/edit.tt:1
 msgid "Edit Series"
-msgstr ""
+msgstr "Serie bewerken"
 
 #: ../root/series/edit_alias.tt:1
 msgid "Edit Series Alias"
-msgstr ""
+msgstr "Alias van deze serie bewerken"
 
 #: ../root/doc/edit_types.tt:1 ../root/doc/edit_types.tt:3
 #: ../root/doc/edit_type.tt:35 ../root/edit/info.tt:67
@@ -3035,11 +3035,11 @@ msgstr "Gegevens voor bewerking #{id}"
 #: ../root/instrument/edit_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Instrument/EditAlias.pm:12
 msgid "Edit instrument alias"
-msgstr ""
+msgstr "Alias van dit instrument bewerken"
 
 #: ../root/instrument/edit_annotation.tt:2
 msgid "Edit instrument annotation"
-msgstr ""
+msgstr "Aantekening van het instrument bewerken"
 
 #: ../root/label/edit_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Label/EditAlias.pm:12
@@ -3101,11 +3101,11 @@ msgstr "Aantekening van de uitgavegroep bewerken"
 #: ../root/series/edit_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Series/EditAlias.pm:12
 msgid "Edit series alias"
-msgstr ""
+msgstr "Alias van deze serie bewerken"
 
 #: ../root/series/edit_annotation.tt:2
 msgid "Edit series annotation"
-msgstr ""
+msgstr "Aantekening van de serie bewerken"
 
 #: ../root/admin/edit_user.tt:42
 msgid "Edit user"
@@ -3210,7 +3210,7 @@ msgstr "Bewerkingen van objecten waarop u bent geabonneerd"
 
 #: ../root/instrument/edits.tt:3
 msgid "Edits for {instrument}"
-msgstr ""
+msgstr "Bewerkingen van {instrument}"
 
 #: ../root/label/edits.tt:3
 msgid "Edits for {label}"
@@ -3234,7 +3234,7 @@ msgstr "Bewerkingen voor {place}"
 
 #: ../root/series/edits.tt:3
 msgid "Edits for {series}"
-msgstr ""
+msgstr "Bewerkingen van {series}"
 
 #: ../root/release/edits.tt:3 ../root/release_group/edits.tt:3
 #: ../root/work/edits.tt:3
@@ -3557,7 +3557,7 @@ msgstr "Mislukt"
 
 #: ../root/components/common-macros.tt:1000
 msgid "Few relationships"
-msgstr ""
+msgstr "Weinig relaties"
 
 #: ../root/release/add_cover_art.tt:68
 msgid "File:"
@@ -4218,27 +4218,27 @@ msgstr "Geïnstalleerde applicatie"
 #: ../lib/MusicBrainz/Server/Edit/Instrument.pm:7
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:46
 msgid "Instrument"
-msgstr ""
+msgstr "Instrument"
 
 #: ../root/instrument/edit_form.tt:9
 msgid "Instrument Details"
-msgstr ""
+msgstr "Details van het instrument"
 
 #: ../root/browse/instrument.tt:11 ../root/browse/instrument.tt:13
 msgid "Instrument List"
-msgstr ""
+msgstr "Instrumentenlijst"
 
 #: ../root/instrument/not_found.tt:1 ../root/instrument/not_found.tt:2
 msgid "Instrument Not Found"
-msgstr ""
+msgstr "Instrument niet gevonden"
 
 #: ../root/instrument/layout.tt:11
 msgid "Instrument information"
-msgstr ""
+msgstr "Informatie over het instrument"
 
 #: ../root/browse/index.tt:14
 msgid "Instrument list"
-msgstr ""
+msgstr "Instrumentenlijst"
 
 #: ../root/components/common-macros.tt:565
 #: ../root/edit/details/add_instrument_alias.tt:3
@@ -4249,7 +4249,7 @@ msgstr ""
 #: ../root/edit/details/remove_instrument_alias.tt:3
 #: ../root/edit/details/remove_instrument.tt:3
 msgid "Instrument:"
-msgstr ""
+msgstr "Instrument:"
 
 #: ../root/main/500.tt:67
 msgid "Interface language:"

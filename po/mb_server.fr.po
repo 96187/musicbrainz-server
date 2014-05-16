@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-16 07:14-0700\n"
-"PO-Revision-Date: 2014-05-16 17:59+0000\n"
+"PO-Revision-Date: 2014-05-16 18:40+0000\n"
 "Last-Translator: Alain-Olivier  Breysse\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -708,7 +708,7 @@ msgstr "Ajouter un nouveau groupe de parution"
 
 #: ../root/scripts/text_strings.tt:136
 msgid "Add a new series"
-msgstr "Ajouter une nouvelle séire"
+msgstr "Ajouter une nouvelle série"
 
 #: ../root/scripts/text_strings.tt:137
 msgid "Add a new work"
@@ -1971,7 +1971,7 @@ msgstr "Parcourir les parutions"
 
 #: ../root/browse/index.tt:13
 msgid "Browse series"
-msgstr "Parcourir la série"
+msgstr "Parcourir les séries"
 
 #: ../root/browse/index.tt:10
 msgid "Browse works"
@@ -7702,13 +7702,13 @@ msgstr "Désolé, nous n'avons pu trouver d'enregistrement ni de piste avec cet 
 msgid ""
 "Sorry, we could not find a FreeDB entry with that ID. You may wish to try "
 "and {search_url|search for it} instead."
-msgstr "Désolé, nous n'avons pas trouvé d'entrée FreeDB avec cet ID. Vous pourriez peut-être plutôt essayer de le {search_url|chercher}."
+msgstr "Désolé, nous n'avons pas trouvé d'entrée FreeDB avec cet ID. Vous pourriez peut-être plutôt essayer de {search_url|la chercher}."
 
 #: ../root/otherlookup/not_found.tt:4
 msgid ""
 "Sorry, we could not find a MusicBrainz entity with that ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr "Désolé, nous n'avons pu trouver d'entité MusicBrainz avec cet ID. Vous pourriez peut-être plutôt essayer de la {search_url|chercher}."
+msgstr "Désolé, nous n'avons pu trouver d'entité MusicBrainz avec cet ID. Vous pourriez peut-être plutôt essayer de {search_url|la chercher}."
 
 #: ../root/url/not_found.tt:4
 msgid "Sorry, we could not find a URL with that MusicBrainz ID."
@@ -7753,7 +7753,7 @@ msgstr "Désolé, nous ne trouvons pas de parution avec cet ID MusicBrainz. Vous
 msgid ""
 "Sorry, we could not find a series with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr "Désolé, nous ne trouvons pas de série avec cet ID MusicBrainz. Vous pouvez peut-être essayer de {search_url|plutôt la chercher}."
+msgstr "Désolé, nous n'avons pas trouvé de série avec cet ID MusicBrainz. Vous pourriez peut-être plutôt essayer de {search_url|la chercher}."
 
 #: ../root/work/not_found.tt:4
 msgid ""
@@ -7765,7 +7765,7 @@ msgstr "Désolé, nous ne trouvons pas d’œuvre avec cet ID MusicBrainz. Vous 
 msgid ""
 "Sorry, we could not find an area with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr "Désolé, nous n'avons pas trouvé de région avec cet ID MusicBrainz. Vous pourriez peut-être plutôt essayer de {search_url|la rechercher}."
+msgstr "Désolé, nous n'avons pas trouvé de région avec cet ID MusicBrainz. Vous pourriez peut-être plutôt essayer de {search_url|la chercher}."
 
 #: ../root/artist/not_found.tt:4
 msgid ""
@@ -7793,7 +7793,7 @@ msgstr "Désolé, nous ne trouvons pas d'éditeur ayant ce nom. Vous pourriez pe
 msgid ""
 "Sorry, we could not find an instrument with that MusicBrainz ID. You may "
 "wish to try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Désolé, nous n'avons pas trouvé d'instrument avec cet ID MusicBrainz. Vous pourriez peut-être plutôt essayer de {search_url|le chercher}."
 
 #: ../root/search/editor.tt:18
 msgid ""
@@ -8396,19 +8396,19 @@ msgstr "Le serveur de recherche n'a pu compléter votre requête du fait d'une e
 
 #: ../root/scripts/text_strings.tt:190
 msgid "The series you’ve selected is for recordings."
-msgstr ""
+msgstr "La série que vous avez choisie est pour les enregistrements."
 
 #: ../root/scripts/text_strings.tt:192
 msgid "The series you’ve selected is for release groups."
-msgstr ""
+msgstr "La série que vous avez choisie est pour les groupes de parution."
 
 #: ../root/scripts/text_strings.tt:191
 msgid "The series you’ve selected is for releases."
-msgstr ""
+msgstr "La série que vous avez choisie est pour les parutions."
 
 #: ../root/scripts/text_strings.tt:193
 msgid "The series you’ve selected is for works."
-msgstr ""
+msgstr "La série que vous avez choisie est pour les œuvres."
 
 #: ../root/layout.tt:61
 msgid "The server is temporary in read-only mode for database maintainance."
@@ -8475,7 +8475,7 @@ msgstr "Il n'y a actuellement aucun utilisateur abonné à {label}."
 
 #: ../root/series/subscribers.tt:22
 msgid "There are currently no users subscribed to {series}."
-msgstr ""
+msgstr "Il n'y a actuellement aucun utilisateur abonné à {series}."
 
 #: ../root/release/discids.tt:49
 msgid ""
@@ -8540,8 +8540,8 @@ msgstr[1] "Il y a actuellement {num} utilisateurs abonnés à {label} :"
 #: ../root/series/subscribers.tt:4
 msgid "There is currently {num} user subscribed to {series}:"
 msgid_plural "There are currently {num} users subscribed to {series}:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Il y a actuellement {num} utilisateur abonné à {series} :"
+msgstr[1] "Il y a actuellement {num} utilisateurs abonnés à {series} :"
 
 #: ../root/browse/entity.tt:34
 msgid "There is no data to display."
@@ -8796,7 +8796,7 @@ msgstr "Ce groupe s'est dissout."
 msgid ""
 "This instrument cannot be removed because there are still relationships "
 "attributed to it."
-msgstr ""
+msgstr "Cet instrument ne peut pas être supprimé, car il y a des relations qui lui sont attribuées."
 
 #: ../root/layout.tt:37 ../lib/DBDefs/Default.pm:136
 msgid "This is a MusicBrainz development server."
@@ -8878,7 +8878,7 @@ msgstr "Ce support a déjà des ID de disque, donc vous ne pouvez changer son fo
 
 #: ../root/cdtoc/attach_list.tt:25
 msgid "This medium format cannot have a disc ID attached"
-msgstr "Ce format de support ne peut avoir d'ID de disque rattachée."
+msgstr "Ce format de support ne peut avoir d'ID de disque rattaché."
 
 #: ../root/scripts/text_strings.tt:48
 msgid ""
@@ -8973,7 +8973,7 @@ msgstr "Cet enregistrement est une vidéo"
 
 #: ../root/relationship/linktype/form.tt:17
 msgid "This relationship allows setting dates"
-msgstr ""
+msgstr "Cette relation permet de définir des dates"
 
 #: ../root/scripts/text_strings.tt:171
 msgid "This relationship already exists."
@@ -9000,7 +9000,7 @@ msgstr "Ce type de relation n'a pas d'exemple."
 
 #: ../root/doc/relationship_type.tt:51
 msgid "This relationship type doesn't allow any attributes."
-msgstr ""
+msgstr "Ce type de relation ne permet pas d'attribut."
 
 #: ../root/doc/relationship_type.tt:11 ../root/scripts/text_strings.tt:129
 msgid "This relationship type is deprecated and should not be used."
@@ -9469,17 +9469,17 @@ msgstr "Ceci nécessite que les supports correspondants ont le même nombre de p
 msgid ""
 "This series cannot be removed because there are still relationships using "
 "it."
-msgstr ""
+msgstr "Cette région ne peut pas être enlevée car des relations l'utilisent encore."
 
 #: ../root/series/index.tt:6
 msgid ""
 "This series has no relationships and will be removed automatically in the "
 "next few days. If this is not intended, please add more data to this series."
-msgstr ""
+msgstr "Cette série n'a pas de relation et sera enlevée automatiquement durant les prochains jours. Si ce n'est pas votre intention, veuillez ajouter plus de données à cette série."
 
 #: ../root/series/index.tt:48
 msgid "This series is currently empty."
-msgstr ""
+msgstr "Cette série est actuellement vide."
 
 #: ../root/user/profile.tt:194
 msgid "This table shows a summary of votes cast by this editor."
@@ -9987,7 +9987,7 @@ msgstr "Requête non autorisée"
 
 #: ../root/browse/instrument.tt:21
 msgid "Unclassified instrument"
-msgstr ""
+msgstr "Instrument non classé"
 
 #: ../root/components/common-macros.tt:1000 ../root/report/artist_list.tt:17
 #: ../root/report/artists_with_multiple_occurances_in_artist_credits.tt:25
@@ -10362,7 +10362,7 @@ msgstr "Nous avons trouvé les lieux suivants avec des noms très similaires :"
 
 #: ../root/series/edit_form.tt:15
 msgid "We found the following series with very similar names:"
-msgstr ""
+msgstr "Nous avons trouvé les séries suivantes avec des noms très similaires :"
 
 #: ../root/search/editor.tt:5
 msgid ""
@@ -10660,7 +10660,7 @@ msgstr "Oui, je veux encore créer un nouveau lieu."
 
 #: ../root/series/edit_form.tt:22
 msgid "Yes, I still want to create a new series."
-msgstr ""
+msgstr "Oui, je veux encore créer une nouvelle série."
 
 #: ../root/admin/wikidoc/delete.tt:9
 msgid "Yes, I'm sure"
@@ -10688,20 +10688,20 @@ msgstr "Vous êtes sur le point de saisir une modification qui changera la duré
 msgid ""
 "You are about to merge the following areas into a single area. Please select"
 " the area which you would like other areas to be merged into:"
-msgstr "Vous êtes sur le point de fusionner les régions suivantes en une seule région. Veuillez choisir la région vers laquelle vous voulez fusionner les autres :"
+msgstr "Vous êtes sur le point de fusionner les régions suivantes en une seule région. Veuillez choisir la région vers laquelle vous souhaitez fusionner les autres :"
 
 #: ../root/artist/merge.tt:4
 msgid ""
 "You are about to merge the following artists into a single artist. Please "
 "select the artist which you would like other artists to be merged into:"
-msgstr "Vous êtes sur le point de fusionner les artistes suivants dans un seul artiste. Choisissez l'artiste vers lequel vous souhaitez fusionner : "
+msgstr "Vous êtes sur le point de fusionner les artistes suivants en un seul artiste. Choisissez l'artiste vers lequel vous souhaitez fusionner : "
 
 #: ../root/instrument/merge.tt:4
 msgid ""
 "You are about to merge the following instruments into a single instrument. "
 "Please select the instrument which you would like other instruments to be "
 "merged into:"
-msgstr ""
+msgstr "Vous êtes sur le point de fusionner les instruments suivants en un seul instrument. Choisissez l'instrument vers lequel vous souhaitez fusionner les autres : "
 
 #: ../root/label/merge.tt:4
 msgid ""
@@ -10713,7 +10713,7 @@ msgstr "Vous êtes sur le point de fusionner les labels suivants dans un seul l
 msgid ""
 "You are about to merge the following places into a single place. Please "
 "select the place which you would like other places to be merged into:"
-msgstr "Vous être sur le point de fusionner les lieux suivants en un seul lieu. Veuillez choisir le lieu vers lequel vous souhaitez fusionner :"
+msgstr "Vous être sur le point de fusionner les lieux suivants en un seul lieu. Veuillez choisir le lieu vers lequel vous souhaitez fusionner les autres :"
 
 #: ../root/recording/merge.tt:4
 msgid ""
@@ -10727,26 +10727,26 @@ msgid ""
 "You are about to merge the following release groups into a single release "
 "group. Please select the release group which you would like other release "
 "groups to be merged into:"
-msgstr "Vous êtes sur le point de fusionner les groupes de parution suivants dans un seul groupe. Choisissez le groupe de parution vers lequel vous souhaitez fusionner : "
+msgstr "Vous êtes sur le point de fusionner les groupes de parution suivants dans un seul groupe. Choisissez le groupe de parution vers lequel vous souhaitez fusionner les autres :"
 
 #: ../root/release/merge.tt:4
 msgid ""
 "You are about to merge the following releases into a single release. Please "
 "select the release which you would like the other releases to be merged "
 "into:"
-msgstr "Vous êtes sur le point de fusionner les parutions suivantes en une parution unique. Veuillez sélectionner la parution dans laquelle vous voulez que les autres soient fusionnées :"
+msgstr "Vous êtes sur le point de fusionner les parutions suivantes en une seule parution. Veuillez sélectionner la parution vers laquelle vous souhaitez fusionner les autres :"
 
 #: ../root/series/merge.tt:4
 msgid ""
 "You are about to merge the following series into a single series. Please "
 "select the series which you would like other series to be merged into:"
-msgstr ""
+msgstr "Vous êtes sur le point de fusionner les séries suivantes en une seule série. Veuillez choisir la série vers laquelle vous souhaitez fusionner les autres :"
 
 #: ../root/work/merge.tt:4
 msgid ""
 "You are about to merge the following works into a single work. Please select"
 " the work that you would like the other works merged into:"
-msgstr "Vous êtes sur le point de fusionner les œuvres suivantes en une œuvre unique. Veuillez sélectionner l’œuvre dans laquelle vous voulez que les autres soient fusionnées :"
+msgstr "Vous êtes sur le point de fusionner les œuvres suivantes en une seule œuvre. Veuillez sélectionner l’œuvre dans laquelle vous voulez que les autres soient fusionnées :"
 
 #: ../root/artist/subscribers.tt:27 ../root/collection/subscribers.tt:27
 #: ../root/label/subscribers.tt:27 ../root/series/subscribers.tt:27
@@ -11118,7 +11118,7 @@ msgstr "terminé"
 #: ../root/relationship/linktype/form.tt:26
 #: ../root/relationship/linktype/tree.tt:12
 msgid "entity0 cardinality:"
-msgstr ""
+msgstr "cardinalité de l'entité0 :"
 
 #: ../root/doc/relationship_type.tt:35
 #: ../root/edit/details/add_relationship_type.tt:23
@@ -11126,7 +11126,7 @@ msgstr ""
 #: ../root/relationship/linktype/form.tt:31
 #: ../root/relationship/linktype/tree.tt:13
 msgid "entity1 cardinality:"
-msgstr ""
+msgstr "cardinalité de l'entité1 :"
 
 #: ../root/components/common-macros.tt:660 ../root/edit/details/macros.tt:28
 msgid "from {begin_date} until {end_date}"
@@ -11353,7 +11353,7 @@ msgstr "envoyer un courriel"
 #: ../root/components/common-macros.tt:141
 msgctxt "plural"
 msgid "series"
-msgstr ""
+msgstr "série"
 
 #: ../root/cdtoc/attach_list.tt:32 ../root/cdtoc/attach_list.tt:56
 msgid "show tracklist"
@@ -11465,7 +11465,7 @@ msgstr[1] "{artist} n'a aucune parution ayant {n} pistes."
 #: ../lib/MusicBrainz/Server/Entity/Relationship.pm:207
 #, perl-brace-format
 msgid "{attribute}: {value}"
-msgstr ""
+msgstr "{attribute} : {value}"
 
 #: ../root/components/relationships-table.tt:21
 #: ../root/instrument/relationships.tt:33
@@ -11726,7 +11726,7 @@ msgstr[1] "il y a {num} ans"
 
 #: ../root/scripts/text_strings.tt:188
 msgid "{num}. {relationship}"
-msgstr ""
+msgstr "{num}. {relationship}"
 
 #: ../root/release/edit_relationships.tt:24
 msgid "{n} recording selected"
@@ -11780,7 +11780,7 @@ msgstr "{type0}-{type1} types de relation"
 
 #: ../root/instrument/layout.tt:1
 msgid "{type} “{instrument}”"
-msgstr ""
+msgstr "{type} « {instrument} »"
 
 #: ../root/work/layout.tt:1
 msgid "{type} “{work}”"
@@ -12038,7 +12038,7 @@ msgstr "Notre serveur Redis semble être hors service. Certaines fonctions pourr
 
 #: ../lib/MusicBrainz/Server/Controller/Series.pm:122
 msgid "Series that have different entity types cannot be merged."
-msgstr ""
+msgstr "Les séries ayant des types d'entité différents ne peuvent pas être fusionnées."
 
 #: ../lib/MusicBrainz/Server/Controller/User.pm:252
 #, perl-brace-format
@@ -12062,7 +12062,7 @@ msgstr "Index invalide"
 msgid ""
 "You must be logged in to submit edits. {url|Log in} first, and then try "
 "submitting your edits again."
-msgstr ""
+msgstr "Vous devez être connecté pour envoyer des modifications. {url|Connectez-vous} d'abord et essayez ensuite d'envoyer vos modifications à nouveau."
 
 #: ../lib/MusicBrainz/Server/ControllerUtils/Delete.pm:25
 msgid ""
@@ -12285,19 +12285,19 @@ msgstr "Indiquer les durées de piste"
 
 #: ../lib/MusicBrainz/Server/Edit/Instrument/AddAnnotation.pm:11
 msgid "Add instrument annotation"
-msgstr ""
+msgstr "Ajouter une annotation d'instrument"
 
 #: ../lib/MusicBrainz/Server/Edit/Instrument/Create.pm:17
 msgid "Add instrument"
-msgstr ""
+msgstr "Ajouter un instrument"
 
 #: ../lib/MusicBrainz/Server/Edit/Instrument/Edit.pm:27
 msgid "Edit instrument"
-msgstr ""
+msgstr "Modifier l'instrument"
 
 #: ../lib/MusicBrainz/Server/Edit/Instrument/Merge.pm:11
 msgid "Merge instruments"
-msgstr ""
+msgstr "Fusionner les instruments"
 
 #: ../lib/MusicBrainz/Server/Edit/Label/AddAnnotation.pm:11
 msgid "Add label annotation"
@@ -12405,7 +12405,7 @@ msgstr "Enlever le type de relation"
 
 #: ../lib/MusicBrainz/Server/Edit/Relationship/Reorder.pm:22
 msgid "Reorder relationships"
-msgstr ""
+msgstr "Réorganiser les relations"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/AddCoverArt.pm:20
 msgid "Add cover art"
@@ -12465,19 +12465,19 @@ msgstr "Modifier le groupe de parution"
 
 #: ../lib/MusicBrainz/Server/Edit/Series/AddAnnotation.pm:11
 msgid "Add series annotation"
-msgstr ""
+msgstr "Ajouter une annotation de série"
 
 #: ../lib/MusicBrainz/Server/Edit/Series/Create.pm:20
 msgid "Add series"
-msgstr ""
+msgstr "Ajouter une série"
 
 #: ../lib/MusicBrainz/Server/Edit/Series/Delete.pm:12
 msgid "Remove series"
-msgstr ""
+msgstr "Enlever une série"
 
 #: ../lib/MusicBrainz/Server/Edit/Series/Edit.pm:24
 msgid "Edit series"
-msgstr ""
+msgstr "Modifier une série"
 
 #: ../lib/MusicBrainz/Server/Edit/Utils.pm:281
 msgid "Applied"
@@ -12848,7 +12848,7 @@ msgstr "La confirmation du mot de passe ne concorde pas avec le mot de passe"
 
 #: ../lib/MusicBrainz/Server/Form/User/Register.pm:45
 msgid "This username is reserved for internal use"
-msgstr ""
+msgstr "Ce nom d'utilisateur est réservé pour un usage interne"
 
 #: ../lib/MusicBrainz/Server/Form/User/Register.pm:49
 msgid "Please choose another username, this one is already taken"
