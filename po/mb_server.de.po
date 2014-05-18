@@ -38,8 +38,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-16 07:14-0700\n"
-"PO-Revision-Date: 2014-05-16 14:15+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2014-05-18 16:59+0000\n"
+"Last-Translator: Shepard\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -553,16 +553,16 @@ msgstr "Beispiel hinzufügen"
 
 #: ../root/instrument/create.tt:1 ../root/instrument/create.tt:3
 msgid "Add Instrument"
-msgstr ""
+msgstr "Instrument hinzufügen"
 
 #: ../root/admin/index.tt:10 ../root/layout/menu.tt:90
 msgctxt "button/menu"
 msgid "Add Instrument"
-msgstr ""
+msgstr "Instrument hinzufügen"
 
 #: ../root/instrument/add_alias.tt:1
 msgid "Add Instrument Alias"
-msgstr ""
+msgstr "Instrumentenalias hinzufügen"
 
 #: ../root/label/create.tt:1 ../root/label/create.tt:3
 msgid "Add Label"
@@ -624,16 +624,16 @@ msgstr "Veröffentlichungsgruppe hinzufügen"
 
 #: ../root/series/create.tt:1 ../root/series/create.tt:3
 msgid "Add Series"
-msgstr ""
+msgstr "Serie hinzufügen"
 
 #: ../root/layout/menu.tt:238
 msgctxt "button/menu"
 msgid "Add Series"
-msgstr ""
+msgstr "Serie hinzufügen"
 
 #: ../root/series/add_alias.tt:1
 msgid "Add Series Alias"
-msgstr ""
+msgstr "Serienalias hinzufügen"
 
 #: ../root/layout/menu.tt:229
 msgctxt "button/menu"
@@ -718,7 +718,7 @@ msgstr "Eine neue Veröffentlichungsgruppe hinzufügen"
 
 #: ../root/scripts/text_strings.tt:136
 msgid "Add a new series"
-msgstr ""
+msgstr "Eine neue Serie hinzufügen"
 
 #: ../root/scripts/text_strings.tt:137
 msgid "Add a new work"
@@ -738,20 +738,20 @@ msgstr "Weiteres hinzufügen"
 
 #: ../root/scripts/text_strings.tt:176
 msgid "Add another area"
-msgstr ""
+msgstr "Noch ein Gebiet hinzufügen"
 
 #: ../root/scripts/text_strings.tt:177
 msgid "Add another artist"
-msgstr ""
+msgstr "Noch einen Künstler hinzufügen"
 
 #: ../root/components/relationship-editor.tt:117
 #: ../root/scripts/text_strings.tt:178
 msgid "Add another instrument"
-msgstr ""
+msgstr "Noch ein Instrument hinzufügen"
 
 #: ../root/scripts/text_strings.tt:179
 msgid "Add another label"
-msgstr ""
+msgstr "Noch ein Label hinzufügen"
 
 #: ../root/components/forms.tt:398
 msgid "Add another link:"
@@ -763,23 +763,23 @@ msgstr "Weiteres Medium hinzufügen"
 
 #: ../root/scripts/text_strings.tt:180
 msgid "Add another place"
-msgstr ""
+msgstr "Noch eine Örtlichkeit hinzufügen"
 
 #: ../root/scripts/text_strings.tt:181
 msgid "Add another recording"
-msgstr ""
+msgstr "Noch eine Aufnahme hinzufügen"
 
 #: ../root/scripts/text_strings.tt:182
 msgid "Add another release"
-msgstr ""
+msgstr "Noch eine Veröffentlichung hinzufügen"
 
 #: ../root/scripts/text_strings.tt:183
 msgid "Add another release group"
-msgstr ""
+msgstr "Noch eine Veröffentlichungsgruppe hinzufügen"
 
 #: ../root/scripts/text_strings.tt:184
 msgid "Add another series"
-msgstr ""
+msgstr "Noch eine Serie hinzufügen"
 
 #: ../root/scripts/text_strings.tt:44
 msgid "Add another track"
@@ -787,7 +787,7 @@ msgstr "Weiteren Titel hinzufügen"
 
 #: ../root/scripts/text_strings.tt:185
 msgid "Add another work"
-msgstr ""
+msgstr "Noch ein Werk hinzufügen"
 
 #: ../root/area/add_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Area/AddAlias.pm:11
@@ -814,7 +814,7 @@ msgstr "Bemerkung hinzufügen"
 #: ../root/instrument/add_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Instrument/AddAlias.pm:11
 msgid "Add instrument alias"
-msgstr ""
+msgstr "Instrumentenalias hinzufügen"
 
 #: ../root/label/add_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Label/AddAlias.pm:11
@@ -879,7 +879,7 @@ msgstr "Ausgewählte Werke zum Vereinen hinzufügen"
 #: ../root/series/add_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Series/AddAlias.pm:11
 msgid "Add series alias"
-msgstr ""
+msgstr "Serienalias hinzufügen"
 
 #: ../root/release/sidebar.tt:136
 msgid "Add to a new collection"
@@ -1074,7 +1074,7 @@ msgstr "Andere Benutzer dürfen diese Sammlung sehen"
 
 #: ../root/edit/details/edit_relationship_type.tt:46
 msgid "Allows dates:"
-msgstr ""
+msgstr "Kann Daten haben:"
 
 #: ../root/components/common-macros.tt:647
 msgid "Already expired"
@@ -1151,7 +1151,7 @@ msgstr "Beim Laden dieser Bearbeitung ist ein Fehler aufgetreten"
 
 #: ../root/edit/index.tt:16
 msgid "An error occured while loading this edit."
-msgstr ""
+msgstr "Beim Laden dieser Bearbeitung ist ein Fehler aufgetreten."
 
 #: ../root/release/edit/tracklist.tt:76
 msgid "An error occured: "
@@ -1981,7 +1981,7 @@ msgstr "Veröffentlichungen durchstöbern"
 
 #: ../root/browse/index.tt:13
 msgid "Browse series"
-msgstr ""
+msgstr "Serien durchstöbern"
 
 #: ../root/browse/index.tt:10
 msgid "Browse works"
@@ -2490,7 +2490,7 @@ msgstr "Haltung zum Entfernen von Daten"
 
 #: ../root/edit/data.tt:10
 msgid "Data:"
-msgstr ""
+msgstr "Daten:"
 
 #: ../root/annotation/history.tt:9 ../root/cdtoc/attach_artist_releases.tt:16
 #: ../root/cdtoc/attach_filter_release.tt:30 ../root/collection/index.tt:21
@@ -2562,7 +2562,7 @@ msgstr "{e} löschen"
 
 #: ../root/user/profile.tt:50
 msgid "Deleted User"
-msgstr ""
+msgstr "Gelöschter Benutzer"
 
 #: ../root/edit/details/edit_relationship_type.tt:40
 msgid "Deprecated:"
@@ -2907,11 +2907,11 @@ msgstr "Cover-Art bearbeiten"
 
 #: ../root/instrument/edit.tt:1
 msgid "Edit Instrument"
-msgstr ""
+msgstr "Instrument bearbeiten"
 
 #: ../root/instrument/edit_alias.tt:1
 msgid "Edit Instrument Alias"
-msgstr ""
+msgstr "Instrumentenalias bearbeiten"
 
 #: ../root/label/edit.tt:1
 msgid "Edit Label"
@@ -2984,11 +2984,11 @@ msgstr "Anmerkungen zur Veröffentlichungsgruppe bearbeiten"
 
 #: ../root/series/edit.tt:1
 msgid "Edit Series"
-msgstr ""
+msgstr "Serie bearbeiten"
 
 #: ../root/series/edit_alias.tt:1
 msgid "Edit Series Alias"
-msgstr ""
+msgstr "Serienalias bearbeiten"
 
 #: ../root/doc/edit_types.tt:1 ../root/doc/edit_types.tt:3
 #: ../root/doc/edit_type.tt:35 ../root/edit/info.tt:67
@@ -3045,16 +3045,16 @@ msgstr "Bearbeitung von {editor}"
 
 #: ../root/edit/data.tt:1 ../root/edit/data.tt:3
 msgid "Edit data for edit #{id}"
-msgstr ""
+msgstr "Bearbeitungsdaten für Bearbeitung Nr. {id}"
 
 #: ../root/instrument/edit_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Instrument/EditAlias.pm:12
 msgid "Edit instrument alias"
-msgstr ""
+msgstr "Instrumentenalias bearbeiten"
 
 #: ../root/instrument/edit_annotation.tt:2
 msgid "Edit instrument annotation"
-msgstr ""
+msgstr "Anmerkungen zum Instrument bearbeiten"
 
 #: ../root/label/edit_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Label/EditAlias.pm:12
@@ -3116,11 +3116,11 @@ msgstr "Anmerkungen zur Veröffentlichungsgruppe bearbeiten"
 #: ../root/series/edit_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Series/EditAlias.pm:12
 msgid "Edit series alias"
-msgstr ""
+msgstr "Serienalias bearbeiten"
 
 #: ../root/series/edit_annotation.tt:2
 msgid "Edit series annotation"
-msgstr ""
+msgstr "Anmerkungen zur Serie bearbeiten"
 
 #: ../root/admin/edit_user.tt:42
 msgid "Edit user"
@@ -3225,7 +3225,7 @@ msgstr "Bearbeitungen für Deine abonnierten Objekte"
 
 #: ../root/instrument/edits.tt:3
 msgid "Edits for {instrument}"
-msgstr ""
+msgstr "Bearbeitungen für {instrument}"
 
 #: ../root/label/edits.tt:3
 msgid "Edits for {label}"
@@ -3249,7 +3249,7 @@ msgstr "Bearbeitungen für {place}"
 
 #: ../root/series/edits.tt:3
 msgid "Edits for {series}"
-msgstr ""
+msgstr "Bearbeitungen für {series}"
 
 #: ../root/release/edits.tt:3 ../root/release_group/edits.tt:3
 #: ../root/work/edits.tt:3
@@ -3264,7 +3264,7 @@ msgstr "Bearbeitungen an „{name}“"
 
 #: ../root/main/500.tt:48
 msgid "Edits loaded for the page:"
-msgstr ""
+msgstr "Bearbeitungen geladen für die Seite:"
 
 #: ../root/elections/not_found.tt:1 ../root/elections/not_found.tt:2
 msgid "Election Not Found"
@@ -7278,7 +7278,7 @@ msgstr "Bearbeitungen suchen"
 
 #: ../root/edit/details/edit_url.tt:43
 msgid "Search for the target URL."
-msgstr ""
+msgstr "Suche nach der Ziel-URL."
 
 #: ../root/search/form.tt:51
 msgid ""
@@ -8698,8 +8698,8 @@ msgstr "Dieses Attribut ist erforderlich."
 #: ../root/edit/details/edit_url.tt:31
 msgid "This change affects {num} relationship."
 msgid_plural "This change affects {num} relationships."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Diese Änderung betrifft {num} Beziehung."
+msgstr[1] "Diese Änderung betrifft {num} Beziehungen."
 
 #: ../root/collection/tags.tt:2
 msgid "This collection has no tags."
@@ -8759,7 +8759,7 @@ msgstr "Diese Bearbeitung war eine „Veröffentlichungen zusammenführen (Diver
 
 #: ../root/edit/details/edit_url.tt:41
 msgid "This edit was a merge."
-msgstr ""
+msgstr "Diese Bearbeitung war eine Zusammenführung."
 
 #: ../root/components/common-macros.tt:608
 msgid "This edit was cancelled."
@@ -10360,15 +10360,15 @@ msgstr "Wir haben Medien gefunden (unten aufgelistet), die auf die von Dir angef
 
 #: ../root/artist/edit_form.tt:15
 msgid "We found the following artists with very similar names:"
-msgstr ""
+msgstr "Wir haben die folgenden Künstler mit sehr ähnlichen Namen gefunden:"
 
 #: ../root/label/edit_form.tt:15
 msgid "We found the following labels with very similar names:"
-msgstr ""
+msgstr "Wir haben die folgenden Labels mit sehr ähnlichen Namen gefunden:"
 
 #: ../root/place/edit_form.tt:15
 msgid "We found the following places with very similar names:"
-msgstr ""
+msgstr "Wir haben die folgenden Örtlichkeiten mit sehr ähnlichen Namen gefunden:"
 
 #: ../root/series/edit_form.tt:15
 msgid "We found the following series with very similar names:"
@@ -10658,15 +10658,15 @@ msgstr "Ja, ich bin sicher"
 
 #: ../root/artist/edit_form.tt:22
 msgid "Yes, I still want to create a new artist."
-msgstr ""
+msgstr "Ja, ich will trotzdem einen neuen Künstler erstellen."
 
 #: ../root/label/edit_form.tt:22
 msgid "Yes, I still want to create a new label."
-msgstr ""
+msgstr "Ja, ich will trotzdem ein neues Label erstellen."
 
 #: ../root/place/edit_form.tt:22
 msgid "Yes, I still want to create a new place."
-msgstr ""
+msgstr "Ja, ich will trotzdem eine neue Örtlichkeit erstellen."
 
 #: ../root/series/edit_form.tt:22
 msgid "Yes, I still want to create a new series."
@@ -10968,7 +10968,7 @@ msgstr "Du wirst für weitere {days} Tage nicht belästigt werden."
 
 #: ../root/alias/delete.tt:1
 msgid "You're removing the alias <em>{alias}</em>."
-msgstr ""
+msgstr "Du entfernst den Alias <em>{alias}</em>."
 
 #: ../root/user/email_sent.tt:5
 msgid ""
@@ -11152,7 +11152,7 @@ msgstr "vom {date} bis heute"
 
 #: ../root/main/500.tt:51
 msgid "fully loaded"
-msgstr ""
+msgstr "vollständig geladen"
 
 #: ../root/components/relationship-editor.tt:67
 #: ../root/components/relationship-editor.tt:93
@@ -11320,7 +11320,7 @@ msgstr "zufällig"
 
 #: ../root/main/500.tt:51
 msgid "raw edit data"
-msgstr ""
+msgstr "rohe Bearbeitungsdaten"
 
 #: ../root/release/edit/recordings.tt:25
 msgid "recording"
