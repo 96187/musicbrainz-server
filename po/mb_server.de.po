@@ -38,8 +38,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-20 12:01-0700\n"
-"PO-Revision-Date: 2014-05-20 19:02+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2014-05-23 19:57+0000\n"
+"Last-Translator: Shepard\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -389,7 +389,7 @@ msgid ""
 "<strong>Warning:</strong> Some of the recordings you're merging have "
 "different ISRCs. Please make sure they are indeed the same recordings and "
 "you wish to continue with the merge."
-msgstr "<strong>Achtung:</strong> Einige der Aufnahmen, die Du zusammenführst, haben unterschiedliche ISRCs. Bitte stelle sicher, dass es sich tatsächlich um die gleichen Aufnahmen handelt und dass Du die Zusammenführung durchführen willst."
+msgstr "<strong>Achtung:</strong> Einige der Aufnahmen, die Du vereinst, haben unterschiedliche ISRCs. Bitte stelle sicher, dass es sich tatsächlich um die gleichen Aufnahmen handelt und dass Du die Vereinigung durchführen willst."
 
 #: ../root/components/common-macros.tt:743 ../root/recording/edit.tt:10
 msgid "<strong>Warning</strong>:"
@@ -434,7 +434,7 @@ msgstr "Ein Veröffentlichungstitel ist erforderlich."
 #: ../root/search/index.tt:10
 msgid ""
 "A simple list of all entities is available from our {url|browse} pages."
-msgstr ""
+msgstr "Eine einfache Liste aller Objekte steht auf unseren {url|Durchstöbern}-Seiten zur Verfügung."
 
 #: ../root/scripts/text_strings.tt:156
 msgid "A tracklist is required."
@@ -1950,7 +1950,7 @@ msgstr "Veröffentlichungen durchstöbern"
 
 #: ../root/browse/entity.tt:1
 msgid "Browse Series"
-msgstr ""
+msgstr "Serien durchstöbern"
 
 #: ../root/browse/entity.tt:1
 msgid "Browse Works"
@@ -3619,7 +3619,7 @@ msgstr "Weitere Informationen zum Kontolöschprozess findest Du in der {uri|Kont
 msgid ""
 "For instructions on how to fix them, please see the documentation about "
 "{howto|how to merge releases}."
-msgstr "Hinweise, wie man das korrigiert, findest Du in der Dokumentation über das {howto|Zusammenführen von Veröffentlichungen}."
+msgstr "Hinweise, wie man das korrigiert, findest Du in der Dokumentation über das {howto|Vereinen von Veröffentlichungen}."
 
 #: ../root/artist/edit_form.tt:4 ../root/label/edit_form.tt:4
 #: ../root/recording/edit_form.tt:4 ../root/release_group/edit_form.tt:4
@@ -3627,11 +3627,11 @@ msgstr "Hinweise, wie man das korrigiert, findest Du in der Dokumentation über 
 msgid ""
 "For more information, check the {doc_doc|documentation} and "
 "{doc_styleguide|style guidelines}."
-msgstr ""
+msgstr "Weitere Informationen findest Du in der {doc_doc|Dokumentation} und den {doc_styleguide|Stilrichtlinien}."
 
 #: ../root/place/edit_form.tt:4 ../root/work/edit_form.tt:5
 msgid "For more information, check the {doc_doc|documentation}."
-msgstr ""
+msgstr "Weitere Informationen findest Du in der {doc_doc|Dokumentation}."
 
 #: ../root/edit/info.tt:63
 msgid "For more information:"
@@ -4725,7 +4725,7 @@ msgid ""
 "Make sure all mediums in the releases being merged are in the correct "
 "position. For example, to merge a medium into medium 2 of a release, it will"
 " need to be set as medium 2 of the release being merged."
-msgstr "Überprüfe bitte, dass alle Medien in der Veröffentlichung in der richtigen Position vereinigt werden. Wenn zum Beispiel ein Medium mit Medium 2 einer Veröffentlichung vereinigt werden soll, muss es bei der zur vereinigenden Veröffentlichung als 2. Medium gesetzt sein."
+msgstr "Überprüfe bitte, dass alle Medien in der Veröffentlichung in der richtigen Position vereint werden. Wenn zum Beispiel ein Medium mit Medium 2 einer Veröffentlichung vereint werden soll, muss es bei der zur vereinenden Veröffentlichung als 2. Medium gesetzt sein."
 
 #: ../root/release/edit/tracklist.tt:141
 msgid "Manual entry"
@@ -4806,7 +4806,7 @@ msgstr "Vereinen"
 
 #: ../root/area/merge.tt:1 ../root/area/merge.tt:3
 msgid "Merge Areas"
-msgstr "Gebiete vereinigen"
+msgstr "Gebiete vereinen"
 
 #: ../root/artist/merge.tt:1 ../root/artist/merge.tt:3
 msgid "Merge Artists"
@@ -4850,7 +4850,7 @@ msgstr "Werke vereinen"
 
 #: ../root/area/layout.tt:57
 msgid "Merge area"
-msgstr "Gebiet vereinigen"
+msgstr "Gebiet vereinen"
 
 #: ../root/artist/layout.tt:109
 msgid "Merge artist"
@@ -4905,7 +4905,7 @@ msgstr "Serie vereinen"
 
 #: ../root/edit/details/merge_releases.tt:133 ../root/release/merge.tt:55
 msgid "Merge strategy:"
-msgstr "Vereinigungsstrategie:"
+msgstr "Vereinigungsverfahren:"
 
 #: ../root/work/layout.tt:44
 msgid "Merge work"
@@ -5947,7 +5947,7 @@ msgid ""
 "Please make sure you're not removing a legitimate {doc_standalone|standalone"
 " recording}. If this recording is a duplicate of another, please "
 "{doc_merge|merge them instead}."
-msgstr ""
+msgstr "Stelle bitte sicher, dass Du keine gültige {doc_standalone|alleinstehende Aufnahme} entfernst. Wenn diese Aufnahme ein Duplikat einer anderen ist, {doc_merge|vereine die beiden stattdessen}."
 
 #: ../root/layout/merge-helper.tt:24
 msgid ""
@@ -7532,7 +7532,7 @@ msgstr "Zeige alle Veröffentlichungsgruppen dieses Künstlers. {show_official|N
 msgid ""
 "Showing all release groups by this artist. {show_va|Show various artists "
 "release groups instead}."
-msgstr ""
+msgstr "Zeige alle Veröffentlichungsgruppen dieses Künstlers. {show_all|Veröffentlichungsgruppen diverser Künstler anzeigen}."
 
 #: ../root/artist/index.tt:70
 msgid "Showing all release groups for various artists."
@@ -8378,7 +8378,7 @@ msgstr "Die Künstler der Aufnahmen unterscheiden sich! Vielleicht wolltest Du d
 msgid ""
 "The recordings that will be merged if you continue with the current merge "
 "strategy include the following, whose artists differ:"
-msgstr "Die Aufnahmen, die zusammengeführt werden, wenn Du mit dem aktuellen Zusammenführ-Verfahren fortfährst, enthalten die folgenden, deren Künstler sich unterscheiden:"
+msgstr "Die Aufnahmen, die vereint werden, wenn Du mit dem aktuellen Vereinigungsverfahren fortfährst, enthalten die folgenden, deren Künstler sich unterscheiden:"
 
 #: ../root/relationship/linktype/in_use.tt:4
 msgid ""
@@ -8733,7 +8733,7 @@ msgstr "Diese Bearbeitung führt Änderungen an den Titellängen durch, die sich
 msgid ""
 "This edit was a \"Merge Releases (Various Artists)\" edit which additionally"
 " set the release artist to Various Artists."
-msgstr "Diese Bearbeitung war eine „Veröffentlichungen zusammenführen (Diverse Künstler)“ Bearbeitung, die zusätzlich den Veröffentlichungskünstler auf Diverse Künstler gesetzt hat."
+msgstr "Diese Bearbeitung war eine „Veröffentlichungen vereinen (Diverse Künstler)“ Bearbeitung, die zusätzlich den Veröffentlichungskünstler auf Diverse Künstler gesetzt hat."
 
 #: ../root/edit/details/edit_url.tt:41
 msgid "This edit was a merge."
@@ -8774,7 +8774,7 @@ msgid ""
 "This form allows you to split {artist} into separate artists. When the edit "
 "is accepted, existing artist credits will be updated, and collaboration "
 "relationships will be removed"
-msgstr "Über dieses Formular kannst Du {artist} in mehrere Künstler aufteilen. Wenn die Bearbeitung angenommen wird, werden bestehende Künstlernennungen aktualisiert und Zusammenarbeit-Beziehungen werden entfernt"
+msgstr "Über dieses Formular kannst Du {artist} in mehrere Künstler aufteilen. Wenn die Bearbeitung angenommen wird, werden bestehende Künstlernennungen aktualisiert und Zusammenarbeitsbeziehungen werden entfernt"
 
 #: ../root/scripts/text_strings.tt:70
 msgid "This group has dissolved."
@@ -8879,7 +8879,7 @@ msgid ""
 "This merge strategy will merge all mediums together into a single set of "
 "mediums. Recordings between mediums will also be merged, into the recordings"
 " used on the target mediums."
-msgstr "Dieses Zusammenführ-Verfahren wird alle Medien zu einem einzigen Satz an Medien zusammenführen. Aufnahmen zwischen den Medien werden auch zusammengeführt und gehen in die Aufnahmen auf, die im Zielmedium benutzt werden."
+msgstr "Dieses Vereinigungsverfahren wird alle Medien zu einem einzigen Satz an Medien vereinen. Aufnahmen zwischen den Medien werden auch vereint und gehen in die Aufnahmen auf, die im Zielmedium benutzt werden."
 
 #: ../root/scripts/text_strings.tt:140
 msgid ""
@@ -9041,7 +9041,7 @@ msgid ""
 "they're different, add {disambiguation_comment|disambiguation comments} to "
 "them (and once a group of similarly named artists have disambiguation "
 "comments, they will stop appearing here)."
-msgstr "Dieser Report hat das Ziel, Künstler mit sehr ähnlichen Namen zu identifizieren. Wenn es sich bei zwei Künstlern eigentlich um den gleichen handelt, führe sie bitte zusammen (denk daran, {how_to_write_edit_notes|eine Bearbeitungsbemerkung zu schreiben} und Deinen Nachweis mit anzugeben). Sind sie jedoch unterschiedlich, so gib ihnen {disambiguation_comment|Unterscheidungskommentare} (und sobald eine Gruppe von ähnlich benannten Künstlern Unterscheidungskommentare haben, werden sie hier nicht mehr auftauchen)."
+msgstr "Dieser Report hat das Ziel, Künstler mit sehr ähnlichen Namen zu identifizieren. Wenn es sich bei zwei Künstlern eigentlich um den gleichen handelt, vereine sie bitte (denk daran, {how_to_write_edit_notes|eine Bearbeitungsbemerkung zu schreiben} und Deinen Nachweis mit anzugeben). Sind sie jedoch unterschiedlich, so gib ihnen {disambiguation_comment|Unterscheidungskommentare} (und sobald eine Gruppe von ähnlich benannten Künstlern Unterscheidungskommentare haben, werden sie hier nicht mehr auftauchen)."
 
 #: ../root/report/tracks_named_with_sequence.tt:6
 msgid ""
@@ -9130,7 +9130,7 @@ msgid ""
 "collaboration, it should be split if possible (see {how_to_split_artists|How"
 " to Split Artists}). If it is a collaboration with its own name and can't be"
 " split, collaboration relationships should be added to it."
-msgstr "Dieser Report listet alle Künstler auf, die „&“ im Namen enthalten, aber keine Mitglied- oder Zusammenarbeit-Beziehungen haben. Wenn der Künstler überlicherweise als eine richtige Gruppe angesehen wird, sollten Mitglied-Beziehungen hinzugefügt werden. Wenn es sich um eine kurzzeitige Zusammenarbeit handelt, sollte er nach Möglichkeit aufgeteilt werden (see {how_to_split_artists|Wie man Künstler aufteilt}). Wenn es eine Zusammenarbeit mit eigenem Namen ist und nicht aufgeteilt werden kann, sollten Zusammenarbeit-Beziehungen hinzugefügt werden."
+msgstr "Dieser Report listet alle Künstler auf, die „&“ im Namen enthalten, aber keine Mitglieds- oder Zusammenarbeitsbeziehungen haben. Wenn der Künstler überlicherweise als eine richtige Gruppe angesehen wird, sollten Mitgliedsbeziehungen hinzugefügt werden. Wenn es sich um eine kurzzeitige Zusammenarbeit handelt, sollte er nach Möglichkeit aufgeteilt werden (see {how_to_split_artists|Wie man Künstler aufteilt}). Wenn es eine Zusammenarbeit mit eigenem Namen ist und nicht aufgeteilt werden kann, sollten Zusammenarbeitsbeziehungen hinzugefügt werden."
 
 #: ../root/report/collaboration_relationships.tt:4
 msgid ""
@@ -9138,7 +9138,7 @@ msgid ""
 "relationships. If the collaboration has its own independent name, do "
 "nothing. If it is in a format like \"X with Y\" or \"X & Y\", you should "
 "probably split it. See {how_to_split_artists|How to Split Artists}."
-msgstr "Dieser Report listet Künstler auf, die Zusammenarbeit-Beziehungen haben, aber keine URL-Beziehungen. Wenn diese Zusammenarbeit ihren eigenen unabhängigen Namen hat, tu nichts weiter. Wenn der Name in der Form „X mit Y“ oder „X & Y“ ist, solltest Du ihn wahrscheinlich aufteilen. Siehe {how_to_split_artists|Wie man Künstler aufteilt}."
+msgstr "Dieser Report listet Künstler auf, die Zusammenarbeitsbeziehungen haben, aber keine URL-Beziehungen. Wenn diese Zusammenarbeit ihren eigenen unabhängigen Namen hat, tu nichts weiter. Wenn der Name in der Form „X mit Y“ oder „X & Y“ ist, solltest Du ihn wahrscheinlich aufteilen. Siehe {how_to_split_artists|Wie man Künstler aufteilt}."
 
 #: ../root/report/duplicate_relationships_artists.tt:6
 msgid ""
@@ -9237,7 +9237,7 @@ msgid ""
 "recording, the ISRCs are probably correct and should be left alone. If the "
 "same ISRC appears on two unrelated recordings on the same release, this is "
 "usually means there was an error when reading the disc."
-msgstr "Dieser Report listet {isrc|ISRCs} auf, die mit mehr als einer Aufnahme verbunden sind. Wenn die Aufnahmen sich gleichen, bedeutet das üblicherweise, dass sie zusammengeführt werden sollten (ISRCs können falsch zugewiesen sein, also sollte man trotzdem vorsichtig sein, dass die Aufnahmen wirklich gleich sind). Wenn die Aufnahmen Teil einer größeren Aufnahme sind, sind die ISRCs wahrscheinlich richtig und sollten unberührt bleiben. Wenn der gleiche ISRC auf zwei völlig unterschiedlichen Aufnahmen auf der gleichen Veröffentlichung auftaucht, bedeutet das üblicherweise, dass es beim Einlesen der CD einen Fehler gab."
+msgstr "Dieser Report listet {isrc|ISRCs} auf, die mit mehr als einer Aufnahme verbunden sind. Wenn die Aufnahmen sich gleichen, bedeutet das üblicherweise, dass sie vereint werden sollten (ISRCs können falsch zugewiesen sein, also sollte man trotzdem vorsichtig sein, dass die Aufnahmen wirklich gleich sind). Wenn die Aufnahmen Teil einer größeren Aufnahme sind, sind die ISRCs wahrscheinlich richtig und sollten unberührt bleiben. Wenn der gleiche ISRC auf zwei völlig unterschiedlichen Aufnahmen auf der gleichen Veröffentlichung auftaucht, bedeutet das üblicherweise, dass es beim Einlesen der CD einen Fehler gab."
 
 #: ../root/report/iswc_with_many_works.tt:12
 msgid ""
@@ -9254,7 +9254,7 @@ msgid ""
 " barcode, you can also search Amazon for it and see which ASIN matches. You "
 "might also find some ASINs linked to several discs of a multi-disc release: "
 "just merge those (see {how_to_merge_releases|How to Merge Releases})."
-msgstr "Dieser Report zeigt Amazon-URLs, die mit mehreren Veröffentlichungen verbunden sind. In den meisten Fällen sollten Amazon ASINs 1:1 mit MusicBrainz-Veröffentlichungen korrespondieren, daher sollte nur einer der Links richtig sein. Überprüfe einfach, welche MusicBrainz-Veröffentlichung auf die Veröffentlichung in Amazon passt (indem Du das Format, die Titelliste etc. vergleichst). Wenn die Veröffentlichung einen Strichcode hat, kannst Du Amazon auch danach durchsuchen und herausfinden, welche ASIN passt. Eventuell findest Du auch ASINs, die mit mehren CDs einer Multi-CD-Veröffentlichung verbunden sind: diese kannst Du einfach zu einer Veröffentlichung zusammenführen (siehe {how_to_merge_releases|Wie man Veröffentlichungen zusammenführt})."
+msgstr "Dieser Report zeigt Amazon-URLs, die mit mehreren Veröffentlichungen verbunden sind. In den meisten Fällen sollten Amazon ASINs 1:1 mit MusicBrainz-Veröffentlichungen korrespondieren, daher sollte nur einer der Links richtig sein. Überprüfe einfach, welche MusicBrainz-Veröffentlichung auf die Veröffentlichung in Amazon passt (indem Du das Format, die Titelliste etc. vergleichst). Wenn die Veröffentlichung einen Strichcode hat, kannst Du Amazon auch danach durchsuchen und herausfinden, welche ASIN passt. Eventuell findest Du auch ASINs, die mit mehren CDs einer Multi-CD-Veröffentlichung verbunden sind: diese kannst Du einfach zu einer Veröffentlichung vereinen (siehe {how_to_merge_releases|Wie man Veröffentlichungen vereint})."
 
 #: ../root/report/discogs_links_with_multiple_artists.tt:6
 msgid "This report shows Discogs URLs which are linked to multiple artists."
@@ -9278,7 +9278,7 @@ msgid ""
 "etc.). You might also find some Discogs URLs linked to several discs of a "
 "multi-disc release: just merge those (see {how_to_merge_releases|How to "
 "Merge Releases})."
-msgstr "Dieser Report zeigt Discogs-URLs, die mit mehreren Veröffentlichungen verbunden sind. In den meisten Fällen sollten Discogs-Veröffentlichungen 1:1 mit MusicBrainz-Veröffentlichungen korrespondieren, daher sollte nur einer der Links richtig sein. Überprüfe einfach, welche MusicBrainz-Veröffentlichung mit der Veröffentlichung in Discogs übereinstimmt (indem Du Dir das Format, die Titelliste, das Veröffentlichungsland etc. anguckst). Du wirst auch Discogs-URLs finden, die mit mehreren CDs einer Multi-CD-Veröffentlichung verbunden sind. Solche kannst Du einfach zu einer Veröffentlichung zusammenführen (siehe {how_to_merge_releases|Wie man Veröffentlichungen zusammenführt})."
+msgstr "Dieser Report zeigt Discogs-URLs, die mit mehreren Veröffentlichungen verbunden sind. In den meisten Fällen sollten Discogs-Veröffentlichungen 1:1 mit MusicBrainz-Veröffentlichungen korrespondieren, daher sollte nur einer der Links richtig sein. Überprüfe einfach, welche MusicBrainz-Veröffentlichung mit der Veröffentlichung in Discogs übereinstimmt (indem Du Dir das Format, die Titelliste, das Veröffentlichungsland etc. anguckst). Du wirst auch Discogs-URLs finden, die mit mehreren CDs einer Multi-CD-Veröffentlichung verbunden sind. Solche kannst Du einfach zu einer Veröffentlichung vereinen (siehe {how_to_merge_releases|Wie man Veröffentlichungen vereint})."
 
 #: ../root/report/recordings_with_earliest_release_relationships.tt:6
 msgid ""
@@ -9287,7 +9287,7 @@ msgid ""
 " they're not, the relationship should be removed. Please, do not merge "
 "recordings blindly just because the lengths fit, and do not merge recordings"
 " with very different times!"
-msgstr "Dieser Report zeigt Aufnahmen, die noch die veraltete „früheste Veröffentlichung“-Beziehung benutzen. Sie sollten zusammengeführt werden, wenn es sich wirklich um die gleiche Aufnahme handelt; wenn sie nicht gleich sind, sollte die Beziehung entfernt werden. Bitte führe Aufnahmen nicht blind zusammen, nur weil die Längen gleich sind, und führe nicht Aufnahmen mit sehr unterschiedlichen Längen zusammen!"
+msgstr "Dieser Report zeigt Aufnahmen, die noch die veraltete „früheste Veröffentlichung“-Beziehung benutzen. Sie sollten vereint werden, wenn es sich wirklich um die gleiche Aufnahme handelt; wenn sie nicht gleich sind, sollte die Beziehung entfernt werden. Bitte vereine Aufnahmen nicht blind, nur weil die Längen gleich sind, und vereine nicht Aufnahmen mit sehr unterschiedlichen Längen!"
 
 #: ../root/report/recordings_with_varying_track_lengths.tt:6
 msgid ""
@@ -9321,7 +9321,7 @@ msgid ""
 "them. If the releases are discs linked with \"part of set\" relationships, "
 "you might want to merge them too into one multi-disc release (see "
 "{how_to_merge_releases|How to Merge Releases})."
-msgstr "Dieser Report zeigt Veröffentlichungsgruppen mit Veröffentlichungen, die mit Veröffentlichungen in unterschiedlichen Veröffentlichungsgruppen durch Teil-eines-Sets- oder Transliterationsbeziehungen verlinkt sind. Wenn hier ein paar von Veröffentlichungsgruppen aufgelistet ist, sollten sie wahrscheinlich zusammengeführt werden. Wenn die Veröffentlichungen einzelne Medien darstellen, die mit „Teil eines Sets“-Beziehungen verbunden sind, solltest Du sie wahrscheinlich als Veröffentlichungen mit mehreren Medien zusammenführen (siehe {how_to_merge_releases|Wie man Veröffentlichungen zusammenführt})."
+msgstr "Dieser Report zeigt Veröffentlichungsgruppen mit Veröffentlichungen, die mit Veröffentlichungen in unterschiedlichen Veröffentlichungsgruppen durch Teil-eines-Sets- oder Transliterationsbeziehungen verlinkt sind. Wenn hier ein paar von Veröffentlichungsgruppen aufgelistet ist, sollten sie wahrscheinlich vereint werden. Wenn die Veröffentlichungen einzelne Medien darstellen, die mit „Teil eines Sets“-Beziehungen verbunden sind, solltest Du sie wahrscheinlich als Veröffentlichungen mit mehreren Medien vereinen (siehe {how_to_merge_releases|Wie man Veröffentlichungen vereint})."
 
 #: ../root/report/single_medium_releases_with_medium_titles.tt:6
 msgid ""
@@ -9387,7 +9387,7 @@ msgid ""
 " releases}. If the releases are not really part of a set (for example, if "
 "they are independently-released volumes in a series) just remove the "
 "relationship."
-msgstr "Dieser Report zeigt Veröffentlichungen, die immer noch die veraltete „Teil eines Sets“-Beziehung benutzen und wahrscheinlich zusammengeführt werden sollten. Anweisungen, wie diese Veröffentlichungen korrigiert werden können, findest Du in der Dokumentation unter {how_to_merge_releases|Wie man Veröffentlichungen zusammenführt}. Wenn die Veröffentlichungen nicht wirklich Teil eines Sets sind (zum Beispiel, wenn sie unabhängig voneinander veröffentlichte Volumes einer Serie sind), entferne einfach die Beziehung."
+msgstr "Dieser Report zeigt Veröffentlichungen, die immer noch die veraltete „Teil eines Sets“-Beziehung benutzen und wahrscheinlich vereint werden sollten. Anweisungen, wie diese Veröffentlichungen korrigiert werden können, findest Du in der Dokumentation unter {how_to_merge_releases|Wie man Veröffentlichungen vereint}. Wenn die Veröffentlichungen nicht wirklich Teil eines Sets sind (zum Beispiel, wenn sie unabhängig voneinander veröffentlichte Volumes einer Serie sind), entferne einfach die Beziehung."
 
 #: ../root/report/some_formats_unset.tt:6
 msgid ""
@@ -10671,7 +10671,7 @@ msgstr "Du bist im Begriff eine Bearbeitung einzugeben, die die Längen von Tite
 msgid ""
 "You are about to merge the following areas into a single area. Please select"
 " the area which you would like other areas to be merged into:"
-msgstr "Du bist im Begriff, die folgenden Gebiete zu einem einzigen Gebiet zu vereinigen. Bitte wähle das Gebiet, in das du die andere Gebiete aufgehen lassen willst:"
+msgstr "Du bist im Begriff, die folgenden Gebiete zu einem einzigen Gebiet zu vereinen. Bitte wähle das Gebiet, in das du die andere Gebiete aufgehen lassen willst:"
 
 #: ../root/artist/merge.tt:4
 msgid ""
@@ -10696,7 +10696,7 @@ msgstr "Du bist im Begriff, die folgenden Labels in ein einziges aufgehen zu las
 msgid ""
 "You are about to merge the following places into a single place. Please "
 "select the place which you would like other places to be merged into:"
-msgstr "Du bist im Begriff die folgenden Örtlichkeiten in eine einzige Örtlichkeit zusammenzuführen. Bitte wähle die Örtlichkeit, in die du die anderen Örtlichkeiten aufgehen lassen willst."
+msgstr "Du bist im Begriff die folgenden Örtlichkeiten in eine einzige Örtlichkeit aufgehen zu lassen. Bitte wähle die Örtlichkeit, in die du die anderen Örtlichkeiten integrieren willst."
 
 #: ../root/recording/merge.tt:4
 msgid ""
@@ -10847,7 +10847,7 @@ msgstr "Du hast den {valink|Diverse Interpreten}-Spezialkünstler auf dieser Auf
 msgid ""
 "You haven't added any media yet. Click on the \"Add Disc\" button below to "
 "add one."
-msgstr ""
+msgstr "Du hast noch keine Medien hinzugefügt. Klick auf den „Medium hinzufügen“-Button unten, um eins hinzuzufügen."
 
 #: ../root/scripts/text_strings.tt:153
 msgid "You haven‘t entered a complete artist credit."
@@ -10953,7 +10953,7 @@ msgstr "Deine E-Mail wurde erfolgreich verschickt! Klicke {link|hier}, um weiter
 msgid ""
 "Your homepage and biography will not show until you have confirmed your "
 "email."
-msgstr ""
+msgstr "Deine Homepage und Biographie werden erst angezeigt, wenn Du Deine E-Mail-Adresse bestätigt hast."
 
 #: ../root/account/reset_password_ok.tt:5
 msgid "Your password has been reset."
@@ -12121,7 +12121,7 @@ msgstr "Gebiet bearbeiten"
 
 #: ../lib/MusicBrainz/Server/Edit/Area/Merge.pm:11
 msgid "Merge areas"
-msgstr "Gebiete vereinigen"
+msgstr "Gebiete vereinen"
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/AddAnnotation.pm:11
 msgid "Add artist annotation"
@@ -12145,7 +12145,7 @@ msgstr "Künstlernennung bearbeiten"
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/Merge.pm:14
 msgid "Merge artists"
-msgstr "Künstler zusammenführen"
+msgstr "Künstler vereinen"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/AddDiscID.pm:11
 #: ../lib/MusicBrainz/Server/Edit/Medium/AddDiscID.pm:10
@@ -12293,7 +12293,7 @@ msgstr "Label bearbeiten"
 
 #: ../lib/MusicBrainz/Server/Edit/Label/Merge.pm:12
 msgid "Merge labels"
-msgstr "Label zusammenführen"
+msgstr "Label vereinen"
 
 #: ../lib/MusicBrainz/Server/Edit/Medium/Create.pm:30
 msgid "Add medium"
@@ -12349,7 +12349,7 @@ msgstr "Alleinstehende Aufnahme hinzufügen"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/Merge.pm:14
 msgid "Merge recordings"
-msgstr "Aufnahmen zusammenführen"
+msgstr "Aufnahmen vereinen"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/RemoveISRC.pm:17
 msgid "Remove ISRC"
@@ -12505,7 +12505,7 @@ msgstr "Werk bearbeiten"
 
 #: ../lib/MusicBrainz/Server/Edit/Work/Merge.pm:12
 msgid "Merge works"
-msgstr "Werke zusammenführen"
+msgstr "Werke vereinen"
 
 #: ../lib/MusicBrainz/Server/Edit/Work/RemoveISWC.pm:16
 msgid "Remove ISWC"
@@ -12796,7 +12796,7 @@ msgstr "Geburtsjahr muss nach 1900 sein"
 msgid ""
 "Biography and website fields may not be edited until your email address is "
 "confirmed."
-msgstr ""
+msgstr "Die Biographie- und Website-Felder können erst editiert werden, wenn Du Deine E-Mail-Adresse bestätigt hast."
 
 #: ../lib/MusicBrainz/Server/Form/User/Login.pm:9
 msgid "Username field is required"
