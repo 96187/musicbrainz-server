@@ -23,8 +23,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-05-26 02:28-0700\n"
-"PO-Revision-Date: 2014-05-26 09:29+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2014-05-26 16:10+0000\n"
+"Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1937,7 +1937,7 @@ msgstr "Door uitgaven bladeren"
 
 #: ../root/browse/entity.tt:1
 msgid "Browse Series"
-msgstr ""
+msgstr "Door series bladeren"
 
 #: ../root/browse/entity.tt:1
 msgid "Browse Works"
@@ -7420,7 +7420,7 @@ msgstr "Serie"
 #: ../root/edit/search_macros.tt:307
 msgctxt "singular"
 msgid "Series"
-msgstr ""
+msgstr "Series"
 
 #: ../root/series/edit_form.tt:30
 msgid "Series Details"
@@ -7432,7 +7432,7 @@ msgstr "Serie niet gevonden"
 
 #: ../root/user/subscriptions/menu.tt:6 ../root/user/subscriptions/series.tt:1
 msgid "Series Subscriptions"
-msgstr ""
+msgstr "Abonnementen op series"
 
 #: ../root/series/layout.tt:4
 msgid "Series information"
@@ -8657,7 +8657,7 @@ msgstr "Deze eigenschap is verplicht"
 
 #: ../root/work/edit_form.tt:57
 msgid "This attribute type is only used for grouping, please select a subtype"
-msgstr ""
+msgstr "Deze eigenschap wordt alleen gebruikt om te groeperen, gebruik een subtype."
 
 #: ../root/edit/details/edit_url.tt:31
 msgid "This change affects {num} relationship."
@@ -11667,8 +11667,8 @@ msgstr[1] "{num} uitgavegroepen gevonden"
 #: ../root/user/subscriptions/layout.tt:31
 msgid "{num} series"
 msgid_plural "{num} series"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num} serie"
+msgstr[1] "{num} series"
 
 #: ../root/tag/work.tt:1
 msgid "{num} work found"
