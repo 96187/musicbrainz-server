@@ -5,6 +5,7 @@
 # gr0uch0mars <email address hidden>, 2011
 # Héctor Arroyo <email address hidden>, 2012
 # kelopez <email address hidden>, 2012
+# martinipd <email address hidden>, 2014
 # Nicolás Tamargo <email address hidden>, 2011-2013
 # kelopezcl <email address hidden>, 2012
 #   Tobias Quathamer <email address hidden>, 2007
@@ -12,8 +13,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-05-20 19:03+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2014-05-29 12:26+0000\n"
+"Last-Translator: martinipd <email address hidden>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/musicbrainz/language/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1433,8 +1434,8 @@ msgstr ""
 
 #: DB:link_type/description:746 DB:link_type/description:96
 #: DB:link_type/description:82 DB:link_type/description:306
-#: DB:link_type/description:188 DB:link_type/description:222
-#: DB:link_type/description:273 DB:link_type/description:561
+#: DB:link_type/description:222 DB:link_type/description:273
+#: DB:link_type/description:188 DB:link_type/description:561
 msgid ""
 "This links an entity to the equivalent entry in another database. Please "
 "respect the <a "
@@ -2045,7 +2046,7 @@ msgstr "colaborador {minor:secundario} {additional:adicional} on"
 
 #: DB:link_type/link_phrase:228
 msgid "compilation of"
-msgstr ""
+msgstr "recopilación de"
 
 #: DB:link_type/link_phrase:48 DB:link_type/link_phrase:147
 #: DB:link_type/long_link_phrase:48 DB:link_type/long_link_phrase:147
@@ -2064,7 +2065,7 @@ msgstr ""
 #: DB:link_type/reverse_link_phrase:58 DB:link_type/reverse_link_phrase:170
 #: DB:link_type/long_link_phrase:58 DB:link_type/long_link_phrase:170
 msgid "composition"
-msgstr ""
+msgstr "composición"
 
 #: DB:link_type/link_phrase:739
 msgid "consists of"
@@ -2131,7 +2132,7 @@ msgstr ""
 
 #: DB:link_type/reverse_link_phrase:115
 msgid "creative persons"
-msgstr ""
+msgstr "personas creativas"
 
 #: DB:link_type/link_phrase:115
 msgid "creative position"
@@ -2397,7 +2398,7 @@ msgstr ""
 
 #: DB:link_type/long_link_phrase:746 DB:link_type/long_link_phrase:96
 #: DB:link_type/long_link_phrase:82 DB:link_type/long_link_phrase:306
-#: DB:link_type/long_link_phrase:188 DB:link_type/long_link_phrase:222
+#: DB:link_type/long_link_phrase:222 DB:link_type/long_link_phrase:188
 #: DB:link_type/long_link_phrase:561
 msgid "has a page in a database at"
 msgstr "tiene una página en una base de datos en"
@@ -2668,7 +2669,7 @@ msgstr "es una remezcla de"
 
 #: DB:link_type/long_link_phrase:728
 msgid "is a tribute to"
-msgstr ""
+msgstr "es un tributo a"
 
 #: DB:link_type/long_link_phrase:278
 msgid ""
@@ -3036,13 +3037,13 @@ msgstr ""
 
 #: DB:link_type/link_phrase:746 DB:link_type/link_phrase:96
 #: DB:link_type/link_phrase:730 DB:link_type/link_phrase:82
-#: DB:link_type/link_phrase:306 DB:link_type/link_phrase:188
-#: DB:link_type/link_phrase:222 DB:link_type/link_phrase:273
+#: DB:link_type/link_phrase:306 DB:link_type/link_phrase:222
+#: DB:link_type/link_phrase:273 DB:link_type/link_phrase:188
 #: DB:link_type/link_phrase:561 DB:link_type/reverse_link_phrase:746
 #: DB:link_type/reverse_link_phrase:96 DB:link_type/reverse_link_phrase:730
 #: DB:link_type/reverse_link_phrase:82 DB:link_type/reverse_link_phrase:306
-#: DB:link_type/reverse_link_phrase:188 DB:link_type/reverse_link_phrase:222
-#: DB:link_type/reverse_link_phrase:273 DB:link_type/reverse_link_phrase:561
+#: DB:link_type/reverse_link_phrase:222 DB:link_type/reverse_link_phrase:273
+#: DB:link_type/reverse_link_phrase:188 DB:link_type/reverse_link_phrase:561
 msgid "other databases"
 msgstr "otras bases de datos"
 
