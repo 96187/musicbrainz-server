@@ -14,9 +14,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-06-10 09:58-0700\n"
-"PO-Revision-Date: 2014-06-10 16:59+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"POT-Creation-Date: 2014-06-11 16:30-0700\n"
+"PO-Revision-Date: 2014-07-09 20:39+0000\n"
+"Last-Translator: Mihkel Tõnnov <email address hidden>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/musicbrainz/language/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -31,7 +31,7 @@ msgstr "– ?"
 
 #: ../root/components/common-macros.tt:8
 msgid " ({text})"
-msgstr ""
+msgstr " ({text})"
 
 #: ../root/account/lost_password.tt:7
 msgid ""
@@ -1034,7 +1034,7 @@ msgstr "Juba aegunud"
 
 #: ../root/artist/index.tt:43
 msgid "Also performs as"
-msgstr ""
+msgstr "Tegutseb ka kui"
 
 #: ../root/release/edit/recordings.tt:82
 msgid "Also update the recording with track changes"
@@ -1119,7 +1119,7 @@ msgstr "Teoste loomisel ilmnes viga."
 
 #: ../root/scripts/text_strings.tt:195
 msgid "An error occurred while searching. Click here to try again."
-msgstr ""
+msgstr "Otsimisel ilmnes viga. Uuestiproovimiseks klõpsa siin."
 
 #: ../root/annotation/common.tt:2 ../root/area/annotation_revision.tt:1
 #: ../root/artist/annotation_revision.tt:1
@@ -1292,7 +1292,7 @@ msgstr "Kas oled kindel, et soovid eemaldada alloleva kaanepildi artisti {artist
 msgid ""
 "Are you sure you wish to remove the instrument {instrument} from "
 "MusicBrainz?"
-msgstr "Kas oled kindel, et soovid instrumendi „{instrument}” MusicBrainzist eemaldada?"
+msgstr "Kas oled kindel, et soovid instrumendi „{area}” MusicBrainzist eemaldada?"
 
 #: ../root/label/delete.tt:5
 msgid "Are you sure you wish to remove the label {label} from MusicBrainz?"
@@ -1300,7 +1300,7 @@ msgstr "Kas oled kindel, et soovid plaadifirma {label} MusicBrainzist eemaldada?
 
 #: ../root/series/delete.tt:5
 msgid "Are you sure you wish to remove the series {series} from MusicBrainz?"
-msgstr "Kas oled kindel, et soovid seeria „{series}” MusicBrainzist eemaldada?"
+msgstr "Kas oled kindel, et soovid seeria „{area}” MusicBrainzist eemaldada?"
 
 #: ../root/area/edits.tt:5 ../root/area/header.tt:21
 #: ../root/components/common-macros.tt:582
@@ -1801,7 +1801,7 @@ msgstr "Alguspiirkond:"
 #: ../root/edit/details/add_alias.tt:40 ../root/edit/details/edit_alias.tt:48
 #: ../root/edit/details/remove_alias.tt:38
 msgid "Begin date"
-msgstr ""
+msgstr "Alguskuupäev"
 
 #: ../root/alias/edit_form.tt:34 ../root/area/edit_form.tt:23
 #: ../root/area/layout.tt:12 ../root/artist/edit_form.tt:57
@@ -2049,7 +2049,7 @@ msgstr "Toimetamine pole võimalik"
 
 #: ../root/account/register.tt:37
 msgid "Captcha"
-msgstr ""
+msgstr "Robotilõks"
 
 #: ../root/account/register.tt:5
 msgid "Captcha incorrect. Try again."
@@ -3282,7 +3282,7 @@ msgstr "Lõppkuupäev:"
 
 #: ../root/edit/details/add_alias.tt:51 ../root/edit/details/edit_alias.tt:58
 msgid "Ended"
-msgstr ""
+msgstr "Pole enam aktiivselt kasutusel"
 
 #: ../root/edit/details/add_area.tt:71 ../root/edit/details/add_artist.tt:66
 #: ../root/edit/details/add_label.tt:43 ../root/edit/details/add_place.tt:64
@@ -4376,7 +4376,7 @@ msgstr "Uusimad sissekanded:"
 
 #: ../root/artist/index.tt:38 ../root/artist/index.tt:41
 msgid "Legal name"
-msgstr ""
+msgstr "Kodanikunimi"
 
 #: ../root/cdstub/cdstub.tt:9 ../root/cdtoc/info.tt:33
 #: ../root/components/recordings-list.tt:33
@@ -4450,7 +4450,7 @@ msgstr "Andmevoog"
 
 #: ../root/search/results-doc.tt:5
 msgid "Loading"
-msgstr ""
+msgstr "Laadimine..."
 
 #: ../root/release/edit/editnote.tt:15
 msgid "Loading edit previews..."
@@ -5286,7 +5286,7 @@ msgstr "Tulemusteta? Proovi otsese otsinguga."
 #: ../root/edit/details/historic/merge_releases.tt:36
 #: ../root/edit/details/merge_releases.tt:144
 msgid "Note"
-msgstr ""
+msgstr "Märkus"
 
 #: ../root/release/edit/information.tt:251
 msgid ""
@@ -5888,7 +5888,7 @@ msgstr "Põhitüüp:"
 #: ../root/edit/details/add_alias.tt:28 ../root/edit/details/edit_alias.tt:40
 #: ../root/edit/details/remove_alias.tt:27
 msgid "Primary for locale"
-msgstr ""
+msgstr "Lokaadi esmane"
 
 #: ../root/relationship/linktype/form.tt:37
 msgid "Priority:"
@@ -11575,7 +11575,7 @@ msgstr "Seda mestimisstrateegiat ei saa valitud väljalasetel kasutada."
 msgid "The annotation revision ID must be a positive integer"
 msgstr "Annotatsiooni revisjoni ID peab olema positiivne täisarv"
 
-#: ../lib/MusicBrainz/Server/Controller/Role/Annotation.pm:185
+#: ../lib/MusicBrainz/Server/Controller/Role/Annotation.pm:174
 msgid "The old and new annotation ids must be unique, positive integers."
 msgstr "Annotatsiooni vana ja uus ID peavad olema unikaalsed positiivsed täisarvud."
 
