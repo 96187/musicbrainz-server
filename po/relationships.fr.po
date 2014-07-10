@@ -1,7 +1,7 @@
 # 
 # Translators:
 # nikki, 2014
-# Alain-Olivier  Breysse, 2013
+# yahoe.001, 2013
 # Benjamin Sonntag <email address hidden>, 2011-2012
 # Benjamin Sonntag <email address hidden>, 2011
 # Dibou <email address hidden>, 2012
@@ -9,14 +9,14 @@
 # murdos <email address hidden>, 2011-2012
 # nikki, 2012-2013
 # nikki, 2013
-# redapplz <email address hidden>, 2013
-# redapplz <email address hidden>, 2013
-# Alain-Olivier  Breysse, 2013-2014
+# Paul Tremberth <email address hidden>, 2013
+# Paul Tremberth <email address hidden>, 2013
+# yahoe.001, 2013-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-05-21 13:48+0000\n"
-"Last-Translator: Alain-Olivier  Breysse\n"
+"PO-Revision-Date: 2014-07-10 00:01+0000\n"
+"Last-Translator: Ian McEwen <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1436,8 +1436,8 @@ msgstr "Ceci relie une entité à la liste appropriée de la base de données So
 
 #: DB:link_type/description:746 DB:link_type/description:96
 #: DB:link_type/description:82 DB:link_type/description:306
-#: DB:link_type/description:188 DB:link_type/description:222
-#: DB:link_type/description:273 DB:link_type/description:561
+#: DB:link_type/description:222 DB:link_type/description:273
+#: DB:link_type/description:188 DB:link_type/description:561
 msgid ""
 "This links an entity to the equivalent entry in another database. Please "
 "respect the <a "
@@ -2400,7 +2400,7 @@ msgstr "a un rôle divers sur"
 
 #: DB:link_type/long_link_phrase:746 DB:link_type/long_link_phrase:96
 #: DB:link_type/long_link_phrase:82 DB:link_type/long_link_phrase:306
-#: DB:link_type/long_link_phrase:188 DB:link_type/long_link_phrase:222
+#: DB:link_type/long_link_phrase:222 DB:link_type/long_link_phrase:188
 #: DB:link_type/long_link_phrase:561
 msgid "has a page in a database at"
 msgstr "à une page dans une base données à"
@@ -3039,13 +3039,13 @@ msgstr "orchestrations"
 
 #: DB:link_type/link_phrase:746 DB:link_type/link_phrase:96
 #: DB:link_type/link_phrase:730 DB:link_type/link_phrase:82
-#: DB:link_type/link_phrase:306 DB:link_type/link_phrase:188
-#: DB:link_type/link_phrase:222 DB:link_type/link_phrase:273
+#: DB:link_type/link_phrase:306 DB:link_type/link_phrase:222
+#: DB:link_type/link_phrase:273 DB:link_type/link_phrase:188
 #: DB:link_type/link_phrase:561 DB:link_type/reverse_link_phrase:746
 #: DB:link_type/reverse_link_phrase:96 DB:link_type/reverse_link_phrase:730
 #: DB:link_type/reverse_link_phrase:82 DB:link_type/reverse_link_phrase:306
-#: DB:link_type/reverse_link_phrase:188 DB:link_type/reverse_link_phrase:222
-#: DB:link_type/reverse_link_phrase:273 DB:link_type/reverse_link_phrase:561
+#: DB:link_type/reverse_link_phrase:222 DB:link_type/reverse_link_phrase:273
+#: DB:link_type/reverse_link_phrase:188 DB:link_type/reverse_link_phrase:561
 msgid "other databases"
 msgstr "autres bases de données"
 
@@ -3276,8 +3276,8 @@ msgstr "poste d'ingénieur du son à"
 msgid "recording engineers"
 msgstr "ingénieurs du son "
 
-#: DB:link_type/link_phrase:695 DB:link_type/link_phrase:698
-#: DB:link_type/link_phrase:699 DB:link_type/link_phrase:693
+#: DB:link_type/link_phrase:698 DB:link_type/link_phrase:699
+#: DB:link_type/link_phrase:695 DB:link_type/link_phrase:693
 msgid "recording location for"
 msgstr "lieu d'enregistrement de"
 
@@ -3542,8 +3542,8 @@ msgstr "était le lieu de matriçage de"
 msgid "was the mixing location for"
 msgstr "était le lieu de mixage de"
 
-#: DB:link_type/long_link_phrase:695 DB:link_type/long_link_phrase:698
-#: DB:link_type/long_link_phrase:699 DB:link_type/long_link_phrase:693
+#: DB:link_type/long_link_phrase:698 DB:link_type/long_link_phrase:699
+#: DB:link_type/long_link_phrase:695 DB:link_type/long_link_phrase:693
 msgid "was the recording location for"
 msgstr "était le lieu d'enregistrement de"
 
@@ -3851,14 +3851,10 @@ msgstr "{additional:autres} membres {founder:fondateurs}"
 msgid "{additional} {guest} {solo} performer"
 msgstr "interprète {additional:supplémentaire} {guest:invité} {solo}"
 
-#: DB:link_type/link_phrase:44 DB:link_type/reverse_link_phrase:44
-#: DB:link_type/reverse_link_phrase:148
+#: DB:link_type/link_phrase:44 DB:link_type/link_phrase:148
+#: DB:link_type/reverse_link_phrase:44 DB:link_type/reverse_link_phrase:148
 msgid "{additional} {guest} {solo} {instrument:%|instruments}"
 msgstr "{instrument:%|instruments} {additional:supplémentaires} {guest:invités} {solo}"
-
-#: DB:link_type/link_phrase:148
-msgid "{additional} {guest} {solo} {instrument} {instrument:%|instruments}"
-msgstr "{instrument:%|instruments} {instrument} {additional:supplémentaires} {guest:invités} {solo}"
 
 #: DB:link_type/link_phrase:60 DB:link_type/link_phrase:149
 #: DB:link_type/reverse_link_phrase:60 DB:link_type/reverse_link_phrase:149

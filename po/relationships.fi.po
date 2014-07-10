@@ -1,16 +1,16 @@
 # 
 # Translators:
 # nikki, 2014
-# jozo <email address hidden>, 2014
-# ListMyCDs.com Martikainen <email address hidden>, 2012
+# Kai Kasurinen <email address hidden>, 2014
+# Timo Martikainen <email address hidden>, 2012
 # nikki, 2012-2013
-# Phonebox, 2014
+# phonebox, 2014
 # Timo Martikainen <>, 2012
-# ListMyCDs.com Martikainen <email address hidden>, 2012-2013
+# Timo Martikainen <email address hidden>, 2012-2013
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-05-20 19:03+0000\n"
+"PO-Revision-Date: 2014-07-10 00:01+0000\n"
 "Last-Translator: Ian McEwen <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -1431,8 +1431,8 @@ msgstr ""
 
 #: DB:link_type/description:746 DB:link_type/description:96
 #: DB:link_type/description:82 DB:link_type/description:306
-#: DB:link_type/description:188 DB:link_type/description:222
-#: DB:link_type/description:273 DB:link_type/description:561
+#: DB:link_type/description:222 DB:link_type/description:273
+#: DB:link_type/description:188 DB:link_type/description:561
 msgid ""
 "This links an entity to the equivalent entry in another database. Please "
 "respect the <a "
@@ -2395,7 +2395,7 @@ msgstr "oma sekalaisen roolin "
 
 #: DB:link_type/long_link_phrase:746 DB:link_type/long_link_phrase:96
 #: DB:link_type/long_link_phrase:82 DB:link_type/long_link_phrase:306
-#: DB:link_type/long_link_phrase:188 DB:link_type/long_link_phrase:222
+#: DB:link_type/long_link_phrase:222 DB:link_type/long_link_phrase:188
 #: DB:link_type/long_link_phrase:561
 msgid "has a page in a database at"
 msgstr "omaa sivun tietokannassa"
@@ -3034,13 +3034,13 @@ msgstr "orkestraatiot"
 
 #: DB:link_type/link_phrase:746 DB:link_type/link_phrase:96
 #: DB:link_type/link_phrase:730 DB:link_type/link_phrase:82
-#: DB:link_type/link_phrase:306 DB:link_type/link_phrase:188
-#: DB:link_type/link_phrase:222 DB:link_type/link_phrase:273
+#: DB:link_type/link_phrase:306 DB:link_type/link_phrase:222
+#: DB:link_type/link_phrase:273 DB:link_type/link_phrase:188
 #: DB:link_type/link_phrase:561 DB:link_type/reverse_link_phrase:746
 #: DB:link_type/reverse_link_phrase:96 DB:link_type/reverse_link_phrase:730
 #: DB:link_type/reverse_link_phrase:82 DB:link_type/reverse_link_phrase:306
-#: DB:link_type/reverse_link_phrase:188 DB:link_type/reverse_link_phrase:222
-#: DB:link_type/reverse_link_phrase:273 DB:link_type/reverse_link_phrase:561
+#: DB:link_type/reverse_link_phrase:222 DB:link_type/reverse_link_phrase:273
+#: DB:link_type/reverse_link_phrase:188 DB:link_type/reverse_link_phrase:561
 msgid "other databases"
 msgstr "muut tietokannat"
 
@@ -3271,8 +3271,8 @@ msgstr ""
 msgid "recording engineers"
 msgstr ""
 
-#: DB:link_type/link_phrase:695 DB:link_type/link_phrase:698
-#: DB:link_type/link_phrase:699 DB:link_type/link_phrase:693
+#: DB:link_type/link_phrase:698 DB:link_type/link_phrase:699
+#: DB:link_type/link_phrase:695 DB:link_type/link_phrase:693
 msgid "recording location for"
 msgstr "äänityspaikkana kohteelle"
 
@@ -3537,8 +3537,8 @@ msgstr "oli masterointipaikkana kohteelle"
 msgid "was the mixing location for"
 msgstr "oli miksauspaikkana kohteelle"
 
-#: DB:link_type/long_link_phrase:695 DB:link_type/long_link_phrase:698
-#: DB:link_type/long_link_phrase:699 DB:link_type/long_link_phrase:693
+#: DB:link_type/long_link_phrase:698 DB:link_type/long_link_phrase:699
+#: DB:link_type/long_link_phrase:695 DB:link_type/long_link_phrase:693
 msgid "was the recording location for"
 msgstr "oli äänityspaikkana kohteelle"
 
@@ -3846,14 +3846,10 @@ msgstr "{additional} {founder:perustaja}jäsenet"
 msgid "{additional} {guest} {solo} performer"
 msgstr "{additional} {guest:vieras-}{solo:soolo}esittäjä"
 
-#: DB:link_type/link_phrase:44 DB:link_type/reverse_link_phrase:44
-#: DB:link_type/reverse_link_phrase:148
+#: DB:link_type/link_phrase:44 DB:link_type/link_phrase:148
+#: DB:link_type/reverse_link_phrase:44 DB:link_type/reverse_link_phrase:148
 msgid "{additional} {guest} {solo} {instrument:%|instruments}"
 msgstr "{additional:lisäksi} {guest:vieras} {solo} {instrument:%|soittimet}"
-
-#: DB:link_type/link_phrase:148
-msgid "{additional} {guest} {solo} {instrument} {instrument:%|instruments}"
-msgstr "{additional:lisäksi} {guest:vieras} {solo} {instrument} {instrument:%|soittimet}"
 
 #: DB:link_type/link_phrase:60 DB:link_type/link_phrase:149
 #: DB:link_type/reverse_link_phrase:60 DB:link_type/reverse_link_phrase:149
