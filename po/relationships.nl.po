@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-07-31 08:53+0000\n"
+"PO-Revision-Date: 2014-07-31 12:24+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -1897,7 +1897,7 @@ msgstr "aanvullend"
 
 #: DB:link_attribute_type/description:5 DB:link_attribute_type/name:5
 msgid "alto vocals"
-msgstr "alt"
+msgstr "altvocalen"
 
 #: DB:link_type/link_phrase:357
 msgid "anthem"
@@ -1938,15 +1938,15 @@ msgstr "achtergrondvocalen"
 
 #: DB:link_attribute_type/description:6 DB:link_attribute_type/name:6
 msgid "baritone vocals"
-msgstr "bariton"
+msgstr "baritonvocalen"
 
 #: DB:link_attribute_type/description:7 DB:link_attribute_type/name:7
 msgid "bass vocals"
-msgstr "bas"
+msgstr "basvocalen"
 
 #: DB:link_attribute_type/description:231 DB:link_attribute_type/name:231
 msgid "bass-baritone vocals"
-msgstr "bas-bariton"
+msgstr "bas-baritonvocalen"
 
 #: DB:link_type/link_phrase:182
 msgid "biographies"
@@ -2094,7 +2094,7 @@ msgstr "contract"
 
 #: DB:link_attribute_type/description:230 DB:link_attribute_type/name:230
 msgid "contralto vocals"
-msgstr "contralto"
+msgstr "contraltovocalen"
 
 #: DB:link_type/reverse_link_phrase:708 DB:link_type/reverse_link_phrase:709
 msgid "copyrighted by"
@@ -2102,7 +2102,7 @@ msgstr "auteursrecht gedeponeerd door"
 
 #: DB:link_attribute_type/description:8 DB:link_attribute_type/name:8
 msgid "countertenor vocals"
-msgstr "contratenor"
+msgstr "contratenorvocalen"
 
 #: DB:link_attribute_type/name:567
 msgid "cover"
@@ -2936,7 +2936,7 @@ msgstr "medley van"
 
 #: DB:link_attribute_type/description:9 DB:link_attribute_type/name:9
 msgid "mezzo-soprano vocals"
-msgstr "mezzo-sopraan"
+msgstr "mezzo-sopraanvocalen"
 
 #: DB:link_attribute_type/name:2
 msgid "minor"
@@ -3404,7 +3404,7 @@ msgstr "solo"
 
 #: DB:link_attribute_type/description:10 DB:link_attribute_type/name:10
 msgid "soprano vocals"
-msgstr "sopraan"
+msgstr "sopraanvocalen"
 
 #: DB:link_attribute_type/name:561
 msgid "spoken vocals"
@@ -3456,7 +3456,7 @@ msgstr "ondersteunend {instrument:instrument} voor"
 
 #: DB:link_attribute_type/description:11 DB:link_attribute_type/name:11
 msgid "tenor vocals"
-msgstr "tenor"
+msgstr "tenorvocalen"
 
 #: DB:link_attribute_type/name:517
 msgid "translated"
@@ -3888,7 +3888,7 @@ msgstr "{additional:aanvullend} {translated:vertaalde} liedtekst"
 #: DB:link_type/reverse_link_phrase:296 DB:link_type/reverse_link_phrase:298
 #: DB:link_type/reverse_link_phrase:294
 msgid "{additional} {vocal:%|vocals} arranger"
-msgstr "{additional:aanvullend} {vocal:%|vocals:vocalen} arrangeur"
+msgstr "{additional:aanvullend} {vocal:%|vocaal} arrangeur"
 
 #: DB:link_type/reverse_link_phrase:305
 msgid "{assistant} {principal} {guest} conductor {emeritus}"
@@ -3936,8 +3936,8 @@ msgstr "{video} kan gratis gestreamd worden op"
 
 #: DB:link_type/reverse_link_phrase:107
 msgid "{vocal:%|vocals} support by"
-msgstr "{vocal:%|vocals:vocale} ondersteuning door"
+msgstr "{vocal:%|vocale} ondersteuning door"
 
 #: DB:link_type/link_phrase:107
 msgid "{vocal:%|vocals} support for"
-msgstr "{vocal:%|vocals:vocale} ondersteuning voor"
+msgstr "{vocal:%|vocale} ondersteuning voor"
