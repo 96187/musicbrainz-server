@@ -7,13 +7,16 @@
 # <email address hidden>, 2012
 #   <email address hidden>, 2012
 # Jaakko Perttilä <email address hidden>, 2012
-# Jaakko Perttilä <email address hidden>, 2012
-# Kai Kasurinen <email address hidden>, 2014
+# Jaakko Perttilä <email address hidden>, 2012,2014
+# jozo, 2014
+# jozo, 2014
 # ListMyCDs.com Martikainen <>, 2012
 # ListMyCDs.com Martikainen <email address hidden>, 2012
 # Timo Martikainen <email address hidden>, 2012
+# nikki, 2012,2014
 # nikki, 2012
 # nikki, 2012
+# phonebox, 2014
 # phonebox, 2014
 # Timo Martikainen <>, 2012
 # Timo Martikainen <email address hidden>, 2012
@@ -22,9 +25,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-07-09 16:59-0700\n"
-"PO-Revision-Date: 2014-07-10 00:01+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"POT-Creation-Date: 2014-07-14 21:06-0700\n"
+"PO-Revision-Date: 2014-08-03 23:10+0000\n"
+"Last-Translator: Jaakko Perttilä <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -39,7 +42,7 @@ msgstr " &#x2013; ????"
 
 #: ../root/components/common-macros.tt:8
 msgid " ({text})"
-msgstr ""
+msgstr " ({text})"
 
 #: ../root/account/lost_password.tt:7
 msgid ""
@@ -86,7 +89,7 @@ msgstr "\"YY\" on rekisteröintivuoden kaksi viimeisintä numeroa."
 #: ../root/edit/details/historic/add_release.tt:49 ../root/freedb/show.tt:10
 #: ../root/freedb/show.tt:61 ../root/recording/index.tt:9
 #: ../root/release/edit_relationships.tt:53
-#: ../root/release/edit/tracklist.tt:99 ../root/release/edit/tracklist.tt:252
+#: ../root/release/edit/tracklist.tt:99 ../root/release/edit/tracklist.tt:259
 #: ../root/release_group/releases-list.tt:8 ../root/release/index.tt:39
 msgid "#"
 msgstr "Nro"
@@ -153,7 +156,7 @@ msgstr "(<strong>vahvistamatonEmail Address Verified!</strong>)"
 msgid "(No details about this error are available)"
 msgstr "(Lisätietoja tästä virheestä ei ole saatavilla)"
 
-#: ../root/release/edit/recordings.tt:53
+#: ../root/release/edit/recordings.tt:48
 msgid "(add a new recording)"
 msgstr "(lisää uusi äänite)"
 
@@ -272,7 +275,7 @@ msgid ""
 msgstr "* osuma osoittaa kokonaisajan eron sekunteina pyytämäsi CD-levyn ja löytämiemme osumien välillä."
 
 #: ../root/components/relationships-table.tt:44
-#: ../lib/MusicBrainz/Server/Entity/Relationship.pm:173
+#: ../lib/MusicBrainz/Server/Entity/Relationship.pm:186
 msgid ", "
 msgstr ","
 
@@ -412,11 +415,11 @@ msgid_plural "{n} private collections"
 msgstr[0] "Yksityinen kokoelma"
 msgstr[1] "{n} yksityistä kokoelmaa"
 
-#: ../root/scripts/text_strings.tt:161
+#: ../root/release/edit/tracklist.tt:178
 msgid "A release must contain at least one medium."
 msgstr "Julkaisussa on oltava vähintään yksi tallenne."
 
-#: ../root/scripts/text_strings.tt:157
+#: ../root/release/edit/information.tt:14
 msgid "A release title is required."
 msgstr "Julkaisun nimi on pakollinen."
 
@@ -425,7 +428,7 @@ msgid ""
 "A simple list of all entities is available from our {url|browse} pages."
 msgstr "Yksinkertaiset luettelot kaikista kohteista on saatavilla {url|selattavilta} sivuiltamme."
 
-#: ../root/scripts/text_strings.tt:156
+#: ../root/release/edit/tracklist.tt:248
 msgid "A tracklist is required."
 msgstr "Kappalelista vaaditaan."
 
@@ -457,7 +460,7 @@ msgstr "Hyväksytty"
 
 #: ../root/account/applications.tt:26
 msgid "Access"
-msgstr ""
+msgstr "Pääsyoikeudet"
 
 #: ../root/account/registered.tt:1 ../root/account/registered.tt:2
 msgid "Account Created"
@@ -480,7 +483,7 @@ msgstr "Toiminnot"
 
 #: ../root/area/create.tt:1 ../root/area/create.tt:3
 msgid "Add Area"
-msgstr ""
+msgstr "Lisää alue"
 
 #: ../root/admin/index.tt:7 ../root/layout/menu.tt:85
 msgctxt "button/menu"
@@ -493,7 +496,7 @@ msgstr "Lisää alueen alias"
 
 #: ../root/artist/create.tt:1 ../root/artist/create.tt:3
 msgid "Add Artist"
-msgstr ""
+msgstr "Lisää artisti"
 
 #: ../root/layout/menu.tt:214
 msgctxt "button/menu"
@@ -505,9 +508,9 @@ msgid "Add Artist Alias"
 msgstr "Lisää artistin alias"
 
 #: ../root/components/forms.tt:365 ../root/components/forms.tt:366
-#: ../root/release/edit/tracklist.tt:385
+#: ../root/release/edit/tracklist.tt:392
 msgid "Add Artist Credit"
-msgstr "Lisää kirjoitusasu"
+msgstr "Lisää artistille tekijänimi"
 
 #: ../root/cdstub/logged_in.tt:1 ../root/cdstub/logged_in.tt:2
 msgid "Add CD Stub"
@@ -523,13 +526,13 @@ msgctxt "header"
 msgid "Add Cover Art"
 msgstr "Lisää kansitaidetta"
 
-#: ../root/release/edit/layout.tt:60 ../root/release/edit/tracklist.tt:174
-#: ../root/scripts/text_strings.tt:151
+#: ../root/release/edit/layout.tt:60 ../root/release/edit/tracklist.tt:168
+#: ../root/scripts/text_strings.tt:150
 msgid "Add Disc"
 msgstr "Lisää levy"
 
+#: ../root/release/edit/information.tt:135
 #: ../root/release/edit/information.tt:136
-#: ../root/release/edit/information.tt:137
 msgctxt "button/menu"
 msgid "Add Event"
 msgstr "Lisää tapahtuma"
@@ -540,23 +543,23 @@ msgstr "Lisää esimerkki"
 
 #: ../root/instrument/create.tt:1 ../root/instrument/create.tt:3
 msgid "Add Instrument"
-msgstr ""
+msgstr "Lisää soitin"
 
 #: ../root/admin/index.tt:10 ../root/layout/menu.tt:90
 msgctxt "button/menu"
 msgid "Add Instrument"
-msgstr ""
+msgstr "Lisää soitin"
 
 #: ../root/instrument/add_alias.tt:1
 msgid "Add Instrument Alias"
-msgstr ""
+msgstr "Lisää soittimelle alias"
 
 #: ../root/label/create.tt:1 ../root/label/create.tt:3
 msgid "Add Label"
-msgstr ""
+msgstr "Lisää levymerkki"
 
-#: ../root/layout/menu.tt:217 ../root/release/edit/information.tt:174
-#: ../root/release/edit/information.tt:175
+#: ../root/layout/menu.tt:217 ../root/release/edit/information.tt:173
+#: ../root/release/edit/information.tt:174
 msgctxt "button/menu"
 msgid "Add Label"
 msgstr "Lisää levymerkki"
@@ -565,7 +568,7 @@ msgstr "Lisää levymerkki"
 msgid "Add Label Alias"
 msgstr "Lisää levymerkille alias"
 
-#: ../root/edit/info.tt:13 ../root/scripts/text_strings.tt:121
+#: ../root/edit/info.tt:13 ../root/scripts/text_strings.tt:120
 msgid "Add Note"
 msgstr "Lisää merkintä"
 
@@ -575,7 +578,7 @@ msgstr "Lisää sivu"
 
 #: ../root/place/create.tt:1 ../root/place/create.tt:3
 msgid "Add Place"
-msgstr ""
+msgstr "Lisää paikka"
 
 #: ../root/layout/menu.tt:235
 msgctxt "button/menu"
@@ -586,7 +589,7 @@ msgstr "Lisää paikka"
 msgid "Add Place Alias"
 msgstr "Lisää paikalle alias"
 
-#: ../root/scripts/text_strings.tt:165
+#: ../root/scripts/text_strings.tt:154
 msgid "Add Release"
 msgstr "Lisää julkaisu"
 
@@ -602,7 +605,7 @@ msgstr "Lisää julkaisu"
 
 #: ../root/release_group/create.tt:1 ../root/release_group/create.tt:8
 msgid "Add Release Group"
-msgstr ""
+msgstr "Lisää julkaisuryhmä"
 
 #: ../root/layout/menu.tt:220
 msgctxt "button/menu"
@@ -611,16 +614,16 @@ msgstr "Lisää julkaisuryhmä"
 
 #: ../root/series/create.tt:1 ../root/series/create.tt:3
 msgid "Add Series"
-msgstr ""
+msgstr "Lisää sarja"
 
 #: ../root/layout/menu.tt:238
 msgctxt "button/menu"
 msgid "Add Series"
-msgstr ""
+msgstr "Lisää sarja"
 
 #: ../root/series/add_alias.tt:1
 msgid "Add Series Alias"
-msgstr ""
+msgstr "Lisää sarjalle alias"
 
 #: ../root/layout/menu.tt:229
 msgctxt "button/menu"
@@ -653,7 +656,7 @@ msgstr "Lisää teokselle alias"
 #: ../root/work/edit_form.tt:78
 msgctxt "button/menu"
 msgid "Add Work Attribute"
-msgstr ""
+msgstr "Lisää teokselle määre"
 
 #: ../root/collection/create.tt:1 ../root/collection/create.tt:3
 msgid "Add a New Collection"
@@ -671,7 +674,7 @@ msgstr "Lisää kieli"
 msgid "Add a new alias"
 msgstr "Lisää uusi alias"
 
-#: ../root/scripts/text_strings.tt:131
+#: ../root/scripts/text_strings.tt:130
 msgid "Add a new artist"
 msgstr "Lisää uusi artisti"
 
@@ -679,15 +682,15 @@ msgstr "Lisää uusi artisti"
 msgid "Add a new entry"
 msgstr "Lisää uusi merkintä"
 
-#: ../root/scripts/text_strings.tt:132
+#: ../root/scripts/text_strings.tt:131
 msgid "Add a new label"
 msgstr "Lisää uusi levymerkki"
 
-#: ../root/scripts/text_strings.tt:133
+#: ../root/scripts/text_strings.tt:132
 msgid "Add a new place"
 msgstr "Lisää uusi paikka"
 
-#: ../root/release/edit/recordings.tt:191 ../root/scripts/text_strings.tt:134
+#: ../root/release/edit/recordings.tt:184 ../root/scripts/text_strings.tt:133
 msgid "Add a new recording"
 msgstr "Lisää uusi äänite"
 
@@ -699,15 +702,15 @@ msgstr "Lisää uusi äänite"
 msgid "Add a new release"
 msgstr "Lisää uusi julkaisu"
 
-#: ../root/scripts/text_strings.tt:135
+#: ../root/scripts/text_strings.tt:134
 msgid "Add a new release group"
 msgstr "Lisää uusi julkaisuryhmä"
 
-#: ../root/scripts/text_strings.tt:136
+#: ../root/scripts/text_strings.tt:135
 msgid "Add a new series"
-msgstr ""
+msgstr "Lisää uusi sarja"
 
-#: ../root/scripts/text_strings.tt:137
+#: ../root/scripts/text_strings.tt:136
 msgid "Add a new work"
 msgstr "Lisää uusi teos"
 
@@ -723,58 +726,58 @@ msgstr "Lisää lisätietoja"
 msgid "Add another"
 msgstr "Lisää toinen"
 
-#: ../root/scripts/text_strings.tt:176
+#: ../root/scripts/text_strings.tt:165
 msgid "Add another area"
-msgstr ""
+msgstr "Lisää toinen alue"
 
-#: ../root/scripts/text_strings.tt:177
+#: ../root/scripts/text_strings.tt:166
 msgid "Add another artist"
-msgstr ""
+msgstr "Lisää toinen artisti"
 
 #: ../root/components/relationship-editor.tt:166
-#: ../root/scripts/text_strings.tt:178
+#: ../root/scripts/text_strings.tt:167
 msgid "Add another instrument"
-msgstr ""
+msgstr "Lisää toinen soitin"
 
-#: ../root/scripts/text_strings.tt:179
+#: ../root/scripts/text_strings.tt:168
 msgid "Add another label"
-msgstr ""
+msgstr "Lisää toinen levymerkki"
 
 #: ../root/components/forms.tt:397
 msgid "Add another link:"
-msgstr "Lisää vielä yksi linkki:"
+msgstr "Lisää toinen linkki:"
 
 #: ../root/scripts/text_strings.tt:45
 msgid "Add another medium"
 msgstr "Lisää toinen tallenne"
 
-#: ../root/scripts/text_strings.tt:180
+#: ../root/scripts/text_strings.tt:169
 msgid "Add another place"
-msgstr ""
+msgstr "Lisää toinen paikka"
 
-#: ../root/scripts/text_strings.tt:181
+#: ../root/scripts/text_strings.tt:170
 msgid "Add another recording"
-msgstr ""
+msgstr "Lisää toinen äänite"
 
-#: ../root/scripts/text_strings.tt:182
+#: ../root/scripts/text_strings.tt:171
 msgid "Add another release"
-msgstr ""
+msgstr "Lisää toinen julkaisu"
 
-#: ../root/scripts/text_strings.tt:183
+#: ../root/scripts/text_strings.tt:172
 msgid "Add another release group"
-msgstr ""
+msgstr "Lisää toinen julkaisuryhmä"
 
-#: ../root/scripts/text_strings.tt:184
+#: ../root/scripts/text_strings.tt:173
 msgid "Add another series"
-msgstr ""
+msgstr "Lisää toinen sarja"
 
 #: ../root/scripts/text_strings.tt:44
 msgid "Add another track"
 msgstr "Listää toinen kappale"
 
-#: ../root/scripts/text_strings.tt:185
+#: ../root/scripts/text_strings.tt:174
 msgid "Add another work"
-msgstr ""
+msgstr "Lisää toinen teos"
 
 #: ../root/area/add_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Area/AddAlias.pm:11
@@ -801,7 +804,7 @@ msgstr "Lisää muokkausmerkintä"
 #: ../root/instrument/add_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Instrument/AddAlias.pm:11
 msgid "Add instrument alias"
-msgstr ""
+msgstr "Lisää soittimelle alias"
 
 #: ../root/label/add_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Label/AddAlias.pm:11
@@ -866,7 +869,7 @@ msgstr "Lisää valitut teokset sulautettaviksi"
 #: ../root/series/add_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Series/AddAlias.pm:11
 msgid "Add series alias"
-msgstr ""
+msgstr "Lisää sarjalle alias"
 
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:102
 msgid "Add to a new collection"
@@ -880,7 +883,7 @@ msgstr "Lisää kokoelmaani"
 msgid "Add to {collection}"
 msgstr "Lisää kokoelmaan {collection}"
 
-#: ../root/release/edit/tracklist.tt:329
+#: ../root/release/edit/tracklist.tt:336
 msgid "Add track(s)"
 msgstr "Lisää kappaleita"
 
@@ -897,7 +900,7 @@ msgstr "Lisää teokselle alias"
 msgid "Add {item}"
 msgstr "Lisää {item}"
 
-#: ../root/release/edit/tracklist.tt:328
+#: ../root/release/edit/tracklist.tt:335
 msgid "Add {num} track(s)"
 msgstr "Lisää {num} kappaletta"
 
@@ -917,7 +920,7 @@ msgstr "Lisätty:"
 msgid "Additional details"
 msgstr "Tarkempaa lisätietoa"
 
-#: ../root/release/edit/information.tt:206
+#: ../root/release/edit/information.tt:205
 msgid "Additional information"
 msgstr "Lisätietoja"
 
@@ -964,7 +967,7 @@ msgstr "Alias"
 
 #: ../root/alias/edit_form.tt:14
 msgid "Alias Details"
-msgstr "Aliaksen tiedot"
+msgstr "Lisätietoja aliaksesta"
 
 #: ../root/alias/edit_form.tt:15
 msgid "Alias name:"
@@ -993,7 +996,7 @@ msgstr "Kaikki muokkaukset"
 msgid "All My Edits"
 msgstr "Kaikki muokkaukseni"
 
-#: ../root/scripts/text_strings.tt:124
+#: ../root/scripts/text_strings.tt:123
 msgid "All of your changes will be lost if you leave this page."
 msgstr "Kaikki muutokset menetetään, jos jätät tämän sivun."
 
@@ -1005,7 +1008,7 @@ msgstr "Kaikki äänitykset näistä julkaisuista on jo sulautettu."
 msgid "All sizes:"
 msgstr "Kaikki koot:"
 
-#: ../root/release/edit/recordings.tt:4
+#: ../root/release/edit/recordings.tt:3
 msgid ""
 "All tracks require an associated recording. Click “Edit” to select a "
 "recording for each track. Choose “Add a new recording” if an appropriate one"
@@ -1014,7 +1017,7 @@ msgstr "Kaikki kappaleet tulee olla liitettynä äänitteeseen. Klikkaa \"Muokka
 
 #: ../root/oauth2/authorize.tt:19
 msgid "Allow access"
-msgstr ""
+msgstr "Salli pääsy"
 
 #: ../root/account/preferences.tt:25
 msgid "Allow other users to see my ratings"
@@ -1034,7 +1037,7 @@ msgstr "Salli muiden käyttäjien nähdä tämä kokoelma"
 
 #: ../root/edit/details/edit_relationship_type.tt:46
 msgid "Allows dates:"
-msgstr ""
+msgstr "Hyväksyy päivät:"
 
 #: ../root/components/common-macros.tt:630
 msgid "Already expired"
@@ -1042,15 +1045,15 @@ msgstr "Jo vanhentunut"
 
 #: ../root/artist/index.tt:43
 msgid "Also performs as"
-msgstr ""
+msgstr "Esiintyy myös nimellä "
 
-#: ../root/release/edit/recordings.tt:82
+#: ../root/release/edit/recordings.tt:76
 msgid "Also update the recording with track changes"
-msgstr "Päivitä kappalelistan muutokset äänitteeseen"
+msgstr "Päivitä kappaleen muutokset myös äänitteeseen"
 
 #: ../root/search/results-area.tt:42
 msgid "Alternatively, you may {uri|add a new area}."
-msgstr "Vaihtoehtoisesti, voit {uri|lisätä alueen}."
+msgstr "Vaihtoehtoisesti voit {uri|lisätä uuden alueen}."
 
 #: ../root/search/results-artist.tt:5
 msgid "Alternatively, you may {uri|add a new artist}."
@@ -1075,11 +1078,11 @@ msgstr "Vaihtoehtoisesti voit {uri|lisätä uuden julkaisuryhmän}."
 
 #: ../root/search/results-release.tt:4
 msgid "Alternatively, you may {uri|add a new release}."
-msgstr "Vaihtoehtoisesti, voit {uri|lisätä uuden julkaisun}."
+msgstr "Vaihtoehtoisesti voit {uri|lisätä uuden julkaisun}."
 
 #: ../root/search/results-series.tt:29
 msgid "Alternatively, you may {uri|add a new series}."
-msgstr ""
+msgstr "Vaihtoehtoisesti voit {uri|lisätä uuden sarjan}."
 
 #: ../root/search/results-work.tt:61
 msgid "Alternatively, you may {uri|add a new work}."
@@ -1092,14 +1095,14 @@ msgstr "Amazon URL-osoitteet, jotka on linkitetty useisiin julkaisuihin"
 
 #: ../root/report/index.tt:57
 msgid "Amazon URLs linked to multiple releases"
-msgstr "Amazon URL-osoitteet jotka on linkitetty moniin julkaisuihin"
+msgstr "Amazon URL-osoitteet, jotka on linkitetty useisiin julkaisuihin"
 
 #: ../root/alias/edit_form.tt:5 ../root/components/aliases.tt:3
 msgid ""
 "An alias is an alternate name for an entity. They typically contain contain "
 "common mispellings or variations of the name and are also used to improve "
 "search results. View the {doc|alias documentation} for more details."
-msgstr ""
+msgstr "Alias on toinen nimi kohteelle. Aliakset ovat yleensä tavanomaisia kirjoitusvirheitä, tai nimen kirjoitusmuotoja. Niitä käytetään myös parantamaan hakutuloksia. Lisää tietoa {doc|dokumentaatiossa aliaksista}."
 
 #: ../root/artist/subscribers.tt:17 ../root/collection/subscribers.tt:17
 #: ../root/label/subscribers.tt:17 ../root/series/subscribers.tt:17
@@ -1111,23 +1114,23 @@ msgstr[1] "{n} anonyymiä käyttäjää"
 
 #: ../root/edit/list.tt:68
 msgid "An error occured while loading this edit"
-msgstr "Muokkausta ladattaessa tapahtui virhe."
+msgstr "Virhe kesken muokkauksen lataamisen"
 
 #: ../root/edit/index.tt:16
 msgid "An error occured while loading this edit."
-msgstr ""
+msgstr "Virhe kesken muokkauksen lataamisen."
 
 #: ../root/release/edit/tracklist.tt:76
 msgid "An error occured: "
-msgstr "Tapahtui virhe: "
+msgstr "Virhe: "
 
 #: ../root/release/edit_relationships.tt:174
 msgid "An error occurred while creating the works."
-msgstr "Teosta tehdessä tapahtui virhe."
+msgstr "Virhe kesken teoksen luonnin."
 
-#: ../root/scripts/text_strings.tt:195
+#: ../root/scripts/text_strings.tt:184
 msgid "An error occurred while searching. Click here to try again."
-msgstr ""
+msgstr "Virhe kesken haun. Paina tästä yrittääksesi uudelleen."
 
 #: ../root/annotation/common.tt:2 ../root/area/annotation_revision.tt:1
 #: ../root/artist/annotation_revision.tt:1
@@ -1185,7 +1188,7 @@ msgstr "{user} muokkasi viimeksi {date}."
 msgid "Annotation last modified on {date}."
 msgstr "Muokattu viimeksi {date}."
 
-#: ../root/annotation/edit.tt:15 ../root/release/edit/information.tt:210
+#: ../root/annotation/edit.tt:15 ../root/release/edit/information.tt:209
 msgid "Annotation:"
 msgstr "Lisätiedot:"
 
@@ -1195,11 +1198,11 @@ msgstr "Lisätietokentät tukevat rajattua wiki-muotoilua:"
 
 #: ../root/artist/relationships.tt:6 ../root/label/relationships.tt:5
 msgid "Appearances"
-msgstr "Esiintymät"
+msgstr "Esiintymiset"
 
 #: ../root/recording/index.tt:3
 msgid "Appears on releases"
-msgstr "Esiintyy julkaisuissa"
+msgstr "Esiintyy julkaisuilla"
 
 #: ../root/edit/details/merge_releases.tt:135
 #: ../lib/MusicBrainz/Server/Form/Merge/Release.pm:50
@@ -1218,7 +1221,7 @@ msgstr "Sovellukset"
 #: ../root/edit/search_macros.tt:244
 #: ../lib/MusicBrainz/Server/Data/Vote.pm:194
 msgid "Approve"
-msgstr "Hyväksytty"
+msgstr "Hyväksy"
 
 #: ../root/edit/edit_header.tt:76 ../root/edit/info.tt:17
 msgid "Approve edit"
@@ -1300,7 +1303,7 @@ msgstr "Haluatko varmasti poistaa alapuolella olevan kansitaiteen artistin {arti
 msgid ""
 "Are you sure you wish to remove the instrument {instrument} from "
 "MusicBrainz?"
-msgstr ""
+msgstr "Haluatko varmasti poistaa soittimen {instrument} MusicBrainzista?"
 
 #: ../root/label/delete.tt:5
 msgid "Are you sure you wish to remove the label {label} from MusicBrainz?"
@@ -1308,7 +1311,7 @@ msgstr "Haluatko varmasti poistaa levymerkin {label} MusicBrainzista?"
 
 #: ../root/series/delete.tt:5
 msgid "Are you sure you wish to remove the series {series} from MusicBrainz?"
-msgstr ""
+msgstr "Haluatko varmasti poistaa sarjan {series} MusicBrainzista?"
 
 #: ../root/area/edits.tt:5 ../root/area/header.tt:21
 #: ../root/components/common-macros.tt:564
@@ -1368,7 +1371,7 @@ msgstr "Alue:"
 #: ../root/edit/details/merge_releases.tt:19 ../root/edit/search_macros.tt:307
 #: ../root/freedb/show.tt:63 ../root/isrc/index.tt:17
 #: ../root/otherlookup/results-release.tt:11
-#: ../root/release/edit/tracklist.tt:101 ../root/release/edit/tracklist.tt:254
+#: ../root/release/edit/tracklist.tt:101 ../root/release/edit/tracklist.tt:261
 #: ../root/release_group/merge.tt:13 ../root/release_group/releases-list.tt:12
 #: ../root/release/index.tt:55 ../root/release/lookup.tt:10
 #: ../root/release/merge.tt:14 ../root/report/artist_list.tt:7
@@ -1397,15 +1400,15 @@ msgstr "Artistin alue"
 
 #: ../root/edit/details/edit_artist_credit.tt:5
 msgid "Artist Credit:"
-msgstr "Kirjoitusasu:"
+msgstr "Artistin tekijänimi:"
 
 #: ../root/artist/edit_form.tt:93
 msgid "Artist Credits"
-msgstr "Kirjoitusasut"
+msgstr "Artistin tekijänimet"
 
 #: ../root/edit/details/add_medium.tt:44
 msgid "Artist Credits:"
-msgstr "Kirjoitusasut:"
+msgstr "Artistin tekijänimet:"
 
 #: ../root/artist/edit_form.tt:30
 msgid "Artist Details"
@@ -1427,27 +1430,27 @@ msgstr "Artistia ei löydy"
 msgid "Artist Subscriptions"
 msgstr "Seuratut artistit"
 
-#: ../root/release/edit/tracklist.tt:355
+#: ../root/release/edit/tracklist.tt:362
 msgid "Artist as credited on this track:"
-msgstr "Artistin kirjoitusasu tässä kappaleessa:"
+msgstr "Artistin tekijänimi tässä kappaleessa:"
 
 #: ../root/components/forms.tt:347
 msgid "Artist as credited:"
-msgstr "Kirjoitusasu:"
+msgstr "Artistin tekijänimi:"
 
 #: ../root/components/filter-form.tt:11
 msgid "Artist credit:"
-msgstr "Kirjoitusasu:"
+msgstr "Artistin tekijänimi:"
 
 #: ../root/artist/aliases.tt:8
 msgid "Artist credits"
-msgstr "Kirjoitusasut"
+msgstr "Artistin tekijänimet"
 
 #: ../root/edit/details/edit_medium.tt:215
 msgid "Artist credits:"
-msgstr "Kirjoitusasut:"
+msgstr "Artistin tekijänimet:"
 
-#: ../root/components/forms.tt:334 ../root/release/edit/tracklist.tt:354
+#: ../root/components/forms.tt:334 ../root/release/edit/tracklist.tt:361
 msgid "Artist in MusicBrainz:"
 msgstr "Artisti MusicBrainzissa:"
 
@@ -1512,7 +1515,7 @@ msgstr "Artistit, joiden nimissä on täsmennyskommentit"
 #: ../root/report/artists_with_multiple_occurances_in_artist_credits.tt:3
 #: ../root/report/index.tt:26
 msgid "Artists occuring multiple times in the same artist credit"
-msgstr "Artistit, jotka esiintyvät monta kertaa samassa kirjoitusasussa"
+msgstr "Artistit, jotka on merkitty useamman kerran samaan tekijänimeen"
 
 #: ../root/report/possible_collaborations.tt:1
 #: ../root/report/possible_collaborations.tt:3
@@ -1592,7 +1595,7 @@ msgctxt "header"
 msgid "Attach CD TOC"
 msgstr "Lisää CD-levyn sisällysluettelo"
 
-#: ../root/cdtoc/lookup.tt:52 ../root/release/edit/tracklist.tt:307
+#: ../root/cdtoc/lookup.tt:52 ../root/release/edit/tracklist.tt:314
 msgid "Attach Disc ID"
 msgstr "Liitä levyn tunniste"
 
@@ -1707,7 +1710,7 @@ msgstr "Viivakoodi"
 #: ../root/edit/details/edit_barcodes.tt:21
 #: ../root/edit/details/edit_release_label.tt:53
 #: ../root/edit/details/edit_release.tt:74 ../root/otherlookup/form.tt:3
-#: ../root/release/edit/information.tt:181 ../root/release/index.tt:17
+#: ../root/release/edit/information.tt:180 ../root/release/index.tt:17
 #: ../root/release/layout.tt:38
 msgid "Barcode:"
 msgstr "Viivakoodi:"
@@ -1809,7 +1812,7 @@ msgstr "Aloitusalue:"
 #: ../root/edit/details/add_alias.tt:40 ../root/edit/details/edit_alias.tt:48
 #: ../root/edit/details/remove_alias.tt:38
 msgid "Begin date"
-msgstr ""
+msgstr "Aloitusajankohta"
 
 #: ../root/alias/edit_form.tt:34 ../root/area/edit_form.tt:23
 #: ../root/area/layout.tt:12 ../root/artist/edit_form.tt:57
@@ -2063,7 +2066,7 @@ msgstr ""
 msgid "Captcha incorrect. Try again."
 msgstr ""
 
-#: ../root/release/edit/information.tt:159
+#: ../root/release/edit/information.tt:158
 msgid "Cat. No:"
 msgstr "Luettelonumero:"
 
@@ -2099,7 +2102,7 @@ msgstr "Luettelonumero"
 msgid "Change Password"
 msgstr "Vaihda salasana"
 
-#: ../root/release/edit/tracklist.tt:395
+#: ../root/release/edit/tracklist.tt:402
 msgid "Change all artists on this release that match “{name}”"
 msgstr "Muuta kaikki artistit tässä julkaisussa, jotka vastaavat \"{name}\""
 
@@ -2161,7 +2164,7 @@ msgstr "Tyhjennä artistivalinta"
 msgid "Clear label"
 msgstr "Tyhjennä levymerkki"
 
-#: ../root/scripts/text_strings.tt:196
+#: ../root/scripts/text_strings.tt:185
 msgid "Clear recent items"
 msgstr ""
 
@@ -2181,7 +2184,7 @@ msgstr "Tyhjennä julkaisuryhmä"
 msgid "Clear work"
 msgstr "Tyhjennä teos"
 
-#: ../root/release/edit/recordings.tt:99
+#: ../root/release/edit/recordings.tt:92
 msgid "Click Edit to edit the recording associations for this disc."
 msgstr "Valitse \"Muokkaa\", muokataksesi tähän levyyn liittyvien äänitteiden yhteyksiä. "
 
@@ -2202,7 +2205,7 @@ msgstr "Klikkaa {link|tätä} jatkaaksesi käyttäjäsivullesi."
 msgid "Client:"
 msgstr "Asiakas:"
 
-#: ../root/release/edit/tracklist.tt:132 ../root/release/edit/tracklist.tt:173
+#: ../root/release/edit/tracklist.tt:132 ../root/release/edit/tracklist.tt:167
 msgid "Close"
 msgstr "Sulje"
 
@@ -2231,7 +2234,7 @@ msgstr "Yhteistyö"
 msgid "Collaborator"
 msgstr "Yhteistyökumppani"
 
-#: ../root/release/edit/tracklist.tt:201
+#: ../root/release/edit/tracklist.tt:197
 msgid "Collapse Disc"
 msgstr "Supista levy"
 
@@ -2294,7 +2297,7 @@ msgstr "Vertaa versioita"
 msgid ""
 "Comparing revision by {user_old} on {date_old} with revision by {user_new} "
 "on {date_new}."
-msgstr ""
+msgstr "Verrataan käyttäjän {user_old} versiota päivältä {date_old} käyttäjän {user_new} versioon päivältä {date_new}."
 
 #: ../root/edit/info.tt:57
 msgid "Conditions:"
@@ -2332,11 +2335,11 @@ msgstr "Koordinaatit:"
 msgid "Copy"
 msgstr "Kopioi"
 
-#: ../root/components/forms.tt:380 ../root/release/edit/tracklist.tt:402
+#: ../root/components/forms.tt:380 ../root/release/edit/tracklist.tt:409
 msgid "Copy Credits"
-msgstr "Kopioi artistitiedot"
+msgstr "Kopioi tekijätiedot"
 
-#: ../root/release/edit/recordings.tt:128
+#: ../root/release/edit/recordings.tt:121
 msgid "Copy all track changes to associated recordings."
 msgstr "Kopioi kaikki kappaleiden muutokset niihin liittyviin äänitteisiin."
 
@@ -2500,7 +2503,7 @@ msgstr "Poista"
 msgid "Delete Account"
 msgstr "Poista käyttäjätunnus"
 
-#: ../root/scripts/text_strings.tt:122
+#: ../root/scripts/text_strings.tt:121
 msgid "Delete Note"
 msgstr "Poista merkintä"
 
@@ -2614,7 +2617,7 @@ msgstr "Suora tietokantahaku"
 #: ../root/edit/details/edit_series.tt:14 ../root/edit/details/edit_work.tt:15
 #: ../root/instrument/edit_form.tt:11 ../root/label/edit_form.tt:32
 #: ../root/place/edit_form.tt:34 ../root/recording/edit_form.tt:14
-#: ../root/release/edit/information.tt:217
+#: ../root/release/edit/information.tt:216
 #: ../root/release_group/edit_form.tt:14 ../root/series/edit_form.tt:32
 #: ../root/work/edit_form.tt:14
 msgid "Disambiguation:"
@@ -2655,15 +2658,15 @@ msgstr "Levyjen tunnisteet"
 msgid "Disc IDs with superfluous data tracks"
 msgstr "Levyjen tunnisteet, joissa turhia data-raitoja"
 
-#: ../root/release/edit/tracklist.tt:214
+#: ../root/release/edit/tracklist.tt:210
 msgid "Disc title:"
 msgstr "Levyn nimi:"
 
-#: ../root/scripts/text_strings.tt:148
+#: ../root/scripts/text_strings.tt:147
 msgid "Disc {num}"
 msgstr "Levy {num}"
 
-#: ../root/scripts/text_strings.tt:149
+#: ../root/scripts/text_strings.tt:148
 msgid "Disc {num}: {title}"
 msgstr "Levy {num}: {title}"
 
@@ -2771,7 +2774,7 @@ msgid "Donation Check"
 msgstr "Tarkista lahjoitukset"
 
 #: ../root/components/forms.tt:382 ../root/components/relationship-editor.tt:7
-#: ../root/release/edit/macros.tt:43
+#: ../root/release/edit/macros.tt:45
 msgid "Done"
 msgstr "Valmis"
 
@@ -2779,7 +2782,7 @@ msgstr "Valmis"
 msgid "Duration:"
 msgstr "Kesto:"
 
-#: ../root/release/edit/recordings.tt:137
+#: ../root/release/edit/recordings.tt:130
 msgid ""
 "Each track in the MusicBrainz database has to be linked to a recording, "
 "choose the appropriate recording or look for it in the database."
@@ -2795,8 +2798,8 @@ msgstr "MusicBrainz tietokannassa kunkin kappaleen tulee olla linkitettynä ää
 #: ../root/relationship/linkattributetype/common.tt:25
 #: ../root/relationship/linktype/tree.tt:17 ../root/release/cover_art.tt:27
 #: ../root/release/discids.tt:12 ../root/release/edit/information.tt:54
-#: ../root/release/edit/recordings.tt:63 ../root/release/edit/recordings.tt:94
-#: ../root/release/edit/tracklist.tt:288 ../root/release_group/header.tt:1
+#: ../root/release/edit/recordings.tt:58 ../root/release/edit/recordings.tt:87
+#: ../root/release/edit/tracklist.tt:295 ../root/release_group/header.tt:1
 #: ../root/release/tabs.tt:1 ../root/series/header.tt:1
 #: ../root/url/header.tt:1 ../root/user/collections.tt:26
 #: ../root/work/header.tt:1
@@ -2846,7 +2849,7 @@ msgstr "Muokkaa artistin lisätietoja"
 
 #: ../root/artist/edit_credit.tt:1 ../root/artist/edit_credit.tt:9
 msgid "Edit Artist Credit"
-msgstr "Muokkaa kirjoitusasua"
+msgstr "Muokkaa tekijänimeä"
 
 #: ../root/collection/edit.tt:1
 msgid "Edit Collection"
@@ -2858,11 +2861,11 @@ msgstr "Muokkaa kansitaidetta"
 
 #: ../root/instrument/edit.tt:1
 msgid "Edit Instrument"
-msgstr ""
+msgstr "Muokkaa soitinta"
 
 #: ../root/instrument/edit_alias.tt:1
 msgid "Edit Instrument Alias"
-msgstr ""
+msgstr "Muokkaa soittimen aliasta"
 
 #: ../root/label/edit.tt:1
 msgid "Edit Label"
@@ -2917,7 +2920,7 @@ msgstr "Muokkaa yhteyksien tyyppejä"
 msgid "Edit Relationships: {release}"
 msgstr "Muokkaa yhteyksiä: {release}"
 
-#: ../root/scripts/text_strings.tt:167
+#: ../root/scripts/text_strings.tt:156
 msgid "Edit Release"
 msgstr "Muokkaa julkaisua"
 
@@ -3001,11 +3004,11 @@ msgstr ""
 #: ../root/instrument/edit_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Instrument/EditAlias.pm:12
 msgid "Edit instrument alias"
-msgstr ""
+msgstr "Muokkaa soittimen aliasta"
 
 #: ../root/instrument/edit_annotation.tt:2
 msgid "Edit instrument annotation"
-msgstr ""
+msgstr "Muokkaa soittimen lisätietoja"
 
 #: ../root/label/edit_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Label/EditAlias.pm:12
@@ -3071,7 +3074,7 @@ msgstr ""
 
 #: ../root/series/edit_annotation.tt:2
 msgid "Edit series annotation"
-msgstr ""
+msgstr "Muokkaa sarjan lisätietoja"
 
 #: ../root/admin/edit_user.tt:42
 msgid "Edit user"
@@ -3160,7 +3163,7 @@ msgstr "Seuraamiesi kohteiden muokkaukset"
 
 #: ../root/instrument/edits.tt:3
 msgid "Edits for {instrument}"
-msgstr ""
+msgstr "Muokkaukset soittimelle {instrument}"
 
 #: ../root/label/edits.tt:3
 msgid "Edits for {label}"
@@ -3312,7 +3315,7 @@ msgstr "englanti"
 msgid "Enter a tracklist below:"
 msgstr "Syötä kappalelista alle:"
 
-#: ../root/scripts/text_strings.tt:170
+#: ../root/scripts/text_strings.tt:159
 #: ../lib/MusicBrainz/Server/Form/Field/URL.pm:21
 msgid "Enter a valid url e.g. \"http://google.com/\""
 msgstr "Syötä kelvollinen url-osoite, esimerkiksi \"http://google.com/\""
@@ -3409,7 +3412,7 @@ msgstr "Nykyinen kappalelista"
 msgid "Expand"
 msgstr "Laajenna"
 
-#: ../root/release/edit/tracklist.tt:201
+#: ../root/release/edit/tracklist.tt:197
 msgid "Expand Disc"
 msgstr "Laajenna levyä"
 
@@ -3450,7 +3453,7 @@ msgstr[1] "Vanhenee <span class=\"tooltip\" title=\"{exactdate}\">{num} minuutis
 #: ../root/area/edit_form.tt:31 ../root/artist/edit_form.tt:87
 #: ../root/instrument/edit_form.tt:23 ../root/label/edit_form.tt:67
 #: ../root/place/edit_form.tt:64 ../root/recording/edit_form.tt:25
-#: ../root/release/edit/information.tt:227
+#: ../root/release/edit/information.tt:226
 #: ../root/release_group/edit_form.tt:22 ../root/series/edit_form.tt:40
 #: ../root/work/edit_form.tt:91
 msgid "External Links"
@@ -3498,7 +3501,7 @@ msgstr "Äänitunnisteet"
 msgid ""
 "First enter all track information, including titles and artist credits, in "
 "order to edit their recordings."
-msgstr "Ensin lisää kaikki kappaletiedot, sisältäen nimet ja artistit,  voidaksesi muokata niiden äänitteitä."
+msgstr "Syötä ensin kaikki kappaletiedot, kuten nimet ja artistit, voidaksesi muokata niiden äänitteitä."
 
 #: ../root/account/register.tt:53
 msgid ""
@@ -3522,7 +3525,7 @@ msgstr "Lisätietoja käyttäjätunnuksen poistamisesta löydät sivulta {uri|UK
 msgid ""
 "For instructions on how to fix them, please see the documentation about "
 "{howto|how to merge releases}."
-msgstr "Korjataksesi tilanteen, katso ohje {howto|kuinka sulautat julkaisuja}."
+msgstr "Korjataksesi tilanteen, tutustu dokumentaatioon {howto|kuinka sulautat julkaisuja}."
 
 #: ../root/artist/edit_form.tt:4 ../root/label/edit_form.tt:4
 #: ../root/recording/edit_form.tt:4 ../root/release_group/edit_form.tt:4
@@ -3563,7 +3566,7 @@ msgstr "Tallennusformaatti"
 #: ../root/edit/details/add_medium.tt:26
 #: ../root/edit/details/edit_medium.tt:37
 #: ../root/edit/details/edit_release_label.tt:59
-#: ../root/release/edit/tracklist.tt:205 ../root/release/index.tt:5
+#: ../root/release/edit/tracklist.tt:201 ../root/release/index.tt:5
 #: ../root/release/layout.tt:38
 msgid "Format:"
 msgstr "Tallennusformaatti:"
@@ -3768,11 +3771,11 @@ msgctxt "header"
 msgid "Guess case"
 msgstr "Arvaa kirjoitusasu"
 
-#: ../root/release/edit/tracklist.tt:216
+#: ../root/release/edit/tracklist.tt:212
 msgid "Guess case disc title"
 msgstr "Arvaa levyn nimen kirjoitusasu"
 
-#: ../root/release/edit/tracklist.tt:296
+#: ../root/release/edit/tracklist.tt:303
 msgid "Guess case track"
 msgstr "Arvaa kappaleen kirjoitusasu"
 
@@ -3814,7 +3817,7 @@ msgstr ""
 msgid "How editing works"
 msgstr "Miten muokkaaminen toimii"
 
-#: ../root/release/edit/information.tt:289
+#: ../root/release/edit/information.tt:288
 msgid "I confirm that this is the barcode as it appears on the release."
 msgstr "Voin vahvistaa että viivakoodi löytyy tällaisenaan julkaisusta."
 
@@ -3969,13 +3972,13 @@ msgid ""
 "message that is shown above."
 msgstr "Jos virhetilanne jatkuu, {report|ilmoitta virheestä} ja liitä ilmoitukseesi edellä esitetty virheilmoitus."
 
-#: ../root/release/edit/information.tt:266
+#: ../root/release/edit/information.tt:265
 msgid ""
 "If this is an Amazon ASIN, please do not enter it in the catalog number "
 "field, but add it as a URL relationship later."
 msgstr "Jos tämä on Amazon ASIN-koodi, älä syötä sitä luettelonumerolle tarkoitettuun kenttään, vaan lisää yhteys URL-osoitteelle myöhemmin."
 
-#: ../root/release/edit/recordings.tt:139
+#: ../root/release/edit/recordings.tt:132
 msgid ""
 "If we do not have a recording for this track in the database yet, please "
 "select \"Add a new recording\" below."
@@ -3989,7 +3992,7 @@ msgstr "Jos et löydä etsimääsi, voit lisätä uuden julkaisun:"
 msgid "If you change your email address, you will be required to verify it."
 msgstr ""
 
-#: ../root/release/edit/information.tt:295
+#: ../root/release/edit/information.tt:294
 msgid ""
 "If you do not know whether the release has a barcode or not, just leave this"
 " blank."
@@ -4063,7 +4066,7 @@ msgstr "kuva Wikimedia Commonsista"
 msgid "Image not available yet, please try again in a few minutes."
 msgstr "Kuva ei ole vielä käytettävissä. Yritä muutaman minuutin kuluttua uudelleen."
 
-#: ../root/scripts/text_strings.tt:139
+#: ../root/scripts/text_strings.tt:138
 msgid "Image {current} of {total}"
 msgstr "Kuva {current} / {total}"
 
@@ -4115,7 +4118,7 @@ msgstr "Indeksoitu haku"
 msgid "Indexed search with {doc|advanced query syntax}"
 msgstr "Indeksoitu haku {doc|kehittyneemmällä hakusyntaksilla}"
 
-#: ../root/release/edit/recordings.tt:122
+#: ../root/release/edit/recordings.tt:115
 msgid "Infer track durations from associated recordings"
 msgstr "Peri kappaleiden kestot niihin liitetyistä äänitteistä"
 
@@ -4132,27 +4135,27 @@ msgstr "Asennetut sovellukset"
 #: ../lib/MusicBrainz/Server/Edit/Instrument.pm:7
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:46
 msgid "Instrument"
-msgstr ""
+msgstr "Soitin"
 
 #: ../root/instrument/edit_form.tt:9
 msgid "Instrument Details"
-msgstr ""
+msgstr "Lisätietoja soittimesta"
 
 #: ../root/browse/instrument.tt:11 ../root/browse/instrument.tt:13
 msgid "Instrument List"
-msgstr ""
+msgstr "Soitinlista"
 
 #: ../root/instrument/not_found.tt:1 ../root/instrument/not_found.tt:2
 msgid "Instrument Not Found"
-msgstr ""
+msgstr "Soitinta ei löydy"
 
 #: ../root/instrument/layout.tt:11
 msgid "Instrument information"
-msgstr ""
+msgstr "Soittimen tiedot"
 
 #: ../root/browse/index.tt:14
 msgid "Instrument list"
-msgstr ""
+msgstr "Soitinlista"
 
 #: ../root/components/common-macros.tt:548
 #: ../root/edit/details/add_instrument_annotation.tt:3
@@ -4160,7 +4163,7 @@ msgstr ""
 #: ../root/edit/details/edit_instrument.tt:5
 #: ../root/edit/details/remove_instrument.tt:3
 msgid "Instrument:"
-msgstr ""
+msgstr "Soitin:"
 
 #: ../root/main/500.tt:67
 msgid "Interface language:"
@@ -4210,7 +4213,7 @@ msgstr "JavaScript tulee olla käytössä."
 msgid "Join phrase"
 msgstr "Liitefraasi"
 
-#: ../root/components/forms.tt:354 ../root/release/edit/tracklist.tt:356
+#: ../root/components/forms.tt:354 ../root/release/edit/tracklist.tt:363
 msgid "Join phrase:"
 msgstr "Liitefraasi:"
 
@@ -4296,7 +4299,7 @@ msgstr "Levymerkien arvostelut"
 #: ../root/edit/details/edit_release_label.tt:11
 #: ../root/edit/details/remove_label.tt:3
 #: ../root/edit/details/remove_release_label.tt:7
-#: ../root/release/edit/information.tt:144 ../root/release/index.tt:15
+#: ../root/release/edit/information.tt:143 ../root/release/index.tt:15
 msgid "Label:"
 msgstr "Levymerkki:"
 
@@ -4364,7 +4367,7 @@ msgstr "Viimeksi muokattu:"
 
 #: ../root/layout.tt:100
 msgid "Last replication packet received at {datetime}"
-msgstr ""
+msgstr "Viimeisin kopiointipaketti vastaanotettu {datetime}"
 
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:111
 msgid "Last updated on {date}"
@@ -4393,7 +4396,7 @@ msgstr ""
 #: ../root/edit/details/historic/add_release.tt:52 ../root/freedb/show.tt:12
 #: ../root/freedb/show.tt:64 ../root/isrc/index.tt:18
 #: ../root/recording/index.tt:11 ../root/release/discids.tt:10
-#: ../root/release/edit/tracklist.tt:102 ../root/release/edit/tracklist.tt:255
+#: ../root/release/edit/tracklist.tt:102 ../root/release/edit/tracklist.tt:262
 #: ../root/release/index.tt:58 ../root/report/isrc_with_many_recordings.tt:26
 #: ../root/search/lib/inline-results-recording.tt:9
 msgid "Length"
@@ -4532,7 +4535,7 @@ msgstr "Pitkä linkkifraasi:"
 msgid "Looking for help? Check out our {doc|documentation} or {faq|FAQ}."
 msgstr "Tarvitsetko apua? Tutustu {doc|dokumentaatioomme} tai {faq|Usein Kysyttyihin Kysymyksiin}."
 
-#: ../root/release/edit/recordings.tt:154
+#: ../root/release/edit/recordings.tt:147
 msgid "Looking for suggested recordings..."
 msgstr "Etsitään ehdotettuja äänitteitä..."
 
@@ -4695,7 +4698,7 @@ msgstr "Sulauta artistit"
 
 #: ../root/instrument/merge.tt:1 ../root/instrument/merge.tt:3
 msgid "Merge Instruments"
-msgstr ""
+msgstr "Sulauta soittimet"
 
 #: ../root/label/merge.tt:1 ../root/label/merge.tt:3
 msgid "Merge Labels"
@@ -4787,11 +4790,11 @@ msgstr "Siirrä"
 msgid "Move Disc ID"
 msgstr "Siirrä levyn tunniste"
 
-#: ../root/release/edit/tracklist.tt:221
+#: ../root/release/edit/tracklist.tt:217
 msgid "Move disc down"
 msgstr "Siirrä levyä alas"
 
-#: ../root/release/edit/tracklist.tt:222
+#: ../root/release/edit/tracklist.tt:218
 msgid "Move disc up"
 msgstr "Siirrä levyä ylös"
 
@@ -4811,11 +4814,11 @@ msgstr "Siirrä tiedostoa alas"
 msgid "Move file up"
 msgstr "Siirrä tiedostoa ylös"
 
-#: ../root/release/edit/tracklist.tt:262
+#: ../root/release/edit/tracklist.tt:269
 msgid "Move track down"
 msgstr "Siirrä kappaletta alas"
 
-#: ../root/release/edit/tracklist.tt:263
+#: ../root/release/edit/tracklist.tt:270
 msgid "Move track up"
 msgstr "Siirrä kappaletta ylös"
 
@@ -5005,7 +5008,7 @@ msgstr "Uusi artisti"
 
 #: ../root/artist/edit_credit.tt:21 ../root/artist/split.tt:38
 msgid "New Artist Credit"
-msgstr "Uusi kirjoitusasu"
+msgstr "Uusi tekijänimi"
 
 #: ../root/release/add_cover_art.tt:120
 msgid "New Image Goes Here"
@@ -5086,7 +5089,7 @@ msgstr "Uusi merkistö:"
 msgid "New version:"
 msgstr "Uusi versio"
 
-#: ../root/release/edit/macros.tt:42 ../root/scripts/text_strings.tt:32
+#: ../root/release/edit/macros.tt:44 ../root/scripts/text_strings.tt:32
 msgid "Next"
 msgstr "Seuraava"
 
@@ -5296,7 +5299,7 @@ msgstr "Ei löytynyt? Kokeile uudelleen suoralla haulla."
 msgid "Note"
 msgstr ""
 
-#: ../root/release/edit/information.tt:251
+#: ../root/release/edit/information.tt:250
 msgid ""
 "Note! If you do not know the month or day of release, please leave them "
 "empty.  January 1st is not often the actual release date, please double "
@@ -5304,7 +5307,7 @@ msgid ""
 msgstr "Huomio! Jos et tiedä julkaisun kuukautta tai päivää, jätä ne täyttämättä.  Tammikuun ensimmäinen ei yleensä ole oikea julkaisupäivä. Varmista, että syötit päivämäärän oikein."
 
 #: ../root/edit/details/set_track_lengths.tt:42
-#: ../root/release/edit/recordings.tt:4
+#: ../root/release/edit/recordings.tt:3
 msgid "Note:"
 msgstr "Huomio:"
 
@@ -5318,11 +5321,11 @@ msgstr ""
 msgid "Notify me by email on new releases to my watched artists"
 msgstr "Ilmoita minulle sähköpostitse, seuraamieni artistien uusista julkaisuista"
 
-#: ../root/release/edit/recordings.tt:105
+#: ../root/release/edit/recordings.tt:98
 msgid "Now loading recording associations..."
 msgstr "Lataa äänitteiden yhteyksiä..."
 
-#: ../root/release/edit/tracklist.tt:118 ../root/release/edit/tracklist.tt:231
+#: ../root/release/edit/tracklist.tt:118 ../root/release/edit/tracklist.tt:232
 msgid "Now loading tracklist..."
 msgstr "Lataa kappalelistaa..."
 
@@ -5454,7 +5457,7 @@ msgstr "Avaa luokiteltavaksi"
 msgid "Opened:"
 msgstr "Avattu:"
 
-#: ../root/release/edit/recordings.tt:118 ../root/release/edit/tracklist.tt:11
+#: ../root/release/edit/recordings.tt:111 ../root/release/edit/tracklist.tt:11
 msgid "Options"
 msgstr "Asetukset"
 
@@ -5515,7 +5518,7 @@ msgstr "PUID-äänitunnisteet:"
 
 #: ../root/edit/details/add_release.tt:60
 #: ../root/edit/details/edit_release.tt:70
-#: ../root/release/edit/information.tt:199 ../root/release/layout.tt:48
+#: ../root/release/edit/information.tt:198 ../root/release/layout.tt:48
 msgid "Packaging:"
 msgstr "Pakkaus:"
 
@@ -5578,9 +5581,9 @@ msgstr "osana joukkoa -yhteys"
 msgid "Password:"
 msgstr "Salasana:"
 
-#: ../root/components/forms.tt:381 ../root/release/edit/tracklist.tt:403
+#: ../root/components/forms.tt:381 ../root/release/edit/tracklist.tt:410
 msgid "Paste Credits"
-msgstr "Liitä artistitiedot"
+msgstr "Liitä tekijätiedot"
 
 #: ../root/oauth2/authorize.tt:12
 msgid "Perform the above operations when I'm not using the application"
@@ -5714,9 +5717,9 @@ msgstr ""
 msgid ""
 "Please enter tags in the text area below. Tags are comma separated, and you "
 "may wish to see the {tagsyn|tag syntax documentation} for more information"
-msgstr "Lisää luokitukset alle, erottaen ne pilkulla toisistaan. Halutessasi voit tutustua dokumentaatioon {tagsyn|luokitteiden syntaksista}, saadaksesi lisätietoja aiheesta."
+msgstr "Lisää luokitukset alle, erottaen ne pilkulla toisistaan. Saatat haluta tutustua dokumentaatioon {tagsyn|luokitteiden syntaksista}"
 
-#: ../root/release/edit/information.tt:280
+#: ../root/release/edit/information.tt:279
 msgid ""
 "Please enter the barcode of the release you are entering, see <a "
 "href=\"{url}\" target=\"_blank\">Barcode</a> for more information."
@@ -5768,7 +5771,7 @@ msgstr ""
 
 #: ../root/alias/delete.tt:3
 msgid "Please review the {doc|alias documentation} before entering this edit."
-msgstr "Tutustu ohjeisiin {doc|alias documentation} ennen kuin syötät tämän muokkauksen."
+msgstr "Tutustu {doc|aliaksien dokumentaatioon} ennen kuin syötät tämän muokkauksen."
 
 #: ../root/cdstub/import.tt:3
 msgid "Please search for the artist you wish to create a new release for:"
@@ -5780,7 +5783,7 @@ msgid ""
 "documentation for a description of these types."
 msgstr ""
 
-#: ../root/scripts/text_strings.tt:144
+#: ../root/scripts/text_strings.tt:143
 msgid "Please select a link type for the URL you’ve entered."
 msgstr "Valitse linkin tyyppi kirjoittamallesi URL-osoitteelle."
 
@@ -5798,7 +5801,7 @@ msgstr "Valitse jokin yhteystyyppi tämän alta. Tämä yhteystyyppi ryhmittää
 msgid ""
 "Please select the artist credits that you want to rename to follow the new "
 "artist name."
-msgstr "Valitse kirjoitusasut, jotka haluat uudelleennimetä uuden artistin nimeä vastaavaksi."
+msgstr "Valitse tekijänimet, jotka haluat muuttaa vastaamaan uutta artistin nimeä."
 
 #: ../root/cdtoc/attach_artist_releases.tt:7
 msgid "Please select the medium you wish to attach this CD TOC to."
@@ -5874,7 +5877,7 @@ msgid "Preview"
 msgstr "Esikatselu"
 
 #: ../root/annotation/edit.tt:7 ../root/components/forms.tt:327
-#: ../root/release/edit/tracklist.tt:349
+#: ../root/release/edit/tracklist.tt:356
 msgid "Preview:"
 msgstr "Esikatselu:"
 
@@ -5882,7 +5885,7 @@ msgstr "Esikatselu:"
 msgid "Preview: "
 msgstr "Esikatselu:"
 
-#: ../root/release/edit/macros.tt:41 ../root/scripts/text_strings.tt:33
+#: ../root/release/edit/macros.tt:43 ../root/scripts/text_strings.tt:33
 msgid "Previous"
 msgstr "Aiempi"
 
@@ -5998,7 +6001,7 @@ msgstr "Lue lisää »"
 msgid ""
 "Read the {doc|WikiDocs} documentation for an overview of how transclusion "
 "works."
-msgstr "Lue {doc|WikiDocin} ohjeista miten sisällyttäminen tapahtuu."
+msgstr "Lue {doc|WikiDocin} dokumentaatiosta miten sisällyttäminen tapahtuu."
 
 #: ../root/main/index.tt:118
 msgid "Recent Additions"
@@ -6207,7 +6210,7 @@ msgid ""
 "the database. If you would like to propose a new relationship, please do so "
 "through the {url|Style Council}. Relationship editors will only make changes"
 " that have been approved by the Style Council."
-msgstr "Yhteys-editorit ovat käyttäjiä, jotka lisäävät tai muokkaavat yhteyksien tyyppejä tietokannassa. Jos haluat ehdottaa uutta yhteyttä, tee niin ottamalla yhteyttä {url|tyylineuvostoon}. Yhteys-editorit tekevät vain muutoksia, jotka ovat neuvoston ennalta hyväksymiä."
+msgstr "Yhteys-editorit ovat käyttäjiä, jotka lisäävät tai muokkaavat yhteyksien tyyppejä tietokannassa. Jos haluat ehdottaa uutta yhteyttä, niin ota yhteyttä {url|tyylineuvostoon}. Yhteys-editorit tekevät vain muutoksia, jotka ovat neuvoston ennalta hyväksymiä."
 
 #: ../root/edit/details/add_relationship.tt:3
 #: ../root/edit/details/edit_relationship.tt:8
@@ -6285,7 +6288,7 @@ msgstr "Julkaisuryhmä"
 
 #: ../root/release_group/edit_form.tt:11
 msgid "Release Group Details"
-msgstr "Julkaisuryhmän yksityiskohdat"
+msgstr "Lisätietoja julkaisuryhmästä"
 
 #: ../root/release_group/not_found.tt:1 ../root/release_group/not_found.tt:2
 msgid "Release Group Not Found"
@@ -6379,7 +6382,7 @@ msgstr "Julkaisuryhmän tiedot"
 
 #: ../root/release/layout.tt:84
 msgid "Release group rating"
-msgstr ""
+msgstr "Julkaisuryhmän arvostelu"
 
 #: ../root/user/ratings_summary.tt:3 ../root/user/ratings.tt:2
 msgid "Release group ratings"
@@ -6662,9 +6665,9 @@ msgstr "Poista alueen alias"
 msgid "Remove Artist Alias"
 msgstr "Poista artistin alias"
 
-#: ../root/components/forms.tt:343 ../root/release/edit/tracklist.tt:377
+#: ../root/components/forms.tt:343 ../root/release/edit/tracklist.tt:384
 msgid "Remove Artist Credit"
-msgstr "Poista kirjoitusasu"
+msgstr "Poista tekijänimi"
 
 #: ../root/release/remove_cover_art.tt:1 ../root/release/remove_cover_art.tt:2
 msgid "Remove Cover Art"
@@ -6684,13 +6687,13 @@ msgstr "Poista esimerkki"
 
 #: ../root/instrument/delete.tt:1 ../root/instrument/delete.tt:2
 msgid "Remove Instrument"
-msgstr ""
+msgstr "Poista soitin"
 
 #: ../root/instrument/delete_alias.tt:1
 msgid "Remove Instrument Alias"
-msgstr ""
+msgstr "Poista soittimen alias"
 
-#: ../root/label/delete.tt:2 ../root/release/edit/information.tt:164
+#: ../root/label/delete.tt:2 ../root/release/edit/information.tt:163
 msgid "Remove Label"
 msgstr "Poista levymerkki"
 
@@ -6766,7 +6769,7 @@ msgstr ""
 msgid "Remove collection"
 msgstr "Poista kokoelma"
 
-#: ../root/release/edit/tracklist.tt:223
+#: ../root/release/edit/tracklist.tt:219
 msgid "Remove disc"
 msgstr "Poista levy"
 
@@ -6781,7 +6784,7 @@ msgstr "Poista kokoelmasta {collection}"
 #: ../root/instrument/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Instrument/DeleteAlias.pm:14
 msgid "Remove instrument alias"
-msgstr ""
+msgstr "Poista soittimen alias"
 
 #: ../root/label/delete_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveLabelAlias.pm:11
@@ -6807,7 +6810,7 @@ msgstr "Poista valitut julkaisut kokoelmasta"
 msgid "Remove series alias"
 msgstr ""
 
-#: ../root/release/edit/tracklist.tt:298
+#: ../root/release/edit/tracklist.tt:305
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveTrack.pm:10
 msgid "Remove track"
 msgstr "Poista kappale"
@@ -6831,7 +6834,7 @@ msgstr "Poistettu"
 
 #: ../root/edit/details/merge_artists.tt:4
 msgid "Rename artist credits"
-msgstr "Muuta kirjoitusasua"
+msgstr "Muuta tekijänimeä"
 
 #: ../root/release/cover_art.tt:55
 msgctxt "button/menu"
@@ -6882,7 +6885,7 @@ msgstr "Vaatii:"
 msgid "Reset Password"
 msgstr "Salasanan vaihtaminen"
 
-#: ../root/release/edit/tracklist.tt:323
+#: ../root/release/edit/tracklist.tt:330
 msgid "Reset track numbers"
 msgstr "Nollaa kappalenumerot"
 
@@ -6897,7 +6900,7 @@ msgstr "Tuloksia per sivu:"
 msgid "Results:"
 msgstr "Tulokset:"
 
-#: ../root/release/edit/recordings.tt:8
+#: ../root/release/edit/recordings.tt:7
 msgid "Reuse previous recordings"
 msgstr ""
 
@@ -6912,7 +6915,7 @@ msgstr "Paljasta sähköpostiosoitteeni"
 msgid "Reverse link phrase:"
 msgstr "Käänteinen linkkifraasi:"
 
-#: ../root/release/edit/information.tt:273
+#: ../root/release/edit/information.tt:272
 msgid ""
 "Review the <a href=\"{url}\" target=\"_blank\">list of packaging types</a> "
 "for help."
@@ -6922,7 +6925,7 @@ msgstr "Tutustu <a href=\"{url}\" target=\"_blank\">listaan pakkaustyypeistä</a
 msgid ""
 "Review the {url|documentation} on release editor seeding and make sure your "
 "data is formatted correctly."
-msgstr "Tarkastele {url|dokumentaatiota} julkaisumuokkaimen kylvämisestä ja varmista, että antamasi tiedot on muotoiltu oikein."
+msgstr "Tarkastele {url|dokumentaatiota} julkaisumuokkaimen alustamisesta ja varmista, että syöttämäsi data on muotoiltu oikein."
 
 #: ../root/account/applications.tt:35
 msgid "Revoke Access"
@@ -7041,7 +7044,7 @@ msgstr "Etsi tietokannasta tätä CD-levyä"
 msgid "Search the documentation..."
 msgstr "Etsi dokumentaatiosta..."
 
-#: ../root/release/edit/recordings.tt:142
+#: ../root/release/edit/recordings.tt:135
 msgid "Search:"
 msgstr "Etsi:"
 
@@ -7188,7 +7191,7 @@ msgstr ""
 
 #: ../root/series/edit_form.tt:30
 msgid "Series Details"
-msgstr ""
+msgstr "Lisätietoja sarjasta"
 
 #: ../root/series/not_found.tt:1 ../root/series/not_found.tt:2
 msgid "Series Not Found"
@@ -7380,9 +7383,9 @@ msgstr ""
 
 #: ../root/scripts/text_strings.tt:28
 msgid "Some artists credited with alternative names"
-msgstr "Jotkut artistit kirjattu vaihtoehtoisella nimellä"
+msgstr "Artisteja nimetty käyttäen vaihtoehtoisia nimiä"
 
-#: ../root/scripts/text_strings.tt:120
+#: ../root/release/edit/editnote.tt:4
 msgid ""
 "Some errors were detected in the data you’ve entered. Click on the tabs "
 "shaded red and correct any visible errors."
@@ -7545,7 +7548,7 @@ msgstr "Valitettavasti käyttäjää ei löydy annetulla nimellä. Voit sen sija
 msgid ""
 "Sorry, we could not find an instrument with that MusicBrainz ID. You may "
 "wish to try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Valitettavasti soitinta ei löydy annetulla MusicBrainz-tunnisteella. Voit sen sijaan halutessasi {search_url|etsiä sitä}."
 
 #: ../root/cdtoc/not_found.tt:4
 msgid "Sorry, we could not find the CD TOC you specified."
@@ -7713,7 +7716,7 @@ msgstr "Lähetä ääni ja merkintä"
 msgid "Submit votes &amp; edit notes"
 msgstr "Äänestä &amp; muokkaa huomautuksia"
 
-#: ../root/release/edit/editnote.tt:38
+#: ../root/release/edit/editnote.tt:40
 #: ../root/release/edit_relationships.tt:107
 #: ../root/release/edit_relationships.tt:167
 msgid "Submitting edits..."
@@ -7757,7 +7760,7 @@ msgstr "Seuratut kohteet"
 msgid "Success!"
 msgstr "Onnistui!"
 
-#: ../root/release/edit/recordings.tt:161
+#: ../root/release/edit/recordings.tt:154
 msgid "Suggested recordings:"
 msgstr "Ehdotetut äänitteet:"
 
@@ -7765,9 +7768,9 @@ msgstr "Ehdotetut äänitteet:"
 msgid "Summary:"
 msgstr "Tiivistelmä:"
 
-#: ../root/release/edit/tracklist.tt:324
+#: ../root/release/edit/tracklist.tt:331
 msgid "Swap track titles with artist credits"
-msgstr "Vaihda kappaleiden nimet artistien nimiin"
+msgstr "Vaihda kappaleiden ja artistien nimien paikkoja"
 
 #: ../root/main/503.tt:1 ../root/main/503.tt:3
 msgid "System Busy"
@@ -7903,7 +7906,7 @@ msgstr "Cover Art Archivelle on tullut pyyntöjä poistaa materiaalia, tähän j
 msgid "The Dawn of the Project"
 msgstr "Projektin synty"
 
-#: ../root/release/edit/information.tt:301
+#: ../root/release/edit/information.tt:300
 msgid "The annotation field functions like a miniature wiki."
 msgstr "Lisätietokenttä toimii mini-wikinä."
 
@@ -7950,7 +7953,7 @@ msgstr "Syöttämäsi viivakoodi näyttää UPC-koodilta, jonka tarkistusluku pu
 msgid "The blog is currently unavailable."
 msgstr "Blogi ei ole parhaillaan saatavilla."
 
-#: ../root/release/edit/information.tt:263
+#: ../root/release/edit/information.tt:262
 msgid "The catalog number you have entered looks like an Amazon ASIN."
 msgstr "Lisäämäsi luettelonumero näyttää Amazon ASIN-tunnisteelta."
 
@@ -7958,7 +7961,7 @@ msgstr "Lisäämäsi luettelonumero näyttää Amazon ASIN-tunnisteelta."
 msgid "The check digit is {checkdigit}."
 msgstr "Tarkistusluku on {checkdigit}."
 
-#: ../root/release/edit/information.tt:310
+#: ../root/release/edit/information.tt:309
 msgid ""
 "The comment field is used to help users distinguish between identically "
 "named releases."
@@ -7984,7 +7987,7 @@ msgstr "Kylvämäsi tiedot sisälsivät seuraavat virheet:"
 msgid "The database has no tags."
 msgstr "Tietokannasta ei löydy luokituksia."
 
-#: ../root/scripts/text_strings.tt:96
+#: ../root/release/edit/information.tt:128 ../root/scripts/text_strings.tt:96
 msgid "The date you've entered is not valid."
 msgstr "Syöttämäsi päiväys on virheellinen."
 
@@ -8028,7 +8031,7 @@ msgstr "Seuraavat {count} käyttäjää ovat sisällyttäjä-editoreja:"
 msgid "The following {count} users have auto-editor privileges:"
 msgstr "Seuraavat {count} käyttäjää ovat auto-editoreja:"
 
-#: ../root/scripts/text_strings.tt:152
+#: ../root/scripts/text_strings.tt:151
 msgid ""
 "The information you‘ve provided contains errors, and was not entered; please"
 " visit the tabs shaded in red, fix all visible errors, and try again."
@@ -8055,7 +8058,7 @@ msgstr ""
 msgid "The page you requested is private."
 msgstr "Pyytämäsi sivu on yksityinen."
 
-#: ../root/release/edit/information.tt:304
+#: ../root/release/edit/information.tt:303
 msgid ""
 "The purpose of this field is to add information that usually doesn't fit "
 "into the strict structural data schema of MusicBrainz (be it due to "
@@ -8091,19 +8094,19 @@ msgid ""
 "This is usually only temporary, so please retry your search again later."
 msgstr "Hakupalvelin ei täyttänyt hakupyyntöäsi sisäisen virheen vuoksi. Tämä on yleensä väliaikaista, joten voit yrittää hakuasi myöhemmin uudelleen. "
 
-#: ../root/scripts/text_strings.tt:190
+#: ../root/scripts/text_strings.tt:179
 msgid "The series you’ve selected is for recordings."
 msgstr ""
 
-#: ../root/scripts/text_strings.tt:192
+#: ../root/scripts/text_strings.tt:181
 msgid "The series you’ve selected is for release groups."
 msgstr ""
 
-#: ../root/scripts/text_strings.tt:191
+#: ../root/scripts/text_strings.tt:180
 msgid "The series you’ve selected is for releases."
 msgstr ""
 
-#: ../root/scripts/text_strings.tt:193
+#: ../root/scripts/text_strings.tt:182
 msgid "The series you’ve selected is for works."
 msgstr ""
 
@@ -8187,7 +8190,7 @@ msgid ""
 "at the bottom of the {alias_uri|aliases} tab and remove all existing "
 "{rel_uri|relationships} instead, which will allow ModBot to automatically "
 "remove this artist in the upcoming days."
-msgstr ""
+msgstr "Yhtäkään äänitettä, julkaisuryhmää, julkaisua tai kappaletta ei ole merkitty pelkästään artistille {name}. Jos yrität poistaa artistin {name}, muokkaa kaikkia tekijätietoja välilehdeltä {alias_uri|aliakset} ja poista kaikki {rel_uri|yhteydet} sen sijaan. Sen jälkeen ModBot tulee poistamaan artistin automaattisesti seuraavien päivien aikana."
 
 #: ../root/user/subscribers.tt:4
 msgid "There is currently {num} user subscribed to edits that {user} makes:"
@@ -8258,7 +8261,7 @@ msgid ""
 " a work, please {search_url|search for the work} and add it."
 msgstr "Tämä ISWC-koodi ei liity yhteenkään teokseen. Jos haluat liittää sen tiettyyn teokseen, {search_url|etsi teos} ja lisää se siihen."
 
-#: ../root/scripts/text_strings.tt:143
+#: ../root/scripts/text_strings.tt:142
 msgid ""
 "This URL is not allowed for the selected link type, or is incorrectly "
 "formatted."
@@ -8441,7 +8444,7 @@ msgstr "Tämä kohde on poistettu, joten sitä ei voida näyttää kunnolla."
 msgid "This entity will be created when edits are entered."
 msgstr "Tämä kohde luodaan kun muokkaukset syötetään sisään."
 
-#: ../root/release/edit/information.tt:313
+#: ../root/release/edit/information.tt:312
 msgid ""
 "This field is not a place to store general background information about the "
 "release: that kind of information should go in the annotation field."
@@ -8452,14 +8455,14 @@ msgid ""
 "This form allows you to edit the artist credit \"{ac}\". When the edit is "
 "accepted, all tracks, recordings, releases and release groups using this "
 "artist credit will be update to use the new one."
-msgstr "Tällä lomakkeella voi muuttaa artistin tekijänimeä \"{ac}\". Kun muutos on hyväksytty, kaikki kappaleet, äänitteet, julkaisut ja julkaisuryhmät, jotka ovat merkittyjä tälle tekijänimelle päivittyvät."
+msgstr "Tällä lomakkeella voi muuttaa artistin tekijänimeä \"{ac}\". Kun muutos on hyväksytty, kaikki kappaleet, äänitteet, julkaisut ja julkaisuryhmät, jotka ovat merkittyjä tälle tekijänimelle päivittyvät uuteen nimeen."
 
 #: ../root/artist/split.tt:32
 msgid ""
 "This form allows you to split {artist} into separate artists. When the edit "
 "is accepted, existing artist credits will be updated, and collaboration "
 "relationships will be removed"
-msgstr ""
+msgstr "Tällä lomakkeella voit jakaa artistin {artist} useammaksi artistiksi. Kun muutos on hyväksytty, nykyiset artistin tekijätiedot päivitetään, ja yhteistyösuhteet poistetaan."
 
 #: ../root/scripts/text_strings.tt:70
 msgid "This group has dissolved."
@@ -8469,7 +8472,7 @@ msgstr "Tämä yhtye on hajonnut."
 msgid ""
 "This instrument cannot be removed because there are still relationships "
 "attributed to it."
-msgstr ""
+msgstr "Tätä soitnta ei voi poistaa, koska sille on vielä määriteltynä yhteyksiä."
 
 #: ../root/layout.tt:37 ../lib/DBDefs/Default.pm:139
 msgid "This is a MusicBrainz development server."
@@ -8501,7 +8504,7 @@ msgstr "Tämä on ohjelmistokehitykseen käytettävä palvelin; kaikki salasanat
 msgid ""
 "This is a list of all the different ways {artist} is credited in the "
 "database. View the {doc|artist credit documentation} for more details."
-msgstr "Tämä on lista kaikista eri tavoista, joilla {artist} on kirjattu tietokantaan. Lisätietoja sivulla {doc|artist credit documentation}. "
+msgstr "Tämä on lista kaikista eri tavoista, joilla {artist} on nimettynä tietokantaan. Lisätietoja {doc|dokumentaatiossa artistin tekijätiedoista}. "
 
 #: ../root/annotation/common.tt:25
 msgid ""
@@ -8543,7 +8546,7 @@ msgstr "Tällä levymerkillä ei ole yhteyksiä tai julkaisuja, joten levymerkki
 msgid "This label has no tags."
 msgstr "Tällä levymerkillä ei ole luokituksia."
 
-#: ../root/scripts/text_strings.tt:155
+#: ../root/release/edit/tracklist.tt:223
 msgid ""
 "This medium already has disc IDs, so you may only change the format to a "
 "format that can have disc IDs."
@@ -8566,21 +8569,21 @@ msgid ""
 " used on the target mediums."
 msgstr ""
 
-#: ../root/scripts/text_strings.tt:140
+#: ../root/scripts/text_strings.tt:139
 msgid ""
 "This mode capitalises almost all words, with some words (mainly articles and"
 " short prepositions) lowercased. Some words may need to be manually "
 "capitalised to follow the {url|English capitalisation guidelines}."
 msgstr ""
 
-#: ../root/scripts/text_strings.tt:141
+#: ../root/scripts/text_strings.tt:140
 msgid ""
 "This mode capitalises the first word of a sentence, most other words are "
 "lowercased. Some words, often proper nouns, may need to be manually fixed "
 "according to the {url|relevant language guidelines}."
 msgstr ""
 
-#: ../root/scripts/text_strings.tt:142
+#: ../root/scripts/text_strings.tt:141
 msgid ""
 "This mode capitalises titles as sentence mode, but also inserts spaces "
 "before semicolons, colons, exclamation marks and question marks, and inside "
@@ -8646,9 +8649,9 @@ msgstr "Tämä äänite on video"
 
 #: ../root/relationship/linktype/form.tt:17
 msgid "This relationship allows setting dates"
-msgstr ""
+msgstr "Tämä yhteystyyppi antaa asettaa päivämäärät"
 
-#: ../root/scripts/text_strings.tt:171
+#: ../root/scripts/text_strings.tt:160
 msgid "This relationship already exists."
 msgstr "Tämä yhteys on jo olemassa."
 
@@ -8675,7 +8678,7 @@ msgstr "Tällä yhteystyypillä ei ole yhtään esimerkkiä."
 msgid "This relationship type doesn't allow any attributes."
 msgstr ""
 
-#: ../root/doc/relationship_type.tt:11 ../root/scripts/text_strings.tt:129
+#: ../root/doc/relationship_type.tt:11 ../root/scripts/text_strings.tt:128
 msgid "This relationship type is deprecated and should not be used."
 msgstr "Tämä yhteystyyppi on vanhentunut eikä sitä tulisi käyttää. "
 
@@ -8684,7 +8687,7 @@ msgid ""
 "This relationship type is only used for grouping other relationship types."
 msgstr "Tämä yhteystyyppi ryhmittää muita yhteystyyppejä."
 
-#: ../root/release/edit/information.tt:194
+#: ../root/release/edit/information.tt:193
 msgid "This release does not have a barcode"
 msgstr "Tällä julkaisulla ei ole viivakoodia"
 
@@ -8709,7 +8712,7 @@ msgstr ""
 msgid "This release has no tags."
 msgstr "Tätä julkaisua ei ole luokiteltu."
 
-#: ../root/release/edit/information.tt:319
+#: ../root/release/edit/information.tt:318
 msgid ""
 "This release status should be used for unofficial translations and "
 "transliterations of tracklists and release titles, and does not denote a "
@@ -9162,7 +9165,7 @@ msgstr "Taulukko näyttää yhteenvedon tämän editorin antamista äänistä."
 msgid "This track's MBID will change when this edit is applied."
 msgstr "Tämä kappaleen MBID muuttuu, kun tämä muokkaus otetaan käyttöön."
 
-#: ../root/scripts/text_strings.tt:123
+#: ../root/scripts/text_strings.tt:122
 msgid ""
 "This tracklist has artist credits with information that will be lost if you "
 "swap artist credits with track titles. This cannot be undone. Do you wish to"
@@ -9223,7 +9226,7 @@ msgstr "Aikavyöhyke:"
 #: ../root/edit/details/edit_medium.tt:57
 #: ../root/edit/details/edit_medium.tt:61 ../root/isrc/index.tt:16
 #: ../root/iswc/index.tt:16 ../root/recording/index.tt:10
-#: ../root/release/edit/tracklist.tt:100 ../root/release/edit/tracklist.tt:253
+#: ../root/release/edit/tracklist.tt:100 ../root/release/edit/tracklist.tt:260
 #: ../root/release/index.tt:52 ../root/search/results-freedb.tt:12
 msgid "Title"
 msgstr "Nimi"
@@ -9257,7 +9260,7 @@ msgstr "Muokataksesi tyyppejä valitse {edit_page|muokkaa julkaisuryhmää}."
 
 #: ../root/elections/show.tt:96
 msgid "To find out if you can vote for this candidate, please {url|log in}."
-msgstr "Selvittääksesi voitko äänestää tätä ehdokasta, {url|sisäänkirjaudu}."
+msgstr "Nähdäksesi voitko äänestää tätä ehdokasta, {url|kirjaudu sisään}."
 
 #: ../root/release/edit_relationships.tt:17
 msgid ""
@@ -9397,7 +9400,7 @@ msgstr "Kappale #"
 msgid "Track Not Found"
 msgstr "Kappaleita ei löytynyt"
 
-#: ../root/release/edit/tracklist.tt:322 ../root/scripts/text_strings.tt:150
+#: ../root/release/edit/tracklist.tt:329 ../root/scripts/text_strings.tt:149
 msgid "Track Parser"
 msgstr "Kappaleiden jäsennin"
 
@@ -9440,7 +9443,7 @@ msgstr "Kappale:"
 
 #: ../root/cdstub/edit_form.tt:12 ../root/cdstub/index.tt:7
 #: ../root/release/edit/layout.tt:16 ../root/release/index.tt:25
-#: ../root/scripts/text_strings.tt:147
+#: ../root/scripts/text_strings.tt:146
 msgid "Tracklist"
 msgstr "Kappalelista"
 
@@ -9636,7 +9639,7 @@ msgstr "Luvaton pyyntö"
 
 #: ../root/browse/instrument.tt:21
 msgid "Unclassified instrument"
-msgstr ""
+msgstr "Määrittelemätön soitin"
 
 #: ../root/components/common-macros.tt:958 ../root/report/artist_list.tt:17
 #: ../root/report/artists_with_multiple_occurances_in_artist_credits.tt:25
@@ -9685,7 +9688,7 @@ msgstr "Päivitä luokitukset"
 
 #: ../root/artist/merge.tt:19
 msgid "Update artist credits to use the new artist's name"
-msgstr ""
+msgstr "Päivitä artistin tekijätiedot käyttämään uuden artistin nimeä"
 
 #: ../root/collection/edit_form.tt:20
 msgid "Update collection"
@@ -9717,17 +9720,17 @@ msgstr "Käytä <strong>XML-verkkopalveluamme</strong> tai <strong>sovelluskirja
 msgid ""
 "Use the following fields to enter collaborations, see the <a "
 "href=\"{url}\">Artist Credit</a> documentation for more information."
-msgstr "Käytä seuraavia kenttiä syöttääksesi yhteisstyötä tehneiden artistien nimet. Lisätietoja <a href=\"{url}\">artistien nimeämisestä</a>. "
+msgstr "Käytä seuraavia kenttiä syöttääksesi yhteistyötä tehneiden artistien nimet. Tutustu <a href=\"{url}\">dokumentaatioon artistin tekijätiedoista</a>."
 
-#: ../root/release/edit/tracklist.tt:160
+#: ../root/release/edit/tracklist.tt:157
 msgid "Use the following fields to search for a CD stub."
 msgstr "Käytä seuraavia kenttiä etsiäksesi CD-tynkiä. "
 
-#: ../root/release/edit/tracklist.tt:167
+#: ../root/release/edit/tracklist.tt:162
 msgid "Use the following fields to search for a FreeDB entry."
 msgstr "Käytä seuraavia kenttiä etsiäksesi FreeDB-palvelusta. "
 
-#: ../root/release/edit/tracklist.tt:153
+#: ../root/release/edit/tracklist.tt:152
 msgid "Use the following fields to search for an existing tracklist."
 msgstr "Käytä seuraavia kenttiä etsiäksesi tietokannasta jo löytyviä kappalelistoja."
 
@@ -9858,7 +9861,7 @@ msgstr "Äänestä KYLLÄ"
 msgid "Vote on Edits"
 msgstr "Äänestä muokkauksista"
 
-#: ../root/scripts/text_strings.tt:126
+#: ../root/scripts/text_strings.tt:125
 msgid "Vote on all edits:"
 msgstr "Äänestä kaikista muokkauksista:"
 
@@ -9935,14 +9938,14 @@ msgstr "Äänestys ei ole vielä avoinna. Jos haluat tukea tätä ehdokasta, voi
 msgid "Voting period (days)"
 msgstr "Äänestysaika (päivinä)"
 
-#: ../root/release/edit/information.tt:248
+#: ../root/release/edit/information.tt:247
 msgid ""
 "Warning! \"1990-10-25\" is the bogus date that Amazon gives to all releases "
 "for which they don't know the actual date. <b>Please use this date only if "
 "you're certain this date is correct!</b>"
 msgstr "Varoitus! \"1990-10-25\" on valepäiväys, jonka Amazon antaa kaikille julkaisuille joille ei tiedetä varsinaista julkaisupäivää. <b>Käytä tätä päiväystä vain jos olet varma päiväyksen oikeellisuudesta!</b>"
 
-#: ../root/release/edit/tracklist.tt:239
+#: ../root/release/edit/tracklist.tt:240
 msgid "Warning:"
 msgstr "Varoitus:"
 
@@ -10036,7 +10039,7 @@ msgid ""
 "your request &#x2014; the problem may go away."
 msgstr "Olemme pahoillamme tästä virhetilanteesta. Kokeile muutaman minuutin kuluttua uudelleen; ongelma saattaa korjaantua itsekseen."
 
-#: ../root/scripts/text_strings.tt:125
+#: ../root/scripts/text_strings.tt:124
 msgid ""
 "We're very sorry, an error occurred during submission. The server may be "
 "under heavy load; please wait a moment and try again."
@@ -10124,7 +10127,7 @@ msgstr ""
 
 #: ../root/work/edit_form.tt:12
 msgid "Work Details"
-msgstr "Teoksen yksityiskohdat"
+msgstr "Lisätietoja teoksesta"
 
 #: ../root/work/not_found.tt:1 ../root/work/not_found.tt:2
 msgid "Work Not Found"
@@ -10292,7 +10295,7 @@ msgid ""
 "You are about to merge the following instruments into a single instrument. "
 "Please select the instrument which you would like other instruments to be "
 "merged into:"
-msgstr ""
+msgstr "Olet sulauttamassa seuraavia soittimia yhdeksi soittimeksi. Valitse soitin johon muut soittimet tulisi sulauttaa:"
 
 #: ../root/label/merge.tt:4
 msgid ""
@@ -10405,7 +10408,7 @@ msgid ""
 "use by other relationships."
 msgstr "Et voi poistaa yhteyden omaisuutta \"{type}\", koska toinen yhteys käyttää sitä vielä."
 
-#: ../root/scripts/text_strings.tt:159
+#: ../root/release/edit/information.tt:129
 msgid "You cannot use the same country more than once."
 msgstr "Et voi käyttää samaa maata useammin kuin kerran."
 
@@ -10451,13 +10454,13 @@ msgid ""
 "recording."
 msgstr "Olet käyttänyt {valink|eri esittäjiä} erityiskäyttöön tarkoitettua artistia tällä äänitteellä."
 
-#: ../root/release/edit/tracklist.tt:180
+#: ../root/release/edit/tracklist.tt:174
 msgid ""
 "You haven't added any media yet. Click on the \"Add Disc\" button below to "
 "add one."
 msgstr "Et ole vielä lisännyt yhtään tallennetta. Klikkaa \"Lisää levy\" -nappulaa alhaalla lisätäksesi yhden."
 
-#: ../root/scripts/text_strings.tt:153
+#: ../root/release/edit/information.tt:58
 msgid "You haven‘t entered a complete artist credit."
 msgstr "Et ole lisännyt valmista kirjoitusasua."
 
@@ -10485,7 +10488,7 @@ msgstr ""
 msgid "You must be logged in to vote on edits"
 msgstr "Sinun tulee olla sisäänkirjautunut äänestääksesi muokkauksista."
 
-#: ../root/scripts/text_strings.tt:154
+#: ../root/release/edit/tracklist.tt:252
 msgid "You must enter a title and select an artist for every track."
 msgstr "Sinun täytyy lisätä nimi ja valita artisti jokaiselle kappaleelle."
 
@@ -10501,17 +10504,17 @@ msgid ""
 "database."
 msgstr "Sinun tulee antaa toimiva sähköpostiosoite, mikäli haluat osallistua tietokannan toimintaan."
 
-#: ../root/scripts/text_strings.tt:162
+#: ../root/release/edit/editnote.tt:32
 msgid ""
 "You must provide an edit note when adding a release. Even just a URL or "
 "something like “CD in hand” helps!"
 msgstr "Muokkausmerkintä vaaditaan julkaisua lisättäessä. Jopa pelkkä URL-osoite tai \"CD-levy kädessäni\" auttaa!"
 
-#: ../root/scripts/text_strings.tt:160
+#: ../root/release/edit/information.tt:167
 msgid "You must select an existing label."
 msgstr "Sinun täytyy valita olemassa oleva levymerkki."
 
-#: ../root/scripts/text_strings.tt:158
+#: ../root/release/edit/information.tt:34
 msgid "You must select an existing release group."
 msgstr "Sinun täytyy valita olemassa oleva julkaisuryhmä."
 
@@ -10527,15 +10530,15 @@ msgstr "Sinun tulee olla täysin varma että tämä levyn tunniste lisättiin t�
 msgid "You need to be logged in to view this page."
 msgstr "Sinun tulee sisäänkirjautua nähdeksesi tämän sivun."
 
-#: ../root/scripts/text_strings.tt:172
+#: ../root/scripts/text_strings.tt:161
 msgid "You selected {area}."
 msgstr "Valitsit alueen {area}."
 
-#: ../root/scripts/text_strings.tt:146
+#: ../root/scripts/text_strings.tt:145
 msgid "You selected {label}."
 msgstr "Valitsit levymerkin {label}."
 
-#: ../root/scripts/text_strings.tt:145
+#: ../root/scripts/text_strings.tt:144
 msgid "You selected {releasegroup}."
 msgstr "Valitsit julkaisuryhmän {releasegroup}."
 
@@ -10575,7 +10578,7 @@ msgstr "Asetuksesi on tallennettu. Klikkaa {link|tästä} jatkaaksesi käyttäj�
 
 #: ../root/account/edit_ok.tt:6
 msgid "Your profile has been updated."
-msgstr "Profiilisia on päivitetty."
+msgstr "Profiilisi on päivitetty."
 
 #: ../root/search/error/invalid.tt:3
 msgid "Your search query was deemed invalid by our ruthless search server."
@@ -10585,13 +10588,13 @@ msgstr ""
 msgid "Your username will be publicly visible."
 msgstr "Käyttäjänimesi on julkisesti esillä."
 
-#: ../root/release/edit/tracklist.tt:189
+#: ../root/release/edit/tracklist.tt:185
 msgid ""
 "You’ve seeded some Disc IDs that aren’t matched to any medium. If this is "
 "wrong, use the “Attach Disc ID” options below."
 msgstr ""
 
-#: ../root/release/edit/tracklist.tt:240
+#: ../root/release/edit/tracklist.tt:241
 msgid ""
 "You’ve used the {valink|Various Artists} special purpose artist on some "
 "tracks below. {valink|Various Artists} should very rarely be used on tracks;"
@@ -10639,7 +10642,7 @@ msgstr "kaikkiin"
 msgid "any"
 msgstr "mihin tahansa"
 
-#: ../root/release/edit/recordings.tt:178 ../root/scripts/text_strings.tt:27
+#: ../root/release/edit/recordings.tt:171 ../root/scripts/text_strings.tt:27
 msgid "appears on:"
 msgstr "julkaisulla: "
 
@@ -10671,11 +10674,11 @@ msgstr "välillä"
 msgid "bot"
 msgstr "botti"
 
-#: ../root/release/edit/recordings.tt:69 ../root/release/edit/recordings.tt:72
+#: ../root/release/edit/recordings.tt:64 ../root/release/edit/recordings.tt:67
 msgid "by"
 msgstr "artistilta"
 
-#: ../root/scripts/text_strings.tt:163
+#: ../root/scripts/text_strings.tt:152
 msgid "by {artist}"
 msgstr "artistilta {artist}"
 
@@ -10726,7 +10729,7 @@ msgstr "{begin_date} alkaen {end_date} asti"
 
 #: ../root/components/common-macros.tt:643 ../root/edit/details/macros.tt:38
 msgid "from {date} to ????"
-msgstr "{date} alkaen ???? asti "
+msgstr "{date} alkaen ???? asti"
 
 #: ../root/components/common-macros.tt:643 ../root/edit/details/macros.tt:38
 msgid "from {date} to present"
@@ -10738,7 +10741,7 @@ msgstr ""
 
 #: ../root/components/relationship-editor.tt:67
 #: ../root/components/relationship-editor.tt:93
-#: ../root/release/edit/tracklist.tt:212
+#: ../root/release/edit/tracklist.tt:208
 msgid "help"
 msgstr "apua"
 
@@ -10764,7 +10767,7 @@ msgstr "tuo"
 
 #: ../root/components/common-macros.tt:643 ../root/edit/details/macros.tt:38
 msgid "in {date}"
-msgstr ""
+msgstr "{date} aikana"
 
 #: ../root/area/header.tt:23
 msgid "in {parent_areas}"
@@ -10866,7 +10869,7 @@ msgstr ""
 
 #: ../root/components/common-macros.tt:643 ../root/edit/details/macros.tt:38
 msgid "on {date}"
-msgstr ""
+msgstr "{date}"
 
 #: ../root/release/add_cover_art.tt:29
 msgid "or drop files here"
@@ -10906,7 +10909,7 @@ msgstr "satunnaisesti"
 msgid "raw edit data"
 msgstr ""
 
-#: ../root/release/edit/recordings.tt:25
+#: ../root/release/edit/recordings.tt:23
 msgid "recording"
 msgstr "äänite"
 
@@ -10967,7 +10970,7 @@ msgid ""
 "alone indent"
 msgstr "sarkain tai neljä välilyöntiä ja *; 1., a., A., i., I. merkityt listat;  spaces alone indent"
 
-#: ../root/release/edit/recordings.tt:24
+#: ../root/release/edit/recordings.tt:22
 msgid "track"
 msgstr "kappale"
 
@@ -10989,7 +10992,7 @@ msgstr "Lopeta muutosten seuraaminen"
 msgid "until {date}"
 msgstr "kunnes {date}"
 
-#: ../root/scripts/text_strings.tt:169
+#: ../root/scripts/text_strings.tt:158
 msgid "video"
 msgstr "video"
 
@@ -11007,7 +11010,7 @@ msgid ""
 "{about|More Information} &#x2014; {faq|FAQs} &#x2014; {contact|Contact Us}"
 msgstr "{about|Lisätietoja} &#x2014; {faq|Usein Kysytyt Kysymykset} &#x2014; {contact|Ota yhteyttä}"
 
-#: ../root/components/common-macros.tt:127 ../root/scripts/text_strings.tt:127
+#: ../root/components/common-macros.tt:127 ../root/scripts/text_strings.tt:126
 msgid "{almost_last_list_item} and {last_list_item}"
 msgstr "{almost_last_list_item} ja {last_list_item}"
 
@@ -11036,8 +11039,8 @@ msgid_plural "{artist} has no releases which have {n} tracks."
 msgstr[0] "Artistilla {artist} ei ole julkaisuja, joilla on vain {n} kappale."
 msgstr[1] "Artistilla {artist} ei ole julkaisuja, joilla on vain {n} kappaletta."
 
-#: ../root/scripts/text_strings.tt:187
-#: ../lib/MusicBrainz/Server/Entity/Relationship.pm:212
+#: ../root/scripts/text_strings.tt:176
+#: ../lib/MusicBrainz/Server/Entity/Relationship.pm:225
 #, perl-brace-format
 msgid "{attribute}: {value}"
 msgstr ""
@@ -11083,7 +11086,7 @@ msgid_plural "{count} private ratings not listed."
 msgstr[0] "{count} yksityinen arvostelu ei listattu."
 msgstr[1] "{count} yksityistä arvostelu ei listattu."
 
-#: ../root/scripts/text_strings.tt:173
+#: ../root/scripts/text_strings.tt:162
 msgid "{description} ({url|more documentation})"
 msgstr "{description} ({url|lisää dokumentaatiota})"
 
@@ -11132,7 +11135,7 @@ msgid "{entity0}-{entity1}"
 msgstr "{entity0}-{entity1}"
 
 #: ../root/components/common-macros.tt:266 ../root/main/index.tt:124
-#: ../root/scripts/text_strings.tt:164
+#: ../root/scripts/text_strings.tt:153
 msgid "{entity} by {artist}"
 msgstr "{entity} artistilta {artist}"
 
@@ -11156,7 +11159,7 @@ msgstr "Kohdetta {link} ei ole arvosteltu."
 msgid "{link} has no relationships."
 msgstr "Ei yhteyksiä kohteelle {link}."
 
-#: ../root/components/common-macros.tt:129 ../root/scripts/text_strings.tt:128
+#: ../root/components/common-macros.tt:129 ../root/scripts/text_strings.tt:127
 msgid "{list_item}, {rest}"
 msgstr "{list_item}, {rest}"
 
@@ -11164,11 +11167,11 @@ msgstr "{list_item}, {rest}"
 msgid "{mbid|<abbr title=\"MusicBrainz Identifier\">MBID</abbr>}:"
 msgstr "{mbid|<abbr title=\"MusicBrainz-tunniste\">MBID</abbr>}:"
 
-#: ../root/scripts/text_strings.tt:166
+#: ../root/scripts/text_strings.tt:155
 msgid "{name} - Add Release"
 msgstr "{name} - Lisää julkaisu"
 
-#: ../root/scripts/text_strings.tt:168
+#: ../root/scripts/text_strings.tt:157
 msgid "{name} - Edit Release"
 msgstr "{name} - Muokkaa julkaisua"
 
@@ -11286,7 +11289,7 @@ msgid_plural "{num} years ago"
 msgstr[0] "{num} vuosi sitten"
 msgstr[1] "{num} vuotta sitten"
 
-#: ../root/components/relationships.tt:16 ../root/scripts/text_strings.tt:188
+#: ../root/components/relationships.tt:16 ../root/scripts/text_strings.tt:177
 msgid "{num}. {relationship}"
 msgstr ""
 
@@ -11342,7 +11345,7 @@ msgstr "{type0}-{type1} yhteystyypit"
 
 #: ../root/instrument/layout.tt:1
 msgid "{type} “{instrument}”"
-msgstr ""
+msgstr "{type} “{instrument}”"
 
 #: ../root/work/layout.tt:1
 msgid "{type} “{work}”"
@@ -11382,7 +11385,7 @@ msgid ""
 " that the artist has been entered correctly."
 msgstr "{valink|Eri esittäjiä} käytetään erittäin harvoin äänitteissä. Varmista artistin olevan oikein."
 
-#: ../root/components/common-macros.tt:943 ../root/scripts/text_strings.tt:174
+#: ../root/components/common-macros.tt:943 ../root/scripts/text_strings.tt:163
 msgid "{variable}:"
 msgstr ""
 
@@ -11586,7 +11589,7 @@ msgstr "Tämä sulautumistapa ei ole mahdollinen julkaisuille, jotka ovat valitt
 
 #: ../lib/MusicBrainz/Server/Controller/Role/Annotation.pm:57
 msgid "The annotation revision ID must be a positive integer"
-msgstr ""
+msgstr "Lisätietokentän version tunnisteen tulee olla positiivinen kokonaisluku"
 
 #: ../lib/MusicBrainz/Server/Controller/Role/Annotation.pm:166
 msgid "The old and new annotation ids must be unique, positive integers."
@@ -11600,7 +11603,7 @@ msgstr "Redis-palvelimemme tuntuu olevan kaatunut. Jotkin ominaisuudet eivät v�
 
 #: ../lib/MusicBrainz/Server/Controller/Series.pm:122
 msgid "Series that have different entity types cannot be merged."
-msgstr ""
+msgstr "Sarjoja, joiden sisältötyypit ovat erilaisia, ei voida sulauttaa."
 
 #: ../lib/MusicBrainz/Server/Controller/User.pm:252
 #, perl-brace-format
@@ -11614,7 +11617,7 @@ msgstr "Viestiäsi ei voitu lähettää"
 #: ../lib/MusicBrainz/Server/Controller/User.pm:363
 #, perl-brace-format
 msgid "'{type}' is not an entity type that can have ratings."
-msgstr ""
+msgstr "'{type}' ei tue arvosteluja."
 
 #: ../lib/MusicBrainz/Server/Controller/WS/2/DiscID.pm:88
 msgid "Invalid TOC"
@@ -11691,7 +11694,7 @@ msgstr "Yhteensä"
 
 #: ../lib/MusicBrainz/Server/Edit/Area/AddAnnotation.pm:11
 msgid "Add area annotation"
-msgstr "Lisää alueen lisätietoja"
+msgstr "Lisää aluelle lisätietoja"
 
 #: ../lib/MusicBrainz/Server/Edit/Area/Create.pm:18
 msgid "Add area"
@@ -11856,23 +11859,23 @@ msgstr "Määritä kappaleiden kestot"
 
 #: ../lib/MusicBrainz/Server/Edit/Instrument/AddAnnotation.pm:11
 msgid "Add instrument annotation"
-msgstr ""
+msgstr "Lisää soittimelle lisätietoja"
 
 #: ../lib/MusicBrainz/Server/Edit/Instrument/Create.pm:17
 msgid "Add instrument"
-msgstr ""
+msgstr "Lisää soitin"
 
 #: ../lib/MusicBrainz/Server/Edit/Instrument/Delete.pm:10
 msgid "Remove instrument"
-msgstr ""
+msgstr "Poista soitin"
 
 #: ../lib/MusicBrainz/Server/Edit/Instrument/Edit.pm:27
 msgid "Edit instrument"
-msgstr ""
+msgstr "Muokkaa soitinta"
 
 #: ../lib/MusicBrainz/Server/Edit/Instrument/Merge.pm:11
 msgid "Merge instruments"
-msgstr ""
+msgstr "Sulauta soittimet"
 
 #: ../lib/MusicBrainz/Server/Edit/Label/AddAnnotation.pm:11
 msgid "Add label annotation"
@@ -12048,7 +12051,7 @@ msgstr "Muokkaa julkaisuryhmää"
 
 #: ../lib/MusicBrainz/Server/Edit/Series/AddAnnotation.pm:11
 msgid "Add series annotation"
-msgstr ""
+msgstr "Lisää sarjalle lisätietoja"
 
 #: ../lib/MusicBrainz/Server/Edit/Series/Create.pm:20
 msgid "Add series"
@@ -12064,7 +12067,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Edit/Series/Merge.pm:11
 msgid "Merge series"
-msgstr ""
+msgstr "Sulauta sarjat"
 
 #: ../lib/MusicBrainz/Server/Edit/Utils.pm:281
 msgid "Applied"
@@ -12088,7 +12091,7 @@ msgstr "Ei-äänet"
 
 #: ../lib/MusicBrainz/Server/Edit/WikiDoc.pm:7
 msgid "Wiki documentation"
-msgstr "Wikin ohjeet"
+msgstr "Wikin dokumentaatio"
 
 #: ../lib/MusicBrainz/Server/Edit/WikiDoc/Change.pm:14
 msgid "Change WikiDoc"
@@ -12218,7 +12221,7 @@ msgstr "Lähetä uudet ISRC-koodit tietokantaan"
 msgid "Submit new barcodes to the database"
 msgstr "Lähetä uudet viivakoodit tietokantaan"
 
-#: ../lib/MusicBrainz/Server/Entity/Relationship.pm:174
+#: ../lib/MusicBrainz/Server/Entity/Relationship.pm:187
 #, perl-brace-format
 msgid "{b} and {a}"
 msgstr "{b} ja {a}"
@@ -12258,7 +12261,7 @@ msgstr "Täytyy olla kelvollinen viivakoodi"
 #: ../lib/MusicBrainz/Server/Form/Field/ArtistCredit.pm:48
 #, perl-brace-format
 msgid "Please add an artist name for {credit}"
-msgstr ""
+msgstr "Anna artistin nimi tekijänimelle {credit}"
 
 #: ../lib/MusicBrainz/Server/Form/Field/ArtistCredit.pm:55
 #, perl-brace-format
@@ -12269,11 +12272,11 @@ msgstr "Artisti \"{artist}\" on linkittämätön, valitse olemassa oleva artisti
 
 #: ../lib/MusicBrainz/Server/Form/Field/ArtistCredit.pm:61
 msgid "Please add an artist name for each credit."
-msgstr ""
+msgstr "Anna artistin nimi jokaiselle tekijänimelle."
 
 #: ../lib/MusicBrainz/Server/Form/Field/ArtistCredit.pm:76
 msgid "Artist credit field is required"
-msgstr "Kirjoitusasu vaaditaan"
+msgstr "Artistin tekijänimi tulee asettaa"
 
 #: ../lib/MusicBrainz/Server/Form/Field/Coordinates.pm:93
 msgid "These coordinates could not be parsed"
@@ -12334,7 +12337,7 @@ msgstr "URL-osoitteen protokollan tulee olla HTTP tai HTTPS"
 
 #: ../lib/MusicBrainz/Server/Form/Field/PartialDate.pm:66
 msgid "invalid date"
-msgstr "Epäkelpo päiväys"
+msgstr "epäkelpo päiväys"
 
 #: ../lib/MusicBrainz/Server/Form/Field/URL.pm:24
 msgid "URL protocol must be HTTP, HTTPS or FTP"
