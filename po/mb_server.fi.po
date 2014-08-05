@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-07-14 21:06-0700\n"
-"PO-Revision-Date: 2014-08-03 23:10+0000\n"
+"PO-Revision-Date: 2014-08-04 23:17+0000\n"
 "Last-Translator: Jaakko Perttilä <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -1634,15 +1634,15 @@ msgstr "Auto-editori"
 
 #: ../root/layout/menu.tt:133
 msgid "Auto-editor Elections"
-msgstr "Auto-editorivaalit"
+msgstr "Auto-editori-vaalit"
 
 #: ../root/elections/show.tt:1 ../root/elections/show.tt:3
 msgid "Auto-editor election #{no}"
-msgstr "Auto-editori vaalit #{no}"
+msgstr "Auto-editori-vaalit #{no}"
 
 #: ../root/elections/index.tt:1 ../root/elections/index.tt:3
 msgid "Auto-editor elections"
-msgstr "Auto-editor vaalit"
+msgstr "Auto-editori-vaalit"
 
 #: ../root/user/privileged.tt:18
 msgid "Auto-editors"
@@ -1670,7 +1670,7 @@ msgstr "Seuraa automaattisesti levymerkkejä, jotka luon."
 
 #: ../root/account/preferences.tt:47
 msgid "Automatically subscribe me to series I create."
-msgstr ""
+msgstr "Seuraa automaattisesti sarjoja, jotka luon."
 
 #: ../root/components/ratings.tt:19
 msgid "Average rating:"
@@ -1754,14 +1754,14 @@ msgid ""
 "hyperlinks. Example: If you want to use [unknown] in the annotation, you'll "
 "have to write <code>&amp;#91;unknown&amp;#93;</code> then it will appear the"
 " way you intended it to show."
-msgstr ""
+msgstr "Koska hakasulkuja [] käytetään linkkien luomiseen, niiden sijaan tulee käyttää html-koodattuja vastineita (<code>&amp;#91;</code> merkille [) ja (<code>&amp;#93;</code> merkille ]), ellei niiden haluta muuttuvan linkeiksi. Esimerkiksi: Jos halutaan käyttää artistia [tuntematon] lisätietokentässä, niin se tulee kirjoittaa <code>&amp;#91;tuntematon&amp;#93;</code>, jotta se näkyy halutusti."
 
 #: ../root/account/registered.tt:13
 msgid ""
 "Because you provided an email address, an verification email has been sent "
 "to <code>{addr}</code>. Please check your mailbox and click on the link in "
 "the email to verify the new email address."
-msgstr "Koska annoit sähköpostiosoitteen, vahvistussähköposti lähetettiin osoitteeseen <code>{addr}</code>. Tarkista sähköpostisi ja seuraa lähetettyä linkkiä varmistaaksesi uuden sähköpostiosoitteen."
+msgstr "Koska annoit sähköpostiosoitteen, vahvistussähköposti lähetettiin osoitteeseen <code>{addr}</code>. Tarkista sähköpostisi ja seuraa lähetettyä linkkiä vahvistaaksesi uuden sähköpostiosoitteen."
 
 #: ../root/main/index.tt:96
 msgid ""
@@ -1776,7 +1776,7 @@ msgid ""
 "review entered data to create the most accurate music database on the "
 "internet. If this appeals to you, please {reg|create an account} or "
 "{login_url|login}."
-msgstr ""
+msgstr "Ole osa MusicBrainzia luomalla käyttäjätili ja {how|lue miten voit lisätä} tietoa MusicBrainziin. Näe, kuinka vertaisarvioimme syötetyn tiedon, luodaksemme kaikista tarkimman musiikkitietokannan, mitä internetistä löytyy. Jos tämä vetoaa sinuun, niin {reg|luo käyttäjätili} tai {login_url|kirjaudu sisään}."
 
 #: ../root/scripts/text_strings.tt:68
 msgid "Began:"
@@ -1900,7 +1900,7 @@ msgstr "Selaa julkaisuja"
 
 #: ../root/browse/entity.tt:1
 msgid "Browse Series"
-msgstr ""
+msgstr "Selaa sarjoja"
 
 #: ../root/browse/entity.tt:1
 msgid "Browse Works"
@@ -1932,7 +1932,7 @@ msgstr "Selaa julkaisuja"
 
 #: ../root/browse/index.tt:13
 msgid "Browse series"
-msgstr ""
+msgstr "Selaa sarjoja"
 
 #: ../root/browse/index.tt:10
 msgid "Browse works"
@@ -2000,12 +2000,12 @@ msgid ""
 "CD stubs are a feature to allow anonymous users to submit data to "
 "MusicBrainz. For more information, see {cdstub|the documentation on CD "
 "stubs}."
-msgstr "CD-tynkä on ominaisuus joka sallii anonyymien käyttäjien lähettävän dataa MusicBrainziin. Saadaksesi lisätietoja, katso {cdstub|dokumentaatio CD-tyngästä}."
+msgstr "CD-tynkä on ominaisuus, joka sallii anonyymien käyttäjien lähettää tietoa MusicBrainziin. Saadaksesi lisätietoja, tutustu {cdstub|dokumentaatioon CD-tyngästä}."
 
 #: ../root/account/edit_application.tt:10
 #: ../root/account/register_application.tt:10
 msgid "Callback URL:"
-msgstr ""
+msgstr "Palautteen URL:"
 
 #: ../root/doc/edit_type.tt:75
 msgid "Can be approved"
@@ -2060,11 +2060,11 @@ msgstr "Ei voi muokata"
 
 #: ../root/account/register.tt:37
 msgid "Captcha"
-msgstr ""
+msgstr "Ihmisyystesti"
 
 #: ../root/account/register.tt:5
 msgid "Captcha incorrect. Try again."
-msgstr ""
+msgstr "Ihmisyystesti väärin. Yritä uudelleen."
 
 #: ../root/release/edit/information.tt:158
 msgid "Cat. No:"
@@ -2166,7 +2166,7 @@ msgstr "Tyhjennä levymerkki"
 
 #: ../root/scripts/text_strings.tt:185
 msgid "Clear recent items"
-msgstr ""
+msgstr "Tyhjennä viimeaikaiset"
 
 #: ../root/scripts/text_strings.tt:83
 msgid "Clear recording"
@@ -2372,11 +2372,11 @@ msgstr "Kansikuvat tarjoaa {caa|Cover Art Archive}. Verkkopalvelua ylläpitää 
 
 #: ../root/release/layout.tt:21
 msgid "Cover art from {cover|Amazon}"
-msgstr ""
+msgstr "Kansitaide {cover|Amazonista}"
 
 #: ../root/release/layout.tt:23
 msgid "Cover art from {cover|host}"
-msgstr ""
+msgstr "Kansitaide {cover|palvelimelta}"
 
 #: ../root/edit/details/macros.tt:104
 msgid "Cover art:"
@@ -2450,7 +2450,7 @@ msgstr "Tietojenpoistamiskäytäntö"
 
 #: ../root/edit/data.tt:10
 msgid "Data:"
-msgstr ""
+msgstr "Tiedot:"
 
 #: ../root/annotation/history.tt:9 ../root/cdtoc/attach_artist_releases.tt:16
 #: ../root/cdtoc/attach_filter_release.tt:30 ../root/collection/index.tt:21
@@ -2521,11 +2521,11 @@ msgstr "Poista {e}"
 
 #: ../root/user/profile.tt:50
 msgid "Deleted User"
-msgstr ""
+msgstr "Poistettu käyttäjä"
 
 #: ../root/edit/details/edit_relationship_type.tt:40
 msgid "Deprecated:"
-msgstr "Vantentunut:"
+msgstr "Vanhentunut:"
 
 #: ../root/collection/index.tt:5 ../root/doc/edit_type.tt:40
 #: ../root/doc/relationship_type.tt:25
@@ -2743,7 +2743,7 @@ msgid ""
 "Do you want to develop an application that uses the {ws|MusicBrainz web "
 "service}? {register|Register an application} to generate OAuth tokens. See "
 "our {oauth2|OAuth documentation} for more details."
-msgstr ""
+msgstr "Aiotko kehittää sovelluksen joka hyödyntää {ws|MusicBrainzin palvelua}? {register|Rekisteröi sovellus} luodaksesi OAuth-vuoromerkkejä. Lisätietoa {oauth2|OAuth-valtuutuksen dokumentaatiossa}."
 
 #: ../root/layout/menu.tt:250
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:50
@@ -2938,17 +2938,17 @@ msgstr "Muokkaa julkaisuryhmän lisätietoja"
 
 #: ../root/series/edit.tt:1
 msgid "Edit Series"
-msgstr ""
+msgstr "Muokkaa sarjaa"
 
 #: ../root/series/edit_alias.tt:1
 msgid "Edit Series Alias"
-msgstr ""
+msgstr "Muokkaa sarjan aliasta"
 
 #: ../root/doc/edit_types.tt:1 ../root/doc/edit_types.tt:3
 #: ../root/doc/edit_type.tt:35 ../root/edit/info.tt:67
 #: ../root/layout/menu.tt:265
 msgid "Edit Types"
-msgstr "Muokkaa tyyppejä"
+msgstr "Muokkaustyypit"
 
 #: ../root/url/edit.tt:1 ../root/url/edit.tt:4
 #: ../lib/MusicBrainz/Server/Edit/URL/Edit.pm:24
@@ -2999,7 +2999,7 @@ msgstr "Muokkaaja {editor}"
 
 #: ../root/edit/data.tt:1 ../root/edit/data.tt:3
 msgid "Edit data for edit #{id}"
-msgstr ""
+msgstr "Muokkauksen #{id} tiedot"
 
 #: ../root/instrument/edit_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Instrument/EditAlias.pm:12
@@ -3070,7 +3070,7 @@ msgstr "Muokkaa julkaisuryhmän lisätietoja"
 #: ../root/series/edit_alias.tt:2
 #: ../lib/MusicBrainz/Server/Edit/Series/EditAlias.pm:12
 msgid "Edit series alias"
-msgstr ""
+msgstr "Muokkaa sarjan aliasta"
 
 #: ../root/series/edit_annotation.tt:2
 msgid "Edit series annotation"
@@ -3159,7 +3159,7 @@ msgstr "Seuratuille kohteille tehdyt muokkaukset"
 
 #: ../root/edit/subscribed.tt:1 ../root/edit/subscribed.tt:3
 msgid "Edits for Your Subscribed Entities"
-msgstr "Seuraamiesi kohteiden muokkaukset"
+msgstr "Seuraamillesi kohteille tehdyt muokkaukset"
 
 #: ../root/instrument/edits.tt:3
 msgid "Edits for {instrument}"
@@ -3172,7 +3172,7 @@ msgstr "Muokkaukset levymerkille {label}"
 #: ../root/area/edits.tt:3 ../root/artist/edits.tt:3
 #: ../root/collection/edits.tt:3 ../root/url/edits.tt:3
 msgid "Edits for {link}"
-msgstr "Mukkaukset linkille {link}"
+msgstr "Muokkaukset linkille {link}"
 
 #: ../root/area/edits.tt:1 ../root/artist/edits.tt:1
 #: ../root/collection/edits.tt:1 ../root/instrument/edits.tt:1
@@ -3187,7 +3187,7 @@ msgstr "Muokkaukset paikalle {place}"
 
 #: ../root/series/edits.tt:3
 msgid "Edits for {series}"
-msgstr ""
+msgstr "Muokkaukset sarjalle {series}"
 
 #: ../root/release/edits.tt:3 ../root/release_group/edits.tt:3
 #: ../root/work/edits.tt:3
@@ -3202,7 +3202,7 @@ msgstr "Muokkaukset kohteelle “{name}”"
 
 #: ../root/main/500.tt:48
 msgid "Edits loaded for the page:"
-msgstr ""
+msgstr "Sivulle ladatut muokkaukset:"
 
 #: ../root/elections/not_found.tt:1 ../root/elections/not_found.tt:2
 msgid "Election Not Found"
@@ -3278,7 +3278,7 @@ msgstr "Lopetusalue:"
 #: ../root/edit/details/add_alias.tt:46 ../root/edit/details/edit_alias.tt:53
 #: ../root/edit/details/remove_alias.tt:44 ../root/elections/index.tt:12
 msgid "End date"
-msgstr "Päättymisajankohta"
+msgstr "Loppunut"
 
 #: ../root/alias/edit_form.tt:35 ../root/area/edit_form.tt:24
 #: ../root/area/layout.tt:20 ../root/area/layout.tt:27
@@ -3289,11 +3289,11 @@ msgstr "Päättymisajankohta"
 #: ../root/edit/details/edit_label.tt:38 ../root/edit/details/edit_place.tt:41
 #: ../root/label/edit_form.tt:60 ../root/place/edit_form.tt:57
 msgid "End date:"
-msgstr "Lopetusajankohta:"
+msgstr "Loppunut:"
 
 #: ../root/edit/details/add_alias.tt:51 ../root/edit/details/edit_alias.tt:58
 msgid "Ended"
-msgstr ""
+msgstr "Päättynyt"
 
 #: ../root/edit/details/add_area.tt:71 ../root/edit/details/add_artist.tt:66
 #: ../root/edit/details/add_label.tt:43 ../root/edit/details/add_place.tt:64
@@ -3473,7 +3473,7 @@ msgstr "Epäonnistuneet"
 
 #: ../root/components/common-macros.tt:958
 msgid "Few relationships"
-msgstr ""
+msgstr "Jokunen yhteys"
 
 #: ../root/release/add_cover_art.tt:68
 msgid "File:"
@@ -3513,7 +3513,7 @@ msgstr "Seuraa {bl|blogiamme} tai {tw|twitter-tiliämme}! Puhuaksesi muiden käy
 msgid ""
 "For assistance in writing effective advanced search queries, read the "
 "{doc|syntax documentation}."
-msgstr ""
+msgstr "Lue {doc|syntaksin dokumentaatiosta}, miten edistynyttä hakutoimintoa käytetään tehokkaasti."
 
 #: ../root/admin/delete_user.tt:16
 msgid ""
@@ -3533,11 +3533,11 @@ msgstr "Korjataksesi tilanteen, tutustu dokumentaatioon {howto|kuinka sulautat j
 msgid ""
 "For more information, check the {doc_doc|documentation} and "
 "{doc_styleguide|style guidelines}."
-msgstr ""
+msgstr "Lisätietoja saat {doc_doc|dokumentaatiosta} ja {doc_styleguide|tyylioppaista}."
 
 #: ../root/place/edit_form.tt:4 ../root/work/edit_form.tt:5
 msgid "For more information, check the {doc_doc|documentation}."
-msgstr ""
+msgstr "Lisätietoja saat {doc_doc|dokumentaatiosta}."
 
 #: ../root/edit/info.tt:63
 msgid "For more information:"
@@ -3613,7 +3613,7 @@ msgstr[1] "Löytyy {num} kokoelmasta"
 
 #: ../root/release/lookup.tt:4
 msgid "Found more than one match for the CD with TOC {toc}: "
-msgstr "Löytyi enemmän kuin yksi CD-levy sisällysluettelolla {toc}:"
+msgstr "Sisällysluettelo {toc} sopii useampaan CD-levyyn: "
 
 #: ../root/edit/list.tt:40
 msgid "Found {n} edit"
@@ -3811,7 +3811,7 @@ msgstr "Isäntä:"
 
 #: ../root/layout/menu.tt:259
 msgid "How Tos"
-msgstr ""
+msgstr "Kuinka teen..."
 
 #: ../root/edit/list_header.tt:33
 msgid "How editing works"
@@ -3990,26 +3990,26 @@ msgstr "Jos et löydä etsimääsi, voit lisätä uuden julkaisun:"
 
 #: ../root/account/edit.tt:18
 msgid "If you change your email address, you will be required to verify it."
-msgstr ""
+msgstr "Jos vaihdat sähköpostiosoitteesi, sinun täytyy vahvistaa se."
 
 #: ../root/release/edit/information.tt:294
 msgid ""
 "If you do not know whether the release has a barcode or not, just leave this"
 " blank."
-msgstr "Jos et tietä onko julkaisulla viivakoodia tai ei, jätä tämä tyhjäksi."
+msgstr "Jos et tiedä onko julkaisulla viivakoodia vai ei, jätä tämä tyhjäksi."
 
 #: ../root/cdtoc/attach_filter_artist.tt:48
 msgid ""
 "If you don't see the artist you are looking for, you can still add a new "
 "release. This will allow you to create this artist and a release at the same"
 " time"
-msgstr "Jos et löydä etsimääsi artistia, voit silti lisätä uuden julkaisen. Täten voit luoda uuden artistin ja julkaisun samanaikaisesti."
+msgstr "Jos et näe etsimääsi artistia, voit silti lisätä uuden julkaisun. Näin saat luotua sekä uuden artistin että julkaisun samanaikaisesti."
 
 #: ../root/cdtoc/attach_filter_release.tt:68
 msgid ""
 "If you don't see the release you are looking for, you can still add a new "
 "one, using this CD TOC:"
-msgstr "Jos et löydä etsimääsi julkaisua, voit silti lisätä uuden käyttämällä CD-levyn sisällysluetteloa:"
+msgstr "Jos et näe etsimääsi julkaisua, voit vielä lisätä uuden julkaisun, käyttäen tätä CD-levyn sisällysluetteloa:"
 
 #: ../root/taglookup/nag.tt:18
 msgid ""
@@ -4017,19 +4017,19 @@ msgid ""
 "We encourage people to donate $12 to make the nag screen disappear for 3 "
 "months. Or even better, sign up for a recurring donation every three months "
 "to not have to think about or see this nag again."
-msgstr ""
+msgstr "Mikäli lahjoitat <b>neljä Yhdysvaltain dollaria</b>, et tule näkemään tätä muistutusta <b>kuukauteen</b>. Kannustamme lahjoittamaan kaksitoista dollaria, jolloin muistutus pysyy poissa kolmen kuukauden ajan. Tai vielä parempi, jos teet lahjoituksesta toistuvan joka kolmas kuukausi, voit unohtaa kokonaan tämän muistutuksen."
 
 #: ../root/main/403.tt:8
 msgid ""
 "If you followed a link on our site to get here, please {report|report a bug}"
 " and the URL of the page that sent you here."
-msgstr ""
+msgstr "Mikäli päädyit sivustolla olevan linkin kautta tähän, {report|ilmoita virheestä} ja kerro URL-osoite, josta päädyit tälle sivulle."
 
 #: ../root/account/register.tt:47
 msgid ""
 "If you have any questions, please review the {faq|FAQs} or "
 "{doc|documentation} before {con|contacting us}. "
-msgstr "Jos sinulla on jotakin kysyttävää, tarkista {faq|Usein Kysytyt Kysymykset} tai {doc|dokumentaatio} ennen mahdollista {con|yhteydenottoasi meihin}."
+msgstr "Jos sinulla on jotakin kysyttävää, tarkista {faq|Usein Kysytyt Kysymykset} tai {doc|dokumentaatio}, ennen kuin {con|otat yhteyttä}."
 
 #: ../root/main/401.tt:16
 msgid ""
@@ -4056,7 +4056,7 @@ msgid ""
 "database looking for data that might require fixing, either to comply with "
 "the {style|style guidelines}, or in other cases where administrative \"clean"
 " up\" tasks are required."
-msgstr ""
+msgstr "Jos haluaisit osallistua muokkaamiseen, mutta et tiedä mistä aloittaisit, näistä raporteista saattaa olla apua. Nämä raportit listaavat tietokannasta poimittuja kohteita, jotka voivat vaatia korjaamista. Osa vaatiinee muokkausta noudattaakseen tyylioppaita, ja joissakin tapauksissa tarvitaan hallinnollista \"siivoamista\"."
 
 #: ../root/components/commons-image.tt:4
 msgid "Image from Wikimedia Commons"
@@ -4167,7 +4167,7 @@ msgstr "Soitin:"
 
 #: ../root/main/500.tt:67
 msgid "Interface language:"
-msgstr ""
+msgstr "Käyttöliittymän kieli:"
 
 #: ../root/main/500.tt:1 ../root/main/500.tt:3
 msgid "Internal Server Error"
@@ -4387,7 +4387,7 @@ msgstr "Viimeisimmät viestit:"
 
 #: ../root/artist/index.tt:38 ../root/artist/index.tt:41
 msgid "Legal name"
-msgstr ""
+msgstr "Virallinen nimi"
 
 #: ../root/cdstub/cdstub.tt:9 ../root/cdtoc/info.tt:33
 #: ../root/components/recordings-list.tt:33
@@ -4428,7 +4428,7 @@ msgstr "Rajoitetut käyttöoikeudet"
 
 #: ../root/release/edit/tracklist.tt:20
 msgid "Lines start with a track number"
-msgstr "Rivit alkaen numerolla"
+msgstr "Rivit alkavat kappaleen numerolla"
 
 #: ../root/recording/fingerprints.tt:32
 msgid "Link"
@@ -4436,7 +4436,7 @@ msgstr "Linkki"
 
 #: ../root/edit/details/add_relationship.tt:11
 msgid "Link order:"
-msgstr ""
+msgstr "Linkin suunta:"
 
 #: ../root/edit/details/add_relationship_type.tt:13
 #: ../root/edit/details/edit_relationship_type.tt:23
@@ -5149,7 +5149,7 @@ msgstr "Tällä luokituksella ei löytynyt levymerkkejä."
 
 #: ../root/release/lookup.tt:33
 msgid "No matching CDs were found for TOC {toc}."
-msgstr ""
+msgstr "Sisällysluettelolle {toc} ei löytynyt yhtään vastaava CD-levyä."
 
 #: ../root/admin/edit_user.tt:15
 msgid "No nag"
@@ -5331,19 +5331,19 @@ msgstr "Lataa kappalelistaa..."
 
 #: ../root/oauth2/authorize.tt:1 ../root/oauth2/oob.tt:1
 msgid "OAuth Authorization"
-msgstr ""
+msgstr "OAuth-valtuutus"
 
 #: ../root/oauth2/error.tt:1
 msgid "OAuth Authorization Error"
-msgstr ""
+msgstr "Virhe OAuth-valtuutuksessa"
 
 #: ../root/account/applications.tt:56
 msgid "OAuth Client ID"
-msgstr ""
+msgstr "OAuth-asiakasohjelman tunnus"
 
 #: ../root/account/applications.tt:57
 msgid "OAuth Client Secret "
-msgstr ""
+msgstr "OAuth-asiakasohjelman salaisuus"
 
 #: ../root/layout/sidebar/sidebar-favicons.tt:16
 msgid "Official homepage"
@@ -5565,11 +5565,11 @@ msgstr "Vanhempi:"
 
 #: ../root/release/edit/tracklist.tt:133
 msgid "Parse Tracks"
-msgstr "Parsi kappaleet"
+msgstr "Jäsennä kappaleet"
 
 #: ../root/release/edit/tracklist.tt:15
 msgid "Parse track artists"
-msgstr "Parsi kappaleiden artistit"
+msgstr "Jäsennä kappaleiden artistit"
 
 #: ../root/report/part_of_set_relationships.tt:1
 #: ../root/report/part_of_set_relationships.tt:3
@@ -5587,7 +5587,7 @@ msgstr "Liitä tekijätiedot"
 
 #: ../root/oauth2/authorize.tt:12
 msgid "Perform the above operations when I'm not using the application"
-msgstr ""
+msgstr "Suorita yllämainitut tehtävät kun ohjelmaa ei käytetä"
 
 #: ../root/place/header.tt:1 ../root/place/performances.tt:1
 #: ../root/place/performances.tt:2
@@ -7379,7 +7379,7 @@ msgid ""
 "account. These are the applications that you have authorized to access your "
 "MusicBrainz account. If you no longer use some of the applications, you can "
 "revoke their access."
-msgstr ""
+msgstr "Jotkin sovellukset ja verkkosivut tukevat henkilökohtaisten tietojen hakemista, tai tietojen lähettämistä MusicBrainziin, mutta vaativat käyttöluvan tiliisi. Tässä näet sovellukset, jotka olet valtuuttanut käyttämään MusicBrainzin tiliäsi. Jos et enää käytä joitakin sovelluksista, voit poistaa niiden käyttöoikeudet."
 
 #: ../root/scripts/text_strings.tt:28
 msgid "Some artists credited with alternative names"
@@ -7552,7 +7552,7 @@ msgstr "Valitettavasti soitinta ei löydy annetulla MusicBrainz-tunnisteella. Vo
 
 #: ../root/cdtoc/not_found.tt:4
 msgid "Sorry, we could not find the CD TOC you specified."
-msgstr "Valitettavasti määriteltyä CD-levyn sisällysluetteloa ei löydy."
+msgstr "Määritettyä CD-levyn sisällysluetteloa ei löydy."
 
 #: ../root/elections/not_found.tt:4
 msgid "Sorry, we could not find this election."
@@ -9631,11 +9631,11 @@ msgstr "UUID:"
 
 #: ../root/release/edit/tracklist.tt:8
 msgid "Unable to parse the tracklist you entered."
-msgstr "Ei voida jäsentää antamaasi kappalelistaa."
+msgstr "Annettua kappalelistaa ei voida jäsentää."
 
 #: ../root/main/401.tt:1 ../root/main/401.tt:3
 msgid "Unauthorized Request"
-msgstr "Luvaton pyyntö"
+msgstr "Valtuuttamaton pyyntö"
 
 #: ../root/browse/instrument.tt:21
 msgid "Unclassified instrument"
@@ -10434,7 +10434,7 @@ msgstr ""
 msgid ""
 "You have granted access to {app}. Next, return to {app} and copy this token "
 "to complete the authorization process:"
-msgstr ""
+msgstr "Olet myöntänyt ohjelmalle {app} käyttöoikeudet. Seuraavaksi, palaa ohjemaan {app} ja käytä tätä vuoromerkkiä viimeistelläksesi valtuutuksen:"
 
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:100
 msgid "You have no collections!"
@@ -10446,7 +10446,7 @@ msgstr "Sinulla ei ole kokoelmia"
 
 #: ../root/account/applications.tt:42
 msgid "You have not authorized any applications."
-msgstr ""
+msgstr "Et ole valtuuttanut yhtäkään ohjelmaa."
 
 #: ../root/recording/edit.tt:11
 msgid ""
@@ -11535,7 +11535,7 @@ msgstr "'{id}' ei ole kelvollinen äänestyksen tunniste"
 
 #: ../lib/MusicBrainz/Server/Controller/CDStub.pm:63
 msgid "The required TOC parameter was invalid or not present"
-msgstr "Vaadittu TOC-parametri oli kelpaamaton tai puuttui"
+msgstr "Sisällysluettelossa vaadittu parametri oli kelpaamaton tai se puuttui"
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:111
 msgid "Please provide a medium ID"
@@ -11548,7 +11548,7 @@ msgstr "Tallennetta ei löydy"
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:150
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:314
 msgid "The provided CD TOC is not valid"
-msgstr "Annettu CD:n rakenne ei ole kelvollinen"
+msgstr "Annettu CD:n sisällysluettelo ei ole kelvollinen"
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:163
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:328
@@ -11557,7 +11557,7 @@ msgstr "Annettu tallenteen tunniste ei ole kelvollinen"
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:169
 msgid "This CDTOC is already attached to this medium"
-msgstr "Tämän CD-levyn sisällysluettelo on jo liitetty tähän tallenteeseen."
+msgstr "Tämä CD-levyn sisällysluettelo on jo liitetty tähän tallenteeseen."
 
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:178
 #: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:336
@@ -11621,7 +11621,7 @@ msgstr "'{type}' ei tue arvosteluja."
 
 #: ../lib/MusicBrainz/Server/Controller/WS/2/DiscID.pm:88
 msgid "Invalid TOC"
-msgstr "TOC:n rakenne on kelpaamaton"
+msgstr "Sisällysluettelo ei ole kelvollinen"
 
 #: ../lib/MusicBrainz/Server/Controller/WS/js/Edit.pm:561
 msgid ""
@@ -11657,7 +11657,7 @@ msgstr "CD-tynkää, jossa ei ole kappaleita, ei voida lisätä "
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:128
 msgid "Incomplete TOC data"
-msgstr "Puutteelliset TOC-rakenteen tiedot"
+msgstr "Sisällysluettelo tiedot ovat vaillinaiset"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:132
 msgid "Missing disc ID"
@@ -11665,11 +11665,11 @@ msgstr "Levyn tunniste puuttuu"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:136
 msgid "Disc ID does match parsed TOC"
-msgstr "Levyn tunniste ei vastaa saatua TOC-rakennetta"
+msgstr "Levyn tunniste ei vastaa jäsennettyä sisällysluetteloa"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:140
 msgid "Number of submitted tracks does not match track count in TOC"
-msgstr "Lähetettyjen kappaleiden määrä ei täsmää TOC-rakenteen kappalemäärään"
+msgstr "Lähetettyjen kappaleiden määrä ei täsmää sisällysluettelon kappalemäärään"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:144
 msgid "Invalid barcode"
@@ -12280,7 +12280,7 @@ msgstr "Artistin tekijänimi tulee asettaa"
 
 #: ../lib/MusicBrainz/Server/Form/Field/Coordinates.pm:93
 msgid "These coordinates could not be parsed"
-msgstr "Näitä koordinaatteja ei voinut jäsentää"
+msgstr "Näitä koordinaatteja ei voitu jäsentää"
 
 #: ../lib/MusicBrainz/Server/Form/Field/DatePeriod.pm:40
 msgid "The end date must occur on or after the begin date"
