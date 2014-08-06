@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-07-14 21:06-0700\n"
-"PO-Revision-Date: 2014-08-06 01:21+0000\n"
+"PO-Revision-Date: 2014-08-06 17:45+0000\n"
 "Last-Translator: Jaakko Perttilä <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
@@ -4056,7 +4056,7 @@ msgid ""
 "database looking for data that might require fixing, either to comply with "
 "the {style|style guidelines}, or in other cases where administrative \"clean"
 " up\" tasks are required."
-msgstr "Jos haluaisit osallistua muokkaamiseen, mutta et tiedä mistä aloittaisit, näistä raporteista saattaa olla apua. Nämä raportit listaavat tietokannasta poimittuja kohteita, jotka voivat vaatia korjaamista. Osa vaatiinee muokkausta noudattaakseen tyylioppaita, ja joissakin tapauksissa tarvitaan hallinnollista \"siivoamista\"."
+msgstr "Jos haluaisit osallistua muokkaamiseen, mutta et tiedä mistä aloittaisit, näistä raporteista saattaa olla apua. Nämä raportit listaavat tietokannasta poimittuja kohteita, jotka voivat vaatia korjaamista. Osa vaatiinee muokkausta noudattaakseen {style|tyylioppaita}, ja joissakin tapauksissa saatetaan tarvita hallinnollista \"siivoamista\"."
 
 #: ../root/components/commons-image.tt:4
 msgid "Image from Wikimedia Commons"
@@ -8243,7 +8243,7 @@ msgstr "Tapahtui virhe peruttaessa muokkausta {edit}."
 msgid ""
 "These images provided by the {caa|Cover Art Archive}. You can also see them "
 "at the {ia|Internet Archive}."
-msgstr ""
+msgstr "Nämä kuvat tarjoaa {caa|Cover Art Archive}. Löydät ne myös {ia|Internet Archive}sta."
 
 #: ../root/cdstub/edit_form.tt:9
 msgid "This CD has tracks from more than one artist (e.g. a compilation CD)"
@@ -8253,23 +8253,23 @@ msgstr "Tämä CD-levy sisältää kappaleita useammalta kuin yhdeltä artistilt
 msgid ""
 "This ISRC is not associated with any recordings. If you wish to associate it"
 " with a recording, please {search_url|search for the recording} and add it."
-msgstr "Tämä ISRC-koodi ei liity yhteenkään äänitteeseen. Jos haluat liittää sen tiettyyn äänitteeseen, {search_url|etsi äänite} ja lisää se siihen."
+msgstr "Tätä ISRC-koodia ei ole liitetty yhteenkään äänitteeseen. Jos haluat liittää sen äänitteeseen, {search_url|etsi äänite} ja liitä se siihen."
 
 #: ../root/iswc/not_found.tt:4
 msgid ""
 "This ISWC is not associated with any works. If you wish to associate it with"
 " a work, please {search_url|search for the work} and add it."
-msgstr "Tämä ISWC-koodi ei liity yhteenkään teokseen. Jos haluat liittää sen tiettyyn teokseen, {search_url|etsi teos} ja lisää se siihen."
+msgstr "Tätä ISWC-koodia ei ole liitetty yhteenkään teokseen. Jos haluat liittää sen teokseen, {search_url|etsi teos} ja liitä se siihen."
 
 #: ../root/scripts/text_strings.tt:142
 msgid ""
 "This URL is not allowed for the selected link type, or is incorrectly "
 "formatted."
-msgstr "Tämä URL-osoite ei ole sallittu valitulle linkin tyypille,  tai se on väärin muotoiltu."
+msgstr "Tämä URL-osoite ei ole sallittu valitulle linkin tyypille, tai se on väärin muotoiltu."
 
 #: ../root/alias/edit_form.tt:36
 msgid "This alias is no longer current."
-msgstr ""
+msgstr "Tämä alias ei ole enää ajantasainen."
 
 #: ../root/area/delete.tt:14
 msgid ""
@@ -8279,7 +8279,7 @@ msgstr "Tätä aluetta ei voi poistaa, koska sitä käyttäviä artisteja, levym
 
 #: ../root/area/edit_form.tt:25
 msgid "This area has ended."
-msgstr ""
+msgstr "Tätä aluetta ei enää ole."
 
 #: ../root/area/artists.tt:7
 msgid "This area is not currently associated with any artists."
