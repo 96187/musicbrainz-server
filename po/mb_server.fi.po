@@ -25,9 +25,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-10 16:55-0700\n"
-"PO-Revision-Date: 2014-08-11 00:06+0000\n"
-"Last-Translator: Jaakko Perttilä <email address hidden>\n"
+"POT-Creation-Date: 2014-08-10 17:55-0700\n"
+"PO-Revision-Date: 2014-08-11 00:57+0000\n"
+"Last-Translator: Ian McEwen <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -6030,6 +6030,11 @@ msgstr "Äänitteiden sulautumiset"
 msgid "Recording Not Found"
 msgstr "Äänitettä ei löydy"
 
+#: ../root/report/annotations_recordings.tt:1
+#: ../root/report/annotations_recordings.tt:3
+msgid "Recording annotations"
+msgstr ""
+
 #: ../root/recording/edits.tt:6 ../root/recording/header.tt:19
 msgid "Recording by {artist}"
 msgstr "Äänite artistilta {artist}"
@@ -8909,7 +8914,7 @@ msgstr "Tämä raportti listaa paikat, joilla on vanhentuneita ja vain ryhmittä
 
 #: ../root/report/annotations_places.tt:6
 msgid "This report lists places with annotations."
-msgstr ""
+msgstr "Tämä raportti listaa paikat, joilla lisätietokenttä."
 
 #: ../root/report/duplicate_relationships_recordings.tt:6
 msgid ""
@@ -8925,7 +8930,7 @@ msgstr "Tämä raportti listaa äänitteet, joilla on vanhentuneita ja vain ryhm
 
 #: ../root/report/annotations_recordings.tt:6
 msgid "This report lists recordings with annotations."
-msgstr ""
+msgstr "Tämä raportti listaa äänitteet, joilla lisätietokenttä."
 
 #: ../root/report/duplicate_relationships_release_groups.tt:6
 msgid ""
@@ -8941,7 +8946,7 @@ msgstr "Tämä raportti listaa julkaisuryhmät, joilla on vanhentuneita ja vain 
 
 #: ../root/report/annotations_release_groups.tt:6
 msgid "This report lists release groups with annotations."
-msgstr ""
+msgstr "Tämä raportti listaa julkaisuryhmät, joilla lisätietokenttä."
 
 #: ../root/report/duplicate_relationships_releases.tt:6
 msgid ""
@@ -8957,7 +8962,7 @@ msgstr "Tämä raportti listaa julkaisut, joilla on vanhentuneita ja vain ryhmit
 
 #: ../root/report/annotations_releases.tt:6
 msgid "This report lists releases with annotations."
-msgstr ""
+msgstr "Tämä raportti listaa julkaisut, joilla lisätietokenttä."
 
 #: ../root/report/superfluous_data_tracks.tt:6
 msgid ""
@@ -8968,7 +8973,7 @@ msgstr "Tämä raportti listaa julkaisut, joilla ei ole levyn tunnistetta ja joi
 
 #: ../root/report/annotations_series.tt:6
 msgid "This report lists series with annotations."
-msgstr ""
+msgstr "Tämä raportti listaa sarjat, joilla lisätietokenttä."
 
 #: ../root/report/duplicate_relationships_works.tt:6
 msgid ""
@@ -8985,7 +8990,7 @@ msgstr "Tämä raportti listaa teokset, joilla on vanhentuneita ja vain ryhmitt�
 
 #: ../root/report/annotations_works.tt:6
 msgid "This report lists works with annotations."
-msgstr ""
+msgstr "Tämä raportti listaa teokset, joilla lisätietokenttä."
 
 #: ../root/report/isrc_with_many_recordings.tt:6
 msgid ""
@@ -9457,7 +9462,7 @@ msgstr "Julkaisuja yhteensä: {count}"
 
 #: ../root/report/annotations_series.tt:8
 msgid "Total series found: {count}"
-msgstr ""
+msgstr "Sarjoja löytyi yhteensä: {count}"
 
 #: ../root/cdstub/index.tt:17 ../root/cdtoc/info.tt:19
 msgid "Total tracks:"
@@ -10235,11 +10240,9 @@ msgstr "Teosta ei löytynyt"
 msgid "Work Type:"
 msgstr "Teoksen tyyppi:"
 
-#: ../root/report/annotations_recordings.tt:1
-#: ../root/report/annotations_recordings.tt:3
 #: ../root/report/annotations_works.tt:1 ../root/report/annotations_works.tt:3
 msgid "Work annotations"
-msgstr ""
+msgstr "Teosten lisätietokenttiä"
 
 #: ../root/work/layout.tt:9
 msgid "Work information"
@@ -10266,7 +10269,7 @@ msgstr "Teokset"
 
 #: ../root/report/index.tt:115
 msgid "Works with annotations"
-msgstr ""
+msgstr "Teokset, joilla lisätietokenttä"
 
 #: ../root/report/deprecated_relationship_works.tt:1
 #: ../root/report/deprecated_relationship_works.tt:3
@@ -11784,7 +11787,7 @@ msgstr "Tällä levyn tunnisteella on jo CD-tynkä"
 #: ../lib/MusicBrainz/Server/Data/Language.pm:42
 #: ../lib/MusicBrainz/Server/Form/Utils.pm:44
 msgid "[No lyrics]"
-msgstr ""
+msgstr "[Ei sanoituksia]"
 
 #: ../lib/MusicBrainz/Server/Data/LinkType.pm:153
 #, perl-brace-format
