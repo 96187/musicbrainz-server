@@ -15,8 +15,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-10 17:55-0700\n"
-"PO-Revision-Date: 2014-08-11 00:57+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2014-08-20 21:32+0000\n"
+"Last-Translator: Mihkel Tõnnov <email address hidden>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/musicbrainz/language/et/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -380,7 +380,7 @@ msgstr "Leiti antud plaadi-ID-le vastav pooleldi sisestatud CD. Kui alltoodud lu
 
 #: ../root/place/map.tt:5
 msgid "A map cannot be shown because this place has no coordinates."
-msgstr ""
+msgstr "Kaarti pole võimalik näidata, kuna selle koha koordinaate pole süsteemis."
 
 #: ../root/release/collections.tt:18
 msgid "A private collection"
@@ -1283,7 +1283,7 @@ msgstr "Kas oled kindel, et soovid eemaldada alloleva kaanepildi artisti {artist
 msgid ""
 "Are you sure you wish to remove the instrument {instrument} from "
 "MusicBrainz?"
-msgstr "Kas oled kindel, et soovid instrumendi „{instrument}” MusicBrainzist eemaldada?"
+msgstr "Kas oled kindel, et soovid instrumendi „{area}” MusicBrainzist eemaldada?"
 
 #: ../root/label/delete.tt:5
 msgid "Are you sure you wish to remove the label {label} from MusicBrainz?"
@@ -1291,7 +1291,7 @@ msgstr "Kas oled kindel, et soovid plaadifirma {label} MusicBrainzist eemaldada?
 
 #: ../root/series/delete.tt:5
 msgid "Are you sure you wish to remove the series {series} from MusicBrainz?"
-msgstr "Kas oled kindel, et soovid seeria „{series}” MusicBrainzist eemaldada?"
+msgstr "Kas oled kindel, et soovid seeria „{area}” MusicBrainzist eemaldada?"
 
 #: ../root/area/edits.tt:5 ../root/area/header.tt:21
 #: ../root/components/common-macros.tt:561
@@ -1412,7 +1412,7 @@ msgstr "Jälgitavad artistid"
 #: ../root/report/annotations_artists.tt:1
 #: ../root/report/annotations_artists.tt:3
 msgid "Artist annotations"
-msgstr ""
+msgstr "Artistiannotatsioonid"
 
 #: ../root/release/edit/tracklist.tt:400
 msgid "Artist as credited on this track:"
@@ -1530,7 +1530,7 @@ msgstr "Artistid koostöö-seostega"
 
 #: ../root/report/index.tt:28
 msgid "Artists with annotations"
-msgstr ""
+msgstr "Annotatsiooniga artistid"
 
 #: ../root/report/deprecated_relationship_artists.tt:1
 #: ../root/report/deprecated_relationship_artists.tt:3
@@ -2142,7 +2142,7 @@ msgstr "Puhasta plaadifirmaväli"
 
 #: ../root/scripts/text_strings.tt:185
 msgid "Clear recent items"
-msgstr ""
+msgstr "Puhasta loend"
 
 #: ../root/scripts/text_strings.tt:83
 msgid "Clear recording"
@@ -4255,7 +4255,7 @@ msgstr "Jälgitavad plaadifirmad"
 #: ../root/report/annotations_labels.tt:1
 #: ../root/report/annotations_labels.tt:3
 msgid "Label annotations"
-msgstr ""
+msgstr "Plaadifirmaannotatsioonid"
 
 #: ../root/edit/details/add_label.tt:63 ../root/edit/details/edit_label.tt:29
 #: ../root/label/edit_form.tt:46 ../root/label/layout.tt:46
@@ -4287,7 +4287,7 @@ msgstr "Plaadifirmad"
 
 #: ../root/report/index.tt:37
 msgid "Labels with annotations"
-msgstr ""
+msgstr "Annotatsiooniga plaadifirmad"
 
 #: ../root/report/deprecated_relationship_labels.tt:1
 #: ../root/report/deprecated_relationship_labels.tt:3
@@ -4350,7 +4350,7 @@ msgstr "Viimase 28 päeva jooksul"
 #: ../root/report/annotations_series.tt:13
 #: ../root/report/annotations_works.tt:13
 msgid "Last edited"
-msgstr ""
+msgstr "Viimati muudetud"
 
 #: ../root/cdstub/layout.tt:10
 msgid "Last modified:"
@@ -4419,7 +4419,7 @@ msgstr "piiratud kasutaja"
 
 #: ../root/release/edit/tracklist.tt:41
 msgid "Lines contain track artists"
-msgstr ""
+msgstr "Pealkirjadele järgnevad artistid"
 
 #: ../root/release/edit/tracklist.tt:18
 msgid "Lines start with a track number"
@@ -4616,7 +4616,7 @@ msgstr "Palju seoseid"
 
 #: ../root/place/header.tt:1 ../root/place/map.tt:1
 msgid "Map"
-msgstr ""
+msgstr "Kaart"
 
 #: ../root/release/lookup.tt:8
 msgid "Match"
@@ -5607,7 +5607,7 @@ msgstr "Kohta ei leitud"
 #: ../root/report/annotations_places.tt:1
 #: ../root/report/annotations_places.tt:3
 msgid "Place annotations"
-msgstr ""
+msgstr "Kohaannotatsioonid"
 
 #: ../root/place/layout.tt:6
 msgid "Place information"
@@ -5626,7 +5626,7 @@ msgstr "Kohad"
 
 #: ../root/report/index.tt:101
 msgid "Places with annotations"
-msgstr ""
+msgstr "Annotatsiooniga kohad"
 
 #: ../root/report/deprecated_relationship_places.tt:1
 #: ../root/report/deprecated_relationship_places.tt:3
@@ -6022,7 +6022,7 @@ msgstr "Salvestist ei leitud"
 #: ../root/report/annotations_recordings.tt:1
 #: ../root/report/annotations_recordings.tt:3
 msgid "Recording annotations"
-msgstr ""
+msgstr "Salvestiseannotatsioonid"
 
 #: ../root/recording/edits.tt:6 ../root/recording/header.tt:19
 msgid "Recording by {artist}"
@@ -6072,7 +6072,7 @@ msgstr "Varieeruvate loopikkustega salvestised"
 
 #: ../root/report/index.tt:94
 msgid "Recordings with annotations"
-msgstr ""
+msgstr "Annotatsiooniga salvestised"
 
 #: ../root/report/deprecated_relationship_recordings.tt:1
 #: ../root/report/deprecated_relationship_recordings.tt:3
@@ -6345,7 +6345,7 @@ msgstr "Väljalaske pealkiri"
 #: ../root/report/annotations_releases.tt:1
 #: ../root/report/annotations_releases.tt:3
 msgid "Release annotations"
-msgstr ""
+msgstr "Väljalaskeannotatsioonid"
 
 #: ../root/release/edits.tt:6 ../root/release/header.tt:8
 msgid "Release by {artist}"
@@ -6373,7 +6373,7 @@ msgstr "Väljalaskerühm"
 #: ../root/report/annotations_release_groups.tt:1
 #: ../root/report/annotations_release_groups.tt:3
 msgid "Release group annotations"
-msgstr ""
+msgstr "Väljalaskerühmaannotatsioonid"
 
 #: ../root/release_group/edits.tt:6 ../root/release_group/header.tt:12
 msgid "Release group by {artist}"
@@ -6389,7 +6389,7 @@ msgstr "Väljalaskerühma teave"
 
 #: ../root/release/layout.tt:84
 msgid "Release group rating"
-msgstr ""
+msgstr "Väljalaskerühma hinne"
 
 #: ../root/user/ratings_summary.tt:3 ../root/user/ratings.tt:2
 msgid "Release group ratings"
@@ -6417,7 +6417,7 @@ msgstr "Väljalaskerühmad, mis võivad vajada mestimist"
 
 #: ../root/report/index.tt:48
 msgid "Release groups with annotations"
-msgstr ""
+msgstr "Annotatsiooniga väljalaskerühmad"
 
 #: ../root/report/duplicate_relationships_release_groups.tt:1
 #: ../root/report/duplicate_relationships_release_groups.tt:3
@@ -6554,7 +6554,7 @@ msgstr "Väljalasked, mille ainsal helikandjal on pealkiri"
 
 #: ../root/report/index.tt:82
 msgid "Releases with annotations"
-msgstr ""
+msgstr "Annotatsiooniga väljalasked"
 
 #: ../root/report/index.tt:69
 msgid "Releases with catalog numbers that look like ASINs"
@@ -7191,7 +7191,7 @@ msgstr "Lause"
 
 #: ../root/report/index.tt:104 ../root/report/series_list.tt:7
 msgid "Series"
-msgstr ""
+msgstr "Seeriad"
 
 #: ../root/components/common-macros.tt:561
 #: ../root/edit/details/merge_series.tt:8
@@ -7219,7 +7219,7 @@ msgstr "Jälgitavad seeriad"
 #: ../root/report/annotations_series.tt:1
 #: ../root/report/annotations_series.tt:3
 msgid "Series annotations"
-msgstr ""
+msgstr "Seeriaannotatsioonid"
 
 #: ../root/series/layout.tt:4
 msgid "Series information"
@@ -7227,7 +7227,7 @@ msgstr "Seeria teave"
 
 #: ../root/report/index.tt:107
 msgid "Series with annotations"
-msgstr ""
+msgstr "Annotatsiooniga seeriad"
 
 #: ../root/edit/details/add_series.tt:3 ../root/edit/details/edit_series.tt:5
 msgid "Series:"
@@ -7751,7 +7751,7 @@ msgstr "Jälgi"
 
 #: ../root/user/collections.tt:13
 msgid "Subscribed"
-msgstr ""
+msgstr "Jälgitav"
 
 #: ../root/edit/list_header.tt:19
 msgid "Subscribed editors"
@@ -7793,7 +7793,7 @@ msgstr "Soovitatud salvestised:"
 #: ../root/edit/details/add_annotation.tt:21
 #: ../root/edit/details/historic/add_release_annotation.tt:25
 msgid "Summary"
-msgstr ""
+msgstr "Kokkuvõte"
 
 #: ../root/release/edit/tracklist.tt:369
 msgid "Swap track titles with artist credits"
@@ -7906,7 +7906,7 @@ msgstr "Testimisfunktsioonid"
 #: ../root/edit/details/add_annotation.tt:10
 #: ../root/edit/details/historic/add_release_annotation.tt:14
 msgid "Text"
-msgstr ""
+msgstr "Tekst"
 
 #: ../root/account/donation.tt:14
 msgid "Thank you for contributing to MusicBrainz."
@@ -8302,7 +8302,7 @@ msgstr "See alias pole enam aktiivselt kasutusel"
 #: ../root/edit/details/add_annotation.tt:15
 #: ../root/edit/details/historic/add_release_annotation.tt:19
 msgid "This annotation is empty."
-msgstr ""
+msgstr "See annotatsioon on tühi."
 
 #: ../root/area/delete.tt:14
 msgid ""
@@ -8877,7 +8877,7 @@ msgstr "See aruanne loetleb artistid, kellel on aegunud või teiste seoste rühm
 
 #: ../root/report/annotations_artists.tt:6
 msgid "This report lists artists with annotations."
-msgstr ""
+msgstr "See aruanne loetleb annotatsiooniga artistid."
 
 #: ../root/report/duplicate_relationships_labels.tt:6
 msgid ""
@@ -8893,7 +8893,7 @@ msgstr "See aruanne loetleb plaadifirmad, millel on aegunud või teiste seoste r
 
 #: ../root/report/annotations_labels.tt:6
 msgid "This report lists labels with annotations."
-msgstr ""
+msgstr "See aruanne loetleb annotatsiooniga plaadifirmad."
 
 #: ../root/report/deprecated_relationship_places.tt:6
 msgid ""
@@ -8903,7 +8903,7 @@ msgstr "See aruanne loetleb kohad, millel on aegunud või teiste seoste rühmita
 
 #: ../root/report/annotations_places.tt:6
 msgid "This report lists places with annotations."
-msgstr ""
+msgstr "See aruanne loetleb annotatsiooniga kohad."
 
 #: ../root/report/duplicate_relationships_recordings.tt:6
 msgid ""
@@ -8919,7 +8919,7 @@ msgstr "See aruanne loetleb salvestised, millel on aegunud või teiste seoste r�
 
 #: ../root/report/annotations_recordings.tt:6
 msgid "This report lists recordings with annotations."
-msgstr ""
+msgstr "See aruanne loetleb annotatsiooniga salvestised."
 
 #: ../root/report/duplicate_relationships_release_groups.tt:6
 msgid ""
@@ -8935,7 +8935,7 @@ msgstr "See aruanne loetleb väljalaskerühmad, millel on aegunud või teiste se
 
 #: ../root/report/annotations_release_groups.tt:6
 msgid "This report lists release groups with annotations."
-msgstr ""
+msgstr "See aruanne loetleb annotatsiooniga väljalaskerühmad."
 
 #: ../root/report/duplicate_relationships_releases.tt:6
 msgid ""
@@ -8951,7 +8951,7 @@ msgstr "See aruanne loetleb väljalasked, millel on aegunud või teiste seoste r
 
 #: ../root/report/annotations_releases.tt:6
 msgid "This report lists releases with annotations."
-msgstr ""
+msgstr "See aruanne loetleb annotatsiooniga väljalasked."
 
 #: ../root/report/superfluous_data_tracks.tt:6
 msgid ""
@@ -8962,7 +8962,7 @@ msgstr "See aruanne loetleb väljalasked, millel pole ühtki plaadi-ID-d ja mis 
 
 #: ../root/report/annotations_series.tt:6
 msgid "This report lists series with annotations."
-msgstr ""
+msgstr "See aruanne loetleb annotatsiooniga seeriad."
 
 #: ../root/report/duplicate_relationships_works.tt:6
 msgid ""
@@ -8979,7 +8979,7 @@ msgstr "See aruanne loetleb teosed, millel on aegunud või teiste seoste rühmit
 
 #: ../root/report/annotations_works.tt:6
 msgid "This report lists works with annotations."
-msgstr ""
+msgstr "See aruanne loetleb annotatsiooniga teosed."
 
 #: ../root/report/isrc_with_many_recordings.tt:6
 msgid ""
@@ -9451,7 +9451,7 @@ msgstr "Leitud väljalaskeid: {count}"
 
 #: ../root/report/annotations_series.tt:8
 msgid "Total series found: {count}"
-msgstr ""
+msgstr "Leitud seeriaid: {count}"
 
 #: ../root/cdstub/index.tt:17 ../root/cdtoc/info.tt:19
 msgid "Total tracks:"
@@ -9812,19 +9812,19 @@ msgstr "Olemasoleva lugude nimekirja otsimiseks kasuta järgnevaid välju."
 
 #: ../root/release/edit/tracklist.tt:47
 msgid "Use track artists"
-msgstr ""
+msgstr "Kasutatakse artiste"
 
 #: ../root/release/edit/tracklist.tt:65
 msgid "Use track lengths"
-msgstr ""
+msgstr "Kasutatakse loopikkusi"
 
 #: ../root/release/edit/tracklist.tt:24
 msgid "Use track numbers"
-msgstr ""
+msgstr "Kasutatakse loonumbreid"
 
 #: ../root/release/edit/tracklist.tt:56
 msgid "Use track titles"
-msgstr ""
+msgstr "Kasutatakse pealkirju"
 
 #: ../root/search/form.tt:39
 msgid "Use {doc|advanced query syntax}"
@@ -10231,7 +10231,7 @@ msgstr "Teose tüüp:"
 
 #: ../root/report/annotations_works.tt:1 ../root/report/annotations_works.tt:3
 msgid "Work annotations"
-msgstr ""
+msgstr "Teoseannotatsioonid"
 
 #: ../root/work/layout.tt:9
 msgid "Work information"
@@ -10258,7 +10258,7 @@ msgstr "Teosed"
 
 #: ../root/report/index.tt:115
 msgid "Works with annotations"
-msgstr ""
+msgstr "Annotatsiooniga teosed"
 
 #: ../root/report/deprecated_relationship_works.tt:1
 #: ../root/report/deprecated_relationship_works.tt:3
@@ -10722,7 +10722,7 @@ msgstr "{num}-aastaselt"
 
 #: ../root/report/duplicate_artists.tt:41
 msgid "alias:"
-msgstr ""
+msgstr "alias:"
 
 #: ../root/edit/search_macros.tt:28
 msgid "all"
@@ -11776,7 +11776,7 @@ msgstr "MusicBrainzis on juba selle plaadi-ID-ga pooleldi sisestatud CD"
 #: ../lib/MusicBrainz/Server/Data/Language.pm:42
 #: ../lib/MusicBrainz/Server/Form/Utils.pm:44
 msgid "[No lyrics]"
-msgstr ""
+msgstr "[sõnu pole]"
 
 #: ../lib/MusicBrainz/Server/Data/LinkType.pm:153
 #, perl-brace-format
