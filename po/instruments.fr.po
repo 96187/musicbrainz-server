@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-08-08 01:26+0000\n"
+"PO-Revision-Date: 2014-08-21 15:37+0000\n"
 "Last-Translator: yahoe.001\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -2233,13 +2233,15 @@ msgstr "ruban"
 msgid "taphon"
 msgstr "taphon"
 
-#: DB:instrument/name:607
-msgid "tar (drum)"
-msgstr "tar (tambour)"
-
 #: DB:instrument/name:467
-msgid "tar (lute)"
-msgstr "târ (luth)"
+msgctxt "lute"
+msgid "tar"
+msgstr "tar"
+
+#: DB:instrument/name:607
+msgctxt "drum"
+msgid "tar"
+msgstr "tar"
 
 #: DB:instrument/name:440
 msgid "taragot"
