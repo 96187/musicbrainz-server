@@ -38,7 +38,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-08-21 08:10-0700\n"
-"PO-Revision-Date: 2014-08-21 17:17+0000\n"
+"PO-Revision-Date: 2014-08-23 11:59+0000\n"
 "Last-Translator: S.Brandt <email address hidden>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -398,7 +398,7 @@ msgstr "Es wurde ein CD-Stub gefunden, der auf die von Dir angegebene Disc-ID pa
 
 #: ../root/place/map.tt:5
 msgid "A map cannot be shown because this place has no coordinates."
-msgstr ""
+msgstr "Eine Karte kann nicht angezeigt werden, da diese Örtlichkeit keine Koordinaten hat."
 
 #: ../root/release/collections.tt:18
 msgid "A private collection"
@@ -1121,7 +1121,7 @@ msgstr "Beim Erstellen der Werke ist ein Fehler aufgetreten."
 
 #: ../root/scripts/text_strings.tt:186
 msgid "An error occurred while searching. Click here to try again."
-msgstr ""
+msgstr "Während der Suche ein Fehler aufgetreten. Klicke hier, um es erneut zu versuchen."
 
 #: ../root/annotation/common.tt:2 ../root/area/annotation_revision.tt:1
 #: ../root/artist/annotation_revision.tt:1
@@ -1842,7 +1842,7 @@ msgid ""
 "Below is the error information. If you wish to file a bug report, you may do"
 " so at {bugs|our bug tracker}. The information below will help, so please be"
 " sure to include it!"
-msgstr ""
+msgstr "Unten befinden sich die Fehlerinformationen. Wenn du einen Fehlerbericht einreichen möchten, kannst du das unter {bugs|unserem Bug-Tracker} tun. Die folgenden Informationen werden helfen, also bitte gebe sie mit an!"
 
 #: ../root/account/edit.tt:45 ../root/admin/edit_user.tt:36
 #: ../root/user/profile.tt:118
@@ -3493,7 +3493,7 @@ msgstr ""
 msgid ""
 "Follow our {bl|blog} or {tw|twitter account}! To talk to other users, try "
 "the {fo|forums} or {irc|IRC}."
-msgstr ""
+msgstr "Folge unserem {bl|Blog} or {tw|Twitter Konto}! Um mit anderen Benutzern zu kommunizieren, probiere die {fo|Foren} oder das {irc|IRC}."
 
 #: ../root/search/error/wrapper.tt:5
 msgid ""
@@ -7434,7 +7434,7 @@ msgstr "Einige Künstler werden mit alternativen Namen genannt"
 msgid ""
 "Some errors were detected in the data you’ve entered. Click on the tabs "
 "shaded red and correct any visible errors."
-msgstr ""
+msgstr "In den von die eingegebenen Daten wurden einige Fehler erkannt. Klicke auf die rot schattierten Registerkarten und korrigiere alle sichtbaren Fehler."
 
 #: ../root/layout/menu.tt:168 ../root/main/index.tt:12
 msgid "SongKong Tagger"
@@ -8086,7 +8086,7 @@ msgstr "Die folgenden {count} Benutzer haben Auto-Bearbeiter-Privilegien:"
 msgid ""
 "The information you‘ve provided contains errors, and was not entered; please"
 " visit the tabs shaded in red, fix all visible errors, and try again."
-msgstr ""
+msgstr "Die von die bereitgestellten Informationen enthalten Fehler und wurden nicht eingetragen; Öffne die rot schattierten Registerkarten, korrigiere alle sichtbaren Fehler, und versuche es erneut."
 
 #: ../root/main/index.tt:104
 msgid ""
@@ -8419,7 +8419,7 @@ msgstr "Dieses Attribut ist erforderlich."
 
 #: ../root/work/edit_form.tt:57
 msgid "This attribute type is only used for grouping, please select a subtype"
-msgstr ""
+msgstr "Dieser Eigenschaftstyp wird nur zur Gruppierung verwendet, bitte wähle einen Untertyp"
 
 #: ../root/edit/details/edit_url.tt:31
 msgid "This change affects {num} relationship."
@@ -9340,7 +9340,7 @@ msgstr "Um beim Testen zu helfen, wurden die folgenden Features auf den Testserv
 msgid ""
 "To create a new tracklist, use an existing tracklist or import a disc from a"
 " CD stub or FreeDB, select the appropriate tab."
-msgstr "Um eine neue Titelliste zu erstellen, eine existierende Titelliste zu verwenden oder eine CD von einem CD-Stub oder FreeDB zu importieren, wähle den entsprechenden Reiter."
+msgstr "Um eine neue Titelliste zu erstellen, eine existierende Titelliste zu verwenden oder eine CD von einem CD-Stub oder FreeDB zu importieren, wähle die entsprechende Registerkarte."
 
 #: ../root/release/edit/information.tt:72
 msgid "To edit types, please {edit_page|edit the release group}."
@@ -9835,19 +9835,19 @@ msgstr "Benutze die folgenden Felder, um nach einer bestehenden Titelliste zu su
 
 #: ../root/release/edit/tracklist.tt:47
 msgid "Use track artists"
-msgstr ""
+msgstr "Titelkünstler benutzen"
 
 #: ../root/release/edit/tracklist.tt:65
 msgid "Use track lengths"
-msgstr ""
+msgstr "Titellängen benutzen"
 
 #: ../root/release/edit/tracklist.tt:24
 msgid "Use track numbers"
-msgstr ""
+msgstr "Titelnummern benutzen"
 
 #: ../root/release/edit/tracklist.tt:56
 msgid "Use track titles"
-msgstr ""
+msgstr "Titelnamen benutzen"
 
 #: ../root/search/form.tt:39
 msgid "Use {doc|advanced query syntax}"
@@ -10798,7 +10798,7 @@ msgstr "von {artist}"
 #: ../root/components/relationship-editor.tt:162
 #: ../root/components/relationship-editor.tt:207
 msgid "credited as"
-msgstr ""
+msgstr "genannt als"
 
 #: ../root/admin/wikidoc/index.tt:53
 msgid "diff"

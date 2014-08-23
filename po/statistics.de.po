@@ -13,7 +13,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-08-23 10:56+0000\n"
+"PO-Revision-Date: 2014-08-23 11:31+0000\n"
 "Last-Translator: S.Brandt <email address hidden>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -46,7 +46,7 @@ msgid ""
 "Advanced relationships that allow users to connect basic data entities is "
 "relased and unused TRMs pruned from the database. Inline editing is turned "
 "off by default, causing a drop in voting activity."
-msgstr "Erweiterte Beziehungen, die es den Benutzern erlauben, die Hauptdatenbankobjekte miteinander zu verbinden, wurden herausgebracht und unbenutzte TRMs wurden von der Datenbank entfernt. Inline-Abstimmung wurde standardmäßig deaktiviert, wodurch die Abstimmaktivität abnahm."
+msgstr "Erweiterte Beziehungen, die es den Benutzern erlauben, die Hauptdatenbankobjekte miteinander zu verbinden, wurden herausgebracht und unbenutzte TRMs wurden von der Datenbank entfernt. Inline-Bearbeitung wurde standardmäßig deaktiviert, wodurch die Abstimmaktivität abnahm."
 
 #: DB:statistics.statistic_event/title:2005-05-22
 msgid "Album languages"
@@ -118,7 +118,7 @@ msgstr "Die BBC geht eine Partnerschaft mit MetaBrainz ein"
 #: DB:statistics.statistic_event/description:2003-07-25
 #: DB:statistics.statistic_event/description:2003-09-04
 msgid "Bug fix/cleanup release."
-msgstr ""
+msgstr "Version mit Fehlerkorrekturen/Bereinigungen."
 
 #: DB:statistics.statistic_event/title:2003-06-30
 #: DB:statistics.statistic_event/title:2003-07-25
@@ -173,7 +173,7 @@ msgstr "Dedizierter Datenbankserver"
 msgid ""
 "Edit display improvements, turned off RDF dumps, new install scripts "
 "released."
-msgstr ""
+msgstr "Verbesserungen der Bearbeitungsanzeige, RDF-Abbilder deaktiviert, neue Installationsskripte veröffentlicht."
 
 #: DB:statistics.statistic_event/title:2003-11-10
 msgid "Edit search"
@@ -193,11 +193,11 @@ msgstr ""
 msgid ""
 "FreeDB auto import feature turned off and autoeditor elections released. "
 "Unused TRMs pruned from the database."
-msgstr ""
+msgstr "FreeDB Auto-Import-Funktion deaktiviert und Autobearbeiter-Wahl veröffentlicht. Unbenutzte TRMs aus der Datenbank bereinigt."
 
 #: DB:statistics.statistic_event/title:2004-10-10
 msgid "FreeDB off/Autoeditors"
-msgstr ""
+msgstr "FreeDB aus/Autobearbeiter"
 
 #: DB:statistics.statistic_event/title:2006-08-15
 msgid "Great Dispute"
@@ -229,7 +229,7 @@ msgid ""
 "In an effort to reduce the size of the open edit queue and force less "
 "waiting for changes, the length of time edits stay open before expiration is"
 " reduced from 14 to 7 days."
-msgstr ""
+msgstr "Im Bemühen die Größe der offenen Bearbeitungs-Warteschlange zu reduzieren und um das Warten auf Änderungen zu verkürzen, wurde der Zeitraum, für den Änderungen offen bleiben, von 14 auf 7 Tage reduziert bevor sie verfallen."
 
 #: DB:statistics.statistic_event/description:2011-05-12
 msgid "In preparation for NGS, editing is turned off until release."
@@ -251,15 +251,15 @@ msgstr "Indexierte Suche und ein neuer XML-basierter Web Service wurden herausge
 
 #: DB:statistics.statistic_event/title:2004-01-17
 msgid "Inline edits"
-msgstr ""
+msgstr "Inline-Bearbeitungen"
 
 #: DB:statistics.statistic_event/description:2004-01-17
 msgid "Inline edits, new reports, improved data import scripts."
-msgstr ""
+msgstr "Inline-Bearbeitungen, neue Reporte, verbesserte Daten-Importskripte."
 
 #: DB:statistics.statistic_event/title:2004-05-09
 msgid "Install scripts"
-msgstr ""
+msgstr "Installationsskripte"
 
 #: DB:statistics.statistic_event/description:2009-12-14
 msgid "Kuno Woudt begins working for MusicBrainz full-time."
@@ -279,13 +279,13 @@ msgstr "Last.fm"
 
 #: DB:statistics.statistic_event/description:2007-11-07
 msgid "Last.fm signs up with MetaBrainz and starts using MusicBrainz data."
-msgstr ""
+msgstr "Last.fm wird MetaBrainz-Kunde und beginnt, MusicBrainz-Daten zu nutzen."
 
 #: DB:statistics.statistic_event/description:2003-11-10
 #: DB:statistics.statistic_event/description:2003-12-28
 msgid ""
 "Link to MusicBrainz feature, release events and edit suggestions released."
-msgstr ""
+msgstr "Verlinken zu MusicBrainz Funktion, Veröffentlichungsereignisse und Bearbeitungsvorschläge veröffentlicht."
 
 #: DB:statistics.statistic_event/description:2007-01-20
 msgid "Linkara Musica becomes first commercial customer of MetaBrainz."
@@ -356,7 +356,7 @@ msgstr ""
 
 #: DB:statistics.statistic_event/title:2011-05-02
 msgid "NGS Reduced Editing Phase"
-msgstr ""
+msgstr "NGS verkürzte Bearbeitungsphase"
 
 #: DB:statistics.statistic_event/title:2011-05-18
 msgid "NGS Release"
@@ -364,7 +364,7 @@ msgstr "NGS-Veröffentlichung"
 
 #: DB:statistics.statistic_event/description:2011-05-18
 msgid "NGS, a MusicBrainz major rewrite, is released!"
-msgstr ""
+msgstr "NGS, eine komplette Überarbeitung von MusicBrainz, wird veröffentlicht!"
 
 #: DB:statistics.statistic_event/title:2003-10-13
 msgid "Non album tracks"
@@ -705,7 +705,7 @@ msgstr "Grundlegende Metadaten"
 
 #: ../root/statistics/coverart.tt:13
 msgid "Basics"
-msgstr ""
+msgstr "Wesentliches"
 
 #: ../root/statistics/coverart.tt:129
 msgid "By Cover Art Type"
@@ -757,7 +757,7 @@ msgstr "Figuren"
 
 #: ../root/statistics/timeline.tt:51
 msgid "Check boxes above"
-msgstr ""
+msgstr "Kästchen oben markieren"
 
 #: ../root/statistics/view_js.tt:126
 msgid "Choirs"
@@ -769,7 +769,7 @@ msgstr "Klicke zum Auswählen"
 
 #: ../root/statistics/timeline.tt:47
 msgid "Controls"
-msgstr ""
+msgstr "Steuerelemente"
 
 #: ../root/statistics/index.tt:13 ../root/statistics/view_js.tt:26
 msgid "Core Entities"
@@ -1260,7 +1260,7 @@ msgstr "Weiblich:"
 msgid ""
 "For the vote statistics, only yes or no votes are counted, abstain votes are"
 " not counted."
-msgstr ""
+msgstr "Für die Abstimmungsstatistiken werden nur Ja- oder Nein-Stimmen gezählt, enthalten Stimmen werden nicht gezählt."
 
 #: ../root/statistics/formats.tt:25
 msgid "Format"
@@ -1284,7 +1284,7 @@ msgstr "Hohe Datenqualität:"
 
 #: ../root/statistics/timeline.tt:52
 msgid "Hover and click on vertical lines"
-msgstr ""
+msgstr "Über vertikale Linien bewegen und klicken"
 
 #: ../root/statistics/view_js.tt:141
 msgid "IPIs"
@@ -1871,7 +1871,7 @@ msgid ""
 "administrator for this server, you should run "
 "<code>./admin/CollectStats.pl</code> or import <code>mbdump-"
 "stats.tar.bz2</code>."
-msgstr ""
+msgstr "Statistiken wurden für diesen Server noch nie gesammelt. Wenn Sie der Administrator für diesen Server sind, sollten Sie <code>./admin/CollectStats.pl</code> ausführen oder  <code>mbdump-stats.tar.bz2</code> importieren. "
 
 #: ../root/statistics/index.tt:87
 msgid "Tags (raw / aggregated):"
