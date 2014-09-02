@@ -13,8 +13,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-08-23 11:31+0000\n"
-"Last-Translator: S.Brandt <email address hidden>\n"
+"PO-Revision-Date: 2014-09-02 18:46+0000\n"
+"Last-Translator: Ian McEwen <email address hidden>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -511,8 +511,9 @@ msgid "100%"
 msgstr "100&nbsp;%"
 
 #: ../root/statistics/index.tt:892
-msgid "Abstain:"
-msgstr "Enthaltungen:"
+msgctxt "vote"
+msgid "Abstain"
+msgstr ""
 
 #: ../root/statistics/view_js.tt:80
 msgid "Abstentions"
@@ -571,8 +572,9 @@ msgid "Applied:"
 msgstr "Angewandt:"
 
 #: ../root/statistics/index.tt:874
-msgid "Approve:"
-msgstr "Absegnen:"
+msgctxt "vote"
+msgid "Approve"
+msgstr ""
 
 #: ../root/statistics/index.tt:573 ../root/statistics/view_js.tt:55
 msgid "Areas"
@@ -1476,6 +1478,11 @@ msgstr "MusicBrainz-Ereignisse"
 msgid "MusicBrainz Events:"
 msgstr "MusicBrainz-Ereignisse:"
 
+#: ../root/statistics/index.tt:886
+msgctxt "vote"
+msgid "No"
+msgstr ""
+
 #: ../root/statistics/no_statistics.tt:2
 msgid "No Statistics"
 msgstr "Keine Statistiken"
@@ -1520,10 +1527,6 @@ msgstr "Kein Status gesetzt"
 #: ../root/statistics/coverart.tt:56 ../root/statistics/coverart.tt:139
 msgid "No type"
 msgstr "Kein Typ"
-
-#: ../root/statistics/index.tt:886
-msgid "No:"
-msgstr "Nein:"
 
 #: ../root/statistics/index.tt:204
 msgid "Non-group artists:"
@@ -2047,13 +2050,14 @@ msgstr "Werke"
 msgid "Works:"
 msgstr "Werke:"
 
+#: ../root/statistics/index.tt:880
+msgctxt "vote"
+msgid "Yes"
+msgstr ""
+
 #: ../root/statistics/view_js.tt:78
 msgid "Yes Votes"
 msgstr "Ja-Stimmen"
-
-#: ../root/statistics/index.tt:880
-msgid "Yes:"
-msgstr "Ja:"
 
 #: ../root/statistics/index.tt:858 ../root/statistics/index.tt:910
 msgid "Yesterday:"
