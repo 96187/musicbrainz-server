@@ -29,8 +29,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-05 14:04-0700\n"
-"PO-Revision-Date: 2014-09-05 21:05+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2014-09-05 23:38+0000\n"
+"Last-Translator: yahoe.001\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -447,11 +447,11 @@ msgstr "Accepté"
 
 #: ../root/user/edits.tt:1
 msgid "Accepted Edits"
-msgstr ""
+msgstr "Modifications acceptées"
 
 #: ../root/user/edits.tt:1
 msgid "Accepted Edits by {name}"
-msgstr ""
+msgstr "Modifications acceptées par {name}"
 
 #: ../root/account/applications.tt:26
 msgid "Access"
@@ -1646,11 +1646,11 @@ msgstr "Auto-éditeur"
 
 #: ../root/user/edits.tt:1
 msgid "Auto-Edits"
-msgstr ""
+msgstr "Modifications automatiques"
 
 #: ../root/user/edits.tt:1
 msgid "Auto-Edits by {name}"
-msgstr ""
+msgstr "Modifications automatiques par {name}"
 
 #: ../root/admin/edit_user.tt:7
 msgid "Auto-editor"
@@ -2067,11 +2067,11 @@ msgstr "Annulé"
 
 #: ../root/user/edits.tt:1
 msgid "Cancelled Edits"
-msgstr ""
+msgstr "Modifications annulées"
 
 #: ../root/user/edits.tt:1
 msgid "Cancelled Edits by {name}"
-msgstr ""
+msgstr "Modifications annulées par {name}"
 
 #: ../root/elections/index.tt:9
 msgid "Candidate"
@@ -3342,7 +3342,7 @@ msgstr "Erreur durant le chargement des relations."
 
 #: ../root/scripts/text_strings.tt:188
 msgid "Error loading release: {error}"
-msgstr "Erreur au chargement de la parution : {error}"
+msgstr "Erreur lors chargement de la parution : {error}"
 
 #: ../root/main/400.tt:8 ../root/main/404.tt:12 ../root/main/500.tt:37
 msgid "Error message: "
@@ -3448,11 +3448,11 @@ msgstr "Échec"
 
 #: ../root/user/edits.tt:1
 msgid "Failed Edits"
-msgstr ""
+msgstr "Modifications échouées"
 
 #: ../root/user/edits.tt:1
 msgid "Failed Edits by {name}"
-msgstr ""
+msgstr "Modifications échouées par {name}"
 
 #: ../root/components/common-macros.tt:961
 msgid "Few relationships"
@@ -5452,19 +5452,19 @@ msgstr "Modifications en attente"
 
 #: ../root/edit/subscribed-editors.tt:1 ../root/edit/subscribed-editors.tt:3
 msgid "Open Edits by Your Subscribed Editors"
-msgstr ""
+msgstr "Modifications ouvertes par les éditeurs auxquels vous êtes abonnés"
 
 #: ../root/user/edits.tt:1
 msgid "Open Edits by {name}"
-msgstr ""
+msgstr "Modifications ouvertes par {name}"
 
 #: ../root/edit/subscribed.tt:1 ../root/edit/subscribed.tt:3
 msgid "Open Edits for Your Subscribed Entities"
-msgstr ""
+msgstr "Modifications ouvertes pour les entités auxquelles vous êtes abonnés"
 
 #: ../root/entity/edits.tt:1
 msgid "Open Edits for {name}"
-msgstr ""
+msgstr "Modifications ouvertes pour {name}"
 
 #: ../root/collection/layout.tt:14 ../root/edit/list_header.tt:15
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:53
@@ -6169,11 +6169,11 @@ msgstr "Rejeter à l'expiration"
 
 #: ../root/user/edits.tt:1
 msgid "Rejected Edits"
-msgstr ""
+msgstr "Modifications rejetées"
 
 #: ../root/user/edits.tt:1
 msgid "Rejected Edits by {name}"
-msgstr ""
+msgstr "Modifications rejetées par {name}"
 
 #: ../root/scripts/text_strings.tt:95
 msgid "Relate recording to work"
@@ -11288,7 +11288,7 @@ msgstr "{entity0}-{entity1}"
 
 #: ../root/entity/edits.tt:1
 msgid "{entity_type} by {artist}"
-msgstr ""
+msgstr "{entity_type} par {artist}"
 
 #: ../root/components/common-macros.tt:267 ../root/main/index.tt:124
 #: ../root/scripts/text_strings.tt:154
@@ -11333,7 +11333,7 @@ msgstr "{name} - Modifier la parution"
 
 #: ../root/components/common-macros.tt:322
 msgid "{name} – {additional_info}"
-msgstr ""
+msgstr "{name} – {additional_info}"
 
 #: ../root/user/subscriptions/layout.tt:19
 msgid "{num} artist"
