@@ -39,8 +39,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-06 22:00-0700\n"
-"PO-Revision-Date: 2014-09-07 05:01+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2014-09-07 11:36+0000\n"
+"Last-Translator: Ettore Atalan <email address hidden>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1728,15 +1728,15 @@ msgstr "Fehlerhafte Anfrage"
 
 #: ../root/admin/edit_banner.tt:12
 msgid "Banner message"
-msgstr ""
+msgstr "Bannernachricht"
 
 #: ../root/admin/edit_user.tt:11
 msgid "Banner message editor"
-msgstr ""
+msgstr "Bannernachrichtenbearbeiter"
 
 #: ../root/user/privileged.tt:46
 msgid "Banner message editors"
-msgstr ""
+msgstr "Bannernachrichtenbearbeiter"
 
 #: ../root/user/privileged.tt:47
 msgid ""
@@ -2896,7 +2896,7 @@ msgstr "Künstlernennung bearbeiten"
 #: ../root/admin/edit_banner.tt:1 ../root/admin/edit_banner.tt:3
 #: ../root/admin/index.tt:17 ../root/layout/menu.tt:103
 msgid "Edit Banner Message"
-msgstr ""
+msgstr "Bannernachricht bearbeiten"
 
 #: ../root/collection/edit.tt:1
 msgid "Edit Collection"
@@ -4519,11 +4519,11 @@ msgstr "Lade …"
 #: ../root/edit/details/edit_alias.tt:42
 #: ../root/edit/details/remove_alias.tt:23
 msgid "Locale"
-msgstr "Locale"
+msgstr "Sprachumgebung"
 
 #: ../root/alias/edit_form.tt:21
 msgid "Locale:"
-msgstr "Locale:"
+msgstr "Sprachumgebung:"
 
 #: ../root/edit/search_macros.tt:288
 msgid "Location Editor"
@@ -5485,7 +5485,7 @@ msgstr "Offene Bearbeitungen"
 
 #: ../root/edit/subscribed-editors.tt:1 ../root/edit/subscribed-editors.tt:3
 msgid "Open Edits by Your Subscribed Editors"
-msgstr ""
+msgstr "Offene Bearbeitungen von Ihren abonnierten Editoren"
 
 #: ../root/user/edits.tt:1
 msgid "Open Edits by {name}"
@@ -5493,7 +5493,7 @@ msgstr "Offene Bearbeitungen von {name}"
 
 #: ../root/edit/subscribed.tt:1 ../root/edit/subscribed.tt:3
 msgid "Open Edits for Your Subscribed Entities"
-msgstr ""
+msgstr "Offene Bearbeitungen an Ihren abonnierten Objekten"
 
 #: ../root/entity/edits.tt:1
 msgid "Open Edits for {name}"
@@ -5802,7 +5802,7 @@ msgstr "Stelle bitte sicher, dass Du keine gültige {doc_standalone|alleinstehen
 msgid ""
 "Please navigate to the pages of other entities you wish to merge and select "
 "the \"merge\" link."
-msgstr "Bitte navigiere auf die Seiten der anderen Entitäten, die Du vereinen möchtest, und klicke auf den „Vereinen“-Link."
+msgstr "Bitte navigiere auf die Seiten der anderen Objekte, die Du vereinen möchtest, und klicke auf den „Vereinen“-Link."
 
 #: ../root/annotation/edit.tt:1
 msgid ""
@@ -5957,7 +5957,7 @@ msgstr "Primärtyp:"
 #: ../root/edit/details/add_alias.tt:29 ../root/edit/details/edit_alias.tt:46
 #: ../root/edit/details/remove_alias.tt:28
 msgid "Primary for locale"
-msgstr "Primär für Locale"
+msgstr "Primär für Sprachumgebung"
 
 #: ../root/relationship/linktype/form.tt:37
 msgid "Priority:"
@@ -6886,7 +6886,7 @@ msgstr "Örtlichkeitsalias entfernen"
 
 #: ../root/layout/merge-helper.tt:33
 msgid "Remove selected entities"
-msgstr "Ausgewählte Entitäten löschen"
+msgstr "Ausgewählte Objekte löschen"
 
 #: ../root/collection/index.tt:51
 msgid "Remove selected releases from collection"
@@ -8124,7 +8124,7 @@ msgstr "Die folgenden {count} Benutzer sind Kontoadministratoren:"
 
 #: ../root/user/privileged.tt:49
 msgid "The following {count} users are banner message editors:"
-msgstr ""
+msgstr "Die folgenden {count} Benutzer sind Bannernachrichtenbearbeiter:"
 
 #: ../root/user/privileged.tt:43
 msgid "The following {count} users are location editors:"
@@ -8554,7 +8554,7 @@ msgstr "Diese Bearbeitung wurde kürzlich abgebrochen."
 #: ../root/components/common-macros.tt:262
 #: ../lib/MusicBrainz/Server/Plugin/Diff.pm:150
 msgid "This entity has been removed, and cannot be displayed correctly."
-msgstr "Diese Entität wurde gelöscht und kann nicht korrekt dargestellt werden."
+msgstr "Dieses Objekt wurde gelöscht und kann nicht korrekt dargestellt werden."
 
 #: ../root/components/common-macros.tt:262
 msgid "This entity will be created when edits are entered."
@@ -8630,7 +8630,7 @@ msgstr "Dies ist eine {history|alte Revision} dieser Anmerkungen, bearbeitet von
 
 #: ../root/alias/edit_form.tt:23
 msgid "This is the primary alias for this locale"
-msgstr "Dies ist der Primäralias für dieses Locale."
+msgstr "Dies ist der Primäralias für diese Sprachumgebung."
 
 #: ../root/edit/data.tt:31
 msgid ""
@@ -8900,7 +8900,7 @@ msgid ""
 "This report lists artists that have no editors subscribed to them, and whose"
 " changes may therefore be under-reviewed. Artists with more release groups "
 "and more open edits are listed first."
-msgstr "Dieser Report listet Künster auf, die kein Bearbeiter abonniert hat und deren Änderungen daher nicht zur Genüge überprüft werden. Künstler mit mehr Veröffentlichungsgruppen und mehr offenen Bearbeitungen werden zuerst aufgelistet."
+msgstr "Dieser Bericht listet Künstler auf, die kein Bearbeiter abonniert hat und deren Änderungen daher nicht zur Genüge überprüft werden. Künstler mit mehr Veröffentlichungsgruppen und mehr offenen Bearbeitungen werden zuerst aufgelistet."
 
 #: ../root/report/artists_that_may_be_groups.tt:6
 msgid ""
@@ -8950,7 +8950,7 @@ msgid ""
 "artist, label or URL using the same relationship type. For multiple "
 "relationships to release groups, recordings or works, see the reports for "
 "those entities."
-msgstr "Dieser Report listet Künstler auf, die mehrere Beziehungen zum gleichen Künstler, Label oder einer URL haben und dabei den gleichen Beziehungstyp verwenden. Zu mehreren Beziehungen zu Veröffentlichungsgruppen, Aufnahmen oder Werken, siehe die Reporte für diese Objekte."
+msgstr "Dieser Report listet Künstler auf, die mehrere Beziehungen zum gleichen Künstler, Label oder einer URL haben und dabei den gleichen Beziehungstyp verwenden. Zu mehreren Beziehungen zu Veröffentlichungsgruppen, Aufnahmen oder Werken, siehe die Berichte für diese Objekte."
 
 #: ../root/report/deprecated_relationship_artists.tt:6
 msgid ""
@@ -9346,7 +9346,7 @@ msgstr "Dies erstellt ein neues Werk für jede angewählte Aufnahmen, die nicht 
 msgid ""
 "This will set the banner message that is shown at the top of each page. An "
 "empty string removes the banner."
-msgstr ""
+msgstr "Dies wird die Bannernachricht, die ganz oben auf jeder Seite angezeigt wird, festlegen. Eine leere Zeichenkette entfernt das Banner."
 
 #: ../root/work/index.tt:25
 msgid ""
@@ -10604,7 +10604,7 @@ msgstr "Du kannst nicht für diesen Kandidaten abstimmen, da Du ihn vorgeschlage
 
 #: ../root/layout/merge-helper.tt:4
 msgid "You currently have the following entities selected for merging:"
-msgstr "Du hast derzeit die folgenden Entitäten zum Vereinen ausgewählt:"
+msgstr "Du hast derzeit die folgenden Objekte zum Vereinen ausgewählt:"
 
 #: ../root/account/applications.tt:84
 msgid "You do not have any registered applications."
@@ -11092,7 +11092,7 @@ msgstr "Vorschau:"
 
 #: ../root/edit/details/edit_alias.tt:24
 msgid "primary for {locale}"
-msgstr ""
+msgstr "Primär für {locale}"
 
 #: ../root/edit/search_macros.tt:19
 msgid "randomly"
@@ -11730,7 +11730,7 @@ msgstr "Benutzer erfolgreich bearbeitet."
 #: ../lib/MusicBrainz/Server/Controller/Admin.pm:127
 msgid ""
 "Banner updated. Remember that each server has its own, independent banner."
-msgstr ""
+msgstr "Banner aktualisiert. Denken Sie daran, dass jeder Server sein eigenes, unabhängiges Banner hat."
 
 #: ../lib/MusicBrainz/Server/Controller/Artist.pm:492
 msgid "You cannot merge a special purpose artist into another artist"
@@ -12461,7 +12461,7 @@ msgstr "Aufnahmen filtern"
 
 #: ../lib/MusicBrainz/Server/Form/Alias.pm:105
 msgid "This alias can only be a primary alias if a locale is selected"
-msgstr "Dieser Alias kann nur ein Primäralias werden, wenn ein Locale ausgewählt wurde"
+msgstr "Dieser Alias kann nur ein Primäralias werden, wenn eine Sprachumgebung ausgewählt wurde"
 
 #: ../lib/MusicBrainz/Server/Form/Area.pm:87
 msgid "An area already exists with this ISO code"
