@@ -20,14 +20,14 @@
 # phonebox, 2014
 # Timo Martikainen <>, 2012
 # Timo Martikainen <email address hidden>, 2012
-# Timo Martikainen <email address hidden>, 2012-2013
+# Timo Martikainen <email address hidden>, 2012-2014
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-06 22:00-0700\n"
-"PO-Revision-Date: 2014-09-07 20:38+0000\n"
-"Last-Translator: Jaakko Perttilä <email address hidden>\n"
+"PO-Revision-Date: 2014-09-07 23:58+0000\n"
+"Last-Translator: Timo Martikainen <email address hidden>\n"
 "Language-Team: Finnish (http://www.transifex.com/projects/p/musicbrainz/language/fi/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -745,7 +745,7 @@ msgstr "Lisää toinen levymerkki"
 
 #: ../root/components/forms.tt:397
 msgid "Add another link:"
-msgstr "Lisää toinen linkki:"
+msgstr "Lisää linkki:"
 
 #: ../root/scripts/text_strings.tt:45
 msgid "Add another medium"
@@ -1842,7 +1842,7 @@ msgstr "Aloitusalue:"
 
 #: ../root/components/aliases.tt:13
 msgid "Begin Date"
-msgstr "Aloitusajankohta"
+msgstr "Alkanut"
 
 #: ../root/components/common-macros.tt:809 ../root/scripts/text_strings.tt:73
 msgid "Begin area:"
@@ -1851,7 +1851,7 @@ msgstr "Aloitusalue:"
 #: ../root/edit/details/add_alias.tt:41 ../root/edit/details/edit_alias.tt:54
 #: ../root/edit/details/remove_alias.tt:39
 msgid "Begin date"
-msgstr "Aloitusajankohta"
+msgstr "Alkanut"
 
 #: ../root/alias/edit_form.tt:34 ../root/area/edit_form.tt:23
 #: ../root/area/layout.tt:12 ../root/artist/edit_form.tt:57
@@ -1862,7 +1862,7 @@ msgstr "Aloitusajankohta"
 #: ../root/edit/details/edit_label.tt:33 ../root/edit/details/edit_place.tt:36
 #: ../root/label/edit_form.tt:59 ../root/place/edit_form.tt:56
 msgid "Begin date:"
-msgstr "Aloitusajankohta:"
+msgstr "Alkanut:"
 
 #: ../root/layout/menu.tt:258
 msgid "Beginners Guide"
@@ -2621,7 +2621,7 @@ msgstr "Kuolinpaikka:"
 
 #: ../root/components/common-macros.tt:813 ../root/scripts/text_strings.tt:69
 msgid "Died:"
-msgstr "Kuollut:"
+msgstr "Kuolinaika:"
 
 #: ../root/search/form.tt:35 ../root/search/form.tt:40
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:60
@@ -5031,7 +5031,7 @@ msgstr "Nimi"
 #: ../root/release_group/edit_form.tt:12 ../root/series/edit_form.tt:31
 #: ../root/work/edit_form.tt:13
 msgid "Name:"
-msgstr "Nimi"
+msgstr "Nimi:"
 
 #: ../root/annotation/history.tt:7
 msgid "New"
@@ -7712,7 +7712,7 @@ msgstr "Aloita"
 
 #: ../root/elections/index.tt:11
 msgid "Start date"
-msgstr "Aloitusajankohta"
+msgstr "Aloitus"
 
 #: ../root/layout/menu.tt:144 ../root/user/profile.tt:143
 msgid "Statistics"
