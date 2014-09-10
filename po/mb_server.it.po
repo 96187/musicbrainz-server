@@ -22,8 +22,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-09-07 19:19-0700\n"
-"PO-Revision-Date: 2014-09-08 02:20+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2014-09-10 21:15+0000\n"
+"Last-Translator: salorock <email address hidden>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/musicbrainz/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -440,11 +440,11 @@ msgstr "Accettate"
 
 #: ../root/user/edits.tt:1
 msgid "Accepted Edits"
-msgstr ""
+msgstr "Modifiche accettate"
 
 #: ../root/user/edits.tt:1
 msgid "Accepted Edits by {name}"
-msgstr ""
+msgstr "Modifiche accettate di {name}"
 
 #: ../root/account/applications.tt:26
 msgid "Access"
@@ -1639,11 +1639,11 @@ msgstr "Auto-editor"
 
 #: ../root/user/edits.tt:1
 msgid "Auto-Edits"
-msgstr ""
+msgstr "Auto-modifiche"
 
 #: ../root/user/edits.tt:1
 msgid "Auto-Edits by {name}"
-msgstr ""
+msgstr "Auto-modifiche di {name}"
 
 #: ../root/admin/edit_user.tt:7
 msgid "Auto-editor"
@@ -1711,21 +1711,21 @@ msgstr "Richiesta non valida"
 
 #: ../root/admin/edit_banner.tt:12
 msgid "Banner message"
-msgstr ""
+msgstr "Messaggio del banner"
 
 #: ../root/admin/edit_user.tt:11
 msgid "Banner message editor"
-msgstr ""
+msgstr "Editor dei messaggi del banner"
 
 #: ../root/user/privileged.tt:46
 msgid "Banner message editors"
-msgstr ""
+msgstr "Editor dei messaggi del banner"
 
 #: ../root/user/privileged.tt:47
 msgid ""
 "Banner message editors are users who can set a message that is shown in a "
 "banner on all pages, e.g. to warn users about upcoming site maintenance."
-msgstr ""
+msgstr "Gli editor dei messaggi del banner sono utenti che possono impostare un messaggio che verrà visualizzato in un banner esposto su tutte le pagine, per es. per avvertire gli utenti di una manutenzione programmata del sito."
 
 #: ../root/cdtoc/attach_artist_releases.tt:20
 #: ../root/cdtoc/attach_filter_release.tt:34 ../root/cdtoc/list.tt:11
@@ -2078,11 +2078,11 @@ msgstr "Annullata"
 
 #: ../root/user/edits.tt:1
 msgid "Cancelled Edits"
-msgstr ""
+msgstr "Modifiche cancellate"
 
 #: ../root/user/edits.tt:1
 msgid "Cancelled Edits by {name}"
-msgstr ""
+msgstr "Modifiche cancellate di {name}"
 
 #: ../root/elections/index.tt:9
 msgid "Candidate"
@@ -2879,7 +2879,7 @@ msgstr "Modifica accreditamento dell'artista"
 #: ../root/admin/edit_banner.tt:1 ../root/admin/edit_banner.tt:3
 #: ../root/admin/index.tt:17 ../root/layout/menu.tt:103
 msgid "Edit Banner Message"
-msgstr ""
+msgstr "Modifica messaggio del banner"
 
 #: ../root/collection/edit.tt:1
 msgid "Edit Collection"
@@ -3358,7 +3358,7 @@ msgstr "Errore nel caricamento delle relazioni."
 
 #: ../root/scripts/text_strings.tt:188
 msgid "Error loading release: {error}"
-msgstr ""
+msgstr "Errore nel caricamento della pubblicazione: {error}"
 
 #: ../root/main/400.tt:8 ../root/main/404.tt:12 ../root/main/500.tt:37
 msgid "Error message: "
@@ -3464,11 +3464,11 @@ msgstr "Fallite"
 
 #: ../root/user/edits.tt:1
 msgid "Failed Edits"
-msgstr ""
+msgstr "Modifiche fallite"
 
 #: ../root/user/edits.tt:1
 msgid "Failed Edits by {name}"
-msgstr ""
+msgstr "Modifiche fallite di {name}"
 
 #: ../root/components/common-macros.tt:967
 msgid "Few relationships"
@@ -5468,19 +5468,19 @@ msgstr "Modifiche in corso"
 
 #: ../root/edit/subscribed-editors.tt:1 ../root/edit/subscribed-editors.tt:3
 msgid "Open Edits by Your Subscribed Editors"
-msgstr ""
+msgstr "Modifiche aperte degli editor che hai sottoscritto"
 
 #: ../root/user/edits.tt:1
 msgid "Open Edits by {name}"
-msgstr ""
+msgstr "Modifiche aperte di {name}"
 
 #: ../root/edit/subscribed.tt:1 ../root/edit/subscribed.tt:3
 msgid "Open Edits for Your Subscribed Entities"
-msgstr ""
+msgstr "Modifiche aperte per le entità che hai sottoscritto"
 
 #: ../root/entity/edits.tt:1
 msgid "Open Edits for {name}"
-msgstr ""
+msgstr "Modifiche aperte per {name}"
 
 #: ../root/collection/layout.tt:14 ../root/edit/list_header.tt:15
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:53
@@ -6185,11 +6185,11 @@ msgstr "Rifiuta alla scadenza"
 
 #: ../root/user/edits.tt:1
 msgid "Rejected Edits"
-msgstr ""
+msgstr "Modifiche rifiutate"
 
 #: ../root/user/edits.tt:1
 msgid "Rejected Edits by {name}"
-msgstr ""
+msgstr "Modifiche rifiutate di {name}"
 
 #: ../root/scripts/text_strings.tt:95
 msgid "Relate recording to work"
@@ -8107,7 +8107,7 @@ msgstr "I {count} utenti seguenti sono amministratori account:"
 
 #: ../root/user/privileged.tt:49
 msgid "The following {count} users are banner message editors:"
-msgstr ""
+msgstr "I {count} utenti seguenti sono editor dei messaggi del banner:"
 
 #: ../root/user/privileged.tt:43
 msgid "The following {count} users are location editors:"
@@ -9329,7 +9329,7 @@ msgstr "Quest'operazione creerà una nuova opera per ogni registrazione selezion
 msgid ""
 "This will set the banner message that is shown at the top of each page. An "
 "empty string removes the banner."
-msgstr ""
+msgstr "Questo imposta il messaggio del banner mostrato nella parte superiore di ogni pagina. Una stringa vuota rimuove il banner."
 
 #: ../root/work/index.tt:25
 msgid ""
@@ -10952,7 +10952,7 @@ msgstr "info"
 
 #: ../root/components/common-macros.tt:149
 msgid "instruments"
-msgstr ""
+msgstr "strumenti"
 
 #: ../root/edit/search_macros.tt:127 ../root/edit/search_macros.tt:144
 #: ../root/edit/search_macros.tt:178 ../root/edit/search_macros.tt:190
@@ -11079,7 +11079,7 @@ msgstr "anteprima:"
 
 #: ../root/edit/details/edit_alias.tt:24
 msgid "primary for {locale}"
-msgstr ""
+msgstr "primario per {locale}"
 
 #: ../root/edit/search_macros.tt:19
 msgid "randomly"
@@ -11322,7 +11322,7 @@ msgstr "{entity0}-{entity1}"
 
 #: ../root/entity/edits.tt:1
 msgid "{entity_type} by {artist}"
-msgstr ""
+msgstr "{entity_type} di {artist}"
 
 #: ../root/components/common-macros.tt:273 ../root/main/index.tt:124
 #: ../root/scripts/text_strings.tt:154
@@ -11367,7 +11367,7 @@ msgstr "{name} - Modifica pubblicazione"
 
 #: ../root/components/common-macros.tt:328
 msgid "{name} – {additional_info}"
-msgstr ""
+msgstr "{name} – {additional_info}"
 
 #: ../root/user/subscriptions/layout.tt:19
 msgid "{num} artist"
@@ -11717,7 +11717,7 @@ msgstr "Utente modificato con successo."
 #: ../lib/MusicBrainz/Server/Controller/Admin.pm:127
 msgid ""
 "Banner updated. Remember that each server has its own, independent banner."
-msgstr ""
+msgstr "Banner aggiornato. Ricordati che ogni server ha il suo banner indipendente dagli altri."
 
 #: ../lib/MusicBrainz/Server/Controller/Artist.pm:492
 msgid "You cannot merge a special purpose artist into another artist"
