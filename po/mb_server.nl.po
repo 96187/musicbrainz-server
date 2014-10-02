@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-02 07:58-0700\n"
-"PO-Revision-Date: 2014-10-02 19:48+0000\n"
+"PO-Revision-Date: 2014-10-02 21:23+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -1709,21 +1709,21 @@ msgstr "Verkeerd verzoek"
 
 #: ../root/admin/edit_banner.tt:12
 msgid "Banner message"
-msgstr ""
+msgstr "Mededeling"
 
 #: ../root/admin/edit_user.tt:11
 msgid "Banner message editor"
-msgstr ""
+msgstr "Mededelingsredateur"
 
 #: ../root/user/privileged.tt:46
 msgid "Banner message editors"
-msgstr ""
+msgstr "Mededelingsredacteurs"
 
 #: ../root/user/privileged.tt:47
 msgid ""
 "Banner message editors are users who can set a message that is shown in a "
 "banner on all pages, e.g. to warn users about upcoming site maintenance."
-msgstr ""
+msgstr "Mededelingsredacteurs zijn gebruikers die een mededeling kunnen instellen die op alle pagina’s wordt vertoond, bijvoorbeeld om gebruikers te waarschuwen voor aanstaand onderhoud."
 
 #: ../root/cdtoc/attach_artist_releases.tt:20
 #: ../root/cdtoc/attach_filter_release.tt:34 ../root/cdtoc/list.tt:11
@@ -2873,7 +2873,7 @@ msgstr "Vermeldingen van artiesten bewerken"
 #: ../root/admin/edit_banner.tt:1 ../root/admin/edit_banner.tt:3
 #: ../root/admin/index.tt:17 ../root/layout/menu.tt:103
 msgid "Edit Banner Message"
-msgstr ""
+msgstr "Mededeling bewerken"
 
 #: ../root/collection/edit.tt:1
 msgid "Edit Collection"
@@ -8103,7 +8103,7 @@ msgstr "De volgende {count} gebruikers zijn accountbeheerders:"
 
 #: ../root/user/privileged.tt:49
 msgid "The following {count} users are banner message editors:"
-msgstr ""
+msgstr "De volgende {count} gebruikers zijn mededelingsredacteurs:"
 
 #: ../root/user/privileged.tt:43
 msgid "The following {count} users are location editors:"
@@ -9325,7 +9325,7 @@ msgstr "Dit zal een nieuwe compositie toevoegen voor elke aangevinkte opname die
 msgid ""
 "This will set the banner message that is shown at the top of each page. An "
 "empty string removes the banner."
-msgstr ""
+msgstr "Dit stelt een mededeling in die bovenaan elke pagina wordt weergegeven. Maak de mededeling leeg om hem te verwijderen."
 
 #: ../root/work/index.tt:25
 msgid ""
@@ -11713,7 +11713,7 @@ msgstr "Gebruiker succesvol bewerkt."
 #: ../lib/MusicBrainz/Server/Controller/Admin.pm:127
 msgid ""
 "Banner updated. Remember that each server has its own, independent banner."
-msgstr ""
+msgstr "De mededeling is bijgewerkt. Onthoud wel dat elke server zijn eigen onafhankelijke mededeling heeft."
 
 #: ../lib/MusicBrainz/Server/Controller/Artist.pm:492
 msgid "You cannot merge a special purpose artist into another artist"
