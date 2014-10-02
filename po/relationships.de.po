@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-09-05 22:05+0000\n"
+"PO-Revision-Date: 2014-10-02 17:21+0000\n"
 "Last-Translator: Ettore Atalan <email address hidden>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -1572,12 +1572,6 @@ msgid ""
 "release."
 msgstr ""
 
-#: DB:link_type/description:244
-msgid ""
-"This relationship is deprecated, please use the \"medley\" attribute of "
-"\"recording of\" instead."
-msgstr ""
-
 #: DB:link_type/description:751
 msgid ""
 "This relationship is used to link a catalogue work series to a person who "
@@ -1856,7 +1850,7 @@ msgstr "Wikidata-Seite für"
 
 #: DB:link_type/link_phrase:355 DB:link_type/link_phrase:89
 #: DB:link_type/link_phrase:179 DB:link_type/link_phrase:216
-#: DB:link_type/link_phrase:731 DB:link_type/link_phrase:595
+#: DB:link_type/link_phrase:595 DB:link_type/link_phrase:731
 #: DB:link_type/link_phrase:744 DB:link_type/reverse_link_phrase:279
 #: DB:link_type/reverse_link_phrase:731 DB:link_type/long_link_phrase:731
 msgid "Wikipedia"
@@ -2642,11 +2636,12 @@ msgstr "ist eine Liveaufführung von"
 msgid "is a mash-up of"
 msgstr "ist ein Mashup von"
 
-#: DB:link_type/long_link_phrase:244 DB:link_type/long_link_phrase:239
+#: DB:link_type/long_link_phrase:239
 msgid "is a medley of"
 msgstr "ist ein Medley von"
 
-#: DB:link_type/long_link_phrase:730 DB:link_type/long_link_phrase:273
+#: DB:link_type/long_link_phrase:753 DB:link_type/long_link_phrase:730
+#: DB:link_type/long_link_phrase:273
 msgid "is a page in a database for"
 msgstr "ist eine Seite in einer Datenbank für"
 
@@ -2930,7 +2925,7 @@ msgstr "Medium 9"
 msgid "medley"
 msgstr "Medley"
 
-#: DB:link_type/link_phrase:244 DB:link_type/link_phrase:239
+#: DB:link_type/link_phrase:239
 msgid "medley of"
 msgstr "Medley von"
 
@@ -3031,11 +3026,12 @@ msgstr "Orchestrierung von"
 msgid "orchestrations"
 msgstr "Orchestrierungen"
 
-#: DB:link_type/link_phrase:746 DB:link_type/link_phrase:96
-#: DB:link_type/link_phrase:730 DB:link_type/link_phrase:82
-#: DB:link_type/link_phrase:306 DB:link_type/link_phrase:222
-#: DB:link_type/link_phrase:273 DB:link_type/link_phrase:188
-#: DB:link_type/link_phrase:561 DB:link_type/reverse_link_phrase:746
+#: DB:link_type/link_phrase:753 DB:link_type/link_phrase:746
+#: DB:link_type/link_phrase:96 DB:link_type/link_phrase:730
+#: DB:link_type/link_phrase:82 DB:link_type/link_phrase:306
+#: DB:link_type/link_phrase:222 DB:link_type/link_phrase:273
+#: DB:link_type/link_phrase:188 DB:link_type/link_phrase:561
+#: DB:link_type/reverse_link_phrase:753 DB:link_type/reverse_link_phrase:746
 #: DB:link_type/reverse_link_phrase:96 DB:link_type/reverse_link_phrase:730
 #: DB:link_type/reverse_link_phrase:82 DB:link_type/reverse_link_phrase:306
 #: DB:link_type/reverse_link_phrase:222 DB:link_type/reverse_link_phrase:273
@@ -3273,7 +3269,7 @@ msgstr "Aufnahmetechniker"
 msgid "recording location for"
 msgstr "Aufnahmeort für"
 
-#: DB:link_type/reverse_link_phrase:244 DB:link_type/reverse_link_phrase:239
+#: DB:link_type/reverse_link_phrase:239
 msgid "referred to in medleys"
 msgstr "verwendet in Medleys"
 
@@ -3340,7 +3336,7 @@ msgstr "Rezensionen"
 
 #: DB:link_type/reverse_link_phrase:315
 msgid "revision of"
-msgstr ""
+msgstr "Revision von"
 
 #: DB:link_type/reverse_link_phrase:349
 msgid "rights society"
@@ -3482,7 +3478,7 @@ msgstr "Hommage an"
 
 #: DB:link_type/description:736 DB:link_type/reverse_link_phrase:736
 msgid "type of"
-msgstr ""
+msgstr "Typ von"
 
 #: DB:link_attribute_type/name:582
 msgid "video"
@@ -3887,13 +3883,13 @@ msgstr "{bonus:kann|ist} Teil eines Sets {bonus:sein}, das nächste Medium im Se
 msgid ""
 "{live} {medley:medley including a} {partial} {instrumental} {cover} "
 "recording of"
-msgstr ""
+msgstr "{live} {medley:medley including a} {partial} {instrumental} {cover} Aufnahme von"
 
 #: DB:link_type/reverse_link_phrase:278
 msgid ""
 "{live} {medley:medleys including} {partial} {instrumental} {cover} "
 "recordings"
-msgstr ""
+msgstr "{live} {medley:medleys including} {partial} {instrumental} {cover} Aufnahmen"
 
 #: DB:link_type/reverse_link_phrase:15
 msgid "{translated} {parody:parodies|covers}"
@@ -3917,4 +3913,4 @@ msgstr "{vocal:%|vocals} support by"
 
 #: DB:link_type/link_phrase:107
 msgid "{vocal:%|vocals} support for"
-msgstr ""
+msgstr "{vocal:%|vocals}-Unterstützung für"
