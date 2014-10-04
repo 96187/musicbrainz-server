@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-02 07:58-0700\n"
-"PO-Revision-Date: 2014-10-03 20:01+0000\n"
+"PO-Revision-Date: 2014-10-04 20:47+0000\n"
 "Last-Translator: Kurt-Håkon Eilertsen <email address hidden>\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/projects/p/musicbrainz/language/nb/)\n"
 "MIME-Version: 1.0\n"
@@ -31,7 +31,7 @@ msgstr " &#x2013; ????"
 
 #: ../root/components/common-macros.tt:8
 msgid " ({text})"
-msgstr ""
+msgstr "({tekst})"
 
 #: ../root/account/lost_password.tt:7
 msgid ""
@@ -143,7 +143,7 @@ msgstr ""
 
 #: ../root/main/400.tt:12 ../root/main/500.tt:41
 msgid "(No details about this error are available)"
-msgstr ""
+msgstr "(Ingen detaljer angående denne feilen er tilgjengelig)"
 
 #: ../root/release/edit/recordings.tt:48
 msgid "(add a new recording)"
@@ -151,7 +151,7 @@ msgstr "(legg til en ny innspilling)"
 
 #: ../root/edit/details/macros.tt:38
 msgid "(ended)"
-msgstr ""
+msgstr "(avsluttet)"
 
 #: ../root/user/profile.tt:25
 msgid "(hidden)"
@@ -163,7 +163,7 @@ msgstr "(ny utgivelsesgruppe)"
 
 #: ../root/annotation/common.tt:9
 msgid "(no changelog)"
-msgstr ""
+msgstr "(ingen endringslogg)"
 
 #: ../root/release/add_cover_art.tt:116
 msgid "(no other cover art)"
@@ -292,15 +292,15 @@ msgstr ""
 
 #: ../root/edit/edit_header.tt:61
 msgid "<strong>Approved:</strong> {date}"
-msgstr ""
+msgstr "<strong>Godkjent:</strong> {date}"
 
 #: ../root/edit/edit_header.tt:59
 msgid "<strong>Closed:</strong> <em>Cancelling</em>"
-msgstr ""
+msgstr "<strong>Lukket:</strong> <em>Avbryter</em>"
 
 #: ../root/edit/edit_header.tt:63
 msgid "<strong>Closed:</strong> {date}"
-msgstr ""
+msgstr "<strong>Lukket:</strong> {date}"
 
 #: ../root/components/common-macros.tt:734
 msgid "<strong>Error</strong>:"
@@ -416,7 +416,7 @@ msgstr ""
 
 #: ../root/doc/edit_type.tt:8
 msgid "Accept"
-msgstr ""
+msgstr "Aksept"
 
 #: ../root/edit/index.tt:63 ../root/edit/info.tt:25
 msgid "Accept edit"
@@ -429,11 +429,11 @@ msgstr ""
 #: ../root/user/profile.tt:152
 msgctxt "edit descriptor"
 msgid "Accepted"
-msgstr ""
+msgstr "Akseptert"
 
 #: ../root/user/edits.tt:1
 msgid "Accepted Edits"
-msgstr ""
+msgstr "Aksepterte endringer"
 
 #: ../root/user/edits.tt:1
 msgid "Accepted Edits by {name}"
@@ -441,43 +441,43 @@ msgstr ""
 
 #: ../root/account/applications.tt:26
 msgid "Access"
-msgstr ""
+msgstr "Tilgang"
 
 #: ../root/account/registered.tt:1 ../root/account/registered.tt:2
 msgid "Account Created"
-msgstr ""
+msgstr "Konto opprettet"
 
 #: ../root/admin/edit_user.tt:26 ../root/admin/edit_user.tt:30
 msgid "Account admin"
-msgstr ""
+msgstr "Konto admin"
 
 #: ../root/user/privileged.tt:52
 msgid "Account administrators"
-msgstr ""
+msgstr "Konto administratorer"
 
 #: ../root/user/privileged.tt:53
 msgid "Account administrators can edit and delete user accounts."
-msgstr ""
+msgstr "Konto administratorer kan redigere og slette brukerkontoer."
 
 #: ../root/search/results-freedb.tt:17
 msgid "Action"
-msgstr ""
+msgstr "Handling"
 
 #: ../root/account/applications.tt:27 ../root/account/applications.tt:58
 #: ../root/admin/wikidoc/index.tt:36 ../root/artist/aliases.tt:23
 #: ../root/components/aliases.tt:19 ../root/recording/fingerprints.tt:8
 #: ../root/user/collections.tt:15
 msgid "Actions"
-msgstr ""
+msgstr "Handlinger"
 
 #: ../root/area/create.tt:1 ../root/area/create.tt:3
 msgid "Add Area"
-msgstr ""
+msgstr "Legg til område"
 
 #: ../root/admin/index.tt:7 ../root/layout/menu.tt:85
 msgctxt "button/menu"
 msgid "Add Area"
-msgstr ""
+msgstr "Legg til område"
 
 #: ../root/area/add_alias.tt:1
 msgid "Add Area Alias"
@@ -528,16 +528,16 @@ msgstr ""
 
 #: ../root/relationship/linktype/form.tt:146
 msgid "Add Example"
-msgstr ""
+msgstr "Legg til eksempel"
 
 #: ../root/instrument/create.tt:1 ../root/instrument/create.tt:3
 msgid "Add Instrument"
-msgstr ""
+msgstr "Legg til instrument"
 
 #: ../root/admin/index.tt:10 ../root/layout/menu.tt:90
 msgctxt "button/menu"
 msgid "Add Instrument"
-msgstr ""
+msgstr "Legg til instrument"
 
 #: ../root/instrument/add_alias.tt:1
 msgid "Add Instrument Alias"
@@ -545,13 +545,13 @@ msgstr ""
 
 #: ../root/label/create.tt:1 ../root/label/create.tt:3
 msgid "Add Label"
-msgstr ""
+msgstr "Legg til etikett"
 
 #: ../root/layout/menu.tt:222 ../root/release/edit/information.tt:177
 #: ../root/release/edit/information.tt:178
 msgctxt "button/menu"
 msgid "Add Label"
-msgstr ""
+msgstr "Legg til etikett"
 
 #: ../root/label/add_alias.tt:1
 msgid "Add Label Alias"
@@ -563,16 +563,16 @@ msgstr "Legg til notat"
 
 #: ../root/admin/wikidoc/create.tt:1 ../root/admin/wikidoc/create.tt:3
 msgid "Add Page"
-msgstr ""
+msgstr "Legg til side"
 
 #: ../root/place/create.tt:1 ../root/place/create.tt:3
 msgid "Add Place"
-msgstr ""
+msgstr "Legg til sted"
 
 #: ../root/layout/menu.tt:240
 msgctxt "button/menu"
 msgid "Add Place"
-msgstr ""
+msgstr "Legg til sted"
 
 #: ../root/place/add_alias.tt:1
 msgid "Add Place Alias"
@@ -580,35 +580,35 @@ msgstr ""
 
 #: ../root/scripts/text_strings.tt:155
 msgid "Add Release"
-msgstr ""
+msgstr "Legg til utgivelse"
 
 #: ../root/layout/menu.tt:228
 msgctxt "button/menu"
 msgid "Add Release"
-msgstr ""
+msgstr "Legg til utgivelse"
 
 #: ../root/release/edit/layout.tt:7
 msgctxt "header"
 msgid "Add Release"
-msgstr ""
+msgstr "Legg til utgivelse"
 
 #: ../root/release_group/create.tt:1 ../root/release_group/create.tt:8
 msgid "Add Release Group"
-msgstr ""
+msgstr "Legg til utgivelsesgruppe"
 
 #: ../root/layout/menu.tt:225
 msgctxt "button/menu"
 msgid "Add Release Group"
-msgstr ""
+msgstr "Legg til utgivelsesgruppe"
 
 #: ../root/series/create.tt:1 ../root/series/create.tt:3
 msgid "Add Series"
-msgstr ""
+msgstr "Legg til serier"
 
 #: ../root/layout/menu.tt:243
 msgctxt "button/menu"
 msgid "Add Series"
-msgstr ""
+msgstr "Legg til serier"
 
 #: ../root/series/add_alias.tt:1
 msgid "Add Series Alias"
@@ -657,7 +657,7 @@ msgstr ""
 
 #: ../root/account/edit.tt:61
 msgid "Add a language"
-msgstr ""
+msgstr "Legg til et språk"
 
 #: ../root/components/aliases.tt:79
 msgid "Add a new alias"
@@ -713,7 +713,7 @@ msgstr "Legg til anmerkning"
 
 #: ../root/scripts/text_strings.tt:39
 msgid "Add another"
-msgstr ""
+msgstr "Legg til annet"
 
 #: ../root/scripts/text_strings.tt:166
 msgid "Add another area"
