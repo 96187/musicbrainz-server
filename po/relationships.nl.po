@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-09-22 21:06+0000\n"
+"PO-Revision-Date: 2014-10-12 13:43+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -1571,12 +1571,6 @@ msgid ""
 "release."
 msgstr "Deze relatie geeft aan dat de platenmaatschappij de houder van het auteursrecht is voor deze uitgave."
 
-#: DB:link_type/description:244
-msgid ""
-"This relationship is deprecated, please use the \"medley\" attribute of "
-"\"recording of\" instead."
-msgstr "Deze relatie is verouderd. Gebruik in plaats hiervan de eigenschap ‘medley’ van de relatie ‘opname van’."
-
 #: DB:link_type/description:751
 msgid ""
 "This relationship is used to link a catalogue work series to a person who "
@@ -1664,7 +1658,7 @@ msgid ""
 "This relationship type is <strong>deprecated</strong>! <a "
 "href=\"/doc/Style/Recording#Recordings_with_Different_Mastering\">Different "
 "remasters should be merged.</a>"
-msgstr "Dit relatietype is <strong>verouder</strong>! <a href=\"/doc/Style/Recording#Recordings_with_Different_Mastering\">Verschillende masters moeten worden samengevoegd."
+msgstr "Dit relatietype is <strong>verouderd</strong>! <a href=\"/doc/Style/Recording#Recordings_with_Different_Mastering\">Verschillende masters moeten worden samengevoegd."
 
 #: DB:link_type/description:238
 msgid ""
@@ -1855,7 +1849,7 @@ msgstr "Wikidatapagina over"
 
 #: DB:link_type/link_phrase:355 DB:link_type/link_phrase:89
 #: DB:link_type/link_phrase:179 DB:link_type/link_phrase:216
-#: DB:link_type/link_phrase:731 DB:link_type/link_phrase:595
+#: DB:link_type/link_phrase:595 DB:link_type/link_phrase:731
 #: DB:link_type/link_phrase:744 DB:link_type/reverse_link_phrase:279
 #: DB:link_type/reverse_link_phrase:731 DB:link_type/long_link_phrase:731
 msgid "Wikipedia"
@@ -2641,11 +2635,12 @@ msgstr "is een live-uitvoering van"
 msgid "is a mash-up of"
 msgstr "is een mash-up van"
 
-#: DB:link_type/long_link_phrase:244 DB:link_type/long_link_phrase:239
+#: DB:link_type/long_link_phrase:239
 msgid "is a medley of"
 msgstr "is een medley van"
 
-#: DB:link_type/long_link_phrase:730 DB:link_type/long_link_phrase:273
+#: DB:link_type/long_link_phrase:753 DB:link_type/long_link_phrase:730
+#: DB:link_type/long_link_phrase:273
 msgid "is a page in a database for"
 msgstr "is een pagina in een gegevensbank van"
 
@@ -2929,7 +2924,7 @@ msgstr "medium 9"
 msgid "medley"
 msgstr "medley"
 
-#: DB:link_type/link_phrase:244 DB:link_type/link_phrase:239
+#: DB:link_type/link_phrase:239
 msgid "medley of"
 msgstr "medley van"
 
@@ -3030,11 +3025,12 @@ msgstr "orkestratie van"
 msgid "orchestrations"
 msgstr "orkestraties"
 
-#: DB:link_type/link_phrase:746 DB:link_type/link_phrase:96
-#: DB:link_type/link_phrase:730 DB:link_type/link_phrase:82
-#: DB:link_type/link_phrase:306 DB:link_type/link_phrase:222
-#: DB:link_type/link_phrase:273 DB:link_type/link_phrase:188
-#: DB:link_type/link_phrase:561 DB:link_type/reverse_link_phrase:746
+#: DB:link_type/link_phrase:753 DB:link_type/link_phrase:746
+#: DB:link_type/link_phrase:96 DB:link_type/link_phrase:730
+#: DB:link_type/link_phrase:82 DB:link_type/link_phrase:306
+#: DB:link_type/link_phrase:222 DB:link_type/link_phrase:273
+#: DB:link_type/link_phrase:188 DB:link_type/link_phrase:561
+#: DB:link_type/reverse_link_phrase:753 DB:link_type/reverse_link_phrase:746
 #: DB:link_type/reverse_link_phrase:96 DB:link_type/reverse_link_phrase:730
 #: DB:link_type/reverse_link_phrase:82 DB:link_type/reverse_link_phrase:306
 #: DB:link_type/reverse_link_phrase:222 DB:link_type/reverse_link_phrase:273
@@ -3095,7 +3091,7 @@ msgstr "treedt op als {additional:aanvullend} koorleider op"
 
 #: DB:link_type/long_link_phrase:44 DB:link_type/long_link_phrase:148
 msgid "performed {additional} {guest} {solo} {instrument:%|instruments} on"
-msgstr "speelde {additional:aanvullend} {guest:gast} {solo:solo} {instrument:%|instrument} op"
+msgstr "speelde {additional:aanvullend} {guest:gast} {solo:solo} {instrument:%|instrumenten} op"
 
 #: DB:link_type/long_link_phrase:60
 msgid "performed {additional} {guest} {solo} {vocal} {vocal:|vocals} on"
@@ -3272,7 +3268,7 @@ msgstr "opnametechnici"
 msgid "recording location for"
 msgstr "opnamelocatie van"
 
-#: DB:link_type/reverse_link_phrase:244 DB:link_type/reverse_link_phrase:239
+#: DB:link_type/reverse_link_phrase:239
 msgid "referred to in medleys"
 msgstr "naar verwezen in medley's"
 
