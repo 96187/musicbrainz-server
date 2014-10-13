@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-02 07:58-0700\n"
-"PO-Revision-Date: 2014-10-02 21:23+0000\n"
+"PO-Revision-Date: 2014-10-13 12:59+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -139,7 +139,7 @@ msgstr "''cursief''; '''vet'''; '''''cursief en vet'''''; ---- horizontale lijn"
 
 #: ../root/components/tag-cloud.tt:26
 msgid "'{tag}' has been used {num} times"
-msgstr "'{tag}' is {num} keer gebruikt"
+msgstr "‘{tag}’ is {num} keer gebruikt"
 
 #: ../root/components/aliases.tt:54
 msgid "(<span class=\"comment\">primary</span>)"
@@ -353,7 +353,7 @@ msgid ""
 "<strong>Warning:</strong> Some of the recordings you're merging have "
 "different ISRCs. Please make sure they are indeed the same recordings and "
 "you wish to continue with the merge."
-msgstr "<strong>Waarschuwing:</strong> Sommige opnames die u aan het samenvoegen bent hebben verschillende ISRC's. Controleer of het inderdaad dezelfde opname is voordat u doorgaat met samenvoegen."
+msgstr "<strong>Waarschuwing:</strong> Sommige opnames die u aan het samenvoegen bent hebben verschillende ISRC’s. Controleer of het inderdaad dezelfde opname is voordat u doorgaat met samenvoegen."
 
 #: ../root/components/common-macros.tt:741 ../root/recording/edit.tt:10
 msgid "<strong>Warning</strong>:"
@@ -511,7 +511,7 @@ msgstr "Artiest toevoegen"
 
 #: ../root/cdstub/logged_in.tt:1 ../root/cdstub/logged_in.tt:2
 msgid "Add CD Stub"
-msgstr "CD-beginsel toevoegen"
+msgstr "Cd-beginsel toevoegen"
 
 #: ../root/release/cover_art.tt:53
 msgctxt "button/menu"
@@ -1513,7 +1513,7 @@ msgstr "Artiesten"
 #: ../root/report/artists_containing_disambiguation_comments.tt:3
 #: ../root/report/index.tt:23
 msgid "Artists containing disambiguation comments in their name"
-msgstr "Artiesten met een opmerking in de naam"
+msgstr "Artiesten met een verduidelijking in de naam"
 
 #: ../root/report/artists_with_multiple_occurances_in_artist_credits.tt:1
 #: ../root/report/artists_with_multiple_occurances_in_artist_credits.tt:3
@@ -1590,7 +1590,7 @@ msgstr[1] "Geassocieerd met {num} composities"
 #: ../root/cdtoc/attach_filter_release.tt:55
 msgctxt "button/menu"
 msgid "Attach CD TOC"
-msgstr "TOC van de CD toevoegen"
+msgstr "TOC van de cd toevoegen"
 
 #: ../root/cdtoc/attach_artist_releases.tt:3
 #: ../root/cdtoc/attach_artist_releases.tt:4 ../root/cdtoc/attach_confirm.tt:1
@@ -1600,7 +1600,7 @@ msgstr "TOC van de CD toevoegen"
 #: ../root/cdtoc/attach_filter_release.tt:4
 msgctxt "header"
 msgid "Attach CD TOC"
-msgstr "TOC van de CD toevoegen"
+msgstr "TOC van de cd toevoegen"
 
 #: ../root/cdtoc/lookup.tt:52 ../root/release/edit/tracklist.tt:352
 msgid "Attach Disc ID"
@@ -2026,7 +2026,7 @@ msgstr "Import van cd-beginsel"
 
 #: ../root/cdstub/layout.tt:2
 msgid "CD stub “{title}” by {artist}"
-msgstr "Cd-beginsel „{title}“ door {artist}"
+msgstr "Cd-beginsel “{title}” door {artist}"
 
 #: ../root/cdstub/logged_in.tt:7
 msgid ""
@@ -2615,7 +2615,7 @@ msgstr "Overleden:"
 #: ../root/search/form.tt:35 ../root/search/form.tt:40
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:60
 msgid "Direct database search"
-msgstr "Direct zoeken in de gegevensbank"
+msgstr "Direct in de gegevensbank zoeken"
 
 #: ../root/area/edit_form.tt:11 ../root/artist/edit_form.tt:33
 #: ../root/edit/details/add_area.tt:23 ../root/edit/details/add_artist.tt:19
@@ -2651,11 +2651,11 @@ msgstr "Informatie over de disc-id"
 
 #: ../root/cdtoc/index.tt:3
 msgid "Disc ID “<code>{discid}</code>”"
-msgstr "Disc-id „<code>{discid}</code>“"
+msgstr "Disc-id “<code>{discid}</code>”"
 
 #: ../root/cdtoc/index.tt:1
 msgid "Disc ID “{discid}”"
-msgstr "Disc-id „{discid}“"
+msgstr "Disc-id “{discid}”"
 
 #: ../root/cdtoc/info.tt:11 ../root/edit/details/add_disc_id.tt:11
 #: ../root/edit/details/historic/add_disc_id.tt:17
@@ -2784,7 +2784,7 @@ msgstr "Documentatie:"
 
 #: ../root/user/login.tt:12
 msgid "Don't have an account? {uri|Create one now}!"
-msgstr "Heeft u geen gebruikersaccount? {uri|Maak er nu één aan}!"
+msgstr "Heeft u geen gebruikersaccount? {uri|Maak er nu een aan}!"
 
 #: ../root/layout.tt:90
 msgid "Donate"
@@ -5729,19 +5729,19 @@ msgstr "Controleert u alstublieft de streepjescode op de release nog een keer."
 msgid ""
 "Please enter a {doc_disambiguation|disambiguation} to help distinguish this "
 "artist from the others."
-msgstr "Voer een {doc_disambiguation|opmerking ter verduidelijking} in om deze artiest van anderen te onderscheiden."
+msgstr "Voer een {doc_disambiguation|verduidelijking} in om deze artiest van anderen te onderscheiden."
 
 #: ../root/label/edit_form.tt:24
 msgid ""
 "Please enter a {doc_disambiguation|disambiguation} to help distinguish this "
 "label from the others."
-msgstr "Voer een {doc_disambiguation|opmerking ter verduidelijking} in om deze platenmaatschappij van anderen te onderscheiden."
+msgstr "Voer een {doc_disambiguation|verduidelijking} in om deze platenmaatschappij van anderen te onderscheiden."
 
 #: ../root/place/edit_form.tt:25
 msgid ""
 "Please enter a {doc_disambiguation|disambiguation} to help distinguish this "
 "place from the others."
-msgstr "Voer een {doc_disambiguation|opmerking ter verduidelijking} in om deze plaats van anderen te onderscheiden."
+msgstr "Voer een {doc_disambiguation|verduidelijking} in om deze plaats van anderen te onderscheiden."
 
 #: ../root/series/edit_form.tt:24
 msgid ""
@@ -7092,7 +7092,7 @@ msgid ""
 "Search indexes are updated every 3 hours. If you just added the content "
 "you're looking for and you can't find it here, go to {url|the search page} "
 "and select the \"direct database search\" option."
-msgstr "De zoekindices worden elke drie uur bijgewerkt. Als u de informatie die u zoekt net heeft toegevoegd en niet hier kan vinden, ga dan naar {url|de zoekpagina} en selecteer de optie “zoek direct in de gegevensbank”."
+msgstr "De zoekindices worden elke drie uur bijgewerkt. Als u de informatie die u zoekt net heeft toegevoegd en niet hier kan vinden, ga dan naar {url|de zoekpagina} en selecteer de optie “direct in de gegevensbank zoeken”."
 
 #: ../root/search/form.tt:20
 msgid "Search method:"
@@ -7970,7 +7970,7 @@ msgstr "Bedankt, uw e-mailadres is nu geverifieerd! Probeer als u nog steeds gee
 msgid ""
 "That search can't be performed, because you must provide at least one of "
 "'recording', 'track number', 'duration', 'release', or 'artist'."
-msgstr "Die zoekopdracht kan niet worden uitgevoerd omdat u ten minste één „opname”, „nummerpositie”, „duur”, „uitgave” of „artiest” moet opgeven."
+msgstr "Die zoekopdracht kan niet worden uitgevoerd omdat u ten minste één ‘opname’, ‘nummerpositie’, ‘duur’, ‘uitgave’ of ‘artiest’ moet opgeven."
 
 #: ../root/release/caa_darkened.tt:3 ../root/release/cover_art.tt:60
 msgid ""
