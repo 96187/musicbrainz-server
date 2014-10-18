@@ -39,7 +39,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-16 02:25-0700\n"
-"PO-Revision-Date: 2014-10-18 15:56+0000\n"
+"PO-Revision-Date: 2014-10-18 16:36+0000\n"
 "Last-Translator: S.Brandt <email address hidden>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -2382,11 +2382,11 @@ msgstr "Nennungen kopieren"
 
 #: ../root/release/edit/recordings.tt:132
 msgid "Copy all track artist credits to associated recordings."
-msgstr ""
+msgstr "Alle Künstlernennungen auf verbundene Aufnahmen übertragen."
 
 #: ../root/release/edit/recordings.tt:126
 msgid "Copy all track titles to associated recordings."
-msgstr ""
+msgstr "Alle Titelnamen auf verbundene Aufnahmen übertragen."
 
 #: ../root/cdtoc/attach_artist_releases.tt:17
 #: ../root/cdtoc/attach_filter_release.tt:31 ../root/cdtoc/list.tt:9
@@ -3387,7 +3387,7 @@ msgstr[1] "Fehler:"
 
 #: ../root/components/entity-tabs.tt:1
 msgid "Error: Unknown Tab Type"
-msgstr ""
+msgstr "Fehler: Unbekannter Registerkarten-Typ"
 
 #: ../root/components/common-macros.tt:149
 msgid "Error: Unknown Type"
@@ -8165,7 +8165,7 @@ msgstr "Der Großteil der Daten in der <strong>MusicBrainz-Datenbank</strong> wi
 #: ../root/cdtoc/set_durations.tt:19
 msgid ""
 "The medium you are altering is part of the following release: {release}"
-msgstr ""
+msgstr "Das Medium, das du veränderst, ist Teil der folgenden Veröffentlichung: {release}"
 
 #: ../root/edit/details/edit_url.tt:39
 msgid ""
@@ -10091,7 +10091,7 @@ msgstr "Stimmen dagegen"
 
 #: ../root/elections/show.tt:37
 msgid "Votes against:"
-msgstr "Stimmen dagegen"
+msgstr "Stimmen dagegen:"
 
 #: ../root/user/edits.tt:1
 msgid "Votes by {name}"
