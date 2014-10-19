@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-19 04:17-0700\n"
-"PO-Revision-Date: 2014-10-19 12:38+0000\n"
+"PO-Revision-Date: 2014-10-19 13:08+0000\n"
 "Last-Translator: Mihkel Tõnnov <email address hidden>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/musicbrainz/language/et/)\n"
 "MIME-Version: 1.0\n"
@@ -1751,7 +1751,7 @@ msgid ""
 "Because you provided an email address, a verification email has been sent to"
 " <code>{addr}</code>. Please check your mailbox and click on the link in the"
 " email to verify the new email address."
-msgstr ""
+msgstr "Kuna sisestasid e-posti aadressi, saatsime sulle kinnituskirja aadressil <code>{addr}</code> Palun vaata oma postkasti ning klõpsa uue e-postiaadressi kinnitamiseks kirjas olevat linki."
 
 #: ../root/main/index.tt:96
 msgid ""
@@ -2789,7 +2789,7 @@ msgstr "Toimetus #{id} - {name}"
 
 #: ../root/annotation/edit.tt:1
 msgid "Edit Annotation"
-msgstr "Muuda annotatsiooni"
+msgstr "Annotatsiooni muutmine"
 
 #: ../root/account/edit_application.tt:1 ../root/account/edit_application.tt:3
 msgid "Edit Application"
@@ -5707,7 +5707,7 @@ msgstr "Otsi üles artist, kelle alla uus väljalase peaks minema."
 msgid ""
 "Please see the {doc|Cover Art Types} documentation for a description of "
 "these types."
-msgstr ""
+msgstr "Nende tüüpide kirjeldused leiad {doc|kaanepilditüüpide} dokumentatsioonist."
 
 #: ../root/scripts/text_strings.tt:143
 msgid "Please select a link type for the URL you’ve entered."
@@ -5753,7 +5753,7 @@ msgstr "Palun oota paar minutit ja korda siis oma päringut."
 msgid ""
 "Please {acc_edit|update your profile} when you get time, to let other "
 "editors know a bit more about you."
-msgstr ""
+msgstr "Kui sul millalgi aega on, siis võiksid {acc_edit|oma profiili täiendada}, et teised toimetajad sinu kohta veidi rohkem teada saaksid."
 
 #: ../root/taglookup/not_found.tt:6
 msgid "Please {search|try again}, providing at least one of these parameters"
@@ -6870,7 +6870,7 @@ msgstr "Tagurpidi liitefraas:"
 
 #: ../root/release/edit/information.tt:276
 msgid "Review the {packaging|list of packaging types} for help."
-msgstr ""
+msgstr "Abi saamiseks vaata {packaging|ümbrisetüüpide loendit}."
 
 #: ../root/release/edit/layout.tt:27
 msgid ""
@@ -9777,7 +9777,7 @@ msgstr "Kasuta meie <strong>XML-veebiteenust</strong> või <strong>arendusteeke<
 msgid ""
 "Use the following fields to enter collaborations, see the {ac|Artist Credit}"
 " documentation for more information."
-msgstr ""
+msgstr "Koostööde sisestamiseks kasuta järgnevaid välju. Lisateabe saamiseks loe dokumentatsioonilehekülge {ac|Artisti nimekuju}."
 
 #: ../root/release/edit/tracklist.tt:195
 msgid "Use the following fields to search for a CD stub."
@@ -10026,7 +10026,7 @@ msgstr "Hoiatus:"
 msgid ""
 "Warning: This relationship has pending edits. {show|Click here} to view "
 "these edits and make sure they do not conflict with your own."
-msgstr ""
+msgstr "Hoiatus: sel seosel on ootel toimetusi. Nende nägemiseks {show|klõpsa siin} ja siis vaata, et nad poleks sinu tehtavaga vastuolus."
 
 #: ../root/watch/list.tt:1 ../root/watch/list.tt:2
 msgid "Watched Artists"
@@ -10557,7 +10557,7 @@ msgstr "Eriotstarbelisi artiste pole lubatud toimetada."
 msgid ""
 "You may proceed to {profile|your user profile}, or maybe you want to "
 "{edit|start editing}!"
-msgstr ""
+msgstr "Võid minna edasi oma {profile|oma kasutajaprofiilile} või ka kohe {edit|toimetama hakata}!"
 
 #: ../root/edit/index.tt:69
 msgid "You must be logged in to vote on edits"
@@ -11616,7 +11616,7 @@ msgid ""
 "<strong>We were unable to send a confirmation email to you.</strong><br/>Please confirm that you have entered a valid\n"
 "             address by editing your {settings|account settings}. If the problem still persists, please contact us at\n"
 "             {mail|support@musicbrainz.org}."
-msgstr ""
+msgstr "<strong>Meil ei õnnestunud sulle kinnituskirja saata.</strong><br/>Palun vaata oma {settings|konto seadetest},\n             et sisestatud oleks korrektne e-posti aadress. Kui probleem siiski püsib, siis saada palun kiri aadressil\n             {mail|support@musicbrainz.org}."
 
 #: ../lib/MusicBrainz/Server/Controller/Admin.pm:77
 msgid "User successfully edited."

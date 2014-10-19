@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-10-19 13:00+0000\n"
+"PO-Revision-Date: 2014-10-19 13:33+0000\n"
 "Last-Translator: S.Brandt <email address hidden>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -100,7 +100,7 @@ msgstr "Beschreibt die Tatsache, dass eine Person von einer Örtlichkeit als Auf
 
 #: DB:link_type/description:701
 msgid "Describes the fact a person was contracted by a place as an engineer."
-msgstr ""
+msgstr "Beschreibt die Tatsache, dass eine Person von einer Örtlichkeit als Tontechniker beauftragt wurde."
 
 #: DB:link_type/description:357
 msgid "Designates that a work is or was the anthem for an area"
@@ -219,22 +219,22 @@ msgstr ""
 
 #: DB:link_type/description:156
 msgid "Indicates an artist that performed on this recording."
-msgstr ""
+msgstr "Gibt einen Künstler an, der auf dieser Aufnahme auftrat."
 
 #: DB:link_type/description:51
 msgid "Indicates an artist that performed on this release."
-msgstr ""
+msgstr "Gibt einen Künstler an, der auf dieser Veröffentlichung auftrat."
 
 #: DB:link_type/description:148
 msgid ""
 "Indicates an artist that performed one or more instruments on this "
 "recording."
-msgstr ""
+msgstr "Gibt einen Künstler an, der ein oder mehrere Instrumente auf dieser Aufnahme spielte."
 
 #: DB:link_type/description:44
 msgid ""
 "Indicates an artist that performed one or more instruments on this release."
-msgstr ""
+msgstr "Gibt einen Künstler an, der ein oder mehrere Instrumente auf dieser Veröffentlichung spielte."
 
 #: DB:link_type/description:149
 msgid "Indicates an artist that performed vocals on this recording."
@@ -246,11 +246,11 @@ msgstr ""
 
 #: DB:link_type/description:150
 msgid "Indicates an orchestra that performed on this recording."
-msgstr ""
+msgstr "Gibt ein Orchester an, das auf dieser Aufnahme auftrat."
 
 #: DB:link_type/description:45
 msgid "Indicates an orchestra that performed on this release."
-msgstr ""
+msgstr "Gibt ein Orchester an, das auf dieser Veröffentlichung auftrat."
 
 #: DB:link_attribute_type/description:567
 msgid "Indicates that one entity is a cover of another entity"
@@ -785,7 +785,7 @@ msgstr ""
 
 #: DB:link_type/description:305
 msgid "This indicates that a person is, or was, a conductor for a group.​"
-msgstr ""
+msgstr "Dies gibt an, dass eine Person Dirigent für eine Gruppe ist oder war."
 
 #: DB:link_type/description:137
 msgid ""
@@ -803,13 +803,13 @@ msgstr ""
 msgid ""
 "This indicates that a person or firm provided legal representation for the "
 "recording."
-msgstr ""
+msgstr "Dies gibt an, dass eine Person oder Firma die rechtliche Vertretung für die Aufnahme übernommen hat."
 
 #: DB:link_type/description:22
 msgid ""
 "This indicates that a person or firm provided legal representation for the "
 "release."
-msgstr ""
+msgstr "Dies gibt an, dass eine Person oder Firma die rechtliche Vertretung für die Veröfentlichung übernommen hat."
 
 #: DB:link_type/description:717
 msgid "This indicates that a place is part of another place."
@@ -1268,7 +1268,7 @@ msgstr ""
 msgid ""
 "This links a recording to a page where it can be legally downloaded for "
 "free."
-msgstr ""
+msgstr "Dies verlinkt eine Aufnahme zu einer Seite, von welcher sie legal kostenlos heruntergeladen werden kann."
 
 #: DB:link_type/description:132
 msgid ""
@@ -1310,7 +1310,7 @@ msgstr ""
 #: DB:link_type/description:75
 msgid ""
 "This links a release to a page where it can be legally downloaded for free."
-msgstr ""
+msgstr "Dies verlinkt eine Veröffentlichung zu einer Seite, von welcher sie legal kostenlos heruntergeladen werden kann."
 
 #: DB:link_type/description:37
 msgid ""
@@ -1418,7 +1418,7 @@ msgstr "Dies verbindet einen Künstler zum äquivalenten Eintrag bei YouTube."
 msgid ""
 "This links an artist's performance name (a stage name or alias) with their "
 "legal name."
-msgstr ""
+msgstr "Dies verlinkt den Künstlernahmen des Künstlers ( ein Alias) mit seinem bürgerlichen Namen."
 
 #: DB:link_type/description:309
 msgid ""
@@ -1724,20 +1724,20 @@ msgstr ""
 msgid ""
 "This relationship type is used to link a release to a site where the tracks "
 "can be legally streamed for free, e.g. Spotify."
-msgstr ""
+msgstr "Dieser Beziehungstyp wird benutzt um ein eine Veröffentlichung zu einer Seite zu verlinken, von welcher sie legal kostenlos gestreamt werden kann, z.B. Spotify."
 
 #: DB:link_type/description:268
 msgid ""
 "This relationship type is used to link a track to a site where the track can"
 " be legally streamed for free, such as Spotify for audio tracks or YouTube "
 "for videos."
-msgstr ""
+msgstr "Dieser Beziehungstyp wird benutzt um einen Titel zu einer Seite zu verlinken, von welcher Musik legal kostenlos gestreamt werden kann, wie beispielsweise Spotify für Audiotitel oder YouTube für Videos."
 
 #: DB:link_type/description:194
 msgid ""
 "This relationship type is used to link an artist to a site where music can "
 "be legally streamed for free, e.g. Spotify."
-msgstr ""
+msgstr "Dieser Beziehungstyp wird benutzt um einen Künstler zu einer Seite zu verlinken, von welcher Musik legal kostenlos gestreamt werden kann, z.B. Spotify."
 
 #: DB:link_type/description:199
 msgid "This relationship type is used to link an artist to their blog."
@@ -2811,7 +2811,7 @@ msgstr "bürgerlicher Name"
 #: DB:link_type/link_phrase:22 DB:link_type/link_phrase:142
 #: DB:link_type/reverse_link_phrase:22 DB:link_type/reverse_link_phrase:142
 msgid "legal representation"
-msgstr "gesetzliche Vertretung"
+msgstr "rechtliche Vertretung"
 
 #: DB:link_type/link_phrase:302 DB:link_type/link_phrase:301
 msgid "license"
@@ -3213,7 +3213,7 @@ msgstr "hat Reservierungen vorgenommen für"
 
 #: DB:link_type/long_link_phrase:22 DB:link_type/long_link_phrase:142
 msgid "provided legal representation for"
-msgstr "hat gesetzliche Vertretung übernommen für"
+msgstr "hat rechtliche Vertretung übernommen für"
 
 #: DB:link_type/long_link_phrase:137 DB:link_type/long_link_phrase:18
 msgid "provided {additional} art direction on"
