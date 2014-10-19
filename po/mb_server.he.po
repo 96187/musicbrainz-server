@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-19 03:42-0700\n"
-"PO-Revision-Date: 2014-10-19 10:43+0000\n"
+"POT-Creation-Date: 2014-10-19 04:17-0700\n"
+"PO-Revision-Date: 2014-10-19 11:18+0000\n"
 "Last-Translator: Ian McEwen <email address hidden>\n"
 "Language-Team: Hebrew (http://www.transifex.com/projects/p/musicbrainz/language/he/)\n"
 "MIME-Version: 1.0\n"
@@ -1741,9 +1741,9 @@ msgstr ""
 
 #: ../root/account/registered.tt:13
 msgid ""
-"Because you provided an email address, an verification email has been sent "
-"to <code>{addr}</code>. Please check your mailbox and click on the link in "
-"the email to verify the new email address."
+"Because you provided an email address, a verification email has been sent to"
+" <code>{addr}</code>. Please check your mailbox and click on the link in the"
+" email to verify the new email address."
 msgstr ""
 
 #: ../root/main/index.tt:96
@@ -5569,12 +5569,6 @@ msgstr ""
 msgid "Places with deprecated relationships"
 msgstr ""
 
-#: ../root/account/registered.tt:7
-msgid ""
-"Please <a href=\"{uri}\">update your profile</a> when you get time, to let "
-"other editors know a bit more about you."
-msgstr ""
-
 #: ../root/main/500.tt:85
 msgid ""
 "Please be sure to include the stack trace and request data shown above!"
@@ -5704,8 +5698,8 @@ msgstr ""
 
 #: ../root/release/add_cover_art.tt:95 ../root/release/cover_art_fields.tt:8
 msgid ""
-"Please see the <a href=\"{doc}\" target=\"_blank\">Cover Art Types</a> "
-"documentation for a description of these types."
+"Please see the {doc|Cover Art Types} documentation for a description of "
+"these types."
 msgstr ""
 
 #: ../root/scripts/text_strings.tt:143
@@ -5746,6 +5740,12 @@ msgstr ""
 
 #: ../root/main/503.tt:8
 msgid "Please wait a few minutes and repeat your request."
+msgstr ""
+
+#: ../root/account/registered.tt:7
+msgid ""
+"Please {acc_edit|update your profile} when you get time, to let other "
+"editors know a bit more about you."
 msgstr ""
 
 #: ../root/taglookup/not_found.tt:6
@@ -6862,9 +6862,7 @@ msgid "Reverse link phrase:"
 msgstr ""
 
 #: ../root/release/edit/information.tt:276
-msgid ""
-"Review the <a href=\"{url}\" target=\"_blank\">list of packaging types</a> "
-"for help."
+msgid "Review the {packaging|list of packaging types} for help."
 msgstr ""
 
 #: ../root/release/edit/layout.tt:27
@@ -9770,8 +9768,8 @@ msgstr ""
 
 #: ../root/components/forms.tt:320
 msgid ""
-"Use the following fields to enter collaborations, see the <a "
-"href=\"{url}\">Artist Credit</a> documentation for more information."
+"Use the following fields to enter collaborations, see the {ac|Artist Credit}"
+" documentation for more information."
 msgstr ""
 
 #: ../root/release/edit/tracklist.tt:195
@@ -10019,8 +10017,7 @@ msgstr ""
 
 #: ../root/components/relationship-editor.tt:15
 msgid ""
-"Warning: This relationship has pending edits. <a target=\"_blank\" data-"
-"bind=\"attr: { href: relationship().openEdits() }\">Click here</a> to view "
+"Warning: This relationship has pending edits. {show|Click here} to view "
 "these edits and make sure they do not conflict with your own."
 msgstr ""
 
@@ -10551,8 +10548,8 @@ msgstr ""
 
 #: ../root/account/registered.tt:21
 msgid ""
-"You may proceed to <a href=\"{uri}\">your user profile</a>, or maybe you "
-"want to {edit|start editing}!"
+"You may proceed to {profile|your user profile}, or maybe you want to "
+"{edit|start editing}!"
 msgstr ""
 
 #: ../root/edit/index.tt:69
@@ -11611,7 +11608,7 @@ msgstr ""
 msgid ""
 "<strong>We were unable to send a confirmation email to you.</strong><br/>Please confirm that you have entered a valid\n"
 "             address by editing your {settings|account settings}. If the problem still persists, please contact us at\n"
-"             <a href=\"mailto:support@musicbrainz.org\">support@musicbrainz.org</a>."
+"             {mail|support@musicbrainz.org}."
 msgstr ""
 
 #: ../lib/MusicBrainz/Server/Controller/Admin.pm:77

@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-19 03:42-0700\n"
-"PO-Revision-Date: 2014-10-19 10:43+0000\n"
+"POT-Creation-Date: 2014-10-19 04:17-0700\n"
+"PO-Revision-Date: 2014-10-19 11:18+0000\n"
 "Last-Translator: Ian McEwen <email address hidden>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/musicbrainz/language/et/)\n"
 "MIME-Version: 1.0\n"
@@ -1748,10 +1748,10 @@ msgstr "Kuna nurksulud [] on kasutusel hüperlinkide loomiseks, tuleb nende muul
 
 #: ../root/account/registered.tt:13
 msgid ""
-"Because you provided an email address, an verification email has been sent "
-"to <code>{addr}</code>. Please check your mailbox and click on the link in "
-"the email to verify the new email address."
-msgstr "Kuna sisestasid e-posti aadressi, saatsime sulle kinnituskirja aadressil <code>{addr}</code> Palun vaata oma postkasti ning klõpsa uue e-postiaadressi kinnitamiseks kirjas olevat linki."
+"Because you provided an email address, a verification email has been sent to"
+" <code>{addr}</code>. Please check your mailbox and click on the link in the"
+" email to verify the new email address."
+msgstr ""
 
 #: ../root/main/index.tt:96
 msgid ""
@@ -5576,12 +5576,6 @@ msgstr "Annotatsiooniga kohad"
 msgid "Places with deprecated relationships"
 msgstr "Kohad iganenud seostega"
 
-#: ../root/account/registered.tt:7
-msgid ""
-"Please <a href=\"{uri}\">update your profile</a> when you get time, to let "
-"other editors know a bit more about you."
-msgstr "Kui sul millalgi aega on, siis võiksid <a href=\"{uri}\">oma profiili täiendada</a>, et teised toimetajad sinu kohta veidi rohkem teada saaksid."
-
 #: ../root/main/500.tt:85
 msgid ""
 "Please be sure to include the stack trace and request data shown above!"
@@ -5711,9 +5705,9 @@ msgstr "Otsi üles artist, kelle alla uus väljalase peaks minema."
 
 #: ../root/release/add_cover_art.tt:95 ../root/release/cover_art_fields.tt:8
 msgid ""
-"Please see the <a href=\"{doc}\" target=\"_blank\">Cover Art Types</a> "
-"documentation for a description of these types."
-msgstr "Nende tüüpide kirjeldused leiad <a href=\"{doc}\" target=\"_blank\">kaanepilditüüpide</a> dokumentatsioonist."
+"Please see the {doc|Cover Art Types} documentation for a description of "
+"these types."
+msgstr ""
 
 #: ../root/scripts/text_strings.tt:143
 msgid "Please select a link type for the URL you’ve entered."
@@ -5754,6 +5748,12 @@ msgstr "Sortimiseks kasutatava nime oletamiseks kasuta nuppu „Oleta sortimisni
 #: ../root/main/503.tt:8
 msgid "Please wait a few minutes and repeat your request."
 msgstr "Palun oota paar minutit ja korda siis oma päringut."
+
+#: ../root/account/registered.tt:7
+msgid ""
+"Please {acc_edit|update your profile} when you get time, to let other "
+"editors know a bit more about you."
+msgstr ""
 
 #: ../root/taglookup/not_found.tt:6
 msgid "Please {search|try again}, providing at least one of these parameters"
@@ -6869,10 +6869,8 @@ msgid "Reverse link phrase:"
 msgstr "Tagurpidi liitefraas:"
 
 #: ../root/release/edit/information.tt:276
-msgid ""
-"Review the <a href=\"{url}\" target=\"_blank\">list of packaging types</a> "
-"for help."
-msgstr "Abi saamiseks vaata <a href=\"{url}\" target=\"_blank\">ümbrisetüüpide loendit</a>."
+msgid "Review the {packaging|list of packaging types} for help."
+msgstr ""
 
 #: ../root/release/edit/layout.tt:27
 msgid ""
@@ -9777,9 +9775,9 @@ msgstr "Kasuta meie <strong>XML-veebiteenust</strong> või <strong>arendusteeke<
 
 #: ../root/components/forms.tt:320
 msgid ""
-"Use the following fields to enter collaborations, see the <a "
-"href=\"{url}\">Artist Credit</a> documentation for more information."
-msgstr "Koostööde sisestamiseks kasuta järgnevaid välju. Lisateabe saamiseks loe dokumentatsioonilehekülge <a href=\"{url}\">Artisti nimekuju</a>."
+"Use the following fields to enter collaborations, see the {ac|Artist Credit}"
+" documentation for more information."
+msgstr ""
 
 #: ../root/release/edit/tracklist.tt:195
 msgid "Use the following fields to search for a CD stub."
@@ -10026,10 +10024,9 @@ msgstr "Hoiatus:"
 
 #: ../root/components/relationship-editor.tt:15
 msgid ""
-"Warning: This relationship has pending edits. <a target=\"_blank\" data-"
-"bind=\"attr: { href: relationship().openEdits() }\">Click here</a> to view "
+"Warning: This relationship has pending edits. {show|Click here} to view "
 "these edits and make sure they do not conflict with your own."
-msgstr "Hoiatus: sel seosel on ootel toimetusi. Nende nägemiseks <a target=\"_blank\" data-bind=\"attr: { href: relationship().openEdits() }\">klõpsa siin</a> ja siis vaata, et nad poleks sinu tehtavaga vastuolus."
+msgstr ""
 
 #: ../root/watch/list.tt:1 ../root/watch/list.tt:2
 msgid "Watched Artists"
@@ -10558,9 +10555,9 @@ msgstr "Eriotstarbelisi artiste pole lubatud toimetada."
 
 #: ../root/account/registered.tt:21
 msgid ""
-"You may proceed to <a href=\"{uri}\">your user profile</a>, or maybe you "
-"want to {edit|start editing}!"
-msgstr "Võid minna edasi oma <a href=\"{uri}\">oma kasutajaprofiilile</a> või siis kohe {edit|toimetama hakata}!"
+"You may proceed to {profile|your user profile}, or maybe you want to "
+"{edit|start editing}!"
+msgstr ""
 
 #: ../root/edit/index.tt:69
 msgid "You must be logged in to vote on edits"
@@ -11618,8 +11615,8 @@ msgstr "Parool on muudetud."
 msgid ""
 "<strong>We were unable to send a confirmation email to you.</strong><br/>Please confirm that you have entered a valid\n"
 "             address by editing your {settings|account settings}. If the problem still persists, please contact us at\n"
-"             <a href=\"mailto:support@musicbrainz.org\">support@musicbrainz.org</a>."
-msgstr "<strong>Meil ei õnnestunud sulle kinnituskirja saata.</strong><br/>Palun vaata oma {settings|konto seadetest},\n             et sisestatud oleks korrektne e-posti aadress. Kui probleem siiski püsib, siis saada palun kiri aadressil\n             <a href=\"mailto:support@musicbrainz.org\">support@musicbrainz.org</a>."
+"             {mail|support@musicbrainz.org}."
+msgstr ""
 
 #: ../lib/MusicBrainz/Server/Controller/Admin.pm:77
 msgid "User successfully edited."

@@ -28,8 +28,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-19 03:42-0700\n"
-"PO-Revision-Date: 2014-10-19 10:43+0000\n"
+"POT-Creation-Date: 2014-10-19 04:17-0700\n"
+"PO-Revision-Date: 2014-10-19 11:18+0000\n"
 "Last-Translator: Ian McEwen <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -1762,10 +1762,10 @@ msgstr "Comme les crochets [] sont utilisés pour créer des hyperliens, vous de
 
 #: ../root/account/registered.tt:13
 msgid ""
-"Because you provided an email address, an verification email has been sent "
-"to <code>{addr}</code>. Please check your mailbox and click on the link in "
-"the email to verify the new email address."
-msgstr "Vous nous avez fourni une adresse courriel. Un courriel de confirmation vient de vous être envoyé à l'adresse <code>{addr}</code>. Vérifiez votre boite aux lettres et cliquez sur le lien dans le courriel pour vérifier votre adresse courriel."
+"Because you provided an email address, a verification email has been sent to"
+" <code>{addr}</code>. Please check your mailbox and click on the link in the"
+" email to verify the new email address."
+msgstr ""
 
 #: ../root/main/index.tt:96
 msgid ""
@@ -5590,12 +5590,6 @@ msgstr "Lieux avec annotations"
 msgid "Places with deprecated relationships"
 msgstr "Lieux avec des relations obsolètes"
 
-#: ../root/account/registered.tt:7
-msgid ""
-"Please <a href=\"{uri}\">update your profile</a> when you get time, to let "
-"other editors know a bit more about you."
-msgstr "Veuillez <a href=\"{uri}\">mettre à jour votre profil</a> quand vous en aurez le temps, cela permet aux autres éditeurs d'en savoir plus sur vous."
-
 #: ../root/main/500.tt:85
 msgid ""
 "Please be sure to include the stack trace and request data shown above!"
@@ -5725,9 +5719,9 @@ msgstr "Veuillez chercher l'artiste pour lequel vous souhaitez créer une nouvel
 
 #: ../root/release/add_cover_art.tt:95 ../root/release/cover_art_fields.tt:8
 msgid ""
-"Please see the <a href=\"{doc}\" target=\"_blank\">Cover Art Types</a> "
-"documentation for a description of these types."
-msgstr "Consultez la documentation sur les <a href=\"{doc}\" target=\"_blank\">Types d'Illustration</a> pour une description complète de ces types."
+"Please see the {doc|Cover Art Types} documentation for a description of "
+"these types."
+msgstr ""
 
 #: ../root/scripts/text_strings.tt:143
 msgid "Please select a link type for the URL you’ve entered."
@@ -5768,6 +5762,12 @@ msgstr "Veuillez utiliser le bouton « Nom de tri » pour deviner le nom à util
 #: ../root/main/503.tt:8
 msgid "Please wait a few minutes and repeat your request."
 msgstr "Veuillez réessayer votre requête dans quelques minutes."
+
+#: ../root/account/registered.tt:7
+msgid ""
+"Please {acc_edit|update your profile} when you get time, to let other "
+"editors know a bit more about you."
+msgstr ""
 
 #: ../root/taglookup/not_found.tt:6
 msgid "Please {search|try again}, providing at least one of these parameters"
@@ -6883,10 +6883,8 @@ msgid "Reverse link phrase:"
 msgstr "Inverser la phrase de lien : "
 
 #: ../root/release/edit/information.tt:276
-msgid ""
-"Review the <a href=\"{url}\" target=\"_blank\">list of packaging types</a> "
-"for help."
-msgstr "Pour obtenir de l'aide, consulter la listes des types d'emballage <a href=\"{url}\" target=\"_blank\"></a>."
+msgid "Review the {packaging|list of packaging types} for help."
+msgstr ""
 
 #: ../root/release/edit/layout.tt:27
 msgid ""
@@ -9791,9 +9789,9 @@ msgstr "Utiliser notre <strong>service Web XML</strong> ou nos <strong>biblioth�
 
 #: ../root/components/forms.tt:320
 msgid ""
-"Use the following fields to enter collaborations, see the <a "
-"href=\"{url}\">Artist Credit</a> documentation for more information."
-msgstr "Utiliser les champs suivant pour saisir les collaborations. Voir la documentation sur le <a href=\"{url}\">Crédit d'artistes</a> pour plus d'information."
+"Use the following fields to enter collaborations, see the {ac|Artist Credit}"
+" documentation for more information."
+msgstr ""
 
 #: ../root/release/edit/tracklist.tt:195
 msgid "Use the following fields to search for a CD stub."
@@ -10040,10 +10038,9 @@ msgstr "Attention :"
 
 #: ../root/components/relationship-editor.tt:15
 msgid ""
-"Warning: This relationship has pending edits. <a target=\"_blank\" data-"
-"bind=\"attr: { href: relationship().openEdits() }\">Click here</a> to view "
+"Warning: This relationship has pending edits. {show|Click here} to view "
 "these edits and make sure they do not conflict with your own."
-msgstr "Attention : Cette relation a des modifications en attente. <a target=\"_blank\" data-bind=\"attr: { href: relationship().openEdits() }\">Cliquer ici</a> pour voir ces modifications et vous assurez qu'elles ne sont pas en conflit avec les vôtres."
+msgstr ""
 
 #: ../root/watch/list.tt:1 ../root/watch/list.tt:2
 msgid "Watched Artists"
@@ -10572,9 +10569,9 @@ msgstr "Vous ne pouvez pas modifier les artistes à usage spécial"
 
 #: ../root/account/registered.tt:21
 msgid ""
-"You may proceed to <a href=\"{uri}\">your user profile</a>, or maybe you "
-"want to {edit|start editing}!"
-msgstr "Vous pouvez vous rendre <a href=\"{uri}\">à votre profil utilisateur</a>, ou peut-être {edit|commencer à contribuer} !"
+"You may proceed to {profile|your user profile}, or maybe you want to "
+"{edit|start editing}!"
+msgstr ""
 
 #: ../root/edit/index.tt:69
 msgid "You must be logged in to vote on edits"
@@ -11632,8 +11629,8 @@ msgstr "Votre mot de passe a été changé"
 msgid ""
 "<strong>We were unable to send a confirmation email to you.</strong><br/>Please confirm that you have entered a valid\n"
 "             address by editing your {settings|account settings}. If the problem still persists, please contact us at\n"
-"             <a href=\"mailto:support@musicbrainz.org\">support@musicbrainz.org</a>."
-msgstr "<strong>Nous n'avons pas pu vous envoyer un courriel de confirmation d'adresse </strong><br/> Veuillez vérifier que vous avez saisi une adresse valide en éditant {settings|vos paramètres de compte}. Si le problème persiste, contactez nous à <a href=\"mailto:support@musicbrainz.org\">support@musicbrainz.org</a>."
+"             {mail|support@musicbrainz.org}."
+msgstr ""
 
 #: ../lib/MusicBrainz/Server/Controller/Admin.pm:77
 msgid "User successfully edited."

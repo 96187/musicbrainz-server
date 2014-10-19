@@ -22,8 +22,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-19 03:42-0700\n"
-"PO-Revision-Date: 2014-10-19 10:47+0000\n"
+"POT-Creation-Date: 2014-10-19 04:17-0700\n"
+"PO-Revision-Date: 2014-10-19 11:39+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -1756,10 +1756,10 @@ msgstr "Omdat vierkante haakjes [] worden gebruikt om links te creëren, moet u 
 
 #: ../root/account/registered.tt:13
 msgid ""
-"Because you provided an email address, an verification email has been sent "
-"to <code>{addr}</code>. Please check your mailbox and click on the link in "
-"the email to verify the new email address."
-msgstr "Omdat u een e-mailadres heeft verstrekt, is er een verificatie-e-mail verstuurd naar <code>{addr}</code>. Kijkt u alstublieft in uw postvak en klikt u op de link in de e-mail om uw nieuwe e-mailadres te verifiëren."
+"Because you provided an email address, a verification email has been sent to"
+" <code>{addr}</code>. Please check your mailbox and click on the link in the"
+" email to verify the new email address."
+msgstr "Omdat u een e-mailadres heeft verstrekt, is er een verificatie-e-mail verstuurd naar <code>{addr}</code>. Kijk in uw postvak en klik op de link in de e-mail om uw nieuwe e-mailadres te verifiëren."
 
 #: ../root/main/index.tt:96
 msgid ""
@@ -5584,12 +5584,6 @@ msgstr "Plaatsen met aantekeningen"
 msgid "Places with deprecated relationships"
 msgstr "Plaatsen met verouderde relaties"
 
-#: ../root/account/registered.tt:7
-msgid ""
-"Please <a href=\"{uri}\">update your profile</a> when you get time, to let "
-"other editors know a bit more about you."
-msgstr "<a href=\"{uri}\">Werk a.u.b. uw profiel bij</a> als u de tijd heeft, zodat andere redacteurs meer over u te weten komen."
-
 #: ../root/main/500.tt:85
 msgid ""
 "Please be sure to include the stack trace and request data shown above!"
@@ -5719,9 +5713,9 @@ msgstr "Zoek naar de artiest waar u een nieuwe uitgave voor wilt toevoegen:"
 
 #: ../root/release/add_cover_art.tt:95 ../root/release/cover_art_fields.tt:8
 msgid ""
-"Please see the <a href=\"{doc}\" target=\"_blank\">Cover Art Types</a> "
-"documentation for a description of these types."
-msgstr "Lees de <a href=\"{doc}\" target=\"_blank\">documentatie over afbeeldingstypes</a> voor een beschrijving van deze types."
+"Please see the {doc|Cover Art Types} documentation for a description of "
+"these types."
+msgstr "Lees de {doc|documentatie voor afbeeldingstypes} voor een beschrijving van deze types."
 
 #: ../root/scripts/text_strings.tt:143
 msgid "Please select a link type for the URL you’ve entered."
@@ -5762,6 +5756,12 @@ msgstr "Gebruik de knop “Sorteernaam gokken” om de sorteernaam te gokken."
 #: ../root/main/503.tt:8
 msgid "Please wait a few minutes and repeat your request."
 msgstr "Wacht alstublieft een paar minuten en herhaal dan uw verzoek."
+
+#: ../root/account/registered.tt:7
+msgid ""
+"Please {acc_edit|update your profile} when you get time, to let other "
+"editors know a bit more about you."
+msgstr "{acc_edit|Werk, als u tijd hebt, uw profiel bij}, zodat andere redacteurs meer over u te weten komen."
 
 #: ../root/taglookup/not_found.tt:6
 msgid "Please {search|try again}, providing at least one of these parameters"
@@ -6877,10 +6877,8 @@ msgid "Reverse link phrase:"
 msgstr "Omgekeerde koppelzin:"
 
 #: ../root/release/edit/information.tt:276
-msgid ""
-"Review the <a href=\"{url}\" target=\"_blank\">list of packaging types</a> "
-"for help."
-msgstr "Bekijk de <a href=\"{url}\" target=\"_blank\">lijst van verpakkingstypes</a> voor hulp."
+msgid "Review the {packaging|list of packaging types} for help."
+msgstr "Bekijk de {packaging|lijst van verpakkingstypes} voor hulp."
 
 #: ../root/release/edit/layout.tt:27
 msgid ""
@@ -9785,9 +9783,9 @@ msgstr "Gebruik onze <strong>XML webdienst</strong> of <strong>ontwikkelingsbibl
 
 #: ../root/components/forms.tt:320
 msgid ""
-"Use the following fields to enter collaborations, see the <a "
-"href=\"{url}\">Artist Credit</a> documentation for more information."
-msgstr "Gebruik de volgende velden om samenwerkingen toe te voegen, zie de <a href=\"{url}\">Artist Credit</a> documentatie voor meer informatie."
+"Use the following fields to enter collaborations, see the {ac|Artist Credit}"
+" documentation for more information."
+msgstr "Gebruik de volgende velden om samenwerkingen toe te voegen, zie de documentatie voor {ac|artiestvermeldingen} voor meer informatie."
 
 #: ../root/release/edit/tracklist.tt:195
 msgid "Use the following fields to search for a CD stub."
@@ -10034,10 +10032,9 @@ msgstr "Waarschuwing:"
 
 #: ../root/components/relationship-editor.tt:15
 msgid ""
-"Warning: This relationship has pending edits. <a target=\"_blank\" data-"
-"bind=\"attr: { href: relationship().openEdits() }\">Click here</a> to view "
+"Warning: This relationship has pending edits. {show|Click here} to view "
 "these edits and make sure they do not conflict with your own."
-msgstr "Waarschuwing: deze relatie heeft openstaande bewerkingen. <a target=\"_blank\" data-bind=\"attr: { href: relationship().openEdits() }\">Klik hier</a> om deze bewerkingen te bekijken en er voor te zorgen dat ze niet conflicteren met die van u."
+msgstr "Waarschuwing: Deze relatie heeft openstaande bewerkingen. {show|Klik hier} om deze bewerkingen te bekijken en zorg ervoor dat deze niet conflicteren met die van u."
 
 #: ../root/watch/list.tt:1 ../root/watch/list.tt:2
 msgid "Watched Artists"
@@ -10566,9 +10563,9 @@ msgstr "U mag een artiest voor specifieke doeleinden niet bewerken"
 
 #: ../root/account/registered.tt:21
 msgid ""
-"You may proceed to <a href=\"{uri}\">your user profile</a>, or maybe you "
-"want to {edit|start editing}!"
-msgstr "U kunt verder gaan naar <a href=\"{uri}\">uw gebruikersprofiel</a>, of misschien wilt u {edit|beginnen met bewerken}!"
+"You may proceed to {profile|your user profile}, or maybe you want to "
+"{edit|start editing}!"
+msgstr "U kunt verder gaan naar {profile|uw profiel}, maar misschien wilt u {edit|beginnen met bewerken}?"
 
 #: ../root/edit/index.tt:69
 msgid "You must be logged in to vote on edits"
@@ -11626,8 +11623,8 @@ msgstr "Uw wachtwoord is veranderd."
 msgid ""
 "<strong>We were unable to send a confirmation email to you.</strong><br/>Please confirm that you have entered a valid\n"
 "             address by editing your {settings|account settings}. If the problem still persists, please contact us at\n"
-"             <a href=\"mailto:support@musicbrainz.org\">support@musicbrainz.org</a>."
-msgstr "<strong>We konden geen confirmatie e-mail naar u sturen.</strong>\n<br/>Controleer of u een geldig adres heeft ingevoerd door uw {settings|gebruikersinstellingen} te wijzigen. Als het probleem nog steeds bestaat, neem dan contact op met <a href=\"mailto:support@musicbrainz.org\">support@musicbrainz.org</a>."
+"             {mail|support@musicbrainz.org}."
+msgstr "<strong>We konden geen confirmatie-e-mail naar u sturen.</strong>\n<br/>Controleer of u een geldig adres heeft ingevoerd door uw {settings|gebruikersinstellingen} te wijzigen. Als het probleem nog steeds bestaat, neem dan contact op met {mail|support@musicbrainz.org}."
 
 #: ../lib/MusicBrainz/Server/Controller/Admin.pm:77
 msgid "User successfully edited."
