@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-16 02:25-0700\n"
-"PO-Revision-Date: 2014-10-19 08:53+0000\n"
+"PO-Revision-Date: 2014-10-19 09:27+0000\n"
 "Last-Translator: Mihkel Tõnnov <email address hidden>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/musicbrainz/language/et/)\n"
 "MIME-Version: 1.0\n"
@@ -4453,7 +4453,7 @@ msgstr "Seosta"
 
 #: ../root/edit/details/add_relationship.tt:11
 msgid "Link order:"
-msgstr ""
+msgstr "Linkimisjärjestus:"
 
 #: ../root/edit/details/add_relationship_type.tt:13
 #: ../root/edit/details/edit_relationship_type.tt:21
@@ -10644,7 +10644,7 @@ msgstr "Midagi pole muudetud."
 
 #: ../root/scripts/text_strings.tt:146
 msgid "You haven’t selected a label for “{name}”."
-msgstr ""
+msgstr "Plaadifirmat pole valitud."
 
 #: ../root/edit/cancel.tt:14
 msgid ""
@@ -10863,7 +10863,7 @@ msgstr "Artist: {artist}"
 #: ../root/components/relationship-editor.tt:162
 #: ../root/components/relationship-editor.tt:207
 msgid "credited as"
-msgstr ""
+msgstr "täpne nimetus"
 
 #: ../root/admin/wikidoc/index.tt:53
 msgid "diff"
@@ -10896,7 +10896,7 @@ msgstr "lõppenud"
 #: ../root/relationship/linktype/form.tt:26
 #: ../root/relationship/linktype/tree.tt:12
 msgid "entity0 cardinality:"
-msgstr ""
+msgstr "olem0 kardinaalsus:"
 
 #: ../root/doc/relationship_type.tt:35
 #: ../root/edit/details/add_relationship_type.tt:23
@@ -10904,7 +10904,7 @@ msgstr ""
 #: ../root/relationship/linktype/form.tt:31
 #: ../root/relationship/linktype/tree.tt:13
 msgid "entity1 cardinality:"
-msgstr ""
+msgstr "olem1 kardinaalsus:"
 
 #: ../root/components/common-macros.tt:658 ../root/edit/details/macros.tt:38
 msgid "from {begin_date} until {end_date}"
@@ -10963,7 +10963,7 @@ msgstr "teave"
 
 #: ../root/components/common-macros.tt:149
 msgid "instruments"
-msgstr ""
+msgstr "instrumendid"
 
 #: ../root/edit/search_macros.tt:127 ../root/edit/search_macros.tt:144
 #: ../root/edit/search_macros.tt:178 ../root/edit/search_macros.tt:190
@@ -11234,7 +11234,7 @@ msgstr[1] "{artist} ei ole avaldanud ühtki {n} looga väljalaset."
 #: ../lib/MusicBrainz/Server/Entity/LinkAttribute.pm:41
 #, perl-brace-format
 msgid "{attribute} [{credited_as}]"
-msgstr ""
+msgstr "{attribute} [{credited_as}]"
 
 #: ../root/scripts/text_strings.tt:177
 #: ../lib/MusicBrainz/Server/Entity/LinkAttribute.pm:45
