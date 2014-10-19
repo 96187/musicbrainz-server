@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-08-07 20:42+0000\n"
+"PO-Revision-Date: 2014-10-19 10:43+0000\n"
 "Last-Translator: Ian McEwen <email address hidden>\n"
 "Language-Team: Faroese (http://www.transifex.com/projects/p/musicbrainz/language/fo/)\n"
 "MIME-Version: 1.0\n"
@@ -146,6 +146,14 @@ msgstr ""
 #: DB:link_type/reverse_link_phrase:313 DB:link_type/reverse_link_phrase:97
 #: DB:link_type/reverse_link_phrase:178 DB:link_type/reverse_link_phrase:706
 msgid "IMDb page for"
+msgstr ""
+
+#: DB:link_type/link_phrase:754
+msgid "IMSLP"
+msgstr ""
+
+#: DB:link_type/reverse_link_phrase:754
+msgid "IMSLP page for"
 msgstr ""
 
 #: DB:link_attribute_type/description:516
@@ -1375,6 +1383,12 @@ msgid ""
 "href=\"http://www.imdb.com/\">IMDb</a>."
 msgstr ""
 
+#: DB:link_type/description:754
+msgid ""
+"This links an artist to its page in <a "
+"href=\"http://www.imslp.org/\">IMSLP</a>."
+msgstr ""
+
 #: DB:link_type/description:291
 msgid "This links an artist to its profile at SoundCloud."
 msgstr ""
@@ -1563,12 +1577,6 @@ msgstr ""
 msgid ""
 "This relationship indicates the label is the copyright holder for this "
 "release."
-msgstr ""
-
-#: DB:link_type/description:244
-msgid ""
-"This relationship is deprecated, please use the \"medley\" attribute of "
-"\"recording of\" instead."
 msgstr ""
 
 #: DB:link_type/description:751
@@ -1849,7 +1857,7 @@ msgstr ""
 
 #: DB:link_type/link_phrase:355 DB:link_type/link_phrase:89
 #: DB:link_type/link_phrase:179 DB:link_type/link_phrase:216
-#: DB:link_type/link_phrase:731 DB:link_type/link_phrase:595
+#: DB:link_type/link_phrase:595 DB:link_type/link_phrase:731
 #: DB:link_type/link_phrase:744 DB:link_type/reverse_link_phrase:279
 #: DB:link_type/reverse_link_phrase:731 DB:link_type/long_link_phrase:731
 msgid "Wikipedia"
@@ -2407,6 +2415,10 @@ msgstr ""
 msgid "has an IMDb page at"
 msgstr ""
 
+#: DB:link_type/long_link_phrase:754
+msgid "has an IMSLP page at"
+msgstr ""
+
 #: DB:link_type/long_link_phrase:707
 msgid "has an interview at"
 msgstr ""
@@ -2635,11 +2647,12 @@ msgstr ""
 msgid "is a mash-up of"
 msgstr ""
 
-#: DB:link_type/long_link_phrase:244 DB:link_type/long_link_phrase:239
+#: DB:link_type/long_link_phrase:239
 msgid "is a medley of"
 msgstr ""
 
-#: DB:link_type/long_link_phrase:730 DB:link_type/long_link_phrase:273
+#: DB:link_type/long_link_phrase:753 DB:link_type/long_link_phrase:730
+#: DB:link_type/long_link_phrase:273
 msgid "is a page in a database for"
 msgstr ""
 
@@ -2923,7 +2936,7 @@ msgstr ""
 msgid "medley"
 msgstr ""
 
-#: DB:link_type/link_phrase:244 DB:link_type/link_phrase:239
+#: DB:link_type/link_phrase:239
 msgid "medley of"
 msgstr ""
 
@@ -3024,11 +3037,12 @@ msgstr ""
 msgid "orchestrations"
 msgstr ""
 
-#: DB:link_type/link_phrase:746 DB:link_type/link_phrase:96
-#: DB:link_type/link_phrase:730 DB:link_type/link_phrase:82
-#: DB:link_type/link_phrase:306 DB:link_type/link_phrase:222
-#: DB:link_type/link_phrase:273 DB:link_type/link_phrase:188
-#: DB:link_type/link_phrase:561 DB:link_type/reverse_link_phrase:746
+#: DB:link_type/link_phrase:753 DB:link_type/link_phrase:746
+#: DB:link_type/link_phrase:96 DB:link_type/link_phrase:730
+#: DB:link_type/link_phrase:82 DB:link_type/link_phrase:306
+#: DB:link_type/link_phrase:222 DB:link_type/link_phrase:273
+#: DB:link_type/link_phrase:188 DB:link_type/link_phrase:561
+#: DB:link_type/reverse_link_phrase:753 DB:link_type/reverse_link_phrase:746
 #: DB:link_type/reverse_link_phrase:96 DB:link_type/reverse_link_phrase:730
 #: DB:link_type/reverse_link_phrase:82 DB:link_type/reverse_link_phrase:306
 #: DB:link_type/reverse_link_phrase:222 DB:link_type/reverse_link_phrase:273
@@ -3266,7 +3280,7 @@ msgstr ""
 msgid "recording location for"
 msgstr ""
 
-#: DB:link_type/reverse_link_phrase:244 DB:link_type/reverse_link_phrase:239
+#: DB:link_type/reverse_link_phrase:239
 msgid "referred to in medleys"
 msgstr ""
 
