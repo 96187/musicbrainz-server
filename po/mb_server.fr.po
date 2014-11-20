@@ -29,7 +29,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-19 15:16-0700\n"
-"PO-Revision-Date: 2014-11-20 16:57+0000\n"
+"PO-Revision-Date: 2014-11-20 18:00+0000\n"
 "Last-Translator: yahoe.001\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -502,7 +502,7 @@ msgstr "Actions"
 msgid ""
 "Add @ at line start to indicate artists, * for a work/song, # for additional"
 " info (such as \"Encore\"). [mbid|name] allows linking to artists and works."
-msgstr "Ajouté @ en début de ligne pour indiquer des artistes, * pour une œuvre/une chanson, # pour des infos supplémentaires (tel que « Rappel »). [mbid|name] permet un lien vers les artistes et les oeuvres."
+msgstr "Ajouter @ en début de ligne pour indiquer des artistes, * pour une œuvre/une chanson, # pour des infos supplémentaires (tel que « Rappel »). [mbid|Le nom] permet un lien vers les artistes et les œuvres."
 
 #: ../root/entity/alias/add.tt:1
 msgid "Add Alias"
@@ -1478,7 +1478,7 @@ msgstr "Artistes"
 #: ../root/report/artists_containing_disambiguation_comments.tt:3
 #: ../root/report/index.tt:23
 msgid "Artists containing disambiguation comments in their name"
-msgstr "Artistes contenant des commentaires d'homonymie dans leur nom"
+msgstr "Artistes contenant des commentaires de désambiguïsation dans leur nom"
 
 #: ../root/report/artists_with_multiple_occurances_in_artist_credits.tt:1
 #: ../root/report/artists_with_multiple_occurances_in_artist_credits.tt:3
@@ -2633,7 +2633,7 @@ msgstr "Recherche directe dans la base de données"
 #: ../root/release_group/edit_form.tt:14 ../root/series/edit_form.tt:32
 #: ../root/work/edit_form.tt:14
 msgid "Disambiguation:"
-msgstr "Homonymie :"
+msgstr "Désambiguïsation :"
 
 #: ../root/release/discids.tt:8
 msgid "Disc ID"
@@ -5696,25 +5696,25 @@ msgstr "Veuillez vérifier soigneusement le code-barres de la parution."
 msgid ""
 "Please enter a {doc_disambiguation|disambiguation} to help distinguish this "
 "artist from the others."
-msgstr "Veuillez saisir une {doc_disambiguation|homonymie} pour aider à distinguer cet artiste des autres."
+msgstr "Veuillez saisir une {doc_disambiguation|désambiguïsation} pour aider à distinguer cet artiste des autres."
 
 #: ../root/label/edit_form.tt:24
 msgid ""
 "Please enter a {doc_disambiguation|disambiguation} to help distinguish this "
 "label from the others."
-msgstr "Veuillez saisir une {doc_disambiguation|homonymie} pour aider à distinguer ce label des autres."
+msgstr "Veuillez saisir une {doc_disambiguation|désambiguïsation} pour aider à distinguer ce label des autres."
 
 #: ../root/place/edit_form.tt:25
 msgid ""
 "Please enter a {doc_disambiguation|disambiguation} to help distinguish this "
 "place from the others."
-msgstr "Veuillez saisir une {doc_disambiguation|homonymie} pour aider à distinguer ce lieu des autres."
+msgstr "Veuillez saisir une {doc_disambiguation|désambiguïsation} pour aider à distinguer ce lieu des autres."
 
 #: ../root/series/edit_form.tt:24
 msgid ""
 "Please enter a {doc_disambiguation|disambiguation} to help distinguish this "
 "series from the others."
-msgstr "Veuillez saisir une {doc_disambiguation|homonymie} pour aider à distinguer cette série des autres."
+msgstr "Veuillez saisir une {doc_disambiguation|désambiguïsation} pour aider à distinguer cette série des autres."
 
 #: ../root/entity/tags.tt:10
 msgid ""
@@ -8809,7 +8809,7 @@ msgid ""
 "they're different, add {disambiguation_comment|disambiguation comments} to "
 "them (and once a group of similarly named artists have disambiguation "
 "comments, they will stop appearing here)."
-msgstr "Ce rapport tend à identifier les artistes avec des noms très similaires. Si deux artistes sont en fait le même, fusionnez-les (souvenez-vous d'{how_to_write_edit_notes|écrire une note de modification} et donnez votre preuve). S'ils sont différents, y ajoutez un {disambiguation_comment|commentaire d'homonymie} (et quand un groupe d'artistes ayant le même nom aura des commentaires d'homonymie, il n'apparaîtra plus ici)."
+msgstr "Ce rapport tend à identifier les artistes avec des noms très similaires. Si deux artistes sont en fait le même, fusionnez-les (souvenez-vous d'{how_to_write_edit_notes|écrire une note de modification} et donnez votre preuve). S'ils sont différents, y ajouter des {disambiguation_comment|commentaires de désambiguïsation} (et quand un groupe d'artistes ayant le même nom auront des commentaires de désambiguïsation, ils n'apparaîtront plus ici)."
 
 #: ../root/report/tracks_named_with_sequence.tt:6
 msgid ""
@@ -8887,7 +8887,7 @@ msgstr "Ce rapport liste les artistes qui ont un type autre que <em>person</em> 
 msgid ""
 "This report lists artists that may have disambiguation comments in their "
 "name, rather than the actual disambiguation comment field."
-msgstr "Ce rapport liste des artistes qui on peut-être des commentaires d'homonymie dans leur nom plutôt que dans le champ de commentaire d'homonymie. "
+msgstr "Ce rapport liste des artistes qui on peut-être des commentaires de désambiguïsation dans leur nom plutôt que dans le champ de commentaire de désambiguïsation."
 
 #: ../root/report/possible_collaborations.tt:6
 msgid ""
@@ -8999,7 +8999,7 @@ msgid ""
 "artist has an album and single with the same name, then there is usually no "
 "need to change anything. In other cases, a disambiguation comment may be "
 "helpful."
-msgstr ""
+msgstr "Ce rapport liste des groupes de parution ayant des noms et des artistes très semblables. Si les parutions dans les groupes de parution devraient être regroupées ( voir les {url|directives}), elles peuvent être fusionnées. Si elles ne devraient pas être regroupées mais qu'elles peuvent être distinguées par les types de groupes de parution, par ex. si un artiste à un album et un simple portant le même nom, il n'y a habituellement rien à changer. Dans les autres cas, un commentaire de désambiguïsation pourrait être utile."
 
 #: ../root/report/duplicate_relationships_releases.tt:6
 msgid ""
@@ -9292,7 +9292,7 @@ msgstr "Cette table affiche un résumé des votes effectués par cet éditeur."
 
 #: ../root/components/common-macros.tt:1018
 msgid "This track is a data track."
-msgstr ""
+msgstr "Cette piste est une piste de données"
 
 #: ../root/edit/details/edit_medium.tt:2
 msgid "This track's MBID will change when this edit is applied."
@@ -9455,7 +9455,7 @@ msgstr "Total des groupes en double : {count}"
 
 #: ../root/report/duplicate_events.tt:10
 msgid "Total events found: {count}"
-msgstr ""
+msgstr "Total d'événements trouvés : {count}"
 
 #: ../root/report/annotations_labels.tt:8
 #: ../root/report/deprecated_relationship_labels.tt:8
@@ -10452,71 +10452,71 @@ msgstr "Vous êtes sur le point de saisir une modification qui changera la duré
 msgid ""
 "You are about to merge the following areas into a single area. Please select"
 " the area which you would like other areas to be merged into:"
-msgstr "Vous êtes sur le point de fusionner les régions suivantes en une seule région. Veuillez choisir la région vers laquelle vous souhaitez fusionner les autres :"
+msgstr "Vous êtes sur le point de fusionner les régions suivantes en une seule région. Veuillez choisir la région avec laquelle vous souhaitez fusionner les autres :"
 
 #: ../root/artist/merge.tt:4
 msgid ""
 "You are about to merge the following artists into a single artist. Please "
 "select the artist which you would like other artists to be merged into:"
-msgstr "Vous êtes sur le point de fusionner les artistes suivants en un seul artiste. Choisissez l'artiste vers lequel vous souhaitez fusionner : "
+msgstr "Vous êtes sur le point de fusionner les artistes suivants en un seul artiste. Veuillez choisir l'artiste avec lequel vous souhaitez fusionner les autres :"
 
 #: ../root/event/merge.tt:4
 msgid ""
 "You are about to merge the following events into a single event. Please "
 "select the event which you would like other events to be merged into:"
-msgstr ""
+msgstr "Vous êtes sur le point de fusionner les événements suivants en un seul événement. Veuillez choisir l’événement avec lequel vous souhaitez fusionner les autres :"
 
 #: ../root/instrument/merge.tt:4
 msgid ""
 "You are about to merge the following instruments into a single instrument. "
 "Please select the instrument which you would like other instruments to be "
 "merged into:"
-msgstr "Vous êtes sur le point de fusionner les instruments suivants en un seul instrument. Choisissez l'instrument vers lequel vous souhaitez fusionner les autres : "
+msgstr "Vous êtes sur le point de fusionner les instruments suivants en un seul instrument. Veuillez choisir l’instrument avec lequel vous souhaitez fusionner les autres :"
 
 #: ../root/label/merge.tt:4
 msgid ""
 "You are about to merge the following labels into a single label. Please "
 "select the label which you would like other labels to be merged into:"
-msgstr "Vous êtes sur le point de fusionner les labels suivants dans un seul label. Choisissez le label vers lequel vous souhaitez fusionner : "
+msgstr "Vous êtes sur le point de fusionner les labels suivants dans un seul label. Veuillez choisir le label avec lequel vous souhaitez fusionner les autres :"
 
 #: ../root/place/merge.tt:4
 msgid ""
 "You are about to merge the following places into a single place. Please "
 "select the place which you would like other places to be merged into:"
-msgstr "Vous être sur le point de fusionner les lieux suivants en un seul lieu. Veuillez choisir le lieu vers lequel vous souhaitez fusionner les autres :"
+msgstr "Vous êtes sur le point de fusionner les lieux suivants en un seul lieu. Veuillez choisir le lieu avec lequel vous souhaitez fusionner les autres :"
 
 #: ../root/recording/merge.tt:4
 msgid ""
 "You are about to merge the following recordings into a single recording. "
 "Please select the recording which you would like other recordings to be "
 "merged into:"
-msgstr "Vous êtes sur le point de fusionner les enregistrements suivants dans un seul enregistrement. Choisissez l'enregistrement vers lequel vous souhaitez fusionner : "
+msgstr "Vous êtes sur le point de fusionner les enregistrements suivants dans un seul enregistrement. Veuillez choisir l’enregistrement avec lequel vous souhaitez fusionner les autres :"
 
 #: ../root/release_group/merge.tt:4
 msgid ""
 "You are about to merge the following release groups into a single release "
 "group. Please select the release group which you would like other release "
 "groups to be merged into:"
-msgstr "Vous êtes sur le point de fusionner les groupes de parution suivants dans un seul groupe. Choisissez le groupe de parution vers lequel vous souhaitez fusionner les autres :"
+msgstr "Vous êtes sur le point de fusionner les groupes de parution suivants dans un seul groupe. Veuillez choisir le groupe avec lequel vous souhaitez fusionner les autres :"
 
 #: ../root/release/merge.tt:4
 msgid ""
 "You are about to merge the following releases into a single release. Please "
 "select the release which you would like the other releases to be merged "
 "into:"
-msgstr "Vous êtes sur le point de fusionner les parutions suivantes en une seule parution. Veuillez sélectionner la parution vers laquelle vous souhaitez fusionner les autres :"
+msgstr "Vous êtes sur le point de fusionner les parutions suivantes en une seule parution. Veuillez choisir la parution avec laquelle vous souhaitez fusionner les autres :"
 
 #: ../root/series/merge.tt:4
 msgid ""
 "You are about to merge the following series into a single series. Please "
 "select the series which you would like other series to be merged into:"
-msgstr "Vous êtes sur le point de fusionner les séries suivantes en une seule série. Veuillez choisir la série vers laquelle vous souhaitez fusionner les autres :"
+msgstr "Vous êtes sur le point de fusionner les séries suivantes en une seule série. Veuillez choisir la série avec laquelle vous souhaitez fusionner les autres :"
 
 #: ../root/work/merge.tt:4
 msgid ""
 "You are about to merge the following works into a single work. Please select"
 " the work that you would like the other works merged into:"
-msgstr "Vous êtes sur le point de fusionner les œuvres suivantes en une seule œuvre. Veuillez sélectionner l’œuvre dans laquelle vous voulez que les autres soient fusionnées :"
+msgstr "Vous êtes sur le point de fusionner les œuvres suivantes en une seule œuvre. Veuillez choisir l’œuvre avec laquelle vous souhaitez fusionner les autres :"
 
 #: ../root/artist/subscribers.tt:27 ../root/collection/subscribers.tt:27
 #: ../root/label/subscribers.tt:27 ../root/series/subscribers.tt:27
@@ -10614,7 +10614,7 @@ msgstr "Vous avez donné l'accès à {app}. Ensuite, retourner vers {app} et cop
 
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:91
 msgid "You have no attendance lists!"
-msgstr ""
+msgstr "Vous n'avez pas de liste de présence !"
 
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:123
 msgid "You have no collections!"
@@ -10802,7 +10802,7 @@ msgstr "[inconnu]"
 
 #: ../root/scripts/text_strings.tt:31
 msgid "add a disambiguation comment"
-msgstr "ajouter un commentaire d'homonymie"
+msgstr "ajouter un commentaire de désambiguïsation"
 
 #: ../root/edit/search_macros.tt:161
 msgid "after"
@@ -10866,7 +10866,7 @@ msgstr "par {artist}"
 
 #: ../root/components/common-macros.tt:203
 msgid "cancelled"
-msgstr ""
+msgstr "annulé"
 
 #: ../root/components/relationship-editor.tt:162
 #: ../root/components/relationship-editor.tt:207
@@ -10916,7 +10916,7 @@ msgstr "cardinalité de l'entité1 :"
 
 #: ../root/components/common-macros.tt:140
 msgid "events"
-msgstr ""
+msgstr "événements"
 
 #: ../root/components/common-macros.tt:685 ../root/edit/details/macros.tt:38
 msgid "from {begin_date} until {end_date}"
@@ -11093,8 +11093,8 @@ msgstr[1] "plus {n} autres utilisateurs anonymes"
 #: ../root/event/attendance.tt:15
 msgid "plus {n} other hidden user"
 msgid_plural "plus {n} other hidden user"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "plus {n} autre utilisateur caché"
+msgstr[1] "plus {n} autres utilisateurs cachés"
 
 #: ../root/release/collections.tt:15
 msgid "plus {n} other private collection"
@@ -11407,8 +11407,8 @@ msgstr "{name} – {additional_info}"
 #: ../root/tag/area.tt:1
 msgid "{num} area found"
 msgid_plural "{num} areas found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num} région trouvée"
+msgstr[1] "{num} régions trouvées"
 
 #: ../root/user/subscriptions/layout.tt:19
 msgid "{num} artist"
@@ -11449,14 +11449,14 @@ msgstr[1] "{num} éditeurs"
 #: ../root/tag/event.tt:1
 msgid "{num} event found"
 msgid_plural "{num} events found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num} événement trouvé"
+msgstr[1] "{num} événements trouvés"
 
 #: ../root/tag/instrument.tt:1
 msgid "{num} instrument found"
 msgid_plural "{num} instruments found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num} instrument trouvé"
+msgstr[1] "{num} instruments trouvés"
 
 #: ../root/user/subscriptions/layout.tt:28
 msgid "{num} label"
@@ -11521,14 +11521,14 @@ msgstr[1] "{num} séries"
 #: ../root/tag/series.tt:1
 msgid "{num} series found"
 msgid_plural "{num} series found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num} série trouvée"
+msgstr[1] "{num} séries trouvées"
 
 #: ../root/event/attendance.tt:4
 msgid "{num} user might attend:"
 msgid_plural "{num} users might attend:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num} utilisateur pourrait être présent :"
+msgstr[1] "{num} utilisateurs pourraient être présents :"
 
 #: ../root/tag/work.tt:1
 msgid "{num} work found"
@@ -11566,7 +11566,7 @@ msgstr[1] "{n} œuvres sélectionnées"
 
 #: ../root/event/attendance.tt:10
 msgid "{owner} (in list {collection})"
-msgstr ""
+msgstr "{owner} (dans la liste {collection})"
 
 #: ../root/user/profile.tt:222 ../root/user/profile.tt:226
 msgid "{percentage}%"
@@ -12035,35 +12035,35 @@ msgstr "Fusionner des artistes"
 
 #: ../lib/MusicBrainz/Server/Edit/Event/AddAlias.pm:11
 msgid "Add event alias"
-msgstr ""
+msgstr "Ajouter un alias d'événement"
 
 #: ../lib/MusicBrainz/Server/Edit/Event/AddAnnotation.pm:11
 msgid "Add event annotation"
-msgstr ""
+msgstr "Ajouter une annotation d'événement"
 
 #: ../lib/MusicBrainz/Server/Edit/Event/Create.pm:18
 msgid "Add event"
-msgstr ""
+msgstr "Ajouter un événement"
 
 #: ../lib/MusicBrainz/Server/Edit/Event/Delete.pm:11
 msgid "Remove event"
-msgstr ""
+msgstr "Enlever l'événement"
 
 #: ../lib/MusicBrainz/Server/Edit/Event/DeleteAlias.pm:14
 msgid "Remove event alias"
-msgstr ""
+msgstr "Enlever l'alias d'événement"
 
 #: ../lib/MusicBrainz/Server/Edit/Event/Edit.pm:34
 msgid "Edit event"
-msgstr ""
+msgstr "Modifier l'événement"
 
 #: ../lib/MusicBrainz/Server/Edit/Event/EditAlias.pm:12
 msgid "Edit event alias"
-msgstr ""
+msgstr "Modifier l'alias d'événement"
 
 #: ../lib/MusicBrainz/Server/Edit/Event/Merge.pm:11
 msgid "Merge events"
-msgstr ""
+msgstr "Fusionner les événements"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/AddDiscID.pm:11
 #: ../lib/MusicBrainz/Server/Edit/Medium/AddDiscID.pm:10
@@ -12481,7 +12481,7 @@ msgstr "Ajouter un alias d'œuvre"
 
 #: ../lib/MusicBrainz/Server/Edit/Work/AddAnnotation.pm:12
 msgid "Add work annotation"
-msgstr "Ajouter une annotation d.œuvre"
+msgstr "Ajouter une annotation d'œuvre"
 
 #: ../lib/MusicBrainz/Server/Edit/Work/AddISWCs.pm:20
 msgid "Add ISWCs"
@@ -12658,7 +12658,7 @@ msgstr "Ce doit être un code-barres valide"
 
 #: ../lib/MusicBrainz/Server/Form/Collection.pm:45
 msgid "The collection type does not apply to the given entity."
-msgstr ""
+msgstr "Le type de collection se s'applique pas à l'entité donnée."
 
 #: ../lib/MusicBrainz/Server/Form/Field/ArtistCredit.pm:48
 #, perl-brace-format
@@ -12743,11 +12743,11 @@ msgstr "Date invalide"
 
 #: ../lib/MusicBrainz/Server/Form/Field/Setlist.pm:12
 msgid "Please ensure all lines start with @, * or #."
-msgstr ""
+msgstr "Veuillez vous assurer que toutes les lignes commencent par @, * ou #."
 
 #: ../lib/MusicBrainz/Server/Form/Field/Time.pm:16
 msgid "This is not a valid time."
-msgstr ""
+msgstr "Cet heure n'est pas valide."
 
 #: ../lib/MusicBrainz/Server/Form/Field/URL.pm:24
 msgid "URL protocol must be HTTP, HTTPS or FTP"
