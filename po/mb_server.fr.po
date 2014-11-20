@@ -29,7 +29,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-19 15:16-0700\n"
-"PO-Revision-Date: 2014-11-20 14:08+0000\n"
+"PO-Revision-Date: 2014-11-20 15:59+0000\n"
 "Last-Translator: yahoe.001\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -552,7 +552,7 @@ msgstr "Ajouter un disque"
 
 #: ../root/event/create.tt:1 ../root/event/create.tt:3
 msgid "Add Event"
-msgstr ""
+msgstr "Ajouter un événement"
 
 #: ../root/layout/menu.tt:246 ../root/release/edit/information.tt:135
 #: ../root/release/edit/information.tt:136
@@ -687,7 +687,7 @@ msgstr "Ajouter une entrée"
 
 #: ../root/scripts/text_strings.tt:132
 msgid "Add a new event"
-msgstr ""
+msgstr "Ajouter un nouvel événement"
 
 #: ../root/scripts/text_strings.tt:133
 msgid "Add a new label"
@@ -747,7 +747,7 @@ msgstr "Ajouter un autre artiste"
 
 #: ../root/scripts/text_strings.tt:170
 msgid "Add another event"
-msgstr ""
+msgstr "Ajouter un autre événement"
 
 #: ../root/components/relationship-editor.tt:170
 #: ../root/scripts/text_strings.tt:171
@@ -840,25 +840,25 @@ msgstr "Ajouter un groupe de parution"
 
 #: ../root/report/duplicate_artists.tt:51
 msgid "Add selected artists for merging"
-msgstr "Ajouter les artistes sélectionnés en vue d'une fusion"
+msgstr "Ajouter les artistes choisis pour la fusion"
 
 #: ../root/artist/events.tt:8 ../root/place/events.tt:8
 msgid "Add selected events for merging"
-msgstr ""
+msgstr "Ajouter les événements choisis pour la fusion"
 
 #: ../root/artist/recordings.tt:13 ../root/instrument/recordings.tt:8
 #: ../root/isrc/index.tt:37
 msgid "Add selected recordings for merging"
-msgstr "Ajouter les enregistrements sélectionnés en vue d'une fusion"
+msgstr "Ajouter les enregistrements choisis pour la fusion"
 
 #: ../root/artist/releases.tt:13 ../root/instrument/releases.tt:8
 #: ../root/label/index.tt:34 ../root/release_group/index.tt:71
 msgid "Add selected releases for merging"
-msgstr "Ajouter les parutions sélectionnées en vue de leur fusion"
+msgstr "Ajouter les parutions choisies pour la fusion"
 
 #: ../root/artist/works.tt:8 ../root/iswc/index.tt:60
 msgid "Add selected works for merging"
-msgstr "Ajouter les œuvres sélectionnées en vue d'une fusion"
+msgstr "Ajouter les œuvres choisies pour la fusion"
 
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:125
 msgid "Add to a new collection"
@@ -866,7 +866,7 @@ msgstr "Ajouter une nouvelle collection"
 
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:93
 msgid "Add to a new list"
-msgstr ""
+msgstr "Ajouter à une nouvelle liste"
 
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:114
 msgid "Add to my collection"
@@ -1043,7 +1043,7 @@ msgstr "Autrement, vous pouvez {uri|ajouter un nouvel artiste}."
 
 #: ../root/search/results-event.tt:63
 msgid "Alternatively, you may {uri|add a new event}."
-msgstr ""
+msgstr "Autrement, vous pouvez {uri|ajouter un nouvel événement}."
 
 #: ../root/search/results-label.tt:43
 msgid "Alternatively, you may {uri|add a new label}."
@@ -1315,7 +1315,7 @@ msgstr "Région :"
 #: ../root/components/common-macros.tt:604 ../root/tag/header.tt:1
 #: ../root/tag/index.tt:8
 msgid "Areas"
-msgstr ""
+msgstr "Régions"
 
 #: ../root/artist/header.tt:4 ../root/cdstub/browse.tt:9
 #: ../root/cdstub/cdstub.tt:7 ../root/cdtoc/attach_filter_release.tt:29
@@ -1578,7 +1578,7 @@ msgstr "Rattaché aux parutions"
 #: ../root/event/attendance.tt:1 ../root/event/attendance.tt:2
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:74
 msgid "Attendance"
-msgstr ""
+msgstr "Fréquentation"
 
 #: ../root/components/relationships-table.tt:8
 #: ../root/components/works-list.tt:18 ../root/doc/relationship_type.tt:48
@@ -1886,7 +1886,7 @@ msgstr "Parcourir les artistes"
 
 #: ../root/browse/entity.tt:1
 msgid "Browse Events"
-msgstr ""
+msgstr "Parcourir les événements"
 
 #: ../root/browse/entity.tt:1
 msgid "Browse Labels"
@@ -1922,7 +1922,7 @@ msgstr "Parcourir les artistes"
 
 #: ../root/browse/index.tt:13
 msgid "Browse events"
-msgstr ""
+msgstr "Parcourir les événements"
 
 #: ../root/browse/index.tt:7
 msgid "Browse labels"
@@ -2062,7 +2062,7 @@ msgstr "Modifications annulées par {name}"
 
 #: ../root/edit/details/add_event.tt:22 ../root/edit/details/edit_event.tt:19
 msgid "Cancelled:"
-msgstr ""
+msgstr "Annulé :"
 
 #: ../root/elections/index.tt:9
 msgid "Candidate"
@@ -2466,7 +2466,7 @@ msgstr "Règles de suppression des données"
 #: ../root/medium/tracklist.tt:35 ../root/release/edit/tracklist.tt:372
 #: ../root/release/index.tt:77
 msgid "Data Tracks"
-msgstr ""
+msgstr "Pistes de données"
 
 #: ../root/edit/data.tt:10
 msgid "Data:"
@@ -2862,7 +2862,7 @@ msgstr "Modifier l'Illustration"
 
 #: ../root/event/edit.tt:1
 msgid "Edit Event"
-msgstr ""
+msgstr "Modifier l'événement"
 
 #: ../root/instrument/edit.tt:1
 msgid "Edit Instrument"
@@ -3123,7 +3123,7 @@ msgstr "Date de fin"
 
 #: ../root/event/layout.tt:22
 msgid "End Date:"
-msgstr ""
+msgstr "Date de fin :"
 
 #: ../root/components/common-macros.tt:858 ../root/scripts/text_strings.tt:73
 msgid "End area:"
@@ -3149,7 +3149,7 @@ msgstr "Date de fin :"
 
 #: ../root/event/index.tt:9
 msgid "End:"
-msgstr ""
+msgstr "Fin :"
 
 #: ../root/edit/details/add_alias.tt:52 ../root/edit/details/edit_alias.tt:64
 msgid "Ended"
@@ -3276,35 +3276,35 @@ msgstr "Une URL ou deux peut suffire et peut s'avèrer utile !"
 #: ../lib/MusicBrainz/Server/Edit/Event.pm:7
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:48
 msgid "Event"
-msgstr ""
+msgstr "Événement"
 
 #: ../root/event/edit_form.tt:12
 msgid "Event Details"
-msgstr ""
+msgstr "Détails de l'événement"
 
 #: ../root/event/not_found.tt:1 ../root/event/not_found.tt:2
 msgid "Event Not Found"
-msgstr ""
+msgstr "Événement introuvable"
 
 #: ../root/event/layout.tt:4
 msgid "Event information"
-msgstr ""
+msgstr "Informations sur l'événement"
 
 #: ../root/user/ratings_summary.tt:3 ../root/user/ratings.tt:2
 msgid "Event ratings"
-msgstr ""
+msgstr "Évaluations des événements"
 
 #: ../root/components/common-macros.tt:570
 #: ../root/edit/details/add_event_annotation.tt:3
 #: ../root/edit/details/add_event.tt:3 ../root/edit/details/edit_event.tt:5
 msgid "Event:"
-msgstr ""
+msgstr "Événement :"
 
 #: ../root/artist/events.tt:2 ../root/collection/index.tt:25
 #: ../root/components/common-macros.tt:604 ../root/components/entity-tabs.tt:1
 #: ../root/place/events.tt:2 ../root/report/index.tt:31 ../root/tag/index.tt:8
 msgid "Events"
-msgstr ""
+msgstr "Événements"
 
 #: ../root/doc/relationship_type.tt:84
 #: ../root/relationship/linktype/form.tt:62
@@ -3528,8 +3528,8 @@ msgstr[1] "Au moins {n} modifications de trouvées"
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:94
 msgid "Found in {num} attendance list"
 msgid_plural "Found in {num} attendance lists"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Trouvé dans {num} liste de présence"
+msgstr[1] "Trouvé dans {num} listes de présence"
 
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:126
 msgid "Found in {num} user collection"
@@ -4101,7 +4101,7 @@ msgstr "Instrument :"
 #: ../root/components/common-macros.tt:604 ../root/tag/header.tt:1
 #: ../root/tag/index.tt:8
 msgid "Instruments"
-msgstr ""
+msgstr "Instruments"
 
 #: ../root/main/500.tt:67
 msgid "Interface language:"
@@ -4141,7 +4141,7 @@ msgstr "Baliseur Jaikoz "
 
 #: ../root/components/common-macros.tt:780
 msgid "Javascript is required for this page to work properly."
-msgstr ""
+msgstr "Javascript est exigé pour que cette page fonctionne correctement."
 
 #: ../root/scripts/text_strings.tt:26
 msgid "Join phrase"
@@ -4437,7 +4437,7 @@ msgstr "Locale : "
 #: ../root/components/events-list.tt:24 ../root/report/event_list.tt:10
 #: ../root/search/results-event.tt:11
 msgid "Location"
-msgstr ""
+msgstr "Lieu"
 
 #: ../root/edit/search_macros.tt:288
 msgid "Location Editor"
@@ -4664,7 +4664,7 @@ msgstr "Fusionner des artistes"
 
 #: ../root/event/merge.tt:1 ../root/event/merge.tt:3
 msgid "Merge Events"
-msgstr ""
+msgstr "Fusionner les événements"
 
 #: ../root/instrument/merge.tt:1 ../root/instrument/merge.tt:3
 msgid "Merge Instruments"
@@ -5085,7 +5085,7 @@ msgstr "Aucune entité de MusicBrainz n'a pour l'instant l'attribut « {tag} ».
 
 #: ../root/tag/area.tt:1
 msgid "No areas with this tag were found."
-msgstr ""
+msgstr "Aucune région trouvée avec cette balise."
 
 #: ../root/tag/artist.tt:1
 msgid "No artists with this tag were found."
@@ -5109,11 +5109,11 @@ msgstr "Aucune élection de trouvée."
 
 #: ../root/collection/index.tt:36
 msgid "No events found in this list."
-msgstr ""
+msgstr "Aucun événement trouvé dans cette liste."
 
 #: ../root/tag/event.tt:1
 msgid "No events with this tag were found."
-msgstr ""
+msgstr "Aucun événement trouvé avec cette balise."
 
 #: ../root/release/layout.tt:32
 msgid "No front cover image available.<br/>{all|View all artwork}."
@@ -5121,11 +5121,11 @@ msgstr "Aucune image de couverture de disponible.<br/>{all|Voir tous les éléme
 
 #: ../root/tag/instrument.tt:1
 msgid "No instruments with this tag were found."
-msgstr ""
+msgstr "Aucun instrument trouvé avec cette balise."
 
 #: ../root/tag/label.tt:1
 msgid "No labels with this tag were found."
-msgstr "Aucun label de trouvé avec cette balise."
+msgstr "Aucun label trouvé avec cette balise."
 
 #: ../root/release/lookup.tt:33
 msgid "No matching CDs were found for TOC {toc}."
@@ -5137,7 +5137,7 @@ msgstr "Pas d'écran ennuyeux"
 
 #: ../root/tag/place.tt:1
 msgid "No places with this tag were found."
-msgstr "Aucun lieu de trouvé avec cette balise."
+msgstr "Aucun lieu trouvé avec cette balise."
 
 #: ../root/user/ratings.tt:24
 msgid "No ratings."
@@ -5149,7 +5149,7 @@ msgstr "Aucun enregistrement de trouvé."
 
 #: ../root/tag/recording.tt:1
 msgid "No recordings with this tag were found."
-msgstr "Aucun enregistrement de trouvé avec cette balise."
+msgstr "Aucun enregistrement trouvé avec cette balise."
 
 #: ../root/place/performances.tt:5
 msgid "No recordings, releases or release groups are linked to this place"
@@ -5165,7 +5165,7 @@ msgstr "Aucun groupe de parution trouvé."
 
 #: ../root/tag/release_group.tt:1
 msgid "No release groups with this tag were found."
-msgstr "Aucun groupe de parution de trouvé avec cette balise."
+msgstr "Aucun groupe de parution trouvé avec cette balise."
 
 #: ../root/artist/releases.tt:21 ../root/instrument/releases.tt:13
 msgid "No releases found"
@@ -5189,7 +5189,7 @@ msgstr "Aucune parution n'a d'illustration indiquée comme « Face avant », l'i
 
 #: ../root/tag/release.tt:1
 msgid "No releases with this tag were found."
-msgstr "Aucune parution de trouvée avec cette balise."
+msgstr "Aucune parution trouvée avec cette balise."
 
 #: ../root/release/edit/tracklist.tt:110 ../root/scripts/text_strings.tt:34
 msgid "No results"
@@ -5220,7 +5220,7 @@ msgstr "Aucun résultat de trouvé. Essayez en affinant votre requête de recher
 
 #: ../root/tag/series.tt:1
 msgid "No series with this tag were found."
-msgstr ""
+msgstr "Aucune série trouvée avec cette balise."
 
 #: ../root/user/subscriptions/table.tt:34
 msgid "No subscriptions."
@@ -5244,7 +5244,7 @@ msgstr "Zéro vote"
 
 #: ../root/tag/work.tt:1
 msgid "No works with this tag were found."
-msgstr "Aucune œuvre de trouvée avec cette balise."
+msgstr "Aucune œuvre trouvée avec cette balise."
 
 #: ../root/relationship/linktype/tree.tt:65
 msgid "No {type0}-{type1} relationship types found."
@@ -5256,7 +5256,7 @@ msgstr "Personne n'a encore balisé ceci."
 
 #: ../root/event/attendance.tt:23
 msgid "Nobody is attending {event}."
-msgstr ""
+msgstr "Personne n'est présent à {event}."
 
 #: ../root/elections/nominate.tt:1 ../root/elections/nominate.tt:3
 msgid "Nominate a candidate for auto-editor"
@@ -5275,7 +5275,7 @@ msgstr "Aucun"
 #: ../root/scripts/text_strings.tt:192
 msgid ""
 "None of the attached disc IDs can fit a pregap track of the given length."
-msgstr ""
+msgstr "Aucun ID de disque ne peut correspondre à un silence préliminaire de la durée donnée."
 
 #: ../root/components/common-macros.tt:620
 #: ../lib/MusicBrainz/Server/Controller/Edit.pm:200
@@ -5868,12 +5868,12 @@ msgstr "Supports possible"
 
 #: ../root/report/duplicate_events.tt:1 ../root/report/duplicate_events.tt:3
 msgid "Possible duplicate events"
-msgstr ""
+msgstr "Événements probablement en double"
 
 #: ../root/report/duplicate_release_groups.tt:1
 #: ../root/report/duplicate_release_groups.tt:3 ../root/report/index.tt:54
 msgid "Possible duplicate release groups"
-msgstr ""
+msgstr "Groupes de parution probablement en double"
 
 #: ../root/relationship/linkattributetype/index.tt:19
 msgid "Possible values:"
@@ -5886,7 +5886,7 @@ msgstr "Artiste  probablement en double"
 
 #: ../root/report/index.tt:34
 msgid "Possibly duplicate events"
-msgstr ""
+msgstr "Événements probablement en double"
 
 #: ../root/account/preferences_ok.tt:1 ../root/account/preferences_ok.tt:3
 #: ../root/account/preferences.tt:2 ../root/account/preferences.tt:4
@@ -5896,7 +5896,7 @@ msgstr "Préférences"
 
 #: ../root/release/edit/tracklist.tt:170
 msgid "Pregap"
-msgstr ""
+msgstr "Silence préliminaire"
 
 #: ../root/annotation/edit.tt:30
 msgid "Preview"
@@ -6189,7 +6189,7 @@ msgstr "Entités associées :"
 
 #: ../root/components/relationships.tt:46
 msgid "Related series"
-msgstr ""
+msgstr "Séries associés"
 
 #: ../root/components/relationships.tt:38
 msgid "Related works"
@@ -6809,7 +6809,7 @@ msgstr "Enlever les entités sélectionnées"
 
 #: ../root/collection/index.tt:32
 msgid "Remove selected events from collection"
-msgstr ""
+msgstr "Enlever les événements séléctionnés de la collection"
 
 #: ../root/collection/index.tt:17
 msgid "Remove selected releases from collection"
@@ -6936,7 +6936,7 @@ msgstr "Révoquer l'accès d'une application"
 
 #: ../root/components/events-list.tt:21
 msgid "Role"
-msgstr ""
+msgstr "Rôle"
 
 #: ../root/layout.tt:21
 msgid "Running: <span class=\"tooltip\" title=\"{msg}\">{branch} ({sha})</span>"
@@ -7103,8 +7103,8 @@ msgstr "Voir tous les {num} "
 #: ../root/tag/index.tt:8
 msgid "See all {num} areas"
 msgid_plural "See all {num} areas"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Voir toute l'{num} région"
+msgstr[1] "Voir toutes les {num} régions"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} artists"
@@ -7115,14 +7115,14 @@ msgstr[1] "Voir tous les {num} artistes"
 #: ../root/tag/index.tt:8
 msgid "See all {num} events"
 msgid_plural "See all {num} events"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Voir tout l'{num} événement"
+msgstr[1] "Voir tous les {num} événements"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} instruments"
 msgid_plural "See all {num} instruments"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Voir tout l'{num} instrument"
+msgstr[1] "Voir tous les {num} instruments"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} labels"
@@ -7157,8 +7157,8 @@ msgstr[1] "Voir toutes les {num} parutions"
 #: ../root/tag/index.tt:8
 msgid "See all {num} series"
 msgid_plural "See all {num} series"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Voir toute l'{num} série"
+msgstr[1] "Voir toutes les {num} séries"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} works"
@@ -7223,7 +7223,7 @@ msgstr "Série"
 #: ../root/components/common-macros.tt:604 ../root/tag/header.tt:1
 msgctxt "plural"
 msgid "Series"
-msgstr ""
+msgstr "Série"
 
 #: ../root/components/common-macros.tt:587 ../root/components/series-list.tt:4
 #: ../root/edit/search_macros.tt:307 ../root/scripts/text_strings.tt:113
