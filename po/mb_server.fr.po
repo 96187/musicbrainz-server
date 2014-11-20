@@ -29,7 +29,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-19 15:16-0700\n"
-"PO-Revision-Date: 2014-11-19 23:27+0000\n"
+"PO-Revision-Date: 2014-11-20 14:08+0000\n"
 "Last-Translator: yahoe.001\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -386,7 +386,7 @@ msgstr "=&#xa0;Title&#xa0;1&#xa0;=; ==&#xa0;Title&#xa0;2&#xa0;==; ===&#xa0;Title
 #: ../root/components/events-list.tt:99 ../root/report/event_list.tt:52
 #: ../root/search/results-event.tt:51
 msgid "???? &#x2013; {enddate}"
-msgstr ""
+msgstr "???? &#x2013; {enddate}"
 
 #: ../root/cdtoc/lookup.tt:19
 msgid ""
@@ -398,8 +398,8 @@ msgstr "Un coupon de CD a été trouvé, dont l'ID de disque correspond. Si la l
 #: ../root/event/attendance.tt:18
 msgid "A hidden user"
 msgid_plural "{n} hidden users"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Un utilisateur caché"
+msgstr[1] "{n} utilisateurs cachés"
 
 #: ../root/place/map.tt:5
 msgid "A map cannot be shown because this place has no coordinates."
@@ -502,7 +502,7 @@ msgstr "Actions"
 msgid ""
 "Add @ at line start to indicate artists, * for a work/song, # for additional"
 " info (such as \"Encore\"). [mbid|name] allows linking to artists and works."
-msgstr ""
+msgstr "Ajouté @ en début de ligne pour indiquer des artistes, * pour une œuvre/une chanson, # pour des infos supplémentaires (tel que « Rappel »). [mbid|name] permet un lien vers les artistes et les oeuvres."
 
 #: ../root/entity/alias/add.tt:1
 msgid "Add Alias"
