@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-19 15:16-0700\n"
-"PO-Revision-Date: 2014-11-21 23:59+0000\n"
+"PO-Revision-Date: 2014-11-22 00:07+0000\n"
 "Last-Translator: salorock <email address hidden>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/musicbrainz/language/it/)\n"
 "MIME-Version: 1.0\n"
@@ -8643,7 +8643,7 @@ msgstr "Questo formato di supporto non può avere un ID disco associato."
 msgid ""
 "This medium has a disc ID, pregap track, or data track, so you can only "
 "change the format to one that can have disc IDs."
-msgstr ""
+msgstr "Questo supporto possiede un ID disco, una traccia pregap o una traccia dati, quindi puoi cambiarne il formato solo in uno che può possedere ID disco."
 
 #: ../root/scripts/text_strings.tt:48
 msgid ""
@@ -8923,7 +8923,7 @@ msgid ""
 "This report lists events happening at the same place on the same date. If "
 "they're duplicates (for example, if there are separate events for headliner "
 "and supporting artist) please merge them."
-msgstr ""
+msgstr "Questo report elenca gli eventi tenutisi nello stesso luogo e nella stessa data. Se si tratta di doppioni (per esempio, se ci sono eventi separati per l'esibizione principale e per il gruppo spalla) ti chiediamo di unirli."
 
 #: ../root/report/duplicate_relationships_labels.tt:6
 msgid ""
@@ -8992,7 +8992,7 @@ msgid ""
 "artist has an album and single with the same name, then there is usually no "
 "need to change anything. In other cases, a disambiguation comment may be "
 "helpful."
-msgstr ""
+msgstr "Questo report elenca i gruppi di pubblicazioni con titoli e artisti molto simili. Se le pubblicazioni nei gruppi di pubblicazioni dovrebbero essere raggruppate insieme (consulta le {url|linee guida}), ti chiediamo di unirli. Se non dovrebbero essere raggruppate insieme ma possono essere distinte per il tipo di gruppo di pubblicazioni, per es. quando un artista ha un album e un singolo con lo stesso nome, non dovrebbe esserci bisogno di modificare niente. Negli altri casi, un commento di disambiguazione potrebbe essere di aiuto."
 
 #: ../root/report/duplicate_relationships_releases.tt:6
 msgid ""
@@ -10457,7 +10457,7 @@ msgstr "Stai per unire i seguenti artisti in un artista unico. Seleziona l'artis
 msgid ""
 "You are about to merge the following events into a single event. Please "
 "select the event which you would like other events to be merged into:"
-msgstr ""
+msgstr "Stai per unire i seguenti eventi in un evento unico. Seleziona l'evento in cui vuoi che vengano uniti gli altri:"
 
 #: ../root/instrument/merge.tt:4
 msgid ""
@@ -12736,11 +12736,11 @@ msgstr "data non valida"
 
 #: ../lib/MusicBrainz/Server/Form/Field/Setlist.pm:12
 msgid "Please ensure all lines start with @, * or #."
-msgstr ""
+msgstr "Assicurati che tutte le righe inizino con @, * o #."
 
 #: ../lib/MusicBrainz/Server/Form/Field/Time.pm:16
 msgid "This is not a valid time."
-msgstr ""
+msgstr "Questo non è un orario valido."
 
 #: ../lib/MusicBrainz/Server/Form/Field/URL.pm:24
 msgid "URL protocol must be HTTP, HTTPS or FTP"
