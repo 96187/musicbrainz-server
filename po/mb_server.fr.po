@@ -28,9 +28,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-23 18:50-0700\n"
-"PO-Revision-Date: 2014-11-24 01:52+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"POT-Creation-Date: 2014-11-24 11:34-0700\n"
+"PO-Revision-Date: 2014-11-24 18:39+0000\n"
+"Last-Translator: yahoe.001\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -494,7 +494,7 @@ msgstr "Action"
 #: ../root/account/applications.tt:27 ../root/account/applications.tt:58
 #: ../root/admin/wikidoc/index.tt:36 ../root/artist/aliases.tt:23
 #: ../root/components/aliases.tt:19 ../root/recording/fingerprints.tt:8
-#: ../root/user/collections.tt:16
+#: ../root/user/collections.tt:16 ../root/user/collections.tt:53
 msgid "Actions"
 msgstr "Actions"
 
@@ -581,7 +581,7 @@ msgstr "Ajouter un label"
 #: ../root/release/edit/information.tt:178
 msgctxt "button/menu"
 msgid "Add Label"
-msgstr "Ajouter un Label"
+msgstr "Ajouter un label"
 
 #: ../root/edit/info.tt:13 ../root/scripts/text_strings.tt:121
 msgid "Add Note"
@@ -2257,6 +2257,7 @@ msgid "Collapse all descriptions"
 msgstr "Réduire toutes les descriptions"
 
 #: ../root/components/common-macros.tt:587 ../root/user/collections.tt:10
+#: ../root/user/collections.tt:47
 msgid "Collection"
 msgstr "Collection"
 
@@ -2284,7 +2285,7 @@ msgstr "Collection « {collection} »"
 #: ../root/components/common-macros.tt:604
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:98
 #: ../root/release/collections.tt:1 ../root/release/collections.tt:2
-#: ../root/user/collections.tt:1 ../root/user/collections.tt:3
+#: ../root/user/collections.tt:1 ../root/user/collections.tt:78
 #: ../root/user/profile/layout.tt:12
 msgid "Collections"
 msgstr "Collections"
@@ -2410,7 +2411,7 @@ msgstr "Créer"
 msgid "Create Account"
 msgstr "Créer un compte"
 
-#: ../root/user/collections.tt:48
+#: ../root/user/collections.tt:87
 msgid "Create a new collection"
 msgstr "Créer une nouvelle collection"
 
@@ -2814,7 +2815,7 @@ msgstr "Chaque piste de la base de données de MusicBrainz doit être reliée à
 #: ../root/release/discids.tt:12 ../root/release/edit/information.tt:54
 #: ../root/release/edit/recordings.tt:58 ../root/release/edit/recordings.tt:92
 #: ../root/release/edit/tracklist.tt:206 ../root/release/header.tt:15
-#: ../root/user/collections.tt:30
+#: ../root/user/collections.tt:30 ../root/user/collections.tt:67
 msgid "Edit"
 msgstr "Modifier"
 
@@ -3239,6 +3240,10 @@ msgstr "Une URL ou deux peut suffire et peut s'avèrer utile !"
 msgid "Event"
 msgstr "Événement"
 
+#: ../root/user/collections.tt:42
+msgid "Event Collections"
+msgstr ""
+
 #: ../root/event/edit_form.tt:12
 msgid "Event Details"
 msgstr "Détails de l'événement"
@@ -3265,6 +3270,7 @@ msgstr "Événement :"
 #: ../root/collection/index.tt:25 ../root/components/common-macros.tt:604
 #: ../root/components/entity-tabs.tt:1 ../root/place/events.tt:1
 #: ../root/place/events.tt:2 ../root/report/index.tt:31 ../root/tag/index.tt:8
+#: ../root/user/collections.tt:49
 msgid "Events"
 msgstr "Événements"
 
@@ -3683,7 +3689,7 @@ msgstr "Directives"
 
 #: ../root/components/forms.tt:93
 msgid "HH:MM"
-msgstr ""
+msgstr "HH:MM"
 
 #: ../root/annotation/edit.tt:46
 msgid "Headings:"
@@ -5521,7 +5527,7 @@ msgstr "Page {cur} de {total}"
 
 #: ../root/layout/head.tt:6
 msgid "Page {n}"
-msgstr ""
+msgstr "Page {n}"
 
 #: ../root/scripts/text_strings.tt:77
 msgid "Page {page} of {total}"
@@ -5903,6 +5909,7 @@ msgid "Priority:"
 msgstr "Priorité :"
 
 #: ../root/account/preferences.tt:22 ../root/user/collections.tt:15
+#: ../root/user/collections.tt:52
 msgid "Privacy"
 msgstr "Confidentialité"
 
@@ -5910,7 +5917,7 @@ msgstr "Confidentialité"
 msgid "Privacy Policy"
 msgstr "Politique de confidentialité"
 
-#: ../root/user/collections.tt:28
+#: ../root/user/collections.tt:28 ../root/user/collections.tt:65
 msgid "Private"
 msgstr "Privé"
 
@@ -5939,7 +5946,7 @@ msgstr "Proposeur"
 msgid "Proposer:"
 msgstr "Proposeur :"
 
-#: ../root/user/collections.tt:28
+#: ../root/user/collections.tt:28 ../root/user/collections.tt:65
 msgid "Public"
 msgstr "Public"
 
@@ -6275,6 +6282,10 @@ msgstr "Parution"
 #: ../root/recording/index.tt:14
 msgid "Release Artist"
 msgstr "Artiste de parution"
+
+#: ../root/user/collections.tt:5
+msgid "Release Collections"
+msgstr ""
 
 #: ../root/edit/search_macros.tt:307
 msgid "Release Country"
@@ -6666,7 +6677,7 @@ msgstr "Parutions :"
 #: ../root/release/add_cover_art.tt:70 ../root/release/cover_art.tt:29
 #: ../root/release/delete.tt:1 ../root/release/discids.tt:36
 #: ../root/scripts/text_strings.tt:40 ../root/series/delete.tt:1
-#: ../root/user/collections.tt:31
+#: ../root/user/collections.tt:31 ../root/user/collections.tt:68
 msgid "Remove"
 msgstr "Enlever"
 
@@ -7262,12 +7273,12 @@ msgstr "Saisir la durée des pistes"
 
 #: ../root/event/index.tt:31
 msgid "Setlist"
-msgstr ""
+msgstr "Setlist"
 
 #: ../root/edit/details/add_event.tt:56 ../root/edit/details/edit_event.tt:42
 #: ../root/event/edit_form.tt:18
 msgid "Setlist:"
-msgstr ""
+msgstr "Setlist :"
 
 #: ../root/report/filter_link.tt:4
 msgid "Show all results."
@@ -7777,7 +7788,7 @@ msgstr "Envoi des modifications..."
 msgid "Subscribe"
 msgstr "S'abonner"
 
-#: ../root/user/collections.tt:14
+#: ../root/user/collections.tt:14 ../root/user/collections.tt:51
 msgid "Subscribed"
 msgstr "Abonné"
 
@@ -9659,7 +9670,7 @@ msgstr "Twitter"
 #: ../root/search/results-release_group.tt:10
 #: ../root/search/results-series.tt:9 ../root/search/results-work.tt:12
 #: ../root/series/merge.tt:13 ../root/user/collections.tt:11
-#: ../root/work/merge.tt:15
+#: ../root/user/collections.tt:48 ../root/work/merge.tt:15
 msgid "Type"
 msgstr "Type"
 
@@ -10592,7 +10603,7 @@ msgstr "Vous n'avez pas de liste de présence !"
 msgid "You have no collections!"
 msgstr "Vous n'avez aucune collection !"
 
-#: ../root/user/collections.tt:41
+#: ../root/user/collections.tt:80
 msgid "You have no collections."
 msgstr "Vous n'avez pas de collection"
 
@@ -11598,7 +11609,7 @@ msgstr "{uri|Retour vers musicbrainz.org}."
 msgid "{user}"
 msgstr "{user}"
 
-#: ../root/user/collections.tt:43
+#: ../root/user/collections.tt:82
 msgid "{user} has no public collections."
 msgstr "{user} n'a pas de collection publique."
 
@@ -11760,11 +11771,11 @@ msgid ""
 "Banner updated. Remember that each server has its own, independent banner."
 msgstr "La bannière est mise à jour. Souvenez-vous que chaque serveur à sa propre bannière indépendante."
 
-#: ../lib/MusicBrainz/Server/Controller/Artist.pm:506
+#: ../lib/MusicBrainz/Server/Controller/Artist.pm:508
 msgid "You cannot merge a special purpose artist into another artist"
 msgstr "Il n'est pas possible de fusionner un artiste à usage spécial vers un autre artiste."
 
-#: ../lib/MusicBrainz/Server/Controller/Artist.pm:511
+#: ../lib/MusicBrainz/Server/Controller/Artist.pm:513
 msgid "You cannot merge into Deleted Artist"
 msgstr "Vous ne pouvez fusionner vers un artiste supprimé"
 
@@ -11854,7 +11865,7 @@ msgstr "L'éditeur nommé {name} n'a pas d'adresse courriel attaché à son comp
 msgid "Your message could not be sent"
 msgstr "Votre message n'a pas pu être envoyé"
 
-#: ../lib/MusicBrainz/Server/Controller/User.pm:372
+#: ../lib/MusicBrainz/Server/Controller/User.pm:375
 #, perl-brace-format
 msgid "'{type}' is not an entity type that can have ratings."
 msgstr "'{type}' n'est pas un type d'entité qui peut avoir des évaluations."
@@ -12950,7 +12961,7 @@ msgstr "Toute parution ne rentrant pas dans les catégories ci-dessus."
 msgid ""
 "Any release officially sanctioned by the artist and/or their record company."
 " (Most releases will fit into this category.)"
-msgstr "Toute parution reconnue par l'artiste et/ou sa maison de disques comme officielle. (La plupart des parutions rentrent dans cette catégorie.)"
+msgstr "Toute parution reconnue par l'artiste et/ou son label comme officielle. (La plupart des parutions rentrent dans cette catégorie.)"
 
 #: ../lib/MusicBrainz/Server/Release.pm:71
 msgid ""
@@ -12962,7 +12973,7 @@ msgstr "Un parution cadeau ou dédiée à la promotion de la parution officielle
 msgid ""
 "An unofficial/underground release that was not sanctioned by the artist "
 "and/or the record company."
-msgstr "Une parution non-officielle ou underground non reconnue par l'artiste et/ou sa maison de disques."
+msgstr "Une parution non-officielle ou underground non reconnue par l'artiste et/ou son label."
 
 #: ../lib/MusicBrainz/Server/Release.pm:73
 msgid ""

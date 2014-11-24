@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-23 18:50-0700\n"
-"PO-Revision-Date: 2014-11-24 01:52+0000\n"
+"POT-Creation-Date: 2014-11-24 11:34-0700\n"
+"PO-Revision-Date: 2014-11-24 18:35+0000\n"
 "Last-Translator: Ian McEwen <email address hidden>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/musicbrainz/language/et/)\n"
 "MIME-Version: 1.0\n"
@@ -480,7 +480,7 @@ msgstr "Toiming"
 #: ../root/account/applications.tt:27 ../root/account/applications.tt:58
 #: ../root/admin/wikidoc/index.tt:36 ../root/artist/aliases.tt:23
 #: ../root/components/aliases.tt:19 ../root/recording/fingerprints.tt:8
-#: ../root/user/collections.tt:16
+#: ../root/user/collections.tt:16 ../root/user/collections.tt:53
 msgid "Actions"
 msgstr "Toimingud"
 
@@ -2243,6 +2243,7 @@ msgid "Collapse all descriptions"
 msgstr "Peida kõik kirjeldused"
 
 #: ../root/components/common-macros.tt:587 ../root/user/collections.tt:10
+#: ../root/user/collections.tt:47
 msgid "Collection"
 msgstr "Kogu"
 
@@ -2270,7 +2271,7 @@ msgstr "Kogu „{collection}”"
 #: ../root/components/common-macros.tt:604
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:98
 #: ../root/release/collections.tt:1 ../root/release/collections.tt:2
-#: ../root/user/collections.tt:1 ../root/user/collections.tt:3
+#: ../root/user/collections.tt:1 ../root/user/collections.tt:78
 #: ../root/user/profile/layout.tt:12
 msgid "Collections"
 msgstr "Kogud"
@@ -2396,7 +2397,7 @@ msgstr "Loo"
 msgid "Create Account"
 msgstr "Loo konto"
 
-#: ../root/user/collections.tt:48
+#: ../root/user/collections.tt:87
 msgid "Create a new collection"
 msgstr "Loo uus kogu"
 
@@ -2800,7 +2801,7 @@ msgstr "Iga lugu MusicBrainzi andmebaasis peab olema lingitud salvestisega. Vali
 #: ../root/release/discids.tt:12 ../root/release/edit/information.tt:54
 #: ../root/release/edit/recordings.tt:58 ../root/release/edit/recordings.tt:92
 #: ../root/release/edit/tracklist.tt:206 ../root/release/header.tt:15
-#: ../root/user/collections.tt:30
+#: ../root/user/collections.tt:30 ../root/user/collections.tt:67
 msgid "Edit"
 msgstr "Toimeta"
 
@@ -3225,6 +3226,10 @@ msgstr "Isegi lihtsalt üks-kaks internetiaadressi on abiks!"
 msgid "Event"
 msgstr "Sündmus"
 
+#: ../root/user/collections.tt:42
+msgid "Event Collections"
+msgstr ""
+
 #: ../root/event/edit_form.tt:12
 msgid "Event Details"
 msgstr "Sündmuse üksikasjad"
@@ -3251,6 +3256,7 @@ msgstr "Sündmus:"
 #: ../root/collection/index.tt:25 ../root/components/common-macros.tt:604
 #: ../root/components/entity-tabs.tt:1 ../root/place/events.tt:1
 #: ../root/place/events.tt:2 ../root/report/index.tt:31 ../root/tag/index.tt:8
+#: ../root/user/collections.tt:49
 msgid "Events"
 msgstr "Sündmused"
 
@@ -5889,6 +5895,7 @@ msgid "Priority:"
 msgstr "Prioriteet:"
 
 #: ../root/account/preferences.tt:22 ../root/user/collections.tt:15
+#: ../root/user/collections.tt:52
 msgid "Privacy"
 msgstr "Privaatsus"
 
@@ -5896,7 +5903,7 @@ msgstr "Privaatsus"
 msgid "Privacy Policy"
 msgstr "Privaatsuspõhimõtted"
 
-#: ../root/user/collections.tt:28
+#: ../root/user/collections.tt:28 ../root/user/collections.tt:65
 msgid "Private"
 msgstr "Privaatne"
 
@@ -5925,7 +5932,7 @@ msgstr "Ettepaneku tegija"
 msgid "Proposer:"
 msgstr "Ettepaneku tegija:"
 
-#: ../root/user/collections.tt:28
+#: ../root/user/collections.tt:28 ../root/user/collections.tt:65
 msgid "Public"
 msgstr "Avalik"
 
@@ -6261,6 +6268,10 @@ msgstr "Väljalase"
 #: ../root/recording/index.tt:14
 msgid "Release Artist"
 msgstr "Väljalaskeartist"
+
+#: ../root/user/collections.tt:5
+msgid "Release Collections"
+msgstr ""
 
 #: ../root/edit/search_macros.tt:307
 msgid "Release Country"
@@ -6652,7 +6663,7 @@ msgstr "Väljalasked:"
 #: ../root/release/add_cover_art.tt:70 ../root/release/cover_art.tt:29
 #: ../root/release/delete.tt:1 ../root/release/discids.tt:36
 #: ../root/scripts/text_strings.tt:40 ../root/series/delete.tt:1
-#: ../root/user/collections.tt:31
+#: ../root/user/collections.tt:31 ../root/user/collections.tt:68
 msgid "Remove"
 msgstr "Eemalda"
 
@@ -7763,7 +7774,7 @@ msgstr "Toimetuste sisestamine..."
 msgid "Subscribe"
 msgstr "Jälgi"
 
-#: ../root/user/collections.tt:14
+#: ../root/user/collections.tt:14 ../root/user/collections.tt:51
 msgid "Subscribed"
 msgstr "Jälgitav"
 
@@ -9645,7 +9656,7 @@ msgstr "Twitter"
 #: ../root/search/results-release_group.tt:10
 #: ../root/search/results-series.tt:9 ../root/search/results-work.tt:12
 #: ../root/series/merge.tt:13 ../root/user/collections.tt:11
-#: ../root/work/merge.tt:15
+#: ../root/user/collections.tt:48 ../root/work/merge.tt:15
 msgid "Type"
 msgstr "Tüüp"
 
@@ -10578,7 +10589,7 @@ msgstr ""
 msgid "You have no collections!"
 msgstr "Sul pole kogusid."
 
-#: ../root/user/collections.tt:41
+#: ../root/user/collections.tt:80
 msgid "You have no collections."
 msgstr "Sul pole kogusid."
 
@@ -11584,7 +11595,7 @@ msgstr "{uri|Tagasi musicbrainz.org-i}."
 msgid "{user}"
 msgstr "{user}"
 
-#: ../root/user/collections.tt:43
+#: ../root/user/collections.tt:82
 msgid "{user} has no public collections."
 msgstr "{user} ei evi avalikke kogusid."
 
@@ -11746,11 +11757,11 @@ msgid ""
 "Banner updated. Remember that each server has its own, independent banner."
 msgstr "Päisesõnum uuendatud. Pea meeles, et igal serveril on omaenda päisesõnum."
 
-#: ../lib/MusicBrainz/Server/Controller/Artist.pm:506
+#: ../lib/MusicBrainz/Server/Controller/Artist.pm:508
 msgid "You cannot merge a special purpose artist into another artist"
 msgstr "Eriotstarbelist artisti ei saa teise artistiga mestida"
 
-#: ../lib/MusicBrainz/Server/Controller/Artist.pm:511
+#: ../lib/MusicBrainz/Server/Controller/Artist.pm:513
 msgid "You cannot merge into Deleted Artist"
 msgstr "Kustutatud artistiga ei saa mestida"
 
@@ -11840,7 +11851,7 @@ msgstr "Toimetaja {name} pole oma kontoga e-posti aadressi sidunud."
 msgid "Your message could not be sent"
 msgstr "Sõnumit polnud võimalik saata"
 
-#: ../lib/MusicBrainz/Server/Controller/User.pm:372
+#: ../lib/MusicBrainz/Server/Controller/User.pm:375
 #, perl-brace-format
 msgid "'{type}' is not an entity type that can have ratings."
 msgstr "{type} ei kuulu hinnatavate olemitüüpide hulka."

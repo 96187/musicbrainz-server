@@ -22,8 +22,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-23 18:50-0700\n"
-"PO-Revision-Date: 2014-11-24 01:52+0000\n"
+"POT-Creation-Date: 2014-11-24 11:34-0700\n"
+"PO-Revision-Date: 2014-11-24 18:35+0000\n"
 "Last-Translator: Ian McEwen <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -488,7 +488,7 @@ msgstr "Actie"
 #: ../root/account/applications.tt:27 ../root/account/applications.tt:58
 #: ../root/admin/wikidoc/index.tt:36 ../root/artist/aliases.tt:23
 #: ../root/components/aliases.tt:19 ../root/recording/fingerprints.tt:8
-#: ../root/user/collections.tt:16
+#: ../root/user/collections.tt:16 ../root/user/collections.tt:53
 msgid "Actions"
 msgstr "Acties"
 
@@ -2251,6 +2251,7 @@ msgid "Collapse all descriptions"
 msgstr "Klap alle omschrijvingen in"
 
 #: ../root/components/common-macros.tt:587 ../root/user/collections.tt:10
+#: ../root/user/collections.tt:47
 msgid "Collection"
 msgstr "Collectie"
 
@@ -2278,7 +2279,7 @@ msgstr "Collectie ‘{collection}’"
 #: ../root/components/common-macros.tt:604
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:98
 #: ../root/release/collections.tt:1 ../root/release/collections.tt:2
-#: ../root/user/collections.tt:1 ../root/user/collections.tt:3
+#: ../root/user/collections.tt:1 ../root/user/collections.tt:78
 #: ../root/user/profile/layout.tt:12
 msgid "Collections"
 msgstr "Collecties"
@@ -2404,7 +2405,7 @@ msgstr "Aanmaken"
 msgid "Create Account"
 msgstr "Registreren"
 
-#: ../root/user/collections.tt:48
+#: ../root/user/collections.tt:87
 msgid "Create a new collection"
 msgstr "Een nieuwe collectie creëren"
 
@@ -2808,7 +2809,7 @@ msgstr "Elk nummer in de gegevensbank van MusicBrainz moet gekoppeld zijn aan ee
 #: ../root/release/discids.tt:12 ../root/release/edit/information.tt:54
 #: ../root/release/edit/recordings.tt:58 ../root/release/edit/recordings.tt:92
 #: ../root/release/edit/tracklist.tt:206 ../root/release/header.tt:15
-#: ../root/user/collections.tt:30
+#: ../root/user/collections.tt:30 ../root/user/collections.tt:67
 msgid "Edit"
 msgstr "Bewerken"
 
@@ -3233,6 +3234,10 @@ msgstr "Alleen al één of twee URL’s toevoegen helpt!"
 msgid "Event"
 msgstr ""
 
+#: ../root/user/collections.tt:42
+msgid "Event Collections"
+msgstr ""
+
 #: ../root/event/edit_form.tt:12
 msgid "Event Details"
 msgstr ""
@@ -3259,6 +3264,7 @@ msgstr ""
 #: ../root/collection/index.tt:25 ../root/components/common-macros.tt:604
 #: ../root/components/entity-tabs.tt:1 ../root/place/events.tt:1
 #: ../root/place/events.tt:2 ../root/report/index.tt:31 ../root/tag/index.tt:8
+#: ../root/user/collections.tt:49
 msgid "Events"
 msgstr ""
 
@@ -5897,6 +5903,7 @@ msgid "Priority:"
 msgstr "Prioriteit:"
 
 #: ../root/account/preferences.tt:22 ../root/user/collections.tt:15
+#: ../root/user/collections.tt:52
 msgid "Privacy"
 msgstr "Privacy"
 
@@ -5904,7 +5911,7 @@ msgstr "Privacy"
 msgid "Privacy Policy"
 msgstr "Privacybeleid"
 
-#: ../root/user/collections.tt:28
+#: ../root/user/collections.tt:28 ../root/user/collections.tt:65
 msgid "Private"
 msgstr "Privé"
 
@@ -5933,7 +5940,7 @@ msgstr "Indiener"
 msgid "Proposer:"
 msgstr "Indiener:"
 
-#: ../root/user/collections.tt:28
+#: ../root/user/collections.tt:28 ../root/user/collections.tt:65
 msgid "Public"
 msgstr "Publiek"
 
@@ -6269,6 +6276,10 @@ msgstr "Uitgave"
 #: ../root/recording/index.tt:14
 msgid "Release Artist"
 msgstr "Artiest van de uitgave"
+
+#: ../root/user/collections.tt:5
+msgid "Release Collections"
+msgstr ""
 
 #: ../root/edit/search_macros.tt:307
 msgid "Release Country"
@@ -6660,7 +6671,7 @@ msgstr "Uitgaves:"
 #: ../root/release/add_cover_art.tt:70 ../root/release/cover_art.tt:29
 #: ../root/release/delete.tt:1 ../root/release/discids.tt:36
 #: ../root/scripts/text_strings.tt:40 ../root/series/delete.tt:1
-#: ../root/user/collections.tt:31
+#: ../root/user/collections.tt:31 ../root/user/collections.tt:68
 msgid "Remove"
 msgstr "Verwijderen"
 
@@ -7771,7 +7782,7 @@ msgstr "Aan het invoeren van bewerkingen…"
 msgid "Subscribe"
 msgstr "Abonneer"
 
-#: ../root/user/collections.tt:14
+#: ../root/user/collections.tt:14 ../root/user/collections.tt:51
 msgid "Subscribed"
 msgstr "Geabonneerd"
 
@@ -9653,7 +9664,7 @@ msgstr "Twitter"
 #: ../root/search/results-release_group.tt:10
 #: ../root/search/results-series.tt:9 ../root/search/results-work.tt:12
 #: ../root/series/merge.tt:13 ../root/user/collections.tt:11
-#: ../root/work/merge.tt:15
+#: ../root/user/collections.tt:48 ../root/work/merge.tt:15
 msgid "Type"
 msgstr "Type"
 
@@ -10586,7 +10597,7 @@ msgstr ""
 msgid "You have no collections!"
 msgstr "U heeft geen collecties!"
 
-#: ../root/user/collections.tt:41
+#: ../root/user/collections.tt:80
 msgid "You have no collections."
 msgstr "U heeft geen collecties."
 
@@ -11592,7 +11603,7 @@ msgstr "{uri|Keer terug naar musicbrainz.org}."
 msgid "{user}"
 msgstr "{user}"
 
-#: ../root/user/collections.tt:43
+#: ../root/user/collections.tt:82
 msgid "{user} has no public collections."
 msgstr "{user} heeft geen publieke collecties."
 
@@ -11754,11 +11765,11 @@ msgid ""
 "Banner updated. Remember that each server has its own, independent banner."
 msgstr "De mededeling is bijgewerkt. Onthoud wel dat elke server zijn eigen onafhankelijke mededeling heeft."
 
-#: ../lib/MusicBrainz/Server/Controller/Artist.pm:506
+#: ../lib/MusicBrainz/Server/Controller/Artist.pm:508
 msgid "You cannot merge a special purpose artist into another artist"
 msgstr "U kunt een artiest voor specifieke doeleinden niet samenvoegen met een normale artiest."
 
-#: ../lib/MusicBrainz/Server/Controller/Artist.pm:511
+#: ../lib/MusicBrainz/Server/Controller/Artist.pm:513
 msgid "You cannot merge into Deleted Artist"
 msgstr "U kunt een niet naar een verwijderde artiest samenvoegen"
 
@@ -11848,7 +11859,7 @@ msgstr "De redacteur {name} heeft geen e-mailadres aan zijn of haar gebruikersac
 msgid "Your message could not be sent"
 msgstr "Uw bericht kon niet verzonden worden"
 
-#: ../lib/MusicBrainz/Server/Controller/User.pm:372
+#: ../lib/MusicBrainz/Server/Controller/User.pm:375
 #, perl-brace-format
 msgid "'{type}' is not an entity type that can have ratings."
 msgstr "“{type}” is geen type object dat een waardering kan hebben."

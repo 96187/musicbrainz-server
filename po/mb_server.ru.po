@@ -13,8 +13,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-23 18:50-0700\n"
-"PO-Revision-Date: 2014-11-24 01:52+0000\n"
+"POT-Creation-Date: 2014-11-24 11:34-0700\n"
+"PO-Revision-Date: 2014-11-24 18:35+0000\n"
 "Last-Translator: Ian McEwen <email address hidden>\n"
 "Language-Team: Russian (http://www.transifex.com/projects/p/musicbrainz/language/ru/)\n"
 "MIME-Version: 1.0\n"
@@ -482,7 +482,7 @@ msgstr "Действия"
 #: ../root/account/applications.tt:27 ../root/account/applications.tt:58
 #: ../root/admin/wikidoc/index.tt:36 ../root/artist/aliases.tt:23
 #: ../root/components/aliases.tt:19 ../root/recording/fingerprints.tt:8
-#: ../root/user/collections.tt:16
+#: ../root/user/collections.tt:16 ../root/user/collections.tt:53
 msgid "Actions"
 msgstr ""
 
@@ -2248,6 +2248,7 @@ msgid "Collapse all descriptions"
 msgstr ""
 
 #: ../root/components/common-macros.tt:587 ../root/user/collections.tt:10
+#: ../root/user/collections.tt:47
 msgid "Collection"
 msgstr "Коллекция"
 
@@ -2275,7 +2276,7 @@ msgstr "Коллекция “{collection}”"
 #: ../root/components/common-macros.tt:604
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:98
 #: ../root/release/collections.tt:1 ../root/release/collections.tt:2
-#: ../root/user/collections.tt:1 ../root/user/collections.tt:3
+#: ../root/user/collections.tt:1 ../root/user/collections.tt:78
 #: ../root/user/profile/layout.tt:12
 msgid "Collections"
 msgstr "Коллекции"
@@ -2401,7 +2402,7 @@ msgstr "Создать"
 msgid "Create Account"
 msgstr "Создать учетную запись"
 
-#: ../root/user/collections.tt:48
+#: ../root/user/collections.tt:87
 msgid "Create a new collection"
 msgstr "Создание новой коллекции"
 
@@ -2805,7 +2806,7 @@ msgstr ""
 #: ../root/release/discids.tt:12 ../root/release/edit/information.tt:54
 #: ../root/release/edit/recordings.tt:58 ../root/release/edit/recordings.tt:92
 #: ../root/release/edit/tracklist.tt:206 ../root/release/header.tt:15
-#: ../root/user/collections.tt:30
+#: ../root/user/collections.tt:30 ../root/user/collections.tt:67
 msgid "Edit"
 msgstr "Править"
 
@@ -3231,6 +3232,10 @@ msgstr ""
 msgid "Event"
 msgstr ""
 
+#: ../root/user/collections.tt:42
+msgid "Event Collections"
+msgstr ""
+
 #: ../root/event/edit_form.tt:12
 msgid "Event Details"
 msgstr ""
@@ -3257,6 +3262,7 @@ msgstr ""
 #: ../root/collection/index.tt:25 ../root/components/common-macros.tt:604
 #: ../root/components/entity-tabs.tt:1 ../root/place/events.tt:1
 #: ../root/place/events.tt:2 ../root/report/index.tt:31 ../root/tag/index.tt:8
+#: ../root/user/collections.tt:49
 msgid "Events"
 msgstr ""
 
@@ -5904,6 +5910,7 @@ msgid "Priority:"
 msgstr ""
 
 #: ../root/account/preferences.tt:22 ../root/user/collections.tt:15
+#: ../root/user/collections.tt:52
 msgid "Privacy"
 msgstr ""
 
@@ -5911,7 +5918,7 @@ msgstr ""
 msgid "Privacy Policy"
 msgstr ""
 
-#: ../root/user/collections.tt:28
+#: ../root/user/collections.tt:28 ../root/user/collections.tt:65
 msgid "Private"
 msgstr ""
 
@@ -5940,7 +5947,7 @@ msgstr ""
 msgid "Proposer:"
 msgstr ""
 
-#: ../root/user/collections.tt:28
+#: ../root/user/collections.tt:28 ../root/user/collections.tt:65
 msgid "Public"
 msgstr ""
 
@@ -6276,6 +6283,10 @@ msgstr "Релиз"
 
 #: ../root/recording/index.tt:14
 msgid "Release Artist"
+msgstr ""
+
+#: ../root/user/collections.tt:5
+msgid "Release Collections"
 msgstr ""
 
 #: ../root/edit/search_macros.tt:307
@@ -6668,7 +6679,7 @@ msgstr ""
 #: ../root/release/add_cover_art.tt:70 ../root/release/cover_art.tt:29
 #: ../root/release/delete.tt:1 ../root/release/discids.tt:36
 #: ../root/scripts/text_strings.tt:40 ../root/series/delete.tt:1
-#: ../root/user/collections.tt:31
+#: ../root/user/collections.tt:31 ../root/user/collections.tt:68
 msgid "Remove"
 msgstr "Удалить"
 
@@ -7790,7 +7801,7 @@ msgstr ""
 msgid "Subscribe"
 msgstr "Подписаться"
 
-#: ../root/user/collections.tt:14
+#: ../root/user/collections.tt:14 ../root/user/collections.tt:51
 msgid "Subscribed"
 msgstr ""
 
@@ -9678,7 +9689,7 @@ msgstr ""
 #: ../root/search/results-release_group.tt:10
 #: ../root/search/results-series.tt:9 ../root/search/results-work.tt:12
 #: ../root/series/merge.tt:13 ../root/user/collections.tt:11
-#: ../root/work/merge.tt:15
+#: ../root/user/collections.tt:48 ../root/work/merge.tt:15
 msgid "Type"
 msgstr "Тип"
 
@@ -10612,7 +10623,7 @@ msgstr ""
 msgid "You have no collections!"
 msgstr ""
 
-#: ../root/user/collections.tt:41
+#: ../root/user/collections.tt:80
 msgid "You have no collections."
 msgstr ""
 
@@ -11653,7 +11664,7 @@ msgstr ""
 msgid "{user}"
 msgstr "{user}"
 
-#: ../root/user/collections.tt:43
+#: ../root/user/collections.tt:82
 msgid "{user} has no public collections."
 msgstr ""
 
@@ -11818,11 +11829,11 @@ msgid ""
 "Banner updated. Remember that each server has its own, independent banner."
 msgstr ""
 
-#: ../lib/MusicBrainz/Server/Controller/Artist.pm:506
+#: ../lib/MusicBrainz/Server/Controller/Artist.pm:508
 msgid "You cannot merge a special purpose artist into another artist"
 msgstr "Вы не можете объединить исполнителя специального назначения в другова исполнителя"
 
-#: ../lib/MusicBrainz/Server/Controller/Artist.pm:511
+#: ../lib/MusicBrainz/Server/Controller/Artist.pm:513
 msgid "You cannot merge into Deleted Artist"
 msgstr ""
 
@@ -11912,7 +11923,7 @@ msgstr "Редактор {name} не имеет адрес электронно�
 msgid "Your message could not be sent"
 msgstr "Ваше сообщение не может быть отправлено"
 
-#: ../lib/MusicBrainz/Server/Controller/User.pm:372
+#: ../lib/MusicBrainz/Server/Controller/User.pm:375
 #, perl-brace-format
 msgid "'{type}' is not an entity type that can have ratings."
 msgstr ""

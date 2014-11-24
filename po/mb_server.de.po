@@ -39,8 +39,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-11-23 18:50-0700\n"
-"PO-Revision-Date: 2014-11-24 10:52+0000\n"
+"POT-Creation-Date: 2014-11-24 11:34-0700\n"
+"PO-Revision-Date: 2014-11-24 18:41+0000\n"
 "Last-Translator: Ettore Atalan <email address hidden>\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -505,7 +505,7 @@ msgstr "Aktion"
 #: ../root/account/applications.tt:27 ../root/account/applications.tt:58
 #: ../root/admin/wikidoc/index.tt:36 ../root/artist/aliases.tt:23
 #: ../root/components/aliases.tt:19 ../root/recording/fingerprints.tt:8
-#: ../root/user/collections.tt:16
+#: ../root/user/collections.tt:16 ../root/user/collections.tt:53
 msgid "Actions"
 msgstr "Aktionen"
 
@@ -2268,6 +2268,7 @@ msgid "Collapse all descriptions"
 msgstr "Alle Beschreibungen zuklappen"
 
 #: ../root/components/common-macros.tt:587 ../root/user/collections.tt:10
+#: ../root/user/collections.tt:47
 msgid "Collection"
 msgstr "Sammlung"
 
@@ -2295,7 +2296,7 @@ msgstr "Sammlung „{collection}“"
 #: ../root/components/common-macros.tt:604
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:98
 #: ../root/release/collections.tt:1 ../root/release/collections.tt:2
-#: ../root/user/collections.tt:1 ../root/user/collections.tt:3
+#: ../root/user/collections.tt:1 ../root/user/collections.tt:78
 #: ../root/user/profile/layout.tt:12
 msgid "Collections"
 msgstr "Sammlungen"
@@ -2421,7 +2422,7 @@ msgstr "Erstellen"
 msgid "Create Account"
 msgstr "Benutzerkonto erstellen"
 
-#: ../root/user/collections.tt:48
+#: ../root/user/collections.tt:87
 msgid "Create a new collection"
 msgstr "Neue Sammlung erstellen"
 
@@ -2825,7 +2826,7 @@ msgstr "Jeder Titel in MusicBrainz muss mit einer Aufnahme verbunden sein. Wähl
 #: ../root/release/discids.tt:12 ../root/release/edit/information.tt:54
 #: ../root/release/edit/recordings.tt:58 ../root/release/edit/recordings.tt:92
 #: ../root/release/edit/tracklist.tt:206 ../root/release/header.tt:15
-#: ../root/user/collections.tt:30
+#: ../root/user/collections.tt:30 ../root/user/collections.tt:67
 msgid "Edit"
 msgstr "Bearbeiten"
 
@@ -3250,6 +3251,10 @@ msgstr "Es hilft schon viel, wenn Du nur ein oder zwei Links angibst!"
 msgid "Event"
 msgstr "Veranstaltung"
 
+#: ../root/user/collections.tt:42
+msgid "Event Collections"
+msgstr "Veranstaltungssammlungen"
+
 #: ../root/event/edit_form.tt:12
 msgid "Event Details"
 msgstr "Veranstaltungsdetails"
@@ -3276,6 +3281,7 @@ msgstr "Veranstaltung:"
 #: ../root/collection/index.tt:25 ../root/components/common-macros.tt:604
 #: ../root/components/entity-tabs.tt:1 ../root/place/events.tt:1
 #: ../root/place/events.tt:2 ../root/report/index.tt:31 ../root/tag/index.tt:8
+#: ../root/user/collections.tt:49
 msgid "Events"
 msgstr "Veranstaltungen"
 
@@ -5087,7 +5093,7 @@ msgstr "Keine Wahlen gefunden."
 
 #: ../root/collection/index.tt:36
 msgid "No events found in this list."
-msgstr "Keine Ereignisse in dieser Liste gefunden."
+msgstr "Keine Veranstaltungen in dieser Liste gefunden."
 
 #: ../root/tag/event.tt:1
 msgid "No events with this tag were found."
@@ -5914,6 +5920,7 @@ msgid "Priority:"
 msgstr "Priorität:"
 
 #: ../root/account/preferences.tt:22 ../root/user/collections.tt:15
+#: ../root/user/collections.tt:52
 msgid "Privacy"
 msgstr "Privatsphäre"
 
@@ -5921,7 +5928,7 @@ msgstr "Privatsphäre"
 msgid "Privacy Policy"
 msgstr "Datenschutzrichtlinien"
 
-#: ../root/user/collections.tt:28
+#: ../root/user/collections.tt:28 ../root/user/collections.tt:65
 msgid "Private"
 msgstr "Privat"
 
@@ -5950,7 +5957,7 @@ msgstr "Vorschlager"
 msgid "Proposer:"
 msgstr "Vorschlagender:"
 
-#: ../root/user/collections.tt:28
+#: ../root/user/collections.tt:28 ../root/user/collections.tt:65
 msgid "Public"
 msgstr "Öffentlich"
 
@@ -6286,6 +6293,10 @@ msgstr "Veröffentlichung"
 #: ../root/recording/index.tt:14
 msgid "Release Artist"
 msgstr "Veröffentlichungskünstler"
+
+#: ../root/user/collections.tt:5
+msgid "Release Collections"
+msgstr "Veröffentlichungssammlungen"
 
 #: ../root/edit/search_macros.tt:307
 msgid "Release Country"
@@ -6677,7 +6688,7 @@ msgstr "Veröffentlichungen:"
 #: ../root/release/add_cover_art.tt:70 ../root/release/cover_art.tt:29
 #: ../root/release/delete.tt:1 ../root/release/discids.tt:36
 #: ../root/scripts/text_strings.tt:40 ../root/series/delete.tt:1
-#: ../root/user/collections.tt:31
+#: ../root/user/collections.tt:31 ../root/user/collections.tt:68
 msgid "Remove"
 msgstr "Entfernen"
 
@@ -7788,7 +7799,7 @@ msgstr "Übermittle Bearbeitungen …"
 msgid "Subscribe"
 msgstr "Abonnieren"
 
-#: ../root/user/collections.tt:14
+#: ../root/user/collections.tt:14 ../root/user/collections.tt:51
 msgid "Subscribed"
 msgstr "Abonniert"
 
@@ -9670,7 +9681,7 @@ msgstr "Twitter"
 #: ../root/search/results-release_group.tt:10
 #: ../root/search/results-series.tt:9 ../root/search/results-work.tt:12
 #: ../root/series/merge.tt:13 ../root/user/collections.tt:11
-#: ../root/work/merge.tt:15
+#: ../root/user/collections.tt:48 ../root/work/merge.tt:15
 msgid "Type"
 msgstr "Typ"
 
@@ -10603,7 +10614,7 @@ msgstr ""
 msgid "You have no collections!"
 msgstr "Du hast keine Sammlungen."
 
-#: ../root/user/collections.tt:41
+#: ../root/user/collections.tt:80
 msgid "You have no collections."
 msgstr "Du hast keine Sammlungen."
 
@@ -11609,7 +11620,7 @@ msgstr "{uri|Zurück zu musicbrainz.org}."
 msgid "{user}"
 msgstr "{user}"
 
-#: ../root/user/collections.tt:43
+#: ../root/user/collections.tt:82
 msgid "{user} has no public collections."
 msgstr "{user} hat keine öffentlichen Sammlungen."
 
@@ -11771,11 +11782,11 @@ msgid ""
 "Banner updated. Remember that each server has its own, independent banner."
 msgstr "Banner aktualisiert. Denk daran, dass jeder Server sein eigenes, unabhängiges Banner hat."
 
-#: ../lib/MusicBrainz/Server/Controller/Artist.pm:506
+#: ../lib/MusicBrainz/Server/Controller/Artist.pm:508
 msgid "You cannot merge a special purpose artist into another artist"
 msgstr "Du kannst einen Spezialkünstler nicht mit einem anderen Künstler vereinen"
 
-#: ../lib/MusicBrainz/Server/Controller/Artist.pm:511
+#: ../lib/MusicBrainz/Server/Controller/Artist.pm:513
 msgid "You cannot merge into Deleted Artist"
 msgstr "Du kannst Künstler nicht mit Deleted Artist vereinen."
 
@@ -11865,7 +11876,7 @@ msgstr "Es ist keine E-Mail-Adresse mit dem Konto von Bearbeiter {name} verbunde
 msgid "Your message could not be sent"
 msgstr "Deine Nachricht konnte nicht versandt werden"
 
-#: ../lib/MusicBrainz/Server/Controller/User.pm:372
+#: ../lib/MusicBrainz/Server/Controller/User.pm:375
 #, perl-brace-format
 msgid "'{type}' is not an entity type that can have ratings."
 msgstr "„{type}“ ist kein Objekttyp, der Bewertungen haben kann."
