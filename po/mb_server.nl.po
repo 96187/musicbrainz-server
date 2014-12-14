@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-24 11:34-0700\n"
-"PO-Revision-Date: 2014-12-07 12:48+0000\n"
+"PO-Revision-Date: 2014-12-14 14:59+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -552,7 +552,7 @@ msgstr "Evenement toevoegen"
 #: ../root/release/edit/information.tt:136
 msgctxt "button/menu"
 msgid "Add Event"
-msgstr "Gebeurtenis toevoegen"
+msgstr "Evenement toevoegen"
 
 #: ../root/relationship/linktype/form.tt:146
 msgid "Add Example"
@@ -3232,7 +3232,7 @@ msgstr "Alleen al één of twee URL’s toevoegen helpt!"
 #: ../lib/MusicBrainz/Server/Edit/Event.pm:7
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:48
 msgid "Event"
-msgstr ""
+msgstr "Evenement"
 
 #: ../root/user/collections.tt:42
 msgid "Event Collections"
@@ -4631,7 +4631,7 @@ msgstr "Artiesten samenvoegen"
 
 #: ../root/event/merge.tt:1 ../root/event/merge.tt:3
 msgid "Merge Events"
-msgstr ""
+msgstr "Evenementen samenvoegen"
 
 #: ../root/instrument/merge.tt:1 ../root/instrument/merge.tt:3
 msgid "Merge Instruments"
@@ -5076,11 +5076,11 @@ msgstr "Geen verkiezingen gevonden."
 
 #: ../root/collection/index.tt:36
 msgid "No events found in this list."
-msgstr ""
+msgstr "Geen evenementen in deze lijst gevonden."
 
 #: ../root/tag/event.tt:1
 msgid "No events with this tag were found."
-msgstr ""
+msgstr "Geen evenementen met dit etiket gevonden."
 
 #: ../root/release/layout.tt:32
 msgid "No front cover image available.<br/>{all|View all artwork}."
@@ -5223,7 +5223,7 @@ msgstr "Nog niemand heeft dit een etiket gegeven."
 
 #: ../root/event/attendance.tt:23
 msgid "Nobody is attending {event}."
-msgstr ""
+msgstr "Niemand woont {event} bij."
 
 #: ../root/elections/nominate.tt:1 ../root/elections/nominate.tt:3
 msgid "Nominate a candidate for auto-editor"
@@ -5839,7 +5839,7 @@ msgstr "Mogelijke media"
 
 #: ../root/report/duplicate_events.tt:1 ../root/report/duplicate_events.tt:3
 msgid "Possible duplicate events"
-msgstr ""
+msgstr "Mogelijke dubbele evenementen"
 
 #: ../root/report/duplicate_release_groups.tt:1
 #: ../root/report/duplicate_release_groups.tt:3 ../root/report/index.tt:54
@@ -6702,7 +6702,7 @@ msgstr "Disc-id verwijderen"
 
 #: ../root/release/edit/information.tt:124
 msgid "Remove Event"
-msgstr "Gebeurtenis verwijderen"
+msgstr "Evenement verwijderen"
 
 #: ../root/relationship/linktype/form.tt:72
 msgid "Remove Example"
@@ -11070,8 +11070,8 @@ msgstr[1] "Plus {n} andere anonieme gebruikers"
 #: ../root/event/attendance.tt:15
 msgid "plus {n} other hidden user"
 msgid_plural "plus {n} other hidden user"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "plus {n} andere verborgen gebruiker"
+msgstr[1] "plus {n} andere verborgen gebruikers"
 
 #: ../root/release/collections.tt:15
 msgid "plus {n} other private collection"
@@ -11384,8 +11384,8 @@ msgstr "{name} – {additional_info}"
 #: ../root/tag/area.tt:1
 msgid "{num} area found"
 msgid_plural "{num} areas found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num} gebied gevonden"
+msgstr[1] "{num} gebieden gevonden"
 
 #: ../root/user/subscriptions/layout.tt:19
 msgid "{num} artist"
@@ -11397,7 +11397,7 @@ msgstr[1] "{num} artiesten"
 msgid "{num} artist found"
 msgid_plural "{num} artists found"
 msgstr[0] "{num} artiest gevonden"
-msgstr[1] "{num} artiestn gevonden"
+msgstr[1] "{num} artiesten gevonden"
 
 #: ../root/user/subscriptions/layout.tt:22
 msgid "{num} collection"
@@ -11426,14 +11426,14 @@ msgstr[1] "{num} redacteurs"
 #: ../root/tag/event.tt:1
 msgid "{num} event found"
 msgid_plural "{num} events found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num} evenement gevonden"
+msgstr[1] "{num} evenementen gevonden"
 
 #: ../root/tag/instrument.tt:1
 msgid "{num} instrument found"
 msgid_plural "{num} instruments found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num} instrument gevonden"
+msgstr[1] "{num} instrumenten gevonden"
 
 #: ../root/user/subscriptions/layout.tt:28
 msgid "{num} label"
@@ -11498,8 +11498,8 @@ msgstr[1] "{num} series"
 #: ../root/tag/series.tt:1
 msgid "{num} series found"
 msgid_plural "{num} series found"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num} serie gevonden"
+msgstr[1] "{num} series gevonden"
 
 #: ../root/event/attendance.tt:4
 msgid "{num} user might attend:"
@@ -12728,7 +12728,7 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Form/Field/Time.pm:16
 msgid "This is not a valid time."
-msgstr ""
+msgstr "Dit is geen geldig tijdstip."
 
 #: ../lib/MusicBrainz/Server/Form/Field/URL.pm:24
 msgid "URL protocol must be HTTP, HTTPS or FTP"
