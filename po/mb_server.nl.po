@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-24 11:34-0700\n"
-"PO-Revision-Date: 2014-12-14 14:59+0000\n"
+"PO-Revision-Date: 2014-12-14 15:08+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -3258,7 +3258,7 @@ msgstr ""
 #: ../root/edit/details/add_event_annotation.tt:3
 #: ../root/edit/details/add_event.tt:3 ../root/edit/details/edit_event.tt:5
 msgid "Event:"
-msgstr ""
+msgstr "Evenement:"
 
 #: ../root/artist/events.tt:1 ../root/artist/events.tt:2
 #: ../root/collection/index.tt:25 ../root/components/common-macros.tt:604
@@ -3266,7 +3266,7 @@ msgstr ""
 #: ../root/place/events.tt:2 ../root/report/index.tt:31 ../root/tag/index.tt:8
 #: ../root/user/collections.tt:49
 msgid "Events"
-msgstr ""
+msgstr "Evenementen"
 
 #: ../root/doc/relationship_type.tt:84
 #: ../root/relationship/linktype/form.tt:62
@@ -3490,8 +3490,8 @@ msgstr[1] "Ten minste {n} bewerkingen gevonden"
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:94
 msgid "Found in {num} attendance list"
 msgid_plural "Found in {num} attendance lists"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Gevonden in {num} aanwezigheidslijst"
+msgstr[1] "Gevonden in {num} aanwezigheidslijsten"
 
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:126
 msgid "Found in {num} user collection"
@@ -3683,7 +3683,7 @@ msgstr "Richtlijnen"
 
 #: ../root/components/forms.tt:93
 msgid "HH:MM"
-msgstr ""
+msgstr "UU:MM"
 
 #: ../root/annotation/edit.tt:46
 msgid "Headings:"
@@ -4067,7 +4067,7 @@ msgstr "Instrument:"
 #: ../root/components/common-macros.tt:604 ../root/tag/header.tt:1
 #: ../root/tag/index.tt:8
 msgid "Instruments"
-msgstr ""
+msgstr "Instrumenten"
 
 #: ../root/main/500.tt:67
 msgid "Interface language:"
@@ -4107,7 +4107,7 @@ msgstr "Jaikoz Tagger"
 
 #: ../root/components/common-macros.tt:780
 msgid "Javascript is required for this page to work properly."
-msgstr ""
+msgstr "Javascript is benodigd om deze pagina goed te laten functioneren."
 
 #: ../root/scripts/text_strings.tt:26
 msgid "Join phrase"
@@ -4404,7 +4404,7 @@ msgstr "Lokalisatie"
 #: ../root/components/events-list.tt:24 ../root/report/event_list.tt:10
 #: ../root/search/results-event.tt:11
 msgid "Location"
-msgstr ""
+msgstr "Locatie"
 
 #: ../root/edit/search_macros.tt:288
 msgid "Location Editor"
@@ -5857,7 +5857,7 @@ msgstr "Mogelijk dubbele artiesten"
 
 #: ../root/report/index.tt:34
 msgid "Possibly duplicate events"
-msgstr ""
+msgstr "Mogelijk dubbele evenementen"
 
 #: ../root/account/preferences_ok.tt:1 ../root/account/preferences_ok.tt:3
 #: ../root/account/preferences.tt:2 ../root/account/preferences.tt:4
@@ -6785,7 +6785,7 @@ msgstr "Geselecteerde objecten verwijderen"
 
 #: ../root/collection/index.tt:32
 msgid "Remove selected events from collection"
-msgstr ""
+msgstr "Geselecteerde evenementen uit de collectie verwijderen"
 
 #: ../root/collection/index.tt:17
 msgid "Remove selected releases from collection"
@@ -7091,8 +7091,8 @@ msgstr[1] "Bekijk alle {num} artiesten"
 #: ../root/tag/index.tt:8
 msgid "See all {num} events"
 msgid_plural "See all {num} events"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Bekijk {num} evenement"
+msgstr[1] "Bekijk alle {num} evenementen"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} instruments"
@@ -7585,7 +7585,7 @@ msgstr "Onze excuses, we konden geen redacteur vinden met die naam. U kunt ook p
 msgid ""
 "Sorry, we could not find an event with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Onze excuses, we konden geen evenement vinden met die MBID. U kunt ook proberen om {search_url|ernaar te zoeken}."
 
 #: ../root/instrument/not_found.tt:4
 msgid ""
@@ -8374,7 +8374,7 @@ msgid ""
 "This artist has no relationships, recordings, releases or release groups, "
 "and will be removed automatically in the next few days. If this is not "
 "intended, please add more data to this artist."
-msgstr "Deze artiest heeft geen relaties, opnames, uitgaves of uitgavegroepen en zal in de komende paar dagen worden verwijderd. Voeg meer gegevens toe aan deze artiest als dit niet de bedoeling is."
+msgstr "Deze artiest heeft geen relaties, opnames, uitgaves of uitgavegroepen en zal in de komende paar dagen automatisch worden verwijderd. Voeg meer gegevens aan deze artiest toe als dit niet de bedoeling is."
 
 #: ../root/artist/index.tt:66
 msgid "This artist has no release groups, only standalone recordings."
@@ -8389,7 +8389,7 @@ msgstr "Deze artiest heeft andere relaties behalve de samenwerkingsverwantschap,
 
 #: ../root/artist/events.tt:11
 msgid "This artist is not currently associated with any events."
-msgstr ""
+msgstr "Deze artiest is momenteel niet verbonden met evenementen."
 
 #: ../root/artist/works.tt:11
 msgid "This artist is not currently associated with any works."
@@ -8514,7 +8514,7 @@ msgstr "Dit object zal worden toegevoegd als de bewerking wordt ingediend."
 msgid ""
 "This event has no relationships and will be removed automatically in the "
 "next few days. If this is not intended, please add more data to this event."
-msgstr ""
+msgstr "Dit evenement heeft geen relaties en zal in de komende paar dagen automatisch worden verwijderd. Voeg meer gegevens toe als dit niet de bedoeling is."
 
 #: ../root/event/edit_form.tt:16
 msgid "This event was cancelled."
@@ -8616,7 +8616,7 @@ msgid ""
 "This label has no relationships or releases and will be removed "
 "automatically in the next few days. If this is not intended, please add more"
 " data to this label."
-msgstr "Deze platenmaatschappij heeft geen relaties of uitgaves en zal in de komende paar dagen worden verwijderd. Voeg meer gegevens toe aan deze platenmaatschappij als dit niet de bedoeling is."
+msgstr "Deze platenmaatschappij heeft geen relaties of uitgaves en zal in de komende paar dagen automatisch worden verwijderd. Voeg meer gegevens aan deze platenmaatschappij toe als dit niet de bedoeling is."
 
 #: ../root/cdtoc/attach_list.tt:25
 msgid "This medium format cannot have a disc ID attached"
@@ -8689,7 +8689,7 @@ msgstr "Deze plaats bestaat niet meer."
 msgid ""
 "This place has no relationships and will be removed automatically in the "
 "next few days. If this is not intended, please add more data to this place."
-msgstr "Deze plaats heeft geen relaties en zal in de komende paar dagen worden verwijderd. Voeg meer gegevens toe aan deze plaats als dit niet de bedoeling is."
+msgstr "Deze plaats heeft geen relaties en zal in de komende paar dagen automatisch worden verwijderd. Voeg meer gegevens aan deze plaats toe als dit niet de bedoeling is."
 
 #: ../root/place/events.tt:11
 msgid "This place is not currently associated with any events."
@@ -8760,7 +8760,7 @@ msgid ""
 "This release group has no relationships or releases associated, and will be "
 "removed automatically in the next few days. If this is not intended, please "
 "add more data to this release group."
-msgstr "Deze uitgavegroep heeft geen relaties of uitgaves en zal in de komende paar dagen worden verwijderd. Voeg meer gegevens aan deze uitgavegroep toe als dit niet de bedoeling is."
+msgstr "Deze uitgavegroep heeft geen relaties of uitgaves en zal in de komende paar dagen automatisch worden verwijderd. Voeg meer gegevens aan deze uitgavegroep toe als dit niet de bedoeling is."
 
 #: ../root/release_group/delete.tt:4
 msgid ""
@@ -9256,7 +9256,7 @@ msgstr "Deze serie kan niet worden verwijderd omdat er nog relaties aan gekoppel
 msgid ""
 "This series has no relationships and will be removed automatically in the "
 "next few days. If this is not intended, please add more data to this series."
-msgstr "Deze serie heeft geen relaties en zal in de komende paar dagen worden verwijderd. Voeg meer gegevens toe aan deze serie als dit niet de bedoeling is."
+msgstr "Deze serie heeft geen relaties en zal in de komende paar dagen automatisch worden verwijderd. Voeg meer gegevens toe aan deze serie als dit niet de bedoeling is."
 
 #: ../root/series/index.tt:55
 msgid "This series is currently empty."
@@ -9313,7 +9313,7 @@ msgstr "Dit stelt een mededeling in die bovenaan elke pagina wordt weergegeven. 
 msgid ""
 "This work has no relationships and will be removed automatically in the next"
 " few days. If this is not intended, please add relationships to this work."
-msgstr "Deze compositie heeft geen relaties en zal in de komende dagen automatisch verwijderd worden. Voeg relaties toe aan deze compositie als dit niet de bedoeling is."
+msgstr "Deze compositie heeft geen relaties en zal in de komende dagen automatisch worden verwijderd. Voeg relaties aan deze compositie toe als dit niet de bedoeling is."
 
 #: ../root/cdtoc/info.tt:37 ../root/cdtoc/info.tt:39 ../root/cdtoc/info.tt:41
 #: ../root/components/events-list.tt:27 ../root/event/merge.tt:16
