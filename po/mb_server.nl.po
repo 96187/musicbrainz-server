@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-24 11:34-0700\n"
-"PO-Revision-Date: 2014-12-14 15:08+0000\n"
+"PO-Revision-Date: 2014-12-15 14:58+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -496,7 +496,7 @@ msgstr "Acties"
 msgid ""
 "Add @ at line start to indicate artists, * for a work/song, # for additional"
 " info (such as \"Encore\"). [mbid|name] allows linking to artists and works."
-msgstr ""
+msgstr "Begin een regel met @ om artiesten aan te geven, * voor een compositie/nummer of # voor extra informatie (zoals ‘toegift’). Met [mbid|name] kunnen artiesten en composities gekoppeld worden."
 
 #: ../root/entity/alias/add.tt:1
 msgid "Add Alias"
@@ -3236,23 +3236,23 @@ msgstr "Evenement"
 
 #: ../root/user/collections.tt:42
 msgid "Event Collections"
-msgstr ""
+msgstr "Collecties met evenementen"
 
 #: ../root/event/edit_form.tt:12
 msgid "Event Details"
-msgstr ""
+msgstr "Details van het evenement"
 
 #: ../root/event/not_found.tt:1 ../root/event/not_found.tt:2
 msgid "Event Not Found"
-msgstr ""
+msgstr "Evenement niet gevonden"
 
 #: ../root/event/layout.tt:9
 msgid "Event information"
-msgstr ""
+msgstr "Informatie over het evenement"
 
 #: ../root/user/ratings_summary.tt:3 ../root/user/ratings.tt:2
 msgid "Event ratings"
-msgstr ""
+msgstr "Evenementwaarderingen"
 
 #: ../root/components/common-macros.tt:570
 #: ../root/edit/details/add_event_annotation.tt:3
@@ -5052,7 +5052,7 @@ msgstr "Geen objecten in MusicBrainz zijn tot nu toe geëtiketteerd met ‘{tag}
 
 #: ../root/tag/area.tt:1
 msgid "No areas with this tag were found."
-msgstr ""
+msgstr "Geen gebieden met dit etiket gevonden."
 
 #: ../root/tag/artist.tt:1
 msgid "No artists with this tag were found."
@@ -5088,7 +5088,7 @@ msgstr "Geen afbeelding van de voorkant aanwezig.<br/>{all|Bekijk alle afbeeldin
 
 #: ../root/tag/instrument.tt:1
 msgid "No instruments with this tag were found."
-msgstr ""
+msgstr "Geen instrumenten met dit etiket gevonden."
 
 #: ../root/tag/label.tt:1
 msgid "No labels with this tag were found."
@@ -5187,7 +5187,7 @@ msgstr "Geen resultaten gevonden. Probeer uw zoekopdracht de herdefiniëren."
 
 #: ../root/tag/series.tt:1
 msgid "No series with this tag were found."
-msgstr ""
+msgstr "Geen series met dit etiket gevonden."
 
 #: ../root/user/subscriptions/table.tt:34
 msgid "No subscriptions."
@@ -5521,7 +5521,7 @@ msgstr "Pagina {cur} van de {total}"
 
 #: ../root/layout/head.tt:6
 msgid "Page {n}"
-msgstr ""
+msgstr "Pagina {n}"
 
 #: ../root/scripts/text_strings.tt:77
 msgid "Page {page} of {total}"
@@ -5844,7 +5844,7 @@ msgstr "Mogelijke dubbele evenementen"
 #: ../root/report/duplicate_release_groups.tt:1
 #: ../root/report/duplicate_release_groups.tt:3 ../root/report/index.tt:54
 msgid "Possible duplicate release groups"
-msgstr ""
+msgstr "Mogelijk dubbele uitgavegroepen"
 
 #: ../root/relationship/linkattributetype/index.tt:19
 msgid "Possible values:"
@@ -5867,7 +5867,7 @@ msgstr "Voorkeuren"
 
 #: ../root/release/edit/tracklist.tt:170
 msgid "Pregap"
-msgstr ""
+msgstr "Pregap"
 
 #: ../root/annotation/edit.tt:30
 msgid "Preview"
@@ -6279,7 +6279,7 @@ msgstr "Artiest van de uitgave"
 
 #: ../root/user/collections.tt:5
 msgid "Release Collections"
-msgstr ""
+msgstr "Collecties met uitgaves."
 
 #: ../root/edit/search_macros.tt:307
 msgid "Release Country"
@@ -7079,8 +7079,8 @@ msgstr "Bekijk alle {num}"
 #: ../root/tag/index.tt:8
 msgid "See all {num} areas"
 msgid_plural "See all {num} areas"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Bekijk {num} gebied"
+msgstr[1] "Bekijk alle {num} gebieden"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} artists"
@@ -7097,8 +7097,8 @@ msgstr[1] "Bekijk alle {num} evenementen"
 #: ../root/tag/index.tt:8
 msgid "See all {num} instruments"
 msgid_plural "See all {num} instruments"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Bekijk {num} instrument"
+msgstr[1] "Bekijk alle {num} instrumenten"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} labels"
@@ -7133,8 +7133,8 @@ msgstr[1] "Bekijk alle {num} uitgaves"
 #: ../root/tag/index.tt:8
 msgid "See all {num} series"
 msgid_plural "See all {num} series"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Bekijk {num} serie"
+msgstr[1] "Bekijk alle {num} series"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} works"
@@ -7199,7 +7199,7 @@ msgstr "Series"
 #: ../root/components/common-macros.tt:604 ../root/tag/header.tt:1
 msgctxt "plural"
 msgid "Series"
-msgstr ""
+msgstr "Series"
 
 #: ../root/components/common-macros.tt:587 ../root/components/series-list.tt:4
 #: ../root/edit/search_macros.tt:307 ../root/scripts/text_strings.tt:113
@@ -7671,7 +7671,7 @@ msgstr "Begin"
 
 #: ../root/event/layout.tt:22
 msgid "Start Date:"
-msgstr ""
+msgstr "Begindatum:"
 
 #: ../root/elections/index.tt:11
 msgid "Start date"
@@ -8518,7 +8518,7 @@ msgstr "Dit evenement heeft geen relaties en zal in de komende paar dagen automa
 
 #: ../root/event/edit_form.tt:16
 msgid "This event was cancelled."
-msgstr ""
+msgstr "Dit evenement is afgelast."
 
 #: ../root/release/edit/information.tt:316
 msgid ""
@@ -8693,7 +8693,7 @@ msgstr "Deze plaats heeft geen relaties en zal in de komende paar dagen automati
 
 #: ../root/place/events.tt:11
 msgid "This place is not currently associated with any events."
-msgstr ""
+msgstr "Deze plaats is momenteel niet verbonden met evenementen."
 
 #: ../root/recording/delete.tt:14
 msgid "This recording cannot be removed because it is still used on releases."
@@ -8906,7 +8906,7 @@ msgid ""
 "This report lists events happening at the same place on the same date. If "
 "they're duplicates (for example, if there are separate events for headliner "
 "and supporting artist) please merge them."
-msgstr ""
+msgstr "Dit rapport toont evenementen die op dezelfde plaats en op dezelfde datum plaatsvinden. Als ze dubbel zijn (bijvoorbeeld als er verschillende evenementen voor de hoofdartiest en het voorprogramma zijn) moeten ze samengevoegd worden."
 
 #: ../root/report/duplicate_relationships_labels.tt:6
 msgid ""
@@ -8948,7 +8948,7 @@ msgstr "Dit rapport laat opnames zien met verouderde relaties of relaties die al
 
 #: ../root/report/annotations_recordings.tt:6
 msgid "This report lists recordings with annotations."
-msgstr "Dit rapport toon opnames met aantekeningen."
+msgstr "Dit rapport toont opnames met aantekeningen."
 
 #: ../root/report/duplicate_relationships_release_groups.tt:6
 msgid ""
@@ -9431,7 +9431,7 @@ msgstr "Totaal aantal dubbele groepen: {count}"
 
 #: ../root/report/duplicate_events.tt:10
 msgid "Total events found: {count}"
-msgstr ""
+msgstr "Totaal aantal gevonden evenementen: {count}"
 
 #: ../root/report/annotations_labels.tt:8
 #: ../root/report/deprecated_relationship_labels.tt:8
@@ -10843,7 +10843,7 @@ msgstr "door {artist}"
 
 #: ../root/components/common-macros.tt:203
 msgid "cancelled"
-msgstr ""
+msgstr "afgelast"
 
 #: ../root/components/relationship-editor.tt:162
 #: ../root/components/relationship-editor.tt:207
@@ -12012,35 +12012,35 @@ msgstr "Artiesten samenvoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Event/AddAlias.pm:11
 msgid "Add event alias"
-msgstr ""
+msgstr "Alias voor dit evenement toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Event/AddAnnotation.pm:11
 msgid "Add event annotation"
-msgstr ""
+msgstr "Aantekening aan het evenement toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Event/Create.pm:18
 msgid "Add event"
-msgstr ""
+msgstr "Evenement toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Event/Delete.pm:11
 msgid "Remove event"
-msgstr ""
+msgstr "Evenement verwijderen"
 
 #: ../lib/MusicBrainz/Server/Edit/Event/DeleteAlias.pm:14
 msgid "Remove event alias"
-msgstr ""
+msgstr "Alias van evenement verwijderen"
 
 #: ../lib/MusicBrainz/Server/Edit/Event/Edit.pm:34
 msgid "Edit event"
-msgstr ""
+msgstr "Evenement bewerken"
 
 #: ../lib/MusicBrainz/Server/Edit/Event/EditAlias.pm:12
 msgid "Edit event alias"
-msgstr ""
+msgstr "Alias van dit evenement bewerken"
 
 #: ../lib/MusicBrainz/Server/Edit/Event/Merge.pm:11
 msgid "Merge events"
-msgstr ""
+msgstr "Evenementen samenvoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/AddDiscID.pm:11
 #: ../lib/MusicBrainz/Server/Edit/Medium/AddDiscID.pm:10
@@ -12639,7 +12639,7 @@ msgstr "De streepjescode moet geldig zijn"
 
 #: ../lib/MusicBrainz/Server/Form/Collection.pm:45
 msgid "The collection type does not apply to the given entity."
-msgstr ""
+msgstr "Dit type collectie is niet van toepassing op het gegeven object."
 
 #: ../lib/MusicBrainz/Server/Form/Field/ArtistCredit.pm:48
 #, perl-brace-format
@@ -12724,7 +12724,7 @@ msgstr "ongeldige datum"
 
 #: ../lib/MusicBrainz/Server/Form/Field/Setlist.pm:12
 msgid "Please ensure all lines start with @, * or #."
-msgstr ""
+msgstr "Zorg ervoor dat alle regels beginnen met @, * of #."
 
 #: ../lib/MusicBrainz/Server/Form/Field/Time.pm:16
 msgid "This is not a valid time."
