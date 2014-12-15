@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-11-24 11:34-0700\n"
-"PO-Revision-Date: 2014-12-15 14:58+0000\n"
+"PO-Revision-Date: 2014-12-15 15:08+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -5242,7 +5242,7 @@ msgstr "Geen"
 #: ../root/scripts/text_strings.tt:192
 msgid ""
 "None of the attached disc IDs can fit a pregap track of the given length."
-msgstr ""
+msgstr "Geen van de gekoppelde disc-id’s past bij een pregapnummer met de opgegeven lengte."
 
 #: ../root/components/common-macros.tt:620
 #: ../lib/MusicBrainz/Server/Controller/Edit.pm:200
@@ -8431,7 +8431,7 @@ msgstr ""
 
 #: ../root/release/edit/tracklist.tt:402
 msgid "This disc has a hidden pregap track before track 1 ({info|more info})"
-msgstr ""
+msgstr "Dit medium heeft een verborgen pregapnummer voor nummer 1 ({info|meer informatie})"
 
 #: ../root/edit/details/edit_medium.tt:184
 msgid "This edit changes which tracks are data tracks."
@@ -8975,7 +8975,7 @@ msgid ""
 "artist has an album and single with the same name, then there is usually no "
 "need to change anything. In other cases, a disambiguation comment may be "
 "helpful."
-msgstr ""
+msgstr "Dit rapport toont uitgavegroepen met erg op elkaar lijkende namen en artiesten. Als de uitgaves in de uitgavegroepen bij elkaar horen (zie de {url|stijlgids}) kunnen de uitgavegroepen worden samengevoegd. Als ze niet gegroepeerd zouden moeten worden maar van elkaar onderscheiden kunnen worden aan de hand van het type uitgavegroep hoeft er meestal niets veranderd te worden. In andere gevallen kan een verduidelijking handig zijn."
 
 #: ../root/report/duplicate_relationships_releases.tt:6
 msgid ""
@@ -10441,14 +10441,14 @@ msgstr "U staat op het punt om de volgende artiesten samen te voegen. Selecteer 
 msgid ""
 "You are about to merge the following events into a single event. Please "
 "select the event which you would like other events to be merged into:"
-msgstr ""
+msgstr "U staat op het punt om de volgende evenementen samen te voegen. Selecteer alstublieft het evenement waarin u de andere evenementen wilt samenvoegen:"
 
 #: ../root/instrument/merge.tt:4
 msgid ""
 "You are about to merge the following instruments into a single instrument. "
 "Please select the instrument which you would like other instruments to be "
 "merged into:"
-msgstr "U staat op het punt om de volgende instrumenten samen te voegen. Selecteer alstublieft het instrument waarin u de andere instrumenten wilt samenvoegen."
+msgstr "U staat op het punt om de volgende instrumenten samen te voegen. Selecteer alstublieft het instrument waarin u de andere instrumenten wilt samenvoegen:"
 
 #: ../root/label/merge.tt:4
 msgid ""
@@ -10474,20 +10474,20 @@ msgid ""
 "You are about to merge the following release groups into a single release "
 "group. Please select the release group which you would like other release "
 "groups to be merged into:"
-msgstr "U staat op het punt om de volgende uitgavegroepen in één uitgavegroep samen te voegen. Selecteer de uitgavegroep waar u de andere uitgavegroepen in wilt samenvoegen."
+msgstr "U staat op het punt om de volgende uitgavegroepen in één uitgavegroep samen te voegen. Selecteer de uitgavegroep waar u de andere uitgavegroepen in wilt samenvoegen:"
 
 #: ../root/release/merge.tt:4
 msgid ""
 "You are about to merge the following releases into a single release. Please "
 "select the release which you would like the other releases to be merged "
 "into:"
-msgstr "U staat op het punt om de volgende uitgaves in één uitgave samen te voegen. Selecteer de uitgave waar u de andere uitgaves in wilt samenvoegen."
+msgstr "U staat op het punt om de volgende uitgaves in één uitgave samen te voegen. Selecteer de uitgave waar u de andere uitgaves in wilt samenvoegen:"
 
 #: ../root/series/merge.tt:4
 msgid ""
 "You are about to merge the following series into a single series. Please "
 "select the series which you would like other series to be merged into:"
-msgstr "U staat op het punt om de volgende series samen te voegen. Selecteer alstublieft de serie waarin u de andere instrumenten wilt samenvoegen."
+msgstr "U staat op het punt om de volgende series samen te voegen. Selecteer alstublieft de serie waarin u de andere instrumenten wilt samenvoegen:"
 
 #: ../root/work/merge.tt:4
 msgid ""
@@ -11504,8 +11504,8 @@ msgstr[1] "{num} series gevonden"
 #: ../root/event/attendance.tt:4
 msgid "{num} user might attend:"
 msgid_plural "{num} users might attend:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{num} gebruiker is er misschien bij:"
+msgstr[1] "{num} gebruikers zijn er misschien bij:"
 
 #: ../root/tag/work.tt:1
 msgid "{num} work found"
