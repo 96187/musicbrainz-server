@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-12-16 15:58+0000\n"
+"PO-Revision-Date: 2014-12-16 16:10+0000\n"
 "Last-Translator: yahoe.001\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -397,7 +397,7 @@ msgstr "Chanteur principal, solo"
 msgid ""
 "Links a recording to the area it was edited in. Use only when the place is "
 "unknown!"
-msgstr "Relie un enregistrement à la région dans laquelle il a été édité. À n'utiliser que lorsque le lieu est inconnu !"
+msgstr "Relie un enregistrement à la région dans laquelle il a été monté. À n'utiliser que lorsque le lieu est inconnu !"
 
 #: DB:link_type/description:814
 msgid ""
@@ -435,7 +435,7 @@ msgstr "Relie un enregistrement à l'événement durant lequel il a été enregi
 
 #: DB:link_type/description:819
 msgid "Links a recording to the place it was edited at."
-msgstr "Relie un enregistrement au lieu où il a été édité."
+msgstr "Relie un enregistrement au lieu où il a été monté."
 
 #: DB:link_type/description:813
 msgid "Links a recording to the place it was engineered at."
@@ -465,7 +465,7 @@ msgstr "Relie un groupe de parution à un événement de lancement."
 msgid ""
 "Links a release to the area it was edited in. Use only when the place is "
 "unknown!"
-msgstr "Relie une parution à la région dans laquelle elle a été éditée. À n'utiliser que lorsque le lieu est inconnu !"
+msgstr "Relie une parution à la région dans laquelle elle a été montée. À n'utiliser que lorsque le lieu est inconnu !"
 
 #: DB:link_type/description:815
 msgid ""
@@ -509,7 +509,7 @@ msgstr "Relie une parution à l'événement où elle a été enregistrée."
 
 #: DB:link_type/description:820
 msgid "Links a release to the place it was edited at."
-msgstr "Relie une parution au lieu où elle a été éditée."
+msgstr "Relie une parution au lieu où elle a été montée."
 
 #: DB:link_type/description:812
 msgid "Links a release to the place it was engineered at."
@@ -2540,16 +2540,16 @@ msgstr "montage de"
 
 #: DB:link_type/reverse_link_phrase:819 DB:link_type/reverse_link_phrase:820
 msgid "edited at"
-msgstr "édité à"
+msgstr "monté à"
 
 #: DB:link_type/reverse_link_phrase:821 DB:link_type/reverse_link_phrase:822
 msgid "edited in"
-msgstr "édité à"
+msgstr "monté à"
 
 #: DB:link_type/link_phrase:821 DB:link_type/link_phrase:819
 #: DB:link_type/link_phrase:820 DB:link_type/link_phrase:822
 msgid "editing location for"
-msgstr "lieu d'édition pour"
+msgstr "lieu de montage pour"
 
 #: DB:link_type/reverse_link_phrase:309
 msgid "edits"
@@ -2799,7 +2799,7 @@ msgstr "à une page de réseau social à"
 
 #: DB:link_type/long_link_phrase:287
 msgid "has a standalone website at"
-msgstr ""
+msgstr "a un site Web autonome à"
 
 #: DB:link_type/long_link_phrase:755 DB:link_type/long_link_phrase:284
 #: DB:link_type/long_link_phrase:283 DB:link_type/long_link_phrase:285
@@ -2931,7 +2931,7 @@ msgstr "a un/des frère(s) et sœur(s)"
 
 #: DB:link_type/long_link_phrase:823
 msgid "has subseries"
-msgstr ""
+msgstr "a des sous-séries"
 
 #: DB:link_type/long_link_phrase:736
 msgid "has subtype"
@@ -3246,7 +3246,7 @@ msgstr ""
 
 #: DB:link_type/link_phrase:833
 msgid "licensee for"
-msgstr ""
+msgstr "titulaire d'une licence pour"
 
 #: DB:link_attribute_type/name:578
 msgid "live"
@@ -3630,11 +3630,11 @@ msgstr "principal"
 
 #: DB:link_type/reverse_link_phrase:824 DB:link_type/reverse_link_phrase:825
 msgid "produced at"
-msgstr ""
+msgstr "produit à"
 
 #: DB:link_type/reverse_link_phrase:826 DB:link_type/reverse_link_phrase:827
 msgid "produced in"
-msgstr ""
+msgstr "produit à"
 
 #: DB:link_type/link_phrase:49 DB:link_type/link_phrase:154
 #: DB:link_type/long_link_phrase:49 DB:link_type/long_link_phrase:154
@@ -3652,7 +3652,7 @@ msgstr "producteurs"
 #: DB:link_type/link_phrase:824 DB:link_type/link_phrase:825
 #: DB:link_type/link_phrase:826 DB:link_type/link_phrase:827
 msgid "producing location for"
-msgstr ""
+msgstr "lieu de production pour"
 
 #: DB:link_type/link_phrase:256 DB:link_type/link_phrase:160
 #: DB:link_type/link_phrase:59 DB:link_type/link_phrase:72
@@ -3795,11 +3795,11 @@ msgstr "remix de"
 
 #: DB:link_type/reverse_link_phrase:828 DB:link_type/reverse_link_phrase:829
 msgid "remixed at"
-msgstr ""
+msgstr "remixé à"
 
 #: DB:link_type/reverse_link_phrase:830 DB:link_type/reverse_link_phrase:831
 msgid "remixed in"
-msgstr ""
+msgstr "remixé à"
 
 #: DB:link_type/reverse_link_phrase:230 DB:link_type/reverse_link_phrase:9
 msgid "remixes"
@@ -3817,7 +3817,7 @@ msgstr "remixes et compilations"
 #: DB:link_type/link_phrase:828 DB:link_type/link_phrase:829
 #: DB:link_type/link_phrase:830 DB:link_type/link_phrase:831
 msgid "remixing location for"
-msgstr ""
+msgstr "lieu de remixage pour"
 
 #: DB:link_type/reverse_link_phrase:202
 msgid "renamed from"
@@ -3915,11 +3915,11 @@ msgstr "voix parlées"
 
 #: DB:link_type/link_phrase:287
 msgid "standalone website"
-msgstr ""
+msgstr "site Web autonome"
 
 #: DB:link_type/reverse_link_phrase:287
 msgid "standalone website for"
-msgstr ""
+msgstr "site Web autonome pour"
 
 #: DB:link_type/link_phrase:194
 msgid "stream for free"
@@ -3939,11 +3939,11 @@ msgstr "sous-groupes"
 
 #: DB:link_type/link_phrase:823
 msgid "subseries"
-msgstr ""
+msgstr "sous-série"
 
 #: DB:link_type/reverse_link_phrase:823
 msgid "subseries of"
-msgstr ""
+msgstr "sous-série de"
 
 #: DB:link_type/link_phrase:200
 msgid "subsidiaries"
@@ -4071,7 +4071,7 @@ msgstr "était un orchestre à"
 
 #: DB:link_type/long_link_phrase:833
 msgid "was granted license for"
-msgstr ""
+msgstr "a reçu une licence pour"
 
 #: DB:link_type/long_link_phrase:794
 msgid "was held at"
@@ -4092,7 +4092,7 @@ msgstr "était le premier violon pour"
 #: DB:link_type/long_link_phrase:821 DB:link_type/long_link_phrase:819
 #: DB:link_type/long_link_phrase:820 DB:link_type/long_link_phrase:822
 msgid "was the editing location for"
-msgstr ""
+msgstr "était le lieu de montage pour"
 
 #: DB:link_type/long_link_phrase:812 DB:link_type/long_link_phrase:813
 #: DB:link_type/long_link_phrase:814 DB:link_type/long_link_phrase:815
@@ -4111,7 +4111,7 @@ msgstr "était le lieu de mixage de"
 #: DB:link_type/long_link_phrase:824 DB:link_type/long_link_phrase:825
 #: DB:link_type/long_link_phrase:826 DB:link_type/long_link_phrase:827
 msgid "was the producing location for"
-msgstr ""
+msgstr "était le lieu de production pour"
 
 #: DB:link_type/long_link_phrase:809 DB:link_type/long_link_phrase:810
 #: DB:link_type/long_link_phrase:695 DB:link_type/long_link_phrase:699
@@ -4122,7 +4122,7 @@ msgstr "était le lieu d'enregistrement de"
 #: DB:link_type/long_link_phrase:828 DB:link_type/long_link_phrase:829
 #: DB:link_type/long_link_phrase:830 DB:link_type/long_link_phrase:831
 msgid "was the remixing location for"
-msgstr ""
+msgstr "était le lieu de remixage pour"
 
 #: DB:link_type/description:733
 msgid "wikidata"
