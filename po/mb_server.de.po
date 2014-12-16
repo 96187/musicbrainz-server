@@ -41,7 +41,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-12-16 00:52-0700\n"
-"PO-Revision-Date: 2014-12-16 09:59+0000\n"
+"PO-Revision-Date: 2014-12-16 10:18+0000\n"
 "Last-Translator: TL\n"
 "Language-Team: German (http://www.transifex.com/projects/p/musicbrainz/language/de/)\n"
 "MIME-Version: 1.0\n"
@@ -3697,7 +3697,7 @@ msgstr "Groß-/Kleinschreibung des Mediumstitels erraten"
 
 #: ../root/components/forms.tt:217 ../root/release/edit/information.tt:15
 msgid "Guess case options"
-msgstr ""
+msgstr "Einstellungen Groß-/Kleinschreibung"
 
 #: ../root/release/edit/tracklist.tt:214
 msgid "Guess case track"
@@ -7097,8 +7097,8 @@ msgstr "Siehe alle {num}"
 #: ../root/tag/index.tt:8
 msgid "See all {num} areas"
 msgid_plural "See all {num} areas"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Alle {num} Gebiete anzeigen"
+msgstr[1] "Alle {num} Gebiete anzeigen"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} artists"
@@ -7109,14 +7109,14 @@ msgstr[1] "Alle {num} Künstler anzeigen"
 #: ../root/tag/index.tt:8
 msgid "See all {num} events"
 msgid_plural "See all {num} events"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Alle {num} Veranstaltungen anzeigen"
+msgstr[1] "Alle {num} Veranstaltungen anzeigen"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} instruments"
 msgid_plural "See all {num} instruments"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Alle {num} Instrumente anzeigen"
+msgstr[1] "Alle {num} Instrumente anzeigen"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} labels"
@@ -7151,8 +7151,8 @@ msgstr[1] "Alle {num} Veröffentlichungen anzeigen"
 #: ../root/tag/index.tt:8
 msgid "See all {num} series"
 msgid_plural "See all {num} series"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Alle {num} Instrumente anzeigen"
+msgstr[1] "Alle {num} Serien anzeigen"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} works"
@@ -7949,7 +7949,7 @@ msgstr "Das Cover-Art-Archiv hatte in der Vergangenheit eine Anfrage erhalten, d
 msgid ""
 "The Cover Art Archive is currently experiencing difficulties. Adding images "
 "for this release is unlikely to work at the moment."
-msgstr ""
+msgstr "Das Cover Art Archive ist derzeit in Schwierigkeiten. Bilder für diese Veröffentlichung können im Moment nicht hinzugefügt werden."
 
 #: ../root/user/profile.tt:86
 msgid "The Dawn of the Project"
@@ -8839,7 +8839,7 @@ msgstr "Dieser Report listet alle Veröffentlichungen auf, bei denen die Titel n
 msgid ""
 "This report lists all releases with gaps in the medium numbers (e.g. there "
 "is a medium 1 and 3 but no medium 2)."
-msgstr ""
+msgstr "Dieser Report listet alle Veröffentlichungen auf, bei denen die Medien nicht durchgehend nummeriert sind (z.&nbsp;B. wenn es ein \"Medium 1\" und \"Medium 3\" gibt, aber kein „Medium 2“)"
 
 #: ../root/report/artists_with_multiple_occurances_in_artist_credits.tt:6
 msgid ""
