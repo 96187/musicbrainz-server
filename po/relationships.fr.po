@@ -15,8 +15,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-12-16 07:54+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2014-12-16 15:58+0000\n"
+"Last-Translator: yahoe.001\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -397,7 +397,7 @@ msgstr "Chanteur principal, solo"
 msgid ""
 "Links a recording to the area it was edited in. Use only when the place is "
 "unknown!"
-msgstr ""
+msgstr "Relie un enregistrement à la région dans laquelle il a été édité. À n'utiliser que lorsque le lieu est inconnu !"
 
 #: DB:link_type/description:814
 msgid ""
@@ -415,7 +415,7 @@ msgstr "Relie un enregistrement à la région dans laquelle il a été mixé. À
 msgid ""
 "Links a recording to the area it was produced in. Use only when the place is"
 " unknown!"
-msgstr ""
+msgstr "Relie un enregistrement à la région dans laquelle il a été produit. À n'utiliser que lorsque le lieu est inconnu !"
 
 #: DB:link_type/description:698
 msgid ""
@@ -427,7 +427,7 @@ msgstr "Relie un enregistrement vers la région où il a été enregistré. À n
 msgid ""
 "Links a recording to the area it was remixed in. Use only when the place is "
 "unknown!"
-msgstr ""
+msgstr "Relie un enregistrement à la région dans laquelle il a été remixé. À n'utiliser que lorsque le lieu est inconnu !"
 
 #: DB:link_type/description:809
 msgid "Links a recording to the event it was recorded at."
@@ -435,7 +435,7 @@ msgstr "Relie un enregistrement à l'événement durant lequel il a été enregi
 
 #: DB:link_type/description:819
 msgid "Links a recording to the place it was edited at."
-msgstr ""
+msgstr "Relie un enregistrement au lieu où il a été édité."
 
 #: DB:link_type/description:813
 msgid "Links a recording to the place it was engineered at."
@@ -447,7 +447,7 @@ msgstr "Relie un enregistrement vers le lieu où il a été mixé."
 
 #: DB:link_type/description:825
 msgid "Links a recording to the place it was produced at."
-msgstr ""
+msgstr "Relie un enregistrement au lieu où il a été produit."
 
 #: DB:link_type/description:693
 msgid "Links a recording to the place it was recorded at."
@@ -455,7 +455,7 @@ msgstr "Relie un enregistrement vers le lieu où il a été enregistré."
 
 #: DB:link_type/description:829
 msgid "Links a recording to the place it was remixed at."
-msgstr ""
+msgstr "Relie un enregistrement au lieu où il a été remixé."
 
 #: DB:link_type/description:797
 msgid "Links a release group with a launch event for it."
@@ -465,7 +465,7 @@ msgstr "Relie un groupe de parution à un événement de lancement."
 msgid ""
 "Links a release to the area it was edited in. Use only when the place is "
 "unknown!"
-msgstr ""
+msgstr "Relie une parution à la région dans laquelle elle a été éditée. À n'utiliser que lorsque le lieu est inconnu !"
 
 #: DB:link_type/description:815
 msgid ""
@@ -489,7 +489,7 @@ msgstr "Relie une parution à la région dans laquelle elle a été mixée. À n
 msgid ""
 "Links a release to the area it was produced in. Use only when the place is "
 "unknown!"
-msgstr ""
+msgstr "Relie une parution à la région dans laquelle elle a été produite. À n'utiliser que lorsque le lieu est inconnu !"
 
 #: DB:link_type/description:699
 msgid ""
@@ -501,7 +501,7 @@ msgstr "Relie une parution vers la région où elle a été enregistrée. À n'u
 msgid ""
 "Links a release to the area it was remixed in. Use only when the place is "
 "unknown!"
-msgstr ""
+msgstr "Relie une parution à la région dans laquelle elle a été remixée. À n'utiliser que lorsque le lieu est inconnu !"
 
 #: DB:link_type/description:810
 msgid "Links a release to the event it was recorded at."
@@ -509,7 +509,7 @@ msgstr "Relie une parution à l'événement où elle a été enregistrée."
 
 #: DB:link_type/description:820
 msgid "Links a release to the place it was edited at."
-msgstr ""
+msgstr "Relie une parution au lieu où elle a été éditée."
 
 #: DB:link_type/description:812
 msgid "Links a release to the place it was engineered at."
@@ -525,7 +525,7 @@ msgstr "Relie une parution vers le lieu ou elle a été mixée."
 
 #: DB:link_type/description:824
 msgid "Links a release to the place it was produced at."
-msgstr ""
+msgstr "Relie une parution au lieu où elle a été produite."
 
 #: DB:link_type/description:695
 msgid "Links a release to the place it was recorded at."
@@ -533,7 +533,7 @@ msgstr "Relie une parution vers le lieu ou elle a été enregistrée."
 
 #: DB:link_type/description:828
 msgid "Links a release to the place it was remixed at."
-msgstr ""
+msgstr "Relie une parution au lieu où elle a été remixée."
 
 #: DB:link_type/description:796
 msgid "Links a release with a launch event for it."
@@ -548,7 +548,7 @@ msgstr "Relie une parution à un événement où elle était disponible. Ceci es
 
 #: DB:link_type/description:823
 msgid "Links a series to another series that exists within it."
-msgstr ""
+msgstr "Relie une série à une autre série comprise dans elle-même."
 
 #: DB:link_type/description:798
 msgid "Links an event to (one of) its main performer(s)."
@@ -1085,7 +1085,7 @@ msgstr "Ceci indique qu'un artiste était officiellement engagé par un label à
 msgid ""
 "This indicates that an event is made up of multiple parts (e.g. a festival "
 "happening on multiple venues over the course of a few days)."
-msgstr ""
+msgstr "Ceci indique qu'un événement est formé de plusieurs parties (par ex. un festival se déroulant dans plusieurs lieux durant plusieurs jours)."
 
 #: DB:link_type/description:2
 msgid ""
@@ -1805,7 +1805,7 @@ msgstr "Cette relation indique que l'artiste est le détenteur des droits d'aute
 msgid ""
 "This relationship indicates the company that was the licensee of this "
 "release (that is, received a license for it from other company)."
-msgstr ""
+msgstr "Cette relation indique la compagnie détentrice de la licence pour cette parution (ayant reçu une licence pour cette parution d'une autre compagnie)."
 
 #: DB:link_type/description:712
 msgid ""
@@ -1887,7 +1887,7 @@ msgstr "Ce type de relation peut être utilisé pour relier un label à la/aux p
 msgid ""
 "This relationship type can be used to link a place (generally a studio or "
 "venue) to the person(s) who founded it."
-msgstr ""
+msgstr "Ce type de relation peut être utilisé pour relier un lieu ( habituellement un studio ou une salle) à la/aux personne(s) qui l'a/l'ont fondé."
 
 #: DB:link_type/description:627
 msgid "This relationship type can be used to link a place to its blog"
@@ -2540,16 +2540,16 @@ msgstr "montage de"
 
 #: DB:link_type/reverse_link_phrase:819 DB:link_type/reverse_link_phrase:820
 msgid "edited at"
-msgstr ""
+msgstr "édité à"
 
 #: DB:link_type/reverse_link_phrase:821 DB:link_type/reverse_link_phrase:822
 msgid "edited in"
-msgstr ""
+msgstr "édité à"
 
 #: DB:link_type/link_phrase:821 DB:link_type/link_phrase:819
 #: DB:link_type/link_phrase:820 DB:link_type/link_phrase:822
 msgid "editing location for"
-msgstr ""
+msgstr "lieu d'édition pour"
 
 #: DB:link_type/reverse_link_phrase:309
 msgid "edits"
