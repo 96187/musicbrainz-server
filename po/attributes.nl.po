@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-12-15 14:34+0000\n"
+"PO-Revision-Date: 2014-12-16 08:06+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -26,6 +26,11 @@ msgstr "10″ vinyl"
 msgctxt "medium_format"
 msgid "12\" Vinyl"
 msgstr "12″ vinyl"
+
+#: DB:medium_format/name:49
+msgctxt "medium_format"
+msgid "3.5\" Floppy Disk"
+msgstr "3,5″ floppy"
 
 #: DB:medium_format/name:29
 msgctxt "medium_format"
@@ -504,6 +509,11 @@ msgctxt "area_type"
 msgid "Country"
 msgstr "Land"
 
+#: DB:area_type/name:7
+msgctxt "area_type"
+msgid "County"
+msgstr ""
+
 #: DB:work_attribute_type_allowed_value/value:67
 msgctxt "work_attribute_type_allowed_value"
 msgid "Cārukēśi"
@@ -578,6 +588,11 @@ msgstr "DVD-Audio"
 msgctxt "medium_format"
 msgid "DVD-Video"
 msgstr "DVD-Video"
+
+#: DB:medium_format/name:47
+msgctxt "medium_format"
+msgid "DVDplus"
+msgstr ""
 
 #: DB:work_attribute_type_allowed_value/value:73
 msgctxt "work_attribute_type_allowed_value"
@@ -733,6 +748,11 @@ msgstr "Eis kleine terts"
 msgctxt "release_group_primary_type"
 msgid "EP"
 msgstr "EP"
+
+#: DB:medium_format/name:50
+msgctxt "medium_format"
+msgid "Edison Diamond Disc"
+msgstr "Edison Diamond Disc"
 
 #: DB:instrument_type/name:4
 msgctxt "instrument_type"
@@ -1552,6 +1572,11 @@ msgctxt "area_type"
 msgid "Municipality"
 msgstr "Gemeente"
 
+#: DB:medium_format/name:46
+msgctxt "medium_format"
+msgid "Music Card"
+msgstr ""
+
 #: DB:work_attribute_type/name:12
 msgctxt "work_attribute_type"
 msgid "MÜST ID"
@@ -1806,6 +1831,11 @@ msgstr "Pianorol (notenrol)"
 msgctxt "alias_type"
 msgid "Place name"
 msgstr "Naam van de plaats"
+
+#: DB:medium_format/name:45
+msgctxt "medium_format"
+msgid "Playbutton"
+msgstr ""
 
 #: DB:work_type/name:21
 msgctxt "work_type"
@@ -2357,11 +2387,6 @@ msgctxt "place_type"
 msgid "Venue"
 msgstr "Zaal"
 
-#: DB:medium_format/name:32
-msgctxt "medium_format"
-msgid "Videotape"
-msgstr "Videoband"
-
 #: DB:work_attribute_type_allowed_value/value:273
 msgctxt "work_attribute_type_allowed_value"
 msgid "Vijayanagari"
@@ -2381,6 +2406,11 @@ msgstr "Vijayaśrī"
 msgctxt "medium_format"
 msgid "Vinyl"
 msgstr "Vinyl"
+
+#: DB:medium_format/name:48
+msgctxt "medium_format"
+msgid "VinylDisc"
+msgstr "VinylDisc"
 
 #: DB:work_attribute_type_allowed_value/value:259
 msgctxt "work_attribute_type_allowed_value"

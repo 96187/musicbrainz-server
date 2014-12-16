@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-11-24 01:52+0000\n"
+"PO-Revision-Date: 2014-12-16 07:54+0000\n"
 "Last-Translator: Ian McEwen <email address hidden>\n"
 "Language-Team: Irish (http://www.transifex.com/projects/p/musicbrainz/language/ga/)\n"
 "MIME-Version: 1.0\n"
@@ -20,6 +20,11 @@ msgstr ""
 #: DB:medium_format/name:31
 msgctxt "medium_format"
 msgid "12\" Vinyl"
+msgstr ""
+
+#: DB:medium_format/name:49
+msgctxt "medium_format"
+msgid "3.5\" Floppy Disk"
 msgstr ""
 
 #: DB:medium_format/name:29
@@ -499,6 +504,11 @@ msgctxt "area_type"
 msgid "Country"
 msgstr ""
 
+#: DB:area_type/name:7
+msgctxt "area_type"
+msgid "County"
+msgstr ""
+
 #: DB:work_attribute_type_allowed_value/value:67
 msgctxt "work_attribute_type_allowed_value"
 msgid "Cārukēśi"
@@ -572,6 +582,11 @@ msgstr ""
 #: DB:medium_format/name:19
 msgctxt "medium_format"
 msgid "DVD-Video"
+msgstr ""
+
+#: DB:medium_format/name:47
+msgctxt "medium_format"
+msgid "DVDplus"
 msgstr ""
 
 #: DB:work_attribute_type_allowed_value/value:73
@@ -727,6 +742,11 @@ msgstr ""
 #: DB:release_group_primary_type/name:3
 msgctxt "release_group_primary_type"
 msgid "EP"
+msgstr ""
+
+#: DB:medium_format/name:50
+msgctxt "medium_format"
+msgid "Edison Diamond Disc"
 msgstr ""
 
 #: DB:instrument_type/name:4
@@ -1547,6 +1567,11 @@ msgctxt "area_type"
 msgid "Municipality"
 msgstr ""
 
+#: DB:medium_format/name:46
+msgctxt "medium_format"
+msgid "Music Card"
+msgstr ""
+
 #: DB:work_attribute_type/name:12
 msgctxt "work_attribute_type"
 msgid "MÜST ID"
@@ -1800,6 +1825,11 @@ msgstr ""
 #: DB:place_alias_type/name:1
 msgctxt "alias_type"
 msgid "Place name"
+msgstr ""
+
+#: DB:medium_format/name:45
+msgctxt "medium_format"
+msgid "Playbutton"
 msgstr ""
 
 #: DB:work_type/name:21
@@ -2352,11 +2382,6 @@ msgctxt "place_type"
 msgid "Venue"
 msgstr ""
 
-#: DB:medium_format/name:32
-msgctxt "medium_format"
-msgid "Videotape"
-msgstr ""
-
 #: DB:work_attribute_type_allowed_value/value:273
 msgctxt "work_attribute_type_allowed_value"
 msgid "Vijayanagari"
@@ -2375,6 +2400,11 @@ msgstr ""
 #: DB:medium_format/name:7
 msgctxt "medium_format"
 msgid "Vinyl"
+msgstr ""
+
+#: DB:medium_format/name:48
+msgctxt "medium_format"
+msgid "VinylDisc"
 msgstr ""
 
 #: DB:work_attribute_type_allowed_value/value:259

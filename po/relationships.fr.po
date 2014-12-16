@@ -15,8 +15,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-11-24 20:00+0000\n"
-"Last-Translator: yahoe.001\n"
+"PO-Revision-Date: 2014-12-16 07:54+0000\n"
+"Last-Translator: Ian McEwen <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -393,6 +393,12 @@ msgstr "Indique l'éditeur de cette œuvre. Ce n'est <strong>pas</strong> le mê
 msgid "Lead or solo vocal"
 msgstr "Chanteur principal, solo"
 
+#: DB:link_type/description:821
+msgid ""
+"Links a recording to the area it was edited in. Use only when the place is "
+"unknown!"
+msgstr ""
+
 #: DB:link_type/description:814
 msgid ""
 "Links a recording to the area it was engineered in. Use only when the place "
@@ -405,15 +411,31 @@ msgid ""
 "unknown!"
 msgstr "Relie un enregistrement à la région dans laquelle il a été mixé. À n'utiliser que si le lieu est inconnu !"
 
+#: DB:link_type/description:827
+msgid ""
+"Links a recording to the area it was produced in. Use only when the place is"
+" unknown!"
+msgstr ""
+
 #: DB:link_type/description:698
 msgid ""
 "Links a recording to the area it was recorded in. Use only when the place is"
 " unknown!"
 msgstr "Relie un enregistrement vers la région où il a été enregistré. À n'utiliser que si le lieu est inconnu!"
 
+#: DB:link_type/description:830
+msgid ""
+"Links a recording to the area it was remixed in. Use only when the place is "
+"unknown!"
+msgstr ""
+
 #: DB:link_type/description:809
 msgid "Links a recording to the event it was recorded at."
 msgstr "Relie un enregistrement à l'événement durant lequel il a été enregistré."
+
+#: DB:link_type/description:819
+msgid "Links a recording to the place it was edited at."
+msgstr ""
 
 #: DB:link_type/description:813
 msgid "Links a recording to the place it was engineered at."
@@ -423,13 +445,27 @@ msgstr "Relie un enregistrement au lieu où il a été techniquement conçu."
 msgid "Links a recording to the place it was mixed at."
 msgstr "Relie un enregistrement vers le lieu où il a été mixé."
 
+#: DB:link_type/description:825
+msgid "Links a recording to the place it was produced at."
+msgstr ""
+
 #: DB:link_type/description:693
 msgid "Links a recording to the place it was recorded at."
 msgstr "Relie un enregistrement vers le lieu où il a été enregistré."
 
+#: DB:link_type/description:829
+msgid "Links a recording to the place it was remixed at."
+msgstr ""
+
 #: DB:link_type/description:797
 msgid "Links a release group with a launch event for it."
 msgstr "Relie un groupe de parution à un événement de lancement."
+
+#: DB:link_type/description:822
+msgid ""
+"Links a release to the area it was edited in. Use only when the place is "
+"unknown!"
+msgstr ""
 
 #: DB:link_type/description:815
 msgid ""
@@ -449,15 +485,31 @@ msgid ""
 "unknown!"
 msgstr "Relie une parution à la région dans laquelle elle a été mixée. À n'utiliser que si le lieu est inconnu !"
 
+#: DB:link_type/description:826
+msgid ""
+"Links a release to the area it was produced in. Use only when the place is "
+"unknown!"
+msgstr ""
+
 #: DB:link_type/description:699
 msgid ""
 "Links a release to the area it was recorded in. Use only when the place is "
 "unknown!"
 msgstr "Relie une parution vers la région où elle a été enregistrée. À n'utiliser que si le lieu est inconnu!"
 
+#: DB:link_type/description:831
+msgid ""
+"Links a release to the area it was remixed in. Use only when the place is "
+"unknown!"
+msgstr ""
+
 #: DB:link_type/description:810
 msgid "Links a release to the event it was recorded at."
 msgstr "Relie une parution à l'événement où elle a été enregistrée."
+
+#: DB:link_type/description:820
+msgid "Links a release to the place it was edited at."
+msgstr ""
 
 #: DB:link_type/description:812
 msgid "Links a release to the place it was engineered at."
@@ -471,9 +523,17 @@ msgstr "Relie une parution vers le lieu ou elle a été matricée."
 msgid "Links a release to the place it was mixed at."
 msgstr "Relie une parution vers le lieu ou elle a été mixée."
 
+#: DB:link_type/description:824
+msgid "Links a release to the place it was produced at."
+msgstr ""
+
 #: DB:link_type/description:695
 msgid "Links a release to the place it was recorded at."
 msgstr "Relie une parution vers le lieu ou elle a été enregistrée."
+
+#: DB:link_type/description:828
+msgid "Links a release to the place it was remixed at."
+msgstr ""
 
 #: DB:link_type/description:796
 msgid "Links a release with a launch event for it."
@@ -486,11 +546,9 @@ msgid ""
 "official launch date, not for every release in the merchandise stall."
 msgstr "Relie une parution à un événement où elle était disponible. Ceci est pour les parutions exclusives à un événement et/où les parutions disponibles à des événements avant la date officielle de lancement, pas pour toutes les parutions présentées sur l'étal des marchandises."
 
-#: DB:link_type/description:700
-msgid ""
-"Links an artist to a place where they held a concert. Please include as "
-"detailed a date as possible."
-msgstr "Relie un artiste vers le lieu ou il a été en concert. Veuillez indiquer une date aussi précise que possible."
+#: DB:link_type/description:823
+msgid "Links a series to another series that exists within it."
+msgstr ""
 
 #: DB:link_type/description:798
 msgid "Links an event to (one of) its main performer(s)."
@@ -1023,6 +1081,12 @@ msgid ""
 "creative position, such as photographer or graphic designer."
 msgstr "Ceci indique qu'un artiste était officiellement engagé par un label à un poste créatif tel que photographe ou concepteur graphique."
 
+#: DB:link_type/description:818
+msgid ""
+"This indicates that an event is made up of multiple parts (e.g. a festival "
+"happening on multiple venues over the course of a few days)."
+msgstr ""
+
 #: DB:link_type/description:2
 msgid ""
 "This indicates that one release is identical to another release, but that "
@@ -1464,10 +1528,6 @@ msgid ""
 " the entire tribute album."
 msgstr "Ceci relie un groupe de parution à un artiste pour indiquer que c'est un album-hommage. Les albums-hommage on souvent un titre comme « Hommage à Nomd'artiste ». Ils sont habituellement constitués de reprises de chansons de l'artiste visé, jouées par d'autres groupes (parfois vraiment inconnus) pour honorer l'artiste visé. Ce sont souvent des compilations d'artistes divers, mais un artiste seul peut interpréter l'album-hommage en entier."
 
-#: DB:link_type/description:721
-msgid "This links a release group with the place that held its launch event."
-msgstr "Ceci relie un groupe de parution au lieu de son événement de lancement. "
-
 #: DB:link_type/description:301
 msgid "This links a release to a license under which it is available."
 msgstr "Ceci relie une parution  à une licence sous laquelle elle est disponible."
@@ -1495,10 +1555,6 @@ msgid ""
 "other material. Note that this includes the artist who created a mash-up or "
 "used samples as well."
 msgstr "Ceci relie une parution à la personne l'ayant remixée en prenant une ou des autres pistes, en les modifiant substantiellement et en les mélangeant avec du contenu supplémentaire. Notez que ceci inclut l'artiste ayant créé un collage ou ayant aussi utilisé des échantillons."
-
-#: DB:link_type/description:720
-msgid "This links a release with the place that held its launch event."
-msgstr "Ceci relie une parution au lieu de son événement de lancement. "
 
 #: DB:link_type/description:805
 msgid ""
@@ -1745,6 +1801,12 @@ msgid ""
 "release."
 msgstr "Cette relation indique que l'artiste est le détenteur des droits d'auteur pour cette parution."
 
+#: DB:link_type/description:833
+msgid ""
+"This relationship indicates the company that was the licensee of this "
+"release (that is, received a license for it from other company)."
+msgstr ""
+
 #: DB:link_type/description:712
 msgid ""
 "This relationship indicates the company that was the licensor of this "
@@ -1820,6 +1882,12 @@ msgid ""
 "This relationship type can be used to link a label to the person(s) who "
 "founded it."
 msgstr "Ce type de relation peut être utilisé pour relier un label à la/aux personne(s) qui l'a/l'ont fondé."
+
+#: DB:link_type/description:832
+msgid ""
+"This relationship type can be used to link a place (generally a studio or "
+"venue) to the person(s) who founded it."
+msgstr ""
 
 #: DB:link_type/description:627
 msgid "This relationship type can be used to link a place to its blog"
@@ -2470,6 +2538,19 @@ msgstr "première parution"
 msgid "edit of"
 msgstr "montage de"
 
+#: DB:link_type/reverse_link_phrase:819 DB:link_type/reverse_link_phrase:820
+msgid "edited at"
+msgstr ""
+
+#: DB:link_type/reverse_link_phrase:821 DB:link_type/reverse_link_phrase:822
+msgid "edited in"
+msgstr ""
+
+#: DB:link_type/link_phrase:821 DB:link_type/link_phrase:819
+#: DB:link_type/link_phrase:820 DB:link_type/link_phrase:822
+msgid "editing location for"
+msgstr ""
+
 #: DB:link_type/reverse_link_phrase:309
 msgid "edits"
 msgstr "montages"
@@ -2515,7 +2596,8 @@ msgstr "page de fan pour"
 msgid "fan pages"
 msgstr "pages de fan"
 
-#: DB:link_type/link_phrase:116 DB:link_type/long_link_phrase:116
+#: DB:link_type/link_phrase:116 DB:link_type/link_phrase:832
+#: DB:link_type/long_link_phrase:116 DB:link_type/long_link_phrase:832
 msgid "founded"
 msgstr "fondé"
 
@@ -2523,7 +2605,7 @@ msgstr "fondé"
 msgid "founder"
 msgstr "fondateur"
 
-#: DB:link_type/reverse_link_phrase:116
+#: DB:link_type/reverse_link_phrase:116 DB:link_type/reverse_link_phrase:832
 msgid "founders"
 msgstr "fondateurs"
 
@@ -2715,6 +2797,10 @@ msgstr "a une page setlist.fm à"
 msgid "has a social networking page at"
 msgstr "à une page de réseau social à"
 
+#: DB:link_type/long_link_phrase:287
+msgid "has a standalone website at"
+msgstr ""
+
 #: DB:link_type/long_link_phrase:755 DB:link_type/long_link_phrase:284
 #: DB:link_type/long_link_phrase:283 DB:link_type/long_link_phrase:285
 msgid "has an Allmusic page at"
@@ -2740,8 +2826,8 @@ msgid "has an official YouTube channel at"
 msgstr "a une chaîne officielle YouTube à"
 
 #: DB:link_type/long_link_phrase:745 DB:link_type/long_link_phrase:782
-#: DB:link_type/long_link_phrase:287 DB:link_type/long_link_phrase:183
-#: DB:link_type/long_link_phrase:219 DB:link_type/long_link_phrase:363
+#: DB:link_type/long_link_phrase:183 DB:link_type/long_link_phrase:219
+#: DB:link_type/long_link_phrase:363
 msgid "has an official homepage at"
 msgstr "à un site Web officiel à"
 
@@ -2811,7 +2897,7 @@ msgstr "à une partie"
 
 #: DB:link_type/link_phrase:743 DB:link_type/reverse_link_phrase:802
 #: DB:link_type/reverse_link_phrase:742 DB:link_type/reverse_link_phrase:740
-#: DB:link_type/reverse_link_phrase:741
+#: DB:link_type/reverse_link_phrase:741 DB:link_type/long_link_phrase:818
 msgid "has parts"
 msgstr "a des parties"
 
@@ -2843,6 +2929,10 @@ msgstr "a des notes sur l'émission à"
 msgid "has sibling(s)"
 msgstr "a un/des frère(s) et sœur(s)"
 
+#: DB:link_type/long_link_phrase:823
+msgid "has subseries"
+msgstr ""
+
 #: DB:link_type/long_link_phrase:736
 msgid "has subtype"
 msgstr "a un sous-type"
@@ -2859,17 +2949,9 @@ msgstr "a un/des album(s) hommage"
 msgid "has/had {additional} samples taken from"
 msgstr "a/avait des échantillons {additional:additionnels} provenant de"
 
-#: DB:link_type/long_link_phrase:700
-msgid "held a concert at"
-msgstr "à donné un concert à"
-
 #: DB:link_type/link_phrase:794
 msgid "held at"
 msgstr "tenu à"
-
-#: DB:link_type/link_phrase:700
-msgid "held concerts at"
-msgstr "à donné des concerts à"
 
 #: DB:link_type/link_phrase:793 DB:link_type/reverse_link_phrase:794
 msgid "held events"
@@ -2904,15 +2986,6 @@ msgstr "détient les droits phonographiques d'auteur pour"
 #: DB:link_type/link_phrase:801 DB:link_type/long_link_phrase:801
 msgid "host at"
 msgstr "hôte à"
-
-#: DB:link_type/reverse_link_phrase:700
-msgid "hosted concerts by"
-msgstr "a accueilli des concerts par"
-
-#: DB:link_type/link_phrase:720 DB:link_type/link_phrase:721
-#: DB:link_type/long_link_phrase:720 DB:link_type/long_link_phrase:721
-msgid "hosted launch event for"
-msgstr "a accueilli des événements de lancement pour"
 
 #: DB:link_type/long_link_phrase:716 DB:link_type/long_link_phrase:715
 msgid "hosted the premiere of"
@@ -3130,15 +3203,11 @@ msgstr "parutions plus récentes"
 msgid "later {translated} {parody} versions"
 msgstr "versions {translated:traduites} {parody:parodiées} plus récentes"
 
-#: DB:link_type/reverse_link_phrase:720 DB:link_type/reverse_link_phrase:721
-msgid "launch event at"
-msgstr "événement de lancement à"
-
-#: DB:link_type/link_phrase:797 DB:link_type/link_phrase:796
+#: DB:link_type/link_phrase:796 DB:link_type/link_phrase:797
 msgid "launch event for"
 msgstr "événement de lancement pour"
 
-#: DB:link_type/reverse_link_phrase:797 DB:link_type/reverse_link_phrase:796
+#: DB:link_type/reverse_link_phrase:796 DB:link_type/reverse_link_phrase:797
 msgid "launch events"
 msgstr "événements de lancement"
 
@@ -3170,6 +3239,14 @@ msgstr "sous licence"
 #: DB:link_type/reverse_link_phrase:712
 msgid "licensed from"
 msgstr "sous licence de"
+
+#: DB:link_type/reverse_link_phrase:833
+msgid "licensed to"
+msgstr ""
+
+#: DB:link_type/link_phrase:833
+msgid "licensee for"
+msgstr ""
 
 #: DB:link_attribute_type/name:578
 msgid "live"
@@ -3366,14 +3443,14 @@ msgid "number"
 msgstr "numéro"
 
 #: DB:link_type/reverse_link_phrase:745 DB:link_type/reverse_link_phrase:782
-#: DB:link_type/reverse_link_phrase:287 DB:link_type/reverse_link_phrase:183
-#: DB:link_type/reverse_link_phrase:219 DB:link_type/reverse_link_phrase:363
+#: DB:link_type/reverse_link_phrase:183 DB:link_type/reverse_link_phrase:219
+#: DB:link_type/reverse_link_phrase:363
 msgid "official homepage for"
 msgstr "site Web officiel de"
 
 #: DB:link_type/link_phrase:745 DB:link_type/link_phrase:782
-#: DB:link_type/link_phrase:287 DB:link_type/link_phrase:183
-#: DB:link_type/link_phrase:219 DB:link_type/link_phrase:363
+#: DB:link_type/link_phrase:183 DB:link_type/link_phrase:219
+#: DB:link_type/link_phrase:363
 msgid "official homepages"
 msgstr "sites Web officiels de"
 
@@ -3450,7 +3527,7 @@ msgstr "parodie"
 #: DB:link_type/link_phrase:740 DB:link_type/link_phrase:741
 #: DB:link_type/reverse_link_phrase:739 DB:link_type/reverse_link_phrase:717
 #: DB:link_type/reverse_link_phrase:281 DB:link_type/reverse_link_phrase:356
-#: DB:link_type/reverse_link_phrase:743
+#: DB:link_type/reverse_link_phrase:818 DB:link_type/reverse_link_phrase:743
 msgid "part of"
 msgstr "partie de"
 
@@ -3460,6 +3537,7 @@ msgstr "partiel"
 
 #: DB:link_type/description:739 DB:link_type/link_phrase:717
 #: DB:link_type/link_phrase:281 DB:link_type/link_phrase:356
+#: DB:link_type/link_phrase:818
 msgid "parts"
 msgstr "parties"
 
@@ -3550,6 +3628,14 @@ msgstr "salle de concert principale de"
 msgid "principal"
 msgstr "principal"
 
+#: DB:link_type/reverse_link_phrase:824 DB:link_type/reverse_link_phrase:825
+msgid "produced at"
+msgstr ""
+
+#: DB:link_type/reverse_link_phrase:826 DB:link_type/reverse_link_phrase:827
+msgid "produced in"
+msgstr ""
+
 #: DB:link_type/link_phrase:49 DB:link_type/link_phrase:154
 #: DB:link_type/long_link_phrase:49 DB:link_type/long_link_phrase:154
 msgid "produced material that was {additional:additionally} sampled in"
@@ -3562,6 +3648,11 @@ msgstr "poste de producteur"
 #: DB:link_type/reverse_link_phrase:117
 msgid "producers"
 msgstr "producteurs"
+
+#: DB:link_type/link_phrase:824 DB:link_type/link_phrase:825
+#: DB:link_type/link_phrase:826 DB:link_type/link_phrase:827
+msgid "producing location for"
+msgstr ""
 
 #: DB:link_type/link_phrase:256 DB:link_type/link_phrase:160
 #: DB:link_type/link_phrase:59 DB:link_type/link_phrase:72
@@ -3702,6 +3793,14 @@ msgstr "rematriçages"
 msgid "remix of"
 msgstr "remix de"
 
+#: DB:link_type/reverse_link_phrase:828 DB:link_type/reverse_link_phrase:829
+msgid "remixed at"
+msgstr ""
+
+#: DB:link_type/reverse_link_phrase:830 DB:link_type/reverse_link_phrase:831
+msgid "remixed in"
+msgstr ""
+
 #: DB:link_type/reverse_link_phrase:230 DB:link_type/reverse_link_phrase:9
 msgid "remixes"
 msgstr "remixes"
@@ -3714,6 +3813,11 @@ msgstr "remixes"
 #: DB:link_type/long_link_phrase:13 DB:link_type/long_link_phrase:234
 msgid "remixes and compilations"
 msgstr "remixes et compilations"
+
+#: DB:link_type/link_phrase:828 DB:link_type/link_phrase:829
+#: DB:link_type/link_phrase:830 DB:link_type/link_phrase:831
+msgid "remixing location for"
+msgstr ""
 
 #: DB:link_type/reverse_link_phrase:202
 msgid "renamed from"
@@ -3809,6 +3913,14 @@ msgstr "voix de soprano"
 msgid "spoken vocals"
 msgstr "voix parlées"
 
+#: DB:link_type/link_phrase:287
+msgid "standalone website"
+msgstr ""
+
+#: DB:link_type/reverse_link_phrase:287
+msgid "standalone website for"
+msgstr ""
+
 #: DB:link_type/link_phrase:194
 msgid "stream for free"
 msgstr "diffusion en flux gratuite"
@@ -3824,6 +3936,14 @@ msgstr "sous-groupe de"
 #: DB:link_type/reverse_link_phrase:722
 msgid "subgroups"
 msgstr "sous-groupes"
+
+#: DB:link_type/link_phrase:823
+msgid "subseries"
+msgstr ""
+
+#: DB:link_type/reverse_link_phrase:823
+msgid "subseries of"
+msgstr ""
 
 #: DB:link_type/link_phrase:200
 msgid "subsidiaries"
@@ -3933,7 +4053,7 @@ msgstr "voix par"
 msgid "was a conductor at"
 msgstr "était chef d'orchestre à"
 
-#: DB:link_type/long_link_phrase:797 DB:link_type/long_link_phrase:796
+#: DB:link_type/long_link_phrase:796 DB:link_type/long_link_phrase:797
 msgid "was a launch event for"
 msgstr "était un événement de lancement pour"
 
@@ -3948,6 +4068,10 @@ msgstr "était un interprète de soutien à"
 #: DB:link_type/long_link_phrase:807
 msgid "was an orchestra at"
 msgstr "était un orchestre à"
+
+#: DB:link_type/long_link_phrase:833
+msgid "was granted license for"
+msgstr ""
 
 #: DB:link_type/long_link_phrase:794
 msgid "was held at"
@@ -3965,6 +4089,11 @@ msgstr "a été renommé en"
 msgid "was the concertmaster for"
 msgstr "était le premier violon pour"
 
+#: DB:link_type/long_link_phrase:821 DB:link_type/long_link_phrase:819
+#: DB:link_type/long_link_phrase:820 DB:link_type/long_link_phrase:822
+msgid "was the editing location for"
+msgstr ""
+
 #: DB:link_type/long_link_phrase:812 DB:link_type/long_link_phrase:813
 #: DB:link_type/long_link_phrase:814 DB:link_type/long_link_phrase:815
 msgid "was the engineering location for"
@@ -3979,11 +4108,21 @@ msgstr "était le lieu de matriçage de"
 msgid "was the mixing location for"
 msgstr "était le lieu de mixage de"
 
+#: DB:link_type/long_link_phrase:824 DB:link_type/long_link_phrase:825
+#: DB:link_type/long_link_phrase:826 DB:link_type/long_link_phrase:827
+msgid "was the producing location for"
+msgstr ""
+
 #: DB:link_type/long_link_phrase:809 DB:link_type/long_link_phrase:810
 #: DB:link_type/long_link_phrase:695 DB:link_type/long_link_phrase:699
 #: DB:link_type/long_link_phrase:698 DB:link_type/long_link_phrase:693
 msgid "was the recording location for"
 msgstr "était le lieu d'enregistrement de"
+
+#: DB:link_type/long_link_phrase:828 DB:link_type/long_link_phrase:829
+#: DB:link_type/long_link_phrase:830 DB:link_type/long_link_phrase:831
+msgid "was the remixing location for"
+msgstr ""
 
 #: DB:link_type/description:733
 msgid "wikidata"
