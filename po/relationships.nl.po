@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-12-16 07:54+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"PO-Revision-Date: 2014-12-21 12:00+0000\n"
+"Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1079,7 +1079,7 @@ msgstr "Dit geeft aan dat een artiest officieel bij een platenmaatschappij in di
 msgid ""
 "This indicates that an event is made up of multiple parts (e.g. a festival "
 "happening on multiple venues over the course of a few days)."
-msgstr ""
+msgstr "Dit geeft aan dat een evenement bestaat uit meerdere delen (bijvoorbeeld een festival dat op verschillende dagen of op verschillende locaties plaatsvindt)."
 
 #: DB:link_type/description:2
 msgid ""
@@ -1799,7 +1799,7 @@ msgstr "Deze relatie geeft aan dat de artiest de houder van het auteursrecht is 
 msgid ""
 "This relationship indicates the company that was the licensee of this "
 "release (that is, received a license for it from other company)."
-msgstr ""
+msgstr "Deze relatie geeft aan dat het bedrijf een licentie had op deze uitgave (dat wil zeggen dat het er van een ander bedrijf een licentie voor had)."
 
 #: DB:link_type/description:712
 msgid ""
@@ -1881,7 +1881,7 @@ msgstr "Deze relatie kan worden gebruikt om een platenmaatschappij te koppelen a
 msgid ""
 "This relationship type can be used to link a place (generally a studio or "
 "venue) to the person(s) who founded it."
-msgstr ""
+msgstr "Dit relatietype kan gebruikt woorden om een plaats (meestal een studio of een zaal) te koppelen aan de persoon of personen die het heeft opgericht."
 
 #: DB:link_type/description:627
 msgid "This relationship type can be used to link a place to its blog"
@@ -2229,7 +2229,7 @@ msgstr "geassocieerd"
 
 #: DB:link_type/reverse_link_phrase:11
 msgid "associated {EP:EPs|singles}"
-msgstr "heeft geassocieerde {EP:EPs|singles}"
+msgstr "heeft {EP:EPs|singles}"
 
 #: DB:link_type/reverse_link_phrase:795
 msgid "available at"
@@ -3789,11 +3789,11 @@ msgstr "remix van"
 
 #: DB:link_type/reverse_link_phrase:828 DB:link_type/reverse_link_phrase:829
 msgid "remixed at"
-msgstr ""
+msgstr "geremixt bij"
 
 #: DB:link_type/reverse_link_phrase:830 DB:link_type/reverse_link_phrase:831
 msgid "remixed in"
-msgstr ""
+msgstr "geremixt in"
 
 #: DB:link_type/reverse_link_phrase:230 DB:link_type/reverse_link_phrase:9
 msgid "remixes"
@@ -3811,7 +3811,7 @@ msgstr "remixes en compilaties"
 #: DB:link_type/link_phrase:828 DB:link_type/link_phrase:829
 #: DB:link_type/link_phrase:830 DB:link_type/link_phrase:831
 msgid "remixing location for"
-msgstr ""
+msgstr "remixlocatie van"
 
 #: DB:link_type/reverse_link_phrase:202
 msgid "renamed from"
@@ -3856,7 +3856,7 @@ msgstr "partituur van"
 #: DB:link_type/link_phrase:811 DB:link_type/link_phrase:816
 #: DB:link_type/link_phrase:817
 msgid "setlist.fm"
-msgstr ""
+msgstr "setlist.fm"
 
 #: DB:link_type/reverse_link_phrase:811 DB:link_type/reverse_link_phrase:816
 #: DB:link_type/reverse_link_phrase:817
@@ -3909,11 +3909,11 @@ msgstr "gesproken vocalen"
 
 #: DB:link_type/link_phrase:287
 msgid "standalone website"
-msgstr ""
+msgstr "losstaande website"
 
 #: DB:link_type/reverse_link_phrase:287
 msgid "standalone website for"
-msgstr ""
+msgstr "losstaande website voor"
 
 #: DB:link_type/link_phrase:194
 msgid "stream for free"
