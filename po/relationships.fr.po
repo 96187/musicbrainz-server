@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-12-16 16:10+0000\n"
+"PO-Revision-Date: 2014-12-23 15:59+0000\n"
 "Last-Translator: yahoe.001\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -548,7 +548,7 @@ msgstr "Relie une parution à un événement où elle était disponible. Ceci es
 
 #: DB:link_type/description:823
 msgid "Links a series to another series that exists within it."
-msgstr "Relie une série à une autre série comprise dans elle-même."
+msgstr "Relie une série à une autre série comprise en elle-même."
 
 #: DB:link_type/description:798
 msgid "Links an event to (one of) its main performer(s)."
@@ -1085,7 +1085,7 @@ msgstr "Ceci indique qu'un artiste était officiellement engagé par un label à
 msgid ""
 "This indicates that an event is made up of multiple parts (e.g. a festival "
 "happening on multiple venues over the course of a few days)."
-msgstr "Ceci indique qu'un événement est formé de plusieurs parties (par ex. un festival se déroulant dans plusieurs lieux durant plusieurs jours)."
+msgstr "Ceci indique qu'un événement est formé de plusieurs parties (par ex. un festival se déroulant dans plusieurs lieux durant quelques jours)."
 
 #: DB:link_type/description:2
 msgid ""
@@ -1664,7 +1664,7 @@ msgid ""
 " user contributed database concerned with the stories behind the songs."
 msgstr "Ceci relie une entité à la liste appropriée de la base de données Songfacts, une base de données auxquels les utilisateurs contribuent, se préoccupant des histoires derrière les chansons."
 
-#: DB:link_type/description:803 DB:link_type/description:746
+#: DB:link_type/description:746 DB:link_type/description:803
 #: DB:link_type/description:96 DB:link_type/description:82
 #: DB:link_type/description:306 DB:link_type/description:222
 #: DB:link_type/description:273 DB:link_type/description:188
@@ -1805,7 +1805,7 @@ msgstr "Cette relation indique que l'artiste est le détenteur des droits d'aute
 msgid ""
 "This relationship indicates the company that was the licensee of this "
 "release (that is, received a license for it from other company)."
-msgstr "Cette relation indique la compagnie détentrice de la licence pour cette parution (ayant reçu une licence pour cette parution d'une autre compagnie)."
+msgstr "Cette relation indique la compagnie détentrice de la licence pour cette parution (c.-à-d. ayant reçu une licence pour cette parution d'une autre compagnie)."
 
 #: DB:link_type/description:712
 msgid ""
@@ -2771,7 +2771,7 @@ msgstr "à un logo à"
 msgid "has a miscellaneous role on"
 msgstr "a un rôle divers sur"
 
-#: DB:link_type/long_link_phrase:803 DB:link_type/long_link_phrase:746
+#: DB:link_type/long_link_phrase:746 DB:link_type/long_link_phrase:803
 #: DB:link_type/long_link_phrase:96 DB:link_type/long_link_phrase:82
 #: DB:link_type/long_link_phrase:306 DB:link_type/long_link_phrase:222
 #: DB:link_type/long_link_phrase:188 DB:link_type/long_link_phrase:561
@@ -2931,7 +2931,7 @@ msgstr "a un/des frère(s) et sœur(s)"
 
 #: DB:link_type/long_link_phrase:823
 msgid "has subseries"
-msgstr "a des sous-séries"
+msgstr "a une sous-série"
 
 #: DB:link_type/long_link_phrase:736
 msgid "has subtype"
@@ -3488,13 +3488,13 @@ msgstr "orchestration de"
 msgid "orchestrations"
 msgstr "orchestrations"
 
-#: DB:link_type/link_phrase:753 DB:link_type/link_phrase:803
-#: DB:link_type/link_phrase:746 DB:link_type/link_phrase:96
+#: DB:link_type/link_phrase:753 DB:link_type/link_phrase:746
+#: DB:link_type/link_phrase:803 DB:link_type/link_phrase:96
 #: DB:link_type/link_phrase:730 DB:link_type/link_phrase:82
 #: DB:link_type/link_phrase:306 DB:link_type/link_phrase:222
 #: DB:link_type/link_phrase:273 DB:link_type/link_phrase:188
 #: DB:link_type/link_phrase:561 DB:link_type/reverse_link_phrase:753
-#: DB:link_type/reverse_link_phrase:803 DB:link_type/reverse_link_phrase:746
+#: DB:link_type/reverse_link_phrase:746 DB:link_type/reverse_link_phrase:803
 #: DB:link_type/reverse_link_phrase:96 DB:link_type/reverse_link_phrase:730
 #: DB:link_type/reverse_link_phrase:82 DB:link_type/reverse_link_phrase:306
 #: DB:link_type/reverse_link_phrase:222 DB:link_type/reverse_link_phrase:273
@@ -3525,9 +3525,9 @@ msgstr "parodie"
 
 #: DB:link_type/link_phrase:802 DB:link_type/link_phrase:742
 #: DB:link_type/link_phrase:740 DB:link_type/link_phrase:741
-#: DB:link_type/reverse_link_phrase:739 DB:link_type/reverse_link_phrase:717
-#: DB:link_type/reverse_link_phrase:281 DB:link_type/reverse_link_phrase:356
-#: DB:link_type/reverse_link_phrase:818 DB:link_type/reverse_link_phrase:743
+#: DB:link_type/reverse_link_phrase:739 DB:link_type/reverse_link_phrase:818
+#: DB:link_type/reverse_link_phrase:717 DB:link_type/reverse_link_phrase:281
+#: DB:link_type/reverse_link_phrase:356 DB:link_type/reverse_link_phrase:743
 msgid "part of"
 msgstr "partie de"
 
@@ -3535,9 +3535,9 @@ msgstr "partie de"
 msgid "partial"
 msgstr "partiel"
 
-#: DB:link_type/description:739 DB:link_type/link_phrase:717
-#: DB:link_type/link_phrase:281 DB:link_type/link_phrase:356
-#: DB:link_type/link_phrase:818
+#: DB:link_type/description:739 DB:link_type/link_phrase:818
+#: DB:link_type/link_phrase:717 DB:link_type/link_phrase:281
+#: DB:link_type/link_phrase:356
 msgid "parts"
 msgstr "parties"
 
