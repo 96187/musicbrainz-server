@@ -3,13 +3,13 @@
 # nikki, 2013
 # nikki2 <email address hidden>, 2012
 # Maurits Meulenbelt <email address hidden>, 2012
-# Maurits Meulenbelt <email address hidden>, 2013-2014
+# Maurits Meulenbelt <email address hidden>, 2013-2015
 # Nikolai Prokoschenko <email address hidden>, 2011
 # nikki, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-12-21 12:11+0000\n"
+"PO-Revision-Date: 2015-01-06 22:34+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -1658,7 +1658,7 @@ msgid ""
 " user contributed database concerned with the stories behind the songs."
 msgstr "Dit koppelt een object aan een toepasselijke lijst in de gegevensbank van Songfacts, een door gebruikers onderhouden gegevensbank over de verhalen achter nummers. "
 
-#: DB:link_type/description:803 DB:link_type/description:746
+#: DB:link_type/description:746 DB:link_type/description:803
 #: DB:link_type/description:96 DB:link_type/description:82
 #: DB:link_type/description:306 DB:link_type/description:222
 #: DB:link_type/description:273 DB:link_type/description:188
@@ -2765,7 +2765,7 @@ msgstr "heeft een logo op"
 msgid "has a miscellaneous role on"
 msgstr "heeft een diverse rol op"
 
-#: DB:link_type/long_link_phrase:803 DB:link_type/long_link_phrase:746
+#: DB:link_type/long_link_phrase:746 DB:link_type/long_link_phrase:803
 #: DB:link_type/long_link_phrase:96 DB:link_type/long_link_phrase:82
 #: DB:link_type/long_link_phrase:306 DB:link_type/long_link_phrase:222
 #: DB:link_type/long_link_phrase:188 DB:link_type/long_link_phrase:561
@@ -3482,13 +3482,13 @@ msgstr "orkestratie van"
 msgid "orchestrations"
 msgstr "orkestraties"
 
-#: DB:link_type/link_phrase:753 DB:link_type/link_phrase:803
-#: DB:link_type/link_phrase:746 DB:link_type/link_phrase:96
+#: DB:link_type/link_phrase:753 DB:link_type/link_phrase:746
+#: DB:link_type/link_phrase:803 DB:link_type/link_phrase:96
 #: DB:link_type/link_phrase:730 DB:link_type/link_phrase:82
 #: DB:link_type/link_phrase:306 DB:link_type/link_phrase:222
 #: DB:link_type/link_phrase:273 DB:link_type/link_phrase:188
 #: DB:link_type/link_phrase:561 DB:link_type/reverse_link_phrase:753
-#: DB:link_type/reverse_link_phrase:803 DB:link_type/reverse_link_phrase:746
+#: DB:link_type/reverse_link_phrase:746 DB:link_type/reverse_link_phrase:803
 #: DB:link_type/reverse_link_phrase:96 DB:link_type/reverse_link_phrase:730
 #: DB:link_type/reverse_link_phrase:82 DB:link_type/reverse_link_phrase:306
 #: DB:link_type/reverse_link_phrase:222 DB:link_type/reverse_link_phrase:273
@@ -3519,9 +3519,9 @@ msgstr "parodie"
 
 #: DB:link_type/link_phrase:802 DB:link_type/link_phrase:742
 #: DB:link_type/link_phrase:740 DB:link_type/link_phrase:741
-#: DB:link_type/reverse_link_phrase:739 DB:link_type/reverse_link_phrase:717
-#: DB:link_type/reverse_link_phrase:281 DB:link_type/reverse_link_phrase:356
-#: DB:link_type/reverse_link_phrase:818 DB:link_type/reverse_link_phrase:743
+#: DB:link_type/reverse_link_phrase:739 DB:link_type/reverse_link_phrase:818
+#: DB:link_type/reverse_link_phrase:717 DB:link_type/reverse_link_phrase:281
+#: DB:link_type/reverse_link_phrase:356 DB:link_type/reverse_link_phrase:743
 msgid "part of"
 msgstr "deel van"
 
@@ -3529,9 +3529,9 @@ msgstr "deel van"
 msgid "partial"
 msgstr "gedeeltelijk"
 
-#: DB:link_type/description:739 DB:link_type/link_phrase:717
-#: DB:link_type/link_phrase:281 DB:link_type/link_phrase:356
-#: DB:link_type/link_phrase:818
+#: DB:link_type/description:739 DB:link_type/link_phrase:818
+#: DB:link_type/link_phrase:717 DB:link_type/link_phrase:281
+#: DB:link_type/link_phrase:356
 msgid "parts"
 msgstr "delen"
 
@@ -4193,7 +4193,7 @@ msgstr "remixte {additional:aanvullend}"
 
 #: DB:link_type/reverse_link_phrase:69 DB:link_type/reverse_link_phrase:231
 msgid "{additional:additionally} sampled by"
-msgstr "{additional:aanvullend} gesampled door"
+msgstr "{additional:aanvullend} gesampled in"
 
 #: DB:link_type/link_phrase:54 DB:link_type/link_phrase:167
 #: DB:link_type/long_link_phrase:54 DB:link_type/long_link_phrase:167
