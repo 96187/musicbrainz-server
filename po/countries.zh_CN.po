@@ -8,15 +8,15 @@
 # RedHotHeat <email address hidden>, 2012
 #   LI Daobing <email address hidden>, 2007, 2008, 2009, 2010, 2011
 # LI Daobing <email address hidden>, 2007, 2008, 2009, 2010
-# mry_33 <email address hidden>, 2014
+# 毛瑞盈 <email address hidden>, 2014
 #   Tobias Toedter <email address hidden>, 2007
 #   - Wang Jian <email address hidden>, 2000
 # YunQiang Su <email address hidden>, 2011
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2014-02-05 13:23+0000\n"
-"Last-Translator: mry_33 <email address hidden>\n"
+"PO-Revision-Date: 2015-01-11 07:05+0000\n"
+"Last-Translator: Ian McEwen <email address hidden>\n"
 "Language-Team: Chinese (China) (http://www.transifex.com/projects/p/musicbrainz/language/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -404,6 +404,11 @@ msgstr "福克兰群岛"
 msgid "Faroe Islands"
 msgstr "法罗群岛"
 
+#. iso.code:FM
+#: DBarea JOIN iso_3166_1 iso on iso.area = area.id/area.name:139
+msgid "Federated States of Micronesia"
+msgstr ""
+
 #. iso.code:FJ
 #: DBarea JOIN iso_3166_1 iso on iso.area = area.id/area.name:71
 msgid "Fiji"
@@ -749,11 +754,6 @@ msgstr "马约特"
 msgid "Mexico"
 msgstr "墨西哥"
 
-#. iso.code:FM
-#: DBarea JOIN iso_3166_1 iso on iso.area = area.id/area.name:139
-msgid "Micronesia, Federated States of"
-msgstr "密克罗尼西亚"
-
 #. iso.code:MD
 #: DBarea JOIN iso_3166_1 iso on iso.area = area.id/area.name:140
 msgid "Moldova"
@@ -946,8 +946,8 @@ msgstr "罗马尼亚"
 
 #. iso.code:RU
 #: DBarea JOIN iso_3166_1 iso on iso.area = area.id/area.name:176
-msgid "Russian Federation"
-msgstr "俄罗斯"
+msgid "Russia"
+msgstr ""
 
 #. iso.code:RW
 #: DBarea JOIN iso_3166_1 iso on iso.area = area.id/area.name:177
