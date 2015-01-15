@@ -22,9 +22,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-11 00:03-0700\n"
-"PO-Revision-Date: 2015-01-11 09:16+0000\n"
-"Last-Translator: Maurits Meulenbelt <email address hidden>\n"
+"POT-Creation-Date: 2015-01-14 17:21-0700\n"
+"PO-Revision-Date: 2015-01-15 00:23+0000\n"
+"Last-Translator: Ian McEwen <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2812,7 +2812,7 @@ msgstr "Bewerkt"
 msgid "Editing"
 msgstr "Bewerken"
 
-#: ../root/edit/info.tt:66 ../root/edit/list_header.tt:29
+#: ../root/edit/info.tt:66 ../root/edit/list_header.tt:30
 msgid "Editing FAQ"
 msgstr "FAQ voor bewerkingen"
 
@@ -3549,12 +3549,12 @@ msgstr "UU:MM"
 msgid "Headings:"
 msgstr "Koppen:"
 
-#: ../root/edit/list_header.tt:24
+#: ../root/edit/list_header.tt:25
 msgid "Help:"
 msgstr "Help:"
 
 #: ../root/components/common-macros.tt:629
-#: ../lib/MusicBrainz/Server/Controller/Edit.pm:200
+#: ../lib/MusicBrainz/Server/Controller/Edit.pm:201
 msgid "High"
 msgstr "Hoog"
 
@@ -3575,7 +3575,7 @@ msgstr "Host:"
 msgid "How Tos"
 msgstr "Howto’s"
 
-#: ../root/edit/list_header.tt:33
+#: ../root/edit/list_header.tt:34
 msgid "How editing works"
 msgstr "Hoe bewerkingen werken"
 
@@ -4336,7 +4336,7 @@ msgid "Lost Username"
 msgstr "Gebruikersnaam kwijt"
 
 #: ../root/components/common-macros.tt:629
-#: ../lib/MusicBrainz/Server/Controller/Edit.pm:200
+#: ../lib/MusicBrainz/Server/Controller/Edit.pm:201
 msgid "Low"
 msgstr "Laag"
 
@@ -5000,7 +5000,7 @@ msgid "No releases with this tag were found."
 msgstr "Geen uitgaves met dit etiket gevonden."
 
 #: ../root/release/edit/tracklist.tt:110
-#: ../root/static/scripts/common/MB/Control/Autocomplete.js:384
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:392
 msgid "No results"
 msgstr "Geen resultaten"
 
@@ -5088,7 +5088,7 @@ msgid ""
 msgstr "Geen van de gekoppelde disc-id’s past bij een pregapnummer met de opgegeven lengte."
 
 #: ../root/components/common-macros.tt:629
-#: ../lib/MusicBrainz/Server/Controller/Edit.pm:200
+#: ../lib/MusicBrainz/Server/Controller/Edit.pm:201
 msgid "Normal"
 msgstr "Normaal"
 
@@ -5261,7 +5261,7 @@ msgstr "Openstaande bewerkingen van objecten waarop u bent geabonneerd"
 msgid "Open Edits for {name}"
 msgstr "Openstaande bewerkingen voor {name}"
 
-#: ../root/collection/layout.tt:22 ../root/edit/list_header.tt:15
+#: ../root/collection/layout.tt:22 ../root/edit/list_header.tt:16
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:51
 msgid "Open edits"
 msgstr "Openstaande bewerkingen"
@@ -5918,7 +5918,7 @@ msgstr "Opnames met verschillende nummerlengtes"
 msgid "Recordings:"
 msgstr "Opnames:"
 
-#: ../root/edit/list_header.tt:12
+#: ../root/edit/list_header.tt:13
 msgid "Refine this search"
 msgstr "Verfijn deze zoekopdracht"
 
@@ -7509,7 +7509,7 @@ msgstr "Stop met het volgen van de geselecteerde artiesten."
 msgid "Style Guidelines"
 msgstr "Stijlgids"
 
-#: ../root/edit/list_header.tt:31 ../root/main/index.tt:81
+#: ../root/edit/list_header.tt:32 ../root/main/index.tt:81
 msgid "Style guidelines"
 msgstr "Stijlgids"
 
@@ -7556,11 +7556,11 @@ msgstr "Abonneer"
 msgid "Subscribed"
 msgstr "Geabonneerd"
 
-#: ../root/edit/list_header.tt:19
+#: ../root/edit/list_header.tt:20
 msgid "Subscribed editors"
 msgstr "Geabonneerde redacteurs"
 
-#: ../root/edit/list_header.tt:17
+#: ../root/edit/list_header.tt:18
 msgid "Subscribed entities"
 msgstr "Geabonneerde objecten"
 
@@ -9720,7 +9720,7 @@ msgstr "Voorstemmen:"
 msgid "Voting"
 msgstr "Stemmen"
 
-#: ../root/edit/info.tt:65 ../root/edit/list_header.tt:27
+#: ../root/edit/info.tt:65 ../root/edit/list_header.tt:28
 msgid "Voting FAQ"
 msgstr "Stem-FAQ"
 
@@ -10314,10 +10314,8 @@ msgid ""
 msgstr "U moet een werkend e-mailadres verstrekken als u aan de gegevensbank wilt bijdragen."
 
 #: ../root/release/edit/editnote.tt:32
-msgid ""
-"You must provide an edit note when adding a release. Even just a URL or "
-"something like “CD in hand” helps!"
-msgstr "U moet een bewerkingsnotitie geven als u een uitgave toevoegt. Alleen al een URL of iets als “cd in mijn hand” helpt!"
+msgid "You must provide an edit note when adding a release."
+msgstr ""
 
 #: ../root/release/edit/information.tt:67
 msgid "You must select an existing release group."
@@ -10388,6 +10386,12 @@ msgstr "Uw profiel is bijgewerkt"
 #: ../root/search/error/invalid.tt:3
 msgid "Your search query was deemed invalid by our ruthless search server."
 msgstr "Uw zoekopdracht is door onze meedogenloze zoekserver ongeldig verklaard."
+
+#: ../root/edit/search.tt:7
+msgid ""
+"Your search took too long and was cancelled. It may help to be more "
+"specific, or to try again."
+msgstr ""
 
 #: ../root/account/register.tt:27
 msgid "Your username will be publicly visible."
@@ -11242,12 +11246,12 @@ msgid ""
 "This beta test server allows testing of new features with the live database."
 msgstr "Deze bètaserver laat gebruikers nieuwe mogelijkheden testen met een live-gegevensbank."
 
-#: ../lib/MusicBrainz/Server/Controller.pm:30
+#: ../lib/MusicBrainz/Server/Controller.pm:29
 #, perl-brace-format
 msgid "'{id}' is not a valid MusicBrainz ID"
 msgstr "“{id}” is geen geldig MusicBrainz ID"
 
-#: ../lib/MusicBrainz/Server/Controller.pm:144
+#: ../lib/MusicBrainz/Server/Controller.pm:143
 #, perl-brace-format
 msgid ""
 "Thank you, your {edit_url|edit} ({edit_ids}) has been automatically accepted"
@@ -11258,7 +11262,7 @@ msgid_plural ""
 msgstr[0] "Bedankt, uw {num_edits} {edit_url|bewerking} ({edit_ids}) is automatisch geaccepteerd en doorgevoerd."
 msgstr[1] "Bedankt, uw {num_edits} {edit_url|bewerkingen} ({edit_ids}) zijn automatisch geaccepteerd en doorgevoerd."
 
-#: ../lib/MusicBrainz/Server/Controller.pm:150
+#: ../lib/MusicBrainz/Server/Controller.pm:149
 #, perl-brace-format
 msgid ""
 "Thank you, your {edit_url|edit} ({edit_ids}) has been entered into the edit "
@@ -11269,7 +11273,7 @@ msgid_plural ""
 msgstr[0] "Bedankt, uw {num_edits} {edit_url|bewerking} ({edit_ids}) is toegevoegd aan de wachtrij voor collegiale toetsing."
 msgstr[1] "Bedankt, uw {num_edits} {edit_url|bewerkingen} ({edit_ids}) zijn toegevoegd aan de wachtrij voor collegiale toetsing."
 
-#: ../lib/MusicBrainz/Server/Controller.pm:158
+#: ../lib/MusicBrainz/Server/Controller.pm:157
 #, perl-brace-format
 msgid ""
 "Thank you, your {edit_url|edit} ({edit_ids}) has been entered, with "
@@ -11413,7 +11417,7 @@ msgstr "Het geselecteerde medium kan geen disc-id’s hebben"
 msgid "The provided artist id is not valid"
 msgstr "De ingevoerde artiest-id is niet geldig"
 
-#: ../lib/MusicBrainz/Server/Controller/Edit.pm:200
+#: ../lib/MusicBrainz/Server/Controller/Edit.pm:201
 msgid "Default"
 msgstr "Standaard"
 
@@ -11908,11 +11912,11 @@ msgstr "Opnames samenvoegen"
 msgid "Remove ISRC"
 msgstr "ISRC verwijderen"
 
-#: ../lib/MusicBrainz/Server/Edit/Relationship/AddLinkAttribute.pm:13
+#: ../lib/MusicBrainz/Server/Edit/Relationship/AddLinkAttribute.pm:14
 msgid "Add relationship attribute"
 msgstr "Relatie-eigenschap toevoegen"
 
-#: ../lib/MusicBrainz/Server/Edit/Relationship/AddLinkType.pm:13
+#: ../lib/MusicBrainz/Server/Edit/Relationship/AddLinkType.pm:14
 msgid "Add relationship type"
 msgstr "Relatietype toevoegen"
 
@@ -12600,24 +12604,36 @@ msgstr "Een pseudo-uitgave is een kopie van een uitgave voor vertalings- of tran
 msgid "An error occurred while searching. Click here to try again."
 msgstr "Er is een fout opgetreden bij het zoeken. Klik hier om het nogmaals te proberen."
 
-#: ../root/static/scripts/common/MB/Control/Autocomplete.js:163
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:66
+msgid "Try with direct search instead."
+msgstr ""
+
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:67
+msgid "Try with indexed search instead."
+msgstr ""
+
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:99
+msgid "Type to search, or paste an MBID"
+msgstr ""
+
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:171
 msgid "Clear recent items"
 msgstr "Recente objecten leegmaken"
 
-#: ../root/static/scripts/common/MB/Control/Autocomplete.js:391
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:399
 #: ../root/static/scripts/common/annotation.js:19
 msgid "Show more..."
 msgstr "Laat meer zien …"
 
-#: ../root/static/scripts/common/MB/Control/Autocomplete.js:397
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:405
 msgid "Not found? Try again with direct search."
 msgstr "Niet gevonden? Probeer direct in de gegevensbank te zoeken."
 
-#: ../root/static/scripts/common/MB/Control/Autocomplete.js:398
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:406
 msgid "Slow? Switch back to indexed search."
 msgstr "Langzaam? Schakel terug naar het geïndexeerd zoeken."
 
-#: ../root/static/scripts/common/MB/Control/Autocomplete.js:584
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:592
 #: ../root/static/scripts/common/entity.js:196
 msgid "video"
 msgstr "video"

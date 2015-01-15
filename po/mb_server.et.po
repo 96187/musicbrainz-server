@@ -14,8 +14,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-11 00:03-0700\n"
-"PO-Revision-Date: 2015-01-11 07:05+0000\n"
+"POT-Creation-Date: 2015-01-14 17:21-0700\n"
+"PO-Revision-Date: 2015-01-15 00:23+0000\n"
 "Last-Translator: Ian McEwen <email address hidden>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/musicbrainz/language/et/)\n"
 "MIME-Version: 1.0\n"
@@ -2804,7 +2804,7 @@ msgstr "Muudetud"
 msgid "Editing"
 msgstr "Toimetamine"
 
-#: ../root/edit/info.tt:66 ../root/edit/list_header.tt:29
+#: ../root/edit/info.tt:66 ../root/edit/list_header.tt:30
 msgid "Editing FAQ"
 msgstr "Toimetamise KKK"
 
@@ -3541,12 +3541,12 @@ msgstr ""
 msgid "Headings:"
 msgstr "Pealkirjad:"
 
-#: ../root/edit/list_header.tt:24
+#: ../root/edit/list_header.tt:25
 msgid "Help:"
 msgstr "Abi:"
 
 #: ../root/components/common-macros.tt:629
-#: ../lib/MusicBrainz/Server/Controller/Edit.pm:200
+#: ../lib/MusicBrainz/Server/Controller/Edit.pm:201
 msgid "High"
 msgstr "kõrge"
 
@@ -3567,7 +3567,7 @@ msgstr "Host:"
 msgid "How Tos"
 msgstr "Õpetused"
 
-#: ../root/edit/list_header.tt:33
+#: ../root/edit/list_header.tt:34
 msgid "How editing works"
 msgstr "Kuidas toimetamine töötab?"
 
@@ -4328,7 +4328,7 @@ msgid "Lost Username"
 msgstr "Unustatud kasutajanimi"
 
 #: ../root/components/common-macros.tt:629
-#: ../lib/MusicBrainz/Server/Controller/Edit.pm:200
+#: ../lib/MusicBrainz/Server/Controller/Edit.pm:201
 msgid "Low"
 msgstr "madal"
 
@@ -4992,7 +4992,7 @@ msgid "No releases with this tag were found."
 msgstr "Selle sildiga väljalaskeid ei leitud."
 
 #: ../root/release/edit/tracklist.tt:110
-#: ../root/static/scripts/common/MB/Control/Autocomplete.js:384
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:392
 msgid "No results"
 msgstr "Tulemusi pole"
 
@@ -5080,7 +5080,7 @@ msgid ""
 msgstr "Ükski omistatud plaadi-ID-dest ei luba sellise pikkusega pregap-rada."
 
 #: ../root/components/common-macros.tt:629
-#: ../lib/MusicBrainz/Server/Controller/Edit.pm:200
+#: ../lib/MusicBrainz/Server/Controller/Edit.pm:201
 msgid "Normal"
 msgstr "tavaline"
 
@@ -5253,7 +5253,7 @@ msgstr "Lahtised toimetused jälgitaval sisul"
 msgid "Open Edits for {name}"
 msgstr "Lahtised toimetused ~ {name}"
 
-#: ../root/collection/layout.tt:22 ../root/edit/list_header.tt:15
+#: ../root/collection/layout.tt:22 ../root/edit/list_header.tt:16
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:51
 msgid "Open edits"
 msgstr "Lahtised toimetused"
@@ -5910,7 +5910,7 @@ msgstr "Varieeruvate loopikkustega salvestised"
 msgid "Recordings:"
 msgstr "Salvestised:"
 
-#: ../root/edit/list_header.tt:12
+#: ../root/edit/list_header.tt:13
 msgid "Refine this search"
 msgstr "Selle otsingu täpsustamine"
 
@@ -7501,7 +7501,7 @@ msgstr "Lõpeta valitud artistide uute väljalasete ootamine"
 msgid "Style Guidelines"
 msgstr "Stiilijuhised"
 
-#: ../root/edit/list_header.tt:31 ../root/main/index.tt:81
+#: ../root/edit/list_header.tt:32 ../root/main/index.tt:81
 msgid "Style guidelines"
 msgstr "Stiilijuhised"
 
@@ -7548,11 +7548,11 @@ msgstr "Jälgi"
 msgid "Subscribed"
 msgstr "Jälgitav"
 
-#: ../root/edit/list_header.tt:19
+#: ../root/edit/list_header.tt:20
 msgid "Subscribed editors"
 msgstr "Jälgitavad toimetajad"
 
-#: ../root/edit/list_header.tt:17
+#: ../root/edit/list_header.tt:18
 msgid "Subscribed entities"
 msgstr "Jälgitav sisu"
 
@@ -9712,7 +9712,7 @@ msgstr "Poolthääli:"
 msgid "Voting"
 msgstr "Hääletamine"
 
-#: ../root/edit/info.tt:65 ../root/edit/list_header.tt:27
+#: ../root/edit/info.tt:65 ../root/edit/list_header.tt:28
 msgid "Voting FAQ"
 msgstr "Hääletamise KKK"
 
@@ -10306,10 +10306,8 @@ msgid ""
 msgstr "Kui soovid andmebaasile kaastööd teha, pead sisestama töötava e-posti aadressi."
 
 #: ../root/release/edit/editnote.tt:32
-msgid ""
-"You must provide an edit note when adding a release. Even just a URL or "
-"something like “CD in hand” helps!"
-msgstr "Väljalaske lisamisel tuleb jätta toimetusmärge. Isegi lihtsalt internetiaadress või midagi nagu „CD siinsamas” on abiks!"
+msgid "You must provide an edit note when adding a release."
+msgstr ""
 
 #: ../root/release/edit/information.tt:67
 msgid "You must select an existing release group."
@@ -10380,6 +10378,12 @@ msgstr "Su profiil on uuendatud."
 #: ../root/search/error/invalid.tt:3
 msgid "Your search query was deemed invalid by our ruthless search server."
 msgstr "Meie halastamatu otsnguserver hindas su päringu sobimatuks."
+
+#: ../root/edit/search.tt:7
+msgid ""
+"Your search took too long and was cancelled. It may help to be more "
+"specific, or to try again."
+msgstr ""
 
 #: ../root/account/register.tt:27
 msgid "Your username will be publicly visible."
@@ -11234,12 +11238,12 @@ msgid ""
 "This beta test server allows testing of new features with the live database."
 msgstr "Selles beetatestimisserveris saab katsetada uusi funktsioone pärisandmebaasiga."
 
-#: ../lib/MusicBrainz/Server/Controller.pm:30
+#: ../lib/MusicBrainz/Server/Controller.pm:29
 #, perl-brace-format
 msgid "'{id}' is not a valid MusicBrainz ID"
 msgstr "„{id}” ei ole kehtiv MusicBrainzi ID"
 
-#: ../lib/MusicBrainz/Server/Controller.pm:144
+#: ../lib/MusicBrainz/Server/Controller.pm:143
 #, perl-brace-format
 msgid ""
 "Thank you, your {edit_url|edit} ({edit_ids}) has been automatically accepted"
@@ -11250,7 +11254,7 @@ msgid_plural ""
 msgstr[0] "Aitäh, {edit_url|toimetus} ({edit_ids}) on vastuvõetud ja rakendatud."
 msgstr[1] "Aitäh, {num_edits} {edit_url|toimetust} ({edit_ids}) on vastuvõetud ja rakendatud."
 
-#: ../lib/MusicBrainz/Server/Controller.pm:150
+#: ../lib/MusicBrainz/Server/Controller.pm:149
 #, perl-brace-format
 msgid ""
 "Thank you, your {edit_url|edit} ({edit_ids}) has been entered into the edit "
@@ -11261,7 +11265,7 @@ msgid_plural ""
 msgstr[0] "Aitäh, {edit_url|toimetus} ({edit_ids}) on sisestatud ja ootab teistelt kasutajatelt ülevaatamist."
 msgstr[1] "Aitäh, {num_edits} {edit_url|toimetust} ({edit_ids}) on sisestatud ja ootab teistelt kasutajatelt ülevaatamist."
 
-#: ../lib/MusicBrainz/Server/Controller.pm:158
+#: ../lib/MusicBrainz/Server/Controller.pm:157
 #, perl-brace-format
 msgid ""
 "Thank you, your {edit_url|edit} ({edit_ids}) has been entered, with "
@@ -11405,7 +11409,7 @@ msgstr "Valitud helikandjal ei saa plaadi-ID-d olla"
 msgid "The provided artist id is not valid"
 msgstr "Antud artisti-ID pole korrektne"
 
-#: ../lib/MusicBrainz/Server/Controller/Edit.pm:200
+#: ../lib/MusicBrainz/Server/Controller/Edit.pm:201
 msgid "Default"
 msgstr "Vaikimisi"
 
@@ -11900,11 +11904,11 @@ msgstr "Salvestiste mestimine"
 msgid "Remove ISRC"
 msgstr "ISRC eemaldamine"
 
-#: ../lib/MusicBrainz/Server/Edit/Relationship/AddLinkAttribute.pm:13
+#: ../lib/MusicBrainz/Server/Edit/Relationship/AddLinkAttribute.pm:14
 msgid "Add relationship attribute"
 msgstr "Seoseatribuudi lisamine"
 
-#: ../lib/MusicBrainz/Server/Edit/Relationship/AddLinkType.pm:13
+#: ../lib/MusicBrainz/Server/Edit/Relationship/AddLinkType.pm:14
 msgid "Add relationship type"
 msgstr "Seosetüübi lisamine"
 
@@ -12592,24 +12596,36 @@ msgstr "Pseudoväljalase on tõlgitud või translitereeritud pealkirjadega dupli
 msgid "An error occurred while searching. Click here to try again."
 msgstr "Otsimisel ilmnes viga. Uuestiproovimiseks klõpsa siin."
 
-#: ../root/static/scripts/common/MB/Control/Autocomplete.js:163
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:66
+msgid "Try with direct search instead."
+msgstr ""
+
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:67
+msgid "Try with indexed search instead."
+msgstr ""
+
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:99
+msgid "Type to search, or paste an MBID"
+msgstr ""
+
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:171
 msgid "Clear recent items"
 msgstr "Puhasta loend"
 
-#: ../root/static/scripts/common/MB/Control/Autocomplete.js:391
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:399
 #: ../root/static/scripts/common/annotation.js:19
 msgid "Show more..."
 msgstr "Näita rohkem..."
 
-#: ../root/static/scripts/common/MB/Control/Autocomplete.js:397
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:405
 msgid "Not found? Try again with direct search."
 msgstr "Tulemusteta? Proovi otsese otsinguga."
 
-#: ../root/static/scripts/common/MB/Control/Autocomplete.js:398
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:406
 msgid "Slow? Switch back to indexed search."
 msgstr "Aeglane? Lülita tagasi indekseeritud otsingule."
 
-#: ../root/static/scripts/common/MB/Control/Autocomplete.js:584
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:592
 #: ../root/static/scripts/common/entity.js:196
 msgid "video"
 msgstr "video"

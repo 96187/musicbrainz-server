@@ -21,9 +21,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-11 00:03-0700\n"
-"PO-Revision-Date: 2015-01-14 01:10+0000\n"
-"Last-Translator: salorock <email address hidden>\n"
+"POT-Creation-Date: 2015-01-14 17:21-0700\n"
+"PO-Revision-Date: 2015-01-15 00:23+0000\n"
+"Last-Translator: Ian McEwen <email address hidden>\n"
 "Language-Team: Italian (http://www.transifex.com/projects/p/musicbrainz/language/it/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2811,7 +2811,7 @@ msgstr "Modificato"
 msgid "Editing"
 msgstr "Modifiche"
 
-#: ../root/edit/info.tt:66 ../root/edit/list_header.tt:29
+#: ../root/edit/info.tt:66 ../root/edit/list_header.tt:30
 msgid "Editing FAQ"
 msgstr "Domande frequenti sulle modifiche"
 
@@ -3548,12 +3548,12 @@ msgstr "HH:MM"
 msgid "Headings:"
 msgstr "Intestazioni:"
 
-#: ../root/edit/list_header.tt:24
+#: ../root/edit/list_header.tt:25
 msgid "Help:"
 msgstr "Aiuto:"
 
 #: ../root/components/common-macros.tt:629
-#: ../lib/MusicBrainz/Server/Controller/Edit.pm:200
+#: ../lib/MusicBrainz/Server/Controller/Edit.pm:201
 msgid "High"
 msgstr "Alta"
 
@@ -3574,7 +3574,7 @@ msgstr "Host:"
 msgid "How Tos"
 msgstr "Istruzioni"
 
-#: ../root/edit/list_header.tt:33
+#: ../root/edit/list_header.tt:34
 msgid "How editing works"
 msgstr "Come funziona il sistema di modifica"
 
@@ -4335,7 +4335,7 @@ msgid "Lost Username"
 msgstr "Nome utente dimenticato"
 
 #: ../root/components/common-macros.tt:629
-#: ../lib/MusicBrainz/Server/Controller/Edit.pm:200
+#: ../lib/MusicBrainz/Server/Controller/Edit.pm:201
 msgid "Low"
 msgstr "Bassa"
 
@@ -4999,7 +4999,7 @@ msgid "No releases with this tag were found."
 msgstr "Nessuna pubblicazione trovata con questo tag."
 
 #: ../root/release/edit/tracklist.tt:110
-#: ../root/static/scripts/common/MB/Control/Autocomplete.js:384
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:392
 msgid "No results"
 msgstr "Nessun risultato"
 
@@ -5087,7 +5087,7 @@ msgid ""
 msgstr "Nessuno degli ID disco collegati può accettare una traccia pregap della durata fornita."
 
 #: ../root/components/common-macros.tt:629
-#: ../lib/MusicBrainz/Server/Controller/Edit.pm:200
+#: ../lib/MusicBrainz/Server/Controller/Edit.pm:201
 msgid "Normal"
 msgstr "Normale"
 
@@ -5260,7 +5260,7 @@ msgstr "Modifiche aperte per le entità che hai sottoscritto"
 msgid "Open Edits for {name}"
 msgstr "Modifiche aperte per {name}"
 
-#: ../root/collection/layout.tt:22 ../root/edit/list_header.tt:15
+#: ../root/collection/layout.tt:22 ../root/edit/list_header.tt:16
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:51
 msgid "Open edits"
 msgstr "Modifiche in corso"
@@ -5917,7 +5917,7 @@ msgstr "Registrazioni con durata delle tracce variabile"
 msgid "Recordings:"
 msgstr "Registrazioni:"
 
-#: ../root/edit/list_header.tt:12
+#: ../root/edit/list_header.tt:13
 msgid "Refine this search"
 msgstr "Affina la ricerca"
 
@@ -7508,7 +7508,7 @@ msgstr "Smetti di seguire gli artisti selezionati"
 msgid "Style Guidelines"
 msgstr "Linee guida di stile"
 
-#: ../root/edit/list_header.tt:31 ../root/main/index.tt:81
+#: ../root/edit/list_header.tt:32 ../root/main/index.tt:81
 msgid "Style guidelines"
 msgstr "Linee guida di stile"
 
@@ -7555,11 +7555,11 @@ msgstr "Sottoscrivi"
 msgid "Subscribed"
 msgstr "Sottoscritte"
 
-#: ../root/edit/list_header.tt:19
+#: ../root/edit/list_header.tt:20
 msgid "Subscribed editors"
 msgstr "Editor sottoscritti"
 
-#: ../root/edit/list_header.tt:17
+#: ../root/edit/list_header.tt:18
 msgid "Subscribed entities"
 msgstr "Entità sottoscritte"
 
@@ -9719,7 +9719,7 @@ msgstr "Voti a favore:"
 msgid "Voting"
 msgstr "Votazione"
 
-#: ../root/edit/info.tt:65 ../root/edit/list_header.tt:27
+#: ../root/edit/info.tt:65 ../root/edit/list_header.tt:28
 msgid "Voting FAQ"
 msgstr "Domande frequenti sui voti"
 
@@ -10313,10 +10313,8 @@ msgid ""
 msgstr "Devi fornire un indirizzo email funzionante se vuoi contribuire al database."
 
 #: ../root/release/edit/editnote.tt:32
-msgid ""
-"You must provide an edit note when adding a release. Even just a URL or "
-"something like “CD in hand” helps!"
-msgstr "Devi inserire una nota di modifica quando aggiungi una pubblicazione. Anche solo un link utile o qualcosa come \"possiedo questo CD\" può essere d'aiuto!"
+msgid "You must provide an edit note when adding a release."
+msgstr ""
 
 #: ../root/release/edit/information.tt:67
 msgid "You must select an existing release group."
@@ -10387,6 +10385,12 @@ msgstr "Il tuo profilo è stato aggiornato."
 #: ../root/search/error/invalid.tt:3
 msgid "Your search query was deemed invalid by our ruthless search server."
 msgstr "Il nostro spietato server di ricerca ha considerato la tua ricerca non valida."
+
+#: ../root/edit/search.tt:7
+msgid ""
+"Your search took too long and was cancelled. It may help to be more "
+"specific, or to try again."
+msgstr ""
 
 #: ../root/account/register.tt:27
 msgid "Your username will be publicly visible."
@@ -11241,12 +11245,12 @@ msgid ""
 "This beta test server allows testing of new features with the live database."
 msgstr "Questo server di beta testing permette di verificare le nuove funzioni sul database ufficiale di MusicBrainz."
 
-#: ../lib/MusicBrainz/Server/Controller.pm:30
+#: ../lib/MusicBrainz/Server/Controller.pm:29
 #, perl-brace-format
 msgid "'{id}' is not a valid MusicBrainz ID"
 msgstr "'{id}' non è un ID di MusicBrainz valido"
 
-#: ../lib/MusicBrainz/Server/Controller.pm:144
+#: ../lib/MusicBrainz/Server/Controller.pm:143
 #, perl-brace-format
 msgid ""
 "Thank you, your {edit_url|edit} ({edit_ids}) has been automatically accepted"
@@ -11257,7 +11261,7 @@ msgid_plural ""
 msgstr[0] "Grazie, la tua {edit_url|modifica} ({edit_ids}) è stata accettata e applicata automaticamente."
 msgstr[1] "Grazie, le tue {num_edits} {edit_url|modifiche} ({edit_ids}) sono state accettate e applicate automaticamente."
 
-#: ../lib/MusicBrainz/Server/Controller.pm:150
+#: ../lib/MusicBrainz/Server/Controller.pm:149
 #, perl-brace-format
 msgid ""
 "Thank you, your {edit_url|edit} ({edit_ids}) has been entered into the edit "
@@ -11268,7 +11272,7 @@ msgid_plural ""
 msgstr[0] "Grazie, la tua {edit_url|modifica} ({edit_ids}) è stata inserita nella coda di modifiche sottoposte a revisione paritaria."
 msgstr[1] "Grazie, le tue {num_edits} {edit_url|modifiche} ({edit_ids}) sono state inserite nella coda di modifiche sottoposte a revisione paritaria."
 
-#: ../lib/MusicBrainz/Server/Controller.pm:158
+#: ../lib/MusicBrainz/Server/Controller.pm:157
 #, perl-brace-format
 msgid ""
 "Thank you, your {edit_url|edit} ({edit_ids}) has been entered, with "
@@ -11412,7 +11416,7 @@ msgstr "Il supporto selezionato non può possedere un ID disco"
 msgid "The provided artist id is not valid"
 msgstr "L'ID artista fornito non è valido"
 
-#: ../lib/MusicBrainz/Server/Controller/Edit.pm:200
+#: ../lib/MusicBrainz/Server/Controller/Edit.pm:201
 msgid "Default"
 msgstr "Default"
 
@@ -11907,11 +11911,11 @@ msgstr "Unisci registrazioni"
 msgid "Remove ISRC"
 msgstr "Rimuovi ISRC"
 
-#: ../lib/MusicBrainz/Server/Edit/Relationship/AddLinkAttribute.pm:13
+#: ../lib/MusicBrainz/Server/Edit/Relationship/AddLinkAttribute.pm:14
 msgid "Add relationship attribute"
 msgstr "Aggiungi attributo della relazione"
 
-#: ../lib/MusicBrainz/Server/Edit/Relationship/AddLinkType.pm:13
+#: ../lib/MusicBrainz/Server/Edit/Relationship/AddLinkType.pm:14
 msgid "Add relationship type"
 msgstr "Aggiungi tipo di relazione"
 
@@ -12599,24 +12603,36 @@ msgstr "Una pseudo-pubblicazione è una pubblicazione duplicata a fini di traduz
 msgid "An error occurred while searching. Click here to try again."
 msgstr "Si è verificato un errore durante la ricerca. Clicca qui per riprovare."
 
-#: ../root/static/scripts/common/MB/Control/Autocomplete.js:163
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:66
+msgid "Try with direct search instead."
+msgstr ""
+
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:67
+msgid "Try with indexed search instead."
+msgstr ""
+
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:99
+msgid "Type to search, or paste an MBID"
+msgstr ""
+
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:171
 msgid "Clear recent items"
 msgstr "Cancella elementi recenti"
 
-#: ../root/static/scripts/common/MB/Control/Autocomplete.js:391
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:399
 #: ../root/static/scripts/common/annotation.js:19
 msgid "Show more..."
 msgstr "Mostra di più..."
 
-#: ../root/static/scripts/common/MB/Control/Autocomplete.js:397
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:405
 msgid "Not found? Try again with direct search."
 msgstr "Non l'hai trovato? Riprova con la ricerca diretta."
 
-#: ../root/static/scripts/common/MB/Control/Autocomplete.js:398
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:406
 msgid "Slow? Switch back to indexed search."
 msgstr "Lento? Torna alla ricerca indicizzata."
 
-#: ../root/static/scripts/common/MB/Control/Autocomplete.js:584
+#: ../root/static/scripts/common/MB/Control/Autocomplete.js:592
 #: ../root/static/scripts/common/entity.js:196
 msgid "video"
 msgstr "video"
