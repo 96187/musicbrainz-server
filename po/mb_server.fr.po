@@ -29,7 +29,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-01-14 17:21-0700\n"
-"PO-Revision-Date: 2015-01-29 15:54+0000\n"
+"PO-Revision-Date: 2015-01-29 16:08+0000\n"
 "Last-Translator: yahoe.001\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -3828,7 +3828,7 @@ msgstr "Images de Wikimedia Commons"
 
 #: ../root/components/common-macros.tt:93
 msgid "Image not available yet, please try again in a few minutes."
-msgstr "Image pas encore disponible, veuillez ressayer dans quelques minutes."
+msgstr "Image non disponible, veuillez ressayer dans quelques minutes."
 
 #: ../root/freedb/show.tt:44 ../root/freedb/show.tt:101
 msgid "Import"
@@ -4664,7 +4664,7 @@ msgstr "MusicBrainz n'a qu'un seul type de compte pour tous les utilisateurs. Si
 msgid ""
 "MusicBrainz is an open music encyclopedia that collects music metadata and "
 "makes it available to the public."
-msgstr "MusicBrainz est une encyclopédie musicale libre qui collecte les métadonnées musicales et les rends disponible au public."
+msgstr "MusicBrainz est une encyclopédie musicale libre qui collecte des métadonnées musicales et les propose au public."
 
 #: ../root/main/index.tt:38
 msgid ""
@@ -4907,7 +4907,7 @@ msgstr "Aucun artiste de trouvé avec cette balise"
 
 #: ../root/release/layout.tt:32
 msgid "No cover art available."
-msgstr "Aucune Illustration disponible."
+msgstr "Aucune Illustration."
 
 #: ../root/edit/notes.tt:40
 msgid "No edit notes have been added."
@@ -4931,7 +4931,7 @@ msgstr "Aucun événement trouvé avec cette balise."
 
 #: ../root/release/layout.tt:32
 msgid "No front cover image available.<br/>{all|View all artwork}."
-msgstr "Aucune image de couverture disponible.<br/>{all|Voir tous les éléments graphiques}."
+msgstr "Aucune image de couverture.<br/>{all|Voir tous les éléments graphiques}."
 
 #: ../root/tag/instrument.tt:1
 msgid "No instruments with this tag were found."
@@ -5482,7 +5482,7 @@ msgid ""
 "original passwords from this mishap, we are requiring all of our users to "
 "change their passwords. Sorry for the inconvenience. For more information "
 "see {blog|the recent blog post}."
-msgstr "Veuillez changer votre mot de passe. Nous avons malheureusement découvert que les hachages sécurisés des mots de passe des utilisateurs étaient temporairement disponibles au téléchargement sur notre site FTP. Bien qu'il soit extrêmement improbable que quelqu'un soit capable de déduire les mots de passe originaux de cet incident, nous demandons à tous les utilisateurs de changer leur mot de passe. Désolé pour cet inconvénient. Pour plus d'informations voir le {blog|dernier billet de blogue}."
+msgstr "Veuillez changer votre mot de passe. Nous avons malheureusement découvert que les hachages sécurisés des mots de passe des utilisateurs étaient temporairement  téléchargeables sur notre site FTP. Bien qu'il soit extrêmement improbable que quelqu'un soit capable de déduire les mots de passe originaux de cet incident, nous demandons à tous les utilisateurs de changer leur mot de passe. Désolé pour cet inconvénient. Pour plus d'informations voir le {blog|dernier billet de blogue}."
 
 #: ../root/edit/search_macros.tt:305
 msgid "Please choose a condition"
@@ -5801,7 +5801,7 @@ msgstr "Données de modification brutes pour cette modification"
 
 #: ../root/edit/index.tt:11
 msgid "Raw edit data may be available."
-msgstr "Les données de modification brutes pourraient être disponibles."
+msgstr "Des données de modification brutes pourraient être proposées."
 
 #: ../root/main/index.tt:57
 msgid "Read more »"
@@ -7196,7 +7196,7 @@ msgstr "Contrat social"
 msgid ""
 "Some FreeDB results may not be immediately available since they are only "
 "able to be updated after FreeDB's monthly database export."
-msgstr "Certains résultats de FreeDB  ne seront peut-être pas immédiatement disponible car ils ne peuvent être mis à jour qu'après l'export mensuel de la base FreeDB."
+msgstr "Certains résultats de FreeDB ne seront peut-être pas proposés immédiatement car ils ne peuvent être mis à jour qu'après l'export mensuel de la base FreeDB."
 
 #: ../root/account/applications.tt:18
 msgid ""
@@ -10194,7 +10194,7 @@ msgid ""
 "main MusicBrainz database until an editor decides to take your submitted "
 "information, ensures it meets our standards and inserts it into the main "
 "database."
-msgstr "Vous pouvez saisir les données du CD comme elles y apparaissent sans avoir à faire partie de MusicBrainz. Les CDs saisis ainsi seront disponibles pour les programmes clients. Toutefois ces informations ne seront pas incluses dans la base de données principale de MusicBrainz tant qu'un éditeur ne les aura prises, se sera assuré quelles correspondent à nos normes et les insère dans la base de données principale."
+msgstr "Vous pouvez saisir les données du CD comme elles y apparaissent sans avoir à faire partie de MusicBrainz. Les CDs saisis ainsi seront proposés aux programmes clients. Toutefois ces informations ne seront pas incluses dans la base de données principale de MusicBrainz tant qu'un éditeur ne les aura prises, se sera assuré quelles correspondent à nos normes et les insère dans la base de données principale."
 
 #: ../root/account/edit.tt:34
 msgid ""
@@ -10776,8 +10776,8 @@ msgstr "voir toutes les évaluations"
 #: ../root/release/header.tt:10
 msgid "see all versions of this release, {count} available"
 msgid_plural "see all versions of this release, {count} available"
-msgstr[0] "Afficher toutes les versions de cette parution, {count} disponible"
-msgstr[1] "Afficher toutes les versions de cette parution, {count} disponibles"
+msgstr[0] "Afficher toutes les versions de cette parution, {count} offerte"
+msgstr[1] "Afficher toutes les versions de cette parution, {count} offertes"
 
 #: ../root/user/profile.tt:41
 msgid "send email"
