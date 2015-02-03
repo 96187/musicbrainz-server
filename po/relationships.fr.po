@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2015-02-03 15:52+0000\n"
+"PO-Revision-Date: 2015-02-03 16:33+0000\n"
 "Last-Translator: yahoe.001\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -2044,7 +2044,7 @@ msgstr "Ce type de relation relie un label à sa page correspondante sur <a href
 #: DB:link_type/description:838
 msgid ""
 "This relationship type links a label to its corresponding page at last.fm"
-msgstr ""
+msgstr "Ce type de relation relie un label à sa page correspondante sur last.fm"
 
 #: DB:link_type/description:787
 msgid ""
@@ -2054,7 +2054,7 @@ msgstr "Ce type de relation relie un lieu à sa page correspondante sur Songkick
 #: DB:link_type/description:837
 msgid ""
 "This relationship type links a place to its corresponding page at last.fm"
-msgstr ""
+msgstr "Ce type de relation relie un lieu à sa page correspondante sur last.fm"
 
 #: DB:link_type/description:817
 msgid ""
@@ -2084,7 +2084,7 @@ msgstr "Ce type de relation relie un artiste à sa page correspondante sur Songk
 #: DB:link_type/description:840
 msgid ""
 "This relationship type links an artist to its corresponding page at last.fm"
-msgstr ""
+msgstr "Ce type de relation relie un artiste à sa page correspondante sur last.fm."
 
 #: DB:link_type/description:816
 msgid ""
@@ -2123,7 +2123,7 @@ msgstr "Ce type de relation relie un événement à sa page correspondante sur S
 #: DB:link_type/description:839
 msgid ""
 "This relationship type links an event to its corresponding page at last.fm"
-msgstr ""
+msgstr "Ce type de relation relie un événement à sa page correspondante sur last.fm"
 
 #: DB:link_type/description:811
 msgid ""
@@ -2711,7 +2711,7 @@ msgstr "a un ASIN d'Amazon"
 
 #: DB:link_type/long_link_phrase:719 DB:link_type/long_link_phrase:718
 msgid "has Bandcamp page at"
-msgstr "a une page Bandcamp à"
+msgstr "a une page Bandcamp sur"
 
 #: DB:link_type/long_link_phrase:311 DB:link_type/long_link_phrase:310
 msgid "has VIAF ID at"
@@ -2719,62 +2719,62 @@ msgstr "a un ID VIAF à"
 
 #: DB:link_type/long_link_phrase:190
 msgid "has a BBC Music page at"
-msgstr "a une page musicale BBC à"
+msgstr "a une page musicale BBC sur"
 
 #: DB:link_type/long_link_phrase:747 DB:link_type/long_link_phrase:76
 #: DB:link_type/long_link_phrase:217 DB:link_type/long_link_phrase:180
 #: DB:link_type/long_link_phrase:90 DB:link_type/long_link_phrase:705
 msgid "has a Discogs page at"
-msgstr "a une page Discogs à"
+msgstr "a une page Discogs sur"
 
 #: DB:link_type/long_link_phrase:713
 msgid "has a Geonames page at"
-msgstr "a une page Geonames à"
+msgstr "a une page Geonames sur"
 
 #: DB:link_type/long_link_phrase:215 DB:link_type/long_link_phrase:189
 #: DB:link_type/long_link_phrase:462
 msgid "has a Myspace page at"
-msgstr "a une page Myspace à"
+msgstr "a une page Myspace sur"
 
 #: DB:link_type/long_link_phrase:174
 msgid "has a PureVolume page at"
-msgstr "a une page PureVolume à"
+msgstr "a une page PureVolume sur"
 
 #: DB:link_type/long_link_phrase:307 DB:link_type/long_link_phrase:308
 msgid "has a SecondHandSongs page at"
-msgstr "a une page SecondHandSongs à"
+msgstr "a une page SecondHandSongs sur"
 
 #: DB:link_type/long_link_phrase:786 DB:link_type/long_link_phrase:785
 #: DB:link_type/long_link_phrase:787
 msgid "has a Songkick page at"
-msgstr "a une page Songkick à"
+msgstr "a une page Songkick sur"
 
 #: DB:link_type/long_link_phrase:291 DB:link_type/long_link_phrase:290
 msgid "has a SoundCloud page at"
-msgstr "a une page SoundCloud à"
+msgstr "a une page SoundCloud sur"
 
 #: DB:link_type/long_link_phrase:788 DB:link_type/long_link_phrase:86
 #: DB:link_type/long_link_phrase:191 DB:link_type/long_link_phrase:210
 msgid "has a VGMdb page at"
-msgstr "a une page VGMdb à"
+msgstr "a une page VGMdb sur"
 
 #: DB:link_type/long_link_phrase:790 DB:link_type/long_link_phrase:749
 #: DB:link_type/long_link_phrase:352 DB:link_type/long_link_phrase:353
 #: DB:link_type/long_link_phrase:354 DB:link_type/long_link_phrase:358
 #: DB:link_type/long_link_phrase:594
 msgid "has a Wikidata page at"
-msgstr "a une page Wikidata à"
+msgstr "a une page Wikidata sur"
 
 #: DB:link_type/long_link_phrase:789 DB:link_type/long_link_phrase:355
 #: DB:link_type/long_link_phrase:89 DB:link_type/long_link_phrase:179
 #: DB:link_type/long_link_phrase:216 DB:link_type/long_link_phrase:595
 #: DB:link_type/long_link_phrase:744
 msgid "has a Wikipedia page at"
-msgstr "a une page Wikipédia à"
+msgstr "a une page Wikipédia sur"
 
 #: DB:link_type/long_link_phrase:182
 msgid "has a biography page at"
-msgstr "a une page biographique à"
+msgstr "a une page biographique sur"
 
 #: DB:link_type/long_link_phrase:199 DB:link_type/long_link_phrase:224
 #: DB:link_type/long_link_phrase:627
@@ -2791,11 +2791,11 @@ msgstr "a une entrée discographique à"
 
 #: DB:link_type/long_link_phrase:184
 msgid "has a discography page at"
-msgstr "a une page discographique à"
+msgstr "a une page discographique sur"
 
 #: DB:link_type/long_link_phrase:172 DB:link_type/long_link_phrase:214
 msgid "has a fan page at"
-msgstr "a une page de fan à"
+msgstr "a une page de fan sur"
 
 #: DB:link_type/long_link_phrase:226
 msgid "has a karaoke version"
@@ -2804,7 +2804,7 @@ msgstr "à une version karaoké"
 #: DB:link_type/long_link_phrase:837 DB:link_type/long_link_phrase:840
 #: DB:link_type/long_link_phrase:838 DB:link_type/long_link_phrase:839
 msgid "has a last.fm page at"
-msgstr ""
+msgstr "a une page last.fm sur"
 
 #: DB:link_type/long_link_phrase:213
 msgid "has a logo at"
@@ -2820,7 +2820,7 @@ msgstr "a un rôle divers sur"
 #: DB:link_type/long_link_phrase:306 DB:link_type/long_link_phrase:222
 #: DB:link_type/long_link_phrase:188 DB:link_type/long_link_phrase:561
 msgid "has a page in a database at"
-msgstr "à une page dans une base données à"
+msgstr "à une page dans une base données sur"
 
 #: DB:link_type/long_link_phrase:173 DB:link_type/long_link_phrase:396
 msgid "has a picture at"
@@ -2828,18 +2828,18 @@ msgstr "à une photo à"
 
 #: DB:link_type/long_link_phrase:94
 msgid "has a review page at"
-msgstr "à une page de critique à"
+msgstr "à une page de critique sur"
 
 #: DB:link_type/long_link_phrase:811 DB:link_type/long_link_phrase:816
 #: DB:link_type/long_link_phrase:817
 msgid "has a setlist.fm page at"
-msgstr "a une page setlist.fm à"
+msgstr "a une page setlist.fm sur"
 
 #: DB:link_type/long_link_phrase:784 DB:link_type/long_link_phrase:783
 #: DB:link_type/long_link_phrase:192 DB:link_type/long_link_phrase:218
 #: DB:link_type/long_link_phrase:429
 msgid "has a social networking page at"
-msgstr "à une page de réseau social à"
+msgstr "à une page de réseau social sur"
 
 #: DB:link_type/long_link_phrase:287
 msgid "has a standalone website at"
@@ -2848,16 +2848,16 @@ msgstr "a un site Web autonome à"
 #: DB:link_type/long_link_phrase:755 DB:link_type/long_link_phrase:284
 #: DB:link_type/long_link_phrase:283 DB:link_type/long_link_phrase:285
 msgid "has an Allmusic page at"
-msgstr "a une page Allmusic à"
+msgstr "a une page Allmusic sur"
 
 #: DB:link_type/long_link_phrase:313 DB:link_type/long_link_phrase:97
 #: DB:link_type/long_link_phrase:178 DB:link_type/long_link_phrase:706
 msgid "has an IMDb page at"
-msgstr "à une page IMDb à"
+msgstr "à une page IMDb sur"
 
 #: DB:link_type/long_link_phrase:754
 msgid "has an IMSLP page at"
-msgstr "à une page ISMLP à"
+msgstr "à une page ISMLP sur"
 
 #: DB:link_type/long_link_phrase:707
 msgid "has an interview at"
@@ -2873,7 +2873,7 @@ msgstr "a une chaîne officielle YouTube à"
 #: DB:link_type/long_link_phrase:183 DB:link_type/long_link_phrase:219
 #: DB:link_type/long_link_phrase:363
 msgid "has an official homepage at"
-msgstr "à un site Web officiel à"
+msgstr "à un site Web officiel sur"
 
 #: DB:link_type/long_link_phrase:804 DB:link_type/long_link_phrase:805
 #: DB:link_type/long_link_phrase:303 DB:link_type/long_link_phrase:304
@@ -2883,7 +2883,7 @@ msgstr "à une chaîne vidéo officielle à"
 
 #: DB:link_type/long_link_phrase:185
 msgid "has an online community page at"
-msgstr "à une page de communeauté en ligne à"
+msgstr "à une page de communauté en ligne sur"
 
 #: DB:link_type/long_link_phrase:357
 msgid "has anthem"
@@ -3242,12 +3242,12 @@ msgstr "versions karaoké"
 #: DB:link_type/link_phrase:837 DB:link_type/link_phrase:840
 #: DB:link_type/link_phrase:838 DB:link_type/link_phrase:839
 msgid "last.fm"
-msgstr ""
+msgstr "last.fm"
 
 #: DB:link_type/reverse_link_phrase:837 DB:link_type/reverse_link_phrase:840
 #: DB:link_type/reverse_link_phrase:838 DB:link_type/reverse_link_phrase:839
 msgid "last.fm page for"
-msgstr ""
+msgstr "page last.fm pour"
 
 #: DB:link_type/link_phrase:238
 msgid "later releases"
