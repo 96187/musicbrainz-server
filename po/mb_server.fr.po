@@ -28,8 +28,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-30 04:25-0700\n"
-"PO-Revision-Date: 2015-01-30 12:37+0000\n"
+"POT-Creation-Date: 2015-02-03 00:42-0700\n"
+"PO-Revision-Date: 2015-02-03 15:52+0000\n"
 "Last-Translator: yahoe.001\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -764,7 +764,7 @@ msgstr "Ajouter un enregistrement"
 
 #: ../root/release/edit_relationships.tt:214
 msgid "Add related work"
-msgstr "Ajouter les œuvres connexes"
+msgstr "Ajouter une œuvre connexe"
 
 #: ../root/forms/relationship-editor.tt:11
 #: ../root/release/edit_relationships.tt:196
@@ -1682,11 +1682,11 @@ msgstr "Ajout par lot de relation aux enregistrements"
 
 #: ../root/release/edit_relationships.tt:38
 msgid "Batch-add a relationship to works"
-msgstr "Ajout par lot de relation aux oeuvres"
+msgstr "Ajout par lot de relations aux œuvres"
 
 #: ../root/release/edit_relationships.tt:32
 msgid "Batch-create new works"
-msgstr "Création par lot de nouvelles oeuvres"
+msgstr "Création par lot de nouvelles œuvres"
 
 #: ../root/artist/subscribers.tt:30 ../root/collection/subscribers.tt:30
 #: ../root/label/subscribers.tt:30 ../root/series/subscribers.tt:30
@@ -6086,19 +6086,19 @@ msgstr "Modifications rejetées par {name}"
 
 #: ../root/release/edit_relationships.tt:54
 msgid "Related Works"
-msgstr "Oeuvres connexes"
+msgstr "Œuvres connexes"
 
 #: ../root/edit/data.tt:15
 msgid "Related entities:"
-msgstr "Entités associées :"
+msgstr "Entités connexes :"
 
 #: ../root/components/relationships.tt:45
 msgid "Related series"
-msgstr "Séries associés"
+msgstr "Séries connexes"
 
 #: ../root/components/relationships.tt:37
 msgid "Related works"
-msgstr "Œuvres associées"
+msgstr "Œuvres connexes"
 
 #: ../root/edit/details/reorder_relationships.tt:4
 #: ../lib/MusicBrainz/Server/Edit/Relationship.pm:9
@@ -7525,7 +7525,7 @@ msgid ""
 " to carry out a search. If you are attempting to find something that "
 "contains nothing but punctuation characters (e.g. !!!) then you need to use "
 "the {uri|browse page}, since this search ignores punctuation characters."
-msgstr "Désolé, votre requête (<code>{query}</code>) ne contient pas assez d'information pour effectuer une recherche. Si vous essayez de chercher quelque chose qui ne contient que des ponctuations (par exemple !!!) vous devez alors utiliser {uri|la page de navigation} car cette recherche ignore les ponctuations."
+msgstr "Désolé, votre requête (<code>{query}</code>) ne contient pas assez d'information pour effectuer une recherche. Si vous essayez de chercher quelque chose qui ne contient que des ponctuations (p. ex. !!!) vous devez alors utiliser {uri|la page de navigation} car cette recherche ignore les ponctuations."
 
 #: ../root/search/error/uri-too-large.tt:3
 msgid "Sorry, your query was too large."
@@ -8145,7 +8145,7 @@ msgstr "Ces images sont fournies par {caa|« Cover Art Archive »}. Vous pouvez 
 
 #: ../root/cdstub/edit_form.tt:9
 msgid "This CD has tracks from more than one artist (e.g. a compilation CD)"
-msgstr "Ce CD possède des pistes de plus d'un artiste (par exemple une compilation)"
+msgstr "Ce CD possède des pistes de plus d'un artiste (p. ex. une compilation)"
 
 #: ../root/isrc/not_found.tt:4
 msgid ""
@@ -8602,7 +8602,7 @@ msgid ""
 "track number, e.g. \"1) Some Name\" (instead of just \"Some Name\"). Notice "
 "that sometimes this is justified and correct, don't automatically assume it "
 "is a mistake! If you confirm it is a mistake, please correct it."
-msgstr "Ce rapport tend a identifier les parutions dont les noms de piste inclus leur propre numéro de piste, par exemple « 1) Un nom » (au lieu de juste « Un nom »). Veuillez prendre note que cela est parfois justifié et correct. Ne pas assumer automatiquement que cela est faux ! Si vous confirmez que cela est faux, veuillez le corriger."
+msgstr "Ce rapport tend a identifier les parutions dont les noms de piste inclus leur propre numéro de piste, p. ex. « 1) Un nom » (au lieu de juste « Un nom »). Veuillez prendre note que cela est parfois justifié et correct. Ne pas assumer automatiquement que cela est faux ! Si vous confirmez que cela est faux, veuillez le corriger."
 
 #: ../root/report/releases_to_convert.tt:7
 msgid ""
@@ -8629,7 +8629,7 @@ msgid ""
 "This report lists all releases where the track numbers are not continuous "
 "(e.g. there is no \"track 2\"), or with duplicated track numbers (e.g. there"
 " are two \"track 4\"s)."
-msgstr "Ce rapport liste toutes les parutions pour lesquelles les numéros de piste ne sont pas continus (par exemple il n'y a pas de « piste 2 »), ou avec des pistes en double (par exemple il y a deux « piste 4 »)."
+msgstr "Ce rapport liste toutes les parutions pour lesquelles les numéros de piste ne sont pas continus (p. ex. il n'y a pas de « piste 2 »), ou avec des pistes en double (par exemple il y a deux « piste 4 »)."
 
 #: ../root/report/mediums_with_sequence_issues.tt:6
 msgid ""
@@ -8784,7 +8784,7 @@ msgid ""
 "artist has an album and single with the same name, then there is usually no "
 "need to change anything. In other cases, a disambiguation comment may be "
 "helpful."
-msgstr "Ce rapport liste des groupes de parution ayant des noms et des artistes très semblables. Si les parutions dans les groupes de parution devraient être regroupées ( voir les {url|directives}), elles peuvent être fusionnées. Si elles ne devraient pas être regroupées mais qu'elles peuvent être distinguées par leur type de groupe de parution, par ex. si un artiste à un album et un simple portant le même nom, il n'y a habituellement rien à changer. Dans les autres cas, un commentaire de désambiguïsation pourrait être utile."
+msgstr "Ce rapport liste des groupes de parution ayant des noms et des artistes très semblables. Si les parutions dans les groupes de parution devraient être regroupées ( voir les {url|directives}), elles peuvent être fusionnées. Si elles ne devraient pas être regroupées mais qu'elles peuvent être distinguées par leur type de groupe de parution, p. ex. si un artiste à un album et un simple portant le même nom, il n'y a habituellement rien à changer. Dans les autres cas, un commentaire de désambiguïsation pourrait être utile."
 
 #: ../root/report/duplicate_relationships_releases.tt:6
 msgid ""
@@ -8828,7 +8828,7 @@ msgstr "Ce rapport liste des œuvres qui ont des relations utilisant des types d
 
 #: ../root/report/annotations_works.tt:6
 msgid "This report lists works with annotations."
-msgstr "Ce rapport liste les oeuvres avec des annotations."
+msgstr "Ce rapport liste les œuvres avec des annotations."
 
 #: ../root/report/isrc_with_many_recordings.tt:6
 msgid ""
@@ -9158,7 +9158,7 @@ msgstr "Titre : "
 msgid ""
 "To <span class=\"rel-edit\">edit</span> a relationship, click on its name "
 "(e.g. \"composer\")."
-msgstr "Pour <span class=\"rel-edit\">modifier</span> une relation, cliquer sur son nom (par exemple « compositeur »)."
+msgstr "Pour <span class=\"rel-edit\">modifier</span> une relation, cliquer sur son nom (p. ex. « compositeur »)."
 
 #: ../root/edit/index.tt:55
 msgid ""
@@ -10076,7 +10076,7 @@ msgstr "Œuvre introuvable"
 
 #: ../root/release/edit_relationships.tt:137
 msgid "Work Type:"
-msgstr "Type d'oeuvre :"
+msgstr "Type d’œuvre :"
 
 #: ../root/report/annotations_works.tt:1 ../root/report/annotations_works.tt:3
 msgid "Work annotations"
@@ -10108,7 +10108,7 @@ msgstr "Œuvres"
 
 #: ../root/report/index.tt:122
 msgid "Works with annotations"
-msgstr "Oeuvres avec des annotations"
+msgstr "Œuvres avec des annotations"
 
 #: ../root/report/deprecated_relationship_works.tt:1
 #: ../root/report/deprecated_relationship_works.tt:3
@@ -12540,7 +12540,7 @@ msgstr "Cette heure n'est pas valide."
 #: ../lib/MusicBrainz/Server/Form/Field/URL.pm:21
 #: ../root/static/scripts/edit/externalLinks.js:157
 msgid "Enter a valid url e.g. \"http://google.com/\""
-msgstr "Saisir une URL valide, par exemple « http://google.com/ »"
+msgstr "Saisir une URL valide, p. ex. « http://google.com/ »"
 
 #: ../lib/MusicBrainz/Server/Form/Field/URL.pm:24
 msgid "URL protocol must be HTTP, HTTPS or FTP"
@@ -12773,7 +12773,7 @@ msgstr "Toute parution reconnue par l'artiste et/ou son label comme officielle. 
 msgid ""
 "A giveaway release or a release intended to promote an upcoming official "
 "release. (e.g. prerelease albums or releases included with a magazine)"
-msgstr "Un parution cadeau ou dédiée à la promotion de la parution officielle à venir (par exemple, des albums en avant-première ou des parutions proposées dans un magazine)."
+msgstr "Un parution cadeau ou dédiée à la promotion de la parution officielle à venir (p. ex. des albums en avant-première ou des parutions proposées avec un magazine)."
 
 #: ../lib/MusicBrainz/Server/Release.pm:72
 msgid ""
