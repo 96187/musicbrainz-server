@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-03 00:42-0700\n"
-"PO-Revision-Date: 2015-02-10 09:12+0000\n"
+"PO-Revision-Date: 2015-02-10 10:21+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -267,7 +267,7 @@ msgid ""
 "0: Hidden, always used for sign languages and languages with no ISO 639-3 "
 "code, used by default until requested for ancient languages and languages "
 "only in ISO 639-3"
-msgstr ""
+msgstr "0: Verborgen, altijd gebruikt voor gebarentalen en talen zonder ISO 639-3-code. Wordt standaard gebruikt tot het wordt aangevraagd voor antieke talen en talen die alleen in ISO 639-3 staan."
 
 #: ../root/edit/info.tt:54
 msgid "1 vote"
@@ -281,7 +281,7 @@ msgstr "100%"
 
 #: ../root/admin/attributes/form.tt:32
 msgid "1: Hidden, used for scripts not in Unicode"
-msgstr ""
+msgstr "1: Verborgen, gebruikt voor schriften die niet in Unicode staan."
 
 #: ../root/admin/attributes/form.tt:15
 msgid "1: Shown in the \"other\" section"
@@ -750,7 +750,7 @@ msgstr "Koppeling toevoegen:"
 #: ../root/admin/attributes/language.tt:33
 #: ../root/admin/attributes/script.tt:29
 msgid "Add new attribute"
-msgstr ""
+msgstr "Nieuwe eigenschap toevoegen"
 
 #: ../root/artist/layout.tt:13
 msgid "Add recording"
@@ -1188,7 +1188,7 @@ msgstr "Weet u zeker dat u het <strong>{link_type}</strong> relatietype wilt ver
 
 #: ../root/admin/attributes/delete.tt:6
 msgid "Are you sure you wish to remove the <strong>{name}</strong> attribute?"
-msgstr ""
+msgstr "Weet u zeker dat u de eigenschap <strong>{name}</strong> wilt verwijderen?"
 
 #: ../root/area/delete.tt:5
 msgid "Are you sure you wish to remove the area {area} from MusicBrainz?"
@@ -2017,7 +2017,7 @@ msgstr "Kan geen afbeelding toevoegen"
 
 #: ../root/admin/attributes/in_use.tt:1 ../root/admin/attributes/in_use.tt:2
 msgid "Cannot Remove Attribute"
-msgstr ""
+msgstr "Eigenschap kan niet verwijderd worden"
 
 #: ../root/artist/special_purpose.tt:1
 msgid "Cannot edit"
@@ -3738,27 +3738,27 @@ msgstr "ISO 3166-3:"
 
 #: ../root/admin/attributes/form.tt:6 ../root/admin/attributes/language.tt:10
 msgid "ISO 639-1"
-msgstr ""
+msgstr "ISO 639-1"
 
 #: ../root/admin/attributes/form.tt:7 ../root/admin/attributes/language.tt:11
 msgid "ISO 639-2/B"
-msgstr ""
+msgstr "ISO 639-2/B"
 
 #: ../root/admin/attributes/form.tt:8 ../root/admin/attributes/language.tt:12
 msgid "ISO 639-2/T"
-msgstr ""
+msgstr "ISO 639-2/T"
 
 #: ../root/admin/attributes/form.tt:9 ../root/admin/attributes/language.tt:13
 msgid "ISO 639-3"
-msgstr ""
+msgstr "ISO 639-3"
 
 #: ../root/admin/attributes/form.tt:23 ../root/admin/attributes/script.tt:10
 msgid "ISO code"
-msgstr ""
+msgstr "ISO-code"
 
 #: ../root/admin/attributes/form.tt:24 ../root/admin/attributes/script.tt:11
 msgid "ISO number"
-msgstr ""
+msgstr "ISO-nummer"
 
 #: ../root/recording/edit_form.tt:32
 #: ../root/report/isrc_with_many_recordings.tt:23
@@ -4906,7 +4906,7 @@ msgstr "Nieuwe vermelding van een artiest"
 
 #: ../root/admin/attributes/create.tt:1 ../root/admin/attributes/create.tt:3
 msgid "New Attribute"
-msgstr ""
+msgstr "Nieuwe eigenschap"
 
 #: ../root/release/add_cover_art.tt:127
 msgid "New Image Goes Here"
@@ -6622,7 +6622,7 @@ msgstr "Vermelding van artiest verwijderen"
 
 #: ../root/admin/attributes/delete.tt:1 ../root/admin/attributes/delete.tt:3
 msgid "Remove Attribute"
-msgstr ""
+msgstr "Eigenschap verwijderen"
 
 #: ../root/release/remove_cover_art.tt:1 ../root/release/remove_cover_art.tt:2
 msgid "Remove Cover Art"
@@ -6869,7 +6869,7 @@ msgstr "Relevantie"
 
 #: ../root/admin/attributes/script.tt:1 ../root/admin/attributes/script.tt:3
 msgid "Script"
-msgstr ""
+msgstr "Schrift"
 
 #: ../root/edit/details/add_release.tt:53
 #: ../root/edit/details/edit_release.tt:37
@@ -10345,7 +10345,7 @@ msgstr "U kunt geen cd-beginsel beginnen als u bent aangemeld bij MusicBrainz. G
 
 #: ../root/admin/attributes/in_use.tt:3
 msgid "You cannot remove the attribute \"{name}\" because it is still in use."
-msgstr ""
+msgstr "U kunt de eigenschap ‘{name}’ niet verwijderen omdat het nog steeds gebruikt wordt."
 
 #: ../root/relationship/linkattributetype/in_use.tt:3
 msgid ""
@@ -12375,12 +12375,12 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Entity/Medium.pm:25
 #, perl-brace-format
 msgid "Medium {position}: {name}"
-msgstr ""
+msgstr "Medium {position}: {name}"
 
 #: ../lib/MusicBrainz/Server/Entity/Medium.pm:26
 #, perl-brace-format
 msgid "{format} {position}"
-msgstr ""
+msgstr "{format} {position}"
 
 #: ../lib/MusicBrainz/Server/Entity/Medium.pm:26
 #: ../root/static/scripts/release-editor/fields.js:492
@@ -12391,7 +12391,7 @@ msgstr "Medium {position}"
 #: ../lib/MusicBrainz/Server/Entity/Medium.pm:278
 #, perl-brace-format
 msgid "{start_track}&#x2013;{end_track}"
-msgstr ""
+msgstr "{start_track}&#x2013;{end_track}"
 
 #: ../lib/MusicBrainz/Server/Entity/Relationship.pm:185
 msgid ", "
@@ -12905,7 +12905,7 @@ msgstr "Relaties onder de nummers weergeven"
 
 #: ../root/static/scripts/common/MB/release.js:85
 msgid "Failed to load the medium."
-msgstr ""
+msgstr "Medium laden is mislukt."
 
 #: ../root/static/scripts/common/annotation.js:19
 msgid "Show less..."
