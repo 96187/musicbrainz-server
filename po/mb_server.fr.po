@@ -29,7 +29,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-03 00:42-0700\n"
-"PO-Revision-Date: 2015-02-03 20:48+0000\n"
+"PO-Revision-Date: 2015-02-15 18:25+0000\n"
 "Last-Translator: yahoe.001\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -1782,7 +1782,7 @@ msgid ""
 "Below is the error information. If you wish to file a bug report, you may do"
 " so at {bugs|our bug tracker}. The information below will help, so please be"
 " sure to include it!"
-msgstr "Voici ci-dessous les informations sur l'erreur. Si vous désirez remplir un rapport de bogue, vous pouvez le faire avec {bugs|notre gestionnaire de bogues}. Les informations ci-dessous nous aiderons, donc veuillez vous assurer de les inclure."
+msgstr "Voici ci-dessous des informations sur l'erreur. Si vous désirez remplir un rapport de bogue, vous pouvez le faire avec {bugs|notre gestionnaire de bogues}. Les informations ci-dessous nous aiderons, veuillez donc vous assurer de les inclure."
 
 #: ../root/account/edit.tt:45 ../root/admin/edit_user.tt:37
 #: ../root/user/profile.tt:118
@@ -5034,7 +5034,7 @@ msgstr "Aucune note de modification n'a été ajoutée."
 
 #: ../root/edit/list.tt:88
 msgid "No edits were found matching your query. Please {search|try again}."
-msgstr "Aucune modification n'a été trouvée selon vos critères. Veuillez {search|réessayer}. "
+msgstr "Aucune modification n'a été trouvée selon vos critères. Veuillez {search|ressayer}. "
 
 #: ../root/elections/index.tt:39
 msgid "No elections found."
@@ -5730,11 +5730,11 @@ msgstr "Veuillez choisir le support que vous souhaitez attacher à cet Index de 
 
 #: ../root/main/rate_limited.tt:6
 msgid "Please slow down and then try again"
-msgstr "Réessayez en allant moins vite"
+msgstr "Ressayez en allant moins vite"
 
 #: ../root/main/503.tt:8
 msgid "Please wait a few minutes and repeat your request."
-msgstr "Veuillez réessayer votre requête dans quelques minutes."
+msgstr "Veuillez ressayer votre requête dans quelques minutes."
 
 #: ../root/account/registered.tt:7
 msgid ""
@@ -8006,7 +8006,7 @@ msgstr "Le type de relation « {type} » ne peut pas être effacé car il est en
 msgid ""
 "The search server could not fulfill your request due to an internal error. "
 "This is usually only temporary, so please retry your search again later."
-msgstr "Le serveur de recherche n'a pas pu compléter votre requête du fait d'une erreur interne. Ceci est habituellement seulement temporaire, alors veuillez réessayer votre recherche plus tard."
+msgstr "Le serveur de recherche n'a pas pu compléter votre requête du fait d'une erreur interne. Ceci est habituellement seulement temporaire, alors veuillez ressayer votre recherche plus tard."
 
 #: ../root/layout.tt:54
 msgid "The server is temporary in read-only mode for database maintainance."
@@ -11405,7 +11405,7 @@ msgstr "« Précédent"
 #: ../lib/DBDefs/Default.pm:143
 msgid ""
 "This beta test server allows testing of new features with the live database."
-msgstr "Ce serveur de test bêta permet de tester de fonctions nouvelles avec la base de données de production."
+msgstr "Ce serveur de test bêta permet de tester de nouvelles fonctions avec la base de données de production."
 
 #: ../lib/MusicBrainz/Server/Controller.pm:29
 #, perl-brace-format
@@ -11482,7 +11482,7 @@ msgstr "L'utilisateur avec l'ID #{user_id} n'a pu être trouvé."
 msgid ""
 "We were unable to send login information to your email address.  Please try again,\n"
 "             however if you continue to experience difficulty contact us at support@musicbrainz.org."
-msgstr "Nous n'avons pas pu envoyer vos informations de compte sur votre adresse courriel. Veuillez réessayer,\ncependant si cette erreur persiste, veuillez nous contacter à l'adresse support@musicbrainz.org."
+msgstr "Nous n'avons pas pu envoyer vos informations de compte sur votre adresse courriel.\nVeuillez ressayer, cependant si cette erreur persiste, veuillez nous contacter à\nsupport@musicbrainz.org."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:159
 msgid "There is no user with this username"
