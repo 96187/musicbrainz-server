@@ -6,7 +6,7 @@
 # nikki, 2013-2014
 # <email address hidden>, 2012
 #   <email address hidden>, 2012
-# Mihkel Tõnnov <email address hidden>, 2008-2009,2011-2014
+# Mihkel Tõnnov <email address hidden>, 2008-2009,2011-2015
 # Mihkel Tõnnov <email address hidden>, 2014
 # Mihkel Tõnnov <email address hidden>, 2015
 # nikki, 2012
@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-03 00:42-0700\n"
-"PO-Revision-Date: 2015-02-20 21:55+0000\n"
+"PO-Revision-Date: 2015-02-20 22:50+0000\n"
 "Last-Translator: Mihkel Tõnnov <email address hidden>\n"
 "Language-Team: Estonian (http://www.transifex.com/projects/p/musicbrainz/language/et/)\n"
 "MIME-Version: 1.0\n"
@@ -5472,7 +5472,7 @@ msgstr "Lehekülg {cur} / {total}"
 
 #: ../root/layout/head.tt:6
 msgid "Page {n}"
-msgstr "{num}. lk"
+msgstr "{n}. lk"
 
 #: ../root/release/edit/tracklist.tt:99
 msgid "Page {page} of {total}"
@@ -5793,7 +5793,7 @@ msgstr "Eelistused"
 
 #: ../root/release/edit/tracklist.tt:170
 msgid "Pregap"
-msgstr ""
+msgstr "Pregap"
 
 #: ../root/annotation/edit.tt:30
 msgid "Preview"
@@ -11133,11 +11133,11 @@ msgstr "{mbid|<abbr title=\"MusicBrainzi identifikaator\">MBID</abbr>}:"
 
 #: ../root/components/common-macros.tt:810
 msgid "{medium_format} {position} on {release}"
-msgstr ""
+msgstr "{medium_format} {position} väljalaskel „{release}”"
 
 #: ../root/components/common-macros.tt:810
 msgid "{medium_format} {position}: {medium_name} on {release}"
-msgstr ""
+msgstr "{medium_format} {position}: „{medium_name}” väljalaskel „{release}”"
 
 #: ../root/components/common-macros.tt:339
 msgid "{name} – {additional_info}"
@@ -12363,23 +12363,23 @@ msgstr "{attribute}: {value}"
 #: ../lib/MusicBrainz/Server/Entity/Medium.pm:25
 #, perl-brace-format
 msgid "{format} {position}: {name}"
-msgstr ""
+msgstr "{format} {position}: „{name}”"
 
 #: ../lib/MusicBrainz/Server/Entity/Medium.pm:25
 #, perl-brace-format
 msgid "Medium {position}: {name}"
-msgstr ""
+msgstr "Helikandja {position}: „{name}”"
 
 #: ../lib/MusicBrainz/Server/Entity/Medium.pm:26
 #, perl-brace-format
 msgid "{format} {position}"
-msgstr ""
+msgstr "{format} {position}"
 
 #: ../lib/MusicBrainz/Server/Entity/Medium.pm:26
 #: ../root/static/scripts/release-editor/fields.js:492
 #, perl-brace-format
 msgid "Medium {position}"
-msgstr ""
+msgstr "Helikandja {position}"
 
 #: ../lib/MusicBrainz/Server/Entity/Medium.pm:278
 #, perl-brace-format
@@ -13036,7 +13036,7 @@ msgstr "Lugude nimekirjal on artistiväljal teavet, mis läheb loopealkirjade ja
 
 #: ../root/static/scripts/release-editor/fields.js:486
 msgid "Medium {position}: {title}"
-msgstr ""
+msgstr "Helikandja {position}: „{title}”"
 
 #: ../root/static/scripts/release-editor/fields.js:823
 msgid ""
