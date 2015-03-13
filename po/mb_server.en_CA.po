@@ -6,14 +6,15 @@
 # kepstin <email address hidden>, 2013-2014
 # kepstin <email address hidden>, 2012
 #   <email address hidden>, 2012
+# Luke Hollins <email address hidden>, 2015
 # navap <email address hidden>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-30 04:25-0700\n"
-"PO-Revision-Date: 2015-01-30 11:27+0000\n"
-"Last-Translator: Ian McEwen <email address hidden>\n"
+"POT-Creation-Date: 2015-02-03 00:42-0700\n"
+"PO-Revision-Date: 2015-03-13 17:00+0000\n"
+"Last-Translator: Luke Hollins <email address hidden>\n"
 "Language-Team: English (Canada) (http://www.transifex.com/projects/p/musicbrainz/language/en_CA/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -24,11 +25,11 @@ msgstr ""
 #: ../root/components/relationships-table.tt:21
 #: ../lib/MusicBrainz/Server/Entity/Role/DatePeriod.pm:49
 msgid " &#x2013; ????"
-msgstr ""
+msgstr " &#x2013; ????"
 
 #: ../root/components/common-macros.tt:9
 msgid " ({text})"
-msgstr ""
+msgstr " ({text})"
 
 #: ../root/account/lost_password.tt:7
 msgid ""
@@ -39,7 +40,7 @@ msgstr "Enter your username and email below. We will send you an email with a li
 
 #: ../root/components/forms.tt:294
 msgid "\"C\" is a single check digit."
-msgstr ""
+msgstr "\"C\" is a single check digit."
 
 #: ../root/components/forms.tt:304
 msgid "\"CC\" is the appropriate for the registrant two-character country code."
@@ -47,7 +48,7 @@ msgstr "“CC” is the appropriate for the registrant two-character country cod
 
 #: ../root/components/forms.tt:293
 msgid "\"DDD\" is a nine digit work identifier."
-msgstr ""
+msgstr "\"DDD\" is a nine digit work identifier."
 
 #: ../root/components/forms.tt:307
 msgid ""
@@ -93,39 +94,39 @@ msgstr "✖"
 #: ../lib/MusicBrainz/Server/Entity/Role/DatePeriod.pm:59
 #, perl-brace-format
 msgid "&#x2013; {enddate}"
-msgstr ""
+msgstr "&#x2013; {enddate}"
 
 #: ../root/release/add_cover_art.tt:67
 msgid "&#x26a0; Error creating edit"
-msgstr ""
+msgstr "&#x26a0; Error creating edit"
 
 #: ../root/release/add_cover_art.tt:64
 msgid "&#x26a0; Error requesting signature"
-msgstr ""
+msgstr "&#x26a0; Error requesting signature"
 
 #: ../root/release/add_cover_art.tt:65
 msgid "&#x26a0; Error uploading image"
-msgstr ""
+msgstr "&#x26a0; Error uploading image"
 
 #: ../root/release/add_cover_art.tt:66
 msgid "&#x26a0; Server busy, try again later"
-msgstr ""
+msgstr "&#x26a0; Server busy, try again later"
 
 #: ../root/release/add_cover_art.tt:63
 msgid "&#x26a0; Unrecognized file"
-msgstr ""
+msgstr "&#x26a0; Unrecognised file"
 
 #: ../root/release/add_cover_art.tt:62
 msgid "&#x2713; Success"
-msgstr ""
+msgstr "&#x2713; Success"
 
 #: ../root/relationship/linktype/tree.tt:44
 msgid "&lt; Back to all relationship types"
-msgstr ""
+msgstr "&lt; Back to all relationship types"
 
 #: ../root/annotation/edit.tt:43
 msgid "''italics''; '''bold'''; '''''bold italics'''''; ---- horizontal rule"
-msgstr ""
+msgstr "''italics''; '''bold'''; '''''bold italics'''''; ---- horizontal rule"
 
 #: ../root/components/tag-cloud.tt:26
 msgid "'{tag}' has been used {num} times"
@@ -133,7 +134,7 @@ msgstr "“{tag}” has been used {num} times"
 
 #: ../root/components/aliases.tt:54
 msgid "(<span class=\"comment\">primary</span>)"
-msgstr ""
+msgstr "(<span class=\"comment\">primary</span>)"
 
 #: ../root/user/profile.tt:33
 msgid "(<strong>unverified!</strong>)"
@@ -149,7 +150,7 @@ msgstr "(add a new recording)"
 
 #: ../root/edit/details/macros.tt:38
 msgid "(ended)"
-msgstr ""
+msgstr "(ended)"
 
 #: ../root/user/profile.tt:25
 msgid "(hidden)"
@@ -166,41 +167,41 @@ msgstr "(no changelog)"
 
 #: ../root/release/add_cover_art.tt:114
 msgid "(no other cover art)"
-msgstr ""
+msgstr "(no other cover art)"
 
 #: ../root/edit/details/remove_cover_art.tt:29
 msgctxt "comment"
 msgid "(none)"
-msgstr ""
+msgstr "(none)"
 
 #: ../root/edit/details/add_relationship_type.tt:9
 #: ../root/relationship/linktype/tree.tt:11
 msgctxt "description"
 msgid "(none)"
-msgstr ""
+msgstr "(none)"
 
 #: ../root/user/profile.tt:44
 msgctxt "email"
 msgid "(none)"
-msgstr ""
+msgstr "(none)"
 
 #: ../root/relationship/linktype/tree.tt:8
 #: ../root/relationship/linktype/tree.tt:9
 #: ../root/relationship/linktype/tree.tt:10
 msgctxt "link phrase"
 msgid "(none)"
-msgstr ""
+msgstr "(none)"
 
 #: ../root/layout/sidebar/sidebar-tags.tt:26
 #: ../root/static/scripts/common/MB/Control/TagEditor.js:43
 msgctxt "tag"
 msgid "(none)"
-msgstr ""
+msgstr "(none)"
 
 #: ../root/edit/details/remove_cover_art.tt:15
 msgctxt "type"
 msgid "(none)"
-msgstr ""
+msgstr "(none)"
 
 #: ../root/elections/show.tt:129
 msgid "(private)"
@@ -208,7 +209,7 @@ msgstr "(private)"
 
 #: ../root/layout/menu.tt:24
 msgid "(reset language)"
-msgstr ""
+msgstr "(reset language)"
 
 #: ../root/search/lib/inline-results-recording.tt:63
 msgid "(standalone recording)"
@@ -245,7 +246,7 @@ msgstr "* Match indicates the total difference in seconds between the CD you req
 #: ../root/report/iswc_with_many_works.tt:47
 #: ../root/report/iswc_with_many_works.tt:61
 msgid "-"
-msgstr ""
+msgstr "-"
 
 #: ../root/user/profile.tt:106
 msgid "0"
@@ -256,7 +257,7 @@ msgid ""
 "0: Hidden, always used for sign languages and languages with no ISO 639-3 "
 "code, used by default until requested for ancient languages and languages "
 "only in ISO 639-3"
-msgstr ""
+msgstr "0: Hidden, always used for sign languages and languages with no ISO 639-3 code, used by default until requested for ancient languages and languages only in ISO 639-3"
 
 #: ../root/edit/info.tt:54
 msgid "1 vote"
@@ -270,11 +271,11 @@ msgstr "100%"
 
 #: ../root/admin/attributes/form.tt:32
 msgid "1: Hidden, used for scripts not in Unicode"
-msgstr ""
+msgstr "1: Hidden, used for scripts not in Unicode"
 
 #: ../root/admin/attributes/form.tt:15
 msgid "1: Shown in the \"other\" section"
-msgstr ""
+msgstr "1: Shown in the \"other\" section"
 
 #: ../root/elections/show.tt:19
 msgid "1st seconder:"
@@ -282,17 +283,17 @@ msgstr "1st seconder:"
 
 #: ../root/components/common-macros.tt:108
 msgid "250px"
-msgstr ""
+msgstr "250px"
 
 #: ../root/admin/attributes/form.tt:31
 msgid ""
 "2: Shown in the \"other\" section, used for scripts in Unicode which are "
 "unlikely to be used"
-msgstr ""
+msgstr "2: Shown in the \"other\" section, used for scripts in Unicode which are unlikely to be used"
 
 #: ../root/admin/attributes/form.tt:14
 msgid "2: Shown in the commonly used section"
-msgstr ""
+msgstr "2: Shown in the commonly used section"
 
 #: ../root/elections/show.tt:23
 msgid "2nd seconder:"
@@ -302,15 +303,15 @@ msgstr "2nd seconder:"
 msgid ""
 "3: Shown in the \"other\" section, used for scripts which are likely to get "
 "some usage"
-msgstr ""
+msgstr "3: Shown in the \"other\" section, used for scripts which are likely to get some usage"
 
 #: ../root/admin/attributes/form.tt:29
 msgid "4: Shown in the commonly used section"
-msgstr ""
+msgstr "4: Shown in the commonly used section"
 
 #: ../root/components/common-macros.tt:109
 msgid "500px"
-msgstr ""
+msgstr "500px"
 
 #: ../root/admin/edit_user.tt:19
 msgid "<abbr title=\"MusicBrainz Identifier\">MBID</abbr> submitter"
@@ -326,7 +327,7 @@ msgstr "<em>no changelog specified</em>"
 
 #: ../root/edit/edit_header.tt:61
 msgid "<strong>Approved:</strong> {date}"
-msgstr ""
+msgstr "<strong>Approved:</strong> {date}"
 
 #: ../root/edit/edit_header.tt:59
 msgid "<strong>Closed:</strong> <em>Cancelling</em>"
@@ -375,7 +376,7 @@ msgid ""
 "<strong>Warning:</strong> Some of the recordings you're merging have "
 "different ISRCs. Please make sure they are indeed the same recordings and "
 "you wish to continue with the merge."
-msgstr ""
+msgstr "<strong>Warning:</strong> Some of the recordings you're merging have different ISRCs. Please make sure they are indeed the same recordings and you wish to continue with the merge."
 
 #: ../root/components/common-macros.tt:777 ../root/recording/edit_form.tt:6
 msgid "<strong>Warning</strong>:"
@@ -385,7 +386,7 @@ msgstr "<strong>Warning:</strong>"
 msgid ""
 "=&#xa0;Title&#xa0;1&#xa0;=; ==&#xa0;Title&#xa0;2&#xa0;==; "
 "===&#xa0;Title&#xa0;3&#xa0;==="
-msgstr ""
+msgstr "=&#xa0;Title&#xa0;1&#xa0;=; ==&#xa0;Title&#xa0;2&#xa0;==; ===&#xa0;Title&#xa0;3&#xa0;==="
 
 #: ../root/cdtoc/lookup.tt:19
 msgid ""
@@ -397,12 +398,12 @@ msgstr "A CD Stub was found that matches the disc ID you provided. If the trackl
 #: ../root/event/attendance.tt:18
 msgid "A hidden user"
 msgid_plural "{n} hidden users"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "A hidden user"
+msgstr[1] "{n} hidden users"
 
 #: ../root/place/map.tt:5
 msgid "A map cannot be shown because this place has no coordinates."
-msgstr ""
+msgstr "A map cannot be shown because this place has no coordinates."
 
 #: ../root/release/collections.tt:18
 msgid "A private collection"
@@ -412,20 +413,20 @@ msgstr[1] "{n} private collections"
 
 #: ../root/release/edit/tracklist.tt:272
 msgid "A release must contain at least one medium."
-msgstr ""
+msgstr "A release must contain at least one medium."
 
 #: ../root/release/edit/information.tt:22
 msgid "A release title is required."
-msgstr ""
+msgstr "A release title is required."
 
 #: ../root/search/index.tt:10
 msgid ""
 "A simple list of all entities is available from our {url|browse} pages."
-msgstr ""
+msgstr "A simple list of all entities is available from our {url|browse} pages."
 
 #: ../root/release/edit/tracklist.tt:342
 msgid "A tracklist is required."
-msgstr ""
+msgstr "A tracklist is required."
 
 #: ../root/layout/menu.tt:122
 msgid "About"
@@ -439,7 +440,7 @@ msgstr "Abstain"
 #: ../lib/MusicBrainz/Server/Data/Vote.pm:194
 msgctxt "vote"
 msgid "Abstain"
-msgstr ""
+msgstr "Abstain"
 
 #: ../root/doc/edit_type.tt:8
 msgid "Accept"
@@ -456,19 +457,19 @@ msgstr "Accept upon expiration"
 #: ../root/user/profile.tt:152
 msgctxt "edit descriptor"
 msgid "Accepted"
-msgstr ""
+msgstr "Accepted"
 
 #: ../root/user/edits.tt:1
 msgid "Accepted Edits"
-msgstr ""
+msgstr "Accepted Edits"
 
 #: ../root/user/edits.tt:1
 msgid "Accepted Edits by {name}"
-msgstr ""
+msgstr "Accepted Edits by {name}"
 
 #: ../root/account/applications.tt:26
 msgid "Access"
-msgstr ""
+msgstr "Access"
 
 #: ../root/account/registered.tt:1 ../root/account/registered.tt:2
 msgid "Account Created"
@@ -480,11 +481,11 @@ msgstr "Account admin"
 
 #: ../root/user/privileged.tt:52
 msgid "Account administrators"
-msgstr ""
+msgstr "Account administrators"
 
 #: ../root/user/privileged.tt:53
 msgid "Account administrators can edit and delete user accounts."
-msgstr ""
+msgstr "Account administrators can edit and delete user accounts."
 
 #: ../root/search/results-freedb.tt:17
 msgid "Action"
@@ -504,29 +505,29 @@ msgstr "Actions"
 msgid ""
 "Add @ at line start to indicate artists, * for a work/song, # for additional"
 " info (such as \"Encore\"). [mbid|name] allows linking to artists and works."
-msgstr ""
+msgstr "Add @ at line start to indicate artists, * for a work/song, # for additional info (such as \"Encore\"). [mbid|name] allows linking to artists and works."
 
 #: ../root/entity/alias/add.tt:1
 msgid "Add Alias"
-msgstr ""
+msgstr "Add Alias"
 
 #: ../root/area/create.tt:1 ../root/area/create.tt:3
 msgid "Add Area"
-msgstr ""
+msgstr "Add Area"
 
 #: ../root/admin/index.tt:7 ../root/layout/menu.tt:85
 msgctxt "button/menu"
 msgid "Add Area"
-msgstr ""
+msgstr "Add Area"
 
 #: ../root/artist/create.tt:1 ../root/artist/create.tt:3
 msgid "Add Artist"
-msgstr ""
+msgstr "Add Artist"
 
 #: ../root/layout/menu.tt:218
 msgctxt "button/menu"
 msgid "Add Artist"
-msgstr ""
+msgstr "Add Artist"
 
 #: ../root/components/forms.tt:375 ../root/components/forms.tt:376
 #: ../root/release/edit/tracklist.tt:475
@@ -540,12 +541,12 @@ msgstr "Add CD Stub"
 #: ../root/release/cover_art.tt:52
 msgctxt "button/menu"
 msgid "Add Cover Art"
-msgstr ""
+msgstr "Add Cover Art"
 
 #: ../root/release/add_cover_art.tt:1 ../root/release/add_cover_art.tt:8
 msgctxt "header"
 msgid "Add Cover Art"
-msgstr ""
+msgstr "Add Cover Art"
 
 #: ../root/release/edit/layout.tt:64 ../root/release/edit/tracklist.tt:262
 #: ../root/static/scripts/release-editor/dialogs.js:248
@@ -559,30 +560,30 @@ msgstr ""
 #: ../root/layout/menu.tt:245
 msgctxt "button/menu"
 msgid "Add Event"
-msgstr ""
+msgstr "Add Event"
 
 #: ../root/relationship/linktype/form.tt:145
 msgid "Add Example"
-msgstr ""
+msgstr "Add Example"
 
 #: ../root/instrument/create.tt:1 ../root/instrument/create.tt:3
 msgid "Add Instrument"
-msgstr ""
+msgstr "Add Instrument"
 
 #: ../root/admin/index.tt:10 ../root/layout/menu.tt:90
 msgctxt "button/menu"
 msgid "Add Instrument"
-msgstr ""
+msgstr "Add Instrument"
 
 #: ../root/label/create.tt:1 ../root/label/create.tt:3
 msgid "Add Label"
-msgstr ""
+msgstr "Add Label"
 
 #: ../root/layout/menu.tt:221 ../root/release/edit/information.tt:221
 #: ../root/release/edit/information.tt:222
 msgctxt "button/menu"
 msgid "Add Label"
-msgstr ""
+msgstr "Add Label"
 
 #: ../root/edit/info.tt:13
 #: ../root/static/scripts/common/MB/Control/EditSummary.js:38
@@ -595,12 +596,12 @@ msgstr "Add Page"
 
 #: ../root/place/create.tt:1 ../root/place/create.tt:3
 msgid "Add Place"
-msgstr ""
+msgstr "Add Place"
 
 #: ../root/layout/menu.tt:239
 msgctxt "button/menu"
 msgid "Add Place"
-msgstr ""
+msgstr "Add Place"
 
 #: ../root/layout/menu.tt:227
 msgctxt "button/menu"
