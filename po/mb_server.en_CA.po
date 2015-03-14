@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-03 00:42-0700\n"
-"PO-Revision-Date: 2015-03-14 15:49+0000\n"
+"PO-Revision-Date: 2015-03-14 16:25+0000\n"
 "Last-Translator: Luke Hollins <email address hidden>\n"
 "Language-Team: English (Canada) (http://www.transifex.com/projects/p/musicbrainz/language/en_CA/)\n"
 "MIME-Version: 1.0\n"
@@ -7003,8 +7003,8 @@ msgstr "See all {num} "
 #: ../root/tag/index.tt:8
 msgid "See all {num} areas"
 msgid_plural "See all {num} areas"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "See {num} area"
+msgstr[1] "See all {num} areas"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} artists"
@@ -7021,8 +7021,8 @@ msgstr[1] "See all {num} events"
 #: ../root/tag/index.tt:8
 msgid "See all {num} instruments"
 msgid_plural "See all {num} instruments"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "See {num} instrument"
+msgstr[1] "See all {num} instruments"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} labels"
@@ -7388,108 +7388,108 @@ msgstr ""
 msgid ""
 "Sorry, we could not find a FreeDB entry with that ID. You may wish to try "
 "and {search_url|search for it} instead."
-msgstr ""
+msgstr "Sorry, we could not find a FreeDB entry with that ID. You may wish to try and {search_url|search for it} instead."
 
 #: ../root/otherlookup/not_found.tt:4
 msgid ""
 "Sorry, we could not find a MusicBrainz entity with that ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Sorry, we could not find a MusicBrainz entity with that ID. You may wish to try and {search_url|search for it} instead."
 
 #: ../root/url/not_found.tt:4
 msgid "Sorry, we could not find a URL with that MusicBrainz ID."
-msgstr ""
+msgstr "Sorry, we could not find a URL with that MusicBrainz ID."
 
 #: ../root/label/not_found.tt:4
 msgid ""
 "Sorry, we could not find a label with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Sorry, we could not find a label with that MusicBrainz ID. You may wish to try and {search_url|search for it} instead."
 
 #: ../root/place/not_found.tt:4
 msgid ""
 "Sorry, we could not find a place with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Sorry, we could not find a place with that MusicBrainz ID. You may wish to try and {search_url|search for it} instead."
 
 #: ../root/recording/not_found.tt:4
 msgid ""
 "Sorry, we could not find a recording with that MusicBrainz ID. You may wish "
 "to try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Sorry, we could not find a recording with that MusicBrainz ID. You may wish to try and {search_url|search for it} instead."
 
 #: ../root/relationship/linkattributetype/not_found.tt:3
 msgid ""
 "Sorry, we could not find a relationship attribute with that MusicBrainz ID."
-msgstr ""
+msgstr "Sorry, we could not find a relationship attribute with that MusicBrainz ID."
 
 #: ../root/release_group/not_found.tt:4
 msgid ""
 "Sorry, we could not find a release group with that MusicBrainz ID. You may "
 "wish to try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Sorry, we could not find a release group with that MusicBrainz ID. You may wish to try and {search_url|search for it} instead."
 
 #: ../root/release/not_found.tt:4
 msgid ""
 "Sorry, we could not find a release with that MusicBrainz ID. You may wish to"
 " try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Sorry, we could not find a release with that MusicBrainz ID. You may wish to try and {search_url|search for it} instead."
 
 #: ../root/series/not_found.tt:4
 msgid ""
 "Sorry, we could not find a series with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Sorry, we could not find a series with that MusicBrainz ID. You may wish to try and {search_url|search for it} instead."
 
 #: ../root/work/not_found.tt:4
 msgid ""
 "Sorry, we could not find a work with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Sorry, we could not find a work with that MusicBrainz ID. You may wish to try and {search_url|search for it} instead."
 
 #: ../root/area/not_found.tt:4
 msgid ""
 "Sorry, we could not find an area with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Sorry, we could not find an area with that MusicBrainz ID. You may wish to try and {search_url|search for it} instead."
 
 #: ../root/artist/not_found.tt:4
 msgid ""
 "Sorry, we could not find an artist with that MusicBrainz ID. You may wish to"
 " try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Sorry, we could not find an artist with that MusicBrainz ID. You may wish to try and {search_url|search for it} instead."
 
 #: ../root/collection/not_found.tt:4
 msgid "Sorry, we could not find an collection with that MusicBrainz ID."
-msgstr ""
+msgstr "Sorry, we could not find an collection with that MusicBrainz ID."
 
 #: ../root/edit/not_found.tt:4
 msgid ""
 "Sorry, we could not find an edit with that edit ID. You may wish to try and "
 "perform an {search_url|edit search} instead."
-msgstr ""
+msgstr "Sorry, we could not find an edit with that edit ID. You may wish to try and perform an {search_url|edit search} instead."
 
 #: ../root/user/not_found.tt:4
 msgid ""
 "Sorry, we could not find an editor with that name. You may wish to try and "
 "{search_url|search for them} instead."
-msgstr ""
+msgstr "Sorry, we could not find an editor with that name. You may wish to try and {search_url|search for them} instead."
 
 #: ../root/event/not_found.tt:4
 msgid ""
 "Sorry, we could not find an event with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Sorry, we could not find an event with that MusicBrainz ID. You may wish to try and {search_url|search for it} instead."
 
 #: ../root/instrument/not_found.tt:4
 msgid ""
 "Sorry, we could not find an instrument with that MusicBrainz ID. You may "
 "wish to try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Sorry, we could not find an instrument with that MusicBrainz ID. You may wish to try and {search_url|search for it} instead."
 
 #: ../root/cdtoc/not_found.tt:4
 msgid "Sorry, we could not find the CD TOC you specified."
-msgstr ""
+msgstr "Sorry, we could not find the CD TOC you specified."
 
 #: ../root/elections/not_found.tt:4
 msgid "Sorry, we could not find this election."
@@ -7497,7 +7497,7 @@ msgstr ""
 
 #: ../root/main/401.tt:5
 msgid "Sorry, you are not authorized to view this page."
-msgstr ""
+msgstr "Sorry, you are not authorised to view this page."
 
 #: ../root/main/mirror.tt:5
 msgid "Sorry, you are unable to perform that action on a mirror server."
@@ -7610,7 +7610,7 @@ msgstr ""
 #: ../root/elections/show.tt:42
 msgctxt "election status"
 msgid "Status:"
-msgstr ""
+msgstr "Status:"
 
 #: ../root/edit/details/add_release.tt:39
 #: ../root/edit/details/edit_release.tt:29
@@ -7618,43 +7618,43 @@ msgstr ""
 #: ../root/release/layout.tt:53
 msgctxt "release status"
 msgid "Status:"
-msgstr ""
+msgstr "Status:"
 
 #: ../root/layout.tt:89
 msgid "Stop using beta site"
-msgstr ""
+msgstr "Stop using beta site"
 
 #: ../root/watch/list.tt:28
 msgid "Stop watching selected artists"
-msgstr ""
+msgstr "Stop watching selected artists"
 
 #: ../root/layout/menu.tt:263
 msgid "Style Guidelines"
-msgstr ""
+msgstr "Style Guidelines"
 
 #: ../root/edit/list_header.tt:32 ../root/main/index.tt:81
 msgid "Style guidelines"
-msgstr ""
+msgstr "Style guidelines"
 
 #: ../root/user/contact.tt:8
 msgid "Subject:"
-msgstr ""
+msgstr "Subject:"
 
 #: ../root/cdstub/edit_form.tt:24
 msgid "Submit"
-msgstr ""
+msgstr "Submit"
 
 #: ../root/edit/index.tt:73
 msgid "Submit note"
-msgstr ""
+msgstr "Submit note"
 
 #: ../root/entity/tags.tt:14
 msgid "Submit tags"
-msgstr ""
+msgstr "Submit tags"
 
 #: ../root/cdtoc/lookup.tt:105
 msgid "Submit this CD using the simple method."
-msgstr ""
+msgstr "Submit this CD using the simple method."
 
 #: ../root/edit/index.tt:71 ../root/edit/vote.tt:26
 msgid "Submit vote and note"
