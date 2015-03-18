@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-03 00:42-0700\n"
-"PO-Revision-Date: 2015-03-14 23:21+0000\n"
+"PO-Revision-Date: 2015-03-18 13:06+0000\n"
 "Last-Translator: Luke Hollins <email address hidden>\n"
 "Language-Team: English (Canada) (http://www.transifex.com/projects/p/musicbrainz/language/en_CA/)\n"
 "MIME-Version: 1.0\n"
@@ -7027,8 +7027,8 @@ msgstr[1] "See all {num} instruments"
 #: ../root/tag/index.tt:8
 msgid "See all {num} labels"
 msgid_plural "See all {num} labels"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "See {num} label"
+msgstr[1] "See all {num} labels"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} places"
@@ -7039,8 +7039,8 @@ msgstr[1] "See all {num} places"
 #: ../root/tag/index.tt:8
 msgid "See all {num} recordings"
 msgid_plural "See all {num} recordings"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "See {num} recording"
+msgstr[1] "See all {num} recordings"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} release groups"
@@ -11815,7 +11815,7 @@ msgstr "Add track"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/ChangeArtistQuality.pm:10
 msgid "Change artist quality (historic)"
-msgstr ""
+msgstr "Change artist quality (historic)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/ChangeReleaseGroup.pm:10
 msgid "Change release group"
@@ -11823,7 +11823,7 @@ msgstr "Change release group"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/ChangeTrackArtist.pm:12
 msgid "Change track artist (historic)"
-msgstr ""
+msgstr "Change track artist (historic)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditLink.pm:17
 msgid "Edit relationship (historic)"
@@ -11831,7 +11831,7 @@ msgstr "Edit relationship (historic)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditReleaseAttrs.pm:15
 msgid "Edit release attributes (historic)"
-msgstr ""
+msgstr "Edit release attributes (historic)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditReleaseEvents.pm:11
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditReleaseEventsOld.pm:17
@@ -11840,27 +11840,27 @@ msgstr "Edit release events (historic)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditReleaseLanguage.pm:13
 msgid "Edit release language (historic)"
-msgstr ""
+msgstr "Edit release language (historic)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditReleaseName.pm:10
 msgid "Edit release name (historic)"
-msgstr ""
+msgstr "Edit release name (historic)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditTrackLength.pm:10
 msgid "Edit track length (historic)"
-msgstr ""
+msgstr "Edit track length (historic)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditTrackName.pm:20
 msgid "Edit track name (historic)"
-msgstr ""
+msgstr "Edit track name (historic)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditTrackNum.pm:11
 msgid "Edit track number (historic)"
-msgstr ""
+msgstr "Edit track number (historic)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/MACToSAC.pm:12
 msgid "Convert release to single artist (historic)"
-msgstr ""
+msgstr "Convert release to single artist (historic)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/MergeRelease.pm:12
 #: ../lib/MusicBrainz/Server/Edit/Historic/MergeReleaseMAC.pm:9
@@ -11875,11 +11875,11 @@ msgstr "Move disc ID"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/MoveRelease.pm:12
 msgid "Move release (historic)"
-msgstr ""
+msgstr "Move release (historic)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/MoveReleaseToRG.pm:17
 msgid "Change release group (historic)"
-msgstr ""
+msgstr "Change release group (historic)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveDiscID.pm:11
 #: ../lib/MusicBrainz/Server/Edit/Medium/RemoveDiscID.pm:9
@@ -11906,11 +11906,11 @@ msgstr "Remove release events (historic)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveReleases.pm:11
 msgid "Remove releases (historic)"
-msgstr ""
+msgstr "Remove releases (historic)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/SACToMAC.pm:15
 msgid "Convert release to multiple artists (historic)"
-msgstr ""
+msgstr "Convert release to multiple artists (historic)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/SetTrackLengthsFromCDTOC.pm:13
 #: ../lib/MusicBrainz/Server/Edit/Medium/SetTrackLengths.pm:20
@@ -11919,31 +11919,31 @@ msgstr "Set track lengths"
 
 #: ../lib/MusicBrainz/Server/Edit/Instrument/AddAlias.pm:11
 msgid "Add instrument alias"
-msgstr ""
+msgstr "Add instrument alias"
 
 #: ../lib/MusicBrainz/Server/Edit/Instrument/AddAnnotation.pm:11
 msgid "Add instrument annotation"
-msgstr ""
+msgstr "Add instrument annotation"
 
 #: ../lib/MusicBrainz/Server/Edit/Instrument/Create.pm:18
 msgid "Add instrument"
-msgstr ""
+msgstr "Add instrument"
 
 #: ../lib/MusicBrainz/Server/Edit/Instrument/Delete.pm:10
 msgid "Remove instrument"
-msgstr ""
+msgstr "Remove instrument"
 
 #: ../lib/MusicBrainz/Server/Edit/Instrument/DeleteAlias.pm:14
 msgid "Remove instrument alias"
-msgstr ""
+msgstr "Remove instrument alias"
 
 #: ../lib/MusicBrainz/Server/Edit/Instrument/Edit.pm:27
 msgid "Edit instrument"
-msgstr ""
+msgstr "Edit instrument"
 
 #: ../lib/MusicBrainz/Server/Edit/Instrument/EditAlias.pm:12
 msgid "Edit instrument alias"
-msgstr ""
+msgstr "Edit instrument alias"
 
 #: ../lib/MusicBrainz/Server/Edit/Instrument/Merge.pm:11
 msgid "Merge instruments"
@@ -12119,7 +12119,7 @@ msgstr "Edit barcodes"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/EditCoverArt.pm:23
 msgid "Edit cover art"
-msgstr ""
+msgstr "Edit cover art"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/EditReleaseLabel.pm:25
 msgid "Edit release label"
@@ -12127,15 +12127,15 @@ msgstr "Edit release label"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/RemoveCoverArt.pm:19
 msgid "Remove cover art"
-msgstr ""
+msgstr "Remove cover art"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/ReorderCoverArt.pm:24
 msgid "Reorder cover art"
-msgstr ""
+msgstr "Reorder cover art"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/ReorderMediums.pm:11
 msgid "Reorder mediums"
-msgstr ""
+msgstr "Reorder mediums"
 
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/AddAnnotation.pm:12
 msgid "Add release group annotation"
@@ -12151,55 +12151,55 @@ msgstr "Edit release group"
 
 #: ../lib/MusicBrainz/Server/Edit/Series/AddAlias.pm:11
 msgid "Add series alias"
-msgstr ""
+msgstr "Add series alias"
 
 #: ../lib/MusicBrainz/Server/Edit/Series/AddAnnotation.pm:11
 msgid "Add series annotation"
-msgstr ""
+msgstr "Add series annotation"
 
 #: ../lib/MusicBrainz/Server/Edit/Series/Create.pm:21
 msgid "Add series"
-msgstr ""
+msgstr "Add series"
 
 #: ../lib/MusicBrainz/Server/Edit/Series/Delete.pm:12
 msgid "Remove series"
-msgstr ""
+msgstr "Remove series"
 
 #: ../lib/MusicBrainz/Server/Edit/Series/DeleteAlias.pm:14
 msgid "Remove series alias"
-msgstr ""
+msgstr "Remove series alias"
 
 #: ../lib/MusicBrainz/Server/Edit/Series/Edit.pm:24
 msgid "Edit series"
-msgstr ""
+msgstr "Edit series"
 
 #: ../lib/MusicBrainz/Server/Edit/Series/EditAlias.pm:12
 msgid "Edit series alias"
-msgstr ""
+msgstr "Edit series alias"
 
 #: ../lib/MusicBrainz/Server/Edit/Series/Merge.pm:11
 msgid "Merge series"
-msgstr ""
+msgstr "Merge series"
 
 #: ../lib/MusicBrainz/Server/Edit/Utils.pm:281
 msgid "Applied"
-msgstr ""
+msgstr "Applied"
 
 #: ../lib/MusicBrainz/Server/Edit/Utils.pm:282
 msgid "Failed vote"
-msgstr ""
+msgstr "Failed vote"
 
 #: ../lib/MusicBrainz/Server/Edit/Utils.pm:283
 msgid "Failed dependency"
-msgstr ""
+msgstr "Failed dependency"
 
 #: ../lib/MusicBrainz/Server/Edit/Utils.pm:285
 msgid "Failed prerequisite"
-msgstr ""
+msgstr "Failed prerequisite"
 
 #: ../lib/MusicBrainz/Server/Edit/Utils.pm:286
 msgid "No votes"
-msgstr ""
+msgstr "No votes"
 
 #: ../lib/MusicBrainz/Server/Edit/WikiDoc.pm:7
 msgid "Wiki documentation"
@@ -12243,7 +12243,7 @@ msgstr "Merge works"
 
 #: ../lib/MusicBrainz/Server/Edit/Work/RemoveISWC.pm:15
 msgid "Remove ISWC"
-msgstr ""
+msgstr "Remove ISWC"
 
 #: ../lib/MusicBrainz/Server/EditSearch/Predicate.pm:68
 msgid "This operator is not supported"
@@ -12252,24 +12252,24 @@ msgstr "This operator is not supported"
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:89
 msgctxt "autoeditor election status"
 msgid "Awaiting 1st seconder"
-msgstr ""
+msgstr "Awaiting 1st seconder"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:90
 msgctxt "autoeditor election status"
 msgid "Awaiting 2nd seconder"
-msgstr ""
+msgstr "Awaiting 2nd seconder"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:91
 #, perl-brace-format
 msgctxt "autoeditor election status"
 msgid "Voting open since {date}"
-msgstr ""
+msgstr "Voting open since {date}"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:92
 #, perl-brace-format
 msgctxt "autoeditor election status"
 msgid "Accepted at {date}"
-msgstr ""
+msgstr "Accepted at {date}"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:93
 #, perl-brace-format
@@ -12339,23 +12339,23 @@ msgstr ""
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:71
 msgid "Submit new ISRCs to the database"
-msgstr ""
+msgstr "Submit new ISRCs to the database"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:72
 msgid "Submit new barcodes to the database"
-msgstr ""
+msgstr "Submit new barcodes to the database"
 
 #: ../lib/MusicBrainz/Server/Entity/LinkAttribute.pm:41
 #: ../root/static/scripts/relationship-editor/common/fields.js:270
 #, perl-brace-format
 msgid "{attribute} [{credited_as}]"
-msgstr ""
+msgstr "{attribute} [{credited_as}]"
 
 #: ../lib/MusicBrainz/Server/Entity/LinkAttribute.pm:45
 #: ../root/static/scripts/relationship-editor/common/fields.js:260
 #, perl-brace-format
 msgid "{attribute}: {value}"
-msgstr ""
+msgstr "{attribute}: {value}"
 
 #: ../lib/MusicBrainz/Server/Entity/Medium.pm:25
 #, perl-brace-format
