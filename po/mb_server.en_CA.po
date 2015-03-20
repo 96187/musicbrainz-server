@@ -13,7 +13,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-03 00:42-0700\n"
-"PO-Revision-Date: 2015-03-18 13:06+0000\n"
+"PO-Revision-Date: 2015-03-20 00:53+0000\n"
 "Last-Translator: Luke Hollins <email address hidden>\n"
 "Language-Team: English (Canada) (http://www.transifex.com/projects/p/musicbrainz/language/en_CA/)\n"
 "MIME-Version: 1.0\n"
@@ -7045,58 +7045,58 @@ msgstr[1] "See all {num} recordings"
 #: ../root/tag/index.tt:8
 msgid "See all {num} release groups"
 msgid_plural "See all {num} release groups"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "See {num} release group"
+msgstr[1] "See all {num} release groups"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} releases"
 msgid_plural "See all {num} releases"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "See {num} release"
+msgstr[1] "See all {num} releases"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} series"
 msgid_plural "See all {num} series"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "See {num} series"
+msgstr[1] "See all {num} series"
 
 #: ../root/tag/index.tt:8
 msgid "See all {num} works"
 msgid_plural "See all {num} works"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "See {num} works"
+msgstr[1] "See all {num} works"
 
 #: ../root/account/edit.tt:7
 msgid ""
 "See also your {uri|user preferences}, which include your privacy settings."
-msgstr ""
+msgstr "See also your {uri|user preferences}, which include your privacy settings."
 
 #: ../root/doc/relationship_type.tt:74
 msgid "See the general {url|guidelines for URLs}."
-msgstr ""
+msgstr "See the general {url|guidelines for URLs}."
 
 #: ../root/cdtoc/attach_filter_artist.tt:35 ../root/cdtoc/move_search.tt:42
 #: ../root/release_group/set_cover_art.tt:35
 msgid "Select"
-msgstr ""
+msgstr "Select"
 
 #: ../root/release/edit/tracklist.tt:93
 msgid "Select a disc from the search results below and then click \"Add Disc\"."
-msgstr ""
+msgstr "Select a disc from the search results below and then click \"Add Disc\"."
 
 #: ../root/cdtoc/move_search.tt:4
 msgid ""
 "Select a release to which the disc ID <code>{discid}</code>. should be moved"
 " to."
-msgstr ""
+msgstr "Select a release to which the disc ID <code>{discid}</code>. should be moved to."
 
 #: ../root/release/add_cover_art.tt:34
 msgid "Select images..."
-msgstr ""
+msgstr "Select images..."
 
 #: ../root/user/contact.tt:20
 msgid "Send"
-msgstr ""
+msgstr "Send"
 
 #: ../root/account/lost_username.tt:14 ../root/user/contact.tt:1
 #: ../root/user/contact.tt:3 ../lib/MusicBrainz/Server/Controller/User.pm:253
@@ -7105,25 +7105,25 @@ msgstr "Send Email"
 
 #: ../root/user/contact.tt:17
 msgid "Send a copy to my own email address"
-msgstr ""
+msgstr "Send a copy to my own email address"
 
 #: ../root/account/preferences.tt:38
 msgid "Send me mails with edits to my subscriptions:"
-msgstr ""
+msgstr "Send me mails with edits to my subscriptions:"
 
 #: ../root/components/forms.tt:244 ../root/components/forms.tt:267
 msgid "Sentence"
-msgstr ""
+msgstr "Sentence"
 
 #: ../root/report/index.tt:111 ../root/report/series_list.tt:7
 #: ../root/tag/index.tt:8
 msgid "Series"
-msgstr ""
+msgstr "Series"
 
 #: ../root/components/common-macros.tt:613 ../root/tag/header.tt:1
 msgctxt "plural"
 msgid "Series"
-msgstr ""
+msgstr "Series"
 
 #: ../root/components/common-macros.tt:596 ../root/components/series-list.tt:4
 #: ../root/edit/search_macros.tt:307 ../root/series/header.tt:4
@@ -7132,45 +7132,45 @@ msgstr ""
 #: ../root/static/scripts/common/MB/i18n.js:125
 msgctxt "singular"
 msgid "Series"
-msgstr ""
+msgstr "Series"
 
 #: ../root/series/edit_form.tt:30
 msgid "Series Details"
-msgstr ""
+msgstr "Series Details"
 
 #: ../root/series/not_found.tt:1 ../root/series/not_found.tt:2
 msgid "Series Not Found"
-msgstr ""
+msgstr "Series Not Found"
 
 #: ../root/user/subscriptions/menu.tt:6 ../root/user/subscriptions/series.tt:1
 msgid "Series Subscriptions"
-msgstr ""
+msgstr "Series Subscriptions"
 
 #: ../root/report/annotations_series.tt:1
 #: ../root/report/annotations_series.tt:3
 msgid "Series annotations"
-msgstr ""
+msgstr "Series annotations"
 
 #: ../root/series/layout.tt:9
 msgid "Series information"
-msgstr ""
+msgstr "Series information"
 
 #: ../root/report/index.tt:114
 msgid "Series with annotations"
-msgstr ""
+msgstr "Series with annotations"
 
 #: ../root/edit/details/add_series.tt:3 ../root/edit/details/edit_series.tt:5
 msgid "Series:"
-msgstr ""
+msgstr "Series:"
 
 #: ../root/components/common-macros.tt:579
 msgctxt "singular"
 msgid "Series:"
-msgstr ""
+msgstr "Series:"
 
 #: ../root/release_group/set_cover_art.tt:1
 msgid "Set Release Group Cover Art"
-msgstr ""
+msgstr "Set Release Group Cover Art"
 
 #: ../root/cdtoc/set_durations.tt:1 ../root/cdtoc/set_durations.tt:2
 msgid "Set Tracklist Durations"
@@ -7248,72 +7248,72 @@ msgstr "Showing all release groups for various artists."
 msgid ""
 "Showing all release groups for various artists. {show_non_va|Show release "
 "groups by this artist instead}."
-msgstr ""
+msgstr "Showing all release groups for various artists. {show_non_va|Show release groups by this artist instead}."
 
 #: ../root/artist/index.tt:115
 msgid ""
 "Showing all release groups for various artists. {show_official|Show only "
 "official various artists release groups instead}, or {show_non_va|show "
 "release groups by this artist}."
-msgstr ""
+msgstr "Showing all release groups for various artists. {show_official|Show only official various artists release groups instead}, or {show_non_va|show release groups by this artist}."
 
 #: ../root/artist/index.tt:95
 msgid ""
 "Showing all release groups for various artists. {show_official|Show only "
 "official various artists release groups instead}."
-msgstr ""
+msgstr "Showing all release groups for various artists. {show_official|Show only official various artists release groups instead}."
 
 #: ../root/artist/index.tt:71
 msgid ""
 "Showing official release groups by this artist. {show_all|Show all release "
 "groups instead}, or {show_va|show various artists release groups}."
-msgstr ""
+msgstr "Showing official release groups by this artist. {show_all|Show all release groups instead}, or {show_va|show various artists release groups}."
 
 #: ../root/artist/index.tt:100
 msgid ""
 "Showing official release groups for various artists. {show_all|Show all "
 "various artists release groups instead}, or {show_non_va|show release groups"
 " by this artist}."
-msgstr ""
+msgstr "Showing official release groups for various artists. {show_all|Show all various artists release groups instead}, or {show_non_va|show release groups by this artist}."
 
 #: ../root/artist/index.tt:79
 msgid ""
 "Showing official release groups for various artists. {show_all|Show all "
 "various artists release groups instead}."
-msgstr ""
+msgstr "Showing official release groups for various artists. {show_all|Show all various artists release groups instead}."
 
 #: ../root/artist/recordings.tt:20
 msgid ""
 "Showing only standalone recordings. {show_all|Show all recordings instead}."
-msgstr ""
+msgstr "Showing only standalone recordings. {show_all|Show all recordings instead}."
 
 #: ../root/artist/recordings.tt:23
 msgid "Showing only videos. {show_all|Show all recordings instead}."
-msgstr ""
+msgstr "Showing only videos. {show_all|Show all recordings instead}."
 
 #: ../root/artist/releases.tt:28
 msgid ""
 "Showing releases by this artist. {show_all|Show Various Artist releases "
 "instead}."
-msgstr ""
+msgstr "Showing releases by this artist. {show_all|Show Various Artist releases instead}."
 
 #: ../root/release/edit/duplicates.tt:2
 msgid "Similar releases"
-msgstr ""
+msgstr "Similar releases"
 
 #: ../root/main/rate_limited.tt:1 ../root/main/rate_limited.tt:3
 msgid "Slow Down!"
-msgstr ""
+msgstr "Slow Down!"
 
 #: ../root/layout/menu.tt:134
 msgid "Social Contract"
-msgstr ""
+msgstr "Social Contract"
 
 #: ../root/search/results-freedb.tt:2
 msgid ""
 "Some FreeDB results may not be immediately available since they are only "
 "able to be updated after FreeDB's monthly database export."
-msgstr ""
+msgstr "Some FreeDB results may not be immediately available since they are only able to be updated after FreeDB's monthly database export."
 
 #: ../root/account/applications.tt:18
 msgid ""
@@ -7322,67 +7322,67 @@ msgid ""
 "account. These are the applications that you have authorized to access your "
 "MusicBrainz account. If you no longer use some of the applications, you can "
 "revoke their access."
-msgstr ""
+msgstr "Some applications and websites support accessing private data from or submitting data to MusicBrainz but require your permission to access your account. These are the applications that you have authorized to access your MusicBrainz account. If you no longer use some of the applications, you can revoke their access."
 
 #: ../root/release/edit/editnote.tt:4
 msgid ""
 "Some errors were detected in the data you’ve entered. Click on the tabs "
 "shaded red and correct any visible errors."
-msgstr ""
+msgstr "Some errors were detected in the data you’ve entered. Click on the tabs shaded red and correct any visible errors."
 
 #: ../root/cdstub/error.tt:11
 msgid ""
 "Sorry, <code>{discid}</code> does not match a CD stub. You can try "
 "{search_url|searching for it} instead."
-msgstr ""
+msgstr "Sorry, <code>{discid}</code> does not match a CD stub. You can try {search_url|searching for it} instead."
 
 #: ../root/cdstub/error.tt:19
 msgid "Sorry, <code>{discid}</code> is not a valid disc ID."
-msgstr ""
+msgstr "Sorry, <code>{discid}</code> is not a valid disc ID."
 
 #: ../root/search/error/no-results.tt:3
 msgid ""
 "Sorry, but your query \"(<code>query</code>)\" did not match any {type}. "
 "Please check you used the correct spelling.  Sometimes searching for fewer "
 "or different words may also help."
-msgstr ""
+msgstr "Sorry, but your query \"(<code>query</code>)\" did not match any {type}. Please check you used the correct spelling.  Sometimes searching for fewer or different words may also help."
 
 #: ../root/search/error/rate-limit.tt:3
 msgid ""
 "Sorry, but your query (<code>{query}</code>) could not be performed, because"
 " it appears you've been rate-limited. Either the server is overloaded or "
 "you're making a lot of requests all at once!"
-msgstr ""
+msgstr "Sorry, but your query (<code>{query}</code>) could not be performed, because it appears you've been rate-limited. Either the server is overloaded or you're making a lot of requests all at once!"
 
 #: ../root/search/error/general.tt:3
 msgid ""
 "Sorry, but your query (<code>{query}</code>) could not be performed, due to "
 "an error which we are not quite able to identify."
-msgstr ""
+msgstr "Sorry, but your query (<code>{query}</code>) could not be performed, due to an error which we are not quite able to identify."
 
 #: ../root/main/rate_limited.tt:4
 msgid ""
 "Sorry, but your requests are exceeding the allowable rate limit ({rlinfo})."
-msgstr ""
+msgstr "Sorry, but your requests are exceeding the allowable rate limit ({rlinfo})."
 
 #: ../root/main/404.tt:8
 msgid "Sorry, the page you're looking for does not exist."
-msgstr ""
+msgstr "Sorry, the page you're looking for does not exist."
 
 #: ../root/main/mirror_404.tt:5
 msgid ""
 "Sorry, the page you're looking for is not available on a mirror server."
-msgstr ""
+msgstr "Sorry, the page you're looking for is not available on a mirror server."
 
 #: ../root/main/400.tt:5
 msgid "Sorry, there was a problem with your request."
-msgstr ""
+msgstr "Sorry, there was a problem with your request."
 
 #: ../root/track/not_found.tt:4
 msgid ""
 "Sorry, we could find neither a recording nor a track with that MusicBrainz "
 "ID. You may wish to try and {search_url|search for it} instead."
-msgstr ""
+msgstr "Sorry, we could find neither a recording nor a track with that MusicBrainz ID. You may wish to try and {search_url|search for it} instead."
 
 #: ../root/freedb/not_found.tt:4
 msgid ""
@@ -7493,7 +7493,7 @@ msgstr "Sorry, we could not find the CD TOC you specified."
 
 #: ../root/elections/not_found.tt:4
 msgid "Sorry, we could not find this election."
-msgstr ""
+msgstr "Sorry, we could not find this election."
 
 #: ../root/main/401.tt:5
 msgid "Sorry, you are not authorized to view this page."
@@ -7501,7 +7501,7 @@ msgstr "Sorry, you are not authorised to view this page."
 
 #: ../root/main/mirror.tt:5
 msgid "Sorry, you are unable to perform that action on a mirror server."
-msgstr ""
+msgstr "Sorry, you are unable to perform that action on a mirror server."
 
 #: ../root/search/error/no-info.tt:3
 msgid ""
@@ -7509,11 +7509,11 @@ msgid ""
 " to carry out a search. If you are attempting to find something that "
 "contains nothing but punctuation characters (e.g. !!!) then you need to use "
 "the {uri|browse page}, since this search ignores punctuation characters."
-msgstr ""
+msgstr "Sorry, your query (<code>{query}</code>) does not contain enough information to carry out a search. If you are attempting to find something that contains nothing but punctuation characters (e.g. !!!) then you need to use the {uri|browse page}, since this search ignores punctuation characters."
 
 #: ../root/search/error/uri-too-large.tt:3
 msgid "Sorry, your query was too large."
-msgstr ""
+msgstr "Sorry, your query was too large."
 
 #: ../root/doc/bare_error.tt:5 ../root/doc/error.tt:11
 msgid "Sorry, “{id}” is not a valid documentation page."
@@ -7552,60 +7552,60 @@ msgstr "Split into separate artists"
 
 #: ../root/layout/menu.tt:125
 msgid "Sponsors"
-msgstr ""
+msgstr "Sponsors"
 
 #: ../root/main/500.tt:19
 msgid "Stack trace:"
-msgstr ""
+msgstr "Stack trace:"
 
 #: ../root/cdtoc/info.tt:32
 msgid "Start"
-msgstr ""
+msgstr "Start"
 
 #: ../root/event/layout.tt:22
 msgid "Start Date:"
-msgstr ""
+msgstr "Start Date:"
 
 #: ../root/elections/index.tt:11
 msgid "Start date"
-msgstr ""
+msgstr "Start date"
 
 #: ../root/event/index.tt:6
 msgid "Start:"
-msgstr ""
+msgstr "Start:"
 
 #: ../root/layout/menu.tt:149 ../root/user/profile.tt:143
 msgid "Statistics"
-msgstr ""
+msgstr "Statistics"
 
 #: ../root/otherlookup/results-release.tt:21
 #: ../root/search/lib/inline-results-release.tt:20
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: ../root/edit/search_macros.tt:307
 msgctxt "edit status"
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: ../root/elections/index.tt:10
 msgctxt "election status"
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: ../root/release/lookup.tt:14
 msgctxt "release status"
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: ../root/edit/data.tt:7 ../root/release/edit/information.tt:122
 msgid "Status:"
-msgstr ""
+msgstr "Status:"
 
 #: ../root/edit/info.tt:33
 msgctxt "edit status"
 msgid "Status:"
-msgstr ""
+msgstr "Status:"
 
 #: ../root/elections/show.tt:42
 msgctxt "election status"
@@ -7658,34 +7658,34 @@ msgstr "Submit this CD using the simple method."
 
 #: ../root/edit/index.tt:71 ../root/edit/vote.tt:26
 msgid "Submit vote and note"
-msgstr ""
+msgstr "Submit vote and note"
 
 #: ../root/edit/list.tt:81
 msgid "Submit votes &amp; edit notes"
-msgstr ""
+msgstr "Submit votes &amp; edit notes"
 
 #: ../root/release/edit/editnote.tt:40
 #: ../root/release/edit_relationships.tt:105
 #: ../root/release/edit_relationships.tt:165
 msgid "Submitting edits..."
-msgstr ""
+msgstr "Submitting edits..."
 
 #: ../root/collection/layout.tt:35
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:65
 msgid "Subscribe"
-msgstr ""
+msgstr "Subscribe"
 
 #: ../root/user/collections.tt:14 ../root/user/collections.tt:51
 msgid "Subscribed"
-msgstr ""
+msgstr "Subscribed"
 
 #: ../root/edit/list_header.tt:20
 msgid "Subscribed editors"
-msgstr ""
+msgstr "Subscribed editors"
 
 #: ../root/edit/list_header.tt:18
 msgid "Subscribed entities"
-msgstr ""
+msgstr "Subscribed entities"
 
 #: ../root/artist/subscribers.tt:1 ../root/artist/subscribers.tt:2
 #: ../root/collection/layout.tt:37 ../root/collection/subscribers.tt:1
@@ -7696,38 +7696,38 @@ msgstr ""
 #: ../root/user/profile/layout.tt:12 ../root/user/subscribers.tt:1
 #: ../root/user/subscribers.tt:2
 msgid "Subscribers"
-msgstr ""
+msgstr "Subscribers"
 
 #: ../root/user/profile.tt:102
 msgid "Subscribers:"
-msgstr ""
+msgstr "Subscribers:"
 
 #: ../root/collection/layout.tt:30 ../root/layout/menu.tt:46
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:60
 #: ../root/user/profile/layout.tt:12
 msgid "Subscriptions"
-msgstr ""
+msgstr "Subscriptions"
 
 #: ../root/oauth2/oob.tt:3
 msgid "Success!"
-msgstr ""
+msgstr "Success!"
 
 #: ../root/release/edit/recordings.tt:165
 msgid "Suggested recordings:"
-msgstr ""
+msgstr "Suggested recordings:"
 
 #: ../root/edit/details/add_annotation.tt:21
 #: ../root/edit/details/historic/add_release_annotation.tt:25
 msgid "Summary"
-msgstr ""
+msgstr "Summary"
 
 #: ../root/release/edit/tracklist.tt:414
 msgid "Swap track titles with artist credits"
-msgstr ""
+msgstr "Swap track titles with artist credits"
 
 #: ../root/main/503.tt:1 ../root/main/503.tt:3
 msgid "System Busy"
-msgstr ""
+msgstr "System Busy"
 
 #: ../root/layout/sidebar/sidebar-tags.tt:33
 msgid "Tag"
@@ -7737,35 +7737,35 @@ msgstr "Tag"
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:45
 msgctxt "noun"
 msgid "Tag"
-msgstr ""
+msgstr "Tag"
 
 #: ../root/taglookup/index.tt:1 ../root/taglookup/index.tt:3
 msgid "Tag Lookup"
-msgstr ""
+msgstr "Tag Lookup"
 
 #: ../root/taglookup/not_found.tt:1 ../root/taglookup/not_found.tt:2
 msgid "Tag Lookup Error"
-msgstr ""
+msgstr "Tag Lookup Error"
 
 #: ../root/taglookup/results.tt:1 ../root/taglookup/results.tt:3
 msgid "Tag Lookup Results"
-msgstr ""
+msgstr "Tag Lookup Results"
 
 #: ../root/tag/not_found.tt:1 ../root/tag/not_found.tt:2
 msgid "Tag Not Used"
-msgstr ""
+msgstr "Tag Not Used"
 
 #: ../root/main/index.tt:68
 msgid "Tag Your Music"
-msgstr ""
+msgstr "Tag Your Music"
 
 #: ../root/search/index.tt:5
 msgid "Tag lookup"
-msgstr ""
+msgstr "Tag lookup"
 
 #: ../root/tag/header.tt:15 ../root/tag/layout.tt:1
 msgid "Tag “{tag}”"
-msgstr ""
+msgstr "Tag “{tag}”"
 
 #: ../root/cdtoc/attach_artist_releases.tt:22
 #: ../root/cdtoc/attach_filter_release.tt:36 ../root/cdtoc/list.tt:14
@@ -7776,7 +7776,7 @@ msgstr ""
 #: ../root/search/lib/inline-results-recording.tt:14
 #: ../root/search/lib/inline-results-release.tt:22
 msgid "Tagger"
-msgstr ""
+msgstr "Tagger"
 
 #: ../root/components/entity-tabs.tt:49 ../root/components/tags.tt:5
 #: ../root/entity/tags.tt:1 ../root/layout/menu.tt:206
@@ -7784,11 +7784,11 @@ msgstr ""
 #: ../root/tag/cloud.tt:4 ../root/user/profile/layout.tt:19
 #: ../root/user/tags.tt:1
 msgid "Tags"
-msgstr ""
+msgstr "Tags"
 
 #: ../root/layout/menu.tt:128
 msgid "Team"
-msgstr ""
+msgstr "Team"
 
 #: ../root/admin/edit_user.tt:13
 msgid "Technical flags"
@@ -7796,64 +7796,64 @@ msgstr ""
 
 #: ../root/edit/index.tt:54
 msgid "Testing features"
-msgstr ""
+msgstr "Testing features"
 
 #: ../root/edit/details/add_annotation.tt:10
 #: ../root/edit/details/historic/add_release_annotation.tt:14
 msgid "Text"
-msgstr ""
+msgstr "Text"
 
 #: ../root/account/donation.tt:14
 msgid "Thank you for contributing to MusicBrainz."
-msgstr ""
+msgstr "Thank you for contributing to MusicBrainz."
 
 #: ../root/account/verified.tt:4
 msgid ""
 "Thank you, your email address has now been verified! If you still can't "
 "edit, please try to log out and log in again."
-msgstr ""
+msgstr "Thank you, your email address has now been verified! If you still can't edit, please try to log out and log in again."
 
 #: ../root/taglookup/not_found.tt:4
 msgid ""
 "That search can't be performed, because you must provide at least one of "
 "'recording', 'track number', 'duration', 'release', or 'artist'."
-msgstr ""
+msgstr "That search can't be performed, because you must provide at least one of 'recording', 'track number', 'duration', 'release', or 'artist'."
 
 #: ../root/release/caa_darkened.tt:3 ../root/release/cover_art.tt:59
 msgid ""
 "The Cover Art Archive has had a take down request in the past for this "
 "release, so we are unable to allow any more uploads."
-msgstr ""
+msgstr "The Cover Art Archive has had a take down request in the past for this release, so we are unable to allow any more uploads."
 
 #: ../root/release/add_cover_art.tt:12
 msgid ""
 "The Cover Art Archive is currently experiencing difficulties. Adding images "
 "for this release is unlikely to work at the moment."
-msgstr ""
+msgstr "The Cover Art Archive is currently experiencing difficulties. Adding images for this release is unlikely to work at the moment."
 
 #: ../root/user/profile.tt:86
 msgid "The Dawn of the Project"
-msgstr ""
+msgstr "The Dawn of the Project"
 
 #: ../root/release/edit/information.tt:346
 msgid "The annotation field functions like a miniature wiki."
-msgstr ""
+msgstr "The annotation field functions like a miniature wiki."
 
 #: ../root/artist/special_purpose.tt:3
 msgid ""
 "The artist you are trying to edit is a special purpose artist, and you may "
 "not make direct changes to this data."
-msgstr ""
+msgstr "The artist you are trying to edit is a special purpose artist, and you may not make direct changes to this data."
 
 #: ../root/release/cover_art.tt:44
 msgid ""
 "The artwork in the sidebar is being provided by a {relationships|URL "
 "relationship}."
-msgstr ""
+msgstr "The artwork in the sidebar is being provided by a {relationships|URL relationship}."
 
 #: ../root/main/index.tt:60
 msgid "The blog is currently unavailable."
-msgstr ""
+msgstr "The blog is currently unavailable."
 
 #: ../root/release/edit/information.tt:308
 msgid "The catalog number you have entered looks like an Amazon ASIN."
@@ -7863,19 +7863,19 @@ msgstr "The catalogue number you have entered looks like an Amazon ASIN."
 msgid ""
 "The comment field is used to help users distinguish between identically "
 "named releases."
-msgstr ""
+msgstr "The comment field is used to help users distinguish between identically named releases."
 
 #: ../root/edit/details/merge_releases.tt:145
 msgid ""
 "The data in this edit originally came from an older version of this edit, "
 "and may not display correctly"
-msgstr ""
+msgstr "The data in this edit originally came from an older version of this edit, and may not display correctly"
 
 #: ../root/layout.tt:61
 msgid ""
 "The data you have submitted does not make any changes to the data already "
 "present."
-msgstr ""
+msgstr "The data you have submitted does not make any changes to the data already present."
 
 #: ../root/release/edit/layout.tt:23
 msgid "The data you’ve seeded contained the following errors:"
@@ -7912,49 +7912,49 @@ msgstr "The following {count} user accounts are bots:"
 
 #: ../root/user/privileged.tt:54
 msgid "The following {count} users are account administrators:"
-msgstr ""
+msgstr "The following {count} users are account administrators:"
 
 #: ../root/user/privileged.tt:49
 msgid "The following {count} users are banner message editors:"
-msgstr ""
+msgstr "The following {count} users are banner message editors:"
 
 #: ../root/user/privileged.tt:43
 msgid "The following {count} users are location editors:"
-msgstr ""
+msgstr "The following {count} users are location editors:"
 
 #: ../root/user/privileged.tt:31
 msgid "The following {count} users are relationship editors:"
-msgstr ""
+msgstr "The following {count} users are relationship editors:"
 
 #: ../root/user/privileged.tt:37
 msgid "The following {count} users are transclusion editors:"
-msgstr ""
+msgstr "The following {count} users are transclusion editors:"
 
 #: ../root/user/privileged.tt:23
 msgid "The following {count} users have auto-editor privileges:"
-msgstr ""
+msgstr "The following {count} users have auto-editor privileges:"
 
 #: ../root/main/index.tt:100
 msgid ""
 "The majority of the data in the <strong>MusicBrainz Database</strong> is "
 "released into the <strong>Public Domain</strong> and can be downloaded and "
 "used <strong>for free</strong>."
-msgstr ""
+msgstr "The majority of the data in the <strong>MusicBrainz Database</strong> is released into the <strong>Public Domain</strong> and can be downloaded and used <strong>for free</strong>."
 
 #: ../root/cdtoc/set_durations.tt:19
 msgid ""
 "The medium you are altering is part of the following release: {release}"
-msgstr ""
+msgstr "The medium you are altering is part of the following release: {release}"
 
 #: ../root/edit/details/edit_url.tt:39
 msgid ""
 "The new URL already exists in the database. This edit will therefore merge "
 "the two URL entities."
-msgstr ""
+msgstr "The new URL already exists in the database. This edit will therefore merge the two URL entities."
 
 #: ../root/main/403.tt:5
 msgid "The page you requested is private."
-msgstr ""
+msgstr "The page you requested is private."
 
 #: ../root/release/edit/information.tt:349
 msgid ""
@@ -7962,104 +7962,104 @@ msgid ""
 "into the strict structural data schema of MusicBrainz (be it due to "
 "technical limitations that may be addressed later, or because the "
 "information in itself has to be free-text)."
-msgstr ""
+msgstr "The purpose of this field is to add information that usually doesn't fit into the strict structural data schema of MusicBrainz (be it due to technical limitations that may be addressed later, or because the information in itself has to be free-text)."
 
 #: ../root/edit/cannot_approve.tt:12
 msgid "The reason for this was unknown."
-msgstr ""
+msgstr "The reason for this was unknown."
 
 #: ../root/release/merge.tt:112
 msgid ""
 "The recording artists do not match! Perhaps you meant to use the \"append "
 "mediums\" merge strategy?"
-msgstr ""
+msgstr "The recording artists do not match! Perhaps you meant to use the \"append mediums\" merge strategy?"
 
 #: ../root/release/merge.tt:113
 msgid ""
 "The recordings that will be merged if you continue with the current merge "
 "strategy include the following, whose artists differ:"
-msgstr ""
+msgstr "The recordings that will be merged if you continue with the current merge strategy include the following, whose artists differ:"
 
 #: ../root/relationship/linktype/in_use.tt:4
 msgid ""
 "The relationship type \"{type}\" can not be deleted because it is is still "
 "in use."
-msgstr ""
+msgstr "The relationship type \"{type}\" can not be deleted because it is is still in use."
 
 #: ../root/search/error/internal-error.tt:3
 msgid ""
 "The search server could not fulfill your request due to an internal error. "
 "This is usually only temporary, so please retry your search again later."
-msgstr ""
+msgstr "The search server could not fulfill your request due to an internal error. This is usually only temporary, so please retry your search again later."
 
 #: ../root/layout.tt:54
 msgid "The server is temporary in read-only mode for database maintainance."
-msgstr ""
+msgstr "The server is temporary in read-only mode for database maintainance."
 
 #: ../root/main/503.tt:5
 msgid "The system is overloaded or you are making requests too fast."
-msgstr ""
+msgstr "The system is overloaded or you are making requests too fast."
 
 #: ../root/elections/show.tt:29
 msgid ""
 "The tally of votes cast will only be shown when the election is complete."
-msgstr ""
+msgstr "The tally of votes cast will only be shown when the election is complete."
 
 #: ../root/freedb/show.tt:54
 msgid ""
 "The tracklist found looks like it may have different artists on some tracks."
 " If the below display looks correct, you should import this release as a "
 "release with multiple artists."
-msgstr ""
+msgstr "The tracklist found looks like it may have different artists on some tracks. If the below display looks correct, you should import this release as a release with multiple artists."
 
 #: ../root/taglookup/nag.tt:4
 msgid "The users make MusicBrainz happen and we appreciate your help!"
-msgstr ""
+msgstr "The users make MusicBrainz happen and we appreciate your help!"
 
 #: ../root/watch/list.tt:4
 msgid "The watch artist feature is currently not active."
-msgstr ""
+msgstr "The watch artist feature is currently not active."
 
 #: ../root/edit/edit_header.tt:26
 msgid "Their vote: "
-msgstr ""
+msgstr "Their vote: "
 
 #: ../root/cdtoc/lookup.tt:12
 msgid ""
 "There are currently no discs in MusicBrainz associated with the information "
 "you provided. You can search for the disc you are looking for using the "
 "forms below, or you may add a new release to MusicBrainz"
-msgstr ""
+msgstr "There are currently no discs in MusicBrainz associated with the information you provided. You can search for the disc you are looking for using the forms below, or you may add a new release to MusicBrainz"
 
 #: ../root/user/subscribers.tt:23
 msgid "There are currently no users subscribed to edits that you make."
-msgstr ""
+msgstr "There are currently no users subscribed to edits that you make."
 
 #: ../root/user/subscribers.tt:25
 msgid "There are currently no users subscribed to edits that {user} makes."
-msgstr ""
+msgstr "There are currently no users subscribed to edits that {user} makes."
 
 #: ../root/artist/subscribers.tt:22
 msgid "There are currently no users subscribed to {artist}."
-msgstr ""
+msgstr "There are currently no users subscribed to {artist}."
 
 #: ../root/collection/subscribers.tt:22
 msgid "There are currently no users subscribed to {collection}."
-msgstr ""
+msgstr "There are currently no users subscribed to {collection}."
 
 #: ../root/label/subscribers.tt:22
 msgid "There are currently no users subscribed to {label}."
-msgstr ""
+msgstr "There are currently no users subscribed to {label}."
 
 #: ../root/series/subscribers.tt:22
 msgid "There are currently no users subscribed to {series}."
-msgstr ""
+msgstr "There are currently no users subscribed to {series}."
 
 #: ../root/release/discids.tt:49
 msgid ""
 "There are no disc IDs attached to this release; to find out more about how "
 "to add one, see {doc|How to Add Disc IDs}."
-msgstr ""
+msgstr "There are no disc IDs attached to this release; to find out more about how to add one, see {doc|How to Add Disc IDs}."
 
 #: ../root/artist/split.tt:10
 msgid ""
@@ -8068,103 +8068,103 @@ msgid ""
 "at the bottom of the {alias_uri|aliases} tab and remove all existing "
 "{rel_uri|relationships} instead, which will allow ModBot to automatically "
 "remove this artist in the upcoming days."
-msgstr ""
+msgstr "There are no recordings, release groups, releases or tracks credited to only {name}. If you are trying to remove {name}, please edit all artist credits at the bottom of the {alias_uri|aliases} tab and remove all existing {rel_uri|relationships} instead, which will allow ModBot to automatically remove this artist in the upcoming days."
 
 #: ../root/user/subscribers.tt:4
 msgid "There is currently {num} user subscribed to edits that {user} makes:"
 msgid_plural ""
 "There are currently {num} users subscribed to edits that {user} makes:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "There is currently {num} user subscribed to edits that {user} makes:"
+msgstr[1] "There are currently {num} users subscribed to edits that {user} makes:"
 
 #: ../root/artist/subscribers.tt:4
 msgid "There is currently {num} user subscribed to {artist}:"
 msgid_plural "There are currently {num} users subscribed to {artist}:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "There is currently {num} user subscribed to {artist}:"
+msgstr[1] "There are currently {num} users subscribed to {artist}:"
 
 #: ../root/collection/subscribers.tt:4
 msgid "There is currently {num} user subscribed to {collection}:"
 msgid_plural "There are currently {num} users subscribed to {collection}:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "There is currently {num} user subscribed to {collection}:"
+msgstr[1] "There are currently {num} users subscribed to {collection}:"
 
 #: ../root/label/subscribers.tt:4
 msgid "There is currently {num} user subscribed to {label}:"
 msgid_plural "There are currently {num} users subscribed to {label}:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "There is currently {num} user subscribed to {label}:"
+msgstr[1] "There are currently {num} users subscribed to {label}:"
 
 #: ../root/series/subscribers.tt:4
 msgid "There is currently {num} user subscribed to {series}:"
 msgid_plural "There are currently {num} users subscribed to {series}:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "There is currently {num} user subscribed to {series}:"
+msgstr[1] "There are currently {num} users subscribed to {series}:"
 
 #: ../root/browse/entity.tt:26
 msgid "There is no data to display."
-msgstr ""
+msgstr "There is no data to display."
 
 #: ../root/admin/wikidoc/index.tt:25
 msgid "There was a problem accessing the wiki API."
-msgstr ""
+msgstr "There was a problem accessing the wiki API."
 
 #: ../root/edit/cannot_approve.tt:3
 msgid "There was a problem approving {edit}."
-msgstr ""
+msgstr "There was a problem approving {edit}."
 
 #: ../root/edit/cannot_cancel.tt:3
 msgid "There was a problem cancelling {edit}."
-msgstr ""
+msgstr "There was a problem cancelling {edit}."
 
 #: ../root/place/edit_form.tt:49
 msgid "These coordinates could not be parsed."
-msgstr ""
+msgstr "These coordinates could not be parsed."
 
 #: ../root/release/cover_art.tt:37
 msgid ""
 "These images provided by the {caa|Cover Art Archive}. You can also see them "
 "at the {ia|Internet Archive}."
-msgstr ""
+msgstr "These images provided by the {caa|Cover Art Archive}. You can also see them at the {ia|Internet Archive}."
 
 #: ../root/cdstub/edit_form.tt:9
 msgid "This CD has tracks from more than one artist (e.g. a compilation CD)"
-msgstr ""
+msgstr "This CD has tracks from more than one artist (e.g. a compilation CD)"
 
 #: ../root/isrc/not_found.tt:4
 msgid ""
 "This ISRC is not associated with any recordings. If you wish to associate it"
 " with a recording, please {search_url|search for the recording} and add it."
-msgstr ""
+msgstr "This ISRC is not associated with any recordings. If you wish to associate it with a recording, please {search_url|search for the recording} and add it."
 
 #: ../root/iswc/not_found.tt:4
 msgid ""
 "This ISWC is not associated with any works. If you wish to associate it with"
 " a work, please {search_url|search for the work} and add it."
-msgstr ""
+msgstr "This ISWC is not associated with any works. If you wish to associate it with a work, please {search_url|search for the work} and add it."
 
 #: ../root/entity/alias/edit_form.tt:32
 msgid "This alias is no longer current."
-msgstr ""
+msgstr "This alias is no longer current."
 
 #: ../root/edit/details/add_annotation.tt:15
 #: ../root/edit/details/historic/add_release_annotation.tt:19
 msgid "This annotation is empty."
-msgstr ""
+msgstr "This annotation is empty."
 
 #: ../root/area/delete.tt:14
 msgid ""
 "This area cannot be removed because there are still artists, labels, and/or "
 "releases using it."
-msgstr ""
+msgstr "This area cannot be removed because there are still artists, labels, and/or releases using it."
 
 #: ../root/area/edit_form.tt:25
 msgid "This area has ended."
-msgstr ""
+msgstr "This area has ended."
 
 #: ../root/area/artists.tt:7
 msgid "This area is not currently associated with any artists."
-msgstr ""
+msgstr "This area is not currently associated with any artists."
 
 #: ../root/area/labels.tt:7
 msgid "This area is not currently associated with any labels."
