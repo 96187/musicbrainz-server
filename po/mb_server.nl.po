@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-02-03 00:42-0700\n"
-"PO-Revision-Date: 2015-03-09 12:33+0000\n"
+"PO-Revision-Date: 2015-03-25 19:08+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -11322,12 +11322,12 @@ msgstr "{release} van {artist}"
 #: ../root/release/collections.tt:4
 msgid "{release} has been added to {num} collection:"
 msgid_plural "{release} has been added to {num} collections:"
-msgstr[0] "{release} is toegevoegd aan {num} collectie:"
-msgstr[1] "{release} is toegevoegd aan {num} collecties:"
+msgstr[0] "“{release}” maakt deel uit van {num} collectie:"
+msgstr[1] "“{release}” maakt deel uit van {num} collecties:"
 
 #: ../root/release/collections.tt:23
 msgid "{release} has not been added to any collections."
-msgstr "{release} is niet toegevoegd aan collecties."
+msgstr "“{release}” maakt geen deel uit van collecties."
 
 #: ../root/relationship/linktype/index.tt:21
 msgid "{type0}-{type1}"
