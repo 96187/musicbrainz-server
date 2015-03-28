@@ -15,7 +15,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2015-03-28 17:59+0000\n"
+"PO-Revision-Date: 2015-03-28 18:57+0000\n"
 "Last-Translator: yahoe.001\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -319,7 +319,7 @@ msgstr "Indique un orchestre apparaissant sur cette parution."
 msgid ""
 "Indicates that an artist revised a work. In most cases, this will be the "
 "original composer revising the work at a later date."
-msgstr "Indique qu'un artiste a révisé l’œuvre. Dans la plupart de cas, il s'agira du compositeur original révisant l’œuvre à une date ultérieure."
+msgstr "Indique qu'un artiste a révisé l’œuvre. Dans la plupart des cas, il s'agira du compositeur original révisant l’œuvre à une date ultérieure."
 
 #: DB:link_attribute_type/description:567
 msgid "Indicates that one entity is a cover of another entity"
@@ -681,7 +681,7 @@ msgstr "Myspace"
 #: DB:link_type/reverse_link_phrase:215 DB:link_type/reverse_link_phrase:189
 #: DB:link_type/reverse_link_phrase:462
 msgid "Myspace page for"
-msgstr "Page Myspace pour"
+msgstr "Page Myspace de"
 
 #: DB:link_attribute_type/description:461
 msgid "Other vocalizations"
@@ -1314,7 +1314,7 @@ msgstr "Ceci indique la société de gestion des droits associé à cette paruti
 msgid ""
 "This indicates the work is dedicated to a specific person. This is most "
 "common for classical works, but also exists in other genres to a degree."
-msgstr ""
+msgstr "Ceci indique que l’œuvre est dédiée à une personne en particulier. Ceci est très habituel pour les œuvres classiques, mais existe aussi, jusqu'à un certain point, pour d'autres genres. "
 
 #: DB:link_type/description:17
 msgid ""
@@ -1628,7 +1628,7 @@ msgid ""
 "This links a soundtrack work to the <a "
 "href=\"http://www.imdb.com/\">IMDb</a> page for the movie, show or game of "
 "which it is a soundtrack."
-msgstr ""
+msgstr "Ceci relie une œuvre de bande originale à la page <a href=\"http://www.imdb.com/\">IMDb</a> pour le film, l'émission ou le jeu dont elle est une bande originale."
 
 #: DB:link_type/description:722
 msgid ""
@@ -1852,7 +1852,7 @@ msgstr "Cette relation décrit une URL où des paroles peuvent être trouvées p
 #: DB:link_type/description:847
 msgid ""
 "This relationship indicates that a person was another's teacher/student."
-msgstr ""
+msgstr "Cette relation indique qu'une personne était le professeur/étudiant d'une autre personne."
 
 #: DB:link_type/description:710
 msgid ""
@@ -2095,12 +2095,12 @@ msgstr "Ce type de relation relie un label à sa page correspondante sur <a href
 #: DB:link_type/description:838
 msgid ""
 "This relationship type links a label to its corresponding page at Last.fm"
-msgstr ""
+msgstr "Ce type de relation relie un label à sa page correspondante sur Last.fm"
 
 #: DB:link_type/description:837
 msgid ""
 "This relationship type links a place to its corresponding page at Last.fm"
-msgstr ""
+msgstr "Ce type de relation relie un lieu à sa page correspondante sur Last.fm"
 
 #: DB:link_type/description:787
 msgid ""
@@ -2129,7 +2129,7 @@ msgstr "Ce type de relation relie un artiste à sa page correspondante sur <a hr
 #: DB:link_type/description:840
 msgid ""
 "This relationship type links an artist to its corresponding page at Last.fm"
-msgstr ""
+msgstr "Ce type de relation relie un artiste à sa page correspondante sur Last.fm."
 
 #: DB:link_type/description:785
 msgid ""
@@ -2154,7 +2154,7 @@ msgid ""
 "content. The artist may or may not be a member of the group. Examples "
 "include forums, LiveJournal communities and groups on Facebook, Last.fm and "
 "Flickr."
-msgstr ""
+msgstr "Ce type de relation relie un artiste à la/aux page(s) de sa communauté en ligne. Une communauté en ligne est un groupe où chaque membre peut commenter le contenu et en publier. L'artiste peut ou non faire partie du groupe. Des exemples sont les pages Facebook, et les comptes Twitter, Instagram et Flickr."
 
 #: DB:link_type/description:808
 msgid ""
@@ -2171,7 +2171,7 @@ msgstr "Ce type de relation relie un événement à sa page correspondante sur <
 #: DB:link_type/description:839
 msgid ""
 "This relationship type links an event to its corresponding page at Last.fm"
-msgstr ""
+msgstr "Ce type de relation relie un événement à sa page correspondante sur Last.fm"
 
 #: DB:link_type/description:786
 msgid ""
@@ -2224,7 +2224,7 @@ msgstr "Les listes de pistes translittérés ne change pas la langue, juste le s
 msgid ""
 "Treble or boy soprano is a young male singer with an unchanged voice in the "
 "soprano range"
-msgstr ""
+msgstr "Un jeune soprano est un jeune chanteur dont la voix de soprano n'a pas mué"
 
 #: DB:link_type/link_phrase:788 DB:link_type/link_phrase:86
 #: DB:link_type/link_phrase:191 DB:link_type/link_phrase:210
@@ -2329,7 +2329,7 @@ msgstr "associé"
 
 #: DB:link_type/reverse_link_phrase:11
 msgid "associated singles/EPs"
-msgstr ""
+msgstr "simples ou EP associés"
 
 #: DB:link_type/reverse_link_phrase:795
 msgid "available at"
@@ -2559,11 +2559,11 @@ msgstr "poste créatif"
 
 #: DB:link_type/reverse_link_phrase:846
 msgid "dedicated to"
-msgstr ""
+msgstr "dédié à"
 
 #: DB:link_type/link_phrase:846
 msgid "dedicated works"
-msgstr ""
+msgstr "oeuvre dédiée"
 
 #: DB:link_type/link_phrase:737
 msgid "derivations"
@@ -2801,7 +2801,7 @@ msgstr "a une page Geonames sur"
 #: DB:link_type/long_link_phrase:840 DB:link_type/long_link_phrase:837
 #: DB:link_type/long_link_phrase:838 DB:link_type/long_link_phrase:839
 msgid "has a Last.fm page at"
-msgstr ""
+msgstr "a une page Last.fm sur"
 
 #: DB:link_type/long_link_phrase:215 DB:link_type/long_link_phrase:189
 #: DB:link_type/long_link_phrase:462
@@ -3074,7 +3074,7 @@ msgstr "tenu à"
 
 #: DB:link_type/long_link_phrase:845
 msgid "held premiere of"
-msgstr ""
+msgstr "était en première de"
 
 #: DB:link_type/long_link_phrase:793
 msgid "held the event"
@@ -3142,7 +3142,7 @@ msgstr "entrevue avec"
 
 #: DB:link_type/link_phrase:707
 msgid "interviews"
-msgstr ""
+msgstr "entrevues"
 
 #: DB:link_type/link_phrase:112 DB:link_type/reverse_link_phrase:112
 msgid "involved with"
@@ -3204,7 +3204,7 @@ msgstr "est un remix de"
 
 #: DB:link_type/long_link_phrase:11
 msgid "is a single/EP which was taken from"
-msgstr ""
+msgstr "est un simple/EP extrait de"
 
 #: DB:link_type/long_link_phrase:728
 msgid "is a tribute to"
@@ -3226,7 +3226,7 @@ msgstr "est une page Allmusic pour"
 
 #: DB:link_type/long_link_phrase:843
 msgid "is an IMDb page for"
-msgstr ""
+msgstr "est une page IMDb pour"
 
 #: DB:link_type/long_link_phrase:309
 msgid "is an edit of"
@@ -3727,7 +3727,7 @@ msgstr "droits phonographiques d'auteur par"
 
 #: DB:link_type/link_phrase:173
 msgid "picture"
-msgstr ""
+msgstr "photo"
 
 #: DB:link_type/reverse_link_phrase:173 DB:link_type/reverse_link_phrase:396
 msgid "picture of"
@@ -3752,7 +3752,7 @@ msgstr "première à"
 
 #: DB:link_type/link_phrase:845
 msgid "premieres"
-msgstr ""
+msgstr "premières"
 
 #: DB:link_type/link_phrase:715 DB:link_type/link_phrase:716
 msgid "premieres hosted"
@@ -3995,11 +3995,11 @@ msgstr "critiques"
 
 #: DB:link_type/link_phrase:844 DB:link_type/long_link_phrase:844
 msgid "revised"
-msgstr ""
+msgstr "révisé"
 
 #: DB:link_type/reverse_link_phrase:844
 msgid "revised by"
-msgstr ""
+msgstr "révisé par"
 
 #: DB:link_type/reverse_link_phrase:315
 msgid "revision of"
@@ -4057,7 +4057,7 @@ msgstr "signé par"
 
 #: DB:link_type/link_phrase:11
 msgid "single/EP which was taken from"
-msgstr ""
+msgstr "simple/EP extrait de"
 
 #: DB:link_type/link_phrase:784 DB:link_type/link_phrase:783
 #: DB:link_type/link_phrase:192 DB:link_type/link_phrase:218
@@ -4101,7 +4101,7 @@ msgstr "diffusion en flux {video} gratuite"
 
 #: DB:link_type/link_phrase:847
 msgid "students"
-msgstr ""
+msgstr "étudiants"
 
 #: DB:link_type/link_phrase:722
 msgid "subgroup of"
@@ -4157,11 +4157,11 @@ msgstr "soutien {instrument} pour"
 
 #: DB:link_type/long_link_phrase:847
 msgid "taught"
-msgstr ""
+msgstr "a enseigné"
 
 #: DB:link_type/reverse_link_phrase:847
 msgid "teachers"
-msgstr ""
+msgstr "professeurs"
 
 #: DB:link_attribute_type/description:11 DB:link_attribute_type/name:11
 msgid "tenor vocals"
@@ -4189,7 +4189,7 @@ msgstr "listes {transliterated:translittérées|traduites} des pistes"
 
 #: DB:link_attribute_type/name:834
 msgid "treble vocals"
-msgstr ""
+msgstr "voix soprano"
 
 #: DB:link_type/link_phrase:65
 msgid "tribute albums"
