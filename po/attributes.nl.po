@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2015-04-03 13:03+0000\n"
+"PO-Revision-Date: 2015-04-10 09:20+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -854,7 +854,7 @@ msgid ""
 "not the main administrative divisions but are also not municipalities, e.g. "
 "counties in the USA. These are not considered when displaying the parent "
 "areas for a given area."
-msgstr "Gewest wordt gebruikt voor kleinere administratieve eenheden van een land die geen onderafdelingen, maar ook geen gemeentes zijn. Bijvoorbeeld graafschappen in Engeland of Kreise in Duitsland."
+msgstr "Gewest wordt gebruikt voor kleinere administratieve eenheden van een land die geen onderafdelingen, maar ook geen gemeentes zijn. Bijvoorbeeld graafschappen in Engeland of Kreise in Duitsland. Gewesten worden niet getoond als bovenliggende gebieden van andere gebieden."
 
 #: DB:work_attribute_type_allowed_value/value:67
 msgctxt "work_attribute_type_allowed_value"
@@ -934,7 +934,7 @@ msgstr "DVD-Video"
 #: DB:medium_format/name:47
 msgctxt "medium_format"
 msgid "DVDplus"
-msgstr ""
+msgstr "DVDplus"
 
 #: DB:work_attribute_type_allowed_value/value:73
 msgctxt "work_attribute_type_allowed_value"
@@ -1425,7 +1425,7 @@ msgid ""
 "Island is used for islands and atolls which don't form subdivisions of their"
 " own, e.g. Skye. These are not considered when displaying the parent areas "
 "for a given area."
-msgstr "Eiland wordt gebruikt voor eilanden en atollen die geen eigen subdivisie vormen, zoals het Britse eiland Skye."
+msgstr "Eiland wordt gebruikt voor eilanden en atollen die geen eigen subdivisie vormen, zoals het Britse eiland Skye. Eilanden worden niet getoond als bovenliggende gebieden van andere gebieden."
 
 #: DB:work_attribute_type/name:3
 msgctxt "work_attribute_type"
@@ -2135,7 +2135,7 @@ msgstr "Ouverture"
 #: DB:editor_collection_type/name:2
 msgctxt "collection_type"
 msgid "Owned music"
-msgstr ""
+msgstr "Eigen muziek"
 
 #: DB:work_attribute_type_allowed_value/value:203
 msgctxt "work_attribute_type_allowed_value"
@@ -2570,7 +2570,7 @@ msgid ""
 "Subdivision is used for the main administrative divisions of a country, e.g."
 " California, Ontario, Okinawa. These are considered when displaying the "
 "parent areas for a given area."
-msgstr ""
+msgstr "Onderafdeling wordt gebruikt voor de belangrijkste administratieve eenheden van een land, zoals Noord-Holland of Beieren. Onderafdelingen worden getoond als bovenliggende gebieden van andere gebieden."
 
 #: DB:work_attribute_type_allowed_value/value:244
 msgctxt "work_attribute_type_allowed_value"

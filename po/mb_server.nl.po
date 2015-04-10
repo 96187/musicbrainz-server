@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-27 04:29-0700\n"
-"PO-Revision-Date: 2015-04-08 09:17+0000\n"
+"PO-Revision-Date: 2015-04-10 09:27+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -274,7 +274,7 @@ msgstr "1: Verborgen, gebruikt voor schriften die niet in Unicode staan."
 
 #: ../root/admin/attributes/form.tt:15
 msgid "1: Shown in the \"other\" section"
-msgstr ""
+msgstr "1. Zichtbaar in de sectie “overig”."
 
 #: ../root/elections/show.tt:19
 msgid "1st seconder:"
@@ -288,11 +288,11 @@ msgstr "250px"
 msgid ""
 "2: Shown in the \"other\" section, used for scripts in Unicode which are "
 "unlikely to be used"
-msgstr ""
+msgstr "2. Zichtbaar in de sectie “overig”, wordt gebruikt voor schriften in Unicode die waarschijnlijk niet gebruikt gaan worden."
 
 #: ../root/admin/attributes/form.tt:14
 msgid "2: Shown in the commonly used section"
-msgstr ""
+msgstr "2. Zichtbaar in de sectie “regelmatig gebruikt”."
 
 #: ../root/elections/show.tt:23
 msgid "2nd seconder:"
@@ -302,11 +302,11 @@ msgstr "tweede secondant"
 msgid ""
 "3: Shown in the \"other\" section, used for scripts which are likely to get "
 "some usage"
-msgstr ""
+msgstr "3. Zichtbaar in de sectie “overig”, wordt gebruikt voor schriften die waarschijnlijk soms gebruikt gaan worden."
 
 #: ../root/admin/attributes/form.tt:29
 msgid "4: Shown in the commonly used section"
-msgstr ""
+msgstr "4. Zichtbaar in de sectie “regelmatig gebruikt”."
 
 #: ../root/components/common-macros.tt:109
 msgid "500px"
@@ -3357,7 +3357,7 @@ msgstr "Opgericht:"
 
 #: ../root/admin/attributes/index.tt:33
 msgid "Free text"
-msgstr ""
+msgstr "Zonder opmaak"
 
 #: ../root/freedb/not_found.tt:1 ../root/freedb/not_found.tt:2
 msgid "FreeDB Entry Not Found"
@@ -3391,11 +3391,11 @@ msgstr "Frans"
 #: ../root/admin/attributes/language.tt:14
 #: ../root/admin/attributes/script.tt:12
 msgid "Frequency"
-msgstr ""
+msgstr "Frequentie"
 
 #: ../root/admin/attributes/form.tt:12 ../root/admin/attributes/form.tt:27
 msgid "Frequency notes:"
-msgstr ""
+msgstr "Notities over de frequentie:"
 
 #: ../root/edit/details/historic/move_disc_id.tt:8
 #: ../root/edit/details/move_disc_id.tt:8
@@ -7433,7 +7433,7 @@ msgstr "Onze excuses, u kunt dit niet doen op een spiegelserver."
 msgid ""
 "Sorry, your query (<code>{query}</code>) does not contain enough information"
 " to carry out a search."
-msgstr ""
+msgstr "Excuus, uw zoekopdracht (<code>{query}</code>) bevat niet genoeg informatie om uit te voeren."
 
 #: ../root/search/error/uri-too-large.tt:3
 msgid "Sorry, your query was too large."
@@ -8336,7 +8336,7 @@ msgstr "Dit is een server voor ontwikkeling; alle wachtwoorden zijn teruggezet n
 
 #: ../root/admin/attributes/form.tt:64
 msgid "This is a free text work attribute"
-msgstr ""
+msgstr "Dit is een compositie-eigenschap zonder opmaak"
 
 #: ../root/artist/aliases.tt:10
 msgid ""
@@ -10393,7 +10393,7 @@ msgstr "U moet een bewerkingsnotitie toevoegen als u een uitgave toevoegt."
 msgid ""
 "You must select a relationship type and target entity for every "
 "relationship."
-msgstr ""
+msgstr "U moet voor elke relatie een relatietype en een doelobject selecteren."
 
 #: ../root/release/edit/information.tt:67
 msgid "You must select an existing release group."
@@ -10747,11 +10747,11 @@ msgstr "nieuwste eerst"
 
 #: ../root/forms/relationship-editor.tt:46
 msgid "no entity"
-msgstr ""
+msgstr "geen object"
 
 #: ../root/forms/relationship-editor.tt:25
 msgid "no type"
-msgstr ""
+msgstr "geen type"
 
 #: ../root/user/profile.tt:62
 msgid "nominate for auto-editor"
