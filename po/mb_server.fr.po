@@ -29,7 +29,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-27 04:29-0700\n"
-"PO-Revision-Date: 2015-04-15 17:00+0000\n"
+"PO-Revision-Date: 2015-04-15 17:08+0000\n"
 "Last-Translator: yahoe.001\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -1132,17 +1132,17 @@ msgstr "Êtes-vous certain de vouloir promouvoir l'éditeur {editor} au statut d
 
 #: ../root/collection/delete.tt:4
 msgid "Are you sure you want to remove the collection {collection}?"
-msgstr "Êtes-vous certain de vouloir retirer la collection {collection} ?"
+msgstr "Êtes-vous certain de vouloir supprimer la collection {collection} ?"
 
 #: ../root/cdtoc/remove.tt:5
 msgid ""
 "Are you sure you want to remove the disc ID <code>{discid}</code> from the "
 "release {release} by {artist}?"
-msgstr "Êtes-vous certain de vouloir retirer l'ID de disque <code>{discid}</code> de la parution {release} par {artist} ?"
+msgstr "Êtes-vous certain de vouloir supprimer l'ID de disque <code>{discid}</code> de la parution {release} par {artist} ?"
 
 #: ../root/account/remove_application.tt:5
 msgid "Are you sure you want to remove this application?"
-msgstr "Êtes-vous certain de vouloir retirer cette application ?"
+msgstr "Êtes-vous certain de vouloir supprimer cette application ?"
 
 #: ../root/account/revoke_application_access.tt:5
 msgid "Are you sure you want to revoke this application's access?"
@@ -1168,35 +1168,35 @@ msgstr "Êtes-vous certain de vouloir supprimer la relation ayant l'attribut <st
 msgid ""
 "Are you sure you wish to remove the <strong>{link_type}</strong> "
 "relationship type?"
-msgstr "Êtes-vous certain de vouloir retirer la relation de type <strong>{link_type}</strong> ?"
+msgstr "Êtes-vous certain de vouloir supprimer la relation de type <strong>{link_type}</strong> ?"
 
 #: ../root/admin/attributes/delete.tt:6
 msgid "Are you sure you wish to remove the <strong>{name}</strong> attribute?"
-msgstr "Êtes-vous certain de vouloir retirer l'attribut <strong>{name}</strong> ?"
+msgstr "Êtes-vous certain de vouloir supprimer l'attribut <strong>{name}</strong> ?"
 
 #: ../root/area/delete.tt:5
 msgid "Are you sure you wish to remove the area {area} from MusicBrainz?"
-msgstr "Êtes-vous certain de vouloir enlever la région {area} de MusicBrainz ?"
+msgstr "Êtes-vous certain de vouloir supprimer la région {area} de MusicBrainz ?"
 
 #: ../root/release/remove_cover_art.tt:4
 msgid ""
 "Are you sure you wish to remove the below cover art from {release} by "
 "{artist}?"
-msgstr "Êtes-vous certain de vouloir enlever l'Illustration ci-dessous de la parution {release} par {artist} ?"
+msgstr "Êtes-vous certain de vouloir supprimer l'Illustration ci-dessous de la parution {release} par {artist} ?"
 
 #: ../root/instrument/delete.tt:6
 msgid ""
 "Are you sure you wish to remove the instrument {instrument} from "
 "MusicBrainz?"
-msgstr "Êtes-vous certain de vouloir enlever l'instrument {instrument} de MusicBrainz ?"
+msgstr "Êtes-vous certain de vouloir supprimer l'instrument {instrument} de MusicBrainz ?"
 
 #: ../root/label/delete.tt:5
 msgid "Are you sure you wish to remove the label {label} from MusicBrainz?"
-msgstr "Êtes-vous certain de vouloir enlever le label {label} de MusicBrainz ?"
+msgstr "Êtes-vous certain de vouloir supprimer le label {label} de MusicBrainz ?"
 
 #: ../root/series/delete.tt:5
 msgid "Are you sure you wish to remove the series {series} from MusicBrainz?"
-msgstr "Êtes-vous certain de vouloir enlever la série {series} de MusicBrainz ?"
+msgstr "Êtes-vous certain de vouloir supprimer la série {series} de MusicBrainz ?"
 
 #: ../root/area/header.tt:5 ../root/components/common-macros.tt:596
 #: ../root/components/labels-list.tt:8 ../root/edit/search_macros.tt:307
@@ -1924,7 +1924,7 @@ msgstr "Impossible d'ajouter une Illustration"
 
 #: ../root/admin/attributes/in_use.tt:1 ../root/admin/attributes/in_use.tt:2
 msgid "Cannot Remove Attribute"
-msgstr "Impossible de retirer l'attribut"
+msgstr "Impossible de supprimer l'attribut"
 
 #: ../root/artist/special_purpose.tt:1
 msgid "Cannot edit"
@@ -5160,7 +5160,7 @@ msgstr "Note :"
 msgid ""
 "Note: only searches edits that: add or edit relationships, created after "
 "2011-05-16; or which remove relationships, created after 2013-07-08."
-msgstr "Attention : recherche seulement des modifications créées après le 16-05-2011 qui ajoutent ou modifient des relations ou créées après le 08-07-2013 qui enlèvent des relations."
+msgstr "Attention : recherche seulement des modifications qui : ajoutent ou modifient des relations, créés après le 16-05-2011 ; ou qui suppriment des relations, créées après le 08-07-2013."
 
 #: ../root/account/preferences.tt:37
 msgid "Notify me by email on new releases to my watched artists"
