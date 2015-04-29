@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2015-04-10 09:09+0000\n"
+"PO-Revision-Date: 2015-04-29 13:55+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -473,7 +473,7 @@ msgstr ""
 msgid ""
 "Links a recording to the area it was engineered in. Use only when the place "
 "is unknown!"
-msgstr ""
+msgstr "Koppelt een opname aan het gebied waar de techniek voor de opname werd verzorgd. Gebruik dit alleen als de plaats niet bekend is!"
 
 #: DB:link_type/description:758
 msgid ""
@@ -509,7 +509,7 @@ msgstr ""
 
 #: DB:link_type/description:813
 msgid "Links a recording to the place it was engineered at."
-msgstr ""
+msgstr "Koppelt een opname aan de plaats waar de techniek voor de opname werd verzorgd."
 
 #: DB:link_type/description:694
 msgid "Links a recording to the place it was mixed at."
@@ -541,7 +541,7 @@ msgstr ""
 msgid ""
 "Links a release to the area it was engineered in. Use only when the place is"
 " unknown!"
-msgstr ""
+msgstr "Koppelt een uitgave aan het gebied waar de techniek voor de uitgave werd verzorgd. Gebruik dit alleen als de plaats niet bekend is!"
 
 #: DB:link_type/description:835
 msgid "Links a release to the area it was manufactured (\"made\") in."
@@ -587,7 +587,7 @@ msgstr ""
 
 #: DB:link_type/description:812
 msgid "Links a release to the place it was engineered at."
-msgstr ""
+msgstr "Koppelt een uitgave aan de plaats waar de techniek voor de uitgave werd verzorgd."
 
 #: DB:link_type/description:697
 msgid "Links a release to the place it was mastered at."
@@ -1846,7 +1846,7 @@ msgstr "Deze relatie beschrijft een URL waar teksten van de compositie gevonden 
 #: DB:link_type/description:847
 msgid ""
 "This relationship indicates that a person was another's teacher/student."
-msgstr ""
+msgstr "Deze relatie geeft aan dat een persoon de leraar of leerling van een andere persoon was."
 
 #: DB:link_type/description:710
 msgid ""
@@ -2218,7 +2218,7 @@ msgstr "Getranscribeerde nummerlijsten veranderen de taal niet, maar allen het s
 msgid ""
 "Treble or boy soprano is a young male singer with an unchanged voice in the "
 "soprano range"
-msgstr ""
+msgstr "Een jongenssopraan is een jongeman die met een onveranderde stem in de sopraanhoogte zingt."
 
 #: DB:link_type/link_phrase:788 DB:link_type/link_phrase:86
 #: DB:link_type/link_phrase:191 DB:link_type/link_phrase:210
@@ -2665,11 +2665,11 @@ msgstr "technische positie bij"
 
 #: DB:link_type/reverse_link_phrase:812 DB:link_type/reverse_link_phrase:813
 msgid "engineered at"
-msgstr ""
+msgstr "techniek verzorgd bij"
 
 #: DB:link_type/reverse_link_phrase:814 DB:link_type/reverse_link_phrase:815
 msgid "engineered in"
-msgstr ""
+msgstr "techniek verzorgd in"
 
 #: DB:link_type/link_phrase:812 DB:link_type/link_phrase:813
 #: DB:link_type/link_phrase:814 DB:link_type/link_phrase:815
@@ -2904,7 +2904,7 @@ msgstr "heeft een sociaal netwerkpagina op"
 
 #: DB:link_type/long_link_phrase:287
 msgid "has a standalone website at"
-msgstr "heeft een losstaande website op"
+msgstr "heeft een eigen website op"
 
 #: DB:link_type/long_link_phrase:755 DB:link_type/long_link_phrase:284
 #: DB:link_type/long_link_phrase:283 DB:link_type/long_link_phrase:285
@@ -4079,11 +4079,11 @@ msgstr "gesproken vocalen"
 
 #: DB:link_type/link_phrase:287
 msgid "standalone website"
-msgstr "losstaande website"
+msgstr "eigen website"
 
 #: DB:link_type/reverse_link_phrase:287
 msgid "standalone website for"
-msgstr "losstaande website voor"
+msgstr "eigen website van"
 
 #: DB:link_type/link_phrase:194
 msgid "stream for free"
@@ -4183,7 +4183,7 @@ msgstr "{transliterated:getranscribeerde|vertaalde} nummerlijsten"
 
 #: DB:link_attribute_type/name:834
 msgid "treble vocals"
-msgstr ""
+msgstr "jongenssopraanvocalen"
 
 #: DB:link_type/link_phrase:65
 msgid "tribute albums"
