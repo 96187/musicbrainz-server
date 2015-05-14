@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-27 04:29-0700\n"
-"PO-Revision-Date: 2015-04-10 12:05+0000\n"
+"PO-Revision-Date: 2015-05-14 08:59+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -41,7 +41,7 @@ msgid ""
 " Enter your username and email below. We will send you an email with a link "
 "to reset your password. If you have forgotten your username, {link|retrieve "
 "it} first and then reset your password. "
-msgstr "Voer uw gebruikersnaam en wachtwoord hieronder in. We zullen u een e-mail sturen met een link om uw wachtwoord opnieuw in te stellen. Als u uw gebruikersnaam bent vergeten, {link|verkrijg het} dan eerst en stel dan uw wachtwoord opnieuw in."
+msgstr "Voer uw gebruikersnaam en wachtwoord hieronder in. We zullen u een e-mail sturen met een link om uw wachtwoord opnieuw in te stellen. Als u uw gebruikersnaam bent vergeten, moet u dat eest {link|opvragen} en daarna uw wachtwoord opnieuw instellen."
 
 #: ../root/components/forms.tt:294
 msgid "\"C\" is a single check digit."
@@ -141,7 +141,7 @@ msgstr "(<strong>ongeverifieerd!</strong>)"
 
 #: ../root/main/400.tt:12 ../root/main/500.tt:41
 msgid "(No details about this error are available)"
-msgstr "(Van deze foutmelding zijn geen details beschikbaar)"
+msgstr "(Over deze foutmelding zijn geen details beschikbaar)"
 
 #: ../root/release/edit/recordings.tt:48
 msgid "(add a new recording)"
@@ -157,7 +157,7 @@ msgstr "(verborgen)"
 
 #: ../root/edit/details/add_release.tt:22
 msgid "(new release group)"
-msgstr "(nieuwe uitgavegroepen)"
+msgstr "(nieuwe uitgavegroep)"
 
 #: ../root/annotation/common.tt:9
 #: ../root/edit/details/add_event_annotation.tt:10
@@ -230,11 +230,11 @@ msgstr "(geverifieerd op {date})"
 
 #: ../root/release/merge.tt:82
 msgid "(was medium {position} on release {release})"
-msgstr "(was medium {position} op uitgave {release})"
+msgstr "(was medium {position} van uitgave {release})"
 
 #: ../root/release/merge.tt:77
 msgid "(was medium {position}: {name} on release {release})"
-msgstr "(was medium {position}: {name} op uitgave {release})"
+msgstr "(was medium {position}: {name} van uitgave {release})"
 
 #: ../root/release/lookup.tt:31
 msgid ""
@@ -270,7 +270,7 @@ msgstr "100%"
 
 #: ../root/admin/attributes/form.tt:32
 msgid "1: Hidden, used for scripts not in Unicode"
-msgstr "1: Verborgen, gebruikt voor schriften die niet in Unicode staan."
+msgstr "1: Verborgen, gebruikt voor schriften die geen deel uitmaken van Unicode."
 
 #: ../root/admin/attributes/form.tt:15
 msgid "1: Shown in the \"other\" section"
@@ -347,7 +347,7 @@ msgid ""
 "license. Furthermore, you give the MetaBrainz Foundation the right to "
 "license this data for commercial use. Please read our {doc|license page} for"
 " more details.</strong>"
-msgstr "<strong>Let op dat alle bijdragen die u doet aan MusicBrainz in het Publiek Domein en/of onder een by-nc-sa licentie van Creative Commons worden vrijgegeven. Daarnaast geeft u de MetaBrainz-stichting het recht om de gegevens voor commercieel gebruik in licentie te geven. Lees onze {doc|licentiepagina} voor meer details.</strong>"
+msgstr "<strong>Let op dat elke bijdrage die u doet aan MusicBrainz in het Publieke Domein en/of onder een by-nc-sa licentie van Creative Commons wordt vrijgegeven. Daarnaast geeft u de MetaBrainz-stichting het recht om de gegevens voor commercieel gebruik in licentie te geven. Lees onze {doc|licentiepagina} voor meer details.</strong>"
 
 #: ../root/admin/wikidoc/index.tt:16
 msgid ""
@@ -355,7 +355,7 @@ msgid ""
 " matches the page name, it will take the version number and provide whatever"
 " page is associated with it. Make sure to double check your work when "
 "updating a page!"
-msgstr "<strong>Let op:</strong>MediaWiki controleert niet of het versienummer overeenkomt met de paginanaam, het neemt het versienummer en verstrekt welke pagina daar mee geassocieerd is. Zorg er voor dat u uw werk twee keer controleert als u een pagina bijwerkt!"
+msgstr "<strong>Let op:</strong>MediaWiki controleert niet of het versienummer overeenkomt met de paginanaam, het neemt het versienummer en verstrekt de pagina die daarmee geassocieerd is. Zorg er voor dat u uw werk goed controleert als u een pagina bijwerkt!"
 
 #: ../root/main/index.tt:15
 msgid ""
@@ -375,7 +375,7 @@ msgid ""
 "<strong>Warning:</strong> Some of the recordings you're merging have "
 "different ISRCs. Please make sure they are indeed the same recordings and "
 "you wish to continue with the merge."
-msgstr "<strong>Waarschuwing:</strong> Sommige opnames die u aan het samenvoegen bent hebben verschillende ISRC’s. Controleer of het inderdaad dezelfde opname is voordat u doorgaat met samenvoegen."
+msgstr "<strong>Waarschuwing:</strong> Sommige opnames die u aan het samenvoegen bent, hebben verschillende ISRC’s. Controleer of het inderdaad dezelfde opname is voordat u doorgaat met samenvoegen."
 
 #: ../root/components/common-macros.tt:777 ../root/recording/edit_form.tt:6
 msgid "<strong>Warning</strong>:"
@@ -392,7 +392,7 @@ msgid ""
 "A CD Stub was found that matches the disc ID you provided. If the below "
 "tracklist appears correct, you may use it as a starting point as a new "
 "MusicBrainz release"
-msgstr "Er is een cd-beginsel gevonden die overeenkomt met uw disc-id. Als de onderstaande nummerlijst correct lijkt, kunt u deze gebruiken als beginpunt voor een nieuwe uitgave in MusicBrainz."
+msgstr "Er is een cd-beginsel gevonden dat overeenkomt met uw disc-id. Als de onderstaande nummerlijst correct lijkt, kunt u deze gebruiken als beginpunt voor een nieuwe uitgave in MusicBrainz."
 
 #: ../root/event/attendance.tt:18
 msgid "A hidden user"
@@ -763,7 +763,7 @@ msgstr "Geselecteerde artiesten samenvoegen"
 
 #: ../root/artist/events.tt:8 ../root/place/events.tt:8
 msgid "Add selected events for merging"
-msgstr "Geselecteerde evenementen toevoegen"
+msgstr "Geselecteerde evenementen samenvoegen"
 
 #: ../root/artist/recordings.tt:13 ../root/instrument/recordings.tt:8
 #: ../root/isrc/index.tt:37
@@ -922,19 +922,19 @@ msgstr "Toegang toestaan"
 
 #: ../root/account/preferences.tt:25
 msgid "Allow other users to see my ratings"
-msgstr "Sta andere gebruikers toe om mijn waarderingen te zien"
+msgstr "Toestaan dat andere gebruikers mijn waarderingen zien"
 
 #: ../root/account/preferences.tt:23
 msgid "Allow other users to see my subscriptions"
-msgstr "Laat andere gebruikers mijn abonnementen zien"
+msgstr "Toestaan dat andere gebruikers mijn abonnementen zien"
 
 #: ../root/account/preferences.tt:24
 msgid "Allow other users to see my tags"
-msgstr "Sta andere gebruikers toe om mijn etiketten te zien"
+msgstr "Toestaan dat andere gebruikers mijn etiketten zien"
 
 #: ../root/collection/edit_form.tt:14
 msgid "Allow other users to see this collection"
-msgstr "Sta andere gebruikers toe om deze collectie te zien"
+msgstr "Toestaan dat andere gebruikers deze collectie zien"
 
 #: ../root/edit/details/edit_relationship_type.tt:44
 msgid "Allows dates:"
@@ -974,7 +974,7 @@ msgstr "U kunt ook {uri|een nieuwe opname toevoegen}."
 
 #: ../root/search/results-release_group.tt:28
 msgid "Alternatively, you may {uri|add a new release group}."
-msgstr "U kunt ook {uri|een nieuwe uitgave toevoegen}."
+msgstr "U kunt ook {uri|een nieuwe uitgavegroep toevoegen}."
 
 #: ../root/search/results-release.tt:4
 msgid "Alternatively, you may {uri|add a new release}."
@@ -991,18 +991,18 @@ msgstr "U kunt ook {uri|een nieuwe compositie toevoegen}."
 #: ../root/report/asins_with_multiple_releases.tt:1
 #: ../root/report/asins_with_multiple_releases.tt:3
 msgid "Amazon URLs Linked to Multiple Releases"
-msgstr "Amazon URL’s die aan meerdere uitgaves zijn gelinkt"
+msgstr "URL’s van Amazon die aan meerdere uitgaves zijn gekoppeld"
 
 #: ../root/report/index.tt:67
 msgid "Amazon URLs linked to multiple releases"
-msgstr "Amazon URL’s die aan meerdere uitgaves zijn gelinkt"
+msgstr "URL’s van Amazon die aan meerdere uitgaves zijn gekoppeld"
 
 #: ../root/components/aliases.tt:3 ../root/entity/alias/edit_form.tt:5
 msgid ""
 "An alias is an alternate name for an entity. They typically contain contain "
 "common mispellings or variations of the name and are also used to improve "
 "search results. View the {doc|alias documentation} for more details."
-msgstr "Een alias is een alternatieve naam voor een object. Dit zijn meestal gebruikelijke spellingfouten en naamvariaties en worden ook gebruikt om de zoekresultaten te verbeteren. Bekijk de {doc|aliasdocumentatie} voor meer details."
+msgstr "Een alias is een alternatieve naam voor een object. Dit is meestal een gebruikelijke spelfout of naamvariatie en het wordt ook gebruikt om de zoekresultaten te verbeteren. Bekijk de {doc|aliasdocumentatie} voor meer details."
 
 #: ../root/artist/subscribers.tt:17 ../root/collection/subscribers.tt:17
 #: ../root/label/subscribers.tt:17 ../root/series/subscribers.tt:17
@@ -1068,7 +1068,7 @@ msgstr "Aantekening:"
 
 #: ../root/annotation/edit.tt:38
 msgid "Annotations support a limited set of wiki formatting options:"
-msgstr "Aantekeningen ondersteunen een gelimiteerd aantal wiki-opmaakopties:"
+msgstr "Aantekeningen ondersteunen een beperkt aantal wiki-opmaakopties:"
 
 #: ../root/artist/relationships.tt:11 ../root/label/relationships.tt:10
 msgid "Appearances"
@@ -1462,8 +1462,8 @@ msgstr[1] "Gekoppeld aan {num} opnames"
 #: ../root/iswc/index.tt:5
 msgid "Associated with {num} work"
 msgid_plural "Associated with {num} works"
-msgstr[0] "Geassocieerd met {num} compositie"
-msgstr[1] "Geassocieerd met {num} composities"
+msgstr[0] "Gekoppeld aan {num} compositie"
+msgstr[1] "Gekoppeld aan {num} composities"
 
 #: ../root/cdtoc/attach_artist_releases.tt:41
 #: ../root/cdtoc/attach_filter_release.tt:55
@@ -1520,7 +1520,7 @@ msgstr "Gemachtigde applicaties"
 
 #: ../root/edit/search_macros.tt:288
 msgid "Auto-Editor"
-msgstr "Auto-redacteur"
+msgstr "Autoredacteur"
 
 #: ../root/user/edits.tt:1
 msgid "Auto-Edits"
@@ -1556,7 +1556,7 @@ msgid ""
 "privileges. These privileges allow them to make select edits that are "
 "automatically approved without going through the normal voting process, as "
 "well as the ability to instantly approve other users' edits."
-msgstr "Autoredacteurs zijn vertrouwde gebruikers die {url|autoredacteur}privileges hebben gekregen. Door deze privileges kunnen ze een select aantal bewerkingen maken die automatisch wordt doorgevoerd zonder door de normale stemmingsprocedure te gaan. Ook geeft dit ze de mogelijkheid om bewerkingen van andere gebruikers direct goed te keuren."
+msgstr "Autoredacteurs zijn vertrouwde gebruikers die {url|autoredacteur}privileges hebben gekregen. Door deze privileges kunnen ze een select aantal bewerkingen maken die automatisch worden doorgevoerd zonder door de normale stemmingsprocedure te gaan. Ook geeft dit ze de mogelijkheid om bewerkingen van andere gebruikers direct goed te keuren."
 
 #: ../root/user/profile.tt:156
 msgid "Auto-edits"
@@ -1639,7 +1639,7 @@ msgstr "Streepjescode:"
 msgid ""
 "Based on the above CD stub, we also found the following releases in "
 "MusicBrainz that may be related:"
-msgstr "Op basis van bovenstaande cd-beginsel hebben we de volgende gerelateerde uitgaves gevonden in MusicBrainz:"
+msgstr "Op basis van het bovenstaande cd-beginsel hebben we de volgende gerelateerde uitgaves gevonden in MusicBrainz:"
 
 #: ../root/release/edit/duplicates.tt:4
 msgid ""
@@ -1674,7 +1674,7 @@ msgid ""
 "hyperlinks. Example: If you want to use [unknown] in the annotation, you'll "
 "have to write <code>&amp;#91;unknown&amp;#93;</code> then it will appear the"
 " way you intended it to show."
-msgstr "Omdat vierkante haakjes [] worden gebruikt om links te creëren, moet u de html-equivalenten (<code>&amp;#91;</code> voor [) en (<code>&amp;#93;</code> voor ]) gebruiken als u niet wilt dat ze worden geconverteerd naar links. Voorbeeld: als u [onbekend] wilt gebruiken in de Aantekening moet u <code>&amp;#91;onbekend&amp;#93;</code> typen om de gewenste tekst te laten zien."
+msgstr "Omdat vierkante haakjes [] worden gebruikt om links te creëren, moet u de html-equivalenten (<code>&amp;#91;</code> voor [) en (<code>&amp;#93;</code> voor ]) gebruiken als u niet wilt dat ze worden geconverteerd naar links. Voorbeeld: als u [onbekend] wilt gebruiken in de aantekening moet u <code>&amp;#91;onbekend&amp;#93;</code> typen om de gewenste tekst te laten zien."
 
 #: ../root/account/registered.tt:13
 msgid ""
@@ -1687,7 +1687,7 @@ msgstr "Omdat u een e-mailadres heeft verstrekt, is er een verificatie-e-mail ve
 msgid ""
 "Become a part of our <strong>global community</strong> and <strong>start "
 "contributing!</strong>"
-msgstr "Wordt lid van onze <strong>wereldwijde gemeenschap</strong> en <strong>begin met bijdragen!</strong>"
+msgstr "Word lid van onze <strong>wereldwijde gemeenschap</strong> en <strong>begin bij te dragen!</strong>"
 
 #: ../root/cdtoc/lookup.tt:90
 msgid ""
@@ -4396,7 +4396,7 @@ msgid ""
 "Make sure all mediums in the releases being merged are in the correct "
 "position. For example, to merge a medium into medium 2 of a release, it will"
 " need to be set as medium 2 of the release being merged."
-msgstr "Let op dat alle media in deze uitgave in de correcte positie worden samengevoegd. Bijvoorbeeld, om een medium in medium 2 van een uitgave samen te voegen, moet het worden ingesteld als medium 2 van de uitgave die wordt samengevoegd."
+msgstr "Let er op dat alle media in deze uitgave in de correcte positie worden samengevoegd. Om bijvoorbeeld een medium van een uitgave samen te voegen met het tweede medium van een andere uitgave, moet het medium van de eerste uitgave ook ingesteld zijn op de tweede positie."
 
 #: ../root/release/edit/tracklist.tt:235
 msgid "Manual entry"
@@ -8399,7 +8399,7 @@ msgid ""
 "This merge strategy will merge all mediums together into a single set of "
 "mediums. Recordings between mediums will also be merged, into the recordings"
 " used on the target mediums."
-msgstr "Deze samenvoegingsstrategie zal alle media samenvoegen in een enkel stel media. Opnames van de media zullen ook worden samengevoegd in de opnames van de doelmedia."
+msgstr "Deze samenvoegingsstrategie zal alle media samenvoegen in een enkel stel media. Opnames van de media zullen ook worden samengevoegd met de opnames van de doelmedia."
 
 #: ../root/doc/page.tt:22
 msgid ""
