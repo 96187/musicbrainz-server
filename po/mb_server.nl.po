@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-27 04:29-0700\n"
-"PO-Revision-Date: 2015-05-14 09:59+0000\n"
+"PO-Revision-Date: 2015-05-14 10:20+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -5306,7 +5306,7 @@ msgstr "Openstaande bewerkingen"
 #: ../root/components/common-macros.tt:539
 #: ../root/components/common-macros.tt:544
 msgid "Open in tagger"
-msgstr "Open in de tagger"
+msgstr "In de tagger openen"
 
 #: ../root/edit/info.tt:40
 msgid "Opened:"
@@ -5332,7 +5332,7 @@ msgstr "Type volgorde:"
 
 #: ../root/otherlookup/results.tt:1 ../root/otherlookup/results.tt:3
 msgid "Other Lookup Results"
-msgstr "Andere opzoekresultaten"
+msgstr "Andere zoekresultaten"
 
 #: ../root/otherlookup/index.tt:1 ../root/otherlookup/index.tt:3
 msgid "Other Lookups"
@@ -5406,7 +5406,7 @@ msgstr "Ouderelement"
 
 #: ../root/admin/attributes/index.tt:21
 msgid "Parent ID"
-msgstr ""
+msgstr "Ouder-id"
 
 #: ../root/edit/details/add_relationship_attribute.tt:15
 #: ../root/edit/details/edit_relationship_attribute.tt:14
@@ -5417,7 +5417,7 @@ msgstr "Ouderelement:"
 
 #: ../root/release/edit/tracklist.tt:227
 msgid "Parse Tracks"
-msgstr "Vul nummers in"
+msgstr "Nummers invullen"
 
 #: ../root/report/part_of_set_relationships.tt:1
 #: ../root/report/part_of_set_relationships.tt:3
@@ -5500,7 +5500,7 @@ msgstr "Plaatsen met verouderde relaties"
 #: ../root/main/500.tt:85
 msgid ""
 "Please be sure to include the stack trace and request data shown above!"
-msgstr "Vergeet niet de bovenstaande stack trace en het gegevensverzoek te vermelden!"
+msgstr "Vergeet niet de bovenstaande stacktrace en het gegevensverzoek te vermelden!"
 
 #: ../root/account/change_password.tt:6
 msgid ""
@@ -5510,7 +5510,7 @@ msgid ""
 "original passwords from this mishap, we are requiring all of our users to "
 "change their passwords. Sorry for the inconvenience. For more information "
 "see {blog|the recent blog post}."
-msgstr "Verander a.u.b. uw wachtwoord. We hebben helaas ontdekt dat de gehashte gebruikerswachtwoorden tijdelijk te downloaden waren van onze FTP-site. Hoewel het zeer onwaarschijnlijk is dat iemand in staat zal zijn om hieruit de originele wachtwoorden kan achterhalen, moeten alle gebruikers hun wachtwoord veranderen. Onze excuses voor het ongemak. Zie {blog|ons weblog} voor meer informatie."
+msgstr "Verander a.u.b. uw wachtwoord. We hebben helaas ontdekt dat de gehashte gebruikerswachtwoorden tijdelijk te downloaden waren van onze FTP-site. Hoewel het zeer onwaarschijnlijk is dat iemand in staat zal zijn om hieruit de originele wachtwoorden te achterhalen, moeten alle gebruikers hun wachtwoord veranderen. Onze excuses voor het ongemak. Zie {blog|ons weblog} voor meer informatie."
 
 #: ../root/edit/search_macros.tt:305
 msgid "Please choose a condition"
@@ -5526,25 +5526,25 @@ msgstr "Kies alstublieft een geldige afbeelding. Het Cover Art Archive ondersteu
 msgid ""
 "Please consider adding this release/CD to MusicBrainz. To add this CD, "
 "please choose one of the following two methods:"
-msgstr "Overweeg alstublieft om deze uitgave/cd toe te voegen aan MusicBrainz. Gebruik om deze cd toe te voegen één van de volgende twee methodes:"
+msgstr "Overweeg alstublieft om deze uitgave/cd toe te voegen aan MusicBrainz. Gebruik een van de volgende twee methodes om deze cd toe te voegen:"
 
 #: ../root/artist/edit_form.tt:24
 msgid ""
 "Please enter a {doc_disambiguation|disambiguation} to help distinguish this "
 "artist from the others."
-msgstr "Voer een {doc_disambiguation|verduidelijking} in om deze artiest van anderen te onderscheiden."
+msgstr "Voeg een {doc_disambiguation|verduidelijking} toe om deze artiest van anderen te onderscheiden."
 
 #: ../root/label/edit_form.tt:24
 msgid ""
 "Please enter a {doc_disambiguation|disambiguation} to help distinguish this "
 "label from the others."
-msgstr "Voer een {doc_disambiguation|verduidelijking} in om deze platenmaatschappij van anderen te onderscheiden."
+msgstr "Voeg een {doc_disambiguation|verduidelijking} toe om deze platenmaatschappij van anderen te onderscheiden."
 
 #: ../root/place/edit_form.tt:25
 msgid ""
 "Please enter a {doc_disambiguation|disambiguation} to help distinguish this "
 "place from the others."
-msgstr "Voer een {doc_disambiguation|verduidelijking} in om deze plaats van anderen te onderscheiden."
+msgstr "Voeg een {doc_disambiguation|verduidelijking} toe om deze plaats van anderen te onderscheiden."
 
 #: ../root/series/edit_form.tt:24
 msgid ""
@@ -5556,7 +5556,7 @@ msgstr "Voeg een {doc_disambiguation|verduidelijking} toe om deze serie van ande
 msgid ""
 "Please enter tags in the text area below. Tags are comma separated, and you "
 "may wish to see the {tagsyn|tag syntax documentation} for more information"
-msgstr "Voer etiketten alstublieft in het veld hieronder in. Etiketten worden gescheiden door komma’s, en u kunt de {tagsyn|syntaxinformatie voor etiketten} raadplegen voor meer informatie."
+msgstr "Voer de etiketten in het veld hieronder in. Etiketten worden gescheiden door komma’s, en u kunt de {tagsyn|syntaxinformatie voor etiketten} raadplegen voor meer informatie."
 
 #: ../root/release/edit/information.tt:324
 msgid ""
@@ -5566,7 +5566,7 @@ msgstr "Voer de streepjescode in van de uitgave die u aan het toevoegen bent. Zi
 
 #: ../root/account/change_password.tt:16
 msgid "Please enter your old password below, and then your new password."
-msgstr "Voer alstublieft uw oude wachtwoord hieronder in, en daarna uw nieuwe wachtwoord."
+msgstr "Voer uw oude wachtwoord hieronder in, en daarna uw nieuwe wachtwoord."
 
 #: ../root/freedb/show.tt:47 ../root/freedb/show.tt:104
 msgid "Please login to import this FreeDB disc."
@@ -5600,17 +5600,17 @@ msgstr "Let op:"
 msgid ""
 "Please review the {coc|MusicBrainz Code of Conduct} before creating an "
 "account."
-msgstr "Leest u alstublieft de {coc|Gedragscode van MusicBrainz} voordat u zich registreert."
+msgstr "Lees alstublieft de {coc|Gedragscode van MusicBrainz} voordat u zich registreert."
 
 #: ../root/release/delete.tt:3
 msgid ""
 "Please review the {doc_remove|remove release edit-type} documentation before"
 " entering this edit."
-msgstr "Leest u alstublieft de documentatie over {doc_remove|het verwijderen van uitgaves} voordat u deze bewerking indient."
+msgstr "Lees alstublieft de documentatie over {doc_remove|het verwijderen van uitgaves} voordat u deze bewerking indient."
 
 #: ../root/entity/alias/delete.tt:6
 msgid "Please review the {doc|alias documentation} before entering this edit."
-msgstr "Leest u alstublieft de documentatie over {doc|aliassen} voordat u deze bewerking indient."
+msgstr "Lees alstublieft de documentatie over {doc|aliassen} voordat u deze bewerking indient."
 
 #: ../root/cdstub/import.tt:3
 msgid "Please search for the artist you wish to create a new release for:"
@@ -5737,7 +5737,7 @@ msgstr "Primair type:"
 #: ../root/edit/details/add_alias.tt:29 ../root/edit/details/edit_alias.tt:46
 #: ../root/edit/details/remove_alias.tt:28
 msgid "Primary for locale"
-msgstr "Primair voor locatie"
+msgstr "Primair voor localisatie"
 
 #: ../root/relationship/linktype/form.tt:37
 msgid "Priority:"
@@ -5839,7 +5839,7 @@ msgstr "Lees meer »"
 msgid ""
 "Read the {doc|WikiDocs} documentation for an overview of how transclusion "
 "works."
-msgstr "Lees de documentatie over {doc|WikiDocs} voor een overzicht over hoe transclusie werkt."
+msgstr "Lees de documentatie over {doc|WikiDocs} voor een overzicht over de werking van transclusie."
 
 #: ../root/main/index.tt:113
 msgid "Recent Additions"
@@ -5954,7 +5954,7 @@ msgstr "Opnames:"
 
 #: ../root/edit/list_header.tt:13
 msgid "Refine this search"
-msgstr "Verfijn deze zoekopdracht"
+msgstr "Deze zoekopdracht verfijnen"
 
 #: ../root/account/preferences.tt:12
 msgid "Regional settings"
@@ -5962,7 +5962,7 @@ msgstr "Regionale instellingen"
 
 #: ../root/account/register_application.tt:13
 msgid "Register"
-msgstr "Registreer"
+msgstr "Registreren"
 
 #: ../root/account/register_application.tt:1
 #: ../root/account/register_application.tt:3
@@ -5979,7 +5979,7 @@ msgstr "Bewerking verwerpen"
 
 #: ../root/components/common-macros.tt:636
 msgid "Reject upon expiration"
-msgstr "Verwerpen na de vervaltijd"
+msgstr "Na de vervaltijd verwerpen"
 
 #: ../root/user/edits.tt:1
 msgid "Rejected Edits"
@@ -6086,7 +6086,7 @@ msgid ""
 "edited, relationships highlighted <span class=\"rel-remove\">red</span> will"
 " be removed, and relationships highlighted <span class=\"rel-"
 "add\">green</span> will be added."
-msgstr "<span class=\"rel-edit\">Geel</span> gemarkeerde relaties zullen worden bewerkt, <span class=\"rel-remove\">rood</span> gemarkeerde relaties zullen worden verwijderd en <span class=\"rel-add\">groen</span> gemarkeerde relaties zullen worden toegevoegd."
+msgstr "<span class=\"rel-edit\">Geel</span>gemarkeerde relaties zullen worden bewerkt, <span class=\"rel-remove\">rood</span>gemarkeerde relaties zullen worden verwijderd en <span class=\"rel-add\">groen</span>gemarkeerde relaties zullen worden toegevoegd."
 
 #: ../root/edit/details/historic/add_relationship.tt:3
 #: ../root/edit/details/remove_relationship_(historic).tt:3
@@ -6704,7 +6704,7 @@ msgstr "Benodigd:"
 #: ../root/account/reset_password_ok.tt:3 ../root/account/reset_password.tt:1
 #: ../root/account/reset_password.tt:3 ../root/account/reset_password.tt:14
 msgid "Reset Password"
-msgstr "Stel wachtwoord opnieuw in"
+msgstr "Wachtwoord opnieuw instellen"
 
 #: ../root/release/edit/tracklist.tt:418
 msgid "Reset track numbers"
@@ -6727,7 +6727,7 @@ msgstr "Eerde opnames hergebruiken"
 
 #: ../root/user/contact.tt:16
 msgid "Reveal my email address"
-msgstr "Toon mijn e-mailadres"
+msgstr "Mijn e-mailadres tonen"
 
 #: ../root/doc/relationship_type.tt:43
 #: ../root/edit/details/edit_relationship_type.tt:25
