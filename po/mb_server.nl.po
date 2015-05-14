@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-27 04:29-0700\n"
-"PO-Revision-Date: 2015-05-14 14:00+0000\n"
+"PO-Revision-Date: 2015-05-14 14:07+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/projects/p/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -11394,7 +11394,7 @@ msgstr "De verificatiesleutel ontbreekt."
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:75
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:212
 msgid "The checksum is invalid, please double check your email."
-msgstr "Het controlecijfer is incorrect, controleert u uw e-mail alstublieft opnieuw."
+msgstr "Het controlegetal is incorrect, controleer uw e-mail alstublieft opnieuw."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:83
 msgid "Sorry, this email verification link has expired."
@@ -11410,7 +11410,7 @@ msgstr "De gebruiker met het ID “{user_id}” kon niet worden gevonden."
 msgid ""
 "We were unable to send login information to your email address.  Please try again,\n"
 "             however if you continue to experience difficulty contact us at support@musicbrainz.org."
-msgstr "Het is ons niet gelukt aanmeldinformatie naar uw e-mailadres te sturen. Probeert u het a.u.b. opnieuw,\nals u echter problemen blijft ondervinden neemt u dan contact op met ons via support@musicbrainz.org."
+msgstr "Het is ons niet gelukt aanmeldinformatie naar uw e-mailadres te sturen. Probeer het a.u.b. opnieuw,\nmaar neem contact met ons op via support@musicbrainz.org als u problemen blijft ondervinden."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:159
 msgid "There is no user with this username"
@@ -11424,7 +11424,7 @@ msgstr "Er is geen gebruiker met deze gebruikersnaam en e-mailadres"
 msgid ""
 "We can't send a password reset email, because we have no email on record for"
 " this user."
-msgstr "We kunnen geen e-mail sturen met een nieuw wachtwoord omdat we voor deze gebruiker geen e-mailadres hebben."
+msgstr "We kunnen geen e-mail sturen met een nieuw wachtwoord omdat we van deze gebruiker geen e-mailadres hebben."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:196
 msgid "Missing one or more required parameters."
@@ -11432,7 +11432,7 @@ msgstr "Eén of meerdere verplichte parameters ontbreekt."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:204
 msgid "Sorry, this password reset link has expired."
-msgstr "Onze excuses, deze bewerking om het wachtwoord opnieuw in te stellen is verlopen."
+msgstr "Onze excuses, deze link om het wachtwoord opnieuw in te stellen is verlopen."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:262
 msgid "There is no user with this email"
@@ -11447,7 +11447,7 @@ msgid ""
 "<strong>We were unable to send a confirmation email to you.</strong><br/>Please confirm that you have entered a valid\n"
 "             address by editing your {settings|account settings}. If the problem still persists, please contact us at\n"
 "             {mail|support@musicbrainz.org}."
-msgstr "<strong>We konden geen confirmatie-e-mail naar u sturen.</strong>\n<br/>Controleer of u een geldig adres heeft ingevoerd door uw {settings|gebruikersinstellingen} te wijzigen. Als het probleem nog steeds bestaat, neem dan contact op met {mail|support@musicbrainz.org}."
+msgstr "<strong>We konden geen confirmatie-e-mail naar u sturen.</strong>\n<br/>Controleer of u een geldig adres heeft ingevoerd door uw {settings|gebruikersinstellingen} te wijzigen. Neem contact op met {mail|support@musicbrainz.org} als het probleem zich blijft voordoen."
 
 #: ../lib/MusicBrainz/Server/Controller/Admin.pm:77
 msgid "User successfully edited."
@@ -11603,7 +11603,7 @@ msgstr "Ontbrekende disc-id"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:136
 msgid "Disc ID does match parsed TOC"
-msgstr "De Disc ID komt niet overeen met de TOC"
+msgstr "De disc-id komt niet overeen met de TOC"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:140
 msgid "Number of submitted tracks does not match track count in TOC"
@@ -11641,7 +11641,7 @@ msgstr "Alias aan gebied toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Area/AddAnnotation.pm:11
 msgid "Add area annotation"
-msgstr "Aantekening toevoegen aan het gebied"
+msgstr "Aantekening aan het gebied toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Area/Create.pm:19
 msgid "Add area"
@@ -11673,7 +11673,7 @@ msgstr "Alias aan deze artiest toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/AddAnnotation.pm:11
 msgid "Add artist annotation"
-msgstr "Aantekening voor deze artiest toevoegen"
+msgstr "Aantekening aan deze artiest toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/Create.pm:24
 msgid "Add artist"
@@ -11743,7 +11743,7 @@ msgstr "Disc-id toevoegen"
 #: ../lib/MusicBrainz/Server/Edit/Historic/AddReleaseAnnotation.pm:13
 #: ../lib/MusicBrainz/Server/Edit/Release/AddAnnotation.pm:12
 msgid "Add release annotation"
-msgstr "Aantekening toevoegen aan de uitgave"
+msgstr "Aantekening aan de uitgave toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/AddReleaseEvents.pm:11
 msgid "Add release events (historic)"
@@ -11792,7 +11792,7 @@ msgstr "Naam van de uitgave bewerken (historisch)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditTrackLength.pm:10
 msgid "Edit track length (historic)"
-msgstr "Lengte van het nummer bewerken (historisch)"
+msgstr "Duur van het nummer bewerken (historisch)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditTrackName.pm:20
 msgid "Edit track name (historic)"
@@ -11804,7 +11804,7 @@ msgstr "Positie van het nummer bewerken (historisch)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/MACToSAC.pm:12
 msgid "Convert release to single artist (historic)"
-msgstr "Zet uitgave om naar één artiest (historisch)"
+msgstr "Uitgave om naar één artiest omzetten (historisch)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/MergeRelease.pm:12
 #: ../lib/MusicBrainz/Server/Edit/Historic/MergeReleaseMAC.pm:9
@@ -11815,11 +11815,11 @@ msgstr "Uitgaves samenvoegen"
 #: ../lib/MusicBrainz/Server/Edit/Historic/MoveDiscID.pm:11
 #: ../lib/MusicBrainz/Server/Edit/Medium/MoveDiscID.pm:20
 msgid "Move disc ID"
-msgstr "Verplaats disc-id"
+msgstr "Disc-id verplaatsen"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/MoveRelease.pm:12
 msgid "Move release (historic)"
-msgstr "Verplaats de uitgave (historisch)"
+msgstr "Uitgave verplaatsen (historisch)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/MoveReleaseToRG.pm:17
 msgid "Change release group (historic)"
