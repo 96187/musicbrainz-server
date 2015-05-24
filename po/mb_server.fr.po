@@ -4,8 +4,8 @@
 # 
 # Translators:
 # nikki, 2013-2014
-# yahoe.001, 2013
-# murdos <email address hidden>, 2013
+# Trans-fr, 2013
+# murdos <email address hidden>, 2013,2015
 # Benjamin <email address hidden>, 2011
 # Benjamin Sonntag <email address hidden>, 2011
 # Dibou <email address hidden>, 2012
@@ -23,14 +23,14 @@
 # nikki, 2013
 # Paul Tremberth <email address hidden>, 2013
 # Paul Tremberth <email address hidden>, 2013
-# yahoe.001, 2013-2015
+# Trans-fr, 2013-2015
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-27 04:29-0700\n"
-"PO-Revision-Date: 2015-04-15 17:08+0000\n"
-"Last-Translator: yahoe.001\n"
+"PO-Revision-Date: 2015-05-24 22:59+0000\n"
+"Last-Translator: murdos <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -367,14 +367,14 @@ msgstr "<strong>Note :</strong> MediaWiki ne vérifie pas si le numéro de versi
 msgid ""
 "<strong>The ultimate source of music information</strong> by allowing anyone"
 " to contribute and releasing the {doc|data} under {doc2|open licenses}."
-msgstr "<strong>La source ultime d'informations sur la musique</strong> permettant à chacun de contribuer et en publiant les {doc|données} sous des {doc2|licences libres}."
+msgstr "<strong>La source ultime d'information sur la musique</strong> en permettant à chacun de contribuer et en publiant les {doc|données} sous des {doc2|licences libres}."
 
 #: ../root/main/index.tt:20
 msgid ""
 "<strong>The universal lingua franca for music</strong> by providing a "
 "reliable and unambiguous form of {doc|music identification}, enabling both "
 "people and machines to have meaningful conversations about music."
-msgstr "<strong>La lingua franca universelle du monde de la musique</strong> qui fournit une forme {doc|d'identification musicale } fiable et non-ambigüe, permettant aux personnes comme aux machines de discuter à propos de la musique de manière pertinente."
+msgstr "<strong>La lingua franca universelle du monde de la musique</strong> en fournissant une {doc|identification musicale} fiable et non ambigüe, permettant aux personnes comme aux machines d'échanger à propos de la musique de manière pertinente."
 
 #: ../root/recording/merge.tt:8
 msgid ""
@@ -936,7 +936,7 @@ msgstr "Autoriser les autres utilisateurs à voir mes abonnements"
 
 #: ../root/account/preferences.tt:24
 msgid "Allow other users to see my tags"
-msgstr "Autoriser les autres utilisateurs à voir mes balises"
+msgstr "Autoriser les autres utilisateurs à voir mes tags"
 
 #: ../root/collection/edit_form.tt:14
 msgid "Allow other users to see this collection"
@@ -1693,7 +1693,7 @@ msgstr "Comme vous avez fourni une adresse courriel, un courriel de vérificatio
 msgid ""
 "Become a part of our <strong>global community</strong> and <strong>start "
 "contributing!</strong>"
-msgstr "Devenez membre de notre <strong>communauté mondiale</strong> et <strong>commencez à contribuer !</strong>"
+msgstr "Devenez membre de notre <strong>communauté internationale</strong> et <strong>commencez à contribuer !</strong>"
 
 #: ../root/cdtoc/lookup.tt:90
 msgid ""
@@ -1773,7 +1773,7 @@ msgstr "Date de naissance :"
 
 #: ../root/layout/menu.tt:158
 msgid "Blog"
-msgstr "Blogue"
+msgstr "Blog"
 
 #: ../root/components/common-macros.tt:856
 #: ../root/static/scripts/edit/MB/Control/ArtistEdit.js:51
@@ -2587,7 +2587,7 @@ msgid ""
 "Do you want to develop an application that uses the {ws|MusicBrainz web "
 "service}? {register|Register an application} to generate OAuth tokens. See "
 "our {oauth2|OAuth documentation} for more details."
-msgstr "Voulez-vous développer une application qui utilise le {ws|service web MusicBrainz} ? {register|Enregistrer une application} pour créer des jetons d'OAuth. Voir notre {oauth2|documentation sur OAuth} pour plus de détails."
+msgstr "Voulez-vous développer une application qui utilise le {ws|service web MusicBrainz} ? {register|Enregistrer une application} pour créer des jetons OAuth. Voir notre {oauth2|documentation sur OAuth} pour plus de détails."
 
 #: ../root/layout/menu.tt:257
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:51
@@ -3216,7 +3216,7 @@ msgstr "Saisir d'abord toutes les informations des pistes, incluant les titres e
 msgid ""
 "Follow our {bl|blog} or {tw|twitter account}! To talk to other users, try "
 "the {fo|forums} or {irc|IRC}."
-msgstr "Suivre notre {bl|blogue} ou {tw|compte Twitter} ! Pour parler à d'autres utilisateurs, essayer les {fo|forums} ou {irc|IRC}."
+msgstr "Suivre notre {bl|blog} ou {tw|compte Twitter} ! Pour parler à d'autres utilisateurs, essayez les {fo|forums} ou {irc|IRC}."
 
 #: ../root/search/error/wrapper.tt:5
 msgid ""
@@ -4377,7 +4377,7 @@ msgstr "MM"
 
 #: ../root/layout/menu.tt:169 ../root/main/index.tt:71
 msgid "Magic MP3 Tagger"
-msgstr "Baliseur « Magic MP3 »"
+msgstr "Magic MP3 Tagger"
 
 #: ../root/account/preferences.tt:31
 msgid ""
@@ -4644,7 +4644,7 @@ msgstr "MusicBrainz - L'encyclopédie musicale libre"
 
 #: ../root/main/index.tt:47
 msgid "MusicBrainz Blog"
-msgstr "Blogue MusicBrainz"
+msgstr "Blog MusicBrainz"
 
 #: ../root/layout/menu.tt:181 ../root/main/index.tt:98
 msgid "MusicBrainz Database"
@@ -4660,7 +4660,7 @@ msgstr "Serveur MusicBrainz"
 
 #: ../root/main/index.tt:10
 msgid "MusicBrainz aims to be:"
-msgstr "MusicBrainz à l'ambition d'être : "
+msgstr "MusicBrainz a pour objectif d'être : "
 
 #: ../root/account/register.tt:16
 msgid ""
@@ -4687,14 +4687,14 @@ msgstr "MusicBrainz n'a qu'un seul type de compte pour tous les utilisateurs. Si
 msgid ""
 "MusicBrainz is an open music encyclopedia that collects music metadata and "
 "makes it available to the public."
-msgstr "MusicBrainz est une encyclopédie musicale libre qui collecte des métadonnées musicales et les propose au public."
+msgstr "MusicBrainz est une encyclopédie musicale libre qui collecte des métadonnées musicales et les rend accessibles à tous."
 
 #: ../root/main/index.tt:38
 msgid ""
 "MusicBrainz is operated by the {uri|MetaBrainz Foundation}, a California "
 "based 501(c)(3) tax-exempt non-profit corporation dedicated to keeping "
 "MusicBrainz {free|free and open source}."
-msgstr "MusicBrainz est exploité par la {uri|Fondation MetaBrainz}, une corporation à but non lucratif de type 501(c)(3 exempte d'impôts basée en Californie, dévouée à garder MusicBrainz {free|gratuit et libre}."
+msgstr "MusicBrainz est exploité par la {uri|Fondation MetaBrainz}, une association à but non lucratif basée en Californie, dévouée à garder MusicBrainz {free|libre et open source}."
 
 #: ../root/layout/head.tt:16
 msgid "MusicBrainz: Artist"
@@ -4730,7 +4730,7 @@ msgstr "Mes évaluations"
 
 #: ../root/layout/menu.tt:63
 msgid "My Tags"
-msgstr "Mes balises"
+msgstr "Mes tags"
 
 #: ../root/edit/search_macros.tt:307
 msgid "My Vote"
@@ -5516,7 +5516,7 @@ msgid ""
 "original passwords from this mishap, we are requiring all of our users to "
 "change their passwords. Sorry for the inconvenience. For more information "
 "see {blog|the recent blog post}."
-msgstr "Veuillez changer votre mot de passe. Nous avons malheureusement découvert que les hachages sécurisés des mots de passe des utilisateurs étaient temporairement  téléchargeables sur notre site FTP. Bien qu'il soit extrêmement improbable que quelqu'un soit capable de déduire les mots de passe originaux de cet incident, nous demandons à tous les utilisateurs de changer leur mot de passe. Désolé pour cet inconvénient. Pour plus d'informations voir le {blog|dernier billet de blogue}."
+msgstr "Veuillez changer votre mot de passe. Nous avons malheureusement découvert que les hachages sécurisés des mots de passe des utilisateurs étaient temporairement  téléchargeables sur notre site FTP. Bien qu'il soit extrêmement improbable que quelqu'un soit capable de déduire les mots de passe originaux de cet incident, nous demandons à tous les utilisateurs de changer leur mot de passe. Désolé pour cet inconvénient. Pour plus d'informations voir le {blog|dernier billet du blog}."
 
 #: ../root/edit/search_macros.tt:305
 msgid "Please choose a condition"
@@ -7783,7 +7783,7 @@ msgstr "L'illustration dans la barre latérale est fournie par une {relationship
 
 #: ../root/main/index.tt:60
 msgid "The blog is currently unavailable."
-msgstr "Le blogue n'est pas disponible en ce moment."
+msgstr "Le blog n'est pas disponible en ce moment."
 
 #: ../root/release/edit/information.tt:307
 msgid "The catalog number you have entered looks like an Amazon ASIN."
@@ -7869,7 +7869,7 @@ msgid ""
 "The majority of the data in the <strong>MusicBrainz Database</strong> is "
 "released into the <strong>Public Domain</strong> and can be downloaded and "
 "used <strong>for free</strong>."
-msgstr "La majorité des données de <strong>la base de données MusicBrainz</strong> sont versées dans le <strong>domaine public</strong> et peuvent dont être téléchargées et utilisées <strong>gratuitement</strong>."
+msgstr "La majorité des données de <strong>la base de données MusicBrainz</strong> sont versées dans le <strong>domaine public</strong> et peuvent dont être téléchargées et utilisées <strong>librement</strong>."
 
 #: ../root/cdtoc/set_durations.tt:19
 msgid ""
@@ -9589,7 +9589,7 @@ msgstr "Utiliser le site bêta"
 msgid ""
 "Use our <strong>XML web service</strong> or <strong>development "
 "libraries</strong> to create your own MusicBrainz-enabled applications."
-msgstr "Utiliser notre <strong>service Web XML</strong> ou nos <strong>bibliothèques de développement</strong> pour créer vos applications utilisant MusicBrainz."
+msgstr "Utilisez notre <strong>service web XML</strong> ou nos <strong>bibliothèques de développement</strong> pour créer vos propres applications."
 
 #: ../root/components/forms.tt:323
 msgid ""
@@ -9943,7 +9943,7 @@ msgstr "Site Web : "
 
 #: ../root/main/index.tt:4
 msgid "Welcome to MusicBrainz!"
-msgstr "Bienvenue à MusicBrainz !"
+msgstr "Bienvenue sur MusicBrainz !"
 
 #: ../root/account/preferences.tt:33
 msgid "When I add a note to an edit, mail me all future notes for that edit."
@@ -10082,7 +10082,7 @@ msgstr "AAAA"
 
 #: ../root/layout/menu.tt:172 ../root/main/index.tt:72
 msgid "Yate Music Tagger"
-msgstr "Baliseur Yate"
+msgstr "Yate Music Tagger"
 
 #: ../root/admin/attributes/form.tt:55 ../root/admin/attributes/index.tt:24
 #: ../root/components/release_groups-list.tt:8
