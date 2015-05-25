@@ -29,7 +29,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-27 04:29-0700\n"
-"PO-Revision-Date: 2015-05-25 09:48+0000\n"
+"PO-Revision-Date: 2015-05-25 10:52+0000\n"
 "Last-Translator: murdos <email address hidden>\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -5112,7 +5112,7 @@ msgstr "Personne n'est présent à {event}."
 
 #: ../root/elections/nominate.tt:1 ../root/elections/nominate.tt:3
 msgid "Nominate a candidate for auto-editor"
-msgstr "Nominer un candidat être l'auto-éditeur"
+msgstr "Nominer un candidat pour être auto-éditeur"
 
 #: ../root/report/index.tt:87
 #: ../root/report/releases_with_download_relationships.tt:1
@@ -5128,7 +5128,7 @@ msgstr "Aucun"
 #: ../root/static/scripts/release-editor/fields.js:156
 msgid ""
 "None of the attached disc IDs can fit a pregap track of the given length."
-msgstr "Aucun des ID de disque joints ne peut correspondre à un silence préliminaire de la durée donnée."
+msgstr "Aucun des ID de disque joints ne peut correspondre à un prégap de la durée donnée."
 
 #: ../root/components/common-macros.tt:629
 #: ../lib/MusicBrainz/Server/Controller/Edit.pm:201
@@ -5290,7 +5290,7 @@ msgstr "Modifications en attente"
 
 #: ../root/edit/subscribed-editors.tt:1 ../root/edit/subscribed-editors.tt:3
 msgid "Open Edits by Your Subscribed Editors"
-msgstr "Modifications ouvertes par les éditeurs auxquels vous êtes abonnés"
+msgstr "Modifications ouvertes par les contributeurs auxquels vous êtes abonnés"
 
 #: ../root/user/edits.tt:1
 msgid "Open Edits by {name}"
@@ -5355,7 +5355,7 @@ msgstr "Global"
 #: ../root/cdstub/header.tt:9 ../root/collection/header.tt:1
 #: ../root/components/entity-tabs.tt:31 ../root/tag/header.tt:1
 msgid "Overview"
-msgstr "Aperçu"
+msgstr "Synthèse"
 
 #: ../root/collection/layout.tt:12
 msgid "Owner:"
@@ -5716,7 +5716,7 @@ msgstr "Préférences"
 
 #: ../root/release/edit/tracklist.tt:170
 msgid "Pregap"
-msgstr "Silence préliminaire"
+msgstr "Prégap"
 
 #: ../root/annotation/edit.tt:30
 msgid "Preview"
@@ -8195,7 +8195,7 @@ msgstr "Ce disque contient des pistes de données à la fin ({info|plus d'infos}
 
 #: ../root/release/edit/tracklist.tt:405
 msgid "This disc has a hidden pregap track before track 1 ({info|more info})"
-msgstr "Ce disque a un silence préliminaire caché avant la piste 1 ({info|plus d'infos})"
+msgstr "Ce disque a une piste cachée avant la piste 1 (également appelée prégap) ({info|plus d'infos})"
 
 #: ../root/edit/details/edit_medium.tt:180
 msgid "This edit changes which tracks are data tracks."
@@ -8398,7 +8398,7 @@ msgstr "Ce format de support ne peut pas avoir d'ID de disque rattaché."
 msgid ""
 "This medium has a disc ID, pregap track, or data track, so you can only "
 "change the format to one that can have disc IDs."
-msgstr "Ce support a un ID de disque, un silence préliminaire de piste ou une piste de données, et ainsi vous ne pouvez changer son format que pour un autre pouvant avoir des ID de disque."
+msgstr "Ce support a un ID de disque, un prégap ou une piste de données, et ainsi vous ne pouvez changer son format que pour un autre pouvant avoir des ID de disque."
 
 #: ../root/release/merge.tt:105
 msgid ""
@@ -10863,7 +10863,7 @@ msgstr "voir toutes les évaluations"
 msgid "see all versions of this release, {count} available"
 msgid_plural "see all versions of this release, {count} available"
 msgstr[0] "Afficher toutes les versions de cette parution, {count} offerte"
-msgstr[1] "Afficher toutes les versions de cette parution, {count} offertes"
+msgstr[1] "Afficher toutes les versions de cette parution, {count} existante(s)"
 
 #: ../root/user/profile.tt:41
 msgid "send email"
