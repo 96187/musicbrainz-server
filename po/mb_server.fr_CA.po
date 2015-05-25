@@ -17,7 +17,7 @@
 # Lotheric <email address hidden>, 2011
 # murdos <email address hidden>, 2013,2015
 # murdos <email address hidden>, 2011
-# nikki, 2013
+# nikki, 2012-2013
 # nikki, 2013
 # Nikolai Prokoschenko <email address hidden>, 2011
 # Nikolai Prokoschenko <email address hidden>, 2011
@@ -30,7 +30,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-27 04:29-0700\n"
-"PO-Revision-Date: 2015-05-24 22:53+0000\n"
+"PO-Revision-Date: 2015-05-25 12:23+0000\n"
 "Last-Translator: murdos <email address hidden>\n"
 "Language-Team: French (Canada) (http://www.transifex.com/projects/p/musicbrainz/language/fr_CA/)\n"
 "MIME-Version: 1.0\n"
@@ -1856,7 +1856,7 @@ msgid ""
 "CD stubs are a feature to allow anonymous users to submit data to "
 "MusicBrainz. For more information, see {cdstub|the documentation on CD "
 "stubs}."
-msgstr "Les coupons de CD sont une fonction permettant à des utilisateurs anonymes d'envoyer des données à MusicBrainz. Pour plus d'information, voir {cdstub|la documentation sur les coupons de CD}."
+msgstr "Les coupons de CD sont une fonctionnalité permettant à des utilisateurs anonymes d'envoyer des données simplifiées à MusicBrainz. Pour plus d'information, voir {cdstub|la documentation sur les coupons de CD}."
 
 #: ../root/account/edit_application.tt:10
 #: ../root/account/register_application.tt:10
@@ -3052,7 +3052,7 @@ msgstr "Erreur : {error}"
 
 #: ../root/components/forms.tt:29
 msgid "Even just providing a URL or two is helpful!"
-msgstr "Une URL ou deux peut suffire et peut s'avèrer utile !"
+msgstr "Une URL ou deux peuvent suffire et s'avèrer utile !"
 
 #: ../root/components/common-macros.tt:596
 #: ../root/components/events-list.tt:13 ../root/event/header.tt:4
@@ -3986,7 +3986,7 @@ msgstr "Phrase de jointure :"
 
 #: ../root/components/forms.tt:250 ../root/components/forms.tt:273
 msgid "Keep all-uppercase words uppercased"
-msgstr "Garder les mots en majuscule ainsi"
+msgstr "Conserver les mots en majuscule"
 
 #: ../root/user/login.tt:31
 msgid "Keep me logged in"
@@ -4396,7 +4396,7 @@ msgstr "Faites un don maintenant !"
 
 #: ../root/components/forms.tt:13 ../root/components/forms.tt:18
 msgid "Make all edits votable."
-msgstr "Pouvoir voter sur toutes les modifications."
+msgstr "Ces modifications seront soumises au vote."
 
 #: ../root/release/merge.tt:108
 msgid ""
@@ -5113,7 +5113,7 @@ msgstr "Personne n'est présent à {event}."
 
 #: ../root/elections/nominate.tt:1 ../root/elections/nominate.tt:3
 msgid "Nominate a candidate for auto-editor"
-msgstr "Nominer un candidat être l'auto-éditeur"
+msgstr "Nominer un candidat pour être auto-éditeur"
 
 #: ../root/report/index.tt:87
 #: ../root/report/releases_with_download_relationships.tt:1
@@ -5291,7 +5291,7 @@ msgstr "Modifications en attente"
 
 #: ../root/edit/subscribed-editors.tt:1 ../root/edit/subscribed-editors.tt:3
 msgid "Open Edits by Your Subscribed Editors"
-msgstr "Modifications ouvertes par les éditeurs auxquels vous êtes abonnés"
+msgstr "Modifications ouvertes par les contributeurs auxquels vous êtes abonnés"
 
 #: ../root/user/edits.tt:1
 msgid "Open Edits by {name}"
@@ -5356,7 +5356,7 @@ msgstr "Global"
 #: ../root/cdstub/header.tt:9 ../root/collection/header.tt:1
 #: ../root/components/entity-tabs.tt:31 ../root/tag/header.tt:1
 msgid "Overview"
-msgstr "Aperçu"
+msgstr "Synthèse"
 
 #: ../root/collection/layout.tt:12
 msgid "Owner:"
@@ -5563,7 +5563,7 @@ msgstr "Veuillez saisir une {doc_disambiguation|désambiguïsation} pour aider �
 msgid ""
 "Please enter tags in the text area below. Tags are comma separated, and you "
 "may wish to see the {tagsyn|tag syntax documentation} for more information"
-msgstr "Saisir les balises dans la zone de texte ci-dessous. Les balises sont séparées par une virgule, et vous serez sûrement intéressé par la {tagsyn|documentation sur la syntaxe des balises} pour plus d'information."
+msgstr "Saisir les balises dans la zone de texte ci-dessous. Les balises sont séparées par une virgule, et vous pouvez également consulter la {tagsyn|documentation sur la syntaxe des balises} pour plus d'information."
 
 #: ../root/release/edit/information.tt:324
 msgid ""
@@ -7267,7 +7267,7 @@ msgstr "Des erreurs ont été détectées dans les données que vous avez saisie
 msgid ""
 "Sorry, <code>{discid}</code> does not match a CD stub. You can try "
 "{search_url|searching for it} instead."
-msgstr "Désolé, <code>{discid}</code> ne correspond à aucun coupon de CD. Vous pouvez essayer de {search_url|d'en chercher un}."
+msgstr "Désolé, <code>{discid}</code> ne correspond à aucun coupon de CD. Vous pouvez tout de même essayer de {search_url|de le rechercher}."
 
 #: ../root/cdstub/error.tt:19
 msgid "Sorry, <code>{discid}</code> is not a valid disc ID."
@@ -7531,7 +7531,7 @@ msgstr "Statut"
 
 #: ../root/edit/data.tt:7 ../root/release/edit/information.tt:122
 msgid "Status:"
-msgstr "État :"
+msgstr "Statut :"
 
 #: ../root/edit/info.tt:33
 msgctxt "edit status"
@@ -9097,7 +9097,7 @@ msgstr "Pour <span class=\"rel-edit\">modifier</span> une relation, cliquer sur 
 msgid ""
 "To aid in testing, the following features have been made available on "
 "testing servers:"
-msgstr "Pour aider aux tests, les fonctions suivantes ont été activées sur les serveurs de test :"
+msgstr "Pour aider aux tests, les fonctionnalités suivantes ont été activées sur les serveurs de test :"
 
 #: ../root/release/edit/tracklist.tt:232
 msgid ""
@@ -10864,7 +10864,7 @@ msgstr "voir toutes les évaluations"
 msgid "see all versions of this release, {count} available"
 msgid_plural "see all versions of this release, {count} available"
 msgstr[0] "Afficher toutes les versions de cette parution, {count} offerte"
-msgstr[1] "Afficher toutes les versions de cette parution, {count} offertes"
+msgstr[1] "Afficher toutes les versions de cette parution, {count} existante(s)"
 
 #: ../root/user/profile.tt:41
 msgid "send email"
@@ -11340,7 +11340,7 @@ msgstr "…"
 #: ../lib/DBDefs/Default.pm:146
 msgid ""
 "This beta test server allows testing of new features with the live database."
-msgstr "Ce serveur de test bêta permet de tester de nouvelles fonctions avec la base de données de production."
+msgstr "Ce serveur de bêta-test permet de tester de nouvelles fonctionnalités avec la base de données principale."
 
 #: ../lib/MusicBrainz/Server/Controller.pm:29
 #, perl-brace-format
@@ -11544,7 +11544,7 @@ msgstr "Les anciens et nouveaux ID d'annotation doivent être des entiers positi
 msgid ""
 "Our Redis server appears to be down; some features may not work as intended "
 "or expected."
-msgstr "Notre serveur Redis semble être hors service. Certaines fonctions pourraient ne pas fonctionner comme prévu ou comme qu'attendu."
+msgstr "Notre serveur Redis semble être hors service. Certaines fonctionnalités pourraient ne pas fonctionner comme prévu ou comme qu'attendu."
 
 #: ../lib/MusicBrainz/Server/Controller/Series.pm:121
 msgid "Series that have different entity types cannot be merged."
