@@ -32,7 +32,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-27 04:29-0700\n"
-"PO-Revision-Date: 2015-06-03 18:57+0000\n"
+"PO-Revision-Date: 2015-06-03 19:59+0000\n"
 "Last-Translator: Trans-fr\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -401,7 +401,7 @@ msgid ""
 "A CD Stub was found that matches the disc ID you provided. If the below "
 "tracklist appears correct, you may use it as a starting point as a new "
 "MusicBrainz release"
-msgstr "Un CD Stub a été trouvé, dont l'ID de disque correspond. Si la liste de pistes ci-dessous vous semble correcte, vous pourriez l'utiliser comme point de départ pour une nouvelle parution MusicBrainz."
+msgstr "Un coupon de CD correspondant à l'ID que vous avez fourni a été trouvé. Si la liste de pistes ci-dessous semble correcte, vous pourriez l'utiliser comme point de départ d'une nouvelle parution MusicBrainz."
 
 #: ../root/event/attendance.tt:18
 msgid "A hidden user"
@@ -535,7 +535,7 @@ msgstr "Ajouter un crédit d'artiste"
 
 #: ../root/cdstub/logged_in.tt:1 ../root/cdstub/logged_in.tt:2
 msgid "Add CD Stub"
-msgstr "Ajouter un CD Stub"
+msgstr "Ajouter un coupon de CD"
 
 #: ../root/release/cover_art.tt:52
 msgctxt "button/menu"
@@ -939,7 +939,7 @@ msgstr "Autoriser les autres utilisateurs à voir mes abonnements"
 
 #: ../root/account/preferences.tt:24
 msgid "Allow other users to see my tags"
-msgstr "Autoriser les autres utilisateurs à voir mes tags"
+msgstr "Autoriser les autres utilisateurs à voir mes balises"
 
 #: ../root/collection/edit_form.tt:14
 msgid "Allow other users to see this collection"
@@ -1109,7 +1109,7 @@ msgstr "Approuver"
 
 #: ../root/edit/edit_header.tt:76 ../root/edit/info.tt:17
 msgid "Approve edit"
-msgstr "Approuver"
+msgstr "Approuver la modification"
 
 #: ../root/cdtoc/attach_confirm.tt:3
 msgid ""
@@ -1648,7 +1648,7 @@ msgstr "Code-barres :"
 msgid ""
 "Based on the above CD stub, we also found the following releases in "
 "MusicBrainz that may be related:"
-msgstr "Sur la base du CD Stub ci-dessus, nous avons trouvé les parutions suivantes dans MusicBrainz, qui pourraient être liées :"
+msgstr "D'après le coupon de CD, nous avons aussi trouvé les parutions suivantes dans MusicBrainz qui pourraient être liées :"
 
 #: ../root/release/edit/duplicates.tt:4
 msgid ""
@@ -1776,7 +1776,7 @@ msgstr "Date de naissance :"
 
 #: ../root/layout/menu.tt:158
 msgid "Blog"
-msgstr "Blog"
+msgstr "Blogue"
 
 #: ../root/components/common-macros.tt:856
 #: ../root/static/scripts/edit/MB/Control/ArtistEdit.js:51
@@ -1815,15 +1815,15 @@ msgstr "CD introuvable"
 #: ../root/search/results-cdstub.tt:8
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:42
 msgid "CD Stub"
-msgstr "CD Stub"
+msgstr "Coupon de CD"
 
 #: ../root/cdstub/error.tt:2
 msgid "CD Stub Not Found"
-msgstr "CD Stub introuvable"
+msgstr "Coupon de CD introuvable"
 
 #: ../root/cdtoc/lookup.tt:18
 msgid "CD Stub found"
-msgstr "CD Stub trouvé"
+msgstr "Coupon de CD trouvé"
 
 #: ../root/cdtoc/not_found.tt:1 ../root/cdtoc/not_found.tt:2
 msgid "CD TOC Not Found"
@@ -1839,26 +1839,26 @@ msgstr "Index du CD :"
 
 #: ../root/cdstub/header.tt:5
 msgid "CD stub by {artist}"
-msgstr "CD Stub par {artist}"
+msgstr "Coupon de CD par {artist}"
 
 #: ../root/cdstub/edit_form.tt:4
 msgid "CD stub details"
-msgstr "Détails du CD Stub"
+msgstr "Détails du coupon de CD"
 
 #: ../root/release/edit/tracklist.tt:237
 msgid "CD stub import"
-msgstr "Importation d'un CD Stub"
+msgstr "Importation d'un coupon de CD"
 
 #: ../root/cdstub/layout.tt:2
 msgid "CD stub “{title}” by {artist}"
-msgstr "CD Stub « {title} » par {artist}"
+msgstr "Coupon de CD « {title} » par {artist}"
 
 #: ../root/cdstub/logged_in.tt:7
 msgid ""
 "CD stubs are a feature to allow anonymous users to submit data to "
 "MusicBrainz. For more information, see {cdstub|the documentation on CD "
 "stubs}."
-msgstr "CD Stub est une fonctionnalité permettant à des utilisateurs anonymes d'envoyer des données simplifiées à MusicBrainz. Pour plus d'information, voir {cdstub|la documentation sur les CD Stub}."
+msgstr "Les coupon de CD sont une fonction permettant à des utilisateurs anonymes d'envoyer des données à MusicBrainz. Pour plus d'information, consultez {cdstub|la documentation sur les coupons de CD}."
 
 #: ../root/account/edit_application.tt:10
 #: ../root/account/register_application.tt:10
@@ -2590,7 +2590,7 @@ msgid ""
 "Do you want to develop an application that uses the {ws|MusicBrainz web "
 "service}? {register|Register an application} to generate OAuth tokens. See "
 "our {oauth2|OAuth documentation} for more details."
-msgstr "Voulez-vous développer une application qui utilise le {ws|service web MusicBrainz} ? {register|Enregistrer une application} pour créer des jetons OAuth. Voir notre {oauth2|documentation sur OAuth} pour plus de détails."
+msgstr "Voulez-vous développer une application qui utilise le {ws|service Web MusicBrainz} ? {register|Enregistrer une application} pour créer des jetons OAuth. Consultez notre {oauth2|documentation sur OAuth} pour plus de détails."
 
 #: ../root/layout/menu.tt:257
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:51
@@ -3054,7 +3054,7 @@ msgstr "Erreur : {error}"
 
 #: ../root/components/forms.tt:29
 msgid "Even just providing a URL or two is helpful!"
-msgstr "Une URL ou deux peuvent suffire et s'avèrer utile !"
+msgstr "Même nous fournir une URL ou deux est utile !"
 
 #: ../root/components/common-macros.tt:596
 #: ../root/components/events-list.tt:13 ../root/event/header.tt:4
@@ -3219,7 +3219,7 @@ msgstr "Saisir d'abord toutes les informations des pistes, incluant les titres e
 msgid ""
 "Follow our {bl|blog} or {tw|twitter account}! To talk to other users, try "
 "the {fo|forums} or {irc|IRC}."
-msgstr "Suivre notre {bl|blog} ou {tw|compte Twitter} ! Pour parler à d'autres utilisateurs, essayez les {fo|forums} ou {irc|IRC}."
+msgstr "Suivre notre {bl|blogue} ou {tw|compte Twitter} ! Pour parler à d'autres utilisateurs, essayez les {fo|forums} ou {irc|IRC}."
 
 #: ../root/search/error/wrapper.tt:5
 msgid ""
@@ -3855,11 +3855,11 @@ msgstr "Importer"
 #: ../root/cdstub/import.tt:1 ../root/cdstub/import.tt:2
 #: ../root/cdtoc/lookup.tt:25
 msgid "Import CD Stub"
-msgstr "Importer un CD Stub"
+msgstr "Importer un coupon de CD"
 
 #: ../root/cdstub/import.tt:41
 msgid "Import CD stub"
-msgstr "Importer un CD Stub"
+msgstr "Importer un coupon de CD"
 
 #: ../root/freedb/show.tt:53
 msgid "Import as Multiple Artist Release"
@@ -3988,7 +3988,7 @@ msgstr "Phrase de jointure :"
 
 #: ../root/components/forms.tt:250 ../root/components/forms.tt:273
 msgid "Keep all-uppercase words uppercased"
-msgstr "Conserver les mots en majuscule"
+msgstr "Si les mots sont en majuscule, les garder en majuscule"
 
 #: ../root/user/login.tt:31
 msgid "Keep me logged in"
@@ -4380,7 +4380,7 @@ msgstr "MM"
 
 #: ../root/layout/menu.tt:169 ../root/main/index.tt:71
 msgid "Magic MP3 Tagger"
-msgstr "Magic MP3 Tagger"
+msgstr "Baliseur « Magic MP3 »"
 
 #: ../root/account/preferences.tt:31
 msgid ""
@@ -4398,7 +4398,7 @@ msgstr "Faites un don maintenant !"
 
 #: ../root/components/forms.tt:13 ../root/components/forms.tt:18
 msgid "Make all edits votable."
-msgstr "Ces modifications seront soumises au vote."
+msgstr "Pouvoir voter sur toutes les modifications."
 
 #: ../root/release/merge.tt:108
 msgid ""
@@ -4647,7 +4647,7 @@ msgstr "MusicBrainz - L'encyclopédie musicale libre"
 
 #: ../root/main/index.tt:47
 msgid "MusicBrainz Blog"
-msgstr "Blog MusicBrainz"
+msgstr "Blogue MusicBrainz"
 
 #: ../root/layout/menu.tt:181 ../root/main/index.tt:98
 msgid "MusicBrainz Database"
@@ -4690,14 +4690,14 @@ msgstr "MusicBrainz n'a qu'un seul type de compte pour tous les utilisateurs. Si
 msgid ""
 "MusicBrainz is an open music encyclopedia that collects music metadata and "
 "makes it available to the public."
-msgstr "MusicBrainz est une encyclopédie musicale libre qui collecte des métadonnées musicales et les rend accessibles à tous."
+msgstr "MusicBrainz est une encyclopédie musicale libre qui collecte des métadonnées musicales et les propose au public."
 
 #: ../root/main/index.tt:38
 msgid ""
 "MusicBrainz is operated by the {uri|MetaBrainz Foundation}, a California "
 "based 501(c)(3) tax-exempt non-profit corporation dedicated to keeping "
 "MusicBrainz {free|free and open source}."
-msgstr "MusicBrainz est exploité par la {uri|Fondation MetaBrainz}, une association à but non lucratif basée en Californie, dévouée à garder MusicBrainz {free|libre et open source}."
+msgstr "MusicBrainz est exploité par la {uri|fondation MetaBrainz}, une société sans but lucratif (exonérée d'impôt 501(c)(3)) basée en Californie et dévouée à garder MusicBrainz {free|libre et à code source ouvert}."
 
 #: ../root/layout/head.tt:16
 msgid "MusicBrainz: Artist"
@@ -4733,7 +4733,7 @@ msgstr "Mes évaluations"
 
 #: ../root/layout/menu.tt:63
 msgid "My Tags"
-msgstr "Mes tags"
+msgstr "Mes balises"
 
 #: ../root/edit/search_macros.tt:307
 msgid "My Vote"
@@ -5115,7 +5115,7 @@ msgstr "Personne n'est présent à {event}."
 
 #: ../root/elections/nominate.tt:1 ../root/elections/nominate.tt:3
 msgid "Nominate a candidate for auto-editor"
-msgstr "Nominer un candidat pour être auto-éditeur"
+msgstr "Nominer un candidat comme auto-éditeur"
 
 #: ../root/report/index.tt:87
 #: ../root/report/releases_with_download_relationships.tt:1
@@ -5131,7 +5131,7 @@ msgstr "Aucun"
 #: ../root/static/scripts/release-editor/fields.js:156
 msgid ""
 "None of the attached disc IDs can fit a pregap track of the given length."
-msgstr "Aucun des ID de disque joints ne peut correspondre à un prégap de la durée donnée."
+msgstr "Aucun des ID de disque joints ne peut correspondre à un silence préliminaire de la durée donnée."
 
 #: ../root/components/common-macros.tt:629
 #: ../lib/MusicBrainz/Server/Controller/Edit.pm:201
@@ -5293,7 +5293,7 @@ msgstr "Modifications en attente"
 
 #: ../root/edit/subscribed-editors.tt:1 ../root/edit/subscribed-editors.tt:3
 msgid "Open Edits by Your Subscribed Editors"
-msgstr "Modifications ouvertes par les contributeurs auxquels vous êtes abonnés"
+msgstr "Ouvrez les modifications des éditeurs auxquels vous êtes abonnés"
 
 #: ../root/user/edits.tt:1
 msgid "Open Edits by {name}"
@@ -5358,7 +5358,7 @@ msgstr "Global"
 #: ../root/cdstub/header.tt:9 ../root/collection/header.tt:1
 #: ../root/components/entity-tabs.tt:31 ../root/tag/header.tt:1
 msgid "Overview"
-msgstr "Synthèse"
+msgstr "Vue d'ensemble"
 
 #: ../root/collection/layout.tt:12
 msgid "Owner:"
@@ -5519,7 +5519,7 @@ msgid ""
 "original passwords from this mishap, we are requiring all of our users to "
 "change their passwords. Sorry for the inconvenience. For more information "
 "see {blog|the recent blog post}."
-msgstr "Veuillez changer votre mot de passe. Nous avons malheureusement découvert que les hachages sécurisés des mots de passe des utilisateurs étaient temporairement  téléchargeables sur notre site FTP. Bien qu'il soit extrêmement improbable que quelqu'un soit capable de déduire les mots de passe originaux de cet incident, nous demandons à tous les utilisateurs de changer leur mot de passe. Désolé pour cet inconvénient. Pour plus d'informations voir le {blog|dernier billet du blog}."
+msgstr "Veuillez changer votre mot de passe. Nous avons malheureusement découvert que les hachages sécurisés des mots de passe des utilisateurs étaient temporairement téléchargeables sur notre site FTP. Bien qu'il soit extrêmement improbable que quelqu'un soit capable de déduire les mots de passe originaux de cet incident, nous demandons à tous les utilisateurs de changer leur mot de passe. Désolé pour cet inconvénient. Pour plus d'informations voir le {blog|dernier billet de blogue}."
 
 #: ../root/edit/search_macros.tt:305
 msgid "Please choose a condition"
@@ -5565,7 +5565,7 @@ msgstr "Veuillez saisir une {doc_disambiguation|désambiguïsation} pour aider �
 msgid ""
 "Please enter tags in the text area below. Tags are comma separated, and you "
 "may wish to see the {tagsyn|tag syntax documentation} for more information"
-msgstr "Saisir les tags dans la zone de texte ci-dessous. Les tags sont séparés par une virgule, et vous pouvez également consulter la {tagsyn|documentation sur la syntaxe des tags} pour plus d'information."
+msgstr "Veuillez saisir les balises dans la zone de texte ci-dessous. Les balises sont séparées par une virgule, et vous pouvez également consulter la {tagsyn|documentation sur la syntaxe des balises} pour plus d'informations."
 
 #: ../root/release/edit/information.tt:324
 msgid ""
@@ -5719,7 +5719,7 @@ msgstr "Préférences"
 
 #: ../root/release/edit/tracklist.tt:170
 msgid "Pregap"
-msgstr "Prégap"
+msgstr "Silence préliminaire"
 
 #: ../root/annotation/edit.tt:30
 msgid "Preview"
@@ -7269,7 +7269,7 @@ msgstr "Des erreurs ont été détectées dans les données que vous avez saisie
 msgid ""
 "Sorry, <code>{discid}</code> does not match a CD stub. You can try "
 "{search_url|searching for it} instead."
-msgstr "Désolé, <code>{discid}</code> ne correspond à aucun CD Stub. Vous pouvez tout de même essayer de {search_url|de le rechercher}."
+msgstr "Désolé, <code>{discid}</code> ne correspond à aucun coupon de CD. Vous pouvez plutôt essayer {search_url|d'en chercher un}."
 
 #: ../root/cdstub/error.tt:19
 msgid "Sorry, <code>{discid}</code> is not a valid disc ID."
@@ -7533,7 +7533,7 @@ msgstr "Statut"
 
 #: ../root/edit/data.tt:7 ../root/release/edit/information.tt:122
 msgid "Status:"
-msgstr "Statut :"
+msgstr "État :"
 
 #: ../root/edit/info.tt:33
 msgctxt "edit status"
@@ -7583,7 +7583,7 @@ msgstr "Envoyer la note"
 
 #: ../root/entity/tags.tt:14
 msgid "Submit tags"
-msgstr "Envoyer des tags"
+msgstr "Envoyer des balises"
 
 #: ../root/cdtoc/lookup.tt:105
 msgid "Submit this CD using the simple method."
@@ -7717,7 +7717,7 @@ msgstr "Baliseur"
 #: ../root/tag/cloud.tt:4 ../root/user/profile/layout.tt:19
 #: ../root/user/tags.tt:1
 msgid "Tags"
-msgstr "Tags"
+msgstr "Balises"
 
 #: ../root/layout/menu.tt:128
 msgid "Team"
@@ -7786,7 +7786,7 @@ msgstr "L'illustration dans la barre latérale est fournie par une {relationship
 
 #: ../root/main/index.tt:60
 msgid "The blog is currently unavailable."
-msgstr "Le blog n'est pas disponible en ce moment."
+msgstr "Le blogue n'est pas disponible actuellement."
 
 #: ../root/release/edit/information.tt:307
 msgid "The catalog number you have entered looks like an Amazon ASIN."
@@ -7872,7 +7872,7 @@ msgid ""
 "The majority of the data in the <strong>MusicBrainz Database</strong> is "
 "released into the <strong>Public Domain</strong> and can be downloaded and "
 "used <strong>for free</strong>."
-msgstr "La majorité des données de <strong>la base de données MusicBrainz</strong> sont versées dans le <strong>domaine public</strong> et peuvent dont être téléchargées et utilisées <strong>librement</strong>."
+msgstr "La majorité des données de <strong>la base de données MusicBrainz</strong> est versée dans le <strong>domaine public</strong> et peut être téléchargée et utilisée <strong>gratuitement et librement</strong>."
 
 #: ../root/cdtoc/set_durations.tt:19
 msgid ""
@@ -8418,11 +8418,11 @@ msgstr "Cette page n'a pas été vérifiée par l'équipe de documentation ({mor
 
 #: ../root/doc/page.tt:31
 msgid "This page is {doc|transcluded} from revision {version} of {title}."
-msgstr "Cette page est une {doc|transclusion} de la version {version} de {title}."
+msgstr "Cette page est {doc|transcluse} de la révision {version} de {title}."
 
 #: ../root/doc/page.tt:41
 msgid "This page is {doc|transcluded} from {title}."
-msgstr "Cette page est une {doc|transclusion} de {title}."
+msgstr "Cette page est {doc|transcluse} de {title}."
 
 #: ../root/place/edit_form.tt:59
 msgid "This place has ended."
@@ -9105,7 +9105,7 @@ msgstr "Pour aider aux tests, les fonctionnalités suivantes ont été activées
 msgid ""
 "To create a new tracklist, use an existing tracklist or import a disc from a"
 " CD stub or FreeDB, select the appropriate tab."
-msgstr "Afin de créer une nouvelle liste de pistes, en utiliser une existante ou importer un disque à partir d'un CD Stub ou de FreeDB, sélectionnez l'onglet approprié."
+msgstr "Afin de créer une nouvelle liste de pistes, en utiliser une existante ou importer un disque à partir d'un coupon de CD ou de FreeDB, sélectionnez l'onglet approprié."
 
 #: ../root/release/edit/information.tt:116
 msgid "To edit types, please {edit_page|edit the release group}."
@@ -9135,7 +9135,7 @@ msgstr "À :"
 #: ../root/cdstub/browse.tt:2 ../root/cdstub/browse.tt:3
 #: ../root/layout/menu.tt:209
 msgid "Top CD Stubs"
-msgstr "Classement CD Stub"
+msgstr "Les premiers coupons de CD"
 
 #: ../root/report/isrc_with_many_recordings.tt:14
 msgid "Total ISRCs found: {count}"
@@ -9602,7 +9602,7 @@ msgstr "Utiliser les champs suivants pour saisir les collaborations, voir la doc
 
 #: ../root/release/edit/tracklist.tt:251
 msgid "Use the following fields to search for a CD stub."
-msgstr "Utiliser les champs suivants pour chercher un CD Stub."
+msgstr "Utiliser les champs suivants pour chercher un coupon de CD."
 
 #: ../root/release/edit/tracklist.tt:256
 msgid "Use the following fields to search for a FreeDB entry."
@@ -9969,7 +9969,7 @@ msgstr "Wiki"
 
 #: ../root/edit/search_macros.tt:288
 msgid "Wiki Transcluder"
-msgstr "Wiki Transcluder"
+msgstr "Wiki transcluseur"
 
 #: ../root/admin/wikidoc/index.tt:34
 msgid "Wiki version"
@@ -10283,7 +10283,7 @@ msgstr "Vous pouvez choisir ici le niveau que vous préférez : votre pays, rég
 msgid ""
 "You cannot add a CD stub while logged in to MusicBrainz. Please {add_rel|add"
 " a new release instead}."
-msgstr "Vous ne pouvez ajouter un CD Stub tant que vous êtes connecté à MusicBrainz. Veuillez {add_rel|plutôt ajouter une nouvelle parution}."
+msgstr "Vous ne pouvez pas ajouter un coupon de CD tant que vous êtes connecté à MusicBrainz. Veuillez {add_rel|plutôt ajouter une nouvelle parution}."
 
 #: ../root/admin/attributes/in_use.tt:3
 msgid "You cannot remove the attribute \"{name}\" because it is still in use."
@@ -11600,7 +11600,7 @@ msgstr "Toutes les pistes n'ont pas de titre"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:124
 msgid "Cannot add a CD stub with no tracks"
-msgstr "Impossible d'ajouter un CD Stub sans piste"
+msgstr "Impossible d'ajouter un coupon de CD sans piste"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:128
 msgid "Incomplete TOC data"
@@ -11628,7 +11628,7 @@ msgstr "Une parution existe déjà pour cet ID de disque"
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:161
 msgid "There is already a CD stub with this disc ID"
-msgstr "Il y a déjà un CD Stub avec cet ID de disque"
+msgstr "Il y a déjà un coupon de CD avec cet ID de disque"
 
 #: ../lib/MusicBrainz/Server/Data/Language.pm:55
 #: ../lib/MusicBrainz/Server/Form/Utils.pm:44
