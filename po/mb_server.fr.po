@@ -25,14 +25,15 @@
 # Paul Tremberth <email address hidden>, 2013
 # Paul Tremberth <email address hidden>, 2013
 # Trans-fr, 2013
+# Trans-fr, 2015
 # Trans-fr, 2013-2015
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-03-27 04:29-0700\n"
-"PO-Revision-Date: 2015-05-25 12:28+0000\n"
-"Last-Translator: murdos <email address hidden>\n"
+"PO-Revision-Date: 2015-06-03 18:57+0000\n"
+"Last-Translator: Trans-fr\n"
 "Language-Team: French (http://www.transifex.com/projects/p/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -369,14 +370,14 @@ msgstr "<strong>Note :</strong> MediaWiki ne vérifie pas si le numéro de versi
 msgid ""
 "<strong>The ultimate source of music information</strong> by allowing anyone"
 " to contribute and releasing the {doc|data} under {doc2|open licenses}."
-msgstr "<strong>La source ultime d'information sur la musique</strong> en permettant à chacun de contribuer et en publiant les {doc|données} sous des {doc2|licences libres}."
+msgstr "<strong>La meilleure source d'informations musicales</strong> en permettant à quiconque de contribuer et en publiant les {doc|données} sous {doc2|licences ouvertes}."
 
 #: ../root/main/index.tt:20
 msgid ""
 "<strong>The universal lingua franca for music</strong> by providing a "
 "reliable and unambiguous form of {doc|music identification}, enabling both "
 "people and machines to have meaningful conversations about music."
-msgstr "<strong>La lingua franca universelle du monde de la musique</strong> en fournissant une {doc|identification musicale} fiable et non ambigüe, permettant aux personnes comme aux machines d'échanger à propos de la musique de manière pertinente."
+msgstr "<strong>La lingua franca universelle de la musique</strong> en fournissant une forme d'{doc|identification musicale} fiable et sans ambiguïté, permettant aux personnes comme aux machines de tenir des conversations pertinente sur la musique."
 
 #: ../root/recording/merge.tt:8
 msgid ""
@@ -684,7 +685,7 @@ msgstr "Ajoutez un support en cliquant sur « Ajouter un disque » ci-dessous, o
 
 #: ../root/components/aliases.tt:79
 msgid "Add a new alias"
-msgstr "Ajouter un nouveau pseudonyme"
+msgstr "Ajouter un nouveau alias"
 
 #: ../root/admin/wikidoc/index.tt:11
 msgid "Add a new entry"
@@ -879,7 +880,7 @@ msgstr "Âge :"
 #: ../root/edit/details/edit_alias.tt:18 ../root/edit/details/edit_alias.tt:32
 #: ../root/edit/details/remove_alias.tt:12
 msgid "Alias"
-msgstr "Pseudonyme"
+msgstr "Alias"
 
 #: ../root/entity/alias/edit_form.tt:14
 msgid "Alias Details"
@@ -887,11 +888,11 @@ msgstr "Détails de l'alias"
 
 #: ../root/entity/alias/edit_form.tt:15
 msgid "Alias name:"
-msgstr "Nom ou alias :"
+msgstr "Alias :"
 
 #: ../root/edit/details/historic/remove_label_alias.tt:3
 msgid "Alias:"
-msgstr "Pseudonymes : "
+msgstr "Alias :"
 
 #: ../root/area/aliases.tt:1 ../root/artist/aliases.tt:1
 #: ../root/components/aliases.tt:1 ../root/components/entity-tabs.tt:45
@@ -899,7 +900,7 @@ msgstr "Pseudonymes : "
 #: ../root/label/aliases.tt:1 ../root/place/aliases.tt:1
 #: ../root/series/aliases.tt:1 ../root/work/aliases.tt:1
 msgid "Aliases"
-msgstr "Pseudonymes"
+msgstr "Alias"
 
 #: ../root/user/profile/layout.tt:19
 msgid "All Edits"
@@ -1010,7 +1011,7 @@ msgid ""
 "An alias is an alternate name for an entity. They typically contain contain "
 "common mispellings or variations of the name and are also used to improve "
 "search results. View the {doc|alias documentation} for more details."
-msgstr "Les alias sont d'autres noms pour une entité. Typiquement ils sont composés d'erreurs d'orthographe ou de variations du nom et sont aussi utilisés pour améliorer les résultats de recherche. Voir la {doc|documentation sur les alias} pour plus de détails."
+msgstr "Un alias est l'autre nom d'une entité. Typiquement il est composé d'erreurs d'orthographe ou de variations du nom et est aussi utilisé pour améliorer les résultats de recherche. Voir la {doc|documentation sur les alias} pour plus de détails."
 
 #: ../root/artist/subscribers.tt:17 ../root/collection/subscribers.tt:17
 #: ../root/label/subscribers.tt:17 ../root/series/subscribers.tt:17
