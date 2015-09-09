@@ -16,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2015-09-09 16:57+0000\n"
+"PO-Revision-Date: 2015-09-09 17:58+0000\n"
 "Last-Translator: Trans-fr\n"
 "Language-Team: French (http://www.transifex.com/musicbrainz/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -118,13 +118,13 @@ msgstr "Page Bandsintown pour"
 #: DB:link_type/link_phrase:852 DB:link_type/link_phrase:853
 #: DB:link_type/reverse_link_phrase:854
 msgid "BookBrainz"
-msgstr ""
+msgstr "BookBrainz"
 
 #: DB:link_type/link_phrase:854 DB:link_type/reverse_link_phrase:850
 #: DB:link_type/reverse_link_phrase:851 DB:link_type/reverse_link_phrase:852
 #: DB:link_type/reverse_link_phrase:853
 msgid "BookBrainz page for"
-msgstr ""
+msgstr "Page BookBrainz pour"
 
 #: DB:link_type/link_phrase:8 DB:link_type/link_phrase:227
 msgid "DJ-mix of"
@@ -348,7 +348,7 @@ msgstr "Indique qu'un artiste a révisé l’œuvre. Dans la plupart des cas, il
 msgid ""
 "Indicates that an event was intended as a performance of a specific release "
 "group (usually an album)."
-msgstr ""
+msgstr "Indique que le but d'un événement était la représentation d'un groupe de parution particulier (habituellement un album)."
 
 #: DB:link_attribute_type/description:567
 msgid "Indicates that one entity is a cover of another entity"
@@ -465,11 +465,11 @@ msgstr "Indique la page Web officielle d'un événement."
 #: DB:link_type/description:871
 msgid ""
 "Indicates the person who translated the lyrics/libretto for this release."
-msgstr ""
+msgstr "Indique la personne ayant traduit les paroles/le livret pour cette parution."
 
 #: DB:link_type/description:872
 msgid "Indicates the person who translated the lyrics/libretto for this work."
-msgstr ""
+msgstr "Indique la personne ayant traduit les paroles/le livret pour cette œuvre."
 
 #: DB:link_type/description:716
 msgid "Indicates the place where the work had its first performance"
@@ -511,43 +511,43 @@ msgstr "Chanteur principal, solo"
 msgid ""
 "Links a recording to the area it was arranged in. Use only when the place is"
 " unknown!"
-msgstr ""
+msgstr "Relie un enregistrement à la région où il a été arrangé. À n'utiliser que si le lieu est inconnu !"
 
 #: DB:link_type/description:821
 msgid ""
 "Links a recording to the area it was edited in. Use only when the place is "
 "unknown!"
-msgstr "Relie un enregistrement à la région dans laquelle il a été monté. À n'utiliser que lorsque le lieu est inconnu !"
+msgstr "Relie un enregistrement à la région où il a été monté. À n'utiliser que lorsque le lieu est inconnu !"
 
 #: DB:link_type/description:814
 msgid ""
 "Links a recording to the area it was engineered in. Use only when the place "
 "is unknown!"
-msgstr "Relie un enregistrement à la région dans laquelle il a été techniquement conçu. À n'utiliser que si le lieu est inconnu !"
+msgstr "Relie un enregistrement à la région où il a été techniquement conçu. À n'utiliser que si le lieu est inconnu !"
 
 #: DB:link_type/description:758
 msgid ""
 "Links a recording to the area it was mixed in. Use only when the place is "
 "unknown!"
-msgstr "Relie un enregistrement à la région dans laquelle il a été mixé. À n'utiliser que si le lieu est inconnu !"
+msgstr "Relie un enregistrement à la région où il a été mixé. À n'utiliser que si le lieu est inconnu !"
 
 #: DB:link_type/description:827
 msgid ""
 "Links a recording to the area it was produced in. Use only when the place is"
 " unknown!"
-msgstr "Relie un enregistrement à la région dans laquelle il a été produit. À n'utiliser que lorsque le lieu est inconnu !"
+msgstr "Relie un enregistrement à la région où il a été produit. À n'utiliser que lorsque le lieu est inconnu !"
 
 #: DB:link_type/description:698
 msgid ""
 "Links a recording to the area it was recorded in. Use only when the place is"
 " unknown!"
-msgstr "Relie un enregistrement vers la région où il a été enregistré. À n'utiliser que si le lieu est inconnu!"
+msgstr "Relie un enregistrement à la région où il a été enregistré. À n'utiliser que si le lieu est inconnu !"
 
 #: DB:link_type/description:830
 msgid ""
 "Links a recording to the area it was remixed in. Use only when the place is "
 "unknown!"
-msgstr "Relie un enregistrement à la région dans laquelle il a été remixé. À n'utiliser que lorsque le lieu est inconnu !"
+msgstr "Relie un enregistrement à la région où il a été remixé. À n'utiliser que lorsque le lieu est inconnu !"
 
 #: DB:link_type/description:809
 msgid "Links a recording to the event it was recorded at."
@@ -555,7 +555,7 @@ msgstr "Relie un enregistrement à l'événement durant lequel il a été enregi
 
 #: DB:link_type/description:866
 msgid "Links a recording to the place it was arranged at."
-msgstr ""
+msgstr "Relie un enregistrement au lieu où il a été arrangé."
 
 #: DB:link_type/description:819
 msgid "Links a recording to the place it was edited at."
@@ -567,7 +567,7 @@ msgstr "Relie un enregistrement au lieu où il a été techniquement conçu."
 
 #: DB:link_type/description:694
 msgid "Links a recording to the place it was mixed at."
-msgstr "Relie un enregistrement vers le lieu où il a été mixé."
+msgstr "Relie un enregistrement au lieu où il a été mixé."
 
 #: DB:link_type/description:825
 msgid "Links a recording to the place it was produced at."
@@ -575,7 +575,7 @@ msgstr "Relie un enregistrement au lieu où il a été produit."
 
 #: DB:link_type/description:693
 msgid "Links a recording to the place it was recorded at."
-msgstr "Relie un enregistrement vers le lieu où il a été enregistré."
+msgstr "Relie un enregistrement au lieu où il a été enregistré."
 
 #: DB:link_type/description:829
 msgid "Links a recording to the place it was remixed at."
@@ -589,13 +589,13 @@ msgstr "Relie un groupe de parution à un événement de lancement."
 msgid ""
 "Links a release to the area it was arranged in. Use only when the place is "
 "unknown!"
-msgstr ""
+msgstr "Relie une parution à la région où elle a été arrangée. À n'utiliser que si le lieu est inconnu !"
 
 #: DB:link_type/description:822
 msgid ""
 "Links a release to the area it was edited in. Use only when the place is "
 "unknown!"
-msgstr "Relie une parution à la région dans laquelle elle a été montée. À n'utiliser que lorsque le lieu est inconnu !"
+msgstr "Relie une parution à la région où elle a été montée. À n'utiliser que lorsque le lieu est inconnu !"
 
 #: DB:link_type/description:815
 msgid ""
@@ -611,35 +611,35 @@ msgstr "Relie une parution à la région où elle a été fabriquée."
 msgid ""
 "Links a release to the area it was mastered in. Use only when the place is "
 "unknown!"
-msgstr "Relie une parution à la région dans laquelle elle a été matricée. À n'utiliser que si le lieu est inconnu !"
+msgstr "Relie une parution à la région où elle a été matricée. À n'utiliser que si le lieu est inconnu !"
 
 #: DB:link_type/description:757
 msgid ""
 "Links a release to the area it was mixed in. Use only when the place is "
 "unknown!"
-msgstr "Relie une parution à la région dans laquelle elle a été mixée. À n'utiliser que si le lieu est inconnu !"
+msgstr "Relie une parution à la région où elle a été mixée. À n'utiliser que si le lieu est inconnu !"
 
 #: DB:link_type/description:849
 msgid "Links a release to the area it was printed in."
-msgstr ""
+msgstr "Relie une parution à la région où elle a été imprimée."
 
 #: DB:link_type/description:826
 msgid ""
 "Links a release to the area it was produced in. Use only when the place is "
 "unknown!"
-msgstr "Relie une parution à la région dans laquelle elle a été produite. À n'utiliser que lorsque le lieu est inconnu !"
+msgstr "Relie une parution à la région où elle a été produite. À n'utiliser que lorsque le lieu est inconnu !"
 
 #: DB:link_type/description:699
 msgid ""
 "Links a release to the area it was recorded in. Use only when the place is "
 "unknown!"
-msgstr "Relie une parution vers la région où elle a été enregistrée. À n'utiliser que si le lieu est inconnu!"
+msgstr "Relie une parution à la région où elle a été enregistrée. À n'utiliser que si le lieu est inconnu !"
 
 #: DB:link_type/description:831
 msgid ""
 "Links a release to the area it was remixed in. Use only when the place is "
 "unknown!"
-msgstr "Relie une parution à la région dans laquelle elle a été remixée. À n'utiliser que lorsque le lieu est inconnu !"
+msgstr "Relie une parution à la région où elle a été remixée. À n'utiliser que lorsque le lieu est inconnu !"
 
 #: DB:link_type/description:810
 msgid "Links a release to the event it was recorded at."
@@ -647,7 +647,7 @@ msgstr "Relie une parution à l'événement où elle a été enregistrée."
 
 #: DB:link_type/description:865
 msgid "Links a release to the place it was arranged at."
-msgstr ""
+msgstr "Relie une parution au lieu où elle a été arrangée."
 
 #: DB:link_type/description:820
 msgid "Links a release to the place it was edited at."
@@ -659,11 +659,11 @@ msgstr "Relie une parution au lieu où elle a été techniquement conçue."
 
 #: DB:link_type/description:697
 msgid "Links a release to the place it was mastered at."
-msgstr "Relie une parution vers le lieu ou elle a été matricée."
+msgstr "Relie une parution au lieu ou elle a été matricée."
 
 #: DB:link_type/description:696
 msgid "Links a release to the place it was mixed at."
-msgstr "Relie une parution vers le lieu ou elle a été mixée."
+msgstr "Relie une parution au lieu ou elle a été mixée."
 
 #: DB:link_type/description:824
 msgid "Links a release to the place it was produced at."
@@ -671,7 +671,7 @@ msgstr "Relie une parution au lieu où elle a été produite."
 
 #: DB:link_type/description:695
 msgid "Links a release to the place it was recorded at."
-msgstr "Relie une parution vers le lieu ou elle a été enregistrée."
+msgstr "Relie une parution au lieu ou elle a été enregistrée."
 
 #: DB:link_type/description:828
 msgid "Links a release to the place it was remixed at."
@@ -751,23 +751,23 @@ msgstr "Autres vocalisations"
 
 #: DB:link_type/description:852
 msgid "Points to the BookBrainz page for this artist."
-msgstr ""
+msgstr "Dirige vers la page BookBrainz pour cet artiste."
 
 #: DB:link_type/description:851
 msgid "Points to the BookBrainz page for this label."
-msgstr ""
+msgstr "Dirige vers la page BookBrainz pour ce label"
 
 #: DB:link_type/description:853
 msgid "Points to the BookBrainz page for this release group."
-msgstr ""
+msgstr "Dirige vers la page BookBrainz pour ce groupe de parution."
 
 #: DB:link_type/description:850
 msgid "Points to the BookBrainz page for this release."
-msgstr ""
+msgstr "Dirige vers la page BookBrainz pour cette parution."
 
 #: DB:link_type/description:854
 msgid "Points to the BookBrainz page for this work."
-msgstr ""
+msgstr "Dirige vers la page BookBrainz pour cette œuvre."
 
 #: DB:link_type/description:713
 msgid "Points to the Geonames page for this area."
