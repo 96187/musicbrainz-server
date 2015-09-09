@@ -32,7 +32,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-08 13:34-0500\n"
-"PO-Revision-Date: 2015-09-09 15:59+0000\n"
+"PO-Revision-Date: 2015-09-09 16:56+0000\n"
 "Last-Translator: Trans-fr\n"
 "Language-Team: French (http://www.transifex.com/musicbrainz/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -431,7 +431,7 @@ msgstr "Une liste de pistes est exigée."
 msgid ""
 "A value of 1 or 2 indicates that either entity1 or entity0 are orderable, "
 "respectively."
-msgstr "Une valeur de 1 ou 2 indique qu'il est possible de commander entité1 ou entité0, respectivement."
+msgstr "Une valeur de 1 ou 2 indique qu'il est possible de trier d'après entité1 ou entité0, respectivement."
 
 #: ../root/layout/menu.tt:122
 msgid "About"
@@ -1018,7 +1018,7 @@ msgid ""
 "An alias is an alternate name for an entity. They typically contain common "
 "mispellings or variations of the name and are also used to improve search "
 "results. View the {doc|alias documentation} for more details."
-msgstr "Un alias est un autre nom pour une entité. Il contient habituellement des erreurs d'orthographe ou des variations du nom, et est aussi utilisé pour améliorer les résultats de recherche. Consultez la {doc|documentation sur les alias} pour plus de détails."
+msgstr "Un alias est un nom alternatif pour une entité. Il contient habituellement des erreurs d'orthographe ou des variations du nom. Il est aussi utilisé pour améliorer les résultats de recherche. Consultez la {doc|documentation sur les alias} pour plus de détails."
 
 #: ../root/artist/subscribers.tt:17 ../root/collection/subscribers.tt:17
 #: ../root/label/subscribers.tt:17 ../root/series/subscribers.tt:17
@@ -1032,7 +1032,7 @@ msgstr[1] "{n} utilisateurs anonymes"
 msgid ""
 "An entity with that name and disambiguation already exists. You must enter a"
 " unique disambiguation comment."
-msgstr "Une entité portant ce nom ou cette désambiguïsation existe déjà. Vous devez saisir un commentaire unique de désambiguïsation."
+msgstr "Une entité portant ce nom ou avec cette désambiguïsation existe déjà. Vous devez saisir un commentaire unique de désambiguïsation."
 
 #: ../root/edit/list.tt:68
 msgid "An error occured while loading this edit"
@@ -2308,11 +2308,11 @@ msgstr "Modification en cours de création..."
 
 #: ../root/components/relationships-table.tt:8
 msgid "Credited As"
-msgstr "Crédité comme"
+msgstr "Crédité en tant que"
 
 #: ../root/components/relationship-editor.tt:44
 msgid "Credited as:"
-msgstr "Crédité comme :"
+msgstr "Crédité en tant que :"
 
 #: ../root/release/index.tt:61
 msgid "Credits"
@@ -5386,7 +5386,7 @@ msgstr "Ou..."
 #: ../root/edit/details/edit_relationship_type.tt:61
 #: ../root/relationship/linktype/form.tt:37
 msgid "Orderable direction:"
-msgstr ""
+msgstr "Direction de tri :"
 
 #: ../root/components/series-list.tt:7 ../root/series/merge.tt:14
 msgid "Ordering Type"
@@ -9997,7 +9997,7 @@ msgstr "Attributs de l’œuvre"
 
 #: ../root/user/collections.tt:2
 msgid "Work Collections"
-msgstr "Collections d'oeuvres"
+msgstr "Collections d’œuvres"
 
 #: ../root/work/edit_form.tt:12
 msgid "Work Details"
@@ -10361,7 +10361,7 @@ msgstr "Vous devez être connecté pour voter sur les modifications"
 
 #: ../root/components/common-macros.tt:1051
 msgid "You must enter a disambiguation comment for this entity."
-msgstr ""
+msgstr "Vous devez saisir un commentaire de désambiguïsation pour cette entité."
 
 #: ../root/release/edit/tracklist.tt:352
 msgid "You must enter a title and select an artist for every track."
@@ -10564,7 +10564,7 @@ msgstr "annulé"
 #: ../root/components/relationship-editor.tt:185
 #: ../root/components/relationship-editor.tt:230
 msgid "credited as"
-msgstr "crédité comme"
+msgstr "crédité en tant que"
 
 #: ../root/admin/wikidoc/index.tt:53
 msgid "diff"
@@ -11020,8 +11020,8 @@ msgstr "{entity} par {artist}"
 #: ../root/entity/collections.tt:4
 msgid "{entity} has been added to {num} collection:"
 msgid_plural "{entity} has been added to {num} collections:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{entity} a été ajouté à {num} collection :"
+msgstr[1] "{entity} a été ajouté à {num} collections :"
 
 #: ../root/components/aliases.tt:73
 msgid "{entity} has no aliases."
@@ -11029,7 +11029,7 @@ msgstr "{entity} n'a pas d'alias."
 
 #: ../root/entity/collections.tt:23
 msgid "{entity} has not been added to any collections."
-msgstr ""
+msgstr "{entity} n'a été ajouté à aucune collection."
 
 #: ../root/entity/ratings.tt:22
 msgid "{link} has no ratings."
@@ -11536,7 +11536,7 @@ msgstr "L'éditeur nommé {name} n'a pas d'adresse courriel attaché à son comp
 msgid ""
 "You cannot contact other users because you have not {url|confirmed your "
 "email address}."
-msgstr ""
+msgstr "Vous ne pouvez pas contacter d'autres utilisateurs car vous n'avez pas {url|confirmé votre adresse courriel}."
 
 #: ../lib/MusicBrainz/Server/Controller/User.pm:292
 msgid "Your message could not be sent"
@@ -11762,7 +11762,7 @@ msgstr "Modifier la parution"
 #: ../lib/MusicBrainz/Server/Edit/Historic/ChangeTrackArtist.pm:12
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditTrackNum.pm:11
 msgid "Edit track (historic)"
-msgstr ""
+msgstr "Modifier la piste (historique)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditLink.pm:17
 #: ../lib/MusicBrainz/Server/Edit/Relationship/Edit.pm:34
@@ -11906,7 +11906,7 @@ msgstr "Modifier le support"
 
 #: ../lib/MusicBrainz/Server/Edit/PUID/Delete.pm:15
 msgid "Remove PUID (historic)"
-msgstr ""
+msgstr "Retirer le PUID (historique)"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/AddAlias.pm:11
 msgid "Add place alias"
@@ -11942,7 +11942,7 @@ msgstr "Fusionner des lieux"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/AddAlias.pm:11
 msgid "Add recording alias"
-msgstr ""
+msgstr "Ajouter un alias d'enregistrement"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/AddAnnotation.pm:12
 msgid "Add recording annotation"
@@ -11954,7 +11954,7 @@ msgstr "Ajouter des ISRC"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/AddPUIDs.pm:16
 msgid "Add PUIDs (historic)"
-msgstr ""
+msgstr "Ajouter des PUID (historique)"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/Create.pm:24
 msgid "Add standalone recording"
@@ -11966,11 +11966,11 @@ msgstr "Enlever un enregistrement"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/DeleteAlias.pm:14
 msgid "Remove recording alias"
-msgstr ""
+msgstr "Retirer l'alias d'enregistrement"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/EditAlias.pm:12
 msgid "Edit recording alias"
-msgstr ""
+msgstr "Modifier l'alias d'enregistrement"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/Merge.pm:14
 msgid "Merge recordings"
@@ -12010,7 +12010,7 @@ msgstr "Réorganiser les relations"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/AddAlias.pm:11
 msgid "Add release alias"
-msgstr ""
+msgstr "Ajouter un alias de parution"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/AddCoverArt.pm:20
 msgid "Add cover art"
@@ -12022,7 +12022,7 @@ msgstr "Ajouter un label à la parution"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/DeleteAlias.pm:14
 msgid "Remove release alias"
-msgstr ""
+msgstr "Retirer l'alias de parution"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/DeleteReleaseLabel.pm:19
 msgid "Remove release label"
@@ -12030,7 +12030,7 @@ msgstr "Enlever un label à la parution"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/EditAlias.pm:12
 msgid "Edit release alias"
-msgstr ""
+msgstr "Modifier l'alias de parution"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/EditBarcodes.pm:19
 msgid "Edit barcodes"
@@ -12058,7 +12058,7 @@ msgstr "Réordonner les supports"
 
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/AddAlias.pm:11
 msgid "Add release group alias"
-msgstr ""
+msgstr "Ajouter un alias de groupe de parution"
 
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/AddAnnotation.pm:12
 msgid "Add release group annotation"
@@ -12070,7 +12070,7 @@ msgstr "Enlever le groupe de parution"
 
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/DeleteAlias.pm:14
 msgid "Remove release group alias"
-msgstr ""
+msgstr "Retirer l'alias de groupe de parution"
 
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/Edit.pm:38
 msgid "Edit release group"
@@ -12078,7 +12078,7 @@ msgstr "Modifier le groupe de parution"
 
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/EditAlias.pm:12
 msgid "Edit release group alias"
-msgstr ""
+msgstr "Modifier l'alias de groupe de parution"
 
 #: ../lib/MusicBrainz/Server/Edit/Series/AddAlias.pm:11
 msgid "Add series alias"
@@ -12327,7 +12327,7 @@ msgstr "{begindate} &#x2013;"
 #: ../lib/MusicBrainz/Server/Entity/Role/Linkable.pm:35
 #, perl-brace-format
 msgid "{role} (as {credited_name})"
-msgstr ""
+msgstr "{role} (en tant que {credited_name})"
 
 #: ../lib/MusicBrainz/Server/Entity/URL/IMSLP.pm:37
 msgid "Score at IMSLP"
@@ -12796,39 +12796,39 @@ msgstr "Image {current} sur {total}"
 
 #: ../root/static/scripts/common/components/TagEditor.js:70
 msgid "Upvote"
-msgstr ""
+msgstr "Donner mon vote"
 
 #: ../root/static/scripts/common/components/TagEditor.js:71
 msgid "You’ve upvoted this tag"
-msgstr ""
+msgstr "Vous avez promu cette balise"
 
 #: ../root/static/scripts/common/components/TagEditor.js:79
 msgid "Downvote"
-msgstr ""
+msgstr "Retirer mon vote"
 
 #: ../root/static/scripts/common/components/TagEditor.js:80
 msgid "You’ve downvoted this tag"
-msgstr ""
+msgstr "Vous avez retiré votre vote pour cette balise"
 
 #: ../root/static/scripts/common/components/TagEditor.js:293
 msgid ""
 "Tags with a score of zero or below, and tags that you’ve downvoted are "
 "hidden."
-msgstr ""
+msgstr "Les balises ayant un score de zéro ou moins, ainsi que les balises pour lesquelles vous avez retiré votre vote, sont cachées."
 
 #: ../root/static/scripts/common/components/TagEditor.js:296
 msgid "Show all tags."
-msgstr ""
+msgstr "Montrer toutes les balises"
 
 #: ../root/static/scripts/common/components/TagEditor.js:300
 msgid "Add Tags"
-msgstr ""
+msgstr "Ajouter des balises"
 
 #: ../root/static/scripts/common/components/TagEditor.js:302
 msgid ""
 "You can add your own {tagdocs|tags} below. Use commas to separate multiple "
 "tags."
-msgstr ""
+msgstr "Vous pouvez ajouter vos propres {tagdocs|balises} ci-dessous. Utilisez des virgules pour séparer les balises."
 
 #: ../root/static/scripts/common/components/TagEditor.js:309
 msgid "Submit tags"
@@ -12930,25 +12930,25 @@ msgstr "Champ requis."
 
 #: ../root/static/scripts/edit/components/EntityLink.js:25
 msgid "(video)"
-msgstr ""
+msgstr "(vidéo)"
 
 #: ../root/static/scripts/edit/components/PossibleDuplicates.js:14
 msgid "Possible Duplicates"
-msgstr ""
+msgstr "Doublons possibles"
 
 #: ../root/static/scripts/edit/components/PossibleDuplicates.js:15
 msgid "We found the following entities with very similar names:"
-msgstr ""
+msgstr "Nous avons trouvé les entités suivantes avec des noms très similaires :"
 
 #: ../root/static/scripts/edit/components/PossibleDuplicates.js:23
 msgid "Yes, I still want to enter “{entity_name}”."
-msgstr ""
+msgstr "Oui, je veux quand même saisir « {entity_name} »."
 
 #: ../root/static/scripts/edit/components/PossibleDuplicates.js:27
 msgid ""
 "Please enter a {doc_disambiguation|disambiguation} to help distinguish this "
 "entity from the others."
-msgstr ""
+msgstr "Veuillez saisir une {doc_disambiguation|désambiguïsation} pour aider à distinguer cette entité des autres."
 
 #: ../root/static/scripts/edit/confirmNavigationFallback.js:34
 #: ../root/static/scripts/relationship-editor/release.js:70
