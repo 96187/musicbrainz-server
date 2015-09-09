@@ -32,8 +32,8 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-08 13:34-0500\n"
-"PO-Revision-Date: 2015-09-08 18:59+0000\n"
-"Last-Translator: Michael Wiencek <email address hidden>\n"
+"PO-Revision-Date: 2015-09-09 15:59+0000\n"
+"Last-Translator: Trans-fr\n"
 "Language-Team: French (http://www.transifex.com/musicbrainz/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -431,7 +431,7 @@ msgstr "Une liste de pistes est exigée."
 msgid ""
 "A value of 1 or 2 indicates that either entity1 or entity0 are orderable, "
 "respectively."
-msgstr ""
+msgstr "Une valeur de 1 ou 2 indique qu'il est possible de commander entité1 ou entité0, respectivement."
 
 #: ../root/layout/menu.tt:122
 msgid "About"
@@ -1018,7 +1018,7 @@ msgid ""
 "An alias is an alternate name for an entity. They typically contain common "
 "mispellings or variations of the name and are also used to improve search "
 "results. View the {doc|alias documentation} for more details."
-msgstr ""
+msgstr "Un alias est un autre nom pour une entité. Il contient habituellement des erreurs d'orthographe ou des variations du nom, et est aussi utilisé pour améliorer les résultats de recherche. Consultez la {doc|documentation sur les alias} pour plus de détails."
 
 #: ../root/artist/subscribers.tt:17 ../root/collection/subscribers.tt:17
 #: ../root/label/subscribers.tt:17 ../root/series/subscribers.tt:17
@@ -1032,7 +1032,7 @@ msgstr[1] "{n} utilisateurs anonymes"
 msgid ""
 "An entity with that name and disambiguation already exists. You must enter a"
 " unique disambiguation comment."
-msgstr ""
+msgstr "Une entité portant ce nom ou cette désambiguïsation existe déjà. Vous devez saisir un commentaire unique de désambiguïsation."
 
 #: ../root/edit/list.tt:68
 msgid "An error occured while loading this edit"
@@ -1227,7 +1227,7 @@ msgstr "Région"
 
 #: ../root/user/collections.tt:2
 msgid "Area Collections"
-msgstr ""
+msgstr "Collections de régions"
 
 #: ../root/area/edit_form.tt:9
 msgid "Area Details"
@@ -1304,7 +1304,7 @@ msgstr "Région de l'artiste"
 
 #: ../root/user/collections.tt:2
 msgid "Artist Collections"
-msgstr ""
+msgstr "Collections d'artistes"
 
 #: ../root/edit/details/edit_artist_credit.tt:5
 msgid "Artist Credit:"
@@ -1617,7 +1617,7 @@ msgstr "Revenir aux élections"
 
 #: ../root/components/common-macros.tt:1023
 msgid "Backward"
-msgstr ""
+msgstr "Retour"
 
 #: ../root/report/bad_amazon_urls.tt:1 ../root/report/bad_amazon_urls.tt:3
 msgid "Bad Amazon URLs"
@@ -2009,7 +2009,7 @@ msgstr "Changer tous les artistes pour cette parution qui correspondent à « {n
 
 #: ../root/components/relationship-editor.tt:87
 msgid "Change direction"
-msgstr "Changer de sens"
+msgstr "Changer de direction"
 
 #: ../root/release/change_quality.tt:1 ../root/release/change_quality.tt:2
 msgid "Change release data quality"
@@ -2023,7 +2023,7 @@ msgstr "Modifier la qualité de la parution"
 
 #: ../root/edit/details/historic/move_release.tt:14
 msgid "Change track artists:"
-msgstr ""
+msgstr "Changer les artistes des pistes :"
 
 #: ../root/annotation/common.tt:9 ../root/annotation/edit.tt:24
 #: ../root/edit/details/add_event_annotation.tt:7
@@ -2308,11 +2308,11 @@ msgstr "Modification en cours de création..."
 
 #: ../root/components/relationships-table.tt:8
 msgid "Credited As"
-msgstr ""
+msgstr "Crédité comme"
 
 #: ../root/components/relationship-editor.tt:44
 msgid "Credited as:"
-msgstr ""
+msgstr "Crédité comme :"
 
 #: ../root/release/index.tt:61
 msgid "Credits"
@@ -2490,7 +2490,7 @@ msgstr "Date de décès : "
 
 #: ../root/edit/details/change_wikidoc.tt:35
 msgid "Diff"
-msgstr ""
+msgstr "Diff"
 
 #: ../root/search/form.tt:35 ../root/search/form.tt:40
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:61
@@ -3331,7 +3331,7 @@ msgstr "Forums"
 
 #: ../root/components/common-macros.tt:1023
 msgid "Forward"
-msgstr ""
+msgstr "Avance"
 
 #: ../root/doc/relationship_type.tt:43
 #: ../root/relationship/linktype/form.tt:13
@@ -3581,11 +3581,11 @@ msgstr "Deviner la casse de la piste"
 #: ../root/components/forms.tt:218 ../root/release/edit/information.tt:15
 #: ../root/release/edit/tracklist.tt:215
 msgid "Guess feat. artists"
-msgstr ""
+msgstr "Deviner les artistes invités"
 
 #: ../root/release/edit/tracklist.tt:421
 msgid "Guess feat. artists from track titles"
-msgstr ""
+msgstr "Deviner les artistes invités à partir des titres de piste"
 
 #: ../root/components/forms.tt:229
 msgid "Guess sort name"
@@ -3969,7 +3969,7 @@ msgstr "Instrument"
 
 #: ../root/user/collections.tt:2
 msgid "Instrument Collections"
-msgstr ""
+msgstr "Collections d'instruments"
 
 #: ../root/components/recordings-list.tt:34
 #: ../root/components/releases-list.tt:26
@@ -4085,7 +4085,7 @@ msgstr "Code de label :"
 
 #: ../root/user/collections.tt:2
 msgid "Label Collections"
-msgstr ""
+msgstr "Collections de labels"
 
 #: ../root/label/edit_form.tt:11
 msgid "Label Details"
@@ -5529,7 +5529,7 @@ msgstr "Lieu"
 
 #: ../root/user/collections.tt:2
 msgid "Place Collections"
-msgstr ""
+msgstr "Collections de lieux"
 
 #: ../root/place/edit_form.tt:11
 msgid "Place Details"
@@ -5877,7 +5877,7 @@ msgstr "Enregistrement"
 
 #: ../root/user/collections.tt:2
 msgid "Recording Collections"
-msgstr ""
+msgstr "Colletions d'enregistrements"
 
 #: ../root/recording/edit_form.tt:24
 msgid "Recording Details"
@@ -6161,7 +6161,7 @@ msgstr "Groupe de parution"
 
 #: ../root/user/collections.tt:2
 msgid "Release Group Collections"
-msgstr ""
+msgstr "Collections de groupes de parution"
 
 #: ../root/release_group/edit_form.tt:13
 msgid "Release Group Details"
@@ -6653,7 +6653,7 @@ msgstr "Enlever les entités sélectionnées"
 
 #: ../root/collection/index.tt:16
 msgid "Remove selected items from collection"
-msgstr ""
+msgstr "Retirer de la collection les éléments sélectionnés"
 
 #: ../root/release/edit/tracklist.tt:217
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveTrack.pm:10
@@ -6675,7 +6675,7 @@ msgstr "Enlevé"
 
 #: ../root/edit/details/merge_artists.tt:4
 msgid "Rename artist and relationship credits"
-msgstr ""
+msgstr "Renommer l'artiste et les crédits de relation"
 
 #: ../root/release/cover_art.tt:54
 msgctxt "button/menu"
@@ -7080,7 +7080,7 @@ msgstr "Série"
 #: ../root/user/collections.tt:2
 msgctxt "plural"
 msgid "Series Collections"
-msgstr ""
+msgstr "Collections de séries"
 
 #: ../root/series/edit_form.tt:11
 msgid "Series Details"
@@ -8071,7 +8071,7 @@ msgstr "Ces images sont fournies par la {caa|« Cover Art Archive » (archive d'
 
 #: ../root/forms/relationship-editor.tt:62
 msgid "These relationships have a specific ordering"
-msgstr ""
+msgstr "Ces relations ont un ordre particulier"
 
 #: ../root/cdstub/edit_form.tt:9
 msgid "This CD has tracks from more than one artist (e.g. a compilation CD)"
@@ -8197,7 +8197,7 @@ msgstr[1] "Ce changement affecte {num} relations."
 
 #: ../root/collection/index.tt:19
 msgid "This collection is empty."
-msgstr ""
+msgstr "Cette collection est vide."
 
 #: ../root/release/edit/tracklist.tt:412
 msgid "This disc contains data tracks at the end ({info|more info})"
@@ -8209,7 +8209,7 @@ msgstr "Ce disque a un silence préliminaire caché avant la piste 1 ({info|plus
 
 #: ../root/edit/details/edit_release.tt:81
 msgid "This edit also changed the track artists."
-msgstr ""
+msgstr "Cette modification a aussi changé les artistes des pistes."
 
 #: ../root/edit/details/edit_medium.tt:180
 msgid "This edit changes which tracks are data tracks."
@@ -9304,7 +9304,7 @@ msgstr "Durée des pistes :"
 
 #: ../root/edit/details/historic/edit_track.tt:19
 msgid "Track number"
-msgstr ""
+msgstr "Numéro de piste"
 
 #: ../root/edit/details/historic/add_track_kv.tt:26
 #: ../root/edit/details/historic/add_track_old.tt:26
@@ -9571,7 +9571,7 @@ msgstr "Mettre à jour la collection"
 #: ../root/artist/merge.tt:19
 msgid ""
 "Update matching artist and relationship credits to use the new artist’s name"
-msgstr ""
+msgstr "Mettre à jour l'artiste et les crédits de relation correspondants avec le nouveau nom d'artiste. "
 
 #: ../root/release/edit/recordings.tt:81
 msgid "Update the recording artist credit to match the track artist credit."
@@ -9724,7 +9724,7 @@ msgstr "Voir les détails"
 
 #: ../root/edit/details/change_wikidoc.tt:36
 msgid "View diff"
-msgstr ""
+msgstr "Visualiser les diff"
 
 #: ../root/admin/wikidoc/index.tt:63
 msgid "View on wiki"
@@ -9997,7 +9997,7 @@ msgstr "Attributs de l’œuvre"
 
 #: ../root/user/collections.tt:2
 msgid "Work Collections"
-msgstr ""
+msgstr "Collections d'oeuvres"
 
 #: ../root/work/edit_form.tt:12
 msgid "Work Details"
