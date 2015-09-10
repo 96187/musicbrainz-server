@@ -16,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2015-09-10 19:54+0000\n"
+"PO-Revision-Date: 2015-09-10 20:58+0000\n"
 "Last-Translator: Trans-fr\n"
 "Language-Team: French (http://www.transifex.com/musicbrainz/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -1612,7 +1612,7 @@ msgstr "Ceci relie une parution MusicBrainz à son entrée équivalente sur Amaz
 msgid ""
 "This links a group (often an orchestra) to a composer who has a composer-in-"
 "residence position with the group."
-msgstr "Ce"
+msgstr "Relie un groupe (souvent un orchestre) à un compositeur qui est le compositeur résident du groupe."
 
 #: DB:link_type/description:304
 msgid ""
@@ -1687,7 +1687,7 @@ msgid ""
 "for tribute albums consisting of covers of the artist, use the <a "
 "href=\"/relationship/5e2907db-49ec-4a48-9f11-dfb99d2603ff\">tribute "
 "relationship</a>."
-msgstr ""
+msgstr "Relie un groupe de parution à un artiste auquel il est dédié, pour des dédicaces telles que « Cet album est dédié à la mémoire de... (artiste) ». Pour des albums hommage composés de reprises de l'artiste, utiliser la relation <a href=\"/relationship/5e2907db-49ec-4a48-9f11-dfb99d2603ff\">hommage</a>."
 
 #: DB:link_type/description:65
 msgid ""
@@ -1697,7 +1697,7 @@ msgid ""
 "by other (sometimes very unknown) bands, to honor the target artist. Often "
 "they are various artist compilations, but a single artist can perform the "
 "entire tribute album."
-msgstr ""
+msgstr "Relie un groupe de parution à un artiste pour indiquer que c'est un album hommage. Les albums hommage on souvent un titre comme « Hommage à Artiste » et ils sont constitués de reprises de chansons de l'artiste visé, jouées par d'autres groupes (parfois vraiment inconnus) pour honorer l'artiste visé. Ce sont souvent des compilations d'artistes divers, mais un artiste seul peut interpréter l'album hommage en entier."
 
 #: DB:link_type/description:301
 msgid "This links a release to a license under which it is available."
@@ -1731,7 +1731,7 @@ msgstr "Ceci relie une parution à la personne l'ayant remixée en prenant une o
 msgid ""
 "This links a series (most commonly, but not necessarily always, a music "
 "festival) to its official page at SoundCloud."
-msgstr ""
+msgstr "Relie une série (plus habituellement, mais pas toujours, un festival de musique) à sa page officielle sur SoundCloud."
 
 #: DB:link_type/description:805
 msgid ""
@@ -1763,59 +1763,59 @@ msgstr "Ceci relie un sous-groupe au groupe à partir duquel il a été créé. 
 
 #: DB:link_type/description:885
 msgid "This links a work with the area it was arranged in."
-msgstr ""
+msgstr "Relie une œuvre à la région où elle a été arrangée."
 
 #: DB:link_type/description:875
 msgid "This links a work with the area it was composed in."
-msgstr ""
+msgstr "Relie une œuvre à la région où elle a été composée."
 
 #: DB:link_type/description:881
 msgid "This links a work with the area it was revised in."
-msgstr ""
+msgstr "Relie une œuvre à la région où elle a été révisée."
 
 #: DB:link_type/description:884
 msgid "This links a work with the area it was translated in."
-msgstr ""
+msgstr "Relie une œuvre à la région où elle a été traduite."
 
 #: DB:link_type/description:873
 msgid "This links a work with the area it was written in."
-msgstr ""
+msgstr "Relie une œuvre à la région où elle a été composée."
 
 #: DB:link_type/description:879
 msgid "This links a work with the area its libretto was written in."
-msgstr ""
+msgstr "Relie une œuvre à la région où son livret a été rédigé."
 
 #: DB:link_type/description:877
 msgid "This links a work with the area its lyrics were written in."
-msgstr ""
+msgstr "Relie une œuvre à la région où ses paroles ont été rédigées."
 
 #: DB:link_type/description:886
 msgid "This links a work with the place it was arranged at."
-msgstr ""
+msgstr "Relie une œuvre au lieu où elle a été arrangée."
 
 #: DB:link_type/description:876
 msgid "This links a work with the place it was composed at."
-msgstr ""
+msgstr "Relie une œuvre au lieu où elle a été composée."
 
 #: DB:link_type/description:882
 msgid "This links a work with the place it was revised at."
-msgstr ""
+msgstr "Relie une œuvre au lieu où elle a été révisée."
 
 #: DB:link_type/description:883
 msgid "This links a work with the place it was translated at."
-msgstr ""
+msgstr "Relie une œuvre au lieu où elle a été traduite."
 
 #: DB:link_type/description:874
 msgid "This links a work with the place it was written at."
-msgstr ""
+msgstr "Relie une œuvre au lieu où elle a été composée."
 
 #: DB:link_type/description:880
 msgid "This links a work with the place its libretto was written at."
-msgstr ""
+msgstr "Relie une œuvre au lieu où son livret a été rédigé."
 
 #: DB:link_type/description:878
 msgid "This links a work with the place its lyrics were written at."
-msgstr ""
+msgstr "Relie une œuvre au lieu où ses paroles ont été rédigées."
 
 #: DB:link_type/description:292
 msgid "This links an (fictional) artist to the person that voice acted it."
@@ -2038,7 +2038,7 @@ msgid ""
 "This relationship indicates the artist is the <a "
 "href=\"//en.wikipedia.org/wiki/Sound_recording_copyright_symbol\">phonographic"
 " copyright</a> holder for this recording."
-msgstr ""
+msgstr "Cette relation indique que l'artiste est le détenteur des <a href=\"//en.wikipedia.org/wiki/Sound_recording_copyright_symbol\">droits phonographiques d'auteur</a> pour cet enregistrement."
 
 #: DB:link_type/description:710
 msgid ""
@@ -2070,7 +2070,7 @@ msgid ""
 "This relationship indicates the label is the <a "
 "href=\"//en.wikipedia.org/wiki/Sound_recording_copyright_symbol\">phonographic"
 " copyright</a> holder for this recording. ​"
-msgstr ""
+msgstr "Cette relation indique que le label est le détenteur des <a href=\"//en.wikipedia.org/wiki/Sound_recording_copyright_symbol\">droits phonographiques d'auteur</a> pour cet enregistrement."
 
 #: DB:link_type/description:711
 msgid ""
@@ -2090,14 +2090,14 @@ msgid ""
 "This relationship is deprecated, since it's almost always misused. To specify that a recording on this release contains samples taken from a movie, show or game, use the recording - URL relationship. If you don't know what recording(s) use the samples, please just indicate it in the annotation.\n"
 "<br/><br/>\n"
 "To say that the release is a soundtrack, please use the <a href=\"/relationship/85b0a010-3237-47c7-8476-6fcefd4761af\">IMDB relationship type for release groups</a>."
-msgstr ""
+msgstr "Cette relation est maintenant obsolète car elle est presque toujours mal utilisée.  Pour indiquer qu'un enregistrement de cette parution contient des échantillons pris d'un film, spectacle ou jeu, utiliser la relation URL de l'enregistrement. Si vous ne savez quel(s) enregistrement(s) utilise(nt) les échantillons, veuillez juste l'indiquer dans l'annotation.\n<br/><br/>\nPour signifier que la parution est une bande originale, veuillez utiliser le <a href=\"/relationship/85b0a010-3237-47c7-8476-6fcefd4761af\">type de relation IMDb pour les groupes de parutions</a>."
 
 #: DB:link_type/description:206
 msgid ""
 "This relationship is deprecated. To indicate work publishers, add label-work"
 " relationships. To indicate (P) holders, use the phonographic copyright "
 "relationship."
-msgstr ""
+msgstr "Cette relation est obsolète. Pour indiquer les éditeurs d'une œuvre,  ajouter les relations label-œuvre. Pour indiquer les détenteurs (P), utiliser la relation droits phonographiques d'auteur."
 
 #: DB:link_type/description:751
 msgid ""
