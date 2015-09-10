@@ -16,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2015-09-09 17:58+0000\n"
+"PO-Revision-Date: 2015-09-10 19:54+0000\n"
 "Last-Translator: Trans-fr\n"
 "Language-Team: French (http://www.transifex.com/musicbrainz/musicbrainz/language/fr/)\n"
 "MIME-Version: 1.0\n"
@@ -479,19 +479,19 @@ msgstr "Indique le lieu de la première présentation de l’œuvre."
 msgid ""
 "Indicates the publisher of this recording. This is <strong>not</strong> the "
 "same concept as the <a href=\"/doc/Label\">record label</a>."
-msgstr "Indique l'éditeur de cet enregistrement. Ce n'est <strong>pas</strong> le même concept que le <a href=\"/doc/Label\">label</a>."
+msgstr "Indique l'éditeur de cet enregistrement. Ce n'est <strong>pas</strong> le même concept que le <a href=\"/doc/Label\">label discographique</a>."
 
 #: DB:link_type/description:32
 msgid ""
 "Indicates the publisher of this release. This is <strong>not</strong> the "
 "same concept as the <a href=\"/doc/Label\">record label</a>."
-msgstr "Indique l'éditeur de cet enregistrement. Ce n'est <strong>pas</strong> le même concept que le <a href=\"/doc/Label\">label</a>."
+msgstr "Indique l'éditeur de cet enregistrement. Ce n'est <strong>pas</strong> le même concept que le <a href=\"/doc/Label\">label discographique</a>."
 
 #: DB:link_type/description:208 DB:link_type/description:161
 msgid ""
 "Indicates the publisher of this work. This is <strong>not</strong> the same "
 "concept as the <a href=\"/doc/Label\">record label</a>."
-msgstr "Indique l'éditeur de cette œuvre. Ce n'est <strong>pas</strong> le même concept que le <a href=\"/doc/Label\">label</a>."
+msgstr "Indique l'éditeur de cette œuvre. Ce n'est <strong>pas</strong> le même concept que le <a href=\"/doc/Label\">label discographique</a>."
 
 #: DB:link_type/link_phrase:840 DB:link_type/link_phrase:837
 #: DB:link_type/link_phrase:838 DB:link_type/link_phrase:839
@@ -1190,7 +1190,7 @@ msgstr "Ceci indique que ce lieu fait partie d'un autre lieu."
 msgid ""
 "This indicates that a record label (company) owns or has the right to use an"
 " imprint."
-msgstr "Ceci indique qu'un label est propriétaire ou à le droit d'utiliser une marque."
+msgstr "Ceci indique qu'un label discographique (compagnie) est propriétaire ou à le droit d'utiliser une marque."
 
 #: DB:link_type/description:228
 msgid ""
@@ -1227,7 +1227,7 @@ msgstr "Ceci indique qu'une œuvre est composée de plusieurs parties (p. ex. un
 msgid ""
 "This indicates that an artist appears on a music video, but doesn't actually"
 " perform on the audio track."
-msgstr ""
+msgstr "Indique qu'un artiste apparaît dans une vidéo musicale, mais n’interprète en fait pas la piste audio."
 
 #: DB:link_type/description:121
 msgid "This indicates that an artist had a recording contract with a label."
@@ -1321,34 +1321,34 @@ msgid ""
 "This indicates the organization that distributes (or contracts out distribution). \n"
 "\n"
 "This is <strong>not</strong> the same concept as the <a href=\"/doc/Label\">record label</a>."
-msgstr "Ceci indique l'organisation qui distribue (ou gère la distribution).\n\nCe n'est <strong>pas</strong> le même concept que le <a href=\"/doc/Label\">label</a>."
+msgstr "Ceci indique l'organisation qui distribue (ou gère la distribution).\n\nCe n'est <strong>pas</strong> le même concept que le <a href=\"/doc/Label\">label discographique</a>."
 
 #: DB:link_type/description:360
 msgid ""
 "This indicates the organization that manufactures (or contracts out manufacturing). \n"
 "This is <strong>not</strong> the same concept as the <a href=\"/doc/Label\">record label</a>."
-msgstr "Ceci indique l'organisation qui fabrique (ou gère la fabrication).\nCe n'est <strong>pas</strong> le même concept que le <a href=\"/doc/Label\">label</a>."
+msgstr "Ceci indique l'organisation qui fabrique (ou gère la fabrication).\nCe n'est <strong>pas</strong> le même concept que le <a href=\"/doc/Label\">label discographique</a>."
 
 #: DB:link_type/description:848
 msgid ""
 "This indicates the organization that markets a release. This is "
 "<strong>not</strong> the same concept as the <a href=\"/doc/Label\">record "
 "label</a>."
-msgstr ""
+msgstr "Indique l'organisation qui s'occupe de la mise en marché d'une parution. Ce n'est <strong>pas</strong> le même concept que le <a href=\"/doc/Label\">label discographique</a>."
 
 #: DB:link_type/description:359
 msgid ""
 "This indicates the organization that promotes (or contracts out promotion) "
 "for a release. This is <strong>not</strong> the same concept as the <a "
 "href=\"/doc/Label\">record label</a>."
-msgstr "Ceci indique l'organisation qui promeut (ou gère la promotion) d'une parution.\nCe n'est <strong>pas</strong> le même concept que le <a href=\"/doc/Label\">label</a>."
+msgstr "Ceci indique l'organisation qui promeut (ou gère la promotion) d'une parution.\nCe n'est <strong>pas</strong> le même concept que le <a href=\"/doc/Label\">label discographique</a>."
 
 #: DB:link_type/description:362
 msgid ""
 "This indicates the organization which releases a release. This is "
 "<strong>not</strong> the same concept as the <a href=\"/doc/Label\">record "
 "label</a>."
-msgstr "Ceci indique l'organisation publiant une parution. Ce n'est <strong>pas</strong> le même concept que le <a href=\"/doc/Label\">label</a>."
+msgstr "Ceci indique l'organisation qui publie une parution. Ce n'est <strong>pas</strong> le même concept que le <a href=\"/doc/Label\">label discographique</a>."
 
 #: DB:link_type/description:300
 msgid ""
@@ -1467,7 +1467,7 @@ msgstr "Ceci est utilisé pour relier un label à une image de son logo."
 #: DB:link_type/description:857
 msgid ""
 "This is used to link a music video to the corresponding audio recording."
-msgstr ""
+msgstr "Ceci est utilisé pour relier une vidéo musicale à l'enregistrement audio correspondant."
 
 #: DB:link_type/description:705
 msgid "This is used to link a place to the equivalent entry in Discogs."
@@ -1612,7 +1612,7 @@ msgstr "Ceci relie une parution MusicBrainz à son entrée équivalente sur Amaz
 msgid ""
 "This links a group (often an orchestra) to a composer who has a composer-in-"
 "residence position with the group."
-msgstr ""
+msgstr "Ce"
 
 #: DB:link_type/description:304
 msgid ""
