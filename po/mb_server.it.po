@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-08 13:34-0500\n"
-"PO-Revision-Date: 2015-09-12 19:00+0000\n"
+"PO-Revision-Date: 2015-09-12 19:24+0000\n"
 "Last-Translator: salorock <email address hidden>\n"
 "Language-Team: Italian (http://www.transifex.com/musicbrainz/musicbrainz/language/it/)\n"
 "MIME-Version: 1.0\n"
@@ -421,7 +421,7 @@ msgstr "È necessario un elenco di tracce."
 msgid ""
 "A value of 1 or 2 indicates that either entity1 or entity0 are orderable, "
 "respectively."
-msgstr ""
+msgstr "Un valore di 1 o 2 indica rispettivamente che entity1 o entity0 sono ordinabili."
 
 #: ../root/layout/menu.tt:122
 msgid "About"
@@ -1008,7 +1008,7 @@ msgid ""
 "An alias is an alternate name for an entity. They typically contain common "
 "mispellings or variations of the name and are also used to improve search "
 "results. View the {doc|alias documentation} for more details."
-msgstr ""
+msgstr "Un alias è un nome alternativo di un'entità. Solitamente contiene errori di ortografia comuni o varianti del nome ed è utilizzato anche per migliorare i risultati di ricerca. Visualizza la {doc|documentazione sugli alias} per maggiori dettagli."
 
 #: ../root/artist/subscribers.tt:17 ../root/collection/subscribers.tt:17
 #: ../root/label/subscribers.tt:17 ../root/series/subscribers.tt:17
@@ -1022,7 +1022,7 @@ msgstr[1] "{n} utenti anonimi"
 msgid ""
 "An entity with that name and disambiguation already exists. You must enter a"
 " unique disambiguation comment."
-msgstr ""
+msgstr "Un'entità con questo nome e disambiguazione è già esistente. Devi inserire un commento di disambiguazione nuovo."
 
 #: ../root/edit/list.tt:68
 msgid "An error occured while loading this edit"
@@ -3571,11 +3571,11 @@ msgstr "Ritocca maiuscolo/minuscolo titoli tracce"
 #: ../root/components/forms.tt:218 ../root/release/edit/information.tt:15
 #: ../root/release/edit/tracklist.tt:215
 msgid "Guess feat. artists"
-msgstr ""
+msgstr "Ritocca artisti feat."
 
 #: ../root/release/edit/tracklist.tt:421
 msgid "Guess feat. artists from track titles"
-msgstr ""
+msgstr "Ritocca artisti feat. dai titoli di traccia"
 
 #: ../root/components/forms.tt:229
 msgid "Guess sort name"
@@ -6643,7 +6643,7 @@ msgstr "Rimuovi entità selezionate"
 
 #: ../root/collection/index.tt:16
 msgid "Remove selected items from collection"
-msgstr ""
+msgstr "Rimuovi gli elementi selezionati dalla collezione"
 
 #: ../root/release/edit/tracklist.tt:217
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveTrack.pm:10
@@ -6665,7 +6665,7 @@ msgstr "Rimosso"
 
 #: ../root/edit/details/merge_artists.tt:4
 msgid "Rename artist and relationship credits"
-msgstr ""
+msgstr "Rinomina accreditamenti artista e relazione"
 
 #: ../root/release/cover_art.tt:54
 msgctxt "button/menu"
@@ -8061,7 +8061,7 @@ msgstr "Queste immagini sono fornite dal {caa|Cover Art Archive}. Puoi vederle a
 
 #: ../root/forms/relationship-editor.tt:62
 msgid "These relationships have a specific ordering"
-msgstr ""
+msgstr "Queste relazioni hanno un ordine specifico"
 
 #: ../root/cdstub/edit_form.tt:9
 msgid "This CD has tracks from more than one artist (e.g. a compilation CD)"
@@ -8199,7 +8199,7 @@ msgstr "Questo disco ha una traccia pregap nascosta prima della traccia 1 ({info
 
 #: ../root/edit/details/edit_release.tt:81
 msgid "This edit also changed the track artists."
-msgstr ""
+msgstr "Questa modifica ha cambiato anche gli artisti delle tracce."
 
 #: ../root/edit/details/edit_medium.tt:180
 msgid "This edit changes which tracks are data tracks."
@@ -9561,7 +9561,7 @@ msgstr "Aggiorna collezione"
 #: ../root/artist/merge.tt:19
 msgid ""
 "Update matching artist and relationship credits to use the new artist’s name"
-msgstr ""
+msgstr "Aggiorna crediti artista e relazione corrispondenti usando il nuovo nome artista"
 
 #: ../root/release/edit/recordings.tt:81
 msgid "Update the recording artist credit to match the track artist credit."
@@ -9631,7 +9631,7 @@ msgstr "Utilizza la {doc|sintassi di ricerca avanzata}"
 msgid ""
 "User accounts must be more than 2 weeks old, have a confirmed email address,"
 " and more than 10 accepted edits in order to vote on others' edits."
-msgstr "Gli account utente devono avere almeno 2 settimane, possedere un indirizzo email confermato e avere più di 10 modifiche accettate per poter votare sulle modifiche altrui."
+msgstr "Gli account utente devono risalire ad almeno 2 settimane fa, avere un indirizzo email verificato e più di 10 modifiche accettate per poter votare sulle modifiche altrui."
 
 #: ../root/account/change_password.tt:21
 msgid "User name:"
@@ -10351,7 +10351,7 @@ msgstr "Devi effettuare l'accesso per votare sulle modifiche."
 
 #: ../root/components/common-macros.tt:1051
 msgid "You must enter a disambiguation comment for this entity."
-msgstr ""
+msgstr "Devi inserire un commento di disambiguazione per questa entità."
 
 #: ../root/release/edit/tracklist.tt:352
 msgid "You must enter a title and select an artist for every track."
@@ -10429,7 +10429,7 @@ msgstr "La tua email è stata inviata con successo! Clicca {link|qui} per andare
 msgid ""
 "Your homepage and biography will not show until you have confirmed your "
 "email."
-msgstr "La tua homepage e la tua biografia non appariranno finché non avrai confermato il tuo indirizzo email."
+msgstr "La tua homepage e la tua biografia non appariranno finché non avrai verificato il tuo indirizzo email."
 
 #: ../root/account/reset_password_ok.tt:5
 msgid "Your password has been reset."
@@ -11010,8 +11010,8 @@ msgstr "{entity} di {artist}"
 #: ../root/entity/collections.tt:4
 msgid "{entity} has been added to {num} collection:"
 msgid_plural "{entity} has been added to {num} collections:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{entity} è stata aggiunta a {num} collezione:"
+msgstr[1] "{entity} è stata aggiunta a {num} collezioni:"
 
 #: ../root/components/aliases.tt:73
 msgid "{entity} has no aliases."
@@ -11019,7 +11019,7 @@ msgstr "{entity} non ha nessun alias."
 
 #: ../root/entity/collections.tt:23
 msgid "{entity} has not been added to any collections."
-msgstr ""
+msgstr "{entity} non è stata aggiunta a nessuna collezione."
 
 #: ../root/entity/ratings.tt:22
 msgid "{link} has no ratings."
@@ -11421,7 +11421,7 @@ msgid ""
 "<strong>We were unable to send a confirmation email to you.</strong><br/>Please confirm that you have entered a valid\n"
 "             address by editing your {settings|account settings}. If the problem still persists, please contact us at\n"
 "             {mail|support@musicbrainz.org}."
-msgstr "<strong>Non è stato possibile inviarti un'email di conferma.</strong><br/>Assicurati di aver inserito un indirizzo\n             valido modificando le {settings|impostazioni del tuo account}. Se il problema persiste, contattaci all'indirizzo\n             {mail|support@musicbrainz.org}."
+msgstr "<strong>Non è stato possibile inviarti un'email di verifica.</strong><br/>Assicurati di aver inserito un indirizzo\n             valido modificando le {settings|impostazioni del tuo account}. Se il problema persiste, contattaci all'indirizzo\n             {mail|support@musicbrainz.org}."
 
 #: ../lib/MusicBrainz/Server/Controller/Admin.pm:77
 msgid "User successfully edited."
@@ -11526,7 +11526,7 @@ msgstr "L'editor {name} non ha nessun indirizzo email collegato al suo account."
 msgid ""
 "You cannot contact other users because you have not {url|confirmed your "
 "email address}."
-msgstr ""
+msgstr "Non puoi contattare altri utenti perché non hai ancora {url|verificato il tuo indirizzo email}."
 
 #: ../lib/MusicBrainz/Server/Controller/User.pm:292
 msgid "Your message could not be sent"
@@ -11960,7 +11960,7 @@ msgstr "Rimuovi alias dalla registrazione"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/EditAlias.pm:12
 msgid "Edit recording alias"
-msgstr ""
+msgstr "Modifica alias della registrazione"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/Merge.pm:14
 msgid "Merge recordings"
@@ -12000,7 +12000,7 @@ msgstr "Riordina relazioni"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/AddAlias.pm:11
 msgid "Add release alias"
-msgstr ""
+msgstr "Aggiungi alias alla pubblicazione"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/AddCoverArt.pm:20
 msgid "Add cover art"
@@ -12012,7 +12012,7 @@ msgstr "Aggiungi etichetta alla pubblicazione"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/DeleteAlias.pm:14
 msgid "Remove release alias"
-msgstr ""
+msgstr "Rimuovi alias dalla pubblicazione"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/DeleteReleaseLabel.pm:19
 msgid "Remove release label"
@@ -12020,7 +12020,7 @@ msgstr "Rimuovi etichetta dalla pubblicazione"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/EditAlias.pm:12
 msgid "Edit release alias"
-msgstr ""
+msgstr "Modifica alias della pubblicazione"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/EditBarcodes.pm:19
 msgid "Edit barcodes"
@@ -12048,7 +12048,7 @@ msgstr "Riordina supporti"
 
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/AddAlias.pm:11
 msgid "Add release group alias"
-msgstr ""
+msgstr "Aggiungi alias al gruppo di pubblicazioni"
 
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/AddAnnotation.pm:12
 msgid "Add release group annotation"
@@ -12060,7 +12060,7 @@ msgstr "Rimuovi gruppo di pubblicazioni"
 
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/DeleteAlias.pm:14
 msgid "Remove release group alias"
-msgstr ""
+msgstr "Rimuovi alias dal gruppo di pubblicazioni"
 
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/Edit.pm:38
 msgid "Edit release group"
@@ -12068,7 +12068,7 @@ msgstr "Modifica gruppo di pubblicazioni"
 
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/EditAlias.pm:12
 msgid "Edit release group alias"
-msgstr ""
+msgstr "Modifica alias del gruppo di pubblicazioni"
 
 #: ../lib/MusicBrainz/Server/Edit/Series/AddAlias.pm:11
 msgid "Add series alias"
@@ -12530,7 +12530,7 @@ msgstr "L'anno di nascita deve essere successivo al 1900"
 msgid ""
 "Biography and website fields may not be edited until your email address is "
 "confirmed."
-msgstr "I campi biografia e sito web non potranno essere modificati finché non avrai confermato il tuo indirizzo email."
+msgstr "I campi biografia e sito web non potranno essere modificati finché non avrai verificato il tuo indirizzo email."
 
 #: ../lib/MusicBrainz/Server/Form/User/Login.pm:9
 msgid "Username field is required"
