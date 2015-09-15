@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2015-09-08 18:59+0000\n"
-"Last-Translator: Michael Wiencek <email address hidden>\n"
+"PO-Revision-Date: 2015-09-15 15:53+0000\n"
+"Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/musicbrainz/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -458,11 +458,11 @@ msgstr "Geeft de officiële thuispagina van een evenement aan."
 #: DB:link_type/description:871
 msgid ""
 "Indicates the person who translated the lyrics/libretto for this release."
-msgstr ""
+msgstr "Geeft de vertaler van de teksten of het libretto van deze uitgave aan."
 
 #: DB:link_type/description:872
 msgid "Indicates the person who translated the lyrics/libretto for this work."
-msgstr ""
+msgstr "Geeft de vertaler van de teksten of het libretto van deze compositie aan."
 
 #: DB:link_type/description:716
 msgid "Indicates the place where the work had its first performance"
@@ -504,7 +504,7 @@ msgstr "Lead- of solovocaal"
 msgid ""
 "Links a recording to the area it was arranged in. Use only when the place is"
 " unknown!"
-msgstr ""
+msgstr "Koppelt een opname aan het gebied waarin het gearrangeerd werd. Gebruik dit alleen als de plaats onbekend is!"
 
 #: DB:link_type/description:821
 msgid ""
@@ -548,7 +548,7 @@ msgstr "Koppelt een opname aan het evenement waar het opgenomen is."
 
 #: DB:link_type/description:866
 msgid "Links a recording to the place it was arranged at."
-msgstr ""
+msgstr "Koppelt een opname aan de plaats waar het gearrangeerd werd."
 
 #: DB:link_type/description:819
 msgid "Links a recording to the place it was edited at."
@@ -582,7 +582,7 @@ msgstr "Koppelt een uitgavegroep aan het evenement waarop het gelanceerd is."
 msgid ""
 "Links a release to the area it was arranged in. Use only when the place is "
 "unknown!"
-msgstr ""
+msgstr "Koppelt een uitgave aan het gebied waarin het gearrangeerd werd. Gebruik dit alleen als de plaats onbekend is!"
 
 #: DB:link_type/description:822
 msgid ""
@@ -614,7 +614,7 @@ msgstr "Koppelt een uitgave aan het gebied waarin het gemixt werd. Gebruik dit a
 
 #: DB:link_type/description:849
 msgid "Links a release to the area it was printed in."
-msgstr ""
+msgstr "Koppelt een uitgave aan het gebied waar het gedrukt werd."
 
 #: DB:link_type/description:826
 msgid ""
@@ -640,7 +640,7 @@ msgstr "Koppelt een uitgave aan het evenement waar het opgenomen werd."
 
 #: DB:link_type/description:865
 msgid "Links a release to the place it was arranged at."
-msgstr ""
+msgstr "Koppelt een uitgave aan de plaats waar het gearrangeerd werd."
 
 #: DB:link_type/description:820
 msgid "Links a release to the place it was edited at."
@@ -744,23 +744,23 @@ msgstr "Overige vocalisaties"
 
 #: DB:link_type/description:852
 msgid "Points to the BookBrainz page for this artist."
-msgstr ""
+msgstr "Verwijst naar de BookBrainz-pagina over deze artiest."
 
 #: DB:link_type/description:851
 msgid "Points to the BookBrainz page for this label."
-msgstr ""
+msgstr "Verwijst naar de BookBrainz-pagina over deze platenmaatschappij."
 
 #: DB:link_type/description:853
 msgid "Points to the BookBrainz page for this release group."
-msgstr ""
+msgstr "Verwijst naar de BookBrainz-pagina over deze uitgavegroep."
 
 #: DB:link_type/description:850
 msgid "Points to the BookBrainz page for this release."
-msgstr ""
+msgstr "Verwijst naar de BookBrainz-pagina over deze uitgave."
 
 #: DB:link_type/description:854
 msgid "Points to the BookBrainz page for this work."
-msgstr ""
+msgstr "Verwijst naar de BookBrainz-pagina over deze compositie."
 
 #: DB:link_type/description:713
 msgid "Points to the Geonames page for this area."
@@ -1220,7 +1220,7 @@ msgstr "Dit geeft aan dat een compositie bestaat uit meerdere delen (bijv. een o
 msgid ""
 "This indicates that an artist appears on a music video, but doesn't actually"
 " perform on the audio track."
-msgstr ""
+msgstr "Dit geeft aan dat een artiest in de videoclip speelt, maar niet op het nummer te horen is."
 
 #: DB:link_type/description:121
 msgid "This indicates that an artist had a recording contract with a label."
@@ -1327,7 +1327,7 @@ msgid ""
 "This indicates the organization that markets a release. This is "
 "<strong>not</strong> the same concept as the <a href=\"/doc/Label\">record "
 "label</a>."
-msgstr ""
+msgstr "Dit geeft de organisatie aan die een uitgave promoot. Dit is <strong>niet</strong> hetzelfde concept als de <a href=\"/doc/Label\">platenmaatschappij</a>."
 
 #: DB:link_type/description:359
 msgid ""
@@ -1460,7 +1460,7 @@ msgstr "Dit wordt gebruikt om een platenmaatschappij aan haar overeenkomstige pa
 #: DB:link_type/description:857
 msgid ""
 "This is used to link a music video to the corresponding audio recording."
-msgstr ""
+msgstr "Dit koppelt een videoclip aan de bijbehorende opname."
 
 #: DB:link_type/description:705
 msgid "This is used to link a place to the equivalent entry in Discogs."
@@ -1605,7 +1605,7 @@ msgstr "Dit koppelt een uitgave op MusicBrainz aan het bijbehorende product op A
 msgid ""
 "This links a group (often an orchestra) to a composer who has a composer-in-"
 "residence position with the group."
-msgstr ""
+msgstr "Dit koppelt een groep (vaak een orkest) aan een componist die de officiële huiscomponist van de groep is."
 
 #: DB:link_type/description:304
 msgid ""

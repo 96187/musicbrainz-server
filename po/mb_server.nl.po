@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-08 13:34-0500\n"
-"PO-Revision-Date: 2015-09-15 14:34+0000\n"
+"PO-Revision-Date: 2015-09-15 15:42+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/musicbrainz/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -1009,7 +1009,7 @@ msgid ""
 "An alias is an alternate name for an entity. They typically contain common "
 "mispellings or variations of the name and are also used to improve search "
 "results. View the {doc|alias documentation} for more details."
-msgstr ""
+msgstr "Een alias is een alternatieve naam voor een object. Dit is meestal een gebruikelijke spelfout of naamvariatie en het wordt ook gebruikt om de zoekresultaten te verbeteren. Zie de {doc|aliasdocumentatie} voor meer details."
 
 #: ../root/artist/subscribers.tt:17 ../root/collection/subscribers.tt:17
 #: ../root/label/subscribers.tt:17 ../root/series/subscribers.tt:17
@@ -1023,7 +1023,7 @@ msgstr[1] "{n} anonieme gebruikers"
 msgid ""
 "An entity with that name and disambiguation already exists. You must enter a"
 " unique disambiguation comment."
-msgstr ""
+msgstr "Er bestaat al een object met deze naam en verduidelijking. U moet een unieke verduidelijking toevoegen."
 
 #: ../root/edit/list.tt:68
 msgid "An error occured while loading this edit"
@@ -1218,7 +1218,7 @@ msgstr "Gebied"
 
 #: ../root/user/collections.tt:2
 msgid "Area Collections"
-msgstr ""
+msgstr "Collecties met gebieden"
 
 #: ../root/area/edit_form.tt:9
 msgid "Area Details"
@@ -1295,7 +1295,7 @@ msgstr "Gebied van artiest"
 
 #: ../root/user/collections.tt:2
 msgid "Artist Collections"
-msgstr ""
+msgstr "Collecties met artiesten"
 
 #: ../root/edit/details/edit_artist_credit.tt:5
 msgid "Artist Credit:"
@@ -2014,7 +2014,7 @@ msgstr "Gegevenskwaliteitsscore van de uitgave veranderen"
 
 #: ../root/edit/details/historic/move_release.tt:14
 msgid "Change track artists:"
-msgstr ""
+msgstr "De artiesten van de nummers veranderen:"
 
 #: ../root/annotation/common.tt:9 ../root/annotation/edit.tt:24
 #: ../root/edit/details/add_event_annotation.tt:7
@@ -2299,15 +2299,15 @@ msgstr "Bewerking aan het aanmaken"
 
 #: ../root/components/relationships-table.tt:8
 msgid "Credited As"
-msgstr ""
+msgstr "Vermeld als"
 
 #: ../root/components/relationship-editor.tt:44
 msgid "Credited as:"
-msgstr ""
+msgstr "Vermeld als:"
 
 #: ../root/release/index.tt:61
 msgid "Credits"
-msgstr ""
+msgstr "Vermeldingen"
 
 #: ../root/release_group/index.tt:77
 msgid "CritiqueBrainz Reviews"
@@ -2481,7 +2481,7 @@ msgstr "Overleden:"
 
 #: ../root/edit/details/change_wikidoc.tt:35
 msgid "Diff"
-msgstr ""
+msgstr "Verschillen"
 
 #: ../root/search/form.tt:35 ../root/search/form.tt:40
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:61
@@ -3572,11 +3572,11 @@ msgstr "Hoofdlettergebruik in de nummers gokken"
 #: ../root/components/forms.tt:218 ../root/release/edit/information.tt:15
 #: ../root/release/edit/tracklist.tt:215
 msgid "Guess feat. artists"
-msgstr ""
+msgstr "Gastartiesten gokken"
 
 #: ../root/release/edit/tracklist.tt:421
 msgid "Guess feat. artists from track titles"
-msgstr ""
+msgstr "Gastartiesten gokken aan de hand van de titels van de nummers."
 
 #: ../root/components/forms.tt:229
 msgid "Guess sort name"
@@ -3960,7 +3960,7 @@ msgstr "Instrument"
 
 #: ../root/user/collections.tt:2
 msgid "Instrument Collections"
-msgstr ""
+msgstr "Collecties met instrumenten"
 
 #: ../root/components/recordings-list.tt:34
 #: ../root/components/releases-list.tt:26
@@ -4076,7 +4076,7 @@ msgstr "Platenmaatschappij-code:"
 
 #: ../root/user/collections.tt:2
 msgid "Label Collections"
-msgstr ""
+msgstr "Collecties met platenmaatschappijen"
 
 #: ../root/label/edit_form.tt:11
 msgid "Label Details"
@@ -5377,7 +5377,7 @@ msgstr "Of …"
 #: ../root/edit/details/edit_relationship_type.tt:61
 #: ../root/relationship/linktype/form.tt:37
 msgid "Orderable direction:"
-msgstr ""
+msgstr "Sorteerbare collectie:"
 
 #: ../root/components/series-list.tt:7 ../root/series/merge.tt:14
 msgid "Ordering Type"
@@ -5520,7 +5520,7 @@ msgstr "Plaats"
 
 #: ../root/user/collections.tt:2
 msgid "Place Collections"
-msgstr ""
+msgstr "Collecties met plaatsen"
 
 #: ../root/place/edit_form.tt:11
 msgid "Place Details"
@@ -5868,7 +5868,7 @@ msgstr "Opname"
 
 #: ../root/user/collections.tt:2
 msgid "Recording Collections"
-msgstr ""
+msgstr "Collecties met opnames"
 
 #: ../root/recording/edit_form.tt:24
 msgid "Recording Details"
@@ -6152,7 +6152,7 @@ msgstr "Uitgavegroep"
 
 #: ../root/user/collections.tt:2
 msgid "Release Group Collections"
-msgstr ""
+msgstr "Collecties met uitgavegroepen"
 
 #: ../root/release_group/edit_form.tt:13
 msgid "Release Group Details"
@@ -6644,7 +6644,7 @@ msgstr "Geselecteerde objecten verwijderen"
 
 #: ../root/collection/index.tt:16
 msgid "Remove selected items from collection"
-msgstr ""
+msgstr "Geselecteerde objecten uit de collectie verwijderen."
 
 #: ../root/release/edit/tracklist.tt:217
 #: ../lib/MusicBrainz/Server/Edit/Historic/RemoveTrack.pm:10
@@ -6745,7 +6745,7 @@ msgstr "Omgekeerde koppelzin:"
 
 #: ../root/release/edit/information.tt:318
 msgid "Review the {packaging|list of packaging types} for help."
-msgstr "Bekijk de {packaging|lijst van verpakkingstypes} voor hulp."
+msgstr "Zie de {packaging|lijst van verpakkingstypes} voor hulp."
 
 #: ../root/release/edit/layout.tt:27
 msgid ""
@@ -7071,7 +7071,7 @@ msgstr "Series"
 #: ../root/user/collections.tt:2
 msgctxt "plural"
 msgid "Series Collections"
-msgstr ""
+msgstr "Collecties met series"
 
 #: ../root/series/edit_form.tt:11
 msgid "Series Details"
@@ -8062,7 +8062,7 @@ msgstr "Deze afbeeldingen worden geleverd door het {caa|Cover Art Archive}. U ku
 
 #: ../root/forms/relationship-editor.tt:62
 msgid "These relationships have a specific ordering"
-msgstr ""
+msgstr "Deze relaties hebben een specifieke volgorde"
 
 #: ../root/cdstub/edit_form.tt:9
 msgid "This CD has tracks from more than one artist (e.g. a compilation CD)"
@@ -8188,7 +8188,7 @@ msgstr[1] "Deze verandering beïnvloedt {num} relaties."
 
 #: ../root/collection/index.tt:19
 msgid "This collection is empty."
-msgstr ""
+msgstr "Deze collectie is leeg."
 
 #: ../root/release/edit/tracklist.tt:412
 msgid "This disc contains data tracks at the end ({info|more info})"
@@ -8200,7 +8200,7 @@ msgstr "Dit medium heeft een verborgen pregapnummer voor nummer 1 ({info|meer in
 
 #: ../root/edit/details/edit_release.tt:81
 msgid "This edit also changed the track artists."
-msgstr ""
+msgstr "Deze bewerking veranderde ook de artiesten van de nummers."
 
 #: ../root/edit/details/edit_medium.tt:180
 msgid "This edit changes which tracks are data tracks."
@@ -8353,7 +8353,7 @@ msgstr "Dit is een compositie-eigenschap zonder opmaak"
 msgid ""
 "This is a list of all the different ways {artist} is credited in the "
 "database. View the {doc|artist credit documentation} for more details."
-msgstr "Dit is een lijst van alle verschillende manieren waarop {artist} vermeld wordt in de gegevensbank. Bekijk de {doc|documentatie voor vermeldingen} voor meer details."
+msgstr "Dit is een lijst van alle verschillende manieren waarop {artist} vermeld wordt in de gegevensbank. Zie de {doc|documentatie voor vermeldingen} voor meer details."
 
 #: ../root/annotation/common.tt:25
 msgid ""
@@ -9295,7 +9295,7 @@ msgstr "Nummerlengte"
 
 #: ../root/edit/details/historic/edit_track.tt:19
 msgid "Track number"
-msgstr ""
+msgstr "Nummerpositie"
 
 #: ../root/edit/details/historic/add_track_kv.tt:26
 #: ../root/edit/details/historic/add_track_old.tt:26
@@ -9715,7 +9715,7 @@ msgstr "Details bekijken"
 
 #: ../root/edit/details/change_wikidoc.tt:36
 msgid "View diff"
-msgstr ""
+msgstr "Verschillen bekijken"
 
 #: ../root/admin/wikidoc/index.tt:63
 msgid "View on wiki"
@@ -9988,7 +9988,7 @@ msgstr "Compositie-eigenschappen"
 
 #: ../root/user/collections.tt:2
 msgid "Work Collections"
-msgstr ""
+msgstr "Collecties met composities"
 
 #: ../root/work/edit_form.tt:12
 msgid "Work Details"
@@ -10352,7 +10352,7 @@ msgstr "U moet ingelogd zijn om de stemmen op bewerkingen"
 
 #: ../root/components/common-macros.tt:1051
 msgid "You must enter a disambiguation comment for this entity."
-msgstr ""
+msgstr "U moet een verduidelijking aan dit object toevoegen."
 
 #: ../root/release/edit/tracklist.tt:352
 msgid "You must enter a title and select an artist for every track."
@@ -11011,8 +11011,8 @@ msgstr "{entity} door {artist}"
 #: ../root/entity/collections.tt:4
 msgid "{entity} has been added to {num} collection:"
 msgid_plural "{entity} has been added to {num} collections:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "{entity} is aan {num} collectie toegevoegd:"
+msgstr[1] "{entitiy} is aan {num} collecties toegevoegd:"
 
 #: ../root/components/aliases.tt:73
 msgid "{entity} has no aliases."
@@ -11020,7 +11020,7 @@ msgstr "{entity} heeft geen aliassen."
 
 #: ../root/entity/collections.tt:23
 msgid "{entity} has not been added to any collections."
-msgstr ""
+msgstr "{entity} is nog niet aan een collectie toegevoegd."
 
 #: ../root/entity/ratings.tt:22
 msgid "{link} has no ratings."
@@ -11527,7 +11527,7 @@ msgstr "De redacteur {name} heeft geen e-mailadres aan zijn of haar gebruikersac
 msgid ""
 "You cannot contact other users because you have not {url|confirmed your "
 "email address}."
-msgstr ""
+msgstr "U kunt geen contact met andere gebruikers opnemen omdat u uw e-mailadres {url|niet heeft bevestigd}."
 
 #: ../lib/MusicBrainz/Server/Controller/User.pm:292
 msgid "Your message could not be sent"
@@ -11753,7 +11753,7 @@ msgstr "Uitgave bewerken"
 #: ../lib/MusicBrainz/Server/Edit/Historic/ChangeTrackArtist.pm:12
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditTrackNum.pm:11
 msgid "Edit track (historic)"
-msgstr ""
+msgstr "Nummer bewerken (historisch)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditLink.pm:17
 #: ../lib/MusicBrainz/Server/Edit/Relationship/Edit.pm:34
@@ -11897,7 +11897,7 @@ msgstr "Medium bewerken"
 
 #: ../lib/MusicBrainz/Server/Edit/PUID/Delete.pm:15
 msgid "Remove PUID (historic)"
-msgstr ""
+msgstr "PUID verwijderen (historisch)"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/AddAlias.pm:11
 msgid "Add place alias"
@@ -11933,7 +11933,7 @@ msgstr "Plaatsen samenvoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/AddAlias.pm:11
 msgid "Add recording alias"
-msgstr ""
+msgstr "Alias aan deze opname toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/AddAnnotation.pm:12
 msgid "Add recording annotation"
@@ -11945,7 +11945,7 @@ msgstr "ISRC’s toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/AddPUIDs.pm:16
 msgid "Add PUIDs (historic)"
-msgstr ""
+msgstr "PUID’s toevoegen (historisch)"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/Create.pm:24
 msgid "Add standalone recording"
@@ -11957,11 +11957,11 @@ msgstr "Opname verwijderen"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/DeleteAlias.pm:14
 msgid "Remove recording alias"
-msgstr ""
+msgstr "Alias van de opname verwijderen"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/EditAlias.pm:12
 msgid "Edit recording alias"
-msgstr ""
+msgstr "Alias van de opname bewerken"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/Merge.pm:14
 msgid "Merge recordings"
@@ -12001,7 +12001,7 @@ msgstr "Relaties herschikken"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/AddAlias.pm:11
 msgid "Add release alias"
-msgstr ""
+msgstr "Alias aan de uitgave toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/AddCoverArt.pm:20
 msgid "Add cover art"
@@ -12013,7 +12013,7 @@ msgstr "Platenmaatschappij aan de uitgave toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/DeleteAlias.pm:14
 msgid "Remove release alias"
-msgstr ""
+msgstr "Alias van de uitgave verwijderen"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/DeleteReleaseLabel.pm:19
 msgid "Remove release label"
@@ -12021,7 +12021,7 @@ msgstr "De platenmaatschappij van de uitgave verwijderen"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/EditAlias.pm:12
 msgid "Edit release alias"
-msgstr ""
+msgstr "Alias van de uitgave bewerken"
 
 #: ../lib/MusicBrainz/Server/Edit/Release/EditBarcodes.pm:19
 msgid "Edit barcodes"
@@ -12049,7 +12049,7 @@ msgstr "Volgorde van de media bewerken"
 
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/AddAlias.pm:11
 msgid "Add release group alias"
-msgstr ""
+msgstr "Alias aan de uitgavegroep toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/AddAnnotation.pm:12
 msgid "Add release group annotation"
@@ -12061,7 +12061,7 @@ msgstr "Uitgavegroep verwijderen"
 
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/DeleteAlias.pm:14
 msgid "Remove release group alias"
-msgstr ""
+msgstr "Alias van de uitgavegroep verwijderen"
 
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/Edit.pm:38
 msgid "Edit release group"
@@ -12069,7 +12069,7 @@ msgstr "Uitgavegroep bewerken"
 
 #: ../lib/MusicBrainz/Server/Edit/ReleaseGroup/EditAlias.pm:12
 msgid "Edit release group alias"
-msgstr ""
+msgstr "Alias van de uitgavegroep bewerken"
 
 #: ../lib/MusicBrainz/Server/Edit/Series/AddAlias.pm:11
 msgid "Add series alias"
@@ -12929,17 +12929,17 @@ msgstr ""
 
 #: ../root/static/scripts/edit/components/PossibleDuplicates.js:15
 msgid "We found the following entities with very similar names:"
-msgstr ""
+msgstr "We hebben de volgende objecten met sterk gelijkende namen gevonden:"
 
 #: ../root/static/scripts/edit/components/PossibleDuplicates.js:23
 msgid "Yes, I still want to enter “{entity_name}”."
-msgstr ""
+msgstr "Ja, ik wil “{entity_name}” nog steeds toevoegen."
 
 #: ../root/static/scripts/edit/components/PossibleDuplicates.js:27
 msgid ""
 "Please enter a {doc_disambiguation|disambiguation} to help distinguish this "
 "entity from the others."
-msgstr ""
+msgstr "Voeg een {doc_disambiguation|verduidelijking} toe om dit object van anderen te onderscheiden."
 
 #: ../root/static/scripts/edit/confirmNavigationFallback.js:34
 #: ../root/static/scripts/relationship-editor/release.js:70
