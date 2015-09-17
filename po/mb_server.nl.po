@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-08 13:34-0500\n"
-"PO-Revision-Date: 2015-09-17 09:51+0000\n"
+"PO-Revision-Date: 2015-09-17 10:54+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/musicbrainz/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -347,7 +347,7 @@ msgid ""
 "license. Furthermore, you give the MetaBrainz Foundation the right to "
 "license this data for commercial use. Please read our {doc|license page} for"
 " more details.</strong>"
-msgstr "<strong>Let op dat elke bijdrage die u doet aan MusicBrainz in het Publieke Domein en/of onder een by-nc-sa licentie van Creative Commons wordt vrijgegeven. Daarnaast geeft u de MetaBrainz Foundation het recht om de gegevens voor commercieel gebruik in licentie te geven. Lees onze {doc|licentiepagina} voor meer details.</strong>"
+msgstr "<strong>Let op dat elke bijdrage die u doet aan MusicBrainz wordt vrijgegeven in het Publiek Domein en/of onder een by-nc-sa licentie van Creative Commons. Daarnaast geeft u de MetaBrainz Foundation het recht om de gegevens voor commercieel gebruik in licentie te geven. Lees onze {doc|licentiepagina} voor meer details.</strong>"
 
 #: ../root/admin/wikidoc/index.tt:16
 msgid ""
@@ -667,7 +667,7 @@ msgstr "Nieuwe collectie toevoegen"
 
 #: ../root/relationship/linktype/form.tt:105
 msgid "Add a New Example"
-msgstr "Een nieuw voorbeeld toevoegen"
+msgstr "Nieuw voorbeeld toevoegen"
 
 #: ../root/account/edit.tt:64
 msgid "Add a language"
@@ -1671,7 +1671,7 @@ msgid ""
 "Based on the information you have provided, we have found the following "
 "similar release to already exist in MusicBrainz. If you wish to base your "
 "release on an existing release, select it below."
-msgstr "Op basis van de door u verstrekte informatie hebben we een soortgelijke uitgave gevonden in MusicBrainz. Als u uw uitgave wilt baseren op een bestaande uitgave, selecteer deze dan hieronder."
+msgstr "Op basis van de door u verstrekte informatie hebben we een soortgelijke uitgave gevonden in MusicBrainz. Selecteer hieronder een bestaande uitgave als u uw uitgave daarop wilt baseren."
 
 #: ../root/release/edit_relationships.tt:27
 msgid "Batch-add a relationship to recordings"
@@ -1863,7 +1863,7 @@ msgstr "Cd-beginseldetails"
 
 #: ../root/release/edit/tracklist.tt:238
 msgid "CD stub import"
-msgstr "Import van het cd-beginsel"
+msgstr "Cd-beginsel importeren"
 
 #: ../root/cdstub/layout.tt:2
 msgid "CD stub “{title}” by {artist}"
@@ -2829,7 +2829,7 @@ msgstr "Bewerken"
 
 #: ../root/edit/info.tt:66 ../root/edit/list_header.tt:30
 msgid "Editing FAQ"
-msgstr "FAQ over bewerkingen"
+msgstr "Veelgestelde vragen over bewerkingen"
 
 #: ../root/collection/layout.tt:23
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:51
@@ -3202,7 +3202,7 @@ msgstr "Externe verwijzingen"
 
 #: ../root/layout/menu.tt:269 ../root/main/index.tt:82
 msgid "FAQs"
-msgstr "FAQ’s"
+msgstr "Veelgestelde vragen"
 
 #: ../root/user/profile.tt:164
 msgid "Failed"
@@ -3264,7 +3264,7 @@ msgstr "Lees de {doc|syntaxdocumentatie} voor hulp bij het schrijven van effecti
 msgid ""
 "For information about the account deletion process, please read the "
 "{uri|account FAQ}."
-msgstr "Lees de {uri|FAQ over gebruikersaccounts} voor informatie over het verwijderen van gebruikersaccounts."
+msgstr "Lees de {uri|veelgestelde vragen over gebruikersaccounts} voor informatie over het verwijderen van gebruikersaccounts."
 
 #: ../root/report/separate_discs.tt:7
 msgid ""
@@ -3856,7 +3856,7 @@ msgstr "Als u een koppeling op onze site heeft gevolgd om hier te komen, {report
 msgid ""
 "If you have any questions, please review the {faq|FAQs} or "
 "{doc|documentation} before {con|contacting us}. "
-msgstr "Kijk als u vragen heeft a.u.b. eerst in de {faq|FAQ’s} of {doc|documentatie} voordat u {con|contact met ons opneemt}."
+msgstr "Kijk als u vragen heeft a.u.b. eerst in de {faq|veelgestelde vragen} of {doc|documentatie} voordat u {con|contact met ons opneemt}."
 
 #: ../root/main/401.tt:16
 msgid ""
@@ -4383,7 +4383,7 @@ msgstr "Lange koppelzin:"
 #: ../root/doc/bare_error.tt:11 ../root/doc/error.tt:17 ../root/main/400.tt:18
 #: ../root/main/404.tt:18
 msgid "Looking for help? Check out our {doc|documentation} or {faq|FAQ}."
-msgstr "Zoekt u hulp? Lees onze {doc|documentatie} of {faq|FAQ}."
+msgstr "Zoekt u hulp? Lees onze {doc|documentatie} of {faq|veelgestelde vragen}."
 
 #: ../root/release/edit/recordings.tt:158
 msgid "Looking for suggested recordings..."
@@ -7656,7 +7656,7 @@ msgstr "Samenvatting"
 
 #: ../root/release/edit/tracklist.tt:420
 msgid "Swap track titles with artist credits"
-msgstr "Wissel nummers met artiesten"
+msgstr "Nummers en artiesten omdraaien"
 
 #: ../root/main/503.tt:1 ../root/main/503.tt:3
 msgid "System Busy"
@@ -9804,7 +9804,7 @@ msgstr "Stemmen"
 
 #: ../root/edit/info.tt:65 ../root/edit/list_header.tt:28
 msgid "Voting FAQ"
-msgstr "FAQ over stemmen"
+msgstr "Veelgestelde vragen over stemmen"
 
 #: ../root/elections/show.tt:93
 msgid "Voting is closed."
@@ -10905,7 +10905,7 @@ msgstr "composities"
 #: ../root/main/index.tt:31
 msgid ""
 "{about|More Information} &#x2014; {faq|FAQs} &#x2014; {contact|Contact Us}"
-msgstr "{about|Meer informatie} &#x2014; {faq|FAQ’s} &#x2014; {contact|Contact}"
+msgstr "{about|Meer informatie} &#x2014; {faq|Veelgestelde vragen} &#x2014; {contact|Contact}"
 
 #: ../root/oauth2/authorize.tt:5
 msgid "{app} is requesting permission to:"
@@ -11654,7 +11654,7 @@ msgstr "Alias aan deze artiest toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/AddAnnotation.pm:11
 msgid "Add artist annotation"
-msgstr "Aantekening aan deze artiest toevoegen"
+msgstr "Aantekening aan de artiest toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Artist/Create.pm:26
 msgid "Add artist"
@@ -11763,7 +11763,7 @@ msgstr "Relatie bewerken"
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditReleaseEvents.pm:11
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditReleaseEventsOld.pm:17
 msgid "Edit release events (historic)"
-msgstr "Uitgavegebeurtenissen bewerkingen (historisch)"
+msgstr "Uitgavegebeurtenissen bewerken (historisch)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditTrackLength.pm:10
 #: ../lib/MusicBrainz/Server/Edit/Historic/EditTrackName.pm:20
@@ -11773,7 +11773,7 @@ msgstr "Opname bewerken"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/MACToSAC.pm:12
 msgid "Convert release to single artist (historic)"
-msgstr "Uitgave om naar één artiest omzetten (historisch)"
+msgstr "Uitgave naar één artiest omzetten (historisch)"
 
 #: ../lib/MusicBrainz/Server/Edit/Historic/MergeRelease.pm:12
 #: ../lib/MusicBrainz/Server/Edit/Historic/MergeReleaseMAC.pm:9
@@ -11829,7 +11829,7 @@ msgstr "Nog een alias voor dit instrument toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Instrument/AddAnnotation.pm:11
 msgid "Add instrument annotation"
-msgstr "Aantekening voor dit instrument toevoegen"
+msgstr "Aantekening aan het instrument toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Instrument/Create.pm:18
 msgid "Add instrument"
@@ -11861,7 +11861,7 @@ msgstr "Alias aan deze platenmaatschappij toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Label/AddAnnotation.pm:11
 msgid "Add label annotation"
-msgstr "Aantekening voor deze platenmaatschappij toevoegen"
+msgstr "Aantekening aan de platenmaatschappij toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Label/Create.pm:27
 msgid "Add label"
@@ -11905,7 +11905,7 @@ msgstr "Alias aan deze plaats toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/AddAnnotation.pm:11
 msgid "Add place annotation"
-msgstr "Aantekening aan deze plaats toevoegen"
+msgstr "Aantekening aan de plaats toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Place/Create.pm:23
 msgid "Add place"
@@ -11937,7 +11937,7 @@ msgstr "Alias aan deze opname toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/AddAnnotation.pm:12
 msgid "Add recording annotation"
-msgstr "Aantekening voor opname toevoegen"
+msgstr "Aantekening aan de opname toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Recording/AddISRCs.pm:23
 msgid "Add ISRCs"
@@ -12137,7 +12137,7 @@ msgstr "Alias aan deze compositie toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Work/AddAnnotation.pm:12
 msgid "Add work annotation"
-msgstr "Aantekening aan deze compositie toevoegen"
+msgstr "Aantekening aan de compositie toevoegen"
 
 #: ../lib/MusicBrainz/Server/Edit/Work/AddISWCs.pm:20
 msgid "Add ISWCs"
@@ -13060,7 +13060,7 @@ msgid ""
 "This tracklist has artist credits with information that will be lost if you "
 "swap artist credits with track titles. This cannot be undone. Do you wish to"
 " continue?"
-msgstr "Deze nummerlijst heeft vermeldingen met informatie die verloren gaat als de vermeldingen en nummers wisselt. Dit kan niet ongedaan worden gemaakt. Wilt u doorgaan?"
+msgstr "Deze nummerlijst heeft vermeldingen met informatie die verloren gaat als de vermeldingen en nummers omdraait. Dit kan niet ongedaan worden gemaakt. Wilt u doorgaan?"
 
 #: ../root/static/scripts/release-editor/fields.js:511
 msgid "Medium {position}: {title}"
