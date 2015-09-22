@@ -9,8 +9,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2015-09-16 21:40+0000\n"
-"Last-Translator: Maurits Meulenbelt <email address hidden>\n"
+"PO-Revision-Date: 2015-09-22 06:07+0000\n"
+"Last-Translator: Michael Wiencek <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/musicbrainz/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1601,6 +1601,12 @@ msgid ""
 "href=\"/doc/Cover_Art_Archive\">Cover Art Archive</a>."
 msgstr "Dit koppelt een uitgave op MusicBrainz aan het bijbehorende product op Amazon en wordt vaak gebruikt om afbeeldingen te leveren als er geen relevante afbeeldingen in de <a href=\"/doc/Cover_Art_Archive\">Cover Art Archive</a> staan."
 
+#: DB:link_type/description:888
+msgid ""
+"This links a concert tour with a release group (generally an album) the tour"
+" is connected with."
+msgstr ""
+
 #: DB:link_type/description:855
 msgid ""
 "This links a group (often an orchestra) to a composer who has a composer-in-"
@@ -3022,6 +3028,10 @@ msgstr "had verkrijgbare uitgaves"
 #: DB:link_type/long_link_phrase:834
 msgid "had previous attribution"
 msgstr "had vroegere toeschrijving"
+
+#: DB:link_type/long_link_phrase:888
+msgid "had supporting tour"
+msgstr ""
 
 #: DB:link_type/long_link_phrase:77
 msgid "has Amazon ASIN"
@@ -4486,6 +4496,10 @@ msgstr "ondersteunende artiesten"
 msgid "supporting releases"
 msgstr "ondersteunende uitgaves"
 
+#: DB:link_type/link_phrase:888
+msgid "supporting tours"
+msgstr ""
+
 #: DB:link_type/reverse_link_phrase:105
 msgid "supporting {instrument} by"
 msgstr "ondersteunend {instrument:instrument} door"
@@ -4513,6 +4527,10 @@ msgstr ""
 #: DB:link_type/reverse_link_phrase:859
 msgid "tour by"
 msgstr "tournee van"
+
+#: DB:link_type/reverse_link_phrase:888
+msgid "tour in support of"
+msgstr ""
 
 #: DB:link_type/link_phrase:859
 msgid "tours"
