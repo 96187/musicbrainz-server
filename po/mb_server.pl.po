@@ -21,9 +21,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-09-08 13:34-0500\n"
-"PO-Revision-Date: 2015-09-08 18:59+0000\n"
-"Last-Translator: Michael Wiencek <email address hidden>\n"
+"POT-Creation-Date: 2015-09-22 01:01-0500\n"
+"PO-Revision-Date: 2015-10-05 14:38+0000\n"
+"Last-Translator: Debeat <email address hidden>\n"
 "Language-Team: Polish (http://www.transifex.com/musicbrainz/musicbrainz/language/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../root/components/common-macros.tt:9
 msgid " ({text})"
-msgstr ""
+msgstr " ({text})"
 
 #: ../root/account/lost_password.tt:7
 msgid ""
@@ -165,7 +165,7 @@ msgstr "(brak historii zmian)"
 
 #: ../root/release/add_cover_art.tt:114
 msgid "(no other cover art)"
-msgstr ""
+msgstr "(brak okładki)"
 
 #: ../root/edit/details/remove_cover_art.tt:29
 msgctxt "comment"
@@ -326,7 +326,7 @@ msgstr ""
 
 #: ../root/edit/edit_header.tt:61
 msgid "<strong>Approved:</strong> {date}"
-msgstr ""
+msgstr "<strong>Zatwierdzone:</strong> {date}"
 
 #: ../root/edit/edit_header.tt:59
 msgid "<strong>Closed:</strong> <em>Cancelling</em>"
@@ -418,7 +418,7 @@ msgstr ""
 
 #: ../root/release/edit/tracklist.tt:348
 msgid "A tracklist is required."
-msgstr ""
+msgstr "Lista utworów jest wymagana."
 
 #: ../root/relationship/linktype/form.tt:40
 msgid ""
@@ -438,7 +438,7 @@ msgstr "Wstrzymaj się"
 #: ../lib/MusicBrainz/Server/Data/Vote.pm:197
 msgctxt "vote"
 msgid "Abstain"
-msgstr ""
+msgstr "Wstrzymaj się"
 
 #: ../root/doc/edit_type.tt:8
 msgid "Accept"
@@ -455,15 +455,15 @@ msgstr "Akceptuj po ekspiracji"
 #: ../root/user/profile.tt:152
 msgctxt "edit descriptor"
 msgid "Accepted"
-msgstr ""
+msgstr "Zaakceptowane"
 
 #: ../root/user/edits.tt:1
 msgid "Accepted Edits"
-msgstr ""
+msgstr "Zaakceptowane edycje"
 
 #: ../root/user/edits.tt:1
 msgid "Accepted Edits by {name}"
-msgstr ""
+msgstr "Zaakceptowane edycje przez {name}"
 
 #: ../root/account/applications.tt:26
 msgid "Access"
@@ -479,11 +479,11 @@ msgstr "Konto administratora"
 
 #: ../root/user/privileged.tt:52
 msgid "Account administrators"
-msgstr ""
+msgstr "Administratorzy kont"
 
 #: ../root/user/privileged.tt:53
 msgid "Account administrators can edit and delete user accounts."
-msgstr ""
+msgstr "Administratorzy kont mogą edytować i usuwać konta użytkowników."
 
 #: ../root/search/results-freedb.tt:17
 msgid "Action"
@@ -506,7 +506,7 @@ msgstr ""
 
 #: ../root/entity/alias/add.tt:1
 msgid "Add Alias"
-msgstr ""
+msgstr "Dodaj alias"
 
 #: ../root/area/create.tt:1 ../root/area/create.tt:3
 msgid "Add Area"
@@ -847,12 +847,12 @@ msgstr "Dodatki:"
 #: ../root/components/places-list.tt:7 ../root/place/merge.tt:13
 #: ../root/search/results-place.tt:10
 msgid "Address"
-msgstr ""
+msgstr "Adres"
 
 #: ../root/edit/details/add_place.tt:30 ../root/edit/details/edit_place.tt:23
 #: ../root/place/edit_form.tt:17 ../root/place/layout.tt:38
 msgid "Address:"
-msgstr ""
+msgstr "Adres:"
 
 #: ../root/admin/edit_user.tt:1
 msgid "Adjust User Account Flags"
@@ -2044,7 +2044,7 @@ msgstr ""
 msgid "Child order:"
 msgstr "Kolejność potomków:"
 
-#: ../root/release/cover_art_uploader.tt:13
+#: ../root/release/cover_art_uploader.tt:14
 msgid "Choose file:"
 msgstr "Wybierz plik:"
 
@@ -2081,7 +2081,8 @@ msgstr ""
 msgid "Closed"
 msgstr ""
 
-#: ../root/edit/info.tt:48
+#: ../root/edit/info.tt:48 ../root/place/index.tt:9 ../root/place/layout.tt:26
+#: ../root/place/layout.tt:33
 msgid "Closed:"
 msgstr "Zamknięte:"
 
@@ -2394,8 +2395,7 @@ msgid ""
 msgstr "Daty są w formacie RRRR-MM-DD. Częściowe daty takie jak RRRR-MM lub tylko RRRR są też ok, można również pominąć daty całkowicie."
 
 #: ../root/label/index.tt:10 ../root/label/layout.tt:28
-#: ../root/label/layout.tt:35 ../root/place/index.tt:9
-#: ../root/place/layout.tt:26 ../root/place/layout.tt:33
+#: ../root/label/layout.tt:35
 msgid "Defunct:"
 msgstr ""
 
@@ -3409,8 +3409,7 @@ msgid "Founded in:"
 msgstr ""
 
 #: ../root/components/common-macros.tt:856 ../root/label/index.tt:7
-#: ../root/label/layout.tt:20 ../root/place/index.tt:6
-#: ../root/place/layout.tt:18
+#: ../root/label/layout.tt:20
 #: ../root/static/scripts/edit/MB/Control/ArtistEdit.js:58
 msgid "Founded:"
 msgstr "Rok założenia:"
@@ -5375,7 +5374,7 @@ msgstr "Otwarte edycje"
 msgid "Open in tagger"
 msgstr "Otwórz w taggerze"
 
-#: ../root/edit/info.tt:40
+#: ../root/edit/info.tt:40 ../root/place/index.tt:6 ../root/place/layout.tt:18
 msgid "Opened:"
 msgstr "Otwarte:"
 
@@ -5594,7 +5593,7 @@ msgstr ""
 msgid "Please choose a condition"
 msgstr ""
 
-#: ../root/release/cover_art_uploader.tt:17
+#: ../root/release/cover_art_uploader.tt:18
 msgid ""
 "Please choose a valid image. Currently the Cover Art Archive only supports "
 "JPEG, PNG, GIF and PDF files."
@@ -11522,34 +11521,34 @@ msgstr ""
 msgid "The required TOC parameter was invalid or not present"
 msgstr "Wymagany parametr TOC jest nieprawidłowy lub nie istnieje"
 
-#: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:111
+#: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:112
 msgid "Please provide a medium ID"
 msgstr ""
 
-#: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:116
+#: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:117
 msgid "Could not find medium"
 msgstr ""
 
-#: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:150
-#: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:306
+#: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:151
+#: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:307
 msgid "The provided CD TOC is not valid"
 msgstr "Podany CD TOC jest nieprawidłowy"
 
-#: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:163
-#: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:320
+#: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:164
+#: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:321
 msgid "The provided medium id is not valid"
 msgstr ""
 
-#: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:169
+#: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:170
 msgid "This CDTOC is already attached to this medium"
 msgstr ""
 
-#: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:178
-#: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:328
+#: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:179
+#: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:329
 msgid "The selected medium cannot have disc IDs"
 msgstr ""
 
-#: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:205
+#: ../lib/MusicBrainz/Server/Controller/CDTOC.pm:206
 msgid "The provided artist id is not valid"
 msgstr "Wprowadzone ID artysty jest nieprawidłowe"
 
@@ -12295,7 +12294,7 @@ msgstr ""
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:101
 msgctxt "autoeditor election status (short)"
 msgid "Accepted"
-msgstr ""
+msgstr "Zaakceptowane"
 
 #: ../lib/MusicBrainz/Server/Entity/AutoEditorElection.pm:102
 msgctxt "autoeditor election status (short)"
