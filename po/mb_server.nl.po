@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-22 01:01-0500\n"
-"PO-Revision-Date: 2015-10-12 19:59+0000\n"
+"PO-Revision-Date: 2015-10-12 20:58+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/musicbrainz/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -422,7 +422,7 @@ msgstr "Een nummerlijst is benodigd."
 msgid ""
 "A value of 1 or 2 indicates that either entity1 or entity0 are orderable, "
 "respectively."
-msgstr ""
+msgstr "Een waarde van 1 of 2 geeft aan dat respectievelijk entity1 of entity0 sorteerbaar zijn."
 
 #: ../root/layout/menu.tt:122
 msgid "About"
@@ -469,7 +469,7 @@ msgstr "Toegang"
 
 #: ../root/account/registered.tt:1 ../root/account/registered.tt:2
 msgid "Account Created"
-msgstr "Gebruikersaccount aangemaakt"
+msgstr "Account aangemaakt"
 
 #: ../root/admin/edit_user.tt:26 ../root/admin/edit_user.tt:30
 msgid "Account admin"
@@ -481,7 +481,7 @@ msgstr "Accountbeheerders"
 
 #: ../root/user/privileged.tt:53
 msgid "Account administrators can edit and delete user accounts."
-msgstr "Accountbeheerders kunnen gebruikersaccounts bewerken en verwijderen."
+msgstr "Accountbeheerders kunnen accounts bewerken en verwijderen."
 
 #: ../root/search/results-freedb.tt:17
 msgid "Action"
@@ -854,7 +854,7 @@ msgstr "Adres:"
 
 #: ../root/admin/edit_user.tt:1
 msgid "Adjust User Account Flags"
-msgstr "Rechten voor gebruikersaccounts aanpassen"
+msgstr "Rechten voor accounts aanpassen"
 
 #: ../root/layout/menu.tt:81
 msgid "Admin"
@@ -1129,7 +1129,7 @@ msgstr "Weet je zeker dat je alle informatie over {e} wil verwijderen? Dit kan n
 
 #: ../root/admin/delete_user.tt:20
 msgid "Are you sure you want to delete your account? This cannot be undone!"
-msgstr "Weet je zeker dat je je gebruikersaccount wil verwijderen? Dit kan niet ongedaan worden gemaakt!"
+msgstr "Weet je zeker dat je je account wil verwijderen? Dit kan niet ongedaan worden gemaakt!"
 
 #: ../root/elections/nominate.tt:5
 msgid ""
@@ -1169,7 +1169,7 @@ msgstr "Weet je zeker dat je <strong>{page}</strong> van de transclusietabel wil
 msgid ""
 "Are you sure you wish to remove the <strong>{link_attr_type}</strong> "
 "relationship attribute?"
-msgstr "Weet je zeker dat je de <strong>{link_attr_type}</strong> relatie-eigenschap wilt verwijderen?"
+msgstr "Weet je zeker dat je de <strong>{link_attr_type}</strong> relatie-eigenschap wil verwijderen?"
 
 #: ../root/relationship/linktype/delete.tt:6
 msgid ""
@@ -1179,7 +1179,7 @@ msgstr "Weet je zeker dat je het <strong>{link_type}</strong> relatietype wil ve
 
 #: ../root/admin/attributes/delete.tt:6
 msgid "Are you sure you wish to remove the <strong>{name}</strong> attribute?"
-msgstr "Weet je zeker dat je de eigenschap <strong>{name}</strong> wilt verwijderen?"
+msgstr "Weet je zeker dat je de eigenschap <strong>{name}</strong> wil verwijderen?"
 
 #: ../root/area/delete.tt:5
 msgid "Are you sure you wish to remove the area {area} from MusicBrainz?"
@@ -1608,7 +1608,7 @@ msgstr "Terug naar verkiezingen"
 
 #: ../root/components/common-macros.tt:1023
 msgid "Backward"
-msgstr ""
+msgstr "Achteruit"
 
 #: ../root/report/bad_amazon_urls.tt:1 ../root/report/bad_amazon_urls.tt:3
 msgid "Bad Amazon URLs"
@@ -1671,7 +1671,7 @@ msgid ""
 "Based on the information you have provided, we have found the following "
 "similar release to already exist in MusicBrainz. If you wish to base your "
 "release on an existing release, select it below."
-msgstr "Op basis van de door jou verstrekte informatie hebben we een soortgelijke uitgave gevonden in MusicBrainz. Selecteer hieronder een bestaande uitgave als je je uitgave daarop wilt baseren."
+msgstr "Op basis van de door jou verstrekte informatie hebben we een soortgelijke uitgave gevonden in MusicBrainz. Selecteer hieronder een bestaande uitgave als je je uitgave daarop wil baseren."
 
 #: ../root/release/edit_relationships.tt:27
 msgid "Batch-add a relationship to recordings"
@@ -1721,7 +1721,7 @@ msgid ""
 "review entered data to create the most accurate music database on the "
 "internet. If this appeals to you, please {reg|create an account} or "
 "{login_url|login}."
-msgstr "Neem deel aan MusicBrainz door een account aan te maken en {how|te lezen over de manier} waarop we informatie toevoegen aan MusicBrainz. Kom te weten hoe de gegevens die worden toegevoegd collegiaal getoetst worden om de meest nauwkeurige gegevensbank voor muziek op het internet te creëren. {reg|Maak een gebruikersaccount aan} of {login_url|meld je aan} als dit je aanspreekt."
+msgstr "Neem deel aan MusicBrainz door een account aan te maken en {how|te lezen over de manier} waarop we informatie toevoegen aan MusicBrainz. Kom te weten hoe de gegevens die worden toegevoegd collegiaal getoetst worden om de meest nauwkeurige gegevensbank voor muziek op het internet te creëren. {reg|Registreer} of {login_url|meld je aan} als dit je aanspreekt."
 
 #: ../root/components/labels-list.tt:11 ../root/event/merge.tt:14
 #: ../root/label/merge.tt:16 ../root/place/merge.tt:15
@@ -2284,7 +2284,7 @@ msgstr "Een nieuwe {type0}-{type1}-relatie toevoegen"
 
 #: ../root/account/register.tt:1 ../root/account/register.tt:8
 msgid "Create an Account"
-msgstr "Een gebruikersaccount aanmaken"
+msgstr "Een account aanmaken"
 
 #: ../root/collection/edit_form.tt:19
 msgid "Create collection"
@@ -2401,7 +2401,7 @@ msgstr "Verwijderen"
 #: ../root/admin/delete_user.tt:3 ../root/admin/delete_user.tt:13
 #: ../root/admin/delete_user.tt:14 ../root/user/profile/layout.tt:39
 msgid "Delete Account"
-msgstr "Gebruikersaccount verwijderen"
+msgstr "Account verwijderen"
 
 #: ../root/admin/delete_user.tt:2
 msgid "Delete User"
@@ -2409,7 +2409,7 @@ msgstr "Gebruiker verwijderen"
 
 #: ../root/admin/delete_user.tt:23
 msgid "Delete my account"
-msgstr "Mijn gebruikersaccount verwijderen"
+msgstr "Mijn account verwijderen"
 
 #: ../root/admin/delete_user.tt:8
 msgid "Delete {e}"
@@ -2643,7 +2643,7 @@ msgstr "Documentatie:"
 
 #: ../root/user/login.tt:12
 msgid "Don't have an account? {uri|Create one now}!"
-msgstr "Heeft u geen gebruikersaccount? {uri|Maak er dan nu een aan}!"
+msgstr "Heb je geen account? {uri|Maak er dan nu een aan}!"
 
 #: ../root/layout.tt:88
 msgid "Donate"
@@ -3076,7 +3076,7 @@ msgstr[1] "Foutmeldingen:"
 
 #: ../root/components/entity-tabs.tt:1
 msgid "Error: Unknown Tab Type"
-msgstr ""
+msgstr "Fout: Onbekend type tabblad."
 
 #: ../root/components/common-macros.tt:126
 msgid "Error: Unknown Type"
@@ -3264,7 +3264,7 @@ msgstr "Lees de {doc|syntaxdocumentatie} voor hulp bij het schrijven van effecti
 msgid ""
 "For information about the account deletion process, please read the "
 "{uri|account FAQ}."
-msgstr "Lees de {uri|veelgestelde vragen over gebruikersaccounts} voor informatie over het verwijderen van gebruikersaccounts."
+msgstr "Lees de {uri|veelgestelde vragen over accounts} voor informatie over het verwijderen van accounts."
 
 #: ../root/report/separate_discs.tt:7
 msgid ""
@@ -3322,7 +3322,7 @@ msgstr "Forum"
 
 #: ../root/components/common-macros.tt:1023
 msgid "Forward"
-msgstr ""
+msgstr "Vooruit"
 
 #: ../root/doc/relationship_type.tt:43
 #: ../root/relationship/linktype/form.tt:13
@@ -3334,19 +3334,19 @@ msgstr "Bewoording van de voorwaartse link:"
 msgid ""
 "Found a broken link on our site? Please let us know by {report|reporting a "
 "bug}."
-msgstr "Heeft u een kapotte verwijzing gevonden op onze site? Laat het ons alstublieft weten door {report|een bug te rapporteren}."
+msgstr "Heb je een kapotte link gevonden op onze site? Laat het ons alstublieft weten door {report|een bug te rapporteren}."
 
 #: ../root/main/404.tt:24
 msgid ""
 "Found a broken link on our site? Please {report|report a bug} and include "
 "any error message that is shown above."
-msgstr "Heeft u een kapotte verwijzing gevonden op onze site? {report|Rapporteer alstublieft een bug} en voeg elke foutmelding toe die hierboven wordt weergegeven."
+msgstr "Heb je een kapotte link gevonden op onze site? {report|Rapporteer het alstublieft} en voeg elke foutmelding toe die hierboven wordt weergegeven."
 
 #: ../root/main/400.tt:24
 msgid ""
 "Found a problem on our site? Please {report|report a bug} and include any "
 "error message that is shown above."
-msgstr "Heeft u een probleem gevonden op onze site? {report|Rapporteer alstublieft een bug} en voeg elke foutmelding toe die hierboven wordt weergegeven."
+msgstr "Heb je een probleem gevonden op onze site? {report|Rapporteer het alstublieft} en voeg elke foutmelding toe die hierboven wordt weergegeven."
 
 #: ../root/edit/list.tt:36
 msgid "Found at least {n} edit"
@@ -5772,7 +5772,7 @@ msgstr "Privécollectie"
 #: ../root/layout/menu.tt:146 ../root/user/privileged.tt:14
 #: ../root/user/privileged.tt:16
 msgid "Privileged User Accounts"
-msgstr "Geprivilegieerde gebruikersaccounts"
+msgstr "Geprivilegieerde gebruikers"
 
 #: ../root/layout/menu.tt:163
 msgid "Products"
@@ -6075,7 +6075,7 @@ msgid ""
 "the database. If you would like to propose a new relationship, please do so "
 "through the {url|Style Council}. Relationship editors will only make changes"
 " that have been approved by the Style Council."
-msgstr "Relatieredacteurs zijn gebruikers die relatietypes in de gegevensbank kunnen toevoegen of bewerken. Als je een nieuwe relatie wilt voorstellen, moet dat via de {url|Stijlraad}. Relatieredacteurs zullen alleen veranderingen doorvoeren die door de Stijlraad zijn goedgekeurd."
+msgstr "Relatieredacteurs zijn gebruikers die relatietypes in de gegevensbank kunnen toevoegen of bewerken. Als je een nieuwe relatie wil voorstellen, moet dat via de {url|Stijlraad}. Relatieredacteurs zullen alleen veranderingen doorvoeren die door de Stijlraad zijn goedgekeurd."
 
 #: ../root/edit/details/add_relationship.tt:3
 #: ../root/edit/details/edit_relationship.tt:8
@@ -7745,7 +7745,7 @@ msgstr "Die zoekopdracht kan niet worden uitgevoerd omdat je ten minste één �
 msgid ""
 "The Cover Art Archive has had a take down request in the past for this "
 "release, so we are unable to allow any more uploads."
-msgstr "Het Cover Art Archive heeft in het verleden het verzoek gekregen om afbeeldingen voor deze uitgave te verwijderen, dus we kunnen u niet meer toestaan om deze toe te voegen."
+msgstr "Het Cover Art Archive heeft in het verleden het verzoek gekregen om afbeeldingen voor deze uitgave te verwijderen, dus we kunnen je niet meer toestaan om deze toe te voegen."
 
 #: ../root/release/add_cover_art.tt:12
 msgid ""
@@ -7765,7 +7765,7 @@ msgstr "Het aantekeningveld werkt als een miniatuurwiki"
 msgid ""
 "The artist you are trying to edit is a special purpose artist, and you may "
 "not make direct changes to this data."
-msgstr "De artiest die je probeert te bewerken, is een artiest voor specifieke doeleinden, en je mag niet direct veranderingen aanbrengen aan deze gegevens."
+msgstr "De artiest die je probeert te bewerken, is een speciale artiest, en je mag deze gegevens niet direct bewerken."
 
 #: ../root/release/cover_art.tt:44
 msgid ""
@@ -9587,7 +9587,7 @@ msgstr "Bètasite gebruiken"
 msgid ""
 "Use our <strong>XML web service</strong> or <strong>development "
 "libraries</strong> to create your own MusicBrainz-enabled applications."
-msgstr "Gebruik onze <strong>XML-webdienst</strong> of <strong>ontwikkelingsbibliotheken</strong> om je eigen programma’s te maken die met MusicBrainz overweg kunnen."
+msgstr "Gebruik onze <strong>XML-webdienst</strong> of <strong>ontwikkelingsbibliotheken</strong> om zelf programma’s te maken die met MusicBrainz overweg kunnen."
 
 #: ../root/components/forms.tt:326
 msgid ""
@@ -9631,7 +9631,7 @@ msgstr "Gebruik de {doc|geavanceerde zoeksyntaxis)"
 msgid ""
 "User accounts must be more than 2 weeks old, have a confirmed email address,"
 " and more than 10 accepted edits in order to vote on others' edits."
-msgstr "Gebruikersaccounts moeten meer dan twee weken oud zijn, een bevestigd e-mailadres hebben en meer dan tien doorgevoerde bewerkingen hebben gedaan om op de bewerkingen van anderen te kunnen stemmen."
+msgstr "Gebruikers moeten langer dan twee weken geleden aangemeld zijn, een bevestigd e-mailadres hebben en meer dan tien doorgevoerde bewerkingen hebben gedaan om op de bewerkingen van anderen te kunnen stemmen."
 
 #: ../root/account/change_password.tt:21
 msgid "User name:"
@@ -9815,7 +9815,7 @@ msgid ""
 " second their nomination. If you do not support this candidate, please note "
 "that you cannot cast a \"No\" vote (or abstain) until two seconders have "
 "been found."
-msgstr "De stemming is nog niet geopend. Als je deze kandidaat wil steunen, kan je zijn nominatie seconderen. Houd er, als je deze kandidaat niet wilt steunen, rekening mee dat je niet tegen of onthouding kan stemmen tot er twee secondanten zijn gevonden."
+msgstr "De stemming is nog niet geopend. Als je deze kandidaat wil steunen, kan je zijn nominatie seconderen. Houd er, als je deze kandidaat niet wil steunen, rekening mee dat je niet tegen of onthouding kan stemmen tot er twee secondanten zijn gevonden."
 
 #: ../root/doc/edit_type.tt:42
 msgid "Voting period (days)"
@@ -10314,7 +10314,7 @@ msgstr "Je hebt geen applicaties geauthoriseerd."
 msgid ""
 "You have used the {valink|Various Artists} special purpose artist on this "
 "recording."
-msgstr "Je hebt de artiest voor specifieke doeleinden {valink|Diverse Artiesten} gebruikt op deze opname."
+msgstr "Je hebt de speciale artiest {valink|Diverse Artiesten} gebruikt op deze opname."
 
 #: ../root/release/edit/information.tt:48
 msgid "You haven’t entered a complete artist credit."
@@ -10337,7 +10337,7 @@ msgstr "Je kan een notitie toevoegen als je een bewerking annuleert. Dit kan han
 
 #: ../root/artist/special_purpose.tt:2
 msgid "You may not edit special purpose artists"
-msgstr "Je mag een artiest voor specifieke doeleinden niet bewerken"
+msgstr "Je mag een speciale artiest niet bewerken"
 
 #: ../root/account/registered.tt:21
 msgid ""
@@ -11254,7 +11254,7 @@ msgstr "{type} ‘{work}’"
 
 #: ../root/account/edit.tt:111
 msgid "{uri|Delete my account}"
-msgstr "{uri|Mijn gebruikersaccount verwijderen}"
+msgstr "{uri|Mijn account verwijderen}"
 
 #: ../root/layout.tt:32
 msgid "{uri|Return to musicbrainz.org}."
@@ -11322,7 +11322,7 @@ msgid ""
 msgid_plural ""
 "Thank you, your {num_edits} {edit_url|edits} ({edit_ids}) have been "
 "automatically accepted and applied."
-msgstr[0] "Bedankt, uw {num_edits} {edit_url|bewerking} ({edit_ids}) is automatisch geaccepteerd en doorgevoerd."
+msgstr[0] "Bedankt, je {num_edits} {edit_url|bewerking} ({edit_ids}) is automatisch geaccepteerd en doorgevoerd."
 msgstr[1] "Bedankt, je {num_edits} {edit_url|bewerkingen} ({edit_ids}) zijn automatisch geaccepteerd en doorgevoerd."
 
 #: ../lib/MusicBrainz/Server/Controller.pm:151
@@ -11333,7 +11333,7 @@ msgid ""
 msgid_plural ""
 "Thank you, your {num_edits} {edit_url|edits} ({edit_ids}) have been entered "
 "into the edit queue for peer review."
-msgstr[0] "Bedankt, uw {num_edits} {edit_url|bewerking} ({edit_ids}) is toegevoegd aan de wachtrij voor collegiale toetsing."
+msgstr[0] "Bedankt, je {num_edits} {edit_url|bewerking} ({edit_ids}) is toegevoegd aan de wachtrij voor collegiale toetsing."
 msgstr[1] "Bedankt, je {num_edits} {edit_url|bewerkingen} ({edit_ids}) zijn toegevoegd aan de wachtrij voor collegiale toetsing."
 
 #: ../lib/MusicBrainz/Server/Controller.pm:159
@@ -11372,7 +11372,7 @@ msgstr "Het controlegetal klopt niet, controleer je e-mail alstublieft opnieuw."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:83
 msgid "Sorry, this email verification link has expired."
-msgstr "Onze excuses, deze e-mail-verificatielink is verlopen."
+msgstr "Onze excuses, deze e-mailverificatielink is verlopen."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:92
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:221
@@ -11434,7 +11434,7 @@ msgstr "De mededeling is bijgewerkt. Onthoud wel dat elke server zijn eigen onaf
 
 #: ../lib/MusicBrainz/Server/Controller/Artist.pm:524
 msgid "You cannot merge a special purpose artist into another artist"
-msgstr "Je kan een artiest voor specifieke doeleinden niet samenvoegen met een normale artiest."
+msgstr "Je kan een speciale artiest niet samenvoegen met een normale artiest."
 
 #: ../lib/MusicBrainz/Server/Controller/Artist.pm:529
 msgid "You cannot merge into Deleted Artist"
@@ -11520,7 +11520,7 @@ msgstr "Series die verschillende objecttypes hebben kunnen niet worden samengevo
 #: ../lib/MusicBrainz/Server/Controller/User.pm:254
 #, perl-brace-format
 msgid "The editor {name} has no email address attached to their account."
-msgstr "De redacteur {name} heeft geen e-mailadres aan zijn of haar gebruikersaccount gekoppeld."
+msgstr "De redacteur {name} heeft geen e-mailadres aan zijn of haar account gekoppeld."
 
 #: ../lib/MusicBrainz/Server/Controller/User.pm:264
 msgid ""
@@ -12459,7 +12459,7 @@ msgstr "Het protocol van de URL moet HTTP, HTTPS of FTP zijn."
 
 #: ../lib/MusicBrainz/Server/Form/Merge.pm:18
 msgid "Please pick the entity you want the others merged into."
-msgstr "Selecteer het object waar u de andere objecten in wilt samenvoegen."
+msgstr "Selecteer het object waarin je de andere objecten wil samenvoegen."
 
 #: ../lib/MusicBrainz/Server/Form/Merge/Release.pm:62
 msgid "Another medium is already in this position"
@@ -12471,11 +12471,11 @@ msgstr "Posities moeten groter zijn dan 0"
 
 #: ../lib/MusicBrainz/Server/Form/Recording/Standalone.pm:8
 msgid "You must provide an edit note when adding a standalone recording"
-msgstr "U moet een notitie toevoegen als u een losstaande opname toevoegt."
+msgstr "Je moet een notitie toevoegen als je een losstaande opname toevoegt."
 
 #: ../lib/MusicBrainz/Server/Form/Role/EditNote.pm:20
 msgid "You must provide an edit note"
-msgstr "U moet een opmerking toevoegen"
+msgstr "Je moet een opmerking toevoegen"
 
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:44
 msgid "FreeDB"
@@ -12496,7 +12496,7 @@ msgstr "Het oude wachtwoord is incorrect"
 
 #: ../lib/MusicBrainz/Server/Form/User/ChangePassword.pm:54
 msgid "An account with this name could not be found"
-msgstr "Een gebruikersaccount met deze naam kon niet worden gevonden"
+msgstr "Een gebruiker met deze naam kon niet worden gevonden"
 
 #: ../lib/MusicBrainz/Server/Form/User/EditProfile.pm:22
 msgid "Invalid URL format"
@@ -12520,7 +12520,7 @@ msgstr "Moedertaal"
 
 #: ../lib/MusicBrainz/Server/Form/User/EditProfile.pm:78
 msgid "You must supply a complete birth date for us to display your age."
-msgstr "U moet een volledige geboortedatum opgeven om uw leeftijd te kunnen tonen."
+msgstr "Je moet een volledige geboortedatum opgeven om je leeftijd te kunnen tonen."
 
 #: ../lib/MusicBrainz/Server/Form/User/EditProfile.pm:82
 msgid "Birth year must be after 1900"
@@ -12530,7 +12530,7 @@ msgstr "De geboortedatum moet na 1900 zijn"
 msgid ""
 "Biography and website fields may not be edited until your email address is "
 "confirmed."
-msgstr "Biografie en website velden kunnen niet worden bewerkt tot uw e-mailadres bevestigd is."
+msgstr "De velden voor je biografie en website kunnen niet worden bewerkt tot je e-mailadres bevestigd is."
 
 #: ../lib/MusicBrainz/Server/Form/User/Login.pm:9
 msgid "Username field is required"
@@ -12790,7 +12790,7 @@ msgstr "Plussen"
 
 #: ../root/static/scripts/common/components/TagEditor.js:71
 msgid "You’ve upvoted this tag"
-msgstr "U heeft dit etiket geplust"
+msgstr "Je hebt dit etiket omhoog gestemd."
 
 #: ../root/static/scripts/common/components/TagEditor.js:79
 msgid "Downvote"
@@ -12798,13 +12798,13 @@ msgstr "Minnen"
 
 #: ../root/static/scripts/common/components/TagEditor.js:80
 msgid "You’ve downvoted this tag"
-msgstr "U heeft dit etiket gemint"
+msgstr "Je hebt dit etiket omlaag gestemd."
 
 #: ../root/static/scripts/common/components/TagEditor.js:293
 msgid ""
 "Tags with a score of zero or below, and tags that you’ve downvoted are "
 "hidden."
-msgstr "Etiketten met een score van nul of lager, of die u gemint heeft, zijn verborgen."
+msgstr "Etiketten met een score van nul of lager, of die je omlaag gestemd hebt, zijn verborgen."
 
 #: ../root/static/scripts/common/components/TagEditor.js:296
 msgid "Show all tags."
@@ -12818,7 +12818,7 @@ msgstr "Etiketten toevoegen"
 msgid ""
 "You can add your own {tagdocs|tags} below. Use commas to separate multiple "
 "tags."
-msgstr "U kunt hieronder uw eigen {tagdocs|etiketten} toevoegen. Gebruik komma’s tussen verschillende etiketten."
+msgstr "Je kan hieronder je eigen {tagdocs|etiketten} toevoegen. Gebruik komma’s tussen verschillende etiketten."
 
 #: ../root/static/scripts/common/components/TagEditor.js:309
 msgid "Submit tags"
@@ -12944,11 +12944,11 @@ msgstr "Voeg een {doc_disambiguation|verduidelijking} toe om dit object van ande
 #: ../root/static/scripts/relationship-editor/release.js:70
 #: ../root/static/scripts/release-editor/init.js:170
 msgid "All of your changes will be lost if you leave this page."
-msgstr "Al uw veranderingen zullen verloren gaan als u deze pagina verlaat."
+msgstr "Al je veranderingen zullen verloren gaan als je deze pagina verlaat."
 
 #: ../root/static/scripts/edit/externalLinks.js:165
 msgid "Please select a link type for the URL you’ve entered."
-msgstr "Selecteer een koppelingstype voor de URL die u heeft ingevoerd."
+msgstr "Selecteer een koppelingstype voor de URL die je hebt ingevoerd."
 
 #: ../root/static/scripts/edit/externalLinks.js:169
 #: ../root/static/scripts/relationship-editor/common/dialog.js:453
@@ -13006,19 +13006,19 @@ msgstr "Deze methode schrijft alleen de het eerste woord van een zin met een hoo
 
 #: ../root/static/scripts/relationship-editor/common/dialog.js:19
 msgid "The series you’ve selected is for recordings."
-msgstr "De serie die u heeft geselecteerd is voor opnames."
+msgstr "De serie die je hebt geselecteerd, is voor opnames."
 
 #: ../root/static/scripts/relationship-editor/common/dialog.js:20
 msgid "The series you’ve selected is for releases."
-msgstr "De serie die u heeft geselecteerd is voor uitgaves."
+msgstr "De serie die je hebt geselecteerd, is voor uitgaves."
 
 #: ../root/static/scripts/relationship-editor/common/dialog.js:21
 msgid "The series you’ve selected is for release groups."
-msgstr "De serie die u heeft geselecteerd is voor uitgavegroepen."
+msgstr "De serie die je hebt geselecteerd, is voor uitgavegroepen."
 
 #: ../root/static/scripts/relationship-editor/common/dialog.js:22
 msgid "The series you’ve selected is for works."
-msgstr "De serie die u heeft geselecteerd is voor composities."
+msgstr "De serie die je hebt geselecteerd, is voor composities."
 
 #: ../root/static/scripts/relationship-editor/common/dialog.js:444
 msgid "Please select a relationship type."
@@ -13059,7 +13059,7 @@ msgid ""
 "This tracklist has artist credits with information that will be lost if you "
 "swap artist credits with track titles. This cannot be undone. Do you wish to"
 " continue?"
-msgstr "Deze nummerlijst heeft vermeldingen met informatie die verloren gaat als de vermeldingen en nummers omdraait. Dit kan niet ongedaan worden gemaakt. Wilt u doorgaan?"
+msgstr "Deze nummerlijst heeft vermeldingen met informatie die verloren gaat als de vermeldingen en nummers omdraait. Dit kan niet ongedaan worden gemaakt. Wil je doorgaan?"
 
 #: ../root/static/scripts/release-editor/fields.js:511
 msgid "Medium {position}: {title}"
@@ -13102,26 +13102,26 @@ msgstr "Controleert u alstublieft de streepjescode op de release nog een keer."
 #: ../root/static/scripts/release-editor/validation.js:129
 msgid ""
 "The barcode you entered looks like a UPC code with the check digit missing."
-msgstr "De streepjescode die u heeft ingevoerd lijkt op een UPC-code waarbij het controlegetal ontbreekt."
+msgstr "De streepjescode die je hebt ingevoerd, lijkt op een UPC-code waarbij het controlegetal ontbreekt."
 
 #: ../root/static/scripts/release-editor/validation.js:135
 msgid "The barcode you entered is a valid UPC code."
-msgstr "De streepjescode die u heeft ingevoerd is een geldige UPC-code."
+msgstr "De streepjescode die je hebt ingevoerd, is een geldige UPC-code."
 
 #: ../root/static/scripts/release-editor/validation.js:138
 msgid ""
 "The barcode you entered is either an invalid UPC code, or an EAN code with "
 "the check digit missing."
-msgstr "De streepjescode die u heeft ingevoerd is of een ongeldige UPC-code, of een EAN-code waarbij het controlegetal ontbreekt."
+msgstr "De streepjescode die je hebt ingevoerd, is of een ongeldige UPC-code, of een EAN-code waarvan het controlegetal ontbreekt."
 
 #: ../root/static/scripts/release-editor/validation.js:147
 msgid "The barcode you entered is a valid EAN code."
-msgstr "De streepjescode die u heeft ingevoerd is een geldige EAN-code."
+msgstr "De streepjescode die je hebt ingevoerd, is een geldige EAN-code."
 
 #: ../root/static/scripts/release-editor/validation.js:150
 msgid "The barcode you entered is not a valid EAN code."
-msgstr "De streepjescode die u heeft ingevoerd is geen geldige EAN-code."
+msgstr "De streepjescode die je hebt ingevoerd, is geen geldige EAN-code."
 
 #: ../root/static/scripts/release-editor/validation.js:157
 msgid "The barcode you entered is not a valid UPC or EAN code."
-msgstr "De streepjescode die u heeft ingevoerd is geen geldige UPC of EAN-code."
+msgstr "De streepjescode die je hebt ingevoerd, is geen geldige UPC of EAN-code."
