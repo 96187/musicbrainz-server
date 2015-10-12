@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-22 01:01-0500\n"
-"PO-Revision-Date: 2015-10-12 18:57+0000\n"
+"PO-Revision-Date: 2015-10-12 19:59+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/musicbrainz/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -7411,23 +7411,23 @@ msgstr "Onze excuses, we konden geen bewerking vinden met die bewerking-id. Je k
 msgid ""
 "Sorry, we could not find an editor with that name. You may wish to try and "
 "{search_url|search for them} instead."
-msgstr "Onze excuses, we konden geen redacteur vinden met die naam. U kunt ook proberen om {search_url|ernaar te zoeken}."
+msgstr "Onze excuses, we konden geen redacteur vinden met die naam. Je kan ook proberen om {search_url|ernaar te zoeken}."
 
 #: ../root/event/not_found.tt:4
 msgid ""
 "Sorry, we could not find an event with that MusicBrainz ID. You may wish to "
 "try and {search_url|search for it} instead."
-msgstr "Onze excuses, we konden geen evenement vinden met die MBID. U kunt ook proberen om {search_url|ernaar te zoeken}."
+msgstr "Onze excuses, we konden geen evenement vinden met die MBID. Je kan ook proberen om {search_url|ernaar te zoeken}."
 
 #: ../root/instrument/not_found.tt:4
 msgid ""
 "Sorry, we could not find an instrument with that MusicBrainz ID. You may "
 "wish to try and {search_url|search for it} instead."
-msgstr "Onze excuses, we konden geen instrument vinden met die MBID. U kunt ook proberen om {search_url|ernaar te zoeken}."
+msgstr "Onze excuses, we konden geen instrument vinden met die MBID. Je kan ook proberen om {search_url|ernaar te zoeken}."
 
 #: ../root/cdtoc/not_found.tt:4
 msgid "Sorry, we could not find the CD TOC you specified."
-msgstr "Onze excuses, we konden de door u gespecificeerde TOC niet vinden."
+msgstr "Onze excuses, we konden de door jou gespecificeerde TOC niet vinden."
 
 #: ../root/elections/not_found.tt:4
 msgid "Sorry, we could not find this election."
@@ -7435,21 +7435,21 @@ msgstr "Onze excuses, we konden deze verkiezing niet vinden."
 
 #: ../root/main/401.tt:5
 msgid "Sorry, you are not authorized to view this page."
-msgstr "Onze excuses, u heeft geen toestemming om deze pagina te zien."
+msgstr "Onze excuses, je hebt geen toestemming om deze pagina te zien."
 
 #: ../root/main/mirror.tt:5
 msgid "Sorry, you are unable to perform that action on a mirror server."
-msgstr "Onze excuses, u kunt dit niet doen op een spiegelserver."
+msgstr "Onze excuses, je kan dit niet doen op een spiegelserver."
 
 #: ../root/search/error/no-info.tt:3
 msgid ""
 "Sorry, your query (<code>{query}</code>) does not contain enough information"
 " to carry out a search."
-msgstr "Onze excuses, uw zoekopdracht (<code>{query}</code>) bevat niet genoeg informatie om uit te voeren."
+msgstr "Onze excuses, je zoekopdracht (<code>{query}</code>) bevat niet genoeg informatie om uit te voeren."
 
 #: ../root/search/error/uri-too-large.tt:3
 msgid "Sorry, your query was too large."
-msgstr "Onze excuses, uw zoekopdracht was te groot."
+msgstr "Onze excuses, je zoekopdracht was te groot."
 
 #: ../root/doc/bare_error.tt:5 ../root/doc/error.tt:11
 msgid "Sorry, “{id}” is not a valid documentation page."
@@ -7679,7 +7679,7 @@ msgstr "Etiket niet in gebruik"
 
 #: ../root/main/index.tt:68
 msgid "Tag Your Music"
-msgstr "Tag uw muziek"
+msgstr "Tag je muziek"
 
 #: ../root/search/index.tt:5
 msgid "Tag lookup"
@@ -7733,13 +7733,13 @@ msgstr "Bedankt voor het bijdragen aan MusicBrainz."
 msgid ""
 "Thank you, your email address has now been verified! If you still can't "
 "edit, please try to log out and log in again."
-msgstr "Bedankt, uw e-mailadres is nu geverifieerd! Probeer als u nog steeds geen bewerkingen kunt doen om u af en weer aan te melden."
+msgstr "Bedankt, je e-mailadres is nu geverifieerd! Probeer je af en weer aan te melden als je nog steeds geen bewerkingen kan maken."
 
 #: ../root/taglookup/not_found.tt:4
 msgid ""
 "That search can't be performed, because you must provide at least one of "
 "'recording', 'track number', 'duration', 'release', or 'artist'."
-msgstr "Die zoekopdracht kan niet worden uitgevoerd omdat u ten minste één ‘opname’, ‘nummerpositie’, ‘duur’, ‘uitgave’ of ‘artiest’ moet opgeven."
+msgstr "Die zoekopdracht kan niet worden uitgevoerd omdat je ten minste één ‘opname’, ‘nummerpositie’, ‘duur’, ‘uitgave’ of ‘artiest’ moet opgeven."
 
 #: ../root/release/caa_darkened.tt:3 ../root/release/cover_art.tt:59
 msgid ""
@@ -7765,7 +7765,7 @@ msgstr "Het aantekeningveld werkt als een miniatuurwiki"
 msgid ""
 "The artist you are trying to edit is a special purpose artist, and you may "
 "not make direct changes to this data."
-msgstr "De artiest die u probeert te bewerken, is een artiest voor specifieke doeleinden, en u mag niet direct veranderingen aanbrengen aan deze gegevens."
+msgstr "De artiest die je probeert te bewerken, is een artiest voor specifieke doeleinden, en je mag niet direct veranderingen aanbrengen aan deze gegevens."
 
 #: ../root/release/cover_art.tt:44
 msgid ""
@@ -7779,7 +7779,7 @@ msgstr "Dit weblog is nu niet beschikbaar."
 
 #: ../root/release/edit/information.tt:308
 msgid "The catalog number you have entered looks like an Amazon ASIN."
-msgstr "Het catalogusnummer dat u heeft ingevoerd, ziet er uit als een ASIN van Amazon."
+msgstr "Het catalogusnummer dat je hebt ingevoerd, ziet er uit als een ASIN van Amazon."
 
 #: ../root/release/edit/information.tt:355
 msgid ""
@@ -7797,11 +7797,11 @@ msgstr "De gegevens in deze bewerking komen oorspronkelijk uit een oudere versie
 msgid ""
 "The data you have submitted does not make any changes to the data already "
 "present."
-msgstr "De gegevens die u heeft ingediend, veranderen niets aan de al bestaande gegevens."
+msgstr "De gegevens die je hebt ingediend, veranderen niets aan de al bestaande gegevens."
 
 #: ../root/release/edit/layout.tt:23
 msgid "The data you’ve seeded contained the following errors:"
-msgstr "De gegevens die u heeft ingevuld geven de volgende foutmeldingen:"
+msgstr "De gegevens die je hebt ingevuld, geven de volgende foutmeldingen:"
 
 #: ../root/tag/cloud.tt:9
 msgid "The database has no tags."
@@ -7810,7 +7810,7 @@ msgstr "De gegevensbank heeft geen etiketten."
 #: ../root/release/edit/information.tt:173
 #: ../root/static/scripts/relationship-editor/common/dialog.js:482
 msgid "The date you've entered is not valid."
-msgstr "De datum die u heeft ingevoerd is niet geldig."
+msgstr "De datum die je hebt ingevoerd, is niet geldig."
 
 #: ../root/user/profile.tt:88
 msgid "The early days of the project"
@@ -7866,7 +7866,7 @@ msgstr "De meeste gegevens in de <strong>gegevensbank van MusicBrainz</strong> z
 #: ../root/cdtoc/set_durations.tt:19
 msgid ""
 "The medium you are altering is part of the following release: {release}"
-msgstr "Het medium dat u bewerkt, maakt deel uit van de volgende uitgave: {release}"
+msgstr "Het medium dat je bewerkt, maakt deel uit van de volgende uitgave: {release}"
 
 #: ../root/edit/details/edit_url.tt:39
 msgid ""
@@ -7876,7 +7876,7 @@ msgstr "De nieuwe URL bestaat al in de gegevensbank. Deze bewerking zal daarom d
 
 #: ../root/main/403.tt:5
 msgid "The page you requested is private."
-msgstr "De pagina die u opvroeg, is privé."
+msgstr "De pagina die je opvroeg, is privé."
 
 #: ../root/release/edit/information.tt:349
 msgid ""
@@ -7894,7 +7894,7 @@ msgstr "De reden hiervoor is onbekend."
 msgid ""
 "The recording artists do not match! Perhaps you meant to use the \"append "
 "mediums\" merge strategy?"
-msgstr "De artiesten van de opnames komen niet overeen! Misschien wilde u de ‘media toevoegen’ samenvoegingsstrategie gebruiken?"
+msgstr "De artiesten van de opnames komen niet overeen! Misschien wilde je de ‘media toevoegen’-samenvoegingsstrategie gebruiken?"
 
 #: ../root/release/merge.tt:113
 msgid ""
@@ -7912,7 +7912,7 @@ msgstr "Het relatietype ‘{type}’ kan niet worden verwijderd omdat het nog st
 msgid ""
 "The search server could not fulfill your request due to an internal error. "
 "This is usually only temporary, so please retry your search again later."
-msgstr "De zoekserver kon uw verzoek niet voldoen door een interne fout. Deze is meestal tijdelijk, dus probeer het later opnieuw."
+msgstr "De zoekserver kon je verzoek niet voldoen door een interne fout. Deze is meestal tijdelijk, dus probeer het later opnieuw."
 
 #: ../root/layout.tt:59
 msgid "The server is temporary in read-only mode for database maintainance."
@@ -7920,7 +7920,7 @@ msgstr "De server is tijdelijk in alleenlezenmodus vanwege onderhoud aan de gege
 
 #: ../root/main/503.tt:5
 msgid "The system is overloaded or you are making requests too fast."
-msgstr "Het systeem is overbelast of u doet te veel verzoeken."
+msgstr "Het systeem is overbelast of je doet te veel verzoeken."
 
 #: ../root/elections/show.tt:29
 msgid ""
@@ -7936,11 +7936,11 @@ msgid ""
 "The tracklist found looks like it may have different artists on some tracks."
 " If the below display looks correct, you should import this release as a "
 "release with multiple artists."
-msgstr "De gevonden nummerlijst lijkt op sommige nummers andere artiesten te hebben. Als het onderstaande er goed uit ziet, moet u deze uitgave importeren als een uitgave met meerdere artiesten."
+msgstr "De gevonden nummerlijst lijkt op sommige nummers andere artiesten te hebben. Als het onderstaande er goed uit ziet, moet je deze uitgave importeren als een uitgave met meerdere artiesten."
 
 #: ../root/taglookup/nag.tt:4
 msgid "The users make MusicBrainz happen and we appreciate your help!"
-msgstr "De gebruikers zorgen dat MusicBrainz werkt en wij waarderen uw hulp!"
+msgstr "De gebruikers zorgen ervoor dat MusicBrainz werkt en wij waarderen jouw hulp!"
 
 #: ../root/watch/list.tt:4
 msgid "The watch artist feature is currently not active."
@@ -7955,11 +7955,11 @@ msgid ""
 "There are currently no discs in MusicBrainz associated with the information "
 "you provided. You can search for the disc you are looking for using the "
 "forms below, or you may add a new release to MusicBrainz"
-msgstr "Er zijn momenteel geen media in MusicBrainz geassocieerd met de informatie die u heeft ingevoerd. U kunt naar het gewenste medium zoeken met de formulieren hieronder, of u kunt een nieuwe uitgave toevoegen aan MusicBrainz."
+msgstr "Er zijn momenteel geen media in MusicBrainz geassocieerd met de informatie die je hebt ingevoerd. Je kan naar het gewenste medium zoeken met de formulieren hieronder, of je kan een nieuwe uitgave aan MusicBrainz toevoegen."
 
 #: ../root/user/subscribers.tt:23
 msgid "There are currently no users subscribed to edits that you make."
-msgstr "Er zijn momenteel geen gebruikers geabonneerd op bewerkingen die u maakt."
+msgstr "Er zijn momenteel geen gebruikers geabonneerd op bewerkingen die je maakt."
 
 #: ../root/user/subscribers.tt:25
 msgid "There are currently no users subscribed to edits that {user} makes."
@@ -7994,7 +7994,7 @@ msgid ""
 "at the bottom of the {alias_uri|aliases} tab and remove all existing "
 "{rel_uri|relationships} instead, which will allow ModBot to automatically "
 "remove this artist in the upcoming days."
-msgstr "Er zijn geen nummers, opnames, uitgavegroepen en uitgaves die alleen onder {name} worden vermeld. Als u {name} probeert te verwijderen, bewerk dan in plaats daarvan alle vermeldingen onderaan de {alias_uri|tab aliassen} en verwijder alle bestaande {rel_uri|relaties}, zodat ModBot deze artiest in de komende dagen automatisch kan verwijderen."
+msgstr "Er zijn geen nummers, opnames, uitgavegroepen en uitgaves die alleen onder {name} worden vermeld. Als je {name} probeert te verwijderen, bewerk dan in plaats daarvan alle vermeldingen onderaan de {alias_uri|tab aliassen} en verwijder alle bestaande {rel_uri|relaties}, zodat ModBot deze artiest in de komende dagen automatisch kan verwijderen."
 
 #: ../root/user/subscribers.tt:4
 msgid "There is currently {num} user subscribed to edits that {user} makes:"
@@ -8046,8 +8046,8 @@ msgid ""
 msgid_plural ""
 "There are {reviews_link|{review_count} reviews} on CritiqueBrainz. You can "
 "also {write_link|write your own}."
-msgstr[0] "Er is {reviews_link|{review_count} recensie} op CritiqueBrainz. U kunt ook {write_link|zelf een recensie schrijven}."
-msgstr[1] "Er zijn {reviews_link|{review_count} recensies} op CritiqueBrainz. U kunt ook {write_link|zelf een recensie schrijven}."
+msgstr[0] "Er is {reviews_link|{review_count} recensie} op CritiqueBrainz. Je kan ook {write_link|zelf een recensie schrijven}."
+msgstr[1] "Er zijn {reviews_link|{review_count} recensies} op CritiqueBrainz. Je kan ook {write_link|zelf een recensie schrijven}."
 
 #: ../root/place/edit_form.tt:30
 msgid "These coordinates could not be parsed."
@@ -8057,7 +8057,7 @@ msgstr "Deze coördinaten konden niet worden ingevoerd."
 msgid ""
 "These images provided by the {caa|Cover Art Archive}. You can also see them "
 "at the {ia|Internet Archive}."
-msgstr "Deze afbeeldingen worden geleverd door het {caa|Cover Art Archive}. U kunt ze ook bekijken bij het {ia|Internet Archive}."
+msgstr "Deze afbeeldingen worden geleverd door het {caa|Cover Art Archive}. Je kan ze ook bekijken bij het {ia|Internet Archive}."
 
 #: ../root/forms/relationship-editor.tt:62
 msgid "These relationships have a specific ordering"
@@ -8071,13 +8071,13 @@ msgstr "Deze cd heeft nummers van meerdere artiesten (bijv. een compilatie-cd)"
 msgid ""
 "This ISRC is not associated with any recordings. If you wish to associate it"
 " with a recording, please {search_url|search for the recording} and add it."
-msgstr "Deze ISRC is niet gekoppeld aan een opname. {search_url|Zoek naar de opname} als u het aan een opname wilt toevoegen en voeg dan de ISRC toe."
+msgstr "Deze ISRC is niet gekoppeld aan een opname. {search_url|Zoek naar de opname} als je het aan een opname wil toevoegen en voeg dan de ISRC toe."
 
 #: ../root/iswc/not_found.tt:4
 msgid ""
 "This ISWC is not associated with any works. If you wish to associate it with"
 " a work, please {search_url|search for the work} and add it."
-msgstr "Deze ISWC is niet gekoppeld aan een compositie. {search_url|Zoek naar de compositie} als u het aan een compositie wilt koppelen en voeg dan de ISWC toe."
+msgstr "Deze ISWC is niet gekoppeld aan een compositie. {search_url|Zoek naar de compositie} als je het aan een compositie wil koppelen en voeg dan de ISWC toe."
 
 #: ../root/entity/alias/edit_form.tt:32
 msgid "This alias is no longer current."
@@ -8299,14 +8299,14 @@ msgid ""
 "This form allows you to edit the artist credit \"{ac}\". When the edit is "
 "accepted, all tracks, recordings, releases and release groups using this "
 "artist credit will be update to use the new one."
-msgstr "Dit formulier laat u de vermelding van een artiest ‘{ac}’ bewerken. Als deze bewerking wordt doorgevoerd, zullen alle nummers, opnames, uitgaves en uitgavegroepen die deze vermelding gebruiken, worden gewijzigd naar de nieuwe vermelding."
+msgstr "Met dit formulier kan je de vermelding van een artiest ‘{ac}’ bewerken. Als deze bewerking wordt doorgevoerd, zullen alle nummers, opnames, uitgaves en uitgavegroepen die deze vermelding gebruiken, worden gewijzigd naar de nieuwe naam."
 
 #: ../root/artist/split.tt:29
 msgid ""
 "This form allows you to split {artist} into separate artists. When the edit "
 "is accepted, existing artist credits will be updated, and collaboration "
 "relationships will be removed"
-msgstr "Dit formulier laat u {artist} splitsen in afzonderlijke artiesten. Als de bewerking wordt doorgevoerd, worden bestaande artiestvermeldingen bijgewerkt en samenwerkingsrelaties verwijderd."
+msgstr "Met dit formulier kan je {artist} splitsen in afzonderlijke artiesten. Als de bewerking wordt doorgevoerd, worden bestaande artiestvermeldingen bijgewerkt en samenwerkingsrelaties verwijderd."
 
 #: ../root/admin/attributes/form.tt:60
 msgid "This format can have disc IDs"
@@ -8338,7 +8338,7 @@ msgstr "Dit is een PDF-bestand, de miniatuur toont misschien niet alle inhoud."
 msgid ""
 "This is a development server. Your email address is not private or secure. "
 "Proceed with caution!"
-msgstr "Dit is een server voor ontwikkeling. Uw e-mailadres is niet privé of veilig. Ga voorzichtig te werk!"
+msgstr "Dit is een server voor ontwikkeling. je e-mailadres is hier niet privé of veilig. Ga voorzichtig te werk!"
 
 #: ../root/user/login.tt:27
 msgid "This is a development server; all passwords have been reset to \"mb\"."
@@ -8402,7 +8402,7 @@ msgstr "Dit soort medium kan geen disc-id hebben"
 msgid ""
 "This medium has a disc ID, pregap track, or data track, so you can only "
 "change the format to one that can have disc IDs."
-msgstr "Dit medium heeft een disc-id, pregapnummer of datanummer, dus u kunt het type alleen veranderen in een type medium dat dit ondersteunt."
+msgstr "Dit medium heeft een disc-id, pregapnummer of datanummer, dus je kan het type alleen veranderen in een type medium dat dit ondersteunt."
 
 #: ../root/release/merge.tt:105
 msgid ""
@@ -8589,7 +8589,7 @@ msgid ""
 "members. If you find that an artist here is indeed a group, change its type."
 " If it is not, please make sure that the \"member of\" relationships are in "
 "the right direction and are correct."
-msgstr "Dit rapport toon artiesten van het type ander dan <em>groep</em>, maar die misschien een groep zijn omdat ze andere artiesten als lid hebben. Verander het type als een artiest inderdaad een groep is. Controleer als de artiest geen groep is of de ‘lid van’-relaties de goede richting op wijzen en kloppen."
+msgstr "Dit rapport toon artiesten van het type ander dan <em>groep</em>, maar die misschien een groep zijn omdat ze andere artiesten als lid hebben. Verander het type als een artiest inderdaad een groep is. Controleer, als de artiest geen groep is, of de ‘lid van’-relaties de goede richting op wijzen en kloppen."
 
 #: ../root/report/artists_that_may_be_persons.tt:6
 msgid ""
@@ -8598,7 +8598,7 @@ msgid ""
 "artist will appear here if it is listed as a member of another. If you find "
 "that an artist here is indeed a person, change its type. If it is not, "
 "please make sure that all the relationships are correct and make sense."
-msgstr "Dit rapport toont artiesten van het type ander dan <em>persoon</em>, maar die misschien een persoon zijn vanwege relaties die ze hebben. Een artiest staat hier bijvoorbeeld in omdat het een lid is van een andere artiest. Verander het type als de artiest inderdaad een persoon is. Controleer of alle relaties kloppen en logisch zijn als de artiest geen persoon is."
+msgstr "Dit rapport toont artiesten van het type ander dan <em>persoon</em>, maar die op basis van hun relaties misschien een persoon zijn. Een artiest staat hier bijvoorbeeld in omdat hij een lid is van een andere artiest. Verander het type als de artiest inderdaad een persoon is. Controleer, als de artiest geen persoon is, of alle relaties kloppen en logisch zijn."
 
 #: ../root/report/artists_containing_disambiguation_comments.tt:6
 msgid ""
@@ -8788,7 +8788,7 @@ msgid ""
 " barcode, you can also search Amazon for it and see which ASIN matches. You "
 "might also find some ASINs linked to several discs of a multi-disc release: "
 "just merge those (see {how_to_merge_releases|How to Merge Releases})."
-msgstr "Dit rapport toont URL’s van Amazon die aan meerdere uitgaves gekoppeld zijn. In de meeste gevallen zouden ASIN’s van Amazon 1:1 overeen moeten komen met uitgaves op MusicBrainz, zodat er maar één correcte koppeling kan zijn. Controleer of de uitgave in MusicBrainz overeenkomt met de uitgave op Amazon (let op het medium, de nummerlijst en het land van uitgave). U kan ook enkele URL's van Amazon vinden die gekoppeld zijn aan verschillende media van een uitgave met meerdere media: voeg deze samen (zie {how_to_merge_releases|Hoe uitgaves samen te voegen})."
+msgstr "Dit rapport toont URL’s van Amazon die aan meerdere uitgaves gekoppeld zijn. In de meeste gevallen zouden ASIN’s van Amazon 1:1 overeen moeten komen met uitgaves op MusicBrainz, zodat er maar één correcte koppeling kan zijn. Controleer of de uitgave in MusicBrainz overeenkomt met de uitgave op Amazon (let op het medium, de nummerlijst en het land van uitgave). Soms is een URL van Amazon gekoppeld aan verschillende uitgaves in MusicBrainz die eigenlijk verschillende losse media van één uitgave zijn. In dat geval moeten deze uitgaves worden samengevoegd (zie {how_to_merge_releases|Hoe uitgaves samen te voegen})."
 
 #: ../root/report/discogs_links_with_multiple_artists.tt:6
 msgid "This report shows Discogs URLs which are linked to multiple artists."
@@ -8812,7 +8812,7 @@ msgid ""
 "etc.). You might also find some Discogs URLs linked to several discs of a "
 "multi-disc release: just merge those (see {how_to_merge_releases|How to "
 "Merge Releases})."
-msgstr "Dit rapport toont URL’s van Discogs die aan meerdere uitgaves gekoppeld zijn. In de meeste gevallen zouden uitgaves in Discogs 1:1 overeen moeten komen met uitgaves op MusicBrainz, zodat er maar één correcte koppeling kan zijn. Controleer of de uitgave in MusicBrainz overeenkomt met de uitgave op Discogs (let op het medium, de nummerlijst en het land van uitgave). U kan ook enkele URL's van Discogs vinden die gekoppeld zijn aan verschillende media van een uitgave met meerdere media: voeg deze samen (zie {how_to_merge_releases|Hoe uitgaves samen te voegen})."
+msgstr "Dit rapport toont URL’s van Discogs die aan meerdere uitgaves gekoppeld zijn. In de meeste gevallen zouden uitgaves in Discogs 1:1 overeen moeten komen met uitgaves op MusicBrainz, zodat er maar één correcte koppeling kan zijn. Controleer of de uitgave in MusicBrainz overeenkomt met de uitgave op Discogs (let op het medium, de nummerlijst en het land van uitgave). Soms is een URL van Discogs gekoppeld aan verschillende uitgaves in MusicBrainz die eigenlijk verschillende losse media van één uitgave zijn. In dat geval moeten deze uitgaves worden samengevoegd (zie {how_to_merge_releases|Hoe uitgaves samen te voegen})."
 
 #: ../root/report/recordings_with_earliest_release_relationships.tt:6
 msgid ""
@@ -8855,7 +8855,7 @@ msgid ""
 "them. If the releases are discs linked with \"part of set\" relationships, "
 "you might want to merge them too into one multi-disc release (see "
 "{how_to_merge_releases|How to Merge Releases})."
-msgstr "Dit rapport toont uitgavegroepen met met deel van een set of transcriptie relaties uitgaves die gekoppeld zijn aan uitgaves in andere uitgavegroepen. Als er hier een stel uitgavegroepen tussen staat, moeten deze waarschijnlijk samengevoegd worden. Als de uitgaves media zijn die met deel van een set-relatie gekoppeld zijn, moeten ze misschien ook samengevoegd worden in een uitgave met meerdere media. Zie {how_to_merge_releases|Hoe uitgaves samen te voegen}."
+msgstr "Dit rapport toont uitgavegroepen met met deel van een set of transcriptierelaties uitgaves die gekoppeld zijn aan uitgaves in andere uitgavegroepen. Als er hier een stel uitgavegroepen tussen staat, moeten deze waarschijnlijk samengevoegd worden. Als de uitgaves media zijn die met deel van een set-relatie gekoppeld zijn, moeten ze misschien ook samengevoegd worden in een uitgave met meerdere media. Zie {how_to_merge_releases|Hoe uitgaves samen te voegen}."
 
 #: ../root/report/single_medium_releases_with_medium_titles.tt:6
 msgid ""
@@ -8883,7 +8883,7 @@ msgid ""
 " be correct. Just check which ones do not fit the release (because of "
 "format, different number of tracks, etc). If the release has a barcode, you "
 "can search Amazon for it and see which ASIN matches."
-msgstr "Dit rapport toont uitgaves die meer dan een ASIN van Amazon hebben. In de meeste gevallen moeten ASIN’s één op één overeenkomen met uitgaves op MusicBrainz en zal er dus maar één koppeling correct zijn. Controleer welke niet bij de uitgave passen (vanwege het medium of het aantal nummers bijvoorbeeld) en verwijder deze. Als de uitgave een streepjescode heeft, kunt u op Amazon daarna zoeken en kijken of de ASIN overeenkomt."
+msgstr "Dit rapport toont uitgaves die meer dan een ASIN van Amazon hebben. In de meeste gevallen moeten ASIN’s één op één overeenkomen met uitgaves op MusicBrainz en zal er dus maar één koppeling correct zijn. Controleer welke niet bij de uitgave passen (vanwege het soort medium of het aantal nummers bijvoorbeeld) en verwijder deze. Als de uitgave een streepjescode heeft, kan je daar op Amazon naar zoeken en kijken of de ASIN overeenkomt."
 
 #: ../root/report/multiple_discogs_links.tt:6
 msgid ""
@@ -8900,7 +8900,7 @@ msgid ""
 "This report shows releases that have no language set. If you recognize the "
 "language, please set it! Do it only if you are pretty sure, don't just "
 "guess: not everything written in Cyrillic is Russian, for example."
-msgstr "Dit rapport toont uitgaves waarvan de taal niet is ingesteld. Stel de taal in als u deze herkent. Doe dit alleen als u zeker bent en doe geen gok: niet alles dat in het cyrillisch is geschreven is bijvoorbeeld Russisch."
+msgstr "Dit rapport toont uitgaves waarvan de taal niet is ingesteld. Stel de taal in als je deze herkent. Doe dit alleen als je zeker bent en doe geen gok: niet alles dat in het cyrillisch is geschreven is bijvoorbeeld Russisch."
 
 #: ../root/report/releases_with_no_mediums.tt:6
 msgid "This report shows releases that have no mediums added."
@@ -8911,7 +8911,7 @@ msgid ""
 "This report shows releases that have no script set. If you recognize the "
 "script, just add it! Remember that the script used for English (and most "
 "other European languages) is Latin."
-msgstr "Dit rapport toont uitgaves waarvan het schrift niet is ingesteld. Als u het schrift herkent, voeg het dan toe! Onthoudt dat het schrift dat voor Engels (en de meeste Europese talen) wordt gebruikt Latijn is."
+msgstr "Dit rapport toont uitgaves waarvan het schrift niet is ingesteld. Voeg het schrift toe als je het herkent! Vergeet niet dat het schrift dat voor Engels (en de meeste Europese talen) wordt gebruikt Latijn is."
 
 #: ../root/report/releases_with_coverart_links.tt:6
 msgid "This report shows releases that still have Cover Art relationships."
@@ -9114,7 +9114,7 @@ msgstr "{edit_page|Bewerk de uitgavegroep} om de types te veranderen."
 
 #: ../root/elections/show.tt:96
 msgid "To find out if you can vote for this candidate, please {url|log in}."
-msgstr "{url|Meld u aan} om te zien of u op deze kandidaat kunt stemmen."
+msgstr "{url|Meld je aan} om te zien of je op deze kandidaat kan stemmen."
 
 #: ../root/release/edit_relationships.tt:17
 msgid ""
@@ -9587,7 +9587,7 @@ msgstr "Bètasite gebruiken"
 msgid ""
 "Use our <strong>XML web service</strong> or <strong>development "
 "libraries</strong> to create your own MusicBrainz-enabled applications."
-msgstr "Gebruik onze <strong>XML-webdienst</strong> of <strong>ontwikkelingsbibliotheken</strong> om uw eigen programma’s te creëren die met MusicBrainz overweg kunnen."
+msgstr "Gebruik onze <strong>XML-webdienst</strong> of <strong>ontwikkelingsbibliotheken</strong> om je eigen programma’s te maken die met MusicBrainz overweg kunnen."
 
 #: ../root/components/forms.tt:326
 msgid ""
@@ -9656,7 +9656,7 @@ msgid ""
 "may specify the new order of mediums. The order does not have to be "
 "continuous, but all medium positions must be positive, and multiple mediums "
 "cannot be in the same position"
-msgstr "Door deze samenvoegingsstrategie te gebruiken, worden alle media van alle uitgaves gebruikt. U kunt een nieuwe volgorde van media instellen. Deze volgorde hoeft niet continu te zijn, maar alle posities van de media moeten positief zijn, en meerdere media mogen niet dezelfde positie hebben."
+msgstr "Door deze samenvoegingsstrategie te gebruiken, worden alle media van alle uitgaves gebruikt. Je kan een nieuwe volgorde van media instellen. Deze volgorde hoeft niet continu te zijn, maar alle posities van de media moeten positief zijn, en meerdere media mogen niet dezelfde positie hebben."
 
 #: ../root/release/add_cover_art.tt:57
 msgid "Validating file..."
@@ -9815,7 +9815,7 @@ msgid ""
 " second their nomination. If you do not support this candidate, please note "
 "that you cannot cast a \"No\" vote (or abstain) until two seconders have "
 "been found."
-msgstr "De stemming is nog niet geopend. Als u deze kandidaat wilt steunen, kunt u zijn nominatie seconderen. Houd er, als u deze kandidaat niet wilt steunen, rekening mee dat u niet tegen of onthouding kunt stemmen tot er twee secondanten zijn gevonden."
+msgstr "De stemming is nog niet geopend. Als je deze kandidaat wil steunen, kan je zijn nominatie seconderen. Houd er, als je deze kandidaat niet wilt steunen, rekening mee dat je niet tegen of onthouding kan stemmen tot er twee secondanten zijn gevonden."
 
 #: ../root/doc/edit_type.tt:42
 msgid "Voting period (days)"
@@ -9826,7 +9826,7 @@ msgid ""
 "Warning! \"1990-10-25\" is the bogus date that Amazon gives to all releases "
 "for which they don't know the actual date. <b>Please use this date only if "
 "you're certain this date is correct!</b>"
-msgstr "Let op! “25 oktober 1990” is een nepdatum die Amazon laat zien voor alle uitgaves waarvan ze de datum niet kennen. <b>Gebruik deze datum alleen als u zeker weet dat deze klopt!</b>"
+msgstr "Let op! “25 oktober 1990” is een nepdatum die Amazon laat zien voor alle uitgaves waarvan ze de datum niet kennen. <b>Gebruik deze datum alleen als je zeker weet dat deze klopt!</b>"
 
 #: ../root/release/edit/tracklist.tt:340
 msgid "Warning:"
@@ -9836,7 +9836,7 @@ msgstr "Waarschuwing:"
 msgid ""
 "Warning: This relationship has pending edits. {show|Click here} to view "
 "these edits and make sure they do not conflict with your own."
-msgstr "Waarschuwing: Deze relatie heeft openstaande bewerkingen. {show|Klik hier} om deze bewerkingen te bekijken en zorg ervoor dat deze niet conflicteren met die van u."
+msgstr "Waarschuwing: Deze relatie heeft openstaande bewerkingen. {show|Klik hier} om deze bewerkingen te bekijken en zorg ervoor dat ze niet met jouw bewerkingen conflicteren."
 
 #: ../root/watch/list.tt:1 ../root/watch/list.tt:2
 msgid "Watched Artists"
@@ -9866,28 +9866,28 @@ msgid ""
 "We found discs matching the information you requested, listed below. If none"
 " of these are the release you are looking for, please see the instructions "
 "below."
-msgstr "We hebben media gevonden die overeenkomen met de informatie die u opvroeg. Lees de instructies hieronder als de uitgave die u zoekt er niet tussen staat."
+msgstr "We hebben media gevonden die overeenkomen met de informatie die je opvroeg. Lees de instructies hieronder als de uitgave die je zoekt er niet tussen staat."
 
 #: ../root/cdtoc/lookup.tt:6
 msgid ""
 "We found discs matching the information you requested, listed below. If none"
 " of these are the release you are looking for, you may search using the form"
 " below in order to attach this disc to another MusicBrainz release."
-msgstr "We hebben media gevonden die overeenkomen met de informatie die u opvroeg. Als geen van deze uitgaves is wat u zoekt, kunt u met het onderstaande formulier zoeken naar andere uitgaves in MusicBrainz, zodat u dit medium eraan kunt toevoegen."
+msgstr "We hebben media gevonden die overeenkomen met de informatie die je opvroeg. Als geen van deze uitgaves is wat u zoekt, kan je met het onderstaande formulier zoeken naar andere uitgaves in MusicBrainz, zodat je dit medium eraan kan toevoegen."
 
 #: ../root/account/donation.tt:7
 msgid ""
 "We have not received a donation from you recently. If you have just made a "
 "PayPal donation, then we have not received a notification from PayPal yet. "
 "Please wait a few minutes and reload this page to check again."
-msgstr "We hebben de laatste tijd geen donatie meer van u gehad. Als u net een donatie hebt gedaan via PayPal, dan hebben we nog geen bericht van PayPal gehad. Wacht alstublieft een paar minuten en herlaad dan deze pagina om het opnieuw te controleren."
+msgstr "We hebben de laatste tijd geen donatie meer van je gehad. Als je net een donatie hebt gedaan via PayPal, dan hebben we nog geen bericht van PayPal gehad. Wacht alstublieft een paar minuten en herlaad dan deze pagina om het opnieuw te controleren."
 
 #: ../root/account/edit_ok.tt:8
 msgid ""
 "We have sent you a verification email to <code>{email}</code>. Please check "
 "your mailbox and click on the link in the email to verify the new email "
 "address."
-msgstr "We hebben u een verificatie-e-mail gestuurd naar <code>{email}</code>. Kijkt in uw postvak en klik op de link in de e-mail om het nieuwe e-mailadres te verifiëren."
+msgstr "We hebben je een verificatie-e-mail gestuurd naar <code>{email}</code>. Kijk in je postvak en klik op de link in de e-mail om het nieuwe e-mailadres te verifiëren."
 
 #: ../root/cdtoc/lookup.tt:10
 msgid "We used DiscID <code>{discid}</code> to look up this information."
@@ -9897,27 +9897,27 @@ msgstr "We hebben de DiscID <code>{discid}</code> gebruikt om deze informatie op
 msgid ""
 "We will use your birth date to display your age in years on your profile "
 "page."
-msgstr "We zullen uw geboortedatum gebruiken om uw leeftijd op uw profielpagina te tonen."
+msgstr "We zullen je geboortedatum gebruiken om je leeftijd op je profielpagina te tonen."
 
 #: ../root/main/500.tt:77
 msgid ""
 "We're terribly sorry for this problem. Please wait a few minutes and repeat "
 "your request &#x2014; the problem may go away."
-msgstr "Dit probleem spijt ons enorm. Wacht een paar minuten en herhaal dan uw verzoek &#x2014; het probleem kan verholpen zijn."
+msgstr "Dit probleem spijt ons enorm. Wacht een paar minuten en herhaal dan je verzoek &#x2014; het probleem kan verholpen zijn."
 
 #: ../root/account/lost_username_sent.tt:5
 msgid ""
 "We've sent you information about your MusicBrainz account. If you don't "
 "receive this email or still have problems logging in, please {link|contact "
 "us}."
-msgstr "We hebben u informatie gestuurd over uw MusicBrainz gebruikersaccount. Neem {link|contact met ons op} als u deze e-mail niet heeft ontvangen of nog steeds problemen heeft met aanmelden."
+msgstr "We hebben je informatie gestuurd over uw MusicBrainz-account. Neem {link|contact met ons op} als je deze e-mail niet hebt ontvangen of nog steeds problemen met aanmelden hebt."
 
 #: ../root/account/lost_password_sent.tt:5
 msgid ""
 "We've sent you instructions on how to reset your password. If you don't "
 "receive this email or still have problems logging in, please {link|contact "
 "us}."
-msgstr "We hebben u instructies gestuurd om uw wachtwoord opnieuw in te stellen. Neem {link|contact met ons op} als deze e-mail niet heeft ontvangen of nog steeds problemen heeft met aanmelden."
+msgstr "We hebben je instructies gestuurd om je wachtwoord opnieuw in te stellen. Neem {link|contact met ons op} als je deze e-mail niet hebt ontvangen of nog steeds problemen hebt met aanmelden."
 
 #: ../root/account/applications.tt:67
 msgid "Web Application"
@@ -9944,7 +9944,7 @@ msgid ""
 "When you are ready to merge these, just click the Merge button. You may "
 "still add more to this merge queue by simply browsing to the entities page "
 "and following the merge link."
-msgstr "Klik op de knop “Samenvoegen” als u klaar bent om deze objecten samen te voegen. U kunt ook nog meer aan deze lijst samen te voegen objecten toevoegen door naar de pagina van het object te gaan en de link samenvoegen te volgen."
+msgstr "Klik op de knop “Samenvoegen” als je klaar bent om deze objecten samen te voegen. Je kan ook nog meer aan deze lijst samen te voegen objecten toevoegen door naar de pagina van het object te gaan en de link samenvoegen te volgen."
 
 #: ../root/layout.tt:89
 msgid "Wiki"
@@ -10112,127 +10112,127 @@ msgstr "Ja, ik weet het zeker"
 msgid ""
 "You are about to add an ISRC to this recording. The ISRC must be entered in "
 "standard <code>CCXXXYYNNNNN</code> format:"
-msgstr "U staat op het punt om een ISRC aan deze opname toe te voegen. De ISRC moet worden toegevoegd in de standaard <code>CCXXXYYNNNNN</code>-opmaak:"
+msgstr "Je staat op het punt om een ISRC aan deze opname toe te voegen. De ISRC moet worden toegevoegd in de standaard <code>CCXXXYYNNNNN</code>-opmaak:"
 
 #: ../root/components/forms.tt:293
 msgid ""
 "You are about to add an ISWC to this work. The ISWC must be entered in "
 "standard <code>T-DDD.DDD.DDD-C</code> format:"
-msgstr "U staat op het punt om een ISWC toe te voegen aan deze compositie. De ISWC moet worden toegevoegd in de standaard <code>T-DDD.DDD.DDD-C</code>-opmaak:"
+msgstr "Je staat op het punt om een ISWC aan deze compositie toe te voegen. De ISWC moet worden toegevoegd in de standaard <code>T-DDD.DDD.DDD-C</code>-opmaak:"
 
 #: ../root/cdtoc/set_durations.tt:4
 msgid ""
 "You are about to enter an edit that will change the durations of tracks to "
 "match that of the below disc ID."
-msgstr "U staat op het punt om een bewerking toe te voegen die de duur van de nummers verandert zodat ze overeenkomen met de onderstaande disc-id."
+msgstr "Ke staat op het punt om een bewerking toe te voegen die de duur van de nummers verandert zodat ze overeenkomen met de onderstaande disc-id."
 
 #: ../root/area/merge.tt:4
 msgid ""
 "You are about to merge the following areas into a single area. Please select"
 " the area which you would like other areas to be merged into:"
-msgstr "U staat op het punt om de volgende gebieden samen te voegen. Selecteer alstublieft het gebied waarin u de andere gebieden wilt samenvoegen:"
+msgstr "Je staat op het punt om de volgende gebieden samen te voegen. Selecteer het gebied waarin je de andere gebieden wil samenvoegen:"
 
 #: ../root/artist/merge.tt:4
 msgid ""
 "You are about to merge the following artists into a single artist. Please "
 "select the artist which you would like other artists to be merged into:"
-msgstr "U staat op het punt om de volgende artiesten samen te voegen. Selecteer alstublieft de artiest waarin u de andere artiesten wilt samenvoegen:"
+msgstr "Je staat op het punt om de volgende artiesten samen te voegen. Selecteer de artiest waarin je de andere artiesten wil samenvoegen:"
 
 #: ../root/event/merge.tt:4
 msgid ""
 "You are about to merge the following events into a single event. Please "
 "select the event which you would like other events to be merged into:"
-msgstr "U staat op het punt om de volgende evenementen samen te voegen. Selecteer alstublieft het evenement waarin u de andere evenementen wilt samenvoegen:"
+msgstr "Je staat op het punt om de volgende evenementen samen te voegen. Selecteer het evenement waarin je de andere evenementen wil samenvoegen:"
 
 #: ../root/instrument/merge.tt:4
 msgid ""
 "You are about to merge the following instruments into a single instrument. "
 "Please select the instrument which you would like other instruments to be "
 "merged into:"
-msgstr "U staat op het punt om de volgende instrumenten samen te voegen. Selecteer alstublieft het instrument waarin u de andere instrumenten wilt samenvoegen:"
+msgstr "Je staat op het punt om de volgende instrumenten samen te voegen. Selecteer het instrument waarin je de andere instrumenten wil samenvoegen:"
 
 #: ../root/label/merge.tt:4
 msgid ""
 "You are about to merge the following labels into a single label. Please "
 "select the label which you would like other labels to be merged into:"
-msgstr "U staat op het punt om de volgende platenmaatschappijen samen te voegen. Selecteer alstublieft de platenmaatschappij waarin u de andere platenmaatschappijen wilt samenvoegen:"
+msgstr "Je staat op het punt om de volgende platenmaatschappijen samen te voegen. Selecteer de platenmaatschappij waarin je de andere platenmaatschappijen wil samenvoegen:"
 
 #: ../root/place/merge.tt:4
 msgid ""
 "You are about to merge the following places into a single place. Please "
 "select the place which you would like other places to be merged into:"
-msgstr "U staat op het punt om de volgende plaatsen samen te voegen. Selecteer alstublieft de plaats waarin u de andere plaatsen wilt samenvoegen:"
+msgstr "Je staat op het punt om de volgende plaatsen samen te voegen. Selecteer de plaats waarin je de andere plaatsen wil samenvoegen:"
 
 #: ../root/recording/merge.tt:4
 msgid ""
 "You are about to merge the following recordings into a single recording. "
 "Please select the recording which you would like other recordings to be "
 "merged into:"
-msgstr "U staat op het punt om de volgende opnames samen te voegen. Selecteer alstublieft de opname waarin u de andere opnames wilt samenvoegen:"
+msgstr "Je staat op het punt om de volgende opnames samen te voegen. Selecteer de opname waarin je de andere opnames wil samenvoegen:"
 
 #: ../root/release_group/merge.tt:4
 msgid ""
 "You are about to merge the following release groups into a single release "
 "group. Please select the release group which you would like other release "
 "groups to be merged into:"
-msgstr "U staat op het punt om de volgende uitgavegroepen samen te voegen. Selecteer de uitgavegroep waarin u de andere uitgavegroepen in wilt samenvoegen:"
+msgstr "Je staat op het punt om de volgende uitgavegroepen samen te voegen. Selecteer de uitgavegroep waarin je de andere uitgavegroepen wil samenvoegen:"
 
 #: ../root/release/merge.tt:4
 msgid ""
 "You are about to merge the following releases into a single release. Please "
 "select the release which you would like the other releases to be merged "
 "into:"
-msgstr "U staat op het punt om de volgende uitgaves samen te voegen. Selecteer de uitgave waarin u de andere uitgaves in wilt samenvoegen:"
+msgstr "Je staat op het punt om de volgende uitgaves samen te voegen. Selecteer de uitgave waarin je de andere uitgaves wil samenvoegen:"
 
 #: ../root/series/merge.tt:4
 msgid ""
 "You are about to merge the following series into a single series. Please "
 "select the series which you would like other series to be merged into:"
-msgstr "U staat op het punt om de volgende series samen te voegen. Selecteer de serie waarin u de andere series wilt samenvoegen:"
+msgstr "Je staat op het punt om de volgende series samen te voegen. Selecteer de serie waarin je de andere series wil samenvoegen:"
 
 #: ../root/work/merge.tt:4
 msgid ""
 "You are about to merge the following works into a single work. Please select"
 " the work that you would like the other works merged into:"
-msgstr "U staat op het punt om de volgende composities samen te voegen. Selecteer de compositie waarin u de andere composities wilt samenvoegen:"
+msgstr "Je staat op het punt om de volgende composities samen te voegen. Selecteer de compositie waarin je de andere composities wil samenvoegen:"
 
 #: ../root/artist/subscribers.tt:27 ../root/collection/subscribers.tt:27
 #: ../root/label/subscribers.tt:27 ../root/series/subscribers.tt:27
 #: ../root/user/subscribers.tt:32
 msgid "You are currently subscribed. {unsub|Unsubscribe}?"
-msgstr "U bent momenteel geabonneerd. {unsub|Opzeggen}?"
+msgstr "Je bent momenteel geabonneerd. {unsub|Opzeggen}?"
 
 #: ../root/watch/list.tt:7
 msgid "You are currently watching the following artists for new releases."
-msgstr "U volgt nu de volgende artiesten voor nieuwe uitgaves."
+msgstr "Je volgt nu de volgende artiesten voor nieuwe uitgaves."
 
 #: ../root/edit/notes.tt:56
 msgid "You are not currently able to add notes to this edit. ({url|Details})"
-msgstr "U kunt momenteel geen notities toevoegen bij deze bewerking. ({url|Details})"
+msgstr "Je kan momenteel geen notities aan deze bewerking toevoegen. ({url|Details})"
 
 #: ../root/edit/index.tt:47
 msgid "You are not currently able to vote on this edit. ({url|Details})"
-msgstr "U kunt momenteel niet stemmen op deze bewerking. ({url|Details})"
+msgstr "Je kan momenteel niet op deze bewerking stemmen. ({url|Details})"
 
 #: ../root/artist/subscribers.tt:33 ../root/collection/subscribers.tt:33
 #: ../root/label/subscribers.tt:33 ../root/series/subscribers.tt:33
 #: ../root/user/subscribers.tt:38
 msgid "You are not currently subscribed. {sub|Subscribe}?"
-msgstr "U bent momenteel niet geabonneerd. {sub|Abonneren}?"
+msgstr "Je bent momenteel niet geabonneerd. {sub|Abonneren}?"
 
 #: ../root/watch/list.tt:32
 msgid "You are not currently watching any artists for new releases."
-msgstr "U volgt nu geen artiesten voor nieuwe uitgaves."
+msgstr "Je volgt nu geen artiesten voor nieuwe uitgaves."
 
 #: ../root/user/subscriptions/collection.tt:7
 msgid "You are subscribed to {n} private collection."
 msgid_plural "You are subscribed to {n} private collections."
-msgstr[0] "U bent geabonneerd op {n} privécollectie."
-msgstr[1] "U bent geabonneerd op {n} privécollecties."
+msgstr[0] "Je bent geabonneerd op {n} privécollectie."
+msgstr[1] "Je bent geabonneerd op {n} privécollecties."
 
 #: ../root/cdtoc/attach_artist_releases.tt:5
 msgid "You are viewing releases by {artist}."
-msgstr "U bekijkt uitgaves van {artist}."
+msgstr "Je bekijkt uitgaves van {artist}."
 
 #: ../root/cdtoc/lookup.tt:99
 msgid ""
@@ -10242,146 +10242,146 @@ msgid ""
 "main MusicBrainz database until an editor decides to take your submitted "
 "information, ensures it meets our standards and inserts it into the main "
 "database."
-msgstr "U kunt gegevens van een cd toevoegen zoals dit op de cd aangegeven staat zonder dat u zich zorgen hoeft te maken om deel uit te maken van MusicBrainz. Cd’s die zo zijn toegevoegd zijn beschikbaar in programma’s. Maar zij zullen niet aan de belangrijkste gegevensbank van MusicBrainz worden toegevoegd tot een redacteur besluit om uw ingediende informatie op te pakken en ervoor te zorgen dat het aan onze standaarden voldoet, en het toevoegt aan de belangrijkste gegevensbank."
+msgstr "Je kan informatie over een cd toevoegen zoals dit op de cd staat aangegeven, zonder verder deel uit te maken van MusicBrainz. Cd’s die zo zijn toegevoegd, zijn beschikbaar in programma’s. Maar het zal niet aan de belangrijkste gegevensbank van MusicBrainz worden toegevoegd tot een redacteur besluit om deze informatie op te pakken, ervoor zorgt dat het aan onze standaarden voldoet, en het aan de belangrijkste gegevensbank toevoegt."
 
 #: ../root/account/edit.tt:34
 msgid ""
 "You can pick the level you prefer here: your country, region or city. Be as "
 "specific as you want to!"
-msgstr "U kunt het gewenste niveau opgeven. Wees zo specifiek als u wilt!"
+msgstr "Je kan zelf kiezen hoe specifiek je wil zijn, bijvoorbeeld door je land of je woonplaats in te voeren."
 
 #: ../root/cdstub/logged_in.tt:3
 msgid ""
 "You cannot add a CD stub while logged in to MusicBrainz. Please {add_rel|add"
 " a new release instead}."
-msgstr "U kunt geen cd-beginsel beginnen als u bent aangemeld bij MusicBrainz. Gebruik in plaats hiervan alstublieft {add_rel|voeg nieuwe uitgave toe}."
+msgstr "Je kan geen cd-beginsel toevoegen als je bij MusicBrainz bent aangemeld. {add_rel|Voeg in plaats daarvan een nieuwe uitgave toe}."
 
 #: ../root/admin/attributes/in_use.tt:3
 msgid "You cannot remove the attribute \"{name}\" because it is still in use."
-msgstr "U kunt de eigenschap ‘{name}’ niet verwijderen omdat het nog steeds gebruikt wordt."
+msgstr "Je kan de eigenschap ‘{name}’ niet verwijderen omdat deze nog steeds gebruikt wordt."
 
 #: ../root/relationship/linkattributetype/in_use.tt:3
 msgid ""
 "You cannot remove the relationship attribute \"{type}\" as it is still in "
 "use by other relationships."
-msgstr "U kunt de relatie-eigenschap ‘{type}’ niet verwijderen, omdat het nog steeds wordt gebruikt door andere relaties."
+msgstr "Je kan de relatie-eigenschap ‘{type}’ niet verwijderen, omdat deze nog steeds wordt gebruikt door andere relaties."
 
 #: ../root/release/edit/information.tt:174
 msgid "You cannot use the same country more than once."
-msgstr "U kunt hetzelfde land niet meer dan eens gebruiken."
+msgstr "Je kan hetzelfde land niet meer dan eens gebruiken."
 
 #: ../root/elections/show.tt:87
 msgid ""
 "You cannot vote for this candidate, because you are not an auto-editor."
-msgstr "U kunt niet op deze kandidaat stemmen omdat u geen autoredacteur bent."
+msgstr "Je kan niet op deze kandidaat stemmen omdat je geen autoredacteur bent."
 
 #: ../root/elections/show.tt:89
 msgid ""
 "You cannot vote for this candidate, because you proposed / seconded them."
-msgstr "U kunt niet voor deze kandidaat stemmen omdat u hem heeft voorgesteld of gesecondeerd."
+msgstr "Je kan niet voor deze kandidaat stemmen omdat je hem hebt voorgesteld of gesecondeerd."
 
 #: ../root/layout/merge-helper.tt:4
 msgid "You currently have the following entities selected for merging:"
-msgstr "U heeft nu de volgende objecten geselecteerd om samen te voegen:"
+msgstr "Je kan nu de volgende objecten geselecteerd om samen te voegen:"
 
 #: ../root/account/applications.tt:84
 msgid "You do not have any registered applications."
-msgstr "U heeft geen geregistreerde applicaties."
+msgstr "Je kan geen geregistreerde applicaties."
 
 #: ../root/oauth2/oob.tt:5
 msgid ""
 "You have granted access to {app}. Next, return to {app} and copy this token "
 "to complete the authorization process:"
-msgstr "U heeft {app} toegang gegeven. Keer nu terug naar {app} en kopieer deze token om het machtigingsproces te voltooien:"
+msgstr "Je kan {app} toegang gegeven. Keer nu terug naar {app} en kopieer deze token om het machtigingsproces te voltooien:"
 
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:90
 msgid "You have no attendance lists!"
-msgstr "U heeft geen aanwezigheidslijsten!"
+msgstr "Je hebt geen lijsten met evenementen!"
 
 #: ../root/layout/sidebar/shared-entity-sidebar.tt:122
 msgid "You have no collections!"
-msgstr "U heeft geen collecties!"
+msgstr "Je hebt geen collecties!"
 
 #: ../root/user/collections.tt:25
 msgid "You have no collections."
-msgstr "U heeft geen collecties."
+msgstr "Je hebt geen collecties."
 
 #: ../root/account/applications.tt:42
 msgid "You have not authorized any applications."
-msgstr "U heeft geen applicaties geauthoriseerd."
+msgstr "Je hebt geen applicaties geauthoriseerd."
 
 #: ../root/recording/edit_form.tt:7
 msgid ""
 "You have used the {valink|Various Artists} special purpose artist on this "
 "recording."
-msgstr "U heeft de artiest voor specifieke doeleinden {valink|Diverse Artiesten} gebruikt op deze opname."
+msgstr "Je hebt de artiest voor specifieke doeleinden {valink|Diverse Artiesten} gebruikt op deze opname."
 
 #: ../root/release/edit/information.tt:48
 msgid "You haven’t entered a complete artist credit."
-msgstr "U heeft de artiesten niet compleet ingevuld."
+msgstr "Je hebt de artiesten niet compleet ingevuld."
 
 #: ../root/release/edit/editnote.tt:10
 #: ../root/static/scripts/relationship-editor/release.js:143
 msgid "You haven’t made any changes!"
-msgstr "U heeft niets veranderd!"
+msgstr "Je hebt niets veranderd!"
 
 #: ../root/release/edit/information.tt:212
 msgid "You haven’t selected a label for “{name}”."
-msgstr "U heeft geen platenmaatschappij geselecteerd voor ‘{name}’."
+msgstr "Je hebt geen platenmaatschappij geselecteerd voor ‘{name}’."
 
 #: ../root/edit/cancel.tt:14
 msgid ""
 "You may enter an edit note while cancelling this edit. This can be useful to"
 " point editors to another edit."
-msgstr "U kunt een notitie toevoegen als u een bewerking annuleert. Dit kan handig zijn om redacteurs op een andere bewerking te wijzen."
+msgstr "Je kan een notitie toevoegen als je een bewerking annuleert. Dit kan handig zijn om redacteurs op een andere bewerking te wijzen."
 
 #: ../root/artist/special_purpose.tt:2
 msgid "You may not edit special purpose artists"
-msgstr "U mag een artiest voor specifieke doeleinden niet bewerken"
+msgstr "Je mag een artiest voor specifieke doeleinden niet bewerken"
 
 #: ../root/account/registered.tt:21
 msgid ""
 "You may proceed to {profile|your user profile}, or maybe you want to "
 "{edit|start editing}!"
-msgstr "U kunt verder gaan naar {profile|uw profiel}, maar misschien wilt u {edit|beginnen met bewerken}?"
+msgstr "Je kan verder gaan naar {profile|je profiel}, maar misschien wil je {edit|beginnen met dingen bewerken}?"
 
 #: ../root/edit/index.tt:63
 msgid "You must be logged in to vote on edits"
-msgstr "U moet ingelogd zijn om de stemmen op bewerkingen"
+msgstr "Je moet aangemeld zijn om op bewerkingen te stemmen."
 
 #: ../root/components/common-macros.tt:1051
 msgid "You must enter a disambiguation comment for this entity."
-msgstr "U moet een verduidelijking aan dit object toevoegen."
+msgstr "Je moet een verduidelijking aan dit object toevoegen."
 
 #: ../root/release/edit/tracklist.tt:352
 msgid "You must enter a title and select an artist for every track."
-msgstr "U moet voor elk nummer een titel en een artiest opgeven."
+msgstr "Je moet voor elk nummer een titel en een artiest opgeven."
 
 #: ../root/main/401.tt:9
 msgid ""
 "You must first {url|add and verify your email address} before being able to "
 "edit or add anything to the database."
-msgstr "U moet eerst uw {url|e-mailadres verifiëren} voordat u bewerkingen kunt aanbrengen aan de gegevensbank."
+msgstr "Je moet eerst je {url|e-mailadres verifiëren} voordat je de gegevensbank kan bewerken."
 
 #: ../root/account/register.tt:33
 msgid ""
 "You must provide a working email address if you wish to contribute to the "
 "database."
-msgstr "U moet een werkend e-mailadres verstrekken als u aan de gegevensbank wilt bijdragen."
+msgstr "Je moet een werkend e-mailadres verstrekken als je aan de gegevensbank wil bijdragen."
 
 #: ../root/release/edit/editnote.tt:32
 msgid "You must provide an edit note when adding a release."
-msgstr "U moet een bewerkingsnotitie toevoegen als u een uitgave toevoegt."
+msgstr "Je moet een bewerkingsnotitie toevoegen als je een uitgave toevoegt."
 
 #: ../root/forms/relationship-editor.tt:13
 msgid ""
 "You must select a relationship type and target entity for every "
 "relationship."
-msgstr "U moet voor elke relatie een relatietype en een doelobject selecteren."
+msgstr "Je moet voor elke relatie een relatietype en een doelobject selecteren."
 
 #: ../root/release/edit/information.tt:68
 msgid "You must select an existing release group."
-msgstr "U moet een bestaande uitgavegroep selecteren."
+msgstr "Je moet een bestaande uitgavegroep selecteren."
 
 #: ../root/cdtoc/remove.tt:11
 msgid ""
@@ -10389,88 +10389,88 @@ msgid ""
 "erroneously, since a release can have multiple valid disc IDs, and each disc"
 " ID can belong to more than one release. For more in-depth information about"
 " this topic, please see our {doc|CD submission guide}."
-msgstr "U moet er zeker van zijn dat deze disc-id foutief aan deze uitgave is toegevoegd, aangezien een uitgave meerdere geldige disc-id’s kan hebben, en elke disc-id bij meerdere uitgaves kan horen. Lees onze {doc|handleiding voor het indienen van cd’s} voor meer informatie."
+msgstr "Je moet er zeker van zijn dat deze disc-id foutief aan deze uitgave is toegevoegd, aangezien een uitgave meerdere geldige disc-id’s kan hebben, en elke disc-id bij meerdere uitgaves kan horen. Lees onze {doc|handleiding voor het indienen van cd’s} voor meer informatie."
 
 #: ../root/user/login.tt:7
 msgid "You need to be logged in to view this page."
-msgstr "U moet aangemeld zijn om deze pagina te bekijken."
+msgstr "Je moet aangemeld zijn om deze pagina te bekijken."
 
 #: ../root/components/forms.tt:318
 msgid "You selected {area}."
-msgstr "U heeft {area} geselecteerd."
+msgstr "Je hebt {area} geselecteerd."
 
 #: ../root/release/edit/information.tt:303
 msgid "You selected {label}."
-msgstr "U heeft {label} geselecteerd."
+msgstr "Je hebt {label} geselecteerd."
 
 #: ../root/release/edit/information.tt:287
 msgid "You selected {releasegroup}."
-msgstr "U heeft {releasegroup} geselecteerd"
+msgstr "Je hebt {releasegroup} geselecteerd."
 
 #: ../root/account/donation.tt:22
 msgid "You will never be nagged again!"
-msgstr "Geaccepteerd"
+msgstr "Je wordt nooit meer lastiggevallen!"
 
 #: ../root/account/donation.tt:18
 msgid "You will not be nagged for another {days} days."
-msgstr "U zal de komende {days} dagen niet worden lastiggevallen."
+msgstr "Je zal de komende {days} dagen niet worden lastiggevallen."
 
 #: ../root/entity/alias/delete.tt:4
 msgid "You're removing the alias <em>{alias}</em>."
-msgstr "U verwijdert de alias <em>{alias}</em>."
+msgstr "Je verwijdert de alias <em>{alias}</em>."
 
 #: ../root/user/email_sent.tt:5
 msgid ""
 "Your email has been successfully sent! Click {link|here} to continue to "
 "{user}'s profile."
-msgstr "Uw e-mail is succesvol verzonden! Klik {link|hier} om verder naar het profiel van {user} te gaan."
+msgstr "Je e-mail is succesvol verzonden! Klik {link|hier} om verder naar het profiel van {user} te gaan."
 
 #: ../root/user/profile.tt:3
 msgid ""
 "Your homepage and biography will not show until you have confirmed your "
 "email."
-msgstr "Uw thuispagina en biografie worden niet getoond tot u uw e-mail hebt bevestigd."
+msgstr "Je thuispagina en biografie worden niet getoond tot je je e-mail hebt bevestigd."
 
 #: ../root/account/reset_password_ok.tt:5
 msgid "Your password has been reset."
-msgstr "Uw wachtwoord is opnieuw ingesteld."
+msgstr "Je wachtwoord is opnieuw ingesteld."
 
 #: ../root/account/preferences_ok.tt:5
 msgid ""
 "Your preferences have been saved. Click {link|here} to continue to your user"
 " page."
-msgstr "Uw instellingen zijn bewaard. Klik {link|hier} om verder te gaan naar uw gebruikerspagina."
+msgstr "Je instellingen zijn bewaard. Klik {link|hier} om verder te gaan naar je gebruikerspagina."
 
 #: ../root/account/edit_ok.tt:6
 msgid "Your profile has been updated."
-msgstr "Uw profiel is bijgewerkt"
+msgstr "Je profiel is bijgewerkt"
 
 #: ../root/search/error/invalid.tt:3
 msgid "Your search query was deemed invalid by our ruthless search server."
-msgstr "Onze meedogenloze zoekserver heeft uw zoekopdracht ongeldig verklaard."
+msgstr "Onze meedogenloze zoekserver heeft je zoekopdracht ongeldig verklaard."
 
 #: ../root/edit/search.tt:7
 msgid ""
 "Your search took too long and was cancelled. It may help to be more "
 "specific, or to try again."
-msgstr "Uw zoekopdracht duurde te lang en werd geannuleerd. Het kan helpen om specifieker te zijn of om het nogmaals te proberen."
+msgstr "Je zoekopdracht duurde te lang en werd geannuleerd. Het kan helpen om specifieker te zijn of om het nogmaals te proberen."
 
 #: ../root/account/register.tt:27
 msgid "Your username will be publicly visible."
-msgstr "Uw gebruikersnaam zal publiekelijk zichtbaar zijn."
+msgstr "Je gebruikersnaam zal publiekelijk zichtbaar zijn."
 
 #: ../root/release/edit/tracklist.tt:285
 msgid ""
 "You’ve seeded some Disc IDs that aren’t matched to any medium. If this is "
 "wrong, use the “Attach Disc ID” options below."
-msgstr "U heeft enkele Disc-id’s ingevuld die niet bij een medium passen. Gebruik de onderstaande optie “Disc-id toevoegen” als dit niet klopt."
+msgstr "Je hebt een paar Disc-id’s ingevuld die niet bij een medium passen. Gebruik de onderstaande optie “Disc-id toevoegen” als dit niet klopt."
 
 #: ../root/release/edit/tracklist.tt:341
 msgid ""
 "You’ve used the {valink|Various Artists} special purpose artist on some "
 "tracks below. {valink|Various Artists} should very rarely be used on tracks;"
 " please make sure the artists have been entered correctly."
-msgstr "U heeft de speciale artiest {valink|Diverse Artiesten} gebruikt op sommige van de onderstaande nummers.\n{valink|Diverse Artiesten} moet zeer zelden gebruikt worden op nummers. Controleer of de artiesten goed zijn ingevoerd."
+msgstr "Je hebt de speciale artiest {valink|Diverse Artiesten} gebruikt op sommige van de onderstaande nummers.\n{valink|Diverse Artiesten} moet zeer zelden gebruikt worden op nummers. Controleer of de artiesten goed zijn ingevoerd."
 
 #: ../root/components/common-macros.tt:259
 #: ../root/edit/details/edit_alias.tt:21
@@ -10992,7 +10992,7 @@ msgstr "{editor} is geabonneerd op:"
 msgid ""
 "{edit} has received one or more \"no\" votes, you must leave an edit note "
 "before you can approve it."
-msgstr "{edit} heeft één of meer tegenstemmen gekregen. U moet een notitie bij deze bewerking plaatsen om hem direct goed te keuren."
+msgstr "{edit} heeft één of meer tegenstemmen gekregen. Je moet een notitie bij deze bewerking plaatsen om hem direct goed te keuren."
 
 #: ../root/doc/relationship_type.tt:5
 msgid "{entity0}-{entity1}"
@@ -11148,8 +11148,8 @@ msgstr[1] "{num} uitgaves gevonden"
 #: ../root/cdtoc/attach_filter_release.tt:20
 msgid "{num} release found matching your query."
 msgid_plural "{num} release found matching your query."
-msgstr[0] "{num} uitgave gevonden die aan uw zoekopdracht voldoet."
-msgstr[1] "{num} uitgaves gevonden die aan uw zoekopdracht voldoen."
+msgstr[0] "{num} uitgave gevonden die aan je zoekopdracht voldoet."
+msgstr[1] "{num} uitgaves gevonden die aan je zoekopdracht voldoen."
 
 #: ../root/tag/release_group.tt:1
 msgid "{num} release group found"
@@ -11323,7 +11323,7 @@ msgid_plural ""
 "Thank you, your {num_edits} {edit_url|edits} ({edit_ids}) have been "
 "automatically accepted and applied."
 msgstr[0] "Bedankt, uw {num_edits} {edit_url|bewerking} ({edit_ids}) is automatisch geaccepteerd en doorgevoerd."
-msgstr[1] "Bedankt, uw {num_edits} {edit_url|bewerkingen} ({edit_ids}) zijn automatisch geaccepteerd en doorgevoerd."
+msgstr[1] "Bedankt, je {num_edits} {edit_url|bewerkingen} ({edit_ids}) zijn automatisch geaccepteerd en doorgevoerd."
 
 #: ../lib/MusicBrainz/Server/Controller.pm:151
 #, perl-brace-format
@@ -11334,7 +11334,7 @@ msgid_plural ""
 "Thank you, your {num_edits} {edit_url|edits} ({edit_ids}) have been entered "
 "into the edit queue for peer review."
 msgstr[0] "Bedankt, uw {num_edits} {edit_url|bewerking} ({edit_ids}) is toegevoegd aan de wachtrij voor collegiale toetsing."
-msgstr[1] "Bedankt, uw {num_edits} {edit_url|bewerkingen} ({edit_ids}) zijn toegevoegd aan de wachtrij voor collegiale toetsing."
+msgstr[1] "Bedankt, je {num_edits} {edit_url|bewerkingen} ({edit_ids}) zijn toegevoegd aan de wachtrij voor collegiale toetsing."
 
 #: ../lib/MusicBrainz/Server/Controller.pm:159
 #, perl-brace-format
@@ -11346,8 +11346,8 @@ msgid_plural ""
 "Thank you, your {num_edits} {edit_url|edits} ({edit_ids}) have been entered,"
 " with {num_open_edits} in the edit queue for peer review, and the rest "
 "automatically accepted and applied."
-msgstr[0] "Bedankt, uw {edit_url|bewerking} ({edit_ids}) is ingevoerd, met {num_open_edits} in de wachtrij voor collegiale toetsing en de rest automatisch geaccepteerd en doorgevoerd."
-msgstr[1] "Bedankt, uw {num_edits} {edit_url|bewerkingen} ({edit_ids}) zijn ingevoerd, met {num_open_edits} in de wachtrij voor collegiale toetsing en de rest automatisch geaccepteerd en doorgevoerd."
+msgstr[0] "Bedankt, je {edit_url|bewerking} ({edit_ids}) is ingevoerd, met {num_open_edits} in de wachtrij voor collegiale toetsing. De rest is automatisch geaccepteerd en doorgevoerd."
+msgstr[1] "Bedankt, je {num_edits} {edit_url|bewerkingen} ({edit_ids}) zijn ingevoerd, met {num_open_edits} in de wachtrij voor collegiale toetsing. De rest is automatisch geaccepteerd en doorgevoerd."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:45
 msgid "The user ID is missing or is in an invalid format."
@@ -11368,7 +11368,7 @@ msgstr "De verificatiesleutel ontbreekt."
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:75
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:212
 msgid "The checksum is invalid, please double check your email."
-msgstr "Het controlegetal is incorrect, controleer uw e-mail alstublieft opnieuw."
+msgstr "Het controlegetal klopt niet, controleer je e-mail alstublieft opnieuw."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:83
 msgid "Sorry, this email verification link has expired."
@@ -11384,7 +11384,7 @@ msgstr "De gebruiker met het ID “{user_id}” kon niet worden gevonden."
 msgid ""
 "We were unable to send login information to your email address.  Please try again,\n"
 "             however if you continue to experience difficulty contact us at support@musicbrainz.org."
-msgstr "Het is ons niet gelukt aanmeldinformatie naar uw e-mailadres te sturen. Probeer het a.u.b. opnieuw,\nmaar neem contact met ons op via support@musicbrainz.org als u problemen blijft ondervinden."
+msgstr "Het is ons niet gelukt aanmeldinformatie naar je e-mailadres te sturen. Probeer het a.u.b. opnieuw,\nmaar neem contact met ons op via support@musicbrainz.org als je problemen blijft ondervinden."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:159
 msgid "There is no user with this username"
@@ -11414,14 +11414,14 @@ msgstr "Er is geen gebruiker met dit e-mailadres"
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:346
 msgid "Your password has been changed."
-msgstr "Uw wachtwoord is veranderd."
+msgstr "Je wachtwoord is veranderd."
 
 #: ../lib/MusicBrainz/Server/Controller/Account.pm:534
 msgid ""
 "<strong>We were unable to send a confirmation email to you.</strong><br/>Please confirm that you have entered a valid\n"
 "             address by editing your {settings|account settings}. If the problem still persists, please contact us at\n"
 "             {mail|support@musicbrainz.org}."
-msgstr "<strong>We konden geen confirmatie-e-mail naar u sturen.</strong>\n<br/>Controleer of u een geldig adres heeft ingevoerd door uw {settings|gebruikersinstellingen} te wijzigen. Neem contact op met {mail|support@musicbrainz.org} als het probleem zich blijft voordoen."
+msgstr "<strong>We konden geen confirmatie-e-mail naar je sturen.</strong>\n<br/>Controleer of je een geldig adres hebt ingevoerd door je {settings|gebruikersinstellingen} te wijzigen. Neem contact op met {mail|support@musicbrainz.org} als het probleem zich blijft voordoen."
 
 #: ../lib/MusicBrainz/Server/Controller/Admin.pm:77
 msgid "User successfully edited."
@@ -11434,11 +11434,11 @@ msgstr "De mededeling is bijgewerkt. Onthoud wel dat elke server zijn eigen onaf
 
 #: ../lib/MusicBrainz/Server/Controller/Artist.pm:524
 msgid "You cannot merge a special purpose artist into another artist"
-msgstr "U kunt een artiest voor specifieke doeleinden niet samenvoegen met een normale artiest."
+msgstr "Je kan een artiest voor specifieke doeleinden niet samenvoegen met een normale artiest."
 
 #: ../lib/MusicBrainz/Server/Controller/Artist.pm:529
 msgid "You cannot merge into Deleted Artist"
-msgstr "U kunt een niet naar een verwijderde artiest samenvoegen"
+msgstr "Je kan een artiest niet met een verwijderde artiest samenvoegen"
 
 #: ../lib/MusicBrainz/Server/Controller/AutoEditorElections.pm:71
 #, perl-brace-format
@@ -11497,7 +11497,7 @@ msgstr "“{types}” is geen geldig paar relatietypes."
 #: ../lib/MusicBrainz/Server/Controller/Release.pm:544
 msgid ""
 "This merge strategy is not applicable to the releases you have selected."
-msgstr "Deze samenvoegingsstrategie kan niet toegepast worden op de uitgaves die u heeft geselecteerd."
+msgstr "Deze samenvoegingsstrategie kan niet toegepast worden op de uitgaves die je hebt geselecteerd."
 
 #: ../lib/MusicBrainz/Server/Controller/Role/Annotation.pm:57
 msgid "The annotation revision ID must be a positive integer"
@@ -11526,11 +11526,11 @@ msgstr "De redacteur {name} heeft geen e-mailadres aan zijn of haar gebruikersac
 msgid ""
 "You cannot contact other users because you have not {url|confirmed your "
 "email address}."
-msgstr "U kunt geen contact met andere gebruikers opnemen omdat u uw e-mailadres {url|niet heeft bevestigd}."
+msgstr "Je kan geen contact met andere gebruikers opnemen omdat je je e-mailadres {url|niet hebt bevestigd}."
 
 #: ../lib/MusicBrainz/Server/Controller/User.pm:292
 msgid "Your message could not be sent"
-msgstr "Uw bericht kon niet verzonden worden"
+msgstr "Je bericht kon niet verzonden worden"
 
 #: ../lib/MusicBrainz/Server/Controller/User.pm:381
 #, perl-brace-format
@@ -11545,13 +11545,13 @@ msgstr "Ongeldige TOC"
 msgid ""
 "You must be logged in to submit edits. {url|Log in} first, and then try "
 "submitting your edits again."
-msgstr "U moet aangemeld zijn om bewerkingen in te dienen. {url|Meld u eerst aan}, en probeer uw bewerkingen daarna opnieuw in te dienen."
+msgstr "Je moet aangemeld zijn om bewerkingen in te dienen. {url|Meld je eerst aan}, en probeer je bewerkingen daarna opnieuw in te dienen."
 
 #: ../lib/MusicBrainz/Server/ControllerUtils/Delete.pm:25
 msgid ""
 "Since your edit adding this object was still open, that edit has been "
 "cancelled instead of opening a new edit."
-msgstr "Aangezien uw bewerking die dit object toevoegt nog open stond, is die bewerking geannuleerd in plaats van een nieuwe bewerking te openen."
+msgstr "Aangezien je bewerking die dit object toevoegt nog open stond, is die bewerking geannuleerd in plaats van een nieuwe bewerking te openen."
 
 #: ../lib/MusicBrainz/Server/Data/CDStub.pm:108
 msgid "No title provided"
@@ -12240,23 +12240,23 @@ msgstr "[geen]"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:66
 msgid "View your public account information"
-msgstr "Uw publieke accountinformatie te bekijken."
+msgstr "Je publieke accountinformatie te bekijken."
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:67
 msgid "View your email address"
-msgstr "Bekijk uw e-mailadres"
+msgstr "Je e-mailadres te bekijken"
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:68
 msgid "View and modify your private tags"
-msgstr "Uw privétags te bekijken en te bewerken."
+msgstr "Je privétags te bekijken en te bewerken."
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:69
 msgid "View and modify your private ratings"
-msgstr "Uw privéwaarderingen te bekijken en te bewerken."
+msgstr "Je privéwaarderingen te bekijken en te bewerken."
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:70
 msgid "View and modify your private collections"
-msgstr "Uw privécollecties te bekijken en te bewerken."
+msgstr "Je privécollecties te bekijken en te bewerken."
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:71
 msgid "Submit new ISRCs to the database"
@@ -12345,11 +12345,11 @@ msgstr "Een gebied met deze ISO-code bestaat al"
 
 #: ../lib/MusicBrainz/Server/Form/CDStub.pm:38
 msgid "You must provide at least one track"
-msgstr "U moet ten minste één nummer opgeven"
+msgstr "Je moet ten minste één nummer opgeven"
 
 #: ../lib/MusicBrainz/Server/Form/CDStub.pm:41
 msgid "You must provide a title for track {0}"
-msgstr "U moet een titel opgeven voor nummer {0}"
+msgstr "Je moet een titel opgeven voor nummer {0}"
 
 #: ../lib/MusicBrainz/Server/Form/CDStub.pm:73
 msgid "Must be a valid barcode"
@@ -12369,7 +12369,7 @@ msgstr "Voer alstublieft een artiestennaam in voor {credit}"
 msgid ""
 "Artist \"{artist}\" is unlinked, please select an existing artist.\n"
 "                   You may need to add a new artist to MusicBrainz first."
-msgstr "De artiest ‘{artist}’ is niet gekoppeld, selecteer een bestaande artiest. Misschien moet u eerst een nieuwe artiest aan MusicBrainz toevoegen."
+msgstr "De artiest ‘{artist}’ is nergens aan gekoppeld, selecteer een bestaande artiest. Misschien moet je eerst een nieuwe artiest aan MusicBrainz toevoegen."
 
 #: ../lib/MusicBrainz/Server/Form/Field/ArtistCredit.pm:61
 msgid "Please add an artist name for each credit."
