@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2015-10-12 21:19+0000\n"
+"PO-Revision-Date: 2015-10-13 19:38+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/musicbrainz/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -3725,7 +3725,7 @@ msgstr "gefabriceerd in"
 
 #: DB:link_type/link_phrase:835
 msgid "manufacturing location for"
-msgstr "fabricatielocatie van"
+msgstr "locatie waar {entity1} gefabriceerd werd."
 
 #: DB:link_type/link_phrase:848 DB:link_type/long_link_phrase:848
 msgid "marketed"
@@ -4667,7 +4667,7 @@ msgstr "werd opnieuw gepland als"
 #: DB:link_type/long_link_phrase:863 DB:link_type/long_link_phrase:864
 #: DB:link_type/long_link_phrase:865 DB:link_type/long_link_phrase:866
 msgid "was the arranging location for"
-msgstr "{entity1} werd gearrangeerd bij {entity0}"
+msgstr "{entity1} werd gearrangeerd bij {entity0}."
 
 #: DB:link_type/long_link_phrase:759 DB:link_type/long_link_phrase:760
 msgid "was the concertmaster for"
@@ -4676,73 +4676,73 @@ msgstr "was de concertmeester van"
 #: DB:link_type/long_link_phrase:821 DB:link_type/long_link_phrase:819
 #: DB:link_type/long_link_phrase:820 DB:link_type/long_link_phrase:822
 msgid "was the editing location for"
-msgstr "is de locatie waar {entity1} geëdit werd."
+msgstr "{entity1} werd geëdit bij {entity0}."
 
 #: DB:link_type/long_link_phrase:812 DB:link_type/long_link_phrase:813
 #: DB:link_type/long_link_phrase:814 DB:link_type/long_link_phrase:815
 msgid "was the engineering location for"
-msgstr "is de locatie waar de techniek voor {entity1} verzorgd werd."
+msgstr "De techniek voor {entity1} werd verzorgd bij {entity0}."
 
 #: DB:link_type/long_link_phrase:835
 msgid "was the manufacturing location for"
-msgstr "was de fabricatielocatie van"
+msgstr "{entity1} werd gefabriceerd in {entity0}."
 
 #: DB:link_type/long_link_phrase:756 DB:link_type/long_link_phrase:697
 msgid "was the mastering location for"
-msgstr "was de masteringlocatie van"
+msgstr "{entity1} werd gemasterd in {entity0}."
 
 #: DB:link_type/long_link_phrase:757 DB:link_type/long_link_phrase:696
 #: DB:link_type/long_link_phrase:758 DB:link_type/long_link_phrase:694
 msgid "was the mixing location for"
-msgstr "was de mixlocatie van"
+msgstr "{entity1} werd gemixt in {entity0}."
 
 #: DB:link_type/long_link_phrase:849
 msgid "was the printing location for"
-msgstr "is de locatie waar {entity1} gedrukt werd."
+msgstr "{entity1} werd gedrukt in {entity0}."
 
 #: DB:link_type/long_link_phrase:824 DB:link_type/long_link_phrase:825
 #: DB:link_type/long_link_phrase:826 DB:link_type/long_link_phrase:827
 msgid "was the producing location for"
-msgstr "was de productielocatie van"
+msgstr "{entity1} werd geproduceerd in {entity0}."
 
 #: DB:link_type/long_link_phrase:809 DB:link_type/long_link_phrase:810
 #: DB:link_type/long_link_phrase:695 DB:link_type/long_link_phrase:699
 #: DB:link_type/long_link_phrase:698 DB:link_type/long_link_phrase:693
 msgid "was the recording location for"
-msgstr "was de opnamelocatie van"
+msgstr "{entity1} werd opgenomen in {entity0}."
 
 #: DB:link_type/long_link_phrase:828 DB:link_type/long_link_phrase:829
 #: DB:link_type/long_link_phrase:830 DB:link_type/long_link_phrase:831
 msgid "was the remixing location for"
-msgstr "was de remixlocatie van"
+msgstr "{entity1} werd geremixt in {entity0}."
 
 #: DB:link_type/long_link_phrase:881 DB:link_type/long_link_phrase:882
 msgid "was the revising location for"
-msgstr "is de locatie waar {entity1} herzien werd."
+msgstr "{entity1} werd herzien bij {entity0}."
 
 #: DB:link_type/long_link_phrase:885 DB:link_type/long_link_phrase:886
 msgid "was the {additional} arranging location for"
-msgstr "is de locatie waar {entity1} {additional:aanvullend} gearrangeerd werd."
+msgstr "{entity1} werd {additional:aanvullend} gearrangeerd in {entity0}."
 
 #: DB:link_type/long_link_phrase:875 DB:link_type/long_link_phrase:876
 msgid "was the {additional} composing location for"
-msgstr "is de locatie waar {entity1} {additional:aanvullend} gecomponeerd werd."
+msgstr "{entity1} werd {additional:aanvullend} gecomponeerd in {entity0}."
 
 #: DB:link_type/long_link_phrase:879 DB:link_type/long_link_phrase:880
 msgid "was the {additional} libretto writing location for"
-msgstr "is de locatie waar het libretto van {entity1} {additional:aanvullend} geschreven werd."
+msgstr "Het libretto van {entity1} werd {additional:aanvullend} geschreven in {entity0}."
 
 #: DB:link_type/long_link_phrase:877 DB:link_type/long_link_phrase:878
 msgid "was the {additional} lyrics writing location for"
-msgstr "is de locatie waar de tekst van {entity1} {additional:aanvullend} geschreven werd."
+msgstr "De tekst van {entity1} werd {additional:aanvullend} geschreven in {entity0}."
 
 #: DB:link_type/long_link_phrase:883 DB:link_type/long_link_phrase:884
 msgid "was the {additional} translating location for"
-msgstr "is de locatie waar {entity1} {additional:aanvullend} vertaald werd."
+msgstr "{entity1} werd {additional:aanvullend} vertaald in {entity0}."
 
 #: DB:link_type/long_link_phrase:873 DB:link_type/long_link_phrase:874
 msgid "was the {additional} writing location for"
-msgstr "is de locatie waar {entity1} {additional:aanvullend} geschreven werd."
+msgstr "{entity1} werd {additional:aanvullend} geschreven in {entity0}."
 
 #: DB:link_type/description:733
 msgid "wikidata"
