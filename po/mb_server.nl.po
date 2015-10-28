@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-09-22 01:01-0500\n"
-"PO-Revision-Date: 2015-10-24 12:29+0000\n"
+"PO-Revision-Date: 2015-10-28 10:42+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/musicbrainz/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -65,7 +65,7 @@ msgstr "‘NNNNN’ is een uniek 5-cijferig getal dat een afzonderlijke geluidso
 msgid ""
 "\"XXX\" is a three character alphanumeric registrant code, uniquely "
 "identifying the organisation which registered the code."
-msgstr "‘XXX’ is een alfanumerieke registratiecode van drie karakters die de organisatie die de code registreerde identificeert."
+msgstr "‘XXX’ is een alfanumerieke registratiecode van drie karakters die de organisatie identificeert die de code registreerde."
 
 #: ../root/components/forms.tt:309
 msgid "\"YY\" is the last two digits of the year of registration."
@@ -4438,7 +4438,7 @@ msgstr "Magic MP3 Tagger"
 msgid ""
 "Mail me when one of my edits gets a \"no\" vote. (Note: the email is only "
 "sent for the first \"no\" vote, not each one)"
-msgstr "E-mail mij als een van mijn bewerkingen een tegenstem krijgt. (Notitie: de e-mail wordt alleen gestuurd na de eerste tegenstem, niet voor elke.)"
+msgstr "E-mail mij als er tegen een van mijn bewerkingen wordt gestemd. (Notitie: de e-mail wordt alleen gestuurd na de eerste tegenstem, niet voor elke.)"
 
 #: ../root/layout/menu.tt:289
 msgid "Mailing Lists"
@@ -7170,7 +7170,7 @@ msgstr "Alle opnames worden weergegeven. {show_sa|In plaats daarvan alleen losst
 msgid ""
 "Showing all release groups by this artist. {show_official|Show only official"
 " release groups instead}, or {show_va|show various artists release groups}."
-msgstr "Alle uitgavegroepen van deze artiest worden weergegeven. {show_official|In plaats daarvan alleen officiële uitgavegroepen weergeven}, of {show_va|uitgavegroepen van diverse artiesten weergeven}."
+msgstr "De pagina laat nu alle uitgavegroepen van deze artiest zien. {show_official|Laat in plaats daarvan alleen officiële uitgavegroepen zien}, of {show_va|uitgavegroepen van diverse artiesten}."
 
 #: ../root/artist/index.tt:75
 msgid ""
@@ -7193,32 +7193,32 @@ msgid ""
 "Showing all release groups for various artists. {show_official|Show only "
 "official various artists release groups instead}, or {show_non_va|show "
 "release groups by this artist}."
-msgstr "Alle uitgavegroepen van diverse artiesten worden weergegeven. {show_official|In plaats daarvan alleen officiële uitgavegroepen van diverse artiesten weergeven}, of {show_non_va|uitgavegroepen van alleen deze artiest weergeven}."
+msgstr "De pagina laat nu alle uitgavegroepen van diverse artiesten zien. {show_official|Laat in plaats daarvan alleen officiële uitgavegroepen van diverse artiesten zien}, of {show_non_va|alleen uitgavegroepen van deze artiest}."
 
 #: ../root/artist/index.tt:95
 msgid ""
 "Showing all release groups for various artists. {show_official|Show only "
 "official various artists release groups instead}."
-msgstr "Alle uitgavegroepen van diverse artiesten worden weergegeven. {show_official|In plaats daarvan alleen officiële uitgavegroepen van diverse artiesten weergeven}."
+msgstr "De pagina laat nu alle uitgavegroepen van diverse artiesten zien. {show_official|Laat in plaats daarvan alleen officiële uitgavegroepen van diverse artiesten zien}."
 
 #: ../root/artist/index.tt:71
 msgid ""
 "Showing official release groups by this artist. {show_all|Show all release "
 "groups instead}, or {show_va|show various artists release groups}."
-msgstr "Alleen officiële uitgavegroepen van deze artiest weergeven. {show_all|In plaats daarvan alle uitgavegroepen weergeven}, of {show_va|uitgavegroepen van diverse artiesten weergeven}."
+msgstr "De pagina laat nu alleen officiële uitgavegroepen van deze artiest zien. {show_all|Laat in plaats daarvan alle uitgavegroepen zien}, of {show_va|alleen uitgavegroepen van diverse artiesten}."
 
 #: ../root/artist/index.tt:100
 msgid ""
 "Showing official release groups for various artists. {show_all|Show all "
 "various artists release groups instead}, or {show_non_va|show release groups"
 " by this artist}."
-msgstr "Officiële uitgavegroepen van diverse artiesten worden weergegeven. {show_all|In plaats daarvan alle uitgavegroepen van diverse artiesten weergeven}, of {show_non_va|uitgavegroepen van alleen deze artiest weergeven}."
+msgstr "De pagina laat nu officiële uitgavegroepen van diverse artiesten zien. {show_all|Laat in plaats daarvan alle uitgavegroepen van diverse artiesten zien}, of {show_non_va|alleen uitgavegroepen van deze artiest}."
 
 #: ../root/artist/index.tt:79
 msgid ""
 "Showing official release groups for various artists. {show_all|Show all "
 "various artists release groups instead}."
-msgstr "Officiële uitgavegroepen van diverse artiesten worden weergegeven. {show_all|In plaats daarvan alle uitgavegroepen van diverse artiesten weergeven}."
+msgstr "De pagina laat officiële uitgavegroepen van diverse artiesten zien. {show_all|Laat in plaats daarvan alle uitgavegroepen van diverse artiesten zien}."
 
 #: ../root/artist/recordings.tt:20
 msgid ""
