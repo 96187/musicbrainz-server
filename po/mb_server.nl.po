@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-06 14:02-0800\n"
-"PO-Revision-Date: 2015-11-14 17:59+0000\n"
+"PO-Revision-Date: 2015-11-14 18:22+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/musicbrainz/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -7874,7 +7874,7 @@ msgstr "Het medium dat je bewerkt, maakt deel uit van de volgende uitgave: {rele
 msgid ""
 "The new URL already exists in the database. This edit will therefore merge "
 "the two URL entities."
-msgstr "De nieuwe URL bestaat al in de gegevensbank. Deze bewerking zal daarom de twee URL-objecten samenvoegen."
+msgstr "De nieuwe URL bestaat al in de database. Deze bewerking zal daarom de twee URL-objecten samenvoegen."
 
 #: ../root/main/403.tt:5
 msgid "The page you requested is private."
@@ -7918,7 +7918,7 @@ msgstr "De zoekserver kon je verzoek niet voldoen door een interne fout. Deze is
 
 #: ../root/layout.tt:59
 msgid "The server is temporary in read-only mode for database maintainance."
-msgstr "De server is tijdelijk in alleenlezenmodus vanwege onderhoud aan de gegevensbank."
+msgstr "De server is tijdelijk in alleenlezenmodus vanwege onderhoud aan de database."
 
 #: ../root/main/503.tt:5
 msgid "The system is overloaded or you are making requests too fast."
@@ -8354,7 +8354,7 @@ msgstr "Dit is een compositie-eigenschap zonder opmaak"
 msgid ""
 "This is a list of all the different ways {artist} is credited in the "
 "database. View the {doc|artist credit documentation} for more details."
-msgstr "Dit is een lijst van alle verschillende manieren waarop {artist} vermeld wordt in de gegevensbank. Zie de {doc|documentatie voor vermeldingen} voor meer details."
+msgstr "Dit is een lijst van alle verschillende manieren waarop {artist} vermeld wordt op MusicBrainz. Zie de {doc|documentatie voor vermeldingen} voor meer details."
 
 #: ../root/annotation/common.tt:25
 msgid ""
@@ -10251,7 +10251,7 @@ msgid ""
 "main MusicBrainz database until an editor decides to take your submitted "
 "information, ensures it meets our standards and inserts it into the main "
 "database."
-msgstr "Je kan informatie over een cd toevoegen zoals dit op de cd staat aangegeven, zonder verder deel uit te maken van MusicBrainz. Cd’s die zo zijn toegevoegd, zijn beschikbaar in programma’s. Maar het zal niet aan de belangrijkste gegevensbank van MusicBrainz worden toegevoegd tot een redacteur besluit om deze informatie op te pakken, ervoor zorgt dat het aan onze standaarden voldoet, en het aan de belangrijkste gegevensbank toevoegt."
+msgstr "Je kan informatie over een cd toevoegen zoals dit op de cd staat aangegeven, zonder verder deel uit te maken van MusicBrainz. Cd’s die zo zijn toegevoegd, zijn beschikbaar in programma’s. Maar het zal niet aan de belangrijkste database van MusicBrainz worden toegevoegd tot een redacteur besluit om deze informatie op te pakken, ervoor zorgt dat het aan onze standaarden voldoet, en het aan de belangrijkste database toevoegt."
 
 #: ../root/account/edit.tt:34
 msgid ""
@@ -10370,13 +10370,13 @@ msgstr "Je moet voor elk nummer een titel en een artiest opgeven."
 msgid ""
 "You must first {url|add and verify your email address} before being able to "
 "edit or add anything to the database."
-msgstr "Je moet eerst je {url|e-mailadres verifiëren} voordat je de gegevensbank kan bewerken."
+msgstr "Je moet eerst je {url|e-mailadres verifiëren} voordat je informatie op MusicBrainz kan bewerken."
 
 #: ../root/account/register.tt:33
 msgid ""
 "You must provide a working email address if you wish to contribute to the "
 "database."
-msgstr "Je moet een werkend e-mailadres verstrekken als je aan de gegevensbank wil bijdragen."
+msgstr "Je moet een werkend e-mailadres verstrekken als je aan de gegevens op MusicBrainz wil bijdragen."
 
 #: ../root/release/edit/editnote.tt:32
 msgid "You must provide an edit note when adding a release."
@@ -11318,7 +11318,7 @@ msgstr "…"
 #: ../lib/DBDefs/Default.pm:166
 msgid ""
 "This beta test server allows testing of new features with the live database."
-msgstr "Op deze bètaserver kunnen gebruikers nieuwe mogelijkheden testen met een live-gegevensbank."
+msgstr "Op deze bètaserver kunnen gebruikers nieuwe mogelijkheden testen met de productiedatabase."
 
 #: ../lib/MusicBrainz/Server/Controller.pm:29
 #, perl-brace-format
@@ -12277,11 +12277,11 @@ msgstr "Je privécollecties te bekijken en te bewerken."
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:71
 msgid "Submit new ISRCs to the database"
-msgstr "Nieuwe ISRC’s in de gegevensbank in te dienen."
+msgstr "Nieuwe ISRC’s in te dienen."
 
 #: ../lib/MusicBrainz/Server/Entity/EditorOAuthToken.pm:72
 msgid "Submit new barcodes to the database"
-msgstr "Nieuwe streepjescodes in de gegevensbank in te dienen."
+msgstr "Nieuwe streepjescodes in te dienen."
 
 #: ../lib/MusicBrainz/Server/Entity/LinkAttribute.pm:33
 #: ../root/static/scripts/edit/utility/linkPhrase.js:66
