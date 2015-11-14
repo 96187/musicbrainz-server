@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: MusicBrainz\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-06 14:02-0800\n"
-"PO-Revision-Date: 2015-11-08 15:28+0000\n"
+"PO-Revision-Date: 2015-11-14 17:59+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/musicbrainz/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -1725,7 +1725,7 @@ msgid ""
 "review entered data to create the most accurate music database on the "
 "internet. If this appeals to you, please {reg|create an account} or "
 "{login_url|login}."
-msgstr "Neem deel aan MusicBrainz door een account aan te maken en {how|te lezen over de manier} waarop we informatie toevoegen aan MusicBrainz. Kom te weten hoe de gegevens die worden toegevoegd collegiaal getoetst worden om de meest nauwkeurige gegevensbank voor muziek op het internet te creëren. {reg|Registreer} of {login_url|meld je aan} als dit je aanspreekt."
+msgstr "Neem deel aan MusicBrainz door een account aan te maken en {how|te lezen over de manier} waarop we informatie toevoegen aan MusicBrainz. Kom te weten hoe de gegevens die worden toegevoegd collegiaal getoetst worden om de meest nauwkeurige muziekencyclopedie op het internet te creëren. {reg|Registreer} of {login_url|meld je aan} als dit je aanspreekt."
 
 #: ../root/components/labels-list.tt:11 ../root/event/merge.tt:14
 #: ../root/label/merge.tt:16 ../root/place/merge.tt:15
@@ -2486,7 +2486,7 @@ msgstr "Verschillen"
 #: ../root/search/form.tt:35 ../root/search/form.tt:40
 #: ../lib/MusicBrainz/Server/Form/Search/Search.pm:61
 msgid "Direct database search"
-msgstr "Direct in de gegevensbank zoeken"
+msgstr "Direct in de database zoeken"
 
 #: ../root/area/edit_form.tt:11 ../root/artist/edit_form.tt:15
 #: ../root/edit/details/add_area.tt:23 ../root/edit/details/add_artist.tt:19
@@ -2667,7 +2667,7 @@ msgstr "Duur:"
 msgid ""
 "Each track in the MusicBrainz database has to be linked to a recording, "
 "choose the appropriate recording or look for it in the database."
-msgstr "Elk nummer in de gegevensbank van MusicBrainz moet gekoppeld zijn aan een opname. Kies de passende opname of zoek er naar in de gegevensbank."
+msgstr "Elk nummer op MusicBrainz moet gekoppeld zijn aan een opname. Kies de passende opname of zoek er naar in de database."
 
 #: ../root/account/applications.tt:75 ../root/admin/attributes/index.tt:61
 #: ../root/admin/attributes/language.tt:28
@@ -3887,7 +3887,7 @@ msgid ""
 "database looking for data that might require fixing, either to comply with "
 "the {style|style guidelines}, or in other cases where administrative \"clean"
 " up\" tasks are required."
-msgstr "Als je wil deelnemen aan het bewerksproces, maar niet weet waar je moet beginnen, kunnen deze rapporten je helpen. Deze rapporten zoeken in de gegevensbank naar gegevens die misschien verbeterd moeten worden, om ze overeen te laten komen met de {style|stijlgids} of vanwege administratieve opruiming."
+msgstr "Als je wil deelnemen aan het bewerksproces, maar niet weet waar je moet beginnen, kunnen deze rapporten je helpen. Deze rapporten zoeken naar gegevens in MusicBrainz die misschien verbeterd moeten worden, om ze overeen te laten komen met de {style|stijlgids} of vanwege administratieve opruiming."
 
 #: ../root/components/commons-image.tt:4
 msgid "Image from Wikimedia Commons"
@@ -3926,7 +3926,7 @@ msgstr "Importeer als uitgave van één artiest"
 msgid ""
 "In order to log in or make changes to the database you must visit the main "
 "server at {uri}."
-msgstr "Om je aan te melden of om veranderingen te maken in de gegevensbank, moet je de hoofdserver op {uri} gebruiken."
+msgstr "Om je aan te melden of om veranderingen te maken in de database, moet je de hoofdserver op {uri} gebruiken."
 
 #: ../root/main/mirror_404.tt:9
 msgid "In order to view this page please visit the main server at {uri}."
@@ -4700,7 +4700,7 @@ msgstr "Weblog van MusicBrainz"
 
 #: ../root/layout/menu.tt:186 ../root/main/index.tt:98
 msgid "MusicBrainz Database"
-msgstr "Gegevensbank van MusicBrainz"
+msgstr "Database van MusicBrainz"
 
 #: ../root/layout/menu.tt:171 ../root/main/index.tt:70
 msgid "MusicBrainz Picard"
@@ -6081,7 +6081,7 @@ msgid ""
 "the database. If you would like to propose a new relationship, please do so "
 "through the {url|Style Council}. Relationship editors will only make changes"
 " that have been approved by the Style Council."
-msgstr "Relatieredacteurs zijn gebruikers die relatietypes in de gegevensbank kunnen toevoegen of bewerken. Als je een nieuwe relatie wil voorstellen, moet dat via de {url|Stijlraad}. Relatieredacteurs zullen alleen veranderingen doorvoeren die door de Stijlraad zijn goedgekeurd."
+msgstr "Relatieredacteurs zijn gebruikers die relatietypes op MusicBrainz kunnen toevoegen of bewerken. Als je een nieuwe relatie wil voorstellen, moet dat via de {url|Stijlraad}. Relatieredacteurs zullen alleen veranderingen doorvoeren die door de Stijlraad zijn goedgekeurd."
 
 #: ../root/edit/details/add_relationship.tt:3
 #: ../root/edit/details/edit_relationship.tt:8
@@ -6870,14 +6870,14 @@ msgstr "Zoek naar de doel URL."
 msgid ""
 "Search indexes are updated every 3 hours, use the direct database search if "
 "you require up to the minute correct results."
-msgstr "De zoekindices worden elke drie uur bijgewerkt. Gebruik de directe zoekopdracht in de gegevensbank als je op de minuut kloppende resultaten nodig heeft."
+msgstr "De zoekindices worden elke drie uur bijgewerkt. Gebruik de directe zoekopdracht in de database als je op de minuut kloppende resultaten nodig heeft."
 
 #: ../root/taglookup/results.tt:11
 msgid ""
 "Search indexes are updated every 3 hours. If you just added the content "
 "you're looking for and you can't find it here, go to {url|the search page} "
 "and select the \"direct database search\" option."
-msgstr "De zoekindices worden elke drie uur bijgewerkt. Ga naar {url|de zoekpagina} en selecteer de optie “direct in de gegevensbank zoeken” als je de informatie die je zoekt net hebt toegevoegd en niet hier kan vinden."
+msgstr "De zoekindices worden elke drie uur bijgewerkt. Ga naar {url|de zoekpagina} en selecteer de optie “direct in de database zoeken” als je de informatie die je zoekt net hebt toegevoegd en niet hier kan vinden."
 
 #: ../root/search/form.tt:20
 msgid "Search method:"
@@ -6885,7 +6885,7 @@ msgstr "Zoekmethode:"
 
 #: ../root/cdstub/layout.tt:39
 msgid "Search the database for this CD"
-msgstr "In de gegevensbank naar deze cd zoeken"
+msgstr "In MusicBrainz naar deze cd zoeken"
 
 #: ../root/components/common-macros.tt:849
 msgid "Search the documentation..."
@@ -7253,7 +7253,7 @@ msgstr "Sociaal contract"
 msgid ""
 "Some FreeDB results may not be immediately available since they are only "
 "able to be updated after FreeDB's monthly database export."
-msgstr "Sommige resultaten van FreeDB kunnen niet onmiddellijk beschikbaar zijn omdat ze alleen worden bijgewerkt na de maandelijkse export van de gegevensbank van FreeDB."
+msgstr "Sommige resultaten van FreeDB kunnen niet onmiddellijk beschikbaar zijn omdat ze alleen worden bijgewerkt na de maandelijkse export van de gegevens van FreeDB."
 
 #: ../root/account/applications.tt:18
 msgid ""
@@ -7807,7 +7807,7 @@ msgstr "De gegevens die je hebt ingevuld, geven de volgende foutmeldingen:"
 
 #: ../root/tag/cloud.tt:9
 msgid "The database has no tags."
-msgstr "De gegevensbank heeft geen etiketten."
+msgstr "De database heeft geen etiketten."
 
 #: ../root/release/edit/information.tt:173
 #: ../root/static/scripts/relationship-editor/common/dialog.js:482
@@ -7863,7 +7863,7 @@ msgid ""
 "The majority of the data in the <strong>MusicBrainz Database</strong> is "
 "released into the <strong>Public Domain</strong> and can be downloaded and "
 "used <strong>for free</strong>."
-msgstr "De meeste gegevens in de <strong>gegevensbank van MusicBrainz</strong> zijn vrijgegeven in het <strong>Publiek Domein</strong> en kunnen <strong>gratis</strong> gedownload en gebruikt worden."
+msgstr "De meeste gegevens op <strong>MusicBrainz</strong> zijn vrijgegeven in het <strong>Publiek Domein</strong> en kunnen <strong>gratis</strong> gedownload en gebruikt worden."
 
 #: ../root/cdtoc/set_durations.tt:19
 msgid ""

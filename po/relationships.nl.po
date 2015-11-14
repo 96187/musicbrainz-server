@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MusicBrainz\n"
-"PO-Revision-Date: 2015-11-08 16:33+0000\n"
+"PO-Revision-Date: 2015-11-14 17:56+0000\n"
 "Last-Translator: Maurits Meulenbelt <email address hidden>\n"
 "Language-Team: Dutch (http://www.transifex.com/musicbrainz/musicbrainz/language/nl/)\n"
 "MIME-Version: 1.0\n"
@@ -1923,7 +1923,7 @@ msgstr "Dit koppelt een edit aan zijn originele opname. Een ‘edit’ kan een r
 msgid ""
 "This links an entity to the appropriate listing in the Songfacts database, a"
 " user contributed database concerned with the stories behind the songs."
-msgstr "Dit koppelt een object aan een toepasselijke lijst in de gegevensbank van Songfacts, een door gebruikers onderhouden gegevensbank over de verhalen achter nummers. "
+msgstr "Dit koppelt een object aan zijn overeenkomstige pagina op Songfacts, een door gebruikers onderhouden verzameling verhalen achter muzieknummers. "
 
 #: DB:link_type/description:746 DB:link_type/description:803
 #: DB:link_type/description:96 DB:link_type/description:730
@@ -1934,7 +1934,7 @@ msgid ""
 "This links an entity to the equivalent entry in another database. Please "
 "respect the <a "
 "href=\"/doc/Other_Databases_Relationship_Type/Whitelist\">whitelist</a>."
-msgstr "Dit koppelt een object aan de overeenkomstige pagina in een andere gegevensbank. Respecteer hierbij de <a href=\"/doc/Other_Databases_Relationship_Type/Whitelist\">witte lijst</a>."
+msgstr "Dit koppelt een object aan de overeenkomstige pagina in een andere database. Respecteer hierbij de <a href=\"/doc/Other_Databases_Relationship_Type/Whitelist\">witte lijst</a>."
 
 #: DB:link_type/description:804
 msgid ""
@@ -3165,7 +3165,7 @@ msgstr "heeft een diverse rol op"
 #: DB:link_type/long_link_phrase:306 DB:link_type/long_link_phrase:222
 #: DB:link_type/long_link_phrase:188 DB:link_type/long_link_phrase:561
 msgid "has a page in a database at"
-msgstr "heeft een pagina in een gegevensbank op"
+msgstr "heeft een pagina in een database op"
 
 #: DB:link_type/long_link_phrase:173 DB:link_type/long_link_phrase:396
 #: DB:link_type/long_link_phrase:732
@@ -3421,7 +3421,7 @@ msgstr "is een medley van"
 
 #: DB:link_type/long_link_phrase:753 DB:link_type/long_link_phrase:730
 msgid "is a page in a database for"
-msgstr "is een pagina in een gegevensbank van"
+msgstr "is een pagina in een database van"
 
 #: DB:link_type/long_link_phrase:802 DB:link_type/long_link_phrase:742
 #: DB:link_type/long_link_phrase:740 DB:link_type/long_link_phrase:741
@@ -3891,7 +3891,7 @@ msgstr "oorspronkelijk gepland als"
 #: DB:link_type/reverse_link_phrase:222 DB:link_type/reverse_link_phrase:273
 #: DB:link_type/reverse_link_phrase:188 DB:link_type/reverse_link_phrase:561
 msgid "other databases"
-msgstr "andere gegevensbanken"
+msgstr "andere databases"
 
 #: DB:link_type/link_phrase:233 DB:link_type/reverse_link_phrase:233
 #: DB:link_type/long_link_phrase:233
@@ -5040,7 +5040,7 @@ msgstr "{entity1} heeft eenWikipediapagina op {entity0}"
 
 #: DB:link_type/long_link_phrase:273
 msgid "{entity1} has a page in a database at {entity0}"
-msgstr "{entity1} heeft een pagina in een gegevensbank op {entity0}"
+msgstr "{entity1} heeft een pagina in een database op {entity0}"
 
 #: DB:link_type/long_link_phrase:286
 msgid "{entity1} has an Allmusic page at {entity0}"
